@@ -4,15 +4,48 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hello! You can call me Anya or, if you prefer, Prof V. Here is a whole bunch of random facts about me.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Name: Anya Elaine Vostinar (Johnson)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Hometown: Duluth, MN
 
+Alma Mater: Carleton College
 
-[jekyll-organization]: https://github.com/jekyll
+PhD Institute: Michigan State University
+
+Degree: Dual-PhD in Computer Science & Engineering and Ecology, Evolutionary Biology & Behavior
+
+Birthday: Feb. 22nd
+
+Mission: Bring science to a wider audience by making it accessible to the general public and increasing STEM diversity of all under-represented groups.
+
+Hobbies: reading and writing sci-fi and fantasy books, knitting, games, baking, gardening
+
+Significant Other: Joe Vostinar
+
+Pets: Cache the wonder dog!
+
+Plants: A lot, some include: orchids, african violets, begonia, spider plant, purple velvet plant, purple heart plant, lots of annual flowers and vegetables, peace lily, ferns, more that I have forgotten about
+
+Favorite color: purple, silver, black
+
+Favorite author/book: Whatever I’m currently reading. I used to say Brandon Sanderson or Anne McCaffrey, but I now love so many different authors for such different types of writing that I can’t choose
+
+Favorite food: chocolate
+
+Favorite animal: dragon
+
+No, a real animal: tiger
+
+Favorite virus: SfII
+
+Favorite amoeba: Dictyostelium discoideum
+
+Favorite bacteria: Vibrio harveyi
+
+Hogwarts House: Slytherpuff
+
+Pokemon Go Team: Mystic
+
+Sleep habits: Night owl trying to live on a normal schedule
