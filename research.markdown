@@ -9,7 +9,7 @@ permalink: /research/
 I’ll be hiring Carleton students to work for me starting in the fall of 2020, so please contact me if that is of interest and look for a job posting.
 
 ## I want to be in your lab!
-Awesome, I’m excited to hear of your interest! To best prepare for doing summer research with me, please read this page thoroughly, skim the blog posts on the [DevoLab site](https://devolab.org/) (our parent lab), and read at least the introduction of [this paper](https://www.biorxiv.org/content/biorxiv/early/2018/08/20/393868.full.pdf). These will give you a solid grasp of what my research involves and what projects I’m looking to get students involved with. If you’re even more excited after reading these materials, check my calendar (linked on Classes) and email me a time you’d like to meet and talk further.
+Awesome, I’m excited to hear of your interest! To best prepare for doing summer research with me, please read this page thoroughly, skim the blog posts on the [DevoLab site](https://devolab.org/) (our parent lab), try out [Symbulation](https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html), and read at least the introduction of [this paper](https://www.biorxiv.org/content/biorxiv/early/2018/08/20/393868.full.pdf). These will give you a solid grasp of what my research involves and what projects I’m looking to get students involved with. If you’re even more excited after reading these materials, check my calendar (linked on homepage) and email me a time you’d like to meet and talk further.
 
 ## Symbu what?…..
 The SymbuLab is a combination of [Symbulation](https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html), our main software, and Lab, the thing this is.
@@ -28,8 +28,8 @@ Parasites and mutualists are actually on a spectrum and how you define they rela
 For example, there is a bacteria that helps plants by getting nitrogen from the soil and exchanging it for sugar from the plant. 
 When nitrogen-rich fertilizer is added to the soil, the plants no longer need these bacteria, but the bacteria are pretty invested in the relationship continuing and generally become parasitic. 
 There are lots and lots of ideas of how mutualism and parasitism could have evolved, but a lot of complications that have made it difficult to test those ideas in biological systems.
- Symbulation is the answer to this problem. 
- The long-term goal of Symbulation is to be able to accurately model an individual human gut microbiome; in working toward this goal, many other symbiont systems will be able to be modeled as well with varying settings.
+Symbulation is the answer to this problem. 
+The long-term goal of Symbulation is to be able to accurately model an individual human gut microbiome; in working toward this goal, many other symbiont systems will be able to be modeled as well with varying settings.
 
 ## Evolution? Isn’t this a computer science lab?
 Why yes it is, though we are definitely firmly interdisciplinary and publish in both fields. Evolution is simply a heuristic algorithm. Given:
