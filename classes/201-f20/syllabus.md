@@ -63,7 +63,7 @@ These will help you apply and process the ideas from videos and readings, and yo
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
 In many of these activities you'll have the option to work collaboratively, and throughout the course, you'll have a collaborative learning group with whom you can talk about course ideas and work with on course activities. 
-Please read this linked page for more information on collaborative learning groups and the collaboration and academic honesty policies for this course.
+Please read [this linked page](/classes/201-f20/collaboration) for more information on collaborative learning groups and the collaboration and academic honesty policies for this course.
 
 ## Evaluation and Grading
 I want you to know that I recognize that the global pandemic is likely to affect your ability to focus and work on this class. 
