@@ -6,7 +6,7 @@ permalink: /Classes/
 
 ### Fall 2020
 
-CS 201: Data Structures (Moodle link to come)
+CS 201: Data Structures (Moodle link to come) ([Syllabus](/classes/201-f20/syllabus)) ([Schedule](/classes/201-f20/schedule))
 
 ## Future Classes
 Subject to change!
