@@ -1,4 +1,8 @@
-# CS 201: Data Structures Syllabus
+---
+layout: page
+title: CS201 Data Structures F20 Syllabus
+permalink: /classes/201-f20/syllabus
+---
 
 # NOTICE: THIS SYLLABUS IS NOT FINAL AND VERY LIKELY TO CHANGE
 Fall 2020
