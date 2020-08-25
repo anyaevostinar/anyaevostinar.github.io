@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Classes
-permalink: /classes/
+permalink: /Classes/
 ---
 
 ### Fall 2020

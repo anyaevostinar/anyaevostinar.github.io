@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /About/
 ---
 
 Hello! You can call me Anya or, if you prefer, Prof V. Here is a whole bunch of random facts about me.
