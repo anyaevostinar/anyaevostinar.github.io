@@ -7,11 +7,16 @@ permalink: /classes/201-f20/syllabus
 # NOTICE: THIS SYLLABUS IS NOT FINAL AND VERY LIKELY TO CHANGE
 Fall 2020
 
-*Instructor*: Anya E. Vostinar
+**Instructor**: Anya E. Vostinar
 
-*Prefect*: See Moodle
+**Prefect**: See Moodle
 
-*Course materials*: All materials, including readings, will be linked through Moodle.
+**Course materials**: All materials, including readings, will be linked through Moodle.
+
+**Drop in hours**: (All times in US Central) Mondays 12:45-1:45pm, Wednesdays 3:45-4:45pm, Thursdays 1:30-2:30pm
+All drop in hours will be in my [Zoom 'Office'](https://carleton.zoom.us/j/8031211072?pwd=WVI1ZFZON2luV1FMT0R5NjVhZHQ0Zz09)
+**Make sure you are signed in to your Carleton Zoom otherwise you won't be able to get in!**
+Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' and either send an invite to an event, email me, or message me on Piazza to ask for that meeting time.
 
 ## Overview and Learning Goals
 Welcome to Data Structures! In this course, you'll be learning about how to work with data, how to design solutions that are efficient for a particular application, and developing more complex programs than in the introductory CS course. 
@@ -171,14 +176,15 @@ The Academic Skills center is a wonderful resource for helping you develop study
 Oscar Alarez is an academic skills coach in the office with whom you can make individual video conferencing appointments. 
 
 ## Inclusivity and Universal Learning
+I strive to create an inclusive and respectful classroom that values diversity. Our individual differences enrich and enhance our understanding of one another and of the world around us. This class welcomes the perspectives of all ethnicities, genders, religions, ages, sexual orientations, disabilities, socioeconomic backgrounds, regions, and nationalities.
+
 My goal is that everyone should be able to learn from this class and feel comfortable asking questions and participating. 
 In class, on the forums, and when working with one another, be respectful and inclusive. 
 If something makes you uncomfortable or you're concerned about an interaction, please come talk to me!
 
-Carleton College is committed to providing equitable access to learning opportunities for all students. 
-The Disability Services office (Henry House, 107 Union Street) is the campus office that collaborates with students who have disabilities to provide and/or arrange reasonable accommodations. 
-If you have, or think you may have, a disability (e.g., mental health, attentional, learning, autism spectrum disorders, chronic health, traumatic brain injury and concussions, vision, hearing, mobility, or speech impairments), please contact disability@carleton.edu or call Sam Thayer ('10), Accessibility Specialist (x4464) or Chris Dallager, Director of Disability Services (x5250) to arrange a confidential discussion regarding equitable access and reasonable accommodations. 
+Carleton College is committed to providing equitable access to learning opportunities for all students. The Disability Services office (Henry House, 107 Union Street) is the campus office that collaborates with students who have disabilities to provide and/or arrange reasonable accommodations. If you have, or think you may have, a disability (e.g., mental health, attentional, learning, autism spectrum disorders, chronic health, traumatic brain injury and concussions, vision, hearing, mobility, or speech impairments), please contact disability@carleton.edu or call Sam Thayer (’10), Accessibility Specialist (x4464) or Chris Dallager, Director of Disability Services (x5250) to arrange a confidential discussion regarding equitable access and reasonable accommodations.
 If you've already arranged accommodations, please let me know if there's anything you want me to know beyond what's in the accommodations letter or if there are particular challenges that online learning poses for your specific circumstances.
+If you do not have official accomodations, I am still happy to discuss with you ways in which I can help you succeed in this class.
 
 The Assistive Technologies program brings together academic and technological resources to complement student classroom and computing needs, particularly in support of students with physical or learning disabilities. 
 Accessibility features include text-to-speech (Kurzweil), speech-to-text (Dragon) software, and audio recording Smartpens. 
@@ -189,6 +195,8 @@ It is important to recognize stressors you may be facing, which can be personal,
 Sleep, exercise, and connecting with others can be strategies to help you flourish at Carleton. 
 If you are having difficulties maintaining your well-being, please contact me and/or pursue other resources, such as Student Health and Counseling or resources on the Office of Health Promotion website. 
 Student Health and Counseling is currently offering telehealth services.
+
+Carleton is committed to fostering an environment free of sexual misconduct. Please be aware all Carleton faculty and staff members, with the exception of Chaplains and SHAC staff, are “responsible employees.” Responsible employees are required to share any information they have regarding incidents of sexual misconduct with the Title IX Coordinator. Carleton’s goal is to ensure campus community members are aware of all the options available and have access to the resources they need. If you have questions, please contact Laura Riehle-Merrill, Carleton’s Title IX Coordinator, or visit the Sexual Misconduct Prevention and Response website: https://www.carleton.edu/sexual-misconduct/.
 
 ## Academic Honesty and Collaboration Policy
 As noted in Carleton's policy on academic integrity, violations of academic honesty are dealt with at the college level. 
