@@ -9,7 +9,7 @@ Fall 2020
 
 *Instructor*: Anya E. Vostinar
 
-*Prefect*: TBD
+*Prefect*: See Moodle
 
 *Course materials*: All materials, including readings, will be linked through Moodle.
 
@@ -69,25 +69,32 @@ Please read [this linked page](/classes/201-f20/collaboration) for more informat
 I want you to know that I recognize that the global pandemic is likely to affect your ability to focus and work on this class. 
 However, mastery of this material is important: if you go on to future CS courses or intend to interview for CS internships and jobs, you'll be expected to know this material (CS201 is widely cited by more senior students and alumni as having the key material for doing well in job interviews).
 For this class, I will be grading as follows: 
-At the end of the term, I addup your numerical scores for each component, multiply them by the weight for that component, and add up all components.  
-This gives me a number for each student.
-Except  in  extraordinary  circumstances,  I  assign  letter  grades  strictly based on the sorted order of the student numbers.
-Therefore, there is no fixed percentage associated  with  an  A,  B,  C,  etc;  instead,  I  compare  the  numbers  to  what  I  would  expect  from  someone who knew the material at an A level, a B level, etc given the difficulty of the exams and homeworks in this iteration of the course. 
-*I do not have a set number of students who can receive each letter grade, ie there isn't a curve that I hold to.*
-Not having a strict cutoff means that if there is a particularly difficult exam, you should not be concerned if it is difficult for everyone.  
-It also means you cannot compute your own grade - if you’d like to know how I think you’re doing at any particular point, please schedule an appointment and talk to me.  
-For this course, the cutoff for an A is typically near 90%.
+At the end of the term, I addup your numerical scores for each component, multiply them by the weight for that component, and add up all components.
+I'll then check what your percentage is compared to this breakdown:
+| Percentage | Letter Grade |
+| ---- | ------- |
+| 93-100% | A |
+| 90-93% | A- |
+| 87-90% | B+ |
+| 83-87% | B |
+| 80-83% | B- |
+| 77-80% | C+ |
+| 70-77% | C |
+| 60-70% | D |
+| 0-60% | F |
+
+Note that there is overlap; I will always go with the higher letter grade in the extraordinary circumstance that someone is at exactly 93%. If someone is really really close to a cutoff, I'll bump them up, so don't worry about being at 89.99% and getting a B+ instead of an A-. If an exam is much harder than I meant it to be, I will adjust scores so that it is a better reflection of your learning. My goal is for everyone who puts in the effort to get an A!
 
 Here is how activities this term will be factored into your grade:
 
 | Component | Method of evaluation | Contribution to overall grade |
 | ----------|----------------------| ----------------------------- |
-| Embedded quizzes and activities in reading and videos | Evaluated only on effort and completion; you can answer these as many times as you like. | TBD |
-| Labs and activities | Evaluated only on effort. You must turn them in and make an effort to complete all parts, including seeking out assistance if you're struggling on a particular part (e.g., by reaching out to your collaborative learning group or asking on Piazza). | TBD |
+| Embedded quizzes and activities in reading and videos | Evaluated only on effort and completion; you can answer these as many times as you like. | 10% |
+| Labs and activities | Evaluated only on effort. You must turn them in and make an effort to complete all parts, including seeking out assistance if you're struggling on a particular part (e.g., by reaching out to your collaborative learning group or asking on Piazza). | 10% |
 | Homework | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 40% |
 | Final project | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 25% |
-| Daily quizzes | Evaluated only on effort. You must turn them in and make an effort to complete all parts.	| TBD |
-| Weekly quizzes | Evaluated based on correctness. You will have two chances to complete each quiz. Lowest quiz score will be dropped. | TBD |
+| Daily quizzes | Evaluated only on effort. You must turn them in and make an effort to complete all parts.	| 5% |
+| Weekly quizzes | Evaluated based on correctness. You will have two chances to complete each quiz. Lowest quiz score will be dropped. | 10% |
 
 ## How to Succeed in this Class
 * Keep trying and ask for help: 
@@ -123,8 +130,9 @@ By asking questions during our synchronous Q&A time, on Piazza, and in office ho
 ## Late Policies
 Because I know that personal or tech difficulties may arise at times during the term, all homework assignments have a 48-hour, no questions asked extensions policy. 
 If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy. 
-You need to just notify me that you're using the policy, ideally before the deadline, but after is also fine. 
-Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still the original deadline, not 48 hours later.
+You need to just notify me that you're using the policy before the deadline.
+If you are unable to notify me, please just still let me know when you are able and I'll work with you.
+Extensions beyond the 48-hour policy will only be considered in extenuating circumstances.
 
 Activities and quizzes do not have a built in extensions policy. 
 If something is interfering with your ability to do your work, please reach out. 
@@ -154,6 +162,7 @@ If you're unsure if a question contains too much detail about the homework, you 
 * Talk to me:
 I have both drop in office hours and office hours that are by appointment (for one on one conversations). 
 See links at the top of Moodle for more details.
+Talking to students is literally my favorite part of this job, please talk to me!
 * Other Carleton resources: 
 There are lots of resources to help you at Carleton, and these resources have persisted in virtual form. 
 Lab assistants are available via video conference; see the top of Moodle for details. 
@@ -185,7 +194,7 @@ Student Health and Counseling is currently offering telehealth services.
 As noted in Carleton's policy on academic integrity, violations of academic honesty are dealt with at the college level. 
 If I suspect academic dishonesty, I will refer the case for appropriate action to the Academic Standing Committee (ASC) via the Associate Dean of Students or the Associate Dean of the College. 
 Please familiarize yourself with Carleton's academic integrity policies and make sure that you have read the collaboration and academic honesty policies for this course. 
-Any student who is found responsible for academic dishonesty in this course will earn an F in the course. 
+A possible penalty for academic dishonesty in a course is an F in the course.
 It's not worth it -- please seek help using the resources above instead.
 
 *This syllabus is based heavily on the syllabus from Anna Rafferty.*
