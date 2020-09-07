@@ -36,17 +36,7 @@ Before our first class, I encourage you to try Zoom (call a friend!) so that you
 The first day of class I imagine we'll all be navigating some challenges with the platform, but trying it out ahead of time will make things a little easier. 
 You don't need a camera for our class, although if you have one, that's great; similarly, a microphone isn't required (you can ask questions and participate through chat), but if you have a device with a microphone, that will make it easier to participate.
 You aren't required to turn on your camera, though it can help you feel more like you are 'in class'.
-
-## GitHub Student Developer pack
-The platform we'll be using for online coding is free, but the free account won't allow you to make private projects. 
-In this class, you'll be doing lots of projects, and each one of them should be private. 
-Fortunately, you can get free access to a plan with private projects by registering for a [GitHub Student Developer pack](https://education.github.com/discount_requests/new). 
-You should request the developer pack [here](https://education.github.com/discount_requests/new). 
-Create a new account using your Carleton email address, and if asked for your name, please use the first and last name that you go by for this account. 
-For the student developer pack, you'll need to verify your student status. 
-For verification, you can take a screenshot of your current schedule on the Hub. 
-You can indicate that you plan to use GitHub for your fall 2020 data structures class. 
-It may take a few days for your developer pack to be approved, so you should request it ASAP.
+You are welcome to attend class meetings in pajamas in bed, I just want you to attend!
 
 ## Coding environment
 For CS201 this term, the primary way we'll be doing coding is online. We're doing this for two reasons:
@@ -70,6 +60,8 @@ The page will look something like the image below:
 ![Picture of a screenshot that says Classroom and has an image of a dog and the class name "CS201-F20"](/classes/201-f20/ReplitClassroom.png)
 
 Check out the repl.it video on Moodle if you're confused, and if that doesn't help, ask on Piazza.
+
+The department has a deal with Repl.it to upgrade all student accounts so that you can have private Repls. I will provide information on Piazza about how to upgrade and you should then make all your code for the class private.
 
 ### Coding on your own computer
 I know that some of you may want to use something offline for coding. 
