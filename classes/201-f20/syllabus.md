@@ -76,6 +76,7 @@ However, mastery of this material is important: if you go on to future CS course
 For this class, I will be grading as follows: 
 At the end of the term, I addup your numerical scores for each component, multiply them by the weight for that component, and add up all components.
 I'll then check what your percentage is compared to this breakdown:
+
 | Percentage | Letter Grade |
 | ---- | ------- |
 | 93-100% | A |
