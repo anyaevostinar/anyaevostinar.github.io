@@ -51,7 +51,7 @@ For each of the Python/Java program pairs in the project, read the programs, run
 
 When you're done, submit your questions to the Moodle assignment More Comparing Python and Java. You need to submit a minimum of three questions to receive full credit. Then check on Piazza to see if anyone else has posted your questions. If no one has, post them each in their own question. Also see if there are any unanswered questions that you can answer! If someone did already post your question, check to see what the answer is.
 
-You may use the questions that your group came up with in class, but you must credit your group members!
+You may use the questions that your group came up with in class, but you must credit your group members! I suspect you'll be able to come up with more questions though.
 
 Take this exercise seriously. Figure out what you know, what you don't know, what's easy, what's confusing, etc. If you pay careful attention to these starter programs and I can get you quick turn-around on your main questions, you'll have a great start on writing your own Java programs. You may find it helpful to do this exercise in conjunction with looking at the Java Reference Information on Moodle. This reference information may be able to help you answer some of your or your classmates' questions, and looking at the examples in this homework may help you recognize what parts of that reference information you already know and what you should pay closer attention to.
 
