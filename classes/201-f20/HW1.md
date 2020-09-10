@@ -49,7 +49,7 @@ You and your classmates will collaboratively add to this document, and if you're
 You'll complete this assignment on repl.it. Go to the student page and log in. Then click on the CS201 classroom. Under Projects, click "HW1". 
 With every project you do in this class, you should make sure the repl is private. Click on the pencil icon next to the project name, and switch the toggle from public to private:
 
-![Screenshot of Repl.it showing name of assignment circled and private slider](/classes/201-f20/PrivateRepl.png)
+![Screenshot of Repl.it showing name of assignment circled and private slider](/classes/201-f20/PrivateRepl.PNG)
 
 
 Your account shouldn't say that you need to upgrade because you should have the free Hacker plan from the upgrade. 
