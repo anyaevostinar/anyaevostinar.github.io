@@ -8,7 +8,7 @@ permalink: /classes/201-f20/tools
 This document covers four types of tools: tools for written question-and-answer or other communications (Piazza); video conferencing tools (Zoom); tools to make the online coding tools free (GitHub Student Developer pack); and tools for online coding (repl.it).
 
 ## Piazza
-Please click the link on [Moodle](https://moodle.carleton.edu/course/view.php?id=32745) to get to [Piazza](https://moodle.carleton.edu/mod/lti/view.php?id=523280). 
+Please click the link on [Moodle](https://moodle.carleton.edu/course/view.php?id=32745) to get to Piazza. 
 Piazza is a question and answer platform, where our site is restricted just to members of our class. 
 All written questions and clarifications will happen on Piazza. 
 If there's something you'd like to keep private, you can message me privately on Piazza. 
