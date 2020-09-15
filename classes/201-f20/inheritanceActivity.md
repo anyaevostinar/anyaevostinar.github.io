@@ -5,7 +5,7 @@ permalink: /classes/201-f20/inheritance-activity
 ---
 
 ## Logistics
-Due Sunday Sept 20th, 10pm Central (should aim to complete on Friday though). 
+Due Monday Sept 21st, 2020. 
 
 You may get help from your collaborative learning group and anyone else in class, but be sure to submit your own solution and record any help or outside sources in your Collaborations.txt document.
 
