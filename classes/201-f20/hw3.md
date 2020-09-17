@@ -16,6 +16,8 @@ This is a homework assignment that you'll be handing in on Moodle.
 You're welcome to either complete this homework with input from one or more members of your collaborative learning group or to complete it on your own. You and the other members of your collaborative learning group should each write your own code, even if you're helping one another, but you may share your screens/use multiplayer mode to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
 
 # Setup and Requirements
+Go to our Course on Repl.it and open the project HW3. Make sure that the repl is private.
+
 You should first create a Collaborations.txt document and update it with any sources (webpage or people) that you get help from.
 
 The code that you write for this assignment will build on top of the List ADT and one of the implementations of List that we've seen in class. The code will also use a library for producing graphs called [JFreeChart](https://github.com/jfree/jfreechart), one additional class that Professor Anna Rafferty wrote to make it easy for you to interact with the graphing library, and a dataset containing information about countries, created using data from the World Bank:
@@ -29,8 +31,6 @@ The code that you write for this assignment will build on top of the List ADT an
 You should not make any changes to any of these files. The Javadoc for the BarChart class is at:
 
 [BarChart](http://www.cs.carleton.edu/faculty/arafferty/cs201_fa2020/assignments/hw03-dataAnalysis/javadoc/BarChart.html)
-
-You'll get all of these files on repl.it. Go to our class, then the Projects section, and choose HW03: Country Displayer.
 
 It may be useful to refer to the code from class and the Java Reference file on Moodle. The official Java API documentation will likely be helpful for choosing what implementation of a List you'll use, and for seeing what methods are available.
 
