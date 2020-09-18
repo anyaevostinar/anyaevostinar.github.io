@@ -45,6 +45,12 @@ For this project you have the opportunity to be creative! Instead of telling you
       
 If you see a message like this, you should follow the instructions and add `-Xlint:unchecked` after your compiler command.
 
+* If you want to turn a command line argument into something other than a String, you need to use a method to do so. You will probably want either `parseInt(String in)` or `parseDouble(String in)`:
+```
+    int myInt = Integer.parseInt("1");
+    double myDouble = Double.parseDouble("1.0");
+```
+
 ## Rubric
 
 | Item | Points |
