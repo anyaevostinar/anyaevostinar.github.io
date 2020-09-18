@@ -203,7 +203,7 @@ Start your `displayCountryChart` method by just creating a `BarChart` and using 
 
 Now change it to loop over the first ten countries in your list and add the values from one of their indicators. Remember to compile and run each time you change your code to make sure it works!
 
-To chart two specific indicators, you'll need to grab those indicators from the countries by the string name. In `Country` make a method that takes a string and returns the indicator value for that country. This will look like a long line of if-else statements. 
+To chart two specific indicators, you'll need to grab those indicators from the countries by the string name. In `Country` make a method that takes a string and returns the indicator value for that country. This will look like a long line of if-else statements. Note that `==` compares whether two Strings are literally the same Object, not their values. You will want to use the method `.equals(String in)` to compare their values.
 
 Using your new method, update `displayCountryChart` to take two strings and add the correct indicator values and countries to the chart. Also make sure to add the name of the indicator for the series argument.
 
