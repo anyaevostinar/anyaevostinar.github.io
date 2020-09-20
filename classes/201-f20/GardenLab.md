@@ -15,7 +15,7 @@ In this lab, you'll be creating a simulation of a garden. Specifically you'll:
 * Display the plants
 
 ## Logistics
-This is a lab assignment that you'll be handing in on Moodle.
+This is a lab assignment that you'll be handing in on Moodle. You should complete it on Wednesday Sept 23rd, but it isn't due until Friday Sept 25th at 5:00pm Central.
 
 You'll do this lab on repl.it. Go to our class page, click on Projects, and open Garden Lab. As with all projects, you should make sure your project is private.
 
