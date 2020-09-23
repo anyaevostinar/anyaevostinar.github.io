@@ -34,19 +34,23 @@ Using the Add File button on repl.it, add a Collaborations.txt file and describe
 
 ## Exercise 1
 a. The files on repl.it include a Plant interface. Read through the interface; you can also take a look at the [Javadoc for the interface here](http://www.cs.carleton.edu/faculty/arafferty/cs201_spr2020/lectures/labs/gardenLab/javadoc/Plant.html). 
+
 b. Decide on a kind of Plant you want to implement. Carrot is already taken, so choose something else! Make a file where you'll implement your Plant:
 ```
 public class YourPlant implements Plant {
     //stuff goes here
 }
 ```
-c. Copy over the entire body of the interface including all the method names and the comments. 
+
+c. Copy over the entire body of the interface including all the method names and the comments.
+
 d. Add the bodies of the methods but have them just do nothing but just returning null or 0 depending on what type they return:
 ```
 public String getName() {
     return null;
 }
 ```
+
 e. Make sure everything compiles:
 ```
 javac *.java
@@ -54,15 +58,21 @@ javac *.java
 
 ## Exercise 2
 a. Fill in all the methods of your Plant class, feel free to get creative with the status of your plant depending on its water!
+
 b. Create an instance of your plant in the main of your plant's file.
+
 c. Compile and run your plant's file to make sure everything works and correct any errors.
 
 ## Exercise 3
 Time to make your Garden!
 a. In the main of Garden.java create a List of Plants (an ArrayList or LinkedList will be fine). You will need to import some libraries to be able to use these data structures.
+
 b. Create at least one Carrot and put it in your list. The Carrot class file is in the starter code though you may not be able to see it. If you want to see that it's there, type `ls` in the terminal prompt and you'll see all the `.class` files.
+
 c. Create at least one of your own plant type and put it in your list.
+
 d. Create a for loop that simulates several days time elapsing, during which you should probably water your plants as well (remember you should be compiling and running your code every time you add something)
+
 e. Display the plants in the garden at the end of main.
 
 ## Exercise 4
