@@ -26,7 +26,7 @@ The code that you write for this assignment will build on top of the List ADT an
 
 [BarChart.java](http://www.cs.carleton.edu/faculty/arafferty/cs201_fa2020/assignments/hw03-dataAnalysis/BarChart.java)
 
-[CountryDataset.csv](http://www.cs.carleton.edu/faculty/arafferty/cs201_fa2020/assignments/hw03-dataAnalysis/CountryDataset.csv)
+[CountryDataset.csv](/classes/201-f20/CountryDataset.csv)
 
 You should not make any changes to any of these files. The Javadoc for the BarChart class is at:
 
