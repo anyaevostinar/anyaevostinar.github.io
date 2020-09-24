@@ -19,10 +19,15 @@ You'll complete the activity on Repl.it as always and hand it in on Moodle.
 
 ## Exercise 1
 a. In Main.java import Map and HashMap. 
+
 b. Create a HashMap that will contain String keys and Integer values called wordCounts
+
 c. Create a file scanner for Frankenstein.txt (if you don't remember how, check the example from the Comparing Python and Java activity)
+
 d. Loop over the first 5 words and add them and a count of 1 to your Map
+
 e. Loop over your keySet and print out the word and the number of times it has been seen:
+
 ```
 > javac Main.java
 > java Main
@@ -35,27 +40,36 @@ e. Loop over your keySet and print out the word and the number of times it has b
 
 ## Exercise 2
 a. You may have realized that you won't actually increase your count of words with your previous code. Using `containsKey()` and `get()`, add an if statement that first checks if the key is in the map and increases the existing count if so. Otherwise, add the key and a count of 1 like before.
+
 b. Change your loop to count the first twenty words in the file and verify that "of" occurs twice in the first twenty words.
 
 ## Exercise 3
 Sometimes we want to know what words occur nearby other words during text analysis. To track that, we need to make a more complicated storage structure.
+
 a. Create a new HashMap that has Strings for the keys and ArrayLists of Strings for the values:
 ```
 Map<String,ArrayList<String>> nearbyWords = new HashMap<String,ArrayList<String>>();
 ```
+
 b. We'll have to track what the previous word was before reading the next one, so make a variable that will hold it:
 ```
     String previousWord;
     String newWord = scanner.next();
 ```
+
 c. Make a for loop that will loop over the next 500 words (leave your previous for loop so that we skip over some of the boring stuff). Within that for loop, save the newWord to the previousWord before reading the next word.
+
 d. Again check if the Map already has the key and if it does, add the previousWord to the list:
 ```
 nearbyWords.get(newWord).add(previousWord);
 ```
+
 Notice that you don't need to use `put`. This is because the map is storing a *reference* to the ArrayList so any changes you make to it will stick. This is because Lists are mutable (changeable) and so you can change the existing one instead of making a new one (like with Strings). 
+
 If the Map doesn't already have the key, make a new ArrayList, add the previousWord, and use `put` to add the key and ArrayList to the Map.
+
 e. Finally, use you newly created map to output all of the words in this section of text that precede the word "of":
+
 ```
 Here are words that appear before of
 terms
