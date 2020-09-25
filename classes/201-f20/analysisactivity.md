@@ -21,6 +21,9 @@ You're welcome to work on this lab with input from one or more members of your c
 
 You're also (as always) welcome to post questions on Piazza to the whole class.
 
+## Exercise 0
+Create a Collaborations section of your document and describe any interactions you have with your collaborative learning group on this lab. Also note any outside sources such as websites that you referenced. 
+
 ## Exercise 1
 For each of the code snippets below answer the following: 
 
