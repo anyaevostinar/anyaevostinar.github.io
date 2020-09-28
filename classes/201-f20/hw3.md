@@ -184,6 +184,8 @@ It might be helpful to make a shorter version of the data file with just a few l
 Make sure to test this code by creating a `CountryDisplayer` in the main of `CountryDisplayer.java`.
 You don't need to get the file from the command line yet, just write the filename into your code for now.
 
+To split a line that is delimited by commas, you will probably fine the `.split()` method of `String` helpful.
+
 ## Display text of your countries
 Complete the `displayTextCountries` method so that you can make sure that you successfully read the countries in.
 You don't have the sorting function yet, so they will just display in the order from the text file and that's okay:
