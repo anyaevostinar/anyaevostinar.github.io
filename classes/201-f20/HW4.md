@@ -96,7 +96,9 @@ The add method is the heavy-lifter of this class since it needs to add a given i
 
 There are three scenarios that you need to think about when implementing your add method:
 1) adding to the middle of the list
+
 2) adding to the beginning of the list
+
 3) adding to the end of the list
 
 I recommend you go in that order and make sure each scenario works before moving on to the next one.
