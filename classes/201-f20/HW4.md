@@ -104,6 +104,8 @@ You are allowed to include extra instance variables such as `tail` if you find t
 I also highly recommend that you have an example written down on paper and trace through it by hand so that you have a firm idea of what you need to do.
 You will probably run into a lot of NullPointerExceptions as you do this; try not to let them fluster you and just remember that that means you are accessing a `null` thing somewhere and go back to your example to figure out where.
 
+Demonstrate in the main() method of SortedLinkedList that each of the three cases for add works.
+
 # Rubric
 This is how you will be graded on this homework:
 
@@ -117,7 +119,7 @@ This is how you will be graded on this homework:
 | Adding to the front of the list works | 3 |
 | Adding to the middle works | 3 |
 | Adding to the end works | 3 |
-| Sufficient documentation | 2 |
+| Demonstration examples for add | 2 |
 | Style | 3 |
 
 # Submission
