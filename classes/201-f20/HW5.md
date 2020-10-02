@@ -20,6 +20,8 @@ Repl.it Classroom (not all of Repl.it, just the Classroom functionality) is bein
 
 The code that you write for this assignment will build on top of the Stack ADT and an implementation that I have provided. Java deals with Stacks rather oddly in that Stack is a class, rather than an interface. Instead of using Java's Stack, you will use the Stack interface I've provided (Stack.java) and an implementation of it called MysteryStackImplementation. You don't need to know anything about the implementation, but you can look at the interface Stack to know what methods in MysteryStackImplementation you can use and what they do. **For this assignment, you must use the Stack interface and implementation that I have provided. You may not use the built in Java Stack or Deque.**
 
+Create a file Collaborations.txt and put in any collaboration with your learning group or references to outside websites.
+
 ## Specification
 In this assignment, you will load in a maze from a file and solve the maze, printing the maze either with or without the solution marked. I've provided you with a `print` method and with most of the `MazeSquare` class, although you'll add some code to `MazeSquare`.
 
