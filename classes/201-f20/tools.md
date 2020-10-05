@@ -28,6 +28,7 @@ This could be something you want, but you may also be legitimately concerned abo
 You can learn more about this by taking a look at the [sign up information here](https://piazza.com/studentsignup), and you can also read more about how Piazza protects your privacy for the [question and answer part here](https://piazza.com/legal/ferpa). 
 I encourage you to consider opting out of the Piazza Network if you're at all uncomfortable or concerned with any of the ways that they might use your data.
 
+
 ## Zoom
 All video interactions this term will be conducted through [Zoom](https://zoom.us/), an online video conferencing tool. 
 My Zoom 'office' is [here](https://carleton.zoom.us/j/8031211072?pwd=WVI1ZFZON2luV1FMT0R5NjVhZHQ0Zz09) and I'll also post this to Moodle.  
