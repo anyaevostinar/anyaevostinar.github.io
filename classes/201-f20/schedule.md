@@ -23,25 +23,25 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 9/30 |	 |	Arrays and implementing a list using an array | HW4: Country displayer redux |
 | F 10/2 | |		Comparing list implementations: applications to sorting	| |
 | Week 4 | | Stacks and Queues | |
-| M 10/5 | |		Stack and queue ADTs	| |
+| M 10/5 | |		Stack implementation	| |
 | W 10/7 |	HW4 |	Queue implementations	| HW5: Solving Mazes |
-| F 10/9 | |		Stack implementations	| |
-| Week 5 | | Recursion and Graphs | |
-| M 10/12 | |		Recursion review and practice	| |
-| W 10/14 |	HW5	| Graph ADT and graph terms	| HW6: WikiPaths |
-| F 10/16 | |	Graph implementations	| |
-| Week 6 | | Sorting | |
+| F 10/9 | |		Review/Catch up	| |
+| Week 5 | | Graphs | |
+| M 10/12 | |	Graph implementations	| |
+| W 10/14 |	HW5	| Breadth first search	| HW6: WikiPaths |
+| F 10/16 | |	Complexity of DFS and BFS	| |
+| Week 6 | | Recursion and Sorting | |
 | M 10/19	| |	Mid-term Break!	| |
-| W 10/21 | |	Quicksort | |
-| F 10/23 | HW6	| Radix Sort	| HW7: Sorting comparisons |
-| Week 7 | | Trees and Binary search trees | |
+| W 10/21 | |	Recursion review and practice | |
+| F 10/23 | HW6	| Quicksort	| HW7: Sorting comparisons |
+| Week 7 | | Trees | |
 | M 10/26 | |		Trees and binary trees	| |
-| W 10/28 | |		Expression tree lab	 | |
-| F 10/30 |	HW7 |	Binary search trees	| HW8: WordCloud |
-| Week 8 | | ADT implementations using arrays | |
-| M 11/2 |  |		Binary search trees continued	| |
-| W 11/4 | |		Balanced binary search trees	 | |	
-| F 11/6 | HW8	Priority Queues |  ADT and implementation |	HW9: Flashcard Displayer |
+| W 10/28 | |	Binary search trees		 | |
+| F 10/30 |	HW7 |	Balanced binary search trees	| HW8: WordCloud |
+| Week 8 | | Heaps | |
+| M 11/2 |  |		Heap implementation	| |
+| W 11/4 | |	Heapsort		 | |	
+| F 11/6 | HW8	|  Priority Queues |	HW9: Flashcard Displayer |
 | Week 9 | | Hashing for Set and Map Implementations | |
 | M 11/9 | |		Hashing	| |	
 | W 11/11 | |	Hash-based implementation of maps and sets | |
