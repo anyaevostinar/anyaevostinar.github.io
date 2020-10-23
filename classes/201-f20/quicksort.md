@@ -25,7 +25,6 @@ You should first run the `Main` class to see how your quicksort currently perfor
 Combine your understanding of how quicksort works and your debugging skills to find the cause(s) of each of the following problems:
 * Not sorting correctly
 * Sometimes entering an infinite loop
-* Not being as efficient as it could be
 
 Create a document `BugHunt.txt` and in it document:
 * The code you change
