@@ -40,12 +40,12 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 10/30 |	HW7 |	Balanced binary search trees	| HW8: WordCloud |
 | Week 8 | | Heaps | |
 | M 11/2 |  |		Heap implementation	| |
-| W 11/4 | |	Heapsort		 | |	
-| F 11/6 | HW8	|  Priority Queues |	HW9: Flashcard Displayer |
+| W 11/4 | |	Catch up/Review		 | |	
+| F 11/6 | HW8	|  Heapsort |	HW9: Flashcard Displayer |
 | Week 9 | | Hashing for Set and Map Implementations | |
 | M 11/9 | |		Hashing	| |	
 | W 11/11 | |	Hash-based implementation of maps and sets | |
-| F 11/13 | HW9 |	Into to final project |	Final project |
+| F 11/13 | HW9 |	Intro to final project |	Final project |
 | Week 10 | | Wrapping up | |
 | M 11/16	| |  Final project discussions | |
 | W 11/18 | | Wrap up; review; course evaluations	| |
