@@ -8,7 +8,6 @@ public class Heap{
   private class Node {
     Integer priority;
     String value;
-    int pos;
     Node parent;
 
 
@@ -27,7 +26,7 @@ public class Heap{
   }
 
   public void test() {
-      
+
   }
 
   public Node parent(int childPos) {

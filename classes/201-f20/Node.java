@@ -59,7 +59,6 @@ public class Node {
     }
     else if (lval.compareTo(it.lval) >=0) { // Add left
       Node N1 = new Node(lval, null, it, this, null);
-      it.left = left;
       left = center;
       center = right;
       right = null;
