@@ -28,8 +28,12 @@ public class Node {
     //Add to internal node
     if(key.compareTo(rt.lval) < 0) { //Insert left
       retval = insertHelp(rt.left, key);
-      if(retval == rt.left) return rt;
-      else return rt.add(retval);
+      if(retval == rt.left) { 
+        return rt;
+      }
+      else {
+         return rt.add(retval);
+      }
     } else if((rt.rval == null) || (key.compareTo(rt.rval) < 0)){
       retval = insertHelp(rt.center, key);
       if(retval==rt.center) return rt;
@@ -54,6 +58,7 @@ public class Node {
         right = center;
         lval = it.lval;
         center = it.center;
+        left = it.left;
       }
       return this;
     }
@@ -112,6 +117,7 @@ public class Node {
   public static void main(String[] args) {
     Node testroot = null;
     testroot = insertHelp(testroot, 18);
+    
     printTree(testroot);
 
     
