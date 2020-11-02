@@ -80,7 +80,6 @@ public class Node {
     }
     else { // Add right
       Node N1 = new Node(rval, null, this, it, null);
-      it.left = right;
       right = null; rval = null;
       return N1;
     }
