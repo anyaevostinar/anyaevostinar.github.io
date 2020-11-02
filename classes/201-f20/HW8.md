@@ -29,7 +29,7 @@ You've probably seen word clouds like the one below generated from Hound of the 
 
 The neat thing about word clouds is that words are displayed in a size proportional to the number of times they are used in the text on which the cloud is based. (Note that very common words, also known as stopwords, are typically not included in the cloud. Otherwise, all English word clouds would be dominated by "the", "and", "a", "in", etc.) In this assignment, you'll implement a particular type of search tree to count words and their counts in text, allowing you to make your own word clouds.
 
-## WordCoutTree
+## WordCountTree
 First you'll build a `WordCountTree` class to hold your words and their counts. Your `WordCountTree` will be a particular kind of tree. Each node except for the root will represent a character as well as a count. The children of a node will be characters that could come after the current character to represent a word. To find a word, you'll work down the tree until you reach the final character in the word, and then look at the count for that node. For example, imagine that we had a (very short) book that had the following words and counts:
 
 |Word | Count |
@@ -57,7 +57,7 @@ There are a couple of things to note about this tree:
 * Any node that exists in the tree either has a non-zero count or has a descendant with a non-zero count. (In the above example, the root doesn't have a child that represents 'a' because we didn't see any words stating with 'a'.)
 * The property above means that if we were to remove the word "chomp", we could remove the nodes below 'c' representing 'h', 'o', 'm', and 'p', but we could not remove the node 'c' because it is still needed for "cat".
 
-You'll want to create a `Node` class instead of your `WordCountTree` class like we usually do with trees. You must directly create your tree stucture, though you may use Java implementations of other data structures such as Lists to support your implementation.
+You'll want to create a `Node` class inside of your `WordCountTree` class like we usually do with trees. You must directly create your tree stucture, though you may use Java implementations of other data structures such as Lists to support your implementation.
 
 Remember that characters are a primitive type in Java:
 ```
