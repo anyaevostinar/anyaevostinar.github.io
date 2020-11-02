@@ -169,7 +169,7 @@ which would generate the word cloud based on the 40 most common non-stopwords in
 
 Your `WordCounter` should use the `WordCountTree` you built in the previous part to store the words and counts. Before you put words in the tree, you should 'normalize' them by removing punctuation and spaces and making them lower case. You can use the following code to normalize a word (this is using a thing called regex, which we haven't covered this term):
 ```
-word = word.replaceAll("\\s*\\p{Punct}+\\s*$", "").toLowerCase();
+word = word.replaceAll("\\s*\\p{Punct}+\\s*$", "").toLowerCase().replaceAll("^\\p{Punct}+", "");
 ```
 
 The HTML output by your program can be put into [an online html previewer](https://htmledit.squarefree.com/) to see the (not as pretty) word cloud.
