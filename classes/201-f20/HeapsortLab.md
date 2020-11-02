@@ -8,7 +8,7 @@ permalink: /classes/201-f20/heapsort
 To better learn about how heapsort works by implementing the removeMax function of a tree-like heap.
 
 ## Logistics
-This is a lab assignment that you'll be handing in on Moodle. You should complete it on Monday Nov 2nd, but because of the election it isn't due until Nov 6th at 5:00pm Central.
+This is a lab assignment that you'll be handing in on Moodle. You should complete it on Friday Nov 6th, but isn't due until Monday Nov 9th at 5:00pm Central.
 
 Please create a new Repl project and make it private. Today's lab relies on Monday's lab. If you didn't finish Monday's, you may upload the [starter code](/classes/201-f20/HeapsortStarter.java) for the activity. If you did finish on Monday, you can just use your own code instead.
 
