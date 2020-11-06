@@ -24,7 +24,7 @@ a. To implement `heapifyDown`, nodes will need to be able to track their childre
 
 b. Write a small method `addChild(Node)` for the `Node` class. The method can assume that it is only being called if there is room. Remember that a heap maintains a complete binary tree, so it should first check if there is a left child and only if there is should it place the new node as the right child.
 
-c. You'll want your `addChild` method to be called whenever a new node is created, so add it to your Node constructor. Remember your constructor takes a parent argument, so a new Node should all the `addChild` method on its parent, passing `this` as the argument:
+c. You'll want your `addChild` method to be called whenever a new node is created, so add it to your Node constructor. Remember your constructor takes a parent argument, so a new Node should call the `addChild` method on its parent, passing `this` as the argument:
 
 ```
 parent.addChild(this);

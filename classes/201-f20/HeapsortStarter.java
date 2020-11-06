@@ -91,6 +91,7 @@ public class Heap{
     
   }
 
+/*
   public void printHeap() {
     System.out.println("-----------------------");
     Queue<Node> toPrint = new LinkedList<Node>();
@@ -111,7 +112,7 @@ public class Heap{
     }
     System.out.println("\n--------------------------");
   }
-
+*/
 
   public static void main(String[] args) {
     Heap priorityQ = new Heap();
