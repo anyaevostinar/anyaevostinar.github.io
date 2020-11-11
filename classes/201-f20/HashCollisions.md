@@ -53,7 +53,7 @@ a. Update `insertKey` to use the linear probing strategy discussed in the readin
 b. Test your linear probing strategy by inserting 9877, 9050, 2037, 1059, and 7200 and making sure the contents of your hash table match the reading.
 
 ## Exercise 3
-You can clearly see the issue of primary clustering in Exercise 2. One way of improving your collision resolution is to move left by more than 1 when linear probing.
+You can clearly see the issue of primary clustering in Exercise 2. One way of improving your collision resolution is to move right by more than 1 when linear probing.
 
 a. Create a new function `insertKey2(Integer key)` that does the same as `insertKey` but skips by 3 instead of 1 (you can change `i++` to `i+=3`).
 
