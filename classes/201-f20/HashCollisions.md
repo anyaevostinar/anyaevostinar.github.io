@@ -48,7 +48,7 @@ e. Create a new `HashTable` of size 10 in the `main` function and insert a value
 ## Exercise 2
 You'll now implement linear probing to deal with collision resolution.
 
-a. Update `insertKey` to use the linear probing strategy discussed in the reading where if the home position is taken, you just move to the left by one until you find an open position.
+a. Update `insertKey` to use the linear probing strategy discussed in the reading where if the home position is taken, you just move to the right by one until you find an open position.
 
 b. Test your linear probing strategy by inserting 9877, 9050, 2037, 1059, and 7200 and making sure the contents of your hash table match the reading.
 
