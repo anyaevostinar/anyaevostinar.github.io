@@ -22,7 +22,7 @@ Hopefully you've already spent time thinking about the requirements for the fina
 
 To avoid this situation, it's important to think about a minimum viable product that will meet the requirements of the project's rubric and be somewhat complete even if it isn't everything you wanted.
 
-Write down the components of a minimum viable product that meets the project's requirements (one superclass, two subclasses, one other component) but is otherwise so simple that you are confident you could complete it in an afternoon. Specify the class names and methods at least.
+Write down the components of a minimum viable product that meets the [project's requirements](https://anyaevostinar.github.io/classes/201-f20/final-project) (one superclass, two subclasses, one other component) but is otherwise so simple that you are confident you could complete it in an afternoon. Specify the class names and methods at least.
 
 ## Exercise 2
 Obviously something you can accomplish in an afternoon isn't going to be "substantive" enough, so now outline the additional functionality you will add to make your project substantive and interesting. 
