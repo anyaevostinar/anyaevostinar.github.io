@@ -23,7 +23,7 @@ Create a file Collaborations.txt and put in any collaboration with your learning
 ## Requirements
 The final project is purposefully open-ended so that you can implement software that is of interest to you. Your task is to implement a medium-sized (slightly larger than a homework) piece of software that does something interesting and substantial using inheritance and some of the other concepts we've learned about this term. Your project can be basically anything that incorporates the requirements below, but here are some ideas to get you started:
 
-* A board game (not a full AI of course, but allowing for two users at the same computer to play the game)
+* A board game (not a full AI of course, but allowing for two users at the same computer to play the game, or even just single player!)
 * Analysis software similar to HW3 (but of course something other than HW3)
 * A simulation of some kind (my [research software is an example](https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html), though yours wouldn't have a GUI)
 
