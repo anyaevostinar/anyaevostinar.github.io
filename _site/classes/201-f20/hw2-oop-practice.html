@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Homework 2 - OOP Practice | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="Homework 2 - OOP Practice" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f20/hw2-oop-practice" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f20/hw2-oop-practice" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/classes/201-f20/hw2-oop-practice","headline":"Homework 2 - OOP Practice","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Homework 2 - OOP Practice</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>15 points, due Monday, Sept 21st by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy. You need to notify me that you’re using the policy. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still Friday, not 48 hours later.</p>
+
+<h2 id="goals">Goals</h2>
+<p>To get some practice using and designing classes and gain more experience working with Java.</p>
+
+<h2 id="setup">Setup</h2>
+<p>You should complete this assignment on repl.it. Go to our classroom, click on Projects, and then click on HW02: Object Oriented Practice. Make sure the repl is private after you open it.</p>
+
+<p>Create a file Collaborations.txt and put in any help that you get on this assignment including sources that you reference and help from your Collaborative Learning Group. Make sure to refer to the Collaboration page on what collaborations are allowed for homework assignments.</p>
+
+<h2 id="specification">Specification</h2>
+<p>For this project you have the opportunity to be creative! Instead of telling you a specific thing to make, since the goal is just to get some practice making a Java class and using it, you can come up with your own example. Below I have listed the things that your code must incorporate, but you are encouraged to go beyond these requirements and have some fun making a small project that is of interest to you. The cool thing about object-oriented programming is that you can simulate nearly anything in the real world, so while I give some example ideas if you are stuck, you really can make a class for anything that interests you.</p>
+
+<h2 id="requirements">Requirements</h2>
+<ul>
+  <li>Create a new class in its own file, which I’ll refer to here at YourClass</li>
+  <li>YourClass has and uses at least one private variable</li>
+  <li>YourClass tracks how many instances of YourClass have been created (using a class variable)</li>
+  <li>Main.java’s main creates at least 5 instances of YourClass</li>
+  <li>Main takes at least one command line argument and uses it meaningfully</li>
+  <li>Either Main or YourClass use a loop meaningfully</li>
+  <li>Either Main or YourClass prints out something useful</li>
+  <li>Follows style guide</li>
+  <li>Program has a short description of the class at the top of each class in comments</li>
+</ul>
+
+<h2 id="ideas">Ideas</h2>
+<ul>
+  <li>Library catalogue where command line argument is how many new books to enter and outputs the average length of the titles entered</li>
+  <li>Sport stats calculator where command line argument is how many players to enter and outputs some stat about the players (sorry I don’t follow professional sports much!)</li>
+  <li>Song recommender where command line argument is type of song someone wants to hear and output is the song of that category</li>
+  <li>Tweak the above ideas to be about cooking recipes, video games, workouts, or anything else that interests you</li>
+</ul>
+
+<h2 id="code-notes-and-tips">Code Notes and Tips</h2>
+<ul>
+  <li>Remember that you have to construct variables before you use them. If you run into null pointer exceptions or exceptions about not using a variable before it has been initialized, one possible cause is that you have declared a variable (e.g., <code class="language-plaintext highlighter-rouge">List&lt;Integer&gt; list;</code>) but you haven’t assigned it a value (e.g. <code class="language-plaintext highlighter-rouge">list = new ArrayList&lt;&gt;()</code>).</li>
+  <li>Your code should not produce any warnings. Warnings are extra messages from the compiler like:
+    <code class="language-plaintext highlighter-rouge">
+    Note: RandomList.java uses unchecked or unsafe operations.
+    Note: Recompile with -Xlint:unchecked for details.
+   </code></li>
+</ul>
+
+<p>If you see a message like this, you should follow the instructions and add <code class="language-plaintext highlighter-rouge">-Xlint:unchecked</code> after your compiler command.</p>
+
+<ul>
+  <li>If you want to turn a command line argument into something other than a String, you need to use a method to do so. You will probably want either <code class="language-plaintext highlighter-rouge">parseInt(String in)</code> or <code class="language-plaintext highlighter-rouge">parseDouble(String in)</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  int myInt = Integer.parseInt("1");
+  double myDouble = Double.parseDouble("1.0");
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="rubric">Rubric</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Compiles without warnings and runs</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>New class created correctly</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Private variable used correctly</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Class variable used correctly</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>5 instances of class created correctly</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Command line argument used correctly</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Loop used correctly</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Useful output</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Sufficient documentation</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Follows style guide</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

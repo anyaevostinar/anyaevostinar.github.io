@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>More Comparing Python and Java Activity | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="More Comparing Python and Java Activity" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f20/comparing_python_java" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f20/comparing_python_java" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/classes/201-f20/comparing_python_java","headline":"More Comparing Python and Java Activity","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">More Comparing Python and Java Activity</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To get started understanding the differences between Java and Python and prepare you to start writing your own Java code by studying examples.</p>
+
+<h2 id="java-basics">Java Basics</h2>
+<p>Learning your second programming language is different from learning your first. Assuming your first language isn’t one of the many so-called esoteric programming languages or a more specialized language like SQL, you start out already knowing about many of the nearly-universal language constructs: assignments, loops, conditionals, functions, operators, (often) classes, etc. Learning the second language involves a lot of learning new syntax for old ideas, rather than learning both the ideas and the syntax at the same time.</p>
+
+<p>As a result, learning your second language typically goes more quickly than learning the first. That doesn’t mean the second one is easy to learn — “easy” starts to happen around the fourth or fifth language — but there are definitely opportunities to learn more efficiently the second time around.</p>
+
+<p>For this class, I will assume that you are making a transition from Python (which we teach in CS 111) to Java (which we will use in CS 201). In fact, I imagine that a few of you met Java in high school, and some of you may even have skipped CS 111 and thus not know Python. If you’re one of the latter and you plan to take courses beyond CS 201, you’ll eventually want to teach yourself Python, since later classes in the department will assume knowledge of Python; you may find some of these exercises useful for that in a backwards sort of way.</p>
+
+<p>During the first few days of class, we’re going to focus our attention on the differences between Python and Java to help get you started in Java. Some key differences include:</p>
+
+<ul>
+  <li>Explicit types (e.g. int, String, …) are specified for all variables, parameters, return values, etc.</li>
+  <li>There’s an awkward distinction between “primitive types” (int, short, long, float, double, byte, char, boolean) and “reference types” (everything else).</li>
+  <li>Program structure requires the use of classes.</li>
+  <li>Braces { } are used instead of indentation to delimit if/else/for/while/etc. bodies (though indentation remains an essential element of good programming style)</li>
+  <li>Miscellaneous syntactical differences: semi-colons to terminate instructions, // and /* … */ for comments, only “…” for string literals, try/catch for exceptions, etc.</li>
+  <li>No easy built-in lists [ ] or dictionaries { }</li>
+</ul>
+
+<h2 id="language-learning-strategies">Language-Learning Strategies</h2>
+<p><em>This list is by Jeff Ondich; he’s the “I” in this case. Thanks Jeff!</em></p>
+
+<p>One strategy used by many people is to find a good tutorial and work through it from beginning to end. This is a great approach.</p>
+
+<p>My personal language-learning approach is intended to keep my start-up time investment as low as possible, so I can move into serious projects right away. I won’t know the whole language, not by a long shot, until I have written thousands of lines of code in various contexts. But my goal is to move from the “just studying” mode into the “doing serious work” mode as fast as I can.</p>
+
+<p>To that end, I start by finding the official reference documentation for the language. Next I find a collection of simple sample programs (search for “name-of-language tutorial” or “name-of-language samples” or “name-of-language examples”). Then, with my browser handy, I study the examples just enough to enable me to write the following programs:</p>
+
+<ul>
+  <li>Hello World: just a program that compiles, runs, and produces output that I can see</li>
+  <li>Line Reader: open a text file, read from it one line at a time, and either print out the lines in upper case or just count the lines and print the result</li>
+  <li>Word Counter: open a text file, read from it one word at a time with punctuation stripped, keep a count for each word, and print the list of words and their counts sorted from highest to lowest count</li>
+</ul>
+
+<p>Hello World gets me to “I can create, compile, and run a program in this language.”</p>
+
+<p>Line Reader teaches me to open and read from files, which is essential for writing interesting programs in most languages. It also teaches me at least one loop syntax.</p>
+
+<p>Word Counter teaches me loops, conditionals, functions, classes (I intentionally use a simple class to store (word, count) pairs so I will learn the class syntax), and a little bit about formatted strings (to produce a pretty report). After that, I’m ready to get going on serious work.</p>
+
+<p>These days, I can usually write these three programs in under an hour in a new language, with most of the time going into polishing and experimenting with the third program. Of course, I wasn’t nearly so speedy when I learned my second language back at the dawn of time.</p>
+
+<h2 id="your-task">Your Task</h2>
+<p>You’ll be continuing your comparison of pairs of programs in Python and Java to try to make sense of Java and relate it to what you already know about Python. 
+Like all code-based activities, this activity is available on repl.it; go to our classroom and open the project entitled Comparing Python and Java Programs.
+For each of the Python/Java program pairs in the project, read the programs, run the programs (both Python and Java!), and write down questions you have about the Java code. Remember that to run the Java programs, you need to compile them first: <code class="language-plaintext highlighter-rouge">javac Hello.java</code>. Then you can run the compiled class: <code class="language-plaintext highlighter-rouge">java Hello</code>. The Python programs are written for Python 3 (e.g., to run hello.py, type <code class="language-plaintext highlighter-rouge">python3 hello.py</code> on the command line). Many of the programs have suggestions for things to try in the comments - use them as a starting point for your exploration.</p>
+
+<p>When you’re done, submit your questions to the Moodle assignment More Comparing Python and Java. You need to submit a minimum of three questions to receive full credit. Then check on Piazza to see if anyone else has posted your questions. If no one has, post them each in their own question. Also see if there are any unanswered questions that you can answer! If someone did already post your question, check to see what the answer is.</p>
+
+<p>You may use the questions that your group came up with in class, but you must credit your group members! I suspect you’ll be able to come up with more questions though.</p>
+
+<p>Take this exercise seriously. Figure out what you know, what you don’t know, what’s easy, what’s confusing, etc. If you pay careful attention to these starter programs and I can get you quick turn-around on your main questions, you’ll have a great start on writing your own Java programs. You may find it helpful to do this exercise in conjunction with looking at the Java Reference Information on Moodle. This reference information may be able to help you answer some of your or your classmates’ questions, and looking at the examples in this homework may help you recognize what parts of that reference information you already know and what you should pay closer attention to.</p>
+
+<h2 id="parting-notes">Parting Notes</h2>
+<p>This activity is graded entirely on effort. The absolute baseline is that you submit three questions on Moodle and either post them to Piazza or see what the answers are on Piazza. Please submit lots more than that, but three will give you full credit.</p>
+
+<p>Throughout the course, I’ll mainly be answering Piazza questions on Piazza (and also hoping that you and your classmates all answer questions on Piazza too), but I imagine that some of the questions this time may be more general. Thus, I may also give bigger picture answers to some of the questions during the Q&amp;A during our in-class time; these sessions are recorded so while you’re encouraged to come if you’re in a compatible time zone, you can get all the info you need even if you aren’t able to be there.</p>
+
+<h2 id="and-dont-forget">And don’t forget…</h2>
+
+<p>Start early, ask lots of questions, and have fun!</p>
+
+<p><em>This activity originally designed by Jeff Ondich. Thanks for sharing!</em></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

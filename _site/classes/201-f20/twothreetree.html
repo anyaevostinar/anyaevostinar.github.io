@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>2-3 Tree Documenting | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="2-3 Tree Documenting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f20/twothreetree" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f20/twothreetree" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/classes/201-f20/twothreetree","headline":"2-3 Tree Documenting","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">2-3 Tree Documenting</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To better understand 2-3 Trees by documenting code.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Friday Oct 30th, but it isn’t due until Monday Nov 2nd at 5:00pm Central.</p>
+
+<p>Create a new repl and make it private. Upload or copy/paste the <a href="/classes/201-f20/Node.java">starter code</a> for this activity (to save it, right click on the link and select save link as, or something similar).</p>
+
+<p>You’re welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you’re welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another’s code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what’s permitted.</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>Using the Add File button on repl.it, add a Collaborations.txt file and describe any interactions you have with your collaborative learning group on this lab. Also note any outside sources such as websites that you referenced. If you do not collaborate or check any outside websites, you should state that in Collaborations.txt.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>I’ve provided you a simplified version of the code from the reading for a basic Node class (the reading calls it TTNode) that creates a 2-3 Tree. I’ve also provided a <code class="language-plaintext highlighter-rouge">printTree</code> method that attempts to clearly print the 2-3 Tree (though I didn’t have time to center it, sorry!).</p>
+
+<p>To begin, insert a few nodes to and compile and run Node.java to see the code work. If you ever want to see your tree better visualized, I highly recommend you put it into the visualizer linked from Moodle.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>The reading’s code is frightfully poorly documented and therefore really difficult to follow (which you probably already noticed). One recommendation about documentation is to have inline <code class="language-plaintext highlighter-rouge">//</code> comments for lines that ARE NOT self-explanatory and/or confusing to understand. First seek to understand then put inline documentation for each of the following sections of <code class="language-plaintext highlighter-rouge">add</code>:</p>
+
+<p>a. After the line ending in <code class="language-plaintext highlighter-rouge">add</code> that reads <code class="language-plaintext highlighter-rouge">//Only one key, add here</code>, what are the two cases the if/else is handling?</p>
+
+<p>b. In that same section, why is <code class="language-plaintext highlighter-rouge">this</code> returned?</p>
+
+<p>c. In the <code class="language-plaintext highlighter-rouge">// Add left</code> section, what is <code class="language-plaintext highlighter-rouge">N1</code>? Feel free to give it a better name if you’d like in addition to an inline comment.</p>
+
+<p>d. In the same section, what is all the shuffling of variables doing at a high level?</p>
+
+<p>e. Complete c and d for the <code class="language-plaintext highlighter-rouge">//Add center</code> section</p>
+
+<p>f. Complete c and d for the <code class="language-plaintext highlighter-rouge">//Add right</code> section</p>
+
+<p>g. Add a JavaDocs comment for this version of <code class="language-plaintext highlighter-rouge">add</code>. Note that the book’s isn’t particularly helpful or relevant to this version, so I don’t recommend copying it.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Now that you understand the <code class="language-plaintext highlighter-rouge">add</code> method better, document the following sections of <code class="language-plaintext highlighter-rouge">insertHelp</code>:</p>
+
+<p>a. What is <code class="language-plaintext highlighter-rouge">retval</code> in <code class="language-plaintext highlighter-rouge">insertHelp</code>?</p>
+
+<p>b. In <code class="language-plaintext highlighter-rouge">insertHelp</code> in the <code class="language-plaintext highlighter-rouge">//Insert left</code> if statement, what is happening on each line?</p>
+
+<p>c. Similarly for the <code class="language-plaintext highlighter-rouge">//Insert right</code> else statement.</p>
+
+<p>d. The even more confusing <code class="language-plaintext highlighter-rouge">else if</code> between b and c.</p>
+
+<p>e. Add a JavaDocs comment for <code class="language-plaintext highlighter-rouge">insertHelp</code>.</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>This activity is not a homework assignment. That means that you’re evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren’t able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck. Feedback on labs and activities is less detailed than on homework.</p>
+
+<p>Submit your zip file to Moodle as always.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you have time, here are some other things to do with this code:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">insertHelp</code> is annoying to use, create an <code class="language-plaintext highlighter-rouge">insert</code> method that is less annoying and calls <code class="language-plaintext highlighter-rouge">insertHelp</code>. There are several ways you could do that, one is by making a new class that holds <code class="language-plaintext highlighter-rouge">Node</code>s and therefore tracks the root.</li>
+  <li>Try implementing deletion.</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

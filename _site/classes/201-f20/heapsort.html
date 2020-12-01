@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>HeapSort Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="HeapSort Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f20/heapsort" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f20/heapsort" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/classes/201-f20/heapsort","headline":"HeapSort Lab","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HeapSort Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To better learn about how heapsort works by implementing the removeMax function of a tree-like heap.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Friday Nov 6th, but isn’t due until Monday Nov 9th at 5:00pm Central.</p>
+
+<p>Please create a new Repl project and make it private. Today’s lab relies on Monday’s lab. If you didn’t finish Monday’s, you may upload the <a href="/classes/201-f20/HeapsortStarter.java">starter code</a> for the activity. If you did finish on Monday, you can just use your own code instead.</p>
+
+<p>You’re welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you’re welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another’s code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what’s permitted.</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>Using the Add File button on repl.it, add a Collaborations.txt file and describe any interactions you have with your collaborative learning group on this lab. Also note any outside sources such as websites that you referenced.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>The main driver of Heapsort is being able to efficiently remove the maximum value from a heap and then restore the heap to proper form so that you can do it again. Therefore, this lab will focus on implementing the <code class="language-plaintext highlighter-rouge">removeMax</code> functionality for the tree-like heap that you started on Monday. If you didn’t finish Monday’s lab, the starter code has the barebones functionality for you.</p>
+
+<p>a. To implement <code class="language-plaintext highlighter-rouge">heapifyDown</code>, nodes will need to be able to track their children, so first you’ll need to add that functionality. Add instance variables to the <code class="language-plaintext highlighter-rouge">Node</code> class to track the right and left children of the node.</p>
+
+<p>b. Write a small method <code class="language-plaintext highlighter-rouge">addChild(Node)</code> for the <code class="language-plaintext highlighter-rouge">Node</code> class. The method can assume that it is only being called if there is room. Remember that a heap maintains a complete binary tree, so it should first check if there is a left child and only if there is should it place the new node as the right child.</p>
+
+<p>c. You’ll want your <code class="language-plaintext highlighter-rouge">addChild</code> method to be called whenever a new node is created, so add it to your Node constructor. Remember your constructor takes a parent argument, so a new Node should call the <code class="language-plaintext highlighter-rouge">addChild</code> method on its parent, passing <code class="language-plaintext highlighter-rouge">this</code> as the argument:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>parent.addChild(this);
+</code></pre></div></div>
+
+<p>d. Finally, you’ll also need to remove children in the later methods, so implement the <code class="language-plaintext highlighter-rouge">removeChild</code> method, again maintaining the complete binary tree property by first checking if there is a right child and removing it, or removing the left child if there isn’t a right child.</p>
+
+<p>e. Write a <code class="language-plaintext highlighter-rouge">test</code> method or update your existing one to check that the above functionality is working. Remember to compile and run your code at this point.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now it’s time to implement <code class="language-plaintext highlighter-rouge">removeMax</code>. There is a lot of shifting around of values in this method, so if you get confused or run into a bug, remember to print the nodes or entire heap to track what is going on. Remember that all your variables are just pointers to objects, so if you change the underlying object later in your code, your variable may not return what you expect it to. Also note that this is one way of implementing this method, but there are many others as well that would also work.</p>
+
+<p>a. Create a new blank node called <code class="language-plaintext highlighter-rouge">toReturn</code>.</p>
+
+<p>b. Use <code class="language-plaintext highlighter-rouge">swap</code> to swap the contents of <code class="language-plaintext highlighter-rouge">toReturn</code> and the root of your heap so that you now have an empty node as the root.</p>
+
+<p>c. Decrease your number of items counter.</p>
+
+<p>d. You now need to swap the empty root node with the node at the end of your Node list.</p>
+
+<p>e. You can now safely remove the last item in your Node list and find the parent of that node and call <code class="language-plaintext highlighter-rouge">removeChild</code> on it.</p>
+
+<p>f. You should then call the <code class="language-plaintext highlighter-rouge">heapifyDown</code> method on your root and return <code class="language-plaintext highlighter-rouge">toReturn</code>. (Create a stub of <code class="language-plaintext highlighter-rouge">heapifyDown</code> that does nothing for now so you can make sure your swapping is working.)</p>
+
+<p>g. In <code class="language-plaintext highlighter-rouge">main</code> create a heap, call <code class="language-plaintext highlighter-rouge">removeMax</code>, print what it returns and the heap afterward to make sure that things are working. Note that a small value will be the root of the heap because you haven’t implemented <code class="language-plaintext highlighter-rouge">heapifyDown</code> yet!</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Finally, you’ll need to implement <code class="language-plaintext highlighter-rouge">heapifyDown</code> to get your heap back into shape.</p>
+
+<p>a. First check if your <code class="language-plaintext highlighter-rouge">newNode</code> has a left child; if it doesn’t, its a leaf and you can just return because you’re done.</p>
+
+<p>b. Otherwise, check if it has a right child. If it doesn’t, you only need to check if it is less than its left child. If it is a lower priority, swap them. If it isn’t a lower priority, you don’t have to do anything. In either case, you can safely return.</p>
+
+<p>c. If the node has a right and a left child, you need to check which child has the higher priority and then compare the new Node to the child with higher priority. If the new node is lower priority, swap, otherwise you don’t have to do anything.</p>
+
+<p>d. Test if your method is working correctly by printing your heap after calling <code class="language-plaintext highlighter-rouge">removeMax</code> and verifying that your heap has the highest priority item as the root again.</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>This activity is not a homework assignment. That means that you’re evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren’t able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck. Feedback on labs and activities is less detailed than on homework.</p>
+
+<p>Submit your zip file to Moodle as always.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>While this isn’t the most efficient way of implementing a heap, you now have everything needed to implement Heapsort and grab the highest priority X number of items if you have the time and interest.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

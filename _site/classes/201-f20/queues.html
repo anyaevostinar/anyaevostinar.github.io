@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Queue Activity | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="Queue Activity" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f20/queues" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f20/queues" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/classes/201-f20/queues","headline":"Queue Activity","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Queue Activity</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To better learn about how queues work by creating a linked queue.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Wednesday Oct 7th, but it isn’t due until Friday Oct 9th at 5:00pm Central.</p>
+
+<p>Please create a new Repl project and make it private. There is no starter code to upload.</p>
+
+<p>You’re welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you’re welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another’s code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what’s permitted.</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>Using the Add File button on repl.it, add a Collaborations.txt file and describe any interactions you have with your collaborative learning group on this lab. Also note any outside sources such as websites that you referenced.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>For this activity, we’ll make a linked list-based queue, which we’ll call a LinkedQueue.</p>
+
+<p>a. First, create a LinkedQueue that can hold a generic type:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class LinkedQueue&lt;T&gt; {
+</code></pre></div></div>
+
+<p>b. Since this will use a linked list, copy the nested Node class from your Linked List Activity code.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Let’s start with adding things to the queue. In a queue, adding is called <code class="language-plaintext highlighter-rouge">enqueue</code>.</p>
+
+<p>a. Create an <code class="language-plaintext highlighter-rouge">enqueue</code> method that takes a <code class="language-plaintext highlighter-rouge">T newItem</code>, creates a Node for that item and adds that item to the end of the queue. You should make the appropriate instance variables that you need for your queue to be able to access the location of the end of the queue quickly. You may also find a <code class="language-plaintext highlighter-rouge">size</code> variable helpful.</p>
+
+<p>b. As always, we need to be able to print the items to check that things are working. Adapt your <code class="language-plaintext highlighter-rouge">toString()</code> method from LinkedList to print the items in the queue from the front of the queue to the end of the queue. You should add whatever instance variables you need to be able to do this.</p>
+
+<p>c. If you previously created a <code class="language-plaintext highlighter-rouge">head</code> Node that contains a null value, remove it and have <code class="language-plaintext highlighter-rouge">head</code> point to the first non-null Node. Make sure you understand why you don’t need a null head node for a queue whereas it is useful for a linked list.</p>
+
+<p>d. Verify via printing that you are able to enqueue several items. (If you want, make them complaints from the peasants in the reading.)</p>
+
+<h2 id="exericse-3">Exericse 3</h2>
+<p>Finally, we want to also be able to remove items from a queue, which is called <code class="language-plaintext highlighter-rouge">dequeue</code>.</p>
+
+<p>a. Create a <code class="language-plaintext highlighter-rouge">dequeue</code> method that returns a <code class="language-plaintext highlighter-rouge">T item</code> from the front of the queue.</p>
+
+<p>b. If the queue is empty, throw an appropriate exception.</p>
+
+<p>c. Verify via printing that you are able to dequeue several items (print both the dequeued item and the queue to verify the item has been removed).</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>This activity is not a homework assignment. That means that you’re evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren’t able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck. Feedback on labs and activities is less detailed than on homework.</p>
+
+<p>Submit your zip file to Moodle as always.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you have extra time, try combining what you know about creating SortedLinkedLists with LinkedQueues to create the Priority Queue discussed in the reading where a <code class="language-plaintext highlighter-rouge">Node</code> has a priority in addition to an item and is placed in the queue sorted by priority.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
