@@ -1,11 +1,11 @@
 ---
 layout: page
-title: CS201 Data Structures F20 Syllabus
-permalink: /classes/201-f20/syllabus
+title: CS201 Data Structures W21 Syllabus
+permalink: /classes/201-w21/syllabus
 ---
 
-# NOTICE: THIS SYLLABUS IS NOT FINAL AND VERY LIKELY TO CHANGE
-Fall 2020
+
+Winter 2021
 
 **Instructor**: Anya E. Vostinar
 
@@ -13,10 +13,13 @@ Fall 2020
 
 **Course materials**: All materials, including readings, will be linked through Moodle.
 
-**Drop in hours**: (All times in US Central) Mondays 12:45-1:45pm, Wednesdays 3:45-4:45pm, Thursdays 1:30-2:30pm
+**Drop in hours**: TBD
+
 All drop in hours will be in my [Zoom 'Office'](https://carleton.zoom.us/j/8031211072?pwd=WVI1ZFZON2luV1FMT0R5NjVhZHQ0Zz09)
+
 **Make sure you are signed in to your Carleton Zoom otherwise you won't be able to get in!**
-Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' and either send an invite to an event, email me, or message me on Piazza to ask for that meeting time.
+
+Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' and either send an invite to an event or email me.
 
 ## Overview and Learning Goals
 Welcome to Data Structures! In this course, you'll be learning about how to work with data, how to design solutions that are efficient for a particular application, and developing more complex programs than in the introductory CS course. 
@@ -30,7 +33,7 @@ By the time you complete this course, you'll be able to do the following:
 * Analyze the efficiency of an algorithm to understand how the time and space the algorithm needs varies with the size of the data it's working on.
 * Create non-trivial Java programs.
 
-*Prerequisites*: CS111 (Introduction to Computer Science) or an introductory computer science course completed elsewhere.
+**Prerequisites**: CS111 (Introduction to Computer Science) or an introductory computer science course completed elsewhere.
 Please talk to me if your background is something other than CS111 or AP CS in high school.
 
 ## Course expectations
@@ -42,16 +45,16 @@ If you experience significant technological problems that limit your ability to 
 For announcements of known technical issues, visit the Helpdesk portal. 
 If your personal situation (due to COVID-19 illness or other circumstances) begins to impact your ability to engage with the course, please contact the Dean of Students Office and also let me know.
 
-*I expect you to log in to Moodle every day for updates on activities and assignments.* 
+**I expect you to log in to Moodle every day for updates on activities and assignments.** 
 When engaging with course activities online, use your Carleton Gmail/Google account; do not use other personal email accounts. 
 I will show you civility and respect and expect you will do the same to me and each other in both asynchronous and synchronous discussions, at the whole class level, and when in small groups. 
 Whole class synchronous activities will only be scheduled during designated class meeting times, but opportunities for small group or one-on-one synchronous engagement may be scheduled flexibly at other times. 
 I look forward to working with you to find ways for you to effectively engage with the course given your circumstances.
 
 I have a separate page with specific expectations I have for you and the expectations that you can have for me; please make sure that you have read it. 
-All out of class written communication will happen via the Moodle announcement forum and via Piazza. 
-Please make sure you are reading your emails regularly and have not turned off emails from Piazza in your settings. 
-Each class day will have activities for you to complete and a page titled something like "Week 1, Day 1 Activities" to guide you through what you should do. 
+All out of class written communication will happen via the Moodle announcement forum.
+Please make sure you are reading your emails regularly.
+Each class day will have activities for you to complete and a section on Moodle to guide you through what you should do. 
 All materials will be released at least 48 hours before they are due.
 
 ## Types of Engagement and Collaboration Policies
@@ -60,11 +63,9 @@ We'll have lots of different ways of engaging with the course material:
 Videos often include embedded questions or start you on an activity.
 * Readings, which will introduce ideas and provide more details than the videos. 
 Readings sometimes include embedded activities to help you check your understanding.
-* Activities for problem solving and practicing writing small pieces of code. 
-These will help you apply and process the ideas from videos and readings, and you can complete them collaboratively to learn from one another.
 * Labs for writing somewhat longer code with significant guidance from the instructions in order to make ideas from class more concrete.
 * Homework where you complete more extended projects to provide opportunities to design solutions and see the ideas from class applied in real contexts.
-* Daily and weekly quizzes, where daily quizzes provide you with a quick check of your understanding and formative feedback and weekly quizzes provide you with a check on whether you've understood the key ideas from the previous week and are more summative.
+* Weekly quizzes, that provide you with a check on whether you've understood the key ideas from the previous week and are summative.
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
 In many of these activities you'll have the option to work collaboratively, and throughout the course, you'll have a collaborative learning group with whom you can talk about course ideas and work with on course activities. 
@@ -77,30 +78,29 @@ For this class, I will be grading as follows:
 At the end of the term, I addup your numerical scores for each component, multiply them by the weight for that component, and add up all components.
 I'll then check what your percentage is compared to this breakdown:
 
-| Percentage | Letter Grade |
-| ---- | ------- |
-| 93-100% | A |
-| 90-93% | A- |
-| 87-90% | B+ |
-| 83-87% | B |
-| 80-83% | B- |
-| 77-80% | C+ |
-| 70-77% | C |
-| 60-70% | D |
-| 0-60% | F |
+| Percentage | Letter Grade | Meaning |
+| ---- | ------- | ------|
+| 93-100% | A | Demonstrated mastery of all course concepts |
+| 90-93% | A- | Demonstrated near mastery of all course concepts |
+| 87-90% | B+ | Demonstrated near mastery of all required concepts and most additional|
+| 83-87% | B | Demonstrated strong competence in all required concepts and some additional |
+| 80-83% | B- | Demonstrated competence in all required concepts and some additional |
+| 77-80% | C+ | Demonstrated adequate understanding of required concepts and some additional |
+| 70-77% | C | Demonstrated adequate understanding of required concepts|
+| 60-70% | D | Not yet quite prepared for a course for which this is a prereq |
+| 0-60% | F | Not yet prepated for a course for which this is a prereq |
 
-Note that there is overlap; I will always go with the higher letter grade in the extraordinary circumstance that someone is at exactly 93%. If someone is really really close to a cutoff, I'll bump them up, so don't worry about being at 89.99% and getting a B+ instead of an A-. If an exam is much harder than I meant it to be, I will adjust scores so that it is a better reflection of your learning. My goal is for everyone who puts in the effort to get an A!
+Note that there is overlap; I will always go with the higher letter grade in the extraordinary circumstance that someone is at exactly 93%. If someone is really really close to a cutoff, I'll bump them up, so don't worry about being at 89.99% and getting a B+ instead of an A-.
 
 Here is how activities this term will be factored into your grade:
 
 | Component | Method of evaluation | Contribution to overall grade |
 | ----------|----------------------| ----------------------------- |
 | Embedded quizzes and activities in reading and videos | Evaluated only on effort and completion; you can answer these as many times as you like. | 10% |
-| Labs and activities | Evaluated only on effort. You must turn them in and make an effort to complete all parts, including seeking out assistance if you're struggling on a particular part (e.g., by reaching out to your collaborative learning group or asking on Piazza). | 10% |
-| Homework | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 40% |
+| Labs and activities | Evaluated only on effort. You must turn them in and make an effort to complete all parts, including seeking out assistance if you're struggling on a particular part (e.g., by reaching out to your collaborative learning group or asking on the forum). | 10% |
+| Homework | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 45% |
 | Final project | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 25% |
-| Daily quizzes | Evaluated only on effort. You must turn them in and make an effort to complete all parts.	| 5% |
-| Weekly quizzes | Evaluated based on correctness. You will have two chances to complete each quiz. Lowest quiz score will be dropped. | 10% |
+| Weekly quizzes | Evaluated based on correctness. Lowest quiz score will be dropped. | 10% |
 
 ## How to Succeed in this Class
 * Keep trying and ask for help: 
@@ -131,19 +131,19 @@ Even if you can't immediately start on the homework, read over the prompt so tha
 * Ask questions and reach out for help: 
 Even though we aren't face to face this term, there are still lots of ways to get help. 
 If you have a question about something, chances are other people do too. 
-By asking questions during our synchronous Q&A time, on Piazza, and in office hours, you'll keep up with the course and gain a deeper understanding of the concepts.
+By asking questions during our synchronous Q&A time, on the forum, and in office hours, you'll keep up with the course and gain a deeper understanding of the concepts.
 
 ## Late Policies
 Because I know that personal or tech difficulties may arise at times during the term, all homework assignments have a 48-hour, no questions asked extensions policy. 
 If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy. 
-You need to just notify me that you're using the policy before the deadline.
+You just need to notify me that you're using the policy before the deadline.
 If you are unable to notify me, please just still let me know when you are able and I'll work with you.
 Extensions beyond the 48-hour policy will only be considered in extenuating circumstances.
 
 Activities and quizzes do not have a built in extensions policy. 
 If something is interfering with your ability to do your work, please reach out. 
 Generally, late work outside of the 48 hour homework extension will not be accepted unless we have had a conversation and I agree that an extension makes sense. 
-If at all possible, this conversation should occur prior to the late work (you might have this conversation in writing by reaching out privately on Piazza), and if that is not possible, you should reach out to me as soon as possible after you realize that extenuating circumstances will lead the work to be late. 
+If at all possible, this conversation should occur prior to the late work (you might have this conversation in writing via email), and if that is not possible, you should reach out to me as soon as possible after you realize that extenuating circumstances will lead the work to be late. 
 Depending on the nature of the circumstances, I may also ask you to chat with someone in the Dean of Students office, as they can assist you in managing circumstances that may require accommodations in multiple classes.
 
 ## How to Get Help
@@ -160,14 +160,13 @@ This course has a prefect.
 The Prefect Program offers synchronous videoconferencing tutoring and/or optional collaborative learning sessions for participating classes. 
 Prefect sessions review course concepts and often focus on critical thinking and problem-solving exercises centered on the course material. 
 Our course prefect(s) will use email or Moodle to inform everyone in the class about upcoming sessions and availability for 1:1 tutoring.
-* Piazza:
-You're welcome to post questions about videos, readings, and activities on Piazza, as well as about homework. 
-You shouldn't post much homework code on Piazza, but you can post code related to other assignments. 
-If you're unsure if a question contains too much detail about the homework, you may still post it on Piazza but mark it as private, sent just to me. 
-*Please use Piazza, rather than email, for all written communication.*
+* Moodle Forum:
+You're welcome to post questions about videos, readings, and activities on the forum, as well as about homework. 
+You shouldn't post much homework code, but you can post code related to other assignments. 
+If you're unsure if a question contains too much detail about the homework, email me instead.
 * Talk to me:
 I have both drop in office hours and office hours that are by appointment (for one on one conversations). 
-See links at the top of Moodle for more details.
+See links at the top of this document for more details.
 Talking to students is literally my favorite part of this job, please talk to me!
 * Other Carleton resources: 
 There are lots of resources to help you at Carleton, and these resources have persisted in virtual form. 
