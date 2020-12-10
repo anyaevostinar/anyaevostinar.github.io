@@ -87,7 +87,7 @@ I'll then check what your percentage is compared to this breakdown:
 | 80-83% | B- | Demonstrated competence in all required concepts and some additional |
 | 77-80% | C+ | Demonstrated adequate understanding of required concepts and some additional |
 | 70-77% | C | Demonstrated adequate understanding of required concepts|
-| 60-70% | D | Not yet quite prepared for a course for which this is a prereq |
+| 60-70% | D | Not yet completely prepared for a course for which this is a prereq |
 | 0-60% | F | Not yet prepated for a course for which this is a prereq |
 
 Note that there is overlap; I will always go with the higher letter grade in the extraordinary circumstance that someone is at exactly 93%. If someone is really really close to a cutoff, I'll bump them up, so don't worry about being at 89.99% and getting a B+ instead of an A-.
