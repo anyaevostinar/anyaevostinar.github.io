@@ -148,8 +148,7 @@ This will help us to develop a shared understanding of common Java issues and wa
 Finished making your game? 
 Great job! 
 Here are some more things to try if you have extra time and desire to do more. 
-Leave `GuessingGame.java` with your solution to the assignment above and create a new file called `GuessingGameExtended.java` if you want to submit these extensions for comments.
-If you want comments, be sure to note in the header of that file what extensions you did.
+Leave `GuessingGame.java` with your solution to the assignment above and create a new file called `GuessingGameExtended.java`, be sure to note in the header of that file what extensions you did.
 * Print the player's score after they win the game. The score is the number of guesses they needed to win.
 * Remove the default number, and instead make each new GuessingGame set the number to be guessed to a random value in the correct range. This should happen in the constructor, so the client doesn't have to remember to call `startNewGame()`.
 * Allow multiple games. Ask the user after each game whether to play again, and if the response is yes, play another guessing game with a new number. Do you need a new `GuessingGame` for this?
