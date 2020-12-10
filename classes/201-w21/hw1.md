@@ -132,12 +132,13 @@ The grading of your homework assignments is tiered to match the meaning of lette
 * Everything from C-Tier
 * Correct use of input/output
 * User-friendly interface as specified
+* Descriptive variable names
+* Good style
 
 **A-Tier** 10 points total
 * Everything from B-Tier
-* Descriptive variable names
-* Good style
 * All methods have JavaDocs-style comments
+* Implement one extension from below in a file `GuessingGameExtended.java`
 
 
 In addition to turning in your code on Moodle, you should go to the "Common Java Errors and Fixes" google doc, linked on Moodle, and add in any errors that you jotted down. 
@@ -147,7 +148,6 @@ This will help us to develop a shared understanding of common Java issues and wa
 Finished making your game? 
 Great job! 
 Here are some more things to try if you have extra time and desire to do more. 
-These extensions are completely optional (and don't come with any extra credit).
 Leave `GuessingGame.java` with your solution to the assignment above and create a new file called `GuessingGameExtended.java` if you want to submit these extensions for comments.
 If you want comments, be sure to note in the header of that file what extensions you did.
 * Print the player's score after they win the game. The score is the number of guesses they needed to win.
