@@ -1,15 +1,13 @@
 ---
 layout: page
-title: CS201 Data Structures W21 Syllabus
-permalink: /classes/201-w21/syllabus
+title: CS361 Evolutionary Computing & Artificial Life W21 Syllabus
+permalink: /classes/361-w21/syllabus
 ---
 
 
 Winter 2021
 
 **Instructor**: Anya E. Vostinar
-
-**Prefect**: See Moodle
 
 **Course materials**: All materials, including readings, will be linked through Moodle.
 
@@ -22,19 +20,17 @@ All drop in hours will be in my [Zoom 'Office'](https://carleton.zoom.us/j/80312
 Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' and either send an invite to an event or email me.
 
 ## Overview and Learning Goals
-Welcome to Data Structures! In this course, you'll be learning about how to work with data, how to design solutions that are efficient for a particular application, and developing more complex programs than in the introductory CS course. 
-Whether or not you're interested in taking future computer science courses, this class should help you to develop your problem solving and analysis skills as well as learn coding skills that you can apply in a variety of domains.
-If you are interested in more computer science courses, data structures will prepare you for the upper level courses and give you a foundation in some of the ideas underlying much of the field.
+Welcome to Evolutionary Computing and Artificial Life! In this course you'll learn that evolution is simply an algorithm and arguably one of the most powerful algorithms of all time. It has proven exceedingly useful in solving problems that have been difficult for humans both in engineering and of course in biological systems. All that is necessary for evolution to occur is variation, inheritance, and competition. With those three things and time, it is logically impossible for evolution not to occur.
 
-By the time you complete this course, you'll be able to do the following:
+This term you will:
+* Create your own artificial life simulation to answer a question about evolution
+* Learn about a range of interesting biological systems
+* Learn how to program in C++
+* Use a powerful open source library
+* Write a scientific paper or GUI if you want
 
-* Read a problem description and think through the pros and cons of different data representations and implementations.
-* Work with basic programming building blocks (data structures and abstract data types), including lists, arrays, stacks, queues, trees, maps, and graphs.
-* Analyze the efficiency of an algorithm to understand how the time and space the algorithm needs varies with the size of the data it's working on.
-* Create non-trivial Java programs.
 
-**Prerequisites**: CS111 (Introduction to Computer Science) or an introductory computer science course completed elsewhere.
-Please talk to me if your background is something other than CS111 or AP CS in high school.
+**Prerequisites**: CS201 (Data Structures)
 
 ## Course expectations
 Because we're online this term, our interactions will be a little different from how they would have been at Carleton.
@@ -64,9 +60,7 @@ Videos often include embedded questions or start you on an activity.
 * Readings, which will introduce ideas and provide more details than the videos. 
 Readings sometimes include embedded activities to help you check your understanding.
 * Labs for writing somewhat longer code with significant guidance from the instructions in order to make ideas from class more concrete.
-* Homework where you complete more extended projects to provide opportunities to design solutions and see the ideas from class applied in real contexts.
-* Weekly quizzes, that provide you with a check on whether you've understood the key ideas from the previous week and are summative.
-* Final project, where you pull together everything you've learned to create something that interests you.
+* Term-long Project that you will complete pieces of for specific dates where you can apply what you've learned and pursue a question of interest to you.
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
 In many of these activities you'll have the option to work collaboratively, and throughout the course, you'll have a collaborative learning group with whom you can talk about course ideas and work with on course activities. 
@@ -74,7 +68,9 @@ Please read [this linked page](/classes/201-f20/collaboration) for more informat
 
 ## Evaluation and Grading
 I want you to know that I recognize that the global pandemic is likely to affect your ability to focus and work on this class. 
-However, mastery of this material is important: if you go on to future CS courses or intend to interview for CS internships and jobs, you'll be expected to know this material (CS201 is widely cited by more senior students and alumni as having the key material for doing well in job interviews).
+Because this class is an elective, future classes won't depend on it. However, I hope that if you are in this class, it's because the topic is of interest to you and each component is structured to improve your understanding of the topic overall.
+
+
 For this class, I will be grading as follows: 
 At the end of the term, I addup your numerical scores for each component, multiply them by the weight for that component, and add up all components.
 I'll then check what your percentage is compared to this breakdown:
@@ -88,8 +84,8 @@ I'll then check what your percentage is compared to this breakdown:
 | 80-83% | B- | Demonstrated competence in all required concepts and some additional |
 | 77-80% | C+ | Demonstrated adequate understanding of required concepts and some additional |
 | 70-77% | C | Demonstrated adequate understanding of required concepts|
-| 60-70% | D | Not yet completely prepared for a course for which this is a prereq |
-| 0-60% | F | Not yet prepated for a course for which this is a prereq |
+| 60-70% | D | Not yet completely able to demonstrate understanding of required|
+| 0-60% | F | Not yet able to demonstrate understanding of required concepts |
 
 Note that there is overlap; I will always go with the higher letter grade in the extraordinary circumstance that someone is at exactly 93%. If someone is really really close to a cutoff, I'll bump them up, so don't worry about being at 89.99% and getting a B+ instead of an A-.
 
@@ -97,11 +93,12 @@ Here is how activities this term will be factored into your grade:
 
 | Component | Method of evaluation | Contribution to overall grade |
 | ----------|----------------------| ----------------------------- |
-| Embedded quizzes and activities in reading and videos | Evaluated only on effort and completion; you can answer these as many times as you like. | 10% |
-| Labs and activities | Evaluated only on effort. You must turn them in and make an effort to complete all parts, including seeking out assistance if you're struggling on a particular part (e.g., by reaching out to your collaborative learning group or asking on the forum). | 10% |
-| Homework | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 45% |
-| Final project | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 25% |
-| Weekly quizzes | Evaluated based on correctness. Lowest quiz score will be dropped. | 10% |
+| Labs and activities | Evaluated only on effort. You must turn them in and make an effort to complete all parts, including seeking out assistance if you're struggling on a particular part. | 10% |
+| Project proposal | Evaluated based on quality, including answering the prompt thoroughly and evidence of careful consideration of the topic. There will be several opportunities for feedback and improvement. | 10% |
+| Peer review participation | Evaluated based on effort. There will be several times you are expected to give your peers feedback to help them improve their own projects. | 10% |
+| Progress reports | Evaluated based on clear progress and effort. To ensure you are working steadily on your final project during the second half of the term. | 10% |
+| Term project | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 50% |
+| Presentation | You will have a choice of how (and if) your present your final project including creating a GUI, a scientific report, or a video presentation. | 10% |
 
 ## How to Succeed in this Class
 * Keep trying and ask for help: 
@@ -114,7 +111,7 @@ Set aside time each day to work on the course, and make sure that you're keeping
 Try to find a space that you can just use for studying, and if that's not possible, have a way to physically cue to yourself that this is studying time, such as by getting out a specific notebook for this course.
 * Minimize distractions: There's a lot going on in the world right now, and it can be tough to ignore that. 
 However, you'll learn more and likely be happier if you can minimize those distractions during the time you're working on the course. 
-When you're working on 201, put your phone away unless that's what you're using to access materials, and close your email and any browser windows that aren't being used for this course. 
+When you're working on 361, put your phone away unless that's what you're using to access materials, and close your email and any browser windows that aren't being used for this course. 
 Set a time limit for how long you'll work, and don't check those things until the time limit is up. 
 People tend to believe they're good at multitasking, but in actuality, multitasking hurts productivity and learning.
 * Monitor your own learning: 
@@ -122,26 +119,25 @@ After each activity or work session, write down (on paper) a few things about wh
 Look back at those questions as you work through more activities, and if you aren't able to resolve the questions on your own, ask about them on the forum.
 * Take notes: 
 Research has shown that writing things down in your own words helps you to remember and understand it better. 
-Take handwritten notes when watching videos and reading from the textbook.
+Take handwritten notes when watching videos and reading.
 Research has also shown that handwritten instead of typed notes help you retain the information better.
-* Pay attention to longer-term homework assignments and start early: 
-When I've asked students what advice they'd give to future 201 students, the most common thing they said was to start the homework early! 
-The homeworks are likely slightly longer than you experienced in intro, as the goal is to help you learn to create more complex programs and make design decisions. 
+* Pay attention to longer-term assignments and start early: 
+I deliberately have pieces of the final project due throughout the term so that you are steadily working on it.
 By starting early, you have more opportunities to work through problems that come up and time to ask for help!
-Even if you can't immediately start on the homework, read over the prompt so that your brain can start thinking about it in the background; it really does help!
+Even if you can't immediately start on the assignment, read over the prompt so that your brain can start thinking about it in the background; it really does help!
 * Ask questions and reach out for help: 
 Even though we aren't face to face this term, there are still lots of ways to get help. 
 If you have a question about something, chances are other people do too. 
 By asking questions during our synchronous Q&A time, on the forum, and in office hours, you'll keep up with the course and gain a deeper understanding of the concepts.
 
 ## Late Policies
-Because I know that personal or tech difficulties may arise at times during the term, all homework assignments have a 48-hour, no questions asked extensions policy. 
+Because I know that personal or tech difficulties may arise at times during the term, all assignments have a 48-hour, no questions asked extensions policy. 
 If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy. 
 You just need to notify me that you're using the policy before the deadline.
 If you are unable to notify me, please just still let me know when you are able and I'll work with you.
 Extensions beyond the 48-hour policy will only be considered in extenuating circumstances.
 
-Activities and quizzes do not have a built in extensions policy. 
+Activities and labs do not have a built in extensions policy. 
 If something is interfering with your ability to do your work, please reach out. 
 Generally, late work outside of the 48 hour homework extension will not be accepted unless we have had a conversation and I agree that an extension makes sense. 
 If at all possible, this conversation should occur prior to the late work (you might have this conversation in writing via email), and if that is not possible, you should reach out to me as soon as possible after you realize that extenuating circumstances will lead the work to be late. 
@@ -156,24 +152,16 @@ Sometimes, you may need assistance - here's how you get it:
 * Take a break: 
 Often, taking a break from homework will help you to regroup and you'll be able to succeed when you come back to it. 
 Leave yourself enough time to be able to take breaks!
-* Prefect sessions:
-This course has a prefect. 
-The Prefect Program offers synchronous videoconferencing tutoring and/or optional collaborative learning sessions for participating classes. 
-Prefect sessions review course concepts and often focus on critical thinking and problem-solving exercises centered on the course material. 
-Our course prefect(s) will use email or Moodle to inform everyone in the class about upcoming sessions and availability for 1:1 tutoring.
 * Moodle Forum:
-You're welcome to post questions about videos, readings, and activities on the forum, as well as about homework. 
-You shouldn't post much homework code, but you can post code related to other assignments. 
-If you're unsure if a question contains too much detail about the homework, email me instead.
+You're welcome to post questions about videos, readings, and activities on the forum, as well as about your project. 
+Since each of your projects is unique, your classmates may not be able to help as much with a project question, but you are still encouraged to post them on the forum since they might! You are all thinking about the same general things after all and I will answer forum questions as well.
 * Talk to me:
 I have both drop in office hours and office hours that are by appointment (for one on one conversations). 
 See links at the top of this document for more details.
 Talking to students is literally my favorite part of this job, please talk to me!
 * Other Carleton resources: 
 There are lots of resources to help you at Carleton, and these resources have persisted in virtual form. 
-Lab assistants are available via video conference; see the top of Moodle for details. 
-They can help you with debugging and making progress on your homework, or if you're having trouble understanding something about Java. 
-The Academic Skills center is a wonderful resource for helping you develop study skills, improve your ability to prep for exams, or manage procrastination. 
+The Academic Skills center is a wonderful resource for helping you develop study skills, improve your ability to plan large projects, or manage procrastination. 
 Oscar Alarez is an academic skills coach in the office with whom you can make individual video conferencing appointments. 
 
 ## Inclusivity and Universal Learning
