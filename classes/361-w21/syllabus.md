@@ -27,7 +27,7 @@ This term you will:
 * Learn about a range of interesting biological systems
 * Learn how to program in C++
 * Use a powerful open source library
-* Write a scientific paper or GUI if you want
+* Write a scientific paper and/or GUI
 
 
 **Prerequisites**: CS201 (Data Structures)
@@ -64,7 +64,6 @@ Readings sometimes include embedded activities to help you check your understand
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
 In many of these activities you'll have the option to work collaboratively, and throughout the course, you'll have a collaborative learning group with whom you can talk about course ideas and work with on course activities. 
-Please read [this linked page](/classes/201-f20/collaboration) for more information on collaborative learning groups and the collaboration and academic honesty policies for this course.
 
 ## Evaluation and Grading
 I want you to know that I recognize that the global pandemic is likely to affect your ability to focus and work on this class. 
@@ -97,8 +96,9 @@ Here is how activities this term will be factored into your grade:
 | Project proposal | Evaluated based on quality, including answering the prompt thoroughly and evidence of careful consideration of the topic. There will be several opportunities for feedback and improvement. | 10% |
 | Peer review participation | Evaluated based on effort. There will be several times you are expected to give your peers feedback to help them improve their own projects. | 10% |
 | Progress reports | Evaluated based on clear progress and effort. To ensure you are working steadily on your final project during the second half of the term. | 10% |
-| Term project | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 50% |
-| Presentation | You will have a choice of how (and if) your present your final project including creating a GUI, a scientific report, or a video presentation. | 10% |
+| Term project software | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 25% |
+| Paper/GUI | Explaining your science is equally as important as doing science, so you will need to explain your science either through a scientific paper and/or a browser-based GUI. | 25% |
+| Presentation | You will also need to present your final project to the class and actively participate in your classmates' presentations. | 10% |
 
 ## How to Succeed in this Class
 * Keep trying and ask for help: 
@@ -193,5 +193,3 @@ If I suspect academic dishonesty, I will refer the case for appropriate action t
 Please familiarize yourself with Carleton's academic integrity policies and make sure that you have read the collaboration and academic honesty policies for this course. 
 A possible penalty for academic dishonesty in a course is an F in the course.
 It's not worth it -- please seek help using the resources above instead.
-
-*This syllabus is based heavily on the syllabus from Anna Rafferty.*

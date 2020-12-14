@@ -8,7 +8,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 
 **Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses.
 
-| Date	| Homework Due	| Class Topic |	Homework Out |
+| Date	| Assignment Due	| Class Topic |	Assignment Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | |  | |
 | M 1/4 | | What is alive? |  |
@@ -36,18 +36,19 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 2/12 |	| TBD	|  |
 | Week 7 | |  | |
 | M 2/15 | | TBD	| |
-| W 2/17 | Progress Report 2 |	TBD	 | |
+| W 2/17 | Part 1 of Project |	TBD	 | |
 | F 2/19 | |	TBD	|  |
 | Week 8 | |  | |
 | M 2/22 |  |		TBD	| |
-| W 2/24 | Progress Report 3 |	TBD	 | |	
+| W 2/24 | Progress Report 2 |	TBD	 | |	
 | F 2/26 | 	|  TBD |	|
 | Week 9 | |  | |
 | M 3/1 | |		TBD	| |	
-| W 3/3 | Progress Report 4 |	TBD | |
+| W 3/3 | Progress Report 3 |	TBD | |
 | F 3/5 |  |	TBD |	 |
 | Week 10 | | | |
-| M 3/8	| |  Final project presentations | |
+| M 3/8	| |  Final project discussion | |
 | W 3/10 | | Wrap up; course evaluations	| |
 | Exam Period | | | |
+| Sat 3/13 3:30-6pm | Final presentations | | |
 | | | Final project due Monday, 3/15, 5pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
