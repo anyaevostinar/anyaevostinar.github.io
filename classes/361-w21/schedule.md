@@ -36,15 +36,15 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 2/12 |	| TBD	|  |
 | Week 7 | |  | |
 | M 2/15 | | TBD	| |
-| W 2/17 | Part 1 of Project |	TBD	 | |
+| W 2/17 | Part 1 of Project, Progress Report 2 |	TBD	 | |
 | F 2/19 | |	TBD	|  |
 | Week 8 | |  | |
 | M 2/22 |  |		TBD	| |
-| W 2/24 | Progress Report 2 |	TBD	 | |	
+| W 2/24 | Progress Report 3 |	TBD	 | |	
 | F 2/26 | 	|  TBD |	|
 | Week 9 | |  | |
 | M 3/1 | |		TBD	| |	
-| W 3/3 | Progress Report 3 |	TBD | |
+| W 3/3 | Progress Report 4 |	TBD | |
 | F 3/5 |  |	TBD |	 |
 | Week 10 | | | |
 | M 3/8	| |  Final project discussion | |
