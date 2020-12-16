@@ -4,19 +4,23 @@ title: Classes
 permalink: /Classes/
 ---
 
-### Fall 2020
+### Winter 2021
 
-CS 201: Data Structures (Moodle link to come) ([Syllabus](/classes/201-f20/syllabus)) ([Schedule](/classes/201-f20/schedule))
+CS 361: Evolutionary Computing and Artificial Life ([Syllabus](/classes/361-w21/syllabus)) ([Schedule](/classes/361-w21/schedule))
+
+CS 201: Introduction to Computer Science ([Syllabus](/classes/201-w21/syllabus)) ([Schedule](/classes/201-w21/schedule))
+
 
 ## Future Classes
 Subject to change!
 
-### Winter 2021
-
-CS 361: Evolutionary Computing and Artificial Life
-
-CS 111: Introduction to Computer Science
 
 ## Previous Classes
+
+### Fall 2020
+
+CS 201: Data Structures ([Syllabus](/classes/201-f20/syllabus)) ([Schedule](/classes/201-f20/schedule))
+
+### Earlier
 
 For the time being, classes I taught at Grinnell College are at [my previous website](https://vostinar.sites.grinnell.edu/).

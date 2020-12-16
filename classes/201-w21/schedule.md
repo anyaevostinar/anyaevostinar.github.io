@@ -8,11 +8,11 @@ This is a rough schedule of topics for each day and the release and due dates fo
 
 **Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses.
 
-| Date	| Homework Due	| Class Topic |	Homework Out |
+| Date	| Homework Due	| Lab Activity |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Java | |
-| M 1/4 | | Intro; First look at Java	| |
-| W 1/6 | |	First Java Program |	HW1: Object Oriented Practice |
+| M 1/4 | | [Comparing Python and Java](https://anyaevostinar.github.io/classes/201-w21/comparing-python-java)| |
+| W 1/6 | |	[Guessing Game](https://anyaevostinar.github.io/classes/201-w21/guessing-game-lab) |	HW1: Object Oriented Practice |
 | F 1/8 |	| HW1 Work day |	 |
 | Week 2 | | Inheritance, List, Map and Set ADTs | |
 | M 1/11 |	HW1	| Inheritance |	HW2: Country Analyses |
