@@ -29,7 +29,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 5 | |  | |
 | M 2/1 | Proposal Draft |	Basic non-parametric stats	| |
 | W 2/3 |		| Proposal peer review	|  |
-| F 2/5 | Project Proposal |	TBD	| |
+| F 2/5 | Project Proposal |	Work day	| |
 | Week 6 | |  | |
 | M 2/8	| |	Mid-term Break!	| |
 | W 2/10 | Progress Report 1 |	TBD | |
@@ -43,7 +43,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 2/24 | Progress Report 3 |	TBD	 | |	
 | F 2/26 | 	|  TBD |	|
 | Week 9 | |  | |
-| M 3/1 | |		TBD	| |	
+| M 3/1 | |		Presentations intro	| |	
 | W 3/3 | Progress Report 4 |	TBD | |
 | F 3/5 |  |	TBD |	 |
 | Week 10 | | | |
