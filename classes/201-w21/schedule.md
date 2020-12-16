@@ -12,16 +12,16 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Java | |
 | M 1/4 | | Intro; First look at Java	| |
-| W 1/6 | |	Object oriented programming ideas |	HW1: Guessing Game |
-| F 1/8 |	HW1	| Inheritance |	HW2: Object Oriented Practice |
-| Week 2 | | List, Map and Set ADTs, and intro to efficiency | |
-| M 1/11 |	HW2	| List ADT |	HW3: Country Analyses |
-| W 1/13 |	|	Map and Set ADTs	| |
-| F 1/15 | |		Efficiency and Big-O Analysis	| |
-| Week 3 | | List implementations | |
-| M 1/18 |	HW3	| Linked list implementation	| |
-| W 1/20 |	 |	Arrays and implementing a list using an array | HW4: Country displayer redux |
-| F 1/22 | |		Comparing list implementations: applications to sorting	| |
+| W 1/6 | |	Object oriented programming ideas |	HW2: Object Oriented Practice |
+| F 1/8 |	| First Java Program |	 |
+| Week 2 | | List, Map and Set ADTs | |
+| M 1/11 |	HW2	| Inheritance |	HW3: Country Analyses |
+| W 1/13 |	|	Lists and Interfaces	| |
+| F 1/15 | |		Maps and Sets	| |
+| Week 3 | | Efficiency and List implementations | |
+| M 1/18 |	HW3	| Asymptotic Analysis	| |
+| W 1/20 |	 |	Linked Lists | HW4: Country displayer redux |
+| F 1/22 | |		ArrayLists	| |
 | Week 4 | | Stacks and Queues | |
 | M 1/25 | |		Stack implementation	| |
 | W 1/27 |	HW4 |	Queue implementations	| HW5: Solving Mazes |

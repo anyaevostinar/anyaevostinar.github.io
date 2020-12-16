@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Homework 1 - Guessing Game
-permalink: /classes/201-f20/hw1-guessing-game
+permalink: /classes/201-w21/hw1-guessing-game
 ---
 
 ## Logistics
