@@ -12,7 +12,7 @@ This is a lab assignment that you'll be handing in on Moodle. You should complet
 
 Open the Comparing Python and Java project on the Repl.it team and the Comping Python and Java Google Doc linked on Moodle.
 
-You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you're welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
+You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own answers, but you're welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another's screens and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
 
 ## Java Basics
 Learning your second programming language is different from learning your first. Assuming your first language isn't one of the many so-called esoteric programming languages or a more specialized language like SQL, you start out already knowing about many of the nearly-universal language constructs: assignments, loops, conditionals, functions, operators, (often) classes, etc. Learning the second language involves a lot of learning new syntax for old ideas, rather than learning both the ideas and the syntax at the same time.

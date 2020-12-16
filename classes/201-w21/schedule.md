@@ -12,40 +12,40 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Java | |
 | M 1/4 | | Intro; First look at Java	| |
-| W 1/6 | |	Object oriented programming ideas |	HW2: Object Oriented Practice |
-| F 1/8 |	| First Java Program |	 |
-| Week 2 | | List, Map and Set ADTs | |
-| M 1/11 |	HW2	| Inheritance |	HW3: Country Analyses |
+| W 1/6 | |	First Java Program |	HW1: Object Oriented Practice |
+| F 1/8 |	| HW1 Work day |	 |
+| Week 2 | | Inheritance, List, Map and Set ADTs | |
+| M 1/11 |	HW1	| Inheritance |	HW2: Country Analyses |
 | W 1/13 |	|	Lists and Interfaces	| |
 | F 1/15 | |		Maps and Sets	| |
 | Week 3 | | Efficiency and List implementations | |
-| M 1/18 |	HW3	| Asymptotic Analysis	| |
-| W 1/20 |	 |	Linked Lists | HW4: Country displayer redux |
+| M 1/18 |	HW2	| Asymptotic Analysis	| |
+| W 1/20 |	 |	Linked Lists | HW3: Country displayer redux |
 | F 1/22 | |		ArrayLists	| |
 | Week 4 | | Stacks and Queues | |
 | M 1/25 | |		Stack implementation	| |
-| W 1/27 |	HW4 |	Queue implementations	| HW5: Solving Mazes |
+| W 1/27 |	HW3 |	Queue implementations	| HW4: Solving Mazes |
 | F 1/29 | |		Review/Catch up	| |
 | Week 5 | | Graphs | |
 | M 2/1 | |	Graph implementations	| |
-| W 2/3 |	HW5	| Breadth first search	| HW6: WikiPaths |
+| W 2/3 |	HW4	| Breadth first search	| HW5: WikiPaths |
 | F 2/5 | |	Complexity of DFS and BFS	| |
 | Week 6 | | Recursion and Sorting | |
 | M 2/8	| |	Mid-term Break!	| |
 | W 2/10 | |	Recursion review and practice | |
-| F 2/12 | HW6	| Quicksort	| HW7: Sorting comparisons |
+| F 2/12 | HW5	| Quicksort	| HW6: Sorting comparisons |
 | Week 7 | | Trees | |
 | M 2/15 | |		Trees and binary trees	| |
 | W 2/17 | |	Binary search trees		 | |
-| F 2/19 |	HW7 |	Balanced binary search trees	| HW8: WordCloud |
+| F 2/19 |	HW6 |	Balanced binary search trees	| HW7: WordCloud |
 | Week 8 | | Heaps | |
 | M 2/22 |  |		Heap implementation	| |
 | W 2/24 | |	Catch up/Review		 | |	
-| F 2/26 | HW8	|  Heapsort |	HW9: Flashcard Displayer |
+| F 2/26 | HW7	|  Heapsort |	HW8: Flashcard Displayer |
 | Week 9 | | Hashing for Set and Map Implementations | |
 | M 3/1 | |		Hashing	| |	
 | W 3/3 | |	Hash-based implementation of maps and sets | |
-| F 3/5 | HW9 |	Intro to final project |	Final project |
+| F 3/5 | HW8 |	Intro to final project |	Final project |
 | Week 10 | | Wrapping up | |
 | M 3/8	| |  Final project discussions | |
 | W 3/10 | | Wrap up; review; course evaluations	| |

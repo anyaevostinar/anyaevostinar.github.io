@@ -1,17 +1,21 @@
 ---
 layout: page
-title: Homework 1 - Guessing Game
-permalink: /classes/201-w21/hw1-guessing-game
+title: Guessing Game Lab
+permalink: /classes/201-w21/guessing-game-lab
 ---
 
 ## Logistics
-10 points, due Friday, Sept 18th by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy. You need to notify me that you're using the policy. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still Friday, not 48 hours later.
+This is a lab assignment that you'll be handing in on Moodle. You should complete it on Wednesday Jan 6th, but it isn't due until Friday Jan 8th at 5:00pm Central.
+
+Open the Guessing Game project on Repl.it as well as the Common Java Errors and Fixes Google Doc linked on Moodle.
+
+You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you're welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
 
 ## Goals
 To practice writing some Java and working with object oriented code.
 
-## Guessing Game
-In this assignment, you'll be creating a guessing game. 
+## Introduction
+In this lab, you'll be creating a guessing game. 
 In a guessing game, the computer picks a number between 1 and 100 at random, and it asks the user to guess a number. 
 After each guess, it tells the user if they are too high or too low, and then lets them guess again. 
 If the user ever guesses correctly, the computer should congratulate the user and end the program. 
@@ -36,59 +40,42 @@ Guess the number: 57
 Good job! 57 was my number. You win!
 ```
 
-### Set up and instructions
-You're welcome to either complete this homework with a member of your homework group or to complete it on your own. 
-You and the other members of your homework group should each write your own code, even if you're completing it together, but you may share your screens/use multiplayer mode to look at one another's code, make suggestions, and compare ideas. 
-There's no required check in with your homework group about this assignment, but you're strongly encouraged to reach out to your group about questions you have or if there are things you were surprised by. 
-You're also (as always) welcome to post questions on Piazza to the whole class. 
-**Please only post small amounts of code if you're posting code**. 
-If you're not sure what part of the code you need help with, come to office hours, lab assistant hours, or post the code privately so only the course staff and I can see it. 
-You might also check out the common Java Errors and Fixes document, linked on Moodle. 
-You and your classmates will collaboratively add to this document, and if you're stuck, you might find a helpful suggestion there.
-
-You'll complete this assignment on repl.it. Go to the student page and log in. Then click on the CS201 classroom. Under Projects, click "HW1". 
-With every project you do in this class, you should make sure the repl is private. Click on the pencil icon next to the project name, and switch the toggle from public to private:
-
-![Screenshot of Repl.it showing name of assignment circled and private slider](/classes/201-f20/PrivateRepl.PNG)
-
-
-Your account shouldn't say that you need to upgrade because you should have the free Hacker plan from the upgrade. 
-If you haven't gotten that set up, look at the page on "Tools for this class", linked on Moodle. 
-You can work on the assignment without making it private, but it will be required that you make future projects private.
-
-If you run into any issues logging on to repl.it or finding this project, please ask in Piazza right away!
-
-### Getting Acquainted with the Guessing Game
+## Exercise 0
 Before writing any code, create a `Collaborations.txt` file in repl.it (using the "Add file" button). 
 In that file, indicate in what ways (if any) you collaborate with other people on this assignment. 
 It's easier to write these down as you go instead of trying to remember at the end of an assignment and possibly forgetting something! 
-Did you and your homework group look at each other's code? 
+Did you and your collaborative learning group look at each other's code? 
 Talk about strategies? 
 These are fine things to do, and you should note them in the `Collaborations.txt` file. 
 If you use any resources outside of our course materials, that is also something to note in `Collaborations.txt`.
 
-* Now, read through the code in GuessingGame.java, and understand the structure. What state does a GuessingGame have? Jot down your answer on a piece of paper or in a text file. 
-* Next, try compiling the code: At the command line (the black part of the screen in repl.it): `javac GuessingGame.java`
-* Compiling the code should result in two errors. Read the compiler error messages and try to understand why it's giving you these errors.
-* Fix these errors by implementing `getNumber()` and `getDefaultNumber()` (each of these methods only needs one line of code!). Each time you finish making a change in your code, compile the program. When you've finished this part, you should no longer get any compile errors.
+## Exercise 1
+a. Now read through the code in GuessingGame.java, and understand the structure. What state does a GuessingGame have? Jot down your answer on a piece of paper or in a text file. 
 
-Jot down any questions you have about the structure of the code or about understanding compiler error messages.
+b.  Next, try compiling the code: At the command line (the black part of the screen in repl.it): `javac GuessingGame.java`
 
-### Implementing the Game
+c. Compiling the code should result in two errors. Read the compiler error messages and try to understand why it's giving you these errors.
+
+d. Fix these errors by implementing `getNumber()` and `getDefaultNumber()` (each of these methods only needs one line of code!). Each time you finish making a change in your code, compile the program. When you've finished this part, you should no longer get any compile errors.
+
+e. Type any questions you have about the structure of the code or about understanding compiler error messages in the Common Java Errors and Fixes Google Doc linked on Moodle.
+
+## Exercise 2
 To implement the guessing game, you'll need to change two methods: `playGame` and `main`. 
 Both of these methods already exist in the code, but they don't do anything yet. 
-As you're implementing these methods, jot down compiler errors and exceptions that you get, as well as how you fixed them. 
+As you're implementing these methods, add any compiler errors and exceptions that you get to the Google doc if they aren't already there, as well as how you fixed them. 
 (Just like in Python, you'll find that it's helpful to have a mental library of what particular messages mean. 
 Reflecting on how you fix an error can help you to build that mental library faster.)
 
-Start off by implementing `main()`. 
+a. Start off by implementing `main()`. 
 The main method executes when the user runs `GuessingGame` from the command line: `java GuessingGame`. 
 You'll need to construct a new `GuessingGame` object, start the game (i.e., call the `startNewGame` method on the `GuessingGame` instance you created), and play the game. 
 Remember that unlike Python, you need to use the word `new` when constructing an object. 
-Test your code and make sure it runs. 
+
+b. Test your code and make sure it runs. 
 You'll still see a message about not being able to play, since you haven't implemented `playGame()`, but now you're ready to play once you get that method working.
 
-Now you're ready to write `playGame()`. 
+c. Now you're ready to write `playGame()`. 
 It will likely be helpful to write down a high level outline of the logic for the method before turning your ideas into code.
 I like to outline my ideas as comments in the method so that I can then just write the code for one comment at a time.
 Your code should first welcome the user, asking for their name like my example does above. 
@@ -96,41 +83,40 @@ After welcoming the user, this method should get input from the user and have th
 You might look back at the examples from the comparing Python and Java activity to see an example of getting input from the user and looping. 
 Your game should provide feedback to the user about whether their guess is too high or too low. 
 
-Once you think you have `playGame` working, compile your code and run it. 
+d. Once you think you have `playGame` working, compile your code and run it. 
 You should be able to interact with the game! 
 Try a few games to make sure that the program performs properly, and debug your code to fix any issues.
 
-### Turning it in
-You'll turn your code in on Moodle under the Guessing Game assignment.
+## Exercise 3
+Throughout the course you'll be required to include informative comments above each method in "JavaDocs" style. This style allows for a website to be generated with those comments nicely formatted and looking like the Java documentation that you'll become quite familiar with.
 
-After double checking you included everything necessary in `Collaborations.txt` and finishing the assignment, click on the three vertical dots next to the add file and add folder icons on repl.it, and choose "Download as zip" from the menu. 
-Upload that zip on Moodle.
+JavaDocs style is the following:
+```
+/**
+* Generally descriptive few sentences about the method.
+* @param nameOfParameter description of the parameter if useful, probably should mention the type
+* @param anotherParameter if you have multiple parameters
+* @return description of what if anything is returned, should definitely mention the type
+*/
+public int exampleMethod(int nameOfParameter, int anotherParameter){
+  return 0;
+}
+```
 
-Here's how we'll be evaluating your code:
+a. For each method in `GuessingGame.java`, adapt the existing comment to include the `@param` and `@return` tags and the relevant information if needed.
 
-| Item | Points |
-|------|--------|
-| Welcomes message | 1 |
-| Asks for name | 1 |
-| Greets user by name | 1 |
-| Explains game rules | 1 |
-| Repeatedly prompts user for a guess | 1 |
-| Gives user feedback on guess | 1 |
-| Congratulates user when correct | 1 |
-| Generally descriptive variable names and neatly formatted | 1 |
-| Correct loop choice | 1 |
-| Correct use of if/else | 1 |
+## Submitting
+This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck. Feedback on labs and activities is less detailed than on homework.
 
-In addition to turning in your code on Moodle, you should go to the "Common Java Errors and Fixes" google doc, linked on Moodle, and add in any errors that you jotted down. 
-This will help us to develop a shared understanding of common Java issues and ways to fix them, getting everyone unstuck faster.
+Submit your zip file to Moodle as always.
 
-### Extensions
+## Extensions
 Finished making your game? 
 Great job! 
 Here are some more things to try if you have extra time and desire to do more. 
 These extensions are completely optional (and don't come with any extra credit).
-Leave `GuessingGame.java` with your solution to the assignment above and create a new file called `GuessingGameExtended.java` if you want to submit these extensions for comments.
-If you want comments, be sure to note in the header of that file what extensions you did.
+Leave `GuessingGame.java` with your solution to the assignment above and create a new file called `GuessingGameExtended.java` if you want to submit these extensions.
+Be sure to note in the header of that file what extensions you did.
 * Print the player's score after they win the game. The score is the number of guesses they needed to win.
 * Remove the default number, and instead make each new GuessingGame set the number to be guessed to a random value in the correct range. This should happen in the constructor, so the client doesn't have to remember to call `startNewGame()`.
 * Allow multiple games. Ask the user after each game whether to play again, and if the response is yes, play another guessing game with a new number. Do you need a new `GuessingGame` for this?
