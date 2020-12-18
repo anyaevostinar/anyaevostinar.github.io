@@ -10,7 +10,6 @@ This page is not at all a substitute for watching the videos, hence why there is
 
 # Classes and Variables Video
 
-To compile and run:
 ```
 javac *.java
 java DieGame
