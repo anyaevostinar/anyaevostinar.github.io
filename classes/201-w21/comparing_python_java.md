@@ -71,7 +71,7 @@ You may use the questions that your group came up with in class, but you must cr
 
 Take this exercise seriously. Figure out what you know, what you don't know, what's easy, what's confusing, etc. If you pay careful attention to these starter programs and I can get you quick turn-around on your main questions, you'll have a great start on writing your own Java programs. You may find it helpful to do this exercise in conjunction with looking at the Java Reference Information on Moodle. This reference information may be able to help you answer some of your or your classmates' questions, and looking at the examples in this homework may help you recognize what parts of that reference information you already know and what you should pay closer attention to.
 
-## Parting Notes
+## Grading and submission
 This activity is graded entirely on effort. The absolute baseline is that you submit three questions on the Moodle assignment. However, you'll help yourself and your classmates by checking the Question and Answer forum as well.
 
 ## And don't forget...
