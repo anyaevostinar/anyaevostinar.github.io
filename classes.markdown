@@ -8,7 +8,7 @@ permalink: /Classes/
 
 CS 361: Evolutionary Computing and Artificial Life ([Syllabus](/classes/361-w21/syllabus)) ([Schedule](/classes/361-w21/schedule))
 
-CS 201: Introduction to Computer Science ([Syllabus](/classes/201-w21/syllabus)) ([Schedule](/classes/201-w21/schedule))
+CS 201: Data Structures ([Syllabus](/classes/201-w21/syllabus)) ([Schedule](/classes/201-w21/schedule))
 
 
 ## Future Classes
