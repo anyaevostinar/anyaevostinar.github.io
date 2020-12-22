@@ -22,7 +22,7 @@ Complete each of the following HackerRank exercises. Verify your answers are cor
 
 * [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem)
 * [Input and Output](https://www.hackerrank.com/challenges/cpp-input-and-output/problem)
-* [Pointer](https://www.hackerrank.com/challenges/c-tutorial-pointer/problem)
+* [Pointer](https://www.hackerrank.com/challenges/c-tutorial-pointer/problem) (you will need the `<cmath>` library and `abs()` function)
 * [Arrays](https://www.hackerrank.com/challenges/arrays-introduction/problem)
 
 ## Submitting
