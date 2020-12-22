@@ -11,7 +11,7 @@ permalink: /classes/201-w21/hw1-oop-practice
 Demonstrate your understanding of private and class variables, ability to create objects of your own making, and use other Java functionality.
 
 ## Setup
-You should complete this assignment on Repl.it. Go to our Team and open the HW1 project.
+You should complete this assignment on Repl.it. Open the [HW1](https://repl.it/team/carlcs201s01w21/HW1) project.
 
 Create a file Collaborations.txt and put in any help that you get on this assignment including sources that you reference and help from your Collaborative Learning Group. Make sure to refer to the Collaboration page on what collaborations are allowed for homework assignments.
 
@@ -66,4 +66,4 @@ If you see a message like this, you should follow the instructions and add `-Xli
 | Follows style guide | 2 |
 
 ## Submitting
-Download the zip of your code from Repl.it and upload that zip to Moodle.
+Download the zip of your code from Repl.it (by clicking on the three vertical dots across from "Files" and selecting "Download zip") and upload that zip to Moodle.

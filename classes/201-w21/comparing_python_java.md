@@ -10,7 +10,7 @@ To get started understanding the differences between Java and Python and prepare
 ## Logistics
 This is a lab assignment that you'll be handing in on Moodle. You should complete it on Monday Jan 4th, but it isn't due until Wednesday Jan 6th at 5:00pm Central.
 
-Open the Comparing Python and Java project on the Repl.it team and the Comping Python and Java Google Doc linked on Moodle.
+Open the [Comparing Python and Java](https://repl.it/team/carlcs201s01w21/Comparing-Python-and-Java) project on the Repl.it team and the Comping Python and Java Google Doc linked on Moodle.
 
 You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own answers, but you're welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another's screens and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
 
@@ -70,6 +70,18 @@ When you're done, submit your questions to the Moodle assignment Comparing Pytho
 You may use the questions that your group came up with in class, but you must credit your group members! I suspect you'll be able to come up with more questions though.
 
 Take this exercise seriously. Figure out what you know, what you don't know, what's easy, what's confusing, etc. If you pay careful attention to these starter programs and I can get you quick turn-around on your main questions, you'll have a great start on writing your own Java programs. You may find it helpful to do this exercise in conjunction with looking at the Java Reference Information on Moodle. This reference information may be able to help you answer some of your or your classmates' questions, and looking at the examples in this homework may help you recognize what parts of that reference information you already know and what you should pay closer attention to.
+
+## Exercise 3
+There are certain activities in Java that you will need to do on a regular basis and remembering the syntax for them is a bit annoying. I highly recommend you make yourself a cheat sheet with an example of each of the following:
+* the main function signature
+* a for loop
+* a while loop
+* printing
+* if/else if/else statement
+* reading in a document
+* getting user input
+* importing
+* making an ArrayList
 
 ## Grading and submission
 This activity is graded entirely on effort. The absolute baseline is that you submit three questions on the Moodle assignment. However, you'll help yourself and your classmates by checking the Question and Answer forum as well.

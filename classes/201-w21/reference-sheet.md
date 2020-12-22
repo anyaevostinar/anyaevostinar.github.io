@@ -60,3 +60,20 @@ public class Die {
 }
 ```
 
+# Try/Catch and JavaDocs
+
+```
+class Main {
+  public static void main(String[] args) {
+    File inputFile = new File("somelines.txt");
+    Scanner scanner = null;
+    try {
+      scanner = new Scanner(inputFile);
+    } catch (FileNotFoundException e) {
+      System.err.println(e);
+      System.exit(1);
+    }
+    System.out.println("I just want to read a file!");
+  }
+}
+```

@@ -7,7 +7,7 @@ permalink: /classes/201-w21/guessing-game-lab
 ## Logistics
 This is a lab assignment that you'll be handing in on Moodle. You should complete it on Wednesday Jan 6th, but it isn't due until Friday Jan 8th at 5:00pm Central.
 
-Open the Guessing Game project on Repl.it as well as the Common Java Errors and Fixes Google Doc linked on Moodle.
+Open the [Guessing Game project on Repl.it](https://repl.it/team/carlcs201s01w21/Guessing-Game-Lab) as well as the Common Java Errors and Fixes Google Doc linked on Moodle.
 
 You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you're welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
 
@@ -108,7 +108,7 @@ a. For each method in `GuessingGame.java`, adapt the existing comment to include
 ## Submitting
 This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck. Feedback on labs and activities is less detailed than on homework.
 
-Download the zip of your code from Repl.it and upload it to Moodle.
+Download the zip of your code from Repl.it by clicking on the three vertical dots in the bar "Files" and selected "Download zip" and upload that zip to Moodle's assignment.
 
 ## Extensions
 Finished making your game? 

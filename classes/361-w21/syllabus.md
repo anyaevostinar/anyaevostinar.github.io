@@ -63,7 +63,7 @@ Readings sometimes include embedded activities to help you check your understand
 * Term-long Project that you will complete pieces of for specific dates where you can apply what you've learned and pursue a question of interest to you.
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
-In many of these activities you'll have the option to work collaboratively, and throughout the course, you'll have a collaborative learning group with whom you can talk about course ideas and work with on course activities. 
+In many of these activities you'll have the option to work collaboratively.
 
 ## Evaluation and Grading
 I want you to know that I recognize that the global pandemic is likely to affect your ability to focus and work on this class. 
