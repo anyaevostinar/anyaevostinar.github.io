@@ -1,7 +1,7 @@
 ---
 layout: page
 title: From Java to C++
-permalink: /classes/201-w21/cpp_intro
+permalink: /classes/361-w21/cpp_intro
 ---
 
 ## Goals
