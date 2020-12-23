@@ -10,8 +10,6 @@ To learn about evolutionary algorithms by making your own. Also to get more C++ 
 ## Logistics
 This is a lab assignment that you'll be handing in on Moodle. You should complete it on Friday Jan 8th, but it isn't due until Monday Jan 11th at 5:00pm Central.
 
-You'll complete most of the lab on HackerRank because they have great built-in test suites. You'll then copy and paste your solutions into Repl.it to save, download, and submit on Moodle.
-
 ## Setup
 Open the Evolutionary Algorithm project on Repl.it for starter code.
 
