@@ -17,6 +17,8 @@ Go to [HackerRank.com](https://www.hackerrank.com/) and create a Developers acco
 
 Open the [C++ Intro](https://repl.it/team/carlcs361s01w21/C-Intro) project on the Repl.it team. Create a new document "Collaborations.txt" and include any sources used or people consulted there.
 
+Reference this [cheat sheet](/classes/361-w21/ref_pointer_ref) for the code from the video.
+
 ## Exercises
 Complete each of the following HackerRank exercises. Verify your answers are correct on HackerRank and then copy and paste your code into the corresponding file on the Repl.it project.
 
