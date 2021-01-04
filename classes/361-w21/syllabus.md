@@ -11,13 +11,19 @@ Winter 2021
 
 **Course materials**: All materials, including readings, will be linked through Moodle.
 
-**Drop in hours**: TBD
+**Drop in hours**: 
+
+M: 3:45-4:45pm
+
+W: 11:45-12:45pm
+
+Th: 3-4pm
 
 All drop in hours will be in my [Zoom 'Office'](https://carleton.zoom.us/j/8031211072?pwd=WVI1ZFZON2luV1FMT0R5NjVhZHQ0Zz09)
 
 **Make sure you are signed in to your Carleton Zoom otherwise you won't be able to get in!**
 
-Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' and either send an invite to an event or email me.
+Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 9-5 M-F and either send an invite to an event or email me.
 
 ## Overview and Learning Goals
 Welcome to Evolutionary Computing and Artificial Life! In this course you'll learn that evolution is simply an algorithm and arguably one of the most powerful algorithms of all time. It has proven exceedingly useful in solving problems that have been difficult for humans both in engineering and of course in biological systems. All that is necessary for evolution to occur is variation, inheritance, and competition. With those three things and time, it is logically impossible for evolution not to occur.

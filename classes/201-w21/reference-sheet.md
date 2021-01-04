@@ -77,3 +77,219 @@ class Main {
   }
 }
 ```
+
+# Inheritance
+```
+import java.util.List;
+import java.util.ArrayList;
+
+public class Student {
+  private Name name;
+  private double gpa;
+  private List<String> classes;
+
+  public Student () {
+    name = new Name();
+    gpa = 4.0;
+    classes = new ArrayList<String>();
+  }
+
+  public Student(Name name, double gpa) {
+    this.name = name;
+    this.gpa = gpa;
+    classes = new ArrayList<String>();
+  }
+
+  public Name getName() {
+    return this.name;
+  }
+
+  public void displayClasses() {
+    for (String aClass : classes) {
+      System.out.println(aClass);
+    }
+  }
+
+  public void addClass(String newClass){
+    classes.add(newClass);
+  }
+
+  public void display() {
+    System.out.println("I'm in Student!");
+    System.out.format("%s \nClasses:\n", this.getName().getFullName());
+    displayClasses();
+  }
+}
+```
+
+```
+public class Name {
+  private String firstName;
+  private String lastName;
+  
+  public Name(){
+    firstName = "";
+    lastName = "";
+  }
+
+  public Name(String first, String last){
+    firstName = first;
+    lastName = last;
+  }
+
+  public String getFullName() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+```
+
+```
+public class CollegeStudent extends Student {
+  private int graduationYear;
+  private String department;
+
+  public CollegeStudent() {
+    super();
+    graduationYear = 2020;
+    department = "[undeclared]";
+  }
+  
+  public CollegeStudent(String firstName, String lastName, double gpa, int year) {
+    super(new Name(firstName, lastName), gpa);
+    graduationYear = year;
+    department = "[undeclared]";
+  }
+
+  @Override
+  public void display() {
+    System.out.println("I'm in CollegeStudent!");
+    System.out.format("%s (year %d)\nMajor: %s\nClasses:\n",
+    this.getName().getFullName(), 
+    this.graduationYear,
+    this.department);
+    displayClasses();
+  }
+
+  public void collegeStudentMethod() {
+    System.out.println("Only for college students");
+  }
+
+}
+```
+
+```
+class Main {
+  public static void main(String[] args) {
+    
+    CollegeStudent test = new CollegeStudent("this", "test", 4.0, 2020);
+    test.collegeStudentMethod();
+
+    Student test2 = new CollegeStudent();
+    test2.display();
+    
+
+  }
+}
+```
+
+# Interfaces
+```
+/**
+ * Interface for a Plant. Specifies the behaviors that all plants
+ * must implement.
+ * @author Anna Rafferty
+ *
+ */
+public interface Plant {
+    /**
+     * Returns the name of the plant. 
+     * @return String representing plant's name
+     */
+    public String getName();
+    
+    /**
+     * Waters the plant with how much water it needs.
+     */
+    public void waterPlant();
+    
+    /**
+     * Ages the plant by a day. This could change the 
+     * plant's water level or other characteristics.
+     */
+    public void elapseDay();
+    
+    /** 
+     * Returns a string describing the state of the plant. E.g., might say "overly dry" or 
+     * "abundantly happy". State of the plant may vary with water level or other
+     * characteristics.
+     * @return String representing status
+     */
+    public String getStatus();
+    
+    /** 
+     * Returns the current water level for the plant. Each plant has a water level indicating 
+     * whether it is dry, water-logged, or somewhere in between. 
+     * @return int representing water level
+     */
+    public int getWaterLevel();
+    
+
+}
+```
+
+```
+public class Strawberry implements Plant {
+  private int waterLevel = 0;
+
+  @Override
+  public void waterPlant() {
+    waterLevel += 1;
+  }
+
+  @Override
+  public void elapseDay() {
+    waterLevel -= 1;
+  }
+
+  @Override
+  public String getName() {
+    return "Strawberry";
+  }
+    
+    
+    /** 
+     * Returns a string describing the state of the plant. E.g., might say "overly dry" or 
+     * "abundantly happy". State of the plant may vary with water level or other
+     * characteristics.
+     * @return String representing status
+     */
+  public String getStatus() {
+    return "Always happy";
+  }
+    
+    /** 
+     * Returns the current water level for the plant. Each plant has a water level indicating 
+     * whether it is dry, water-logged, or somewhere in between. 
+     * @return int representing water level
+     */
+  public int getWaterLevel() {
+    return waterLevel;
+  }
+}
+```
+
+```
+/**
+ * Garden is a simulation of an actual garden that instantiates plants, waters them,
+ * and displays them. (Add details if you change things about the class)
+ * Look at the lab description for details about what to do with the Garden class.
+ */
+public class Garden {
+
+    
+    
+    public static void main(String[] args) {
+    	Plant test = new Strawberry();
+    }
+}
+```
