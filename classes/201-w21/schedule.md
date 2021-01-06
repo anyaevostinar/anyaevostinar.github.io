@@ -12,7 +12,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Java | |
 | M 1/4 | | [Comparing Python and Java](https://anyaevostinar.github.io/classes/201-w21/comparing-python-java)| |
-| W 1/6 | |	[Guessing Game](https://anyaevostinar.github.io/classes/201-w21/guessing-game-lab) |	HW1: Object Oriented Practice |
+| W 1/6 | |	[Guessing Game](https://anyaevostinar.github.io/classes/201-w21/guessing-game-lab) |	[HW1: Object Oriented Practice](https://anyaevostinar.github.io/classes/201-w21/hw1-oop-practice) |
 | F 1/8 |	| HW1 Work day |	 |
 | Week 2 | | Inheritance, List, Map and Set ADTs | |
 | M 1/11 |	HW1	| Inheritance |	HW2: Country Analyses |
