@@ -293,3 +293,35 @@ public class Garden {
     }
 }
 ```
+
+# Lists and Generics in Java
+```
+List<String> animalList = new ArrayList<String>();
+```
+
+```
+List<Die> myDiceList = new ArrayList<Die>();
+//...
+myDiceList.get(0).roll();
+```
+
+```
+import java.util.List;
+import java.util.ArrayList;
+
+class Main {
+  public static void mystery(List<Character> list) {
+    for(int i = 0; i < list.size() - 1; i++) {
+      list.add(i, list.remove(list.size()-1));
+    }
+  }
+
+  public static void main(String[] args) {
+    List<Character> myList = new ArrayList<Character>();
+    for (char c = 'a'; c<= 'h'; c++) {
+      myList.add(c);
+    }
+    mystery(myList);
+  }
+}
+```
