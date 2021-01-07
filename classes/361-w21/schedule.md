@@ -15,28 +15,28 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 1/6 | |	Java to C++ |	|
 | F 1/8 |		| Evolution as an algorithm |	 |
 | Week 2 | |  | |
-| M 1/11 |		| Empirical |	Basic ALife Simulation  |
+| M 1/11 |		| Interesting open problems |  |
 | W 1/13 |	|	Project Intro	| |
-| F 1/15 | |	Using models	|  |
+| F 1/15 | |	TBD	|  |
 | Week 3 | |  | |
-| M 1/18 | Basic ALife Simulation	| Kin selection example	| Proposal outline |
+| M 1/18 | | Kin selection example	| Proposal outline |
 | W 1/20 |	|	Quorum Sensing example | |
 | F 1/22 |  | Mutualism example | |
 | Week 4 | | | |
 | M 1/25 | Proposal outline |	Proposal discussions | Project Proposal|
-| W 1/27 |	|	Git version control |  |
-| F 1/29 | |	Using the computing cluster| |
+| W 1/27 |	| Empirical	basics |  |
+| F 1/29 | | Empirical data files	| |
 | Week 5 | |  | |
-| M 2/1 | Proposal Draft |	Basic non-parametric stats	| |
+| M 2/1 | Proposal Draft |	Empirical configManager	| |
 | W 2/3 |		| Proposal peer review	|  |
 | F 2/5 | Project Proposal |	Work day	| |
 | Week 6 | |  | |
 | M 2/8	| |	Mid-term Break!	| |
-| W 2/10 | Progress Report 1 |	TBD | |
-| F 2/12 |	| TBD	|  |
+| W 2/10 | Progress Report 1 |	Using models | |
+| F 2/12 |	| Git version control 	|  |
 | Week 7 | |  | |
-| M 2/15 | | TBD	| |
-| W 2/17 | Part 1 of Project, Progress Report 2 |	TBD	 | |
+| M 2/15 | | Using the computing cluster	| |
+| W 2/17 | Part 1 of Project, Progress Report 2 |	Basic non-parametric stats	 | |
 | F 2/19 | |	TBD	|  |
 | Week 8 | |  | |
 | M 2/22 |  |		TBD	| |
