@@ -11,7 +11,7 @@ To learn about evolutionary algorithms by making your own. Also to get more C++ 
 This is a lab assignment that you'll be handing in on Moodle. You should complete it on Friday Jan 8th, but it isn't due until Monday Jan 11th at 5:00pm Central.
 
 ## Setup
-Open the [Evolutionary Algorithm](https://repl.it/@carlcs361s01w21/Evolutionary-Algorithm) project on Repl.it for starter code.
+Open the [Evolutionary Algorithm](https://repl.it/team/carlcs361s01w21/Evolutionary-Algorithm) project on Repl.it for starter code.
 
 Create you Collaborations.txt document and enter in any sources of help you get on this lab including websites and people.
 
