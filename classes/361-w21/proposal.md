@@ -11,3 +11,5 @@ Your outline is due 1/25 and should at least include:
 
 * Topic area you want to focus (eg parasitism)
 * Example real-world organisms/systems with behavior you find interesting
+
+More coming soon!
