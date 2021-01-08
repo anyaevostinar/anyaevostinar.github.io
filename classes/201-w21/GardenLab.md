@@ -17,7 +17,7 @@ In this lab, you'll be creating a simulation of a garden. Specifically you'll:
 ## Logistics
 This is a lab assignment that you'll be handing in on Moodle. You should complete it on Wednesday Jan 13th, but it isn't due until Friday Jan 15th at 5:00pm Central.
 
-You'll do this lab on repl.it. Go to our Team, click on Projects, and open Garden Lab.
+You'll do this lab on repl.it. Open [Garden Lab](https://repl.it/team/carlcs201s01w21/Garden-Lab).
 
 You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you're welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
 
