@@ -12,11 +12,11 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | |  | |
 | M 1/4 | | What is alive? |  |
-| W 1/6 | |	Java to C++ |	|
-| F 1/8 |		| Evolution as an algorithm |	 |
+| W 1/6 | |	[Java to C++](/classes/361-w21/cpp_intro) |	|
+| F 1/8 |		| [Evolution as an algorithm](/classes/361-w21/evo_alg_lab) |	 |
 | Week 2 | |  | |
 | M 1/11 |		| Interesting open problems |  |
-| W 1/13 |	|	Project Intro	| |
+| W 1/13 |	|	[Project Intro](/classes/361-w21/project)	| |
 | F 1/15 | |	TBD	|  |
 | Week 3 | |  | |
 | M 1/18 | | Kin selection example	| Proposal outline |
