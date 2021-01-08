@@ -49,6 +49,9 @@ Which can then be the hypothesis:
 # Paper/GUI
 To report on your findings, you will write a traditional scientific paper and create a GUI using Empirical's GUI tools. We will spend time in class discussing both of these and more details will be provided on how they will be graded.
 
+# Groups
+You will be allowed to work with one other person on your term project or work by yourself. Keep in mind that my expectations for two-person projects will be higher and the final products should have twice the amount of content. I will assist in forming groups by sending out a form asking about which topics are of interest and who you would/would not like to work with if anyone. Given the remote nature of the course, I will prioritize preferences of who if anyone you would like to group with.
+
 # Grading
 Most of your grade in this course relates to the project in one way or another:
 
