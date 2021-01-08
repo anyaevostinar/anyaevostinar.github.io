@@ -325,3 +325,41 @@ class Main {
   }
 }
 ```
+
+# Sets and Maps in Java
+```
+import java.util.Map;
+import java.util.HashMap;
+
+class Main {
+  public static void main(String[] args) {
+    Map<String, Integer> wordCounts = new HashMap<String, Integer>();
+
+    wordCounts.put("hi", 1);
+    wordCounts.put("hi", 2);
+    wordCounts.put("friend", 1);
+
+    for(String word : wordCounts.keySet()) {
+      System.out.println("\""+ word + "\" has been seen " + wordCounts.get(word) + " times.");
+    }
+  }
+}
+```
+
+```
+import java.util.Set;
+import java.util.HashSet;
+
+public class SetTest{
+  public static void main(String[] args){
+    Set<Integer> mySet = new HashSet<Integer>();
+    for (int i=0; i<5; i++) {
+      mySet.add(i);
+      mySet.add(2*i);
+    }
+
+    int myInt = Integer.parseInt("1");
+    double myDouble = Double.parseDouble("1.0");
+  }
+}
+```
