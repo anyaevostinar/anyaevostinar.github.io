@@ -81,6 +81,7 @@ I like to outline my ideas as comments in the method so that I can then just wri
 Your code should first welcome the user, asking for their name like my example does above. 
 After welcoming the user, this method should get input from the user and have them guess until they're correct. 
 You might look back at the examples from the comparing Python and Java activity to see an example of getting input from the user and looping. 
+(You'll want to use a scanner and either `.next()` to get a string or `.nextInt()` to get a number for input.)
 Your game should provide feedback to the user about whether their guess is too high or too low. 
 
 d. Once you think you have `playGame` working, compile your code and run it. 
