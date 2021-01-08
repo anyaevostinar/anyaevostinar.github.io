@@ -33,7 +33,7 @@ This term you will:
 * Learn about a range of interesting biological systems
 * Learn how to program in C++
 * Use a powerful open source library
-* Write a scientific paper and/or GUI
+* Write a scientific paper and GUI
 
 
 **Prerequisites**: CS201 (Data Structures)
@@ -61,8 +61,6 @@ All materials will be released at least 48 hours before they are due.
 
 ## Types of Engagement and Collaboration Policies
 We'll have lots of different ways of engaging with the course material:
-* Videos that I make to introduce content and activities, and show you my problem solving process. 
-Videos often include embedded questions or start you on an activity.
 * Readings, which will introduce ideas and provide more details than the videos. 
 Readings sometimes include embedded activities to help you check your understanding.
 * Labs for writing somewhat longer code with significant guidance from the instructions in order to make ideas from class more concrete.
@@ -103,7 +101,7 @@ Here is how activities this term will be factored into your grade:
 | Peer review participation | Evaluated based on effort. There will be several times you are expected to give your peers feedback to help them improve their own projects. | 10% |
 | Progress reports | Evaluated based on clear progress and effort. To ensure you are working steadily on your final project during the second half of the term. | 10% |
 | Term project software | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 25% |
-| Paper/GUI | Explaining your science is equally as important as doing science, so you will need to explain your science either through a scientific paper and/or a browser-based GUI. | 25% |
+| Paper/GUI | Explaining your science is equally as important as doing science, so you will need to explain your science through a scientific paper and a browser-based GUI. | 25% |
 | Presentation | You will also need to present your final project to the class and actively participate in your classmates' presentations. | 10% |
 
 ## How to Succeed in this Class

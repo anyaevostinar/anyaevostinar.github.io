@@ -47,7 +47,7 @@ Which can then be the hypothesis:
 **X selects for Y given Z.**
 
 # Paper/GUI
-You will have an option on how to report on the outcomes of your simluation experiments. You will be able to either write a traditional scientific paper and/or create a GUI using Empirical's GUI tools. We will spend time in class discussing both of these and more details will be provided on how they will be graded.
+To report on your findings, you will write a traditional scientific paper and create a GUI using Empirical's GUI tools. We will spend time in class discussing both of these and more details will be provided on how they will be graded.
 
 # Grading
 Most of your grade in this course relates to the project in one way or another:
