@@ -303,6 +303,9 @@ List<String> animalList = new ArrayList<String>();
 List<Die> myDiceList = new ArrayList<Die>();
 //...
 myDiceList.get(0).roll();
+for (Die d : myDiceList) {
+  d.roll();
+}
 ```
 
 ```
