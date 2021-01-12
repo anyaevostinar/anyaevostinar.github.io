@@ -18,6 +18,7 @@ Coming up with that research question, simulation, and experiments is no small f
 | Part 1; Progress report 2 | 2/17 |
 | Progress report 3 | 2/24 |
 | Progress report 4 | 3/3 |
+| ALIFE deadline (optional) | 3/7 |
 | Presentations | 3/13 |
 | Final project | 3/15 |
 
@@ -48,6 +49,8 @@ Which can then be the hypothesis:
 
 # Paper/GUI
 To report on your findings, you will write a traditional scientific paper and create a GUI using Empirical's GUI tools. We will spend time in class discussing both of these and more details will be provided on how they will be graded.
+
+If you would like, the main artificial life conference, [ALIFE](https://www.robot100.cz/alife2021), has a virtual component this year, and I will be able to work with a couple of groups to submit your research paper to the conference. The conference deadline is March 7th (though this is often extended by a week, but we can't count on that). If this is something that interests you, please make sure that I'm aware as we get closer to the deadline.
 
 # Groups
 You will be allowed to work with one other person on your term project or work by yourself. Keep in mind that my expectations for two-person projects will be higher and the final products should have twice the amount of content. I will assist in forming groups by sending out a form asking about which topics are of interest and who you would/would not like to work with if anyone. Given the remote nature of the course, I will prioritize preferences of who if anyone you would like to group with.
