@@ -24,7 +24,17 @@ Your draft is due 2/1 so that it can be distributed to classmates for peer revie
 * The system/behavior of interest and why it is interesting (ie 'weird' from an evolutionary perspective)
 * Your specific research question/hypothesis
 * A high-level idea of what axioms you will code to test your research question/hypothesis
+* Additions that you can pursue if you have time but aren't critical to get a result
 * A bibliography of sources you have already consulted or will consult
 
 # Proposal final
 Your final draft of your proposal is due 2/5. It should include the same that the draft did but with more polish/edits based on my and your peers' feedback.
+
+# Grading
+The outline, draft, and peer review will be graded on effort and you should simply be sure to have provided each of the required pieces, even if they are rough. I will be giving feedback on what is needed to earn full points on the final proposal
+
+The proposal will be graded as follows:
+
+| Item | Points |
+|------|--------|
+Coming soon!
