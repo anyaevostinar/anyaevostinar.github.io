@@ -65,3 +65,21 @@ Most of your grade in this course relates to the project in one way or another:
 |Presentation | 10%|
 
 I will give more details about each of these components as their deadlines approach and am always happy to answer questions if you would like to know details earlier than I've written them down.
+
+# Examples
+Here are the research questions that I have previously investigated:
+* Does kin selection select for programmed cell death given no other confounding factors?
+* Does spatial structure select for cooperation given the existence of accurate quorum sensing?
+* Does vertical transmission select for mutualism given no spatial structure?
+* Does spatial structure select for mutualism given varying vertical transmission rates?
+* Does division of labor select for mutualism given varying vertical transmission rates?
+
+Here are open research questions that you could pursue if you aren't able to decide on one (you'll notice they are basically all about parasitism/mutualism since that is what I currently study):
+* Can mutualists co-exist with parasites if the parasites have selected for highly defensive hosts?
+* Does a rapidly changing spatial or temporal environment select for mutualism?
+* Does the presence of a mutualist select for or against another mutualist co-existing?
+* Does the ability of hosts' to perform program cell death select for mutualism given low vertical transmission rates?
+* Does serotype conversion select for mutualism given the presence of parasitic strains?
+* Does quorum-sensing controlled cooperation select for mutualism with a symbiont given low vertical transmission rates?
+* Does the presence of a competing host species select for parasitism given an existing symbiosis with one host species?
+* Does the presence of a parasite prevent host range expansion given the range expansion is into a hostile area?

@@ -366,3 +366,15 @@ public class SetTest{
   }
 }
 ```
+
+# Arrays in Java
+```
+public static void main(String[] args) {
+  String myInput = args[0];
+
+  //create new array, no ()!
+  String[] myArray = new String[6];
+  myArray[0] = "bat";
+  myArray[3] = "goat";
+}
+```
