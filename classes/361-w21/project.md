@@ -83,3 +83,4 @@ Here are open research questions that you could pursue if you aren't able to dec
 * Does quorum-sensing controlled cooperation select for mutualism with a symbiont given low vertical transmission rates?
 * Does the presence of a competing host species select for parasitism given an existing symbiosis with one host species?
 * Does the presence of a parasite prevent host range expansion given the range expansion is into a hostile area?
+* Does the presence of a mutualist symbiont select for group living given hosts can choose how closer to associate with each other?
