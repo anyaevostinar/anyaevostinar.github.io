@@ -117,8 +117,9 @@ c. We now need to figure out how to get n out of our expression. Because we are 
 <details><summary>Show solution</summary>
 <p>
 Because this is an inequality that we are trying to show, you can increase what is on the smaller side because it will still prove that (1/5)n +30 <= Cn
+<br>
 
-(1/5)n + 30     (1/5)n + 30n<br>
+(1/5)n + 30     (1/5)n + 30n <br>
 ------------ <= ------------ <= C   <br>
     n                n
 </p>
