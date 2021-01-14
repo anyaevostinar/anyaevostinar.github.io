@@ -99,6 +99,7 @@ a. A good starting place is to try n<sub>0</sub> = 1 and try to find a C that wo
 (1/5)n + 30 <= C*n (for all n>= 1)
 </p>
 </details>
+<br>
 
 b. When solving for a specific variable, we always want to try to get that variable on one side of the inequality sign, so divide both sides by n.
 
@@ -109,6 +110,7 @@ b. When solving for a specific variable, we always want to try to get that varia
     n
 </p>
 </details>
+<br>
 
 c. We now need to figure out how to get n out of our expression. Because we are dealing with an inequality, we can change the value on one side as long as we are respecting the rules of the inequality. How can you change the expression so that you can eventually factor out n as long as n >= 1?
 
@@ -121,6 +123,7 @@ Because this is an inequality that we are trying to show, you can increase what 
     n                n
 </p>
 </details>
+<br>
 
 d. Now factor out n so that you are left with a value for C. 
 
@@ -132,6 +135,7 @@ Because this is an inequality that we are trying to show, you can increase what 
         
 </p>
 </details>
+<br>
 
 e. Report your n<sub>0</sub> and C values that show that (1/5)n+30 is in O(n) by writing: "Thus if C = ?? and n<sub>0</sub> = ??, then Cn >= (1/5)n+30 for all n>=n<sub>0</sub>, so by the definition of big-O, (1/5)n+30 is in O(n)."
 
@@ -141,6 +145,7 @@ Thus if C = 30.2 and n<sub>0</sub> = 1, then C*n >= (1/5)n+30 for all n>=n<sub>0
         
 </p>
 </details>
+<br>
 
 ## Exercise 5
 Now you'll follow the same steps as in Exercise 4 to show that 7n<sup>3</sup>+2<sup>n</sup> is O(2<sup>n</sup>).
