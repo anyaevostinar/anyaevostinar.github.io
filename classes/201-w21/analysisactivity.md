@@ -94,13 +94,53 @@ For this exercise, you will show that (1/5)n+30 is in O(n) by finding a C and an
 
 a. A good starting place is to try n<sub>0</sub> = 1 and try to find a C that works. We want to find a C such that our function is less than or equal to C*n for all n greater than or equal to n<sub>0</sub> which we've started with as 1. Write down that mathematical expression.
 
+<details><summary>Show solution</summary>
+<p>
+(1/5)n + 30 <= C*n (for all n>= 1)
+</p>
+</details>
+
 b. When solving for a specific variable, we always want to try to get that variable on one side of the inequality sign, so divide both sides by n.
+
+<details><summary>Show solution</summary>
+<p>
+(1/5)n + 30
+------------ <= C   
+    n
+</p>
+</details>
 
 c. We now need to figure out how to get n out of our expression. Because we are dealing with an inequality, we can change the value on one side as long as we are respecting the rules of the inequality. How can you change the expression so that you can eventually factor out n as long as n >= 1?
 
+<details><summary>Show solution</summary>
+<p>
+Because this is an inequality that we are trying to show, you can increase what is on the smaller side because it will still prove that (1/5)n +30 <= Cn
+
+(1/5)n + 30     (1/5)n + 30n
+------------ <= ------------ <= C   
+    n                n
+</p>
+</details>
+
 d. Now factor out n so that you are left with a value for C. 
 
+<details><summary>Show solution</summary>
+<p>
+Because this is an inequality that we are trying to show, you can increase what is on the smaller side because it will still prove that (1/5)n +30 <= Cn
+
+(1/5) + 30 <= C   
+        
+</p>
+</details>
+
 e. Report your n<sub>0</sub> and C values that show that (1/5)n+30 is in O(n) by writing: "Thus if C = ?? and n<sub>0</sub> = ??, then Cn >= (1/5)n+30 for all n>=n<sub>0</sub>, so by the definition of big-O, (1/5)n+30 is in O(n)."
+
+<details><summary>Show solution</summary>
+<p>
+Thus if C = 30.2 and n<sub>0</sub> = 1, then C*n >= (1/5)n+30 for all n>=n<sub>0</sub>, so by the definition of big-O, (1/5)n+30 is in O(n)." 
+        
+</p>
+</details>
 
 ## Exercise 5
 Now you'll follow the same steps as in Exercise 4 to show that 7n<sup>3</sup>+2<sup>n</sup> is O(2<sup>n</sup>).
