@@ -105,8 +105,8 @@ b. When solving for a specific variable, we always want to try to get that varia
 
 <details><summary>Show solution</summary>
 <p>
-(1/5)n + 30
------------- <= C   
+(1/5)n + 30<br>
+------------ <= C<br>
     n
 </p>
 </details>
@@ -118,8 +118,8 @@ c. We now need to figure out how to get n out of our expression. Because we are 
 <p>
 Because this is an inequality that we are trying to show, you can increase what is on the smaller side because it will still prove that (1/5)n +30 <= Cn
 
-(1/5)n + 30     (1/5)n + 30n
------------- <= ------------ <= C   
+(1/5)n + 30     (1/5)n + 30n<br>
+------------ <= ------------ <= C   <br>
     n                n
 </p>
 </details>
