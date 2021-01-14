@@ -97,6 +97,7 @@ a. A good starting place is to try n<sub>0</sub> = 1 and try to find a C that wo
 <details><summary>Show solution</summary>
 <p>
 <img src="/classes/201-w21/analysis1.png">
+For all n >= 1.
 </p>
 </details>
 <br>
