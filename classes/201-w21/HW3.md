@@ -122,7 +122,7 @@ This is how you will be graded on this homework:
 | toString method correct | 1 |
 | get works as specified | 1 |
 | Demonstration examples for add | 1 |
-| Style | 1 |
+| Java-docs style documentation | 1 |
 
 # Submission
 Make sure Collaborations.txt is accurate and includes any sources that you used including any conversations. Did you share strategies with anyone else? Talk about any annoying compiler error and get advice? These are fine things to do, and you should note them in the Collaborations.txt file. Give the names of people you talked with. If you used any resources outside of our course materials, that is also something to note in Collaborations.txt. If you didn't talk with anyone, please note that explicitly in Collaborations.txt.
