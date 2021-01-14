@@ -96,7 +96,7 @@ a. A good starting place is to try n<sub>0</sub> = 1 and try to find a C that wo
 
 <details><summary>Show solution</summary>
 <p>
-(1/5)n + 30 <= C*n (for all n>= 1)
+<img src="/classes/201-w21/analysis1.png">
 </p>
 </details>
 <br>
@@ -105,9 +105,7 @@ b. When solving for a specific variable, we always want to try to get that varia
 
 <details><summary>Show solution</summary>
 <p>
-(1/5)n + 30<br>
------------- <= C<br>
-    n
+<img src="/classes/201-w21/analysis2.png">
 </p>
 </details>
 <br>
@@ -118,10 +116,7 @@ c. We now need to figure out how to get n out of our expression. Because we are 
 <p>
 Because this is an inequality that we are trying to show, you can increase what is on the smaller side because it will still prove that (1/5)n +30 <= Cn
 <br>
-
-(1/5)n + 30     (1/5)n + 30n <br>
------------- <= ------------ <= C   <br>
-    n                n
+<img src="/classes/201-w21/analysis3.png">
 </p>
 </details>
 <br>
@@ -132,7 +127,7 @@ d. Now factor out n so that you are left with a value for C.
 <p>
 Because this is an inequality that we are trying to show, you can increase what is on the smaller side because it will still prove that (1/5)n +30 <= Cn
 <br>
-(1/5) + 30 <= C   
+<img src="/classes/201-w21/analysis4.png">
         
 </p>
 </details>
@@ -142,7 +137,7 @@ e. Report your n<sub>0</sub> and C values that show that (1/5)n+30 is in O(n) by
 
 <details><summary>Show solution</summary>
 <p>
-Thus if C = 30.2 and n<sub>0</sub> = 1, then C*n >= (1/5)n+30 for all n>=n<sub>0</sub>, so by the definition of big-O, (1/5)n+30 is in O(n)." 
+<img src="/classes/201-w21/analysis5.png">
         
 </p>
 </details>
