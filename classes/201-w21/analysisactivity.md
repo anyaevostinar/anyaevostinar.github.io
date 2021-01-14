@@ -131,7 +131,7 @@ d. Now factor out n so that you are left with a value for C.
 <details><summary>Show solution</summary>
 <p>
 Because this is an inequality that we are trying to show, you can increase what is on the smaller side because it will still prove that (1/5)n +30 <= Cn
-
+<br>
 (1/5) + 30 <= C   
         
 </p>
