@@ -21,7 +21,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 3 | | Efficiency and List implementations | |
 | M 1/18 |	HW2	| [Asymptotic Analysis](https://anyaevostinar.github.io/classes/201-w21/analysis-activity)	| |
 | W 1/20 |	 |	[Linked Lists](https://anyaevostinar.github.io/classes/201-w21/linked-list) | [HW3: Country displayer redux](https://anyaevostinar.github.io/classes/201-w21/hw3) |
-| F 1/22 | |		ArrayLists	| |
+| F 1/22 | |		[ArrayLists](https://anyaevostinar.github.io/classes/201-w21/arraylist)	| |
 | Week 4 | | Stacks and Queues | |
 | M 1/25 | |		Stack implementation	| |
 | W 1/27 |	HW3 |	Queue implementations	| HW4: Solving Mazes |

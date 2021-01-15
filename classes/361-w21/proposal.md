@@ -33,8 +33,18 @@ Your final draft of your proposal is due 2/5. It should include the same that th
 # Grading
 The outline, draft, and peer review will be graded on effort and you should simply be sure to have provided each of the required pieces, even if they are rough. I will be giving feedback on what is needed to earn full points on the final proposal
 
-The proposal will be graded as follows:
+The proposal will be graded as follows (out of 100):
 
 | Item | Points |
 |------|--------|
-Coming soon!
+|Introduces appropriate background information| 10 |
+|Argues effectively about why the system is interesting scientifically | 10 |
+|Proposes specific research question and/or hypothesis| 10 |
+|Outlines clearly how project will answer the research question | 30 |
+|Proposed project is feasible in the timeframe| 5 |
+|Additions specified and effectively build on the core project| 10|
+|Bibliography sufficient |5 |
+|Writing is appropriately formal | 5|
+|Writing is clear| 5|
+|Writing flows smoothly| 5|
+|Less than 5 errors in spelling, grammar, and punctuation| 5|
