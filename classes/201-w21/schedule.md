@@ -15,12 +15,12 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 1/6 | |	[Guessing Game](https://anyaevostinar.github.io/classes/201-w21/guessing-game-lab) |	[HW1: Object Oriented Practice](https://anyaevostinar.github.io/classes/201-w21/hw1-oop-practice) |
 | F 1/8 |	| HW1 Work day |	 |
 | Week 2 | | Inheritance, List, Map and Set ADTs | |
-| M 1/11 |	HW1	| Inheritance |	HW2: Country Analyses |
-| W 1/13 |	|	Lists and Interfaces	| |
-| F 1/15 | |		Maps and Sets	| |
+| M 1/11 |	HW1	| [Inheritance](https://anyaevostinar.github.io/classes/201-w21/inheritance-activity) |	[HW2: Country Analyses](https://anyaevostinar.github.io/classes/201-w21/hw2) |
+| W 1/13 |	|	[Lists and Interfaces](https://anyaevostinar.github.io/classes/201-w21/garden-lab)	| |
+| F 1/15 | |		[Maps and Sets](https://anyaevostinar.github.io/classes/201-w21/maps-activity)	| |
 | Week 3 | | Efficiency and List implementations | |
-| M 1/18 |	HW2	| Asymptotic Analysis	| |
-| W 1/20 |	 |	Linked Lists | HW3: Country displayer redux |
+| M 1/18 |	HW2	| [Asymptotic Analysis](https://anyaevostinar.github.io/classes/201-w21/analysis-activity)	| |
+| W 1/20 |	 |	[Linked Lists](https://anyaevostinar.github.io/classes/201-w21/linked-list) | [HW3: Country displayer redux](https://anyaevostinar.github.io/classes/201-w21/hw3) |
 | F 1/22 | |		ArrayLists	| |
 | Week 4 | | Stacks and Queues | |
 | M 1/25 | |		Stack implementation	| |
