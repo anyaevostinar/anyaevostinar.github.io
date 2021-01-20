@@ -42,13 +42,13 @@ When you are creating constructor for a subclass of `World`, you'll want to call
 There's a lot going on in there, so let's put in some extra lines so that we can talk about each piece:
 
 ```
-    OrgWorld(emp::Random &_random) //taking in an emp::Random object reference called _random
-     : emp::World<Organism>(_random) //Calling the super class' constructor, passing in _random
-     , random(_random) //setting the instance variable random to _random
-     
-     {
-        random_ptr.New(_random); //demonstrating creating a new emp::Ptr object to point at _random
-    }
+OrgWorld(emp::Random &_random) //taking in an emp::Random object reference called _random
+    : emp::World<Organism>(_random) //Calling the super class' constructor, passing in _random
+    , random(_random) //setting the instance variable random to _random
+    
+    {
+    random_ptr.New(_random); //demonstrating creating a new emp::Ptr object to point at _random
+}
 ```
 
 ## Update
@@ -67,7 +67,9 @@ void Update() {
 ## DoBirth
 `DoBirth` is a useful method of `World` that places an offspring into the population based on the rules of spatial structure in the world. Two main types of spatial structure are grid and mixed. Grid is where the organisms are placed on a 2D grid of size that you specify and are considered neighbors with the organisms one grid space away from them. Mixed is where organisms are all considered neighbors of each other like they are constantly being mixed around in liquid. The spatial structure can be considered for many things, but one of the first you'll encounter is where offspring are allowed to be placed. In a grid, offspring are only placed immediately adjacent to the parent, whereas in mixed, offspring can be placed anywhere. `DoBirth` takes care of all of that for you, you just have to give it the offspring and the location of the parent:
 ```
-emp::Ptr<Organism> offspring = pop[i]->checkReproduction(); //this is implemented in Organism
+emp::Ptr<Organism> offspring = pop[i]->checkReproduction(); 
+//this is implemented in Organism
+
 if(offspring) {
     DoBirth(*offspring, i);
 }
