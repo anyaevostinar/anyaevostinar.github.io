@@ -27,6 +27,8 @@ Your draft is due 2/1 so that it can be distributed to classmates for peer revie
 * Additions that you can pursue if you have time but aren't critical to get a result
 * A bibliography of sources you have already consulted or will consult
 
+I expect this to take at least 2 pages but you can certainly write more than that if needed.
+
 # Proposal final
 Your final draft of your proposal is due 2/5. It should include the same that the draft did but with more polish/edits based on my and your peers' feedback.
 

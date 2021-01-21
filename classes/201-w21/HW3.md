@@ -16,7 +16,7 @@ This is a homework assignment that you'll be handing in on Moodle.
 You're welcome to either complete this homework with input from one or more members of your collaborative learning group or to complete it on your own. You and the other members of your collaborative learning group should each write your own code, even if you're helping one another, but you may share your screens/use multiplayer mode to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
 
 # Setup and Requirements
-Go to our Team on Repl.it and open the project HW4.
+Go to our Team on Repl.it and open the project HW3.
 
 You should first create a Collaborations.txt document and update it with any sources (webpage or people) that you get help from. This includes even just looking up a function, always better to be safe!
 
