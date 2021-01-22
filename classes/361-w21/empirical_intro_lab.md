@@ -100,3 +100,6 @@ If you have extra time, try adding to your organism's `Process` method so that i
 * Spend resources to build defense from the environment or other organisms
 
 You can also start looking through the code from the Built with Empirical examples and see how they built their organisms and worlds.
+
+## Credit
+This lab uses the [cookie-cutter material](https://github.com/devosoft/cookiecutter-empirical-project.git) from [this tutorial](https://mmore500.com/waves/tutorials/lesson02.html) by [Matthew Andres Moreno](https://github.com/mmore500) and [Santiago Rodriguez Papa](https://github.com/rodsan0/)
