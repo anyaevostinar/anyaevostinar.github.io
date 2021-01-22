@@ -37,6 +37,9 @@ b. As always, we need to be able to print the items to check that things are wor
 c. If you previously created a `head` Node that contains a null value, remove it and have `head` point to the first non-null Node. Make sure you understand why you don't need a null head node for a queue whereas it is useful for a linked list.
 
 d. Verify via printing that you are able to enqueue several items. (If you want, make them complaints from the peasants in the reading.)
+```
+System.out.println(myQueue);
+```
 
 ## Exericse 3
 Finally, we want to also be able to remove items from a queue, which is called `dequeue`.

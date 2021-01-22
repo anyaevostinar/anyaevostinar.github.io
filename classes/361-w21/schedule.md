@@ -25,7 +25,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 4 | | | |
 | M 1/25 | Proposal outline |	Proposal discussions | Project Proposal|
 | W 1/27 |	|  Quorum Sensing example  |  |
-| F 1/29 | | Empirical	basics 	| |
+| F 1/29 | | [Reading](/classes/361-w21/empirical_intro) [Empirical	basics lab](/classes/361-w21/empirical_intro_lab) 	| |
 | Week 5 | |  | |
 | M 2/1 | Proposal Draft | Empirical data files		| |
 | W 2/3 |		| Proposal peer review	|  |

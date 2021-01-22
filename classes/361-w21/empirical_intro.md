@@ -75,6 +75,13 @@ if(offspring) {
 }
 ```
 
+## SetPopStruct_Grid
+Empirical has built-in support for having a grid spatial structure for organisms as discussed above. To set your world to be a grid of 100x200, you would write:
+```
+SetPopStruct_Grid(100, 200);
+```
+
+
 ## Inject
 If you aren't reproducing an organism and just want to put a specific organism into the world, you can use the `Inject()` method and pass an organism:
 ```
@@ -87,6 +94,7 @@ If you want a certain amount of space to be available in your world, not necessa
 
 ## GetNumOrgs
 Since your world can be full of living organisms and empty spots, you might want just how many actually alive organisms there are, which `GetNumOrgs()` will do for you.
+
 
 # native.cpp
 Empirical projects are well-suited to having a 'native' version that runs without a GUI in the console as well as a 'web' version that builds a GUI that can be run in a web browser. We'll focus on the native version for now.
