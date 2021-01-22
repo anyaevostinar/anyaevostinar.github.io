@@ -23,9 +23,9 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 1/20 |	 |	[Linked Lists](https://anyaevostinar.github.io/classes/201-w21/linked-list) | [HW3: Country displayer redux](https://anyaevostinar.github.io/classes/201-w21/hw3) |
 | F 1/22 | |		[ArrayLists](https://anyaevostinar.github.io/classes/201-w21/arraylist)	| |
 | Week 4 | | Stacks and Queues | |
-| M 1/25 | |		[Stack implementation](https://anyaevostinar.github.io/classes/201-w21/stacks)	| |
-| W 1/27 |	HW3 |	[Queue implementations](http://anyaevostinar.github.io/classes/201-w21/queues)	| [HW4: Solving Mazes](https://anyaevostinar.github.io/classes/201-w21/hw4) |
-| F 1/29 | |		Review/Catch up	| |
+| M 1/25 | |	[ArrayLists](https://anyaevostinar.github.io/classes/201-w21/arraylist)	| |
+| W 1/27 |	HW3 | [Stack implementation](https://anyaevostinar.github.io/classes/201-w21/stacks)	| [HW4: Solving Mazes](https://anyaevostinar.github.io/classes/201-w21/hw4) |
+| F 1/29 | |	[Queue implementations](http://anyaevostinar.github.io/classes/201-w21/queues)	| |
 | Week 5 | | Graphs | |
 | M 2/1 | |	Graph implementations	| |
 | W 2/3 |	HW4	| Breadth first search	| HW5: WikiPaths |
