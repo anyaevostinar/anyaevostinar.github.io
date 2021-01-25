@@ -27,7 +27,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 1/27 |	|  Quorum Sensing example  |  |
 | F 1/29 | | [Reading](/classes/361-w21/empirical_intro) [Empirical	basics lab](/classes/361-w21/empirical_intro_lab) 	| |
 | Week 5 | |  | |
-| M 2/1 | Proposal Draft | Empirical data files		| |
+| M 2/1 | Proposal Draft | [Empirical data files](https://anyaevostinar.github.io/classes/361-w21/data_intro)		| |
 | W 2/3 |		| Proposal peer review	|  |
 | F 2/5 | Project Proposal |	Work day	| |
 | Week 6 | |  | |
