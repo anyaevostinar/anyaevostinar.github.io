@@ -158,7 +158,15 @@ It automatically calculates the mean of the values that you've added.
 ## Histogram data
 Averages can obscure interesting information in your data, so it's good to collect distribution data in addition. A good example of this is for a behavior value in my software, the value can be between -1 and 1. I was getting averages of 0, which didn't make sense. What was actually going on was that there was a coexistence of negative and positive values, which was really cool to see!
 
-Getting histogram data to record is a little bit awkward, but supported. You create the node like normal, but then if you want it to have a certain number of bins, for example -1 to 1 at 0.1 distances, you would first set them up:
+Getting histogram data to record is a little bit awkward, but supported.
+
+When you create a pointer to the data node, you need to specify that it will be monitoring a histogram as well as a double (if you are going to pull the mean as well):
+
+```
+emp::Ptr<emp::DataMonitor<double, emp::data::Histogram>> data_node_orgcoop;
+```
+
+Then when setting up the file, if you want the histogram to have a certain number of bins, for example -1 to 1 at 0.1 distances, you would first set them up:
 
 ```
 node.SetupBins(-1.0, 1.1, 21);
