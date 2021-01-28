@@ -23,29 +23,29 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 1/20 |	|	Work day | |
 | F 1/22 |  | Mutualism example | |
 | Week 4 | | | |
-| M 1/25 | Proposal outline |	Proposal discussions | Project Proposal|
+| M 1/25 | [Proposal outline](/classes/361-w21/proposal) |	Proposal discussions | Project Proposal|
 | W 1/27 |	|  Quorum Sensing example  |  |
 | F 1/29 | | [Reading](/classes/361-w21/empirical_intro) [Empirical	basics lab](/classes/361-w21/empirical_intro_lab) 	| |
 | Week 5 | |  | |
-| M 2/1 | Proposal Draft | [Reading](https://anyaevostinar.github.io/classes/361-w21/data_intro) [Empirical DataFiles lab](/classes/361-w21/empirical_data_lab)		| |
+| M 2/1 | [Proposal Draft](/classes/361-w21/proposal) | [Reading](https://anyaevostinar.github.io/classes/361-w21/data_intro) [Empirical DataFiles lab](/classes/361-w21/empirical_data_lab)		| |
 | W 2/3 |		| Proposal peer review	|  |
-| F 2/5 | Project Proposal |	Work day	| |
+| F 2/5 | [Project Proposal](/classes/361-w21/proposal) |	Work day	| |
 | Week 6 | |  | |
 | M 2/8	| |	Mid-term Break!	| |
-| W 2/10 | Progress Report 1 | Empirical configManager	 | |
+| W 2/10 | [Progress Report 1](/classes/361-w21/progress-reports) | Empirical configManager	 | |
 | F 2/12 |	|  Git version control |  |
 | Week 7 | |  | |
 | M 2/15 | |  Using the computing cluster 	| |
-| W 2/17 | Part 1 of Project, Progress Report 2 |	Basic non-parametric stats	 | |
-| F 2/19 | |	TBD	|  |
+| W 2/17 | Part 1 of Project, [Progress Report 2](/classes/361-w21/progress-reports) |	Basic non-parametric stats	 | |
+| F 2/19 | |	GUIs in Empirical	|  |
 | Week 8 | |  | |
-| M 2/22 |  |		TBD	| |
-| W 2/24 | Progress Report 3 |	TBD	 | |	
-| F 2/26 | 	|  TBD |	|
+| M 2/22 |  |		Scientific papers	| |
+| W 2/24 | [Progress Report 3](/classes/361-w21/progress-reports) |	TBD	 | |	
+| F 2/26 | 	|  GUI peer review |	|
 | Week 9 | |  | |
 | M 3/1 | |		Presentations intro	| |	
-| W 3/3 | Progress Report 4 |	TBD | |
-| F 3/5 |  |	TBD |	 |
+| W 3/3 | [Progress Report 4](/classes/361-w21/progress-reports) |	TBD | |
+| F 3/5 |  |	Paper peer review |	 |
 | Week 10 | | | |
 | M 3/8	| |  Final project discussion | |
 | W 3/10 | | Wrap up; course evaluations	| |
