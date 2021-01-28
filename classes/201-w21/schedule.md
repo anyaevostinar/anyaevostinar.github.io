@@ -28,7 +28,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 1/29 | |	[Queue implementations](http://anyaevostinar.github.io/classes/201-w21/queues)	| |
 | Week 5 | | Graphs | |
 | M 2/1 | |	[Graph implementations](/classes/201-w21/graphs)	| |
-| W 2/3 |	HW4	| Breadth first search	| [HW5: WikiPaths](/classes/201-w21/hw5) |
+| W 2/3 |	HW4	| [Breadth first search](/classes/201-w21/BFS)	| [HW5: WikiPaths](/classes/201-w21/hw5) |
 | F 2/5 | |	Complexity of DFS and BFS	| |
 | Week 6 | | Recursion and Sorting | |
 | M 2/8	| |	Mid-term Break!	| |
