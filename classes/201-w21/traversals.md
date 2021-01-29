@@ -8,7 +8,7 @@ permalink: /classes/201-w21/traversal-analysis
 To analyze the time complexity of depth first and breadth first search.
 
 ## Logistics
-This is a lab assignment that you'll be handing in on Moodle. You should complete it on Friday Feb 5th, but it isn't due until Monday Feb 8th at 5:00pm Central.
+This is a lab assignment that you'll be handing in on Moodle. You should complete it on Friday Feb 5th, but it isn't due until Wednesday Feb 10th at 5:00pm Central (because Monday is midterm break).
 
 This is a non-coding lab, so please open a text document to write your answers.
 
