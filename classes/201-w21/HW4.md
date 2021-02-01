@@ -81,7 +81,7 @@ List<ArrayList<???>> nestedList = new ArrayList<ArrayList<???>>();
 or for arrays:
 ```
 //You should decide what ??? should be
-String[][] nestedArray = new ???[4][4];
+??[][] nestedArray = new ???[4][4];
 ```
 
 ### Constructing a MazeSquare
