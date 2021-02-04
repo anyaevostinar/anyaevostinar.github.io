@@ -32,7 +32,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 2/5 | |	[Complexity of DFS and BFS](/classes/201-w21/traversal-analysis)	| |
 | Week 6 | | Recursion and Sorting | |
 | M 2/8	| |	Mid-term Break!	| |
-| W 2/10 | |	Recursion review and practice | |
+| W 2/10 | |	[Recursion review and practice](/classes/201-w21/recursion) | |
 | F 2/12 | HW5	| Quicksort	| [HW6: Sorting comparisons](/classes/201-w21/hw6) |
 | Week 7 | | Trees | |
 | M 2/15 | |		Trees and binary trees	| |
