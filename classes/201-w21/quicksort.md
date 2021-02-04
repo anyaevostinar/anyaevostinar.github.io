@@ -35,6 +35,7 @@ Remember, do not compare this code to the reading code as that would defeat the 
 
 Here is a (non-exhaustive) list of debugging strategies to try:
 * Reading the errors and seeing what line they occur on
+* Changing the variable names to actually descriptive ones
 * Print statements everywhere to determine the state of the variables
 * Walking through an example on paper and comparing to your print statements
 * Trying different lists (simpler, mostly sorted, shorter), you don't have to use the `fillAndShuffle` method!
