@@ -86,3 +86,9 @@ world.SetupOrgFile("OrgValues_"+config.SEED()+config.FILE_NAME());
 
 If you were varying the value of a variable to see what effect that had on a trait of the organisms, you should add that to your file name as well. 
 It's much better to have files named automatically to track the important values than to rely on you remembering to change the file names correctly every time, trust me!
+
+## Submitting
+Click 'Submit' in the upper right corner of your project and **on Moodle paste in the link to your project**.
+
+## Extensions
+Continue working on your project! Feel free to grab whatever code from the labs and examples that is useful. Empirical has a [number of example projects](https://github.com/devosoft/Empirical/tree/master/examples/Evolve) that may be useful as well.
