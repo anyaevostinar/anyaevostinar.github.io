@@ -14,7 +14,7 @@ You won't actually be handing anything in for this assignment.
 (Note for those of you not using Repl.it for your final project, you'll need to [fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the repository you are starting with instead of this)
 
 Open your Repl.it project and click the Version Control button:
-![/classes/361-w21/Version_Control.png](Sideways Y shaped icon)
+![Sideways Y-shaped icon](/classes/361-w21/Version_Control.png)
 
 
 Click "Create a Git Repo". Then click "Connect to Github" and follow the prompt. 
