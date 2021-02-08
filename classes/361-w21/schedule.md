@@ -33,7 +33,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 6 | |  | |
 | M 2/8	| |	Mid-term Break!	| |
 | W 2/10 | [Progress Report 1](/classes/361-w21/progress-reports) | [Empirical configManager](/classes/361-w21/config_intro) [Lab](/classes/361-w21/config_intro)	 | |
-| F 2/12 |	|  Git version control |  |
+| F 2/12 |	|  [Git version control](/classes/361-w21/git_lab) |  |
 | Week 7 | |  | |
 | M 2/15 | |  Using the computing cluster 	| |
 | W 2/17 | [Part 1 of Project](/classes/361-w21/part_1), [Progress Report 2](/classes/361-w21/progress-reports) |	Work day	 | |
