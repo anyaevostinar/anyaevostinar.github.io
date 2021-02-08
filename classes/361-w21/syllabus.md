@@ -33,7 +33,7 @@ This term you will:
 * Learn about a range of interesting biological systems
 * Learn how to program in C++
 * Use a powerful open source library
-* Write a scientific paper and GUI
+* Write a scientific paper
 
 
 **Prerequisites**: CS201 (Data Structures)
@@ -101,7 +101,7 @@ Here is how activities this term will be factored into your grade:
 | Peer review participation | Evaluated based on effort. There will be several times you are expected to give your peers feedback to help them improve their own projects. | 10% |
 | Progress reports | Evaluated based on clear progress and effort. To ensure you are working steadily on your final project during the second half of the term. | 10% |
 | Term project software | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 25% |
-| Paper/GUI | Explaining your science is equally as important as doing science, so you will need to explain your science through a scientific paper and a browser-based GUI. | 25% |
+| Paper | Explaining your science is equally as important as doing science, so you will need to explain your science through a scientific paper | 25% |
 | Presentation | You will also need to present your final project to the class and actively participate in your classmates' presentations. | 10% |
 
 ## How to Succeed in this Class

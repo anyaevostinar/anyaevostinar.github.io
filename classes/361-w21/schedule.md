@@ -36,15 +36,15 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 2/12 |	|  Git version control |  |
 | Week 7 | |  | |
 | M 2/15 | |  Using the computing cluster 	| |
-| W 2/17 | [Part 1 of Project](/classes/361-w21/part_1), [Progress Report 2](/classes/361-w21/progress-reports) |	Basic non-parametric stats	 | |
-| F 2/19 | |	GUIs in Empirical	|  |
+| W 2/17 | [Part 1 of Project](/classes/361-w21/part_1), [Progress Report 2](/classes/361-w21/progress-reports) |	Work day	 | |
+| F 2/19 | |	Basic non-parametric stats	|  |
 | Week 8 | |  | |
-| M 2/22 |  |		Scientific papers	| |
-| W 2/24 | [Progress Report 3](/classes/361-w21/progress-reports) |	TBD	 | |	
-| F 2/26 | 	|  GUI peer review |	|
+| M 2/22 |  |		Work day	| |
+| W 2/24 | [Progress Report 3](/classes/361-w21/progress-reports) |	Scientific papers	 | |	
+| F 2/26 | 	| Work day  |	|
 | Week 9 | |  | |
 | M 3/1 | |		Presentations intro	| |	
-| W 3/3 | [Progress Report 4](/classes/361-w21/progress-reports) |	TBD | |
+| W 3/3 | [Progress Report 4](/classes/361-w21/progress-reports) |	Work day | |
 | F 3/5 |  |	Paper peer review |	 |
 | Week 10 | | | |
 | M 3/8	| |  Final project discussion | |
