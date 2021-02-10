@@ -26,10 +26,10 @@ You will have less to report as having completed for this one since you'll have 
 You should have completed a basic simulation by this point. It might not have all the features that you want, but it should  be functional and able to produce some data (the requirements for Part 1 of Project). You should be starting to run experiments with your basic simulation and maybe even getting some initial graphs.
 
 ## Progress Report 3
-You should have a basic GUI started and all the key features of your simulation implemented at this point. You are probably going to be running experiments while continuing to work on your GUI.
+You should have all the key features of your simulation implemented at this point. You are probably going to be running experiments while continuing to improve functionality.
 
 ## Progress Report 4
-You should be starting on your paper and gathering the data necessary for it while polishing your GUI or doing some of your 'reach' goals at this point.
+You should be starting on your paper and gathering the data necessary for it while polishing your code or doing some of your 'reach' goals at this point.
 
 # Grading
 The progress reports are graded on effort. You need to address each required section and submit them on time for full credit.
