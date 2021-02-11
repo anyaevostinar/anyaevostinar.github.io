@@ -83,7 +83,7 @@ c. This will pop up a whole lot of information. You should be able to see your u
 
 d. There are a couple of things to check whenever you start a job. The first is the `load average`. Find that label. You should always make sure that it is below 20 and if it goes above 20, reattach to your screen and kill the job (Ctrl-c or Ctrl-d).
 
-e. You should also check on the memory usage ```<More details coming>```
+e. You should also check on the memory usage. For your job row, look at the `RES` column. That number should stay below 2,000,000. (If you want the details, that's in kilobytes and you should stay below 2 gigabytes, which is 2,000,000 kilobytes.) Again if your job is going above that, you should kill it and figure out why that is happening.
 
 # Exercise 5
 Follow the same steps to get your final project code onto Mantis and try running it. Feel free to grab whatever parts of `simple_repeat.py` are useful to you when you start wanting to run multiple replicates of different treatments. I encourage you to copy the whole script over and just change the couple of places that things differ.
