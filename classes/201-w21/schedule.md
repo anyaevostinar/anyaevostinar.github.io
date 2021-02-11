@@ -35,7 +35,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 2/10 | |	[Recursion review and practice](/classes/201-w21/recursion) | |
 | F 2/12 | HW5	| [Quicksort](/classes/201-w21/quicksort)	| [HW6: Sorting comparisons](/classes/201-w21/hw6) |
 | Week 7 | | Trees | |
-| M 2/15 | |		Trees and binary trees	| |
+| M 2/15 | |		[Trees and binary trees](/classes/201-w21/expressiontree)	| |
 | W 2/17 | |	Binary search trees		 | |
 | F 2/19 |	HW6 |	Balanced binary search trees	| [HW7: WordCloud](/classes/201-w21/hw7) |
 | Week 8 | | Heaps | |
