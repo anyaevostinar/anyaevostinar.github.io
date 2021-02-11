@@ -35,7 +35,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 2/10 | [Progress Report 1](/classes/361-w21/progress-reports) | [Empirical configManager](/classes/361-w21/config_intro) [Lab](/classes/361-w21/empirical_config_lab)	 | |
 | F 2/12 |	|  [Git version control](/classes/361-w21/git_lab) |  |
 | Week 7 | |  | |
-| M 2/15 | |  Using the computing cluster 	| |
+| M 2/15 | |  [Using the computing cluster](/classes/361-w21/cluster_lab) 	| |
 | W 2/17 | [Part 1 of Project](/classes/361-w21/part_1), [Progress Report 2](/classes/361-w21/progress-reports) |	Work day	 | |
 | F 2/19 | |	Basic non-parametric stats	|  |
 | Week 8 | |  | |
