@@ -1,18 +1,18 @@
 ---
 layout: page
 title: Binary Search Tree Debugging
-permalink: /classes/201-f20/bst-activity
+permalink: /classes/201-w21/bst-activity
 ---
 
 ## Goals
 To better understand binary search trees and practice debugging. Time for another Bug Hunt!
 
 ## Logistics
-This is a lab assignment that you'll be handing in on Moodle. You should complete it on Wednesday Oct 28th, but it isn't due until Friday Oct 30th at 5:00pm Central.
+This is a lab assignment that you'll be handing in on Moodle. You should complete it on Wednesday Feb 17th, but it isn't due until Friday Feb 19th at 5:00pm Central.
 
-Create a new repl and make it private. Upload the [starter code](/classes/201-f20/BSTActivity.zip) for this activity.
+Open the BST Lab on Repl.it.
 
-You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you're welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
+You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you're welcome to share your screen to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
 
 ## Exercise 0
 Using the Add File button on repl.it, add a Collaborations.txt file and describe any interactions you have with your collaborative learning group on this lab. Also note any outside sources such as websites that you referenced. If you do not collaborate or check any outside websites, you should state that in Collaborations.txt.
