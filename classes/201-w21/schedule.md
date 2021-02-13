@@ -37,7 +37,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 7 | | Trees | |
 | M 2/15 | |		[Trees and binary trees](/classes/201-w21/expressiontree)	| |
 | W 2/17 | |	[Binary search trees](/classes/201-w21/bst-activity)		 | |
-| F 2/19 |	HW6 |	Balanced binary search trees	| [HW7: WordCloud](/classes/201-w21/hw7) |
+| F 2/19 |	HW6 |	[Balanced binary search trees](/classes/201-w21/two-three-tree)	| [HW7: WordCloud](/classes/201-w21/hw7) |
 | Week 8 | | Heaps | |
 | M 2/22 |  |		Heap implementation	| |
 | W 2/24 | |	Catch up/Review		 | |	
