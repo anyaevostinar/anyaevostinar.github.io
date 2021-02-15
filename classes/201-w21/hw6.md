@@ -62,9 +62,8 @@ Here is how your assignment will be graded:
 |-------|--------|
 | Median of 3 pivot selector implemented correctly | 5 |
 | Analyzed effect of length of array | 3 |
-| Analyzed effect of initial ordering | 3 |
+| Analyzed effect of initial ordering | 6 |
 | Analyzed effect of duplicated | 3 |
-| Analyzed effect of initial sortedness | 3 |
 | Explains convinincingly why evidence supports the claim | 3 |
 | Memo makes a recommendation of which pivot approach to use | 2 |
 | Evidence presented clearly | 2 |
