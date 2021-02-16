@@ -37,7 +37,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 7 | |  | |
 | M 2/15 | |  [Using the computing cluster](/classes/361-w21/cluster_lab) 	| |
 | W 2/17 | [Part 1 of Project](/classes/361-w21/part_1), [Progress Report 2](/classes/361-w21/progress-reports) |	Work day	 | |
-| F 2/19 | |	Basic non-parametric stats	|  |
+| F 2/19 | |	[Basic non-parametric stats](/classes/361-w21/r-lab)	|  |
 | Week 8 | |  | |
 | M 2/22 |  |		Work day	| |
 | W 2/24 | [Progress Report 3](/classes/361-w21/progress-reports) |	Scientific papers	 | |	
