@@ -1,24 +1,24 @@
 ---
 layout: page
 title: HeapSort Lab
-permalink: /classes/201-f20/heapsort
+permalink: /classes/201-w21/heapsort
 ---
 
 ## Goals
 To better learn about how heapsort works by implementing the removeMax function of a tree-like heap.
 
 ## Logistics
-This is a lab assignment that you'll be handing in on Moodle. You should complete it on Friday Nov 6th, but isn't due until Monday Nov 9th at 5:00pm Central.
+This is a lab assignment that you'll be handing in on Moodle. You should complete it on Friday Feb 26th, but isn't due until Monday March 1st at 5:00pm Central.
 
-Please create a new Repl project and make it private. Today's lab relies on Monday's lab. If you didn't finish Monday's, you may upload the [starter code](/classes/201-f20/HeapsortStarter.java) for the activity. If you did finish on Monday, you can just use your own code instead.
+Open the Heapsort Lab project. It has a solution to the Heap lab that you will build on today.
 
-You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you're welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
+You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you're welcome to share your screen with members of your collaborative learning group to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
 
 ## Exercise 0
 Using the Add File button on repl.it, add a Collaborations.txt file and describe any interactions you have with your collaborative learning group on this lab. Also note any outside sources such as websites that you referenced. 
 
 ## Exercise 1
-The main driver of Heapsort is being able to efficiently remove the maximum value from a heap and then restore the heap to proper form so that you can do it again. Therefore, this lab will focus on implementing the `removeMax` functionality for the tree-like heap that you started on Monday. If you didn't finish Monday's lab, the starter code has the barebones functionality for you.
+The main driver of Heapsort is being able to efficiently remove the maximum value from a heap and then restore the heap to proper form so that you can do it again. Therefore, this lab will focus on implementing the `removeMax` functionality for the tree-like heap that you started in the Heap lab. If you didn't finish Monday's lab, the starter code has the barebones functionality for you.
 
 a. To implement `heapifyDown`, nodes will need to be able to track their children, so first you'll need to add that functionality. Add instance variables to the `Node` class to track the right and left children of the node.
 
@@ -32,7 +32,7 @@ parent.addChild(this);
 
 d. Finally, you'll also need to remove children in the later methods, so implement the `removeChild` method, again maintaining the complete binary tree property by first checking if there is a right child and removing it, or removing the left child if there isn't a right child.
 
-e. Write a `test` method or update your existing one to check that the above functionality is working. Remember to compile and run your code at this point.
+e. Write a `test` method to check that the above functionality is working. Remember to compile and run your code at this point.
 
 ## Exercise 2
 Now it's time to implement `removeMax`. There is a lot of shifting around of values in this method, so if you get confused or run into a bug, remember to print the nodes or entire heap to track what is going on. Remember that all your variables are just pointers to objects, so if you change the underlying object later in your code, your variable may not return what you expect it to. Also note that this is one way of implementing this method, but there are many others as well that would also work.
@@ -63,7 +63,7 @@ c. If the node has a right and a left child, you need to check which child has t
 d. Test if your method is working correctly by printing your heap after calling `removeMax` and verifying that your heap has the highest priority item as the root again.
 
 ## Submitting
-This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck. Feedback on labs and activities is less detailed than on homework.
+This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck. 
 
 Submit your zip file to Moodle as always.
 

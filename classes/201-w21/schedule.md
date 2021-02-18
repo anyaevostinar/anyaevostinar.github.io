@@ -41,7 +41,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 8 | | Heaps | |
 | M 2/22 |  |		[Heap implementation](/classes/201-w21/heap)	| |
 | W 2/24 | |	Catch up/Review		 | |	
-| F 2/26 | HW7	|  Heapsort |	[HW8: Flashcard Displayer](/classes/201-w21/hw8) |
+| F 2/26 | HW7	|  [Heapsort](/classes/201-w21/heapsort) |	[HW8: Flashcard Displayer](/classes/201-w21/hw8) |
 | Week 9 | | Hashing for Set and Map Implementations | |
 | M 3/1 | |		Hashing	| |	
 | W 3/3 | |	Hash-based implementation of maps and sets | |
