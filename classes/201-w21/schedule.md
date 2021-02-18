@@ -39,7 +39,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 2/17 | |	[Binary search trees](/classes/201-w21/bst-activity)		 | |
 | F 2/19 |	HW6 |	[Balanced binary search trees](/classes/201-w21/two-three-tree)	| [HW7: WordCloud](/classes/201-w21/hw7) |
 | Week 8 | | Heaps | |
-| M 2/22 |  |		Heap implementation	| |
+| M 2/22 |  |		[Heap implementation](/classes/201-w21/heap)	| |
 | W 2/24 | |	Catch up/Review		 | |	
 | F 2/26 | HW7	|  Heapsort |	[HW8: Flashcard Displayer](/classes/201-w21/hw8) |
 | Week 9 | | Hashing for Set and Map Implementations | |
