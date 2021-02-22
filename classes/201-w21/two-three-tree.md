@@ -24,7 +24,7 @@ a. The first case you should consider is inserting a key into an empty tree. Che
 
 b. Compile and run your code to verify that the number 15 is inserted as the left value of the root of the tree.
 
-c. The second case you should consider is if the root doesn't have any children (you can use the `isLeaf()` method for checking this). In this case, you should call the `add()` method and pass it a new Node with the key as the left child. The `add()` method will take care of either adding the key to open space in the root or creating a child.
+c. The second case you should consider is if the root doesn't have any children (you can use the `isLeaf()` method for checking this). In this case, you should call the `add()` method and pass it a new Node with the key as the left value. The `add()` method will take care of either adding the key to open space in the root or creating a child.
 
 d. Go down to the `main` method and uncomment one of the insert lines and verify that your code compiles and runs correctly.
 
