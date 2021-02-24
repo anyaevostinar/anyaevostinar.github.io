@@ -45,7 +45,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 9 | | Hashing for Set and Map Implementations | |
 | M 3/1 | |		Hashing	| |	
 | W 3/3 | |	Hash-based implementation of maps and sets | |
-| F 3/5 | HW8 |	Intro to final project |	Final project |
+| F 3/5 | HW8 |	Intro to final project |	[Final project](/classes/201-w21/final-project) |
 | Week 10 | | Wrapping up | |
 | M 3/8	| |  Final project discussions | |
 | W 3/10 | | Wrap up; review; course evaluations	| |
