@@ -66,5 +66,5 @@ Your project will be graded on the following rubric:
 |Correct and efficient use of inheritance with at least one superclass and two subclasses | 25 |
 |Correct and efficient use of other class concept | 25 |
 |Sufficiently substantive project | 20 |
-|Report answers questions thoroughly | 12 |
-| Good style and organization, including JavaDocs style methods comments | 18 |
+|Report answers questions thoroughly | 18 |
+| Good style and organization, including JavaDocs style methods comments | 12 |
