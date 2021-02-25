@@ -50,5 +50,5 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | M 3/8	| |  Final project discussion | |
 | W 3/10 | Paper Draft due | Wrap up; course evaluations	| |
 | Exam Period | | | |
-| Sat 3/13 3:30-6pm | Final presentations | | |
+| Sat 3/13 3:30-6pm | [Final presentations](/classes/361-w21/presentations) | | |
 | | | Final project due Monday, 3/15, 5pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
