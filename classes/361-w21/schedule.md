@@ -43,12 +43,12 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 2/24 | [Progress Report 3](/classes/361-w21/progress-reports) |	Scientific papers	 | |	
 | F 2/26 | 	| Work day  |	|
 | Week 9 | |  | |
-| M 3/1 | |		Presentations intro	| |	
+| M 3/1 | |		[Presentations intro](/classes/361-w21/presentations)	| |	
 | W 3/3 | [Progress Report 4](/classes/361-w21/progress-reports) |	Work day | |
 | F 3/5 |  |	Paper peer review |	 |
 | Week 10 | | | |
 | M 3/8	| |  Final project discussion | |
-| W 3/10 | Paper Draft due | Wrap up; course evaluations	| |
+| W 3/10 | [Paper Draft due](/classes/361-w21/paper-reqs) | Wrap up; course evaluations	| |
 | Exam Period | | | |
 | Sat 3/13 3:30-6pm | [Final presentations](/classes/361-w21/presentations) | | |
 | | | Final project due Monday, 3/15, 5pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
