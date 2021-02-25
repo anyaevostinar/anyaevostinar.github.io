@@ -59,4 +59,4 @@ Your final paper will be graded on the following out of 100:
 | Conclusion addresses weaknesses of the study and/or suggests future work directions | 5 |
 | References are correctly formatted |5 |
 | Paper is well-organized within sections, paragraphs follow logical structure | 10 |
-| Paper follows required academic style | 10 |
+| Paper follows required academic style (few spelling and grammatical errors, otherwise follows the required style) | 10 |

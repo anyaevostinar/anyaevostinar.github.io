@@ -48,6 +48,6 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 3/5 | HW8 |	Intro to final project |	[Final project](/classes/201-w21/final-project) |
 | Week 10 | | Wrapping up | |
 | M 3/8	| |  Final project discussions | |
-| W 3/10 | | Wrap up; review; course evaluations	| |
+| W 3/10 | [(Optional) Corrections](/classes/201-w21/corrections)| Wrap up; review; course evaluations	| |
 | Exam Period | | | |
 | | | Final project due Monday, 3/15, 5pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
