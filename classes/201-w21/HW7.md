@@ -55,7 +55,6 @@ There are a couple of things to note about this tree:
 * It's not a binary tree -- each node can have any number of children.
 * The ordering of the children doesn't really matter.
 * Any node that exists in the tree either has a non-zero count or has a descendant with a non-zero count. (In the above example, the root doesn't have a child that represents 'a' because we didn't see any words stating with 'a'.)
-* The property above means that if we were to remove the word "chomp", we could remove the nodes below 'c' representing 'h', 'o', 'm', and 'p', but we could not remove the node 'c' because it is still needed for "cat".
 
 You'll find a `Node` class inside of your `WordCountTree` class like we usually do with trees. You must directly create your tree stucture, though you may use Java implementations of other data structures such as Lists to support your implementation.
 

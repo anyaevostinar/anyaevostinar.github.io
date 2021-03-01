@@ -44,7 +44,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 2/26 | HW7	|  [Heapsort](/classes/201-w21/heapsort) |	[HW8: Flashcard Displayer](/classes/201-w21/hw8) |
 | Week 9 | | Hashing for Set and Map Implementations | |
 | M 3/1 | |		[Hashing](/classes/201-w21/hashing)	| |	
-| W 3/3 | |	Hash-based implementation of maps and sets | |
+| W 3/3 | |	[Collision Resolution](/classes/201-w21/collisionresolution) | |
 | F 3/5 | HW8 |	Intro to final project |	[Final project](/classes/201-w21/final-project) |
 | Week 10 | | Wrapping up | |
 | M 3/8	| |  Final project discussions | |
