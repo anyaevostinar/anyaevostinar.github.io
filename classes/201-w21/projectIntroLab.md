@@ -19,7 +19,7 @@ Add a section to the top of your document titled Collaborations and record any i
 
 ## Exercise 1
 
-a. If you haven't already, read through the [final project page](/classes/201-w21/finalProject). If you read it previously, still open it up to reference.
+a. If you haven't already, read through the [final project page](/classes/201-w21/final-project). If you read it previously, still open it up to reference.
 
 b. Even if you have an idea already, it's good to come up with several alternatives, so create two headers in your document:
 * Game
