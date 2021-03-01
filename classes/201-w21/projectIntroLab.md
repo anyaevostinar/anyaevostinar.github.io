@@ -43,6 +43,8 @@ Specify:
 * What the subclasses would be and what method/variables they would have in addition to the superclass'
 * What other class concept you would use for the implementation
 
+Discuss with your collaborative learning group what ideas you've each come up with.
+
 ## Exercise 5
 Indicate which of the four above ideas you are thinking of doing or detail another one if your idea doesn't fit into any of the above categories. I (Anya) will attempt to look over the one you specify to make sure that it is within the scope of the final project, but if you are unsure, you should definitely reach out to me ASAP. I'm happy to talk about it!
 
