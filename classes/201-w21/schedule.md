@@ -47,7 +47,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 3/3 | |	[Collision Resolution](/classes/201-w21/collisionresolution) | |
 | F 3/5 | HW8 |	[Intro to final project](/classes/201-w21/project-intro) |	[Final project](/classes/201-w21/final-project) |
 | Week 10 | | Wrapping up | |
-| M 3/8	| |  Final project discussions | |
+| M 3/8	| |  [Final project discussions](/classes/201-w21/project-checkin) | |
 | W 3/10 | [(Optional) Corrections](/classes/201-w21/corrections)| Wrap up; review; course evaluations	| |
 | Exam Period | | | |
 | | | Final project due Monday, 3/15, 5pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
