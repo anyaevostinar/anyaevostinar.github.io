@@ -14,6 +14,7 @@ If you (one of my enrolled students) can't access any of these papers, email me 
 | 3 | Lysis vs Lysogeny | [Evolutionary stability of the lysis‐lysogeny decision: Why be virulent?](https://onlinelibrary.wiley.com/doi/full/10.1111/evo.13648) |
 | 4 | Lysis vs Lysogeny Part 2 | [In silico Evolution of Lysis-Lysogeny Strategies Reproduces Observed Lysogeny Propensities in Temperate Bacteriophages](https://www.frontiersin.org/articles/10.3389/fmicb.2017.01386/full) 
 | 5 |Shigella phage |  [Ecology, Structure, and Evolution of Shigella Phages](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7670969/) |
-| 6 | Serotype conversion | [Serotype-converting bacteriophages and O-antigen modification in Shigella flexneri](https://www.sciencedirect.com/science/article/pii/S0966842X99016467) |
-| 7 | TBD | TBD |
+| 6 | Simulating symbiosis | [Spatial Structure Can Decrease Symbiotic Cooperation](https://direct.mit.edu/artl/article/24/4/229/2907/Spatial-Structure-Can-Decrease-Symbiotic) |
+| 7 | Serotype conversion | [Serotype-converting bacteriophages and O-antigen modification in Shigella flexneri](https://www.sciencedirect.com/science/article/pii/S0966842X99016467) |
+| 8 | TBD | TBD |
 
