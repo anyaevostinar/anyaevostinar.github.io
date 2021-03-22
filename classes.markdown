@@ -4,11 +4,11 @@ title: Classes
 permalink: /Classes/
 ---
 
-### Winter 2021
 
-CS 361: Evolutionary Computing and Artificial Life ([Syllabus](/classes/361-w21/syllabus)) ([Schedule](/classes/361-w21/schedule))
+### Spring 2021
 
-CS 201: Data Structures ([Syllabus](/classes/201-w21/syllabus)) ([Schedule](/classes/201-w21/schedule))
+Independent Study Journal Club ([Schedule](/classes/IS-s21/schedule))
+
 
 
 ## Future Classes
@@ -16,6 +16,12 @@ Subject to change!
 
 
 ## Previous Classes
+
+### Winter 2021
+
+CS 361: Evolutionary Computing and Artificial Life ([Syllabus](/classes/361-w21/syllabus)) ([Schedule](/classes/361-w21/schedule))
+
+CS 201: Data Structures ([Syllabus](/classes/201-w21/syllabus)) ([Schedule](/classes/201-w21/schedule))
 
 ### Fall 2020
 
