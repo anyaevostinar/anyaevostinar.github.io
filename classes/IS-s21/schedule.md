@@ -16,7 +16,7 @@ If you (one of my enrolled students) can't access any of these papers, email me 
 | 5 |Shigella phage |  [Ecology, Structure, and Evolution of Shigella Phages](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7670969/) |
 | 6 | Simulating symbiosis | [Spatial Structure Can Decrease Symbiotic Cooperation](https://direct.mit.edu/artl/article/24/4/229/2907/Spatial-Structure-Can-Decrease-Symbiotic) |
 | 7 | Serotype conversion | [Serotype-converting bacteriophages and O-antigen modification in Shigella flexneri](https://www.sciencedirect.com/science/article/pii/S0966842X99016467) |
-| 8 | TBD | TBD |
+| 8 | Eco-evolutionary dynamics of phage | [Revisiting the rules of life for viruses of microorganisms](https://www.nature.com/articles/s41579-021-00530-x) |
 | 9 | TBD | TBD |
 | 10 | None, wrap-up | |
 
