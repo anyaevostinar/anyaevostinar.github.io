@@ -10,7 +10,7 @@ If you (one of my enrolled students) can't access any of these papers, email me 
 | Week	| Topic | Paper for Discussion	| 
 | ------- |------ | --------------- | 
 | 1 | No meeting, coordinate to figure out time | |
-| 2 | How to read scientific papers | [Article](https://towardsdatascience.com/how-to-read-scientific-papers-df3afd454179)|
+| 2 | How to read scientific papers | [Article 1](https://towardsdatascience.com/how-to-read-scientific-papers-df3afd454179) [Article 2](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032)|
 | 3 | Lysis vs Lysogeny | [Intro background](https://www.khanacademy.org/science/biology/biology-of-viruses/virus-biology/a/bacteriophages) [Evolutionary stability of the lysis‐lysogeny decision: Why be virulent?](https://onlinelibrary.wiley.com/doi/full/10.1111/evo.13648) |
 | 4 | Lysis vs Lysogeny Part 2 | [In silico Evolution of Lysis-Lysogeny Strategies Reproduces Observed Lysogeny Propensities in Temperate Bacteriophages](https://www.frontiersin.org/articles/10.3389/fmicb.2017.01386/full) 
 | 5 |Shigella phage |  [Ecology, Structure, and Evolution of Shigella Phages](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7670969/) |
