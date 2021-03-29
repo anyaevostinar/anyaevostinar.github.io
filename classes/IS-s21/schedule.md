@@ -4,6 +4,7 @@ title: Modeling the Microbiome Journal Club S21
 permalink: /classes/IS-s21/schedule
 ---
 
+# Schedule
 This is a rough schedule of topics for each week and the paper for the week.
 If you (one of my enrolled students) can't access any of these papers, email me and I'll help.
 
@@ -19,4 +20,16 @@ If you (one of my enrolled students) can't access any of these papers, email me 
 | 8 | Eco-evolutionary dynamics of phage | [Revisiting the rules of life for viruses of microorganisms](https://www.nature.com/articles/s41579-021-00530-x) |
 | 9 | TBD | TBD |
 | 10 | None, wrap-up | |
+
+# Reading Questions
+
+For the "how to read scientific papers" articles, post in the Slack channel before we meet answers to these questions: (1) How do you feel about reading scientific papers? (2) What strategies have you tried for reading scientific papers? (3) Do you have any tips for others? (4) What are the biggest obstacles for you reading scientific papers?
+
+For each scientific paper, you should answer in the Slack channel before we meet these questions:
+(1) What do the author(s) want to know (motivation)? (2) What did they do (approach/methods)? (3) Why was it done that way (context within the field)? (4) What do the results show (figures and data tables)? (5) How did the author(s) interpret the results (interpretation/discussion)? (6) What should be done next? (7) What questions do you have about this paper?
+
+You should also aim to read everyone else's response if you have time before the meeting. This will assist in starting off discussion.
+
+
+
 
