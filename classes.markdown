@@ -5,11 +5,13 @@ permalink: /Classes/
 ---
 
 
+### Summer 2021
+
+[Summer Research](/classes/summer-21/schedule) 
+
 ### Spring 2021
 
 Independent Study Journal Club ([Schedule](/classes/IS-s21/schedule))
-
-
 
 ## Future Classes
 Subject to change!

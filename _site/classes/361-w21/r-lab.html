@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>R/Stats Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="R/Stats Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-w21/r-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-w21/r-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="R/Stats Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/361-w21/r-lab","@type":"WebPage","headline":"R/Stats Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">R/Stats Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To get an introduction to using RStudio to make plots of your data and do a basic non-parametric test.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>You won’t actually hand anything in for this lab.</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>On Mantis, go back into your <code class="language-plaintext highlighter-rouge">teaching-alife</code> git repository and type <code class="language-plaintext highlighter-rouge">git pull</code> to get the changes that I’ve added. If it says that you can’t because of changes you’ve made to files, go through for each file that it says has conflicts and type:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout -f filename
+</code></pre></div></div>
+
+<p>This will overwrite changes that you made to these files, so if you want to keep them, you should rename them first:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv fileToChange newName
+</code></pre></div></div>
+
+<p>Use the <code class="language-plaintext highlighter-rouge">git pull</code> command again to make sure you have the things I’ve added. Don’t proceed until you get the message <code class="language-plaintext highlighter-rouge">Already up to date</code>.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>First you’ll need some data to analyze. I updated the <code class="language-plaintext highlighter-rouge">native.cpp</code> so that it actually uses the configuration settings and so you’ll get somewhat more interesting results.</p>
+
+<p>a. Run <code class="language-plaintext highlighter-rouge">make</code> since I’ve changed <code class="language-plaintext highlighter-rouge">native.cpp</code></p>
+
+<p>b. Make sure you have a folder <code class="language-plaintext highlighter-rouge">Example</code> and if not, type <code class="language-plaintext highlighter-rouge">mkdir Example</code></p>
+
+<p>c. Run <code class="language-plaintext highlighter-rouge">python stats_scripts/simple_repeat.py</code> to get some data</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>You can turn that data into something useful in R right away, but in the interest of using Python to do more, I have a Python script called <code class="language-plaintext highlighter-rouge">munge_data.py</code> that takes each of the individual files and puts it into one file to load into R, reducing the amount of things you need to do in R.</p>
+
+<p>a. Go into the <code class="language-plaintext highlighter-rouge">Example</code> directory on the Console with <code class="language-plaintext highlighter-rouge">cd</code>: <code class="language-plaintext highlighter-rouge">cd Example</code></p>
+
+<p>b. Then run the munge script: <code class="language-plaintext highlighter-rouge">python ../stats_scripts/munge_data.py</code>. This creates a file <code class="language-plaintext highlighter-rouge">munged_basic.dat</code> in this directory, which is good for keeping things organized.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Mantis doesn’t actually have R installed, so you’ll need to open another browser and navigate to <code class="language-plaintext highlighter-rouge">maize.mathcs.carleton.edu</code> and log in with your Carleton username and password.</p>
+
+<p>a. You should now have an RStudio window in front of you. You’ll see that the files sync between Mantis and Maize, which is quite useful. Open the <code class="language-plaintext highlighter-rouge">teaching-alife</code> folder and then the <code class="language-plaintext highlighter-rouge">stats_scripts</code> folder and then the file <code class="language-plaintext highlighter-rouge">BasicStats.R</code>.</p>
+
+<p>b. R is a language that was written by statisticians, not computer programmers, so it works a bit differently. Instead of running the whole file at once, you can run each line by having your cursor on it and typing <code class="language-plaintext highlighter-rouge">Cmd + Return</code>.</p>
+
+<p>c. Run the two lines that start with <code class="language-plaintext highlighter-rouge">require</code>, we’ll use these packages to make plots that are prettier than the basic ones.</p>
+
+<p>d. In R, assignment is done with <code class="language-plaintext highlighter-rouge">&lt;-</code> as you can see for the list of colors. The default R colors are fine, but they aren’t color-blind or printer friendly, so I prefer my homebrew. Run the <code class="language-plaintext highlighter-rouge">colors</code> line.</p>
+
+<p>e. Read through the rest of the lines and comments and run them each in order to see what they do. You are welcome to just adapt these commands to suit your needs and ask me if there are types of plots that you want to do that aren’t included here. You can also <a href="http://r-statistics.co/ggplot2-Tutorial-With-R.html">explore more ggplot options</a> on your own if you’d like.</p>
+
+<h2 id="exericse-4">Exericse 4</h2>
+<p>The main thing that you’ll need to change first for your project is probably the <code class="language-plaintext highlighter-rouge">munge_data.py</code> file. Open it and note how it works and what you’d need to change to get different data from your data files (sorry that it’s a bit messy!). Feel free to copy it over to your project and use it.</p>
+
+<p>As soon as your project is printing out some basic data, try out this work flow to get a plot, even if it isn’t an interesting plot, it’s still useful to see your data!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

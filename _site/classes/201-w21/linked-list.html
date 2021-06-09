@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Linked List Activity | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Linked List Activity" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-w21/linked-list" />
+<meta property="og:url" content="http://localhost:4000/classes/201-w21/linked-list" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Linked List Activity" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-w21/linked-list","@type":"WebPage","headline":"Linked List Activity","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Linked List Activity</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To better learn about how linked lists work by implementing your own simple linked list.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Wednesday Jan 20th, but it isn’t due until Friday Jan 22nd at 5:00pm Central.</p>
+
+<p>You’ll do this lab on repl.it. Go to our team, click on Projects, and open Linked List project.</p>
+
+<p>You’re welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you’re welcome to share your screen/use multiplayer mode with members of your collaborative learning group to look at one another’s code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what’s permitted.</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>Using the Add File button on repl.it, add a Collaborations.txt file and describe any interactions you have with your collaborative learning group on this lab. Also note any outside sources such as websites that you referenced.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>This activity will use two types of classes that you haven’t made before, generic and private classes.</p>
+
+<p>a. Create a generic LinkedList class (note that we are not implementing the List interface because we aren’t going to have time for all the methods it requires):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class LinkedList&lt;T&gt; {}
+</code></pre></div></div>
+
+<p>b. <strong>Within</strong> your LinkedList class, create a private Node class:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class LinkedList&lt;T&gt; {
+
+    private class Node {}
+}
+</code></pre></div></div>
+
+<p>This is a nested private class because it will be used by LinkedList and is specific to LinkedList, so no other classes should use it anyway. The benefit of having it nested is that Node objects will be able to access private instance variables of LinkedList!</p>
+
+<p>c. Create a private instance variable to store the LinkedLists’s head node:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class LinkedList&lt;T&gt; {
+    private Node head;
+</code></pre></div></div>
+
+<p>d. We’ll also need the Node class to have some instance variables. Remember that a Node needs to hold it’s item and a pointer to the next Node in the LinkedList. Because Node is a nested class, it knows about the generic variable type T from LinkedList:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>private class Node {
+    private T item;
+    private Node next;
+}
+</code></pre></div></div>
+
+<p>e. Make sure your code compiles, it won’t do anything yet, but this is a good time to catch any errors in your setup.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now let’s make some constructors and check everything is working.</p>
+
+<p>a. First create a constructor for Node that takes the item and sets <code class="language-plaintext highlighter-rouge">next</code> to <code class="language-plaintext highlighter-rouge">null</code>. <code class="language-plaintext highlighter-rouge">null</code> is a special keyword that can go in the place that an <code class="language-plaintext highlighter-rouge">Object</code> normally would but signals that there isn’t anything there.</p>
+
+<p>b. Next, we’ll use the model of LinkedList where it maintains a special null head node, so create a constructor for LinkedList that doesn’t take any parameters, creates a new Node with <code class="language-plaintext highlighter-rouge">null</code> for the item, and sets that Node to be the <code class="language-plaintext highlighter-rouge">head</code>.</p>
+
+<p>c. Finally, we want to be able to easily print the contents of our LinkedList and we can make it work with System.out.println() by creating a method <code class="language-plaintext highlighter-rouge">public String toString()</code>. For now, your list only has a null head node, so just have the method return a String saying “Empty LinkedList!”.</p>
+
+<p>d. Create a main() method in LinkedList.java, make a new instance of LinkedList, and print it with System.out.println() to verify that everything works:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LinkedList&lt;Integer&gt; myList = new LinkedList&lt;Integer&gt;();
+System.out.println(myList);
+</code></pre></div></div>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Now we’ll finally make a method to add items.</p>
+
+<p>a. Create a method <code class="language-plaintext highlighter-rouge">public void add(T element)</code>. This method will just append the item to the end.</p>
+
+<p>b. In this method, we’ll first need to trace to the end of our LinkedList since we aren’t currently maintaining a tail pointer. To trace through, you should first create a Node variable <code class="language-plaintext highlighter-rouge">current</code> that starts as <code class="language-plaintext highlighter-rouge">head</code>.</p>
+
+<p>c. Next create a while loop that goes until you are at the last item in the list. The trick to this is to check if <code class="language-plaintext highlighter-rouge">current.next</code> is equal to <code class="language-plaintext highlighter-rouge">null</code>. If it isn’t, then you want to change <code class="language-plaintext highlighter-rouge">current</code> to equal the next Node.</p>
+
+<p>d. Once you’re at the last Node in the LinkedList, you need to create a new Node with the <code class="language-plaintext highlighter-rouge">element</code> as an argument and set <code class="language-plaintext highlighter-rouge">current.next</code> to be that new Node.</p>
+
+<p>e. Use a similar approach to change your <code class="language-plaintext highlighter-rouge">toString()</code> method so that it loops over all the Nodes in LinkedList and builds up a nicely formatted String of their values:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"hi &gt; friend &gt; "
+</code></pre></div></div>
+
+<p>Don’t worry about the trailing <code class="language-plaintext highlighter-rouge">&gt;</code>, you can fix it later.</p>
+
+<p>f. Verify your <code class="language-plaintext highlighter-rouge">add</code> and <code class="language-plaintext highlighter-rouge">toString</code> methods work by adding a few items to your LinkedList in main() and running it.</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Finally, it would be useful to have another add method that inserted an item in the middle of the list.</p>
+
+<p>a. Create a method <code class="language-plaintext highlighter-rouge">public void add(int index, T element)</code>.</p>
+
+<p>b. You’ll want to be sure that a user doesn’t try to add something far past the end of your existing LinkedList since that wouldn’t make sense. To do that check ahead of time, add an instance variable <code class="language-plaintext highlighter-rouge">size</code> to your LinkedList class and update your other <code class="language-plaintext highlighter-rouge">add</code> method to increment it.</p>
+
+<p>c. Check if <code class="language-plaintext highlighter-rouge">index</code> is larger than <code class="language-plaintext highlighter-rouge">size</code> and if it is, print a helpful message to the user.</p>
+
+<p>d. Using the technique from the reading, insert a new Node into the LinkedList. Remember that the <code class="language-plaintext highlighter-rouge">head</code> node shouldn’t be counted in the index! If you get stuck or confused, check the reading again and try drawing out an example on paper.</p>
+
+<p>e. As always, test out your code by trying it. Make sure to try adding at index 0 and at the end of your list, as well as the middle somewhere.</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>This activity is not a homework assignment. That means that you’re evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren’t able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you want more practice, here are something things to try:</p>
+<ul>
+  <li>Write a remove method</li>
+  <li>Fix the trailing <code class="language-plaintext highlighter-rouge">&gt;</code> at the end of your printing of LinkedList</li>
+  <li>Check the JavaDocs for other required methods of the List interface and properly implement them so you can <code class="language-plaintext highlighter-rouge">implements List</code></li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

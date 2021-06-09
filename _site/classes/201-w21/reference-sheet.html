@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Reference Sheet | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Reference Sheet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-w21/reference-sheet" />
+<meta property="og:url" content="http://localhost:4000/classes/201-w21/reference-sheet" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Reference Sheet" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-w21/reference-sheet","@type":"WebPage","headline":"Reference Sheet","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Reference Sheet</h1>
+  </header>
+
+  <div class="post-content">
+    <p>One of the downsides of videos about code is that it’s difficult to quickly skim through the video to find the example code if you need a reminder about syntax while working on the labs in class. 
+To deal with that, I’ve prepared this reference sheet for the first few videos in class, organized by video.
+This page is not at all a substitute for watching the videos, hence why there is no explanation for what the code means.</p>
+
+<h1 id="classes-and-variables-video">Classes and Variables Video</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>javac *.java
+java DieGame
+</code></pre></div></div>
+
+<p>In <code class="language-plaintext highlighter-rouge">DieGame.java</code>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class DieGame {
+  public static void main(String[] args) {
+    Die die1 = new Die(4);
+    Die die2 = new Die(6);
+    System.out.println("This many dice: " + Die.getNumberOfDice()); 
+    //Above added to show calling class methods
+    System.out.println("Here is the die value: " + die1.getValue());
+  }
+}
+</code></pre></div></div>
+
+<p>Relevant and additional pieces of <code class="language-plaintext highlighter-rouge">Die.java</code>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import java.util.Random;
+
+public class Die {
+  private int numberOfSides;
+  private int value;
+  private Random randomNumberGenerator;
+  private static int numberOfDiceCreated = 0; //added to show class variable
+
+  public Die(int n) {
+    numberOfSides = n;
+    value = 1;
+    randomNumberGenerator = new Random();
+    numberOfDiceCreated += 1; //added to show class variable
+  }
+
+  public static int getNumberOfDice() {
+    return numberOfDiceCreated;
+  }
+  
+  public void roll() {
+    int temp = 1; //added to show local variable
+    value = randomNumberGenerator.nextInt(numberOfSides) + temp;
+  }
+
+  public int getValue() {
+    return value;
+  }
+}
+</code></pre></div></div>
+
+<h1 id="trycatch-and-javadocs">Try/Catch and JavaDocs</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Main {
+  public static void main(String[] args) {
+    File inputFile = new File("somelines.txt");
+    Scanner scanner = null;
+    try {
+      scanner = new Scanner(inputFile);
+    } catch (FileNotFoundException e) {
+      System.err.println(e);
+      System.exit(1);
+    }
+    System.out.println("I just want to read a file!");
+  }
+}
+</code></pre></div></div>
+
+<h1 id="inheritance">Inheritance</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import java.util.List;
+import java.util.ArrayList;
+
+public class Student {
+  private Name name;
+  private double gpa;
+  private List&lt;String&gt; classes;
+
+  public Student () {
+    name = new Name();
+    gpa = 4.0;
+    classes = new ArrayList&lt;String&gt;();
+  }
+
+  public Student(Name name, double gpa) {
+    this.name = name;
+    this.gpa = gpa;
+    classes = new ArrayList&lt;String&gt;();
+  }
+
+  public Name getName() {
+    return this.name;
+  }
+
+  public void displayClasses() {
+    for (String aClass : classes) {
+      System.out.println(aClass);
+    }
+  }
+
+  public void addClass(String newClass){
+    classes.add(newClass);
+  }
+
+  public void display() {
+    System.out.println("I'm in Student!");
+    System.out.format("%s \nClasses:\n", this.getName().getFullName());
+    displayClasses();
+  }
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class Name {
+  private String firstName;
+  private String lastName;
+  
+  public Name(){
+    firstName = "";
+    lastName = "";
+  }
+
+  public Name(String first, String last){
+    firstName = first;
+    lastName = last;
+  }
+
+  public String getFullName() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class CollegeStudent extends Student {
+  private int graduationYear;
+  private String department;
+
+  public CollegeStudent() {
+    super();
+    graduationYear = 2020;
+    department = "[undeclared]";
+  }
+  
+  public CollegeStudent(String firstName, String lastName, double gpa, int year) {
+    super(new Name(firstName, lastName), gpa);
+    graduationYear = year;
+    department = "[undeclared]";
+  }
+
+  @Override
+  public void display() {
+    System.out.println("I'm in CollegeStudent!");
+    System.out.format("%s (year %d)\nMajor: %s\nClasses:\n",
+    this.getName().getFullName(), 
+    this.graduationYear,
+    this.department);
+    displayClasses();
+  }
+
+  public void collegeStudentMethod() {
+    System.out.println("Only for college students");
+  }
+
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Main {
+  public static void main(String[] args) {
+    
+    CollegeStudent test = new CollegeStudent("this", "test", 4.0, 2020);
+    test.collegeStudentMethod();
+
+    Student test2 = new CollegeStudent();
+    test2.display();
+    
+
+  }
+}
+</code></pre></div></div>
+
+<h1 id="interfaces">Interfaces</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+ * Interface for a Plant. Specifies the behaviors that all plants
+ * must implement.
+ * @author Anna Rafferty
+ *
+ */
+public interface Plant {
+    /**
+     * Returns the name of the plant. 
+     * @return String representing plant's name
+     */
+    public String getName();
+    
+    /**
+     * Waters the plant with how much water it needs.
+     */
+    public void waterPlant();
+    
+    /**
+     * Ages the plant by a day. This could change the 
+     * plant's water level or other characteristics.
+     */
+    public void elapseDay();
+    
+    /** 
+     * Returns a string describing the state of the plant. E.g., might say "overly dry" or 
+     * "abundantly happy". State of the plant may vary with water level or other
+     * characteristics.
+     * @return String representing status
+     */
+    public String getStatus();
+    
+    /** 
+     * Returns the current water level for the plant. Each plant has a water level indicating 
+     * whether it is dry, water-logged, or somewhere in between. 
+     * @return int representing water level
+     */
+    public int getWaterLevel();
+    
+
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class Strawberry implements Plant {
+  private int waterLevel = 0;
+
+  @Override
+  public void waterPlant() {
+    waterLevel += 1;
+  }
+
+  @Override
+  public void elapseDay() {
+    waterLevel -= 1;
+  }
+
+  @Override
+  public String getName() {
+    return "Strawberry";
+  }
+    
+    
+    /** 
+     * Returns a string describing the state of the plant. E.g., might say "overly dry" or 
+     * "abundantly happy". State of the plant may vary with water level or other
+     * characteristics.
+     * @return String representing status
+     */
+  public String getStatus() {
+    return "Always happy";
+  }
+    
+    /** 
+     * Returns the current water level for the plant. Each plant has a water level indicating 
+     * whether it is dry, water-logged, or somewhere in between. 
+     * @return int representing water level
+     */
+  public int getWaterLevel() {
+    return waterLevel;
+  }
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+ * Garden is a simulation of an actual garden that instantiates plants, waters them,
+ * and displays them. (Add details if you change things about the class)
+ * Look at the lab description for details about what to do with the Garden class.
+ */
+public class Garden {
+
+    
+    
+    public static void main(String[] args) {
+    	Plant test = new Strawberry();
+    }
+}
+</code></pre></div></div>
+
+<h1 id="lists-and-generics-in-java">Lists and Generics in Java</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List&lt;String&gt; animalList = new ArrayList&lt;String&gt;();
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List&lt;Die&gt; myDiceList = new ArrayList&lt;Die&gt;();
+//...
+myDiceList.get(0).roll();
+for (Die d : myDiceList) {
+  d.roll();
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import java.util.List;
+import java.util.ArrayList;
+
+class Main {
+  public static void mystery(List&lt;Character&gt; list) {
+    for(int i = 0; i &lt; list.size() - 1; i++) {
+      list.add(i, list.remove(list.size()-1));
+    }
+  }
+
+  public static void main(String[] args) {
+    List&lt;Character&gt; myList = new ArrayList&lt;Character&gt;();
+    for (char c = 'a'; c&lt;= 'h'; c++) {
+      myList.add(c);
+    }
+    mystery(myList);
+  }
+}
+</code></pre></div></div>
+
+<h1 id="sets-and-maps-in-java">Sets and Maps in Java</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import java.util.Map;
+import java.util.HashMap;
+
+class Main {
+  public static void main(String[] args) {
+    Map&lt;String, Integer&gt; wordCounts = new HashMap&lt;String, Integer&gt;();
+
+    wordCounts.put("hi", 1);
+    wordCounts.put("hi", 2);
+    wordCounts.put("friend", 1);
+
+    for(String word : wordCounts.keySet()) {
+      System.out.println("\""+ word + "\" has been seen " + wordCounts.get(word) + " times.");
+    }
+  }
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import java.util.Set;
+import java.util.HashSet;
+
+public class SetTest{
+  public static void main(String[] args){
+    Set&lt;Integer&gt; mySet = new HashSet&lt;Integer&gt;();
+    for (int i=0; i&lt;5; i++) {
+      mySet.add(i);
+      mySet.add(2*i);
+    }
+
+    int myInt = Integer.parseInt("1");
+    double myDouble = Double.parseDouble("1.0");
+  }
+}
+</code></pre></div></div>
+
+<h1 id="arrays-in-java">Arrays in Java</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public static void main(String[] args) {
+  String myInput = args[0];
+
+  //create new array, no ()!
+  String[] myArray = new String[6];
+  myArray[0] = "bat";
+  myArray[3] = "goat";
+}
+</code></pre></div></div>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

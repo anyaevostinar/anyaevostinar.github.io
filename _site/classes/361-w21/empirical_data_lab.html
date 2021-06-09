@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Empirical DataFiles Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Empirical DataFiles Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-w21/empirical_data_lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-w21/empirical_data_lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Empirical DataFiles Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/361-w21/empirical_data_lab","@type":"WebPage","headline":"Empirical DataFiles Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Empirical DataFiles Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To use Empirical’s DataFiles and DataNodes to record data from an artificial life simulation.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Monday Feb 1st, but it isn’t due until Wednesday Feb 3rd at 5:00pm Central.</p>
+
+<h2 id="setup">Setup</h2>
+<p>Open the Empirical DataFiles project on Repl.it for starter code.</p>
+
+<p>Also open the reading for today to reference the methods that will be useful.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>I’ve provded solution code that follows what you wrote in the Empirical Intro lab. Look through the files in <code class="language-plaintext highlighter-rouge">source</code> to see how I wrote the code for the simple artificial life system, though it still doesn’t actually do anything interesting.</p>
+
+<p>Compile and run (using <code class="language-plaintext highlighter-rouge">make</code> and <code class="language-plaintext highlighter-rouge">./evo-algo</code> as before) to verify everything is working. (Don’t worry about the warnings.)</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>The first thing you’ll practice is recording the count of organisms into a file.</p>
+
+<p>a. Create a <code class="language-plaintext highlighter-rouge">DataMonitor</code> pointer for your organism count as an instance variable of <code class="language-plaintext highlighter-rouge">OrgWorld</code>.</p>
+
+<p>b. Create a destructor for <code class="language-plaintext highlighter-rouge">OrgWorld</code> and make sure that your DataMonitor will be deleted when the world is destroyed (rather ominous sounding isn’t it?).</p>
+
+<p>c. Create a method <code class="language-plaintext highlighter-rouge">GetOrgCountDataNode()</code> that creates the data node if it doesn’t exist according to the method in the reading.</p>
+
+<p>d. Create a method <code class="language-plaintext highlighter-rouge">SetupOrgFile()</code> that grabs the total count from your data monitor and records it in the file according to the method in the reading.</p>
+
+<p>e. Call your set up file in <code class="language-plaintext highlighter-rouge">native.cpp</code>, then compile and run your code to verify that it works.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>You may also be interested in the distribution of values for the cooperation probability that the organisms currently have, even though it is just drifting around currently.</p>
+
+<p>a. Create a <code class="language-plaintext highlighter-rouge">DataMonitor</code> pointer for the cooperation values that will hold both a double and a histogram.</p>
+
+<p>b. Add this data node to your destructor.</p>
+
+<p>c. Create a method for getting the data node, remember that it has to return a type that matches the type of your data monitor.</p>
+
+<p>d. Add the code to your file setup method to create the bins of your histogram and add them and the mean of the data to the file.</p>
+
+<p>e. Compile and run your code to see how the distribution changes over time.</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>Empirical is way too big to zip and upload to Moodle regularly, so we’re going to try out Repl.it’s submission functionality. Click ‘Submit’ in the upper right corner of your project and <strong>on Moodle paste in the link to your project</strong>.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you add functionality to your organisms in the previous lab, feel free to copy that code over and try to track additional information. You can create and print to multiple data files to keep your code organized. You can also change some variables and the name of the data file to see how the changed variable changes your data results. We’ll see in the next lab how to avoid having to recompile just to change values.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

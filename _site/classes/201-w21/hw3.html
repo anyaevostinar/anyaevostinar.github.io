@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>HW 3 Country Data Redux | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW 3 Country Data Redux" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-w21/hw3" />
+<meta property="og:url" content="http://localhost:4000/classes/201-w21/hw3" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW 3 Country Data Redux" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-w21/hw3","@type":"WebPage","headline":"HW 3 Country Data Redux","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW 3 Country Data Redux</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="logistics">Logistics</h1>
+<p>25 points, due Wednesday, Jan 27th by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy. You need to notify me that you’re using the policy. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still the deadline, not 48 hours later.</p>
+
+<h1 id="goals">Goals</h1>
+<p>To gain a better understanding of linked lists by implementing one that inserts values into sorted positions.</p>
+
+<h1 id="assignment-type-and-collaborative-learning-expectations">Assignment Type and Collaborative Learning Expectations</h1>
+<p>This is a homework assignment that you’ll be handing in on Moodle.</p>
+
+<p>You’re welcome to either complete this homework with input from one or more members of your collaborative learning group or to complete it on your own. You and the other members of your collaborative learning group should each write your own code, even if you’re helping one another, but you may share your screens/use multiplayer mode to look at one another’s code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what’s permitted.</p>
+
+<h1 id="setup-and-requirements">Setup and Requirements</h1>
+<p>Go to our Team on Repl.it and open the project HW3.</p>
+
+<p>You should first create a Collaborations.txt document and update it with any sources (webpage or people) that you get help from. This includes even just looking up a function, always better to be safe!</p>
+
+<p>The code that you write for this assignment will build on top of the Country.java class that you wrote previously.
+You should copy that file over to this project.</p>
+
+<h2 id="specification">Specification</h2>
+<p>For this assignment, you’ll make a new class, <code class="language-plaintext highlighter-rouge">SortedLinkedList</code> that consists of a linked list that adds items in sorted order according to a previously set indicator and order.</p>
+
+<h2 id="comparator">Comparator</h2>
+<p>If you were thinking after the last assignment that there has got to be a better way of sorting, you are right! 
+In Java, there is an interface called the <code class="language-plaintext highlighter-rouge">Comparator</code> that focuses on allowing two objects of the same type to be compared easily.
+First you will create a comparator that will then be stored in your linked list later.</p>
+
+<p>Create a new class <code class="language-plaintext highlighter-rouge">CountryComparator</code> that implements the <code class="language-plaintext highlighter-rouge">Comparator</code> interface for Country:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class CountryComparator implements Comparator&lt;Country&gt; {
+</code></pre></div></div>
+
+<p>This class will consist of just two methods: 1) a constructor, and 2) the <code class="language-plaintext highlighter-rouge">compare</code> method that is required for a <code class="language-plaintext highlighter-rouge">Comparator</code>.</p>
+
+<h3 id="constructor">Constructor</h3>
+<p>Your comparator needs to store the indicator that it compares by and the direction that it should sort by (greatest to least or least to greatest).
+Create those instance variables and a constructor that takess in value for those variables and sets them.</p>
+
+<h3 id="compare-method">compare method</h3>
+<p>Next create a method <code class="language-plaintext highlighter-rouge">compare</code> that takes two Country instances as parameters. 
+The way that comparators in Java work is that for two objects a and b, it returns -1 if a comes before b, 0 if a and b could be in either order, and 1 if b comes before a.
+Your compare method should work the same based on the indicator and order chosen by the constructor. 
+If two countries have the same value for the indicator, you should return 0.</p>
+
+<p>You should test your CountryComparator by making a new one in the main(String[] args) method of CountryComparator.java with some test Country objects.</p>
+
+<h2 id="sortedlinkedlist">SortedLinkedList</h2>
+<p>Now that you have an object for comparing two countries, let’s make a sorted linked list.
+Note that you are <strong>not allowed to use any built-in List classes or methods!</strong> The point of this homework is to understand linked lists by implementing your own.</p>
+
+<p>Create a class <code class="language-plaintext highlighter-rouge">SortedLinkedList</code> that implements the provided interface <code class="language-plaintext highlighter-rouge">SortedList</code> just for Country:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class SortedLinkedList implements SortedList&lt;Country&gt; {
+</code></pre></div></div>
+
+<p>Adapt your Node code from the Linked List Activity so that you have a private Node class, a head, and a size instance variable. In addition, declare a comparator instance variable:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Comparator&lt;Country&gt; myComparator;
+</code></pre></div></div>
+
+<p>Copy the method signatures and comments from the <code class="language-plaintext highlighter-rouge">SortedList</code> interface and turn them into method stubs in <code class="language-plaintext highlighter-rouge">SortedLinkedList</code> by returning something of the correct type for each method.</p>
+
+<h3 id="constructor-1">Constructor</h3>
+<p>Create a constructor that takes a <code class="language-plaintext highlighter-rouge">Comparator&lt;Country&gt;</code> as a parameter and sets the instance variables appropriately.</p>
+
+<h3 id="test-method">test method</h3>
+<p>Create a <code class="language-plaintext highlighter-rouge">test</code> method that first creates three Country objects with dummy data, then puts them into Nodes and then connects those Nodes together from the <code class="language-plaintext highlighter-rouge">head</code> so that other methods can be tested before you implement <code class="language-plaintext highlighter-rouge">add</code>.</p>
+
+<h3 id="size-and-isempty-methods">size and isEmpty methods</h3>
+<p>Start by implementing the <code class="language-plaintext highlighter-rouge">size</code> and <code class="language-plaintext highlighter-rouge">isEmpty</code> methods since they are short.</p>
+
+<p>Using your <code class="language-plaintext highlighter-rouge">test</code> method, make sure that these work.</p>
+
+<h3 id="tostring-method">toString method</h3>
+<p>Adapt the <code class="language-plaintext highlighter-rouge">toString</code> method from the Linked List Activity for this class so that it returns the names of the countries in the list.</p>
+
+<p>Using your <code class="language-plaintext highlighter-rouge">test</code> method, make sure that this works.</p>
+
+<h3 id="get-method">get method</h3>
+<p>Implement a <code class="language-plaintext highlighter-rouge">get</code> method that returns the Country at the given position. 
+If the user tries to access a position outside of the range, you should throw an IndexOutOfBoundsException:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>throw new IndexOutOfBoundsException();
+</code></pre></div></div>
+
+<p>Using your <code class="language-plaintext highlighter-rouge">test</code> method, make sure that this works.</p>
+
+<h3 id="add-method">add method</h3>
+<p>The add method is the heavy-lifter of this class since it needs to add a given item in the correct place in the list.</p>
+
+<p>There are three scenarios that you need to think about when implementing your add method:
+1) adding to the middle of the list</p>
+
+<p>2) adding to the beginning of the list</p>
+
+<p>3) adding to the end of the list</p>
+
+<p>I recommend you go in that order and make sure each scenario works before moving on to the next one.
+You are allowed to include extra instance variables such as <code class="language-plaintext highlighter-rouge">tail</code> if you find them useful.
+I also highly recommend that you have an example written down on paper and trace through it by hand so that you have a firm idea of what you need to do.
+You will probably run into a lot of NullPointerExceptions as you do this; try not to let them fluster you and just remember that that means you are accessing a <code class="language-plaintext highlighter-rouge">null</code> thing somewhere and go back to your example to figure out where.</p>
+
+<p>Demonstrate in the main() method of SortedLinkedList that each of the three cases for add works.</p>
+
+<h1 id="rubric">Rubric</h1>
+<p>This is how you will be graded on this homework:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adding to the front of the list works</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Adding to the middle works</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Adding to the end works</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Comparator implemented correctly</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>compare method correct</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>size and isEmpty correct</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>toString method correct</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>get works as specified</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Demonstration examples for add</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Java-docs style documentation</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="submission">Submission</h1>
+<p>Make sure Collaborations.txt is accurate and includes any sources that you used including any conversations. Did you share strategies with anyone else? Talk about any annoying compiler error and get advice? These are fine things to do, and you should note them in the Collaborations.txt file. Give the names of people you talked with. If you used any resources outside of our course materials, that is also something to note in Collaborations.txt. If you didn’t talk with anyone, please note that explicitly in Collaborations.txt.</p>
+
+<p>After making Collaborations.txt and finishing the assignment, click on the three vertical dots next to the add file and add folder icons on repl.it, and choose “Download as zip” from the menu. Upload that zip on Moodle.</p>
+
+<h2 id="extensions">Extensions</h2>
+<ul>
+  <li>Adapt toString so that it includes the name of the country and the indicator of interest.</li>
+  <li>Add a remove method.</li>
+  <li>Incorporate your SortedLinkedList into your CountryDisplayer and create an interactive user interface (this is intentionally open ended so you can do whatever seems interesting and useful).</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

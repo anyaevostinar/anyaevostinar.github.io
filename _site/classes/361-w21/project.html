@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Project Specification | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Project Specification" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-w21/project" />
+<meta property="og:url" content="http://localhost:4000/classes/361-w21/project" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Project Specification" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/361-w21/project","@type":"WebPage","headline":"Project Specification","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Project Specification</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="introduction">Introduction</h1>
+<p>A goal of this course is for you to come up with an interesting research question and implement an artificial life simulation that helps you answer that question. You will then present your results in several ways.</p>
+
+<p>Coming up with that research question, simulation, and experiments is no small feat and you will be guided through the process with check-in assignments throughout the term. The deadlines for those are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Deadline</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Proposal outline</td>
+      <td>1/25</td>
+    </tr>
+    <tr>
+      <td>Proposal draft</td>
+      <td>2/1</td>
+    </tr>
+    <tr>
+      <td>Proposal final</td>
+      <td>2/5</td>
+    </tr>
+    <tr>
+      <td>Progress report 1</td>
+      <td>2/10</td>
+    </tr>
+    <tr>
+      <td>Part 1; Progress report 2</td>
+      <td>2/17</td>
+    </tr>
+    <tr>
+      <td>Progress report 3</td>
+      <td>2/24</td>
+    </tr>
+    <tr>
+      <td>Progress report 4</td>
+      <td>3/3</td>
+    </tr>
+    <tr>
+      <td>ALIFE deadline (optional)</td>
+      <td>3/7</td>
+    </tr>
+    <tr>
+      <td>Presentations</td>
+      <td>3/13</td>
+    </tr>
+    <tr>
+      <td>Final project</td>
+      <td>3/15</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="topics">Topics</h1>
+<p>There are several topics that I suggest both because they are near enough to my research that I can be the most help and because they are fertile ground for interesting evolutionary questions that artificial life simulations can contribute to. There is a section in the course Library Research Guide for each of these topics as well:</p>
+
+<ul>
+  <li>Quorum Sensing</li>
+  <li>Kin Selection</li>
+  <li>Parasitism</li>
+  <li>Mutualism</li>
+  <li>Major Evolutionary Transitions</li>
+</ul>
+
+<p>You are allowed to select a topic outside of these, however I recommend you only do so if you have previous background in the topic and therefore won’t need as much assistance in finding that information.</p>
+
+<h1 id="platform">Platform</h1>
+<p>You will use the <a href="https://empirical.readthedocs.io/en/latest/">Empirical</a> platform to build your simulation, which uses C++. Empirical provides many tools that are needed in artificial life simulations, allowing you to focus on the interesting behavior. Empirical is also heavily optimized, allowing you to run much larger simulations on your own machine than you would be able to do if you wrote everything from scratch.</p>
+
+<p>You will have the option of either creating your own Empirical-based simulation or creating an extension to my software, <a href="https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html">Symbulation</a>. If you are interested in parasitism or mutualism, I especially recommend you consider an extension to my software because it provides a base for simulating symbiosis.</p>
+
+<h1 id="research-question">Research question</h1>
+<p>Ideally your research question/hypothesis will be novel and interesting, however it is difficult to come up with such a question without a thorough review of the literature and a lot more time than ten weeks! Therefore you are not require to come up with a completely novel research question, though it should be non-trivial and interesting still. The goal of the many iterations of the <a href="/classes/361-w21/proposal">proposal</a> is to allow us to have a conversation to get your research question to that point so that once you start developing your simulation, you are able to be confident that you are pursuing a question that I have determined will work for this project. In general your research question should be able to fit into the phrasing:</p>
+
+<p><strong>Does X select for Y given Z?</strong></p>
+
+<p>Which can then be the hypothesis:</p>
+
+<p><strong>X selects for Y given Z.</strong></p>
+
+<h1 id="papergui">Paper/GUI</h1>
+<p>To report on your findings, you will write a traditional scientific paper and create a GUI using Empirical’s GUI tools. We will spend time in class discussing both of these and more details will be provided on how they will be graded.</p>
+
+<p>If you would like, the main artificial life conference, <a href="https://www.robot100.cz/alife2021">ALIFE</a>, has a virtual component this year, and I will be able to work with a couple of groups to submit your research paper to the conference. The conference deadline is March 7th (though this is often extended by a week, but we can’t count on that). If this is something that interests you, please make sure that I’m aware as we get closer to the deadline.</p>
+
+<h1 id="groups">Groups</h1>
+<p>You will be allowed to work with one other person on your term project or work by yourself. Keep in mind that my expectations for two-person projects will be higher and the final products should have twice the amount of content. I will assist in forming groups by sending out a form asking about which topics are of interest and who you would/would not like to work with if anyone. Given the remote nature of the course, I will prioritize preferences of who if anyone you would like to group with.</p>
+
+<h1 id="grading">Grading</h1>
+<p>Most of your grade in this course relates to the project in one way or another:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Contribution to grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Proposal</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td>Peer review of project related items</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td>Progress reports</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td>Software of project</td>
+      <td>25%</td>
+    </tr>
+    <tr>
+      <td>Paper/GUI</td>
+      <td>25%</td>
+    </tr>
+    <tr>
+      <td>Presentation</td>
+      <td>10%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>I will give more details about each of these components as their deadlines approach and am always happy to answer questions if you would like to know details earlier than I’ve written them down.</p>
+
+<h1 id="examples">Examples</h1>
+<p>Here are the research questions that I have previously investigated:</p>
+<ul>
+  <li>Does kin selection select for programmed cell death given no other confounding factors?</li>
+  <li>Does spatial structure select for cooperation given the existence of accurate quorum sensing?</li>
+  <li>Does vertical transmission select for mutualism given no spatial structure?</li>
+  <li>Does spatial structure select for mutualism given varying vertical transmission rates?</li>
+  <li>Does division of labor select for mutualism given varying vertical transmission rates?</li>
+</ul>
+
+<p>Here are open research questions that you could pursue if you aren’t able to decide on one (you’ll notice they are basically all about parasitism/mutualism since that is what I currently study):</p>
+<ul>
+  <li>Can mutualists co-exist with parasites if the parasites have selected for highly defensive hosts?</li>
+  <li>Does a rapidly changing spatial or temporal environment select for mutualism?</li>
+  <li>Does the presence of a mutualist select for or against another mutualist co-existing?</li>
+  <li>Does the ability of hosts’ to perform program cell death select for mutualism given low vertical transmission rates?</li>
+  <li>Does serotype conversion select for mutualism given the presence of parasitic strains?</li>
+  <li>Does quorum-sensing controlled cooperation select for mutualism with a symbiont given low vertical transmission rates?</li>
+  <li>Does the presence of a competing host species select for parasitism given an existing symbiosis with one host species?</li>
+  <li>Does the presence of a parasite prevent host range expansion given the range expansion is into a hostile area?</li>
+  <li>Does the presence of a mutualist symbiont select for group living given hosts can choose how closer to associate with each other?</li>
+  <li>Does chronic infection of a parasite/virus in the same host select for escaping the immune system more than infection across several hosts given immune response to the virus?</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

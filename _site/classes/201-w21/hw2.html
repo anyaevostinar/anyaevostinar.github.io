@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>HW 2 Analyzing Country Data | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW 2 Analyzing Country Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-w21/hw2" />
+<meta property="og:url" content="http://localhost:4000/classes/201-w21/hw2" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW 2 Analyzing Country Data" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-w21/hw2","@type":"WebPage","headline":"HW 2 Analyzing Country Data","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW 2 Analyzing Country Data</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="logistics">Logistics</h1>
+<p>25 points, due Monday, Jan 18th by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy. You need to notify me that you’re using the policy. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still the deadline, not 48 hours later.</p>
+
+<h1 id="goals">Goals</h1>
+<p>To build a non-trivial program with Java that works with the List ADT.</p>
+
+<h1 id="assignment-type-and-collaborative-learning-expectations">Assignment Type and Collaborative Learning Expectations</h1>
+<p>This is a homework assignment that you’ll be handing in on Moodle.</p>
+
+<p>You’re welcome to either complete this homework with input from one or more members of your collaborative learning group or to complete it on your own. You and the other members of your collaborative learning group should each write your own code, even if you’re helping one another, but you may share your screens/use multiplayer mode to look at one another’s code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what’s permitted.</p>
+
+<h1 id="setup-and-requirements">Setup and Requirements</h1>
+<p>Go to our Team on Repl.it and open the project HW2.</p>
+
+<p>You should first create a Collaborations.txt document and update it with any sources (webpage or people) that you get help from.</p>
+
+<p>The code that you write for this assignment will build on top of the List ADT. The code will also use a dataset containing information about countries, created using data from the World Bank:</p>
+
+<p><a href="/classes/201-f20/CountryDataset.csv">CountryDataset.csv</a></p>
+
+<p>It may be useful to refer to the code from class and the Java Reference file on Moodle. The <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html">official Java API documentation</a> will likely be helpful for knowing what methods are supported by the <code class="language-plaintext highlighter-rouge">ArrayList</code>.</p>
+
+<h1 id="specification">Specification</h1>
+<p>For this assignment, you will write a program that reads from a text file with one line for each country.
+You will create two classes, <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> and <code class="language-plaintext highlighter-rouge">Country</code>.
+Your program will need to represent each country as an instance of <code class="language-plaintext highlighter-rouge">Country</code> and each data file as an instance of <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> (you will only use one data file, but you can imagine having multiple data files).
+When creating an instance of <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> your program should convert the data file into a <code class="language-plaintext highlighter-rouge">List&lt;Country&gt;</code> and then display the data as a list of all countries, in sorted order for a given indicator.</p>
+
+<p>This will give you practice working with the List ADT, <code class="language-plaintext highlighter-rouge">String</code>, <code class="language-plaintext highlighter-rouge">File</code>, <code class="language-plaintext highlighter-rouge">Scanner</code>, loops, and classes.
+It’s also a chance to see how your programming skills might be used to analyze large datasets.</p>
+
+<h2 id="the-input-file">The input file</h2>
+<p>The input file is a text file that contains 0 or more lines of countries, with an initial line that gives the meaning of each item in the line. After that first line, each line of the input file will represent a single country via a comma-delimited list. Here’s an example of the representation of Afghanistan, the alphabetically first country:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Afghanistan,33.26,0.33,72.7,15.73,0.1,2.99,3.89
+</code></pre></div></div>
+<p>Each of the numbers represents some information about the country. Specifically, the meaning of each of the items is as follows:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Country Name
+Population total (in millions)
+CO2 emissions (metric tons per capita)
+Access to electricity (% of population)
+Renewable energy consumption (% of total final energy consumption)
+Terrestrial protected areas (% of total land area)
+Population growth (annual %)
+Urban population growth (annual %)
+</code></pre></div></div>
+
+<p>Click on the CSV file in repl.it to see all of the data.</p>
+
+<p>The information in the data file (CountryDataset.csv) is based off of the <a href="http://datatopics.worldbank.org/world-development-indicators/">World Bank Indicators dataset</a>. The original dataset contains information about each country for each indicator (item) and year from 1960-2019 (although some years are missing for some countries). For each country, the dataset I’ve given you contains a single number for each indicator. That number is the average value of the indicator from 2012-2019, skipping any years where there wasn’t data for that country.</p>
+
+<p>For your testing, you can use the data file I’ve provided, but you can also test on smaller subsets of the data to make sure that your output is correct and that your program doesn’t crash if there are no countries. For instance, you might make a file SmallCountries.csv where you just include the first 10 countries.</p>
+
+<h2 id="command-line-syntax">Command-line syntax</h2>
+<p>Your main method in <code class="language-plaintext highlighter-rouge">CountryDisplayer.java</code> should be structured so that the program expects three command-line arguments. The meaning of the command line arguments is as follows:</p>
+
+<ol>
+  <li>The path to the file containing the country data. This includes the name of the file, and any directory information if the file is not in the same directory as the java program you’re making. E.g., if the country file is in a subdirectory of the directory containing the java program and that subdirectory is named data, this argument would be data/CountryDataset.csv. (Note: there’s nothing special you have to do to handle “CountryDataset.csv” versus “data/CountryDataset.csv”. File will do the right thing in both without you having to think about it.)</li>
+  <li>The name of the indicator that we should sort the data on. This should be one of:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">PopulationTotal</code></li>
+      <li><code class="language-plaintext highlighter-rouge">CO2Emissions</code></li>
+      <li><code class="language-plaintext highlighter-rouge">AccessToElectricity</code></li>
+      <li><code class="language-plaintext highlighter-rouge">RenewableEnergy</code></li>
+      <li><code class="language-plaintext highlighter-rouge">ProtectedAreas</code></li>
+      <li><code class="language-plaintext highlighter-rouge">PopulationGrowth</code></li>
+      <li><code class="language-plaintext highlighter-rouge">UrbanPopulationGrowth.</code></li>
+    </ul>
+  </li>
+  <li>The string <code class="language-plaintext highlighter-rouge">greatestToLeast</code> if we want to sort from greatest to least or the string <code class="language-plaintext highlighter-rouge">leastToGreatest</code> if we want to sort from least to greatest.</li>
+</ol>
+
+<h2 id="expected-outcome">Expected outcome</h2>
+<p>Your program should produce output based on the command line arguments.</p>
+
+<p>The program should print to standard output (i.e. <code class="language-plaintext highlighter-rouge">System.out</code>) one country per line in sorted order. The sorted order should be based on the indicator and ordering passed in as the second and third command-line arguments. The format of the text should be the same as from the original data file (so it would work well to save the line from reading in the data for this). For example, if “PopulationTotal” was the second command line argument and “leastToGreatest” was the third command-line argument, then the list of countries should begin with the the country with the smallest population total, followed by the one with the second to smallest population total, and so on. Here’s an example of the first few lines of my output when I use the following command line:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; javac *.java
+&gt; java CountryDisplayer CountryDataset.csv RenewableEnergy leastToGreatest
+Antigua and Barbuda,0.09,5.8,99.13,0,18.82,1.16,0.2
+Bahrain,1.37,22.76,100,0,6.65,3.12,3.21
+Cayman Islands,0.06,9.38,100,0,10.75,1.65,1.65
+Gibraltar,0.03,14.25,100,0,30.51,0.05,0.05
+Kuwait,3.63,28.6,100,0,17.5,4.25,4.25
+Oman,3.98,16.12,100,0,2.57,5.76,7.14
+</code></pre></div></div>
+
+<p>There are 250 total lines of output as there are 250 countries in the file. (Note that some of you might be thinking “there aren’t 250 countries in the world…” The “countries” we’re using are whatever the WorldBank data listed as a country. That means that some territories, like Puerto Rico and Greenland, have their own data, and even some groups of countries, like “Euro area”, are included.)</p>
+
+<p>Note that for sorting, ties can be broken however you want. <strong>If you are stuck on the sorting, see the advice below.</strong></p>
+
+<h3 id="code-structure">Code structure</h3>
+<p>Your code must be objected-oriented. What this means is that you must create instances of <code class="language-plaintext highlighter-rouge">Country</code> and <code class="language-plaintext highlighter-rouge">CountryDisplayer</code>. You should not create any additional static methods. You can and should create additional non-static methods however and aim to keep your methods short and focused.</p>
+
+<p>You should not have repeated code and you will be especially tempted to repeat code for your sorting algorithm. You should structure your sorting so that there is no need to repeat code for different indicators and direction of order. If you’re unsure how to do that, see the advice below.</p>
+
+<p>You should make sure your code works with a dataset that is shorter than 10 countries. It should not throw an error, it should just show that data. You do not need to handle the user putting in a file that is the wrong format.</p>
+
+<p>You do however need to handle a user typing other commands incorrectly by providing a friendly message (called a usage statement) if they:</p>
+<ul>
+  <li>Type too many or too few parameters</li>
+  <li>Type an indicator that is not from the list</li>
+  <li>Type something other than ‘leastToGreatest’ or ‘greatestToLeast’</li>
+</ul>
+
+<h1 id="advice">Advice</h1>
+<p>This is your first large assignment in this class and you might feel pretty overwhelmed. Here is how I advise you go about this project.</p>
+
+<h2 id="make-your-classes">Make your classes</h2>
+<p>First make your <code class="language-plaintext highlighter-rouge">Country</code> file. Think about what variables it will need.</p>
+
+<p>Then make your <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> file and class with its <code class="language-plaintext highlighter-rouge">List&lt;Country&gt;</code>.
+Next write ‘stubs’ of the major methods that you will need for <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> to work:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class CountryDisplayer {
+    //instance variables up here!
+    List&lt;Country&gt; countries;
+     
+    public CountryDisplayer(String fileName) {
+        // Read the country file and load the countries into this instance of CountryDisplayer.
+    }
+ 
+    public void sortCountryList(String indicatorName, boolean isGreatestToLeast) {
+        // ...
+    }
+ 
+    public void displayTextCountries(??) {//I've put ?? for the parameters - brainstorm what should go there!
+        // ...
+    }
+     
+     
+    public static void main(String[] args) {
+        // If there's no command-line argument, print a usage statement 
+        // and exit. Otherwise, use args[0] as the input file path.
+        if (args.length == 0) {
+           // ...
+        }
+         
+        //Construct a CountryDisplayer and call the methods you defined above to load, process, and display the countries
+    }
+}
+</code></pre></div></div>
+<p>A stub just means that the method is defined but doesn’t actually do anything.</p>
+
+<h2 id="read-in-your-countries">Read in your countries</h2>
+<p>Complete the <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> constructor by looking at the code from the <code class="language-plaintext highlighter-rouge">LineReader.java</code>.
+You will probably also want to make a better constructor for <code class="language-plaintext highlighter-rouge">Country</code> at this point.
+It might be helpful to make a shorter version of the data file with just a few lines as you work on this part.
+Make sure to test this code by creating a <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> in the main of <code class="language-plaintext highlighter-rouge">CountryDisplayer.java</code>.
+You don’t need to get the file from the command line yet, just write the filename into your code for now.</p>
+
+<p>To split a line that is delimited by commas, you will probably fine the <code class="language-plaintext highlighter-rouge">.split()</code> method of <code class="language-plaintext highlighter-rouge">String</code> helpful.</p>
+
+<h2 id="display-text-of-your-countries">Display text of your countries</h2>
+<p>Complete the <code class="language-plaintext highlighter-rouge">displayTextCountries</code> method so that you can make sure that you successfully read the countries in.
+You don’t have the sorting function yet, so they will just display in the order from the text file and that’s okay:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; javac *.java
+&gt; java CountryDisplayer
+Afghanistan,33.26,0.33,72.7,15.73,0.1,2.99,3.89
+Albania,2.89,1.76,100,38.62,17.56,-0.23,1.61
+Algeria,39,3.47,99.51,0.15,7.5,1.98,2.91
+Andorra,0.08,5.93,100,19.41,24.88,-1.03,-1.13
+Angola,27,1.27,37.13,51.7,6.97,3.49,4.64
+</code></pre></div></div>
+
+<h2 id="getting-indicators">Getting indicators</h2>
+<p>To sort by specific indicators, you’ll need to grab those indicators from the countries by the string name. In <code class="language-plaintext highlighter-rouge">Country</code> make a method that takes a string and returns the indicator value for that country. This will look like a long line of if-else statements. Note that <code class="language-plaintext highlighter-rouge">==</code> compares whether two Strings are literally the same Object, not their values. You will want to use the method <code class="language-plaintext highlighter-rouge">.equals(String in)</code> to compare their values.</p>
+
+<p>It’s a good idea to test these small changes immediately in the <code class="language-plaintext highlighter-rouge">main()</code> method of your <code class="language-plaintext highlighter-rouge">Country.java</code> class. Create an instance of <code class="language-plaintext highlighter-rouge">Country</code> with dummy data and make sure you are able to get the data back out by the indicator name.</p>
+
+<h2 id="sorting">Sorting</h2>
+<p>You’re now ready to write a sorting function. Remember that one way of sorting is to make a new list and then look through your old list and repeatedly find and remove the largest value and put that value into your new list. Since you already have a method to get a specific indicator value for a country, you should be able to make a single sorting function that works for any indicator value. You should also use an if-else statement to control if you are sorting from least to greatest or greatest to least. Remember that you shouldn’t have two separate sorting algorithms for this. You should think about what those two things have in common and what the one difference is.</p>
+
+<h2 id="command-line">Command line</h2>
+<p>Now it’s time to enable all of this to be controlled by command line arguments. Remember that all command line arguments are captured in <code class="language-plaintext highlighter-rouge">args</code> so you can just grab things out <code class="language-plaintext highlighter-rouge">args[0]</code>, <code class="language-plaintext highlighter-rouge">args[1]</code>, etc.</p>
+
+<p>Remember that you should check the arguments and if they aren’t correct, you should print out a helpful message about what the correct argument options are and then quit.</p>
+
+<h1 id="rubric">Rubric</h1>
+<p>This is how you will be graded on this assignment:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Country and CountryDisplayer object oriented</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Sorting one way works correctly</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Correct command line behavior</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Text printed to screen</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Not too much repeated code</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>All indicators and sorting options work</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Sufficient documentation</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Style</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="submission">Submission</h1>
+<p>Make sure Collaborations.txt is accurate and includes any sources that you used including any conversations. Did you share strategies with anyone else? Talk about any annoying compiler error and get advice? These are fine things to do, and you should note them in the Collaborations.txt file. Give the names of people you talked with. If you used any resources outside of our course materials, that is also something to note in Collaborations.txt. If you didn’t talk with anyone, please note that explicitly in Collaborations.txt.</p>
+
+<p>After making Collaborations.txt and finishing the assignment, click on the three vertical dots next to the add file and add folder icons on repl.it, and choose “Download as zip” from the menu. Upload that zip on Moodle.</p>
+
+<h1 id="extras">Extras</h1>
+<p>If you finish everything above and want to do more, here are some ideas. Remember to submit the assignment above before doing these.</p>
+
+<ul>
+  <li>If you’re looking for further practice on your Java skills, use try/catch blocks to fail gracefully if the file is not found or if the file is not properly formatted. You might also try to partially recover if part of a file is not properly formatted - e.g., skip improperly formatted lines.</li>
+  <li>Optionally allow a fourth command-line argument that indicates how many countries should be displayed in the sorted list. If this argument isn’t included, the program should default to 10 countries.</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Cluster Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Cluster Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-w21/cluster_lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-w21/cluster_lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Cluster Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/361-w21/cluster_lab","@type":"WebPage","headline":"Cluster Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Cluster Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To get set up to run experiments on one of Carleton’s computing clusters when Repl.it isn’t doing the job.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>You won’t actually be handing anything in for this assignment.</p>
+
+<h1 id="exercise-1">Exercise 1</h1>
+<p>a. Go to <a href="https://mantis.mathcs.carleton.edu:9595/">https://mantis.mathcs.carleton.edu:9595/</a> and log in with your Carleton credentials.</p>
+
+<p>b. On the right side of the page there is a button “New”. Click that and select “Terminal” which should open a new page with a black terminal box.</p>
+
+<p>c. Use the following command to get the teaching repo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone --recurse-submodules -j8 https://github.com/anyaevostinar/teaching-alife.git
+</code></pre></div></div>
+
+<p>d. Change directory into the repo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd teaching-alife/
+</code></pre></div></div>
+
+<p>e. Make and run like your have in the Repls:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
+./evo-algo
+</code></pre></div></div>
+
+<h1 id="exercise-2">Exercise 2</h1>
+<p>I’ve provided a script in Python to run several experiments sequentially. The script is in <code class="language-plaintext highlighter-rouge">stats_scripts</code> and is called <code class="language-plaintext highlighter-rouge">simple_repeat.py</code>.</p>
+
+<p>a. Go back to the other browser window and click on the <code class="language-plaintext highlighter-rouge">teaching-alife</code> folder at the bottom. Then open the <code class="language-plaintext highlighter-rouge">stats_scripts</code> folder and the <code class="language-plaintext highlighter-rouge">simple_repeat.py</code> file.</p>
+
+<p>b. This Python script is a bit fancy in that it is able to submit commands to the command line, but you should be able to make the changes to the for-loops and other settings that you want for your project. For now, don’t make any changes.</p>
+
+<p>c. Go back to your Terminal screen and type the following command to make a directory called Example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir Example
+</code></pre></div></div>
+<p>It’s good to keep your experiments organized so the script will put all the data files into this folder along with your configuration file.</p>
+
+<p>d. Run the simple repeat script as follows:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python stats_scripts/simple_repeat.py
+</code></pre></div></div>
+<p>It will print out a bunch of stuff as it runs each experiment, which shouldn’t take long for these very simple “experiments”. Note that it runs each “treatment” (ie starting prob of 0, 0.5 and 1) 10 times with different random seeds. This is so that you have a better idea of what your simulation is likely to do since any one run could do unusual behavior.</p>
+
+<p>e. You can go back to the file directory window and look at the data files that have been put into the <code class="language-plaintext highlighter-rouge">Example</code> directory. It would have been annoying to run each of those experiments by hand!</p>
+
+<h1 id="exericse-3">Exericse 3</h1>
+<p>These experiments ran prety quickly, but eventually your code is likely to take a bit longer to run and if you close your browser window, it would interrupt the script. There is a program that allow your script to keep running even if your connection to the cluster gets interrupted. The program is called “screen”.</p>
+
+<p>a. First we need to make the code take a bit longer to run so you can actually see things happen. Open <code class="language-plaintext highlighter-rouge">teaching-alife/source/native.cpp</code> and increase the number of updates that are run to 10000 (you just need to add a 0).</p>
+
+<p>b. Back on your command prompt, run:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen python stats_scripts/simple_repeat.py
+</code></pre></div></div>
+
+<p>c. Use the key sequence Ctrl-a + Ctrl-d to detach from the screen session. At this point you could close the window or go do other things while this is running.</p>
+
+<p>d. To reattach, on the command prompt type</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen -r
+</code></pre></div></div>
+
+<h1 id="exercise-4">Exercise 4</h1>
+<p>We share this cluster with another CS class (Parallel, in case you’re interested), and so need to be good citizens and not take up too much space on the cluster. Whenever you start a job running (following the above steps or not), you should check to make sure that it isn’t taking up too many resources.</p>
+
+<p>a. If your screen job has finished, start it up again so that you can see it running.</p>
+
+<p>b. While your job is running and you’ve detached from the screen, run:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>top
+</code></pre></div></div>
+
+<p>c. This will pop up a whole lot of information. You should be able to see your username somewhere in the <code class="language-plaintext highlighter-rouge">user</code> column and both <code class="language-plaintext highlighter-rouge">top</code> and <code class="language-plaintext highlighter-rouge">evo-algo</code> since it shows all the commands that you are running.</p>
+
+<p>d. There are a couple of things to check whenever you start a job. The first is the <code class="language-plaintext highlighter-rouge">load average</code>. Find that label. You should always make sure that it is below 20 and if it goes above 20, reattach to your screen and kill the job (Ctrl-c or Ctrl-d).</p>
+
+<p>e. You should also check on the memory usage. For your job row, look at the <code class="language-plaintext highlighter-rouge">RES</code> column. That number should stay below 2,000,000. (If you want the details, that’s in kilobytes and you should stay below 2 gigabytes, which is 2,000,000 kilobytes.) Again if your job is going above that, you should kill it and figure out why that is happening.</p>
+
+<h1 id="exercise-5">Exercise 5</h1>
+<p>Follow the same steps to get your final project code onto Mantis and try running it. Feel free to grab whatever parts of <code class="language-plaintext highlighter-rouge">simple_repeat.py</code> are useful to you when you start wanting to run multiple replicates of different treatments. I encourage you to copy the whole script over and just change the couple of places that things differ.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

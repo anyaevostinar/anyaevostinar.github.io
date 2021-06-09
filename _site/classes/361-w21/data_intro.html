@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Empirical Data Recording Intro | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Empirical Data Recording Intro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-w21/data_intro" />
+<meta property="og:url" content="http://localhost:4000/classes/361-w21/data_intro" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Empirical Data Recording Intro" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/361-w21/data_intro","@type":"WebPage","headline":"Empirical Data Recording Intro","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Empirical Data Recording Intro</h1>
+  </header>
+
+  <div class="post-content">
+    <p><em>(Note: This reading is a work in progress and there may be typos, please let me know if you find any!)</em></p>
+
+<p><a href="https://empirical.readthedocs.io/">Empirical</a> provides a robust set of tools for <a href="https://empirical.readthedocs.io/en/latest/library/data/data.html">collecting data</a> from your simulation at regular intervals. We’ll look at a few specific approaches to doing so in this reading.</p>
+
+<h1 id="include">Include</h1>
+<p>Empirical’s data tools are located in <code class="language-plaintext highlighter-rouge">include/emp/data/DataFile.hpp</code> and so you’ll need to include that in your <code class="language-plaintext highlighter-rouge">World</code> file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include "../../Empirical/include/emp/data/DataFile.hpp"
+</code></pre></div></div>
+
+<h1 id="recording-a-count">Recording a count</h1>
+<p>A common thing you’ll likely want to do is record how many of something there are in your world every so many timesteps. You will output the count every interval and so don’t need your <code class="language-plaintext highlighter-rouge">DataNode</code> to worry about previous recordings. This is a common enough pattern that there is a built-in version of the <code class="language-plaintext highlighter-rouge">DataNode</code> that does this called the <code class="language-plaintext highlighter-rouge">DataMonitor</code>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usingDataMonitor = DataNode&lt;T, data::Current, data::Info, data::Range, data::Stats, MODS...&gt;
+</code></pre></div></div>
+<p>“A node that stores data about the most recent value it recieved, as well as the distribution (min, max, count, total, and mean) of values it has recieved since the last reset. It also allows you to give it a name, description, and keyword.”</p>
+
+<p>If I wanted to save a count of how many symbionts there are in the world in my software <a href="https://github.com/anyaevostinar/SymbulationEmp/blob/master/source/SymWorld.h">Symbulation</a>, I would declare a <code class="language-plaintext highlighter-rouge">DataMonitor</code> in my <code class="language-plaintext highlighter-rouge">SymWorld</code> class like so:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::Ptr&lt;emp::DataMonitor&lt;int&gt;&gt; data_node_symcount;
+</code></pre></div></div>
+
+<h2 id="destruction">Destruction</h2>
+<p>Because C++ doesn’t manage memory for us, we need to make sure that our <code class="language-plaintext highlighter-rouge">DataNode</code>s are cleaned up once our world is done, otherwise we’ll get memory leaks. The destructor for a class is called when an object of that class is destroyed and always starts with <code class="language-plaintext highlighter-rouge">~</code> and then the name of the class:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~SymWorld() {
+    if(data_node_symcount) data_node_symcount.Delete();
+}
+</code></pre></div></div>
+
+<p>DataNodes know how to delete themselves, so as long as the world makes sure to tell them to do so, everything else will be taken care of.</p>
+
+<h2 id="initializing-the-node">Initializing the node</h2>
+<p>There are a number of ways of initializing our data monitor node, but here is one that we’ll look at:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::DataMonitor&lt;int&gt;&amp; GetSymCountDataNode() {
+if(!data_node_symcount) {
+    data_node_symcount.New();
+    OnUpdate([this](size_t){
+    data_node_symcount -&gt; Reset();
+    for (size_t i = 0; i &lt; pop.size(); i++)
+        if(IsOccupied(i))
+        data_node_symcount-&gt;AddDatum((pop[i]-&gt;GetSymbionts()).size());
+    });
+}
+return *data_node_symcount;
+}
+</code></pre></div></div>
+
+<p>There’s a lot going on there, so let’s look at each piece.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::DataMonitor&lt;int&gt;&amp; GetSymCountDataNode() {
+</code></pre></div></div>
+<p>Our code is a getter for the actual DataMonitor and so it’ll either create it and/or return the intialized instance variable.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if(!data_node_symcount) {
+    data_node_symcount.New();
+</code></pre></div></div>
+<p>If the DataMonitor doesn’t already exist, we need to create it.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OnUpdate([this](size_t){
+</code></pre></div></div>
+<p>This part is weird and is using a fancy functionality within Empirical called signaling. What it is doing is calling the <code class="language-plaintext highlighter-rouge">World</code> method <code class="language-plaintext highlighter-rouge">OnUpdate</code> and passing it a function that should be called everytime the world runs the <code class="language-plaintext highlighter-rouge">update</code> method. This is a <a href="https://en.cppreference.com/w/cpp/language/lambda">lambda expression</a> that is capturing <code class="language-plaintext highlighter-rouge">this</code> which is the world object and the function takes a <code class="language-plaintext highlighter-rouge">size_t</code> parameter. You don’t need to fully understand what is going on in this code, just enough so that you can change it to suit your needs.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    data_node_symcount -&gt; Reset();
+</code></pre></div></div>
+<p>This calls the <code class="language-plaintext highlighter-rouge">Reset</code> method on the data node, which clears out the current log of data. This makes sure that we are only recording the count for a single update instead of continuing to add every update, which isn’t what we want.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for (size_t i = 0; i &lt; pop.size(); i++)
+        if(IsOccupied(i))
+        data_node_symcount-&gt;AddDatum((pop[i]-&gt;GetSymbionts()).size());
+    });
+</code></pre></div></div>
+<p>This for loop is just looping over the population and finding the occupied spaces. For host in an occupied space, it is adding the count of the symbionts to the data node. Remember that this is the function that will be called every update.</p>
+
+<h2 id="setting-up-the-file">Setting up the file</h2>
+<p>We have a data node now but also need to actually get data out of it via a data file. In the interest of modularity, we’ll have a method for that as well:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::DataFile &amp; SetupSymFile(const std::string &amp; filename) {
+    auto &amp; file = SetupFile(filename);
+    auto &amp; node1 = GetSymCountDataNode();
+    file.AddVar(update, "update", "Update");
+    file.AddTotal(node1, "count", "Total number of symbionts");
+
+    file.PrintHeaderKeys();
+
+    return file;
+  }
+</code></pre></div></div>
+
+<p>You could (and we will a bit later) add lots of other data columns to this file. Currently it will print out just two columns, one for the update number and one for the count at that update.</p>
+
+<p>Let’s look at a couple of pieces of this individually.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auto &amp; file = SetupFile(filename);
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">auto</code> is a C++ keyword that lets you not have to actually say what the type is and is useful for awkwardly long types or such. It doesn’t mean that there isn’t a type, since C++ is still a strongly-typed language, but in situations where the compiler can figure it out (because SetupFile specifies what it returns), you can use it so you don’t have to look it up. Note that you still need to specify that it will be returning a reference with <code class="language-plaintext highlighter-rouge">&amp;</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">SetupFile</code> is a method provided by <code class="language-plaintext highlighter-rouge">World</code> that handle behind the scenes things like opening the file and preparing to write to it.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>auto &amp; node1 = GetSymCountDataNode();
+</code></pre></div></div>
+
+<p>This line is calling the function we just made earlier in this reading. Arguably we could not save what is returned and just use the instance variable, but it would be less clear that that is what is going on in the method call. It’s ultimately a style preference which you do.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file.AddVar(update, "update", "Update");
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">update</code> is a variable in the <code class="language-plaintext highlighter-rouge">World</code> class and this function adds a column for recording it.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file.AddTotal(node1, "count", "Total number of symbionts");
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">AddTotal</code> is a function that grabs the current total value from the data node, and this is why we have to reset the data node every update. The second argument is the header of the column and the third is the explanation of the column.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file.PrintHeaderKeys();
+</code></pre></div></div>
+<p>This method just prints the column header information to the file right away.</p>
+
+<h2 id="calling-the-setup-file">Calling the setup file</h2>
+<p>You call the method(s) to set up your data file(s) in your <code class="language-plaintext highlighter-rouge">native.cpp</code> file:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>world.SetupSymFile("example.data").SetTimingRepeat(10);
+</code></pre></div></div>
+
+<p>Since the method <code class="language-plaintext highlighter-rouge">SetupSymFile</code> returns the file, we can chain method calls and set how frequently we want data written the file with <code class="language-plaintext highlighter-rouge">SetTimingRepeat</code>, which specifies the interval of updates that should pass between times that the file is written to. What value you put for this will vary quite a bit depending on what you are interested in and how long you are running your experiments. Writing to the file is time consuming and if you are running for a long time, the files can get really big. Generally you want to aim for as infrequent as possible while still achieving your goals. It’s also better to be a little more frequent if that data might be helpful once you are confident that you know what experiments you want to run since it’s better not to have to redo a run just to get more frequent data timepoints.</p>
+
+<h1 id="other-kinds-of-data">Other kinds of data</h1>
+<p>We saw how to get count data, but there are a number of other pieces of information you may want and Empirical provides support for most of the common ones.</p>
+
+<h2 id="means">Means</h2>
+<p>Often you will want an average/mean of a behavior value of your population. You do everything the same, but when you add the node to your file, you use the <code class="language-plaintext highlighter-rouge">AddMean</code> method:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file.AddMean(node, "mean_val", "Average symbiont value");
+</code></pre></div></div>
+
+<p>It automatically calculates the mean of the values that you’ve added.</p>
+
+<h2 id="histogram-data">Histogram data</h2>
+<p>Averages can obscure interesting information in your data, so it’s good to collect distribution data in addition. A good example of this is for a behavior value in my software, the value can be between -1 and 1. I was getting averages of 0, which didn’t make sense. What was actually going on was that there was a coexistence of negative and positive values, which was really cool to see!</p>
+
+<p>Getting histogram data to record is a little bit awkward, but supported.</p>
+
+<p>When you create a pointer to the data node, you need to specify that it will be monitoring a histogram as well as a double (if you are going to pull the mean as well):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::Ptr&lt;emp::DataMonitor&lt;double, emp::data::Histogram&gt;&gt; data_node_orgcoop;
+</code></pre></div></div>
+
+<p>Then when setting up the file, if you want the histogram to have a certain number of bins, for example -1 to 1 at 0.1 distances, you would first set them up:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node.SetupBins(-1.0, 1.1, 21);
+</code></pre></div></div>
+<p>If you want it to end at 1, you need to write 1.1 because it follows the convention of being exclusive at the upper range. Also to avoid an uneven amount of the range being in one bin, we need 21 bins instead of 20. You could instead count either 1 or -1 as part of the adjoining bin, there isn’t a perfect way to do it.</p>
+
+<p>To then add each of the bins:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file.AddHistBin(node, 0, "Hist_-1", "Count for histogram bin -1 to &lt;-0.9");
+file.AddHistBin(node, 1, "Hist_-0.9", "Count for histogram bin -0.9 to &lt;-0.8");
+file.AddHistBin(node, 2, "Hist_-0.8", "Count for histogram bin -0.8 to &lt;-0.7");
+file.AddHistBin(node, 3, "Hist_-0.7", "Count for histogram bin -0.7 to &lt;-0.6");
+file.AddHistBin(node, 4, "Hist_-0.6", "Count for histogram bin -0.6 to &lt;-0.5");
+file.AddHistBin(node, 5, "Hist_-0.5", "Count for histogram bin -0.5 to &lt;-0.4");
+file.AddHistBin(node, 6, "Hist_-0.4", "Count for histogram bin -0.4 to &lt;-0.3");
+file.AddHistBin(node, 7, "Hist_-0.3", "Count for histogram bin -0.3 to &lt;-0.2");
+file.AddHistBin(node, 8, "Hist_-0.2", "Count for histogram bin -0.2 to &lt;-0.1");
+file.AddHistBin(node, 9, "Hist_-0.1", "Count for histogram bin -0.1 to &lt;0.0");
+file.AddHistBin(node, 10, "Hist_0.0", "Count for histogram bin 0.0 to &lt;0.1");
+file.AddHistBin(node, 11, "Hist_0.1", "Count for histogram bin 0.1 to &lt;0.2");
+file.AddHistBin(node, 12, "Hist_0.2", "Count for histogram bin 0.2 to &lt;0.3");
+file.AddHistBin(node, 13, "Hist_0.3", "Count for histogram bin 0.3 to &lt;0.4");
+file.AddHistBin(node, 14, "Hist_0.4", "Count for histogram bin 0.4 to &lt;0.5");
+file.AddHistBin(node, 15, "Hist_0.5", "Count for histogram bin 0.5 to &lt;0.6");
+file.AddHistBin(node, 16, "Hist_0.6", "Count for histogram bin 0.6 to &lt;0.7");
+file.AddHistBin(node, 17, "Hist_0.7", "Count for histogram bin 0.7 to &lt;0.8");
+file.AddHistBin(node, 18, "Hist_0.8", "Count for histogram bin 0.8 to &lt;0.9");
+file.AddHistBin(node, 19, "Hist_0.9", "Count for histogram bin 0.9 to 1.0");
+</code></pre></div></div>
+<p>Like I said, not beautiful, but functional. This will then give you the count of values that fall into each range.</p>
+
+<p>There are even more things (such as min, max, median, percentile, etc) supported and feel free to look through the <a href="https://empirical.readthedocs.io/en/latest/api/classemp_1_1DataFile.html">documentation for the DataFile</a> to see them.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

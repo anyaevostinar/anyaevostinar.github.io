@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Homework 1 - Guessing Game | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Homework 1 - Guessing Game" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-w21/example-tiered-rubric" />
+<meta property="og:url" content="http://localhost:4000/classes/201-w21/example-tiered-rubric" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Homework 1 - Guessing Game" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-w21/example-tiered-rubric","@type":"WebPage","headline":"Homework 1 - Guessing Game","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Homework 1 - Guessing Game</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>10 points, due Friday, Jan 8th by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy. You need to notify me that you’re using the policy. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still Friday, not 48 hours later.</p>
+
+<h2 id="goals">Goals</h2>
+<p>To practice writing some Java and working with object oriented code.</p>
+
+<p>Required concepts:</p>
+<ul>
+  <li>Reading and writing Java</li>
+  <li>Looping</li>
+  <li>Conditionals</li>
+  <li>Object-oriented programming</li>
+</ul>
+
+<p>Additional concepts:</p>
+<ul>
+  <li>Input/output</li>
+  <li>User-friendly interface</li>
+  <li>Descriptive variable names</li>
+  <li>Good style</li>
+</ul>
+
+<h2 id="guessing-game">Guessing Game</h2>
+<p>In this assignment, you’ll be creating a guessing game. 
+In a guessing game, the computer picks a number between 1 and 100 at random, and it asks the user to guess a number. 
+After each guess, it tells the user if they are too high or too low, and then lets them guess again. 
+If the user ever guesses correctly, the computer should congratulate the user and end the program. 
+Here’s an example of me interacting with my Guessing Game:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; javac GuessingGame.java
+&gt; java GuessingGame
+Welcome to the Guessing Game!
+What's your name? Anya
+Hello Anya! The computer's job is to select a number between 1 and 100. Your job is to guess that number!
+Guess the number: 27
+Too low!
+Guess the number: 30
+Too low!
+Guess the number: 60
+Too high!
+Guess the number: 50
+Too low!
+Guess the number: 55
+Too low!
+Guess the number: 57
+Good job! 57 was my number. You win!
+</code></pre></div></div>
+
+<h3 id="set-up-and-instructions">Set up and instructions</h3>
+<p>You’re welcome to either complete this homework with a member of your homework group or to complete it on your own. 
+You and the other members of your homework group should each write your own code, even if you’re completing it together, but you may share your screens/use multiplayer mode to look at one another’s code, make suggestions, and compare ideas. 
+You’re strongly encouraged to reach out to your group about questions you have or if there are things you were surprised by. 
+You’re also (as always) welcome to post questions on the forum to the whole class. 
+<strong>Please only post small amounts of code if you’re posting code</strong>. 
+If you’re not sure what part of the code you need help with, come to office hours, lab assistant hours, or post the code privately so only the course staff and I can see it. 
+You might also check out the common Java Errors and Fixes document, linked on Moodle. 
+You and your classmates will collaboratively add to this document, and if you’re stuck, you might find a helpful suggestion there.</p>
+
+<p>You’ll complete this assignment on repl.it. Go to the student page and log in. Then click on the CS201 classroom. Under Projects, click “HW1”. 
+With every project you do in this class, you should make sure the repl is private. Click on the pencil icon next to the project name, and switch the toggle from public to private:</p>
+
+<p><img src="/classes/201-f20/PrivateRepl.PNG" alt="Screenshot of Repl.it showing name of assignment circled and private slider" /></p>
+
+<p>Your account shouldn’t say that you need to upgrade because you should have the free Hacker plan from the upgrade. 
+If you haven’t gotten that set up, look at the page on “Tools for this class”, linked on Moodle. 
+You can work on the assignment without making it private, but it will be required that you make future projects private.</p>
+
+<p>If you run into any issues logging on to repl.it or finding this project, please ask in Piazza right away!</p>
+
+<h3 id="getting-acquainted-with-the-guessing-game">Getting Acquainted with the Guessing Game</h3>
+<p>Before writing any code, create a <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> file in repl.it (using the “Add file” button). 
+In that file, indicate in what ways (if any) you collaborate with other people on this assignment. 
+It’s easier to write these down as you go instead of trying to remember at the end of an assignment and possibly forgetting something! 
+Did you and your homework group look at each other’s code? 
+Talk about strategies? 
+These are fine things to do, and you should note them in the <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> file. 
+If you use any resources outside of our course materials, that is also something to note in <code class="language-plaintext highlighter-rouge">Collaborations.txt</code>.</p>
+
+<ul>
+  <li>Now, read through the code in GuessingGame.java, and understand the structure. What state does a GuessingGame have? Jot down your answer on a piece of paper or in a text file.</li>
+  <li>Next, try compiling the code: At the command line (the black part of the screen in repl.it): <code class="language-plaintext highlighter-rouge">javac GuessingGame.java</code></li>
+  <li>Compiling the code should result in two errors. Read the compiler error messages and try to understand why it’s giving you these errors.</li>
+  <li>Fix these errors by implementing <code class="language-plaintext highlighter-rouge">getNumber()</code> and <code class="language-plaintext highlighter-rouge">getDefaultNumber()</code> (each of these methods only needs one line of code!). Each time you finish making a change in your code, compile the program. When you’ve finished this part, you should no longer get any compile errors.</li>
+</ul>
+
+<p>Jot down any questions you have about the structure of the code or about understanding compiler error messages.</p>
+
+<h3 id="implementing-the-game">Implementing the Game</h3>
+<p>To implement the guessing game, you’ll need to change two methods: <code class="language-plaintext highlighter-rouge">playGame</code> and <code class="language-plaintext highlighter-rouge">main</code>. 
+Both of these methods already exist in the code, but they don’t do anything yet. 
+As you’re implementing these methods, jot down compiler errors and exceptions that you get, as well as how you fixed them. 
+(Just like in Python, you’ll find that it’s helpful to have a mental library of what particular messages mean. 
+Reflecting on how you fix an error can help you to build that mental library faster.)</p>
+
+<p>Start off by implementing <code class="language-plaintext highlighter-rouge">main()</code>. 
+The main method executes when the user runs <code class="language-plaintext highlighter-rouge">GuessingGame</code> from the command line: <code class="language-plaintext highlighter-rouge">java GuessingGame</code>. 
+You’ll need to construct a new <code class="language-plaintext highlighter-rouge">GuessingGame</code> object, start the game (i.e., call the <code class="language-plaintext highlighter-rouge">startNewGame</code> method on the <code class="language-plaintext highlighter-rouge">GuessingGame</code> instance you created), and play the game. 
+Remember that unlike Python, you need to use the word <code class="language-plaintext highlighter-rouge">new</code> when constructing an object. 
+Test your code and make sure it runs. 
+You’ll still see a message about not being able to play, since you haven’t implemented <code class="language-plaintext highlighter-rouge">playGame()</code>, but now you’re ready to play once you get that method working.</p>
+
+<p>Now you’re ready to write <code class="language-plaintext highlighter-rouge">playGame()</code>. 
+It will likely be helpful to write down a high level outline of the logic for the method before turning your ideas into code.
+I like to outline my ideas as comments in the method so that I can then just write the code for one comment at a time.
+Your code should first welcome the user, asking for their name like my example does above. 
+After welcoming the user, this method should get input from the user and have them guess until they’re correct. 
+You might look back at the examples from the comparing Python and Java activity to see an example of getting input from the user and looping. 
+Your game should provide feedback to the user about whether their guess is too high or too low.</p>
+
+<p>Once you think you have <code class="language-plaintext highlighter-rouge">playGame</code> working, compile your code and run it. 
+You should be able to interact with the game! 
+Try a few games to make sure that the program performs properly, and debug your code to fix any issues.</p>
+
+<h3 id="turning-it-in">Turning it in</h3>
+<p>You’ll turn your code in on Moodle under the Guessing Game assignment.</p>
+
+<p>After double checking you included everything necessary in <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> and finishing the assignment, click on the three vertical dots next to the add file and add folder icons on repl.it, and choose “Download as zip” from the menu. 
+Upload that zip on Moodle.</p>
+
+<h3 id="grading">Grading</h3>
+<p>The grading of your homework assignments is tiered to match the meaning of letter grades as listed in the syllabus. The C-Tier requires you demonstrate understanding of the required concepts while the later tiers cover additional concepts.</p>
+
+<p><strong>C-Tier</strong> 7 points total</p>
+<ul>
+  <li>Code compiles and runs</li>
+  <li>Correct loop choice</li>
+  <li>Correct use of if/else</li>
+  <li>Constructs and correctly uses GuessingGame object in main()</li>
+</ul>
+
+<p><strong>B-Tier</strong> 8.5 points total</p>
+<ul>
+  <li>Everything from C-Tier</li>
+  <li>Correct use of input/output</li>
+  <li>User-friendly interface as specified</li>
+  <li>Descriptive variable names</li>
+  <li>Good style</li>
+</ul>
+
+<p><strong>A-Tier</strong> 10 points total</p>
+<ul>
+  <li>Everything from B-Tier</li>
+  <li>All methods have JavaDocs-style comments</li>
+  <li>Implement one extension from below in a file <code class="language-plaintext highlighter-rouge">GuessingGameExtended.java</code></li>
+</ul>
+
+<p>In addition to turning in your code on Moodle, you should go to the “Common Java Errors and Fixes” google doc, linked on Moodle, and add in any errors that you jotted down. 
+This will help us to develop a shared understanding of common Java issues and ways to fix them, getting everyone unstuck faster.</p>
+
+<h3 id="extensions">Extensions</h3>
+<p>Finished making your game? 
+Great job! 
+Here are some more things to try if you have extra time and desire to do more. 
+Leave <code class="language-plaintext highlighter-rouge">GuessingGame.java</code> with your solution to the assignment above and create a new file called <code class="language-plaintext highlighter-rouge">GuessingGameExtended.java</code>, be sure to note in the header of that file what extensions you did.</p>
+<ul>
+  <li>Print the player’s score after they win the game. The score is the number of guesses they needed to win.</li>
+  <li>Remove the default number, and instead make each new GuessingGame set the number to be guessed to a random value in the correct range. This should happen in the constructor, so the client doesn’t have to remember to call <code class="language-plaintext highlighter-rouge">startNewGame()</code>.</li>
+  <li>Allow multiple games. Ask the user after each game whether to play again, and if the response is yes, play another guessing game with a new number. Do you need a new <code class="language-plaintext highlighter-rouge">GuessingGame</code> for this?</li>
+  <li>Modify <code class="language-plaintext highlighter-rouge">GuessingGame</code> to check if there’s a single argument on the command line. If so, it’s used as the number to guess. Make a second constructor as part of your changes. After you’ve implemented this extension, you should be able to run:
+<code class="language-plaintext highlighter-rouge">java GuessingGame 13</code>
+to play a guessing game where the correct number is 13. Why might it be useful to have this functionality?</li>
+  <li>Modify <code class="language-plaintext highlighter-rouge">GuessingGame</code> to check if there are two arguments and the first one is a file flage “-f”. If so, assume the second argument is a filename. The file should have one number per line. Each number corresponds to one guessing game with the player, where the number to guess is the number with the file. For example, if the file had two lines, the first with the number 59 and the second with the number 4, the game would first execute with the computer’s number being 59. Once the player guessed correctly, a new game would start in which the computer’s number was 4.</li>
+  <li>Allow the user to choose between making a new guess and asking whether the number is a multiple of another number. For example, the user might ask if the number is a multiple of 3, and the program would respond yes or no.</li>
+  <li>Make a new file <code class="language-plaintext highlighter-rouge">StringGuessingGame.java</code>, and copy your old code into it. Modify the game so that the user is now guessing a string rather than a number. I recommend just implementing the part where they guess some default string, rather than choosing a string at random. You can use the <code class="language-plaintext highlighter-rouge">compareTo</code> method of the <code class="language-plaintext highlighter-rouge">String</code> class to compare two strings; see the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html">Javadoc</a> for more info.</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

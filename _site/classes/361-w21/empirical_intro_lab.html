@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Empirical Introductory Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Empirical Introductory Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-w21/empirical_intro_lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-w21/empirical_intro_lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Empirical Introductory Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/361-w21/empirical_intro_lab","@type":"WebPage","headline":"Empirical Introductory Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/About/">About</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Empirical Introductory Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To use Empirical to create a simple artificial life simulation that you’ll be able to adapt to serve your purposes for your project.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Friday Jan 29th, but it isn’t due until Monday Feb 1st at 5:00pm Central.</p>
+
+<h2 id="setup">Setup</h2>
+<p>Open the Empirical Start project on Repl.it for starter code.</p>
+
+<p>Also open the reading for today and the <a href="/classes/361-w21/evo_alg_lab">evolutionary algorithm lab</a> to reference the methods that will be useful.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>a. The starter code includes a lot of files, but we’ll be focusing on the files in the <code class="language-plaintext highlighter-rouge">source</code> directory for now. The code is currently functional, try it out using the following commands:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
+./evo-algo
+</code></pre></div></div>
+
+<p>You’ll notice some warnings, but you can ignore those for now.</p>
+
+<p>b. Nothing actually prints out currently. Open the file <code class="language-plaintext highlighter-rouge">native.cpp</code> in the <code class="language-plaintext highlighter-rouge">source</code> directory. This is the file that is run by the above commands. You can see that currently it just includes some files, makes a random number generator and a world object, but nothing else.</p>
+
+<p>c. The first thing we need to do is create an organism that can be added to the world. Take a look at the <code class="language-plaintext highlighter-rouge">Organism</code> constructor in <code class="language-plaintext highlighter-rouge">Org.h</code> to see what arguments it currently takes and create an organism in <code class="language-plaintext highlighter-rouge">native.cpp</code> and <code class="language-plaintext highlighter-rouge">Inject()</code> it into the world.</p>
+
+<p>d. If you didn’t add any more organisms or do anything else, your world would just have space for one organism. To force your world to have room for your population to grow, use the <code class="language-plaintext highlighter-rouge">Resize()</code> method.</p>
+
+<p>e. Verify that you have a population of one living organism in your world by printing out the result of <code class="language-plaintext highlighter-rouge">GetNumOrgs()</code> with a helpful message. Compile and run your code using the same commands from (a).</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now it’s time to actually make time proceed for your world.</p>
+
+<p>a. Create a for-loop in <code class="language-plaintext highlighter-rouge">native.cpp</code> that loops 1,000 times and prints out what “update” it is on with an informative message.</p>
+
+<p>b. Move your population number message into this loop as well.</p>
+
+<p>c. Call the world’s <code class="language-plaintext highlighter-rouge">Update()</code> method.</p>
+
+<p>d. Recompile and run to see what happens.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Because your <code class="language-plaintext highlighter-rouge">Process()</code> method in <code class="language-plaintext highlighter-rouge">Organism</code> doesn’t do any reproduction, your starting organism can’t actually reproduce. We could have the world take care of that process, but with the goal of keeping our organism class highly modular, we’ll have it do it instead.</p>
+
+<p>a. In your <code class="language-plaintext highlighter-rouge">Organism</code> class, add a method <code class="language-plaintext highlighter-rouge">checkReproduction()</code> that returns an <code class="language-plaintext highlighter-rouge">emp::Ptr&lt;Organism&gt;</code>. It needs to be a pointer because sometimes we won’t return anything and we can’t return an empty reference, but we can return a null pointer.</p>
+
+<p>b. In asynchronous reproduction models, instead of having a fitness function that determines which organisms reproduce every generation, we have resources or points that organisms accumulate and once they have enough, they reproduce. Include a check for if your organism has 1,000 points and if they do, create a new <code class="language-plaintext highlighter-rouge">Organism</code> like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::Ptr&lt;Organism&gt; offspring = new Organism(*this);
+</code></pre></div></div>
+
+<p>This is using a copy constructor, which is provided by default in C++. It takes all the instance variables set for the current Organism and sets them the same for the new Organism.</p>
+
+<p>c. The copy constructor is very useful for keeping everything about the parent the same as the offspring, however it also copies the value for <code class="language-plaintext highlighter-rouge">points</code> which means that the offspring gets free resources! Change the offspring’s points back to 0 as it should be.</p>
+
+<p>d. Finally, we also need to make sure that the parent actually pays the cost of reproduction, so subtract 1000 points from the parent’s points.</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>We have a reproduction method, but don’t actually call it yet. For that, we need to go into the <code class="language-plaintext highlighter-rouge">World.h</code> file and add some things to its <code class="language-plaintext highlighter-rouge">Update()</code> method.</p>
+
+<p>a. We don’t want to give unfair advantage to organisms at the beginning of the list, since if they always get to reproduce first, genotypes could persist in the population even if they aren’t actually better, but just because they happen to be first in the list and so get checked for reproduction before everything else. Empirical has a useful function for getting a permutation of a list for this purpose:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::vector&lt;size_t&gt; schedule = emp::GetPermutation(random, GetSize());
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">size_t</code> is a special type in C++ that stands for “size type” and is appropriate for integers that will always be positive, like sizes and positions in a list.</p>
+
+<p>b. Now you can use a for-loop to loop over the schedule. However if you immediately called <code class="language-plaintext highlighter-rouge">checkReproduction</code>, you would probably get an error because you’ll probably run into an empty space, which doesn’t have a method called that. Use the <code class="language-plaintext highlighter-rouge">IsOccupied</code> method to first make sure that you only deal with occupied spaces.</p>
+
+<p>c. Then call the <code class="language-plaintext highlighter-rouge">Process</code> method so every organism gets resources. We could call the <code class="language-plaintext highlighter-rouge">checkReproduction</code> method right away as well, but this could lead to similar problems mentioned before where some organisms are lucky and get resources and the chance to reproduce right away.</p>
+
+<p>d. Instead, create another schedule and loop after your first one to check reproduction after everyone has gotten resources.</p>
+
+<p>e. Remember that if there is an offspring returned, you’ll need to add it to the population with the <code class="language-plaintext highlighter-rouge">DoBirth</code> method. This is a good time to recompile and run to see your population size increase.</p>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>Your organisms don’t actually do anything other than get resources and reproduce, they don’t even mutate since there isn’t anything for them to mutate, they have no genome to speak of!</p>
+
+<p>a. Add some kind of instance variable to be a simple genome for your organisms. A <code class="language-plaintext highlighter-rouge">double</code> works well to start and could be the probability of them doing some action like sharing resources with a random neighbor.</p>
+
+<p>b. Add a <code class="language-plaintext highlighter-rouge">mutate</code> method to your <code class="language-plaintext highlighter-rouge">Organism</code> class, using what you learned from the evolutionary algorithm lab, and call that method in your <code class="language-plaintext highlighter-rouge">checkReproduction</code> method to mutate the offspring.</p>
+
+<p>c. Even though your instance variable doesn’t control any behavior yet, we can observe it “drifting”. Genetic drift is the idea that if a trait is under no selective pressure, it will still change over time. Within your <code class="language-plaintext highlighter-rouge">Update</code> method, total up and calculate the average value of your instance variable and print it out.</p>
+
+<p>d. Run your simple artificial life simulation to observe the genetic drift of your trait.</p>
+
+<p>e. Change the population structure to a Grid using <code class="language-plaintext highlighter-rouge">SetPopStruct_Grid</code> and see if that changes the dynamics of genetic drift.</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>Empirical is way too big to zip and upload to Moodle regularly, so we’re going to try out Repl.it’s submission functionality. Click ‘Submit’ in the upper right corner of your project and <strong>on Moodle paste in the link to your project</strong>.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you have extra time, try adding to your organism’s <code class="language-plaintext highlighter-rouge">Process</code> method so that it actually does something based on your instance variable genome. Ideas include:</p>
+<ul>
+  <li>Donate resources to another organism</li>
+  <li>Spend resources to steal from another organism</li>
+  <li>Spend resources to build defense from the environment or other organisms</li>
+</ul>
+
+<p>You can also start looking through the code from the Built with Empirical examples and see how they built their organisms and worlds.</p>
+
+<h2 id="credit">Credit</h2>
+<p>This lab uses the <a href="https://github.com/devosoft/cookiecutter-empirical-project.git">cookie-cutter material</a> from <a href="https://mmore500.com/waves/tutorials/lesson02.html">this tutorial</a> by <a href="https://github.com/mmore500">Matthew Andres Moreno</a> and <a href="https://github.com/rodsan0/">Santiago Rodriguez Papa</a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
