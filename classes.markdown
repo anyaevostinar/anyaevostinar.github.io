@@ -5,6 +5,10 @@ permalink: /Classes/
 ---
 
 
+### Fall 2021
+
+CS 201: Data Structures ([Syllabus](/classes/201-f21/syllabus)) ([Schedule](/classes/201-f21/schedule))
+
 ### Summer 2021
 
 [Summer Research](/classes/summer-21/schedule) 
@@ -16,6 +20,13 @@ Independent Study Journal Club ([Schedule](/classes/IS-s21/schedule))
 ## Future Classes
 Subject to change!
 
+### Winter 2022
+
+CS 251: Programming Languages
+
+### Spring 2022
+
+CS 257: Software Design
 
 ## Previous Classes
 
