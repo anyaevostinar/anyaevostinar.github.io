@@ -30,7 +30,7 @@ github_username:  anyaevostinar
 
 # Build settings
 #theme: minimal-mistakes-jekyll
-theme: jekyll-theme-minimal
+theme: minima
 
 plugins:
   - jekyll-feed
