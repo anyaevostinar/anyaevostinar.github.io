@@ -46,8 +46,8 @@ pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
-@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
+.wrapper { max-width: -webkit-calc(80% - (30px * 2)); max-width: calc(80% - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(80% - (30px)); max-width: calc(80% - (30px)); padding-right: 15px; padding-left: 15px; } }
 
 /** Clearfix */
 .wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
@@ -194,3 +194,35 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
+
+/*For Research page cards */
+* { box-sizing: border-box; }
+
+body { font-family: Arial, Helvetica, sans-serif; }
+
+/* Float four columns side by side */
+.column { float: left; width: 33%; padding: 0 10px; }
+
+/* Remove extra left and right margins, due to padding in columns */
+.row { margin: 0 -5px; }
+
+/* Clear floats after the columns */
+.row:after { content: ""; display: table; clear: both; }
+
+/* Style the counter cards */
+.card { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); transition: 0.3s; width: 100%; }
+
+.card:hover { box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.container { padding: 2px 16px; }
+
+.column a:hover { text-decoration: none; color: black; }
+
+.column a:link { text-decoration: none; color: black; }
+
+.column a:visited { text-decoration: none; color: black; }
+
+.column a:active { text-decoration: none; color: black; }
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) { .column { width: 100%; display: block; margin-bottom: 20px; } }
