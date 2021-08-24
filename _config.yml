@@ -37,10 +37,10 @@ plugins:
   - jekyll-seo-tag
 
 header_pages:
-  - about.markdown
-  - blog.markdown
   - classes.markdown
-  - research.markdown
+  - research.md
+  - blog.markdown
+  - about.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
