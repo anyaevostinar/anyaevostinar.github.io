@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Jumping into Java | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Jumping into Java" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f21/jumping_java" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f21/jumping_java" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Jumping into Java" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-f21/jumping_java","@type":"WebPage","headline":"Jumping into Java","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Jumping into Java</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="welcome-to-cs-201">Welcome to CS 201!</h1>
+<p>This class assumes that you have previously taken CS 111 and know Python.
+If you are one of the folks that are coming from high school AP, you will have to bear with me when I assume that you know Python and are learning Java.
+(Also, you should make a plan for learning Python if you are going to take more CS classes, since many assume you know Python.)
+One of the big changes from CS 111 to CS 201 is switching from Python to Java and I know that it will be a bit uncomfortable at first, but I promise that it will get easier.</p>
+
+<h1 id="why-java">Why Java?</h1>
+<p>I know, I know.
+You just got comfortable(ish) with Python and now you’re being asked to switch and you want to know why.
+There are several reasons that we (the CS faculty) think that it’s important for you to learn a new programming language:</p>
+<ol>
+  <li>It helps you learn about general principles of programming that are separate from any one language.</li>
+  <li>It’s important to learn how to learn new programming languages quickly; the language that you’ll be using in 10 years may not even exist currently!</li>
+  <li>Different languages are better at different things: Python is good for beginners, <a href="https://www.bmc.com/blogs/python-vs-java/">Java can be faster and more reliable</a>. As a compiled language, Java offers some advantages, including that the compiler detects errors before they happen and the compiler can optimize our code (compile once, run many times).</li>
+  <li>Java has some key differences that are important for you to understand, like static-typing and compilation.</li>
+  <li>Java is still among top 3 most-used programming languages (with JavaScript, Python, C)</li>
+</ol>
+
+<h1 id="major-differences">Major Differences</h1>
+<p>You’ve already seen some Java and have been able to compare it to Python, so you probably have some ideas of visual differences.
+Here, I’ll put labels onto some of the things you’ve already seen and some explanation for things happening underneath.</p>
+
+<h2 id="under-the-hood">Under the Hood</h2>
+<p>Java, unlike Python, is a compiled language.
+This means the code must go through a <em>translation</em> (i.e., must be compiled) before it can be run.
+A sketch of this process is shown below:</p>
+
+<p><img src="/assets/images/NotionalMachineJava.png" alt="A schematic of the process of taking a Java file and turning it into code the computer can run" /></p>
+
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Code.java</code> is a text file containing the human-readable version of the code, just like a <code class="language-plaintext highlighter-rouge">.py</code> file</p>
+  </li>
+  <li>
+    <p>The Java compiler translates the <code class="language-plaintext highlighter-rouge">.java</code> file into a binary <code class="language-plaintext highlighter-rouge">.class</code> file (binary meaning it contains data in raw 1s and 0s that can’t directly be interpreted as text). This format is also referred to as Java bytecode.</p>
+  </li>
+  <li>
+    <p>To run the compiled program, the <code class="language-plaintext highlighter-rouge">.class</code> file is given as input to the Java Virtual Machine, which interprets the Java bytecode and sends the corresponding instructions to the CPU</p>
+  </li>
+</ol>
+
+<h2 id="caveats">Caveats</h2>
+<p>No programming language is perfect, and Java certainly has some weaknesses.
+There are going to be a lot of rules but also exceptions to those rules and things that don’t follow the overall pattern.
+There are a variety of reasons for this, including:</p>
+
+<ul>
+  <li>The language has evolved over time since the 1990s</li>
+  <li>Adding some complexity allows programmers to achieve better performance</li>
+  <li>There were some bad early decisions that must be kept to maintain compatibility</li>
+</ul>
+
+<h2 id="variables">Variables</h2>
+
+<p>In Java, variables have to be <strong>declared with a type</strong> before you can use them. 
+In Python, you could just put whatever data you wanted into a variable, but Java is picky about you sticking to what kind of data you said you were going to use.</p>
+
+<p>There are <strong>primitive</strong> and <strong>reference</strong> types.</p>
+
+<h3 id="primitive-types">Primitive Types</h3>
+<p>The six primitive types are (notice that their names all start with lowercase):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Range</th>
+      <th>Default Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">boolean</code></td>
+      <td>Boolean</td>
+      <td>true or false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">char</code></td>
+      <td>Character data</td>
+      <td>Any character</td>
+      <td>‘\0’ (zero)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">int</code></td>
+      <td>Integer</td>
+      <td>−231…231−1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">long</code></td>
+      <td>Long integer</td>
+      <td>−263…263−1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">float</code></td>
+      <td>Real</td>
+      <td>−3.4028e38…3.4028e38</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">double</code></td>
+      <td>Double precision real</td>
+      <td>−1.7977e308…1.7977e308</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If you want to change from one type to another, you can, but you have to tell Java to do it purposefully with a <strong>type cast</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>double my_double = 1.5;
+int my_int = (int)my_double; //cuts off the .5
+</code></pre></div></div>
+
+<h3 id="caveats-1">Caveats</h3>
+<p>You can do most of the normal things with the primitive types such as addition and subtraction, etc. 
+You also use <code class="language-plaintext highlighter-rouge">==</code> and <code class="language-plaintext highlighter-rouge">!=</code> on the primitive types.
+In fact, you should ONLY use <code class="language-plaintext highlighter-rouge">==</code> and <code class="language-plaintext highlighter-rouge">!=</code> on the primitive types; if you use it with anything not on the above list, it will not do what you expect!
+You will almost certainly forget this and run into a weird bug where strings don’t do what you expect, so try to remember this when strings are being weird :).</p>
+
+<p>Also, unlike Python, <code class="language-plaintext highlighter-rouge">/</code> will perform integer division if both operands are integers (i.e., the decimal part of the result will be discarded).</p>
+
+<p>Finally, <code class="language-plaintext highlighter-rouge">char</code> is actually an integer type, holding the integer value corresponding to the given character under the Unicode-16 standard, so you can add them together.</p>
+
+<h3 id="what-about-strings">What about Strings?</h3>
+<p>You might have noticed strings were not among the primitive types, only individual characters.
+This is because strings are represented as <strong>objects</strong> in Java, which are fundamentally different from the primitive types.
+Some key differences:</p>
+<ul>
+  <li>Object type names are capitalized (String)</li>
+  <li>Primitive variables store the value, but object variables are references (and hence also called <strong>reference</strong> types)</li>
+  <li>References store the <em>memory address</em> of the object (kind of like telling your friend your home address instead of giving them an entire copy of your house)</li>
+  <li>See the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html">official API documentation</a> if you want to know everything there is to know about Strings.</li>
+</ul>
+
+<h2 id="objects-and-classes">Objects and Classes</h2>
+<p>As you noticed in the lab, there is a lot of boilerplate code that you need for even the most basic task in Java.
+That’s because everything, and I mean <strong>everything</strong>, in Java has to be in a class, including your <code class="language-plaintext highlighter-rouge">main</code>.
+If you run a Java file, it will run whatever is in <code class="language-plaintext highlighter-rouge">main</code> (or yell at you if there is no <code class="language-plaintext highlighter-rouge">main</code>).
+We’ll talk more about all the things going on in that boilerplate Soon(TM)</p>
+
+<p>Because everything in Java is in a class, every function or method that you use will have to be a class method and every variable will belong to an <strong>object</strong> or its <strong>class</strong>.
+You saw this when you saw how to read from a file: you had to deal with the <code class="language-plaintext highlighter-rouge">File</code>, <code class="language-plaintext highlighter-rouge">Scanner</code>, and <code class="language-plaintext highlighter-rouge">System</code> classes because you used all of their methods.</p>
+
+<p>Let’s look at a new example quick:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Scanner input = new Scanner(System.in);
+</code></pre></div></div>
+<p>This is how you get input from the user once a program is running (add this to your reference sheet!).
+In this line, you are <strong>declaring</strong> and <strong>instantiating</strong> a new <code class="language-plaintext highlighter-rouge">Scanner</code> object and passing it the object <code class="language-plaintext highlighter-rouge">System.in</code>, which always already exists because it is the input from the computer’s keyboard.</p>
+
+<h2 id="arrays">Arrays</h2>
+<p>Arrays in Java are objects (like Strings), but have several special properties/quirks.
+Also, keep in mind that “arrays” are different than “Lists”, which are a little bit different from “ArrayLists”. 
+Unlike all other data structures in Java, array length is a <em>field</em>, not a method.
+For example, you would do <code class="language-plaintext highlighter-rouge">args.length</code> to get the length of an array called <code class="language-plaintext highlighter-rouge">args</code>, but you would do <code class="language-plaintext highlighter-rouge">s.length()</code> to get the length of a String <code class="language-plaintext highlighter-rouge">s</code>.
+An array type (i.e. what you are putting into the array) is given by adding square brackets to the type of data in the array (e.g., <code class="language-plaintext highlighter-rouge">String[]</code> for an array of Strings).
+Arrays are <em>fixed length</em> and can only contain a <em>single</em> type of data.
+You can’t mix numbers and strings in a single array (unlike Python lists).
+You can change array elements, but you can’t add or remove them (unlike Python lists).
+Arrays are the only thing in Java that can be indexed with square brackets.
+They are zero-indexed.
+<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html">java.util.Arrays</a> provides a lot of useful array-related functions.</p>
+
+<h1 id="making-the-jump">Making the Jump</h1>
+<p>A common problem that I see with students at the start of Data Structures is that they think they should jump write into fluently writing Java programs. 
+It will take time to get comfortable with Java and that’s okay!
+My main recommendation when you are starting out is to separate the two hard things that you are trying to do:</p>
+
+<ol>
+  <li>Figure out what you want your code to do</li>
+  <li>Figure out how to do that in Java</li>
+</ol>
+
+<p>You can do the first thing in pseudo-code or even in Python.
+Once you’ve decided what you want the program to do, you can then use your reference sheet to figure out how to do each piece in Java.</p>
+
+<h1 id="acknowledgements">Acknowledgements</h1>
+<p>Sections of this page are directly from <a href="https://cs.carleton.edu/faculty/awb/">Prof. Aaron Bauer</a> and used with permission. Thanks Aaron!</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

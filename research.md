@@ -4,10 +4,18 @@ title: Research
 permalink: /Research/
 ---
 
-My research is at the intersection of evolutionary biology and computer science. 
-I am currently focused on two main categories within that intersection: 
-1. studying the evolution of symbiosis by maintaining and using my digital evolution library Symbulation and
-2. using digital evolution to create educational games by modifying existing games and gamifying Symbulation's graphical user interface. 
+My research is at the **intersection of evolutionary biology and computer science**.
+Evolution is a **powerful algorithm** that can be implemented in a computer to create a population of **evolving digital organisms**. 
+I use this idea to **ask biological questions** and **enable biological education**.
+
+**Symbiosis** is a fundamental biological dynamic where individual organisms from at least two different species engage in a long-term and close interaction. 
+This dynamic is likely responsible for the **mitochondria that power your cells** and the **microbes that maintain or harm your health**.
+However, **the evolution symbiosis is challenging to study** and so I developed the digital evolution library Symbulation to enable the study of many forms of symbiosis.
+**Symbulation is the first digital evolution library to enable the study and comparison of multiple forms of symbiosis.**
+
+In addition, **evolution acceptance and understanding** is a large concern in modern biological education.
+**Digital evolution** techniques, which **enable real evolution to be observed in a computer** hold great promise as educational tools, as already demonstrated by the [Avida-ED project](https://avida-ed.msu.edu/).
+I **modify existing games to add evolution** to improve players' **intuitive understanding** of the evolutionary process.
 
 See my [Google Scholar](https://scholar.google.com/citations?user=7ZwlPwsAAAAJ) profile for my publications and an overview of my main projects below.
 
