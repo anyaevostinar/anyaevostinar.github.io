@@ -10,7 +10,9 @@ Fall 2021
 
 **Prefect**: See Moodle
 
-**Course materials**: All materials, including readings, will be linked through Moodle.
+**Course materials**: 
+Required: Data Structures and Abstractions with Java by Frank M. Carrano and Timothy M Henry, 5th Edition
+Some additional reading materials will be linked through Moodle
 
 **Drop in hours**:
 
