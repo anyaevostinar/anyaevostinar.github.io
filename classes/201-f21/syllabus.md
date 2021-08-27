@@ -67,6 +67,7 @@ We'll have lots of different ways of engaging with the course material:
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
 In many of these activities you'll have the option to work collaboratively, and throughout the course you'll have assigned programming partners who you will complete the labs and homework with. 
 You are **required** to work with your assigned partner to complete these assignments.
+Please see the [Collaboration](/classes/201-f21/collaboration) guidelines for more details.
 
 ## Evaluation and Grading
 I want you to know that I recognize that the continuing global pandemic is likely to affect your ability to focus and work on this class. 
