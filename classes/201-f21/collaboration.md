@@ -80,7 +80,7 @@ You should work together, using pair programming techniques, and indicate on the
 Because of the way Moodle is set up, you will still need to submit each lab assignment separately (remember: labs are submitted separate, homework is submitted together).
 If you don't finish during class, you should finish on your own outside of class.
 
-### Other Collaborations and Ways to Work Together and Get Help
+## Other Collaborations and Ways to Work Together and Get Help
 There are lots of resources to get help. 
 If you have questions, please consider any or all of the following:
 * Prefect sessions: Our prefect holds prefect sessions at designated times for you to work through ideas collaboratively. 
@@ -103,24 +103,65 @@ Otherwise, you're welcome to post to everyone (anonymously to your classmates if
 Forum questions are often answered quickly because everyone can answer them. 
 I typically check the forum a minimum of twice per week day (once in the morning, once in the afternoon).
 
-### Academic Honesty Policies
+# Academic Honesty Policies
 We'll be doing a lot of collaboration in this course and using online resources is an important skill in computer science. 
 Please look at the information above to know about how you'll be collaborating for each part of this course. 
 Plagiarism is not the same as collaboration, and plagiarism violates our academic honest policies. 
 In particular, you may not search for code to solve your homework problem on the internet (including but not limited to explicitly searching for exact homework solutions), or post online about any homework problem anywhere but our class forum. 
+
+## StackOverflow (and such)
+Learning how to search the web for solving errors or performing simple programming tasks is a valuable skill in computer science.
+However, it's sometimes difficult to tell the difference between what is allowed and not allowed when solving homework and lab assignments.
+It's fine to use material from external sources like StackOverflow, but only with proper attribution, and only if the assignment allows it. 
+In particular, if the assignment says "implement X," then you must create your own X, not reuse one from an external source.
+
+For example, looking at an example of a for-loop in Java on StackOverflow may or may not be allowed depending on the assignment. 
+If the assignment is "implement a for-loop", then looking on StackOverflow for a for-loop would not be allowed.
+However, if the assignment is "implement breadth-first search" and you can't remember exactly how the for-loop syntax works, it might be allowed to look on StackOverflow, though it would be better to use the textbook and the reference sheet that you've made.
+What would absolutely not be allowed would be to look up and copy a Java implementation of breadth-first search from StackOverflow, since the point of the assignment was for you to implement it yourself.
+
+# Examples
+
 Here are some examples of behaviors that violate our academic honesty policies:
 * Modifying someone else's code and putting your name on it. 
 That code might be your classmate's, from a previous student, or found on the internet, and it's still plagiarism if you make some changes. 
-You should always be either starting from scratch or starting from files that I provide, not working off of someone else's solution. 
+You should always be either starting from scratch or starting from files that I provide, not working off of someone else's solution (or your solution from a previous course). 
 **Copying even one line of code is plagiarism!** 
-* Having a friend debug your code and then turning in the revised code.
+* Having a friend debug your code for you and then turning in the revised code.
 * Looking at a friend's code (or code on the internet for a similar purpose) and then using what you see to write your own code.
 * Looking at code from someone in class and then reproducing it verbatim in your own files.
 * Asking a homework question on an external online forum (or searching for someone else asking a similar question) and turning in the answer as your own.
 * Directly copying code out of the book, or relying heavily on book code and not citing your use of it in the comments.
 
+## Specific Scenarios
+Adapted from [Academic Integrity at MIT](https://integrity.mit.edu/handbook/writing-code).
+Note all of these scenarios assume the students aren't assigned as pair programming partners and don't have a pair programming partner (if they did, they should be working with their partner).
+
+**Example 1** 
+
+Alyssa and Ben sit next to each other with their laptops while working on a problem set. They talk in general terms about different approaches to doing the problem set. They draw diagrams on the whiteboard. When Alyssa discovers a useful class in the Java library, she mentions it to Ben. When Ben finds a StackOverflow answer that helps solve an error (but doesn't have code directly relating to the problem set), he sends the URL to Alyssa. **OK**.
+
+As they type lines of code, they speak the code aloud to the other person, to make sure both people have the right code. **INAPPROPRIATE**.
+
+In a tricky part of the problem set, Alyssa and Ben look at each other's screens and compare them so that they can get their code right. **INAPPROPRIATE**.
+
+**Example 2**
+Juan already finished the problem set, but his friend Boris is now struggling with a nasty bug. Juan sits next to Boris, looks at his code, and helps him debug (but doesn't do the debugging for him). **OK**.
+
+Juan opens his own laptop, finds his solution to the problem set, and refers to it while he's helping Boris correct his code. **INAPPROPRIATE**.
+
+**Example 3**
+Yun-En had three problem sets and two quizzes this week, was away from campus for several days for a track meet, and then got sick. He's already taken his extension on the deadline and has made almost no progress on the problem set. Sven feels sorry for Yun-En and wants to help, so he sits down with Yun-En and talks with him about how to do the problem set while Yun-En is working on it. Sven already handed in his own solution, but he doesn't open his own laptop to look at it while he's helping Yun-En. **OK**.
+
+Sven opens his laptop and reads his own code while he's helping Yun-En. **INAPPROPRIATE**.
+
+Sven has by now spent a couple hours with Yun-En, and Yun-En still needs help, but Sven really needs to get back to his own work. He puts his code in a Dropbox and shares it with Yun-En, after Yun-En promises only to look at it when he really has to. **INAPPROPRIATE**.
+
+**Example 4**
+Amir and Prajna both worked on their problem sets separately. They exchange their test cases with each other to check their work. **INAPPROPRIATE**. Test cases are part of the material for the problem set, and part of the learning experience of the course. You are copying if you use somebody else's test cases, even if temporarily.
+
 These are just some examples of academic dishonesty - if you're unsure whether something is permitted, please ask.
 
-You also may not share quizzes or solutions to exams or quizzes from this class with anyone outside of the class, or ask anyone who has taken CS201 in the past to look at their old exams or assignments.
+You also may not share quizzes or solutions to quizzes from this class with anyone outside of the class, or ask anyone who has taken CS201 in the past to look at their old quizzes or assignments.
 
-*The above policy is borrowed from Anna Rafferty*
+*The above policy is borrowed from Anna Rafferty and Aaron Bauer*

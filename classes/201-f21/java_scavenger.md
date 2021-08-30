@@ -11,8 +11,9 @@ To get started understanding the differences between Java and Python and create 
 ## Logistics
 This is a lab assignment that you'll be handing in on Moodle. You should complete it on Wednesday Sept 15th, but it isn't due until Friday Sept 17th at 5:00pm Central.
 
-You should work on this with your partner for the week and only one of you has to submit it on Moodle.
-I highly recommend you both keep copies (and maybe even print them out!) to reference as you get used to Java.
+You should work on this with your in-class partner, but you both need to submit separately. 
+If you finish it outside of class without your partner, note which sections you completed together and which you completed separately in the header of the document.
+
 
 ## Java Basics
 Learning your second programming language is different from learning your first.
@@ -98,4 +99,6 @@ Put those two commands in your reference sheet as well.
 ## Grading and submission
 This activity is graded entirely on effort.
 You are expected to finish it and make sure that you understand it, but you will get full credit as long as you submit something that shows that you attempted all the exercises by the deadline.
-
+Submit your file `ReferenceSheet.java` on Moodle.
+Remember to note who your in-class partner was and what portion you completed with them and what portion you completed separately.
+If you got help from anyone else (or any outside sources), remember to cite them in the header of the file.

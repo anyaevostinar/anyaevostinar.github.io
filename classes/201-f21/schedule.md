@@ -12,7 +12,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Java | |
 | W 9/15 | | [Java Scavenger Hunt](/classes/201-f21/java_scavenger)| |
-| F 9/17 | |	[Guessing Game] |	[HW1: Object Oriented Practice] |
+| F 9/17 | |	[Guessing Game](/classes/201-f21/guessing-game-lab) |	[HW1: Object Oriented Practice] |
 | Week 2 | | Inheritance, List, Map and Set ADTs | |
 | M 9/20 |	HW1	| [Inheritance] |	[HW2: Country Analyses] |
 | W 9/22 |	|	[Lists and Interfaces])	| |
