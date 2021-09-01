@@ -12,36 +12,36 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Java | |
 | W 9/15 | | [Java Scavenger Hunt](/classes/201-f21/java_scavenger)| |
-| F 9/17 | |	[Guessing Game](/classes/201-f21/guessing-game-lab) |	[HW1: Object Oriented Practice] |
-| Week 2 | | Inheritance, List, Map and Set ADTs | |
-| M 9/20 |	HW1	| [Inheritance] |	[HW2: Country Analyses] |
-| W 9/22 |	|	[Lists and Interfaces])	| |
-| F 9/24 | |		[Maps and Sets]	| |
-| Week 3 | | Efficiency and List implementations | |
-| M 9/27 |	HW2	| [Asymptotic Analysis]	| |
-| W 9/29 |	 |	[Linked Lists] | [HW3: Country displayer redux] |
-| F 10/1 | |		[ArrayLists]	| |
-| Week 4 | | Stacks and Queues | |
-| M 10/4 | |	[ArrayLists]	| |
-| W 10/6 |	HW3 | [Stack implementation]	| [HW4: Solving Mazes] |
-| F 10/8 | |	[Queue implementations]	| |
-| Week 5 | | Graphs | |
-| M 10/11 | |	[Graph implementations]	| |
-| W 10/13 |	HW4	| [Breadth first search]	| [HW5: WikiPaths] |
-| F 10/15 | |	[Complexity of DFS and BFS]	| |
-| Week 6 | | Recursion and Sorting | |
+| F 9/17 | | First Java Program |	[HW1: Object Oriented Practice] |
+| Week 2 | | Intermediate Java | |
+| M 9/20 |		| [Inheritance] |	 |
+| W 9/22 |	|	[ArrayLists and Interfaces])	| |
+| F 9/24 | HW1 |		[Generics and HashMaps]	| [HW2: Country Stats Displayer]|
+| Week 3 | | Stacks and Queues | |
+| M 9/27 |	| Linked Data Structures	| |
+| W 9/29 |	 |	[Queues] |  |
+| F 10/1 | HW2 |		[Stacks]	| [HW3: Maze Solver] |
+| Week 4 | | Efficiency and Lists | |
+| M 10/4 | |	[Asymptotic Analysis]	| |
+| W 10/6 |	| [Linked Lists Part 1]	|  |
+| F 10/8 | HW3 |	[Linked Lists Part 2]	| [HW4: Country Sorter List]|
+| Week 5 | | Recursion and Sorting | |
+| M 10/11 | |	Catch up| |
+| W 10/13 |		| [Recursion review]	|  |
+| F 10/15 | HW4 |	[Quicksort]	| [HW5: Quicksort Analysis] |
+| Week 6 | | Trees | |
 | M 10/18	| |	Mid-term Break!	| |
-| W 10/20 | |	[Recursion review and practice]| |
-| F 10/22 | HW5	| [Quicksort]	| [HW6: Sorting comparisons] |
-| Week 7 | | Trees | |
-| M 10/25 | |		[Trees and binary trees]	| |
-| W 10/27 | |	[Binary search trees]		 | |
-| F 10/29 |	HW6 |	[Balanced binary search trees]	| [HW7: WordCloud] |
-| Week 8 | | Heaps | |
-| M 11/1 |  |		[Heap implementation]	| |
-| W 11/3 | |	Catch up/Review		 | |	
-| F 11/5 | HW7	|  [Heapsort] |	[HW8: Flashcard Displayer] |
-| Week 9 | | Hashing for Set and Map Implementations | |
+| W 10/20 | |	[Tree ADT]| |
+| F 10/22 | HW5	| [Tree implementation]	| [HW6: WordCloud Maker] |
+| Week 7 | | Advanced Trees | |
+| M 10/25 | |		[2-3 Trees]	| |
+| W 10/27 | |	[Heapsort]		 | |
+| F 10/29 |	HW6 |	[Priority Queues]	| [HW7: Flashcard Displayer] |
+| Week 8 | | Graphs | |
+| M 11/1 |  |		[Complexity of DFS and BFS]	| |
+| W 11/3 | |	[Graph implementations]	 | |	
+| F 11/5 | HW7	|  [Shortest Paths] |	[HW8: WikiPaths] |
+| Week 9 | | Hashing | |
 | M 11/8 | |		[Hashing]	| |	
 | W 11/10 | |	[Collision Resolution] | |
 | F 11/12 | HW8 |	[Intro to final project] |	[Final project] |

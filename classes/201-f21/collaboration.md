@@ -11,15 +11,13 @@ This page provides an overview of the types of ways you'll be engaging in the co
 There are a number of different types of activities in this class. Below, I describe the main ones, what kind of engagement I expect, and what collaboration is and is not allowed (and with whom). 
 If you're ever unsure what's expected, please don't hesitate to reach out on the Moodle forum, email, or in office hours.
 
-* Textbook and other readings: You are highly encouraged to discuss the textbook readings with others and discuss the exercises together. You are expected to do the readings before the class for which they are assigned, since they prepare you for the lab.
+* Textbook and other readings: You are highly encouraged to discuss the textbook readings with others and discuss the exercises and reading checks together. You are expected to do the readings before the class for which they are assigned, since they prepare you for the lab.
 * Labs: You should complete all labs. You will often be partnered with another student in class and ideally you will complete the lab with them during class. Due to the setup on Moodle, you still need to both **separately submit the lab**. If you don't finish the lab in class, you should complete it yourself. You are welcome to get help on labs from anyone, though all the code you write must be your own, as with all code that you submit.
-* In class polls: These are short sets of questions at the beginning of class to help you check your understanding. 
-You should complete the polls without help from others, but you're welcome to discuss them with anyone in the class afterwards (and we will discuss as a group).
 * Homework: Homework generally consists of larger projects than labs and gives you the chance to creatively problem solve and apply ideas from class. You will often have a partner that you are assigned to work with for the homework. You must follow **pair programming practices** with them and only one of you will need to upload the assignment to Moodle. You should complete all homeworks, and they will be evaluated for correctness, with feedback and evaluation covering not just whether they work but also code style and design. 
 The only people you should be discussing code with in detail for homework are your partner, me, the prefect, and the lab assistants. 
-Any of those people are welcome to look at your code and make suggestions, but you and your partner should write all the code together and yourselves.  
-* Weekly quizzes: Weekly in-class quizzes are intended to assess your understanding of the previous homework and your preparation for the upcoming homework. They will typically have one conceptual question about the previous homework and one planning question about the upcoming homework.
-The best way to prepare for them is to fully understand how the previous homework works and to read over and start thinking about the upcoming homework when it is released.
+Any of those people are welcome to look at your code and make suggestions, but you and your partner should write all the code together and yourselves.  See the section Academic Honesty Policies for more details on what is and is not allowed on programming homework.
+* Weekly quizzes: Weekly in-class quizzes are intended to assess your understanding of the previous homework and previous week's concepts. They will typically have one conceptual question about the previous homework and one conceptual question about the content from the previous week.
+The best way to prepare for them is to fully understand how the previous homework works and to make sure you understand the concepts from the previous week.
 You should not discuss these quizzes with anyone in the class until the quizzes are returned, although you may ask me about them privately via email. 
 
 ## Pair Programming
@@ -37,7 +35,7 @@ For some labs and homework this term, we will be using a technique called [pair 
 * These [guidelines](https://www.mathcs.bethel.edu/yang/teaching/carleton/resources/zarb_ppg_2014.pdf) are very concrete and offer ideas for patterns that successful pair programmers follow. The guidelines were developed based on observing paired programming as practiced in real companies.
 
 Paired programming often makes it easier to catch mistakes quickly, and often helps you to design better solutions for the problems you’re solving. You won't be able to read the labs ahead of time, but you will be expected to read the homework ahead of meeting with your partner to work on it.
-However, **you should not start coding without your partner** (or working on the code at all without your partner); if you do think up an idea and write it down without your partner, go over it together when you next meet. Note that while paired programming can help you catch mistakes more quickly, it won’t necessarily help you finish the assignment more quickly than you would by yourself — in general, though, it will help you to learn more than you would by yourself and can help you to avoid too much frustration.
+However, **you should not start coding without your partner** (or work on the code at all without your partner); if you do think up an idea and write it down without your partner, go over it together when you next meet. Note that while paired programming can help you catch mistakes more quickly, it won’t necessarily help you finish the assignment more quickly than you would by yourself — in general, though, it will help you to learn more than you would by yourself and can help you to avoid too much frustration.
 
 ### Best practices
 Working together often takes some practice, but a few best practices will help things go more smoothly:
@@ -58,7 +56,7 @@ You’ll stay with the same partner for a few weeks, and then fill out a feedbac
 A few logistical reminders:
 
 * Write both students’ names in the comments at the top of your program.
-For homeowrk, submit one copy of your code via Moodle. 
+For homework, submit one copy of your code via Moodle. 
 * You will receive the same grade.
 * If you're turning in the assignment late, one of you needs to email me and CC the other.
 
@@ -106,19 +104,19 @@ I typically check the forum a minimum of twice per week day (once in the morning
 # Academic Honesty Policies
 We'll be doing a lot of collaboration in this course and using online resources is an important skill in computer science. 
 Please look at the information above to know about how you'll be collaborating for each part of this course. 
-Plagiarism is not the same as collaboration, and plagiarism violates our academic honest policies. 
+However, plagiarism is not the same as collaboration, and plagiarism violates our academic honest policies. 
 In particular, you may not search for code to solve your homework problem on the internet (including but not limited to explicitly searching for exact homework solutions), or post online about any homework problem anywhere but our class forum. 
 
 ## StackOverflow (and such)
 Learning how to search the web for solving errors or performing simple programming tasks is a valuable skill in computer science.
 However, it's sometimes difficult to tell the difference between what is allowed and not allowed when solving homework and lab assignments.
-It's fine to use material from external sources like StackOverflow, but only with proper attribution, and only if the assignment allows it. 
+Sometimes, it's fine to use material from external sources like StackOverflow, but only with proper attribution, and only if the assignment allows it. 
 In particular, if the assignment says "implement X," then you must create your own X, not reuse one from an external source.
 
 For example, looking at an example of a for-loop in Java on StackOverflow may or may not be allowed depending on the assignment. 
 If the assignment is "implement a for-loop", then looking on StackOverflow for a for-loop would not be allowed.
 However, if the assignment is "implement breadth-first search" and you can't remember exactly how the for-loop syntax works, it might be allowed to look on StackOverflow, though it would be better to use the textbook and the reference sheet that you've made.
-What would absolutely not be allowed would be to look up and copy a Java implementation of breadth-first search from StackOverflow, since the point of the assignment was for you to implement it yourself.
+What would absolutely not be allowed would be to look up and copy a Java implementation of breadth-first search from StackOverflow or any other site, since the point of the assignment was for you to implement it yourself.
 
 # Examples
 
@@ -131,13 +129,13 @@ You should always be either starting from scratch or starting from files that I 
 * Looking at a friend's code (or code on the internet for a similar purpose) and then using what you see to write your own code.
 * Looking at code from someone in class and then reproducing it verbatim in your own files.
 * Asking a homework question on an external online forum (or searching for someone else asking a similar question) and turning in the answer as your own.
-* Directly copying code out of the book, or relying heavily on book code and not citing your use of it in the comments.
+* Directly copying code out of the book, or relying heavily on book code and not citing your use of it in the comments when the assignment does not specifically state that you may do so.
 
 ## Specific Scenarios
 Adapted from [Academic Integrity at MIT](https://integrity.mit.edu/handbook/writing-code).
 Note all of these scenarios assume the students aren't assigned as pair programming partners and don't have a pair programming partner (if they did, they should be working with their partner).
 
-**Example 1** 
+### Example 1 
 
 Alyssa and Ben sit next to each other with their laptops while working on a problem set. They talk in general terms about different approaches to doing the problem set. They draw diagrams on the whiteboard. When Alyssa discovers a useful class in the Java library, she mentions it to Ben. When Ben finds a StackOverflow answer that helps solve an error (but doesn't have code directly relating to the problem set), he sends the URL to Alyssa. **OK**.
 
@@ -145,19 +143,19 @@ As they type lines of code, they speak the code aloud to the other person, to ma
 
 In a tricky part of the problem set, Alyssa and Ben look at each other's screens and compare them so that they can get their code right. **INAPPROPRIATE**.
 
-**Example 2**
+### Example 2
 Juan already finished the problem set, but his friend Boris is now struggling with a nasty bug. Juan sits next to Boris, looks at his code, and helps him debug (but doesn't do the debugging for him). **OK**.
 
 Juan opens his own laptop, finds his solution to the problem set, and refers to it while he's helping Boris correct his code. **INAPPROPRIATE**.
 
-**Example 3**
+### Example 3
 Yun-En had three problem sets and two quizzes this week, was away from campus for several days for a track meet, and then got sick. He's already taken his extension on the deadline and has made almost no progress on the problem set. Sven feels sorry for Yun-En and wants to help, so he sits down with Yun-En and talks with him about how to do the problem set while Yun-En is working on it. Sven already handed in his own solution, but he doesn't open his own laptop to look at it while he's helping Yun-En. **OK**.
 
 Sven opens his laptop and reads his own code while he's helping Yun-En. **INAPPROPRIATE**.
 
 Sven has by now spent a couple hours with Yun-En, and Yun-En still needs help, but Sven really needs to get back to his own work. He puts his code in a Dropbox and shares it with Yun-En, after Yun-En promises only to look at it when he really has to. **INAPPROPRIATE**.
 
-**Example 4**
+### Example 4
 Amir and Prajna both worked on their problem sets separately. They exchange their test cases with each other to check their work. **INAPPROPRIATE**. Test cases are part of the material for the problem set, and part of the learning experience of the course. You are copying if you use somebody else's test cases, even if temporarily.
 
 These are just some examples of academic dishonesty - if you're unsure whether something is permitted, please ask.

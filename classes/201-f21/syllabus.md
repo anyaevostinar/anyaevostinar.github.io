@@ -8,6 +8,8 @@ Fall 2021
 
 **Instructor**: Anya E. Vostinar
 
+**Room**: Olin Hall 310
+
 **Prefect**: See Moodle
 
 **Course materials**: 
@@ -19,6 +21,8 @@ Some additional reading materials will be linked through Moodle
 **Drop in hours**:
 
 TBD
+
+Anya's Office: Olin Hall 323
 
 Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 9-5 M-F and either send a calendar invite to an event or email me.
 
@@ -58,15 +62,15 @@ All materials will be released at least 48 hours before they are due.
 ## Types of Engagement and Collaboration Policies
 We'll have lots of different ways of engaging with the course material: 
 * Readings written by me and from the textbook, which will introduce ideas and provide details. 
-* Mini-lectures at the start of class that will include 'clicker' style quizzes to check your understand of the reading and give you a chance to ask questions.
-* Labs for writing somewhat longer code with significant guidance from the instructions in order to make ideas from class more concrete.
+* Mini-lectures at the start of class that will include discussions to check your understand of the reading and give you a chance to ask questions.
+* Labs for writing somewhat longer code with significant guidance from the instructions in order to make ideas from readings more concrete.
 * Homework where you complete more extended projects to provide opportunities to design solutions and see the ideas from class applied in real contexts.
 * Weekly in-class quizzes, that provide you with a check on whether you've understood the key ideas from the previous week and are summative.
 * Final project, where you pull together everything you've learned to create something that interests you.
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
 In many of these activities you'll have the option to work collaboratively, and throughout the course you'll have assigned programming partners who you will complete the labs and homework with. 
-You are **required** to work with your assigned partner to complete these assignments.
+You are **required** to work with your assigned partner to complete these assignments using pair programming.
 Please see the [Collaboration](/classes/201-f21/collaboration) guidelines for more details.
 
 ## Evaluation and Grading

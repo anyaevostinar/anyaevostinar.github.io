@@ -21,11 +21,17 @@ You already know about many of the nearly-universal language constructs: assignm
 
 As a result, learning your second language typically goes more quickly than learning the first. 
 That doesn't mean the second one is easy to learn — “easy” starts to happen around the fourth or fifth language — but there are definitely opportunities to learn more efficiently the second time around.
+This lab will guide you through making a reference sheet of the important things in Java.
 
 ## Exercise 0
-a. Download the [Comparing Python and Java](Comparing-Python-and-Java.zip) project.
 
-b. Open the folder in Visual Studio Code and make a new file "ReferenceSheet.java"
+a. Introduce yourselves!
+
+b. Download the [Comparing Python and Java](Comparing-Python-and-Java.zip) project.
+
+c. [Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=CS+111+and+201+workflow+in+CS+labs) and move your project into your STUWORK folder so that you don't lose it. **If you don't do this, everything you write will disappear when you log out!!!!**
+
+d. Open the folder in Visual Studio Code and make a new file "ReferenceSheet.java". Be sure to save it to your STUWORK folder so you don't lose it!
 
 ## Exercise 1
 The files in ``Comparing Python and Java'' contain programs in both Python and Java that do the same things and these will be a valuable resource in figuring out how to do things in Java. 
