@@ -18,9 +18,11 @@ Required: Data Structures and Abstractions with Java by Frank M. Carrano and Tim
 
 Some additional reading materials will be linked through Moodle
 
-**Drop in hours**:
+**Drop in student hours**:
 
-TBD
+M: 12:20-1:20pm
+W: 3-4pm
+Th: 1-2pm
 
 Anya's Office: Olin Hall 323
 

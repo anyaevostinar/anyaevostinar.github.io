@@ -8,15 +8,17 @@ This is a rough schedule of topics for each day and the release and due dates fo
 
 **Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses.
 
-| Date	| Homework Due	| Lab Activity |	Homework Out |
+"Carrano" refers to our textbook, **Data Structures and Abstractions with Java by Carrano and Henry, 5th Edition**. 
+
+| Date	| Homework/Reading Due	| Lab Activity |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Java | |
-| W 9/15 | | [Java Scavenger Hunt](/classes/201-f21/java_scavenger)| |
-| F 9/17 | | First Java Program |	[HW1: Object Oriented Practice] |
+| W 9/15 | Reading: [Syllabus](Syllabus), this schedule, [collaboration policies](collaboration); Fill out Background Survey| [Java Scavenger Hunt](java_scavenger)| |
+| F 9/17 | Reading: [Jumping into Java](jumping_java), Carrano **Introduction** and Appendix B **Sections B.1-B.29**| First Java Program |	[HW1: Object-Oriented Practice](hw1-oop-practice) |
 | Week 2 | | Intermediate Java | |
-| M 9/20 |		| [Inheritance] |	 |
-| W 9/22 |	|	[ArrayLists and Interfaces])	| |
-| F 9/24 | HW1 |		[Generics and HashMaps]	| [HW2: Country Stats Displayer]|
+| M 9/20 |	Reading: Carrano **Appendix C**	| [Inheritance] |	 |
+| W 9/22 | Reading: Carrano **Prelude**	|	[ArrayLists and Interfaces])	| |
+| F 9/24 | HW1, Reading: Carrano **Java Interlude 1** |		[Generics and HashMaps]	| [HW2: Country Stats Displayer]|
 | Week 3 | | Stacks and Queues | |
 | M 9/27 |	| Linked Data Structures	| |
 | W 9/29 |	 |	[Queues] |  |

@@ -17,8 +17,9 @@ There are several reasons that we (the CS faculty) think that it's important for
 1. It helps you learn about general principles of programming that are separate from any one language.
 2. It's important to learn how to learn new programming languages quickly; the language that you'll be using in 10 years may not even exist currently!
 3. Different languages are better at different things: Python is good for beginners, [Java can be faster and more reliable](https://www.bmc.com/blogs/python-vs-java/). As a compiled language, Java offers some advantages, including that the compiler detects errors before they happen and the compiler can optimize our code (compile once, run many times).
-4. Java has some key differences that are important for you to understand, like static-typing and compilation.
-5. Java is still among top 3 most-used programming languages (with JavaScript, Python, C)
+4. One of our goals of this course is to learn about object-oriented programming, and Java pretty much forces you to do object-oriented programming.
+5. Java has some key differences that are important for you to understand, like static-typing and compilation.
+6. Java is still among top 3 most-used programming languages (with JavaScript, Python, C)
 
 
 
@@ -121,6 +122,22 @@ You can change array elements, but you can't add or remove them (unlike Python l
 Arrays are the only thing in Java that can be indexed with square brackets.
 They are zero-indexed.
 [java.util.Arrays](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html) provides a lot of useful array-related functions.
+
+# JavaDocs
+Throughout the course you'll be required to include informative comments above each method in "JavaDocs" style. This style allows for a website to be generated with those comments nicely formatted and looking like the Java documentation that you'll become quite familiar with.
+
+JavaDocs style is the following:
+```
+/**
+* Generally descriptive few sentences about the method.
+* @param nameOfParameter description of the parameter if useful, probably should mention the type
+* @param anotherParameter if you have multiple parameters
+* @return description of what if anything is returned, should definitely mention the type
+*/
+public int exampleMethod(int nameOfParameter, int anotherParameter){
+  return 0;
+}
+```
 
 # Making the Jump
 A common problem that I see with students at the start of Data Structures is that they think they should jump write into fluently writing Java programs. 
