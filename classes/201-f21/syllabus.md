@@ -23,6 +23,7 @@ Some additional reading materials will be linked through Moodle
 M: 12:20-1:20pm
 W: 3-4pm
 Th: 1-2pm
+F: 1-2pm
 
 Anya's Office: Olin Hall 323
 

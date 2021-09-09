@@ -2,7 +2,7 @@
 layout: post
 title:  "Structuring Flipped Classrooms"
 date:   2020-12-01 10:00:00 -0600
-categories: teaching
+categories: Teaching
 ---
 
 Even though I'm teaching remote/online, I still am trying for a flipped classroom structure where my students read or watch videos before class and then spend classtime working on hands on activities so that they can ask questions when they get stuck. 

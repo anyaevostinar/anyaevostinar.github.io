@@ -2,7 +2,7 @@
 layout: post
 title:  "Things to change (eventually)"
 date:   2020-12-14 10:00:00 -0600
-categories: teaching
+categories: Teaching
 ---
 
 I historically have hated the idea of "there's always room for improvement" and it's only recently that I've thought carefully about why that is. I love the principles of Growth Mindset and have found them supremely helpful on my teaching journey, so it seemed weird that at the same time my skin crawled whenever someone talked about always wanting to improve. I eventually realized that it was perfectionism still sneaking its way in since if there was room for improvement, it wasn't perfect, and it was unacceptable to ever offer a less than perfect class so I had to work myself to the bone to reach perfection immediately and then never need to improve again. If I could never reach perfection despite working myself to the bone, I would have to always work myself to the bone and damn is that a depressing thought. 

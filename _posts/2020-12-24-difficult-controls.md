@@ -2,7 +2,7 @@
 layout: post
 title:  "Difficulties in controls in digital evolution"
 date:   2020-12-24 10:00:00 -0600
-categories: research
+categories: Research
 ---
 
 I just finished reading [The Surprising Creativity of Digital Evolution: A Collection of Anecdotes from the Evolutionary Computation and Artificial Life Research Communities](https://www.mitpressjournals.org/doi/full/10.1162/artl_a_00319) by Joel Lehman and colleagues since I plan to include it in my class CS 361 Evolutionary Computing and Artificial Life this coming term. While reading, I was reminded of an experience that I had while working on my paper [Suicidal selection: Programmed cell death can evolve in unicellular organisms due solely to kin selection](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.5460) which I of course forgot all about when the call for this collection went out, but I am going to record now!
