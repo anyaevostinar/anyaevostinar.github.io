@@ -38,6 +38,7 @@ One part of good documentation is the JavaDocs method comments that you'll alrea
 However, another part is a ```README``` that is generally the first thing that people look at when they look into your project.
 If you are planning on applying for internships or full-time jobs in the computer science industry, a [GitHub](https://github.com/) account with projects with good READMEs is a really helpful part of your application. 
 Often READMEs are written in a language called [MarkDown](https://www.markdownguide.org/) but you are not required to use it.
+
 You should **nicely format** your README, but you can do that in Google Docs or Microsoft Word, or something similar.
 
 In general (and so therefore for all homework in this class), a README should include:
@@ -45,7 +46,7 @@ In general (and so therefore for all homework in this class), a README should in
 * An overview section that describes at a high level what your program does, for someone that just found it randomly
 * A small example of your code running and showing its main functionality
 
-For this class in particular, your README should also include:
+For this class in particular, your README must also include:
 
 * Discussion for each rubric item of how your project meets that requirement and how to run your code to see that the requirement is met, or where in your code to look at see the requirement being met, or a snippet of code as an example that meets the requirement. Your goal should be to make it as easy as possible for the grader to see how you met each of the rubric items.
 

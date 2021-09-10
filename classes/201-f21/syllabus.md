@@ -101,7 +101,8 @@ Here is how activities this term will be factored into your grade:
 
 | Component | Method of evaluation | Contribution to overall grade |
 | ----------|----------------------| ----------------------------- |
-| Labs and activities | Evaluated only on effort. You must turn them in and make an effort to complete all parts, including seeking out assistance if you're struggling on a particular part (e.g., by reaching out to your collaborative learning group or asking on the forum). | 15% |
+| Labs and in-class activities | Evaluated only on effort. You must turn them in and make an effort to complete all parts, including seeking out assistance if you're struggling on a particular part (e.g., by reaching out to your collaborative learning group or asking on the forum). | 10% |
+| Reading checks | Evaluated based on correctness but unlimited attempts allowed. You should complete them on Moodle for each day's reading. | 5% |
 | Homework | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 50% |
 | Final project | Evaluated based on correctness, including exhibiting correct behavior and good style and design choices. | 25% |
 | Weekly quizzes | Evaluated based on correctness. Lowest quiz score will be dropped. | 10% |
@@ -156,7 +157,7 @@ You're welcome to post questions about readings and labs on the forum, as well a
 You shouldn't post much homework code, but you can post code related to other assignments. 
 If you're unsure if a question contains too much detail about the homework, email me instead.
 * Talk to me:
-I have both drop in office hours and office hours that are by appointment (for one on one conversations). 
+I have both drop in student hours and student hours that are by appointment (for one on one conversations). 
 See links at the top of this document for more details.
 Talking to students is literally my favorite part of this job, please talk to me!
 * Other Carleton resources: 
