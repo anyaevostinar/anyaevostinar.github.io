@@ -11,6 +11,7 @@ categories: Admin
 * PGGHost & PGGSym
 * Bacterium & Phage
 * Free-living config
+* ConfigPanel
 
 # Preliminary Plots
 * Dirty Transmission
@@ -22,6 +23,10 @@ categories: Admin
 # Reading Recaps
 * That evolution book focused on animals
 * Whatever papers that have been added to the reading list lately
+
+# Evolving Games
+* Sapling
+* MinuteLabs Evolution Simulator
 
 # Encyclopedia something
 Discussing both what is currently there and what could still be added

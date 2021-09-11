@@ -22,7 +22,7 @@ title: Anya E. Vostinar
 email: vostinar@carleton.edu
 description: >- # this means to ignore newlines until "baseurl:"
   The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of 
-  symbiosis using agent-based modeling. I wrote the Symbulation platform.
+  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: AnyaEVostinar

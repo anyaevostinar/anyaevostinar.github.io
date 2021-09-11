@@ -52,6 +52,8 @@ For this class in particular, your README must also include:
 
 * Answers to any README prompts, which will often ask you to include discussion of the pros and cons of a certain data structure or implementation choice. 
 
+I have an abbreviated [example README](readme_example) that you can look at for this homework. 
+
 ### README Prompts
 For this project in particular, you should make sure that you argue clearly for why your code does the various rubric items "correctly."
 For example, for the private variable, you should be sure to both explain how you used a private variable and also argue why a private variable was appropriate in that case.
