@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-11T15:16:26-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">Difficulties in controls in digital evolution</title><link href="http://localhost:4000/research/2020/12/24/difficult-controls.html" rel="alternate" type="text/html" title="Difficulties in controls in digital evolution" /><published>2020-12-24T10:00:00-06:00</published><updated>2020-12-24T10:00:00-06:00</updated><id>http://localhost:4000/research/2020/12/24/difficult-controls</id><content type="html" xml:base="http://localhost:4000/research/2020/12/24/difficult-controls.html">&lt;p&gt;I just finished reading &lt;a href=&quot;https://www.mitpressjournals.org/doi/full/10.1162/artl_a_00319&quot;&gt;The Surprising Creativity of Digital Evolution: A Collection of Anecdotes from the Evolutionary Computation and Artificial Life Research Communities&lt;/a&gt; by Joel Lehman and colleagues since I plan to include it in my class CS 361 Evolutionary Computing and Artificial Life this coming term. While reading, I was reminded of an experience that I had while working on my paper &lt;a href=&quot;https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.5460&quot;&gt;Suicidal selection: Programmed cell death can evolve in unicellular organisms due solely to kin selection&lt;/a&gt; which I of course forgot all about when the call for this collection went out, but I am going to record now!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-13T11:15:29-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">Dev &amp;amp; Doc: ReadTheDocs</title><link href="http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs.html" rel="alternate" type="text/html" title="Dev &amp;amp; Doc: ReadTheDocs" /><published>2021-09-12T08:00:00-05:00</published><updated>2021-09-12T08:00:00-05:00</updated><id>http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs</id><content type="html" xml:base="http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs.html">&lt;p&gt;It’s been a busy summer full of lots of new functionality in &lt;a href=&quot;https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html&quot;&gt;Symbulation&lt;/a&gt;!
+I’ll be doing a blog post for each of these new features (and they’re already available in the code), but to give you a sneak peek:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lysis and Lysogeny support in Bacterium and Phage classes&lt;/li&gt;
+  &lt;li&gt;Free-living symbiont population&lt;/li&gt;
+  &lt;li&gt;PGGHost and PGGSymbiont classes that enable symbionts sharing a host to engage in a public goods game&lt;/li&gt;
+  &lt;li&gt;A new symbiont class with an ‘efficiency’ trait&lt;/li&gt;
+  &lt;li&gt;The possibility of setting the mutation rates and sizes separately for horizontal and vertical transmission&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;new-documentation&quot;&gt;New Documentation&lt;/h2&gt;
+&lt;p&gt;Today’s post, though is to highlight the new documentation put together by &lt;a href=&quot;https://www.linkedin.com/in/piper-welch-8357591aa/&quot;&gt;Piper Welch&lt;/a&gt;!
+&lt;a href=&quot;https://symbulation.readthedocs.io/&quot;&gt;Symbulation’s documentation&lt;/a&gt; is now through ReadTheDocs and contains some exciting new additions.&lt;/p&gt;
+
+&lt;h3 id=&quot;projects-using-symbulation&quot;&gt;Projects Using Symbulation&lt;/h3&gt;
+&lt;p&gt;There is now a page listing the &lt;a href=&quot;https://symbulation.readthedocs.io/en/latest/projects/index.html&quot;&gt;active and past projects&lt;/a&gt; that use Symbuluation. 
+As you can see from it, we have several ongoing projects that we are excited about and we hope that more will continue to get added.&lt;/p&gt;
+
+&lt;h3 id=&quot;quick-start-guides&quot;&gt;Quick Start Guides&lt;/h3&gt;
+&lt;p&gt;There are a lot of quick start guides in the works, but currently there are now guides for getting Symbulation’s default setup &lt;a href=&quot;https://symbulation.readthedocs.io/en/latest/QuickStartGuides/1-GettingRunning.html&quot;&gt;running at the command line&lt;/a&gt; and &lt;a href=&quot;https://symbulation.readthedocs.io/en/latest/QuickStartGuides/2-CollectingData.html&quot;&gt;collecting data&lt;/a&gt; with a little Python script.&lt;/p&gt;
+
+&lt;p&gt;We’re planning on making many more guides that will be appropriate for an undergraduate who has taken a couple of CS classes, so let me know if there are particular things that you’d like to be prioritized.&lt;/p&gt;
+
+&lt;p&gt;Future guides that I’m currently thinking about are&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Building and running the web version locally&lt;/li&gt;
+  &lt;li&gt;Using a provided R script to get the data files into lovely plots&lt;/li&gt;
+  &lt;li&gt;Recreating the results from the major previous papers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;library-api&quot;&gt;Library API&lt;/h3&gt;
+&lt;p&gt;We have most of the public methods for all the classes documented nicely and showing up in the &lt;a href=&quot;https://symbulation.readthedocs.io/en/latest/api/library_root.html&quot;&gt;auto-generated documentation&lt;/a&gt;.
+Piper worked hard on getting them formatted so that they show up in a readable format. 
+Our goal is for all of this documentation to be easily understandable when you are trying to use existing functions or make your own, so let us know if that isn’t the case.&lt;/p&gt;
+
+&lt;h3 id=&quot;contributing-to-symbulation&quot;&gt;Contributing to Symbulation&lt;/h3&gt;
+&lt;p&gt;Finally, we have a set of guides on how to &lt;a href=&quot;https://symbulation.readthedocs.io/en/latest/dev/getting-started.html&quot;&gt;contribute to Symbulation&lt;/a&gt; that includes discussion of first-time setup, coding guides, documentation, and testing.&lt;/p&gt;
+
+&lt;h2 id=&quot;philosophy&quot;&gt;Philosophy&lt;/h2&gt;
+&lt;p&gt;I wanted to take a final minute to discuss my philosophy behind this documentation and Symbulation in general.
+There are several refactors of the internals of Symbulation coming up, first to organize the many classes that have been developed this summer, and then to port it to &lt;a href=&quot;https://mabe2.readthedocs.io/en/latest/&quot;&gt;MABE2&lt;/a&gt; when that is reasonable.
+However, as with most refactoring, the goal is that external features will remain mostly the same (I can’t promise that that will be true with the MABE2 port, we’ll see).
+Since I work with primarily undergraduates, a lot of this documentation is what I have to teach each year’s incoming students anyway, so it just makes sense to have it written down. 
+While the current documentation hasn’t been stress-tested by new undergraduates yet, it will be in the coming year, and I’m looking forward to the improvements they will suggest.&lt;/p&gt;
+
+&lt;p&gt;With that all in mind, if you try to use the documentation and run into problems, please contact me either through email or GitHub, I really would love to improve any misunderstandings!&lt;/p&gt;
+
+&lt;p&gt;Until next time,&lt;/p&gt;
+
+&lt;p&gt;Anya&lt;/p&gt;</content><author><name></name></author><category term="Research" /><category term="Symbulation" /><summary type="html">It’s been a busy summer full of lots of new functionality in Symbulation! I’ll be doing a blog post for each of these new features (and they’re already available in the code), but to give you a sneak peek: Lysis and Lysogeny support in Bacterium and Phage classes Free-living symbiont population PGGHost and PGGSymbiont classes that enable symbionts sharing a host to engage in a public goods game A new symbiont class with an ‘efficiency’ trait The possibility of setting the mutation rates and sizes separately for horizontal and vertical transmission</summary></entry><entry><title type="html">Difficulties in controls in digital evolution</title><link href="http://localhost:4000/research/2020/12/24/difficult-controls.html" rel="alternate" type="text/html" title="Difficulties in controls in digital evolution" /><published>2020-12-24T10:00:00-06:00</published><updated>2020-12-24T10:00:00-06:00</updated><id>http://localhost:4000/research/2020/12/24/difficult-controls</id><content type="html" xml:base="http://localhost:4000/research/2020/12/24/difficult-controls.html">&lt;p&gt;I just finished reading &lt;a href=&quot;https://www.mitpressjournals.org/doi/full/10.1162/artl_a_00319&quot;&gt;The Surprising Creativity of Digital Evolution: A Collection of Anecdotes from the Evolutionary Computation and Artificial Life Research Communities&lt;/a&gt; by Joel Lehman and colleagues since I plan to include it in my class CS 361 Evolutionary Computing and Artificial Life this coming term. While reading, I was reminded of an experience that I had while working on my paper &lt;a href=&quot;https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.5460&quot;&gt;Suicidal selection: Programmed cell death can evolve in unicellular organisms due solely to kin selection&lt;/a&gt; which I of course forgot all about when the call for this collection went out, but I am going to record now!&lt;/p&gt;
 
 &lt;p&gt;My work for that paper focused on the evolution of altruism where a digital organism could greatly harm itself (often to the point of death) in exchange for either helping its kin (organisms with close to matching genomes) or harm its non-kin. 
 I am interested in how such a trait could evolve and at one point was trying to gain data from a control treatment where I forced the organisms to retain the detrimental behavior in an environment where it was not beneficial so that I could then know exactly how beneficial it was in the other environment.

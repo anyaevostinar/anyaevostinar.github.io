@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Dev &amp; Doc: ReadTheDocs | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Dev &amp; Doc: ReadTheDocs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="It’s been a busy summer full of lots of new functionality in Symbulation! I’ll be doing a blog post for each of these new features (and they’re already available in the code), but to give you a sneak peek: Lysis and Lysogeny support in Bacterium and Phage classes Free-living symbiont population PGGHost and PGGSymbiont classes that enable symbionts sharing a host to engage in a public goods game A new symbiont class with an ‘efficiency’ trait The possibility of setting the mutation rates and sizes separately for horizontal and vertical transmission" />
+<meta property="og:description" content="It’s been a busy summer full of lots of new functionality in Symbulation! I’ll be doing a blog post for each of these new features (and they’re already available in the code), but to give you a sneak peek: Lysis and Lysogeny support in Bacterium and Phage classes Free-living symbiont population PGGHost and PGGSymbiont classes that enable symbionts sharing a host to engage in a public goods game A new symbiont class with an ‘efficiency’ trait The possibility of setting the mutation rates and sizes separately for horizontal and vertical transmission" />
+<link rel="canonical" href="http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs.html" />
+<meta property="og:url" content="http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs.html" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-12T08:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Dev &amp; Doc: ReadTheDocs" />
+<script type="application/ld+json">
+{"datePublished":"2021-09-12T08:00:00-05:00","description":"It’s been a busy summer full of lots of new functionality in Symbulation! I’ll be doing a blog post for each of these new features (and they’re already available in the code), but to give you a sneak peek: Lysis and Lysogeny support in Bacterium and Phage classes Free-living symbiont population PGGHost and PGGSymbiont classes that enable symbionts sharing a host to engage in a public goods game A new symbiont class with an ‘efficiency’ trait The possibility of setting the mutation rates and sizes separately for horizontal and vertical transmission","dateModified":"2021-09-12T08:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs.html"},"url":"http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs.html","@type":"BlogPosting","headline":"Dev &amp; Doc: ReadTheDocs","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Dev &amp; Doc: ReadTheDocs</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-09-12T08:00:00-05:00" itemprop="datePublished">Sep 12, 2021
+      </time></p>
+  </header>
+
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>It’s been a busy summer full of lots of new functionality in <a href="https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html">Symbulation</a>!
+I’ll be doing a blog post for each of these new features (and they’re already available in the code), but to give you a sneak peek:</p>
+<ul>
+  <li>Lysis and Lysogeny support in Bacterium and Phage classes</li>
+  <li>Free-living symbiont population</li>
+  <li>PGGHost and PGGSymbiont classes that enable symbionts sharing a host to engage in a public goods game</li>
+  <li>A new symbiont class with an ‘efficiency’ trait</li>
+  <li>The possibility of setting the mutation rates and sizes separately for horizontal and vertical transmission</li>
+</ul>
+
+<h2 id="new-documentation">New Documentation</h2>
+<p>Today’s post, though is to highlight the new documentation put together by <a href="https://www.linkedin.com/in/piper-welch-8357591aa/">Piper Welch</a>!
+<a href="https://symbulation.readthedocs.io/">Symbulation’s documentation</a> is now through ReadTheDocs and contains some exciting new additions.</p>
+
+<h3 id="projects-using-symbulation">Projects Using Symbulation</h3>
+<p>There is now a page listing the <a href="https://symbulation.readthedocs.io/en/latest/projects/index.html">active and past projects</a> that use Symbuluation. 
+As you can see from it, we have several ongoing projects that we are excited about and we hope that more will continue to get added.</p>
+
+<h3 id="quick-start-guides">Quick Start Guides</h3>
+<p>There are a lot of quick start guides in the works, but currently there are now guides for getting Symbulation’s default setup <a href="https://symbulation.readthedocs.io/en/latest/QuickStartGuides/1-GettingRunning.html">running at the command line</a> and <a href="https://symbulation.readthedocs.io/en/latest/QuickStartGuides/2-CollectingData.html">collecting data</a> with a little Python script.</p>
+
+<p>We’re planning on making many more guides that will be appropriate for an undergraduate who has taken a couple of CS classes, so let me know if there are particular things that you’d like to be prioritized.</p>
+
+<p>Future guides that I’m currently thinking about are</p>
+
+<ul>
+  <li>Building and running the web version locally</li>
+  <li>Using a provided R script to get the data files into lovely plots</li>
+  <li>Recreating the results from the major previous papers</li>
+</ul>
+
+<h3 id="library-api">Library API</h3>
+<p>We have most of the public methods for all the classes documented nicely and showing up in the <a href="https://symbulation.readthedocs.io/en/latest/api/library_root.html">auto-generated documentation</a>.
+Piper worked hard on getting them formatted so that they show up in a readable format. 
+Our goal is for all of this documentation to be easily understandable when you are trying to use existing functions or make your own, so let us know if that isn’t the case.</p>
+
+<h3 id="contributing-to-symbulation">Contributing to Symbulation</h3>
+<p>Finally, we have a set of guides on how to <a href="https://symbulation.readthedocs.io/en/latest/dev/getting-started.html">contribute to Symbulation</a> that includes discussion of first-time setup, coding guides, documentation, and testing.</p>
+
+<h2 id="philosophy">Philosophy</h2>
+<p>I wanted to take a final minute to discuss my philosophy behind this documentation and Symbulation in general.
+There are several refactors of the internals of Symbulation coming up, first to organize the many classes that have been developed this summer, and then to port it to <a href="https://mabe2.readthedocs.io/en/latest/">MABE2</a> when that is reasonable.
+However, as with most refactoring, the goal is that external features will remain mostly the same (I can’t promise that that will be true with the MABE2 port, we’ll see).
+Since I work with primarily undergraduates, a lot of this documentation is what I have to teach each year’s incoming students anyway, so it just makes sense to have it written down. 
+While the current documentation hasn’t been stress-tested by new undergraduates yet, it will be in the coming year, and I’m looking forward to the improvements they will suggest.</p>
+
+<p>With that all in mind, if you try to use the documentation and run into problems, please contact me either through email or GitHub, I really would love to improve any misunderstandings!</p>
+
+<p>Until next time,</p>
+
+<p>Anya</p>
+
+  </div>
+
+  <div class="post-categories">
+    
+    Tags:
+    
+    <a href="/categories/#Research">Research</a>
+    &nbsp;
+    
+    <a href="/categories/#Symbulation">Symbulation</a>
+    
+    
+  </div><a class="u-url" href="/research/symbulation/2021/09/12/dev-doc-readthedocs.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
