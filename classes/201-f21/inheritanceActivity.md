@@ -6,7 +6,7 @@ published: false
 ---
 
 ## Logistics
-You should complete this on Monday Sept 20th, 2021, but it isn't due until Wednesday Sept 22nd, 2021. 
+You should complete this on Monday Sept 20th, 2021, but it isn't due until Wednesday Sept 22nd, 2021 at 5pm. 
 
 You should work on this with your in-class partner, but you both need to submit separately. 
 If you finish it outside of class without your partner, note which sections you completed together and which you completed separately in your `Collaborations.txt`.
@@ -77,6 +77,9 @@ c. Report the error that you see in Answers.txt.
 d. Correct the error by adding `pet` to the `Animal` class as well and verify the error is resolved.
 
 e. Reflect in Answers.txt on whether you find the `@Override` annotation useful and if you plan to use it (there is no right or wrong answer, I just am curious what you think!). 
+
+## Exercise 5
+If you didn't already, go back and add JavaDocs method documentation for each of your methods.
 
 ## Hand in
 Make sure that you updated `Collaborations.txt` as necessary.

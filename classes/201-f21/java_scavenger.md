@@ -31,7 +31,7 @@ b. Download the [Comparing Python and Java](Comparing-Python-and-Java.zip) proje
 
 c. [Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=CS+111+and+201+workflow+in+CS+labs) and move your project into your STUWORK folder so that you don't lose it. **If you don't do this, everything you write will disappear when you log out!!!!**
 
-d. Open the folder in Visual Studio Code and make a new file "ReferenceSheet.java". Be sure to save it to your STUWORK folder so you don't lose it!
+d. Open the folder in Visual Studio Code and make a new file `ReferenceSheet.java`. Be sure to save it to your STUWORK folder so you don't lose it!
 
 ## Exercise 1
 The files in ``Comparing Python and Java'' contain programs in both Python and Java that do the same things and these will be a valuable resource in figuring out how to do things in Java. 
@@ -65,6 +65,8 @@ a. **Making** a list
 b. **Adding to** a list
 
 c. **Getting an item from** a list
+
+d. **Looping over the items** in a list
 
 ## Exercise 4
 Here are some other interesting things you might want to do.

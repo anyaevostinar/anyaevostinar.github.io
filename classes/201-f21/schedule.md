@@ -17,7 +17,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 9/17 | Reading: [Jumping into Java](jumping_java), Carrano **Introduction** and Appendix B **Sections B.1-B.29**| First Java Program |	[HW1: Object-Oriented Practice](hw1-oop-practice) |
 | Week 2 | | Intermediate Java | |
 | M 9/20 |	Reading: Carrano **Appendix C**	| [Inheritance](inheritance-activity) |	 |
-| W 9/22 | Reading: Carrano **Prelude**	|	[ArrayLists and Interfaces])	| |
+| W 9/22 | Reading: Carrano **Prelude**	|	[ArrayLists and Interfaces](interface-lab)	| |
 | F 9/24 | HW1, Reading: Carrano **Java Interlude 1** |		[Generics and HashMaps]	| [HW2: Country Stats Displayer]|
 | Week 3 | | Stacks and Queues | |
 | M 9/27 |	| Linked Data Structures	| |
