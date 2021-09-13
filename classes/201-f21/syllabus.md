@@ -167,6 +167,17 @@ They can help you with debugging and making progress on your homework, or if you
 The Academic Skills center is a wonderful resource for helping you develop study skills, improve your ability to prep for exams, or manage procrastination. 
 Oscar Alarez is an academic skills coach in the office with whom you can make individual video conferencing appointments. 
 
+## Attendance
+Attendance is not strictly required in this class, though I believe that you will do much better if you attend every session and there are consequences to missing class on Wednesdays and Fridays. 
+Because much of the classtime is spent working with partners on lab activities, if you miss class, you will miss out on that opportunity.
+This is particularly important on Fridays, when you will usually have time to get started on the homework assignment.
+**If you are absent on Friday and your homework partner is in class, you will be split up so that your homework partner can start on the homework assignment.**
+This means that if you miss class on Friday and haven't made prior arrangements with me and your homework partner, you will likely need to do that week's homework individually. 
+
+On Wednesdays there will typically be a quiz in the first half of class.
+If you are absent and haven't made prior arrangements with me, you will not be able to make up that quiz.
+If a true emergency occurs so close before class that you are not able to notify me ahead of time, please do let me know and we will figure something out.
+
 ## Inclusivity and Universal Learning
 I strive to create an inclusive and respectful classroom that values diversity. Our individual differences enrich and enhance our understanding of one another and of the world around us. This class welcomes the perspectives of all ethnicities, genders, religions, ages, sexual orientations, disabilities, socioeconomic backgrounds, regions, and nationalities.
 
