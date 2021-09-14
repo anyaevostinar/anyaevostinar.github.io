@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>HW 2 Country Stats Displayer | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW 2 Country Stats Displayer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f21/hw2" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f21/hw2" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW 2 Country Stats Displayer" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-f21/hw2","@type":"WebPage","headline":"HW 2 Country Stats Displayer","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW 2 Country Stats Displayer</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>30 points, due Friday Oct. 1st by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy.  You or your partner need to notify me that you’re using the policy via email, CC’ing the partner. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still Friday, not 48 hours later.</p>
+
+<h2 id="goals">Goals</h2>
+<p>To build a non-trivial program with Java that works with Java’s ArrayLists and/or HashMaps and to start making design decisions about how users can interact with your program.</p>
+
+<h2 id="assignment-type-and-collaborative-learning-expectations">Assignment Type and Collaborative Learning Expectations</h2>
+<p>This is a homework assignment that you’ll be handing in on Moodle.</p>
+
+<p>You must work on this homework with your assigned partner (if you have one) via pair programming. That means that you cannot write <strong>any</strong> code without your partner and you must both be fully engaged and discussing the code at all times while working. See the <a href="collaboration">collaboration policy</a> for details.</p>
+
+<h2 id="setup-and-requirements">Setup and Requirements</h2>
+<p>Create a folder for HW2 on the COURSES drive. Remember to save here so that you don’t lose your work!</p>
+
+<p>Create a file Collaborations.txt and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the <a href="collaboration">Collaboration page</a> on what collaborations are allowed for homework assignments.</p>
+
+<p>The code that you write for this assignment will build on top of Java’s ArrayList and/or HashMap data structures. The code will also use a dataset containing information about countries, created using data from the World Bank:</p>
+
+<p><a href="/classes/201-f20/CountryDataset.csv">CountryDataset.csv</a></p>
+
+<p>The <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html">official Java API documentation for ArrayList</a> will likely be helpful for knowing what methods are supported by the <code class="language-plaintext highlighter-rouge">ArrayList</code>.
+You may also want to use the documentation for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html">HashMap</a>.</p>
+
+<h2 id="specification">Specification</h2>
+<p>For this assignment, you will write a program that reads from a text file with one line for each country.
+You will create two classes, <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> and <code class="language-plaintext highlighter-rouge">Country</code>.
+Your program will need to represent each country as an instance of <code class="language-plaintext highlighter-rouge">Country</code> and each data file as an instance of <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> (you will only use one data file, but you can imagine having multiple data files).
+When creating an instance of <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> your program should convert the data file into an <code class="language-plaintext highlighter-rouge">ArrayList&lt;Country&gt;</code> and then display the data requested by the user.</p>
+
+<p>This will give you practice working with the <code class="language-plaintext highlighter-rouge">ArrayList</code>, <code class="language-plaintext highlighter-rouge">String</code>, <code class="language-plaintext highlighter-rouge">File</code>, <code class="language-plaintext highlighter-rouge">Scanner</code>, loops, and classes.
+It’s also a chance to see how your programming skills might be used to interact with large datasets.</p>
+
+<h3 id="the-input-file">The input file</h3>
+<p>The input file is a text file that contains 0 or more lines of countries, with an initial line that gives the meaning of each item in the line. After that first line, each line of the input file will represent a single country via a comma-delimited list. Here’s an example of the representation of Afghanistan, the alphabetically first country:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Afghanistan,33.26,0.33,72.7,15.73,0.1,2.99,3.89
+</code></pre></div></div>
+<p>Each of the numbers represents some information about the country. Specifically, the meaning of each of the items is as follows:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Country Name
+Population total (in millions)
+CO2 emissions (metric tons per capita)
+Access to electricity (% of population)
+Renewable energy consumption (% of total final energy consumption)
+Terrestrial protected areas (% of total land area)
+Population growth (annual %)
+Urban population growth (annual %)
+</code></pre></div></div>
+
+<p>Click on the CSV file in Visual Studio Code to see all of the data.</p>
+
+<p>The information in the data file <a href="CountryDataset.csv">CountryDataset.csv</a> is based off of the <a href="http://datatopics.worldbank.org/world-development-indicators/">World Bank Indicators dataset</a>. The original dataset contains information about each country for each indicator (item) and year from 1960-2019 (although some years are missing for some countries). For each country, the dataset I’ve given you contains a single number for each indicator. That number is the average value of the indicator from 2012-2019, skipping any years where there wasn’t data for that country.</p>
+
+<p>For your testing, you can use the data file I’ve provided, but you can also test on smaller subsets of the data to make sure that your output is correct and that your program doesn’t crash if there are no countries.</p>
+
+<h3 id="user-interaction">User Interaction</h3>
+<p>Your program should allow the user to specify the data file that they want information from.
+This can be via command line or interactive input.</p>
+
+<p>Your program should then allow the user to get information from the data file in two ways</p>
+<ol>
+  <li>By the country’s name, allowing the user to look up specific information about a specific country and handling the case that the user types a name that you do not have</li>
+  <li>By the indicator, allowing the user to look up the country with either the maximum or minimum (you only have to support one or the other) indicator value and displaying that information.</li>
+</ol>
+
+<p>For example, I should be able to look up the population total of Libya as well as the country with the maximum (or minimum) population growth.
+These can be separate modes of the program (i.e. it’s okay if I have to rerun the program to be able to get these two pieces of information).</p>
+
+<p>You also need to handle a user typing commands or words incorrectly by providing a friendly and informative message (called a usage statement) if they:</p>
+<ul>
+  <li>Type too many or too few command line arguments</li>
+  <li>Type an indicator that is not from the list</li>
+  <li>Type a country that isn’t in the list</li>
+</ul>
+
+<h3 id="code-structure">Code structure</h3>
+<p>Your code must be objected-oriented. What this means is that you must create instances of <code class="language-plaintext highlighter-rouge">Country</code> and <code class="language-plaintext highlighter-rouge">CountryDisplayer</code>. You should not create any additional static methods. You can and should create additional non-static methods however and aim to keep your methods short and focused.</p>
+
+<h2 id="advice">Advice</h2>
+<p>This is your first large assignment in this class and you might feel pretty overwhelmed. 
+Remember that it’s good to separate the way that your program will work from the Java that is necessary to get it to actually happen.
+Feel free to first write pseudo-code for how you think a method should work and then get your reference sheet out to translate your pseudo-code to Java.</p>
+
+<p>Here is how I advise you go about this project.</p>
+
+<h3 id="make-your-classes">Make your classes</h3>
+<p>First make your <code class="language-plaintext highlighter-rouge">Country</code> file. Think about what variables it will need.</p>
+
+<p>Then make your <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> file and class with its <code class="language-plaintext highlighter-rouge">ArrayList&lt;Country&gt;</code>.
+Next write ‘stubs’ of the major methods that you will need for <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> to work:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class CountryDisplayer {
+    //instance variables up here!
+    ArrayList&lt;Country&gt; countries;
+     
+    public CountryDisplayer(String fileName) {
+        // Read the country file and load the countries into this instance of CountryDisplayer.
+    }
+ 
+    public Country getCountryByName(String name) {
+        // ...
+    }
+ 
+    public Country getCountryMaxIndicator(String indicator) {
+        // ...
+    }
+     
+     
+    public static void main(String[] args) {
+        // If there's no command-line argument, print a usage statement 
+        // and exit. Otherwise, use args[0] as the input file path.
+        if (args.length == 0) {
+           // ...
+        }
+         
+        //Construct a CountryDisplayer and call the methods you defined 
+        //above to load, process, and display the countries
+    }
+}
+</code></pre></div></div>
+<p>A stub just means that the method is defined but doesn’t actually do anything.</p>
+
+<h3 id="read-in-your-countries">Read in your countries</h3>
+<p>Complete the <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> constructor by looking at the code from your reference sheet or the <code class="language-plaintext highlighter-rouge">LineReader.java</code>.
+You will probably also want to make a better constructor for <code class="language-plaintext highlighter-rouge">Country</code> at this point.
+It might be helpful to make a shorter version of the data file with just a few lines as you work on this part.
+Make sure to test this code by creating a <code class="language-plaintext highlighter-rouge">CountryDisplayer</code> in the main of <code class="language-plaintext highlighter-rouge">CountryDisplayer.java</code>.</p>
+
+<p>To split a line that is delimited by commas, you will probably find the <code class="language-plaintext highlighter-rouge">.split()</code> method of <code class="language-plaintext highlighter-rouge">String</code> helpful.
+Look at <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html"><code class="language-plaintext highlighter-rouge">String</code>’s documentation</a> for more information.</p>
+
+<h3 id="display-a-country">Display a Country</h3>
+<p>Fill in your method <code class="language-plaintext highlighter-rouge">getCountryByName</code> so that you can make sure that everything is reading in correctly. 
+Use that to print out a country when the program runs. 
+Don’t over think this.
+You can simply loop over your list of countries and check the name of each until you find the correct country.</p>
+
+<h3 id="getting-indicators">Getting indicators</h3>
+<p>To display information about specific indicators, you’ll need to grab those indicators from the countries by the string name. In <code class="language-plaintext highlighter-rouge">Country</code> make a method that takes a string and returns the indicator value for that country. 
+This could be a long line of if-else statements or you could use a <code class="language-plaintext highlighter-rouge">HashMap</code>. Note that <code class="language-plaintext highlighter-rouge">==</code> compares whether two Strings are literally the same Object, not their values. You will want to use the method <code class="language-plaintext highlighter-rouge">.equals(String in)</code> to compare their values.</p>
+
+<p>It’s a good idea to test these small changes immediately in the <code class="language-plaintext highlighter-rouge">main()</code> method of your <code class="language-plaintext highlighter-rouge">Country.java</code> class. Create an instance of <code class="language-plaintext highlighter-rouge">Country</code> with dummy data and make sure you are able to get the data back out by the indicator name.</p>
+
+<h3 id="max-or-min-indicator">Max or Min Indicator</h3>
+<p>You’re now ready to grab out the country with the maximum or minimum value of indicator. 
+Since you already have a method to get a specific indicator value for a country, you should be able to loop over your countries and keep track of the country with that largest (or smallest) value of the specified indicator.</p>
+
+<h3 id="user-input">User Input</h3>
+<p>Now you want to allow the user to specify everything that they want from your program. Make sure to allow the user to specify the location of the data file and both ways of getting data, as specified above.
+You have a lot of flexibility in how you get that information from the user, so try to think about what would be easiest for a user.</p>
+
+<h3 id="readme">README</h3>
+<p>As always, you should include a detailed README for this homework. 
+It should include a brief overview of your project, a short example of how to run your program and see its interesting behavior, and a more detailed section that has <strong>demonstration input for each of the rubric items</strong>. Remember, you want to make it as easy as possible for the grader to see that your homework does everything its supposed to!</p>
+
+<h4 id="prompts">Prompts</h4>
+<p>In addition, you should specifically have sections discussing the following design choices (these should each be 1-2 paragraphs):</p>
+<ul>
+  <li>Why did you choose the user interaction process that you did? Do you have everything on the command line or interactive input or a mix?</li>
+  <li>Why does it make sense to make this program object-oriented? You didn’t have a choice, but you should reflect on the benefits of an object-oriented approach to this task instead of simply looking through the data file or lists, for example.</li>
+</ul>
+
+<h2 id="rubric">Rubric</h2>
+<p>This is how you will be graded on this assignment:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>README thorough and detailed</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>User can specify data file</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>User can look up a specific indicator about a specific country</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>User can look up country with max or min of a specific indicator</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Handles user typing incorrect country name or indicator</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Program is object-oriented as specified</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Sufficient documentation</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Style</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="submission">Submission</h2>
+<p>Remember to update your Collaborations.txt file with any sources that you consulted.</p>
+
+<p>Then make a .zip of your files and upload it to Moodle.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

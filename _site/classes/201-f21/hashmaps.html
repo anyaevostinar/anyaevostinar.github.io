@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>HashMaps Intro | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HashMaps Intro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f21/hashmaps" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f21/hashmaps" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HashMaps Intro" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-f21/hashmaps","@type":"WebPage","headline":"HashMaps Intro","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HashMaps Intro</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="overview">Overview</h2>
+<p>You’ve read about how a class or interface can support one or more <em>generic</em> types.
+You’ve also already seen and possibly used one such class, the <code class="language-plaintext highlighter-rouge">ArrayList</code>, with the following syntax:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ArrayList&lt;String&gt; myList = new ArrayList&lt;String&gt;();
+</code></pre></div></div>
+<p>(And yes, you can leave out the second mention of <code class="language-plaintext highlighter-rouge">String</code> without a problem, but I’m old school and I like it.)</p>
+
+<p>In this reading, I’ll introduce you to how to use the Java built-in <code class="language-plaintext highlighter-rouge">HashMap</code> class that is a generic that supports two different types and is very convenient.</p>
+
+<h2 id="pairs">Pairs</h2>
+<p>You may have already heard about programming dictionaries or maps, and <code class="language-plaintext highlighter-rouge">HashMap</code> is just one kind of dictionary or map (those mean the same thing in programming generally, but different languages use one or the other unfortunately). 
+If you haven’t already heard about dictionaries or maps in programming, they are basically just collections of pairs of data and are often used to associate a <code class="language-plaintext highlighter-rouge">String</code> with some useful information, letting you look up that information from the <code class="language-plaintext highlighter-rouge">String</code>.</p>
+
+<p>For example, if you wanted to keep track of how many times each word appeared in a text document, you could make a <code class="language-plaintext highlighter-rouge">HashMap</code> that held words and their counts:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import java.util.HashMap;
+public class Test {
+    public static void main(String[] args) {
+    HashMap&lt;String, Integer&gt; wordCounts = new HashMap&lt;String, Integer&gt;();
+}
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">String</code> or whatever is in the first spot of the pair is called the <strong>key</strong> and the <code class="language-plaintext highlighter-rouge">Integer</code> or whatever is in the second spot of the pair is called the <strong>value</strong>.
+Thus, we often talk about “key-value pairs” in maps. 
+Keys in a <code class="language-plaintext highlighter-rouge">HashMap</code> must be unique, it wouldn’t make any sense in this example to have multiple entries for a single word after all. 
+You also should generally only try to look up a key in a map; looking up a value to get the key is difficult/weird and not what the structure is designed for.
+In this example, that would mean that you can look up the word “hi” to find out how many times it appeared in a document, but it wouldn’t make sense to look up the count 5 to find a key that appeared 5 times.</p>
+
+<h2 id="using-a-hashmap">Using a HashMap</h2>
+<p>Okay, so hopefully you’re convinced that this is a useful data structure to use, but how do you actually use it?
+The main things that a <code class="language-plaintext highlighter-rouge">HashMap</code> allows are putting key-value pairs into the map and getting them out based on the key.</p>
+
+<h3 id="put">put</h3>
+<p>First, let’s put some key-value pairs into our map. 
+If I wanted to record that I found one occurrence of the word “hi”, I would use <code class="language-plaintext highlighter-rouge">put</code>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wordCounts.put("hi", 1);
+</code></pre></div></div>
+
+<p>If I then found “hi” a second time, I could overwrite my previous entry with <code class="language-plaintext highlighter-rouge">put</code> again:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wordCounts.put("hi", 2);
+</code></pre></div></div>
+
+<h3 id="get">get</h3>
+<p>Information is of no use if you can’t retrieve it, so how do you get the key-value pairs out of a <code class="language-plaintext highlighter-rouge">HashMap</code>? With the <code class="language-plaintext highlighter-rouge">get</code> function:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>System.out.println("hi has been seen " + wordCounts.get("hi") + " times");
+</code></pre></div></div>
+
+<p>You can also use <code class="language-plaintext highlighter-rouge">get</code> and <code class="language-plaintext highlighter-rouge">put</code> together to increment the count of a word:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wordCounts.put("hi", wordCounts.get("hi")+1);
+</code></pre></div></div>
+
+<h3 id="keyset">keySet</h3>
+<p>The last major thing you might want to do with the information in your <code class="language-plaintext highlighter-rouge">HashMap</code> is looping over all the keys so that you can print out everything that is in your map. 
+You can do that with the <code class="language-plaintext highlighter-rouge">keySet()</code> method, which gives you a <code class="language-plaintext highlighter-rouge">Set</code> of all your keys (don’t worry exactly what a set is if you aren’t sure, we’ll talk about it soon; the important thing to know is that your keys aren’t in any particular order).</p>
+
+<p>Here is an example of looping over the words in your map:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    for(String word : wordCounts.keySet()) {
+      System.out.println("\""+ word + "\" has been seen " + wordCounts.get(word) + " times.");
+    }
+</code></pre></div></div>
+
+<h3 id="more-functionality">More functionality</h3>
+<p>As with all built-in Java data structures, <code class="language-plaintext highlighter-rouge">HashMap</code> has a lot more functionality than can be covered in one reading, but you are welcome to use it.
+The best way to find out what all you can do with a data structure is to look at it’s documentation. 
+The documentation for <code class="language-plaintext highlighter-rouge">HashMap</code> is here: <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html</a>.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

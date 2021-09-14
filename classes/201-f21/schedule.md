@@ -18,7 +18,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 2 | | Intermediate Java | |
 | M 9/20 |	Reading: Carrano **Appendix C**	| [Inheritance](inheritance-activity) |	 |
 | W 9/22 | Reading: Carrano **Prelude**	|	[ArrayLists and Interfaces](interface-lab)	| |
-| F 9/24 | HW1, Reading: Carrano **Java Interlude 1** |		[Generics and HashMaps]	| [HW2: Country Stats Displayer]|
+| F 9/24 | HW1, Reading: Carrano **Java Interlude 1** & **"The Interface Comparable** in Java Interlude 5 & **Java Interlude 8** & [HashMap](hashmaps)|		Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|
 | Week 3 | | Stacks and Queues | |
 | M 9/27 |	| Linked Data Structures	| |
 | W 9/29 |	 |	[Queues] |  |
