@@ -2,7 +2,7 @@
 layout: page
 title: Java Scavenger Hunt
 permalink: /classes/201-f21/java_scavenger
-published: false
+published: true
 ---
 
 # Goals
