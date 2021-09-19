@@ -13,9 +13,12 @@ You must work on this homework with your assigned partner (if you have one) via 
 Demonstrate your understanding of private and class variables, ability to create objects of your own making, and use other Java functionality.
 
 ## Setup
-Create a folder for HW1 on the COURSES drive. Remember to save here so that you don't lose your work!
+Create a folder for HW1 in STUWORK on the COURSES drive. 
+Open VSCode, and then click `File`->`Open...`, navigate to your STUWORK folder, select the `HW1` folder and click `Open`. 
+Now click `Terminal`->`New Terminal`. 
+This is where you will be able to compile and run your Java program.
 
-Create a file Collaborations.txt and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the [Collaboration page](collaboration) on what collaborations are allowed for homework assignments.
+Create a file `Collaborations.txt` and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the [Collaboration page](collaboration) on what collaborations are allowed for homework assignments.
 
 ## Specification
 For this project you have the opportunity to be creative! Instead of telling you a specific thing to make, since the goal is just to get some practice making a Java class and using it, you can come up with your own example. Below I have listed the things that your code must incorporate, but you are encouraged to go beyond these requirements and have some fun making a small project that is of interest to you. The cool thing about object-oriented programming is that you can simulate nearly anything in the real world, so while I give some example ideas if you are stuck, you really can make a class for anything that interests you.

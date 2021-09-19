@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-14T11:36:24-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">Dev &amp;amp; Doc: ReadTheDocs</title><link href="http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs.html" rel="alternate" type="text/html" title="Dev &amp;amp; Doc: ReadTheDocs" /><published>2021-09-12T08:00:00-05:00</published><updated>2021-09-12T08:00:00-05:00</updated><id>http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs</id><content type="html" xml:base="http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs.html">&lt;p&gt;It’s been a busy summer full of lots of new functionality in &lt;a href=&quot;https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html&quot;&gt;Symbulation&lt;/a&gt;!
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-19T14:58:48-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">Reading Recap September</title><link href="http://localhost:4000/reading/2021/09/19/reading-sept.html" rel="alternate" type="text/html" title="Reading Recap September" /><published>2021-09-19T10:00:00-05:00</published><updated>2021-09-19T10:00:00-05:00</updated><id>http://localhost:4000/reading/2021/09/19/reading-sept</id><content type="html" xml:base="http://localhost:4000/reading/2021/09/19/reading-sept.html">&lt;p&gt;I’ve added a number of interesting books and papers to my TBR pile lately and even started a couple of them!&lt;/p&gt;
+
+&lt;h2 id=&quot;papers&quot;&gt;Papers&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://link.springer.com/article/10.1007/s13199-021-00794-0&quot;&gt;&lt;strong&gt;Symbiosis and the Anthropocene&lt;/strong&gt; by Erik F. Y. Hom and Alexandra Penn&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m excited about this paper for several reasons. 
+The first is that Erik and Alex are both part of the ALife community and people that I really like as human beings.
+The second is that this subject is such a fantastic mash-up of their two specialties and I love when scholars collaborate and find the awesome ways in which their research intersects.
+And finally, I love any and all things symbiosis!
+I haven’t had a chance to read the full manuscript, but from the abstract and intro, it sounds like it is full of great ideas for future research as well as important things to think about.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.cambridge.org/core/journals/lichenologist/article/lichens-and-microbial-syntrophies-offer-models-for-an-interdependent-route-to-multicellularity/7770F423E1C309A1609C769C41F7A94C&quot;&gt;&lt;strong&gt;Lichens and microbial syntrophies offer models for an interdependent route to multicellularity&lt;/strong&gt; by Eric Libby and William C. Ratcliff&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I love a good review (who doesn’t??), and this is one that I have had time to read. 
+It is a great overview of how a multicellular organism could evolve from distinct species (an egalitarian transition) that has both specific examples and a good discussion of the existing theory.&lt;/p&gt;
+
+&lt;h2 id=&quot;books&quot;&gt;Books&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://us.macmillan.com/books/9780374159122/fourthousandweeks&quot;&gt;&lt;strong&gt;Four Thousand Weeks: Time Management for Mortals&lt;/strong&gt; by Oliver Burkeman&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve started this one already, which says something about what’s on my mind lately!
+I’ve gotten tired of the self-help time management books and am close to accepting that I can’t do everything that I want to do in my lifetime (haven’t quite given up yet though), so I’m hopeful that this book will be helpful in establishing the right perspective.
+I’m only through the intro so far, but it is interesting and intriguing so far.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://davidepstein.com/the-range/&quot;&gt;&lt;strong&gt;Range: Why Generalists Triumph in a Specialized World&lt;/strong&gt; by David J. Epstein&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I haven’t started this one, but I have a sample downloaded to see if I like it. 
+I’ve gotten skeptical of many of these kinds of pop science books, but I am a generalist by nature, so it might be nice escapism reading to make me feel better about constantly jumping between things.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://press.uchicago.edu/ucp/books/book/chicago/W/bo15288825.html&quot;&gt;&lt;strong&gt;Writing Science in Plain English&lt;/strong&gt; by Anne E. Greene&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There was a Twitter trend going around of sharing books that you want all your new lab members to read and I grabbed several of these from those posts. 
+This is one; I’m constantly on the hunt for science writing books and hadn’t seen this one before, which surprised me.
+I haven’t started it yet, so I’m not sure at what level it is or if it will be a repeat of things I’ve already read, but we’ll see.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/52373422-mushrooms-of-the-upper-midwest&quot;&gt;&lt;strong&gt;Mushrooms of the Upper Midwest&lt;/strong&gt; by Teresa Marrone and Kathy Yerich&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, I’ve been getting into mushroom hunting this summer, though apparently it’s been a particularly terrible year for mushrooms in our area.
+I’ve found this field guide helpful in that endeavor. 
+It has a beginning section on mushroom morphology and the top six edible mushrooms, which are generally easy to positively identify.&lt;/p&gt;
+
+&lt;p&gt;Until next time,&lt;/p&gt;
+
+&lt;p&gt;Anya&lt;/p&gt;</content><author><name></name></author><category term="Reading" /><summary type="html">I’ve added a number of interesting books and papers to my TBR pile lately and even started a couple of them!</summary></entry><entry><title type="html">Dev &amp;amp; Doc: ReadTheDocs</title><link href="http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs.html" rel="alternate" type="text/html" title="Dev &amp;amp; Doc: ReadTheDocs" /><published>2021-09-12T08:00:00-05:00</published><updated>2021-09-12T08:00:00-05:00</updated><id>http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs</id><content type="html" xml:base="http://localhost:4000/research/symbulation/2021/09/12/dev-doc-readthedocs.html">&lt;p&gt;It’s been a busy summer full of lots of new functionality in &lt;a href=&quot;https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html&quot;&gt;Symbulation&lt;/a&gt;!
 I’ll be doing a blog post for each of these new features (and they’re already available in the code), but to give you a sneak peek:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Lysis and Lysogeny support in Bacterium and Phage classes&lt;/li&gt;
