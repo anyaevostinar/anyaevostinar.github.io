@@ -20,7 +20,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 9/22 | Reading: Carrano **Prelude**	|	[ArrayLists and Interfaces](interface-lab)	| |
 | F 9/24 | HW1, Reading: Carrano **Java Interlude 1** & **"The Interface Comparable** in Java Interlude 5 & **Java Interlude 8** & [HashMap](hashmaps)|		Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|
 | Week 3 | | Stacks and Queues | |
-| M 9/27 | Reading: Carrano **1.1-1.12** & **3.1-3.8**	| Linked Data Structures	| |
+| M 9/27 | Reading: Carrano **1.1-1.12** & **3.1-3.8**	| [Linked Data Structures](linked-structures)	| |
 | W 9/29 |	 |	[Queues] |  |
 | F 10/1 | HW2 |		[Stacks]	| [HW3: Maze Solver] |
 | Week 4 | | Efficiency and Lists | |

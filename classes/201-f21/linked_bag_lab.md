@@ -46,4 +46,30 @@ d. Use `System.out.println` to print out the contents of your bag in `main`:
 System.out.println("Contents of bag: " + test);
 ```
 
-e. If you weren't sure about the problem with `add` previously, try adding multiple items to your test bag and printing it to see what happens and fix it.
+e. Add multiple items to your test bag and print the contents to see what happens. If you weren't sure about the problem with `add` previously, try to fix any problems now with this additional information. (You can also add additional print statements to trace through what is going on.)
+
+## remove(T anEntry)
+Finally, if this were a real bag, you'd want to be able to remove things from it someday. Remove is a trickier method to write, so be sure to think carefully about how it should work.
+
+a. Use a similar while loop approach to loop through the items in your linked chain to find the item that you are looking for.
+
+b. Once you find it, you need to remove it from your chain. Remember that the order of the items in the chain doesn't matter, since everything gets jumbled in a bag. This means that the easiest thing to do is to copy the data from the `firstNode` into the node that matches `anEntry` and then remove `firstNode`.
+
+c. Be sure to return `true` or `false` depending on if you find the item or not.
+
+d. Check that your code works for an item in the middle of the chain, an item at the beginning of the chain, an item at the end of the chain, and an empty bag.
+
+## Submission
+Compress your files as a zip, and upload that zip to Moodle under the appropriate assignment.
+Remember that partners need to submit their code separately and you should share the code you wrote in class with your partner.
+
+This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the code to indicate things you tried but what went wrong/where you got stuck.
+
+## Extensions
+There were several more methods that were suggested for the Bag ADT, feel free to try implementing any of these:
+
+* `getCurrentSize()`
+* `isEmpty()`
+* `clear()`
+* `getFrequencyOf(T anEntry)`
+* `contains(T anEntry)`
