@@ -2,7 +2,7 @@
 layout: page
 title: Inheritance Activity
 permalink: /classes/201-f21/inheritance-activity
-published: false
+published: true
 ---
 
 ## Logistics
