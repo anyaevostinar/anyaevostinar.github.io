@@ -109,6 +109,26 @@ I also recommend RStudio for when you eventually want to make plots/graphs, so y
 <h2 id="getting-started">Getting Started</h2>
 <p>I’ll let you know which project you’re working on and with whom ASAP, at which point you two can meet and start planning first steps to work toward the goal!</p>
 
+<h2 id="handy-commands">Handy Commands</h2>
+<p>(Anya forgets about these and so this is somewhat a reminder for them but also useful for students)</p>
+
+<p>To see the load on the cores on the servers:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>htop
+</code></pre></div></div>
+
+<p>To get C++17 working on the servers, run:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scl enable devtoolset-9 bash
+</code></pre></div></div>
+
+<p>To run a process in the background:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>screen python stats_scripts/simple_repeat.py
+</code></pre></div></div>
+
+<p>Use the key sequence <code class="language-plaintext highlighter-rouge">Ctrl-a</code> + <code class="language-plaintext highlighter-rouge">Ctrl-d</code> to detach from the screen session. At this point you could close the window or go do other things while this is running.</p>
+
+<p>To reattach, on the command prompt type</p>
+
+<p><code class="language-plaintext highlighter-rouge">screen -r</code></p>
 
   </div>
 

@@ -62,12 +62,29 @@ I also recommend RStudio for when you eventually want to make plots/graphs, so y
 ## Symbulation
 We'll be making additions to my software, Symbulation, so download it (with `git`) from [here](https://github.com/anyaevostinar/SymbulationEmp) along with [Empirical](https://github.com/devosoft/Empirical) and try running it. Explore the different settings in `SymSettings.cfg` and try changing them to see what happens!
 
+## Getting Started
+I'll let you know which project you're working on and with whom ASAP, at which point you two can meet and start planning first steps to work toward the goal!
+
+## Handy Commands
+(Anya forgets about these and so this is somewhat a reminder for them but also useful for students)
+
+To see the load on the cores on the servers:
+```
+htop
+```
+
 To get C++17 working on the servers, run:
 ```
 scl enable devtoolset-9 bash
 ```
 
-## Getting Started
-I'll let you know which project you're working on and with whom ASAP, at which point you two can meet and start planning first steps to work toward the goal!
+To run a process in the background:
+```
+screen python stats_scripts/simple_repeat.py
+```
 
+Use the key sequence `Ctrl-a` + `Ctrl-d` to detach from the screen session. At this point you could close the window or go do other things while this is running.
 
+To reattach, on the command prompt type
+
+`screen -r`
