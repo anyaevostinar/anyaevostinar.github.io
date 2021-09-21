@@ -24,5 +24,7 @@ I'm also hoping this will serve as a useful resource for lots of other things, l
 
 Just remember that this **isn't the official nomination form** and you should make sure to actually submit nominations once that opens up as well!
 
+But in the meantime, [add all the cool stuff](https://docs.google.com/spreadsheets/d/1QbvVeD3vvWRAY01gXxUnf8xja3bCJpw8g1_pNIGD31Y/edit?usp=sharing)!
+
 Until next time,
 Anya
