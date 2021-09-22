@@ -2,7 +2,7 @@
 layout: page
 title: Interfaces Lab
 permalink: /classes/201-f21/interface-lab
-published: false
+published: true
 ---
 
 
