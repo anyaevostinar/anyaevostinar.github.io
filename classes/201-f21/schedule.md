@@ -22,7 +22,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 3 | | Stacks and Queues | |
 | M 9/27 | Reading: Carrano **1.1-1.12** & **3.1-3.8**	| [Linked Data Structures](linked-structures)	| |
 | W 9/29 | Reading: [Fairytales about Stacks and Queues](http://computationaltales.blogspot.com/2011/04/stacks-queues-priority-queues-and.html) & Carrano **7.1-7.4**	 |	[Queues](queues) |  |
-| F 10/1 | HW2; Reading: Carrano **5.1-5.2** |		[Stacks]	| [HW3: Maze Solver](hw3) |
+| F 10/1 | HW2; Reading: Carrano **5.1-5.2** |		Stacks	| [HW3: Maze Solver](hw3) |
 | Week 4 | | Efficiency and Lists | |
 | M 10/4 | |	[Asymptotic Analysis]	| |
 | W 10/6 |	| [Linked Lists Part 1]	|  |

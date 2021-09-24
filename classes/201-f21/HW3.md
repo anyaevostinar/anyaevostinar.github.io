@@ -18,7 +18,7 @@ You must work on this homework with your assigned partner (if you have one) via 
 ## Setup and Requirements
 Mount COURSES, download the [HW3 starter code](HW3Starter.zip) and move it to your StuWork/username folder. You should follow the same process of compressing your files and uploading them to Moodle to submit your homework. 
 
-The code that you write for this assignment will build on top of the Stack ADT and an interface that I have provided. Java deals with Stacks rather oddly in that Stack is a class, rather than an interface. Instead of using Java's Stack, you will use the Stack interface I've provided (`Stack.java`) and make your own implementation. **For this assignment, you must use the Stack interface and your own implementation. You may not use the built in Java Stack or Deque.**
+The code that you write for this assignment will build on top of the Stack ADT and an interface that I have provided. Java deals with Stacks rather oddly in that Stack is a class, rather than an interface. Instead of using Java's Stack, you will use the Stack interface I've provided (`Stack.class`) and make your own implementation. **For this assignment, you must use the Stack interface and your own implementation. You may not use the built in Java Stack or Deque.**
 
 Create a file Collaborations.txt and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the [Collaboration page](collaboration) on what collaborations are allowed for homework assignments.
 
