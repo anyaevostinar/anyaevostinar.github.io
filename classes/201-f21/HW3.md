@@ -8,7 +8,7 @@ permalink: /classes/201-f21/hw3
 30 points, due Friday, Oct 8th by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy.  You or your partner need to notify me that you're using the policy via email, CC'ing the partner. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still Friday, not 48 hours later.
 
 ## Goals
-To gain practice with several data structures and ADTs we've learned about so far including arrays and the Stack ADT.
+To gain practice with Stacks and see how they can be useful.
 
 ## Assignment Type and Collaborative Learning Expectations
 This is a homework assignment that you'll be handing in on Moodle.
@@ -49,10 +49,10 @@ Putting this together in a small example, if the input file contains the followi
 | File	| Interpretation |
 |-------|----------------|
 | `2 3` | The maze has 2 rows and 3 columns |
-|` 1 1`| The start square is in the bottom middle. |
-|` 0 2`| The finish square is in the upper right. |
-|` __7` | (0,0) has a top wall; (0,1) has a top wall; (0,2) has a top and right wall |
-|` *_7 `| (1,0) has neither top or right walls; (1,1) has a top wall; (1,2) has a top and right wall |
+| `1 1`| The start square is in the bottom middle. |
+| `0 2`| The finish square is in the upper right. |
+| `__7` | (0,0) has a top wall; (0,1) has a top wall; (0,2) has a top and right wall |
+| `*_7 `| (1,0) has neither top or right walls; (1,1) has a top wall; (1,2) has a top and right wall |
 
 then the resulting maze would be printed as follows:
 ```
@@ -69,19 +69,15 @@ then the resulting maze would be printed as follows:
 
 Note that we specify only the top and right walls for each square, and not the bottom and left walls. This is sufficient to describe the whole maze; make sure to understand why this is.
 
-## JavaDocs
+### JavaDocs
 There is a lot of provided code, but the documentation is missing for many of the methods.
 Read through the methods and fill in the JavaDocs documentation.
 
-## LinkedStack
-Implement the methods specified in the Stack interface using a linked chain implementation.
+### LinkedStack
+I've provided a `Stack.class` file with the Stack interface and a starter file `LinkedStack.java` with the necessary stubs for the Stack interface and the private `Node` class. Implement each of the methods as specified by the JavaDocs method comment.
 
-## Check everything works so far
-Make sure that you can run the `Maze` file and get the correct maze output.
-
-## Solving the maze
+### Solving the maze
 Stacks are very useful when solving a maze and a classic algorithm is actually based on this idea. We'll talk about the algorithm more later in the term, but I'll just give you the steps for now:
-
 
 1. Create an empty stack of maze squares.
 2. Get the start square.
@@ -94,6 +90,7 @@ Stacks are very useful when solving a maze and a classic algorithm is actually b
 
 You should implement these steps in `getSolution()`.
 As you are working on implementing these steps, you should definitely create new methods in `Maze.java` that are called within `getSolution()` to make the method shorter and easier to read.
+You should also test your code frequently to make sure that small pieces are working as you expect.
 
 You may encounter an infinite while loop when you try to run your code for the first time (where the program just keeps running and doesn't stop). A helpful debugging approach is to temporarily add a `count` variable that cuts the while loop off after a reasonable number of steps based on your maze and put in print statements to track through what your code is doing and find where it is getting stuck.
 
@@ -117,32 +114,39 @@ Check that you are now able to print a solution to the maze and successfully sol
 
 If the maze is not solvable, your program should print a friendly message stating that.
 
-## User Input
+### User Input
 You should edit the `main` method of `Maze.java` so that it takes in information from the user on which maze they want solved and whether they want it displayed as solved or not. You can choose how you get this user input and what extra flavor text you include. At a minimum, you need:
 
 * a way for the maze to be displayed without a solution shown,
-* a way for the maze to be displayed with the solution marked with * if there is a solution,
+* a way for the maze to be displayed with the solution, marked with *, if there is a solution,
 * a way for the user to be told that the maze is not solvable.
 
 ## Stress testing
-You should now create at least 2 of your own mazes that are more complicated and test your program in unique ways (for example, needing to go right to find the finish instead of left, an unsolvable maze). You are welcome to create more maze files, but you must create at least 2 and verify that your program behaves correctly.
+You should create at least one unsolvable maze to verify and demonstrate how your program handles those.
+
+You should also create at least 2 of your own mazes that are more complicated and test your program in unique ways (for example, needing to go right to find the finish instead of left, or needing to move down). You are welcome to create more maze files, but you must create at least 2 and verify that your program behaves correctly.
 
 ## README
 As always, you should include a detailed README for this homework. 
 It should include a brief overview of your project, a short example of how to run your program and see its interesting behavior, and a more detailed section that has **demonstration input for each of the rubric items**. Remember, you want to make it as easy as possible for the grader to see that your homework does everything its supposed to!
 
-### Prompts
-Your solver may not find the shortest path through a complex maze, but it does find a path if there is one (as long as its implemented correctly). We'll discuss more on why that is in the coming weeks, but for this README, **reflect on why the Stack is an appropriate ADT to use to simulate a human solving a maze (as opposed to a Queue).** 
+### Prompt
+Your solver may not find the shortest path through a complex maze, but it does find a path if there is one (as long as its implemented correctly). We'll discuss more on why that is in the coming weeks, but for this README, **explain why the Stack is an appropriate ADT to use to simulate a human solving a maze (as opposed to a Queue).** 
 
 ## Rubric
 Your assignment will be graded as follows:
 
 | Item | Points |
 |------|-------|
-| README is clear and complete | 6 |
-| Unsolved mazes display correctly | 5 |
-| Program works on solvable mazes | 5 |
+| README is clear and complete, including answer to prompt | 6 |
+| Mazes can be displayed without a solution shown | 5 |
+| Solved mazes found and displayed correctly | 5 |
 | Program works on unsolvable mazes | 5 |
 | Two distinct mazes provided | 4 |
 | JavaDocs documentation filled in | 4 |
 | Otherwise good style | 1 |
+
+## Submission
+Remember to update your Collaborations.txt file with any sources that you consulted.
+
+Then make a .zip of your files and upload it to Moodle. If you are working with a partner, only one of you should submit on Moodle, the grader will handle giving you both the same score.
