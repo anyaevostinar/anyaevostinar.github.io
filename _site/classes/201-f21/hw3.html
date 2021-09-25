@@ -56,7 +56,7 @@
 <h2 id="setup-and-requirements">Setup and Requirements</h2>
 <p>Mount COURSES, download the <a href="/classes/201-f21/HW3Starter.zip">HW3 starter code</a> and move it to your StuWork/username folder. You should follow the same process of compressing your files and uploading them to Moodle to submit your homework.</p>
 
-<p>The code that you write for this assignment will build on top of the Stack ADT and an interface that I have provided. Java deals with Stacks rather oddly in that Stack is a class, rather than an interface. Instead of using Java’s Stack, you will use the Stack interface I’ve provided (<code class="language-plaintext highlighter-rouge">Stack.java</code>) and make your own implementation. <strong>For this assignment, you must use the Stack interface and your own implementation. You may not use the built in Java Stack or Deque.</strong></p>
+<p>The code that you write for this assignment will build on top of the Stack ADT and an interface that I have provided. Java deals with Stacks rather oddly in that Stack is a class, rather than an interface. Instead of using Java’s Stack, you will use the Stack interface I’ve provided (<code class="language-plaintext highlighter-rouge">Stack.class</code>) and make your own implementation. <strong>For this assignment, you must use the Stack interface and your own implementation. You may not use the built in Java Stack or Deque.</strong></p>
 
 <p>Create a file Collaborations.txt and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the <a href="collaboration">Collaboration page</a> on what collaborations are allowed for homework assignments.</p>
 
@@ -130,17 +130,14 @@ Putting this together in a small example, if the input file contains the followi
 
 <p>Note that we specify only the top and right walls for each square, and not the bottom and left walls. This is sufficient to describe the whole maze; make sure to understand why this is.</p>
 
-<h2 id="javadocs">JavaDocs</h2>
+<h3 id="javadocs">JavaDocs</h3>
 <p>There is a lot of provided code, but the documentation is missing for many of the methods.
 Read through the methods and fill in the JavaDocs documentation.</p>
 
-<h2 id="linkedstack">LinkedStack</h2>
-<p>Implement the methods specified in the Stack interface using a linked chain implementation.</p>
+<h3 id="linkedstack">LinkedStack</h3>
+<p>I’ve provided a <code class="language-plaintext highlighter-rouge">Stack.class</code> file with the Stack interface and a starter file <code class="language-plaintext highlighter-rouge">LinkedStack.java</code> with the necessary stubs for the Stack interface and the private <code class="language-plaintext highlighter-rouge">Node</code> class. Implement each of the methods as specified by the JavaDocs method comment.</p>
 
-<h2 id="check-everything-works-so-far">Check everything works so far</h2>
-<p>Make sure that you can run the <code class="language-plaintext highlighter-rouge">Maze</code> file and get the correct maze output.</p>
-
-<h2 id="solving-the-maze">Solving the maze</h2>
+<h3 id="solving-the-maze">Solving the maze</h3>
 <p>Stacks are very useful when solving a maze and a classic algorithm is actually based on this idea. We’ll talk about the algorithm more later in the term, but I’ll just give you the steps for now:</p>
 
 <ol>
@@ -155,7 +152,8 @@ Read through the methods and fill in the JavaDocs documentation.</p>
 </ol>
 
 <p>You should implement these steps in <code class="language-plaintext highlighter-rouge">getSolution()</code>.
-As you are working on implementing these steps, you should definitely create new methods in <code class="language-plaintext highlighter-rouge">Maze.java</code> that are called within <code class="language-plaintext highlighter-rouge">getSolution()</code> to make the method shorter and easier to read.</p>
+As you are working on implementing these steps, you should definitely create new methods in <code class="language-plaintext highlighter-rouge">Maze.java</code> that are called within <code class="language-plaintext highlighter-rouge">getSolution()</code> to make the method shorter and easier to read.
+You should also test your code frequently to make sure that small pieces are working as you expect.</p>
 
 <p>You may encounter an infinite while loop when you try to run your code for the first time (where the program just keeps running and doesn’t stop). A helpful debugging approach is to temporarily add a <code class="language-plaintext highlighter-rouge">count</code> variable that cuts the while loop off after a reasonable number of steps based on your maze and put in print statements to track through what your code is doing and find where it is getting stuck.</p>
 
@@ -178,17 +176,19 @@ As you are working on implementing these steps, you should definitely create new
 
 <p>If the maze is not solvable, your program should print a friendly message stating that.</p>
 
-<h2 id="user-input">User Input</h2>
+<h3 id="user-input">User Input</h3>
 <p>You should edit the <code class="language-plaintext highlighter-rouge">main</code> method of <code class="language-plaintext highlighter-rouge">Maze.java</code> so that it takes in information from the user on which maze they want solved and whether they want it displayed as solved or not. You can choose how you get this user input and what extra flavor text you include. At a minimum, you need:</p>
 
 <ul>
   <li>a way for the maze to be displayed without a solution shown,</li>
-  <li>a way for the maze to be displayed with the solution marked with * if there is a solution,</li>
+  <li>a way for the maze to be displayed with the solution, marked with *, if there is a solution,</li>
   <li>a way for the user to be told that the maze is not solvable.</li>
 </ul>
 
 <h2 id="stress-testing">Stress testing</h2>
-<p>You should now create at least 2 of your own mazes that are more complicated and test your program in unique ways (for example, needing to go right to find the finish instead of left, an unsolvable maze). You are welcome to create more maze files, but you must create at least 2 and verify that your program behaves correctly.</p>
+<p>You should create at least one unsolvable maze to verify and demonstrate how your program handles those.</p>
+
+<p>You should also create at least 2 of your own mazes that are more complicated and test your program in unique ways (for example, needing to go right to find the finish instead of left, or needing to move down). You are welcome to create more maze files, but you must create at least 2 and verify that your program behaves correctly.</p>
 
 <h2 id="readme">README</h2>
 <p>As always, you should include a detailed README for this homework. 
@@ -209,15 +209,15 @@ It should include a brief overview of your project, a short example of how to ru
   </thead>
   <tbody>
     <tr>
-      <td>README is clear and complete</td>
+      <td>README is clear and complete, including answer to prompt</td>
       <td>6</td>
     </tr>
     <tr>
-      <td>Unsolved mazes display correctly</td>
+      <td>Mazes can be displayed without a solution shown</td>
       <td>5</td>
     </tr>
     <tr>
-      <td>Program works on solvable mazes</td>
+      <td>Solved mazes found and displayed correctly</td>
       <td>5</td>
     </tr>
     <tr>

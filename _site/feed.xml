@@ -1,4 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-24T14:06:12-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">Reading Recap September</title><link href="http://localhost:4000/reading/2021/09/19/reading-sept.html" rel="alternate" type="text/html" title="Reading Recap September" /><published>2021-09-19T10:00:00-05:00</published><updated>2021-09-19T10:00:00-05:00</updated><id>http://localhost:4000/reading/2021/09/19/reading-sept</id><content type="html" xml:base="http://localhost:4000/reading/2021/09/19/reading-sept.html">&lt;p&gt;I’ve added a number of interesting books and papers to my TBR pile lately and even started a couple of them!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-25T09:12:55-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">Cheating Lessons Part 1</title><link href="http://localhost:4000/teaching/reading/2021/10/03/cheating-lessons1.html" rel="alternate" type="text/html" title="Cheating Lessons Part 1" /><published>2021-10-03T10:00:00-05:00</published><updated>2021-10-03T10:00:00-05:00</updated><id>http://localhost:4000/teaching/reading/2021/10/03/cheating-lessons1</id><content type="html" xml:base="http://localhost:4000/teaching/reading/2021/10/03/cheating-lessons1.html">&lt;p&gt;I’ve previously read &lt;strong&gt;Small Teaching&lt;/strong&gt; by &lt;a href=&quot;https://www.jamesmlang.com/&quot;&gt;James Lang&lt;/a&gt; and recommend it to all college professors.
+So when the opportunity came up on campus to read another of Lang’s books and discuss it with a group of faculty, I couldn’t resist, despite a rather packed term schedule.
+Here are my thoughts on part 1 of &lt;a href=&quot;https://www.hup.harvard.edu/catalog.php?isbn=9780674724631&quot;&gt;&lt;strong&gt;Cheating Lessons&lt;/strong&gt; by James Lang&lt;/a&gt;, in response to the reading questions provided by the facilitators of the group, Dave Musicant and Deborah Gross.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lang presents, by our count, six features of a learning environment that
+may pressure individuals into cheating:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;an emphasis on performance&lt;/li&gt;
+    &lt;li&gt;high stakes riding on the outcome&lt;/li&gt;
+    &lt;li&gt;extrinsic motivation for success&lt;/li&gt;
+    &lt;li&gt;low expectation for success&lt;/li&gt;
+    &lt;li&gt;perception of peer cheating behavior&lt;/li&gt;
+    &lt;li&gt;perception of peer approval/disapproval of cheating&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Which of these features, if any, do you see as common at Carleton or in
+your experience?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The historical examples that Lang provides of situations where cheating was rampant definitely demonstrate the extremes of these features and these features nicely formalize hunches that I’ve had for a while.&lt;/p&gt;
+
+&lt;p&gt;I think it’s going to be hard to escape some emphasis on performance and extrinsic motivation at any prestigious college, since it would be wrong to pretend that there aren’t some consequences for the grades that students get in our classes.
+However, it seems like there is a movement away from some of the traditional forms of assessment that increase these features, such as one large final exam.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Is this list complete?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;One thing that is missing from this list is the ease with which students can cheat, which does seem important to the discussion.
+An in-person exam that would require active planning to cheat, such as smuggling in solutions, seems less likely to have cheating than a take-home exam where spontaneous cheating is possible.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Are the items on the list intrinsically bad?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is a very interesting question and I think very much depends, as is always the case, on what moral code you use to judge ‘bad’. 
+If you are coming from a base of “learning is good, not learning is bad”, Lang presents strong evidence that these things are bad because they decrease learning.
+If you are coming from a base of “student mental well-being is good”, it seems clear that most of those items are bad since they put students under extreme mental pressure.&lt;/p&gt;
+
+&lt;p&gt;But sometimes, there have to be high-stakes in life, and sometimes what matters really is the performance of the skill instead of the mastery, and sometimes you have to try for things that have a low chance of success (otherwise no one would every submit grant proposals!). 
+So perhaps each individually is not intrinsically bad (except for the last two), but the combination of them can be a bad mixture, and when they can be reduced, that is for the best.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The approach that Lang takes in writing this particular book is that of
+focusing on what we can do in our own classrooms, and he largely defers
+the campus-policy discussions for another time.&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Is this a direction we individually are interested in taking, i.e.,
+taking steps in our own classes to help?&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is definitely a direction that I am interested in taking, partially to reduce cheating, but partially also because I’ve been convinced by Lang that efforts to reduce the likelihood of cheating can also lead to better learning.
+I’ve already reduced the stakes on any individual assessment (I don’t have final exams and instead have short quizzes throughout the term and a final project). 
+I’ve also been trying to tackle the extrinsic motivation issue, which I find one of the most challenging, but also the most interesting. 
+I realized a few years ago that I hate grading assignments that all do the same thing, and so individualizing assignments works for me as well as increasing the intrinsic motivation for the students.
+That is sometimes a challenge with programming assignments, but I’m exploring ways of doing it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;To what extent is the answer education vs. policing, and to what
+extent do we believe actions should be taken in our classrooms vs
+campuswide?&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’m not really sure what campuswide action on these issues would look like. 
+Policing definitely doesn’t seem like it will be as effective as education, as has been demonstrated in many other policing contexts (i.e. seeing others punishment doesn’t stop people from committing the crime). 
+There could be some campuswide initiatives to decrease emphasis on GPA, such as abandoning &lt;em&gt;magna&lt;/em&gt; and &lt;em&gt;summa cum laude&lt;/em&gt; or the Dean’s List, which just serve as a way of adding stress to students to get that A.&lt;/p&gt;
+
+&lt;p&gt;Some level of campuswide policy and policing is necessary to make it clear that cheating isn’t acceptable. 
+And campuswide policy could impact the features of the culture at a campus level.
+However, it is clear that Lang’s audience is teachers in the classroom, and it is nice to feel empowered to make a difference at a small scale immediately.&lt;/p&gt;
+
+&lt;p&gt;Until next time,&lt;/p&gt;
+
+&lt;p&gt;Anya&lt;/p&gt;</content><author><name></name></author><category term="Teaching" /><category term="Reading" /><summary type="html">I’ve previously read Small Teaching by James Lang and recommend it to all college professors. So when the opportunity came up on campus to read another of Lang’s books and discuss it with a group of faculty, I couldn’t resist, despite a rather packed term schedule. Here are my thoughts on part 1 of Cheating Lessons by James Lang, in response to the reading questions provided by the facilitators of the group, Dave Musicant and Deborah Gross.</summary></entry><entry><title type="html">ISAL Awards Eligible List</title><link href="http://localhost:4000/isal/2021/09/26/awards-list.html" rel="alternate" type="text/html" title="ISAL Awards Eligible List" /><published>2021-09-26T10:00:00-05:00</published><updated>2021-09-26T10:00:00-05:00</updated><id>http://localhost:4000/isal/2021/09/26/awards-list</id><content type="html" xml:base="http://localhost:4000/isal/2021/09/26/awards-list.html">&lt;p&gt;Every year when the &lt;a href=&quot;https://alife.org/&quot;&gt;ISAL&lt;/a&gt; &lt;a href=&quot;https://alife.org/about-isal/&quot;&gt;awards&lt;/a&gt; nomination form goes around, I stress because I both feel it is a duty to nominate but also &lt;strong&gt;can’t remember all the great papers and projects that I’ve seen during the year&lt;/strong&gt; and don’t have time to go find them all.
+Some of the categories are also really difficult to systematically find eligible papers for, such as the award for best student paper, since I can’t easily if a scientist is at the right career stage for the award.&lt;/p&gt;
+
+&lt;p&gt;I also am generally &lt;strong&gt;intimidated at the idea of self-nominating&lt;/strong&gt; for the things that I’m eligible for, since what if I’m not actually good enough and the mysterious people who look at the nominations laugh at me?? (I’ve been told that I really shouldn’t worry about this, but my anxiety just won’t listen to me….)&lt;/p&gt;
+
+&lt;p&gt;To try to improve some of these barriers to nominating, I’ve decided to make a &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1QbvVeD3vvWRAY01gXxUnf8xja3bCJpw8g1_pNIGD31Y/edit?usp=sharing&quot;&gt;spreadsheet&lt;/a&gt; for myself where I can collect the information for eligible people and projects throughout the year. 
+I also decided to figure out how to set it up through Google so that &lt;strong&gt;others can also add to the spreadsheet&lt;/strong&gt; and it will automatically organize itself by award!
+(Yes, I’m ridiculously proud of setting this up, please don’t judge me too much.)&lt;/p&gt;
+
+&lt;p&gt;I’m hoping that, since it is completely anonymous, it also will lower the anxiety bar about adding your own things to it.
+&lt;strong&gt;Are you a student, or recently a student??&lt;/strong&gt; 
+Please please please &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1QbvVeD3vvWRAY01gXxUnf8xja3bCJpw8g1_pNIGD31Y/edit?usp=sharing&quot;&gt;add your publications&lt;/a&gt; for the student paper award!
+&lt;strong&gt;Are you an early career researcher?&lt;/strong&gt; (Usually considered pre-tenure.)
+Then please &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1QbvVeD3vvWRAY01gXxUnf8xja3bCJpw8g1_pNIGD31Y/edit?usp=sharing&quot;&gt;add yourself&lt;/a&gt; for the Early Career award!&lt;/p&gt;
+
+&lt;p&gt;I’m also hoping this will serve as a useful resource for lots of other things, like finding cool people and projects in the artificial life community.&lt;/p&gt;
+
+&lt;p&gt;Just remember that this &lt;strong&gt;isn’t the official nomination form&lt;/strong&gt; and you should make sure to actually submit nominations once that opens up as well!&lt;/p&gt;
+
+&lt;p&gt;But in the meantime, &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1QbvVeD3vvWRAY01gXxUnf8xja3bCJpw8g1_pNIGD31Y/edit?usp=sharing&quot;&gt;add all the cool stuff&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Until next time,
+Anya&lt;/p&gt;</content><author><name></name></author><category term="ISAL" /><summary type="html">Every year when the ISAL awards nomination form goes around, I stress because I both feel it is a duty to nominate but also can’t remember all the great papers and projects that I’ve seen during the year and don’t have time to go find them all. Some of the categories are also really difficult to systematically find eligible papers for, such as the award for best student paper, since I can’t easily if a scientist is at the right career stage for the award.</summary></entry><entry><title type="html">Reading Recap September</title><link href="http://localhost:4000/reading/2021/09/19/reading-sept.html" rel="alternate" type="text/html" title="Reading Recap September" /><published>2021-09-19T10:00:00-05:00</published><updated>2021-09-19T10:00:00-05:00</updated><id>http://localhost:4000/reading/2021/09/19/reading-sept</id><content type="html" xml:base="http://localhost:4000/reading/2021/09/19/reading-sept.html">&lt;p&gt;I’ve added a number of interesting books and papers to my TBR pile lately and even started a couple of them!&lt;/p&gt;
 
 &lt;h2 id=&quot;papers&quot;&gt;Papers&lt;/h2&gt;
 
