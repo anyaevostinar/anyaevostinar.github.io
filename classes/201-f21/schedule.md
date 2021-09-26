@@ -24,7 +24,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 9/29 | Reading: [Fairytales about Stacks and Queues](http://computationaltales.blogspot.com/2011/04/stacks-queues-priority-queues-and.html) & Carrano **7.1-7.4**	 |	[Queues](queues) |  |
 | F 10/1 | HW2; Reading: Carrano **5.1-5.2** |		Stacks	| [HW3: Maze Solver](hw3) |
 | Week 4 | | Efficiency and Lists | |
-| M 10/4 | |	[Asymptotic Analysis]	| |
+| M 10/4 | Reading: Carrano **4.1-4.17**|	[Asymptotic Analysis](analysis-activity)	| |
 | W 10/6 |	| [Linked Lists Part 1]	|  |
 | F 10/8 | HW3 |	[Linked Lists Part 2]	| [HW4: Country Sorter List]|
 | Week 5 | | Recursion and Sorting | |
