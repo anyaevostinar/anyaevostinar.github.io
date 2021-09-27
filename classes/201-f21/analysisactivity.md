@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Analysis Activity
+title: Analysis Lab
 permalink: /classes/201-f21/analysis-activity
 published: false
 ---
@@ -134,7 +134,7 @@ e. Simplify your expression until you have a value for C and report your values 
 The same as in Exercises 2 and 3, show that 8n<sup>2</sup> + 3n is in O(n<sup>3</sup>) (not a typo!). 
 
 ## Submitting
-This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaboration section) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck.
+This lab is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaboration section) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck.
 
 Remember that you need to submit your lab separately from your partner.
 

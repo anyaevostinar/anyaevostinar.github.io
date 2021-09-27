@@ -2,7 +2,7 @@
 layout: page
 title: Linked Structures Lab
 permalink: /classes/201-f21/linked-structures
-published: false
+published: true
 ---
 
 ## Logistics
