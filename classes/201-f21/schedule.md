@@ -25,7 +25,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 10/1 | HW2; Reading: Carrano **5.1-5.2** |		Stacks	| [HW3: Maze Solver](hw3) |
 | Week 4 | | Efficiency and Lists | |
 | M 10/4 | Reading: Carrano **4.1-4.17**|	[Asymptotic Analysis](analysis-activity)	| |
-| W 10/6 | Reading: Carrano **10.1-10.7** & **12.1-12.6** 	| [Linked Lists Part 1]	|  |
+| W 10/6 | Reading: Carrano **10.1-10.7** & **12.1-12.6** 	| [Linked Lists Part 1](linked-list)	|  |
 | F 10/8 | HW3; Reading: Carrano **17.1-17.2** & **17.8-17.11** |	[Linked Lists Part 2]	| [HW4: Country Sorter List]|
 | Week 5 | | Recursion and Sorting | |
 | M 10/11 | |	Catch up| |
