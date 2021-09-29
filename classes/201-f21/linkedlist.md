@@ -83,3 +83,4 @@ If you want more practice, here are something things to try:
 * Write a remove method
 * Fix the trailing `>` at the end of your printing of LinkedList
 * Check the JavaDocs for other required methods of the List interface and properly implement them so you can `implements List`
+* Determine the asymptotic order of each of the methods

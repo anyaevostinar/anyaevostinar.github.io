@@ -2,7 +2,7 @@
 layout: page
 title: Queue Lab
 permalink: /classes/201-f21/queues
-published: false
+published: true
 ---
 
 ## Goals
