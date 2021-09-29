@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Queue Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Queue Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f21/queues" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f21/queues" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Queue Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-f21/queues","@type":"WebPage","headline":"Queue Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Queue Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To better learn about how queues work by creating a linked queue.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Wednesday Sept 29th, but it isn’t due until Friday Oct 1st at 5:00pm Central.</p>
+
+<h2 id="setup">Setup</h2>
+<p><a href="https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&amp;title=CS+111+and+201+workflow+in+CS+labs">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK/username folder called <code class="language-plaintext highlighter-rouge">QueueLab</code></li>
+  <li>Open that folder through VSCode</li>
+  <li>Create your Collaborations.txt document in that folder</li>
+</ul>
+
+<p>You should work on this with your in-class partner, but you both need to submit separately. 
+If you finish it outside of class without your partner, note which sections you completed together and which you completed separately in your <code class="language-plaintext highlighter-rouge">Collaborations.txt</code>.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>For this activity, we’ll make a linked chain-based queue, which we’ll call a <code class="language-plaintext highlighter-rouge">LinkedQueue</code>.</p>
+
+<p>a. First, create a LinkedQueue that can hold a generic type:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class LinkedQueue&lt;T&gt; {
+</code></pre></div></div>
+
+<p>b. Since this will use a linked chain, copy the nested Node class from the <a href="/classes/201-f21/LinkedBag.java"><code class="language-plaintext highlighter-rouge">LinkedBag</code> starter code</a>.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Let’s start with adding things to the queue with the <code class="language-plaintext highlighter-rouge">enqueue</code> method.</p>
+
+<p>a. Create an <code class="language-plaintext highlighter-rouge">enqueue</code> method that takes a <code class="language-plaintext highlighter-rouge">T newItem</code>, creates a Node for that item and adds that item to the end of the queue. You should make the appropriate instance variables that you need for your queue to be able to access the location of the end of the queue quickly.</p>
+
+<p>b. As always, we need to be able to print the items to check that things are working. Adapt your <code class="language-plaintext highlighter-rouge">toString()</code> method from LinkedBag to print the items in the queue from the front of the queue to the end of the queue. You should add whatever instance variables you need to be able to do this.</p>
+
+<p>c. Verify via printing in <code class="language-plaintext highlighter-rouge">main</code> that you are able to enqueue several items. (If you want, make them complaints from the peasants in the reading.)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>System.out.println(myQueue);
+</code></pre></div></div>
+
+<h2 id="exericse-3">Exericse 3</h2>
+<p>Finally, we want to also be able to remove items from a queue with <code class="language-plaintext highlighter-rouge">dequeue</code>.</p>
+
+<p>a. Create a <code class="language-plaintext highlighter-rouge">dequeue</code> method that returns a <code class="language-plaintext highlighter-rouge">T item</code> from the front of the queue.</p>
+
+<p>b. If the queue is empty, return null.</p>
+
+<p>c. Verify via printing that you are able to dequeue several items (print both the dequeued item and the queue to verify the item has been removed).</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>This activity is not a homework assignment. That means that you’re evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren’t able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck.</p>
+
+<p>Submit your zip file to Moodle as always.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you have extra time, try implementing more of the methods from the reading:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">getFront()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">isEmpty()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">clear()</code></li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

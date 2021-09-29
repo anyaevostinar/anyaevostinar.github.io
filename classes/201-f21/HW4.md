@@ -4,31 +4,32 @@ title: HW 4 Country Sorter List
 permalink: /classes/201-f21/hw4
 ---
 
-# Logistics
+## Logistics
 30 points, due Friday, Oct 15th by 10PM. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy.  You or your partner need to notify me that you're using the policy via email, CC'ing the partner. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still Friday, not 48 hours later.
 
-# Goals
+## Goals
 To gain a better understanding of linked lists by implementing one that inserts values into sorted positions and maintains forward and backward pointers.
 
-# Assignment Type and Collaborative Learning Expectations
+## Assignment Type and Collaborative Learning Expectations
 This is a homework assignment that you'll be handing in on Moodle.
 
 You must work on this homework with your assigned partner (if you have one) via pair programming. That means that you cannot write **any** code without your partner and you must both be fully engaged and discussing the code at all times while working. See the [collaboration policy](collaboration) for details.
 
-# Setup and Requirements
-Go to our Team on Repl.it and open the project HW3.
+## Setup and Requirements
+Mount COURSES, download the [HW4 starter code](HW4Starter.zip) and move it to your StuWork/username folder. You should follow the same process of compressing your files and uploading them to Moodle to submit your homework. 
 
-You should first create a Collaborations.txt document and update it with any sources (webpage or people) that you get help from. This includes even just looking up a function, always better to be safe!
+Create a file `Collaborations.txt` and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the [Collaboration page](collaboration) on what collaborations are allowed for homework assignments.
 
-The code that you write for this assignment will build on top of the Country.java class that you wrote previously.
-You should copy that file over to this project.
+The code that you write for this assignment will build on top of the `Country` class that you worked with previously.
+I've provided my own version of it and the boilerplate code for reading in from a file and creating a `Country`.
 
 ## Specification
-For this assignment, you'll make a new class, `SortedLinkedList` that consists of a linked list that adds items in sorted order according to a previously set indicator and order. 
+For this assignment, you'll make a new class, `CountrySorterList` that consists of a linked list that adds items in sorted order according to a previously set indicator and is able to provide the user with the minimum and maximum countries for the given indicator. 
 
-## Comparator
-If you were thinking after the last assignment that there has got to be a better way of sorting, you are right! 
+### Comparator
+If you were thinking after the Country Stats Displayer assignment that there has got to be a better way of sorting, you are right! 
 In Java, there is an interface called the `Comparator` that focuses on allowing two objects of the same type to be compared easily.
+This is slightly different than the `Comparable` interface discussed and used in the book because it doesn't assume that the class has an inherent order, and instead orders the objects of the class based on the user specified `indicator`.
 First you will create a comparator that will then be stored in your linked list later.
 
 Create a new class `CountryComparator` that implements the `Comparator` interface for Country:
@@ -38,98 +39,74 @@ public class CountryComparator implements Comparator<Country> {
 
 This class will consist of just two methods: 1) a constructor, and 2) the `compare` method that is required for a `Comparator`.
 
-### Constructor
-Your comparator needs to store the indicator that it compares by and the direction that it should sort by (greatest to least or least to greatest).
-Create those instance variables and a constructor that takess in value for those variables and sets them.
+#### Constructor
+Your comparator needs to store the indicator that it compares by.
+Create that instance variable and a constructor that takes in a value for indicator and sets the instance variable.
 
-### compare method
-Next create a method `compare` that takes two Country instances as parameters. 
-The way that comparators in Java work is that for two objects a and b, it returns -1 if a comes before b, 0 if a and b could be in either order, and 1 if b comes before a.
-Your compare method should work the same based on the indicator and order chosen by the constructor. 
-If two countries have the same value for the indicator, you should return 0.
+#### compare method
+Next create a method `compare` that takes two `Country` objects as parameters. 
+The `Comparator`'s `compare` method works similarly to the `Comparable` interface in that for two objects `a` and `b`, it returns:
 
-You should test your CountryComparator by making a new one in the main(String[] args) method of CountryComparator.java with some test Country objects.
+*  -1 if `a` comes before `b`, 
+* 0 if `a` and `b` could be in either order, and 
+* 1 if `b` comes before `a`.
 
-## SortedLinkedList
-Now that you have an object for comparing two countries, let's make a sorted linked list.
+Your `compare` method should work the same based on the indicator chosen by the constructor. 
+
+You should test your `CountryComparator` by making a new one in the `main(String[] args)` method of `CountryComparator.java` with some test `Country` objects.
+
+### CountrySorterList
+Now that you have an object for comparing two countries, let's make a sorted linked list for your countries.
 Note that you are **not allowed to use any built-in List classes or methods!** The point of this homework is to understand linked lists by implementing your own.
 
-Create a class `SortedLinkedList` that implements the provided interface `SortedList` just for Country:
-```
-public class SortedLinkedList implements SortedList<Country> {
-```
+#### Using CountryComparator
+Your `CountrySorterList` should use an object of type `CountryComparator` to determine the order of the countries in the list.
 
-Adapt your Node code from the Linked List Activity so that you have a private Node class, a head, and a size instance variable. In addition, declare a comparator instance variable:
-```
-Comparator<Country> myComparator;
-```
+#### add(Country newEntry)
 
-Copy the method signatures and comments from the `SortedList` interface and turn them into method stubs in `SortedLinkedList` by returning something of the correct type for each method.
+You should create an `add` method that takes a `Country` object and puts it into the correct spot in the sorted list based on the comparator. 
+The reading gives you a good start on this method and you can and should copy over the relevant code and credit it in your `Collaborations.txt` document.
+You will need to adapt the code to work with your `CountryComparator` though.
 
-### Constructor
-Create a constructor that takes a `Comparator<Country>` as a parameter and sets the instance variables appropriately.
+#### Double linking
 
-### test method
-Create a `test` method that first creates three Country objects with dummy data, then puts them into Nodes and then connects those Nodes together from the `head` so that other methods can be tested before you implement `add`.
+You should adapt the starter code and reading code to have a doubly-linked list, which is a list where the `Node`s have a link to the node before them, often called `previous` and you maintain a `lastNode` pointer as well as a `firstNode` pointer.
 
-### size and isEmpty methods
-Start by implementing the `size` and `isEmpty` methods since they are short.
+#### Max and min
 
-Using your `test` method, make sure that these work.
+You should enable the user to get the following information:
+* The top X countries for any of the indicators, where X can be any number that the user specifies (i.e. the top 10 countries for Population Growth)
+* The bottom X countries for any of the indicators
 
-### toString method
-Adapt the `toString` method from the Linked List Activity for this class so that it returns the names of the countries in the list.
+You should retrieve this information efficiently, meaning that you should not have to loop all the way to the end of the list to get either the maximum or minimum countries. 
+Instead, you should use the double linked nature of the list effectively.
 
-Using your `test` method, make sure that this works.
+#### User interaction
 
-### get method
-Implement a `get` method that returns the Country at the given position. 
-If the user tries to access a position outside of the range, you should throw an IndexOutOfBoundsException:
-```
-throw new IndexOutOfBoundsException();
-```
+As usual, it is up to you how you get information from the user and return information to them and you should consider how to do those tasks in a way that makes it easiest for the user.
 
-Using your `test` method, make sure that this works.
+## README
 
-### add method
-The add method is the heavy-lifter of this class since it needs to add a given item in the correct place in the list.
+As always, you should include a detailed README for this homework. 
+It should include a brief overview of your project, a short example of how to run your program and see its interesting behavior, and a more detailed section that has **demonstration input for each of the rubric items**. Remember, you want to make it as easy as possible for the grader to see that your homework does everything its supposed to!
 
-There are three scenarios that you need to think about when implementing your add method:
-1) adding to the middle of the list
+### Prompt
+In addition to demonstrating each rubric item, include a separate discussion about why you are using the `CountryComparator` class instead of having `Country` implement the interface `Comparable` as discussed in Java Interlude 5 of the textbook.
 
-2) adding to the beginning of the list
 
-3) adding to the end of the list
-
-I recommend you go in that order and make sure each scenario works before moving on to the next one.
-You are allowed to include extra instance variables such as `tail` if you find them useful.
-I also highly recommend that you have an example written down on paper and trace through it by hand so that you have a firm idea of what you need to do.
-You will probably run into a lot of NullPointerExceptions as you do this; try not to let them fluster you and just remember that that means you are accessing a `null` thing somewhere and go back to your example to figure out where.
-
-Demonstrate in the main() method of SortedLinkedList that each of the three cases for add works.
-
-# Rubric
+## Rubric
 This is how you will be graded on this homework:
 
 | Item | Points |
 |-------|--------|
-| Adding to the front of the list works | 6 |
-| Adding to the middle works | 6 |
-| Adding to the end works | 6 |
-| Comparator implemented correctly | 1 |
-| compare method correct | 1 |
-| size and isEmpty correct | 1 |
-| toString method correct | 1 |
-| get works as specified | 1 |
-| Demonstration examples for add | 1 |
-| Java-docs style documentation | 1 |
+| Top X countries for each indicator works | 6 |
+| Bottom X countries for each indicator works | 6 |
+| Information from end of list retrieved efficiently | 6 |
+| `CountryComparator` implemented and used correctly | 3 |
+| README clear and complete | 6 |
+| Java-docs style documentation | 3 |
 
-# Submission
-Make sure Collaborations.txt is accurate and includes any sources that you used including any conversations. Did you share strategies with anyone else? Talk about any annoying compiler error and get advice? These are fine things to do, and you should note them in the Collaborations.txt file. Give the names of people you talked with. If you used any resources outside of our course materials, that is also something to note in Collaborations.txt. If you didn't talk with anyone, please note that explicitly in Collaborations.txt.
+## Submission
+Remember to update your `Collaborations.txt` file with any sources that you consulted.
 
-After making Collaborations.txt and finishing the assignment, click on the three vertical dots next to the add file and add folder icons on repl.it, and choose "Download as zip" from the menu. Upload that zip on Moodle.
-
-## Extensions
-* Adapt toString so that it includes the name of the country and the indicator of interest.
-* Add a remove method.
-* Incorporate your SortedLinkedList into your CountryDisplayer and create an interactive user interface (this is intentionally open ended so you can do whatever seems interesting and useful).
+Then make a .zip of your files and upload it to Moodle. If you are working with a partner, only one of you should submit on Moodle, the grader will handle giving you both the same score.

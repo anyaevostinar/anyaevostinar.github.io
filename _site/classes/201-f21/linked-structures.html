@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Linked Structures Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Linked Structures Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f21/linked-structures" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f21/linked-structures" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Linked Structures Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-f21/linked-structures","@type":"WebPage","headline":"Linked Structures Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Linked Structures Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>You should complete this on Monday Sept 27th, 2021, but it isn’t due until Wednesday Sept 29nd, 2021 at 5pm.</p>
+
+<p>You should work on this with your in-class partner, but you both need to submit separately. 
+If you finish it outside of class without your partner, note which sections you completed together and which you completed separately in your <code class="language-plaintext highlighter-rouge">Collaborations.txt</code>.</p>
+
+<h2 id="goal">Goal</h2>
+<p>Practice with the ideas of linked data structures and implement a Linked Bag data structure.</p>
+
+<h2 id="setup">Setup</h2>
+<p><a href="https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&amp;title=CS+111+and+201+workflow+in+CS+labs">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">LinkedBagLab</code></li>
+  <li>Create your <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> document in that folder</li>
+  <li>Create a file <code class="language-plaintext highlighter-rouge">LinkedBag.java</code> and copy the <a href="/classes/201-f21/LinkedBag.java">starter code</a> into that file</li>
+</ul>
+
+<h2 id="add">add</h2>
+<p>The first thing you’ll probably want to do with your bag is be able to add items to it.</p>
+
+<p>a. In the stub of the <code class="language-plaintext highlighter-rouge">add</code> method, create a new <code class="language-plaintext highlighter-rouge">Node</code> with <code class="language-plaintext highlighter-rouge">newEntry</code> as its <code class="language-plaintext highlighter-rouge">dataPortion</code>.</p>
+
+<p>b. Make your new node the first node in your linked chain and change the return value to <code class="language-plaintext highlighter-rouge">true</code>.</p>
+
+<p>c. Make a <code class="language-plaintext highlighter-rouge">main</code> method in your <code class="language-plaintext highlighter-rouge">LinkedBag</code> class so that you can make a test <code class="language-plaintext highlighter-rouge">LinkedBag</code> and make sure you can call the <code class="language-plaintext highlighter-rouge">add</code> method. Compile and run your code (it won’t seem like it does anything, you’re just checking for compile-time errors at this point).</p>
+
+<p>d. This would work for a bag that holds just one item, but it won’t work for more than one item. Figure out why and fix it. If you aren’t sure, move on to the next exercise to see how to print the items in your bag so you can see the problem.</p>
+
+<h2 id="tostring">toString</h2>
+<p>Whenever you are making a data structure, you’ll probably want to be able to print out its contents while testing it.
+You can make your own data structures work directly with <code class="language-plaintext highlighter-rouge">System.out.println()</code> by implementing the <code class="language-plaintext highlighter-rouge">toString()</code> method.</p>
+
+<p>a. When you are working with linked data structures, you’ll frequently need to navigate through the chain. To do this, you should always create a local variable <code class="language-plaintext highlighter-rouge">currentNode</code> and set it equal to the first node.</p>
+
+<p>b. Use a <code class="language-plaintext highlighter-rouge">while</code> loop to loop over each <code class="language-plaintext highlighter-rouge">Node</code> in your chain. Think about what the stopping condition for the while loop should be and what should happen at each step of the loop to move to the next <code class="language-plaintext highlighter-rouge">Node</code>.</p>
+
+<p>c. Within your while loop, grab the data of the <code class="language-plaintext highlighter-rouge">currentNode</code> and add it to a <code class="language-plaintext highlighter-rouge">String</code> that you can then return.</p>
+
+<p>d. Use <code class="language-plaintext highlighter-rouge">System.out.println</code> to print out the contents of your bag in <code class="language-plaintext highlighter-rouge">main</code>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>System.out.println("Contents of bag: " + test);
+</code></pre></div></div>
+
+<p>e. Add multiple items to your test bag and print the contents to see what happens. If you weren’t sure about the problem with <code class="language-plaintext highlighter-rouge">add</code> previously, try to fix any problems now with this additional information. (You can also add additional print statements to trace through what is going on.)</p>
+
+<h2 id="removet-anentry">remove(T anEntry)</h2>
+<p>Finally, if this were a real bag, you’d want to be able to remove things from it someday. Remove is a trickier method to write, so be sure to think carefully about how it should work.</p>
+
+<p>a. Use a similar while loop approach to loop through the items in your linked chain to find the item that you are looking for.</p>
+
+<p>b. Once you find it, you need to remove it from your chain. Remember that the order of the items in the chain doesn’t matter, since everything gets jumbled in a bag. This means that the easiest thing to do is to copy the data from the <code class="language-plaintext highlighter-rouge">firstNode</code> into the node that matches <code class="language-plaintext highlighter-rouge">anEntry</code> and then remove <code class="language-plaintext highlighter-rouge">firstNode</code>.</p>
+
+<p>c. Be sure to return <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code> depending on if you find the item or not.</p>
+
+<p>d. Check that your code works for an item in the middle of the chain, an item at the beginning of the chain, an item at the end of the chain, and an empty bag.</p>
+
+<h2 id="submission">Submission</h2>
+<p>Compress your files as a zip, and upload that zip to Moodle under the appropriate assignment.
+Remember that partners need to submit their code separately and you should share the code you wrote in class with your partner.</p>
+
+<p>This activity is not a homework assignment. That means that you’re evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren’t able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the code to indicate things you tried but what went wrong/where you got stuck.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>There were several more methods that were suggested for the Bag ADT, feel free to try implementing any of these:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">getCurrentSize()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">isEmpty()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">clear()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">getFrequencyOf(T anEntry)</code></li>
+  <li><code class="language-plaintext highlighter-rouge">contains(T anEntry)</code></li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
