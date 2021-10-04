@@ -2,7 +2,7 @@
 layout: page
 title: Analysis Lab
 permalink: /classes/201-f21/analysis-activity
-published: false
+published: true
 ---
 
 ## Goals
