@@ -9,11 +9,10 @@ published: false
 To refresh on thinking recursively and writing recursive code.
 
 ## Logistics
-This is a lab assignment that you'll be handing in on Moodle. You should complete it on Wednesday Feb 10th, but it isn't due until Friday Feb 12th at 5:00pm Central.
+This is a lab assignment that you'll be handing in on Moodle. You should complete it on Wednesday Oct 13th, but it isn't due until Friday Oct 15th at 5:00pm Central.
 
-Open the Recursion Lab on Repl.it.
-
-You're welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you're welcome to share your screen to look at one another's code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what's permitted.
+You should work on this with your in-class partner, but you both need to submit separately. 
+If you finish it outside of class without your partner, note which sections you completed together and which you completed separately in your `Collaborations.txt`.
 
 ## Setup
 [Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=CS+111+and+201+workflow+in+CS+labs) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
@@ -56,7 +55,7 @@ You should implement a version that counts up instead of down to reduce the amou
 public static int fibonacci(int index, int curValue, int prevValue, int targetIndex)
 ```
 
-where `targetIndex` is `k` and `index` starts at a small number to track where you currently sequence.
+where `targetIndex` is `k` and `index` starts at a small number to track where you currently are in the sequence.
 
 Make sure to test your function for a few numbers, for example:
 ```
@@ -71,4 +70,4 @@ Remember that partners need to submit their code separately and you should share
 This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the code to indicate things you tried but what went wrong/where you got stuck.
 
 ## Extensions
-* There are several more recursion activities on CodingBat to try if you'd like more practice with recursion.
+There are several more recursion activities on CodingBat to try if you'd like more practice with recursion.
