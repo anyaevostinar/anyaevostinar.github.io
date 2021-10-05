@@ -29,7 +29,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 10/8 | HW3; Reading: Carrano **17.1-17.2** & **17.8-17.11** |	Linked Lists Part 2	| [HW4: Country Sorter List](hw4)|
 | Week 5 | | Recursion and Sorting | |
 | M 10/11 | Reading: Carrano **2.34-2.38** & **11.1-11.3**|	[Array Efficiency](array-efficiency) | |
-| W 10/13 |	Reading: Carrano **9.1-9.9** & **9.11-9.14**	| [Recursion]	|  |
+| W 10/13 |	Reading: Carrano **9.1-9.9** & **9.11-9.14**	| [Recursion](recursion)	|  |
 | F 10/15 | HW4; Reading: Carrano **16.1** & **16.10-16.14** |	[Quicksort]	| [HW5: Quicksort Analysis] |
 | Week 6 | | Trees | |
 | M 10/18	| |	Mid-term Break!	| |

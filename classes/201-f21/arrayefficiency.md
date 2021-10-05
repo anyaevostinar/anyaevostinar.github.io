@@ -43,7 +43,7 @@ This array-based list maintains the following instance variables:
 * `capacity` is an integer representing the actual size of the array (i.e. `array.length`)
 * `array` is the array that holds the items in the list
 
-a. In terms of the number of items in the array, which you should call `n`, how many basic operations are executed by this function in the worst case?
+a. In terms of the number of items in the array, which you should call `n`, how many basic operations are executed by this function in the worst case? (Don't over think this!)
 
 b. What is the Big-O of this function? Justify your answer by demonstrating values for C and n<sub>0</sub>, as you did in the [Analysis Lab](analysis-activity).
 
