@@ -2,7 +2,7 @@
 layout: page
 title: Linked List Activity
 permalink: /classes/201-f21/linked-list
-published: false
+published: true
 ---
 
 ## Goals
