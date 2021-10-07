@@ -45,7 +45,7 @@ You can use many different array sizes to explore the questions in this assignme
 
 ## Memo
 
-You should now write a 1-2 (single-spaced) page memo recommending which pivot selection method should be used and presenting evidence to support your position. Your evidence might include plots and/or tables of timing data. The page limit includes any charts and plots; it can be shorter as long as your communicate all of the needed information, it can also be longer if you would like.
+You should now write an approximately 2 page (single-spaced) memo recommending which pivot selection method should be used and presenting evidence to support your position. Your evidence might include plots and/or tables of timing data. The page number recommendation includes any charts and plots; it can be shorter as long as your communicate all of the needed information, it can also be longer if you would like. I expect that to answer the prompt, you'll need about 2 pages.
 
 Your memo should assume that average run time is the most important consideration, but if run times are similar, it might discuss other reasons to prefer or disprefer a particular method. The memo should at least briefly discuss whether the length of the array to sort influences which selection method to choose and whether characteristics of the numbers in the array or their initial ordering (e.g., many duplicates, degree of sortedness) impact which selection method to choose.
 
