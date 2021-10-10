@@ -48,19 +48,22 @@ Write a `static` recursive function that performs exponentiation: it should retu
 Remember to test it in `main`.
 
 ## Exercise 3
-The Fibonacci sequence is the sequence 0, 1, 1, 2, 3, 5, 8, 13,... where the number at index `k` is equal to the sum of the numbers at `k−1` and `k−2`. Write a recursive function for calculating the kth Fibonacci number that does as little repeated work as possible.
+Finally, you will implement a `static` recursive mergesort function. 
 
-You should implement a version that counts up instead of down to reduce the amount of work. You should start with a method signature:
-```
-public static int fibonacci(int index, int curValue, int prevValue, int targetIndex)
-```
+a. Copy over the method `merge` from [this code](Recursion.java) so that you can focus on the recursive portion of mergesort.
 
-where `targetIndex` is `k` and `index` starts at a small number to track where you currently are in the sequence.
+b. A naive version of mergesort requires creating many small arrays. To reduce the *space complexity* of mergesort, you should create one extra array that can be used by all of the recursive calls. `merge` assumes that you will pass in this extra array along with the index positions that mark the two subarrays to be merged. Test the provided `merge` function by using it in `main` to merge the subarrays `[3, 5, 7, 9]` and `[0, 2, 4, 6]`. Note that `merge` expects these subarrays to be in the same array. You don't need to understand exactly what `merge` is doing, just how to use it.
 
-Make sure to test your function for a few numbers, for example:
+c. Finally, create a recursive `static` mergesort that follows the steps discussed in class:
+
+* Check for the base case, otherwise 
+* split into two subarrays,
+* use mergesort to sort both subarrays, and
+* use `merge` to merge the sorted subarrays back together with the items in the correct order
+
+Your mergesort should have the following signature:
 ```
-System.out.println(Recursion.fibonacci(1, 1, 0, 4));
-//Should print 3
+public static void mergesort(int[] array, int[] temp, int start, int end)
 ```
 
 ## Submission
