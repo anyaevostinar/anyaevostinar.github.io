@@ -84,17 +84,23 @@ For this lab, you’ll make several <code class="language-plaintext highlighter-
 <p>Remember to test it in <code class="language-plaintext highlighter-rouge">main</code>.</p>
 
 <h2 id="exercise-3">Exercise 3</h2>
-<p>The Fibonacci sequence is the sequence 0, 1, 1, 2, 3, 5, 8, 13,… where the number at index <code class="language-plaintext highlighter-rouge">k</code> is equal to the sum of the numbers at <code class="language-plaintext highlighter-rouge">k−1</code> and <code class="language-plaintext highlighter-rouge">k−2</code>. Write a recursive function for calculating the kth Fibonacci number that does as little repeated work as possible.</p>
+<p>Finally, you will implement a <code class="language-plaintext highlighter-rouge">static</code> recursive mergesort function.</p>
 
-<p>You should implement a version that counts up instead of down to reduce the amount of work. You should start with a method signature:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public static int fibonacci(int index, int curValue, int prevValue, int targetIndex)
-</code></pre></div></div>
+<p>a. Copy over the method <code class="language-plaintext highlighter-rouge">merge</code> from <a href="/classes/201-f21/Recursion.java">this code</a> so that you can focus on the recursive portion of mergesort.</p>
 
-<p>where <code class="language-plaintext highlighter-rouge">targetIndex</code> is <code class="language-plaintext highlighter-rouge">k</code> and <code class="language-plaintext highlighter-rouge">index</code> starts at a small number to track where you currently are in the sequence.</p>
+<p>b. A naive version of mergesort requires creating many small arrays. To reduce the <em>space complexity</em> of mergesort, you should create one extra array that can be used by all of the recursive calls. <code class="language-plaintext highlighter-rouge">merge</code> assumes that you will pass in this extra array along with the index positions that mark the two subarrays to be merged. Test the provided <code class="language-plaintext highlighter-rouge">merge</code> function by using it in <code class="language-plaintext highlighter-rouge">main</code> to merge the subarrays <code class="language-plaintext highlighter-rouge">[3, 5, 7, 9]</code> and <code class="language-plaintext highlighter-rouge">[0, 2, 4, 6]</code>. Note that <code class="language-plaintext highlighter-rouge">merge</code> expects these subarrays to be in the same array. You don’t need to understand exactly what <code class="language-plaintext highlighter-rouge">merge</code> is doing, just how to use it.</p>
 
-<p>Make sure to test your function for a few numbers, for example:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>System.out.println(Recursion.fibonacci(1, 1, 0, 4));
-//Should print 3
+<p>c. Finally, create a recursive <code class="language-plaintext highlighter-rouge">static</code> mergesort that follows the steps discussed in class:</p>
+
+<ul>
+  <li>Check for the base case, otherwise</li>
+  <li>split into two subarrays,</li>
+  <li>use mergesort to sort both subarrays, and</li>
+  <li>use <code class="language-plaintext highlighter-rouge">merge</code> to merge the sorted subarrays back together with the items in the correct order</li>
+</ul>
+
+<p>Your mergesort should have the following signature:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public static void mergesort(int[] array, int[] temp, int start, int end)
 </code></pre></div></div>
 
 <h2 id="submission">Submission</h2>

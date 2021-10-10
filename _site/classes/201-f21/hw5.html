@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>HW 5 Experiments with Quicksort | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW 5 Experiments with Quicksort" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f21/hw5" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f21/hw5" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW 5 Experiments with Quicksort" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-f21/hw5","@type":"WebPage","headline":"HW 5 Experiments with Quicksort","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW 5 Experiments with Quicksort</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>30 points, due Friday Oct 22nd by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy. You need to notify me that you’re using the policy. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still the deadline, not 48 hours later.</p>
+
+<h2 id="goals">Goals</h2>
+<p>To study the performance characteristics of quicksort with several different pivot choices and hone your analysis skills.</p>
+
+<h2 id="assignment-type-and-collaborative-learning-expectations">Assignment Type and Collaborative Learning Expectations</h2>
+<p>This is a homework assignment that you’ll be handing in on Moodle.</p>
+
+<p>You will be able to start the code for this assignment with a partner, however the bulk of the assignment will be done individually.
+Specifically, you can implement the <code class="language-plaintext highlighter-rouge">MedianOf3PivotSelector</code> class with your in-class partner. However, the rest of the assignment (conducting experiments and writing the memo) must be completed individually and treated as an individual homework assignment. See the <a href="collaboration">collaboration policy</a> for details.</p>
+
+<h2 id="setup-and-requirements">Setup and Requirements</h2>
+<p>Mount COURSES, download the <a href="/classes/201-f21/HW5Starter.zip">HW5 starter code</a> and move it to your StuWork/username folder. You should follow the same process of compressing your files and uploading them to Moodle to submit your homework.</p>
+
+<p>Create a file <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the <a href="collaboration">Collaboration page</a> on what collaborations are allowed for homework assignments.
+In particular, make sure to record the name of your in-class partner in the <code class="language-plaintext highlighter-rouge">Collaborations.txt</code>.</p>
+
+<p>In this assignment, you’ll be doing a mixture of coding, designing timing experiments, and analyzing your results. You’ll be thinking through what timing data makes sense to collect, and writing your reasoning in a short report. You will need to create a PDF file with your report and upload it in addition to the zip of your code.</p>
+
+<h2 id="provided-code">Provided Code</h2>
+<p>There are a variety of different ways that the pivot can be selected in quicksort. In this investigation, you’ll explore the consequences of the pivot selection method on quicksort’s run time.</p>
+
+<p>I’ve provided you with an implementation of quicksort in <code class="language-plaintext highlighter-rouge">Quicksort.java</code>. The public quicksort method takes in two arguments: an array of <code class="language-plaintext highlighter-rouge">int</code>s to sort and a <code class="language-plaintext highlighter-rouge">PivotSelector</code> instance. <code class="language-plaintext highlighter-rouge">PivotSelector</code> is an interface that I’ve provided that has one method: <code class="language-plaintext highlighter-rouge">choosePivotIndex</code>, which returns the <strong>index</strong> (not value!) of the <code class="language-plaintext highlighter-rouge">int</code> that we’ll use as the pivot. Your job is to examine how variations in pivot selection impact run time for different arrays. I’ve included an example of how to collect timing data in <code class="language-plaintext highlighter-rouge">main</code> of <code class="language-plaintext highlighter-rouge">Quicksort.java</code>, and you’ll change or replace my code to collect the data that you want.</p>
+
+<p>You should first compile everything and run the <code class="language-plaintext highlighter-rouge">Quicksort.java</code> file to see what it does.</p>
+
+<h2 id="medianof3pivotselector">MedianOf3PivotSelector</h2>
+
+<p>Your next task is to implement a new <code class="language-plaintext highlighter-rouge">PivotSelector</code> named <code class="language-plaintext highlighter-rouge">MedianOf3PivotSelector</code> in its own <code class="language-plaintext highlighter-rouge">.java</code> file. It should return the <strong>index</strong> of the median of the first, middle, and last <strong>elements</strong> between indices <code class="language-plaintext highlighter-rouge">first</code> and <code class="language-plaintext highlighter-rouge">last</code> in the array.</p>
+
+<p>You should be sure to test your pivot selector, for example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MedianOf3PivotSelector test = new MedianOf3PivotSelector();
+int[] array = {20, 0, 10};
+System.out.println(test.choosePivotIndex(array, 0, 2)); // Should print 2
+</code></pre></div></div>
+
+<h2 id="experimenting">Experimenting</h2>
+<p>(Remember that this portion of the homework must be completed individually.)</p>
+
+<p>Now you should change the code in <code class="language-plaintext highlighter-rouge">main</code> of <code class="language-plaintext highlighter-rouge">Quicksort.java</code> to test all three pivot selector approaches on a variety of arrays, including those with:</p>
+
+<ul>
+  <li>varying numbers of duplicate items</li>
+  <li>varying amounts of sortedness (in both directions)</li>
+  <li>varying lengths</li>
+</ul>
+
+<p>You can use many different array sizes to explore the questions in this assignment. Make sure the arrays you’re choosing are big enough to show real differences. If all of your experiments take only 1 or 2 milliseconds, it will be very hard to understand how your variations are related to differences in timing. Instead, use an array that’s big enough to take at least hundreds of milliseconds to sort.</p>
+
+<h2 id="memo">Memo</h2>
+<p>(Remember that this portion of the homework must be completed individually.)</p>
+
+<p>You should now write an approximately 2 page (single-spaced) memo recommending which pivot selection method should be used and presenting evidence to support your position. Your evidence might include plots and/or tables of timing data. The page number recommendation includes any charts and plots; it can be shorter as long as your communicate all of the needed information, it can also be longer if you would like. (All that means that I expect that to answer the prompt, you’ll need about 2 pages, but it isn’t a hard rule.)</p>
+
+<p>Your memo should assume that average run time is the most important consideration, but if run times are similar, it might discuss other reasons to prefer or disprefer a particular method. The memo should at least briefly discuss whether the length of the array to sort influences which selection method to choose and whether characteristics of the numbers in the array or their initial ordering (e.g., many duplicates, degree of sortedness) impact which selection method to choose.</p>
+
+<p>In your report, you should describe the timing experiments you performed and the data you collected. You should make sure to explain how the evidence you collected supports your claims, and explain your choices about what evidence to collect for each question. I encourage you to think carefully about how to connect evidence and explanations. Imagine your report is intended to help someone make decisions related to this investigation - what information do they need to know? Why do you think the timing data looks the way it does based on what you know about how the algorithm works? You should try to design your experiments in a way that will be convincing to the reader. How could you compensate for the fact that timing data is “noisy,” with the same code sometimes taking a little longer or shorter to run? You’re welcome to chat with me or your prefect about your approach.</p>
+
+<p>Your memo will be evaluated based on its clarity and how well you use evidence to support your claims, including whether you collected appropriate evidence for those claims. Your evidence collection will be evaluated based on your descriptions and by looking at the code you write in <code class="language-plaintext highlighter-rouge">main</code> to collect the evidence.</p>
+
+<p>You must turn your memo into a PDF for submission.</p>
+
+<h2 id="readme">README</h2>
+<p>As always, you should include a README for this homework, though it will be shorter than normal and focused on the <code class="language-plaintext highlighter-rouge">MedianOf3PivotSelector</code>. 
+It should include a brief overview of the code, and a short example of how to run your program and see its interesting behavior.</p>
+
+<h2 id="grading">Grading</h2>
+<p>Here is how your assignment will be graded:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Median of 3 pivot selector implemented correctly</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Analyzed effect of length of array</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Analyzed effect of initial ordering</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Analyzed effect of duplicated items</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Explains convincingly why evidence supports the claim</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Memo makes a recommendation of which pivot approach to use</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Evidence presented clearly</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Memo organized well</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>README complete</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="submission">Submission</h2>
+<p>Remember to update your <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> file with any sources that you consulted, especially who you worked with on your <code class="language-plaintext highlighter-rouge">MedianOf3PivotSelector</code>, if anyone.</p>
+
+<p>Then make a .zip of your files and upload it to Moodle. Even if you started the homework with a partner in class, you must upload project individually for this homework assignment.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>There are lots of other ways of choosing a pivot, so if you are interested, you are welcome to implement more and test them as well.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
