@@ -110,7 +110,7 @@ a. In terms of the number of items in the array, which you should call `n`, how 
 
 b. What is the Big-O of this function? Justify your answer by demonstrating values for C and n<sub>0</sub>, as you did in the [Analysis Lab](analysis-activity).
 
-c. How does this compare to adding to the end of a linked list if you have a `tail` or `lastNode` pointer?
+c. How does this compare to adding to a specific position of a linked list?
 
 ## Submitting
 This lab is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaboration section) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck.
