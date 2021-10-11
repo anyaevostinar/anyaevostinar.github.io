@@ -2,7 +2,7 @@
 layout: page
 title: Array Efficiency Lab
 permalink: /classes/201-f21/array-efficiency
-published: false
+published: true
 ---
 
 ## Goals

@@ -30,7 +30,6 @@ For this lab, you'll make several `static` recursive functions in this class and
 
 ## Exercise 1
 
-
 a. The website [CodingBat](https://codingbat.com/) has several good practice problems for recursion. Solve the [bunny ears](https://codingbat.com/prob/p107330) problem. You can type your code either in VSCode or the website, but you should test your code on the website and then paste your solution into your VSCode file in `Recursion.java`.
 
 b. CodingBat does some work behind the scenes to let you just put in the function. To run your functions locally, you'll need to make them `static` so that you don't have to create an instance of `Recursion` (since that'd be weird), and then call them in `main`:
