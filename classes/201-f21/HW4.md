@@ -99,8 +99,8 @@ This is how you will be graded on this homework:
 
 | Item | Points |
 |-------|--------|
-| Top X countries for each indicator works | 6 |
-| Bottom X countries for each indicator works | 6 |
+| User can get list of top X countries for each indicator | 6 |
+| User can get list of bottom X countries for each indicator | 6 |
 | Information from end of list retrieved efficiently | 6 |
 | `CountryComparator` implemented and used correctly | 3 |
 | README clear and complete | 6 |
