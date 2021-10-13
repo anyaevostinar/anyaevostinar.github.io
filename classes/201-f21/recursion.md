@@ -2,7 +2,7 @@
 layout: page
 title: Recursion Review
 permalink: /classes/201-f21/recursion
-published: false
+published: true
 ---
 
 ## Goals
