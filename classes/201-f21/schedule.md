@@ -33,7 +33,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 10/15 | HW4; Reading: Carrano **16.1** & **16.10-16.14** |	Quicksort	| [HW5: Quicksort Analysis](hw5) |
 | Week 6 | | Trees | |
 | M 10/18	| |	Mid-term Break!	| |
-| W 10/20 | Reading: Carrano **24.1-24.10** & **24.28-24.30** |	Binary Search Trees| |
+| W 10/20 | Reading: Carrano **24.1-24.10** & **24.28-24.30** |	[Binary Search Trees](BST-lab)| |
 | F 10/22 | HW5; Reading: Carrano **24.12-24.16** & **25.11**	| Tree traversals	| [HW6: WordCloud Maker] |
 | Week 7 | | Advanced Trees | |
 | M 10/25 | |		[2-3 Trees]	| |

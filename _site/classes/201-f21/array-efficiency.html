@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Array Efficiency Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Array Efficiency Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f21/array-efficiency" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f21/array-efficiency" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Array Efficiency Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-f21/array-efficiency","@type":"WebPage","headline":"Array Efficiency Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Array Efficiency Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To get a better understanding of the time complexity of operations with an array-based list compared to a linked list.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Monday Oct 11th, but it isn’t due until Wednesday Oct 13th at 5:00pm Central.</p>
+
+<p>There is no coding in this assignment, so you will submit a PDF of your solutions. You have several options for how to produce this PDF:</p>
+<ul>
+  <li>Write it by hand and scan it into a PDF. If you do this, you must write very neatly and clearly. Make sure to check that your scan is completely legible!</li>
+  <li>Write it in a word processing program, then export or print it to PDF.</li>
+  <li>Write it in LaTeX and typeset it as a PDF. LaTeX is complicated to use at first but allows you to format math very nicely. <a href="https://www.overleaf.com/">Overleaf.com</a> is a nice website to use for writing LaTeX.</li>
+</ul>
+
+<p>I recommend just using a word processing program and exporting/printing to PDF!</p>
+
+<p>You should work on this with your in-class partner, but you both need to submit separately and therefore, if you are writing on paper, you both need to be writing your own copies.
+If you finish it outside of class without your partner, note which sections you completed together and which you completed separately in your Collaborations section.</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>Create a Collaborations section of your document and describe any people you get help from on this lab. Also note any outside sources such as websites that you referenced.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Here is a function from an array-based list implementation for getting the item at a particular index:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public String get(int position) {
+    if(position&lt;0){
+        throw new IndexOutOfBoundsException();
+    } else if(position&lt;numItems) {
+        return array[position];
+    } else {
+        throw new IndexOutOfBoundsException();
+    }
+}
+</code></pre></div></div>
+<p>This array-based list maintains the following instance variables:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">numItems</code> is an integer representing the number of items in the list</li>
+  <li><code class="language-plaintext highlighter-rouge">capacity</code> is an integer representing the actual size of the array (i.e. <code class="language-plaintext highlighter-rouge">array.length</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">array</code> is the array that holds the items in the list</li>
+</ul>
+
+<p>a. In terms of the number of items in the array, which you should call <code class="language-plaintext highlighter-rouge">n</code>, how many basic operations are executed by this function in the worst case? (Don’t over think this!)</p>
+
+<p>b. What is the Big-O of this function? Justify your answer by demonstrating values for C and n<sub>0</sub>, as you did in the <a href="analysis-activity">Analysis Lab</a>.</p>
+
+<p>c. How does this compare to the time complexity of retrieving an item from a linked list?</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Here is a function from the same array-based list implementation for adding to the end of the array:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    public void add(String newItem) {
+        if(numItems == capacity) {
+            String[] oldArray = array;
+            capacity = capacity * 2;
+            array = new String[capacity];
+            for(int i = 0; i&lt;numItems; i++){
+                array[i] = oldArray[i];
+            }
+        }
+        array[numItems] = newItem;
+        numItems++;
+    }
+</code></pre></div></div>
+
+<p>a. In terms of the number of items in the array, which you should call <code class="language-plaintext highlighter-rouge">n</code>, how many basic operations are executed by this function in the worst case?</p>
+
+<p>b. What is the Big-O of this function? Justify your answer by demonstrating values for C and n<sub>0</sub>, as you did in the <a href="analysis-activity">Analysis Lab</a>.</p>
+
+<p>c. How does this compare to adding to the end of a linked list if you have a <code class="language-plaintext highlighter-rouge">tail</code> or <code class="language-plaintext highlighter-rouge">lastNode</code> pointer?</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Here is another method of the array-based list for adding an item at a specific position in the array:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   public void add(int index, String newItem) {
+        if(index == numItems) {
+            add(newItem);
+            return;
+        } else if(index&gt;numItems) {
+            throw new IndexOutOfBoundsException();
+        }
+        
+        if(numItems == capacity) {
+            String[] oldArray = array;
+            capacity = capacity * 2;
+            array = new String[capacity];
+            for(int i = 0; i&lt;index; i++){
+                array[i] = oldArray[i];
+            }
+            array[index] = newItem;
+            for(int i = index; i&lt;numItems; i++) {
+                array[i+1] = oldArray[i];
+            }
+        } else {
+            for(int i = numItems-1; i&gt;=index; i--) {
+                array[i+1] = array[i];
+            }
+            array[index] = newItem;
+        }
+        numItems++;
+        
+    }
+</code></pre></div></div>
+
+<p>a. In terms of the number of items in the array, which you should call <code class="language-plaintext highlighter-rouge">n</code>, how many basic operations are executed by this function in the <strong>worst case</strong>?</p>
+
+<p>b. What is the Big-O of this function? Justify your answer by demonstrating values for C and n<sub>0</sub>, as you did in the <a href="analysis-activity">Analysis Lab</a>.</p>
+
+<p>c. How does this compare to adding to a specific position of a linked list?</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>This lab is not a homework assignment. That means that you’re evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren’t able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaboration section) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck.</p>
+
+<p>Remember that you need to submit your lab separately from your partner.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you finish early and want to get more practice, figure out the answers for removing an item from the list as well.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

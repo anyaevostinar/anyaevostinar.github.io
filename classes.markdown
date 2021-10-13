@@ -14,7 +14,7 @@ Subject to change!
 
 ### Winter 2022
 
-CS 251: Programming Languages
+CS 111: Intro to CS
 
 ### Spring 2022
 
