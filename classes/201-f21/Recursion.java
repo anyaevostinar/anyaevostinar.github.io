@@ -4,10 +4,11 @@ public class Recursion {
      * Does not return anything, changes the values of array itself. 
      * Based on Carrano and Henry's algorithm.
      * @param array the array holding the subarrays to be merged
-     * @param temp the array to temporarily place items into
-     * @param first the first item in the first subarray
-     * @param mid the last item in the first subarray
-     * @param last the last item in the last subarray
+     * @param temp the array to temporarily place items into, 
+     *  should be the same size as array
+     * @param first the index of first item in the first subarray
+     * @param mid the index of last item in the first subarray
+     * @param last the index of last item in the last subarray
      */
     public static void merge(int[] array, int[] temp, int first, int mid, int last) {
         int beginHalf1 = first;

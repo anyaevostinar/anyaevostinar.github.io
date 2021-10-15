@@ -39,7 +39,3 @@ CS 201: Data Structures ([Syllabus](/classes/201-w21/syllabus)) ([Schedule](/cla
 ### Fall 2020
 
 CS 201: Data Structures ([Syllabus](/classes/201-f20/syllabus)) ([Schedule](/classes/201-f20/schedule))
-
-### Earlier
-
-For the time being, classes I taught at Grinnell College are at [my previous website](https://vostinar.sites.grinnell.edu/).
