@@ -64,11 +64,14 @@ The construction of this recursive method is a bit more complicated than `get` b
 
 7. Think about why you couldn't have a base case that just checks if `subRoot` is null and sets `subRoot` equal to the new node. We'll discuss as a class.
 
+## Extensions
+If you have extra time, try
+* changing `add` and `addHelper` so that instead of returning a `boolean`, they return a `BSTNode` and have a structure more similar to `getHelper`. Be careful with making sure that a duplicate key doesn't erase the previous key.
+* implementing `remove`
+
 ## Submission
 Compress your files as a zip, and upload that zip to Moodle under the appropriate assignment.
 Remember that partners need to submit their code separately and you should share the code you wrote in class with your partner.
 
 This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the code to indicate things you tried but what went wrong/where you got stuck.
 
-## Extensions
-If you have extra time, try changing `add` and `addHelper` so that instead of returning a `boolean`, they return a `BSTNode` and have a structure more similar to `getHelper`. Be careful with making sure that a duplicate key doesn't erase the previous key.
