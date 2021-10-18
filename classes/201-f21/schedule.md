@@ -36,8 +36,8 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 10/20 | Reading: Carrano **24.1-24.10** & **24.28-24.30** |	[Binary Search Trees](BST-lab)| |
 | F 10/22 | HW5; Reading: Carrano **24.12-24.16** & **25.11**	| Tree traversals	| [HW6: WordCloud Maker](hw6) |
 | Week 7 | | Advanced Trees | |
-| M 10/25 | |		[2-3 Trees]	| |
-| W 10/27 | |	[Heapsort]		 | |
+| M 10/25 | Reading: Carrano **26.40-26.41** & **28.13-28.22** |		[2-3 Trees](two-three-tree)	| |
+| W 10/27 | Reading: Carrano **24.32** & **27.2-27.3** & **27.5** & **27.9** [Heap Computational Fairytale](http://computationaltales.blogspot.com/2011/04/president-of-heap.html)|	[Heaps]		 | |
 | F 10/29 |	HW6 |	[Priority Queues]	| [HW7: Flashcard Displayer] |
 | Week 8 | | Graphs | |
 | M 11/1 |  |		[Complexity of DFS and BFS]	| |

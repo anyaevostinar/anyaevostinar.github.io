@@ -18,15 +18,29 @@ You're welcome to work on this lab with input from one or more members of your c
 Using the Add File button on repl.it, add a Collaborations.txt file and describe any interactions you have with your collaborative learning group on this lab. Also note any outside sources such as websites that you referenced. If you do not collaborate or check any outside websites, you should state that in Collaborations.txt.
 
 ## Exercise 1
-You will ultimately implement all of the insert methods. Note that there are 'add' methods already implemented for you that handle the process splitting nodes and promoting values for you.
+You will ultimately implement all of the insert methods. Note that there are 'add' methods already implemented for you that handle the process of splitting nodes and promoting values for you.
 
-a. The first case you should consider is inserting a key into an empty tree. Check if the root is null and if so, create a new Node that has the key as the left value (using the provided Node constructor).
+a. You'll start by implementing part of `insertHelp`. The first case you should consider is inserting a key into an empty tree. Check if the root is null and if so, set it to be a new Node that has the key as the left value (using the provided Node constructor) and return it.
 
-b. Compile and run your code to verify that the number 15 is inserted as the left value of the root of the tree.
+b. Compile and run your code to verify that the number 15 is inserted as the left value of the root of the tree:
 
-c. The second case you should consider is if the root doesn't have any children (you can use the `isLeaf()` method for checking this). In this case, you should call the `add()` method and pass it a new Node with the key as the left value. The `add()` method will take care of either adding the key to open space in the root or creating a child.
+```
+-----------------------
+ |15-null| 
 
-d. Go down to the `main` method and uncomment one of the insert lines and verify that your code compiles and runs correctly.
+--------------------------
+```
+
+c. The second case you should consider is if the root doesn't have any children (you can use the `isLeaf()` method for checking this). In this case, you should call the `add()` method on the root and pass it a new Node with the key as the left value. The `add()` method will take care of either adding the key to open space in the root or creating a child. You should read the documentation for the `add()` method to understand how to use it.
+
+d. Go down to the `main` method and uncomment the next insert line and verify that your code compiles and runs correctly:
+
+```
+-----------------------
+ |1-15| 
+
+--------------------------
+```
 
 ## Exercise 2
 Next you will need to handle the cases where the root has children and so you need to recursively call insert on the appropriate one.
@@ -39,7 +53,15 @@ c. You should then check if the thing returned is the same object as the root's 
 
 d. If the objects are not the same, the left child had to split and the node returned contains the promoted value that will need to be added to the root. Call the `add` method on the root and pass the new left child. You can't just set the child yourself because the values of the split left child may need to be shuffled around, which `add` takes care of for you.
 
-e. Look at the possible values that you could add in the `main` method and choose a line(s) to uncomment that will use your `insertLeft` method and verify that your code compiles and run correctly.
+e. Look at the possible values that you could add in the `main` method and choose a line(s) to uncomment that will use your `insertLeft` method and verify that your code compiles and runs correctly.
+
+```
+-----------------------
+ |1-null| 
+ |0-null|  |15-null| 
+
+--------------------------
+```
 
 ## Exerise 3
 Next you'll implement the `insertCenter` method.
@@ -48,7 +70,15 @@ a. There are two cases when you should call `insertCenter`: if the root doesn't 
 
 b. `insertCenter` will be implemented the same way that `insertLeft` was implemented: Call `insertHelp` and pass the center child of the root, save what is returned, check if the center child had to split, and if so, use `add` to place the promoted center value into the correct spot.
 
-c. Decide on another line(s) to uncomment in `main` to test your `insertCenter` method and verify that your code compiles and runs correctly.
+c. Decide on another line(s) to uncomment in `main` to test your `insertCenter` method and verify that your code compiles and runs correctly, for example:
+
+```
+-----------------------
+ |5-null| 
+ |1-null|  |15-null| 
+
+--------------------------
+```
 
 ## Exercise 4
 
