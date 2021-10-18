@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
 <meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
-<link rel="canonical" href="http://localhost:4000/classes/201-w21/two-three-tree" />
-<meta property="og:url" content="http://localhost:4000/classes/201-w21/two-three-tree" />
+<link rel="canonical" href="http://localhost:4000/classes/201-f21/two-three-tree" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f21/two-three-tree" />
 <meta property="og:site_name" content="Anya E. Vostinar" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="2-3 Tree Lab" />
 <script type="application/ld+json">
-{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-w21/two-three-tree","@type":"WebPage","headline":"2-3 Tree Lab","@context":"https://schema.org"}</script>
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-f21/two-three-tree","@type":"WebPage","headline":"2-3 Tree Lab","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
 <body><header class="site-header" role="banner">
@@ -46,19 +46,24 @@
 <p>To better understand 2-3 Trees by implementing the insert method.</p>
 
 <h2 id="logistics">Logistics</h2>
-<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Friday Feb 19th, but it isn’t due until Monday Feb 22nd at 5:00pm Central.</p>
+<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Monday Oct 25th, but it isn’t due until Wednesday Oct 27th at 5:00pm Central.</p>
 
-<p>Open the 2-3 Tree project on Repl.it.</p>
+<p>You should work on this with your in-class partner, but you both need to submit separately. 
+If you finish it outside of class without your partner, note which sections you completed together and which you completed separately in your <code class="language-plaintext highlighter-rouge">Collaborations.txt</code>.</p>
 
-<p>You’re welcome to work on this lab with input from one or more members of your collaborative learning group. You should write all of your own code, but you’re welcome to share your screen with members of your collaborative learning group to look at one another’s code, make suggestions, and compare ideas. Take a look at the Collaboration Policies document on Moodle if you have any questions about what’s permitted.</p>
-
-<h2 id="exercise-0">Exercise 0</h2>
-<p>Using the Add File button on repl.it, add a Collaborations.txt file and describe any interactions you have with your collaborative learning group on this lab. Also note any outside sources such as websites that you referenced. If you do not collaborate or check any outside websites, you should state that in Collaborations.txt.</p>
+<h2 id="setup">Setup</h2>
+<p><a href="https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&amp;title=CS+111+and+201+workflow+in+CS+labs">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">23TreeLab</code></li>
+  <li>Create your <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> document in that folder</li>
+  <li>Download the <a href="/classes/201-f21/2-3-Tree-Lab-Starter.zip">starter code</a> and put it into your BSTLab folder</li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">23TreeLab</code> folder in VSCode</li>
+</ul>
 
 <h2 id="exercise-1">Exercise 1</h2>
-<p>You will ultimately implement all of the insert methods. Note that there are ‘add’ methods already implemented for you that handle the process of splitting nodes and promoting values for you.</p>
+<p>You will ultimately implement all of the <code class="language-plaintext highlighter-rouge">insert</code> methods. Note that there are <code class="language-plaintext highlighter-rouge">add</code> methods already implemented for you that handle the process of splitting nodes and promoting values for you. You are welcome to look at them, but don’t worry about understanding them completely (managing the nodes of a 2-3 Tree is complicated!).</p>
 
-<p>a. You’ll start by implementing part of <code class="language-plaintext highlighter-rouge">insertHelp</code>. The first case you should consider is inserting a key into an empty tree. Check if the root is null and if so, set it to be a new Node that has the key as the left value (using the provided Node constructor) and return it.</p>
+<p>a. You’ll start by implementing part of <code class="language-plaintext highlighter-rouge">insertHelp</code>. The first case you should consider is inserting a key into an empty tree. Check if <code class="language-plaintext highlighter-rouge">rt</code> is null and if so, set it to be a new Node that has the key as the left value (using the provided Node constructor) and return it. (You’ll frequently be returning the root, it’s part of managing the splitting of nodes.)</p>
 
 <p>b. Compile and run your code to verify that the number 15 is inserted as the left value of the root of the tree:</p>
 
@@ -68,7 +73,7 @@
 --------------------------
 </code></pre></div></div>
 
-<p>c. The second case you should consider is if the root doesn’t have any children (you can use the <code class="language-plaintext highlighter-rouge">isLeaf()</code> method for checking this). In this case, you should call the <code class="language-plaintext highlighter-rouge">add()</code> method on the root and pass it a new Node with the key as the left value. The <code class="language-plaintext highlighter-rouge">add()</code> method will take care of either adding the key to open space in the root or creating a child. You should read the documentation for the <code class="language-plaintext highlighter-rouge">add()</code> method to understand how to use it.</p>
+<p>c. The second case you should consider is if the root doesn’t have any children (you can use the <code class="language-plaintext highlighter-rouge">isLeaf()</code> method for checking this). In this case, you should call the <code class="language-plaintext highlighter-rouge">add()</code> method on the root and pass it a new <code class="language-plaintext highlighter-rouge">Node</code> with the key as the left value. The <code class="language-plaintext highlighter-rouge">add()</code> method will take care of either adding the key to open space in the root or creating a child. You should read the documentation for the <code class="language-plaintext highlighter-rouge">add()</code> method to understand how to use it.</p>
 
 <p>d. Go down to the <code class="language-plaintext highlighter-rouge">main</code> method and uncomment the next insert line and verify that your code compiles and runs correctly:</p>
 
@@ -77,6 +82,8 @@
 
 --------------------------
 </code></pre></div></div>
+
+<p>You can also compare your tree to this <a href="https://www.cs.usfca.edu/~galles/visualization/BTree.html">2-3 tree visualization</a>. (Sorry that our print method isn’t quite as fancy!)</p>
 
 <h2 id="exercise-2">Exercise 2</h2>
 <p>Next you will need to handle the cases where the root has children and so you need to recursively call insert on the appropriate one.</p>
@@ -120,10 +127,14 @@
 
 <p>b. Uncomment the last lines or add additional lines to test your <code class="language-plaintext highlighter-rouge">insertRight</code> method and verify that your code compiles and runs correctly.</p>
 
-<h2 id="submitting">Submitting</h2>
-<p>This activity is not a homework assignment. That means that you’re evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren’t able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck.</p>
+<h2 id="extensions">Extensions</h2>
+<p>If you have extra time, try figuring out how to delete a key from the 2-3 tree.</p>
 
-<p>Submit your zip file to Moodle as always.</p>
+<h2 id="submission">Submission</h2>
+<p>Compress your files as a zip, and upload that zip to Moodle under the appropriate assignment.
+Remember that partners need to submit their code separately and you should share the code you wrote in class with your partner.</p>
+
+<p>This activity is not a homework assignment. That means that you’re evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren’t able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the code to indicate things you tried but what went wrong/where you got stuck.</p>
 
   </div>
 

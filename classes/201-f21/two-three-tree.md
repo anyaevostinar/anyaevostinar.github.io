@@ -2,7 +2,7 @@
 layout: page
 title: 2-3 Tree Lab
 permalink: /classes/201-f21/two-three-tree
-published: true
+published: false
 ---
 
 ## Goals
