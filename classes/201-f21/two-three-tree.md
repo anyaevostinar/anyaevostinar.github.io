@@ -18,7 +18,7 @@ If you finish it outside of class without your partner, note which sections you 
 [Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=CS+111+and+201+workflow+in+CS+labs) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `23TreeLab`
 * Create your `Collaborations.txt` document in that folder
-* Download the [starter code](2-3-Tree-Lab-Starter.zip) and put it into your BSTLab folder
+* Download the [starter code](2-3-Tree-Lab-Starter.zip) and put it into your 23TreeLab folder
 * Open your `23TreeLab` folder in VSCode
 
 ## Exercise 1

@@ -29,12 +29,12 @@ b. You'll also need to set up your Node constructor by setting the instance vari
 
 c. Next you'll need to set up the `parent` method of `Heap` which takes a position and returns the Node at the parent position of `nodes`. Refer to the reading for how to calculate what position that will be.
 
-d. Finally implement the `test` method by having it put three Nodes manually into your `nodes` ArrayList and setting all the other things up correctly about those Nodes, such as which is the root and the parent of the second two nodes. Within `test` also call `compareTo` and `parent` to verify those methods are working correctly.
+d. Finally implement the `test` method by having it put three `Node`s manually into your `nodes` `ArrayList` and setting all the other things up correctly about those `Node`s, such as which is the root and the parent of the second two nodes, assuming a max heap based on priority. Within `test` also call `compareTo` and `parent` to verify those methods are working correctly.
 
 ## Exercise 2
 Now you'll implement the main pieces of your heap.
 
-a. Implement the swap method so that it swaps the priorities and values of the nodes, but not the nodes themselves. Think of the nodes as the offices, which don't change, and just the occupants of the office change. This means you won't have to change the parent settings at all.
+a. Implement the `swap` method so that it swaps the priorities and values of the nodes, but not the nodes themselves. Think of the nodes as the offices, which don't change, and just the occupants of the office change. This means you won't have to change the parent settings at all.
 
 b. Update your test method so that it checks that swap is working.
 
