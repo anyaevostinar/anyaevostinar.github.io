@@ -2,7 +2,7 @@
 layout: page
 title: Binary Search Tree Lab
 permalink: /classes/201-f21/BST-lab
-published: false
+published: true
 ---
 
 ## Goals
