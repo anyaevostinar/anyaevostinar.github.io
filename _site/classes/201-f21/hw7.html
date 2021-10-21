@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>HW 7 Flashcard Displayer | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW 7 Flashcard Displayer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f21/hw7" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f21/hw7" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW 7 Flashcard Displayer" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-f21/hw7","@type":"WebPage","headline":"HW 7 Flashcard Displayer","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW 7 Flashcard Displayer</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>30 points, due Friday Nov 5th by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy.  You or your partner need to notify me that you’re using the policy via email, CC’ing the partner. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally</p>
+
+<h2 id="goals">Goals</h2>
+<p>To implement a heap and use it as a priority queue. You’ll deepen your understanding of the heap operations by adapting them to a new application.</p>
+
+<h2 id="assignment-type-and-collaborative-learning-expectations">Assignment Type and Collaborative Learning Expectations</h2>
+<p>This is a homework assignment that you’ll be handing in on Moodle.</p>
+
+<p>You must work on this homework with your assigned partner (if you have one) via pair programming. That means that you cannot write <strong>any</strong> code without your partner and you must both be fully engaged and discussing the code at all times while working. See the <a href="collaboration">collaboration policy</a> for details.</p>
+
+<h2 id="setup-and-requirements">Setup and Requirements</h2>
+<p>Mount COURSES, download the <a href="/classes/201-f21/HW7Starter.zip">HW 7 Starter Code</a> and move it to your StuWork/username folder. You should follow the same process of compressing your files and uploading them to Moodle to submit your homework.</p>
+
+<p>Create a file <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the <a href="collaboration">Collaboration page</a> on what collaborations are allowed for homework assignments.</p>
+
+<h2 id="setup-and-requirements-1">Setup and Requirements</h2>
+<p>In this assignment, you’ll build a flashcard displaying program. You’ll allow the user to load flashcards from a file, which will include a priority level for the flashcard, and display all the flashcards until the user decides they are done for the session. The highest priority level flashcard should be shown to the user next and the priority will be updated based on if the user gets it right or not. If the user gets the flashcard right, the priority level will be lowered. If the user gets it wrong, the priority level will be increased. You’ll also save the flashcards with their updated priority levels so a user could then continue studying at a later time.</p>
+
+<p>Create a file Collaborations.txt and put in any collaboration with your learning group or references to outside websites.</p>
+
+<h3 id="storing-flashcards">Storing Flashcards</h3>
+<p>First look at the starter code for the <code class="language-plaintext highlighter-rouge">Flashcard</code> class that stores the front and back of the flashcard as well as its priority level. You should implement the methods that are in that file.</p>
+
+<p>You are welcome to implement other methods in addition to these if you find them helpful.</p>
+
+<h3 id="implementing-a-priority-queue">Implementing a Priority Queue</h3>
+<p>Next you’ll implement the class <code class="language-plaintext highlighter-rouge">FlashcardPQ</code> that implements a priority queue by making a max-heap. Your class implements the provided interface <code class="language-plaintext highlighter-rouge">PriorityQueue</code> for <code class="language-plaintext highlighter-rouge">Flashcard</code>s, though the methods are just stubs currently.</p>
+
+<p>You should adapt the code from the reading to make an <strong>array-based max heap</strong>. You may use an array or an <code class="language-plaintext highlighter-rouge">ArrayList</code> (remember that if you use an array, you have to deal with resizing it).</p>
+
+<p>You must check that each method from the interface works by calling them in <code class="language-plaintext highlighter-rouge">main</code> of <code class="language-plaintext highlighter-rouge">FlashcardPQ.java</code>. I’ve provided you five sample flashcards, but you <strong>must make at least 5 of your own</strong> and demonstrate that a flashcard is able to move to the top of your heap correctly.</p>
+
+<h3 id="implementing-a-flashcard-displayer">Implementing a Flashcard Displayer</h3>
+<p>Finally, complete your <code class="language-plaintext highlighter-rouge">FlashcardDisplayer</code> class that allows the user to store and display flashcards. I’ve provided the following methods:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+ * Creates a FlashcardDisplayer with the flashcards in file. 
+ * File has one flashcard per line. Each line is formatted as:
+ * priority,front,back
+ */
+ public FlashcardDisplayer(String file);
+
+/**
+ * Writes out all flashcards to the same file
+ * they were read from so that they can be loaded by
+ * the FlashcardDisplayer(String file) constructor. 
+ * The FlashcardDisplayer should still have 
+ * all the same flashcards after this method is called 
+ * as it did before the method was called.
+ */
+ public void saveFlashcards();
+</code></pre></div></div>
+
+<p>And you need to implement the <code class="language-plaintext highlighter-rouge">main</code> and other remaining method:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> /**
+  * Continuously displays flashcards to the user
+  * and checks their answers, updating the priority
+  * of each flashcard based on if the user answered 
+  * correctly or not. Displays the highest priority
+  * flashcard first. Ends when the user enters 'save'.
+  */
+  public void displayFlashcards();
+</code></pre></div></div>
+
+<p>Here is one way of the <code class="language-plaintext highlighter-rouge">displayFlashcards()</code> method running, though you can of course make different decisions about how the user interacts with your program:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Welcome! This program will display your 
+flashcards to you, check if you entered the 
+correct answer and then ask you save or next? 
+Saving will update the information in the file 
+you provided. Here is your first card.
+Card:
+Beijing
+Your answer: China
+Correct!
+save or next? next
+Card:
+Kabul
+Your answer: Afghanistan
+Correct!
+save or next? next
+Card:
+Ottawa
+Your answer: Canda
+Not quite!
+Correct answer: Canada
+save or next? next
+Card:
+Ottawa
+Your answer: Canada
+Correct!
+save or next? save
+</code></pre></div></div>
+
+<p>Also, the amount you adjust the priority based on correct or incorrect answers is up to you. A good enough adjustment is +2 for incorrect and -1 for correct, though you are welcome to do different amounts as long as incorrect answers increase the priority of the card and correct answers decrease the priority of the card. Also remember that when comparing String objects, you should use <code class="language-plaintext highlighter-rouge">.equals</code>.</p>
+
+<h3 id="user-interface">User interface</h3>
+<p>Finally, the user should be able to do the following:</p>
+<ul>
+  <li>Specify the file to load and store the flashcards in</li>
+  <li>Go through the flashcards as many times as they wish</li>
+  <li>Save their progress on the flashcards</li>
+  <li>The flashcard displayer should automatically check if the user answered correctly, they shouldn’t have to check themselves</li>
+</ul>
+
+<p>The filename can be specified with command-line or interactive input.
+The rest of the  behavior should be through interactive input.</p>
+
+<h2 id="grading">Grading</h2>
+<p>Your assignment will be graded with the following rubric:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>README clear and complete</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Flashcard class has all required methods</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>PriorityQueue interface methods implemented and tested</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>At least 5 new flashcards provided</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>User can specify flashcard file</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Program saves the state of the flashcards to the same file</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>displayFlashcards continuously loops until user indicates to stop</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>displayFlashcards checks answers</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>displayFlashcards updates priorities</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>JavaDocs style method comments</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

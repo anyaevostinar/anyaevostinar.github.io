@@ -38,7 +38,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 7 | | Advanced Trees | |
 | M 10/25 | Reading: Carrano **26.40-26.41** & **28.13-28.22** |		[2-3 Trees](two-three-tree)	| |
 | W 10/27 | Reading: [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Sections 12.17.1 & 12.17.3; (Optional) [Heap Computational Fairytale](http://computationaltales.blogspot.com/2011/04/president-of-heap.html)|	[Heaps](heap)		 | |
-| F 10/29 |	HW6; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heapsort.html) Section 13.12.1; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Section 12.17.4 |	[Priority Queues]	| [HW7: Flashcard Displayer] |
+| F 10/29 |	HW6; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heapsort.html) Section 13.12.1; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Section 12.17.4 |	Priority Queues	| [HW7: Flashcard Displayer](hw7) |
 | Week 8 | | Graphs | |
 | M 11/1 |  |		[Complexity of DFS and BFS]	| |
 | W 11/3 | |	[Graph implementations]	 | |	
