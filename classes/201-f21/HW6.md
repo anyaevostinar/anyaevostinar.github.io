@@ -63,6 +63,8 @@ char nullChar;
 char example = myString.charAt(0); //gets the first character in a string myString
 ```
 
+You should look at the [String Java Documentation](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html) for more helpful `String` methods.
+
 Your `WordCountTree` must have the constructor and methods below implemented and with properly styled JavaDocs method comments; it may also have any other methods of your choosing (i.e. helper methods are a really good idea).
 
 ```
