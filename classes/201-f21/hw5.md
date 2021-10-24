@@ -62,7 +62,7 @@ Your memo should assume that average run time is the most important consideratio
 
 In your report, you should describe the timing experiments you performed and the data you collected. You should make sure to explain how the evidence you collected supports your claims, and explain your choices about what evidence to collect for each question. I encourage you to think carefully about how to connect evidence and explanations. Imagine your report is intended to help someone make decisions related to this investigation - what information do they need to know? Why do you think the timing data looks the way it does based on what you know about how the algorithm works? You should try to design your experiments in a way that will be convincing to the reader. How could you compensate for the fact that timing data is "noisy," with the same code sometimes taking a little longer or shorter to run? You're welcome to chat with me or your prefect about your approach.
 
-Your memo will be evaluated based on its clarity and how well you use evidence to support your claims, including whether you collected appropriate evidence for those claims. Your evidence collection will be evaluated based on your descriptions and by looking at the code you write in `main` to collect the evidence.
+Your memo will be evaluated based on its clarity and how well you use evidence to support your claims, including whether you collected appropriate evidence for those claims. Your evidence collection will be evaluated based on your descriptions.
 
 You must turn your memo into a PDF for submission.
 
