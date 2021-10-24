@@ -40,7 +40,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 10/27 | Reading: [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Sections 12.17.1 & 12.17.3; (Optional) [Heap Computational Fairytale](http://computationaltales.blogspot.com/2011/04/president-of-heap.html)|	[Heaps](heap)		 | |
 | F 10/29 |	HW6; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heapsort.html) Section 13.12.1; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Section 12.17.4 |	Uses of Heaps	| [HW7: Flashcard Displayer](hw7) |
 | Week 8 | | Graphs | |
-| M 11/1 |  |		[Complexity of DFS and BFS]	| |
+| M 11/1 | Reading: Carrano **29.1-29.6** & **29.11-29.13** |		[Complexity of DFS and BFS]	| |
 | W 11/3 | |	[Graph implementations]	 | |	
 | F 11/5 | HW7	|  [Shortest Paths] |	[HW8: WikiPaths] |
 | Week 9 | | Hashing | |

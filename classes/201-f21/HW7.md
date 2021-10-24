@@ -113,6 +113,15 @@ Finally, the user should be able to do the following:
 The filename can be specified with command-line or interactive input.
 The rest of the  behavior should be through interactive input.
 
+## README
+As always, you should include a detailed README for this homework. 
+It should include a brief overview of your project, a short example of how to run your program and see its interesting behavior, and a more detailed section that has **demonstration input or code/line numbers for each of the rubric items**. Remember, you want to make it as easy as possible for the grader to see that your homework does everything its supposed to!
+
+Remember that you should use Word or Google Docs or Markdown to make a nicely formatted README. 
+You should not have a README in plain text!
+
+There is no additional prompt for this homework.
+
 ## Grading
 Your assignment will be graded with the following rubric:
 
