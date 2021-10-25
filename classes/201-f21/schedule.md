@@ -41,8 +41,8 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 10/29 |	HW6; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heapsort.html) Section 13.12.1; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Section 12.17.4 |	Uses of Heaps	| [HW7: Flashcard Displayer](hw7) |
 | Week 8 | | Graphs | |
 | M 11/1 | Reading: Carrano **29.1-29.6** & **29.11-29.13** |		[Complexity of DFS and BFS]	| |
-| W 11/3 | |	[Graph implementations]	 | |	
-| F 11/5 | HW7	|  [Shortest Paths] |	[HW8: WikiPaths] |
+| W 11/3 | Reading: Carrano **30.1-30.3**|	[Graph implementations]	 | |	
+| F 11/5 | HW7; Reading: Carrano: **29.16-29.20**	|  [Shortest Paths] |	[HW8: WikiPaths] |
 | Week 9 | | Hashing | |
 | M 11/8 | |		[Hashing]	| |	
 | W 11/10 | |	[Collision Resolution] | |
