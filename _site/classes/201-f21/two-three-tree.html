@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>2-3 Tree Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="2-3 Tree Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f21/two-three-tree" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f21/two-three-tree" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="2-3 Tree Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/201-f21/two-three-tree","@type":"WebPage","headline":"2-3 Tree Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">2-3 Tree Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To better understand 2-3 Trees by implementing the insert method.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Monday Oct 25th, but it isn’t due until Wednesday Oct 27th at 5:00pm Central.</p>
+
+<p>You should work on this with your in-class partner, but you both need to submit separately. 
+If you finish it outside of class without your partner, note which sections you completed together and which you completed separately in your <code class="language-plaintext highlighter-rouge">Collaborations.txt</code>.</p>
+
+<h2 id="setup">Setup</h2>
+<p><a href="https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&amp;title=CS+111+and+201+workflow+in+CS+labs">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">23TreeLab</code></li>
+  <li>Create your <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> document in that folder</li>
+  <li>Download the <a href="/classes/201-f21/2-3-Tree-Lab-Starter.zip">starter code</a> and put it into your 23TreeLab folder</li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">23TreeLab</code> folder in VSCode</li>
+</ul>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>You will ultimately implement all of the <code class="language-plaintext highlighter-rouge">insert</code> methods. Note that there are <code class="language-plaintext highlighter-rouge">add</code> methods already implemented for you that handle the process of splitting nodes and promoting values for you. You are welcome to look at them, but don’t worry about understanding them completely (managing the nodes of a 2-3 Tree is complicated!).</p>
+
+<p>a. You’ll start by implementing part of <code class="language-plaintext highlighter-rouge">insertHelp</code>. The first case you should consider is inserting a key into an empty tree. Check if <code class="language-plaintext highlighter-rouge">rt</code> is null and if so, set it to be a new Node that has the key as the left value (using the provided Node constructor) and return it. (You’ll frequently be returning the root, it’s part of managing the splitting of nodes.)</p>
+
+<p>b. Compile and run your code to verify that the number 15 is inserted as the left value of the root of the tree:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-----------------------
+ |15-null| 
+
+--------------------------
+</code></pre></div></div>
+
+<p>c. The second case you should consider is if the root doesn’t have any children (you can use the <code class="language-plaintext highlighter-rouge">isLeaf()</code> method for checking this). In this case, you should call the <code class="language-plaintext highlighter-rouge">add()</code> method on the root and pass it a new <code class="language-plaintext highlighter-rouge">Node</code> with the key as the left value. The <code class="language-plaintext highlighter-rouge">add()</code> method will take care of either adding the key to open space in the root or creating a child. You should read the documentation for the <code class="language-plaintext highlighter-rouge">add()</code> method to understand how to use it.</p>
+
+<p>d. Go down to the <code class="language-plaintext highlighter-rouge">main</code> method and uncomment the next insert line and verify that your code compiles and runs correctly:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-----------------------
+ |1-15| 
+
+--------------------------
+</code></pre></div></div>
+
+<p>You can also compare your tree to this <a href="https://www.cs.usfca.edu/~galles/visualization/BTree.html">2-3 tree visualization</a>. (Sorry that our print method isn’t quite as fancy!)</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Next you will need to handle the cases where the root has children and so you need to recursively call insert on the appropriate one.</p>
+
+<p>a. Start with the case of inserting to the left. You should compare the key to left value of the root and if the key is less than the left value of the root, you should call the <code class="language-plaintext highlighter-rouge">insertLeft</code> method.</p>
+
+<p>b. In the <code class="language-plaintext highlighter-rouge">insertLeft</code> method, you should first call <code class="language-plaintext highlighter-rouge">insertHelp</code> on the root’s left child and the key. You should save what is returned from this call because it will be the new left child of the root.</p>
+
+<p>c. You should then check if the thing returned is the same object as the root’s current left child (using <code class="language-plaintext highlighter-rouge">==</code>). If it is, that means that the left child didn’t need to split to insert the key and you can just return the root and be done.</p>
+
+<p>d. If the objects are not the same, the left child had to split and the node returned contains the promoted value that will need to be added to the root. Call the <code class="language-plaintext highlighter-rouge">add</code> method on the root and pass the new left child. You can’t just set the child yourself because the values of the split left child may need to be shuffled around, which <code class="language-plaintext highlighter-rouge">add</code> takes care of for you.</p>
+
+<p>e. Look at the possible values that you could add in the <code class="language-plaintext highlighter-rouge">main</code> method and choose a line(s) to uncomment that will use your <code class="language-plaintext highlighter-rouge">insertLeft</code> method and verify that your code compiles and runs correctly.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-----------------------
+ |1-null| 
+ |0-null|  |15-null| 
+
+--------------------------
+</code></pre></div></div>
+
+<h2 id="exerise-3">Exerise 3</h2>
+<p>Next you’ll implement the <code class="language-plaintext highlighter-rouge">insertCenter</code> method.</p>
+
+<p>a. There are two cases when you should call <code class="language-plaintext highlighter-rouge">insertCenter</code>: if the root doesn’t have a right value or if the key is greater than the left value but less than the right value. Add these checks and call <code class="language-plaintext highlighter-rouge">insertCenter</code> in your <code class="language-plaintext highlighter-rouge">insertHelp</code> method.</p>
+
+<p>b. <code class="language-plaintext highlighter-rouge">insertCenter</code> will be implemented the same way that <code class="language-plaintext highlighter-rouge">insertLeft</code> was implemented: Call <code class="language-plaintext highlighter-rouge">insertHelp</code> and pass the center child of the root, save what is returned, check if the center child had to split, and if so, use <code class="language-plaintext highlighter-rouge">add</code> to place the promoted center value into the correct spot.</p>
+
+<p>c. Decide on another line(s) to uncomment in <code class="language-plaintext highlighter-rouge">main</code> to test your <code class="language-plaintext highlighter-rouge">insertCenter</code> method and verify that your code compiles and runs correctly, for example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-----------------------
+ |5-null| 
+ |1-null|  |15-null| 
+
+--------------------------
+</code></pre></div></div>
+
+<h2 id="exercise-4">Exercise 4</h2>
+
+<p>a. Finally, if the key doesn’t go anywhere else, it goes in the right side of the tree. Implement <code class="language-plaintext highlighter-rouge">insertRight</code> and call it in <code class="language-plaintext highlighter-rouge">insertHelp</code>.</p>
+
+<p>b. Uncomment the last lines or add additional lines to test your <code class="language-plaintext highlighter-rouge">insertRight</code> method and verify that your code compiles and runs correctly.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you have extra time, try figuring out how to delete a key from the 2-3 tree.</p>
+
+<h2 id="submission">Submission</h2>
+<p>Compress your files as a zip, and upload that zip to Moodle under the appropriate assignment.
+Remember that partners need to submit their code separately and you should share the code you wrote in class with your partner.</p>
+
+<p>This activity is not a homework assignment. That means that you’re evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren’t able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the code to indicate things you tried but what went wrong/where you got stuck.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

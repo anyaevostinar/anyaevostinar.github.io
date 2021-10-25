@@ -2,6 +2,7 @@
 layout: page
 title: Traversals Analysis
 permalink: /classes/201-f21/traversal-analysis
+published: false
 ---
 
 ## Goals
@@ -27,37 +28,87 @@ If you finish it outside of class without your partner, note which sections you 
 Create a Collaborations section of your document and describe any people you get help from on this lab. Also note any outside sources such as websites that you referenced. 
 
 ## Exercise 1
-First we'll analyze the time complexity of the two graph implementations that you've seen. You are welcome to reference the code from the Graph Implementation activity.
+Even though you haven't seen or written code for graph traversals, you can still analyze the time complexity of pseudocode.
+When we analyze the time and space complexity of graph algorithms, the convention is to use `V` for the number of vertices/nodes in the graph and `E` for the number of edges in the graph.
+Because the complexity of graphs often depends on both the number of vertices and the number of edges, you'll often need to express the complexity in terms of `V` and `E`. 
 
-When expressing the time complexity of graph algorithms, use `V` to mean the number of vertices in the graph and `E` to mean the number of edges in the graph.
+Here is the pseudocode for breadth-first search from the reading:
 
-a. What is the worst case time complexity of adding a vertex in an adjacency matrix graph implementation (without adding any edges)? Express your answer in big-O notation and write a sentence explaining why.
+```
+Algorithm getBreadthFirstTraversal(originVertex)
+traversalOrder = a new queue for the resulting traversal order
+vertexQueue = a new queue to hold vertices as they are visited
+Mark originVertex as visited
+traversalOrder.enqueue(originVertex)
+vertexQueue.enqueue(originVertex)
+while (!vertexQueue.isEmpty())
+{
+   frontVertex = vertexQueue.dequeue()
+   while (frontVertex has a neighbor)
+   {
+      nextNeighbor = next neighbor of frontVertex
+      if (nextNeighbor is not visited)
+      {
+         Mark nextNeighbor as visited
+         traversalOrder.enqueue(nextNeighbor)
+         vertexQueue.enqueue(nextNeighbor)
+      }
+   }
+}
+return traversalOrder
+```
 
-b. What is the worst case time complexity of adding a vertex in an adjacency **list** graph implementation (without adding any edges)? Express your answer in big-O notation and write a sentence explaining why.
+Remember that for this class, we aren't doing formal proofs of time complexity, but we do want to have some justification for the answers.
 
-c. What is the worst case time complexity of the `getDegree` method of the adjacency matrix graph implementation in big-O notation? Write a sentence explaining why.
+a. Analyze the number of simple operations that are required at each step of the above algorithm. You are welcome to copy the steps above and then put your analysis on each line. 
 
-d. What is the worst case time complexity of the `getDegree` method of the adjacency list graph implementation in big-O notation? Write a sentence explaining why. Remember to account for the time complexity of the underlying linked list operations!
+b. Some of the lines of pseudocode are hiding a fair amount of detail, such as `frontVertex has a neighbor` and `nextNeighbor = next neighbor of frontVertex`. What assumptions are you making about the details and efficiency of those lines? What could lead to those lines being more/less efficient?
+
+c. Based on your step-by-step analysis, provide a function that describes the worst-case time complexity of the algorithm using `V` and `E`. This function should include the constants and coefficients. 
+
+d. Identify the asymptotic order of the time complexity of the algorithm (the big-O) by finding a C,  V<sub>0</sub>, and E<sub>0</sub>.
+
 
 ## Exercise 2
-Now we'll analyze the time complexity of depth first search. Remember that for this class, we aren't doing formal proofs of time complexity, but we do want to have some justification for the answers.
+Now you'll analyze the time complexity of depth first search.
+Here is the pseudocode from the book:
 
-a. The algorithm given in "Solving the maze" of HW5 is depth first search. Analyze the number of simple operations that are required at each step of that algorithm. You are welcome to copy the steps from the homework description and then put your analysis on each line.
+```
+Algorithm getDepthFirstTraversal(originVertex)
+traversalOrder = a new queue for the resulting traversal order
+vertexStack = a new stack to hold vertices as they are visited
+Mark originVertex as visited
+traversalOrder.enqueue(originVertex)
+vertexStack.push(originVertex)
+while (!vertexStack.isEmpty())
+{
+   topVertex = vertexStack.peek()
+   if (topVertex has an unvisited neighbor)
+   {
+      nextNeighbor = next unvisited neighbor of topVertex
+      Mark nextNeighbor as visited
+      traversalOrder.enqueue(nextNeighbor)
+      vertexStack.push(nextNeighbor)
+   }
+   else // All neighbors are visited
+      vertexStack.pop()
+}
+return traversalOrder 
+```
+a. Again analyze the number of simple operations that are required at each step of the algorithm. If there are lines that require you to make assumptions about their efficiency, note those.
 
-b. Based on your step-by-step analysis, provide a function that describes the time complexity of the algorithm using `V` for the number of maze squares. (You should not need `E`, make sure you know why!) This function should include the constants and coefficients. 
+b. Based on your step-by-step analysis, provide a function that describes the worst-case time complexity of the algorithm using `V` and `E`. This function should include the constants and coefficients. 
 
-c. Identify the asymptotic order of the algorithm (the big-O) by finding a C and n<sub>0</sub> and be sure to show your work.
+c. Identify the asymptotic order of the time complexity of the algorithm (the big-O) by finding a C,  V<sub>0</sub>, and E<sub>0</sub>.
 
-## Exercise 3
-Finally, we'll analyze the time complexity of breadth first search. 
+## Extensions
+If you have extra time, try these:
 
-a. Analyze the number of simple operations that are required for each step of the algorithm that you implemented in the Breadth First Search lab.
-
-b. Provide a function that describes the time complexity of the algorithm using `V` and `E`.
-
-c. Identify the asymptotic order of the algorithm, be sure to show your work as before.
+1. The algorithm given in [homework 3 (the maze solver)](hw3) is a specialized version of depth-first search. Analyze it and determine what it's time complexity is; why is it different than general depth-first search?
+2. Try implementing breadth-first search using [this starter code](BFSStarter.zip) and the associated [JavaDocs](/classes/201-f20/hw-6javadoc).
+3. Implement depth-first search as well.
 
 ## Submitting
 This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations section) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck. 
 
-Submit your PDF to Moodle as always.
+Submit your PDF to Moodle as always. (If you did the extensions, just submit the PDF please.)
