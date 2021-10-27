@@ -22,7 +22,7 @@ Mount COURSES, download the [HW5 starter code](HW5Starter.zip) and move it to yo
 Create a file `Collaborations.txt` and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the [Collaboration page](collaboration) on what collaborations are allowed for homework assignments.
 In particular, make sure to record the name of your in-class partner in the `Collaborations.txt`.
 
-In this assignment, you'll be doing a mixture of coding, designing timing experiments, and analyzing your results. You'll be thinking through what timing data makes sense to collect, and writing your reasoning in a short report. You will need to create a PDF file with your report and upload it in addition to the zip of your code.
+In this assignment, you'll be doing a mixture of coding, designing timing experiments, and analyzing your results. You'll be thinking through what timing data makes sense to collect, and writing your reasoning in a short report. You will need to create a PDF file with your report and include it in the zip of your code.
 
 ## Provided Code
 There are a variety of different ways that the pivot can be selected in quicksort. In this investigation, you'll explore the consequences of the pivot selection method on quicksort's run time.

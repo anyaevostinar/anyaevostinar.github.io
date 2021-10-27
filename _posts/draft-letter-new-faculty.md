@@ -10,3 +10,4 @@ categories: [Teaching, Research]
 * you can't fix all your students' problems, just help with some of them and point them to more resources for the others
 * research isn't going to look the same as it did when in grad school or postdocing most likely; smaller and done is better than huge and forever in progress
 * collaborators are awesome; undergrad researchers are great, but another PhD or otherwise expert in an area is very helpful
+* your own website and domain

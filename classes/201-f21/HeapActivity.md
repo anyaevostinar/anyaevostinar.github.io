@@ -2,7 +2,7 @@
 layout: page
 title: Heap Lab
 permalink: /classes/201-f21/heap
-published: false
+published: true
 ---
 
 ## Goals
