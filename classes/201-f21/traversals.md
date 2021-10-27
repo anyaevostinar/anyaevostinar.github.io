@@ -6,7 +6,7 @@ published: false
 ---
 
 ## Goals
-To analyze the time complexity of depth first and breadth first search.
+To analyze the time complexity of depth first and breadth first traversal.
 
 ## Logistics
 This is a lab assignment that you'll be handing in on Moodle. You should complete it on Monday Nov 1st, but it isn't due until Wednesday Nov 3rd at 5:00pm Central.

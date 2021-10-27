@@ -118,10 +118,10 @@ I've provided you a `WordCounter` class that will use `WordCountTree` to count t
 
 You need to write the `main` of WordCounter to allow for the user to:
 * specify the file to be counted (you can assume that you'll always use the same `StopWords.txt`)
-* the number of words that should be in the word cloud (and you should let the user know if that number is too big given the file they chose)
+* specify the number of words that should be in the word cloud (and you should let the user know if that number is too big given the file they chose)
 
 And then you should use `printWordCloudHTML` to print the associated HTML of the word cloud (you can see what you're word clouds look like at [here](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro), though it isn't as pretty as the normal ones).
-(If the text contains fewer than 40 non-stopwords, then the cloud should just use all the words, and if some words are tied, any method of tie-breaking is fine.)
+(If the text contains fewer than the specified number of non-stopwords, then the cloud should just use all the words, and if some words are tied, any method of tie-breaking is fine.)
 
 I've provided you with the text of the book Wuthering Heights, which you can use to ultimately test your word cloud maker, though I recommend you initially start with a smaller file.
 The starter code in WordCounter handles normalizing the words to lowercase and remove punctuation.
