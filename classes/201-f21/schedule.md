@@ -42,7 +42,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 8 | | Graphs | |
 | M 11/1 | Reading: Carrano **29.1-29.6** & **30.1-30.3** |		[Graph implementations](graphs)	| |
 | W 11/3 | Reading: Carrano **29.11-29.13**|[Complexity of DFS and BFS](traversal-analysis)		 | |	
-| F 11/5 | HW7; Reading: Carrano: **29.16-29.20**	|  [Shortest Paths] |	[HW8: WikiPaths] |
+| F 11/5 | HW7; Reading: Carrano: **29.16-29.20**	|  Shortest Paths |	[HW8: WikiPaths](hw8) |
 | Week 9 | | Hashing | |
 | M 11/8 | |		[Hashing]	| |	
 | W 11/10 | |	[Collision Resolution] | |

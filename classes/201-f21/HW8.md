@@ -16,7 +16,7 @@ This is a homework assignment that you'll be handing in on Moodle.
 You must work on this homework with your assigned partner (if you have one) via pair programming. That means that you cannot write **any** code without your partner and you must both be fully engaged and discussing the code at all times while working. See the [collaboration policy](collaboration) for details.
 
 ## Setup and Requirements
-Mount COURSES, download the [HW 8 Starter Code](HW8Starter.zip) and move it to your StuWork/username folder. You should follow the same process of compressing your files and uploading them to Moodle to submit your homework. 
+Mount COURSES, download the [HW 8 Starter Code](HW8-Starter.zip) and move it to your StuWork/username folder. You should follow the same process of compressing your files and uploading them to Moodle to submit your homework. 
 
 Create a file `Collaborations.txt` and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the [Collaboration page](collaboration) on what collaborations are allowed for homework assignments.
 
@@ -90,18 +90,29 @@ Finally, set up your user input to allow the user to:
 
 Your program should output the links the user should click on to follow a shortest path from the starting page to the ending page or tell the user that there isn't a path.
 
+## README
+As always, you should include a detailed README for this homework. 
+It should include a brief overview of your project, a short example of how to run your program and see its interesting behavior, and a more detailed section that has **demonstration input or code/line numbers for each of the rubric items**. Remember, you want to make it as easy as possible for the grader to see that your homework does everything its supposed to!
+
+Remember that you should use Word or Google Docs or Markdown to make a nicely formatted README. 
+You should not have a README in plain text!
+
+There is no additional prompt for this homework.
+
 ## Rubric
 Your homework will be graded by the following:
 
 | Item | Points |
 |-------|--------|
 | Correct use of Queue | 2 |
-| Finds example shortest path correctly | 6 |
-| Finds various test shortest paths | 10 |
-| Returns empty list if no path | 2 |
-| toString implemented correctly | 1 |
-| Doesn't have repeated code | 1 |
+| Finds Canada_Goose to Duran_Duran shortest path correctly | 6 |
+| Finds 5 other shortest paths | 10 |
+| States if no path is possible | 2 |
+| `toString` implemented as specified | 1 |
 | Sufficient documentation | 2 |
 | Otherwise good style | 1 |
+| README clear and complete | 6 |
 
 The graders will check your code on a number of different graphs that have only one correct shortest path and you are encouraged to check your code against several different graphs to make sure everything works.
+You should show a total of 6 example paths that your program found in your README.
+These can be from the Wikipedia data set or your own smaller examples.
