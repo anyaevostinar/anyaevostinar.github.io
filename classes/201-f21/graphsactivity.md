@@ -2,7 +2,7 @@
 layout: page
 title: Graphs Activity
 permalink: /classes/201-f21/graphs
-published: false
+published: true
 ---
 
 ## Goals

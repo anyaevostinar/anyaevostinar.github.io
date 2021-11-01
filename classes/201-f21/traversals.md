@@ -9,10 +9,7 @@ published: false
 To analyze the time complexity of depth first and breadth first traversal.
 
 ## Logistics
-This is a lab assignment that you'll be handing in on Moodle. You should complete it on Monday Nov 1st, but it isn't due until Wednesday Nov 3rd at 5:00pm Central.
-
-## Logistics
-This is a lab assignment that you'll be handing in on Moodle. You should complete it on Monday Oct 11th, but it isn't due until Wednesday Oct 13th at 5:00pm Central.
+This is a lab assignment that you'll be handing in on Moodle. You should complete it on Wednesday Nov 3rd, but it isn't due until Friday Nov 5th at 5:00pm Central.
 
 There is no coding in this assignment, so you will submit a PDF of your solutions. You have several options for how to produce this PDF:
 * Write it by hand and scan it into a PDF. If you do this, you must write very neatly and clearly. Make sure to check that your scan is completely legible!
@@ -28,9 +25,21 @@ If you finish it outside of class without your partner, note which sections you 
 Create a Collaborations section of your document and describe any people you get help from on this lab. Also note any outside sources such as websites that you referenced. 
 
 ## Exercise 1
-Even though you haven't seen or written code for graph traversals, you can still analyze the time complexity of pseudocode.
+First you'll analyze the time complexity of the two graph implementations that you've seen. You should reference the code from the [Graph Implementation](graphs) lab.
+
 When we analyze the time and space complexity of graph algorithms, the convention is to use `|V|` for the number of vertices/nodes in the graph and `|E|` for the number of edges in the graph.
 Because the complexity of graphs often depends on both the number of vertices and the number of edges, you'll often need to express the complexity in terms of `|V|` and `|E|`. 
+
+a. What is the worst case time complexity of adding a vertex in an adjacency matrix graph implementation (without adding any edges)? Express your answer in big-O notation and write a sentence explaining why.
+
+b. What is the worst case time complexity of adding a vertex in an adjacency **list** graph implementation (without adding any edges)? Express your answer in big-O notation and write a sentence explaining why.
+
+c. What is the worst case time complexity of the `getDegree` method of the adjacency matrix graph implementation in big-O notation? Write a sentence explaining why.
+
+d. What is the worst case time complexity of the `getDegree` method of the adjacency list graph implementation in big-O notation? Write a sentence explaining why. Remember to account for the time complexity of the underlying linked list operations!
+
+## Exercise 2
+Even though you haven't seen or written code for graph traversals, you can still analyze the time complexity of pseudocode.
 
 Here is the pseudocode for breadth-first search from the reading:
 
@@ -62,14 +71,14 @@ Remember that for this class, we aren't doing formal proofs of time complexity, 
 
 a. Analyze the number of simple operations that are required at each step of the above algorithm. You are welcome to copy the steps above and then put your analysis on each line. 
 
-b. Some of the lines of pseudocode are hiding a fair amount of detail, such as `frontVertex has a neighbor` and `nextNeighbor = next neighbor of frontVertex`. What assumptions are you making about the details and efficiency of those lines? What could lead to those lines being more/less efficient?
+b. Some of the lines of pseudocode are hiding a fair amount of detail, such as `frontVertex has a neighbor` and `nextNeighbor = next neighbor of frontVertex`. What assumptions are you making about the implementation details and efficiency of those lines? What could lead to those lines being more/less efficient?
 
 c. Based on your step-by-step analysis, provide a function that describes the worst-case time complexity of the algorithm using `V` and `E`. This function should include the constants and coefficients. 
 
 d. Identify the asymptotic order of the time complexity of the algorithm (the big-O) by finding a C,  |V|<sub>0</sub>, and |E|<sub>0</sub>.
 
 
-## Exercise 2
+## Exercise 3
 Now you'll analyze the time complexity of depth first search.
 Here is the pseudocode from the book:
 
@@ -102,7 +111,7 @@ b. Based on your step-by-step analysis, provide a function that describes the wo
 c. Identify the asymptotic order of the time complexity of the algorithm (the big-O) by finding a C,  |V|<sub>0</sub>, and |E|<sub>0</sub>.
 
 ## Extensions
-When you finish with the above two exercises, work on implementing breadth first traversal.
+When you finish with the above three exercises, work on implementing breadth first traversal.
 Here is [starter code](BFSStarter.zip) and the associated [JavaDocs](/classes/201-f20/hw-6javadoc) for a graph implementation. 
 In `Main.java` I've provided code to create this graph:
 

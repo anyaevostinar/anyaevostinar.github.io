@@ -5,7 +5,7 @@ permalink: /classes/201-f21/hw7
 ---
 
 ## Logistics
-30 points, due Friday Nov 5th by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy.  You or your partner need to notify me that you're using the policy via email, CC'ing the partner. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally 
+30 points, due Friday Nov 5th by 10PM Central time. Like all assignments, there is a 48-hour, no questions asked extensions policy. If you have a tech issue, a health issue, or some other issue that impedes making the deadline, use this policy.  You or your partner need to notify me that you're using the policy via email, CC'ing the partner. Extensions beyond the 48-hour policy will only be considered in extenuating circumstances, and circumstances that arise between the original deadline and the extension are generally not extenuating - the deadline is still Friday, not 48 hours later.
 
 ## Goals
 To implement a heap and use it as a priority queue. You'll deepen your understanding of the heap operations by adapting them to a new application.
@@ -20,10 +20,8 @@ Mount COURSES, download the [HW 7 Starter Code](HW7Starter.zip) and move it to y
 
 Create a file `Collaborations.txt` and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the [Collaboration page](collaboration) on what collaborations are allowed for homework assignments.
 
-## Setup and Requirements
 In this assignment, you'll build a flashcard displaying program. You'll allow the user to load flashcards from a file, which will include a priority level for the flashcard, and display all the flashcards until the user decides they are done for the session. The highest priority level flashcard should be shown to the user next and the priority will be updated based on if the user gets it right or not. If the user gets the flashcard right, the priority level will be lowered. If the user gets it wrong, the priority level will be increased. You'll also save the flashcards with their updated priority levels so a user could then continue studying at a later time. 
 
-Create a file Collaborations.txt and put in any collaboration with your learning group or references to outside websites.
 
 ### Storing Flashcards
 First look at the starter code for the `Flashcard` class that stores the front and back of the flashcard as well as its priority level. You should implement the methods that are in that file.
