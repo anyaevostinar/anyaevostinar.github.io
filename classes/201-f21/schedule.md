@@ -42,11 +42,11 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 8 | | Graphs | |
 | M 11/1 | Reading: Carrano **29.1-29.6** & **30.1-30.3** |		[Graph implementations](graphs)	| |
 | W 11/3 | Reading: Carrano **29.11-29.13**|[Complexity of DFS and BFS](traversal-analysis)		 | |	
-| F 11/5 | HW7; Reading: Carrano: **29.16-29.20**	|  Shortest Paths |	[HW8: WikiPaths](hw8) |
+| F 11/5 | HW7; Reading: Carrano **29.16-29.20**	|  Shortest Paths |	[HW8: WikiPaths](hw8) |
 | Week 9 | | Hashing | |
-| M 11/8 | |		[Hashing]	| |	
-| W 11/10 | |	[Collision Resolution] | |
-| F 11/12 | HW8 |	[Intro to final project] |	[Final project] |
+| M 11/8 | Reading: Carrano **22.1-22.8** & **22.10-22.11**|		[Hashing]	| |	
+| W 11/10 | Reading: OpenDSA [Open Hashing](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html) and [Collision Resolution](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html)  |	[Collision Resolution] | |
+| F 11/12 | HW8 |	[Intro to final project] |	[Final project](final-project) |
 | Week 10 | | Wrapping up | |
 | M 11/15	| |  [Final project discussions] | |
 | W 11/17 | | [Final project work day] | |
