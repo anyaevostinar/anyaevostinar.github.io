@@ -8,7 +8,7 @@ permalink: /classes/201-f21/final-project
 100 points (25% of final grade), due Wednesday Nov. 24th by **5pm** Central time. Any request for an extension **must go through the Dean of Students office** as I am not otherwise permitted to consider work submitted after this college-wide deadline!
 
 ## Goals
-To synthesize the knowledge about many different data structures learned in the class by 1) choosing the most appropriate for an interesting task, 2) using the Java built-in versions of these data structures, and 3) using inheritance correctly and meaningfully.
+To synthesize the knowledge about many different data structures learned in the class by 1) choosing the most appropriate data structure for an interesting task, 2) using the Java built-in versions of these data structures, and 3) using inheritance correctly and meaningfully.
 
 ## Assignment Type and Collaborative Learning Expectations
 This is a homework assignment that you'll be handing in on Moodle.

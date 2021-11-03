@@ -2,7 +2,7 @@
 layout: page
 title: Traversals Analysis
 permalink: /classes/201-f21/traversal-analysis
-published: false
+published: true
 ---
 
 ## Goals
