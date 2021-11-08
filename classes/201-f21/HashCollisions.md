@@ -66,8 +66,9 @@ If you finish early, try these.
 Hashing is an active area of research, so there is a lot more that you could do if you are interested.
 
 * Try using one of the hashing methods from Monday's lab to allow you to store strings in your hash table.
-* In this lab you aren't required to implement a retrieval method because it is nearly identical to the insert method. Feel free to implement them if you want.
-* A number of other collision resolution techniques are discussed in the reading linked above, implement some or all of them if you have time.
+* In this lab you aren't required to implement a retrieval method because it is nearly identical to the insert method. Implement them!
+* A number of other collision resolution techniques are discussed in the reading linked above, implement some or all of them.
+* Try combining this lab with Monday's lab code to test the effectiveness of preventing collisions of each of these approaches.
 * This lab is set up with a lot of repeated code and a need to switch around functions used. Feel free to refactor to a more elegant way of changing probing sequences, probably setting the technique in the constructor would be best.
 
 ## Submission
