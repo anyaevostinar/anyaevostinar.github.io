@@ -2,7 +2,7 @@
 layout: page
 title: Collision Resolution Lab
 permalink: /classes/201-f21/collisionresolution
-published: false
+published: true
 ---
 
 ## Goals

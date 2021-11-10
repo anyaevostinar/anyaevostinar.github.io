@@ -54,5 +54,6 @@ This is not a homework assignment, so you will be graded on effort.
 More importantly though, this is a great chance to get some ideas down and get feedback from me on if they are a good direction for your final project, so take this seriously. 
 
 Unlike normal labs **only one partner needs to submit the document to Moodle** and I've set it up so that it should show as completed for both of you.
+It's expecting you to either copy and paste or upload a document file.
 
 Please try to submit this during or immediately after class so that I can look everything over Friday afternoon. If you are not able to, that's fine, but I probably won't be able to get you feedback until Monday.

@@ -50,6 +50,6 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 10 | | Wrapping up | |
 | M 11/15	| |  [Final project discussions] | |
 | W 11/17 | | [Final project work day] | |
-| F 11/19 | [(Optional) Corrections]| Wrap up; review; course evaluations	| |
+| F 11/19 | [(Optional) Corrections](corrections)| Wrap up; review; course evaluations	| |
 | Exam Period | | | |
 | | | Final project due Wednesday, 11/24, 5pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
