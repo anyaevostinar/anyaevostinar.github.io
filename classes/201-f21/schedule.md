@@ -48,7 +48,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 11/10 | Reading: OpenDSA [Open Hashing](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html) and [Collision Resolution](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html)  |	[Collision Resolution](collisionresolution) | |
 | F 11/12 | HW8 |	[Intro to final project](project-intro) |	[Final project](final-project) |
 | Week 10 | | Wrapping up | |
-| M 11/15	| |  [Final project discussions](project-checkin) | |
+| M 11/15	| |  [Minimum Viable Product](project-checkin) | |
 | W 11/17 | | [Final project work day] | |
 | F 11/19 | [(Optional) Corrections](corrections)| Wrap up; review; course evaluations	| |
 | Exam Period | | | |

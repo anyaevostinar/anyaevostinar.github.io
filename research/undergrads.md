@@ -16,7 +16,7 @@ I have two main research areas, one focused on questions in biology and one focu
 
 ## Choose Your Own Adventure: Bio questions
 If you're interested in research that seeks to answer open questions in biology, this is the section for you.
-To best prepare for doing this kind of research with me, please read this page thoroughly, try out [Symbulation](https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html), and read at least the introduction of [this paper](https://www.biorxiv.org/content/biorxiv/early/2018/08/20/393868.full.pdf). These will give you a solid grasp of what my research involves and what projects I’m looking to get students involved with. If you’re even more excited after reading these materials, check my calendar (linked on homepage) and email me a time you’d like to meet and talk further.
+To best prepare for doing this kind of research with me, please read this page thoroughly, try out [Symbulation](https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html), and read [this review article](https://www.frontiersin.org/articles/10.3389/fevo.2021.739047/full). You can also read at least the introduction of [this paper](https://www.biorxiv.org/content/biorxiv/early/2018/08/20/393868.full.pdf). These will give you a solid grasp of what my research involves and what projects I’m looking to get students involved with. If you’re even more excited after reading these materials, check my calendar (linked on homepage) and email me a time you’d like to meet and talk further.
 
 ## Choose Your Own Adventure: Education questions
 If you're interested in how computer programs can be used to teach biological concepts, this is the section for you.
