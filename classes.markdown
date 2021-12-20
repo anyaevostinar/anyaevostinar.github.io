@@ -4,6 +4,11 @@ title: Classes
 permalink: /Classes/
 ---
 
+### Winter 2022
+
+CS 111: Introduction to Computer Science ([Syllabus](/classes/111-w22/syllabus)) ([Schedule](/classes/111-w22/schedule))
+
+CS 399: Senior Seminar
 
 ### Fall 2021
 

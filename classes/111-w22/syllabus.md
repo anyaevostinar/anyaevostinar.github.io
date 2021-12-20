@@ -56,10 +56,10 @@ If you experience significant technological problems that limit your ability to 
 For announcements of known technical issues, visit the Helpdesk portal. 
 If your personal situation (due to COVID-19 illness or other circumstances) begins to impact your ability to engage with the course, please contact the Dean of Students Office and also let me know.
 
-**I expect you to attend every class session and log in to Moodle every day for updates on activities and assignments.** 
+**I expect you to attend every class session and log in to Moodle and Slack every day for updates on activities and assignments.** 
 
 All out of class written communication will happen via the class Slack.
-Please make sure you are checking it regularly.
+Please make sure you are checking it regularly and/or have email or push notifications setup.
 Each class day will have activities for you to complete and a section on Moodle to guide you through what you should do. 
 All materials will be released at least 48 hours before they are due.
 
@@ -107,6 +107,8 @@ Here is how activities this term will be factored into your grade:
 | Exams  | 45% |
 
 There is an exception to the above table: if you do not achieve an average of at least 70% on the individual programming assignments, you will not receive a grade of a C- or better. If you do have an average of 70% or better on the individual programming assignments, your grade will be calculated by the above.
+
+See the [schedule](/classes/111-w22/schedule) for when the exams will be.
 
 ## How to Succeed in this Class
 * Keep trying and ask for help: 
