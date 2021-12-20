@@ -131,11 +131,11 @@ When I've asked students what advice they'd give to future 111 students, the mos
 * Ask questions and reach out for help: If you have a question about something, chances are other people do too. By asking questions in class, on Slack and in office hours, you'll keep up with the course and gain a deeper understanding of the concepts.
 
 ## Late Policies
-Because the problem sets and daily assignments are designed to enhance your learning of the course material, and because the problem sets in this course will often build upon each other, turning these in in a timely manner is essential. Turning in your projects and assignments on time also maximizes the quality of the feedback you can expect to receive from the grader (or myself, where appropriate), and provides a framework of fairness.
+Because the homework assignments and reading checks are designed to enhance your learning of the course material, and because the homework assignments in this course will often build upon each other, turning these in in a timely manner is essential. Turning in your assignments on time also maximizes the quality of the feedback you can expect to receive from the grader (or myself, where appropriate), and provides a framework of fairness.
 
 Due to the nature and role of the reading checks, no late reading checks will be accepted. If you miss a couple of these, it will not impact your overall grade; just don't make it a habit.
 
-Projects are due on Thursdays at 10pm on Moodle unless otherwise stated. Any project received after this time will be considered late.
+Homework assignments are due on Wednesdays at 10pm on Gradescope (through Moodle) unless otherwise stated. Any assignments received after this time will be considered late.
 
 **Late penalties on projects:**
 
@@ -147,7 +147,9 @@ That said, life is complicated and messy and unpredictable. If you have a specia
 
 *(Acknowledgment: language paraphrased from Jeff Ondich's and Amy Csizmar Dalal's late assignments policy. Thanks, Jeff and Amy!)*
 
-All problem sets and reading checks should be turned in via Moodle unless otherwise specified. On every Moodle project/assignment page, there is a link to submit your assignment or project.
+All reading checks should be posted to the `#reading-questions` channel on the class Slack with the appropriate tag.
+All homework assignments should be submitted through Gradescope (which is linked through Moodle).
+You can always see everything that you need to do for a class day on Moodle for that day in the "Before X's Class" section.
 
 All grading questions should be directed to me and not to the grader.
 

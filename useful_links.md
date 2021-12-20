@@ -12,6 +12,8 @@ These are links that I think are useful for myself and possibly others.
 
 [The Good Research Code Handbook](https://goodresearch.dev/index.html) - Python focused, but useful info (h/t Emily Dolson)
 
+[UNIX Tutorial](https://cs.carleton.edu/faculty/jondich/documents/unixtutorial/) - customized for Carleton's setup, but generally useful
+
 ## Faculty
 [Collection of links useful for faculty](https://github.com/crazyhottommy/The-world-of-faculty) - includes negotiation/job-search materials, grant proposals, structuring papers, teaching, and more, some links I pulled out and include in other sections
 

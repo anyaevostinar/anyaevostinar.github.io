@@ -10,18 +10,18 @@ This is a rough schedule of topics for each day and the release and due dates fo
 
 **Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses.
 
-Readings should be completed **before** the class day that they are listed. Class is structured expecting that you have completed the reading. You also will need to respond to a reading prompt on Moodle before class.
+Readings should be completed **before** the class day that they are listed. Class is structured expecting that you have completed the reading. You also will need to respond to a reading prompt on Slack before class.
 
 "Zelle" refers to our textbook, **Python Programming: An Introduction to Computer Science, 3rd edition, by John Zelle**. 
 
 | Date	| Homework/Reading Due	| Lab Activity |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Algorithmic Thinking** |  | |
-| W 1/5 | Reading: [Syllabus](Syllabus), this schedule, <br/> [collaboration policies](collaboration); Fill out Background Survey;<br/> [Recurse Environment Rules](https://www.recurse.com/manual#sec-environment)| | |
-| F 1/7 | Zelle 1.1-1.5 |  |	 |
+| W 1/5 | Reading: [Syllabus](Syllabus), this schedule, <br/> [collaboration policies](collaboration); Fill out Background Survey;<br/> [Recurse Environment Rules](https://www.recurse.com/manual#sec-environment)| | Paper Flower Algorithm |
+| F 1/7 | Zelle 1.1-1.5; Paper Flower Algorithm |  | [HW1: First Python Programs](hw1)	 |
 | **Week 2** | **Variables and Numbers** |  | |
-| M 1/10 | Zelle 1.6-1.7		|  |	 |
-| W 1/12 | Zelle 2.1-2.5 	|	| |
+| M 1/10 | Zelle 1.6-1.7; [Unix Tutorial](https://cs.carleton.edu/faculty/jondich/documents/unixtutorial/) up through section 4		|  |	 |
+| W 1/12 | Zelle 2.1-2.5; HW1 	|	| |
 | F 1/14 | Zelle 3.1-3.2 & 3.5|	| |
 | **Week 3** | **Strings, Conditionals, and Loops** |  | |
 | M 1/17 | Zelle 7.1-7.3 & 5.1	| 	| |

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>HW1 First Python Programs | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW1 First Python Programs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w22/hw1" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w22/hw1" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW1 First Python Programs" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/hw1","@type":"WebPage","headline":"HW1 First Python Programs","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW1 First Python Programs</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
+
+<p>This assignment is worth 8 points total, 4 of which are checked on Gradescope automatically with an <strong>autograder</strong> and 4 of which are based on style, which will be explained below.</p>
+
+<p>This assignment is due on Wednesday Jan 12th at 10pm. See the <a href="syllabus">syllabus</a> for the late policy.</p>
+
+<h2 id="goals">Goals</h2>
+<p>The goal of this assignment is two-fold. First, to get started with basic Python programming and thinking algorithmically. Second, to test out the Gradescope autograding process and work out any issues. Like the Paper Flower assignment, this one is easier and has less requirements than future assignments will.</p>
+
+<h2 id="setup">Setup</h2>
+<p>I recommend that you complete this assignment in Olin 310.</p>
+
+<p><a href="https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&amp;title=CS+111+and+201+workflow+in+CS+labs">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW1</code></li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW1</code> folder in VSCode</li>
+  <li>Create two files <code class="language-plaintext highlighter-rouge">helloworld.py</code> and <code class="language-plaintext highlighter-rouge">input.py</code></li>
+</ul>
+
+<p>If you really want to use your personal machine, there are instructions for installing VSCode and Python available: <a href="https://wiki.carleton.edu/pages/viewpage.action?pageId=92275629">Mac</a> and <a href="https://wiki.carleton.edu/pages/viewpage.action?pageId=92275633">Windows</a>. You can also <a href="https://wiki.carleton.edu/display/itskb/Network+Drives">remotely connect to COURSES</a>. If you run into trouble with these setups, you can ask me or Mike Tie for help, but I do really recommend just working in Olin 310.</p>
+
+<h2 id="hello-world">Hello World</h2>
+
+<ul>
+  <li>In <code class="language-plaintext highlighter-rouge">helloworld.py</code> type out the following (don’t copy and paste, copying even comments in Python often leads to weird errors):
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># helloworld.py
+# CS 111, Winter 2022
+# This is the traditional first program to write in any programming language.
+</code></pre></div>    </div>
+    <p>This is a header.
+The lines that begin with <code class="language-plaintext highlighter-rouge">#</code> are comments, which are ignored when your program is being executed. 
+(They’re there to help people who are reading the program understand what it’s doing.)
+You should include a similar header on all programs you submit for this class (and in general).
+Such headers and comments will contribute to your <em>style</em> points for an assignment.</p>
+  </li>
+  <li>Now make it so that when the program runs, it prints out the following <strong>exactly</strong>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello, world!
+</code></pre></div>    </div>
+    <p>When I say exact, I mean exact. 
+In this class, I have written <strong>autograders</strong> for most assignments, which run on your code as soon as you submit it and let you know if you are passing the tests that I’ve written.
+Those tests check if your output matches what I’ve specified down to the spaces, so it’s very important that you follow my specifications exactly.
+(This may seem annoying, but it is a valuable skill to master. It is very common in computer science for you to have very specific instructions that you need to follow for something to work or for a client to be happy.)
+The benefit of the autograders is that you can know right away if you code isn’t doing exactly the right thing and fix it before the deadline!</p>
+  </li>
+  <li>You should always check that your code works after writing a small piece, so open a Terminal window in VSCode (either by clicking ‘Terminal’-&gt;’New Terminal’ from the menu at the top or by dragging up from the bottom of your screen) and type the following:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 helloworld.py
+</code></pre></div>    </div>
+    <p>Make sure that it matches the above output exactly.</p>
+  </li>
+</ul>
+
+<h2 id="input">Input</h2>
+<p>Now you’ll do some more complicated tasks in Python. 
+Everything that I ask of you here is something that you can accomplish with just the code that you’ve seen in Zelle 1.6-1.7.</p>
+
+<ul>
+  <li>
+    <p>Create a header for your file (you don’t know what it does yet, so remember to go fill that in once you’ve figured that out)</p>
+  </li>
+  <li>Have your program print the following by storing the year in a <strong>variable</strong>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>It is currently the year 2021
+</code></pre></div>    </div>
+  </li>
+  <li>Next have your program ask for the user’s name:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>What is your name? 
+</code></pre></div>    </div>
+  </li>
+  <li>Next have your program greet the user by name:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hi, &lt;name&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Remember to test your program after every chunk of code that you write to make sure it is working. This is what you should have so far, if your name is Anya:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$python3 input.py
+It is currently the year 2021
+What is your name? Anya
+Hi, Anya
+</code></pre></div>    </div>
+  </li>
+  <li>Next have your program ask the user’s age:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>How old are you?
+</code></pre></div>    </div>
+  </li>
+  <li>Next have your program print the square of the user’s age:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The square of your age is &lt;value&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>This is a good time to check to make sure your code is working correctly again:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python3 input.py
+It is currently the year 2021
+What is your name? Anya
+Hi, Anya
+How old are you? 200
+The square of your age is 40000
+</code></pre></div>    </div>
+  </li>
+  <li>Now have your program also print out the following:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are now twice the age you were in &lt;answer&gt;
+</code></pre></div>    </div>
+    <p>One slightly strange thing that you might have noticed is that you might be being told a year that’s represented using a decimal point, which is probably not how you think of years. 
+(Was the Magna Carta really signed in year 1215.0?) 
+We’ll talk about this issue more in a little while — it’s related to the way that numbers are stored internally in Python — but you can fix it right now. Instead of printing the value of <code class="language-plaintext highlighter-rouge">currentYear - age/2</code> for example, you can print the value of <code class="language-plaintext highlighter-rouge">currentYear - int(age/2)</code>, or <code class="language-plaintext highlighter-rouge">int(currentYear - age/2)</code>. The function <code class="language-plaintext highlighter-rouge">int</code> stands for <strong>int</strong>eger, and it converts any number it’s given into an integer. (The function <code class="language-plaintext highlighter-rouge">int</code> is “generous” about your age: it rounds down.)</p>
+  </li>
+</ul>
+
+<p>You should now get the following:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$python3 input.py
+It is currently the year 2021
+What is your name? Anya
+Hi, Anya
+How old are you? 200
+The square of your age is 40000
+You are now twice the age you were in 1921
+</code></pre></div></div>
+
+<ul>
+  <li>Also print out the year that the user will be twice their current age:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You will be twice your current age in &lt;year&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Finally, have your program print out the first U.S. presidential election in which the user could vote. (Assume that the user’s birthday is not between today and Election Day, the second Tuesday in November, and that the user is otherwise eligible to vote.) This calculation is a bit trickier in its logic, because: 1) a voter must be 18 years old to vote. 2) Presidential elections happen only every four years, in years that are divisible by 4 (like 2008 or 2020, because 2008 = 502 * 4 and 2020 = 505 * 4).</li>
+</ul>
+
+<p>You’ll have to figure out a formula to express the first year that the user is at least 18 years old and the year is divisible by 4. (Yes, you could look up some more advanced features of Python to accomplish this task, and it’s fine to — but I also promise that you can do it using only the elements from this problem set.) Here’s a small hint (about decades instead, but still relevant):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>year = 2021
+decade = int(year / 10)
+print("I love the", decade, "0s.")
+
+# Or, for comparison, with better spacing:
+print("I love the " + str(decade) + "0s.")
+</code></pre></div></div>
+
+<p>Here is the final output that your program should handle:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python3 input.py
+It is currently the year 2021
+What is your name? Anya
+Hi, Anya
+How old are you? 200
+The square of your age is 40000
+You are now twice the age you were in 1921
+You will be twice your current age in 2221
+Eligible to vote in: 1836
+</code></pre></div></div>
+
+<ul>
+  <li>Any program with more than a few lines of code (so nearly all of them), should have comments describing what blocks of the code do. We’ll learn more about how to better organize code in the future, but for now you should put in a couple of comments describing what blocks of code are doing so that someone reading your program can easily see what is going on. You should also make sure any variables you used are named well and make sure your header describes what the program does. Finally, be mindful of the spacing in your program: how can you use an extra line here or there to make it easier to read, but not too many? There are several right answers to these style questions, so go with what you think makes it easiest to read and stay consistent. The graders will give feedback on style to help you improve it.</li>
+</ul>
+
+<h2 id="rubric">Rubric</h2>
+<p>Your assignment will be graded with the following rubric:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Passes tests</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Style (header, comments, variable names, spacing)</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
