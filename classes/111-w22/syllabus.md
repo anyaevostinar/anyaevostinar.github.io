@@ -214,4 +214,34 @@ Please familiarize yourself with Carleton's academic integrity policies and make
 A possible penalty for academic dishonesty in a course is an F in the course.
 It's not worth it -- please seek help using the resources above instead.
 
+## Pedagogy
+This section discusses some of the pedagogical principles that you'll see in this class.
+If you are interested in *why* the class is structured how it is, you might find an answer here (and I'm also happy to discuss it with you).
+If you aren't interested in pedagogy, you can skip this.
+
+### Active Learning
+Research has shown that active learning in the classroom leads to better retention of material for all students, but especially those from historically marginalized groups.
+Computer science classes are well-suited to active learning, because we can practice ideas in class by programming and writing out algorithms, for example.
+In this class, a large portion of in-class time will be spent with you grappling with ideas and trying to solve problems that I've given you while I and the prefect circulate to answer questions.
+This requires that you've read the assigned reading ahead of time, so that I don't need to lecture and we can spend more time learning how to actually use the ideas.
+Active learning can feel less effective or productive in the moment, because you are struggling to figure things out instead of me just explaining things to you.
+However, that process of struggling is exactly what is needed for you to learn the material most effectively for long-term retention.
+
+### Interleaving
+There are two main ways that content can be organized in a course: block and interleaved.
+Block learning is the idea of first learning all about topic X, taking a test, and then forgetting all about it to learn about topic Y. 
+Interleaving is the process of learning a bit about topic X, a bit about topic Y, a bit more about topic Z, being tested on all of them, then learning more about all of them and being tested again.
+
+Again this is a situation where block learning feels the most effective and efficient in the short term, and you'd do best on the tests in the short term.
+However, copious research shows that interleaving is the most effective in the long term. 
+It is again the very process of struggling to recall something you learned a while ago that triggers your brain to then store that information into long term memory.
+Interleaving also leads to higher *transfer* abilities, where you are able to apply what you know to a new problem. (If you want to learn more about this, there are several excellent books, but one I recommend currently is Range: Why Generalists Triumph in a Specialized World by David Epstein.)
+
+### Pair Programming
+Pair programming is a very common practice in computer science industry, where two programmers sit at a shared computer and both engage in the process of writing a program.
+One is the 'driver' at the keyboard for a block of time while the other is the 'navigator' that is watching and thinking through the overall program, as well as spotting typos.
+You switch roles regularly (every 10-15 minutes or whenever the navigator has an 'aha' moment) and are both fully engaged in the task for the whole time.
+This method of programming has been shown to be highly effective in producing better code (not necessarily in a shorter period of time though) and leading to a better understanding of the problem for both programmers.
+We'll use pair programming a lot in this course for several reasons: 1) as I said, it is very common in industry, so it's good for you to get comfortable with it; 2) it is used in many upper level courses at Carleton, so again good for you to be comfortable with it; 3) ultimately it improves the learning and understanding of the people involved; and 4) when you are struggling with new concepts, it can feel a lot more doable when you have someone else there who is struggling with you.
+
 *This syllabus is based heavily on the syllabus from Anna Rafferty.*

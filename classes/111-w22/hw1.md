@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HW1 First Python Programs
+title: HW1 
 permalink: /classes/111-w22/hw1
 ---
 
@@ -8,22 +8,47 @@ permalink: /classes/111-w22/hw1
 
 This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the [collaboration](collaboration) policy.
 
-This assignment is worth 8 points total, 4 of which are checked on Gradescope automatically with an **autograder** and 4 of which are based on style, which will be explained below.
-
-This assignment is due on Wednesday Jan 12th at 10pm. See the [syllabus](syllabus) for the late policy.
+This assignment is worth 12 points total and is due on Wednesday Jan 12th at 10pm. See the [syllabus](syllabus) for the late policy.
 
 ## Goals
-The goal of this assignment is two-fold. First, to get started with basic Python programming and thinking algorithmically. Second, to test out the Gradescope autograding process and work out any issues. Like the Paper Flower assignment, this one is easier and has less requirements than future assignments will.
+The goal of this assignment is two-fold: to get started with basic Python programming and also thinking algorithmically. 
 
 ## Setup
-I recommend that you complete this assignment in Olin 310.
+I recommend that you complete the programming portion of this assignment in Olin 310.
 
 [Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=CS+111+and+201+workflow+in+CS+labs) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `HW1`
 * Open your `HW1` folder in VSCode
-* Create two files `helloworld.py` and `input.py`
+* Create three files `scrabble.txt`, `helloworld.py`, and `input.py`.
 
 If you really want to use your personal machine, there are instructions for installing VSCode and Python available: [Mac](https://wiki.carleton.edu/pages/viewpage.action?pageId=92275629) and [Windows](https://wiki.carleton.edu/pages/viewpage.action?pageId=92275633). You can also [remotely connect to COURSES](https://wiki.carleton.edu/display/itskb/Network+Drives). If you run into trouble with these setups, you can ask me or Mike Tie for help, but I do really recommend just working in Olin 310.
+
+## Scrabble
+Even before you've learned about Python, you can still continue working on thinking algorithmically by coming up with another algorithm written in English.
+
+The game of Scrabble is a word game in which players form words from a collection of tiles in their hand. 
+I play this game with my father-in-law every time we visit and so need to develop some good strategies for winning.
+In the game, the first player draws a “hand” of seven tiles, each of which has a letter printed on it. The person aims to form a legal word — one found in the official Scrabble dictionary (which has some very strange words for the record) — worth as many points as possible. 
+A bingo is a play that uses all seven tiles in the player’s hand. The Scrabble scoring system strongly rewards bingos (because they are really hard to get). For example, if you are dealt the hand
+```
+|N| |T| |H| |P| |O| |S| |Y|
+```
+
+then you can play a bingo (the word `PYTHONS`), but if you are dealt the hand
+```
+|C| |A| |R| |L| |E| |T| |O|
+```
+
+then there’s no bingo play available. (It’s harder to persuade you that this hand is a “no” than it was to persuade you that the previous hand is a “yes,” but it is, I promise).
+Describe, in as much detail as necessary to be completely clear, an algorithm that determines whether a given hand of seven tiles can be played as a bingo. Do not give instructions like “try all the different orderings of the tiles in the hand and see if any of them are words”; instead, tell me how to figure out every step. You should assume that I have a very bad memory, but plenty of scratch paper;
+tell me what to write down (or read from my notes) as I look at the tiles. You should assume that I have access to a dictionary, but I don’t remember how to use it well. In particular, you should assume that I can do the following kinds of things reliably:
+* turn pages in the dictionary.
+* remember a few words (or any sequence of up to ten letters) in my head.
+* recognize a word that I’m remembering when I see it.
+* write things down on a piece of scrap paper.
+* use my fingers to keep track of where I am in the dictionary, tiles, or on a piece of scrap paper.
+
+Later in the term you will have a chance to implement an algorithm for this problem in Python, but for now I want you to describe in English how to solve this problem.
 
 ## Hello World
 
@@ -155,16 +180,19 @@ Eligible to vote in: 1836
 
 * Any program with more than a few lines of code (so nearly all of them), should have comments describing what blocks of the code do. We'll learn more about how to better organize code in the future, but for now you should put in a couple of comments describing what blocks of code are doing so that someone reading your program can easily see what is going on. You should also make sure any variables you used are named well and make sure your header describes what the program does. Finally, be mindful of the spacing in your program: how can you use an extra line here or there to make it easier to read, but not too many? There are several right answers to these style questions, so go with what you think makes it easiest to read and stay consistent. The graders will give feedback on style to help you improve it.
 
+
+
 ## Rubric
 Your assignment will be graded with the following rubric:
 
 | Item | Points |
 |------|--------|
-| Passes tests | 4 |
+| Well-described Scrabble algorithm | 4 |
+| Passes programming tests | 4 |
 | Style (header, comments, variable names, spacing) | 4 |
 
 ## Submission
-You should submit your two files through the Gradescope link on Moodle for this assignment.
+You should submit your three files through the Gradescope link on Moodle for this assignment.
 You are able to upload them individually to Gradescope, at which point the autograder will run and let you know if your code works correctly.
 You are able to submit your code as many times as you wish before the deadline to fix any issues.
 If you have questions about what the autograder is telling you is wrong, please ask!
