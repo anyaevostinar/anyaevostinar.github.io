@@ -41,10 +41,10 @@ Readings should be completed **before** the class day that they are listed. Clas
 | F 2/11 | Zelle 10.2-10.3	|	|  |
 | **Week 7**| **Data Analysis**|  | |
 | M 2/14 |  Zelle 10.4-10.5 |	| |
-| W 2/16 | Zelle 11.1-11.3, 11.7; HW6 <br/>Optional: [New Yorker article Game Master](https://moodle.carleton.edu/pluginfile.php/960958/mod_resource/content/0/seabrook-game-master.pdf) (pg 96 in particular)<br/> and [this article](https://link.springer.com/content/pdf/10.1007/s10956-010-9211-1.pdf) if you want to know the problems with the game Spore|			 | HW7 |
+| W 2/16 | Zelle 11.1-11.3, 11.7; HW6 <br/>Optional: [New Yorker article Game Master](https://moodle.carleton.edu/pluginfile.php/960958/mod_resource/content/0/seabrook-game-master.pdf) (pg 95-96 in particular)<br/> and [this article](https://link.springer.com/content/pdf/10.1007/s10956-010-9211-1.pdf) if you want to know the problems with the game Spore|			 | HW7 |
 | F 2/18| Study!	 |	Exam 2	|  |
 | **Week 8** | **Software Design & Recursion** |   | |
-| M 2/21 | Zelle 11.4 & 7.5 |		| |
+| M 2/21 | Zelle 7.5, 10.6.1, 10.6.3, 11.4 |		| |
 | W 2/23 | 	Zelle 12.1 & 12.4; Skim 12.2 & 12.3; HW7	 |  HW8|	
 | F 2/25 | Zelle 13.2.1-13.2.5	|   |	 |
 | **Week 9** | **Searching & Sorting**|  | |

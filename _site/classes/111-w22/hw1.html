@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>HW1 First Python Programs | Anya E. Vostinar</title>
+<title>HW1 | Anya E. Vostinar</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="HW1 First Python Programs" />
+<meta property="og:title" content="HW1" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
 <meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
@@ -13,9 +13,9 @@
 <meta property="og:url" content="http://localhost:4000/classes/111-w22/hw1" />
 <meta property="og:site_name" content="Anya E. Vostinar" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="HW1 First Python Programs" />
+<meta property="twitter:title" content="HW1" />
 <script type="application/ld+json">
-{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/hw1","@type":"WebPage","headline":"HW1 First Python Programs","@context":"https://schema.org"}</script>
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/hw1","@type":"WebPage","headline":"HW1","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
 <body><header class="site-header" role="banner">
@@ -38,7 +38,7 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">HW1 First Python Programs</h1>
+    <h1 class="post-title">HW1</h1>
   </header>
 
   <div class="post-content">
@@ -46,24 +46,49 @@
 
 <p>This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
 
-<p>This assignment is worth 8 points total, 4 of which are checked on Gradescope automatically with an <strong>autograder</strong> and 4 of which are based on style, which will be explained below.</p>
-
-<p>This assignment is due on Wednesday Jan 12th at 10pm. See the <a href="syllabus">syllabus</a> for the late policy.</p>
+<p>This assignment is worth 12 points total and is due on Wednesday Jan 12th at 10pm. See the <a href="syllabus">syllabus</a> for the late policy.</p>
 
 <h2 id="goals">Goals</h2>
-<p>The goal of this assignment is two-fold. First, to get started with basic Python programming and thinking algorithmically. Second, to test out the Gradescope autograding process and work out any issues. Like the Paper Flower assignment, this one is easier and has less requirements than future assignments will.</p>
+<p>The goal of this assignment is two-fold: to get started with basic Python programming and also thinking algorithmically.</p>
 
 <h2 id="setup">Setup</h2>
-<p>I recommend that you complete this assignment in Olin 310.</p>
+<p>I recommend that you complete the programming portion of this assignment in Olin 310.</p>
 
 <p><a href="https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&amp;title=CS+111+and+201+workflow+in+CS+labs">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
 <ul>
   <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW1</code></li>
   <li>Open your <code class="language-plaintext highlighter-rouge">HW1</code> folder in VSCode</li>
-  <li>Create two files <code class="language-plaintext highlighter-rouge">helloworld.py</code> and <code class="language-plaintext highlighter-rouge">input.py</code></li>
+  <li>Create three files <code class="language-plaintext highlighter-rouge">scrabble.txt</code>, <code class="language-plaintext highlighter-rouge">helloworld.py</code>, and <code class="language-plaintext highlighter-rouge">input.py</code>.</li>
 </ul>
 
 <p>If you really want to use your personal machine, there are instructions for installing VSCode and Python available: <a href="https://wiki.carleton.edu/pages/viewpage.action?pageId=92275629">Mac</a> and <a href="https://wiki.carleton.edu/pages/viewpage.action?pageId=92275633">Windows</a>. You can also <a href="https://wiki.carleton.edu/display/itskb/Network+Drives">remotely connect to COURSES</a>. If you run into trouble with these setups, you can ask me or Mike Tie for help, but I do really recommend just working in Olin 310.</p>
+
+<h2 id="scrabble">Scrabble</h2>
+<p>Even before you’ve learned about Python, you can still continue working on thinking algorithmically by coming up with another algorithm written in English.</p>
+
+<p>The game of Scrabble is a word game in which players form words from a collection of tiles in their hand. 
+I play this game with my father-in-law every time we visit and so need to develop some good strategies for winning.
+In the game, the first player draws a “hand” of seven tiles, each of which has a letter printed on it. The person aims to form a legal word — one found in the official Scrabble dictionary (which has some very strange words for the record) — worth as many points as possible. 
+A bingo is a play that uses all seven tiles in the player’s hand. The Scrabble scoring system strongly rewards bingos (because they are really hard to get). For example, if you are dealt the hand</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|N| |T| |H| |P| |O| |S| |Y|
+</code></pre></div></div>
+
+<p>then you can play a bingo (the word <code class="language-plaintext highlighter-rouge">PYTHONS</code>), but if you are dealt the hand</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|C| |A| |R| |L| |E| |T| |O|
+</code></pre></div></div>
+
+<p>then there’s no bingo play available. (It’s harder to persuade you that this hand is a “no” than it was to persuade you that the previous hand is a “yes,” but it is, I promise).
+Describe, in as much detail as necessary to be completely clear, an algorithm that determines whether a given hand of seven tiles can be played as a bingo. Do not give instructions like “try all the different orderings of the tiles in the hand and see if any of them are words”; instead, tell me how to figure out every step. You should assume that I have a very bad memory, but plenty of scratch paper;
+tell me what to write down (or read from my notes) as I look at the tiles. You should assume that I have access to a dictionary, but I don’t remember how to use it well. In particular, you should assume that I can do the following kinds of things reliably:</p>
+<ul>
+  <li>turn pages in the dictionary.</li>
+  <li>remember a few words (or any sequence of up to ten letters) in my head.</li>
+  <li>recognize a word that I’m remembering when I see it.</li>
+  <li>write things down on a piece of scrap paper.</li>
+  <li>use my fingers to keep track of where I am in the dictionary, tiles, or on a piece of scrap paper.</li>
+</ul>
+
+<p>Later in the term you will have a chance to implement an algorithm for this problem in Python, but for now I want you to describe in English how to solve this problem.</p>
 
 <h2 id="hello-world">Hello World</h2>
 
@@ -203,7 +228,11 @@ Eligible to vote in: 1836
   </thead>
   <tbody>
     <tr>
-      <td>Passes tests</td>
+      <td>Well-described Scrabble algorithm</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Passes programming tests</td>
       <td>4</td>
     </tr>
     <tr>
@@ -212,6 +241,12 @@ Eligible to vote in: 1836
     </tr>
   </tbody>
 </table>
+
+<h2 id="submission">Submission</h2>
+<p>You should submit your three files through the Gradescope link on Moodle for this assignment.
+You are able to upload them individually to Gradescope, at which point the autograder will run and let you know if your code works correctly.
+You are able to submit your code as many times as you wish before the deadline to fix any issues.
+If you have questions about what the autograder is telling you is wrong, please ask!</p>
 
   </div>
 
