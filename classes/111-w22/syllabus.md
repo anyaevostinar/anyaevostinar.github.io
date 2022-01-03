@@ -4,8 +4,6 @@ title: CS111 Introduction to Computer Science W22 Syllabus
 permalink: /classes/111-w22/syllabus
 ---
 
-**PAGE UNDER CONSTRUCTION**
-
 Winter 2022
 
 **Instructor**: Anya E. Vostinar

@@ -4,8 +4,6 @@ title: CS111 Data Structures W22 Schedule
 permalink: /classes/111-w22/schedule
 ---
 
-**PAGE UNDER CONSTRUCTION**
-
 This is a rough schedule of topics for each day and the release and due dates for each homework assignment.  
 
 **Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses.
