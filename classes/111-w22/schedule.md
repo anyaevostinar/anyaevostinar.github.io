@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS111 Data Structures W22 Schedule
+title: CS111 Introduction to Computer Science W22 Schedule
 permalink: /classes/111-w22/schedule
 ---
 
