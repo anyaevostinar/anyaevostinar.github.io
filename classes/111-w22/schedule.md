@@ -19,7 +19,7 @@ Readings should be completed **before** the class day that they are listed. Clas
 | F 1/7 | Zelle 1.1-1.5; Paper Flower Algorithm |  | [HW1](hw1)	 |
 | **Week 2** | **Variables and Numbers** |  | |
 | M 1/10 | Zelle 1.6-1.7; [Unix Tutorial](https://cs.carleton.edu/faculty/jondich/documents/unixtutorial/) up through section 4		|  |	 |
-| W 1/12 | Zelle 2.1-2.5; HW1 	|	| HW2 |
+| W 1/12 | Zelle 2.1-2.5; HW1 	|	| [HW2](hw2) |
 | F 1/14 | Zelle 3.1-3.2 & 3.5|	| |
 | **Week 3** | **Strings, Conditionals, and Loops** |  | |
 | M 1/17 | Zelle 7.1-7.3 & 5.1	| 	| |
