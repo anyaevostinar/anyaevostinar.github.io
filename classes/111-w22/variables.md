@@ -73,6 +73,8 @@ Note that the seconds should be a value between 0 and 59, which means simply sub
 
 Hint: consider what you may be able to do with the `//` (integer division) and `%` (modulo) operators.
 
+Try to come up with test input that will check for all the types of cases that your code should be able to handle (for example, input that would have messed up the strategy of just subtracting the minutes and seconds).
+
 
 ## Acknowledgements
 This lab is adapted from labs by Profs. James Ryan and Eric Alexander.

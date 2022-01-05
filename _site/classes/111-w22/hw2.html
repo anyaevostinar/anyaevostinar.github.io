@@ -51,7 +51,7 @@ Switch off the typing duties so that you each type for roughly half of the time.
 
 <p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
 
-<p>This assignment is worth TBD points total, TBD of which are checked on Gradescope automatically with an <strong>autograder</strong> and TBD of which are based on style.</p>
+<p>This assignment is worth 15 points total, 4 of which are checked on Gradescope automatically with an <strong>autograder</strong>, 7 for written answers, and 4 for program style.</p>
 
 <p>This assignment is due on Wednesday Jan 19th at 10pm. See the <a href="syllabus">syllabus</a> for the late policy.</p>
 
@@ -66,10 +66,22 @@ Switch off the typing duties so that you each type for roughly half of the time.
 <ul>
   <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW2</code></li>
   <li>Open your <code class="language-plaintext highlighter-rouge">HW2</code> folder in VSCode</li>
-  <li>Create three files <code class="language-plaintext highlighter-rouge">coins.txt</code>, <code class="language-plaintext highlighter-rouge">solar.py</code>, and <code class="language-plaintext highlighter-rouge">bikes.py</code>.</li>
+  <li>Create two files <code class="language-plaintext highlighter-rouge">coins.txt</code> and <code class="language-plaintext highlighter-rouge">solar.py</code>.</li>
+  <li>Download the two starter files from Moodle (<code class="language-plaintext highlighter-rouge">bike.py</code> and the CSV file) and put them into your folder</li>
 </ul>
 
 <h2 id="coins">Coins</h2>
+<p>In the file <code class="language-plaintext highlighter-rouge">coins.txt</code>, answer the following question. It’s a question from a different era (in more than one sense).</p>
+
+<p>There used to be a bakery on Division Street called Quality Bakery that only took cash. Imagine that you go into Quality Bakery to get a donut. Since Quality only accepts cash, you hand over a bill, and get some coins back. If the baker/cashier is paying attention, you’ll get as little small change as possible — first you’ll get as many dollars as possible, then as many quarters as possible, and so on. (So if you’re supposed to pay $5.42 and you give a $10, you’ll get back 4 dollars, then you’re owed $0.68. You get two quarters, and you’re owed $0.18. You get one dime, and you’re owed $0.08. Etc.)</p>
+
+<p>The algorithm that the baker is using is an example of a <em>greedy algorithm</em>, because at every step you greedily use as many dollar bills (then quarters, then dimes, etc.) as you can, without any long-term consideration of whether using fewer quarters might result in you needing fewer total coins to give back to the customer. It turns out that for the American change system (25/10/5/1), the greedy algorithm is optimal — that is, it always gives the customer the fewest total coins. However, this property does not hold for all sets of coins!</p>
+
+<p>(a) Give an example coin set in which the greedy algorithm does not give the smallest possible set of coins. Explain. (Hint: there’s an example in which the greedy algorithm fails that has only three coins, each of which is worth at most five cents.) Assume there is a penny in every coin system.</p>
+
+<p>(b) Suppose that you are given a list of coin values — assume that a penny is included in the list — and an amount x of change to make. Describe an algorithm that will find the smallest number of coins that total to x in value. Do not worry about making your algorithm fast/efficient/clever. Just try to think of an approach that will find the smallest possible set of coins. In writing up the description of your algorithm, you should aim to give a description that is sufficiently detailed for a smart-but-completely-ignorant-of-computer-science person to optimally make change.</p>
+
+<p>(Warning: this will require some thinking! If you’re stuck, think about the “brute-force” strategy that worked for the in-class office-hours-scheduling example. Suppose that the coin system has coins worth 17 cents, 5 cents, and 1 cent. Suppose that you’re trying to make change for 42 cents. You could potentially give 0, 1, or 2 seventeen-cent coins as change. How would you figure out which one of those three choices is the best?)</p>
 
 <h2 id="solar">Solar</h2>
 <p>In this problem, you will write a program that asks the user for information about their house — namely, the length and width of the house (both in feet) — and then computes the amount of energy that can be generated with rooftop solar for this house.</p>
@@ -104,6 +116,125 @@ That's equivalent to about $992.16 of electricity.
 </ul>
 
 <p>Fill in <code class="language-plaintext highlighter-rouge">solar.py</code> with a program that performs as specified here.</p>
+
+<h2 id="bikes">Bikes</h2>
+<p>An increasing number of cities in the United States have begun to offer bikeshare programs: there are a number of stations scattered across the city, with kiosks, pay stations, and locked bikes. People can rent a bike for a short period of time, picking up at any one of the stations and dropping off at the same station or any other station. There’s Nice Ride in Minneapolis/St. Paul, Citi Bike in New York, among many others. Here we’ll play around with a bit of data from Capital Bikeshare, in Washington DC. You will have access to a file reporting all rides from Capital Bikeshare in August 2021. (The original data came from https://www.capitalbikeshare.com/system-data; there are a few formatting modifications to make your lives easier.) A typical line of the file is of the form</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0:23:9,2021-08-14 10:25:18,6th &amp; K St NE,31645,2021-08-14 10:48:27,14th &amp; V St NW,31101,classic_bike,casual
+</code></pre></div></div>
+
+<p>Each line corresponds to one ride, and it reports several facts about the ride:</p>
+<ul>
+  <li>ride duration (0:23:9 means 0 hours, 23 minutes, 9 seconds).</li>
+  <li>start time (2021-08-14 10:25:18)</li>
+  <li>start station (6th &amp; K St NE)</li>
+  <li>start terminal ID number (31645)</li>
+  <li>destination time (2021-08-14 10:48:27)</li>
+  <li>destination station (14th &amp; V St NW)</li>
+  <li>destination terminal ID number (31101)</li>
+  <li>the type of the bike used (electric_bike or docked_bike or classic_bike)</li>
+  <li>casual or member indicating whether the rider is a member of the bikeshare system.</li>
+</ul>
+
+<p>There are all sorts of fascinating questions you could ask about these data. Where should the next station be built? How should bikes be reallocated among stations during the day (a.k.a. are there places that are more popular destinations than departure points late at night, and the other way around during the day)? How should rides be priced? These questions are beyond the scope of this class, though totally fascinating questions at the intersection of CS and urban planning. But here, you’ll do some much simpler tasks with the bike system, as a first project that deals with large data sets and some relatively simple Python.</p>
+
+<ol>
+  <li>First, take a look at the <code class="language-plaintext highlighter-rouge">bike.py</code>. Your task in this assignment will be to add some functionality to this program. First, fill in the code that calculates the <strong>duration of each ride in seconds</strong>. The lines</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>times = duration.split(":")
+hours, minutes, seconds = 0, 0, 0 # YOU FILL THIS IN! 
+durationInSeconds = 0 # YOU FILL THIS IN!
+</code></pre></div></div>
+
+<p>are where the calculation is done. Be careful: as written, the data in <code class="language-plaintext highlighter-rouge">times[0]</code>, <code class="language-plaintext highlighter-rouge">times[1]</code>, and <code class="language-plaintext highlighter-rouge">times[2]</code> (which you might want to store as the variables hours/minutes/seconds) are strings rather than integers; you can convert them to integers if you want, but it’s up to you to do so! Modify the calculation to correctly find the duration of this ride in seconds. When you run the program, you should now see the length of the longest ride in the whole dataset.</p>
+
+<p>(Hint: don’t panic if you see a crazily large number. It is more likely to indicate a mistake made by a Washingtonian bike rider than a mistake made by a Carletonian programmer!)</p>
+
+<ol>
+  <li>Let’s figure out the net traffic into/out of the Kennedy Center station. The <code class="language-plaintext highlighter-rouge">netChangeAtKennedy</code> variable should count how many more bikes arrive at Kennedy Center in the data than leave Kennedy Center. This variable needs to be updated for every ride. Here are the lines that ought to do it:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># YOU FIX THESE CONDITIONS:
+if "this ride left one bike at station ’Kennedy Center’":
+    netChangeAtKennedy = netChangeAtKennedy + 1
+if "this ride took one bike away from station ’Kennedy Center’":
+    netChangeAtKennedy = netChangeAtKennedy - 1
+</code></pre></div></div>
+
+<p>Modify the conditions of the two if statements so that they correctly update the number of bikes entering/leaving this station. Also correct the “???” in the following lines to be the correct value:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>elif netChangeAtKennedy &lt; 0:
+    print("There are now ??? fewer bikes at Kennedy Center", # FIX THIS!
+"than when we started.")
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>Note the code from the previous question (computing the net change at the Kennedy Center) with two separate if statements, rather than a single if … elif statement. Why would this be the best choice? Add a comment to bike.py to explain why it’s structured this way.</p>
+  </li>
+  <li>
+    <p>Let’s combine and extend the modifications that you made in the last two questions to find the <strong>duration of the longest ride that departs from the Kennedy Center</strong>. You’ll need to create a second variable analogous to <code class="language-plaintext highlighter-rouge">longestRideDuration</code>, which will store the length of the longest ride from Kennedy Center that you’ve encountered so far. You’ll need to update that variable at the appropriate times in the program, as we did with <code class="language-plaintext highlighter-rouge">longestRideDuration</code> — that is, whenever we encounter a ride leaving the Kennedy Center whose duration is longer than all previously encountered rides leaving the Kennedy Center. Finally, you’ll need to update this line:</p>
+  </li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("The longest ride that departed from the Kennedy Center lasted ??? seconds or about ??? hours.") # FIX THIS
+</code></pre></div></div>
+
+<p>You should round the number of hours to the nearest integer.</p>
+
+<ol>
+  <li>Also add code to compute the <em>average</em> length of all docked-bike rides in the dataset, in minutes and fix this line:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("The mean docked-bike ride lasted X minutes.") # FIX THIS
+</code></pre></div></div>
+
+<h2 id="submission">Submission</h2>
+<p>You should submit your three files through the Gradescope link on Moodle for this assignment.
+You are able to upload them individually to Gradescope, at which point the autograder will run and let you know if your code works correctly.
+You are able to submit your code as many times as you wish before the deadline to fix any issues.
+If you have questions about what the autograder is telling you is wrong, please ask!</p>
+
+<p>If you have a partner for this assignment, you can indicate who they are via Gradescope, so be sure to set that up correctly and then between the two of you, you should only need to submit once.
+(This is our first test of using groups with Gradescope linked to Moodle, so let me know if your score isn’t showing up correctly in Moodle!)</p>
+
+<h2 id="grading">Grading</h2>
+
+<p>Your assignment will be graded using the following rubric:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Item</td>
+      <td>Points</td>
+    </tr>
+    <tr>
+      <td>Correct coins example</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Explanation for coins example accurate</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Well-described coins algorithm</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Correct answer for bike</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Autograder tests</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Programming style (header, comments, variable names, spacing)</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
   </div>
 

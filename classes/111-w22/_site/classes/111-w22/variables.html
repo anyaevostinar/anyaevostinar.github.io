@@ -1,0 +1,76 @@
+<p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Debugging poorly written and buggy code is a valuable skill.
+To help you practice it, I’ve written a painfully bad program called <code class="language-plaintext highlighter-rouge">bad.py</code> (or is it??).
+Download <a href="bad-1.py">this code</a>, move it to your folder for today, and open it in VSCode.</p>
+
+<p>This code is both badly styled, making it very difficult to read, and has a bug or two.
+You should aim to improve it, which will probably involve:</p>
+<ul>
+  <li>Drawing out a memory diagram of what is going on with each of the variables</li>
+  <li>Fixing variable names</li>
+  <li>Getting it to output something</li>
+  <li>Running it several times to see what it might be trying to do (it will look familiar eventually)</li>
+  <li>Fixing a logical bug</li>
+  <li>Making the variable names useful and rearranging things</li>
+  <li>Writing comments and documentation</li>
+</ul>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Work through the expressions listed below, one at a time, with your partner. For each expression, you should work together to predict a) the value produced by the expression, and b) the data type of that value. For instance, the expression <code class="language-plaintext highlighter-rouge">2 + 2</code> produces the value 4, which has the type <code class="language-plaintext highlighter-rouge">int</code> (for integer). Once you’ve made your prediction(s) for an expression, type in the corresponding Python code to see if you’re right! 
+The easiest way to test your predictions will be to type in the code in an interactive session with the Python interpreter. As a reminder, you can start an interactive session with a Python interpreter by typing the command python3 in Terminal, which you can pull up from the bottom of VSCode. To check the type of the value produced by an expression, use a command like <code class="language-plaintext highlighter-rouge">type(2 + 2)</code> (this will return the value <code class="language-plaintext highlighter-rouge">int</code>).</p>
+
+<p>Can you explain any of them that you may have gotten wrong? Wave Anya or Dominic over to ask about any that seem surprising or don’t make sense!</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5 / 2
+5 // 2
+5 ** 2
+5 % 2
+5 // 2.0
+2 * 3 
+2 * float(3)
+6 / 2
+int(6 / 2)
+int(3.5) * 2
+int(3.5) * 2.0
+round(3.5) % 2
+36 % 5
+36 % 5.0
+6 / 3
+int(6 / 3)
+6 // 3
+6.0 // 3
+5.3 % 4
+</code></pre></div></div>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Consider a bizarro alternate universe in which an hour is 47 minutes long. Each day still has 24 hours and each year still has 365 days (you can ignore leap years).</p>
+
+<p>Write a Python program that will print out how many minutes longer a year is in the 60-minute universe than in the 47-minute universe.
+Extend your program to print out how many days that value is equal to (in both worlds).</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Sometimes it is useful to add and subtract times. For example, if you are trying to measure a runner’s lap time, you might record the start time and the end time for the lap and use that information to find the amount of time that elapsed.</p>
+
+<p>Write some code that asks the user for four integer inputs:</p>
+<ul>
+  <li>The minutes of the start time.</li>
+  <li>The seconds of the start time.</li>
+  <li>The minutes of the end time.</li>
+  <li>The seconds of the end time.</li>
+</ul>
+
+<p>Your code should then calculate the difference between the end time and start time, and print out the elapsed time in minutes and seconds.</p>
+
+<p>Note that the seconds should be a value between 0 and 59, which means simply subtracting minutes and seconds will not work! Think carefully about what you need to calculate here, and perhaps write out the algorithm on paper or in a text file before you attempt to code it up.</p>
+
+<p>Hint: consider what you may be able to do with the <code class="language-plaintext highlighter-rouge">//</code> (integer division) and <code class="language-plaintext highlighter-rouge">%</code> (modulo) operators.</p>
+
+<p>Try to come up with test input that will check for all the types of cases that your code should be able to handle (for example, input that would have messed up the strategy of just subtracting the minutes and seconds).</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This lab is adapted from labs by Profs. James Ryan and Eric Alexander.</p>
