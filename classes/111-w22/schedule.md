@@ -12,10 +12,10 @@ Readings should be completed **before** the class day that they are listed. Clas
 
 "Zelle" refers to our textbook, **Python Programming: An Introduction to Computer Science, 3rd edition, by John Zelle**. 
 
-| Date	| Homework/Reading Due	| Lab Activity |	Homework Out |
+| Date	| Homework/Reading Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Algorithmic Thinking** |  | |
-| W 1/5 | Reading: [Syllabus](Syllabus), this schedule, <br/> [collaboration policies](collaboration); Fill out Background Survey;<br/> [Recurse Environment Rules](https://www.recurse.com/manual#sec-environment)| | Paper Flower Algorithm |
+| W 1/5 | Reading: [Syllabus](syllabus), this schedule, <br/> [collaboration policies](collaboration); Fill out Background Survey;<br/> [Recurse Environment Rules](https://www.recurse.com/manual#sec-environment)| | Paper Flower Algorithm |
 | F 1/7 | Zelle 1.1-1.5; Paper Flower Algorithm |  | [HW1](hw1)	 |
 | **Week 2** | **Variables and Numbers** |  | |
 | M 1/10 | Zelle 1.6-1.7; [Unix Tutorial](https://cs.carleton.edu/faculty/jondich/documents/unixtutorial/) up through section 4		|  |	 |
