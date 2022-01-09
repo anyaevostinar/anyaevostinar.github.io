@@ -23,7 +23,7 @@ Readings should be completed **before** the class day that they are listed. Clas
 | F 1/14 | Zelle 3.1-3.2 & 7.1-7.3|	| |
 | **Week 3** | **Strings, Bits, and Loops** |  | |
 | M 1/17 | Zelle 2.6, 3.4-3.5 & 5.1	| 	| |
-| W 1/19 | Zelle 2.6, 3.3, 5.2, 5.4, 5.5; HW2|	 | HW3 |
+| W 1/19 | Zelle 2.6, 3.3, 5.2, 5.4, 5.5; HW2|	 | [HW3](hw3) |
 | F 1/21 | Zelle 5.3, 5.6, 8.1-8.2  |			|  |
 | **Week 4** | **Files and Functions** | | |
 | M 1/24 | Study! | Exam 1		| |
