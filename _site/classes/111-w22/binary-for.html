@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Binary and For-Loops Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Binary and For-Loops Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w22/binary-for" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w22/binary-for" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Binary and For-Loops Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/binary-for","@type":"WebPage","headline":"Binary and For-Loops Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Binary and For-Loops Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
+The lab is purposefully longer than what I think you can finish in class so that you have plenty of opportunity for additional practice.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>For each snippet, what would it print out to the screen? If you think there will be an error, indicate the line with the error and explain why.
+After you’ve made a prediction, test out the code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print('Q1')  
+for i in range(10):  
+  if i % 2 == 0:  
+    print(i, 'is even')  
+  if i % 3 == 1:  
+    print(i, 'is special')
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for i in range(5, 0, -1):
+    print(i)
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>words = ['limitless', 'knowledge', 'provoking', 'quadruple', 'happiness']
+i = 0
+for word in words:
+    print(word[i], end='')
+    i = i + 2
+
+print(' ', end='')
+
+j = -1
+for k in range(3, 0, -1):
+    print(words[k][j], end='')
+    j = j - 1
+
+print()
+</code></pre></div></div>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<ol>
+  <li>
+    <p>Write out the first 20 integers in binary. Watch the patterns of bits flipping – this will become more and more familiar the more CS classes you take.</p>
+  </li>
+  <li>
+    <p>Perform the following computations:</p>
+
+    <ul>
+      <li>Convert 111001<sub>2</sub> to base-10 (decimal)</li>
+      <li>Convert 1110001<sub>2</sub> to base-10 (decimal)</li>
+      <li>Convert 1112<sub>10</sub> to base-2 (binary)</li>
+      <li>Convert 324<sub>10</sub> to base-2 (binary)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Add the two number 11101010<sub>2</sub> and 10011001<sub>2</sub> together <em>(staying in binary)</em>. Check your answer in decimal.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-3">Exercise 3</h2>
+
+<p>For the following, try using the <code class="language-plaintext highlighter-rouge">format</code> string method to output the information after you’ve calculated it:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("some info: {} some more info: {}".format(info_one, info_two))
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>Write a snippet of code to count the number of vowels (“aeiouy”) in a given string. You can assume the string is all lowercase.</p>
+  </li>
+  <li>
+    <p>Write a snippet of code to compute the <em>factorial</em> of a positive integer given by the user. The factorial of a positive integer is the product of all of the numbers from 1 up to that integer. For example, 4 factorial (written “4!”) is equal to 1 * 2 * 3 * 4 = 24.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>You can also nest loops inside of each other!
+Think about what the output of each of these snippets will be and then test them.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Snippet 1
+
+n = 4
+m = 3
+for i in range(n):
+  for j in range(m):
+    print('*', end='')
+  print()
+
+
+# Snippet 2
+
+n = 4
+for i in range(n):
+    for j in range(i+1):
+        print('*', end='')
+    print()
+
+
+# Snippet 3
+
+n = 4
+for i in range(n):
+    for j in range(i):
+        print('-', end='')
+    for j in range(i, n+i):
+        print(j, end='')
+    print()
+
+
+# Snippet 4
+
+n = 4
+for i in range(0,n):
+    for j in range(0,n-i-1):
+        print(' ', end='')
+    for j in range(n-i-1,n):
+        print('*', end='')
+    print()
+
+
+# Snippet 5
+
+n = 4
+for i in range(0,n):
+    for j in range(0,n-i-1):
+        print(' ', end='')
+    for j in range(n-i-1,n+i):
+        print('*', end='')
+    print()
+
+
+# Snippet 6
+
+n = 4
+for i in range(n):
+    for j in range(0,-1*n,-1):
+        for k in range(2):
+            print(j*k, end='*')
+        print(i, end=' ')
+    print()
+</code></pre></div></div>
+
+<h2 id="exercise-5">Exercise 5</h2>
+
+<ol>
+  <li>Write a nested for-loop that creates the following output:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 x 0 = 0   0 x 1 = 0   0 x 2 = 0   0 x 3 = 0
+1 x 0 = 0   1 x 1 = 1   1 x 2 = 2   1 x 3 = 3
+2 x 0 = 0   2 x 1 = 2   2 x 2 = 4   2 x 3 = 6
+3 x 0 = 0   3 x 1 = 3   3 x 2 = 6   3 x 3 = 9
+</code></pre></div>    </div>
+  </li>
+  <li>Consider the following code (with blanks that you will fill in):</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ranks = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace']
+suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
+deck = []
+
+for _________________:
+    for _________________:
+        #append adds to the list and f"{x}" is another way of doing the format function
+        deck.append(f"{rank} of {suit}")
+
+for card in deck:
+    print(card)
+</code></pre></div></div>
+
+<p>a. Fill in the blanks above such that the cards are printed out increasing by number (e.g., all of the twos, then all of the threes, then all of the fours, etc.) as below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Two of Clubs
+Two of Diamonds
+Two of Hearts
+Two of Spades
+Three of Clubs
+...
+King of Spades
+Ace of Clubs
+Ace of Diamonds
+Ace of Hearts
+Ace of Spades
+</code></pre></div></div>
+
+<p>b. Fill in the blanks such that the cards are printed out by suit (i.e., all of the clubs, then all of the diamonds, then all of the hearts, then all of the spades), as below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Two of Clubs
+Three of Clubs
+Four of Clubs
+...
+Ace of Clubs
+Two of Diamonds
+Three of Diamonds
+...
+King of Spades
+Ace of Spades
+</code></pre></div></div>
+
+<h2 id="extra">Extra</h2>
+<p>If you have extra time, try these:</p>
+
+<ul>
+  <li>Convert 221<sub><strong>3</strong></sub> to base-10 (decimal)</li>
+  <li>Convert 242<sub>10</sub> to base-16 (hexadecimal, which uses the characters A-F for the extra digits)</li>
+  <li>What is the biggest integer that you can store with:
+    <ul>
+      <li>8 bits?</li>
+      <li>32 bits?</li>
+      <li>64 bits?</li>
+    </ul>
+  </li>
+  <li>Write a generalized algorithm for adding in any base.</li>
+  <li>Take the 6-digit binary number 101010. What happens when you subtract it from 2<sup>6</sup>? See anything interesting about the relationship between these two numbers? Can you explain and generalize the pattern? (If you take 208, you’ll learn about something called “two’s complement”, which is how negative integers are often stored.)</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
