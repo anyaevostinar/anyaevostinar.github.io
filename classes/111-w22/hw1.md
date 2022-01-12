@@ -140,12 +140,12 @@ We’ll talk about this issue more in a little while — it’s related to the w
 You should now get the following:
 ```
 $python3 input.py
-It is currently the year 2021
+It is currently the year 2022
 What is your name? Anya
 Hi, Anya
 How old are you? 200
 The square of your age is 40000
-You are now twice the age you were in 1921
+You are now twice the age you were in 1922
 ```
 
 * Also print out the year that the user will be twice their current age:
@@ -168,14 +168,14 @@ print("I love the " + str(decade) + "0s.")
 Here is the final output that your program should handle:
 ```
 $ python3 input.py
-It is currently the year 2021
+It is currently the year 2022
 What is your name? Anya
 Hi, Anya
 How old are you? 200
 The square of your age is 40000
-You are now twice the age you were in 1921
-You will be twice your current age in 2221
-Eligible to vote in: 1836
+You are now twice the age you were in 1922
+You will be twice your current age in 2222
+Eligible to vote in: 1840
 ```
 
 * Any program with more than a few lines of code (so nearly all of them), should have comments describing what blocks of the code do. We'll learn more about how to better organize code in the future, but for now you should put in a couple of comments describing what blocks of code are doing so that someone reading your program can easily see what is going on. You should also make sure any variables you used are named well and make sure your header describes what the program does. Finally, be mindful of the spacing in your program: how can you use an extra line here or there to make it easier to read, but not too many? There are several right answers to these style questions, so go with what you think makes it easiest to read and stay consistent. The graders will give feedback on style to help you improve it.
