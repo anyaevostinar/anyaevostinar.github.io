@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Cryptography Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Cryptography Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w22/cryptography" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w22/cryptography" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Cryptography Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/cryptography","@type":"WebPage","headline":"Cryptography Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Cryptography Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.
+I also included a conversion chart on Moodle that you should download and have open as you work through today’s lab.
+You may also find <a href="https://docs.python.org/3/library/stdtypes.html#string-methods">this list of Python string methods</a> helpful for reference (the Python docs will be a good place to look up methods as you learn more during the term!)</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>As you read, there are many ways of encoding or <em>encrypting</em> messages by changing the letters into numbers or other letters.</p>
+
+<p>One common encryption algorithm is ROT-13. It derives its name from the fact that it rotates each letter in a message 13 places forward in the alphabet, rotating around to the beginning if necessary. So, for instance, the letter “A”, which is 1st in the alphabet, will become the letter “N”, which is 14th in the alphabet. “C” (3rd) becomes “P” (16th). “R” is the 18th letter in the alphabet. 18 + 13 = 31, which is more letters than we have–so once we go off the end, we start at the beginning with “A”, which means that “R” will become “E” (5th).</p>
+
+<p>There are a couple of advantages of this algorithm:</p>
+
+<ul>
+  <li>Encrypting messages is easy! Just add 13 to each letter. (Though be careful about going off the edge… seem like a good use of modular arithmetic?)</li>
+  <li>Decrypting messages is just as easy! In fact, because there are 26 letters in the alphabet, we decrypt messages using the same algorithm as decrypting them!</li>
+</ul>
+
+<p>Take a minute to practice by decrypting this secret message:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PF VF NJRFBZR
+</code></pre></div></div>
+
+<p>Once you feel confident in how the algorithm works, write up a Python program that will apply ROT-13 to a string given by a user. In pseudocode, your algorithm should look something like this:</p>
+
+<ul>
+  <li>Get a string from the user (using input())</li>
+  <li>For each letter in the string:
+    <ul>
+      <li>Print out the letter 13 places down in the alphabet–being careful to wrap around to the beginning if necessary.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Some notes:</p>
+
+<ul>
+  <li>You can assume the message is entirely in lowercase.</li>
+  <li>Digits, spaces, and punctuation should be printed out as they are, without being rotated at all.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">ord()</code> function converts characters into their ASCII value (e.g., <code class="language-plaintext highlighter-rouge">ord("a")</code> will return 97, <code class="language-plaintext highlighter-rouge">ord("z")</code> will return 122).</li>
+  <li>The <code class="language-plaintext highlighter-rouge">chr()</code> function goes in the opposite direction, converting an ASCII value to a string (e.g., <code class="language-plaintext highlighter-rouge">chr(97)</code> returns “a”, <code class="language-plaintext highlighter-rouge">chr(122)</code> returns “z”).</li>
+</ul>
+
+<p>Create a short fun/happy message with your program and write it on the whiteboards!</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Secret messages are no fun if you can’t read them. 
+Write a second Python program to decode/decrypt the messages, by moving the letters back 13 spaces.
+Decrypt a few of the messages other people have written and see what they say.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>By this point, you have likely surmised that ROT-13 isn’t a very secure method of encryption. 
+One way we could improve it a bit would be to generalize it away from the number 13, allowing users to use any agreed upon number from 1-26. (This generalization is sometimes called the <em>Caesar cipher</em>.)</p>
+
+<p>Extend your program from Exercise 1 to take both a message and a rotation (an integer between -26 and 26) and then apply the rotation to the message. Be careful to check for the need to rotate around to the other side in both directions.</p>
+
+<p>Create another short fun/happy message and write it on the board with the rotation amount (if you were trying to keep it a secret, you would agree with your friend ahead of time what the rotation amount would be).
+Try also decoding some more messages from other people on the board.</p>
+
+<h2 id="extra">Extra</h2>
+<p><em>Note: this part is much harder, but hopefully a fun extension!</em></p>
+
+<p>So that’s a bit better, but still not quite secure. For one thing, we’re assuming that we have a secure channel across which two people can tell each other what rotation to use. If they can communicate that… why not just communicate their message?</p>
+
+<p>But maybe they shared the rotation in person and no one had the chance to overhear it. How, then, might an eavesdropper still decipher their message?</p>
+
+<p>Write a program that takes as input a message that has been encoded using a Caesar cipher (with an unknown rotation) and <strong>helps you determine what the original message was</strong>. This part is intentionally more open-ended than the previous two. I would suggest first writing a program that might also require some intuition on the part of the user (“Here is a list of things the original message <em>might</em> be…”) and then potentially modify that program to make some informed suggestions about which rotations are most likely to have been the original one.</p>
+
+<p>Some things that you might consider:</p>
+
+<ul>
+  <li>Here are <a href="https://en.wikipedia.org/wiki/Letter_frequency">the frequency of letters in the English language</a>, how could you count the most frequent letter in the input and use that information to help you?</li>
+  <li>Also potentially useful could be <a href="https://en.wikipedia.org/wiki/Most_common_words_in_English">the most common words in the English language</a></li>
+</ul>
+
+<p>There are many ways to approach this problem, and many of those are likely to take much longer than the class period. Brainstorming some pseudocode approaches is a good starting point!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
