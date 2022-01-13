@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Lists and While Loops | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Lists and While Loops" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w22/lists-while" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w22/lists-while" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lists and While Loops" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/lists-while","@type":"WebPage","headline":"Lists and While Loops","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Lists and While Loops</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.
+You may find the <a href="https://docs.python.org/3/tutorial/datastructures.html">Python documentation on list methods</a> helpful today.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>For each snippet, what would it print out to the screen? If you think there will be an error, indicate the line with the error and explain why.
+After you’ve made a prediction, test out the code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>words = ['limitless', 'knowledge', 'provoking', 'quadruple', 'happiness']
+i = 0
+for word in words:
+    print(word[i], end='')
+    i = i + 2
+
+print(' ', end='')
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>j = -1
+for k in range(3, 0, -1):
+    print(words[k][j], end='')
+    j = j - 1
+
+print()
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x = 15
+while True:
+  x = x + 2
+  print(x)
+</code></pre></div></div>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Consider the following code (with blanks that you will fill in):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ranks = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace']
+suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
+deck = []
+
+for _________________:
+    for _________________:
+        #f"{x}" is another way of doing the format function
+        deck.append(f"{rank} of {suit}")
+
+for card in deck:
+    print(card)
+</code></pre></div></div>
+
+<p>a. Fill in the blanks above such that the cards are printed out increasing by number (e.g., all of the twos, then all of the threes, then all of the fours, etc.) as below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Two of Clubs
+Two of Diamonds
+Two of Hearts
+Two of Spades
+Three of Clubs
+...
+King of Spades
+Ace of Clubs
+Ace of Diamonds
+Ace of Hearts
+Ace of Spades
+</code></pre></div></div>
+
+<p>b. Fill in the blanks such that the cards are printed out by suit (i.e., all of the clubs, then all of the diamonds, then all of the hearts, then all of the spades), as below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Two of Clubs
+Three of Clubs
+Four of Clubs
+...
+Ace of Clubs
+Two of Diamonds
+Three of Diamonds
+...
+King of Spades
+Ace of Spades
+</code></pre></div></div>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Write the following as an indefinite (while) loop:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for i in range(10, 2, -1):
+  x = 2*i + 3
+  print(x)
+</code></pre></div></div>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>a. I want to print out the first 20 powers of 5 (e.g., 1, 5, 25, 125…). Write both a for loop and a while loop that will do so.</p>
+
+<p>b. Change them both to save the numbers in two separate lists instead and then compare the lists to make sure that they have the same values. Print out whether the two lists have the same values (should be true obviously, but how do you check to make sure that it works if it wasn’t true?).</p>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>Consider the following code:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i = 2
+while i &lt; 100:
+  j = 2
+  count = 0
+
+  while j &lt; i:
+    if i % j == 0:
+      count = count + 1
+    j = j + 1
+
+  if count == 0:
+    print(i)
+
+  i = i + 1
+</code></pre></div></div>
+
+<p>a. What task does this code accomplish?</p>
+
+<p>b. Write a set of nested for loops to accomplish the same task.</p>
+
+<h2 id="extra">Extra</h2>
+<p>The code for making these plots:</p>
+
+<p><img src="https://raw.githubusercontent.com/anyaevostinar/Dirty-Transmission-Hypothesis-Paper/main/Analysis/HeatMaps/ComparisonRegions.png" alt="Two heat maps showing Host Interaction Value and Symbiont Interaction Value" /></p>
+
+<p>is simple enough (though a bit messy) that you now know almost everything you need to to be able to make your own or change mine. 
+All of my research code is <em>open-source</em> meaning it is freely available for anyone to see, use, and build on.
+The code for that plot is <a href="https://github.com/anyaevostinar/Dirty-Transmission-Hypothesis-Paper/blob/main/Analysis/HeatMaps/fitnessHeatmap.py">here</a>. 
+If you have extra time, copy and paste it (yes this time it’s okay!) into a new VSCode document and try running it (it will take a minute or two the first time).
+Then look through it and try changing things to see what happens.
+Note that the labels won’t show up when you make the plot, I’ve put those in after the fact so that you can see what is going on better.</p>
+
+<p>The main thing you won’t fully understand are the lines for drawing the plots:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hm = sns.heatmap(data = sym_repro, xticklabels = sym_int_vals, yticklabels = host_int_vals)
+
+# displaying the plotted heatmap
+plt.show()
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">data = sym_repro</code> is setting what data the plot should show and you can change <code class="language-plaintext highlighter-rouge">sym_repro</code> to <code class="language-plaintext highlighter-rouge">host_res</code>, <code class="language-plaintext highlighter-rouge">sym_res</code> or <code class="language-plaintext highlighter-rouge">host_repro</code>. Otherwise you probably shouldn’t change those lines.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

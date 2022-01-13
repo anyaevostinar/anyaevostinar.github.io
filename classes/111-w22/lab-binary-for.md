@@ -14,8 +14,7 @@ I recommend making a folder for today's lab in COURSES as you usually do.
 For each snippet, what would it print out to the screen? If you think there will be an error, indicate the line with the error and explain why.
 After you've made a prediction, test out the code.
 
-```
-print('Q1')  
+``` 
 for i in range(10):  
   if i % 2 == 0:  
     print(i, 'is even')  
@@ -27,23 +26,6 @@ for i in range(10):
 ```
 for i in range(5, 0, -1):
     print(i)
-```
-
-```
-words = ['limitless', 'knowledge', 'provoking', 'quadruple', 'happiness']
-i = 0
-for word in words:
-    print(word[i], end='')
-    i = i + 2
-
-print(' ', end='')
-
-j = -1
-for k in range(3, 0, -1):
-    print(words[k][j], end='')
-    j = j - 1
-
-print()
 ```
 
 ## Exercise 2
@@ -146,53 +128,6 @@ for i in range(n):
 1 x 0 = 0   1 x 1 = 1   1 x 2 = 2   1 x 3 = 3
 2 x 0 = 0   2 x 1 = 2   2 x 2 = 4   2 x 3 = 6
 3 x 0 = 0   3 x 1 = 3   3 x 2 = 6   3 x 3 = 9
-```
-
-2. Consider the following code (with blanks that you will fill in):
-
-```
-ranks = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace']
-suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
-deck = []
-
-for _________________:
-    for _________________:
-        #append adds to the list and f"{x}" is another way of doing the format function
-        deck.append(f"{rank} of {suit}")
-
-for card in deck:
-    print(card)
-```
-
-a. Fill in the blanks above such that the cards are printed out increasing by number (e.g., all of the twos, then all of the threes, then all of the fours, etc.) as below:
-
-```
-Two of Clubs
-Two of Diamonds
-Two of Hearts
-Two of Spades
-Three of Clubs
-...
-King of Spades
-Ace of Clubs
-Ace of Diamonds
-Ace of Hearts
-Ace of Spades
-```
-
-b. Fill in the blanks such that the cards are printed out by suit (i.e., all of the clubs, then all of the diamonds, then all of the hearts, then all of the spades), as below:
-
-```
-Two of Clubs
-Three of Clubs
-Four of Clubs
-...
-Ace of Clubs
-Two of Diamonds
-Three of Diamonds
-...
-King of Spades
-Ace of Spades
 ```
 
 
