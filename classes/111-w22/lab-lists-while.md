@@ -132,7 +132,9 @@ As I said previously, Python is great for quick snippets of code and data analys
 
 The code for making them is simple enough (though a bit messy) and you now know almost everything you need to to be able to make your own or change mine. 
 All of my research code is *open-source* meaning it is freely available for anyone to see, use, and build on.
-The code for that plot is [here](https://github.com/anyaevostinar/Dirty-Transmission-Hypothesis-Paper/blob/main/Analysis/HeatMaps/fitnessHeatmap.py). 
+
+The code for that plot is [https://github.com/anyaevostinar/Dirty-Transmission-Hypothesis-Paper/blob/main/Analysis/HeatMaps/fitnessHeatmap.py](https://github.com/anyaevostinar/Dirty-Transmission-Hypothesis-Paper/blob/main/Analysis/HeatMaps/fitnessHeatmap.py). 
+
 If you have extra time, copy and paste it (yes this time it's okay!) into a new VSCode document and try running it (it will take a minute or two the first time).
 Then look through it and try changing things to see what happens.
 Note that the labels won't show up when you make the plot, I've put those in after the fact so that you can see what is going on better.
