@@ -126,11 +126,11 @@ a. What task does this code accomplish?
 b. Write a set of nested for loops to accomplish the same task.
 
 ## Extra
-The code for making these plots:
+As I said previously, Python is great for quick snippets of code and data analysis, and I use it in my research for these purposes. The other week I showed you a couple of plots that I made over the weekend with Python:
 
 ![Two heat maps showing Host Interaction Value and Symbiont Interaction Value](https://raw.githubusercontent.com/anyaevostinar/Dirty-Transmission-Hypothesis-Paper/main/Analysis/HeatMaps/ComparisonRegions.png)
 
-is simple enough (though a bit messy) that you now know almost everything you need to to be able to make your own or change mine. 
+The code for making them is simple enough (though a bit messy) and you now know almost everything you need to to be able to make your own or change mine. 
 All of my research code is *open-source* meaning it is freely available for anyone to see, use, and build on.
 The code for that plot is [here](https://github.com/anyaevostinar/Dirty-Transmission-Hypothesis-Paper/blob/main/Analysis/HeatMaps/fitnessHeatmap.py). 
 If you have extra time, copy and paste it (yes this time it's okay!) into a new VSCode document and try running it (it will take a minute or two the first time).
