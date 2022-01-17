@@ -28,6 +28,11 @@ for i in range(5, 0, -1):
     print(i)
 ```
 
+```
+for i in range(0):
+    print("hi")
+```
+
 ## Exercise 2
 1. Write out the first 20 integers in binary. Watch the patterns of bits flipping -- this will become more and more familiar the more CS classes you take.
 
