@@ -26,6 +26,16 @@ print(' ', end='')
 ```
 
 ```
+words = ['hi', 'friend', 'awesome']
+if "hi" in words:
+    print("good")
+elif "friend" in words:
+    print("also good")
+else:
+    print("sad")
+```
+
+```
 j = -1
 for k in range(3, 0, -1):
     print(words[k][j], end='')
