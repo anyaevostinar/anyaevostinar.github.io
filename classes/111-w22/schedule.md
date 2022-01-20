@@ -27,11 +27,11 @@ Readings should be completed **before** the class day that they are listed. Clas
 | F 1/21 | Zelle 5.3, 5.6, 8.1-8.2  |			|  |
 | **Week 4** | **Files and Functions** | | |
 | M 1/24 | Study! | Exam 1		| |
-| W 1/26 |  Zelle 5.9, 8.3; HW3	| 	| HW4 |
+| W 1/26 |  Zelle 5.9, 8.3, 8.4; HW3	| 	| HW4 |
 | F 1/28 | Zelle 6.1-6.2, 6.4 |		| |
 | **Week 5** | **Bringing it All Together** |  | |
 | M 1/31 | Zelle 6.5-6.6 |	 | |
-| W 2/2 |	Zelle 8.4 & [Guide to Debugging](https://runestone.academy/runestone/books/published/thinkcspy/Appendices/errorsAndDebug.html); HW4	| 	| HW5 |
+| W 2/2 |	 [Guide to Debugging](https://runestone.academy/runestone/books/published/thinkcspy/Appendices/errorsAndDebug.html); HW4	| 	| HW5 |
 | F 2/4 | Zelle 8.5 & 11.2.2  |	|  |
 | **Week 6** | **Objects and Classes** |  | |
 | M 2/7	| |	Mid-term Break!	| |
