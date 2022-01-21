@@ -26,7 +26,7 @@ for line in cur_file:
         count += 1
 cur_file.close()
 
-out_file.write("Count of words was: {}".format(count))
+print("Count of words was: {}".format(count), file=out_file)
 out_file.close()
 ```
 
