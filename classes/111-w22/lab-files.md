@@ -72,3 +72,4 @@ Your task is to make your program:
 ## Extra
 If you have extra time, come up with more analysis that you can do on the `us_cities.txt` file.
 For example: Which city has the longest name? How many cities start with each letter of the alphabet?
+Also change your code to use a command line argument to take any file to analyze.
