@@ -62,7 +62,7 @@ Your task is to make your program:
 3. Retrieve all US cities that either 
     * start with B, M, or Q, or 
     * end with L or P. (For instance, Birmingham and Chapel Hill would each be retrieved. )
-4. Place all of the retrieved cities in a list called `selectedCities`. This is a good point to run your code and print out the list to make sure that it is doing what you expect.
+4. Place all of the retrieved cities in a list called `selectedCities`. This is a good point to run your code and print out part of the list to make sure that it is doing what you expect.
 
 5. Next, update your code so that it excludes any city that ends with S, regardless of whether it begins with one of three chosen letters. As one example, Bonita Springs will now be excluded.
 6. Create a new file called `selected_us_cities.txt` and write to it such that, once your program finishes running, this file will contain all the city names that you retrieved from the original `us_cities.txt` file. Each selected city name should be placed on its own line.
