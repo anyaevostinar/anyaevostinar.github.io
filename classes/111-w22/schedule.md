@@ -27,7 +27,7 @@ Readings should be completed **before** the class day that they are listed. Clas
 | F 1/21 | Zelle 5.3, 5.6, 8.1-8.2  |			|  |
 | **Week 4** | **Files and Functions** | | |
 | M 1/24 | Study! | Exam 1		| |
-| W 1/26 |  Zelle 5.9, 8.3, 8.4; HW3	| 	| HW4 |
+| W 1/26 |  Zelle 5.9, 8.3, 8.4; HW3	| 	| [HW4](hw4) |
 | F 1/28 | Zelle 6.1-6.2, 6.4 |		| |
 | **Week 5** | **Bringing it All Together** |  | |
 | M 1/31 | Zelle 6.5-6.6 |	 | |
