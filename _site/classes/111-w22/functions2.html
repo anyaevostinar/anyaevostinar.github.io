@@ -58,6 +58,49 @@ However, the concepts and practice will help you on both the homework and exams 
 
 <h2 id="exercise-2">Exercise 2</h2>
 
+<p>The <a href="functions1">previous lab</a> had you make several functions to reverse the letters in words which just printed their information to the output.
+Often, it is useful to instead <em>return</em> values so that they can be used by other parts of a program.
+Pull up your code (or finish that problem if you didn’t previously) and update it so that the <code class="language-plaintext highlighter-rouge">reverseWord()</code> and <code class="language-plaintext highlighter-rouge">reverseAllWords()</code> functions return their results instead of printing them, and then <code class="language-plaintext highlighter-rouge">main()</code> takes care of the printing.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>A “palindrome” is a word that can be written the same way both forwards and backwards. 
+For instance, “racecar” and “anna” are palindromes, while “sedan” and “david” are not.</p>
+
+<p>Create a new file called <code class="language-plaintext highlighter-rouge">palindrome.py</code>. 
+This program will take a word as input from the user and then tell the user whether or not it is a palindrome. 
+You should include at least two function definitions: one for <code class="language-plaintext highlighter-rouge">main()</code> and one for <code class="language-plaintext highlighter-rouge">isPalindrome(word)</code> which takes a string as a parameter and returns a boolean value indicating whether or not the given word is a palindrome.</p>
+
+<p>Your program should also make use of the <code class="language-plaintext highlighter-rouge">reverseWord</code> function that you created in <code class="language-plaintext highlighter-rouge">reverse.py</code>. 
+To allow for this function to be used in another program, you should not copy and paste the function into the new file, but instead <code class="language-plaintext highlighter-rouge">import</code> the function from <code class="language-plaintext highlighter-rouge">reverse.py</code> into <code class="language-plaintext highlighter-rouge">palindrome.py</code>. 
+This will allow you to use that function in <code class="language-plaintext highlighter-rouge">palindrome.py</code>, even though it was defined in another program! 
+This is a very common practice in Python programs, which often span multiple files. 
+To import and use the <code class="language-plaintext highlighter-rouge">reverseWord</code> function from <code class="language-plaintext highlighter-rouge">reverse.py</code> in <code class="language-plaintext highlighter-rouge">palindrome.py</code>, use code like this (import statements should always go at the top of a file):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from reverse import reverseWord
+
+name = "Anya"
+reversedName = reverseWord(name)
+</code></pre></div></div>
+
+<p>Note that this will only work if <code class="language-plaintext highlighter-rouge">palindrome.py</code> and <code class="language-plaintext highlighter-rouge">reverse.py</code> are in the same folder on your computer. 
+But you may now experience a strange issue: whenever you run <code class="language-plaintext highlighter-rouge">palindrome.py</code>, it bizarrely runs the <code class="language-plaintext highlighter-rouge">main()</code> function of your <code class="language-plaintext highlighter-rouge">reverse.py</code>. 
+The reason is as follows. 
+Whenever Python imports code from one file, what it’s actually doing is running every line in the file that you’re importing, because this is necessary to execute the definitions for all the functions that you want to import! 
+But the problem is that it will eventually get to the line in <code class="language-plaintext highlighter-rouge">reverse.py</code> with your <code class="language-plaintext highlighter-rouge">main()</code> call, which it will execute, because it’s executing every line in <code class="language-plaintext highlighter-rouge">reverse.py</code> as part of the import process. 
+To fix this issue, replace the line <code class="language-plaintext highlighter-rouge">main()</code> in your <code class="language-plaintext highlighter-rouge">reverse.py</code> file with the following two lines:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if __name__ == "__main__":
+    # Any code indented below this line will only
+    # be executed if this file is *directly* invoked,
+    # not merely imported from another file.
+    main()
+</code></pre></div></div>
+
+<p>Remember that <code class="language-plaintext highlighter-rouge">__name__</code> is just another variable, one that is set when your code is run. 
+That variable is set to <code class="language-plaintext highlighter-rouge">__main__</code> if you program is run directly, but to something else if your code is imported.
+That means that these lines are telling Python “Only run the code in this block if you’re directly running this file — if you’re just importing this file into another one, do not run all the code under this block.”
+You can put any code there, to be clear; there’s nothing special about <code class="language-plaintext highlighter-rouge">main()</code> in this case, though this is a frequent use of this block.</p>
+
+<h2 id="extra">Extra</h2>
+<p>If you have extra time, try to write another version of the <code class="language-plaintext highlighter-rouge">isPalindrome</code> function from above that does not make use of <code class="language-plaintext highlighter-rouge">reverseWord</code>, and does not make use of an additional string variable at all — rather, it should determine its answer purely by looping through the given word to the function.</p>
 
   </div>
 
@@ -75,6 +118,7 @@ However, the concepts and practice will help you on both the homework and exams 
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
         </ul>
       </div>
 
