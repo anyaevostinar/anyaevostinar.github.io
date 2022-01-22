@@ -178,6 +178,7 @@ So you should be able to “break” a Caesar cipher by computing observed frequ
 In a file entitled `brutus.txt`, describe a frequency-based algorithm to break Caesar ciphers. 
 You can assume that your reader has been taking CS 111 all term and is now familiar with variables and counting and loops and that sort of thing, so you don’t have to use the excruciatingly detailed description from the first week of the term. 
 That said, don’t skip steps; a list of steps (with some loops) is sufficient, but describe exactly what to do.
+Remember that in this class we are always interested in algorithms that find the correct answer 100% of the time and randomness isn't a good strategy for achieving that.
 
 For a completely optional challenge, if you want a bit more to chew on: try implementing your algorithm! Write a program called `brutus.py` that implements your algorithm in Python.
 
