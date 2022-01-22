@@ -57,3 +57,7 @@ Here are more code snippets to predict and test:
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=b%20%3D%204%0A%0Adef%20h%28z%29%3A%0A%20%20%20%20print%28z%20%2B%20b%29%0A%0Ac%20%3D%203%0Ah%28c%29%0A%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20foo%28n%29%3A%0A%20%20%20%20print%28n%29%0A%20%20%20%20n%20%2B%3D%201%0A%20%20%20%20print%28n%29%0A%0Ax%20%3D%203%0A%0Afoo%28x%29%0A%0Aprint%28x%29%0A%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+In addition, a great thing to do is think about programs like drafts of a paper.
+It's good to get down a first draft and then revise or *refactor* it. 
+Pull up some of your old lab assignments and try refactoring them to use functions
