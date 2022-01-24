@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>HW5 | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w22/hw5" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w22/hw5" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW5" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/hw5","@type":"WebPage","headline":"HW5","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW5</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>This is a paired assignment, so you should complete it with your assigned partner, if you have one, via <strong>paired programming</strong>. 
+The whole time that you are working, you should both be present and actively working on the problem at hand. 
+(Two brains, one keyboard.) 
+Switch off the typing duties so that you each type for roughly half of the time.</p>
+
+<p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
+
+<p>This assignment is worth X points total, 4 of which are checked on Gradescope automatically with an <strong>autograder</strong> and 4 for program style.</p>
+
+<p>This assignment is due on Wednesday Feb 9th at 10pm. See the <a href="syllabus">syllabus</a> for the late policy.</p>
+
+<h2 id="goals">Goals</h2>
+<p>Revisit Scrabble and bring together many of the ideas from the first half of the term by implementing some useful Scrabble functionality.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Again, I recommend you complete this assignment in Olin 310.</p>
+
+<p><a href="https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&amp;title=CS+111+and+201+workflow+in+CS+labs">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW5</code></li>
+  <li>Download the starter code linked on Moodle and copy those files into your folder</li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW5</code> folder in VSCode</li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+<p>(You’ve already thought about this game quite a bit in the first week of the term, but here’s a reminder.)
+Scrabble is a word game in which players form words from a collection of tiles in their hand. 
+There are multiple players — usually up to four in the living-room version of the game, and precisely two in the <em>Word Freak</em> version). (<em>Word Freak</em> is a real book about the high-rolling world of international Scrabble contestants.)</p>
+
+<ul>
+  <li>The first player draws a “hand” of seven tiles from a collection of 100, each of which has a letter printed on it. They then form a legal word and place it in the middle of the 15-by-15 grid that serves as the gameboard. The player then randomly draws tiles from the unused tiles from the original set of 100
+to replenish their hand up to seven tiles.</li>
+  <li>All subsequent turns proceed as follows. The current player forms another legal word by adding one or more tiles from their hand to one or more tiles already on the board (so a new word must build off an already-played tile). The player then randomly draws tiles from the unused tiles from the original
+set of 100 to replenish their hand up to seven tiles (or until the pool of unused tiles is empty).</li>
+  <li>Scoring: each letter has a number of points (more common letters are worth 1 point; rarer letters are worth as many as 10 points). The total point value of a word is the sum of the point values of each letter played in the word, plus a bonus of 50 points if the word played is seven letters long. The player
+who has scored the most total points at the end of the game wins.</li>
+</ul>
+
+<p>In this assignment, you’ll concentrate on the very first move of the game, where there’s nothing yet on the board (and thus so that every letter in the words that you find must come from the seven tiles in the hand).
+Of course, you are welcome to think about how you would attack the more complicated question of how to play as part of a game when there are some tiles already on the board, but you’re not required to do so.</p>
+
+<h2 id="your-task">Your Task</h2>
+<p>Get started, as usual, with the starter code on Moodle. Take a look through <code class="language-plaintext highlighter-rouge">scrabble.py</code>; you’re going to be adding some functionality to it in this assignment, and it will pay to know how what’s already there works.</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

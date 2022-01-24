@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-22T14:18:37-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">New Paper - Symbiosis in Digital Evolution: Past, and Future</title><link href="http://localhost:4000/research/symbiosis/digital%20evolution/symbulation/2021/12/31/symbiosis-digital-evolution-review.html" rel="alternate" type="text/html" title="New Paper - Symbiosis in Digital Evolution: Past, and Future" /><published>2021-12-31T09:00:00-06:00</published><updated>2021-12-31T09:00:00-06:00</updated><id>http://localhost:4000/research/symbiosis/digital%20evolution/symbulation/2021/12/31/symbiosis-digital-evolution-review</id><content type="html" xml:base="http://localhost:4000/research/symbiosis/digital%20evolution/symbulation/2021/12/31/symbiosis-digital-evolution-review.html">&lt;p&gt;Just a quick post to announce the publication of a review article from this past fall &lt;a href=&quot;https://www.frontiersin.org/articles/10.3389/fevo.2021.739047/full&quot;&gt;Symbiosis in Digital Evolution: Past, Present, and Future&lt;/a&gt;.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-24T11:26:16-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">Gradescope Autograder Tips</title><link href="http://localhost:4000/teaching/2022/01/24/autograder-tips.html" rel="alternate" type="text/html" title="Gradescope Autograder Tips" /><published>2022-01-24T09:00:00-06:00</published><updated>2022-01-24T09:00:00-06:00</updated><id>http://localhost:4000/teaching/2022/01/24/autograder-tips</id><content type="html" xml:base="http://localhost:4000/teaching/2022/01/24/autograder-tips.html">&lt;p&gt;This document is mostly for me to write down the things that I had to figure out for myself so that future me has an easier time remembering, though I hope they might also be helpful for others who are experienced programmers but figuring out Gradescope’s autograder for the first time.&lt;/p&gt;
+
+&lt;h2 id=&quot;examples&quot;&gt;Examples&lt;/h2&gt;
+&lt;p&gt;Start from examples, it just makes life easier.
+The &lt;a href=&quot;https://github.com/gradescope/autograder_samples/tree/master/python/src&quot;&gt;official Gradescope example&lt;/a&gt; for Python is a good starting place.
+There are some others that I looked at but can’t recall which now.&lt;/p&gt;
+
+&lt;h2 id=&quot;show-output-to-students&quot;&gt;Show output to students&lt;/h2&gt;
+&lt;p&gt;Assuming there isn’t secret information in your output (and if you are teaching intro like me, students probably wouldn’t be able to exploit the output anyway), printing the output is very helpful for telling the students when they have a weird library or the wrong file name.&lt;/p&gt;
+
+&lt;p&gt;The file &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;run_tests.py&lt;/code&gt; originally looks like this:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import unittest
+from gradescope_utils.autograder_utils.json_test_runner import JSONTestRunner
+
+if __name__ == &apos;__main__&apos;:
+    suite = unittest.defaultTestLoader.discover(&apos;tests&apos;)
+    with open(&apos;/autograder/results/results.json&apos;, &apos;w&apos;) as f:
+        JSONTestRunner(visibility=&apos;visible&apos;, stream=f).run(suite)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To show the output to students on Gradescope, you need to add the JSON &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stdout_visibility = &quot;visible&quot;&lt;/code&gt;, which then makes &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;run_tests.py&lt;/code&gt; look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import unittest
+from gradescope_utils.autograder_utils.json_test_runner import JSONTestRunner
+
+if __name__ == &apos;__main__&apos;:
+    suite = unittest.defaultTestLoader.discover(&apos;tests&apos;)
+    with open(&apos;/autograder/results/results.json&apos;, &apos;w&apos;) as f:
+        JSONTestRunner(visibility=&apos;visible&apos;, stdout_visibility = &quot;visible&quot;, stream=f).run(suite)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;dont-cut-off-the-diff&quot;&gt;Don’t cut off the diff&lt;/h2&gt;
+&lt;p&gt;Gradescope by default has a maximum diff that it will show to students when they aren’t passing a test, which is fine when they are using functions, but since I’m teaching intro and they don’t learn functions until a third of the way in, I’m doing a whole lot with print statements and the diff was getting cut off.&lt;/p&gt;
+
+&lt;p&gt;You can test any print statements with an integration test, shown in &lt;a href=&quot;https://github.com/gradescope/autograder_samples/blob/master/python/src/tests/test_integration.py&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;test_integration.py&lt;/code&gt;&lt;/a&gt;.
+To get the full difference to be displayed, even if they have a lot of print statements, make the beginning of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TestIntegration()&lt;/code&gt; class look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class TestIntegration(unittest.TestCase):
+    maxDiff = None
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;command-line-arguments-that-are-strings&quot;&gt;Command line arguments that are strings&lt;/h2&gt;
+&lt;p&gt;I spent too much time fighting to write a test for a cryptography assignment where the command line arguments included a string with spaces such as “hi this is a string”.&lt;/p&gt;
+
+&lt;p&gt;The problem is that a line like this for an integration test:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;calc = subprocess.Popen(&apos;python3 -u calculator.py&apos;.split(),
+                                stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                encoding=&apos;utf8&apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;is trying to be too fancy by writing a string for the command, which then just gets split to be a list anyway, accidentally splitting my command line argument on the way there.&lt;/p&gt;
+
+&lt;p&gt;Sure, you could be fancy with escaping things, or you can just write the list directly in the first place:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;code = subprocess.Popen([&apos;python3&apos;, &apos;-u&apos;, &apos;caesar.py&apos;, &quot;This is the way the world ends, dontcha know?&quot;, &apos;a&apos;],
+                                stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                                encoding=&apos;utf8&apos;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;testing-functions-not-class-methods&quot;&gt;Testing functions (not class methods)&lt;/h2&gt;
+&lt;p&gt;I thought life would get easier once I taught students about functions, but it’s not obvious from the example how to test functions instead of class methods.&lt;/p&gt;
+
+&lt;p&gt;For getting access to the students’ function, it’s just a normal Python import fortunately. 
+For example, my students have submitted files named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;caesar.py&lt;/code&gt; in which they have a function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;caesar()&lt;/code&gt;.
+I just added an import line to the top of my test file:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from caesar import caesar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And then to test, it is just calling the function like normal and checking what it returned:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@weight(0.25)
+    def test_caesar1(self):
+        &quot;&quot;&quot;Check if caesar function works for first example&quot;&quot;&quot;
+        result = caesar(&quot;This is the way the world ends, dontcha know?&quot;, 0)
+        self.assertEqual(result, &quot;This is the way the world ends, dontcha know?&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I’m happy to share my autograders with educators, they are in a private git repo along with my solutions so it’s easy to do, I just don’t really want to make them public on the off chance one of my students goes looking for them :).
+Just email me (vostinar at carleton dot edu)!&lt;/p&gt;</content><author><name></name></author><category term="Teaching" /><summary type="html">This document is mostly for me to write down the things that I had to figure out for myself so that future me has an easier time remembering, though I hope they might also be helpful for others who are experienced programmers but figuring out Gradescope’s autograder for the first time.</summary></entry><entry><title type="html">New Paper - Symbiosis in Digital Evolution: Past, and Future</title><link href="http://localhost:4000/research/symbiosis/digital%20evolution/symbulation/2021/12/31/symbiosis-digital-evolution-review.html" rel="alternate" type="text/html" title="New Paper - Symbiosis in Digital Evolution: Past, and Future" /><published>2021-12-31T09:00:00-06:00</published><updated>2021-12-31T09:00:00-06:00</updated><id>http://localhost:4000/research/symbiosis/digital%20evolution/symbulation/2021/12/31/symbiosis-digital-evolution-review</id><content type="html" xml:base="http://localhost:4000/research/symbiosis/digital%20evolution/symbulation/2021/12/31/symbiosis-digital-evolution-review.html">&lt;p&gt;Just a quick post to announce the publication of a review article from this past fall &lt;a href=&quot;https://www.frontiersin.org/articles/10.3389/fevo.2021.739047/full&quot;&gt;Symbiosis in Digital Evolution: Past, Present, and Future&lt;/a&gt;.
 The review is aimed primarily at ecologists and evolutionary biologists interested in how the technique/field of digital evolution can be used to investigate the evolutionary dynamics of symbiosis. 
 However, a secondary audience that we kept in mind while writing are those already working in digital evolution and artificial life who are interested in the research space of symbiosis and a history of digital evolution through the lens of symbiosis.
 I also generally aim to make all of my papers accessible to my undergraduate students, so I hope that it will be interesting and understandable to a wide range of readers.&lt;/p&gt;
