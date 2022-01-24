@@ -86,5 +86,26 @@ And then to test, it is just calling the function like normal and checking what 
         self.assertEqual(result, "This is the way the world ends, dontcha know?")
 ```
 
+## Testing locally
+It's a bit of a pain to have to upload your autograder to make sure things are working if you are debugging a test, since it takes a bit to build.
+This won't work for everything, but I found it helpful to be able to check that I did my formatting correctly for all of the output-checking tests that I've been needing. 
+It's very hacky, but it does the job:
+
+```
+import subprocess
+import unittest
+
+code = subprocess.Popen(['python3', '-u', 'caesar.py', "This\ is the way the world ends, dontcha know?", 'a'],
+            stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+            encoding='utf8')
+output, err = code.communicate("", 1) # the "" is where you can put input if you need it
+print(output)
+
+string_it_should_be = "Invalid argument, shift must be a number, given a."
+
+if (output.strip() == string_it_should_be ):
+    print("yey!")
+```
+
 I'm happy to share my autograders with educators, they are in a private git repo along with my solutions so it's easy to do, I just don't really want to make them public on the off chance one of my students goes looking for them :).
 Just email me (vostinar at carleton dot edu)!
