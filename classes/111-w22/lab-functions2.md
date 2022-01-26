@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Second Functions Lab 
+title: More Functions Lab
 permalink: /classes/111-w22/functions2
 ---
 
