@@ -175,10 +175,11 @@ In other words, given a ciphertext like `Zh wkh shrsoh ri wkh Xqlwhg Vwdwhv, lq 
 One reason for the fragility of the Caesar cipher is that you can “attack” it by a letter-frequency based algorithm. In typical English text, the most common letters in descending order are `ETAOINSHRDLU`. 
 So you should be able to “break” a Caesar cipher by computing observed frequencies in the ciphertext and comparing to `ETAOINSHRDLU` etc.
 
-In a file entitled `brutus.txt`, describe a frequency-based algorithm to break Caesar ciphers. 
+In a file entitled `brutus.txt`, describe a frequency-based algorithm to break Caesar ciphers where the text holds to the frequencies list (i.e. you can assume it isn't a text that happens to not have the normal frequencies of each letter). 
+The full list of letters by frequency is `ETAOINSHRDLUCMWFGYPBVKJXQZ`.
 You can assume that your reader has been taking CS 111 all term and is now familiar with variables and counting and loops and that sort of thing, so you don’t have to use the excruciatingly detailed description from the first week of the term. 
 That said, don’t skip steps; a list of steps (with some loops) is sufficient, but describe exactly what to do.
-Remember that in this class we are always interested in algorithms that find the correct answer 100% of the time and randomness isn't a good strategy for achieving that.
+Remember that in this class we are always interested in algorithms that find the correct answer 100% of the time (for texts that have the correct frequencies) and randomness isn't a good strategy for achieving that.
 
 For a completely optional challenge, if you want a bit more to chew on: try implementing your algorithm! Write a program called `brutus.py` that implements your algorithm in Python.
 
