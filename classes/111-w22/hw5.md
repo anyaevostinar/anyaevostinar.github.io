@@ -15,7 +15,7 @@ You are able to get help from many sources as detailed in the [collaboration](co
 
 This assignment is worth 12 points total, 8 of which are checked on Gradescope automatically with an **autograder** and 4 for program style.
 
-This assignment is due on Wednesday Feb 9th at 10pm. See the [syllabus](syllabus) for the late policy.
+This assignment is due on Wednesday Feb 16th at 10pm. See the [syllabus](syllabus) for the late policy.
 
 ## Goals
 Revisit Scrabble and bring together many of the ideas from the first half of the term by implementing some useful Scrabble functionality.

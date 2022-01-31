@@ -31,26 +31,26 @@ Readings should be completed **before** the class day that they are listed. Clas
 | F 1/28 | Zelle 6.1-6.2, 6.4 |		| |
 | **Week 5** | **Bringing it All Together** |  | |
 | M 1/31 | Zelle 6.5-6.6 |	 | |
-| W 2/2 |	 [Guide to Debugging](https://runestone.academy/runestone/books/published/thinkcspy/Appendices/errorsAndDebug.html); HW4	| 	| [HW5](hw5) |
+| W 2/2 |	 [Guide to Debugging](https://runestone.academy/runestone/books/published/thinkcspy/Appendices/errorsAndDebug.html); HW4	| 	|  |
 | F 2/4 | Zelle 8.5 & 11.2.2  |	|  |
 | **Week 6** | **Objects and Classes** |  | |
 | M 2/7	| |	Mid-term Break!	| |
-| W 2/9 | Zelle 4.1-4.4, 10.1; HW5 |	| HW6 |
+| W 2/9 | Zelle 4.1-4.4, 10.1; Exam corrections  |	| [HW5](hw5) |
 | F 2/11 | Zelle 10.2-10.3	|	|  |
 | **Week 7**| **Data Analysis**|  | |
 | M 2/14 |  Zelle 10.4-10.5 |	| |
-| W 2/16 | Zelle 11.1-11.3, 11.7; HW6 <br/>Optional: [New Yorker article Game Master](https://moodle.carleton.edu/pluginfile.php/960958/mod_resource/content/0/seabrook-game-master.pdf) (pg 95-96 in particular)<br/> and [this article](https://link.springer.com/content/pdf/10.1007/s10956-010-9211-1.pdf) if you want to know the problems with the game Spore|			 | HW7 |
+| W 2/16 | Zelle 11.1-11.3, 11.7; HW5 <br/>Optional: [New Yorker article Game Master](https://moodle.carleton.edu/pluginfile.php/960958/mod_resource/content/0/seabrook-game-master.pdf) (pg 95-96 in particular)<br/> and [this article](https://link.springer.com/content/pdf/10.1007/s10956-010-9211-1.pdf) if you want to know the problems with the game Spore|			 | HW6 |
 | F 2/18| Study!	 |	Exam 2	|  |
 | **Week 8** | **Software Design & Recursion** |   | |
 | M 2/21 | Zelle 7.5, 10.6.1, 10.6.3, 11.4 |		| |
-| W 2/23 | 	Zelle 12.1 & 12.4; Skim 12.2 & 12.3; HW7	 |  HW8|	
+| W 2/23 | 	Zelle 12.1 & 12.4; Skim 12.2 & 12.3; HW6	 |  HW7|	
 | F 2/25 | Zelle 13.2.1-13.2.5	|   |	 |
 | **Week 9** | **Searching & Sorting**|  | |
 | M 2/28 | Zelle 13.1|			| |	
-| W 3/2 | Zelle 13.2.6-13.2.7; HW8; Optional: Zelle 7.4 | | HW9 |
+| W 3/2 | Zelle 13.2.6-13.2.7; HW7; Optional: Zelle 7.4 | | HW8 |
 | F 3/4 | Zelle 13.3.1 | |	 |
 | **Week 10** | **Merge Sort & Hard Problems** |  | |
-| M 3/7	| Zelle 13.3.2-13.3.3; Animations and videos of sorting on Moodle; HW9 |  | Final Project |
+| M 3/7	| Zelle 13.3.2-13.3.3; Animations and videos of sorting on Moodle; HW8 |  | Final Project |
 | W 3/9 | Study! | Exam 3 | |
 | F 3/11 | Zelle 13.4| 	| |
 | Exam Period | | | |
