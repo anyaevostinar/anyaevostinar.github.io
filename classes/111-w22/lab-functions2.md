@@ -22,7 +22,7 @@ For each of the following snippets of code, predict what they will do and then w
 
 The [previous lab](functions1) had you make several functions to reverse the letters in words which just printed their information to the output.
 Often, it is useful to instead *return* values so that they can be used by other parts of a program.
-Pull up your code (or finish that problem if you didn't previously) and update it so that the `reverseWord()` and `reverseAllWords()` functions return their results instead of printing them, and then `main()` takes care of the printing.
+Pull up the solutions posted to Moodle and update those functions so that the `reverseWord()` and `reverseAllWords()` functions return their results instead of printing them, and then `main()` takes care of the printing.
 
 ## Exercise 3
 A "palindrome" is a word that can be written the same way both forwards and backwards. 
