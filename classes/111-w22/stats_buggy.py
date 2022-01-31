@@ -37,7 +37,7 @@ def median(nums)
 def main() :
     print("This program computes mean, median, and standard deviation. ")
     data = getNumbers()
-    xbar = mean(data)
+    mean(data)
     std = stdDev(data, xbar) 
     med = median(data)
     print("\nThe mean is", xbar)
