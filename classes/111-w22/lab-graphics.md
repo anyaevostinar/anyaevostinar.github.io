@@ -98,4 +98,7 @@ Finally, note that you can also have objects *move* using the `.move()` method. 
 For this, you'll likely need some sort of loop to control which objects move and when. 
 You might also want to `import time` and use `time.sleep` ([documentation here](https://docs.python.org/3/library/time.html#time.sleep)) to slow down the execution of your program so that your animations don't get to frenetic.
 
+You may have found yourself with many lines of code to create your flower. 
+Use functions to organize that code into meaningful sets of things.
+
 (As an extra extension, you can get user *mouse* input through `GraphWin`'s `.getMouse()` method--incorporate this if you would like, as well!)
