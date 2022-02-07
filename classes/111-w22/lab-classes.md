@@ -35,6 +35,13 @@ from broomballTeam import BroomballTeam
 ```
 In the `main` function of `main.py`, create two `BroomballTeam`s, create some players to add to those teams (feel free to get creative with their names and talents), record some games for each of the players, and add them to the teams. Then call your `getLeadingScorer` method to make sure that it is returning the correct player for each team.
 
+Note that if you were just directly calling `main()` in your class files, that will now happen when you import them.
+To prevent that from happening, use the `__name__` variable at the end of each class file:
+```
+if __name__ == "__main__":
+    main()
+```
+
 ## Exercise 2
 Now, add a method to the `BroomballTeam` class called `simulateGame` that simulates a score for the team in a single game by getting a random number of goals for each player on the team between 0 and their talent level, and add them all together. 
 (The `random` module's `randint` function should be helpful ([documentation](https://docs.python.org/3/library/random.html#random.randint)).) 
