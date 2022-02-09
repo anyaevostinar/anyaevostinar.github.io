@@ -92,6 +92,8 @@ Using at least 3 different classes from the graphics library (and probably multi
 Make your flower colorful using the `.setFill()` and `.setOutline()` methods on your objects. 
 You can also change the background color of your window using the [GraphWin class'](https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node3.html) .`setBackground()` method.
 
+Read about how to generate any color you want [here](https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node14.html).
+
 
 ## Extra
 Finally, note that you can also have objects *move* using the `.move()` method. If you'd like, try turning your flower into a moving animation! 
