@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Classes Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Classes Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w22/classes" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w22/classes" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Classes Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/classes","@type":"WebPage","headline":"Classes Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Classes Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>This is a repeat of what we discussed at the beginning of class.</p>
+
+<p>a) Download the <a href="/classes/111-w22/Week6FridayStarter.zip">starter code for today’s lab</a> and move the two files into your lab folder.</p>
+
+<p>b) In the file <code class="language-plaintext highlighter-rouge">broomballPlayer.py</code> create a <code class="language-plaintext highlighter-rouge">main</code> function outside of the class. In that function, make two <code class="language-plaintext highlighter-rouge">BroomballPlayer</code>s, call the <code class="language-plaintext highlighter-rouge">recordGame</code> method on each and print their names and talent by calling the respective methods. Make sure to call <code class="language-plaintext highlighter-rouge">main</code> at the end of the file and test that your code works.</p>
+
+<p>c) In the file <code class="language-plaintext highlighter-rouge">broomballTeam.py</code> create a <code class="language-plaintext highlighter-rouge">main</code> function outside of the class. In that function, make two <code class="language-plaintext highlighter-rouge">BroomballTeam</code>s. None of the existing methods let you do something easy with the teams, so add a method <code class="language-plaintext highlighter-rouge">getName()</code> that just returns the name of the team and print each of them to make sure that the code works.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>In this exercise, you’ll create a new method for the <code class="language-plaintext highlighter-rouge">BroomballTeam</code> class called <code class="language-plaintext highlighter-rouge">getLeadingScorer</code>.
+This method should return the player on the team with the most recorded goals.</p>
+
+<p>a) This method will be much easier to implement if you first implement a new method in the <code class="language-plaintext highlighter-rouge">BroomballPlayer</code> class that returns the total number of recorded goals for that player. You should use the instance variable <code class="language-plaintext highlighter-rouge">self.goalsPerGame</code> and the <code class="language-plaintext highlighter-rouge">sum</code> function, which takes a list of numbers and returns the total.</p>
+
+<p>b) Test your method in the <code class="language-plaintext highlighter-rouge">main</code> of the <code class="language-plaintext highlighter-rouge">BroomballPlayer</code> class by calling the <code class="language-plaintext highlighter-rouge">recordGame</code> method and then your new method to be sure that it works correctly.</p>
+
+<p>c) Use your new method to implement the <code class="language-plaintext highlighter-rouge">getLeadingScorer</code> method.</p>
+
+<p>d) To test the <code class="language-plaintext highlighter-rouge">getLeadingScorer</code> method, you should create a new file <code class="language-plaintext highlighter-rouge">main.py</code> that imports both of your class files:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from broomballPlayer import BroomballPlayer
+from broomballTeam import BroomballTeam
+</code></pre></div></div>
+<p>In the <code class="language-plaintext highlighter-rouge">main</code> function of <code class="language-plaintext highlighter-rouge">main.py</code>, create two <code class="language-plaintext highlighter-rouge">BroomballTeam</code>s, create some players to add to those teams (feel free to get creative with their names and talents), record some games for each of the players, and add them to the teams. Then call your <code class="language-plaintext highlighter-rouge">getLeadingScorer</code> method to make sure that it is returning the correct player for each team.</p>
+
+<p>Note that if you were just directly calling <code class="language-plaintext highlighter-rouge">main()</code> in your class files, that will now happen when you import them.
+To prevent that from happening, use the <code class="language-plaintext highlighter-rouge">__name__</code> variable at the end of each class file:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if __name__ == "__main__":
+    main()
+</code></pre></div></div>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now, add a method to the <code class="language-plaintext highlighter-rouge">BroomballTeam</code> class called <code class="language-plaintext highlighter-rouge">simulateGame</code> that simulates a score for the team in a single game by getting a random number of goals for each player on the team between 0 and their talent level, and add them all together. 
+(The <code class="language-plaintext highlighter-rouge">random</code> module’s <code class="language-plaintext highlighter-rouge">randint</code> function should be helpful (<a href="https://docs.python.org/3/library/random.html#random.randint">documentation</a>).) 
+Your method should record each player’s score using their <code class="language-plaintext highlighter-rouge">recordGame</code> method, and should return the total score of the whole team.</p>
+
+<p>To design this method, I recommend you first write a header to document what the overall task for the method is, then write out pseudocode of what steps you’ll need to do to accomplish the overall task, before then writing Python to accomplish each of the steps.</p>
+
+<p>You should make sure to then test your code either in <code class="language-plaintext highlighter-rouge">BroomballTeam</code>’s <code class="language-plaintext highlighter-rouge">main</code> or in <code class="language-plaintext highlighter-rouge">main.py</code>’s <code class="language-plaintext highlighter-rouge">main</code>. You might find it useful to print out the goals of each player as well as the result of the simulated game to make sure that the result makes sense.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Write a <strong>function</strong> in <code class="language-plaintext highlighter-rouge">main.py</code> called <code class="language-plaintext highlighter-rouge">simGames</code> that takes as parameters two <code class="language-plaintext highlighter-rouge">BroomballTeam</code> objects (<code class="language-plaintext highlighter-rouge">team1</code> and <code class="language-plaintext highlighter-rouge">team2</code>) and a number of games (<code class="language-plaintext highlighter-rouge">n</code>) to simulate between them. 
+Specifically, for a given number of games, your function should get a score for each <code class="language-plaintext highlighter-rouge">BroomballTeam</code> using <code class="language-plaintext highlighter-rouge">simulateGame</code>, compare them to see who won, and use the <code class="language-plaintext highlighter-rouge">recordGame</code> method to record that result for each <code class="language-plaintext highlighter-rouge">BroomballTeam</code>. 
+At the end of the function, print out each team’s winning percentage, and their leading scorer. 
+(You should test these tasks incrementally.)</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Fancy Loops Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Fancy Loops Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w22/fancy-loops" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w22/fancy-loops" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Fancy Loops Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/fancy-loops","@type":"WebPage","headline":"Fancy Loops Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Fancy Loops Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>There is a game where you try to guess a number between 1 and 100, being told if you guess is too high or too low. 
+Here is code that mostly works for that game:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import random
+
+number = random.randint(0, 100)
+print("Welcome to the Guessing Game! Guess a number between 1 and 100")
+guess = -1
+while guess != number:
+    guess = int(input("Guess a number: "))
+    if guess &lt; number:
+        print("Too low!")
+    else:
+        print("Too high!")
+</code></pre></div></div>
+
+<p>There is a bug, however. 
+In what situation will this code not work correctly?</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Fixing that bug is actually slightly annoying and brings up a common situation in programming, which the reading suggested several different remedies for.
+Fix the bug in three different ways using each of the following <em>design patterns</em> from the reading (you will probably want three different functions to contain each of your different versions of the game):</p>
+<ul>
+  <li>a post-test loop started by seeding the initial value</li>
+  <li>a post-test loop using <code class="language-plaintext highlighter-rouge">while True</code> and <code class="language-plaintext highlighter-rouge">break</code></li>
+  <li>a loop and a half</li>
+</ul>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Consider the following code, predict what it will print, and then walk through the steps:</p>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=my_list%20%3D%20%5B1,%202,%203,%204,%20%5B5,%206%5D%5D%0Amy_other_list%20%3D%20my_list%0Aslice_list%20%3D%20my_list%5B2%3A4%5D%0Acopy_list%20%3D%20my_list%5B%3A%5D%0A%0Acopy_list%5B0%5D%20%3D%2010%0Acopy_list%5B4%5D%5B0%5D%20%3D%2011%0A%0Aprint%28my_list%29&amp;codeDivHeight=400&amp;codeDivWidth=350&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=nevernest&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false"> </iframe>
+
+<p>Based on what you see there, what rules can you conclude about how to use slicing to copy a list?</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>The game code still isn’t very robust. 
+Improve it by:</p>
+<ul>
+  <li>prompting the user repeatedly if they enter something that isn’t an int between 1 and 100</li>
+  <li>allowing the game to go from any negative number to any positive number to increase the difficulty</li>
+  <li>whatever other expansions or improvements you can think of!</li>
+</ul>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>Many of the functions for lists aren’t actually needed since you can implement them yourself, though they are convinient.
+Try writing the following functions which are your own versions of built-in list methods (make sure to use a different name than the built-in!):</p>
+<ul>
+  <li>my_reverse(a_list)</li>
+  <li>my_index(a_list, item_to_find)</li>
+  <li>my_count(a_list, item)</li>
+  <li>my_remove(a_list, item) - use <code class="language-plaintext highlighter-rouge">del</code> for this</li>
+  <li>my_pop(a_list, index) - use <code class="language-plaintext highlighter-rouge">del</code> for this</li>
+  <li>my_insert(a_list, location, item)</li>
+  <li>Slicing (that makes a new list remember!)</li>
+  <li>my_sort(a_list) - we’ll talk about sorting in a few weeks, but think about how you could do it</li>
+</ul>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

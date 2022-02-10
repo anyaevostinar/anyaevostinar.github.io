@@ -51,9 +51,9 @@ Switch off the typing duties so that you each type for roughly half of the time.
 
 <p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
 
-<p>This assignment is worth X points total, 4 of which are checked on Gradescope automatically with an <strong>autograder</strong> and 4 for program style.</p>
+<p>This assignment is worth 12 points total, 8 of which are checked on Gradescope automatically with an <strong>autograder</strong> and 4 for program style.</p>
 
-<p>This assignment is due on Wednesday Feb 9th at 10pm. See the <a href="syllabus">syllabus</a> for the late policy.</p>
+<p>This assignment is due on Wednesday Feb 16th at 10pm. See the <a href="syllabus">syllabus</a> for the late policy.</p>
 
 <h2 id="goals">Goals</h2>
 <p>Revisit Scrabble and bring together many of the ideas from the first half of the term by implementing some useful Scrabble functionality.</p>
@@ -89,6 +89,74 @@ Of course, you are welcome to think about how you would attack the more complica
 <h2 id="your-task">Your Task</h2>
 <p>Get started, as usual, with the starter code on Moodle. Take a look through <code class="language-plaintext highlighter-rouge">scrabble.py</code>; you’re going to be adding some functionality to it in this assignment, and it will pay to know how what’s already there works.</p>
 
+<h3 id="scoreword">scoreWord</h3>
+<p>Fill in <code class="language-plaintext highlighter-rouge">scoreWord(word)</code>, which should compute the score of the <code class="language-plaintext highlighter-rouge">word</code> given to it by adding up the scores of all of the letters in it, and adding a bonus if appropriate. (Do not check whether <code class="language-plaintext highlighter-rouge">word</code> is actually in the dictionary in <code class="language-plaintext highlighter-rouge">scoreWord</code>.)</p>
+
+<p>A great way to check if your <code class="language-plaintext highlighter-rouge">scoreWord</code> implementation is working is to start the Python shell with <code class="language-plaintext highlighter-rouge">python3</code> and then <code class="language-plaintext highlighter-rouge">import scrabble</code> and call your method on the provided examples, for example <code class="language-plaintext highlighter-rouge">scrabble.scoreWord("TSKTSK")</code> should return 14.</p>
+
+<h3 id="playable">playable</h3>
+<p>Fill in <code class="language-plaintext highlighter-rouge">playable(word, hand)</code>, which should return <code class="language-plaintext highlighter-rouge">True</code> if <code class="language-plaintext highlighter-rouge">word</code> can be produced solely by using the tiles in <code class="language-plaintext highlighter-rouge">hand</code>. (Do not check whether <code class="language-plaintext highlighter-rouge">word</code> is actually in the dictionary in <code class="language-plaintext highlighter-rouge">playable</code>.)
+<em>(Think through this question before you start typing! There are easy ways and hard ways to attack this problem. It’s worth thinking about how to make sure that you don’t repeat a letter more than the number of times you have that tile.)</em> <strong>Hint</strong>: if you see apparently bizarre behavior when you run your
+function, go reread Zelle §6.6. Are you doing something that causes you trouble down the road?</p>
+
+<h3 id="allplayable">allPlayable</h3>
+<p>Add a function <code class="language-plaintext highlighter-rouge">allPlayable(hand, words)</code> that returns a list of all valid words from <code class="language-plaintext highlighter-rouge">words</code> that can be played using only the tiles from <code class="language-plaintext highlighter-rouge">hand</code>. One suggestion for an approach to this is to implement something like the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make an empty list of playable words
+for every word in the dictionary:
+    if that word is playable given this hand:
+        add that word to the list of playable words
+return the list of playable words
+</code></pre></div></div>
+
+<p>Be sure to add a function header for your new function.
+To test this function in the Python shell, you can make a call like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import scrabble
+&gt;&gt;&gt; scrabble.allPlayable("PYTHONS", scrabble.loadDictionary())
+</code></pre></div></div>
+
+<h3 id="bestplayable">bestPlayable</h3>
+<p>Add a function <code class="language-plaintext highlighter-rouge">bestPlayable(hand, words)</code> that computes and returns a list of the highest-scoring word(s) that can be played from the tiles in hand.
+If the best score that can be achieved is X and only one word scores X, then you should return a list with one item.
+If multiple words can achieve X, you should return a list with each of them.</p>
+
+<p>I recommend first figuring out how to return just one best-scoring word and then working on how to maintain a list of only the best-scoring words.</p>
+
+<h3 id="main">main</h3>
+<p>Add to <code class="language-plaintext highlighter-rouge">main</code> such that the user can specify via command-line argument if they want to provide their hand (<code class="language-plaintext highlighter-rouge">provide</code>) or get a random hand (<code class="language-plaintext highlighter-rouge">random</code>) and then allow them to have the following interactions:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python3 scrabble.py random
+Your hand is: ['E', 'D', 'C', 'N', 'D', 'U', 'U']
+The best possible play(s) will earn you 8 and are: ['DUNCE']
+$ python3 scrabble.py provide
+What is your hand? PYTHONS
+The best possible play(s) will earn you 65 and are: ['PHYTONS', 'PYTHONS', 'TYPHONS']
+</code></pre></div></div>
+
+<h2 id="grading">Grading</h2>
+<p>You will be graded on the following rubric.
+Be sure to remove the starter comments that are no longer relevant, add additional comments, and update or add headers as necessary.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Autograder tests</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Programming style (header, comments, variable names, spacing, no duplicated code, function headers)</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="submission">Submission</h2>
+<p>You should submit through Gradescope as always.</p>
 
   </div>
 

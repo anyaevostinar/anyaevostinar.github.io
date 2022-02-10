@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-24T11:26:16-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">Gradescope Autograder Tips</title><link href="http://localhost:4000/teaching/2022/01/24/autograder-tips.html" rel="alternate" type="text/html" title="Gradescope Autograder Tips" /><published>2022-01-24T09:00:00-06:00</published><updated>2022-01-24T09:00:00-06:00</updated><id>http://localhost:4000/teaching/2022/01/24/autograder-tips</id><content type="html" xml:base="http://localhost:4000/teaching/2022/01/24/autograder-tips.html">&lt;p&gt;This document is mostly for me to write down the things that I had to figure out for myself so that future me has an easier time remembering, though I hope they might also be helpful for others who are experienced programmers but figuring out Gradescope’s autograder for the first time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-10T12:19:53-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">Gradescope Autograder Tips</title><link href="http://localhost:4000/teaching/2022/01/24/autograder-tips.html" rel="alternate" type="text/html" title="Gradescope Autograder Tips" /><published>2022-01-24T09:00:00-06:00</published><updated>2022-01-24T09:00:00-06:00</updated><id>http://localhost:4000/teaching/2022/01/24/autograder-tips</id><content type="html" xml:base="http://localhost:4000/teaching/2022/01/24/autograder-tips.html">&lt;p&gt;This document is mostly for me to write down the things that I had to figure out for myself so that future me has an easier time remembering, though I hope they might also be helpful for others who are experienced programmers but figuring out &lt;a href=&quot;https://www.gradescope.com/&quot;&gt;Gradescope&lt;/a&gt;’s &lt;a href=&quot;https://gradescope-autograders.readthedocs.io/en/latest/&quot;&gt;autograder&lt;/a&gt; for the first time.&lt;/p&gt;
 
 &lt;h2 id=&quot;examples&quot;&gt;Examples&lt;/h2&gt;
 &lt;p&gt;Start from examples, it just makes life easier.
@@ -70,6 +70,26 @@ I just added an import line to the top of my test file:&lt;/p&gt;
         &quot;&quot;&quot;Check if caesar function works for first example&quot;&quot;&quot;
         result = caesar(&quot;This is the way the world ends, dontcha know?&quot;, 0)
         self.assertEqual(result, &quot;This is the way the world ends, dontcha know?&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;testing-locally&quot;&gt;Testing locally&lt;/h2&gt;
+&lt;p&gt;It’s a bit of a pain to have to upload your autograder to make sure things are working if you are debugging a test, since it takes a bit to build.
+This won’t work for everything, but I found it helpful to be able to check that I did my formatting correctly for all of the output-checking tests that I’ve been needing. 
+It’s very hacky, but it does the job:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import subprocess
+import unittest
+
+code = subprocess.Popen([&apos;python3&apos;, &apos;-u&apos;, &apos;caesar.py&apos;, &quot;This\ is the way the world ends, dontcha know?&quot;, &apos;a&apos;],
+            stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+            encoding=&apos;utf8&apos;)
+output, err = code.communicate(&quot;&quot;, 1) # the &quot;&quot; is where you can put input if you need it
+print(output)
+
+string_it_should_be = &quot;Invalid argument, shift must be a number, given a.&quot;
+
+if (output.strip() == string_it_should_be ):
+    print(&quot;yey!&quot;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;I’m happy to share my autograders with educators, they are in a private git repo along with my solutions so it’s easy to do, I just don’t really want to make them public on the off chance one of my students goes looking for them :).

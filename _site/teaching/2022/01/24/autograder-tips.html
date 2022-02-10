@@ -48,7 +48,7 @@
 
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>This document is mostly for me to write down the things that I had to figure out for myself so that future me has an easier time remembering, though I hope they might also be helpful for others who are experienced programmers but figuring out Gradescope’s autograder for the first time.</p>
+    <p>This document is mostly for me to write down the things that I had to figure out for myself so that future me has an easier time remembering, though I hope they might also be helpful for others who are experienced programmers but figuring out <a href="https://www.gradescope.com/">Gradescope</a>’s <a href="https://gradescope-autograders.readthedocs.io/en/latest/">autograder</a> for the first time.</p>
 
 <h2 id="examples">Examples</h2>
 <p>Start from examples, it just makes life easier.
@@ -120,6 +120,26 @@ I just added an import line to the top of my test file:</p>
         """Check if caesar function works for first example"""
         result = caesar("This is the way the world ends, dontcha know?", 0)
         self.assertEqual(result, "This is the way the world ends, dontcha know?")
+</code></pre></div></div>
+
+<h2 id="testing-locally">Testing locally</h2>
+<p>It’s a bit of a pain to have to upload your autograder to make sure things are working if you are debugging a test, since it takes a bit to build.
+This won’t work for everything, but I found it helpful to be able to check that I did my formatting correctly for all of the output-checking tests that I’ve been needing. 
+It’s very hacky, but it does the job:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import subprocess
+import unittest
+
+code = subprocess.Popen(['python3', '-u', 'caesar.py', "This\ is the way the world ends, dontcha know?", 'a'],
+            stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+            encoding='utf8')
+output, err = code.communicate("", 1) # the "" is where you can put input if you need it
+print(output)
+
+string_it_should_be = "Invalid argument, shift must be a number, given a."
+
+if (output.strip() == string_it_should_be ):
+    print("yey!")
 </code></pre></div></div>
 
 <p>I’m happy to share my autograders with educators, they are in a private git repo along with my solutions so it’s easy to do, I just don’t really want to make them public on the off chance one of my students goes looking for them :).

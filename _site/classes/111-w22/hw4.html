@@ -209,10 +209,11 @@ In other words, given a ciphertext like <code class="language-plaintext highligh
 One reason for the fragility of the Caesar cipher is that you can “attack” it by a letter-frequency based algorithm. In typical English text, the most common letters in descending order are <code class="language-plaintext highlighter-rouge">ETAOINSHRDLU</code>. 
 So you should be able to “break” a Caesar cipher by computing observed frequencies in the ciphertext and comparing to <code class="language-plaintext highlighter-rouge">ETAOINSHRDLU</code> etc.</p>
 
-<p>In a file entitled <code class="language-plaintext highlighter-rouge">brutus.txt</code>, describe a frequency-based algorithm to break Caesar ciphers. 
+<p>In a file entitled <code class="language-plaintext highlighter-rouge">brutus.txt</code>, describe a frequency-based algorithm to break Caesar ciphers where the text holds to the frequencies list (i.e. you can assume it isn’t a text that happens to not have the normal frequencies of each letter). 
+The full list of letters by frequency is <code class="language-plaintext highlighter-rouge">ETAOINSHRDLUCMWFGYPBVKJXQZ</code>.
 You can assume that your reader has been taking CS 111 all term and is now familiar with variables and counting and loops and that sort of thing, so you don’t have to use the excruciatingly detailed description from the first week of the term. 
 That said, don’t skip steps; a list of steps (with some loops) is sufficient, but describe exactly what to do.
-Remember that in this class we are always interested in algorithms that find the correct answer 100% of the time and randomness isn’t a good strategy for achieving that.</p>
+Remember that in this class we are always interested in algorithms that find the correct answer 100% of the time (for texts that have the correct frequencies) and randomness isn’t a good strategy for achieving that.</p>
 
 <p>For a completely optional challenge, if you want a bit more to chew on: try implementing your algorithm! Write a program called <code class="language-plaintext highlighter-rouge">brutus.py</code> that implements your algorithm in Python.</p>
 
