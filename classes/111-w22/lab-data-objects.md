@@ -50,7 +50,7 @@ for homeTeam in self.teams:
 Remember to test this code at this point.
 
 ## Exercise 3
-Finally, make another method for the BroomballLeague class called `results()` that prints out the following:
+Finally, make another method for the `BroomballLeague` class called `results()` that prints out the following:
 * Each team’s winning percentage, leading scorer, and the number of goals scored by that scorer.
 * The champion of the league, that being the team with the highest winning percentage.
 * The MVP of the league, that being the player who scored the most goals.
