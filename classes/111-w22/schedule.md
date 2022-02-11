@@ -43,7 +43,7 @@ Readings should be completed **before** the class day that they are listed. Clas
 | F 2/18| Study!	 |	Exam 2	|  |
 | **Week 8** | **Software Design & Recursion** |   | |
 | M 2/21 | Zelle 7.5, 10.6.1, 10.6.3, 11.4 |		| |
-| W 2/23 | 	Zelle 12.1 & 12.4; Skim 12.2 & 12.3; HW6	 |  HW7|	
+| W 2/23 | 	Zelle 12.1 & 12.4; Skim 12.2 & 12.3; HW6	 |  | HW7|	
 | F 2/25 | Zelle 13.2.1-13.2.5	|   |	 |
 | **Week 9** | **Searching & Sorting**|  | |
 | M 2/28 | Zelle 13.1|			| |	
