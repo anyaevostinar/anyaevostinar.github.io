@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Dictionaries Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Dictionaries Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w22/dictionaries" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w22/dictionaries" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Dictionaries Lab" />
+<script type="application/ld+json">
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/dictionaries","@type":"WebPage","headline":"Dictionaries Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Dictionaries Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>(As always, this is a repeat of the demonstration in class.)</p>
+
+<p>Download the zip file from Moodle for today’s lab and copy those files into your folder for today.</p>
+
+<h3 id="overview">Overview</h3>
+<p>In text analysis, <strong>n-grams</strong> are phrases that are <em>n</em> words long that appear in sequence together. 
+So, for instance “hello” is a <em>one-gram</em>, “black knight” is a <em>two-gram</em>, “spam and eggs” is a <em>three-gram</em>, etc.</p>
+
+<p>A common first step in analyzing the contents of a document is to count up all the individual instances of each n-gram within it, generally for all values of n smaller than some relatively small number, like 3 or 4. 
+Say we were going to count all the two-grams in the following text:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    To be, or not to be, that is the question.
+</code></pre></div></div>
+
+<p>The first two-gram is “to be”, the second is “be or”, the third is “or not”, etc. 
+Notice that the two-grams overlap with one another. 
+In this particular text, the only two-gram that would have a count higher than 1 would be “to be”, which appears twice. 
+<em>(Note: capitalization and punctuation are often ignored when performing n-gram analysis, though not always.)</em></p>
+
+<p>Though this is a simple process as far as statistical analyses go, it can tell us quite a lot. As an example, comparing relative values of the proportions of n-grams within documents can help us algorithmically determine who wrote given documents (part of a broader branch of analysis called <a href="https://en.wikipedia.org/wiki/Stylometry">stylometry</a>).</p>
+
+<p>In this lab you’ll do some of this kind of analysis yourself using Python dictionaries.</p>
+
+<h3 id="your-task">Your Task</h3>
+<p>The zip that you downloaded contains:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ngrams.py</code>: the beginnings of an implementation that will let us count n-grams</li>
+  <li><code class="language-plaintext highlighter-rouge">main.py</code>: A file with some testing code for <code class="language-plaintext highlighter-rouge">ngrams.py</code></li>
+  <li><code class="language-plaintext highlighter-rouge">corpora/</code>: a directory of text files written by various famous authors.</li>
+</ul>
+
+<p>Open <code class="language-plaintext highlighter-rouge">ngrams.py</code> and take a look at <code class="language-plaintext highlighter-rouge">getOneGrams()</code>, a function that should count all the one-grams (i.e., words, otherwise known as “unigrams”) in a given file and returns the counts as a Python dictionary.
+You’ll see that there is currently pseudocode where the main functionality should be.
+<strong>Turn that pseudocode into Python to complete the function.</strong>
+When you are done, running <code class="language-plaintext highlighter-rouge">main.py</code> should print out the top 10 most frequent words in Hamlet.</p>
+
+<p>You should get:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>the 1097
+and 899
+to 742
+of 658
+you 550
+i 536
+my 514
+a 511
+it 415
+in 414
+</code></pre></div></div>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>As interesting as Hamlet is, you will likely find that these top 10 words aren’t very interesting - at least, not in a way that would distinguish them from the top 10 words for any other play. 
+Try changing the code to print out the top 10 words from A Midsummer Night’s Dream. 
+Despite being a very different play, the words won’t have changed much. 
+While we can learn a surprising amount from these small “function” words, they do tend to drown out more interesting topic/content words in frequency analysis.
+An easy way to address this issue is to simply ignore such words when making our counts. Words that a researcher removes before performing analysis are typically called <strong>stopwords</strong>.</p>
+
+<p><strong>Add another parameter to the <code class="language-plaintext highlighter-rouge">getOneGrams()</code> function called <code class="language-plaintext highlighter-rouge">ignoreStopwords</code>.</strong>
+This parameter should contain a Boolean value (<code class="language-plaintext highlighter-rouge">True</code> or <code class="language-plaintext highlighter-rouge">False</code>) indicating whether or not the function should ignore stopwords or consider them as it performs its counting. To implement this, you will need to:</p>
+
+<ul>
+  <li>Check whether or not <code class="language-plaintext highlighter-rouge">ignoreStopwords</code> is True, using a conditional statement</li>
+  <li>Read in all of the words from <code class="language-plaintext highlighter-rouge">corpora/stopwords.txt</code> and store them in a list (take a glance inside this file to see what it contains)</li>
+  <li>For each word encountered in the given file, check to see whether or not that word is in the stopword list before adding its count to the <code class="language-plaintext highlighter-rouge">oneGramCounts</code> dictionary.</li>
+</ul>
+
+<p>Be sure to add code to <code class="language-plaintext highlighter-rouge">main()</code> to test your new functionality. What words pop up now? Do they tell you more about what the play is about?</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>For your second task of this lab, you will be implementing a similar function to <code class="language-plaintext highlighter-rouge">getOneGrams()</code> called <code class="language-plaintext highlighter-rouge">getTwoGrams()</code>. 
+As the name suggests, this function will count all of the two-grams (or “bigrams”) contained in a given file, returning the counts as a dictionary.</p>
+
+<p>Much of this function will do the same thing as <code class="language-plaintext highlighter-rouge">getOneGrams()</code>, but think about what extra variables you will need and how you will go about updating them. 
+How will you keep track of not just the <em>current</em> word, but the <em>previous</em> word? 
+<strong>How will you be able to make sure that you count two-grams that straddle across two lines of text?</strong></p>
+
+<p><em>Note: do not bother to exclude stopwords as you count bigrams.</em></p>
+
+<p>As you implement this function, add code to the <code class="language-plaintext highlighter-rouge">main()</code> function to test that your function is working.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>The code you were given removes all punctuation before counting any n-grams. This lets us keep track of all occurrences of each word, regardless of whether or not they might come at the end of a sentence, or after a quotation mark. However, we can incorporate punctuation into our n-grams if we want to. In particular, terminal punctuation marks (periods, question marks, exclamation points) contain useful information. If, say, the word “goodbye” occurs frequently at the end of a sentence, that is something we can capture by treating <code class="language-plaintext highlighter-rouge">('goodbye', '.')</code> as a bigram.</p>
+
+<p><strong>Update your <code class="language-plaintext highlighter-rouge">getTwoGrams()</code> function so that it counts periods, exclamation points, and question marks <em>as their own words</em> when counting bigrams.</strong> 
+(We can use the word “token” to refer to a single countable unit that could be a word or a punctuation mark.) 
+This should be doable just by adding/changing a few lines of code!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
