@@ -90,7 +90,7 @@ If you’re stuck for ideas, or have questions about the suitability of a partic
 ## Deliverable 1: Project Proposal
 As the first deliverable for your project, you must write a short proposal of what you plan to do. 
 You will submit this through Gradescope. 
-Your proposal is due by Monday, Nov 28th, at 10pm, and it should include the following components:
+Your proposal is due by Monday, February 28th, at 10pm, and it should include the following components:
 
 * Who’s working on the project, and how you plan to divide the work.
 * The game or simulation you plan to implement for your final project. Include a brief description of the game and its rules (or, for a simulation, what you aim to model and a basic overview of how it will run).
