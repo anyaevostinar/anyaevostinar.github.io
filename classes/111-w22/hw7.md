@@ -9,7 +9,7 @@ permalink: /classes/111-w22/hw7
 This is an individual assignment.
 You are still able to get help from many sources as detailed in the [collaboration](collaboration) policy.
 
-This assignment is worth 8 points total, 2 of which are checked on Gradescope automatically with an **autograder**, 2 of which are checked by the graders manually, and 4 for program style.
+This assignment is worth 8 points total, 1 of which are checked on Gradescope automatically with an **autograder**, 3 of which are checked by the graders manually, and 4 for program style.
 
 This assignment is due on Wednesday March 2nd at 10pm. See the [syllabus](syllabus) for the late policy.
 
@@ -112,6 +112,7 @@ Your homework will be scored with the following rubric:
 
 | Requirement | Points |
 |-------------| -------|
-| Autograder tests | 2 |
+| Autograder tests | 1 |
+| recMaxFinder is recursive and meets requirements | 1 |
 | von Koch snowflakes meet requirements | 2 |
 | Programming style: <br/> header, comments, variable names, spacing, no duplicated code, function headers | 4 |
