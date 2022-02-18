@@ -43,7 +43,7 @@ Readings should be completed **before** the class day that they are listed. Clas
 | F 2/18| Study!	 |	Exam 2	|  |
 | **Week 8** | **Software Design & Recursion** |   | |
 | M 2/21 | Runestone [17.8](https://runestone.academy/ns/books/published/thinkcspy/ClassesBasics/ConvertinganObjecttoaString.html), [18](https://runestone.academy/ns/books/published/thinkcspy/ClassesDiggingDeeper/toctree.html) |		| |
-| W 2/23 | 	Runestone [19](https://runestone.academy/ns/books/published/thinkcspy/Inheritance/toctree.html); HW6	 |  | HW7|	
+| W 2/23 | 	Runestone [19](https://runestone.academy/ns/books/published/thinkcspy/Inheritance/toctree.html); HW6	 |  | [HW7](hw7)|	
 | F 2/25 | Runestone [16](https://runestone.academy/ns/books/published/thinkcspy/IntroRecursion/toctree.html)	|   |	 |
 | **Week 9** | **Searching & Sorting**|  | |
 | M 2/28 | Zelle 13.1; [Final Project Proposal](final-project) due|			| |	
