@@ -8,6 +8,7 @@ This is a lab assignment and so you will not be submitting it.
 However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
 
 I recommend making a folder for today's lab in COURSES as you usually do.
+I also recommend opening the [readings](https://runestone.academy/ns/books/published/thinkcspy/ClassesBasics/ConvertinganObjecttoaString.html) [for today](https://runestone.academy/ns/books/published/thinkcspy/ClassesDiggingDeeper/toctree.html) for reference
 
 ## Exercise 0
 In this lab, you are going to implement a couple of classes to represent playing cards. This class (which we'll call `Card`) will have two instance variables:
