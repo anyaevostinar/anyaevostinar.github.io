@@ -40,4 +40,4 @@ Write a recursive function called `countup(n)` that takes a positive integer `n`
 Write a modified version of the recursive Fibonacci function from Problem 3 above, and call it `countFib(n)`. This function should return a list with two items (or a tuple if you prefer) containing a) the `n`th Fibonacci number and b) the number of times `countFib()` is called. The easiest approach will be to modify the `fib(n)` from above.
 
 ## Exercise 7
-Write a recursive function called `modulus(a, b)` that computes the remainder we get when we divide `a` by `b`. This is precisely what the `%` operator does in Python, but your function should instead use recursion to compute this remainder.
+Write a recursive function called `mod(a, b)` that computes the remainder we get when we divide `a` by `b`. This is precisely what the `%` operator does in Python, but your function should instead use recursion to compute this remainder.
