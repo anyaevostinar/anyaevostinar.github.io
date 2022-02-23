@@ -7,6 +7,7 @@ categories: [Teaching, Research]
 
 * shift mentality away from finish the project and it'll be done like with dissertation or postdoc project, teaching is never done and no amount of prep work will make it perfect the first or second or third time (maybe the tenth, I don't know yet!); you'll only stress yourself out and risk burn out
 * teaching requires in-classroom practice and so you have to just accept that you'll mess up and that's okay as long as you learn from it and reflect
+* you will write exam or homework problems that are confusing and you won't realize that they are confusing until after your students have submitted answers for grading; it's okay, you can adjust, and you will get better with practice
 * you can't fix all your students' problems, just help with some of them and point them to more resources for the others
 * research isn't going to look the same as it did when in grad school or postdocing most likely; smaller and done is better than huge and forever in progress
 * collaborators are awesome; undergrad researchers are great, but another PhD or otherwise expert in an area is very helpful

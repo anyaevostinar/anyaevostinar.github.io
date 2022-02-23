@@ -46,7 +46,7 @@ Readings should be completed **before** the class day that they are listed. Clas
 | W 2/23 | 	Runestone [19](https://runestone.academy/ns/books/published/thinkcspy/Inheritance/toctree.html); HW6	 |  | [HW7](hw7)|	
 | F 2/25 | Runestone [16](https://runestone.academy/ns/books/published/thinkcspy/IntroRecursion/toctree.html)	|   |	 |
 | **Week 9** | **Searching & Sorting**|  | |
-| M 2/28 | Zelle 13.1; [Final Project Proposal](final-project) due|			| |	
+| M 2/28 | Runestone DS [3.2](https://runestone.academy/ns/books/published/pythonds/AlgorithmAnalysis/WhatIsAlgorithmAnalysis.html), [3.3](https://runestone.academy/ns/books/published/pythonds/AlgorithmAnalysis/BigONotation.html) & [6.3](https://runestone.academy/ns/books/published/pythonds/SortSearch/TheSequentialSearch.html); [Final Project Proposal](final-project) due|			| |	
 | W 3/2 | Zelle 13.2.6-13.2.7; HW7; Optional: Zelle 7.4 | |[Final Project](final-project) |
 | F 3/4 | Zelle 13.3.1 | |	 |
 | **Week 10** | **Merge Sort & Hard Problems** |  | |

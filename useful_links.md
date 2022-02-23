@@ -17,6 +17,8 @@ These are links that I think are useful for myself and possibly others.
 ## Faculty
 [Collection of links useful for faculty](https://github.com/crazyhottommy/The-world-of-faculty) - includes negotiation/job-search materials, grant proposals, structuring papers, teaching, and more, some links I pulled out and include in other sections
 
+[Example CS CAREER proposal with thoughts on structure](https://austinhenley.com/blog/500kgrant.html)
+
 ## Books
 
 Range: Why Generalists Triumph in a Specialized World by David Epstein 
@@ -32,4 +34,11 @@ Apologies in advance for the PDFs that didn't get their metadata automatically p
 (Lysis/Lysogeny)[https://lists.papersapp.com/HW0haxy4YDj5]
 (Endosymbiosis)[https://lists.papersapp.com/I8q25lRcZz9z]
 (Symbiosis in Digital Evolution)[https://lists.papersapp.com/aBnTfcR3VzbC]
+
+## Minecraft Guides
+I have a couple of projects getting evolutionary dynamics into Minecraft and so need to save the best guides to modding Minecraft:
+
+* [SpongePowered mixin](https://github.com/SpongePowered/Mixin/wiki)
+* [Video on mixins](https://www.youtube.com/watch?v=Y4rqyv0qbps&t=43s)
+* [Series walk through](https://www.youtube.com/playlist?list=PLHTNHyaaUBPYq-lKVfrtkjXaGn9UGS3Iq)
 
