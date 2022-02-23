@@ -65,6 +65,8 @@ def getMin1(lst):
 
 ```
 # 4
+# This one is tricky, work through some examples and count the number 
+# of comparisons!
 def getMin2(lst):
   ''' Return the minimum element from given list of NON-NEGATIVE integers. '''
   if len(lst) < 0:
