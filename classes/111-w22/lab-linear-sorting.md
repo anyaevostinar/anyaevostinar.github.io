@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Efficiency Lab
-permalink: /classes/111-w22/efficiency
+title: Linear Sorting Lab
+permalink: /classes/111-w22/linear-sorting
 ---
 
 This is a lab assignment and so you will not be submitting it.
