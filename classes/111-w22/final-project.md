@@ -27,6 +27,7 @@ The final project is 25% of your grade in the course and that is broken up into 
 You have two options for categories of projects.
 Regardless of option, your project must be object-oriented and use classes of your own design meaningfully.
 You must also include graphics.
+You will probably find the [documentation for the graphics module](https://mcsp.wartburg.edu/zelle/python/graphics/graphics/graphref.html) helpful and should look through it!
 
 ### Option 1 - Game
 The first type of project is a computer game. 
