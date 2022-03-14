@@ -131,6 +131,16 @@ The final project is due Wednesday, March 16th at 2pm and no extensions are poss
 
 You will submit your project and report through Gradescope.
 
+## Resources
+In addition to the normal resources you have for getting help, I recommend you consult these sections of Zelle:
+* 4.7 "Interactive Graphics" includes subsections on Getting Mouse Clicks, Handling Textual Input, and the entire Graphics Module Reference to peruse
+* 8.6 "Example: A Simple Event Loop" show how to make a window that changes color whenever the mouse is clicked
+* 10.6 "Widgets" has code for graphically rolling dice
+* 10.7 "Animated Cannonball" simulates a cannonball being shot in a graphics window
+* 11.5 "Case Study: Python Calculator" has code for making a calculator tool with lots of buttons
+* 11.6 "Case Study: Better Cannonball Animation" shows how to improve the cannonball animation to have multiple cannonballs at once
+* 12.3.5 "Developing a GUI" shows how to expand the dice roller to make a poker game
+
 ## Grading
 You will be graded on the following rubric. The final project is a total of 100 points and is weighted as 25% of your final grade in the class.
 
