@@ -29,6 +29,8 @@ Data Feminism by Catherine D'Ignazio and Lauren Klein
 
 Writing Science by Joshue Schimel
 
+Rescuing Socrates by Roosevelt Montas
+
 ## Paper Lists
 These are my ReadCube lists for various projects that I am mostly sharing here to point my students and collaborators at, but perhaps they will be useful for others as well.
 Apologies in advance for the PDFs that didn't get their metadata automatically parsed correctly, if you are particularly interested in a topic, let me know and I can try to go and fix those.
