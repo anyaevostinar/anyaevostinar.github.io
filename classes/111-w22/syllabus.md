@@ -163,8 +163,8 @@ Leave yourself enough time to be able to take breaks!
 The Prefect Program offers in person tutoring and/or optional collaborative learning sessions for participating classes. 
 Prefect sessions review course concepts and often focus on critical thinking and problem-solving exercises centered on the course material. 
 Our course prefect(s) will use email or Moodle to inform everyone in the class about upcoming sessions and availability for 1:1 tutoring.
-* Moodle Forum:
-You're welcome to post questions about readings and labs on the forum, as well as about homework. 
+* Help Forum:
+You're welcome to post questions about readings and labs on the    `#help` channel on Slack as well as about homework and the final project. 
 You shouldn't post much homework code, but you can post code related to other assignments. 
 If you're unsure if a question contains too much detail about the homework, email me instead.
 * Talk to me:
@@ -174,7 +174,7 @@ Talking to students is literally my favorite part of this job, please talk to me
 * Other Carleton resources: 
 There are lots of resources to help you at Carleton. 
 Lab assistants are available on a regular basis; see the top of Moodle for details. 
-They can help you with debugging and making progress on your homework, or if you're having trouble understanding something about Java. 
+They can help you with debugging and making progress on your homework, or if you're having trouble understanding something about Python. 
 The Academic Skills center is a wonderful resource for helping you develop study skills, improve your ability to prep for exams, or manage procrastination. 
 Oscar Alarez is an academic skills coach in the office with whom you can make individual video conferencing appointments. 
 

@@ -14,6 +14,8 @@ These are links that I think are useful for myself and possibly others.
 
 [UNIX Tutorial](https://cs.carleton.edu/faculty/jondich/documents/unixtutorial/) - customized for Carleton's setup, but generally useful
 
+[Anonymous GitHub](https://anonymous.4open.science/) - tool to anonymize GitHub repos for double-blind review purposes
+
 ## Faculty
 [Collection of links useful for faculty](https://github.com/crazyhottommy/The-world-of-faculty) - includes negotiation/job-search materials, grant proposals, structuring papers, teaching, and more, some links I pulled out and include in other sections
 

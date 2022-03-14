@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="HW7" />
 <script type="application/ld+json">
-{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","url":"http://localhost:4000/classes/111-w22/hw7","@type":"WebPage","headline":"HW7","@context":"https://schema.org"}</script>
+{"description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW7","url":"http://localhost:4000/classes/111-w22/hw7","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
 <body><header class="site-header" role="banner">
@@ -47,7 +47,7 @@
 <p>This is an individual assignment.
 You are still able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
 
-<p>This assignment is worth 8 points total, 4 of which are checked on Gradescope automatically with an <strong>autograder</strong> and 4 for program style.</p>
+<p>This assignment is worth 8 points total, 1 of which are checked on Gradescope automatically with an <strong>autograder</strong>, 3 of which are checked by the graders manually, and 4 for program style.</p>
 
 <p>This assignment is due on Wednesday March 2nd at 10pm. See the <a href="syllabus">syllabus</a> for the late policy.</p>
 
@@ -84,15 +84,100 @@ $print(recMaxFinder([3, 4, 1, 5]))
 
 <h3 id="overview">Overview</h3>
 <p>A <em>fractal</em> is an image that is composed of smaller copies of itself. When drawing fractals, you typically specify a level, which tells you how “deep” to go in drawing smaller versions of the image. 
-In this assignment, you’ll write a recursive function to generate the <em>von Koch snowflake</em>. 
-One way to think about a von Koch snowflake
-is as follows:</p>
+In this assignment, you’ll write a recursive function to generate the <em>von Koch snowflake</em>:</p>
+
+<p><img src="/classes/111-w22/vonKochSnowflakes.png" alt="A series of five progressivley more complex snowflakes" /></p>
+
+<p>One way to think about a von Koch snowflake is as follows:</p>
 
 <p>Start with a triangle, for every line in the triangle (like the one on the left), replace it by a four-line piece (like the one on the right):</p>
 
 <p><img src="/classes/111-w22/vonKoch0.png" alt="A horizontal line" /> <img src="/classes/111-w22/vonKoch1.png" alt="A horizontal line with an upward pointing trianguular section in the center" /></p>
 
 <p>Then you repeat the exact same process on the resulting lines, and do it again, and again. The level of a fractal is the number of times that you repeat this “expansion” process.</p>
+
+<h3 id="your-task">Your Task</h3>
+
+<p>Copy the <code class="language-plaintext highlighter-rouge">graphics.py</code> module into your folder.
+In a file called <code class="language-plaintext highlighter-rouge">fractals.py</code>, first copy this starter code:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from graphics import *
+def vonKochSegment(level,start,heading,length,window):
+    if level == 0:
+        end = Point(start.getX() + length * math.cos(math.radians(heading)), 
+            start.getY() - length * math.sin(math.radians(heading)))
+        line = Line(start, end)
+        line.draw(window)
+        return end
+    else:
+        # your code here
+
+def vonKoch(length,level):
+    window = GraphWin("von Koch Snowflake", length * 1.5, length * 1.5)
+    p1 = Point(length / 4, length)
+    p2 = vonKochSegment(level, p1, 0.0, length, window)
+    # more of your code here
+</code></pre></div></div>
+
+<h4 id="vonkochsegment">vonKochSegment</h4>
+<p>The function `vonKochSegment takes five arguments: a level (the
+number of times that you do expansion), a starting point, a heading (in degrees counterclockwise from due east on the screen), a length of the line, and the graphics window in which to draw the resulting
+image. 
+The function should return the ending point of the segment.</p>
+
+<p>I’ve provided the base case when the level is 0.
+In this situation, the program calculates the ending point of the segment (this requires some trigonometry: go length units in the direction of the heading, which means length * cos(heading)
+in the x direction and -length * sin(heading) in the y direction), and then draws a line from the starting point to the ending point in window.
+This generates one third of a von Koch snowflake of level 0.</p>
+
+<p>You need to fill in the recursive case when the level is at least 1.
+For the recursive case, you should draw four <code class="language-plaintext highlighter-rouge">level - 1</code> segments by making <strong>four recursive calls</strong> with the appropriate arguments:</p>
+<ul>
+  <li>segment #1 starts at the starting point and goes <code class="language-plaintext highlighter-rouge">length / 3</code> units in direction <code class="language-plaintext highlighter-rouge">heading</code>.</li>
+  <li>segment #2 starts where segment #1 ends and goes <code class="language-plaintext highlighter-rouge">length / 3</code> units in direction <code class="language-plaintext highlighter-rouge">heading - 60</code>.</li>
+  <li>segment #3 starts where segment #2 ends and goes <code class="language-plaintext highlighter-rouge">length / 3</code> units in direction <code class="language-plaintext highlighter-rouge">heading + 60</code>.</li>
+  <li>segment #4 starts where segment #3 ends and goes <code class="language-plaintext highlighter-rouge">length / 3</code> units in direction <code class="language-plaintext highlighter-rouge">heading</code>.</li>
+</ul>
+
+<p>Remember to test your code at this point to be sure that it draws a segment correctly.
+For example, the call <code class="language-plaintext highlighter-rouge">vonKoch(200, 3)</code> should result in an image like this:</p>
+
+<p><img src="/classes/111-w22/vonKochPartial3.png" alt="A partial von Koch snowflake" /></p>
+
+<h4 id="vonkoch">vonKoch</h4>
+<p>Finally, you should expand the <code class="language-plaintext highlighter-rouge">vonKoch</code> function so that it draws three von Koch segments of level <code class="language-plaintext highlighter-rouge">level</code> arranged in an equilateral triangle. The first segment should head in direction 0, the second should head in direction 120 from the end of the first side, and the third should head in direction 240 from the end of the second side.</p>
+
+<p>Include test code that draws von Koch snowflakes of levels 1, 2, 3, and 4 when <code class="language-plaintext highlighter-rouge">fractals.py</code> is run and doesn’t close the window until the user hits “Enter” (this is to make it easy for the graders, don’t make life difficult for the graders!).
+Make sure to choose a length value that doesn’t take too long to run but is big enough to see.</p>
+
+<h2 id="grading">Grading</h2>
+<p>Your homework will be scored with the following rubric:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Requirement</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Autograder tests</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>recMaxFinder is recursive and meets requirements</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>von Koch snowflakes meet requirements</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Programming style: <br /> header, comments, variable names, spacing, no duplicated code, function headers</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
   </div>
 
