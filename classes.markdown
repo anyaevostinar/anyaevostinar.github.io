@@ -4,6 +4,17 @@ title: Classes
 permalink: /Classes/
 ---
 
+### Spring 2022
+
+CS 257: Software Design ([Syllabus](/classes/257-s22/syllabus)) ([Schedule](/classes/257-s22/schedule))
+
+## Future Classes
+Subject to change!
+
+TBD
+
+## Previous Classes
+
 ### Winter 2022
 
 CS 111: Introduction to Computer Science ([Syllabus](/classes/111-w22/syllabus)) ([Schedule](/classes/111-w22/schedule))
@@ -13,19 +24,6 @@ CS 399: Senior Seminar
 ### Fall 2021
 
 CS 201: Data Structures ([Syllabus](/classes/201-f21/syllabus)) ([Schedule](/classes/201-f21/schedule))
-
-## Future Classes
-Subject to change!
-
-### Winter 2022
-
-CS 111: Intro to CS
-
-### Spring 2022
-
-CS 257: Software Design
-
-## Previous Classes
 
 ### Summer 2021
 
