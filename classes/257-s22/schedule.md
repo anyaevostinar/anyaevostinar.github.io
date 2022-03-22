@@ -22,7 +22,7 @@ Other readings will be linked through Moodle.
 | W 3/30 | TBD | Effective teams discussion, start setting up computers |  |
 | F 4/1 | TBD | Unix/Vi/IDE | |
 | **Week 2** | **Project Foundations** | | |
-| Topics will include: | project ideas | computing ethics | version control |
+| Topics will include: | project ideas | computing ethics | version control and remembering Python |
 | **Week 3** | **Project V1: Command-Line** | | |
 | Topics will include: | TDD and BDD | making a command line tool | team contract |
 | **Week 4** | **Project V2: Flask** | | |
