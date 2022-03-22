@@ -13,3 +13,9 @@ categories: [Teaching, Research]
 * collaborators are awesome; undergrad researchers are great, but another PhD or otherwise expert in an area is very helpful
 * your own website and domain
 * when working with undergrads on a research paper, maybe write the outline for them and have them fill in the first draft?
+* teaching as an art vs teaching as a science
+* * science: if you study and follow the exact same steps as someone else, you will get the exact same results
+* * art: if you study and follow the exact same steps as someone else, you will get a flat and uninspired result; great art relies on you feeling something deeply and passionately, which is likely to be completely unique to each individual
+* * approaching teaching as only a science will only get you so far
+* * if you try to study and follow someone else's teaching style exactly, you will get an uninspiring outcome and the students will suffer for it
+* * you can and should study other teachers and understand their approaches, but you ultimately have to approach your teaching based on your emotions and passions to be most effective (and happy, which makes you more effective)
