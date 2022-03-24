@@ -182,7 +182,7 @@ However, it isn't healthy for you or me if you leave everything to the last minu
 It also isn't fair to your team if you haven't prepared as much as they have.
 Therefore, my goal with the following evaluation metrics is to balance providing you flexibility to learn at your own pace while also making sure to spread your learning out over the entire term.
 
-Towards that end, your performance in this class will be evaluated according to four criteria:
+Towards that end, your performance in this class will be evaluated in four different ways according to the learning goals for the course:
 
 * **Preparation** There will be short reading assignments due before almost every class, to introduce you to the class session topic and to help prepare you for the in-class activities that day. Many of these reading assignments will require you to post a response on EdStem and/or complete a short activity related to the reading. I assign these because I've found over the years that students really benefit from these first encounters with the material and that it allows students to engage more deeply with the material in class. You need to complete all of these to earn a B or higher in the course. Preparation assignments are evaluated on completion only, not correctness. These assignments have an expected completion time (i.e. before the relevant class), however I will accept late preparation assignments because you will still benefit from completing them after the relevant class. *I highly recommend that you complete them before the relevant class for your own learning benefit.*
 
