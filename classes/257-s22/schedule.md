@@ -19,7 +19,7 @@ Other readings will be linked through Moodle.
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Getting Started** |  | |
 | M 3/28 | Reading: [Syllabus](syllabus), this schedule; Fill out Background Survey| Course overview and discussion|  |
-| W 3/30 | TBD | Effective teams discussion, start setting up computers |  |
+| W 3/30 | [Project Aristotle](https://rework.withgoogle.com/print/guides/5721312655835136/), [Agile](https://medium.com/shecancode/an-introduction-to-agile-software-development-914339dcec66) | Effective teams and Agile, [start setting up computers](/classes/257-s22/getting-started) |  |
 | F 4/1 | TBD | Unix/Vi/IDE | |
 | **Week 2** | **Project Foundations** | | |
 | Topics will include: | project ideas | computing ethics | version control and remembering Python |
