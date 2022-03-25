@@ -10,6 +10,8 @@ Get your laptop setup for the course and start refreshing on Python.
 ## Laptop Setup
 Jeff Ondich has a nice walk through for setting up your computer for this course, so work through [Section 2. Set up a Unix command-line interface on your work computer](https://cs.carleton.edu/faculty/jondich/courses/cs257_f21/assignments/01_setup.html#unix).
 
+I recommend you also install [VSCode](https://code.visualstudio.com/download) since it's what I'll be using to demonstrate things and it has a whole lot of really useful extensions, such as [Remote Development](https://code.visualstudio.com/docs/remote/ssh) and [Live Share](https://code.visualstudio.com/learn/collaboration/live-share).
+
 Also work through Section 3, but send your GitHub information [to this survey](https://forms.gle/WvAfZEb6CR6t8ocCA) instead.
 
 ## Python Refreshing
