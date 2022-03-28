@@ -25,7 +25,7 @@ I recognize the potential financial burden of additional course fees, supply req
 
 **Drop in student hours**:
 
-Times and locations will be decided on as a group.
+Mondays 11-12, Wednesdays 3-4, Thursdays 9-10 all in Olin 306.
 
 Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 9-5 M-F and either send a calendar invite to an event or email me.
 
