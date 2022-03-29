@@ -12,7 +12,7 @@ Jeff Ondich has a nice walk through for setting up your computer for this course
 
 I recommend you also install [VSCode](https://code.visualstudio.com/download) since it's what I'll be using to demonstrate things and it has a whole lot of really useful extensions, such as [Remote Development](https://code.visualstudio.com/docs/remote/ssh) and [Live Share](https://code.visualstudio.com/learn/collaboration/live-share).
 
-Also work through Section 3, but send your GitHub information [to this survey](https://forms.gle/WvAfZEb6CR6t8ocCA) instead.
+Also work through Section 3 but don't make a repository yet and send your GitHub username [to this survey](https://forms.gle/WvAfZEb6CR6t8ocCA) instead.
 
 ## Python Refreshing
 Work through exercises 1 and 3 of [this lab](https://anyaevostinar.github.io/classes/111-w22/files).
