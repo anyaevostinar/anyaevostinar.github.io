@@ -22,7 +22,9 @@ Other readings will be linked through Moodle.
 | W 3/30 | [Project Aristotle](https://rework.withgoogle.com/print/guides/5721312655835136/), [Agile](https://medium.com/shecancode/an-introduction-to-agile-software-development-914339dcec66) | Effective teams and Agile, [start setting up computers](/classes/257-s22/getting-started) |  |
 | F 4/1 | Unix and Vim Tutorials | [Unix Scavenger Hunt](unix-scavenger-hunt) | |
 | **Week 2** | **Project Foundations** | | |
-| Topics will include: | project ideas | computing ethics | version control and remembering Python |
+| M 4/4 | Looking for Datasets | Start on Project Proposal | Project Proposal Part 1 (due 4/11) | 
+| W 4/6 | Reading about Git [1](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/),[2](https://dev.to/doylecodes/git-for-dummies-1a2i),[3](https://medium.com/@RedRoxProjects/how-do-i-git-three-ways-to-solve-a-merge-conflict-cde4d7924c80) | Git Practice Labs | |
+| F 4/8 | Reading about CLI [1](https://realpython.com/python-command-line-arguments), [2](https://eng.localytics.com/exploring-cli-best-practices/) | [Start on CLI Design](command-line-design) | |
 | **Week 3** | **Project V1: Command-Line** | | |
 | Topics will include: | TDD and BDD | making a command line tool | team contract |
 | **Week 4** | **Project V2: Flask** | | |
