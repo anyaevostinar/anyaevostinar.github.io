@@ -43,9 +43,16 @@ python3 example.py -b 3
 ```
 assuming that feature A takes a string and feature B takes a number.
 
+## Step 5: Deciding on Function Signatures
+Before you can jump into test-driven development (which we'll discuss on Monday), you need to decide as a group on *function signatures* for your features.
+A function signature is the name of the function (or method if you are using a class), which variable it takes, and what it returns.
 
-## Step 5: TDD
+For each of your features, you should decide on function signatures. 
+These functions will probably call lots of other functions, but these will be the functions that you first call from `main` based on the option that the user selects.
+
+
+## Step 6: TDD
 Next time, we'll discuss test-driven development and you'll start writing tests for these options before you've written any code for your app!
 
 ## Submitting
-Put your draft command line interface design in a text file `usage.txt` and push it to your team's repository so you don't lose it. I might take a look at these and give feedback on some in class on Monday.
+Put your draft command line interface design and function signatures in a text file `usage.txt` and push it to your team's repository so you don't lose it. I might take a look at these and give feedback on some in class on Monday.
