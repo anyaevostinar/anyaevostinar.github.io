@@ -34,7 +34,7 @@ From the interesting columns and relationships, come up with at least four featu
 These would be something like allowing the user to look up a row based on a string or number, getting a list of entries based on a range, etc.
 
 ## Step 4: Design the CLI
-Now, decide on the two features that you want to actually include and come up with the command line options and format for each of your features, along with a usage statement.
+Now, decide on the two features that you want to actually include. For each, come up with the command line options and format for them, along with a usage statement.
 
 These two features should be independent and use a flag to mark which feature is being used. For example, if I had feature A and feature B for my app `example.py`, I should be able to do:
 ```
