@@ -66,6 +66,7 @@ The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
 * All the Meets Expectations criteria are met
 * Functionality:
   * The test suite covers nearly all edge cases
+  * The test suite includes sufficient integration tests
   * The usage statement is thorough and clear
   * The features are interesting and enable the user to gain a large amount of information from the dataset
 * Design:

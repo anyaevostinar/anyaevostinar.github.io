@@ -54,6 +54,7 @@ The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
 * All the Meets Expectations criteria are met
 * Functionality:
   * Dummy data is used well to improve clarity and efficiency
+  * There is at least one unit and at least one integration test
 * Design:
   * The test code is very clear, potentially using helper functions to ensure that test functions are at a single layer of abstraction
   * There is barely any duplicated code
