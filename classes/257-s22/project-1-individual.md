@@ -42,18 +42,18 @@ The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
 
 ### Meets Expectations Criteria
 * Functionality:
-* * The tests work with the team's production code
-* * There are a sufficient number of tests
-* * There is at least one typical case and one edge case tested
+  * The tests work with the team's production code
+  * There are a sufficient number of tests
+  * There is at least one typical case and one edge case tested
 * Design:
-* * Test code is reasonably easy to read and understand
-* * There isn't an excessive amount of repeated code
-* * Style mostly follows the [style guide](https://peps.python.org/pep-0008/)
+  * Test code is reasonably easy to read and understand
+  * There isn't an excessive amount of repeated code
+  * Style mostly follows the [style guide](https://peps.python.org/pep-0008/)
 
 ### Exceeds Expectations Criteria
 * All the Meets Expectations criteria are met
 * Functionality:
-* * Dummy data is used well to improve clarity and efficiency
+  * Dummy data is used well to improve clarity and efficiency
 * Design:
-* * The test code is very clear, potentially using helper functions to ensure that test functions are at a single layer of abstraction
-* * There is barely any duplicated code
+  * The test code is very clear, potentially using helper functions to ensure that test functions are at a single layer of abstraction
+  * There is barely any duplicated code

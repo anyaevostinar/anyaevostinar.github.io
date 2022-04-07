@@ -52,24 +52,24 @@ The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
 
 ### Meets Expectations Criteria
 * Functionality:
-* * There is a functional usage statement
-* * There are two independent features controlled by a command line interface that allows the user to get information from the chosen dataset
-* * There is an automated test suite that covers all the typical cases and some of the edge cases
+  * There is a functional usage statement
+  * There are two independent features controlled by a command line interface that allows the user to get information from the chosen dataset
+  * There is an automated test suite that covers all the typical cases and some of the edge cases
 * Design:
-* * The functions/methods are mostly written at a single layer of abstraction
-* * Function names, return values, and parameters generally follow the principles of good design
-* * Function/method [docstrings](https://peps.python.org/pep-0257/) generally provide the required information
-* * There isn't an excessive amount of repeated code
-* * Style mostly follows the [style guide](https://peps.python.org/pep-0008/)
+  * The functions/methods are mostly written at a single layer of abstraction
+  * Function names, return values, and parameters generally follow the principles of good design
+  * Function/method [docstrings](https://peps.python.org/pep-0257/) generally provide the required information
+  * There isn't an excessive amount of repeated code
+  * Style mostly follows the [style guide](https://peps.python.org/pep-0008/)
 
 ### Exceeds Expectations Criteria
 * All the Meets Expectations criteria are met
 * Functionality:
-* * The test suite covers nearly all edge cases
-* * The usage statement is thorough and clear
-* * The features are interesting and enable the user to gain a large amount of information from the dataset
+  * The test suite covers nearly all edge cases
+  * The usage statement is thorough and clear
+  * The features are interesting and enable the user to gain a large amount of information from the dataset
 * Design:
-* * The functions/methods are all written at a single layer of abstraction
-* * Function names, return values, and parameters all follow the principles of good design
-* * Function/method [docstrings](https://peps.python.org/pep-0257/) all provide the required information
-* * There is barely any duplicated code
+  * The functions/methods are all written at a single layer of abstraction
+  * Function names, return values, and parameters all follow the principles of good design
+  * Function/method [docstrings](https://peps.python.org/pep-0257/) all provide the required information
+  * There is barely any duplicated code
