@@ -26,7 +26,9 @@ Other readings will be linked through Moodle.
 | W 4/6 | Reading about Git [1](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/),[2](https://dev.to/doylecodes/git-for-dummies-1a2i),[3](https://medium.com/@RedRoxProjects/how-do-i-git-three-ways-to-solve-a-merge-conflict-cde4d7924c80) | Git Practice Labs | |
 | F 4/8 | Reading about CLI [1](https://realpython.com/python-command-line-arguments), [2](https://eng.localytics.com/exploring-cli-best-practices/) | [Start on CLI Design](command-line-design) | |
 | **Week 3** | **Project V1: Command-Line** | | |
-| Topics will include: | TDD and BDD | making a command line tool | team contract |
+| M 4/11 | Reading about TDD [1](http://en.wikipedia.org/wiki/Test-driven_development), [2](https://realpython.com/python-testing/), (Optional) Martin Ch 9 </br> Project Proposal Part 1 due | [TDD Lab](tdd) | [Team - Command Line](project-command-line), [Individual - Tests](project-1-ind) |
+| W 4/13 | Read Martin Ch 3 | Function Design | |
+| F 4/15 | Read about Ethics in Tech: [1](https://www.acm.org/code-of-ethics), [2](https://medium.com/humane-tech/12-things-everyone-should-understand-about-tech-d158f5a26411) | Intro to Tech Ethics | |
 | **Week 4** | **Project V2: Flask** | | |
 | Topics will include: | final project proposal | simple flask app | code design and code review |
 | **Week 5** | **Project V3: HTML and CSS** | | |
