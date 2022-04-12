@@ -30,7 +30,7 @@ Other readings will be linked through Moodle.
 | W 4/13 | Read Martin Ch 3 | Function Design | |
 | F 4/15 | Read about Ethics in Tech: [1](https://www.acm.org/code-of-ethics), [2](https://medium.com/humane-tech/12-things-everyone-should-understand-about-tech-d158f5a26411) | Intro to Tech Ethics | |
 | **Week 4** | **Project V2: Flask** | | |
-| Topics will include: | final project proposal | simple flask app | code design and code review |
+| Topics will include: | | simple flask app | code design and code review |
 | **Week 5** | **Project V3: HTML and CSS** | | |
 | Topics will include: | http | html and css | web accessibility and usability |
 | **Week 6** | **Project V4: Database** | | |

@@ -62,5 +62,10 @@ Your tests should be in both:
 * Your team deliverables repo with the rest of the team's tests
 * And your individual deliverables repo all on their own
 
-I recommend that you work in your team's repo (since that will have the production code that you'll want to use) and then you copy your tests over to a new file in your individual repository.
+I recommend that you coordinate with your team and decide on if you are going to have one test file that everyone puts their tests into or split the tests up into separate files. If you split your tests into separate files, as long as they all start with `test`, you can run them automatically with:
+```
+python3 -m unittest
+```
+
+Once you've decided on structure, you should move your tests so far into your team's repo and work going forward in your team's repo (since that will have the production code that you'll want to use). Then you can copy your tests over to a new file in your individual repository.
 Feel free to check with me on if you have things structured correctly.

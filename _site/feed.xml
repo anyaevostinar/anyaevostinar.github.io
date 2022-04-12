@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-04T11:19:03-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">Gradescope Autograder Tips</title><link href="http://localhost:4000/teaching/2022/01/24/autograder-tips.html" rel="alternate" type="text/html" title="Gradescope Autograder Tips" /><published>2022-01-24T09:00:00-06:00</published><updated>2022-01-24T09:00:00-06:00</updated><id>http://localhost:4000/teaching/2022/01/24/autograder-tips</id><content type="html" xml:base="http://localhost:4000/teaching/2022/01/24/autograder-tips.html">&lt;p&gt;This document is mostly for me to write down the things that I had to figure out for myself so that future me has an easier time remembering, though I hope they might also be helpful for others who are experienced programmers but figuring out &lt;a href=&quot;https://www.gradescope.com/&quot;&gt;Gradescope&lt;/a&gt;’s &lt;a href=&quot;https://gradescope-autograders.readthedocs.io/en/latest/&quot;&gt;autograder&lt;/a&gt; for the first time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-12T10:56:23-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anya E. Vostinar</title><subtitle>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</subtitle><entry><title type="html">2022 ISAL Awards Eligible List</title><link href="http://localhost:4000/isal/2022/04/12/new-isal-list.html" rel="alternate" type="text/html" title="2022 ISAL Awards Eligible List" /><published>2022-04-12T10:00:00-05:00</published><updated>2022-04-12T10:00:00-05:00</updated><id>http://localhost:4000/isal/2022/04/12/new-isal-list</id><content type="html" xml:base="http://localhost:4000/isal/2022/04/12/new-isal-list.html">&lt;p&gt;In my continuing quest to make the &lt;a href=&quot;https://alife.org/&quot;&gt;International Society for Artificial Life&lt;/a&gt; as awesome as possible, you may recall that I made a &lt;a href=&quot;/isal/2021/09/26/awards-list&quot;&gt;totally unofficial spreadsheet&lt;/a&gt; for keeping track of eligible people and project. My thinking at the time was that, even if I was the only one to use it, it would be super helpful for me to actually submit some nominations for the ISAL annual awards since I would remember all the cool people and projects I had seen during the  year. That was definitely a success; I found it much easier to submit a number of nominations, so I’m continuing the experiment this year!&lt;/p&gt;
+
+&lt;p&gt;An additional goal/benefit of my spreadsheet system is that many of the awards are for things that continue to be relevant year after year, so the spreadsheet will continue to grow as new useful information is added each year.
+Therefore, I’ve &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1FeqvcLP9y0iS2fhbr9iINKdsMYRYXq_teE84Iala2Cc/edit?usp=sharing&quot;&gt;duplicated the spreadsheet&lt;/a&gt; (and Google makes it quite easy since it also created a paired &lt;a href=&quot;https://forms.gle/CjcAAFtoB697X6hx5&quot;&gt;duplicated form&lt;/a&gt; for me) and done the following to the various categories (these are some what just notes to myself):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lifetime Achievement submissions are all kept, I’ll go and move whomever wins this year once that is decided&lt;/li&gt;
+  &lt;li&gt;Early Career submissions are all kept, I’ll need to move people from here to a ‘lifetime in waiting’ list once they get tenure; it doesn’t really make sense for them to be moved to the Lifetime Achievement list since they probably aren’t really competitive yet, though technically eligible, so I might make an additional tab for midcareer folks (and perhaps there should be another award category for them!)&lt;/li&gt;
+  &lt;li&gt;Service submissions are all kept since there isn’t an actual time limit on those, though there is a practical&lt;/li&gt;
+  &lt;li&gt;Pub of 2021 submissions are all removed and perhaps also should go onto an ‘in waiting list’ for once they become eligible for the decade award (five years from now), though since this is a duplicate sheet, it won’t be hard to just go back and grab things from the doc from five years ago (assuming I keep this up for that long)&lt;/li&gt;
+  &lt;li&gt;Pub of the decade (2007-2017) submissions have been copied over except for those that were published in 2007 since they are no longer eligible for the 2008-2018 decade&lt;/li&gt;
+  &lt;li&gt;Education and Outreach submissions have all been kept&lt;/li&gt;
+  &lt;li&gt;Student publication submissions have been kept since they have a fuzzy time limit, I will need to start tracking when the student graduated since the time limit is that they are within three years of graduation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At some point, I want to increase the fanciness of the form so that it has variable fields based on the category and therefore gets more of the information that is useful for a particular category, but I haven’t gotten around to that yet.
+I’m also teaching a course on building database backed websites and resisting the temptation to abandon Google and make my own website for this; we’ll see how long I last.&lt;/p&gt;
+
+&lt;p&gt;As we all wait eagerly for the results of the ALIFE conference paper reviews and ISAL awards, &lt;a href=&quot;https://forms.gle/CjcAAFtoB697X6hx5&quot;&gt;keep adding all your great stuff for next year&lt;/a&gt;!
+Also let me know if you have suggestions for changes to the unofficial form or the awards process that would make you more inclined to participate (email to vostinar at carleton dot edu is the easiest).&lt;/p&gt;
+
+&lt;p&gt;Cheers,
+Anya&lt;/p&gt;</content><author><name></name></author><category term="ISAL" /><summary type="html">In my continuing quest to make the International Society for Artificial Life as awesome as possible, you may recall that I made a totally unofficial spreadsheet for keeping track of eligible people and project. My thinking at the time was that, even if I was the only one to use it, it would be super helpful for me to actually submit some nominations for the ISAL annual awards since I would remember all the cool people and projects I had seen during the year. That was definitely a success; I found it much easier to submit a number of nominations, so I’m continuing the experiment this year!</summary></entry><entry><title type="html">Gradescope Autograder Tips</title><link href="http://localhost:4000/teaching/2022/01/24/autograder-tips.html" rel="alternate" type="text/html" title="Gradescope Autograder Tips" /><published>2022-01-24T09:00:00-06:00</published><updated>2022-01-24T09:00:00-06:00</updated><id>http://localhost:4000/teaching/2022/01/24/autograder-tips</id><content type="html" xml:base="http://localhost:4000/teaching/2022/01/24/autograder-tips.html">&lt;p&gt;This document is mostly for me to write down the things that I had to figure out for myself so that future me has an easier time remembering, though I hope they might also be helpful for others who are experienced programmers but figuring out &lt;a href=&quot;https://www.gradescope.com/&quot;&gt;Gradescope&lt;/a&gt;’s &lt;a href=&quot;https://gradescope-autograders.readthedocs.io/en/latest/&quot;&gt;autograder&lt;/a&gt; for the first time.&lt;/p&gt;
 
 &lt;h2 id=&quot;examples&quot;&gt;Examples&lt;/h2&gt;
 &lt;p&gt;Start from examples, it just makes life easier.
@@ -438,82 +459,4 @@ I’m just glad I didn’t run into the scenario another Avida researcher did wh
   &lt;li&gt;Mastery grading scheme - a lot of the previous things will need to happen first&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;For the record, I’m super unsure and conflicted about the ordering of 4-7 and probably will end up doing some later priority items on a wild hair (hare?). I don’t even know where to draw the line of how many of these things is reasonable to try. If you actually read this sentence and have an opinion, feel free to reach out and let me know!&lt;/p&gt;</content><author><name></name></author><category term="Teaching" /><summary type="html">I historically have hated the idea of “there’s always room for improvement” and it’s only recently that I’ve thought carefully about why that is. I love the principles of Growth Mindset and have found them supremely helpful on my teaching journey, so it seemed weird that at the same time my skin crawled whenever someone talked about always wanting to improve. I eventually realized that it was perfectionism still sneaking its way in since if there was room for improvement, it wasn’t perfect, and it was unacceptable to ever offer a less than perfect class so I had to work myself to the bone to reach perfection immediately and then never need to improve again. If I could never reach perfection despite working myself to the bone, I would have to always work myself to the bone and damn is that a depressing thought.</summary></entry><entry><title type="html">Structuring Flipped Classrooms</title><link href="http://localhost:4000/teaching/2020/12/01/flipped-classrooms.html" rel="alternate" type="text/html" title="Structuring Flipped Classrooms" /><published>2020-12-01T10:00:00-06:00</published><updated>2020-12-01T10:00:00-06:00</updated><id>http://localhost:4000/teaching/2020/12/01/flipped-classrooms</id><content type="html" xml:base="http://localhost:4000/teaching/2020/12/01/flipped-classrooms.html">&lt;p&gt;Even though I’m teaching remote/online, I still am trying for a flipped classroom structure where my students read or watch videos before class and then spend classtime working on hands on activities so that they can ask questions when they get stuck.&lt;/p&gt;
-
-&lt;p&gt;A problem I’ve run into is if I have time for students to ask questions at the beginning of class, they’ll often have forgotten what their questions were when they did the reading days ago and so they wish for a mini-lecture to remind them of their questions.
-I don’t want to use up valuable classroom time with me just talking, so the choices I’ve thought of are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Capture their questions beforehand with a form, ideally allowing it to be anonymous and them to be able to upvote other students’ questions if they have the same&lt;/li&gt;
-  &lt;li&gt;Clicker quiz/poll to check their understanding and then if they are wrong, that is a good thing to revisit right away&lt;/li&gt;
-  &lt;li&gt;Rely on the activity to bring up their questions eventually&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;capturing-their-questions&quot;&gt;Capturing their questions&lt;/h2&gt;
-&lt;p&gt;Ideally anonymously and with an upvote mechanism&lt;/p&gt;
-
-&lt;h3 id=&quot;pros&quot;&gt;Pros&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;I can prepare answers ahead of time if it’s something that I don’t know off the top of my head&lt;/li&gt;
-  &lt;li&gt;They can see others’ questions and therefore realize that others have questions too and possibly realize a question they didn’t realize they had&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;cons&quot;&gt;Cons&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;When do I cut off submitting new questions?
-    &lt;ul&gt;
-      &lt;li&gt;If right before class starts, I lose the pro of preparing answers&lt;/li&gt;
-      &lt;li&gt;If further before class, some people might not be able to post their questions&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;I might not get any questions submitted even if students have them since typing out a question might be more than they feel like doing&lt;/li&gt;
-  &lt;li&gt;I like to prepare pretty far ahead of time, so the idea of having to rush to prepare answers right before class stresses me out&lt;/li&gt;
-  &lt;li&gt;Students who don’t feel like doing the reading/watching the video aren’t pressured to do so and this could further encourage them not to because they think they can just listen to my answers for the important stuff&lt;/li&gt;
-  &lt;li&gt;Would need to find technology to support my ideal situation of upvoting and anonymous questions and hope that I can integrate it nicely, maybe Moodle has something already?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;clicker-quizzes&quot;&gt;Clicker quizzes&lt;/h2&gt;
-
-&lt;h3 id=&quot;pros-1&quot;&gt;Pros&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;I can get a better idea if students really understand the material&lt;/li&gt;
-  &lt;li&gt;Students are encouraged to prepare since they want to be able to answer the questions&lt;/li&gt;
-  &lt;li&gt;Students who don’t do the preparation are revealed anonymously unless they’re really good at guessing&lt;/li&gt;
-  &lt;li&gt;I can craft the possible answers to highlight common misconceptions&lt;/li&gt;
-  &lt;li&gt;I can prep ahead of time and reuse the quizzes, will already know what I will need to explain because I wrote the questions&lt;/li&gt;
-  &lt;li&gt;Prompts students’ other questions since it jogs their memory&lt;/li&gt;
-  &lt;li&gt;I’m pretty sure Zoom’s Poll functionality does what I want, but I need to try it out still&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;cons-1&quot;&gt;Cons&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Difficult to write really good multiple choice questions that get at misconceptions&lt;/li&gt;
-  &lt;li&gt;Takes a fair amount of time to go through the polling and then discuss the answers/misconceptions; this isn’t wasted time of course as long as the questions are about important concepts, but it does take away from the hands-on activity in an already short class period&lt;/li&gt;
-  &lt;li&gt;Students might still think they don’t need to prepare and will just learn the important things from the discussion, but at least I’ll know most likely&lt;/li&gt;
-  &lt;li&gt;Any kind of quiz, even an ungraded one, may feel stressful to students&lt;/li&gt;
-  &lt;li&gt;Only works for students who are able to attend synchronous class, which isn’t all of my students right now&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;rely-on-the-activity&quot;&gt;Rely on the activity&lt;/h2&gt;
-
-&lt;h3 id=&quot;pros-2&quot;&gt;Pros&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;No additional preparation other than making a good activity, which I was already aiming for&lt;/li&gt;
-  &lt;li&gt;No additional class time required&lt;/li&gt;
-  &lt;li&gt;Can talk through students’ questions one-on-one during the activity&lt;/li&gt;
-  &lt;li&gt;Encountering a question in context of actual problem/code might be helpful&lt;/li&gt;
-  &lt;li&gt;I generally try to structure the activity so that students answer some of their own questions because they can see what their code does or what works/doesn’t work&lt;/li&gt;
-  &lt;li&gt;Students working on the activity asynchronously can ask me questions over email&lt;/li&gt;
-  &lt;li&gt;Can be used in conjunction with other methods still&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;cons-2&quot;&gt;Cons&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Misconceptions may linger as students cargo code or muddle through&lt;/li&gt;
-  &lt;li&gt;Students aren’t pressured to read ahead of time because they can just refer to the reading/skim during the activity&lt;/li&gt;
-  &lt;li&gt;Students may not ask me their question even one-on-one if they aren’t comfortable doing so&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;verdict&quot;&gt;Verdict&lt;/h2&gt;
-&lt;p&gt;I think I’m leaning toward trying out Zoom’s poll functionality to see if it recreates clicker quizzes sufficiently and then starting to craft those questions. I may not have a clicker quiz every class period if I can’t think of good questions, but it’s a start at least.
-For in-person questions, I wouldn’t actually use clickers, I just used pieces of paper with four colored circles marked A-D that students would fold.&lt;/p&gt;</content><author><name></name></author><category term="Teaching" /><summary type="html">Even though I’m teaching remote/online, I still am trying for a flipped classroom structure where my students read or watch videos before class and then spend classtime working on hands on activities so that they can ask questions when they get stuck.</summary></entry></feed>
+&lt;p&gt;For the record, I’m super unsure and conflicted about the ordering of 4-7 and probably will end up doing some later priority items on a wild hair (hare?). I don’t even know where to draw the line of how many of these things is reasonable to try. If you actually read this sentence and have an opinion, feel free to reach out and let me know!&lt;/p&gt;</content><author><name></name></author><category term="Teaching" /><summary type="html">I historically have hated the idea of “there’s always room for improvement” and it’s only recently that I’ve thought carefully about why that is. I love the principles of Growth Mindset and have found them supremely helpful on my teaching journey, so it seemed weird that at the same time my skin crawled whenever someone talked about always wanting to improve. I eventually realized that it was perfectionism still sneaking its way in since if there was room for improvement, it wasn’t perfect, and it was unacceptable to ever offer a less than perfect class so I had to work myself to the bone to reach perfection immediately and then never need to improve again. If I could never reach perfection despite working myself to the bone, I would have to always work myself to the bone and damn is that a depressing thought.</summary></entry></feed>
