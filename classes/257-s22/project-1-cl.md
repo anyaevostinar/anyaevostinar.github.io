@@ -49,6 +49,7 @@ git push origin cl
 ## Evaluation
 
 The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
+When evaluating your project, the grader will pull down your team's repo and run both your production code and test suite, as well as look through your code for style.
 
 ### Meets Expectations Criteria
 * Functionality:
