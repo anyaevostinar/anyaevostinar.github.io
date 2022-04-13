@@ -9,7 +9,7 @@ permalink: /classes/257-s22/project-command-line
 The goal of this iteration of your project is to create a minimal prototype to allow a user to interact with your data via the command line.
 Your minimal prototype should also include an automated test suite.
 
-The learning objectives for this iteration of your project are to be able to 1) create an automated test suite, 2) create a command line interface, and 3) create code that follows the principles of good function design.
+The learning objectives for this iteration of your project are to be able to 1) create an automated test suite, 2) create an app with a command line interface, and 3) create code that follows the principles of good function design.
 
 ## Collaboration
 
