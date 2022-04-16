@@ -108,5 +108,30 @@ Fun fact, you can!
         return "Eek, a bug!"
     ```
 
+## Testing
+You can test the Flask-specific functions the normal way by just calling them directly and checking that they return the correct thing.
+You can also test that your Flask app returns the correct thing based on a URL with the following:
+
+```python
+from app import *
+import unittest
+
+class TestSOMETHING(unittest.TestCase):
+    def test_route(self):
+        self.app = app.test_client()
+        response = self.app.get('/', follow_redirects=True)
+        self.assertEqual(b'hello, this is the homepage', response.data)
+```
+      
+The `b` stands for byte and its because `response.data` is a 'bytes-like object'.
+Once you make more complicated pages, you can use `assertIn` to check for the specific data that you care about without worrying about the HTML tags.
+
+Make a test file and test your existing functions and routes. (Yes, we're breaking TDD since we already have the production code written. It'd be a good idea to purposefully break your production code to make sure your tests fail first.)
+
+*Acknowledgements: I adapted code from [this guide](https://www.patricksoftwareblog.com/unit-testing-a-flask-application/) for this section. Check there if you're curious about more advanced testing.*
+
 ## Applying to your project
-You're now all set to turn your command-line interface project into a Flask app by adding the appropriate decorators. You might need to adjust some of your functions to return strings if they had been returning lists (and adjust your tests in the process), so coordinate with your team and start on the next stage of the project.
+You're now all set to turn your command-line interface project into a Flask app.
+It's good to separate the underlying logic of your program from the Flask-specific portion so that it will be easier to refactor the logic portion once we add a database.
+Therefore, you should have all the Flask functionality in a separate file that imports the file with core functions.
+You should now start on your [individual deliverable](project-2-ind) for this week, which is making a Flask app with a homepage and single data route, and is due **Friday evening**.
