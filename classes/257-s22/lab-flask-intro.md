@@ -86,5 +86,27 @@ Eventually, we'll put your data into a database, but for now, we'll stick with l
 
     You can also try letting the user get an entire row of the dataset, but remember that you'll need to turn the list into a string to do so.
 
+## Handling user errors (and your own)
+
+You may have noticed as you were doing the previous pieces that it would be nice if you could achieve something similar to a usage statement.
+Fun fact, you can!
+
+1. Add a function with the decorator `@app.errorhandler(404)` to catch page not found errors. The function will need to take an argument (which is the error):
+    ```python
+
+    @app.errorhandler(404)
+    def page_not_found(e):
+        return "sorry, wrong format, do this instead...."
+    ```
+
+    Make sure that the function lets the user know what format they should use for the URL to get the information they want. 
+
+2. You can add a function for internal server errors as well, i.e. when you have a bug in your Python code:
+    ```python
+    @app.errorhandler(500)
+    def python_bug(e):
+        return "Eek, a bug!"
+    ```
+
 ## Applying to your project
 You're now all set to turn your command-line interface project into a Flask app by adding the appropriate decorators. You might need to adjust some of your functions to return strings if they had been returning lists (and adjust your tests in the process), so coordinate with your team and start on the next stage of the project.
