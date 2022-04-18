@@ -126,8 +126,55 @@ Eventually, we’ll put your data into a database, but for now, we’ll stick wi
   </li>
 </ol>
 
+<h2 id="handling-user-errors-and-your-own">Handling user errors (and your own)</h2>
+
+<p>You may have noticed as you were doing the previous pieces that it would be nice if you could achieve something similar to a usage statement.
+Fun fact, you can!</p>
+
+<ol>
+  <li>Add a function with the decorator <code class="language-plaintext highlighter-rouge">@app.errorhandler(404)</code> to catch page not found errors. The function will need to take an argument (which is the error):
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+ <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">errorhandler</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">page_not_found</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+     <span class="k">return</span> <span class="s">"sorry, wrong format, do this instead...."</span>
+</code></pre></div>    </div>
+
+    <p>Make sure that the function lets the user know what format they should use for the URL to get the information they want.</p>
+  </li>
+  <li>You can add a function for internal server errors as well, i.e. when you have a bug in your Python code:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">errorhandler</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">python_bug</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+     <span class="k">return</span> <span class="s">"Eek, a bug!"</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="testing">Testing</h2>
+<p>You can test the Flask-specific functions the normal way by just calling them directly and checking that they return the correct thing.
+You can also test that your Flask app returns the correct thing based on a URL with the following:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">unittest</span>
+
+<span class="k">class</span> <span class="nc">TestSOMETHING</span><span class="p">(</span><span class="n">unittest</span><span class="p">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">test_route</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">app</span> <span class="o">=</span> <span class="n">app</span><span class="p">.</span><span class="n">test_client</span><span class="p">()</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">app</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'/'</span><span class="p">,</span> <span class="n">follow_redirects</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="sa">b</span><span class="s">'hello, this is the homepage'</span><span class="p">,</span> <span class="n">response</span><span class="p">.</span><span class="n">data</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">b</code> stands for byte and its because <code class="language-plaintext highlighter-rouge">response.data</code> is a ‘bytes-like object’.
+Once you make more complicated pages, you can use <code class="language-plaintext highlighter-rouge">assertIn</code> to check for the specific data that you care about without worrying about the HTML tags.</p>
+
+<p>Make a test file and test your existing functions and routes. (Yes, we’re breaking TDD since we already have the production code written. It’d be a good idea to purposefully break your production code to make sure your tests fail first.)</p>
+
+<p><em>Acknowledgements: I adapted code from <a href="https://www.patricksoftwareblog.com/unit-testing-a-flask-application/">this guide</a> for this section. Check there if you’re curious about more advanced testing.</em></p>
+
 <h2 id="applying-to-your-project">Applying to your project</h2>
-<p>You’re now all set to turn your command-line interface project into a Flask app by adding the appropriate decorators. You might need to adjust some of your functions to return strings if they had been returning lists (and adjust your tests in the process), so coordinate with your team and start on the next stage of the project.</p>
+<p>You’re now all set to turn your command-line interface project into a Flask app.
+It’s good to separate the underlying logic of your program from the Flask-specific portion so that it will be easier to refactor the logic portion once we add a database.
+Therefore, you should have all the Flask functionality in a separate file that imports the file with core functions.
+You should now start on your <a href="project-2-ind">individual deliverable</a> for this week, which is making a Flask app with a homepage and single data route, and is due <strong>Friday evening</strong>.</p>
 
   </div>
 

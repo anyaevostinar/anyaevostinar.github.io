@@ -15,6 +15,8 @@ If you don't have access to it anymore, just go through the steps to set up a ba
 As you know from your reading, Flask allows you to connect with HTML templates.
 Flask handles finding these as long as you put them where it is expecting.
 
+(Fun fact/note: because I'm using a [framework](https://jekyllrb.com/) that has very similar syntax to Jinja to make this website, I have to do a [special escape](https://www.tomordonez.com/curly-braces-markdown-jekyll/) to actually display all the {%raw%} `{{var}}` {%endraw%}, and I might have missed a few, so if you see a strangely blank spot, it is very likely that it should have some curly braces with a variable in it.)
+
 1. Create a `templates` folder in your `FlaskLab` folder
 2. Create a file in that folder `index.html` and put in the following boilerplate:
     ```html
@@ -27,13 +29,17 @@ Flask handles finding these as long as you put them where it is expecting.
         </body>
     </html>
     ```
-3. Within the `heading` put in a set of `title` HTML tags and place a placeholder `{{title}}` between them:
+3. Within the `heading` put in a set of `title` HTML tags and place a placeholder {%raw%}`{{title}}`{%endraw%} between them:
     ```html
+    {%raw %}
     <title>{{title}}</title>
+    {%endraw%}
     ```
 4. If you have as many tabs open as I do regularly, you can't actual see the titles easily, so, within the `body`, put in a heading with the title as well:
     ```html
+    {%raw%}
     <h1>Welcome to the {{title}}!</h1>
+    {%endraw%}
     ```
 5. Now you need to go edit your existing Flask app to use your new template. Open `flask_lab_app.py` and edit your `homepage()` function so that instead of just returning a plain string, it returns the result of calling `render_template` with your title of choice:
     ```python
@@ -54,9 +60,9 @@ Let's display the headings of the silly dataset on the homepage.
     ```
 2. Within that unordered list, we'll use Jinja to make a list item for each heading in our list `headings`:
     ```html
-    {% for heading in headings: %}
+    {%raw%}{% for heading in headings: %}
     <li>{{ heading }}</li>
-    {% endfor %}
+    {% endfor %}{%endraw%}
     ```
 3. Now we need to actually pass that argument. Within `flask_lab_app.py`, add to the arguments that you are passing to `render_template` in `homepage`:
     ```python

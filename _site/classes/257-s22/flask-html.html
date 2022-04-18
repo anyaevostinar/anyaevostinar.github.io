@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Flask with HTML | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Flask with HTML" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-s22/flask-html" />
+<meta property="og:url" content="http://localhost:4000/classes/257-s22/flask-html" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Flask with HTML" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Flask with HTML","url":"http://localhost:4000/classes/257-s22/flask-html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Flask with HTML</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goal">Goal</h2>
+<p>Use a basic HTML template with Flask.</p>
+
+<h2 id="setup">Setup</h2>
+<p>You should continue to work in the <code class="language-plaintext highlighter-rouge">FlaskLab</code> folder that you made for the <a href="flask-intro">Flask intro</a> lab.
+If you don’t have access to it anymore, just go through the steps to set up a basic Flask app with the <code class="language-plaintext highlighter-rouge">dataset.csv</code> file again.</p>
+
+<h2 id="templates">Templates</h2>
+<p>As you know from your reading, Flask allows you to connect with HTML templates.
+Flask handles finding these as long as you put them where it is expecting.</p>
+
+<p>(Fun fact/note: because I’m using a <a href="https://jekyllrb.com/">framework</a> that has very similar syntax to Jinja to make this website, I have to do a <a href="https://www.tomordonez.com/curly-braces-markdown-jekyll/">special escape</a> to actually display all the  <code class="language-plaintext highlighter-rouge">{{var}}</code> , and I might have missed a few, so if you see a strangely blank spot, it is very likely that it should have some curly braces with a variable in it.)</p>
+
+<ol>
+  <li>Create a <code class="language-plaintext highlighter-rouge">templates</code> folder in your <code class="language-plaintext highlighter-rouge">FlaskLab</code> folder</li>
+  <li>Create a file in that folder <code class="language-plaintext highlighter-rouge">index.html</code> and put in the following boilerplate:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;html&gt;</span>
+     <span class="nt">&lt;head&gt;</span>
+
+     <span class="nt">&lt;/head&gt;</span>
+     <span class="nt">&lt;body&gt;</span>
+
+     <span class="nt">&lt;/body&gt;</span>
+ <span class="nt">&lt;/html&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Within the <code class="language-plaintext highlighter-rouge">heading</code> put in a set of <code class="language-plaintext highlighter-rouge">title</code> HTML tags and place a placeholder <code class="language-plaintext highlighter-rouge">{{title}}</code> between them:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+ <span class="nt">&lt;title&gt;</span>{{title}}<span class="nt">&lt;/title&gt;</span>
+    
+</code></pre></div>    </div>
+  </li>
+  <li>If you have as many tabs open as I do regularly, you can’t actual see the titles easily, so, within the <code class="language-plaintext highlighter-rouge">body</code>, put in a heading with the title as well:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+ <span class="nt">&lt;h1&gt;</span>Welcome to the {{title}}!<span class="nt">&lt;/h1&gt;</span>
+    
+</code></pre></div>    </div>
+  </li>
+  <li>Now you need to go edit your existing Flask app to use your new template. Open <code class="language-plaintext highlighter-rouge">flask_lab_app.py</code> and edit your <code class="language-plaintext highlighter-rouge">homepage()</code> function so that instead of just returning a plain string, it returns the result of calling <code class="language-plaintext highlighter-rouge">render_template</code> with your title of choice:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">homepage</span><span class="p">():</span>
+     <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'index.html'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">"Silly Dataset"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Run your app and check out your new fancy (kind of) homepage!</li>
+</ol>
+
+<h2 id="data-with-templates">Data with Templates</h2>
+<p>Even though you don’t strictly have to use Jinja, it makes displaying lists much easier.
+Let’s display the headings of the silly dataset on the homepage.</p>
+
+<ol>
+  <li>Within <code class="language-plaintext highlighter-rouge">index.html</code> make an unordered list in the <code class="language-plaintext highlighter-rouge">body</code>:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;ul&gt;</span>
+ <span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Within that unordered list, we’ll use Jinja to make a list item for each heading in our list <code class="language-plaintext highlighter-rouge">headings</code>:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> {% for heading in headings: %}
+ <span class="nt">&lt;li&gt;</span>{{ heading }}<span class="nt">&lt;/li&gt;</span>
+ {% endfor %}
+</code></pre></div>    </div>
+  </li>
+  <li>Now we need to actually pass that argument. Within <code class="language-plaintext highlighter-rouge">flask_lab_app.py</code>, add to the arguments that you are passing to <code class="language-plaintext highlighter-rouge">render_template</code> in <code class="language-plaintext highlighter-rouge">homepage</code>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">homepage</span><span class="p">():</span>
+     <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'index.html'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">"Silly Dataset"</span><span class="p">,</span> <span class="n">headings</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Restart your app to see your new fancy list!</li>
+  <li>Try adding another list of the first data row of the silly dataset.</li>
+</ol>
+
+<h2 id="fun-extra">Fun extra</h2>
+<p>By combining the route variables and Jinja placeholders, you can let the user display what they want on your page.
+Try making a new template and route so that you can go to <code class="language-plaintext highlighter-rouge">your_url/greeting/your_name</code> and find a web page that greets whatever the user puts for <code class="language-plaintext highlighter-rouge">your_name</code>.</p>
+
+<h2 id="applying-to-your-project">Applying to your project</h2>
+<p>You don’t need to use HTML templates for what you submit tonight and Monday, but you will need them for the team project eventually, so it’s a good idea to try adding one to your individual deliverable project for practice.</p>
+
+<p>Otherwise, feel free to keep working on your individual deliverable Flask app and/or your team’s Flask app.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
