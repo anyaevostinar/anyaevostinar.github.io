@@ -32,7 +32,7 @@ Other readings will be linked through Moodle.
 | **Week 4** | **Project V2: Flask** | | |
 | M 4/18 | Command Line project due; Flask readings [1](https://pythonbasics.org/what-is-flask-python/), [2](https://pythonbasics.org/flask-tutorial-hello-world/#Hello-World), [3](https://pythonbasics.org/flask-tutorial-routes/) | [Intro to Flask](flask-intro) | [Flask app project](project-2-flask), [Individual component](project-2-ind) |
 | W 4/20 | Code review readings | Code review | |
-| F 4/22 | [Individual component](project-2-ind), HTML with Flask readings | HTML Flask Lab | |
+| F 4/22 | [Individual component](project-2-ind), HTML with Flask readings | [HTML Flask Lab](flask-html) | |
 | **Week 5** | **Project V3: HTML and CSS** | | |
 | Topics will include: | http | html and css | web accessibility and usability |
 | **Week 6** | **Project V4: Database** | | |
