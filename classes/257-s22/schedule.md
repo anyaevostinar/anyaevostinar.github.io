@@ -44,5 +44,5 @@ Other readings will be linked through Moodle.
 | **Week 9** | **TBD** | | |
 | Topics will | depend on the needs of the class | | |
 | **Week 10** | **Wrapping Up** | | |
-| Topics will include: | final project showcase | | |
+| Topics will include: | final project showcase | [Final project due](project-final) | |
 

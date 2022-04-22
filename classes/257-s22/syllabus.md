@@ -188,7 +188,7 @@ Towards that end, your performance in this class will be evaluated in four diffe
 
 * **Reflection** Taking stock of your own progress and contributions in this course are important aspects of your learning. Periodically throughout the term, I will ask you to reflect on what you've learned in the course, how you've contributed to group and individual deliverables, how effectively your project team is collaborating, and how well your teammates are contributing to your team's goals. You need to complete all of these to earn a B or higher in the course.
 
-* **Group deliverables** This course consists of a team project that lasts the majority of the course and has interim deliverables along the way. Your work will be evaluated on the effectiveness of the process you and your team utilize, the product you attain (and how closely this product meets the project deliverable requirements), and the effectiveness of your team's collaboration. This contributes to your final grade according to the *specifications grading* scale outlined below.
+* **Group deliverables** This course consists of a [team project](project-final) that lasts the majority of the course and has components that you will create and get feedback on along the way. Your work will be evaluated on the effectiveness of the process you and your team utilize, the product you attain (and how closely this product meets the project deliverable requirements), and the effectiveness of your team's collaboration. This contributes to your final grade according to the *specifications grading* scale outlined below.
 
 * **Individual deliverables** Many of the team project deliverables will also have an associated individual portion. The individual deliverables allow you to demonstrate individual mastery of the key learning objectives in this course -- which will provide you with more targeted feedback on your performance. This contributes to your final grade according to the *specifications grading* scale outlined below.
 
@@ -206,15 +206,16 @@ I'll be using a version of *specifications grading* this term. Each assessment t
 
 * Exceeds expectations (the submission shows strong mastery of the learning objective(s))
 
-An important aspect of specifications grading is revision. **You may revise any group or individual deliverable except for the final reflection and anything due on the last day of classes.** Learning is not a linear process, and learning involves making mistakes and learning from them. You may revise and resubmit a deliverable ONCE, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
+An important aspect of specifications grading is revision. **You may revise any group or individual deliverable except for the final reflection and anything due on the last day of classes.** Learning is not a linear process, and learning involves making mistakes and learning from them. You may revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
+You may further revise that deliverable before the final submission and [request additional feedback via this form](https://docs.google.com/forms/d/e/1FAIpQLScSenY2oAvj8HOSNQMCwikqLcNW_ymrPRf-45PKY0cRc4LlQg/viewform?usp=sf_link), however I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.
 
 ### How this translates to course grades
 
-**To earn a C in the course:** at least half of the group deliverables and half of the individual deliverables are at "Meets expectations" level and at least half of your preparation and reflection work was submitted satisfactorily.
+**To earn a C in the course:** at least half of the components of the group project and half of the individual deliverables are at "Meets expectations" level and at least half of your preparation and reflection work was submitted satisfactorily.
 
-**To earn a B in the course:** all group and individual deliverables are at "Meets expectations" level and all of your preparation and reflection work was submitted satisfactorily.
+**To earn a B in the course:** all components of the group project and individual deliverables are at "Meets expectations" level and all of your preparation and reflection work was submitted satisfactorily.
 
-**To earn an A in the course:** at most one group OR individual deliverable is at "Meets expectations" level, and all others are at "Exceeds expectations" level and all of your preparation and reflection work was submitted satisfactorily.
+**To earn an A in the course:** at most one component of the group project OR individual deliverable is at "Meets expectations" level, and all others are at "Exceeds expectations" level and all of your preparation and reflection work was submitted satisfactorily.
 
 ### Late work and extensions
 In this course, we need to balance flexibility for individuals with structure for teams and the class as a whole. I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. Therefore, the late work/extension policy varies depending on the type of work:
