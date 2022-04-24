@@ -6,9 +6,9 @@ permalink: /classes/257-s22/project-3-front-end
 
 ## Overview
 
-The goal of this iteration of your project is to add the frontend component to your Flask app.
+The goal of this iteration of your project is to add the front-end component to your Flask app.
 
-The learning objectives for this iteration of your project are to be able to 1) create usable and accessible frontend for your website and 2) continue to create code that follows the principles of good function design.
+The learning objectives for this iteration of your project are to be able to 1) create usable and accessible front-end for your website and 2) continue to create code that follows the principles of good function design.
 
 ## Collaboration
 
@@ -21,25 +21,22 @@ This iteration of the project is due Monday May 9th at 10pm on GitHub.
 
 ## Your Task
 
-Your team should write a program that:
-* Uses the [Flask](https://flask.palletsprojects.com/en/2.1.x/) framework to build a browser app
-* Supports at least two independent features via [Flask routes](https://pythonbasics.org/flask-tutorial-routes/); each of these features should enable the user to get information from your dataset(s) via the web browser
-* Has at least one route that uses at least one route parameter meaningfully
+Your team should add a front-end GUI component to your Flask app that:
+* Uses HTML and CSS correctly to create a usable and accessible website that follows the web design best principles we have discussed in class
+* Allows the user to interact with your dataset in at least two meaningful ways (i.e. the features that you have been developing all along)
 * Has a useful message when the user enters an incorrect URL
-* Has an automated test suite with reasonable coverage for both the core functions and the Flask-specific functions
-* Follows the function design principles and has generally good style
-* Has documentation through [docstrings](https://peps.python.org/pep-0257/) and in-line comments where appropriate
-* Follows the [recommended Python style](https://peps.python.org/pep-0008/)
+* Keeps the HTML and CSS separate and uses them for their appropriate purposes
+* Organizes the HTML and CSS so that the files are readable
 
-You should largely be able to build from and reuse/refactor your existing code. I recommend that you keep your core functionality in a separate file(s) from your Flask-specific functionality so that it is easier to adjust your core functions later. You might need to adjust some of your functions to return strings if they had been returning lists (and adjust your tests in the process).
+You should be building off of your existing code and focusing mostly on the front-end design, though you may find that you need to update some of your core functionality to provide you with data in the format that you want now. Remember to then adjust your tests too!
 
 ## Turning it in
 
-Your team should submit this iteration of the project on your team repo with the tag `flask` by typing the following:
+Your team should submit this iteration of the project on your team repo with the tag `front-end` by typing the following:
 
 ```
-git tag -a flask -m "basic Flask app"
-git push origin flask
+git tag -a front-end -m "front-end Flask app"
+git push origin front-end
 ```
 
 ## Evaluation
@@ -49,29 +46,20 @@ When evaluating your project, the grader will pull down your team's repo and run
 
 ### Meets Expectations Criteria
 * Functionality:
-  * Uses the Flask framework correctly
   * There is a useful 401 page
-  * There are two independent features controlled by separate routes that allows the user to get information from the chosen dataset
-  * One of the routes uses a route parameter that has some influence on what is displayed
-  * There is an automated test suite that covers all the typical cases and some of the edge cases
+  * There are two independent features that allow the user to get information from the chosen dataset
+  * The automated test suite passes (no additional tests are required)
 * Design:
-  * The functions/methods are mostly written at a single layer of abstraction
-  * Function names, return values, and parameters generally follow the principles of good design
-  * Function/method [docstrings](https://peps.python.org/pep-0257/) generally provide the required information
-  * There isn't an excessive amount of repeated code
-  * Style mostly follows the [style guide](https://peps.python.org/pep-0008/)
+  * Site makes a good attempt at providing navigation 
+  * Accessibility features such as resizing of text and correct use of headings
+  * The HTML and CSS are in separate files
+  * HTML code is acceptable, perhaps with minor presentation aspects bleeding in
+  * HTML and CSS code is somewhat organized
+  * CSS code is acceptable; Some aspects of the CSS could be accomplished more efficiently.
 
 ### Exceeds Expectations Criteria
 * All the Meets Expectations criteria are met
-* Functionality:
-  * The test suite covers nearly all edge cases
-  * The test suite includes sufficient integration tests
-  * The 401 page is thorough and clear
-  * The features are interesting and enable the user to gain a large amount of information from the dataset
-  * The route parameter(s) are highly effective in enabling the user to gain specific information from the dataset
-* Design:
-  * The Flask-specific functionality is separate from the core functionality in separate files
-  * The functions/methods are all written at a single layer of abstraction
-  * Function names, return values, and parameters all follow the principles of good design
-  * Function/method [docstrings](https://peps.python.org/pep-0257/) all provide the required information
-  * There is barely any duplicated code
+* Front-end:
+  * Page does an excellent job enabling scanability, satisficing, and muddling through. Strong execution of conventions and best practices for content organization and accessibility.
+  * HTML only deals with content structure and not any aspect of presentation. Code is clearly and concisely written. All tags used appropriately.
+  * CSS clearly captures the look-and-feel of the site and renders correctly. Code is clearly and concisely written.
