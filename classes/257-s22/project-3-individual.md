@@ -19,7 +19,7 @@ You can get conceptual help from your team and others, however what you submit m
 
 ## Due Date
 
-The individual deliverable for this iteration is due **Monday May 2nd** at 10pm on your individual GitHub.
+The individual deliverable for this iteration is due **Wednesday May 4th** at 10pm on your individual GitHub.
 
 ## Your Task
 
