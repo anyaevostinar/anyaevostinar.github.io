@@ -51,7 +51,7 @@ When evaluating your project, the grader will pull down your team's repo and run
 ### Meets Expectations Criteria
 * Functionality:
   * Uses the Flask framework correctly
-  * There is a useful 401 page
+  * There is a useful 404 page
   * There are two independent features controlled by separate routes that allows the user to get information from the chosen dataset
   * One of the routes uses a route parameter that has some influence on what is displayed
   * There is an automated test suite that covers all the typical cases and some of the edge cases
@@ -67,7 +67,7 @@ When evaluating your project, the grader will pull down your team's repo and run
 * Functionality:
   * The test suite covers nearly all edge cases
   * The test suite includes sufficient integration tests
-  * The 401 page is thorough and clear
+  * The 404 page is thorough and clear
   * The features are interesting and enable the user to gain a large amount of information from the dataset
   * The route parameter(s) are highly effective in enabling the user to gain specific information from the dataset
 * Design:
