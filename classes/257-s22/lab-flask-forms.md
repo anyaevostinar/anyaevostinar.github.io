@@ -12,6 +12,14 @@ We'll be continuing to use the [silly dataset](dataset.csv) as an example, thoug
 If you want to follow along, I recommend you have your previous version of the lab code up or make a quick new Flask app to work with. 
 If you need the previous two Flask labs for reference, they are here: [Intro to Flask](flask-intro) and [Flask and HTML](flask-html).
 
+## Table of Contents
+If you want specific functionality, here are the sections:
+
+* [Simple Radio Buttons](#simple-row-display)
+* [POST requests](#post-requests)
+* [Dynamically generated dropdowns](#dynamically-generated-dropdowns)
+* [Autocomplete search bar](#applying-to-your-project) - link to tutorial and hints
+
 ## Simple Row Display
 We're first going to use radio buttons to let the user choose which row of the silly dataset to view.
 
@@ -130,9 +138,11 @@ Fortunately, with a little bit of Jinja, we can automatically generate a dropdow
     <form action="rowbytitle">
         <label for="rows">Choose a row</label>
         <select name="rowchoice">
+            {%raw %}
             {% for row in rows: %}
             <option value="{{row}}">{{row}}</option>
             {% endfor %}
+            {%endraw%}
         </select>
         <input type="submit" value="Submit">
     </form>

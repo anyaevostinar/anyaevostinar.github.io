@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Flask Forms | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Flask Forms" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-s22/flask-form" />
+<meta property="og:url" content="http://localhost:4000/classes/257-s22/flask-form" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Flask Forms" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Flask Forms","url":"http://localhost:4000/classes/257-s22/flask-form"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Flask Forms</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goal">Goal</h2>
+<p>Be able to add a form to your Flask app and use POST HTTP requests correctly.</p>
+
+<h2 id="setup">Setup</h2>
+<p>We’ll be continuing to use the <a href="/classes/257-s22/dataset.csv">silly dataset</a> as an example, though you don’t have to if you don’t want to.
+If you want to follow along, I recommend you have your previous version of the lab code up or make a quick new Flask app to work with. 
+If you need the previous two Flask labs for reference, they are here: <a href="flask-intro">Intro to Flask</a> and <a href="flask-html">Flask and HTML</a>.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+<p>If you want specific functionality, here are the sections:</p>
+
+<ul>
+  <li><a href="#simple-row-display">Simple Radio Buttons</a></li>
+  <li><a href="#post-requests">POST requests</a></li>
+  <li><a href="#dynamically-generated-dropdowns">Dynamically generated dropdowns</a></li>
+  <li><a href="#applying-to-your-project">Autocomplete search bar</a> - link to tutorial and hints</li>
+</ul>
+
+<h2 id="simple-row-display">Simple Row Display</h2>
+<p>We’re first going to use radio buttons to let the user choose which row of the silly dataset to view.</p>
+
+<ol>
+  <li>Make a new route and function in your Flask app that just returns the specified row from the dataset, for example:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/displayrow'</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">display_row</span><span class="p">():</span>
+     <span class="n">row</span> <span class="o">=</span> <span class="mi">1</span>
+     <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">row</span><span class="p">])</span>
+</code></pre></div>    </div>
+  </li>
+  <li>To give the user a choice in which row to display, we need to add a form to the page. You can make a new HTML page, or just put this on <code class="language-plaintext highlighter-rouge">index.html</code>, whichever you prefer:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="nt">&lt;p&gt;</span>Which row would you like to see?<span class="nt">&lt;/p&gt;</span>
+     <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"displayrow"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"1"</span><span class="nt">&gt;</span>Row 1<span class="nt">&lt;/label&gt;</span>
+         <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rowchoice"</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"2"</span><span class="nt">&gt;</span>Row 2<span class="nt">&lt;/label&gt;</span>
+         <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rowchoice"</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;/form&gt;</span>
+</code></pre></div>    </div>
+
+    <p>We’re only letting them choose between row 1 and row 2 currently and using radio buttons to force them to choose only one.</p>
+  </li>
+  <li>If you run your app now, you’ll notice that Flask is ignoring what the user selected and still always showing row 1, so we need to update the Flask function so that it actually uses the information the user submitted.
+ First, we need to import the <code class="language-plaintext highlighter-rouge">request</code> functionality in Flask:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span><span class="p">,</span> <span class="n">request</span>
+</code></pre></div>    </div>
+
+    <p>Then we need to update the function to get information from the <code class="language-plaintext highlighter-rouge">request</code> object:</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/displayrow'</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">display_row</span><span class="p">():</span>
+     <span class="n">row</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">args</span><span class="p">[</span><span class="s">'rowchoice'</span><span class="p">])</span>
+     <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">row</span><span class="p">])</span>
+</code></pre></div>    </div>
+
+    <p>Now if you try your app again, you should see the data that the user requested!</p>
+  </li>
+</ol>
+
+<h2 id="post-requests">POST Requests</h2>
+<p>You might have noticed in the URL that the user’s selection is shown there. This is fine for non-sensitive data, but might not always be what you want. If you don’t want the information included right in the URL, then you need to use a POST method.</p>
+
+<ol>
+  <li>Add to your HTML another form, this time specifying that the method used should be <code class="language-plaintext highlighter-rouge">post</code>:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="nt">&lt;p&gt;</span>POST version: Which row would you like to see?<span class="nt">&lt;/p&gt;</span>
+     <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"displayrow"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"1"</span><span class="nt">&gt;</span>Row 1<span class="nt">&lt;/label&gt;</span>
+         <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rowchoice"</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"2"</span><span class="nt">&gt;</span>Row 2<span class="nt">&lt;/label&gt;</span>
+         <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rowchoice"</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;/form&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>If you try to just run your app, you’ll get an error, because Flask functions default to only accepting GET requests. To also accept POST requests, we need to pass in a keyword parameter to the route:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/displayrow'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s">'GET'</span><span class="p">,</span> <span class="s">'POST'</span><span class="p">])</span>
+</code></pre></div>    </div>
+
+    <p>If you try to run it now, you’ll get another error, this time because POST requests access the variables a little bit differently. To be able to handle both POST and GET requests, we need to first detect which method is being used and then make the correct call to access the information:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">display_row</span><span class="p">():</span>
+     <span class="k">if</span> <span class="n">request</span><span class="p">.</span><span class="n">method</span> <span class="o">==</span> <span class="s">'POST'</span><span class="p">:</span>
+         <span class="n">row</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">form</span><span class="p">[</span><span class="s">'rowchoice'</span><span class="p">])</span>
+     <span class="k">elif</span> <span class="n">request</span><span class="p">.</span><span class="n">method</span> <span class="o">==</span> <span class="s">'GET'</span><span class="p">:</span>
+         <span class="n">row</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">args</span><span class="p">[</span><span class="s">'rowchoice'</span><span class="p">])</span>
+     <span class="k">else</span><span class="p">:</span>
+         <span class="k">return</span> <span class="s">'Not a valid request protocol'</span>
+
+     <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">row</span><span class="p">])</span>
+</code></pre></div>    </div>
+
+    <p>Try out your app now and verify that you are able to get the information using either request method. Awesome!</p>
+  </li>
+</ol>
+
+<h2 id="dynamically-generated-dropdowns">Dynamically Generated Dropdowns</h2>
+<p>You might have realized that it will be really annoying if you have to manually make radio buttons for every possible choice that the user might want to look up in your dataset. 
+Fortunately, with a little bit of Jinja, we can automatically generate a dropdown menu.</p>
+
+<ol>
+  <li>
+    <p>First we’ll need a couple of new functions. We need a function to give all the ‘titles’ of the rows (i.e. the first column):</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">getRowTitles</span><span class="p">():</span>
+     <span class="n">row_titles</span> <span class="o">=</span> <span class="p">[]</span>
+     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+         <span class="n">row_titles</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+     <span class="k">return</span> <span class="n">row_titles</span>
+</code></pre></div>    </div>
+    <p>(This function obviously isn’t very efficient, but I’m not worried about that at the moment.)</p>
+
+    <p>We also need a function to look up the row by a ‘title’:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">getRowByTitle</span><span class="p">(</span><span class="n">title</span><span class="p">):</span>
+     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+         <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">title</span><span class="p">:</span>
+             <span class="k">return</span> <span class="n">row</span>
+     <span class="k">return</span> <span class="p">[]</span>
+</code></pre></div>    </div>
+    <p>(Also super not efficient.)</p>
+  </li>
+  <li>With those functions in place, we need to pass the row titles to our homepage template:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">home</span><span class="p">():</span>
+     <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'index.html'</span><span class="p">,</span> <span class="n">rows</span><span class="o">=</span><span class="n">getRowTitles</span><span class="p">())</span>
+</code></pre></div>    </div>
+
+    <p>And adjust our HTML template to use that information by displaying it in a dropdown menu:</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;p&gt;</span>Dropdown version: Which row would you like to see?<span class="nt">&lt;/p&gt;</span>
+ <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"rowbytitle"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"rows"</span><span class="nt">&gt;</span>Choose a row<span class="nt">&lt;/label&gt;</span>
+     <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"rowchoice"</span><span class="nt">&gt;</span>
+            
+         {% for row in rows: %}
+         <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"{{row}}"</span><span class="nt">&gt;</span>{{row}}<span class="nt">&lt;/option&gt;</span>
+         {% endfor %}
+            
+     <span class="nt">&lt;/select&gt;</span>
+     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;/form&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Finally, we need to make the Flask route specified:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'rowbytitle'</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">display_row_by_title</span><span class="p">():</span>
+     <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">getRowByTitle</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">args</span><span class="p">[</span><span class="s">'rowchoice'</span><span class="p">]))</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="applying-to-your-project">Applying to your project</h2>
+<p>You’re now all set to implement a fancy way to navigate from the homepage to the data page for your <a href="project-3-ind">individual front-end deliverable</a>.</p>
+
+<p>If you want, see if you can get a <a href="https://www.geeksforgeeks.org/autocomplete-input-suggestion-using-python-and-flask/">autocomplete search box</a> working. 
+<em>Hint: text input always goes through POST, so make sure to have your Flask method set up for POST. You’ll also need to add the <code class="language-plaintext highlighter-rouge">form</code> tags and <code class="language-plaintext highlighter-rouge">submit</code> button and add a <code class="language-plaintext highlighter-rouge">name</code> argument to the <code class="language-plaintext highlighter-rouge">input</code> tag.</em>
+You are welcome to use the <code class="language-plaintext highlighter-rouge">ajax.googleapis.com</code> scripts in your project, just be sure to cite the tutorial!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
