@@ -9,7 +9,8 @@ Be able to add a form to your Flask app and use POST HTTP requests correctly.
 
 ## Setup
 We'll be continuing to use the [silly dataset](dataset.csv) as an example, though you don't have to if you don't want to.
-If you want to follow along, I recommend you have your previous version of the lab code up or make a quick new Flask app to work with.
+If you want to follow along, I recommend you have your previous version of the lab code up or make a quick new Flask app to work with. 
+If you need the previous two Flask labs for reference, they are here: [Intro to Flask](flask-intro) and [Flask and HTML](flask-html).
 
 ## Simple Row Display
 We're first going to use radio buttons to let the user choose which row of the silly dataset to view.
