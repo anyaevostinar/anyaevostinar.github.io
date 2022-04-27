@@ -51,7 +51,13 @@ When evaluating your project, the grader will pull down your team's repo and run
   * The automated test suite passes (no additional tests are required)
 * Design:
   * Site makes a good attempt at providing navigation 
-  * Accessibility features such as resizing of text and correct use of headings
+  * Accessibility features
+    * resizing text to 150-200% works
+    * headings used to structure page
+    * alt text for any images
+    * color and contrast chosen well for overall readability and colorblind-friendly
+    * forms labeled correctly
+    * links make sense out of context
   * The HTML and CSS are in separate files
   * HTML code is acceptable, perhaps with minor presentation aspects bleeding in
   * HTML and CSS code is somewhat organized
