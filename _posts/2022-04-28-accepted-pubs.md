@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2022 ALIFE Conference Accepted Publications"
-date:   2022-04-28 10:00:00 -0500
+date:   2022-04-28 15:00:00 -0500
 categories: [Research, Symbulation]
 ---
 
