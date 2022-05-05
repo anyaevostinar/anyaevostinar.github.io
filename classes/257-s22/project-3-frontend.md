@@ -46,7 +46,7 @@ When evaluating your project, the grader will pull down your team's repo and run
 
 ### Meets Expectations Criteria
 * Functionality:
-  * There is a useful 401 page
+  * There is a useful 404 page
   * There are two independent features that allow the user to get information from the chosen dataset
   * The automated test suite passes (no additional tests are required)
 * Design:
