@@ -103,9 +103,36 @@ The requirements for this subcomponent are:
   * There is barely any duplicated code
 
 ### Front-end
-The third component of the project is a polished front-end that uses HTML and CSS to create a well-structured, usable, and accessible website.
+The [third component of the project](project-3-front-end) is a polished front-end that uses HTML and CSS to create a well-structured, usable, and accessible website.
 
-More details will be added once we have started this component.
+The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
+When evaluating your project, the grader will pull down your team's repo and run both your production code and test suite, as well as look through your code for style.
+
+#### Meets Expectations Criteria
+* Functionality:
+  * There is a useful 404 page
+  * There are two independent features that allow the user to get information from the chosen dataset
+  * The automated test suite passes (no additional tests are required)
+* Design:
+  * Site makes a good attempt at providing navigation 
+  * Accessibility features
+    * resizing text to 150-200% works
+    * headings used to structure page
+    * alt text for any images
+    * color and contrast chosen well for overall readability and colorblind-friendly
+    * forms labeled correctly
+    * links make sense out of context
+  * The HTML and CSS are in separate files
+  * HTML code is acceptable, perhaps with minor presentation aspects bleeding in
+  * HTML and CSS code is somewhat organized
+  * CSS code is acceptable; Some aspects of the CSS could be accomplished more efficiently.
+
+#### Exceeds Expectations Criteria
+* All the Meets Expectations criteria are met
+* Front-end:
+  * Page does an excellent job enabling scanability, satisficing, and muddling through. Strong execution of conventions and best practices for content organization and accessibility.
+  * HTML only deals with content structure and not any aspect of presentation. Code is clearly and concisely written. All tags used appropriately.
+  * CSS clearly captures the look-and-feel of the site and renders correctly. Code is clearly and concisely written.
 
 ### Back-end
 The fourth component of the project is a database back-end to support your website. 
