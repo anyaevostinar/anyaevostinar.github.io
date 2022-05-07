@@ -47,7 +47,7 @@ Other readings will be linked through Moodle.
 | F 5/13 | Readings: TBD | Connecting Flask and Database | |
 | **Week 8** | **Refactoring** | | |
 | M 5/16 | Readings: Martin Ch 2 and 4 | Naming and comments | |
-| W 5/18 | Readings: Martin Ch 17 | Code Smells | |
+| W 5/18 | [Team back-end](project-4-backend); Readings: Martin Ch 17 | Code Smells | |
 | F 5/20 | Code review prep | Code review | |
 | **Week 9** | **More Refactoring**
 | M 5/23 | Readings: Martin Ch 10 | Designing classes | |

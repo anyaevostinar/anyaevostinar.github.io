@@ -135,6 +135,42 @@ When evaluating your project, the grader will pull down your team's repo and run
   * CSS clearly captures the look-and-feel of the site and renders correctly. Code is clearly and concisely written.
 
 ### Back-end
-The fourth component of the project is a database back-end to support your website. 
+The [fourth component of the project](project-4-backend) is a database back-end to support your website. 
 
-More details will be added once we have started this component.
+The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
+
+#### Meets Expectations Criteria
+* Files:
+  * Database is contained in `data.sql`
+  * Code is written to work for the database to be named `webapp`
+  * Flask app file specified in the README
+* Functionality:
+  * Executes the expected queries correctly most of the time. Some strange queries may fail to execute completely correctly.
+  * The automated test suite passes (no additional tests are required)
+  * Data types match the types from the original dataset and/or are appropriate for the modified data from the dataset
+  * Some separation of data into tables where applicable
+* Design:
+  * Good separation of responsibilities. Some minor tweaks to class design could improve the code (i.e., tighter cohesion and/or looser coupling). 
+  * Model-view-controller paradigm followed.
+  * Code contains appropriate names and mostly appropriate comments. 
+  * Sufficient design of individual methods, with most best practices (parameters, return values, responsibilities) followed.
+  * Method signatures adequately match most high-level queries
+  * Column names somewhat signify the data they contain
+  
+
+#### Exceeds Expectations Criteria
+* All the Meets Expectations criteria are met
+* Functionality:
+  * Executes robustly, without error or with very rare errors. All queries either succeed or fail gracefully.
+  * Data is well-curated from the original dataset, with no extraneous data
+  * Data types are well-chosen for the dataset
+  * data tables contain little to no overlap (higher degree of normalization)
+* Design:
+   * Strong separation of responsibilities between classes, and between methods within classes. 
+   * Tight cohesion in each class, and loose coupling between classes. 
+   * Code is strongly self-documenting. 
+   * Code contains excellent and appropriate comments. 
+   * Design of individual methods is strong (parameters, return values, responsibilities). 
+   * Code is appropriately tagged. 
+   * There is a strong connection between the method signatures and the high-level actions of the website audience (which in turn strongly match the queries).
+   * Column names strongly signify the data they contain
