@@ -70,6 +70,7 @@ The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
   * Sufficient design of individual methods, with most best practices (parameters, return values, responsibilities) followed.
   * Method signatures adequately match most high-level queries
   * Column names somewhat signify the data they contain
+  * Docstrings for each public method
   
 
 ### Exceeds Expectations Criteria
@@ -88,3 +89,4 @@ The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
    * Code is appropriately tagged. 
    * There is a strong connection between the method signatures and the high-level actions of the website audience (which in turn strongly match the queries).
    * Column names strongly signify the data they contain
+   * Docstrings are clear and consistent for each public method
