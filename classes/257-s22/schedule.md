@@ -44,7 +44,7 @@ Other readings will be linked through Moodle.
 | **Week 7** | **Database Component** | | |
 | M 5/9 | [Team front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-front-end); Readings: TBD | Starting with Databases | Individual Database; Team Database|
 | W 5/11 | Readings: TBD | More with Databases | |
-| F 5/13 | Readings: TBD | Connecting Flask and Database | |
+| F 5/13 | [Individual back-end](project-4-ind); Readings: TBD | Connecting Flask and Database | |
 | **Week 8** | **Refactoring** | | |
 | M 5/16 | Readings: Martin Ch 2 and 4 | Naming and comments | |
 | W 5/18 | [Team back-end](project-4-backend); Readings: Martin Ch 17 | Code Smells | |
