@@ -26,16 +26,12 @@ The individual deliverable for this iteration is due **Friday May 13th** at 10pm
 I recommend that you work on this component on the `perlman` server since it has all the necessary things installed already.
 
 You should:
-* Create a database with at least one table with some (or all) of your team's data 
+* Create a `createtable.sql` file that will create a table with some (or all) of your team's data 
 * Write a simple Python file named `datasource.py` that uses the `psycopg2` module to connect to the database, execute a query, and print the result
-* Dump the contents of the database to the file `data.sql`, using the following command:
-    ```
-    pg_dump --no-owner --no-privileges -U YOURUSERNAME YOURDATABASE > data.sql
-    ```
 
 The grader will grade your assignment by:
 * Pulling down your submission for this deliverable that should be tagged 'database'
-* Use `psql -U their_username webapp < data.sql` to recreate your database
+* Use `psql -f createtable.sql` to recreate your table in their database
 * Create the `config.py` file with their information and the database name `webapp`
 * Run your `datasource.py` file
 * Look through your code and database structure
@@ -56,7 +52,7 @@ git push origin database
 The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
 
 * Files:
-  * Database is contained in `data.sql`
+  * Table is created with `createtable.sql`
   * Code is written to work for the database to be named `webapp`
   * Code to be run is named `datasource.py`
 * Functionality:
