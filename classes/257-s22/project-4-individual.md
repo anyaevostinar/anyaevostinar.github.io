@@ -27,11 +27,14 @@ I recommend that you work on this component on the `perlman` server since it has
 
 You should:
 * Create a `createtable.sql` file that will create a table with some (or all) of your team's data 
+* Add the necessary `\copy` command to your `README.md` file
+    (For example `\copy earthquakes FROM 'earthquakeData.csv' DELIMITER ',' CSV`)
 * Write a simple Python file named `datasource.py` that uses the `psycopg2` module to connect to the database, execute a query, and print the result
 
 The grader will grade your assignment by:
 * Pulling down your submission for this deliverable that should be tagged 'database'
 * Use `psql -f createtable.sql` to recreate your table in their database
+* Use the copy command that you specify to import your data into the table
 * Create the `config.py` file with their information and the database name `webapp`
 * Run your `datasource.py` file
 * Look through your code and database structure
@@ -53,6 +56,7 @@ The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
 
 * Files:
   * Table is created with `createtable.sql`
+  * README specifies the correct copy command
   * Code is written to work for the database to be named `webapp`
   * Code to be run is named `datasource.py`
 * Functionality:
