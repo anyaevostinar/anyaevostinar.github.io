@@ -17,7 +17,7 @@ You are able to get help from outside sources, as specified in the syllabus, but
 
 ## Due Date
 
-This iteration of the project is due Monday May 18th at 10pm on GitHub.
+This iteration of the project is due Wednesday May 18th at 10pm on GitHub.
 
 ## Your Task
 
