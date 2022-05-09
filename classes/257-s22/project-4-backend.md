@@ -22,18 +22,14 @@ This iteration of the project is due Wednesday May 18th at 10pm on GitHub.
 ## Your Task
 
 Your team should create a Postgres database back-end for your Flask app using the [psycopg2](https://www.psycopg.org/docs/index.html) module. Specifically, you should:
-* Put your data into a well-structured database named `webapp` (most likely with multiple tables)
+* Put your data into a well-structured database named based on your team name on perlman (as specified on Moodle) (most likely with multiple tables)
 * Use psycopg2 to connect your existing functionality to the database and update your code to make appropriate queries on the database
-* Use the `pg_dump` command to save your database into a `data.sql` file for the grader to recreate your database
-    ```
-    pg_dump --no-owner --no-privileges -U YOURUSERNAME YOURDATABASE > data.sql
-    ```
 * Update your test suite if necessary based on the refactoring that you do on your code
 
 The grader will assess your project with the following workflow:
+* Connect to perlman
 * Pull down your repository from the appropriate tag
-* Use `psql -U their_username webapp < data.sql` to recreate your database
-* Create the `config.py` file with their information and the database name `webapp`
+* Create the `config.py` file with your team database name and information
 * Run your Flask app based on what you specify in your README
 * Run your test suite
 * Look at your code
@@ -55,8 +51,8 @@ The criteria for "Meets Expectations" and "Exceeds Expectations" are below.
 
 ### Meets Expectations Criteria
 * Files:
-  * Database is contained in `data.sql`
-  * Code is written to work for the database to be named `webapp`
+  * Database is in correct team database on `perlman`
+  * Code is written to work for the database to be named as specified on Moodle
   * Flask app file specified in the README
 * Functionality:
   * Executes the expected queries correctly most of the time. Some strange queries may fail to execute completely correctly.
