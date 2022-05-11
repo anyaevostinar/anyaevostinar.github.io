@@ -64,18 +64,17 @@ This file will be responsible for connecting your database to your Flask app.
 5. Finally, you'll need to write a method to execute one of your queries on your database and print the resulting information. To execute a query on the database, you need to use the `cursor()` method of the connection. Here is an example adapted from the [psycopg2 documentation](https://www.psycopg.org/docs/install.html#quick-install)
     ```python
     def getExample(self):
-        try:
 
-            #Open a cursor to perform database operations
-            cursor = self.connection.cursor()
+        #Open a cursor to perform database operations
+        cursor = self.connection.cursor()
 
-            #Execute a query
-            cursor.execute("SELECT * FROM my_data")
+        #Execute a query
+        cursor.execute("SELECT * FROM my_data")
 
-            #Retrieve query results
-            records = cursor.fetchall()
+        #Retrieve query results
+        records = cursor.fetchall()
 
-            print(records)
+        print(records)
     ```
 
 6. You might want to be able to use arguments in your queries, which you can do with a particular syntax ([more details are in the psycopg2 documentation](https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries)). Here is an example method for your reference (that uses the earthquake data):

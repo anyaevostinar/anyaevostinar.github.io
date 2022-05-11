@@ -42,9 +42,9 @@ Other readings will be linked through Moodle.
 | W 5/4 |[Individual front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-ind); Readings: Krug Ch 12, [1](http://webaim.org/intro/), two stories from [2](http://www.w3.org/WAI/intro/people-use-web/stories) | Accessibility Analysis | |
 | F 5/6 | Readings: Various resources | Working on Front-end component | |
 | **Week 7** | **Database Component** | | |
-| M 5/9 | [Team front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-front-end); Readings: TBD | Starting with Databases | Individual Database; Team Database|
-| W 5/11 | Readings: TBD | More with Databases | |
-| F 5/13 | [Individual back-end](project-4-ind); Readings: TBD | [Connecting Flask and Database](psycopg2) | |
+| M 5/9 | [Team front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-front-end); Readings: [MVC](https://www.tomdalling.com/blog/software-design/model-view-controller-explained/), sections of [SQL](http://www.w3schools.com/sql/default.asp) | Starting with Databases | Individual Database; Team Database|
+| W 5/11 | Readings: [Database normalization](https://blog.udemy.com/normalization-in-database-with-example/) | More with Databases | |
+| F 5/13 | [Individual back-end](project-4-ind); Readings: [psycopg2](https://www.psycopg.org/docs/) | [Connecting Flask and Database](psycopg2) | |
 | **Week 8** | **Refactoring** | | |
 | M 5/16 | Readings: Martin Ch 2 and 4 | Naming and comments | |
 | W 5/18 | [Team back-end](project-4-backend); Readings: Martin Ch 17 | Code Smells | |
