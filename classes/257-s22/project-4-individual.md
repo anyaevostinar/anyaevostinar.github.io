@@ -35,7 +35,7 @@ The grader will grade your assignment by:
 * Pulling down your submission for this deliverable that should be tagged 'database'
 * Use `psql -f createtable.sql` to recreate your table in their database
 * Use the copy command that you specify to import your data into the table
-* Create the `config.py` file with their information and the database name `webapp`
+* Create the `config.py` or `psqlConfig.py` file (depending on what you have specified in your `datasource.py`) with their information and the database name `webapp`
 * Run your `datasource.py` file
 * Look through your code and database structure
 
