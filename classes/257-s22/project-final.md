@@ -22,6 +22,7 @@ There are no revisions allowed after this point and no late submissions can be g
 Your overall task is to create a data-driven website using the Flask framework, which you will do throughout the term.
 There are several subcomponents, which you will have the opportunity to submit and receive feedback on before the final evaluation at the end of the term.
 Each subcomponent is listed below with a link to its page and the final evaluation criteria for it.
+To be clear: you are not resubmitting anything for this, each subcomponent is assessed separately; there is not an additional submission of the entire thing at the end of the term.
 
 ## Revising subcomponents
 You will have submitted the subcomponents, received feedback on them, and submitted revised versions of them by the end of the term.

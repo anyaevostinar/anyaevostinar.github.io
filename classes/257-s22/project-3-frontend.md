@@ -58,6 +58,7 @@ When evaluating your project, the grader will pull down your team's repo and run
     * color and contrast chosen well for overall readability and colorblind-friendly
     * forms labeled correctly
     * links make sense out of context
+    * (new) [correct use of bold vs strong](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)
   * The HTML and CSS are in separate files
   * HTML code is acceptable, perhaps with minor presentation aspects bleeding in
   * HTML and CSS code is somewhat organized
