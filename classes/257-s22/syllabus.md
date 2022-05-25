@@ -206,7 +206,7 @@ I'll be using a version of *specifications grading* this term. Each assessment t
 
 * Exceeds expectations (the submission shows strong mastery of the learning objective(s))
 
-An important aspect of specifications grading is revision. **You may revise any group or individual deliverable except for the final reflection and anything due on the last day of classes.** Learning is not a linear process, and learning involves making mistakes and learning from them. You may revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
+An important aspect of specifications grading is revision. **You may revise any group or individual deliverable up until the end of exams.** Learning is not a linear process, and learning involves making mistakes and learning from them. You may revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
 You may further revise that deliverable before the final submission and [request additional feedback via this form](https://docs.google.com/forms/d/e/1FAIpQLScSenY2oAvj8HOSNQMCwikqLcNW_ymrPRf-45PKY0cRc4LlQg/viewform?usp=sf_link), however I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.
 
 ### How this translates to course grades
