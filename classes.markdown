@@ -4,9 +4,10 @@ title: Classes
 permalink: /Classes/
 ---
 
-### Spring 2022
+### Fall 2022
 
-CS 257: Software Design ([Syllabus](/classes/257-s22/syllabus)) ([Schedule](/classes/257-s22/schedule))
+CS 111: Introduction to Computer Science
+CS 361: Artificial Life and Digital Evolution
 
 ## Future Classes
 Subject to change!
@@ -14,6 +15,10 @@ Subject to change!
 TBD
 
 ## Previous Classes
+
+### Spring 2022
+
+CS 257: Software Design ([Syllabus](/classes/257-s22/syllabus)) ([Schedule](/classes/257-s22/schedule))
 
 ### Winter 2022
 

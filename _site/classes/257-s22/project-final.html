@@ -60,7 +60,8 @@ There are no revisions allowed after this point and no late submissions can be g
 <h2 id="your-task">Your Task</h2>
 <p>Your overall task is to create a data-driven website using the Flask framework, which you will do throughout the term.
 There are several subcomponents, which you will have the opportunity to submit and receive feedback on before the final evaluation at the end of the term.
-Each subcomponent is listed below with a link to its page and the final evaluation criteria for it.</p>
+Each subcomponent is listed below with a link to its page and the final evaluation criteria for it.
+To be clear: you are not resubmitting anything for this, each subcomponent is assessed separately; there is not an additional submission of the entire thing at the end of the term.</p>
 
 <h2 id="revising-subcomponents">Revising subcomponents</h2>
 <p>You will have submitted the subcomponents, received feedback on them, and submitted revised versions of them by the end of the term.
@@ -172,14 +173,111 @@ Your final version should still support command line functionality even though i
 </ul>
 
 <h3 id="front-end">Front-end</h3>
-<p>The third component of the project is a polished front-end that uses HTML and CSS to create a well-structured, usable, and accessible website.</p>
+<p>The <a href="project-3-front-end">third component of the project</a> is a polished front-end that uses HTML and CSS to create a well-structured, usable, and accessible website.</p>
 
-<p>More details will be added once we have started this component.</p>
+<p>The criteria for “Meets Expectations” and “Exceeds Expectations” are below.
+When evaluating your project, the grader will pull down your team’s repo and run both your production code and test suite, as well as look through your code for style.</p>
+
+<h4 id="meets-expectations-criteria-2">Meets Expectations Criteria</h4>
+<ul>
+  <li>Functionality:
+    <ul>
+      <li>There is a useful 404 page</li>
+      <li>There are two independent features that allow the user to get information from the chosen dataset</li>
+      <li>The automated test suite passes (no additional tests are required)</li>
+    </ul>
+  </li>
+  <li>Design:
+    <ul>
+      <li>Site makes a good attempt at providing navigation</li>
+      <li>Accessibility features
+        <ul>
+          <li>resizing text to 150-200% works</li>
+          <li>headings used to structure page</li>
+          <li>alt text for any images</li>
+          <li>color and contrast chosen well for overall readability and colorblind-friendly</li>
+          <li>forms labeled correctly</li>
+          <li>links make sense out of context</li>
+        </ul>
+      </li>
+      <li>The HTML and CSS are in separate files</li>
+      <li>HTML code is acceptable, perhaps with minor presentation aspects bleeding in</li>
+      <li>HTML and CSS code is somewhat organized</li>
+      <li>CSS code is acceptable; Some aspects of the CSS could be accomplished more efficiently.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="exceeds-expectations-criteria-2">Exceeds Expectations Criteria</h4>
+<ul>
+  <li>All the Meets Expectations criteria are met</li>
+  <li>Front-end:
+    <ul>
+      <li>Page does an excellent job enabling scanability, satisficing, and muddling through. Strong execution of conventions and best practices for content organization and accessibility.</li>
+      <li>HTML only deals with content structure and not any aspect of presentation. Code is clearly and concisely written. All tags used appropriately.</li>
+      <li>CSS clearly captures the look-and-feel of the site and renders correctly. Code is clearly and concisely written.</li>
+    </ul>
+  </li>
+</ul>
 
 <h3 id="back-end">Back-end</h3>
-<p>The fourth component of the project is a database back-end to support your website.</p>
+<p>The <a href="project-4-backend">fourth component of the project</a> is a database back-end to support your website.</p>
 
-<p>More details will be added once we have started this component.</p>
+<p>The criteria for “Meets Expectations” and “Exceeds Expectations” are below.</p>
+
+<h4 id="meets-expectations-criteria-3">Meets Expectations Criteria</h4>
+<ul>
+  <li>Files:
+    <ul>
+      <li>Database is contained in <code class="language-plaintext highlighter-rouge">data.sql</code></li>
+      <li>Code is written to work for the database to be named <code class="language-plaintext highlighter-rouge">webapp</code></li>
+      <li>Flask app file specified in the README</li>
+    </ul>
+  </li>
+  <li>Functionality:
+    <ul>
+      <li>Executes the expected queries correctly most of the time. Some strange queries may fail to execute completely correctly.</li>
+      <li>The automated test suite passes (no additional tests are required)</li>
+      <li>Data types match the types from the original dataset and/or are appropriate for the modified data from the dataset</li>
+      <li>Some separation of data into tables where applicable</li>
+    </ul>
+  </li>
+  <li>Design:
+    <ul>
+      <li>Good separation of responsibilities. Some minor tweaks to class design could improve the code (i.e., tighter cohesion and/or looser coupling).</li>
+      <li>Model-view-controller paradigm followed.</li>
+      <li>Code contains appropriate names and mostly appropriate comments.</li>
+      <li>Sufficient design of individual methods, with most best practices (parameters, return values, responsibilities) followed.</li>
+      <li>Method signatures adequately match most high-level queries</li>
+      <li>Column names somewhat signify the data they contain</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="exceeds-expectations-criteria-3">Exceeds Expectations Criteria</h4>
+<ul>
+  <li>All the Meets Expectations criteria are met</li>
+  <li>Functionality:
+    <ul>
+      <li>Executes robustly, without error or with very rare errors. All queries either succeed or fail gracefully.</li>
+      <li>Data is well-curated from the original dataset, with no extraneous data</li>
+      <li>Data types are well-chosen for the dataset</li>
+      <li>data tables contain little to no overlap (higher degree of normalization)</li>
+    </ul>
+  </li>
+  <li>Design:
+    <ul>
+      <li>Strong separation of responsibilities between classes, and between methods within classes.</li>
+      <li>Tight cohesion in each class, and loose coupling between classes.</li>
+      <li>Code is strongly self-documenting.</li>
+      <li>Code contains excellent and appropriate comments.</li>
+      <li>Design of individual methods is strong (parameters, return values, responsibilities).</li>
+      <li>Code is appropriately tagged.</li>
+      <li>There is a strong connection between the method signatures and the high-level actions of the website audience (which in turn strongly match the queries).</li>
+      <li>Column names strongly signify the data they contain</li>
+    </ul>
+  </li>
+</ul>
 
   </div>
 

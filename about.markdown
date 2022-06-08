@@ -100,4 +100,4 @@ Here are some random facts about me.
 
 
 
-[A page with links that are useful](useful_links) mostly for myself.
+[A page with links that are useful](/useful_links) mostly for myself.
