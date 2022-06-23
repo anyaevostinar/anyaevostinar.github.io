@@ -6,7 +6,7 @@ permalink: /classes/summer-22/schedule
 
 Information for summer students:
 
-# Every Week
+## Every Week
 The structure on a typical week will be:
 * One-on-one meeting with Anya ~30 minutes
 * Daily group 'stand-up' meeting ~15 minutes
@@ -15,9 +15,9 @@ The structure on a typical week will be:
 * You are encouraged to work in our room, Olin 312, but not required
 * You are encouraged to ask each other for help and advice first and help each other when asked, though always also welcome to get help from me
 
-# June 27th
+## June 27th
 
-## Group meeting at 9:30am
+### Group meeting at 9:30am
 We'll have initial group meeting at 9:30am in our meeting room, Olin 312, which is on the third floor of Olin.
 
 At that meeting we'll discuss:
@@ -27,7 +27,7 @@ At that meeting we'll discuss:
 * RCR training (see below)
 * When the group meetings will be
 
-## RCR (Responsible and Ethical Conduct of Research)
+### RCR (Responsible and Ethical Conduct of Research)
 
 Many federal grant making agencies – including the National Science Foundation and the National Institutes of Health – require grantees like me to prove that they provide appropriate training and oversight for all researchers on a project in the responsible and ethical conduct of research (RCR).
 
@@ -37,15 +37,15 @@ The step-by-step instructions to access the CITI training modules are provided o
 
 These quizzes must be completed by June 27. Once you complete the quizzes, I will be notified.
 
-# Rest of Week 1
+## Rest of Week 1
 
-## Project preferences
+### Project preferences
 You should email or Slack message me what your preferences are for subproject and partner or that you don't have a preference.
 
-## Readings
+### Readings
 There are more background readings linked in the shared drive to give you a better idea of the subprojects.
 
-## Computer Setup
+### Computer Setup
 
 (This should be review from the term, but make sure that everything still works.)
 
@@ -60,10 +60,10 @@ I recommend you use [VSCode](https://code.visualstudio.com/) for working with th
 We'll use `git` to share code and move it between your local machine and the research servers, so if you aren't familiar with `git` and GitHub or would like a refresher, look through [this guide](https://guides.github.com/introduction/git-handbook/).
 I also recommend RStudio for when you eventually want to make plots/graphs, so you can [download that](https://www.rstudio.com/products/rstudio/download/) right away (the free version!).
 
-## Symbulation
+### Symbulation
 We'll be making additions to my software, Symbulation, so download it (with `git`) from [here](https://github.com/anyaevostinar/SymbulationEmp) along with [Empirical](https://github.com/devosoft/Empirical) and try running it. Explore the different settings in `SymSettings.cfg` and try changing them to see what happens!
 
-## Handy Commands
+### Handy Commands
 (Anya forgets about these and so this is somewhat a reminder for them but also useful for students)
 
 To see the load on the cores on the servers:
