@@ -4,9 +4,14 @@ title: Classes
 permalink: /Classes/
 ---
 
+### Summer 2022
+
+[Summer Research](/classes/summer-22/schedule)
+
 ### Fall 2022
 
 CS 111: Introduction to Computer Science
+
 CS 361: Artificial Life and Digital Evolution
 
 ## Future Classes
