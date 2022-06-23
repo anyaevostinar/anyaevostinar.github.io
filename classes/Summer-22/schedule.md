@@ -9,8 +9,8 @@ Information for summer students:
 ## Every Week
 The structure on a typical week will be:
 * One-on-one meeting with Anya ~30 minutes
-* Daily group 'stand-up' meeting ~15 minutes
-* Weekly longer group meeting ~1 hour
+* Daily group 'stand-up' meeting ~15 minutes (9:30 everyday)
+* Weekly longer group meeting ~1 hour (2-3 on Tuesdays)
 * Expectation that you work 40 hours and make the meetings but otherwise schedule is flexible, but remember you need to submit your hours on the Hub
 * You are encouraged to work in our room, Olin 312, but not required
 * You are encouraged to ask each other for help and advice first and help each other when asked, though always also welcome to get help from me
