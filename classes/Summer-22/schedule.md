@@ -86,3 +86,11 @@ Use the key sequence `Ctrl-a` + `Ctrl-d` to detach from the screen session. At t
 To reattach, on the command prompt type
 
 `screen -r`
+
+To clone a git repository recursively (i.e. to get all its submodules as well):
+
+`git clone --recurse-submodules https://github.com/anyaevostinar/SymbulationEmp.git`
+
+To get the submodules after you've cloned a repository normally (and then realize you forgot to get the submodules):
+
+`git submodule update --init --recursive`
