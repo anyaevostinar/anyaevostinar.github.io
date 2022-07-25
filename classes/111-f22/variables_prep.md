@@ -29,6 +29,7 @@ The following objectives should  be mastered by each student during and followin
 * Explain what happens when one variable is assigned the value of another variable 
 * Be able to predict what value a variable will have at the end of a program, especially when the program uses and changes multiple variables
 * Be able to draw reference diagrams to show what is happening with a variable in a program, especially when the variable is changed
+* Be able to use several variables in a program to solve a problem
 * Be able to explain the similarities and differences between variables in programming, math, and other contexts
 
 ## Readings
