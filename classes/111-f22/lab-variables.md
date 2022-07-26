@@ -25,12 +25,30 @@ You should aim to improve it, which will probably involve:
 * Writing comments and documentation
 
 ## Exercise 2
+For each of the following code snippets, predict answers to the following:
+* When will evaluation of each variable occur?
+* What value(s) will each variable be assigned?
+* What will the reference diagram look like?
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%20%2B%201%0Ay%20%3D%203%20%2B%200%0Az%20%3D%20x%20%2B%20y%0Aprint%28z%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=a%20%3D%202%0Ab%20%3D%20a%0Aa%20%3D%20a%20%2B%203%0Aprint%28a,%20b%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+
+In this last snippet, PythonTutor reorders the values a bit strangely (and unnecessarily), but the values are still correct, so be sure to go through the steps slowly to catch that and be sure of what is happening.
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=variable1%20%3D%2010%0Avariable2%20%3D%20variable1%0Avariable1%20%3D%20variable2%20-%203%0Avariable2%20%3D%20variable1%20%2B%205%0Avariable1%20%3D%2010%0Avariable3%20%3D%20variable2%0Avariable4%20%3D%201%0Avariable3%20%3D%20variable3%20-%202&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+## Exercise 3
+The word 'variable' is used in mathematics, programming, and everyday speech and each use is slightly different.
+List out as many similarities and differences as you can between what 'variable' means in each of these contexts.
+
+## Exercise 4
 Consider a bizarro alternate universe in which an hour is 47 minutes long. Each day still has 24 hours and each year still has 365 days (you can ignore leap years).
 
 Write a Python program that will print out how many minutes longer a year is in the 60-minute universe than in the 47-minute universe.
 Extend your program to print out how many days that value is equal to (in both worlds).
 
-## Exercise 3
+## Exercise 5
 Sometimes it is useful to add and subtract times. For example, if you are trying to measure a runner’s lap time, you might record the start time and the end time for the lap and use that information to find the amount of time that elapsed.
 
 Write some code that asks the user for four integer inputs:
