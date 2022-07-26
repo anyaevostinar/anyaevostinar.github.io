@@ -30,6 +30,8 @@ For each of the following code snippets, predict answers to the following:
 * What value(s) will each variable be assigned?
 * What will the reference diagram look like?
 
+Then click through the steps to check your predictions and figure out anything that you got wrong.
+
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%20%2B%201%0Ay%20%3D%203%20%2B%200%0Az%20%3D%20x%20%2B%20y%0Aprint%28z%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=a%20%3D%202%0Ab%20%3D%20a%0Aa%20%3D%20a%20%2B%203%0Aprint%28a,%20b%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
