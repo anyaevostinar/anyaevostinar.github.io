@@ -20,6 +20,7 @@ During and after class, you should be able to:
 * Explain when the code in a function is executed
 * Explain what the *scope* of a function is and how it impacts variables used inside the function
 * Define and use a new function with multiple parameters to accomplish a task
+* Identify when a function should be created
 
 ## Readings
 
