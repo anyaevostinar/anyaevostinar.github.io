@@ -5,7 +5,7 @@ permalink: /classes/257-s22/flask-form
 ---
 
 ## Goal
-Be able to add a form to your Flask app and use POST HTTP requests correctly.
+Be able to add a form to your Flask app and use POST [HTTP](https://www.scaler.com/topics/hypertext-transfer-protocol/) requests correctly.
 
 ## Setup
 We'll be continuing to use the [silly dataset](dataset.csv) as an example, though you don't have to if you don't want to.
