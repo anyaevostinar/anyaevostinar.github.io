@@ -5,14 +5,14 @@ permalink: /classes/111-f22/functions1-prep
 ---
 
 ## Overview
-Functions are a fantastic way of bundling a series of statements together conceptually to make your code much clearer.
+*Functions* are a fantastic way of bundling a series of statements together conceptually to make your code much clearer.
 You've already been using them a lot, but now you'll learn how to make your own and how to think through what they are doing.
 
 ## Basic Learning Objectives
 Before the start of class, you should be able to:
-* Define the term "function"
+* Define the term *function*
 * Give an example of invoking an existing function
-* Define the term "parameter" 
+* Define the term *parameter* 
 * Define and use a new function without parameters to accomplish a simple task
 
 ## Advanced Learning Objectives

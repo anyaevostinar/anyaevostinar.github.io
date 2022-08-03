@@ -86,20 +86,20 @@ I'll be using a version of *specifications grading* this term. Each assessment t
 * Demonstrates mastery (the submission provides evidence of strong mastery of the learning objective(s))
 
 An important aspect of specifications grading is revision. **You may revise any group or individual deliverable up until the end of exams.** Learning is not a linear process, and learning involves making mistakes and learning from them. You may revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
-You may further revise that deliverable before the final submission and request additional feedback via a form (link TBD), however I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.
+You may further revise that deliverable before the end of the term and request additional feedback via a form (link TBD), however I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.
 
 ### How this translates to course grades
 
-**To earn a C in the course:** you must show that you are proficient in all the learning objectives of the course by having all deliverables at 'demonstrates proficiency'
+**To earn a C in the course:** you must show that you are *proficient in all* the learning objectives of the course by having all deliverables at 'demonstrates proficiency'
 
-**To earn a B in the course:** you must show that you are proficient in all the learning objectives of the course and have mastered half of the learning objectives by having all deliverables at 'demonstrates proficiency' and half of deliverables at 'demonstrates mastery'
+**To earn a B in the course:** you must show that you are *proficient in all* the learning objectives of the course and *have mastered half* of the learning objectives by having all deliverables at 'demonstrates proficiency' and half of deliverables at 'demonstrates mastery'
 
-**To earn an A in the course:** you must show that you have mastered all of the learning objectives in the course by having all deliverables at 'demonstrates mastery'
+**To earn an A in the course:** you must show that you have *mastered all* of the learning objectives in the course by having all deliverables at 'demonstrates mastery'
 
 ### Late work and extensions
 In this course, we need to balance flexibility for individuals with structure for teams, the class as a whole, and a reasonable workload for the grader and me (your instructor). I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. 
 
-**Individual and group deliverables** have a 12-hour grace period after their posted due date to account for slight delays in submission while allowing assessment of submissions to start soon after the due date. If you miss that cutoff, you will still be able to submit something during the revision period. I highly recommend you aim to submit something in the original submission window, even if it isn't complete, so that you can benefit from feedback and revision.
+**All deliverables** have a 1-hour grace period after their posted due date and time to account for slight delays in submission while allowing assessment of submissions to start soon after the due date. If you miss that cutoff, you will still be able to submit something during the revision period. I highly recommend you aim to submit something in the original submission window, even if it isn't complete, so that you can benefit from feedback and revision.
 
 **Preparation work** does not specifically contribute to your grade, and so a late work or extension policy doesn't make sense for it.
 It is expected that you complete the preparation work ahead of the class period that it is associated with, however if you aren't able to, I recommend you complete it as soon afterward as you can.
