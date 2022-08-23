@@ -10,9 +10,9 @@ permalink: /Classes/
 
 ### Fall 2022
 
-CS 111: Introduction to Computer Science
+CS 111: Introduction to Computer Science ([Syllabus](/classes/111-f22/syllabus), [Schedule](/classes/111-f22/schedule))
 
-CS 361: Artificial Life and Digital Evolution
+CS 361: Artificial Life and Digital Evolution ([Syllabus](/classes/361-f22/syllabus), [Schedule](/classes/361-f22/schedule))
 
 ## Future Classes
 Subject to change!

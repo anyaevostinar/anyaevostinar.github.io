@@ -49,7 +49,7 @@ If you experience significant technological problems that limit your ability to 
 For announcements of known technical issues, visit the Helpdesk portal. 
 If your personal situation (due to COVID-19 illness or other circumstances) begins to impact your ability to engage with the course, please contact the Dean of Students Office and also let me know.
 
-**I expect you to attend every class session and log in to Moodle and Slack every day for updates on activities and assignments.** 
+**I expect you to attend every class session and log in to Moodle and CampusWire every day for updates on activities and assignments.** 
 
 All out of class written communication will happen via the class announcement forum.
 Please make sure you are checking it regularly and/or have email or push notifications setup.
@@ -154,7 +154,7 @@ When I've asked students what advice they'd give to future 111 students, the mos
 
 * Test your code: One of the key parts of writing successful code is debugging it - testing whether it works, finding where it doesn’t, and fixing it so it does. Learning to debug your code is essential for any later coding projects you may do.
 
-* Ask questions and reach out for help: If you have a question about something, chances are other people do too. By asking questions in class, on Slack and in office hours, you'll keep up with the course and gain a deeper understanding of the concepts.
+* Ask questions and reach out for help: If you have a question about something, chances are other people do too. By asking questions in class, on CampusWire and in office hours, you'll keep up with the course and gain a deeper understanding of the concepts.
 
 All grading questions should be directed to me and not to the grader.
 
@@ -171,7 +171,7 @@ The Prefect Program offers in person tutoring and/or optional collaborative lear
 Prefect sessions review course concepts and often focus on critical thinking and problem-solving exercises centered on the course material. 
 Our course prefect(s) will use email or Moodle to inform everyone in the class about upcoming sessions and availability for 1:1 tutoring.
 * Help Forum:
-You're welcome to post questions about readings and labs on the    `#help` channel as well as about homework and the final project. 
+You're welcome to post questions about readings and labs on the appropriate channel as well as about homework and the final project. 
 You shouldn't post much homework code, but you can post code related to other assignments. 
 If you're unsure if a question contains too much detail about the homework, email me instead.
 * Talk to me:

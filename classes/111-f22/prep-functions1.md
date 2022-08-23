@@ -30,9 +30,6 @@ You should read/watch each of the following and complete the checks:
 * [Function Invocation](https://runestone.academy/ns/books/published/fopp/Functions/FunctionInvocation.html?mode=browsing)
 * [Function Parameters](https://runestone.academy/ns/books/published/fopp/Functions/FunctionParameters.html?mode=browsing)
 
-## Checks
-TBD, will include 'write a function that prints X' and 'use this function to do Y'
-
 ## Written Answers
 Submit answers to the following on Moodle:
 * What does 'function' mean in programming?

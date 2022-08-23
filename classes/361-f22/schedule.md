@@ -11,44 +11,44 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Date	| Assignment Due	| Class Topic |	Assignment Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | |  | |
-| M 1/4 | | What is alive? |  |
-| W 1/6 | |	[Java to C++](/classes/361-w21/cpp_intro) |	|
-| F 1/8 |		| [Evolution as an algorithm](/classes/361-w21/evo_alg_lab) |	 |
+| M 9/12 | | What is (artificial) life? |  |
+| W 9/14 | |	[Java to C++](/classes/361-w21/cpp_intro) |	|
+| F 9/16 |		| Algorithms of Life  |	 |
 | Week 2 | |  | |
-| M 1/11 |		| Interesting open problems |  |
-| W 1/13 |	|	[Project Intro](/classes/361-w21/project)	| |
-| F 1/15 | |	TBD	|  |
+| M 9/19 |		| Cellular Automata  | CA project |
+| W 9/21 |	|	TBD	| |
+| F 9/23 | |	TBD|  |
 | Week 3 | |  | |
-| M 1/18 | | Kin selection example	| Proposal outline |
-| W 1/20 |	|	Work day | |
-| F 1/22 |  | Mutualism example | |
+| M 9/26 | CA project | Peer review of CA projects	| |
+| W 9/28 |	|	Artificial Ecologies | AE project |
+| F 9/30 |  | Evolution as an algorithm | |
 | Week 4 | | | |
-| M 1/25 | [Proposal outline](/classes/361-w21/proposal) |	Proposal discussions | Project Proposal|
-| W 1/27 |	|  Quorum Sensing example  |  |
-| F 1/29 | | [Reading](/classes/361-w21/empirical_intro) [Empirical	basics lab](/classes/361-w21/empirical_intro_lab) 	| |
+| M 10/3 | AE project |	Peer review of AE projects | |
+| W 10/5 |	| Digital Evolution | DE project  |
+| F 10/7 | | TBD 	|  Encyclopedia assignment |
 | Week 5 | |  | |
-| M 2/1 | [Proposal Draft](/classes/361-w21/proposal) | [Reading](https://anyaevostinar.github.io/classes/361-w21/data_intro) [Empirical DataFiles lab](/classes/361-w21/empirical_data_lab)		| |
-| W 2/3 |		| Proposal peer review	|  |
-| F 2/5 | [Project Proposal](/classes/361-w21/proposal) |	Work day	| |
+| M 10/10 | DE project | 	Peer review of DE projects	| |
+| W 10/12 |		|TBD |  |
+| F 10/14 |  |	Catch up	| |
 | Week 6 | |  | |
-| M 2/8	| |	Mid-term Break!	| |
-| W 2/10 | [Progress Report 1](/classes/361-w21/progress-reports) | [Empirical configManager](/classes/361-w21/config_intro) [Lab](/classes/361-w21/empirical_config_lab)	 | |
-| F 2/12 |	|  [Git version control](/classes/361-w21/git_lab) |  |
+| M 10/17	| |	Mid-term Break!	| |
+| W 10/19 | Encyclopedia drafts | Peer review of drafts	 | |
+| F 10/21 |	| Project introduction | Project proposal |
 | Week 7 | |  | |
-| M 2/15 | |  [Using the computing cluster](/classes/361-w21/cluster_lab) 	| |
-| W 2/17 | [Part 1 of Project](/classes/361-w21/part_1), [Progress Report 2](/classes/361-w21/progress-reports) |	Work day	 | |
-| F 2/19 | |	[Basic non-parametric stats](/classes/361-w21/r-lab)	|  |
+| M 10/24 | |   GitHub	| |
+| W 10/26 | Project proposal |	Proposal peer review	 | Final project |
+| F 10/28 |  |	Empirical projects	|  |
 | Week 8 | |  | |
-| M 2/22 |  |		Work day	| |
-| W 2/24 | [Progress Report 3](/classes/361-w21/progress-reports) |	Scientific papers	 | |	
-| F 2/26 | 	| Work day  |	|
+| M 10/31 |  | Empirical and Emscripten	| |
+| W 11/2 |  | Empirical ConfigManager		 | |	
+| F 11/4 | 	| Empirical DataFiles |	|
 | Week 9 | |  | |
-| M 3/1 | |		[Presentations intro](/classes/361-w21/presentations)	| |	
-| W 3/3 | [Progress Report 4](/classes/361-w21/progress-reports) |	Work day | |
-| F 3/5 |  |	Paper peer review |	 |
+| M 11/7 | |	TBD		| |	
+| W 11/9 | |	TBD | |
+| F 11/11 |  |TBD	|	 |
 | Week 10 | | | |
-| M 3/8	| |  Final project discussion | |
-| W 3/10 | [Paper Draft due](/classes/361-w21/paper-reqs) | Wrap up; course evaluations	| |
+| M 11/14	| Final project |   | |
+| W 11/16 |  | Wrap up; course evaluations	| |
 | Exam Period | | | |
-| Sat 3/13 3:30-6pm | [Final presentations](/classes/361-w21/presentations) | | |
-| | | Final project due Monday, 3/15, 5pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
+| TBD| Optional, TBD | | |
+| | | All revisions due at 3pm 11/21. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
