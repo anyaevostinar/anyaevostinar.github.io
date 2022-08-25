@@ -13,7 +13,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Date	| Homework/Reading Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Algorithmic Thinking** |  | |
-| M 9/12 | Start of Class Prep | Intro to the class |  |
+| M 9/12 | [Start of Class Prep](intro-prep) | Intro to the class |  |
 | W 9/14 | Intro Python Prep | Algorithms and Starting with Python  | HW1	 |
 | F 9/16 | Building Blocks Prep | Values, Operations, and Types | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
