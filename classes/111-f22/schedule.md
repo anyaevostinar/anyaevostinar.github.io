@@ -15,7 +15,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 1** | **Algorithmic Thinking** |  | |
 | M 9/12 | [Start of Class Prep](intro-prep) | Intro to the class |  |
 | W 9/14 | [Intro Python Prep](python-prep) | Algorithms and Starting with Python  | HW1	 |
-| F 9/16 | Building Blocks Prep | Values, Operations, and Types | | 
+| F 9/16 | [Building Blocks Prep](build-blocks-prep) | Values, Operations, and Types | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
 | M 9/19 | Variables Prep	| Variables and Evaluation |	 |
 | W 9/21 | Modules Prep; HW1 | Quiz 1; Modules, Random, and Turtles	| HW2 |
