@@ -8,10 +8,10 @@ This is a rough schedule of topics for each day and the release and due dates fo
 
 **Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses.
 
-| Date	| Assignment Due	| Class Topic |	Assignment Out |
+| Date	| Assignment/Reading Due	| Class Topic |	Assignment Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | |  | |
-| M 9/12 | | What is (artificial) life? |  |
+| M 9/12 | [What is AL Prep](intro-prep) | What is (artificial) life? |  |
 | W 9/14 | |	[Java to C++](/classes/361-w21/cpp_intro) |	|
 | F 9/16 |		| Algorithms of Life  |	 |
 | Week 2 | |  | |
