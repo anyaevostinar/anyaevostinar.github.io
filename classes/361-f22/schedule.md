@@ -13,7 +13,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 1 | |  | |
 | M 9/12 | [What is AL Prep](intro-prep) | What is (artificial) life? |  |
 | W 9/14 | [C++ Prep](cpp-prep)|	[Java to C++](/classes/361-w21/cpp_intro) |	|
-| F 9/16 |		| Algorithms of Life  |	 |
+| F 9/16 |	[Evolutionary Algorithms](evocomp-prep)	| Algorithms of Life  |	 |
 | Week 2 | |  | |
 | M 9/19 |		| Cellular Automata  | CA project |
 | W 9/21 |	|	TBD	| |
