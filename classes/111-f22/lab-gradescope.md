@@ -50,4 +50,6 @@ Hello, Anya!
 ## Exercise 3
 Switch who is logged in and go back through the exercises on the other partner's account.
 
-
+## Extra
+If you finish everything above for both partners, open up [Section 1.5](https://runestone.academy/ns/books/published/intro-cs/GeneralIntro/MoreAboutPrograms.html) of the book and experiment with the different *control structures* demonstrated.
+See what you can make with them! 
