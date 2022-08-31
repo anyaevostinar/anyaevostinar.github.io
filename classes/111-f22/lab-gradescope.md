@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Getting Started Lab 
-permalink: /classes/111-w22/getting-started
+permalink: /classes/111-f22/getting-started
 ---
 
 This is a lab assignment and so you will not be submitting it.
