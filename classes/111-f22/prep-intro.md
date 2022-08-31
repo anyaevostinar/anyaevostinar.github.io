@@ -29,7 +29,6 @@ The following objectives should  be mastered by each student during and followin
 You should be able to:
 * Explain how quizzes and homework assessment leads to your final grade
 * Explain what *computer science* is generally
-* Explain the basic idea of an *algorithm*
 
 ## Readings
 You should read each of the following:

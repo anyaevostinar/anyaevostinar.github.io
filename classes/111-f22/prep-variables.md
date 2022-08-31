@@ -9,7 +9,7 @@ Variables are a core part of programming and misconceptions about them are a fre
 While you've probably heard the word before, what it means in programming might be subtly different than you expect from other contexts.
 The preparation work is focused on getting you comfortable with the programming concept and Python syntax, so that we can dive in to building your mental model of variables during class.
 
-As always, aim to be proficient in the basic learning objectives before class by going through the readings and videos and completing the specified exercises (and reach out for help ahead of time if you need).
+
 
 ## Basic Learning Objectives
 These are the learning objectives that each student is responsible for demonstrating proficiency at BEFORE the class meeting. 

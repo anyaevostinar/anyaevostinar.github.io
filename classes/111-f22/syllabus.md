@@ -20,7 +20,8 @@ Specific free versions (linked on Moodle) of:
 
 **Drop in student hours**:
 
-TBD
+M: 2-3pm in Olin 306
+W: 3-4pm in Olin 306
 
 Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 9-5 M-F and either send a calendar invite to an event or email me.
 
