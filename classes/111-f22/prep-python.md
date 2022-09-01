@@ -14,6 +14,7 @@ Before class, you should be able to:
 * Explain the difference between an *algorithm* and a *program*
 * Edit and run Python programs embedded in the textbook
 * Use the `print` function
+* List the roles in pair programming
 
 ## Advanced Learning Objectives
 
@@ -29,6 +30,7 @@ Remember to login to Runestone Academy and then complete the checks in the readi
 
 * [1.1-1.4](https://runestone.academy/ns/books/published/intro-cs/GeneralIntro/intro-TheWayoftheProgram.html)
 * [1.7-1.9](https://runestone.academy/ns/books/published/intro-cs/GeneralIntro/ATypicalFirstProgram.html)
+* Revisit the [collaboration document](collaboration)
 * Optional [1.5-1.6](https://runestone.academy/ns/books/published/intro-cs/GeneralIntro/MoreAboutPrograms.html) 
 
 ## Checks
