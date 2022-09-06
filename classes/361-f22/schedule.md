@@ -13,15 +13,15 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 1 | |  | |
 | M 9/12 | [What is AL Prep](intro-prep) | What is (artificial) life? |  |
 | W 9/14 | [C++ Prep](cpp-prep)|	[Java to C++](cpp_lab) |	|
-| F 9/16 |	[Evolutionary Algorithms](evocomp-prep)	| Algorithms of Life  |	 |
+| F 9/16 |	[Evolutionary Algorithms](evocomp-prep)	| [Evolutionary Algorithm Lab](evo_alg_lab)  |	 |
 | Week 2 | |  | |
-| M 9/19 |		| Cellular Automata  | CA project |
+| M 9/19 |		| Cellular Automata  | [CA project](hw-ca) |
 | W 9/21 |	|	TBD	| |
 | F 9/23 | |	TBD|  |
 | Week 3 | |  | |
-| M 9/26 | CA project | Peer review of CA projects	| |
+| M 9/26 | [CA project](hw-ca) | Peer review of CA projects	| |
 | W 9/28 |	|	Artificial Ecologies | AE project |
-| F 9/30 |  | Evolution as an algorithm | |
+| F 9/30 |  | TBD | |
 | Week 4 | | | |
 | M 10/3 | AE project |	Peer review of AE projects | |
 | W 10/5 |	| Digital Evolution | DE project  |

@@ -17,6 +17,8 @@ git clone <your repository link>
 
 3. Open VSCode and then open your repository folder. 
 
+4. Open a Terminal in VSCode and type `chmod +x main.sh` then `./main.sh`. You shouldn't see anything (your program compiled and ran, but doesn't do anything interesting). If you got errors about files not found, type the following: `git submodule update --init --recursive` which should download the files you were missing. Then try running `main.sh` again. If you are still getting errors, wave for help.
+
 ## Exercise 1
 Recall that the necessary pieces for evolution by natural selection to occur are:
 * Variation
@@ -35,8 +37,6 @@ class Organism {
     ...
 };
 ```
-
-  **Note: Empirical needs a specific version of C++ to work, so I've provided you with the command to compile your code in `main.sh`. You can compile and run by typing `./main.sh` in the Terminal. You might need to give `main.sh` permission to run by first typing `chmod +x main.sh`.**
 
 b. As you learned, evolution doesn't occur at the level of the individual, and so we'll need a way to hold a population of organisms. While C++ has a built-in vector that is similar to the lists and ArrayLists you've seen before, we'll use an enhanced version from the Empirical library (you'll learn more about Empirical in the future).
 
