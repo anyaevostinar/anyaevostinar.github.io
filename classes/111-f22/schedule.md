@@ -17,7 +17,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 9/14 | [Intro Python Prep](python-prep) | [Starting with Python](getting-started)  | [HW1](hw1)	 |
 | F 9/16 | [Building Blocks Prep](build-blocks-prep) | [Values, Operations, and Types](building-blocks) | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
-| M 9/19 | Variables Prep	| Variables and Evaluation |	 |
+| M 9/19 | [Variables Prep](variables-prep)	| Variables and Evaluation |	 |
 | W 9/21 | Modules Prep; HW1 | Quiz 1; Modules, Random, and Turtles	| HW2 |
 | F 9/23 | Sequences Prep | Using Sequences	| |
 | **Week 3** | **Building Blocks Part 2** |  | |
