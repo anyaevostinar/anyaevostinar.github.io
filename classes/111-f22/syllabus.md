@@ -4,6 +4,23 @@ title: CS111 Introduction to Computer Science F22 Syllabus
 permalink: /classes/111-f22/syllabus
 ---
 
+## Table of Contents
+
+* [Quick Facts](#quick-facts)
+* [Overview and Learning Goals](#overview-and-learning-goals)
+* [Course Expectations](#course-expectations)
+* [Types of Engagement and Collaboration Policies](#types-of-engagement-and-collaboration-policies)
+* [Assessment](#assessment)
+* [How to Succeed](#how-to-succeed-in-this-class)
+* [How to Get Help](#how-to-get-help)
+* [Attendance](#attendance)
+* [Inclusivity](#inclusivity-and-universal-learning)
+* [Academic Honesty and Collaboration Policy](#academic-honesty-and-collaboration-policy)
+* [Pedagogy](#pedagogy)
+
+
+## Quick Facts
+
 Fall 2022
 
 **Instructor**: Anya E. Vostinar
