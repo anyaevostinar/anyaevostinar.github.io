@@ -50,23 +50,6 @@ Consider a bizarro alternate universe in which an hour is 47 minutes long. Each 
 Write a Python program that will print out how many minutes longer a year is in the 60-minute universe than in the 47-minute universe.
 Extend your program to print out how many days that value is equal to (in both worlds).
 
-## Exercise 5
-Sometimes it is useful to add and subtract times. For example, if you are trying to measure a runner’s lap time, you might record the start time and the end time for the lap and use that information to find the amount of time that elapsed.
-
-Write some code that asks the user for four integer inputs:
-* The minutes of the start time.
-* The seconds of the start time.
-* The minutes of the end time.
-* The seconds of the end time.
-
-Your code should then calculate the difference between the end time and start time, and print out the elapsed time in minutes and seconds.
-
-Note that the seconds should be a value between 0 and 59, which means simply subtracting minutes and seconds will not work! Think carefully about what you need to calculate here, and perhaps write out the algorithm on paper or in a text file before you attempt to code it up. 
-
-Hint: consider what you may be able to do with the `//` (integer division) and `%` (modulo) operators.
-
-Try to come up with test input that will check for all the types of cases that your code should be able to handle (for example, input that would have messed up the strategy of just subtracting the minutes and seconds).
-
 
 ## Acknowledgements
 This lab is adapted from labs by Profs. James Ryan and Eric Alexander.

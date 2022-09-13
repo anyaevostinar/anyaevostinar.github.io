@@ -18,7 +18,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 9/16 | [Building Blocks Prep](build-blocks-prep) | [Values, Operations, and Types](building-blocks) | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
 | M 9/19 | [Variables Prep](variables-prep)	| Variables and Evaluation |	 |
-| W 9/21 | Modules Prep; HW1 | Quiz 1; Modules, Random, and Turtles	| HW2 |
+| W 9/21 | [Modules Prep](turtle-prep); HW1 | Quiz 1; Modules, Random, and Turtles	| HW2 |
 | F 9/23 | Sequences Prep | Using Sequences	| |
 | **Week 3** | **Building Blocks Part 2** |  | |
 | M 9/26 | Iterating Prep	| For Loops 	| |

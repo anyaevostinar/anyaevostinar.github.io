@@ -10,7 +10,7 @@ However, the concepts and practice will help you on both the homework and exams 
 ## Exercise 0
 This is a repeat of the walk through that we did together, in case you missed something.
 
-1. [Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=CS+111+and+201+workflow+in+CS+labs)
+1. [Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=Fall+2022%3A+CS+111+and+201+workflow+in+CS+labs)
 2. Create a new folder in your STUWORK folder called `Lab1`
 3. Open VSCode
 4. Click and drag you `Lab1` folder to the VSCode window to open it
