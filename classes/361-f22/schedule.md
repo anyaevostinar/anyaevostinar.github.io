@@ -15,7 +15,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 9/14 | [C++ Prep](cpp-prep)|	[Java to C++](cpp_lab) |	|
 | F 9/16 |	[Evolutionary Algorithms](evocomp-prep)	| [Evolutionary Algorithm Lab](evo_alg_lab)  |	 |
 | Week 2 | |  | |
-| M 9/19 |		| Cellular Automata  | [CA project](hw-ca) |
+| M 9/19 |	[Cellular Automata Prep](ca-intro-prep)	| Cellular Automata  | [CA project](hw-ca) |
 | W 9/21 |	|	TBD	| |
 | F 9/23 | |	TBD|  |
 | Week 3 | |  | |
