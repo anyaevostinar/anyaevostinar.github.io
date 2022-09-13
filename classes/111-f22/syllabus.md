@@ -120,7 +120,7 @@ Even if an assignment was initially a paired assignment, all revisions should be
 
 ### Quiz Assessment
 
-Each weekly quiz will have a subset of learning objectives that can be demonstrated on that quiz, which you will know ahead of time.
+Each weekly quiz will have a subset of [learning objectives](quizzes-overview) that can be demonstrated on that quiz, which you will know ahead of time.
 Each of the 'quiz' learning objectives will appear on at least two quizzes, so that you will have multiple chances to demonstrate your understanding of the material.
 Answers on quizzes will be assessed on the same four-level scale:
 
