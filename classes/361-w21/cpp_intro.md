@@ -22,7 +22,7 @@ Reference this [cheat sheet](/classes/361-w21/ref_pointer_ref) for the code from
 ## Exercises
 Complete each of the following HackerRank exercises. Verify your answers are correct on HackerRank and then copy and paste your code into the corresponding file on the Repl.it project.
 
-* [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem)
+* [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem) (Make sure your language is set to C++14)
 * [Input and Output](https://www.hackerrank.com/challenges/cpp-input-and-output/problem)
 * [Pointer](https://www.hackerrank.com/challenges/c-tutorial-pointer/problem) (you will need the `<cmath>` library and `abs()` function)
 * [Arrays](https://www.hackerrank.com/challenges/arrays-introduction/problem)
