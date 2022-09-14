@@ -22,4 +22,6 @@ Complete each of the following HackerRank exercises.
 
 
 ## Extra
-If you have extra time, you are encouraged to try out other HackerRank C++ activities to get more practice. We'll continue to check in on C++ in the coming weeks, so getting more practice will be helpful.
+If you have extra time, try out other HackerRank C++ activities to get more practice. We'll continue to check in on C++ in the coming weeks, so getting more practice will be helpful.
+
+You can also [learn a bit/refresh about Git](https://www.w3schools.com/git/default.asp?remote=github), which we'll be using in a basic capacity for submitting assignments.
