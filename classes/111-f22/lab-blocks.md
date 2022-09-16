@@ -4,7 +4,7 @@ title: Building Blocks Lab
 permalink: /classes/111-f22/building-blocks
 ---
 
-Make a folder for today's lab in COURSES as you usually do.
+Make a folder for today's lab in COURSES ([here are the instructions from the previous lab](getting-started)).
 
 ## Exercise 1
 Work through the expressions listed below, one at a time, with your partner. For each expression, you should work together to predict a) the value produced by the expression, and b) the data type of that value. For instance, the expression `2 + 2` produces the value 4, which has the type `int` (for integer). Once you’ve made your prediction(s) for an expression, type in the corresponding Python code to see if you’re right! 
