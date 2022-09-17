@@ -16,24 +16,25 @@ You might also want to open the [list of common turtle problems](https://runesto
 1. Create a new file in your folder for today's lab called `random_turtle.py`.
 
 2. In that file, import both the `turtle` and `random` modules:
-```python
-import turtle
-import random
-```
+
+    ```python
+    import turtle
+    import random
+    ```
 
 3. Create your window and one turtle, and tell the window not to close until you click:
 
-```python
-window = turtle.Screen()
-my_turtle = turtle.Turtle()
+    ```python
+    window = turtle.Screen()
+    my_turtle = turtle.Turtle()
 
-window.exitonclick()
-```
+    window.exitonclick()
+    ```
 
 4. It's good to run your code frequently to make sure that there aren't errors, so open a `Terminal` (by dragging up from the bottom of the screen), and run your program:
-```
-python3 random_turtle.py
-```
+    ```
+    python3 random_turtle.py
+    ```
 
 Your turtle won't do anything interesting yet, but you should see it and the screen should wait for you to click before closing.
 
@@ -44,11 +45,12 @@ Now you're ready to have your turtle do something!
 
 2. Have your turtle make a square with a side length randomly between 10 and 100.
 Remember that you can use a for-loop to repeat several lines of code multiple times:
-```python
-for x in range(3):
-    #do something
-    #do some more things
-```
+
+    ```python
+    for x in range(3):
+        #do something
+        #do some more things
+    ```
 
 ## Exercise 3
 There are several more turtle methods that do some fun things. 
@@ -56,26 +58,26 @@ Create a new file `example_one.py` to test out the following.
 
 1. Here is some code that uses a couple of new turtle methods:
 
-```python
-import turtle
+    ```python
+    import turtle
 
-window = turtle.Screen()
-turtle1 = turtle.Turtle()
+    window = turtle.Screen()
+    turtle1 = turtle.Turtle()
 
-turtle1.fillcolor("purple")
-turtle1.begin_fill()
+    turtle1.fillcolor("purple")
+    turtle1.begin_fill()
 
-for side in range(2):
-    turtle1.forward(30)
-    turtle1.right(90)
+    for side in range(2):
+        turtle1.forward(30)
+        turtle1.right(90)
 
-turtle1.end_fill()
+    turtle1.end_fill()
 
-window.exitonclick()
-```
+    window.exitonclick()
+    ```
 
-Copy and paste it into your file, run it, and figure out what the three new methods do. 
-Feel free to experiment by changing the code to see what happens when you move lines around or change values.
+    Copy and paste it into your file, run it, and figure out what the three new methods do. 
+    Feel free to experiment by changing the code to see what happens when you move lines around or change values.
 
 2. Expand on the provided code to make several more connected shapes in different colors.
 
