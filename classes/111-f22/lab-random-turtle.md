@@ -107,6 +107,7 @@ You can always refer to the list of turtle methods to double check your predicti
 With all those methods, you can draw a lot! 
 Make a new file `drawing.py` and make something new with the turtle drawing.
 You could use `random` to shake things up in your drawing, but be sure to use lots of colors and shapes. 
+Try making multiple turtles and having them be in charge of different aspects of your drawing.
 If you are stuck on what to draw, try making a house with some trees.
 
 There are also even more methods that you can use with the turtle, so feel free to look through the [official documentation](https://docs.python.org/3/library/turtle.html) and play around with them.
