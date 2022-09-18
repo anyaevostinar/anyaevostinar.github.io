@@ -25,22 +25,25 @@ For each of the following snippets of code:
 
 ## Exercise 2
 
-Let’s write a program that receives a phrase from the user, reverses the order of each word, and then prints the result back out to the screen. 
-The order of the words relative to one another should remain the same, but each word's letters should be reversed, as in the following example:
-```
-Input a phrase: stay warm out there
-yats mraw tuo ereht
-```
+You may recall previously writing a program `reverse.py` previously.
+Here is a reminder in case you have forgotten:
+    The program receives a phrase from the user, reverses the order of each word, and then prints the result back out to the screen. 
+    The order of the words relative to one another should remain the same, but each word's letters should be reversed, as in the following example:
+    ```
+    Input a phrase: stay warm out there
+    yats mraw tuo ereht
+    ```
 
-As with any program, we should start out by laying out our algorithm, which at a high level might look something like this:
-1. Get phrase from user.
-2. Split phrase into words
-3. For each word in the phrase
-    * Reverse the letters
-    * Combine the letters back together
-    * Print the reversed word
+    As with any program, we should start out by laying out our algorithm, which at a high level might look something like this:
+    1. Get phrase from user.
+    2. Split phrase into words
+    3. For each word in the phrase
+        * Reverse the letters
+        * Combine the letters back together
+        * Print the reversed word
 
-Write a program called `reverse.py` to carry out the above algorithm. 
+
+You are going to write/rewrite this program so that it uses functions to organize the code more effectively.
 Your program should contain at least three functions, with the following names and parameters (given in parentheses):
 * `main()` should contain the high-level algorithm (Steps 1 – 3).
 * `reverseAllWords(phrase)` should take a string phrase as a parameter and print a string containing the same phrase with every word reversed (Steps 2 and 3).
