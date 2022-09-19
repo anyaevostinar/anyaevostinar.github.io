@@ -36,10 +36,10 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 10/21 |	| Project introduction | Project proposal |
 | Week 7 | |  | |
 | M 10/24 | |   GitHub	| |
-| W 10/26 | Project proposal |	Proposal peer review	 | Final project |
-| F 10/28 |  |	Empirical projects	|  |
+| W 10/26 |  |	Guest Speaker: [Dr. Alexander Lalejini](https://lalejini.com/)	 | |
+| F 10/28 | Project proposal |	Proposal peer review	| Final project  |
 | Week 8 | |  | |
-| M 10/31 |  | Empirical and Emscripten	| |
+| M 10/31 |  | Empirical projects	| |
 | W 11/2 |  | Empirical ConfigManager		 | |	
 | F 11/4 | 	| Empirical DataFiles |	|
 | Week 9 | |  | |
