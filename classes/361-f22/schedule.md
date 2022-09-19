@@ -17,7 +17,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 2 | |  | |
 | M 9/19 |	| Finishing EA Lab | |
 | W 9/21 | [Cellular Automata Prep](ca-intro-prep)	| [Finding Neighbors](nf-lab)  | [CA project](hw-ca) |
-| F 9/23 | [CA 2 Prep](ca-2-prep)	| Complex CA	| |
+| F 9/23 | [CA 2 Prep](ca-2-prep)	| [Gradient Lab](gradient-lab)	| |
 | Week 3 | |  | |
 | M 9/26 | None | Working on CA project|  |
 | W 9/28 |	[CA project](hw-ca) | Peer review of CA projects	| |
