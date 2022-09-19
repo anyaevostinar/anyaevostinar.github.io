@@ -96,7 +96,7 @@ The square of your age is <value>
 * This is a good time to check to make sure your code is working correctly again:
 ```
 $ python3 input.py
-It is currently the year 2021
+It is currently the year 2022
 What is your name? Anya
 Hi, Anya
 How old are you? 200

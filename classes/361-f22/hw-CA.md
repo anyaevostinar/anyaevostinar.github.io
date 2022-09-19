@@ -44,6 +44,27 @@ source ./emsdk_env.sh
 ```
 You should see a grid of squares with one black square in the upper left corner and some buttons.
 
+## Running on your own machine
+I've tested this process on the lab machine build.
+This means that you can definitely work on the assignment in Olin 310 and the other Olin 3rd floor labs. 
+You can also make sure that you put the Git repository in the [COURSES](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=Fall+2022%3A+CS+111+and+201+workflow+in+CS+labs) drive so you don't have to reclone it each work session.
+
+You quite possibly can also work on your own machine, but I make no guarantees since I haven't tested it on every operating system. 
+I'm happy to help you try to get things setup on your machine, but if we run into too many issues, I'm going to recommend you work on the lab machines.
+
+### Mac
+If you have a Mac, you probably just need to install the XCode Command Line Tools, which you will be prompted to do when you try to compile with `g++`. 
+If you run into issues with that, restarting and trying again often does the trick.
+
+### Windows
+If you have Windows, you will need [WSL] to be able to compile. 
+The documentation for getting that setup is pretty good now, and you might already have it since it is needed for a lot of development.
+I've tested running this on my WSL setup and had no problems.
+
+### Linux
+If you are running Linux, hopefully you won't have problems and can handle downloading anything that is needed.
+I have only tested Ubuntu running on WSL.
+
 ## Assignment Specification
 For this assignment, you need to add on to the code that I've provided so that, when the `compile-run.sh` file is run, a browser-based cellular automaton runs in the browser.
 This will require you to write the starting conditions and update rule in `CAAnimate.cpp` such that some kind of life-like pattern is seen, specifically some kind of repeating or ordered pattern, in the 2D grid.
