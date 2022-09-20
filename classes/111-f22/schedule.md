@@ -21,7 +21,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 9/21 | [Modules Prep](turtle-prep); HW1 | [Quiz 1](quiz1); [Random Turtles](random-turtle)	| [HW2](hw2) |
 | F 9/23 | [Sequences Prep](sequences-prep) | [Using Sequences](sequences)	| |
 | **Week 3** | **Building Blocks Part 2** |  | |
-| M 9/26 | Iterating Prep	| For Loops 	| |
+| M 9/26 | [Iteration Prep](iteration-prep)	| For Loops 	| |
 | W 9/28 | Conditionals Prep; [HW2](hw2)| Quiz 2; Conditionals	 | HW3 |
 | F 9/30 | Debugging Prep  |	Debugging Strategies and Nested Structures |  |
 | **Week 4** | **Advanced Blocks** | | |
