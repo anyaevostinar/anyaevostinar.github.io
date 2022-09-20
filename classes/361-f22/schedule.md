@@ -19,15 +19,15 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 9/21 | [Cellular Automata Prep](ca-intro-prep)	| [Finding Neighbors](nf-lab)  | [CA project](hw-ca) |
 | F 9/23 | [CA 2 Prep](ca-2-prep)	| [Gradient Lab](gradient-lab)	| |
 | Week 3 | |  | |
-| M 9/26 | None | Working on CA project|  |
-| W 9/28 |	[CA project](hw-ca) | Peer review of CA projects	| |
-| F 9/30 |  |	Artificial Ecologies | AE project |
+| M 9/26 | None | Peer review of CA projects|  |
+| W 9/28 |	[Ecosystem Models Prep](eco-models-prep), [CA project](hw-ca) | Empirical World Intro	| AE project |
+| F 9/30 |  | Empirical Configuration Management	 |  |
 | Week 4 | | | |
 | M 10/3 | | Working on AE project | Encyclopedia assignment |
 | W 10/5 |	AE project |	Peer review of AE projects | |
 | F 10/7 | | Digital Evolution | DE project  |
 | Week 5 | |  | |
-| M 10/10 | | TBD 	|   |
+| M 10/10 | | Empirical Data Output 	|   |
 | W 10/12 |	TBD | |
 | F 10/14 |  DE project | 	Peer review of DE projects	| |
 | Week 6 | |  | |
@@ -39,9 +39,9 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 10/26 |  |	Guest Speaker: [Dr. Alexander Lalejini](https://lalejini.com/)	 | |
 | F 10/28 | Project proposal |	Proposal peer review	| Final project  |
 | Week 8 | |  | |
-| M 10/31 |  | Empirical projects	| |
-| W 11/2 |  | Empirical ConfigManager		 | |	
-| F 11/4 | 	| Empirical DataFiles |	|
+| M 10/31 |  | TBD 	| |
+| W 11/2 |  | TBD		 | |	
+| F 11/4 | 	| TBD |	|
 | Week 9 | |  | |
 | M 11/7 | |	TBD		| |	
 | W 11/9 | |	TBD | |
