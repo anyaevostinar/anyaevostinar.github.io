@@ -21,7 +21,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 3 | |  | |
 | M 9/26 | None | Peer review of CA projects|  |
 | W 9/28 |	[Ecosystem Models Prep](eco-models-prep), [CA project](hw-ca) | Empirical World Intro	| AE project |
-| F 9/30 |  | Empirical Configuration Management	 |  |
+| F 9/30 | [Artificial Ecologies](art-eco-prep) | Empirical Configuration Management	 |  |
 | Week 4 | | | |
 | M 10/3 | | Working on AE project | Encyclopedia assignment |
 | W 10/5 |	AE project |	Peer review of AE projects | |
