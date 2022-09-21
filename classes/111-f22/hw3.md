@@ -1,7 +1,7 @@
 ---
 layout: page
-title: HW2 
-permalink: /classes/111-f22/hw2
+title: HW3 
+permalink: /classes/111-f22/hw3
 ---
 
 ## Logistics
