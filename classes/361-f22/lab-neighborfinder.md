@@ -143,6 +143,13 @@ If along the way, you wish you could see the x,y position of each cell, use Empi
 canvas.CenterText(x+5, y+5, std::to_string(x)+","+std::to_string(y), "black", "black");
 ```
 
+You may also want to use modulus (you can solve the problem with a bunch of nested conditionals, and that's fine, but you can make it more elegant using modulus). [C++ actually does modulus weirdly with negative numbers](https://www.geeksforgeeks.org/modulus-on-negative-numbers/), so you should use Empirical's modulus instead:
+```
+#include "emp/math/math.hpp"
+
+emp::Mod(x, y); //Will do x % y, handling negative numbers as you would expect
+```
+
 ## Wrapping up
 Make sure to push your code to the remote repository both so that I can see how far everyone got and so you and your partner will continue to have access to the code.
 
