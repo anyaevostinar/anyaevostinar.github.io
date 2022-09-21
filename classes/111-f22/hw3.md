@@ -51,49 +51,49 @@ There are all sorts of fascinating questions you could ask about these data. Whe
 
 1. First, take a look at the `bike.py`. Your task in this assignment will be to add some functionality to this program. First, fill in the code that calculates the **duration of each ride in seconds**. The lines
 
-```
-times = duration.split(":")
-hours, minutes, seconds = 0, 0, 0 # YOU FILL THIS IN! 
-durationInSeconds = 0 # YOU FILL THIS IN!
-```
+    ```
+    times = duration.split(":")
+    hours, minutes, seconds = 0, 0, 0 # YOU FILL THIS IN! 
+    durationInSeconds = 0 # YOU FILL THIS IN!
+    ```
 
-are where the calculation is done. Be careful: as written, the data in `times[0]`, `times[1]`, and `times[2]` (which you might want to store as the variables hours/minutes/seconds) are strings rather than integers; you can convert them to integers if you want, but it’s up to you to do so! Modify the calculation to correctly find the duration of this ride in seconds. When you run the program, you should now see the length of the longest ride in the whole dataset.
+    are where the calculation is done. Be careful: as written, the data in `times[0]`, `times[1]`, and `times[2]` (which you might want to store as the variables hours/minutes/seconds) are strings rather than integers; you can convert them to integers if you want, but it’s up to you to do so! Modify the calculation to correctly find the duration of this ride in seconds. When you run the program, you should now see the length of the longest ride in the whole dataset.
 
-(Hint: don’t panic if you see a crazily large number. It is more likely to indicate a mistake made by a Washingtonian bike rider than a mistake made by a Carletonian programmer!)
+    (Hint: don’t panic if you see a crazily large number. It is more likely to indicate a mistake made by a Washingtonian bike rider than a mistake made by a Carletonian programmer!)
 
 2. Let’s figure out the net traffic into/out of the Kennedy Center station. The `netChangeAtKennedy` variable should count how many more bikes arrive at Kennedy Center in the data than leave Kennedy Center. This variable needs to be updated for every ride. Here are the lines that ought to do it:
 
-```
-# YOU FIX THESE CONDITIONS:
-if "this ride left one bike at station ’Kennedy Center’":
-    netChangeAtKennedy = netChangeAtKennedy + 1
-if "this ride took one bike away from station ’Kennedy Center’":
-    netChangeAtKennedy = netChangeAtKennedy - 1
-```
+    ```
+    # YOU FIX THESE CONDITIONS:
+    if "this ride left one bike at station ’Kennedy Center’":
+        netChangeAtKennedy = netChangeAtKennedy + 1
+    if "this ride took one bike away from station ’Kennedy Center’":
+        netChangeAtKennedy = netChangeAtKennedy - 1
+    ```
 
-Modify the conditions of the two if statements so that they correctly update the number of bikes entering/leaving this station. Also correct the “???” in the following lines to be the correct value:
+    Modify the conditions of the two if statements so that they correctly update the number of bikes entering/leaving this station. Also correct the “???” in the following lines to be the correct value:
 
-```
-elif netChangeAtKennedy < 0:
-    print("There are now ??? fewer bikes at Kennedy Center", # FIX THIS!
-"than when we started.")
-```
+    ```
+    elif netChangeAtKennedy < 0:
+        print("There are now ??? fewer bikes at Kennedy Center", # FIX THIS!
+    "than when we started.")
+    ```
 
 3. Note the code from the previous question (computing the net change at the Kennedy Center) with two separate if statements, rather than a single if ... elif statement. Why would this be the best choice? Add a comment to `bike.py` to explain why it’s structured this way.
 
 4. Let’s combine and extend the modifications that you made in the last two questions to find the **duration of the longest ride that departs from the Kennedy Center**. You’ll need to create a second variable analogous to `longestRideDuration`, which will store the length of the longest ride from Kennedy Center that you’ve encountered so far. You’ll need to update that variable at the appropriate times in the program, as we did with `longestRideDuration` — that is, whenever we encounter a ride leaving the Kennedy Center whose duration is longer than all previously encountered rides leaving the Kennedy Center. Finally, you’ll need to update this line:
 
-```
-print("The longest ride that departed from the Kennedy Center lasted ??? seconds or about ??? hours.") # FIX THIS
-```
+    ```
+    print("The longest ride that departed from the Kennedy Center lasted ??? seconds or about ??? hours.") # FIX THIS
+    ```
 
-You should round the number of hours to the nearest integer.
+    You should round the number of hours to the nearest integer.
 
 5. Also add code to compute the *average* length of all docked-bike rides in the dataset, in minutes and fix this line:
 
-```
-print("The mean docked-bike ride lasted X minutes.") # FIX THIS
-```
+    ```
+    print("The mean docked-bike ride lasted X minutes.") # FIX THIS
+    ```
 
 
 ## Writeout
