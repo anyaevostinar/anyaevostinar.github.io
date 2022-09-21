@@ -47,8 +47,8 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 11/9 | |	TBD | |
 | F 11/11 |  | Guest Speaker: [Dr. Acacia Ackles](https://alackles.github.io/)	|	 |
 | Week 10 | | | |
-| M 11/14	| Final project |   | |
-| W 11/16 |  | Wrap up; course evaluations	| |
+| M 11/14	| Guest Speaker: [Matthew Andres Moreno](https://mmore500.com/about/) |   | |
+| W 11/16 |  | Final project; Wrap up; course evaluations	| |
 | Exam Period | | | |
 | TBD| Optional, TBD | | |
 | | | All revisions due at 3pm 11/21. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |

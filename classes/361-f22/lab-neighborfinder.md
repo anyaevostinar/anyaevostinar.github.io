@@ -87,30 +87,30 @@ Even though you haven't defined the `Step` method, it is inherited from the pare
 There are a couple of things that you'll need to define to get your Neighbor-finder animation working. 
 
 1. First you need to create an *instance variable* in your `NFAnimator` class that will be your canvas:
-```
-emp::web::Canvas canvas{100, 100, "canvas"};
-```
+    ```
+    emp::web::Canvas canvas{100, 100, "canvas"};
+    ```
 
-The first two arguments are the width and height and the third argument is the HTML `id` (don't worry if you don't know what that means, we aren't going to need it).
+    The first two arguments are the width and height and the third argument is the HTML `id` (don't worry if you don't know what that means, we aren't going to need it).
 
 2. Next, you need to define a constructor for your class and have your `canvas` placed into your `doc`:
 
-```
-public: 
+    ```
+    public: 
 
-    NFAnimator() {
-        doc << canvas;
-    }
-```
+        NFAnimator() {
+            doc << canvas;
+        }
+    ```
 
-You probably recognize the `<<` from how you send things to standard output and the Empirical `Document` class supports the same syntax. Anytime you want to add things to the webpage that you are making, you will use this syntax.
+    You probably recognize the `<<` from how you send things to standard output and the Empirical `Document` class supports the same syntax. Anytime you want to add things to the webpage that you are making, you will use this syntax.
 
 3. To actually see that something is showing up on your webpage, send a quick message to your `doc` after you send the `canvas`:
-```
-doc << "Hi";
-```
+    ```
+    doc << "Hi";
+    ```
 
-Then run the `compile-run.sh` script in the Terminal and make sure that you see your message showing up on the webpage.
+    Then run the `compile-run.sh` script in the Terminal and make sure that you see your message showing up on the webpage.
 
 ## Exercise 3
 
@@ -118,12 +118,12 @@ Time to make a grid of cells! Or just one cell to start...
 
 1. Empirical makes it easy to draw [your typical shapes](https://empirical.readthedocs.io/en/latest/api/classemp_1_1web_1_1Canvas.html#exhale-class-classemp-1-1web-1-1canvas) on the canvas.
 To draw a rectangle, you just need to call `Canvas`' `Rect` method:
-```
-canvas.Rect(0, 0, 10, 10, "white", "black");
-```
+    ```
+    canvas.Rect(0, 0, 10, 10, "white", "black");
+    ```
 
-The first two arguments are the x and y coordinates for the upper left corner (0,0 in this case), the next two arguments are the width and height of your rectangle (10 x 10 in this case), the next argument is the fill color, and the final argument is the line color. 
-All the typical colors are supported, so feel free to play around making a more colorful rectangle!
+    The first two arguments are the x and y coordinates for the upper left corner (0,0 in this case), the next two arguments are the width and height of your rectangle (10 x 10 in this case), the next argument is the fill color, and the final argument is the line color. 
+    All the typical colors are supported, so feel free to play around making a more colorful rectangle!
 
 2. To get a grid of squares, you'll need some nested for loops and to think about how the upper left corner of each square is going to be positioned. 
 Remember that the syntax for a for loop in C++ is the same as in Java: `for(int x = 0; x < 10; x++) {}`.
@@ -151,7 +151,7 @@ emp::Mod(x, y); //Will do x % y, handling negative numbers as you would expect
 ```
 
 ## Wrapping up
-Make sure to push your code to the remote repository both so that I can see how far everyone got and so you and your partner will continue to have access to the code.
+Make sure to push your code to the remote repository (`git add *`, `git commit -m "message about your code"`, `git push`) both so that I can see how far everyone got and so you and your partner will continue to have access to the code.
 
 ## Extra
 If you finish early, look at the buttons and `DoFrame` method from the starter code for the CA assignment and see if you can incorporate an animation into your current visualization. For example, have the focal cell and each neighbor light up one at a time.
