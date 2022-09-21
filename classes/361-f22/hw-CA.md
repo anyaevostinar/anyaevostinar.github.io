@@ -8,7 +8,7 @@ permalink: /classes/361-f22/hw-ca
 
 This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the syllabus.
 
-This assignment is due on Monday Sept 26th at 10pm. 
+This assignment is due on Wednesday Sept 28th at 10pm. 
 As with all assignments, you will have the opportunity to revise this assignment based on the feedback that you get.
 
 ## Goal
