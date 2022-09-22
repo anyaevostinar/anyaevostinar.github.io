@@ -25,24 +25,6 @@ After you've made a prediction, test out the code.
 2. Update your program so that instead of counting vowels, it asks the user for characters to count in a given string (could be just one, or more than one).
 
 ## Exercise 3
-Let’s write a program that receives a phrase from the user, reverses the order of each word, and then prints the result back out to the screen. 
-The order of the words relative to one another should remain the same, but each word's letters should be reversed, as in the following example:
-```
-Input a phrase: stay warm out there
-yats mraw tuo ereht
-```
-
-As with any program, we should start out by laying out our algorithm, which at a high level might look something like this:
-1. Get phrase from user.
-2. Split phrase into words
-3. For each word in the phrase
-    * Reverse the letters
-    * Combine the letters back together
-    * Print the reversed word
-
-Write a program called `reverse.py` to carry out the above algorithm.
-
-## Exercise 4
 Now that you know how to make lists of strings, you could make a list of colors or stamps that the turtles use to generate rainbows, random combinations, and other fun creations. 
 Create a program that uses 1) the random module, 2) the turtle module, and 3) a list of colors and/or shapes to generate random turtle artwork.
 

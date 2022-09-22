@@ -148,7 +148,7 @@ For example, you might want to use the following steps to produce your output:
 4. Figure out whether you're outputting a hyphen after the tens digit.
 5. Figure out whether you're outputting a ones digit.
 
-Another hint that will make your life easier: take a look at Section 5.3 of Zelle. You will also find code like the following helpful:
+You will also find code like the following helpful:
 ```
 digits = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
 decades = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
