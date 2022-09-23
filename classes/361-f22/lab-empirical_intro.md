@@ -85,7 +85,8 @@ e. Since you need to return something even if you don't make a new offspring, ma
 We have a reproduction method, but don't actually call it yet. For that, we need to go into the `World.h` file and add some things to its `Update()` method.
 
 a. We don't want to give unfair advantage to organisms at the beginning of the list, since if they always get to reproduce first, genotypes could persist in the population even if they aren't actually better, but just because they happen to be first in the list and so get checked for reproduction before everything else. Empirical has a useful function for getting a permutation of a list for this purpose:
-    ```
+
+    ```cpp
     emp::vector<size_t> schedule = emp::GetPermutation(random, GetSize());
     ```
 
@@ -93,7 +94,7 @@ a. We don't want to give unfair advantage to organisms at the beginning of the l
 
 b. Now you can use a for-loop to loop over the schedule:
 
-    ```
+    ```cpp
     emp::vector<size_t> schedule = emp::GetPermutation(random, GetSize());
     for (int i : schedule) {
         //do stuff
@@ -105,7 +106,8 @@ c. Organisms don't have anyway of gaining points yet though. Change the `Process
 d. Instead, create another schedule and loop after your first one to check reproduction after everyone has gotten resources.
 
 e. Remember that if there is an offspring returned, you'll need to add it to the population with the `DoBirth` method. 
-    ```
+
+    ```cpp
     emp::Ptr<Organism> offspring = pop[i]->CheckReproduction(); 
     //this is implemented in Organism
 
@@ -121,7 +123,7 @@ Because Empirical supports cross-compiling from C++ to Javascript, you can visua
 
 1. Create two private instance variables underneath the ones provided for your random number generator and world:
 
-    ```
+    ```cpp
     emp::Random random{5};
     OrgWorld world{random};
     ```
