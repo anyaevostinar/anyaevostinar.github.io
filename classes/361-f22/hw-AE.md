@@ -32,7 +32,6 @@ To demonstrate **proficiency** for this assignment, your submission should:
 
 To demonstrate **mastery** for this assignment, your submission should do everything from the proficiency category, as well as:
 * Have starting settings that result in persistence of at least two species for a reasonable amount of time (obviously we can't test if they will persist forever, but I should be able to run your simulation for a minute or two and still see two species)
-* Have a configuration panel that allows the user to manipulate at least one setting that has an interesting effect on the ecosystem
 * Have text on your webpage explaining what the user is seeing
 
 ## Submitting

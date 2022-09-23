@@ -20,15 +20,15 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 9/23 | [CA 2 Prep](ca-2-prep)	| [Gradient Lab](gradient-lab)	| |
 | Week 3 | |  | |
 | M 9/26 | None | Peer review of CA projects|  |
-| W 9/28 |	[Ecosystem Models Prep](eco-models-prep), [CA project](hw-ca) | Empirical World Intro	| [AE project](hw-ae) |
-| F 9/30 | [Artificial Ecologies](art-eco-prep) | Empirical Configuration Management	 |  |
+| W 9/28 |	[Ecosystem Models Prep](eco-models-prep), [CA project](hw-ca) | [Empirical World Intro](empirical_intro_lab)	| [AE project](hw-ae) |
+| F 9/30 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab	 |  |
 | Week 4 | | | |
 | M 10/3 | | Working on AE project | Encyclopedia assignment |
 | W 10/5 |	AE project |	Peer review of AE projects | |
 | F 10/7 | | Digital Evolution | DE project  |
 | Week 5 | |  | |
-| M 10/10 | | Empirical Data Output 	|   |
-| W 10/12 |	TBD | |
+| M 10/10 | | Empirical Configuration	|   |
+| W 10/12 |	Empirical Data Output | |
 | F 10/14 |  DE project | 	Peer review of DE projects	| |
 | Week 6 | |  | |
 | M 10/17	| |	Mid-term Break!	| |
