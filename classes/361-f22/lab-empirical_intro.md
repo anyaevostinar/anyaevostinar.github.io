@@ -24,22 +24,22 @@ b. Nothing actually prints out currently. Open the file `native.cpp`. This is th
 
 c. The first thing we need to do is create an organism that can be added to the world. Take a look at the `Organism` constructor in `Org.h` to see what arguments it currently takes and create an organism in `native.cpp` and `Inject()` it into the world:
 
-    ```
-    Organism* new_org = new Organism(&random);
-    world.Inject(*new_org);
-    ```
+```cpp
+Organism* new_org = new Organism(&random);
+world.Inject(*new_org);
+```
 
-    You can double check that your organism has made it into the world by printing out the world's size:
+You can double check that your organism has made it into the world by printing out the world's size:
 
-    ```
-    std::cout << world.size()
-    ```
+```cpp
+std::cout << world.size();
+```
 
 d. If you didn't add any more organisms or do anything else, your world would just have space for one organism. To force your world to have room for your population to grow, use the `Resize()` method:
 
-    ```
-    world.Resize(10, 10);
-    ```
+```cpp
+world.Resize(10, 10);
+```
 
 e. Verify that you have a population of one living organism in your world by printing out the result of `world.GetNumOrgs()`. Compile and run your code using the same commands from (a).
 
@@ -69,11 +69,12 @@ Because your `Process()` method in `Organism` doesn't do any reproduction, your 
 a. In your `Organism` class, add a method `CheckReproduction()` that returns an `emp::Ptr<Organism>`. It needs to be a pointer because sometimes we won't return anything and we can't return an empty reference, but we can return a null pointer. The Empirical pointer is nearly identical to the standard pointer, but has some additional debugging functionality.
 
 b. In asynchronous reproduction models, instead of having a fitness function that determines which organisms reproduce every generation, we have resources or points that organisms accumulate and once they have enough, they reproduce. Include a check for if your organism has 1,000 points and if they do, create a new `Organism` like this:
-    ```
-    emp::Ptr<Organism> offspring = new Organism(*this);
-    ```
 
-    This is using a copy constructor, which is provided by default in C++. It takes all the instance variables set for the current Organism and sets them the same for the new Organism.
+```cpp
+emp::Ptr<Organism> offspring = new Organism(*this);
+```
+
+This is using a copy constructor, which is provided by default in C++. It takes all the instance variables set for the current Organism and sets them the same for the new Organism.
 
 c. The copy constructor is very useful for keeping everything about the parent the same as the offspring, however it also copies the value for `points` which means that the offspring gets free resources! Change the offspring's points back to 0 as it should be.
 
@@ -86,20 +87,20 @@ We have a reproduction method, but don't actually call it yet. For that, we need
 
 a. We don't want to give unfair advantage to organisms at the beginning of the list, since if they always get to reproduce first, genotypes could persist in the population even if they aren't actually better, but just because they happen to be first in the list and so get checked for reproduction before everything else. Empirical has a useful function for getting a permutation of a list for this purpose:
 
-    ```cpp
-    emp::vector<size_t> schedule = emp::GetPermutation(random, GetSize());
-    ```
+```cpp
+emp::vector<size_t> schedule = emp::GetPermutation(random, GetSize());
+```
 
-    `size_t` is a special type in C++ that stands for "size type" and is appropriate for integers that will always be positive, like sizes and positions in a list.
+`size_t` is a special type in C++ that stands for "size type" and is appropriate for integers that will always be positive, like sizes and positions in a list.
 
 b. Now you can use a for-loop to loop over the schedule:
 
-    ```cpp
-    emp::vector<size_t> schedule = emp::GetPermutation(random, GetSize());
-    for (int i : schedule) {
-        //do stuff
-    }
-    ```
+```cpp
+emp::vector<size_t> schedule = emp::GetPermutation(random, GetSize());
+for (int i : schedule) {
+    //do stuff
+}
+```
 
 c. Organisms don't have anyway of gaining points yet though. Change the `Process` method so that it takes an argument `points` and adds those points to what the organism has already. Give them 100 points per update for now. We could call the `CheckReproduction` method right away as well, but this could lead to similar problems mentioned before where some organisms are lucky and get resources and the chance to reproduce right away.
 
@@ -107,14 +108,14 @@ d. Instead, create another schedule and loop after your first one to check repro
 
 e. Remember that if there is an offspring returned, you'll need to add it to the population with the `DoBirth` method. 
 
-    ```cpp
-    emp::Ptr<Organism> offspring = pop[i]->CheckReproduction(); 
-    //this is implemented in Organism
+```cpp
+emp::Ptr<Organism> offspring = pop[i]->CheckReproduction(); 
+//this is implemented in Organism
 
-    if(offspring) {
-        DoBirth(*offspring, i);  //i is the parent's position in the world
-    }
-    ```
+if(offspring) {
+    DoBirth(*offspring, i);  //i is the parent's position in the world
+}
+```
 
 This is a good time to recompile and run to see your population size increase.
 
