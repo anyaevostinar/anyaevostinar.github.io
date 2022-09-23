@@ -27,6 +27,7 @@ What would we expect each of the following statements to print out? Discuss each
   print(not ((a > b) or (c > b)))
   print(a in [1, 2, 3, 4])
   print(a == b and 1/0 == 1)
+  print(a != 0 and 1/a)
   print(1 or 0)
   if True or '': print('it prints!')
 ```
