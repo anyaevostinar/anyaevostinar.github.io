@@ -23,7 +23,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 3** | **Building Blocks Part 2** |  | |
 | M 9/26 | [Iteration Prep](iteration-prep)	| [Iteration Lab](iteration-lab)	| |
 | W 9/28 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Quiz 2](quiz2); [Conditionals Lab](conditionals-lab)	 | [HW3](hw3) |
-| F 9/30 | [Debugging Prep](debugging-nested-prep)  |	Debugging Strategies and Nested Structures |  |
+| F 9/30 | [Debugging Prep](debugging-nested-prep)  |	[Debugging Strategies and Nested Structures](lab-nested) |  |
 | **Week 4** | **Advanced Blocks** | | |
 | M 10/3 | Lists Prep | Working with Lists	| |
 | W 10/5 | Files Prep; HW3	| Quiz 3; Working with Files	| HW4 |
