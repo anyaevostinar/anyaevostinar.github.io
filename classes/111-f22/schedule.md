@@ -26,7 +26,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 9/30 | [Debugging Prep](debugging-nested-prep)  |	[Debugging Strategies and Nested Structures](lab-nested) |  |
 | **Week 4** | **Advanced Blocks** | | |
 | M 10/3 | [Mutating Lists Prep](mutating-lists-prep) | Working with Lists	| |
-| W 10/5 | Files Prep; HW3	| Quiz 3; Working with Files	| HW4 |
+| W 10/5 | [Files Prep](files-prep); HW3	| Quiz 3; Working with Files	| HW4 |
 | F 10/7 | Dictionaries Prep |	Using Dictionaries	| |
 | **Week 5** | **Functions** |  | |
 | M 10/10 | Functions Prep 1 | Function Basics	 | |
