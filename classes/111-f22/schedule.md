@@ -27,7 +27,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 4** | **Advanced Blocks** | | |
 | M 10/3 | [Mutating Lists Prep](mutating-lists-prep) | Working with Lists	| |
 | W 10/5 | [Files Prep](files-prep); HW3	| Quiz 3; Working with Files	| HW4 |
-| F 10/7 | Dictionaries Prep |	Using Dictionaries	| |
+| F 10/7 | [Dictionaries Prep](dictionaries-prep) |	Using Dictionaries	| |
 | **Week 5** | **Functions** |  | |
 | M 10/10 | Functions Prep 1 | Function Basics	 | |
 | W 10/12 |	 Functions Prep 2; HW4	| Quiz 4; Return of the Functions	| HW5 |
