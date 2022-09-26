@@ -25,7 +25,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 9/28 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Quiz 2](quiz2); [Conditionals Lab](conditionals-lab)	 | [HW3](hw3) |
 | F 9/30 | [Debugging Prep](debugging-nested-prep)  |	[Debugging Strategies and Nested Structures](lab-nested) |  |
 | **Week 4** | **Advanced Blocks** | | |
-| M 10/3 | Lists Prep | Working with Lists	| |
+| M 10/3 | [Mutating Lists Prep](mutating-lists-prep) | Working with Lists	| |
 | W 10/5 | Files Prep; HW3	| Quiz 3; Working with Files	| HW4 |
 | F 10/7 | Dictionaries Prep |	Using Dictionaries	| |
 | **Week 5** | **Functions** |  | |

@@ -54,7 +54,7 @@ Here are the assumptions:
 
 * A single solar panel takes up 17.5 ft<sup>2</sup> of roof. You cannot cut solar panels in half, so the number of solar panels that you can fit on a roof that’s, say, 100 ft<sup>2</sup> is 100/17.5 = 5.71... *rounded down*, otherwise known as 5 panels. We’ll assume that the shape of the roof is such that it’s possible to tile the usable part completely with solar panels, without any wasted space.
 
-* A single solar panel is rated for 265 watts. In Minnesota, you can expect to generate 1.248 kilowatt-hours per year for each watt of your system, and electricity costs about $0.12 per kilowatt-hour. The dollar amount should be always printed with exactly two digits after the decimal place. (So it’s “$1.00” and not “$1.0”, for example.)
+* A single solar panel is rated for 265 watts. In Minnesota, you can expect to generate 1.248 kilowatt-hours per year for each watt of your system, and electricity costs about $0.12 per kilowatt-hour. The dollar amount should be always printed with exactly two digits after the decimal place. (So it’s “$1.00” and not “$1.0”, for example.) See [section 9.9 of your textbook](https://runestone.academy/ns/books/published/intro-cs/TransformingSequences/NonmutatingMethodsonStrings.html) for a useful method for accomplishing the dollar amount.
 
 Fill in `solar.py` with a program that performs as specified here.
 
