@@ -8,7 +8,7 @@ permalink: /classes/361-f22/encyclopedia-hw
 This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the syllabus.
 
 This assignment has several intermediate due dates. The first is the topic choice, which is due October 12th at 10pm.
-See the full list of dates below.
+See the [full list of dates below](#due-dates).
 As with all assignments, you will have the opportunity to revise this assignment based on the feedback that you get.
 
 ## Goal
@@ -35,12 +35,14 @@ All of the existing pages also could have more detail and sections added, so if 
 
 You won't be allowed to write on the identical topic as someone else in the class, though it is fine to write different sections on a related topic. 
 Fill out the form on Moodle to claim your topic; they will be first come first serve, so doing this sooner than later is a good idea. 
-There is a running list of already claimed topics at the end of the page.
+There is a running [list of already claimed topics](#claimed-topics) at the end of the page.
 
 ### References
 You will need to include at least two references to outside sources in your text. 
 These can be to scientific articles, software, books, or other resources. 
 You can use any citation format in your assignment; if you end up submitting your text to the encyclopedia, they have a [particular format](https://alife.org/encyclopedia/about/how-to-contribute-to-the-alife-encyclopedia/) that you'll need to switch to later.
+
+There is a [list of resources below](#resources) of places to look for references.
 
 ### Tone
 You should consult other articles on the encyclopedia for reference on the tone to use in this text.
@@ -54,6 +56,7 @@ Please do the following to submit your text for each draft:
 * Copy that link and submit it to the assignment on Moodle
 
 ## Due Dates
+
 | Item | Due Date |
 |------|----------|
 | Topic and two references | 10/12 |
@@ -86,3 +89,19 @@ These are topics that others are already approved to do, so you should make sure
 If you want to do something related to one of these, feel free to talk to me about how you can make sure that your topic is different enough.
 
 * None
+
+## Resources
+The following are potential references/places to look for references:
+
+* Artificial Life Journal [older issues through Carleton Library](https://browzine.com/libraries/319/journals/32148/issues/479445374), [newer issues](https://direct.mit.edu/artl), if you can't access any of the newer articles and would like them, let me know
+* [ALIFE Conference Proceedings](https://direct.mit.edu/isal/volumes/browse-by-conference) 
+* [ALife Newsletter](https://alife.org/category/newsletter/)
+* [ALifePapers Twitter feed](https://twitter.com/AlifePapers)
+* [Biological Bits](https://users.monash.edu/~aland/BiologicalBits.html) - this is a very short free textbook; if you have Apple devices, you can get the iBook free, otherwise the PDF is linked on the page as well through ResearchGate.
+* [Rise of the Self-Replicators](https://www.tim-taylor.com/selfrepbook/) - history of self-replicators through literature and science
+* Complexity by Melanie Mitchell
+* [Dave Ackley's Artificial Life playlist](https://www.youtube.com/playlist?list=PLm5k2NUmpIP-j5oOSEljDo3evg-wBIrMM)
+* [ALIFE 2020 Conference Presentations](https://www.youtube.com/channel/UCu8L5ITvjH58rtmq8L7L_Tg)
+* [ISAL Summer School 2021 Playlist](https://www.youtube.com/playlist?list=PLdq5pX0lUTK0PS5yM4Aqwki-Tl1wwepui)
+* Articles listed in [Avida Encyclopedia entry](https://alife.org/encyclopedia/digital-evolution/avida/)
+* Articles listed in [Aevol Encyclopedia entry](https://alife.org/encyclopedia/software-platforms/aevol/)
