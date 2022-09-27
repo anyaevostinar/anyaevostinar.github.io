@@ -8,7 +8,7 @@ permalink: /classes/361-f22/empirical_intro_lab
 To use Empirical to create a simple artificial ecology simulation.
 
 ## Setup
-Open the Empirical World Lab assignment on Moodle to get the Git repository template.
+Open the Empirical World Lab assignment on Moodle to get the Git repository template. You'll need to do the [usual setup](gradient-lab) of the submodules and emscripten.
 
 Also open [this reference document](/classes/361-w21/empirical_intro) and the [evolutionary algorithm lab](evo_alg_lab) to reference the methods that will be useful.
 
@@ -160,7 +160,7 @@ Because Empirical supports cross-compiling from C++ to Javascript, you can visua
 7. Remember to `git add *`, `git commit -m "message"` and `git push` so your code is saved since you'll probably want it for the assignment!
 
 ## Extensions
-If you have extra time, try adding to your organism's `Process` method so that it actually does something based on your instance variable genome. Ideas include:
+If you have extra time, try adding mutation to your organism's reproduction or adding to your organism's `Process` method so that it actually does something based on your instance variable genome. Ideas include:
 * Donate resources to another organism
 * Spend resources to steal from another organism
 * Spend resources to build defense from the environment or other organisms

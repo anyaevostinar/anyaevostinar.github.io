@@ -23,9 +23,9 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 9/28 |	[Ecosystem Models Prep](eco-models-prep), [CA project](hw-ca) | [Empirical World Intro](empirical_intro_lab)	| [AE project](hw-ae) |
 | F 9/30 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab	 |  |
 | Week 4 | | | |
-| M 10/3 | | Working on AE project | Encyclopedia assignment |
-| W 10/5 |	AE project |	Peer review of AE projects | |
-| F 10/7 | | Digital Evolution | DE project  |
+| M 10/3 |  | Peer review of AE projects | Encyclopedia assignment |
+| W 10/5 |	[AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) |	Digital Evolution | DE project  |
+| F 10/7 | | TBD | |
 | Week 5 | |  | |
 | M 10/10 | | Empirical Configuration	|   |
 | W 10/12 |	Empirical Data Output | |

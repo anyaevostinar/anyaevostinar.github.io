@@ -26,7 +26,7 @@ This is purposefully open-ended, so that you can make a system that is of intere
 To demonstrate **proficiency** for this assignment, your submission should:
 
 * Run and display an artificial ecosystem with at least two species of organisms when the `compile-run.sh` script is run, using the web-browser and Empirical library
-* Handle the toroidal spatial structure correctly (i.e. organisms don't get caught on edges)
+* Handle the toroidal spatial structure correctly (i.e. organisms don't get caught on edges and move from location to location reasonably)
 * Have well-documented and styled code
 * Specify in a file `README.md` what your two species of organisms are and how they interact with each other
 
