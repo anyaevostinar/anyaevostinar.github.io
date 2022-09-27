@@ -25,9 +25,9 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 4 | | | |
 | M 10/3 |  | Peer review of AE projects | Encyclopedia assignment |
 | W 10/5 |	[AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) |	Digital Evolution | DE project  |
-| F 10/7 | | TBD | |
+| F 10/7 | [Configuration Preparation](config_intro)| Using Empirical Configuration | |
 | Week 5 | |  | |
-| M 10/10 | | Empirical Configuration	|   |
+| M 10/10 | | TBD	|   |
 | W 10/12 |	Empirical Data Output | |
 | F 10/14 |  DE project | 	Peer review of DE projects	| |
 | Week 6 | |  | |
