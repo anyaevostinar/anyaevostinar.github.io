@@ -4,10 +4,6 @@ title: Classes
 permalink: /Classes/
 ---
 
-### Summer 2022
-
-[Summer Research](/classes/summer-22/schedule)
-
 ### Fall 2022
 
 CS 111: Introduction to Computer Science ([Syllabus](/classes/111-f22/syllabus), [Schedule](/classes/111-f22/schedule))
@@ -20,6 +16,10 @@ Subject to change!
 TBD
 
 ## Previous Classes
+
+### Summer 2022
+
+[Summer Research](/classes/summer-22/schedule)
 
 ### Spring 2022
 
