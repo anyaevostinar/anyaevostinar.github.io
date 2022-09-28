@@ -159,6 +159,46 @@ Because Empirical supports cross-compiling from C++ to Javascript, you can visua
 
 7. Remember to `git add *`, `git commit -m "message"` and `git push` so your code is saved since you'll probably want it for the assignment!
 
+## Exercise 6
+Organisms just sitting around isn't the most exciting, so how do you get them to move?
+It's unfortunately a little bit awkward because Empirical doesn't have the exact built-in functions that we need.
+
+1. First, you'll need to make a new method in your `World` subclass that removes an organism from the population and returns it. I recommend calling it `ExtractOrganism`. You already know how to get an organism at a particular position in the world, and 'removing' it from the population just involves setting its spot to null:
+
+    ```
+    pop[i] = nullptr;
+    ```
+
+    Then you just need to return the organism that you grabbed.
+
+2. Once you've extracted an organism that you want to move, you need to decide where you want to put it. Assuming that you want to place it in a neighboring location to it according to your grid world structure, you can use `World`'s `GetRandomNeighborPos(i)` which takes the organism's current index location and returns an `emp::WorldPosition` that can be treated as an index location (it's not quite just a number, but you can pass it around like it is).
+
+3. Now you need to put your organism back into the world at the location that you've chosen. You can use `World`'s `AddOrgAt` method to place it at a particular location:
+
+    ```
+    AddOrgAt(Organism, position);
+    ```
+
+    You'll need to decide if you let an organism move into a space that is already occupied!
+
+4. To test your movement, I recommend preventing reproduction and having just one organism so you can watch them scoot around the grid!
+
+## Exercise 7
+For your assignment, you're going to need more than one species. Empirical's `World` can only hold one type, so you have to get a little bit creative to have multiple species and there are two main ways of going about it: an instance variable in `Organism` and subclasses.
+
+1. The instance variable approach is simpler but less elegant, so let's do that first. Create an instance variable `int species` in `Organism` along with a `GetSpecies` method and set the species in the constructor. Make sure your species is set correctly during reproduction too!
+
+2. Update your `.cpp` files so that they make one of each species to start.
+
+3. Update your `web.cpp` so that it draws a different color rectangle based on the species of the organism and make sure that you are seeing your two species. 
+
+4. Species aren't interesting if they don't do something different, so make a conditional statement in `Process` and/or `CheckReproduction` so that something is different based on the species. Maybe one of your species doesn't get all the points each update or takes more points to reproduce.
+
+5. Make sure that you are seeing the difference between your species' behavior in the web GUI.
+
+## Exercise 8
+Having to use conditionals to check on the species all over the place is very inelegant and this is a perfect situation for inheritance! Create two subclasses (probably in their own files) that inherit from `Organism` and move your different behaviors into those files. You'll need to think about what can be shared in the superclass and what needs to be defined in the subclasses. You'll also need to update your `.cpp` files so that they create the correct types of organisms. 
+
 ## Extensions
 If you have extra time, try adding mutation to your organism's reproduction or adding to your organism's `Process` method so that it actually does something based on your instance variable genome. Ideas include:
 * Donate resources to another organism
