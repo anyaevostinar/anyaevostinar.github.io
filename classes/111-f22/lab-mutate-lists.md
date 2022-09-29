@@ -22,12 +22,12 @@ Imagine that I’ve developed an algorithm that scores each of the Pokemon on my
 for how well they will do against an opponent, and I’ve compiled those scores in a nested list, for
 example:
 
-    ```python
-    my_team = [["Bulbasaur", 32], ["Chimchar", 45], ["Pidgey", 36],
-    ["Articuno", 57], ["Drifloon", 20], ["Pikachu", 18]]
-    ```
+```python
+my_team = [["Bulbasaur", 32], ["Chimchar", 45], ["Pidgey", 36],
+["Articuno", 57], ["Drifloon", 20], ["Pikachu", 18]]
+```
 
-    Write Python code that will determine from such a list which Pokemon I should choose for a
+Write Python code that will determine from such a list which Pokemon I should choose for a
 round and print out its name. The Pokemon that should be chosen is the one with the highest
 score. Note that your program should work for any list in this format, not just this example list;
 in particular, the list can include more or less than 6 Pokemon, though you can assume that it is
@@ -36,13 +36,13 @@ stored in the variable `my_team`. For the example, your program should print out
 ## Exercise 3
 Imagine you have a list `example = [1, 2, 3, 4]`. Write a program that rotates the items of that list to the left by one position and then prints `example`:
 
-    ```python
-    example = [1, 2, 3, 4]
-    
-    #your code here
+```python
+example = [1, 2, 3, 4]
 
-    print(example) #should print [2, 3, 4, 1]
-    ```
+#your code here
+
+print(example) #should print [2, 3, 4, 1]
+```
 
 ## Exercise 4
 Many of the functions for lists aren't actually needed since you can implement them yourself, though they are convenient.
