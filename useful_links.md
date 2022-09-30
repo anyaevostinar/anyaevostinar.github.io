@@ -23,6 +23,8 @@ These are links that I think are useful for myself and possibly others.
 
 [Early Career Reviewer Database](https://sites.google.com/view/ecrdatabase/home)
 
+[Grading for Growth Substack](https://gradingforgrowth.com/) - if you're curious about alternative approaches to grading that emphasize feedback and student growth, this is a great resource
+
 ## Books
 
 Range: Why Generalists Triumph in a Specialized World by David Epstein 

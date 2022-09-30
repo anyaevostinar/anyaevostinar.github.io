@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>First Evolutionary Algorithm | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="First Evolutionary Algorithm" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-f22/evo_alg_lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-f22/evo_alg_lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="First Evolutionary Algorithm" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"First Evolutionary Algorithm","url":"http://localhost:4000/classes/361-f22/evo_alg_lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">First Evolutionary Algorithm</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To learn about evolutionary algorithms by making your own. Also to get more C++ practice and test out GitHub Classroom.</p>
+
+<h2 id="setup">Setup</h2>
+<ol>
+  <li>
+    <p>Open the Evolutionary Algorithm classroom assignment (linked on Moodle), which will make a GitHub repository with starter code.</p>
+  </li>
+  <li>Open Terminal and clone your repository (if neither of you is sure how to do this, wave for help):
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;your repository link&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Open VSCode and then open your repository folder.</p>
+  </li>
+  <li>Open a Terminal in VSCode and type <code class="language-plaintext highlighter-rouge">chmod +x main.sh</code> then <code class="language-plaintext highlighter-rouge">./main.sh</code>. You shouldn’t see anything (your program compiled and ran, but doesn’t do anything interesting). If you got errors about files not found, type the following: <code class="language-plaintext highlighter-rouge">git submodule update --init --recursive</code> which should download the files you were missing. Then try running <code class="language-plaintext highlighter-rouge">main.sh</code> again. If you are still getting errors, wave for help.</li>
+</ol>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Recall that the necessary pieces for evolution by natural selection to occur are:</p>
+<ul>
+  <li>Variation</li>
+  <li>Inheritance</li>
+  <li>Competition</li>
+  <li>Time</li>
+</ul>
+
+<p>Today you’ll make a super simple instance of evolution of creatures that simply have a number and the higher the number, the better they are able to survive. This is obviously not a very interesting problem, but you will be able to imagine how you could change this to a more interesting behavior in the future.</p>
+
+<p>a. First you’ll need an <code class="language-plaintext highlighter-rouge">Organism</code> class that has an instance variable <code class="language-plaintext highlighter-rouge">double behavior</code> and a constructor that takes a <code class="language-plaintext highlighter-rouge">double</code> and sets the instance variable.</p>
+
+<p>Remember that in C++, you specify public/private like this:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Organism</span> <span class="p">{</span>
+  <span class="nl">public:</span>
+    <span class="p">...</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>b. As you learned, evolution doesn’t occur at the level of the individual, and so we’ll need a way to hold a population of organisms. While C++ has a built-in vector that is similar to the lists and ArrayLists you’ve seen before, we’ll use an enhanced version from the Empirical library (you’ll learn more about Empirical in the future).</p>
+
+<p>In <code class="language-plaintext highlighter-rouge">main</code>, create an <code class="language-plaintext highlighter-rouge">emp::vector&lt;Organism&gt;</code> called population.</p>
+
+<p>c. Then fill your population with 100 <code class="language-plaintext highlighter-rouge">Organism</code>s with all the same starting behavior value. You add an item to a vector like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>population.push_back(*new Organism(0.5));
+</code></pre></div></div>
+
+<p>(Note that you could have a vector of <code class="language-plaintext highlighter-rouge">Organism*</code> instead if you wanted and we will in the future, just trying to keep things simple for now.)</p>
+
+<p>d. Print out the behavior of an organism in your population to see that everything is working. Make sure your code compiles and runs. You may see some warnings which you can ignore for now.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Evolution requires inheritance to occur, so we’ll need a way for organisms to reproduce and pass on their behavior value.</p>
+
+<p>a. Create a <code class="language-plaintext highlighter-rouge">reproduce</code> function in your <code class="language-plaintext highlighter-rouge">Organism</code> class that returns a pointer to an <code class="language-plaintext highlighter-rouge">Organism</code> and takes no arguments currently.</p>
+
+<p>b. In that function, create a new organism with the same behavior value as the parent and return it.</p>
+
+<p>c. Verify that your reproduction function works by calling it on an Organism in your population in <code class="language-plaintext highlighter-rouge">main</code> and printing the parent and offspring’s addresses and behaviors. Compile and run your code at this point.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>We also need competition and time for our organisms.</p>
+
+<p>a. In <code class="language-plaintext highlighter-rouge">main</code> create a for-loop that loops 100 times, which we’ll call ‘updates’. In more complicated programs, organisms would do some behavior every update, but currently they don’t actually do anything.</p>
+
+<p>b. To create competition, we need to compare the organisms’ behavior values and find the best. You can loop through Empirical vectors easily like so:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for(Organism j : population) {
+  ...
+}
+</code></pre></div></div>
+
+<p>Loop through every organism in the population and find the organism with the maximum behavior. You’ll want to start by declaring a variable to hold the organism with the current maximum that you can then compare to in the loop.</p>
+
+<p>c. Once you find the organism with the maximum behavior value, call its reproduce method and save that new organism.</p>
+
+<p>d. We don’t want to just add the offspring to the end of the vector since then the population would just grow and there wouldn’t actually be competition. For evolution to occur, organisms must die. You could go through again and find the minimum behavior value organism, but the first organism in the population will be fine for the moment:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>population[0] = *new_org; //or whatever you named your new organism
+</code></pre></div></div>
+
+<p>e. Print out the size of your population using the <code class="language-plaintext highlighter-rouge">.size()</code> method after running your updates to see that it stays the same. Compile and run your code at this point.</p>
+
+<h2 id="exercise-3-1">Exercise 3</h2>
+<p>If we left things there, we couldn’t get evolution because all your organisms are the same and reproducing clones. To introduce variation, we need to be able to mutate the organisms. (We’ll be focusing on a single organism reproducing ‘asexually’ for the most part in this class to keep things simple.)</p>
+
+<p>a. To mutate organisms, you’ll need access to randomness. C++ has built-in randomness of course, but Empirical provides useful tools for this as well. In <code class="language-plaintext highlighter-rouge">main</code>, create a random number generator like so:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::Random random(1); //create an object of type emp::Random called random
+//and pass 1 as an argument to its constructor
+//this is c++ shorthand for emp::Random random = *new emp::Random(1);
+</code></pre></div></div>
+
+<p>b. Now create a function in your <code class="language-plaintext highlighter-rouge">Organism</code> class called <code class="language-plaintext highlighter-rouge">mutate</code> that doesn’t return anything but receives an <code class="language-plaintext highlighter-rouge">emp::Random</code> as input.</p>
+
+<p>c. There are a whole lot of ways of mutating organisms and whole dissertations have been devoted to what the ‘best’ way is. A generally good way to mutate a value that is of type double is to pull a random number from a <a href="https://en.wikipedia.org/wiki/Normal_distribution">normal distribution/bell curve</a> that is centered at 0. This means that you are just as likely to mutate up as down and mutations will generally be small but have the chance at being large, which is fairly biologically accurate.</p>
+
+<p>This is such a common task that Empirical provides a function for it:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>random.GetRandNormal(0.0, 0.002); //pull a random number from a normal
+//distribution with a mean of 0 and a standard deviation of 0.002.
+</code></pre></div></div>
+<p>Add the random number you get to the organism’s <code class="language-plaintext highlighter-rouge">behavior</code> value.</p>
+
+<p>d. We probably want to use our new-found power in several places. The most critical is in <code class="language-plaintext highlighter-rouge">reproduce</code>. Add an argument to <code class="language-plaintext highlighter-rouge">reproduce</code> that is of type <code class="language-plaintext highlighter-rouge">emp::Random</code> and pass the <code class="language-plaintext highlighter-rouge">random</code> that you made in <code class="language-plaintext highlighter-rouge">main</code> to <code class="language-plaintext highlighter-rouge">reproduce</code> when you call it.</p>
+
+<p>e. Within reproduce, mutate the offspring after you create it and before returning it. Remember that in C++, you use the <code class="language-plaintext highlighter-rouge">-&gt;</code> syntax to call the functions of pointers:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>offspring-&gt;mutate(random);
+</code></pre></div></div>
+
+<p>e. Outside of your for-loop in <code class="language-plaintext highlighter-rouge">main</code>, again trace through your population to find the organism with the maximum behavior value and print it out. Compile and run your code to see what max you reach. It probably won’t be very high since we don’t have a whole lot of variation being introduced and are only running for 100 updates. Increase the number of updates to 10,000 and see what you get.</p>
+
+<p>Congrats, you have made your first functional evolutionary algorithm!</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>It is really not ideal to always be only overwriting the first organism in the population, so let’s fix that really quick.</p>
+
+<p>Empirical has a function for getting a random unsigned (ie always positive) integer:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int overwrite = random.GetUInt(0,100);
+population[overwrite] = *new_org;
+</code></pre></div></div>
+
+<p>Make sure to add, commit, and push your code so it’s saved in your repository, you’ll want to refer to it in the future! (If you aren’t sure how to do this, please ask or check out <a href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/">this guide to Git commands</a>.)</p>
+
+<h2 id="checking-your-work">Checking Your Work</h2>
+<p>Feel free to compare your solution to <a href="/classes/361-f22/evo-alg-solution.cpp">mine</a> to see how similar they are (my solution is quickly written, and so missing important things like documentation and nice spacing!).</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you have extra time, there are lots of improvements that could be made to this small project, including:</p>
+<ul>
+  <li>You can use your mutate function to mutate the organisms you start your population with to speed up evolution</li>
+  <li>Try switching the ‘fitness’ determination to something more interesting like the solution to a math problem</li>
+  <li>Try switching the whole problem to something more interesting like a string of 1’s and 0’s and the organisms have to get some specific pattern that you choose.</li>
+</ul>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

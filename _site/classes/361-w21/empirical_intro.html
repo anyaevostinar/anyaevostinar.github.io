@@ -87,7 +87,7 @@ This class is a container that holds a class that you will specify for how you w
 </code></pre></div></div>
 
 <h2 id="update">Update</h2>
-<p><code class="language-plaintext highlighter-rouge">World</code> also provides an <code class="language-plaintext highlighter-rouge">Update()</code> method that goes through each organism in the world and calls its <code class="language-plaintext highlighter-rouge">Process()</code> method. We’ll want to do other things in <code class="language-plaintext highlighter-rouge">Update()</code> as well, so you can call the super class method in your own method:</p>
+<p><code class="language-plaintext highlighter-rouge">World</code> also provides an <code class="language-plaintext highlighter-rouge">Update()</code> method that does various housekeeping tasks. We’ll want to do other things in <code class="language-plaintext highlighter-rouge">Update()</code> as well, so you can call the super class method in your own method:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void Update() {
     emp::World&lt;Organism&gt;::Update();
@@ -100,7 +100,7 @@ This class is a container that holds a class that you will specify for how you w
 
 <h2 id="dobirth">DoBirth</h2>
 <p><code class="language-plaintext highlighter-rouge">DoBirth</code> is a useful method of <code class="language-plaintext highlighter-rouge">World</code> that places an offspring into the population based on the rules of spatial structure in the world. Two main types of spatial structure are grid and mixed. Grid is where the organisms are placed on a 2D grid of size that you specify and are considered neighbors with the organisms one grid space away from them. Mixed is where organisms are all considered neighbors of each other like they are constantly being mixed around in liquid. The spatial structure can be considered for many things, but one of the first you’ll encounter is where offspring are allowed to be placed. In a grid, offspring are only placed immediately adjacent to the parent, whereas in mixed, offspring can be placed anywhere. <code class="language-plaintext highlighter-rouge">DoBirth</code> takes care of all of that for you, you just have to give it the offspring and the location of the parent:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::Ptr&lt;Organism&gt; offspring = pop[i]-&gt;checkReproduction(); 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::Ptr&lt;Organism&gt; offspring = pop[i]-&gt;CheckReproduction(); 
 //this is implemented in Organism
 
 if(offspring) {

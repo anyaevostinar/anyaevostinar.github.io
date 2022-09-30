@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW3 | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-f22/hw3" />
+<meta property="og:url" content="http://localhost:4000/classes/111-f22/hw3" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW3" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW3","url":"http://localhost:4000/classes/111-f22/hw3"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW3</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>This is a paired assignment, so you should complete it with your assigned partner (same one as from HW2), if you have one, via <strong>paired programming</strong>. 
+The whole time that you are working, you should both be present and actively working on the problem at hand. 
+(Two brains, one keyboard.) 
+Switch off the typing duties so that you each type for roughly half of the time.</p>
+
+<p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
+
+<p>This assignment is due on Wednesday Oct 5th at 10pm. 
+As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>Demonstrate your understanding of conditionals and iteration to solve problems and write well-structured code.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Again, I recommend you complete the programming portion in Olin 310.</p>
+
+<p><a href="https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&amp;title=CS+111+and+201+workflow+in+CS+labs">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW3</code></li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW3</code> folder in VSCode</li>
+  <li>Create a file <code class="language-plaintext highlighter-rouge">writeout.py</code></li>
+  <li>Download the two starter files from Moodle (<code class="language-plaintext highlighter-rouge">bike.py</code> and the CSV file) and put them into your folder</li>
+</ul>
+
+<h2 id="bikes">Bikes</h2>
+<p>An increasing number of cities in the United States have begun to offer bikeshare programs: there are a number of stations scattered across the city, with kiosks, pay stations, and locked bikes. People can rent a bike for a short period of time, picking up at any one of the stations and dropping off at the same station or any other station. There’s Nice Ride in Minneapolis/St. Paul, Citi Bike in New York, among many others. Here we’ll play around with a bit of data from Capital Bikeshare, in Washington DC. You will have access to a file reporting all rides from Capital Bikeshare in August 2021. (The original data came from https://www.capitalbikeshare.com/system-data; there are a few formatting modifications to make your lives easier.) A typical line of the file is of the form</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0:23:9,2021-08-14 10:25:18,6th &amp; K St NE,31645,2021-08-14 10:48:27,14th &amp; V St NW,31101,classic_bike,casual
+</code></pre></div></div>
+
+<p>Each line corresponds to one ride, and it reports several facts about the ride:</p>
+<ul>
+  <li>ride duration (0:23:9 means 0 hours, 23 minutes, 9 seconds).</li>
+  <li>start time (2021-08-14 10:25:18)</li>
+  <li>start station (6th &amp; K St NE)</li>
+  <li>start terminal ID number (31645)</li>
+  <li>destination time (2021-08-14 10:48:27)</li>
+  <li>destination station (14th &amp; V St NW)</li>
+  <li>destination terminal ID number (31101)</li>
+  <li>the type of the bike used (electric_bike or docked_bike or classic_bike)</li>
+  <li>casual or member indicating whether the rider is a member of the bikeshare system.</li>
+</ul>
+
+<p>There are all sorts of fascinating questions you could ask about these data. Where should the next station be built? How should bikes be reallocated among stations during the day (a.k.a. are there places that are more popular destinations than departure points late at night, and the other way around during the day)? How should rides be priced? These questions are beyond the scope of this class, though totally fascinating questions at the intersection of CS and urban planning. But here, you’ll do some much simpler tasks with the bike system, as a first project that deals with large data sets and some relatively simple Python.</p>
+
+<ol>
+  <li>
+    <p>First, take a look at the <code class="language-plaintext highlighter-rouge">bike.py</code>. Your task in this assignment will be to add some functionality to this program. First, fill in the code that calculates the <strong>duration of each ride in seconds</strong>. The lines</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> times = duration.split(":")
+ hours, minutes, seconds = 0, 0, 0 # YOU FILL THIS IN! 
+ durationInSeconds = 0 # YOU FILL THIS IN!
+</code></pre></div>    </div>
+
+    <p>are where the calculation is done. Be careful: as written, the data in <code class="language-plaintext highlighter-rouge">times[0]</code>, <code class="language-plaintext highlighter-rouge">times[1]</code>, and <code class="language-plaintext highlighter-rouge">times[2]</code> (which you might want to store as the variables hours/minutes/seconds) are strings rather than integers; you can convert them to integers if you want, but it’s up to you to do so! Modify the calculation to correctly find the duration of this ride in seconds. When you run the program, you should now see the length of the longest ride in the whole dataset.</p>
+
+    <p>(Hint: don’t panic if you see a crazily large number. It is more likely to indicate a mistake made by a Washingtonian bike rider than a mistake made by a Carletonian programmer!)</p>
+  </li>
+  <li>
+    <p>Let’s figure out the net traffic into/out of the Kennedy Center station. The <code class="language-plaintext highlighter-rouge">netChangeAtKennedy</code> variable should count how many more bikes arrive at Kennedy Center in the data than leave Kennedy Center. This variable needs to be updated for every ride. Here are the lines that ought to do it:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # YOU FIX THESE CONDITIONS:
+ if "this ride left one bike at station ’Kennedy Center’":
+     netChangeAtKennedy = netChangeAtKennedy + 1
+ if "this ride took one bike away from station ’Kennedy Center’":
+     netChangeAtKennedy = netChangeAtKennedy - 1
+</code></pre></div>    </div>
+
+    <p>Modify the conditions of the two if statements so that they correctly update the number of bikes entering/leaving this station. Also correct the “???” in the following lines to be the correct value:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> elif netChangeAtKennedy &lt; 0:
+     print("There are now ??? fewer bikes at Kennedy Center", # FIX THIS!
+ "than when we started.")
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Note the code from the previous question (computing the net change at the Kennedy Center) with two separate if statements, rather than a single if … elif statement. Why would this be the best choice? Add a comment to <code class="language-plaintext highlighter-rouge">bike.py</code> to explain why it’s structured this way.</p>
+  </li>
+  <li>
+    <p>Let’s combine and extend the modifications that you made in the last two questions to find the <strong>duration of the longest ride that departs from the Kennedy Center</strong>. You’ll need to create a second variable analogous to <code class="language-plaintext highlighter-rouge">longestRideDuration</code>, which will store the length of the longest ride from Kennedy Center that you’ve encountered so far. You’ll need to update that variable at the appropriate times in the program, as we did with <code class="language-plaintext highlighter-rouge">longestRideDuration</code> — that is, whenever we encounter a ride leaving the Kennedy Center whose duration is longer than all previously encountered rides leaving the Kennedy Center. Finally, you’ll need to update this line:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> print("The longest ride that departed from the Kennedy Center lasted ??? seconds or about ??? hours.") # FIX THIS
+</code></pre></div>    </div>
+
+    <p>You should round the number of hours to the nearest integer.</p>
+  </li>
+  <li>
+    <p>Also add code to compute the <em>average</em> length of all docked-bike rides in the dataset, in minutes and fix this line:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> print("The mean docked-bike ride lasted X minutes.") # FIX THIS
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="writeout">Writeout</h2>
+
+<p>One apparently trivial — but, in fact, fairly daunting - task in any language-oriented automated system (e.g., Siri or Alexa) is to figure out how to pronounce abbreviations. 
+Go ahead, try it for yourself! 
+Pronounce the following fake mailing address:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Dr. Steven E. St. John
+123 E. 1st St.
+Missouri St. University
+St. Louis, MO
+</code></pre></div></div>
+
+<p>How did you decide on a pronunciation for each one of those “St.”s? You were using a lot of common sense and context to say “saint”/”street”/”state”/”saint” – and common sense and context are hard to define well enough to put into code. In this assignment, you’ll get to work on one small piece of this kind of puzzle, focused on pronouncing numbers.</p>
+
+<h3 id="the-task">The Task</h3>
+<p>In your file <code class="language-plaintext highlighter-rouge">writeout.py</code> write a program that does the following:</p>
+<ul>
+  <li>Prompts the user to enter an integer between 1 and 999</li>
+  <li>Prints that number in words.</li>
+</ul>
+
+<p>Use the following specific format:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter a number between 0-999: &lt;user input&gt;
+Your number is pronounced: &lt;pronounciation&gt;
+</code></pre></div></div>
+
+<p>Here are a few examples:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter a number between 0-999: 229
+Your number is pronounced: two hundred and twenty-nine
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter a number between 0-999: 3
+Your number is pronounced: three
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter a number between 0-999: 400
+Your number is pronounced: four hundred 
+</code></pre></div></div>
+
+<p>In writing your program, try to make your life easier by avoiding excess duplication of code. 
+For example, you might want to use the following steps to produce your output:</p>
+<ol>
+  <li>Figure out whether there is a hundreds digit or not.
+    <ul>
+      <li>That is, is the number greater than or equal to 100? If so, figure out what that digit is. (Perhaps consider how integer division and modulus (%) could help you out.) Then figure out how to render it in text.</li>
+    </ul>
+  </li>
+  <li>Figure out whether you should output the word “and”.
+    <ul>
+      <li>The answer is yes if you’re outputting both a hundreds digit and something after the hundreds digit.</li>
+    </ul>
+  </li>
+  <li>Figure out whether you’re outputting a word for the tens digit.
+    <ul>
+      <li>Teens may be a hassle.</li>
+    </ul>
+  </li>
+  <li>Figure out whether you’re outputting a hyphen after the tens digit.</li>
+  <li>Figure out whether you’re outputting a ones digit.</li>
+</ol>
+
+<p>You will also find code like the following helpful:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>digits = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+decades = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
+print(decades[4], digits[5]) # Notice how this prints "forty five", due to clever list construction
+</code></pre></div></div>
+
+<p>In the past, students have sometimes over-complicated this program. 
+You can solve this problem with about 40 lines (including blank lines and comments), so if you are going beyond that, you should think about how you can simplify.</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>To <strong>demonstrate proficiency</strong>, your programs need to:</p>
+<ul>
+  <li>Pass all the tests in Gradescope</li>
+  <li>Contain descriptive headers</li>
+  <li>Contain an answer to Bike question 3 that demonstrates proficient understanding of conditional structures</li>
+  <li>Not have an excessive amount of duplicated code</li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to demonstrate proficiency as well as having:</p>
+<ul>
+  <li>Useful comments</li>
+  <li>Descriptive variable names</li>
+  <li>Good spacing</li>
+  <li>Use iteration and conditionals to prevent any unnecessary duplication of code</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

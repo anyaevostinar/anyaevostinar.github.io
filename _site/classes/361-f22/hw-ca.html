@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Cellular Automaton Homework Assignment | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Cellular Automaton Homework Assignment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-f22/hw-ca" />
+<meta property="og:url" content="http://localhost:4000/classes/361-f22/hw-ca" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Cellular Automaton Homework Assignment" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Cellular Automaton Homework Assignment","url":"http://localhost:4000/classes/361-f22/hw-ca"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Cellular Automaton Homework Assignment</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the syllabus.</p>
+
+<p>This assignment is due on Wednesday Sept 28th at 10pm. 
+As with all assignments, you will have the opportunity to revise this assignment based on the feedback that you get.</p>
+
+<h2 id="goal">Goal</h2>
+<p>The goal of this assignment is demonstrate your understanding of cellular automata. 
+You’ll be making a cellular automaton that runs in the web browser, <a href="https://anyaevostinar.github.io/CA-Assignment/">like my example here</a>.</p>
+
+<h2 id="setup">Setup</h2>
+<p>We’ll be using the Empirical library for this assignment and so I’ve provided a fair amount of starter code so that you can focus on implementing the cellular automaton.</p>
+
+<ol>
+  <li>
+    <p>Follow the link to the GitHub Classroom assignment in Moodle to get access to the starter code.</p>
+  </li>
+  <li>Once you’ve cloned down your repository, you’ll need to get the submodules all squared away.
+First, get all your submodules downloaded:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule update --init --recursive
+</code></pre></div>    </div>
+  </li>
+  <li>Then, go to the <code class="language-plaintext highlighter-rouge">emsdk</code> folder and install and activate <code class="language-plaintext highlighter-rouge">emsdk</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd emsdk
+./emsdk install 3.1.2
+./emsdk activate 3.1.2
+</code></pre></div>    </div>
+  </li>
+  <li>Then source <code class="language-plaintext highlighter-rouge">emsdk</code>. You’ll need to do this command anytime you open a new Terminal, so if you are getting an error about <code class="language-plaintext highlighter-rouge">emcc</code> not existing, you probably forgot to do this:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ./emsdk_env.sh
+</code></pre></div>    </div>
+  </li>
+  <li>Verify that everything is set up correctly by going back to the top level of your repository and running the <code class="language-plaintext highlighter-rouge">compile-run.sh</code> file:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./compile-run.sh
+</code></pre></div>    </div>
+    <p>You should see a grid of squares with one black square in the upper left corner and some buttons.</p>
+  </li>
+</ol>
+
+<h2 id="running-on-your-own-machine">Running on your own machine</h2>
+<p>I’ve tested this process on the lab machine build.
+This means that you can definitely work on the assignment in Olin 310 and the other Olin 3rd floor labs. 
+You can also make sure that you put the Git repository in the <a href="https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&amp;title=Fall+2022%3A+CS+111+and+201+workflow+in+CS+labs">COURSES</a> drive so you don’t have to reclone it each work session.</p>
+
+<p>You quite possibly can also work on your own machine, but I make no guarantees since I haven’t tested it on every operating system. 
+I’m happy to help you try to get things setup on your machine, but if we run into too many issues, I’m going to recommend you work on the lab machines.</p>
+
+<h3 id="mac">Mac</h3>
+<p>If you have a Mac, you probably just need to install the XCode Command Line Tools, which you will be prompted to do when you try to compile with <code class="language-plaintext highlighter-rouge">g++</code>. 
+If you run into issues with that, restarting and trying again often does the trick.</p>
+
+<h3 id="windows">Windows</h3>
+<p>If you have Windows, you will need [WSL] to be able to compile. 
+The documentation for getting that setup is pretty good now, and you might already have it since it is needed for a lot of development.
+I’ve tested running this on my WSL setup and had no problems.</p>
+
+<h3 id="linux">Linux</h3>
+<p>If you are running Linux, hopefully you won’t have problems and can handle downloading anything that is needed.
+I have only tested Ubuntu running on WSL.</p>
+
+<h2 id="assignment-specification">Assignment Specification</h2>
+<p>For this assignment, you need to add on to the code that I’ve provided so that, when the <code class="language-plaintext highlighter-rouge">compile-run.sh</code> file is run, a browser-based cellular automaton runs in the browser.
+This will require you to write the starting conditions and update rule in <code class="language-plaintext highlighter-rouge">CAAnimate.cpp</code> such that some kind of life-like pattern is seen, specifically some kind of repeating or ordered pattern, in the 2D grid.
+Examples include the classic glider, spaceship, and glider gun.
+You are welcome to introduce additional states (with additional colors) as well.
+This is purposefully open-ended, so that you can play around with different combinations to see what happens!</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>To demonstrate <strong>proficiency</strong> for this assignment, your submission should:</p>
+
+<ul>
+  <li>Run and display a cellular automaton with a life-like pattern when the <code class="language-plaintext highlighter-rouge">compile-run.sh</code> script is run, using the web-browser and Empirical library</li>
+  <li>Handle the toroidal spatial structure correctly (i.e. not get messed up when the pattern reaches the edge)</li>
+  <li>Have well-documented and styled code</li>
+  <li>Correctly implement the glider update rule described in “Complexity” reading</li>
+  <li>Specify in a file <code class="language-plaintext highlighter-rouge">README.md</code> that the update rule is from Complexity by Melanie Mitchell</li>
+</ul>
+
+<p>To demonstrate <strong>mastery</strong> for this assignment, your submission should do the first three items from the proficiency category, as well as:</p>
+<ul>
+  <li>Implement an update rule and starting conditions <em>other than</em> the glider, for example the spaceship, glider gun, or any other more complex cellular automaton</li>
+  <li>Specify in a file <code class="language-plaintext highlighter-rouge">README.md</code> what pattern your assignment is demonstrating and what sources you consulted to create it (if any)</li>
+</ul>
+
+<p>Note that I don’t expect you to reinvent the spaceship pattern (for example); you can and should look up the starting conditions and rule to make it if you want, just make sure to cite your sources.</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>You will submit your assignment by pushing your code to the GitHub Classroom repository that you start from.
+If you are unsure how to use Git to push your code, please ask!</p>
+
+<h2 id="getting-help">Getting Help</h2>
+<p>Remember that you can and should ask for help on everything from annoying C++ bugs to Git to “is this a reasonable CA to implement?”
+The CampusWire is probably the best place to ask, as long as you don’t have to share too much of your code to do so, because you’ll get faster responses on average.
+You are also welcome to come to drop-in hours, Zev’s help hours, and schedule a one-on-one meeting if that works better for you.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

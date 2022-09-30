@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Neighbor Finder | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Neighbor Finder" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-f22/nf-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-f22/nf-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Neighbor Finder" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Neighbor Finder","url":"http://localhost:4000/classes/361-f22/nf-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Neighbor Finder</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>Get familiar with using Empirical for visualizations and working with toroidal neighborhood structures.</p>
+
+<h2 id="setup">Setup</h2>
+<p>(A lot of this is similar/identical to how you will set things up for your CA homework.)</p>
+
+<ol>
+  <li>
+    <p>Open the Neighbor Finder Github classroom assignment (linked on Moodle), which will make a GitHub repository with starter code.</p>
+  </li>
+  <li>Open Terminal and clone your repository:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;your repository link&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Open VSCode and then open your repository folder.</p>
+  </li>
+  <li>Open a Terminal in VSCode and pull down the submodules for the starter code:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule update --init --recursive
+</code></pre></div>    </div>
+  </li>
+  <li>Then, go to the <code class="language-plaintext highlighter-rouge">emsdk</code> folder and install and activate <code class="language-plaintext highlighter-rouge">emsdk</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd emsdk
+./emsdk install 3.1.2
+./emsdk activate 3.1.2
+</code></pre></div>    </div>
+  </li>
+  <li>Then source <code class="language-plaintext highlighter-rouge">emsdk</code>. You’ll need to do this command anytime you open a new Terminal, so if you are getting an error about <code class="language-plaintext highlighter-rouge">emcc</code> not existing, you probably forgot to do this:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ./emsdk_env.sh
+</code></pre></div>    </div>
+  </li>
+  <li>Verify that everything is set up correctly by going back to the top level of your repository and running the <code class="language-plaintext highlighter-rouge">compile-run.sh</code> file:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./compile-run.sh
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>You will see just a blank page currently if you go to <a href="http://[::]:8000/">http://[::]:8000/</a>, but soon you’ll be putting content onto that page!</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+
+<p>First look through the starter code provided in <code class="language-plaintext highlighter-rouge">NFAnimate.cpp</code>.
+This is the file that you’ll be making changes to.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include "emp/web/Animate.hpp"
+#include "emp/web/web.hpp"
+</code></pre></div></div>
+
+<p>These two lines are including files from the Empirical library that provide a lot of functionality for making animations in the web browser.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::web::Document doc{"target"};
+</code></pre></div></div>
+
+<p>This is a bit of strange syntax, but it is making an object of type <code class="language-plaintext highlighter-rouge">emp::web::Document</code> called <code class="language-plaintext highlighter-rouge">doc</code> and passing the constructor the string <code class="language-plaintext highlighter-rouge">"target"</code> as an argument.
+Using the <code class="language-plaintext highlighter-rouge">{}</code> to pass actual parameters is a shorthand that C++ allows.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class NFAnimator : public emp::web::Animate {
+
+};
+</code></pre></div></div>
+
+<p>This is declaring your new class <code class="language-plaintext highlighter-rouge">NFAnimator</code>, which inherits from <code class="language-plaintext highlighter-rouge">emp::web::Animate</code>.
+Within those curly braces is where you’ll be defining your code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NFAnimator animator;
+
+int main() {
+    animator.Step();
+}
+</code></pre></div></div>
+
+<p>These lines are declaring and creating an instance of your <code class="language-plaintext highlighter-rouge">NFAnimator</code> class called <code class="language-plaintext highlighter-rouge">animator</code> and calling the <code class="language-plaintext highlighter-rouge">Step</code> method in <code class="language-plaintext highlighter-rouge">main</code>.
+Even though you haven’t defined the <code class="language-plaintext highlighter-rouge">Step</code> method, it is inherited from the parent class.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+
+<p>There are a couple of things that you’ll need to define to get your Neighbor-finder animation working.</p>
+
+<ol>
+  <li>First you need to create an <em>instance variable</em> in your <code class="language-plaintext highlighter-rouge">NFAnimator</code> class that will be your canvas:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> emp::web::Canvas canvas{100, 100, "canvas"};
+</code></pre></div>    </div>
+
+    <p>The first two arguments are the width and height and the third argument is the HTML <code class="language-plaintext highlighter-rouge">id</code> (don’t worry if you don’t know what that means, we aren’t going to need it).</p>
+  </li>
+  <li>
+    <p>Next, you need to define a constructor for your class and have your <code class="language-plaintext highlighter-rouge">canvas</code> placed into your <code class="language-plaintext highlighter-rouge">doc</code>:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> public: 
+
+     NFAnimator() {
+         doc &lt;&lt; canvas;
+     }
+</code></pre></div>    </div>
+
+    <p>You probably recognize the <code class="language-plaintext highlighter-rouge">&lt;&lt;</code> from how you send things to standard output and the Empirical <code class="language-plaintext highlighter-rouge">Document</code> class supports the same syntax. Anytime you want to add things to the webpage that you are making, you will use this syntax.</p>
+  </li>
+  <li>To actually see that something is showing up on your webpage, send a quick message to your <code class="language-plaintext highlighter-rouge">doc</code> after you send the <code class="language-plaintext highlighter-rouge">canvas</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> doc &lt;&lt; "Hi";
+</code></pre></div>    </div>
+
+    <p>Then run the <code class="language-plaintext highlighter-rouge">compile-run.sh</code> script in the Terminal and make sure that you see your message showing up on the webpage.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-3">Exercise 3</h2>
+
+<p>Time to make a grid of cells! Or just one cell to start…</p>
+
+<ol>
+  <li>Empirical makes it easy to draw <a href="https://empirical.readthedocs.io/en/latest/api/classemp_1_1web_1_1Canvas.html#exhale-class-classemp-1-1web-1-1canvas">your typical shapes</a> on the canvas.
+To draw a rectangle, you just need to call <code class="language-plaintext highlighter-rouge">Canvas</code>’ <code class="language-plaintext highlighter-rouge">Rect</code> method:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> canvas.Rect(0, 0, 10, 10, "white", "black");
+</code></pre></div>    </div>
+
+    <p>The first two arguments are the x and y coordinates for the upper left corner (0,0 in this case), the next two arguments are the width and height of your rectangle (10 x 10 in this case), the next argument is the fill color, and the final argument is the line color. 
+ All the typical colors are supported, so feel free to play around making a more colorful rectangle!</p>
+  </li>
+  <li>To get a grid of squares, you’ll need some nested for loops and to think about how the upper left corner of each square is going to be positioned. 
+Remember that the syntax for a for loop in C++ is the same as in Java: <code class="language-plaintext highlighter-rouge">for(int x = 0; x &lt; 10; x++) {}</code>.
+See if you can get a grid of cells to show up!</li>
+</ol>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>You’re now ready to find some neighbors!
+Create a new method <code class="language-plaintext highlighter-rouge">void FindNeighbors(x, y)</code> that:</p>
+<ol>
+  <li>Sets the color of the x,y cell to black (just make a new rectangle at the correct location, you can’t easily change the color of the existing one).</li>
+  <li>Calculates each of the x,y cell’s neighbors and sets them to a different color, for example red.</li>
+</ol>
+
+<p>I recommend you get it working for a cell that is in the middle of your grid first and then figure out how you need to change your code to work for cells along the edge of your grid.
+Remember that it’s fine to make an inelegant solution first (that probably uses a bunch of if-else statements) and then think about how to revise it to be more elegant.</p>
+
+<p>If along the way, you wish you could see the x,y position of each cell, use Empirical’s text drawing method:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>canvas.CenterText(x+5, y+5, std::to_string(x)+","+std::to_string(y), "black", "black");
+</code></pre></div></div>
+
+<p>You may also want to use modulus (you can solve the problem with a bunch of nested conditionals, and that’s fine, but you can make it more elegant using modulus). <a href="https://www.geeksforgeeks.org/modulus-on-negative-numbers/">C++ actually does modulus weirdly with negative numbers</a>, so you should use Empirical’s modulus instead:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include "emp/math/math.hpp"
+
+emp::Mod(x, y); //Will do x % y, handling negative numbers as you would expect
+</code></pre></div></div>
+
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>Make sure to push your code to the remote repository (<code class="language-plaintext highlighter-rouge">git add *</code>, <code class="language-plaintext highlighter-rouge">git commit -m "message about your code"</code>, <code class="language-plaintext highlighter-rouge">git push</code>) both so that I can see how far everyone got and so you and your partner will continue to have access to the code.</p>
+
+<h2 id="extra">Extra</h2>
+<p>If you finish early, look at the buttons and <code class="language-plaintext highlighter-rouge">DoFrame</code> method from the starter code for the CA assignment and see if you can incorporate an animation into your current visualization. For example, have the focal cell and each neighbor light up one at a time.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -69,4 +69,4 @@ Here are more code snippets to predict and test:
 ## Extra 2
 In addition, a great thing to do is think about programs like drafts of a paper.
 It's good to get down a first draft and then revise or *refactor* it. 
-Pull up some of your old lab assignments and try refactoring them to use functions
+Pull up some of your old lab assignments and try refactoring them to use functions, in particular, try Exercise 4 from the [Mutating Lists](lab-mutating-lists) Lab.

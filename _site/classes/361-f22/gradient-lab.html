@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Gradient Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Gradient Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-f22/gradient-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-f22/gradient-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Gradient Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Gradient Lab","url":"http://localhost:4000/classes/361-f22/gradient-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Gradient Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>This lab is focused on some advanced features of Empirical, specifically how to generate more than the basic colors and animate a web build, to enable the creation of continuous cellular automata.</p>
+
+<h2 id="setup">Setup</h2>
+<p>Follow the same set up as all the recent work:</p>
+
+<ol>
+  <li>
+    <p>Open the Gradient Lab Github classroom assignment (linked on Moodle), which will make a GitHub repository with starter code.</p>
+  </li>
+  <li>Open Terminal and clone your repository:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;your repository link&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Open VSCode and then open your repository folder.</p>
+  </li>
+  <li>Open a Terminal in VSCode and pull down the submodules for the starter code:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule update --init --recursive
+</code></pre></div>    </div>
+  </li>
+  <li>Then, go to the <code class="language-plaintext highlighter-rouge">emsdk</code> folder and install and activate <code class="language-plaintext highlighter-rouge">emsdk</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd emsdk
+./emsdk install 3.1.2
+./emsdk activate 3.1.2
+</code></pre></div>    </div>
+  </li>
+  <li>Then source <code class="language-plaintext highlighter-rouge">emsdk</code>. You’ll need to do this command anytime you open a new Terminal, so if you are getting an error about <code class="language-plaintext highlighter-rouge">emcc</code> not existing, you probably forgot to do this:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source ./emsdk_env.sh
+</code></pre></div>    </div>
+  </li>
+  <li>Verify that everything is set up correctly by going back to the top level of your repository and running the <code class="language-plaintext highlighter-rouge">compile-run.sh</code> file:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./compile-run.sh
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>You will see just a blank page currently if you go to <a href="http://[::]:8000/">http://[::]:8000/</a>, but soon you’ll be putting content onto that page!</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>This time, your code will go in <code class="language-plaintext highlighter-rouge">GradientAnimate.cpp</code> but it is completely blank.</p>
+
+<ol>
+  <li>Whenever you make a web GUI with Empirical, you’ll need to include the two files you’ve already seen:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include "emp/web/Animate.hpp"
+#include "emp/web/web.hpp"
+</code></pre></div></div>
+
+<ol>
+  <li>You’ll also always need a <code class="language-plaintext highlighter-rouge">Document</code> as a global variable:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::web::Document doc{"target"};
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Now declare your <code class="language-plaintext highlighter-rouge">GradientAnimator</code> class that inherits from <code class="language-plaintext highlighter-rouge">emp::web::Animate</code>. If you don’t remember that syntax, feel free to check the <a href="nf-lab">Neighbor Finder lab</a>.</p>
+  </li>
+  <li>
+    <p>After your class, you’ll need to create an instance of your class and make a main method that calls the <code class="language-plaintext highlighter-rouge">Step()</code> method of your class.</p>
+  </li>
+  <li>This is a good time to make sure that everything builds by running the provided <code class="language-plaintext highlighter-rouge">compile_run.sh</code>.</li>
+</ol>
+
+<h2 id="exercise-2">Exercise 2</h2>
+
+<ol>
+  <li>
+    <p>You’ll again need a <code class="language-plaintext highlighter-rouge">Canvas</code> to draw on and a constructor for your class. Create those now (and check the previous lab if you aren’t sure what to do).
+Also send your canvas to your document with the <code class="language-plaintext highlighter-rouge">&lt;&lt;</code>.</p>
+  </li>
+  <li>Since we’ll be aiming to animate this time, you’ll want some buttons to control turning the animation on and going one step at a time. Fortunately, Empirical provides built-in buttons for just those purposes that are already hooked up to control the animation once you put them in your document:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>doc &lt;&lt; GetToggleButton("Toggle");
+doc &lt;&lt; GetStepButton("Step");
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Next you need a <code class="language-plaintext highlighter-rouge">DoFrame</code> method, which is what is called at each step of the animation. This is a <code class="language-plaintext highlighter-rouge">void</code> method that takes no parameters.</p>
+  </li>
+  <li>In your <code class="language-plaintext highlighter-rouge">DoFrame</code> method, you will eventually draw some shapes, but to get a basic idea of how it works, create a instance variable (up above the constructor) to just hold a number. In <code class="language-plaintext highlighter-rouge">DoFrame</code>, first clear the canvas with <code class="language-plaintext highlighter-rouge">canvas.Clear();</code>, then increment your number variable. Then add a <code class="language-plaintext highlighter-rouge">Text</code> object to your canvas with your number:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>canvas.Text(*new emp::Point(10,10), std::to_string(number));
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Verify that each time you step, your number increases.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+
+<p>To create a continuous cellular automaton, you will need to have more colors than the typical color words describe.
+Fortunately, Empirical lets you color your shapes with any color using the <code class="language-plaintext highlighter-rouge">ColorRGB</code> and <code class="language-plaintext highlighter-rouge">ColorHSV</code> functions.
+We’ll focus on HSV, since it makes greyscale easier to depict, but you could also use RGB if you want.</p>
+
+<ol>
+  <li>
+    <p>Get rid of the incrementing number and instead draw a rectangle on your canvas with the color specified as a shade of grey using HSV:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> canvas.Rect(10, 10, 10, 10, emp::ColorHSV(0, 0, 0.5), "black");
+</code></pre></div>    </div>
+
+    <p><a href="https://en.wikipedia.org/wiki/HSL_and_HSV">HSV</a> stands for hue, saturation, and value. You can get somewhat of a greyscale by having the value go from 0 to 1.</p>
+  </li>
+  <li>
+    <p>Make sure that you are getting a grey rectangle and then try changing your code so that the rectangle gets slightly darker or lighter each step. You will eventually get an assert error when you go beyond 0 to 1, but don’t worry about that right now.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-4">Exercise 4</h2>
+
+<p>Time to make a proper grid of cells that you can have change over time.</p>
+
+<ol>
+  <li>
+    <p>Create an instance variable that is a vector of vectors of floats:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> std::vector&lt;std::vector&lt;float&gt;&gt; cells;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>In the constructor for you animator, set the number of cells you want in the width (<code class="language-plaintext highlighter-rouge">num_w_boxes</code> in the example) and height (<code class="language-plaintext highlighter-rouge">num_h_boxes</code> in the example) and set them all to start with 0:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> cells.resize(num_w_boxes, std::vector&lt;float&gt;(num_h_boxes, 0));
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">DoFrame</code> make a nested set of for-loops that go through all your cells and draw a rectangle using the <code class="language-plaintext highlighter-rouge">ColorHSV</code> argument, similar to how you did for the Neighbor Finder Lab, but with the color being based on the cell value instead. Make sure to compile and run to make sure that you see your grid of cells.</p>
+  </li>
+  <li>
+    <p>You probably want to make a couple of the cells a different value to start. In your constructor, set a few of them to be something other than 0 and make sure that that shows up correctly when you compile and run.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>You’re now ready to set an update rule so that your cell values change each step.
+There are an infinite number of rules that you could try. Start out by doing something simple like getting the shade to just move horizontally across the screen and then falling off the edge (by having the new cell value determined by its immediate neighbor).</p>
+
+<p>You probably will want another vector of vectors to hold onto the state that things should be in the next time step, so you don’t make changes to <code class="language-plaintext highlighter-rouge">cells</code> while you are still calculating each cell’s next value.</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
