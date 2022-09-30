@@ -34,7 +34,7 @@ Once you've made a prediction, create the necessary files and test your predicti
 
 ## Exercise 2
 In this exercise, you’ll be working with reading and writing files in Python. 
-First, make a new Python file and call it `citySelector.py`. Next, download the file [`us_cities.txt`](us_cities.txt) (by right-clicking on the link and selecting `Save Link As`).
+First, make a new Python file and call it `citySelector.py`. Next, download the file [`us_cities.txt`](/classes/111-w22/us_cities.txt) (by right-clicking on the link and selecting `Save Link As`).
 This “text file” (hence .txt) contains a massive list of US cities, with one city name on each line.
 Your task is to make your program:
 1. Open the file,
