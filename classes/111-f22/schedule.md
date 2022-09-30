@@ -27,11 +27,11 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 4** | **Advanced Blocks** | | |
 | M 10/3 | [Mutating Lists Prep](mutating-lists-prep) | [Working with Lists](lab-mutating-lists)	| |
 | W 10/5 | [Files Prep](files-prep); HW3	| Quiz 3; [Working with Files](files)	| HW4 |
-| F 10/7 | [Dictionaries Prep](dictionaries-prep) |	Using Dictionaries	| |
+| F 10/7 | [Functions Prep 1](functions1-prep) | Function Basics	 | |
 | **Week 5** | **Functions** |  | |
-| M 10/10 | Functions Prep 1 | Function Basics	 | |
-| W 10/12 |	 Functions Prep 2; HW4	| Quiz 4; Return of the Functions	| HW5 |
-| F 10/14 | Indefinite Loops Prep | Using While Loops	|  |
+| M 10/10 | Functions Prep 2 | Return of the Functions | |
+| W 10/12 |	Indefinite Loops Prep;  HW4	| Quiz 4; Using While Loops	| HW5 |
+| F 10/14 | [Dictionaries Prep](dictionaries-prep) |	Using Dictionaries	| |
 | **Week 6** | **Objects and Classes** |  | |
 | M 10/17	| |	Mid-term Break!	| |
 | W 10/19 | Classes Prep 1; HW5  | Quiz 5; Object-Oriented Programming Intro	| HW6 |

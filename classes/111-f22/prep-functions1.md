@@ -24,14 +24,5 @@ During and after class, you should be able to:
 
 ## Readings
 
-You should read/watch each of the following and complete the checks:
-* [Introduction to Functions](https://runestone.academy/ns/books/published/fopp/Functions/intro-Functions.html?mode=browsing)
-* [Function Definition](https://runestone.academy/ns/books/published/fopp/Functions/FunctionDefinitions.html?mode=browsing)
-* [Function Invocation](https://runestone.academy/ns/books/published/fopp/Functions/FunctionInvocation.html?mode=browsing)
-* [Function Parameters](https://runestone.academy/ns/books/published/fopp/Functions/FunctionParameters.html?mode=browsing)
-
-## Written Answers
-Submit answers to the following on Moodle:
-* What does 'function' mean in programming?
-* What does 'parameter' mean in programming?
-* What is the syntax for making a new function in Python?
+You should read/watch the following and complete the checks:
+* Runestone [12.1-12.4](https://runestone.academy/ns/books/published/intro-cs/Functions/intro-Functions.html)
