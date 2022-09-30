@@ -190,7 +190,7 @@ For your assignment, you're going to need more than one species. Empirical's `Wo
 
 2. Update your `.cpp` files so that they make one of each species to start.
 
-3. Update your `web.cpp` so that it draws a different color rectangle based on the species of the organism and make sure that you are seeing your two species. 
+3. Update your `web.cpp` so that it draws a different color rectangle based on the species of the organism and make sure that you are seeing your two species. You'll find the `GetOrg(position)` method of `World` helpful for this.
 
 4. Species aren't interesting if they don't do something different, so make a conditional statement in `Process` and/or `CheckReproduction` so that something is different based on the species. Maybe one of your species doesn't get all the points each update or takes more points to reproduce.
 
