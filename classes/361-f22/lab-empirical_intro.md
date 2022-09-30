@@ -205,7 +205,7 @@ If you have extra time, try adding mutation to your organism's reproduction or a
 * Spend resources to steal from another organism
 * Spend resources to build defense from the environment or other organisms
 
-You could also try out Empirical's [Canvas image support](https://empirical.readthedocs.io/en/latest/api/classemp_1_1web_1_1Image.html#classemp_1_1web_1_1Image) so your organisms can be more than just colored boxes!
+You could also try out Empirical's [Canvas image support](https://empirical.readthedocs.io/en/latest/api/classemp_1_1web_1_1Canvas.html?highlight=canvas#_CPPv4IDpEN3emp3web6Canvas5ImageER6CanvasRKN3emp8RawImageE5PointDpRR2Ts) so your organisms can be more than just colored boxes!
 
 ## Credit
 This lab uses the [cookie-cutter material](https://github.com/devosoft/cookiecutter-empirical-project.git) from [this tutorial](https://mmore500.com/waves/tutorials/lesson02.html) by [Matthew Andres Moreno](https://github.com/mmore500) and [Santiago Rodriguez Papa](https://github.com/rodsan0/)
