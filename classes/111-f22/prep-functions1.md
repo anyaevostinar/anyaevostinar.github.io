@@ -25,4 +25,4 @@ During and after class, you should be able to:
 ## Readings
 
 You should read/watch the following and complete the checks:
-* Runestone [12.1-12.4](https://runestone.academy/ns/books/published/intro-cs/Functions/intro-Functions.html)
+* Runestone [12.1-12.5](https://runestone.academy/ns/books/published/intro-cs/Functions/intro-Functions.html)
