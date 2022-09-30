@@ -24,12 +24,12 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 9/30 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab	 |  |
 | Week 4 | | | |
 | M 10/3 |  | Peer review of AE projects | [Encyclopedia assignment](encyclopedia-hw) |
-| W 10/5 |	[AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) |	Digital Evolution | DE project  |
+| W 10/5 |	[AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) |	Digital Evolution | [DE project](hw-de)  |
 | F 10/7 | [Configuration Preparation](config_intro)| Using Empirical Configuration | |
 | Week 5 | |  | |
 | M 10/10 | | TBD	|   |
 | W 10/12 |	Empirical Data Output | |
-| F 10/14 |  DE project | 	Peer review of DE projects	| |
+| F 10/14 |  [DE project](hw-de) | 	Peer review of DE projects	| |
 | Week 6 | |  | |
 | M 10/17	| |	Mid-term Break!	| |
 | W 10/19 | Encyclopedia drafts | Peer review of drafts	 | |
