@@ -14,6 +14,9 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 * Using variables - mastery
 * Using a function - mastery
 * Debugging syntax errors - mastery
+* Predicting the behavior of a program - proficiency
+
+You can print and bring along this [checklist](https://docs.google.com/document/d/1Hc2jZKXP2I5FqAcdTp8uwLSSe9_IBt6cGtRAPDUKaWY/edit?usp=sharing) to help you keep track in the quiz.
 
 ## Suggestions
 Remember that this isn't your only chance to demonstrate your understanding of these learning objectives, so try not to stress too much.
