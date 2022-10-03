@@ -32,13 +32,14 @@ Much of the starter code should look familiar. In particular `native.cpp`, `Org.
 
 2. Also in `Org.h`, you'll see `Reset` and `Mutate` methods that just pass along those calls to the organism's CPU. Tracking of points is tracked by the organism's CPU's `OrgState` also.
 
-3. `World.h` is pretty standard with a couple of new methods. `GetPopulation` is just a simple helper method that returns the population vector (and uses the `auto` keyword for its return value, which relies on the compiler to figure out what the return type will be). You'll implement the `CheckOutput` method in a later exercise. Finally, you'll notice that while the `Update` method calls each organism's `Process`, it doesn't have a reproduction loop. This is because the organisms will have to reproduce with an instruction instead.
+3. `World.h` is pretty standard with a couple of new methods. `GetPopulation` is just a simple helper method that returns the population vector. You'll implement the `CheckOutput` method in a later exercise. Finally, you'll notice that while the `Update` method calls each organism's `Process`, it handles reproduction slightly differently, using a reproduce queue. This is because the organisms will have to reproduce with an instruction, which adds them to reproduce queue.
 
 ## Exercise 2
 Nothing actually happens in the experiment so far because the organism `Process` method needs to be implemented.
 As the `TODO` says, you need to run the CPU in `Process`.
+Note that the `Process` method takes the organism's current location as an argument now, since it is needed for the reproduction queue if the organism does reproduce.
 
-1. If you open `CPU.h`, you'll see the class definition for a `CPU`. It holds a couple of objects from the SGP library and mostly acts as an interface between our code and the SGP code. We aren't going to worry about exactly how a lot of these methods work, but you can see that there is a method `RunCPUStep`, which is what you want to call in `Process`. It takes a number of cycles, which allow one instruction to be run. In `Process`, call run the CPU for 10 cycles:
+1. If you open `CPU.h`, you'll see the class definition for a `CPU`. It holds a couple of objects from the SGP library and mostly acts as an interface between our code and the SGP code. We aren't going to worry about exactly how a lot of these methods work, but you can see that there is a method `RunCPUStep`, which is what you want to call in `Process`. It takes a number of cycles, which allow one instruction to be run each. In organism's `Process`, call run the CPU for 10 cycles:
 
     ```cpp
     cpu.RunCPUStep(10);
@@ -63,7 +64,7 @@ Time to specify a task for the organisms to be rewarded for doing.
     };
     ```
 
-2. The only method that a `Task` subclass needs to specify is its own version of the `CheckOutput` method, which holds the logic for figuring out if the organism actually solved the task. The method needs to return a double, which is the amount of points the organism gets whenever the task is checked. It takes two parameters, the float that the organism outputted, and an array holding the most recent 4 input values the organism received. Within your `NewTask`, start your definition for this method:
+2. The only methods that a `Task` subclass needs to specify is its own version of the `CheckOutput` and `name` methods. The `CheckOutput` method holds the logic for figuring out if the organism actually solved the task. The method needs to return a double, which is the amount of points the organism gets whenever the task is checked. It takes two parameters, the float that the organism outputted, and an array holding the most recent 4 input values the organism received. Within your `NewTask`, start your definition for this method:
 
     ```cpp
     public:
@@ -90,6 +91,9 @@ Time to specify a task for the organisms to be rewarded for doing.
         }
     }
     ```
+
+4. You also need to define the name method for your new task. This just needs to be a method called `name()` that returns a `std::string` that is the name you want to call your task, such as `Square`.
+
 4. You can make as many subclasses of `Task` in this file as you want, but let's stick to one for now and finish setting things up for this one. In `World.h` you need to specify a vector of the tasks that are available for organisms to solve. Create a new instance variable that is a vector of `Task *` and put instances of all of your tasks into it (in this case just one):
 
     ```cpp
@@ -124,9 +128,9 @@ Your organisms currently don't mutate their programs when they reproduce, so you
 ## Exercise 5
 It's not ideal to only be able to see that an organism solved a task by outputting a string. Eventually, you'll want to be able to check each organism to see if it has ever solved a task.
 
-1. In `OrgState.h`, a simple `OrgState` struct is defined (a struct is like a class but everything defaults to public and some advanced OOP functionality isn't possible). Add a boolean variable to track if this organism has performed the task or not.
+1. In `OrgState.h`, there is a simple `OrgState` struct that is defined (a struct is like a class but everything defaults to public and some advanced OOP functionality isn't possible). Add a boolean variable to track if this organism has performed the task or not.
 
-2. In `World.h`, change `CheckOutput` so that it changes the `state`'s boolean variable to true if the organism does actually get points for the task.
+2. In `World.h`, change `CheckOutput` so that it changes the `state`'s boolean variable to true if the organism does actually get points for solving the task.
 
 3. In your world's `Update`, add a counter for how many organisms have solved the task and print it out each update so you can see if your population is getting better as a whole. This is a good time to compile and run to see how things are working and do any needed debugging!
 
@@ -141,6 +145,6 @@ If you finish early, there are lots of other things to try:
 * Try making another task that requires more than just one of the input values to complete
 * Look through the supplemental material section F of [this paper](https://mmore500.com/pubs/moreno2021case) to see what all the instructions do and [this documentation](https://signalgp-lite.readthedocs.io/en/latest/api/program_listing_file_include_sgpl_library_prefab_CompleteOpLibrary.hpp.html) for how to add more to `Instructions.h`
 * Try changing the mutation rate and/or amount of points associated with the task(s) and/or needed to reproduce and see how evolution changes
-* Study the `IO` instruction and try to make your own new instruction
+* Study the `IO` and `Reproduce` instructions and try to make your own new instruction
 
 
