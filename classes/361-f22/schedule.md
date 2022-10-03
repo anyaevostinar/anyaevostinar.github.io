@@ -24,16 +24,16 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 9/30 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab	 |  |
 | Week 4 | | | |
 | M 10/3 |  | Peer review of AE projects | [Encyclopedia assignment](encyclopedia-hw) |
-| W 10/5 |	[AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) |	[Signal-GP Lite Lab](sgplite_lab) | [DE project](hw-de)  |
-| F 10/7 | [Configuration Preparation](config_intro)| Using Empirical Configuration | |
+| W 10/5 |	| Inheritance in C++; worktime | |  
+| F 10/7 | [AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) | [Signal-GP Lite Lab](sgplite_lab) | [DE project](hw-de)  |
 | Week 5 | |  | |
-| M 10/10 | | TBD	|   |
-| W 10/12 |	Empirical Data Output | |
+| M 10/10 | [Configuration Preparation](config_intro)| Using Empirical Configuration | |  |
+| W 10/12 |	Encyclopedia topic | TBD | |
 | F 10/14 |  [DE project](hw-de) | 	Peer review of DE projects	| |
 | Week 6 | |  | |
 | M 10/17	| |	Mid-term Break!	| |
-| W 10/19 | Encyclopedia drafts | Peer review of drafts	 | |
-| F 10/21 |	| Project introduction | Project proposal |
+| W 10/19 |  | 	Empirical Data Output  | |
+| F 10/21 | Encyclopedia drafts	| Project introduction; Peer review of encyclopedia drafts | Project proposal |
 | Week 7 | |  | |
 | M 10/24 | |   GitHub	| |
 | W 10/26 |  |	Guest Speaker: [Dr. Alexander Lalejini](https://lalejini.com/)	 | |
