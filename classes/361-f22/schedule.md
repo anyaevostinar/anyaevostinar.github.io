@@ -24,7 +24,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 9/30 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab	 |  |
 | Week 4 | | | |
 | M 10/3 |  | Peer review of AE projects | [Encyclopedia assignment](encyclopedia-hw) |
-| W 10/5 |	| Inheritance in C++; worktime | |  
+| W 10/5 |	| [Inheritance in C++](inheritance_lab); worktime | |  
 | F 10/7 | [AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) | [Signal-GP Lite Lab](sgplite_lab) | [DE project](hw-de)  |
 | Week 5 | |  | |
 | M 10/10 | [Configuration Preparation](config_intro)| Using Empirical Configuration | |  |

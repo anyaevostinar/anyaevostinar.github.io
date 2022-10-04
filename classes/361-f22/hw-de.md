@@ -17,7 +17,7 @@ You'll be making a digital evolution project that runs in the web browser using 
 ## Setup
 The setup process will be the same as for the previous assignments, except you'll use the Digital Evolution Github Classroom link on Moodle. Follow the [same steps as described in the previous assignments](hw-ca) after that.
 
-As you are working on this project, you may find the supplemental material section F of [this paper](https://mmore500.com/pubs/moreno2021case) a helpful reference for what operations are available and what they do.
+As you are working on this project, you may find the supplemental material section F of [this paper](https://mmore500.com/pubs/moreno2021case) a helpful reference for what operations are available and what they do, as well as the [SGP-Lite lab](sgplite_lab).
 
 ## Assignment Specification
 For this assignment, you need to add on to the code that I've provided so that, when the `compile-run.sh` file is run, a browser-based digital evolution system runs in the browser.

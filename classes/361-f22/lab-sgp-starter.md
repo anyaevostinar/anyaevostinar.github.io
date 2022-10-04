@@ -147,4 +147,6 @@ If you finish early, there are lots of other things to try:
 * Try changing the mutation rate and/or amount of points associated with the task(s) and/or needed to reproduce and see how evolution changes
 * Study the `IO` and `Reproduce` instructions and try to make your own new instruction
 
+## Acknowledgements
+The starter code for this lab (and the associated homework assignment) was largely written by Sylvie Dirkswager, thanks Sylvie!
 
