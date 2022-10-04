@@ -115,7 +115,7 @@ I'll be using a version of *specifications grading* this term for the programmin
 * Demonstrates mastery (the submission provides evidence of strong mastery of the learning objective(s))
 
 An important aspect of specifications grading is revision. **You may revise any programming deliverable up until the end of exams.** Learning is not a linear process, and learning involves making mistakes and learning from them. You may *individually* revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
-You may *individually* further revise that deliverable before the end of the term and request additional feedback via a form (link TBD), however I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.
+You may *individually* [further revise](revision-process) that deliverable before the end of the term and request additional feedback via a form ([link here](https://docs.google.com/forms/d/e/1FAIpQLSdCMT3VZNE9S-cr58i1LxVfFAPG19LwViYjnIyR-yd3BrHdAg/viewform?usp=sf_link)), however I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.
 Even if an assignment was initially a paired assignment, all revisions should be completed individually.
 
 ### Quiz Assessment
