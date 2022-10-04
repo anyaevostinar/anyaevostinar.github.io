@@ -134,6 +134,13 @@ You need to now check which class' methods are getting accessed (and make some f
 
 3. Now when you compile and run, you should get "Dog" printing out. This means that anytime you have a superclass method that you want the base class method to be called instead, you should put `virtual` in front of it.
 
+4. This process only works because these are pointers! If you ever dereference the pointer and save it to an `Animal` variable, C++ cuts off the `Dog` portion. Test this out in `main.cpp`:
+
+    ```cpp
+    Animal test = *population[0];
+    std::cout << test.GetType() << std::endl;
+    ```
+
 ## Exercise 5
 What about those instance variables that you made? How do the two classes deal with those?
 
