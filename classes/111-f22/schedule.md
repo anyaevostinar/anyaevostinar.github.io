@@ -29,7 +29,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 10/5 | [Files Prep](files-prep); [HW3](hw3)	| [Quiz 3](quiz3); [Working with Files](files)	| [HW4](hw4) |
 | F 10/7 | [Functions Prep 1](functions1-prep) | [Function Basics](functions1)	 | |
 | **Week 5** | **Functions** |  | |
-| M 10/10 | Functions Prep 2 | Return of the Functions | |
+| M 10/10 | [Functions Prep 2](functions2-prep) | [Return of the Functions](lab-functions2) | |
 | W 10/12 |	Indefinite Loops Prep;  [HW4](hw4)	| Quiz 4; Using While Loops	| HW5 |
 | F 10/14 | [Dictionaries Prep](dictionaries-prep) |	Using Dictionaries	| |
 | **Week 6** | **Objects and Classes** |  | |
