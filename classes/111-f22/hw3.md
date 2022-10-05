@@ -112,7 +112,7 @@ How did you decide on a pronunciation for each one of those “St."s? You were u
 
 ### The Task
 In your file `writeout.py` write a program that does the following:
-* Prompts the user to enter an integer between 1 and 999
+* Prompts the user to enter an integer between 0 and 999
 * Prints that number in words.
 
 Use the following specific format:
