@@ -68,7 +68,8 @@ I have only tested Ubuntu running on WSL.
 ## Assignment Specification
 For this assignment, you need to add on to the code that I've provided so that, when the `compile-run.sh` file is run, a browser-based cellular automaton runs in the browser.
 This will require you to write the starting conditions and update rule in `CAAnimate.cpp` such that some kind of life-like pattern is seen, specifically some kind of repeating or ordered pattern, in the 2D grid.
-Examples include the classic glider, spaceship, and glider gun.
+Examples include the classic glider and spaceship.
+**Updated note: you specifically shouldn't do the glider gun since it doesn't work with a toroidal structure, sorry for recommending it before!**
 You are welcome to introduce additional states (with additional colors) as well.
 This is purposefully open-ended, so that you can play around with different combinations to see what happens!
 
@@ -82,7 +83,7 @@ To demonstrate **proficiency** for this assignment, your submission should:
 * Specify in a file `README.md` that the update rule is from Complexity by Melanie Mitchell
 
 To demonstrate **mastery** for this assignment, your submission should do the first three items from the proficiency category, as well as:
-* Implement an update rule and starting conditions *other than* the glider, for example the spaceship, glider gun, or any other more complex cellular automaton
+* Implement an update rule and starting conditions *other than* the glider, for example the spaceship or any other more complex cellular automaton that use a toroidal structure **(Updated note: the glider gun won't work in a toroidal structure, sorry!)**
 * Specify in a file `README.md` what pattern your assignment is demonstrating and what sources you consulted to create it (if any)
 
 Note that I don't expect you to reinvent the spaceship pattern (for example); you can and should look up the starting conditions and rule to make it if you want, just make sure to cite your sources.
