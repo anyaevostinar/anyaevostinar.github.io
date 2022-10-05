@@ -78,4 +78,53 @@ You might not be loving the layout that you currently have for this website. Whi
 
     Then refresh your page to take a look at what that changes.
 
-4. 
+4. It'd be nice to have the settings to the side of the canvas, and you can do that with a combination of changes. First, we're going to need a `row` and a couple of `col` (columns) within that row:
+
+    ```html
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="target"> </div>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </div>
+    </body>
+    ```
+
+    You should now see your canvas in just the left column instead of the whole page.
+
+5. Next, we're going to make a new `id` to hook the settings to and put that in the second column. Within the second `col` div tags, put `<div id="settings"></div>`
+
+6. Now we need to go use that hook. Open `web.cpp` and add a new `Document` under your original `doc` that uses the `settings` id tag:
+
+    ```cpp
+    emp::web::Document doc("target");
+    emp::web::Document settings("settings");
+    ```
+
+7. Finally, go down to where you had been putting `config_panel` into `doc` and put it into `settings` instead:
+
+    ```cpp
+    settings << config_panel;
+    ```
+
+    You should now recompile and see your settings panel in the right hand column.
+
+8. You can make as many `id`s that you hook `Document`s to as you want. Try making one for your buttons so you can place them underneath of your canvas.
+
+## Exercise 5
+While the config panel is pretty good at picking ranges that are reasonable, it isn't perfect and you might want to force the range to something you know is correct.
+
+1. You can set the range for a configuration setting on the panel using the `SetRange` method, though it takes only strings, which you probably don't expect. For example, to set the range of a configuration option `NUM_START` that holds an integer and should only be 1 or 2, I would do:
+
+    ```cpp
+    config_panel.SetRange("NUM_START", "1", "2");
+    ```
+
+2. You can also exclude settings from the panel that are useful for the native version of your program but not appropriate for the web GUI using `ExcludeSetting(setting_to_exclude);`. Try hiding the random number seed from the panel.
+
+## Extra
+There are a bunch of other prefabricated GUI elements that you can use now that you are set up. Check out [this demonstration of each of them](https://devosoft.github.io/empirical-prefab-demo/empirical-prefab-demo) and try adding some more!

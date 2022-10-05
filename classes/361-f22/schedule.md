@@ -27,7 +27,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 10/5 |	| [Inheritance in C++](inheritance_lab); worktime | |  
 | F 10/7 | [AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) | [Signal-GP Lite Lab](sgplite_lab) | [DE project](hw-de)  |
 | Week 5 | |  | |
-| M 10/10 | [Configuration Preparation](config_intro)| Using Empirical Configuration | |  |
+| M 10/10 | [Configuration Preparation](config_intro)| [Using Empirical Configuration](emp_config_lab) | |  |
 | W 10/12 |	Encyclopedia topic | TBD | |
 | F 10/14 |  [DE project](hw-de) | 	Peer review of DE projects	| |
 | Week 6 | |  | |
