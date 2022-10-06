@@ -8,7 +8,7 @@ permalink: /classes/361-f22/emp_config_lab
 To use Empirical's configuration management system in a command-line and web-version of a project.
 
 ## Setup
-Follow the [usual steps(gradient-lab) for setting up a repository using Empirical and emsdk using the Configuration Lab starter code.
+Follow the [usual steps](gradient-lab) for setting up a repository using Empirical and emsdk using the Configuration Lab starter code.
 
 ## Exercise 1
 I've provided you with a basic artificial life simulation with just one species reproducing and filling the world (following the first few exercises of the [Empirical intro lab](empirical_intro_lab)). You can run `compile-run.sh` to get a command line version of the program and `compile-run-web.sh` to get a web version.
@@ -125,6 +125,8 @@ While the config panel is pretty good at picking ranges that are reasonable, it 
     ```
 
 2. You can also exclude settings from the panel that are useful for the native version of your program but not appropriate for the web GUI using `ExcludeSetting(setting_to_exclude);`. Try hiding the random number seed from the panel.
+
+3. If you have some familiarity with CSS, you can adjust the default style settings through your C++ with the `SetCSS()` method. For example, you could do `settings.SetCSS("max-width", "500px");` to keep the settings document from stretching beyond 500 pixels. Explore some of the [CSS properties](https://www.w3schools.com/cssref/pr_dim_max-width.asp) that you might want to change.
 
 ## Extra
 There are a bunch of other prefabricated GUI elements that you can use now that you are set up. Check out [this demonstration of each of them](https://devosoft.github.io/empirical-prefab-demo/empirical-prefab-demo) and try adding some more!
