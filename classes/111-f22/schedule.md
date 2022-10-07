@@ -30,7 +30,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 10/7 | [Functions Prep 1](functions1-prep) | [Function Basics](functions1)	 | |
 | **Week 5** | **Functions** |  | |
 | M 10/10 | [Functions Prep 2](functions2-prep) | [Return of the Functions](lab-functions2) | |
-| W 10/12 |	[Indefinite Loops Prep](while-prep);  [HW4](hw4)	| Quiz 4; [Using While Loops](while-loops)	| HW5 |
+| W 10/12 |	[Indefinite Loops Prep](while-prep);  [HW4](hw4)	| Quiz 4; [Using While Loops](while-loops)	| [HW5] |
 | F 10/14 | [Dictionaries Prep](dictionaries-prep) |	[Using Dictionaries](dictionaries)	| |
 | **Week 6** | **Objects and Classes** |  | |
 | M 10/17	| |	Mid-term Break!	| |
