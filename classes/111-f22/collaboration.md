@@ -60,7 +60,7 @@ You’ll stay with the same partner for one to two weeks, and then fill out a fe
 A few logistical reminders:
 
 * Write both students’ names in the comments at the top of your program.
-* Submit one copy of your code via Moodle. 
+* Submit one copy of your code via Gradescope. 
 
 
 ### What if we can’t work together?
