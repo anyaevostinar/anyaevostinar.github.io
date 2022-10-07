@@ -93,15 +93,20 @@ $ python3 caesar.py "hi" a
 Invalid argument, shift must be a number, given a.
 ```
 
+### Cleaning up
+You should remember to go and clean up the file once you've finished. In particular you should:
+* Update the header to include your name
+* Remove/rewrite the comments that described what you needed to do in the file if you haven't already
+
 ## Assessment
-To **demonstrate proficiency**, your programs need to:
+To **demonstrate proficiency**, your program needs to:
 * Pass all the tests in Gradescope 
-* Contain descriptive headers
+* Contain a descriptive header (with your name)
 * Contain descriptive docstrings for each function
 * Not have an excessive amount of duplicated code
 
 To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
-* Useful comments
+* Useful comments (including removal of any outline/todo comments)
 * Descriptive variable names
 * Good spacing
 * Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code
