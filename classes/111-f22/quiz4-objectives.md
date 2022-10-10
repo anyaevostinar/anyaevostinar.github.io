@@ -18,6 +18,7 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 * Using lists - mastery
 * Using definite loops (i.e. for-loops) - mastery
 * Using a function - mastery
+* Debugging syntax errors - mastery
 
 
 You can print and bring along this [checklist](https://docs.google.com/document/d/1etxNw8WGl0GXjcWl60_zTFbrwsQnjv8cNzgLdX-rukM/edit?usp=sharing) to help you keep track in the quiz.
