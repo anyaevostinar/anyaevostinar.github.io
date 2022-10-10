@@ -60,7 +60,7 @@ Please do the following to submit your text for each draft:
 | Item | Due Date |
 |------|----------|
 | Topic and two references | 10/12 |
-| First draft | 10/19 |
+| First draft | 10/21 |
 | Second draft | 11/2 |
 | Final draft | 11/21 |
 
@@ -92,6 +92,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Artificial Chemistries - introduction
 * Open-ended evolution - introduction
 * Xenobots - overview
+* Physicell - overview
 
 ## Resources
 The following are potential references/places to look for references:

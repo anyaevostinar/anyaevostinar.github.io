@@ -33,14 +33,14 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 6 | |  | |
 | M 10/17	| |	Mid-term Break!	| |
 | W 10/19 |  | 	Empirical Data Output  | |
-| F 10/21 | Encyclopedia drafts	| Project introduction; Peer review of encyclopedia drafts | Project proposal |
+| F 10/21 | Encyclopedia first drafts	| Project introduction; Peer review of encyclopedia drafts | Project proposal |
 | Week 7 | |  | |
 | M 10/24 | |   GitHub	| |
 | W 10/26 |  |	Guest Speaker: [Dr. Alexander Lalejini](https://lalejini.com/)	 | |
 | F 10/28 | Project proposal |	Proposal peer review	| Final project  |
 | Week 8 | |  | |
 | M 10/31 |  | TBD 	| |
-| W 11/2 |  | TBD		 | |	
+| W 11/2 | Encyclopedia second drafts | TBD		 | |	
 | F 11/4 | 	| TBD |	|
 | Week 9 | |  | |
 | M 11/7 | |	TBD		| |	
