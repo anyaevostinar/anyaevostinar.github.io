@@ -91,6 +91,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * (Artificial) Neural networks - how they work in deep learning to emulate human brains
 * Artificial Chemistries - introduction
 * Open-ended evolution - introduction
+* Xenobots - overview
 
 ## Resources
 The following are potential references/places to look for references:
