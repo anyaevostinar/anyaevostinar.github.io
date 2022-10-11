@@ -93,6 +93,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Open-ended evolution - introduction
 * Xenobots - overview
 * Physicell - overview
+* Florarobotica - overview
 
 ## Resources
 The following are potential references/places to look for references:
