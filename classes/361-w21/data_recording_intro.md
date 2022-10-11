@@ -60,7 +60,7 @@ There's a lot going on there, so let's look at each piece.
 ```
 emp::DataMonitor<int>& GetSymCountDataNode() {
 ```
-Our code is a getter for the actual DataMonitor and so it'll either create it and/or return the intialized instance variable.
+Our code is a getter for the actual DataMonitor and so it'll either create it and/or return the initialized instance variable.
 
 ```
 if(!data_node_symcount) {
