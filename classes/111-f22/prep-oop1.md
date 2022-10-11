@@ -21,4 +21,6 @@ After class, you should be able to:
 * Start defining your own class
 
 ## Resources
-You should read/watch the following and complete the embedded checks
+You should read/watch the following and complete the embedded checks:
+* Runestone [5.3-5.4](https://runestone.academy/ns/books/published/intro-cs/PythonTurtle/InstancesAHerdofTurtles.html)
+* Runestone [20.1-20.5](https://runestone.academy/ns/books/published/intro-cs/Classes/intro-ClassesandObjectstheBasics.html)

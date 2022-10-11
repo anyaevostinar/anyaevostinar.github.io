@@ -34,7 +34,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 10/14 | [Dictionaries Prep](dictionaries-prep) |	[Using Dictionaries](dictionaries)	| |
 | **Week 6** | **Objects and Classes** |  | |
 | M 10/17	| |	Mid-term Break!	| |
-| W 10/19 | Classes Prep 1; HW5  | Quiz 5; Object-Oriented Programming Intro	| HW6 |
+| W 10/19 | [OOP Preparation](oop1-prep); HW5  | Quiz 5; Object-Oriented Programming Intro	| HW6 |
 | F 10/21 | Classes Prep 2	| OOP Day 2	|  |
 | **Week 7**| **Recursion and Efficiency**|  | |
 | M 10/24 |  Recursion Prep | Intro to Recursion	| |
