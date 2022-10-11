@@ -35,7 +35,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 6** | **Objects and Classes** |  | |
 | M 10/17	| |	Mid-term Break!	| |
 | W 10/19 | [OOP Preparation](oop1-prep); HW5  | Quiz 5; Object-Oriented Programming Intro	| HW6 |
-| F 10/21 | Classes Prep 2	| OOP Day 2	|  |
+| F 10/21 | [Working with Classes](oop2-prep)	| OOP Day 2	|  |
 | **Week 7**| **Recursion and Efficiency**|  | |
 | M 10/24 |  Recursion Prep | Intro to Recursion	| |
 | W 10/26 | Algorithm Analysis Prep; HW6 |	Quiz 6; Analyzing Algorithms		 | HW7 |
