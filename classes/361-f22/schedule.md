@@ -32,7 +32,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | F 10/14 |  [DE project](hw-de) | 	Peer review of DE projects	| |
 | Week 6 | |  | |
 | M 10/17	| |	Mid-term Break!	| |
-| W 10/19 |  | 	Empirical Data Output  | |
+| W 10/19 | [Data Collection Prep](data-prep) | 	Empirical Data Output  | |
 | F 10/21 | Encyclopedia first drafts	| Project introduction; Peer review of encyclopedia drafts | Project proposal |
 | Week 7 | |  | |
 | M 10/24 | |   GitHub	| |
