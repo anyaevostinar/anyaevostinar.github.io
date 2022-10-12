@@ -20,13 +20,13 @@ The setup process will at first be the same as for the previous assignments, exc
 ### Getting Web to Work
 Once you are ready to build the web version of your assignment, you'll need to add a few things to your repository.
 
-1. You'll need to grab the Emscripten repository and add it to your repository as a submodule:
+1. Make sure that you've initialized all your submodules:
 
     ```
-    git submodule add https://github.com/emscripten-core/emsdk.git
+    git submodule update --init --recursive
     ```
 
-2. You'll then be able to go in to that folder and do the usual emsdk setup:
+2. You'll then be able to go in to the `emsdk` folder and do the usual emsdk setup:
 
     ```bash
     ./emsdk install 3.1.2
