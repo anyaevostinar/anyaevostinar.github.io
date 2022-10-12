@@ -91,3 +91,6 @@ Improve it by:
 * prompting the user repeatedly if they enter something that isn't an int between 1 and 100
 * allowing the game to go from any negative number to any positive number to increase the difficulty
 * whatever other expansions or improvements you can think of!
+
+## Extra
+Try some of the [end of chapter exercises](https://runestone.academy/ns/books/published/intro-cs/MoreAboutIteration/Exercises.html) and [chapter assessment problems](https://runestone.academy/ns/books/published/intro-cs/MoreAboutIteration/ChapterAssessment.html) for more practice.
