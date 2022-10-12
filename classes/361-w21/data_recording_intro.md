@@ -12,7 +12,7 @@ permalink: /classes/361-w21/data_intro
 Empirical's data tools are located in `include/emp/data/DataFile.hpp` and so you'll need to include that in your `World` file:
 
 ```
-#include "../../Empirical/include/emp/data/DataFile.hpp"
+#include "emp/data/DataFile.hpp"
 ```
 
 # Recording a count
@@ -28,7 +28,7 @@ emp::Ptr<emp::DataMonitor<int>> data_node_symcount;
 ```
 
 ## Destruction
-Because C++ doesn't manage memory for us, we need to make sure that our `DataNode`s are cleaned up once our world is done, otherwise we'll get memory leaks. The destructor for a class is called when an object of that class is destroyed and always starts with `~` and then the name of the class:
+Because C++ doesn't manage memory for us, we need to make sure that our `DataNode`s are cleaned up once our world is done, otherwise we'll get memory leaks. The destructor for a class is called when an object of that class is destroyed and always starts with `~` and then the name of the class (the example  below is for my class `SymWorld`):
 
 ```
 ~SymWorld() {

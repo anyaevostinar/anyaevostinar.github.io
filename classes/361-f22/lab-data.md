@@ -25,6 +25,8 @@ To use Empirical's DataFiles and DataNodes to record data from an artificial lif
 
     (We won't be using Emscripten in this lab so you don't need to set it up.)
 
+You'll probably want to have [the reading](/classes/361-w21/data_intro) open as reference.
+
 ## Exercise 1
 I've provided starter code for a simple artificial life system (that might look familiar by now). Look through the files in `source` to see how I wrote the code, though it still doesn't actually do anything interesting.
 
