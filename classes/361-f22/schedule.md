@@ -29,17 +29,17 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 5 | |  | |
 | M 10/10 | [Configuration Preparation](config_intro)| [Using Empirical Configuration](emp_config_lab) | |  |
 | W 10/12 |	Encyclopedia topic | Catch up/Work time | |
-| F 10/14 |  [DE project](hw-de) | 	Peer review of DE projects	| |
+| F 10/14 | None  | 	DE Project help time	| |
 | Week 6 | |  | |
 | M 10/17	| |	Mid-term Break!	| |
-| W 10/19 | [Data Collection Prep](data-prep) | 	[Empirical Data Lab](empirical_data_lab)  | |
-| F 10/21 | Encyclopedia first drafts	| Project introduction; Peer review of encyclopedia drafts | Project proposal |
+| W 10/19 | [DE project](hw-de) | 	Peer review of DE projects  | |
+| F 10/21 | Encyclopedia first drafts; group preference form	| Project introduction; Peer review of encyclopedia drafts | Project proposal |
 | Week 7 | |  | |
 | M 10/24 | |   GitHub	| |
 | W 10/26 |  |	Guest Speaker: [Dr. Alexander Lalejini](https://lalejini.com/)	 | |
 | F 10/28 | Project proposal |	Proposal peer review	| Final project  |
 | Week 8 | |  | |
-| M 10/31 |  | TBD 	| |
+| M 10/31 | [Data Collection Prep](data-prep)  | [Empirical Data Lab](empirical_data_lab)	| |
 | W 11/2 | Encyclopedia second drafts | TBD		 | |	
 | F 11/4 | 	| TBD |	|
 | Week 9 | |  | |

@@ -102,6 +102,10 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Game theory - evolutionary games
 * Synthetic biology - introduction
 * Ethicals of Artificial Life - introduction
+* ALife for Social Good - introduction
+* Chemobrionics - introduction
+* Cognitive Robotics - introduction
+* Evolutionary Robotics - introduction
 
 ## Resources
 The following are potential references/places to look for references:
