@@ -101,7 +101,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Game theory - introduction
 * Game theory - evolutionary games
 * Synthetic biology - introduction
-* Ethicals of Artificial Life - introduction
+* Ethics of Artificial Life - introduction
 * ALife for Social Good - introduction
 * Chemobrionics - introduction
 * Cognitive Robotics - introduction
