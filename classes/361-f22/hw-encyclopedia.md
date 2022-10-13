@@ -107,6 +107,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Chemobrionics - introduction
 * Cognitive Robotics - introduction
 * Cognitive Robotics - Intelligent Adaptive Curiosity system
+* Developmental/epigenetic Robotics
 * Evolutionary Robotics - introduction
 
 ## Resources
