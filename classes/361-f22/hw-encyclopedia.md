@@ -115,6 +115,7 @@ The following are potential references/places to look for references:
 
 * Artificial Life Journal [older issues through Carleton Library](https://browzine.com/libraries/319/journals/32148/issues/479445374), [newer issues](https://direct.mit.edu/artl), if you can't access any of the newer articles and would like them, let me know
 * [ALIFE Conference Proceedings](https://direct.mit.edu/isal/volumes/browse-by-conference) 
+* [The Surprising Creativity of Digital Evolution](https://direct.mit.edu/artl/article/26/2/274/93255/The-Surprising-Creativity-of-Digital-Evolution-A) is a fun collection and overview of different digital evolution systems
 * [ALife Newsletter](https://alife.org/category/newsletter/)
 * [ALifePapers Twitter feed](https://twitter.com/AlifePapers)
 * [Biological Bits](https://users.monash.edu/~aland/BiologicalBits.html) - this is a very short free textbook; if you have Apple devices, you can get the iBook free, otherwise the PDF is linked on the page as well through ResearchGate.
