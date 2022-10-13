@@ -86,6 +86,9 @@ otherwise,
     do nothing
 ```
 
+The `ord()` function converts characters into their ASCII value (e.g., `ord("a")` will return 97, `ord("z")` will return 122). I've included a conversion chart on Moodle to make it easy to check.
+The `chr()` function goes in the opposite direction, converting an ASCII value to a string (e.g., `chr(97)` returns "a", `chr(122)` returns "z").
+
 Finally, you should add error-checking code to the main function. 
 What happens if the user enters a non-integer as the shift? Make your program robust, so that it doesn’t crash regardless of what the user tries to enter as the number of letters by which to shift and informs the user of the problem with the following message:
 ```
