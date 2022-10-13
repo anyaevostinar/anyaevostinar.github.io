@@ -98,6 +98,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Tierra - overview
 * Boids - overview
 * Stringmol - overview
+* Bibites - overview
 * Game theory - introduction
 * Game theory - evolutionary games
 * Synthetic biology - introduction
@@ -109,6 +110,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Cognitive Robotics - Intelligent Adaptive Curiosity system
 * Developmental/epigenetic Robotics
 * Evolutionary Robotics - introduction
+* Complex Adaptive Systems - introduction
 
 ## Resources
 The following are potential references/places to look for references:
