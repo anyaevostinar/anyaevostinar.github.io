@@ -111,6 +111,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Developmental/epigenetic Robotics
 * Evolutionary Robotics - introduction
 * Complex Adaptive Systems - introduction
+* ALife Art - introduction
 
 ## Resources
 The following are potential references/places to look for references:
