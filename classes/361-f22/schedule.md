@@ -41,9 +41,9 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 8 | |  | |
 | M 10/31 | [Data Collection Prep](data-prep)  | [Empirical Data Lab](empirical_data_lab)	| |
 | W 11/2 | Encyclopedia second drafts | TBD		 | |	
-| F 11/4 | 	| TBD |	|
+| F 11/4 | 	| Guest Speaker: [Dr. Lisa B. Soros](https://scholar.google.com/citations?user=iUkpvMUAAAAJ) |	|
 | Week 9 | |  | |
-| M 11/7 | |	TBD		| |	
+| M 11/7 | |	Guest Speaker: [Dr. Emily Dolson](https://cse.msu.edu/~dolsonem/)		| |	
 | W 11/9 | |	TBD | |
 | F 11/11 |  | Guest Speaker: [Dr. Acacia Ackles](https://alackles.github.io/)	|	 |
 | Week 10 | | | |
