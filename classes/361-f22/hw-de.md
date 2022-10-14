@@ -37,7 +37,7 @@ Once you are ready to build the web version of your assignment, you'll need to a
 3. You'll also need to make your own `compile-run-web.sh` file in the top level of your repository. Make a file with that name exactly (the grader will rely on that name!) and add the following lines to it:
 
     ```bash
-    emcc -std=c++17 -Isignalgp-lite/third-party/Empirical/include/ -Isignalgp-lite/include/ -Os --js-library signalgp-lite/third-party/Empirical/include/emp/web/library_emp.js -s EXPORTED_FUNCTIONS="['_main', '_empCppCallback', '_empDoCppCallback']" -s "EXTRA_EXPORTED_RUNTIME_METHODS=['ccall', 'cwrap']" -s NO_EXIT_RUNTIME=1 web.cpp -o de_web.js
+    emcc -std=c++17 -IEmpirical/include/ -Isignalgp-lite/include/ -Os --js-library Empirical/include/emp/web/library_emp.js -s EXPORTED_FUNCTIONS="['_main', '_empCppCallback', '_empDoCppCallback']" -s "EXTRA_EXPORTED_RUNTIME_METHODS=['ccall', 'cwrap']" -s NO_EXIT_RUNTIME=1 web.cpp -o de_web.js
     python3 -m http.server
     ```
 
@@ -71,6 +71,42 @@ Once you are ready to build the web version of your assignment, you'll need to a
     ```
 
 
+## Fixing Version Issues
+These are the steps needed to fix your repository to have the versions of Empirical and SGP-Lite that are needed.
+
+
+First, you need to checkout and pin the new version of SGP-Lite with all the recent changes that have been made:
+```
+cd signalgp-lite
+git pull origin master
+cd ..
+git add signalgp-lite
+```
+
+Then you need to add a submodule for the new version of Empirical and get it all pulled down at the top level of your repository:
+```
+git submodule add https://github.com/devosoft/Empirical.git
+git submodule update --init --recursive
+```
+
+
+Now you need to change your `compile-run-web.sh` so that it has the correct include paths (just remove what you have and put this in):
+```
+emcc -std=c++17 -IEmpirical/include/ -Isignalgp-lite/include/ -Os --js-library Empirical/include/emp/web/library_emp.js -s EXPORTED_FUNCTIONS="['_main', '_empCppCallback', '_empDoCppCallback']" -s "EXTRA_EXPORTED_RUNTIME_METHODS=['ccall', 'cwrap']" -s NO_EXIT_RUNTIME=1 web.cpp -o de_web.js
+python3 -m http.server
+```
+
+
+Finally, you need to define two macros to tell the compiler that you want to use the vendorizing version of SGP-Lite and to ignore the 2000+ warnings that causes. These two `defines` need to be the absolutely FIRST thing in your `web.cpp` file:
+```
+//in web.cpp at the VERY top
+#define UIT_VENDORIZE_EMP
+#define UIT_SUPPRESS_MACRO_INSEEP_WARNINGS
+```
+
+That's it! You should now be able to run `compile-run-web.sh` without errors and using the latest and greatest GUI tools.
+
+## Supplemental info
 As you are working on this project, you may find the supplemental material section F of [this paper](https://mmore500.com/pubs/moreno2021case) a helpful reference for what operations are available and what they do, as well as the [SGP-Lite lab](sgplite_lab).
 
 ## Assignment Specification
