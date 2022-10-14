@@ -99,6 +99,8 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Boids - overview
 * Stringmol - overview
 * Bibites - overview
+* MetaChem - overview
+* Geb - overview
 * Game theory - introduction
 * Game theory - evolutionary games
 * Synthetic biology - introduction
