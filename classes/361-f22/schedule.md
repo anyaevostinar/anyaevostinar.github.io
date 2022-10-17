@@ -33,18 +33,18 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 6 | |  | |
 | M 10/17	| |	Mid-term Break!	| |
 | W 10/19 | [DE project](hw-de) | 	Peer review of DE projects  | |
-| F 10/21 | Encyclopedia first drafts; group preference form	| Project introduction; Peer review of encyclopedia drafts | Project proposal |
+| F 10/21 | Encyclopedia first drafts; group preference form	| Project introduction; Peer review of encyclopedia drafts | [Project proposal](project-overview#proposal) |
 | Week 7 | |  | |
-| M 10/24 | |   GitHub	| |
-| W 10/26 |  |	Guest Speaker: [Dr. Alexander Lalejini](https://lalejini.com/)	 | |
+| M 10/24 | Project topic checkin |   GitHub	| |
+| W 10/26 | |	Guest Speaker: [Dr. Alexander Lalejini](https://lalejini.com/)	 | |
 | F 10/28 | Project proposal |	Proposal peer review	| Final project  |
 | Week 8 | |  | |
 | M 10/31 | [Data Collection Prep](data-prep)  | [Empirical Data Lab](empirical_data_lab)	| |
-| W 11/2 | Encyclopedia second drafts | TBD		 | |	
+| W 11/2 | Encyclopedia second drafts | Graphing Data		 | |	
 | F 11/4 | 	| Guest Speaker: [Dr. Lisa B. Soros](https://scholar.google.com/citations?user=iUkpvMUAAAAJ) |	|
 | Week 9 | |  | |
 | M 11/7 | |	Guest Speaker: [Dr. Emily Dolson](https://cse.msu.edu/~dolsonem/)		| |	
-| W 11/9 | |	TBD | |
+| W 11/9 | Replication reports |	Sharing reports | |
 | F 11/11 |  | Guest Speaker: [Dr. Acacia Ackles](https://alackles.github.io/)	|	 |
 | Week 10 | | | |
 | M 11/14	| Guest Speaker: [Matthew Andres Moreno](https://mmore500.com/about/) |   | |
