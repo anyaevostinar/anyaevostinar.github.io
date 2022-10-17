@@ -12,7 +12,7 @@ I recommend making a folder for today's lab in COURSES as you usually do.
 ## Exercise 0
 This is a repeat of what we walked through together at the start of class for your reference. (You'll want to walk through these steps yourself to get setup.)
 
-Download the file [graphics.py](classes/111-w22/graphics.py) and put it into the folder for today's lab. 
+Download the file [graphics.py](/classes/111-w22/graphics.py) and put it into the folder for today's lab. 
 Then, make a new file `main.py` where you'll work today.
 
 In `main.py`, you will first want to import everything from the graphics library. You can do this with an `import graphics` statement, but I suggest the following instead:
