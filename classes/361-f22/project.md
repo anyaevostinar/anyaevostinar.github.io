@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project Specification
-permalink: /classes/361-f22/project
+permalink: /classes/361-f22/project-overview
 ---
 
 ## Introduction
