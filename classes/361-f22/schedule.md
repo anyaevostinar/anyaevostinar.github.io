@@ -35,7 +35,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 10/19 | [DE project](hw-de) | 	Peer review of DE projects  | |
 | F 10/21 | Encyclopedia first drafts; group preference form	| Project introduction; Peer review of encyclopedia drafts | [Project proposal](project-overview#proposal) |
 | Week 7 | |  | |
-| M 10/24 | Project topic checkin |   GitHub	| |
+| M 10/24 | Project topic checkin; [Git Prep](git-prep) |   GitHub	| |
 | W 10/26 | |	Guest Speaker: [Dr. Alexander Lalejini](https://lalejini.com/)	 | |
 | F 10/28 | Project proposal |	Proposal peer review	| Final project  |
 | Week 8 | |  | |

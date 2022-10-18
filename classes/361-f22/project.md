@@ -78,6 +78,7 @@ To demonstrate mastery on this project, everything from proficiency as well as:
 * If you weren't able to replicate the result, report includes thorough analysis as to why
 * System includes data output from a command-line version
 * GUI intuitively demonstrates results from the paper and helps the user understand the underlying system and dynamics
+* GUI includes configuration panel and suggestions for what the user should try
 * Your expansion(s) go beyond simple additional parameter testing
 * GUI clearly demonstrates your expanded results as well
 * Report includes plotted data for your replicated and expanded results
