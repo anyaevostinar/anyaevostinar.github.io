@@ -38,7 +38,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 10/21 | [Working with Classes](oop2-prep)	| [Creating Flower Classes](creating-classes)	|  |
 | **Week 7**| **Recursion and Efficiency**|  | |
 | M 10/24 |  [Recursion Prep](recursion-prep) | Intro to Recursion	| |
-| W 10/26 | [Algorithm Analysis Prep](analysis-prep); HW6 |	[Quiz 6](quiz6); Analyzing Algorithms		 | HW7 |
+| W 10/26 | [Algorithm Analysis Prep](analysis-prep); HW6 |	[Quiz 6](quiz6); Analyzing Algorithms		 | [HW7](hw7) |
 | F 10/28 | [Lists and Dictionary Analysis Prep](list-efficiency-prep)	 | Efficiency of Python Lists and Dictionaries	|  |
 | **Week 8** | **Searching and Sorting** |   | |
 | M 10/31 | Searching Prep |	Sequential and Binary Search	| |
