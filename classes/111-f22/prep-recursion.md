@@ -13,6 +13,7 @@ This is called *recursion* and it can be a bit tricky to wrap your head around a
 Before class, you should be able to:
 * Explain the high-level idea of recursion
 * Explain how a function can call itself
+* Explain what a *base case* is
 
 ## Advanced Learning Objectives
 After class, you should be able to:
