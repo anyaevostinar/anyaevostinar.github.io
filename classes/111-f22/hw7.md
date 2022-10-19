@@ -117,6 +117,7 @@ To **demonstrate proficiency**:
 * Program passes all the tests in Gradescope 
 * Both files have accurate headers
 * `recMaxFinder` is recursive and meets requirements
+* von Koch snowflakes of levels 1, 2, 3, and 4 created when `fractals.py` is run
 * von Koch snowflakes meet requirements
 * Contain descriptive docstrings for each function
 
