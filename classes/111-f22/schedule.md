@@ -37,11 +37,11 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 10/19 | [OOP Preparation](oop1-prep); HW5  | [Quiz 5](quiz5); [Graphics Intro Lab](graphics-intro)	| [HW6](hw6) |
 | F 10/21 | [Working with Classes](oop2-prep)	| [Creating Flower Classes](creating-classes)	|  |
 | **Week 7**| **Recursion and Efficiency**|  | |
-| M 10/24 |  [Recursion Prep](recursion-prep) | Intro to Recursion	| |
+| M 10/24 |  [Recursion Prep](recursion-prep) | [Intro to Recursion](recursion-lab)	| |
 | W 10/26 | [Algorithm Analysis Prep](analysis-prep); HW6 |	[Quiz 6](quiz6); Analyzing Algorithms		 | [HW7](hw7) |
 | F 10/28 | [Lists and Dictionary Analysis Prep](list-efficiency-prep)	 | Efficiency of Python Lists and Dictionaries	|  |
 | **Week 8** | **Searching and Sorting** |   | |
-| M 10/31 | Searching Prep |	Sequential and Binary Search	| |
+| M 10/31 | Searching Prep |	(Guest Prof) Sequential and Binary Search	| |
 | W 11/2 | 	Sorting Prep 1; HW7	 | Quiz 7; Slow(ish) Sorting Algorithms | |	
 | F 11/4 | Sorting Prep 2; Final Project Info	| Mergesort and Final Project  | Final Project Proposal	 |
 | **Week 9** | **Final Project**|  | |
