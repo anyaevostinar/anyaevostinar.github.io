@@ -15,8 +15,14 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 * **Explaining difference between objects and classes - mastery**
 * **Explaining how objects are stored in memory - mastery**
 * Using indefinite loops - mastery
+* Using definite loops - mastery
+* Using conditional statements - mastery
+* Using lists - mastery
 * Using return values - mastery
 * Using function parameters - mastery
+* Explaining function execution - mastery
+* Explaining function scope limits - mastery
+* Debugging syntax errors - mastery
 * Predicting the behavior of a program - mastery
 * Using a function - mastery
 * Using a variable - mastery
