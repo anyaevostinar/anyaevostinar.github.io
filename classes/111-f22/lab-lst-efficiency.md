@@ -15,27 +15,27 @@ a. Download the [structuresTiming.py](structuresTiming.py) file and put it into 
 
 b. The file has a couple of helper functions for creating dictionaries and lists of specific sizes and looking up items in a dictionary or list using the `in` keyword. It also has code similar to what you've seen before for timing how long a function takes to run; in this case, it is currenlty timing how long it takes to look up an item in a list and dictionary of size 10:
 
-    ```python
-    print("Executing each function 10000 times and seeing how long they take.")
+```python
+print("Executing each function 10000 times and seeing how long they take.")
 
-    #Make the two structures of the specific size
-    generated_list = generateList(10)
-    generated_dict = generateDict(10)
+#Make the two structures of the specific size
+generated_list = generateList(10)
+generated_dict = generateDict(10)
 
-    #Get the function calls ready for the timing module, looking for -1 currently
-    functionCallDict = "dictionaryLookup(generated_dict, -1)"
-    functionCallList = "listLookup(generated_list, -1)"
-    #Specify the name of the function here:
-    functionName = "dictionaryLookup, listLookup"
+#Get the function calls ready for the timing module, looking for -1 currently
+functionCallDict = "dictionaryLookup(generated_dict, -1)"
+functionCallList = "listLookup(generated_list, -1)"
+#Specify the name of the function here:
+functionName = "dictionaryLookup, listLookup"
 
-    # Do the timing
-    timing1 = timeit.timeit(functionCallDict, 
-      setup="from __main__ import "+functionName+", generated_dict, generated_list", number=10000)
-    print(functionCallDict, timing1)
-    timing2 = timeit.timeit(functionCallList, 
+# Do the timing
+timing1 = timeit.timeit(functionCallDict, 
     setup="from __main__ import "+functionName+", generated_dict, generated_list", number=10000)
-    print(functionCallList, timing2)
-    ```
+print(functionCallDict, timing1)
+timing2 = timeit.timeit(functionCallList, 
+setup="from __main__ import "+functionName+", generated_dict, generated_list", number=10000)
+print(functionCallList, timing2)
+```
 
 c. Run this code with lists and dictionaries of size 10, 100, 1000, 10000, and 100000 and plot the average execution time compared to the size of the list or dictionary. Which structure should you use for storing items that you are going to look up?
 
