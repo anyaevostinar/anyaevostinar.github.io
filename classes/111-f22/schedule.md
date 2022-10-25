@@ -41,7 +41,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 10/26 | [Algorithm Analysis Prep](analysis-prep); HW6 |	[Quiz 6](quiz6); [Analyzing Algorithms](efficiency)		 | [HW7](hw7) |
 | F 10/28 | [Lists and Dictionary Analysis Prep](list-efficiency-prep)	 | [Efficiency of Python Lists and Dictionaries](lab-efficiency2)	|  |
 | **Week 8** | **Searching and Sorting** |   | |
-| M 10/31 | Searching Prep |	(Guest Prof) Sequential and Binary Search	| |
+| M 10/31 | [Searching Prep](searching-prep) |	(Guest Prof) Sequential and Binary Search	| |
 | W 11/2 | 	Sorting Prep 1; HW7	 | Quiz 7; Slow(ish) Sorting Algorithms | |	
 | F 11/4 | Sorting Prep 2; Final Project Info	| Mergesort and Final Project  | Final Project Proposal	 |
 | **Week 9** | **Final Project**|  | |
