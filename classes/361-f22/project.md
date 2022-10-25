@@ -49,6 +49,12 @@ This checkin must include the following:
 If you haven't settled on one paper, you can submit a document with several possibilities to get my thoughts on which would be best.
 I will be aiming to get you feedback quickly on this topic checkin, so you can submit it earlier to possibly get earlier feedback.
 
+#### Ideas
+Some things I mentioned in class when thinking about ideas for the project:
+* "Classic" results a great, more likely to be able to replicate and then build from
+* Traditional mathematical modeling results using ODEs could be interesting to replicate in an agent-based model
+* The [Avida Encyclopedia page](https://alife.org/encyclopedia/digital-evolution/avida/) has a long list of papers published that used Avida and most of those would be ideal for this project
+
 ### Full proposal
 Your full proposal is due 10/28 at 10pm, but we will be doing peer review/discussion of your proposals in class that day so that you can see what other people are doing and get some last minute feedback as you finish your own proposal.
 
