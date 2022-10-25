@@ -90,8 +90,8 @@ If you’re stuck for ideas, or have questions about the suitability of a partic
 
 ## Project Proposal
 To make sure that you are poised for success, you must write a short proposal of what you plan to do. 
-You will submit this through Gradescope. 
-Your proposal is due by Monday, November 7th, at 10pm, and it should include the following components:
+You will submit this through Gradescope (it's a fill in the blank on Gradescope assignment, so you don't need to create a separate document first, though you can). 
+Your proposal is due by Monday, November 7th, at 10pm, and will include the following components:
 
 * Who’s working on the project, and how you plan to divide the work.
 * The game or simulation you plan to implement for your final project. Include a brief description of the game and its rules (or, for a simulation, what you aim to model and a basic overview of how it will run).
