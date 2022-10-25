@@ -43,7 +43,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 8** | **Searching and Sorting** |   | |
 | M 10/31 | [Searching Prep](searching-prep) |	(Guest Prof) Sequential and Binary Search	| |
 | W 11/2 | 	[Sorting Prep 1](sorting-basic-prep); HW7	 | [Quiz 7](quiz7); Slow(ish) Sorting Algorithms | |	
-| F 11/4 | [Sorting Prep 2](mergesort-prep); Final Project Info	| Mergesort and Final Project  | Final Project Proposal	 |
+| F 11/4 | [Sorting Prep 2](mergesort-prep); [Final Project Info](final-project)	| Mergesort and Final Project  | [Final Project Proposal](final-project#project-proposal)	 |
 | **Week 9** | **Final Project**|  | |
 | M 11/7 | Final Project Proposal |	Making Simulations | |	
 | W 11/9 | None | Quiz 8; Catch-up and work day |Final Project |
