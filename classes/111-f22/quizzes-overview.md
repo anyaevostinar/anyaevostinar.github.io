@@ -26,10 +26,9 @@ The learning objectives that will ultimately all be assessed via quizzes are:
 14. Using instance methods
 15. Using recursion
 16. Debugging syntax errors
-17. Debugging logic errors
-18. Predicting the behavior of a program
-19. Explaining function execution
-20. Explaining function scope limits
+17. Predicting the behavior of a program
+18. Explaining function execution
+19. Explaining function scope limits
 21. Explaining the difference between objects and classes
 22. Explaining how objects are stored in memory
 23. Explaining selection sort
