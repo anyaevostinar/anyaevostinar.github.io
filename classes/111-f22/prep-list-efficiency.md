@@ -18,3 +18,7 @@ Before class, you should be able to:
 After class, you should be able to:
 * Explain why lists in Python have the time efficiency that they do for indexing and `contains`
 * Evaluate when you should use a list versus a dictionary to solve a problem based on the time efficiency
+
+## Resources
+Read/watch the following and complete the embedded checks:
+* Runestone [2.5-2.7](https://runestone.academy/ns/books/published/intro-csF22-book3/AlgorithmAnalysis/PerformanceofPythonDataStructures.html)
