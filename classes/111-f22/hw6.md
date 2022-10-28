@@ -130,6 +130,7 @@ To **demonstrate proficiency**:
 * `gis.py` prints out the total square miles and population of Minnesota
 * `gis.py` zipcode numbers show correctly based on mouse clicks
 * Both files have updated and accurate headers
+* Functions you added or updated have accurate docstrings with 1) description of why you would use the function, 2) the arguments, 3) the return value if any
 
 To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
 * Useful comments (including removal of any outline/todo comments)
