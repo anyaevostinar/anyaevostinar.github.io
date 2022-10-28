@@ -21,6 +21,7 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 * Explaining how objects are stored in memory - mastery
 * Using definite loops - mastery
 * Using lists - mastery
+* Using function parameters - mastery
 * Using list parameters with functions - mastery
 * Using a function - mastery
 
