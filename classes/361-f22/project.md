@@ -69,7 +69,12 @@ Your proposal must include the following:
 You should aim to have your preliminary replicated results by 11/9. 
 To enable this, you will submit a draft of your system and replication report by this date to then get feedback and help on ideas.
 
-More details on this will be forthcoming.
+Your report should be submitted as a Google Doc through the form on Moodle and should include the following sections:
+* Summary of the methodology of the original paper (i.e. the system and approach used)
+* Summary of the result from the original paper that you attempted to replicate
+* Description of your reimplementation and any changes you needed to make from the original approach (i.e. description of how your program works and how it differs from the original methodology)
+* Description of your replication results so far
+* (If relevant) Initial analysis on why you results differ from original results
 
 ## Assessment
 Generally, you will be assessed based on the specifications above. 
