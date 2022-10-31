@@ -28,7 +28,7 @@ def generateDict(size):
   Parameter: integer for size of desired dictionary
   Return: a dictionary of that size'''
   example_dict = {}
-  for i in range(100):
+  for i in range(size):
     example_dict[i] = True
   return example_dict
 

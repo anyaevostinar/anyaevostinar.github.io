@@ -46,8 +46,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 11/4 | [Sorting Prep 2](mergesort-prep); [Final Project Info](final-project)	| Mergesort and Final Project  | [Final Project Proposal](final-project#project-proposal)	 |
 | **Week 9** | **Final Project**|  | |
 | M 11/7 | Final Project Proposal |	Making Simulations | |	
-| W 11/9 | None | Quiz 8; Catch-up and work day |Final Project |
-| F 11/11 | None  | TBD |	 |
+| W 11/9 | Study! | [Quiz 8](quiz8) | [Final Project](final-project) |
+| F 11/11 | None  | Catch-up and work day |	 |
 | **Week 10** | **Wrapping Up** |  | |
 | M 11/14	| Project First Draft | Working on Final Projects |  |
 | W 11/16 | Study! | Quiz 9; Wrap-up and course evals | |
