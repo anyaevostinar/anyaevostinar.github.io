@@ -18,9 +18,9 @@ Empirical's data tools are located in `include/emp/data/DataFile.hpp` and so you
 # Recording a count
 A common thing you'll likely want to do is record how many of something there are in your world every so many timesteps. You will output the count every interval and so don't need your `DataNode` to worry about previous recordings. This is a common enough pattern that there is a built-in version of the `DataNode` that does this called the `DataMonitor`:
 ```
-usingDataMonitor = DataNode<T, data::Current, data::Info, data::Range, data::Stats, MODS...>
+using DataMonitor = DataNode<T, data::Current, data::Info, data::Range, data::Stats, MODS...>
 ```
-"A node that stores data about the most recent value it recieved, as well as the distribution (min, max, count, total, and mean) of values it has recieved since the last reset. It also allows you to give it a name, description, and keyword."
+"A node that stores data about the most recent value it received, as well as the distribution (min, max, count, total, and mean) of values it has received since the last reset. It also allows you to give it a name, description, and keyword."
 
 If I wanted to save a count of how many symbionts there are in the world in my software [Symbulation](https://github.com/anyaevostinar/SymbulationEmp/blob/master/source/SymWorld.h), I would declare a `DataMonitor` in my `SymWorld` class like so:
 ```

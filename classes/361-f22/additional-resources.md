@@ -16,6 +16,7 @@ A collection of places to look for more topics relevant to Artificial Life.
 ## Free Books
 * [Biological Bits](https://users.monash.edu/~aland/BiologicalBits.html) - this is a very short free textbook; if you have Apple devices, you can get the iBook free, otherwise the PDF is linked on the page as well through ResearchGate.
 * [Rise of the Self-Replicators](https://www.tim-taylor.com/selfrepbook/) - history of self-replicators through literature and science
+* [Conway's Game of Life: Mathematics and Construction](https://conwaylife.com/book/)
 
 ## Other Books
 * [Complexity by Melanie Mitchell](https://melaniemitchell.me/BooksContent/CAGTReviews.html)
