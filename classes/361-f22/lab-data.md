@@ -28,7 +28,7 @@ To use Empirical's DataFiles and DataNodes to record data from an artificial lif
 You'll probably want to have [the reading](/classes/361-w21/data_intro) open as reference.
 
 ## Exercise 1
-I've provided starter code for a simple artificial life system (that might look familiar by now). Look through the files in `source` to see how I wrote the code, though it still doesn't actually do anything interesting.
+I've provided starter code for a simple artificial life system (that might look familiar by now). Look through the files to see how I wrote the code, though it still doesn't actually do anything interesting.
 
 Compile and run using `compile-run.sh` to verify everything is working. (Don't worry about the warnings.)
 
@@ -39,7 +39,7 @@ a. Create a `DataMonitor` pointer for your organism count as an instance variabl
 
 b. Create a destructor for `OrgWorld` and make sure that your DataMonitor will be deleted when the world is destroyed (rather ominous sounding isn't it?).
 
-c. Create a method `GetOrgCountDataNode()` that creates the data node if it doesn't exist according to the method in the reading. You'll want to think about what your data node should do for each occupied space in the world (don't over think it!).
+c. Create a method `GetOrgCountDataNode()` that creates the data node if it doesn't exist according to the method in the reading. You'll want to think about what your data node should do for each occupied space in the world (don't over think it, it really is just a single number!).
 
 d. Create a method `SetupOrgFile()` that grabs the total count from your data monitor and records it in the file according to the method in the reading.
 
