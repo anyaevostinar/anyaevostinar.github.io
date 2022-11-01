@@ -57,6 +57,7 @@ Often in a simulation or game, you'll want your graphics to move.
         ranX = random.randint(-10,10)
         ranY = random.randint(-10,10)
         # call move on Circle object with ranX and ranY
+    ```
 
 3. In `main`, write a for-loop that calls the `move` method of your `MovingCircle` 5 times and make sure that it's working.
 
