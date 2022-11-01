@@ -134,9 +134,9 @@ You will submit your project and report through Gradescope.
 
 ## Resources
 In addition to the normal resources you have for getting help, I recommend you consult the lecture recording and labs from the following days:
-* Week 6 Wednesday - [Graphics Intro Lab](https://anyaevostinar.github.io/classes/111-f22/graphics-intro)
-* Week 6 Friday - [Creating Flower Classes](https://anyaevostinar.github.io/classes/111-f22/creating-classes)
-* Week 9 Monday - Making Simulations (coming soon)
+* Week 6 Wednesday - [Graphics Intro Lab](graphics-intro)
+* Week 6 Friday - [Creating Flower Classes](creating-classes)
+* Week 9 Monday - [Making Simulations](lab-simulations)
 
 ## Assessment
 You will be assessed on the following rubric.
