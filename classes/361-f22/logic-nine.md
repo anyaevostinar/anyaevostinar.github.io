@@ -77,5 +77,5 @@ Finally, the arithmetic library is not the one that Avida generally provided to 
 * shift-l
 * swap
 
-It's fine to use the complete op library from SGP-Lite, but if you're interested in sticking more closely to the original default instruction set, go for it and check out the other guide for how to make your own instructions.
+It's fine to use the complete op library from SGP-Lite, but if you're interested in sticking more closely to the original default instruction set, go for it and check out the [other guide](instructions-guide) for how to make your own instructions.
 

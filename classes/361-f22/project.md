@@ -79,7 +79,7 @@ Your draft report for 11/9 should be submitted as a Google Doc through the form 
 Your final report should be a `.md` or `.pdf` file in your Git repository.
 
 ### Helpful things
-If you are doing an Avida paper, check out the guide for [logic nine tasks](logic-nine) and new instructions (coming soon).
+If you are doing an Avida paper, check out the guide for [logic nine tasks](logic-nine) and [new instructions](instructions-guide).
 
 ## Assessment
 Generally, you will be assessed based on the specifications above. 
