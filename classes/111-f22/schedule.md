@@ -45,7 +45,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 11/2 | 	[Sorting Prep 1](sorting-basic-prep); HW7	 | [Quiz 7](quiz7); [Slow(ish) Sorting Algorithms](slow-sorting) | |	
 | F 11/4 | [Sorting Prep 2](mergesort-prep); [Final Project Info](final-project)	| Mergesort and Final Project  | [Final Project Proposal](final-project#project-proposal)	 |
 | **Week 9** | **Final Project**|  | |
-| M 11/7 | Final Project Proposal |	Making Simulations | |	
+| M 11/7 | Final Project Proposal |	[Making Simulations](lab-simulations) | |	
 | W 11/9 | Study! | [Quiz 8](quiz8) | [Final Project](final-project) |
 | F 11/11 | None  | Catch-up and work day |	 |
 | **Week 10** | **Wrapping Up** |  | |
