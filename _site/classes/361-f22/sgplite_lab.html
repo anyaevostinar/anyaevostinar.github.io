@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SGP-Lite Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="SGP-Lite Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-f22/sgplite_lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-f22/sgplite_lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SGP-Lite Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"SGP-Lite Lab","url":"http://localhost:4000/classes/361-f22/sgplite_lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">SGP-Lite Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To use the SGP-Lite library to create a basic digital evolution system.</p>
+
+<h2 id="setup">Setup</h2>
+<ol>
+  <li>
+    <p>Open the SGP-Lite Lab assignment on Moodle to get the Git repository template.</p>
+  </li>
+  <li>Open Terminal and clone your repository:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git clone &lt;your repository link&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Open VSCode and then open your repository folder.</p>
+  </li>
+  <li>
+    <p>Open a Terminal in VSCode and pull down the submodules for the starter code:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git submodule update --init --recursive
+</code></pre></div>    </div>
+
+    <p>(We won’t be using Emscripten in this lab so you don’t need to set it up.)</p>
+  </li>
+</ol>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Much of the starter code should look familiar. In particular <code class="language-plaintext highlighter-rouge">native.cpp</code>, <code class="language-plaintext highlighter-rouge">Org.h</code> and <code class="language-plaintext highlighter-rouge">World.h</code> have mostly functionality that you’ve seen before. The new files <code class="language-plaintext highlighter-rouge">CPU.h</code>, <code class="language-plaintext highlighter-rouge">Instructions.h</code>, <code class="language-plaintext highlighter-rouge">OrgState.h</code> and <code class="language-plaintext highlighter-rouge">Task.h</code> add the functionality to allow for self-reproducing computer programs as our organisms. We’ll look at those in later exercises. First let’s look at the new things in the familiar files.</p>
+
+<ol>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">Org.h</code>, you’ll notice a method <code class="language-plaintext highlighter-rouge">PrintGenome</code>, which prints out the organism’s computer program in a somewhat user-friendly way.</p>
+  </li>
+  <li>
+    <p>Also in <code class="language-plaintext highlighter-rouge">Org.h</code>, you’ll see <code class="language-plaintext highlighter-rouge">Reset</code> and <code class="language-plaintext highlighter-rouge">Mutate</code> methods that just pass along those calls to the organism’s CPU. Tracking of points is tracked by the organism’s CPU’s <code class="language-plaintext highlighter-rouge">OrgState</code> also.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">World.h</code> is pretty standard with a couple of new methods. <code class="language-plaintext highlighter-rouge">GetPopulation</code> is just a simple helper method that returns the population vector. You’ll implement the <code class="language-plaintext highlighter-rouge">CheckOutput</code> method in a later exercise. Finally, you’ll notice that while the <code class="language-plaintext highlighter-rouge">Update</code> method calls each organism’s <code class="language-plaintext highlighter-rouge">Process</code>, it handles reproduction slightly differently, using a reproduce queue. This is because the organisms will have to reproduce with an instruction, which adds them to reproduce queue.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Nothing actually happens in the experiment so far because the organism <code class="language-plaintext highlighter-rouge">Process</code> method needs to be implemented.
+As the <code class="language-plaintext highlighter-rouge">TODO</code> says, you need to run the CPU in <code class="language-plaintext highlighter-rouge">Process</code>.
+Note that the <code class="language-plaintext highlighter-rouge">Process</code> method takes the organism’s current location as an argument now, since it is needed for the reproduction queue if the organism does reproduce.</p>
+
+<ol>
+  <li>
+    <p>If you open <code class="language-plaintext highlighter-rouge">CPU.h</code>, you’ll see the class definition for a <code class="language-plaintext highlighter-rouge">CPU</code>. It holds a couple of objects from the SGP library and mostly acts as an interface between our code and the SGP code. We aren’t going to worry about exactly how a lot of these methods work, but you can see that there is a method <code class="language-plaintext highlighter-rouge">RunCPUStep</code>, which is what you want to call in <code class="language-plaintext highlighter-rouge">Process</code>. It takes a number of cycles, which allow one instruction to be run each. In organism’s <code class="language-plaintext highlighter-rouge">Process</code>, call run the CPU for 10 cycles:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">cpu</span><span class="p">.</span><span class="n">RunCPUStep</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>If you compile and run, your organisms are now able to execute instructions, but they aren’t able to gather resources yet, so they won’t be able to reproduce or do much of anything.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Time to specify a task for the organisms to be rewarded for doing.</p>
+
+<ol>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">Task.h</code> file currently only specifies a <code class="language-plaintext highlighter-rouge">Task</code> class that will end up being a super class. To make a new task, you need to define a subclass of <code class="language-plaintext highlighter-rouge">Task</code>, which you can do in this same file, after the end of the <code class="language-plaintext highlighter-rouge">Task</code> class:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">class</span> <span class="nc">Task</span> <span class="p">{</span>
+ <span class="nl">public:</span>
+ <span class="k">virtual</span> <span class="kt">double</span> <span class="n">CheckOutput</span><span class="p">(</span><span class="kt">float</span> <span class="n">output</span><span class="p">,</span> <span class="kt">float</span> <span class="n">inputs</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+ <span class="p">};</span>
+
+ <span class="k">class</span> <span class="nc">NewTask</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Task</span> <span class="p">{</span>
+
+
+ <span class="p">};</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>The only methods that a <code class="language-plaintext highlighter-rouge">Task</code> subclass needs to specify is its own version of the <code class="language-plaintext highlighter-rouge">CheckOutput</code> and <code class="language-plaintext highlighter-rouge">name</code> methods. The <code class="language-plaintext highlighter-rouge">CheckOutput</code> method holds the logic for figuring out if the organism actually solved the task. The method needs to return a double, which is the amount of points the organism gets whenever the task is checked. It takes two parameters, the float that the organism outputted, and an array holding the most recent 4 input values the organism received. Within your <code class="language-plaintext highlighter-rouge">NewTask</code>, start your definition for this method:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nl">public:</span>
+     <span class="kt">double</span> <span class="n">CheckOutput</span><span class="p">(</span><span class="kt">float</span> <span class="n">output</span><span class="p">,</span> <span class="kt">float</span> <span class="n">inputs</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span> <span class="k">override</span> <span class="p">{</span>
+
+         <span class="k">return</span> <span class="mf">0.0</span><span class="p">;</span>
+     <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Because the organism may have solved the task for any of the most recent four input values, you need to loop over those input values to check against the correct answer. For example, if you were setting up a task where the organism had to produce the square of an input value, you would need to 1) loop over the input array, 2) calculate the square of each input value, 3) check if the output value equals the square:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+     <span class="c1">//For each input value in the array</span>
+     <span class="c1">//Calculate the square of it</span>
+     <span class="kt">float</span> <span class="n">square</span> <span class="o">=</span> <span class="n">inputs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">inputs</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+
+     <span class="c1">//Since these are floats, allowing for some floating point error</span>
+     <span class="k">if</span> <span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">output</span> <span class="o">-</span> <span class="n">square</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">0.001</span><span class="p">)</span> <span class="p">{</span>
+         <span class="c1">//They squared an input, yey!</span>
+         <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Squared!"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+         <span class="c1">//Give them 5 points for solving this task</span>
+         <span class="k">return</span> <span class="mf">5.0</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You also need to define the name method for your new task. This just needs to be a method called <code class="language-plaintext highlighter-rouge">name()</code> that returns a <code class="language-plaintext highlighter-rouge">std::string</code> that is the name you want to call your task, such as <code class="language-plaintext highlighter-rouge">Square</code>.</p>
+  </li>
+  <li>
+    <p>You can make as many subclasses of <code class="language-plaintext highlighter-rouge">Task</code> in this file as you want, but let’s stick to one for now and finish setting things up for this one. In <code class="language-plaintext highlighter-rouge">World.h</code> you need to specify a vector of the tasks that are available for organisms to solve. Create a new instance variable that is a vector of <code class="language-plaintext highlighter-rouge">Task *</code> and put instances of all of your tasks into it (in this case just one):</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Task</span> <span class="o">*&gt;</span> <span class="n">tasks</span><span class="p">{</span><span class="k">new</span> <span class="n">NewTask</span><span class="p">()};</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Finally, you are now ready to implement the <code class="language-plaintext highlighter-rouge">CheckOutput</code> method of your world. In this method, you should loop through your vector of tasks, call each task’s <code class="language-plaintext highlighter-rouge">CheckOutput</code> method, and add any points that are returned to the organism’s state:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">for</span> <span class="p">(</span><span class="n">Task</span> <span class="o">*</span><span class="n">task</span> <span class="o">:</span> <span class="n">tasks</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">state</span><span class="p">.</span><span class="n">points</span> <span class="o">+=</span> <span class="n">task</span><span class="o">-&gt;</span><span class="n">CheckOutput</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">state</span><span class="p">.</span><span class="n">last_inputs</span><span class="p">);</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+
+    <p>(The world’s <code class="language-plaintext highlighter-rouge">CheckOutput</code> method is called by the <code class="language-plaintext highlighter-rouge">IO</code> instruction and therefore specified in the <code class="language-plaintext highlighter-rouge">Instructions.h</code> file. This file is a bit complicated, so you don’t have to worry about it for now.)</p>
+  </li>
+  <li>
+    <p>Now your organisms should be able to run the instructions in their genomes and get points if they are able to square an input. Even randomly generated genomes are sometimes able to do a simpler task right away, so try running your experiment and see if you get lucky!</p>
+  </li>
+</ol>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Your organisms currently don’t mutate their programs when they reproduce, so you are just relying on the random starting variation. Changing that isn’t too hard fortunately since SGP-Lite already supports mutations for the programs.</p>
+
+<ol>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">CPU.h</code>, go to the <code class="language-plaintext highlighter-rouge">Mutate</code> method where there is a todo about applying mutations. To mutate the whole genome, you just need to call the <code class="language-plaintext highlighter-rouge">ApplyPointMutations</code> method on the <code class="language-plaintext highlighter-rouge">Program</code>:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> program.ApplyPointMutations(0.02);
+ //0.02 is percent probability that each bit
+ // in the binary representation of the genome is flipped
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>With mutations occurring during reproduction, it’s much more likely that your population will undergo some meaningful evolution and get better at solving your task. If you still aren’t getting any solving it though, they might not be reproducing. You can go and give them 1 point just for trying to solve the task by changing the default return value in <code class="language-plaintext highlighter-rouge">NewTask.CheckOutput</code> to 1.0 instead of 0.0. The population should definitely then be able to grow and eventually solve the task.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>It’s not ideal to only be able to see that an organism solved a task by outputting a string. Eventually, you’ll want to be able to check each organism to see if it has ever solved a task.</p>
+
+<ol>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">OrgState.h</code>, there is a simple <code class="language-plaintext highlighter-rouge">OrgState</code> struct that is defined (a struct is like a class but everything defaults to public and some advanced OOP functionality isn’t possible). Add a boolean variable to track if this organism has performed the task or not.</p>
+  </li>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">World.h</code>, change <code class="language-plaintext highlighter-rouge">CheckOutput</code> so that it changes the <code class="language-plaintext highlighter-rouge">state</code>’s boolean variable to true if the organism does actually get points for solving the task.</p>
+  </li>
+  <li>
+    <p>In your world’s <code class="language-plaintext highlighter-rouge">Update</code>, add a counter for how many organisms have solved the task and print it out each update so you can see if your population is getting better as a whole. This is a good time to compile and run to see how things are working and do any needed debugging!</p>
+  </li>
+  <li>
+    <p>Finally, if you are curious to see what one of your organisms’ genomes looks like at the end of your experiment, you can print it out with the <code class="language-plaintext highlighter-rouge">PrintGenome()</code> method in <code class="language-plaintext highlighter-rouge">native.cpp</code>:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> world.GetPopulation()[0]-&gt;PrintGenome();
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="extra">Extra</h2>
+<p>If you finish early, there are lots of other things to try:</p>
+<ul>
+  <li>Try making another task that requires more than just one of the input values to complete</li>
+  <li>Look through the supplemental material section F of <a href="https://mmore500.com/pubs/moreno2021case">this paper</a> to see what all the instructions do and <a href="https://signalgp-lite.readthedocs.io/en/latest/api/program_listing_file_include_sgpl_library_prefab_CompleteOpLibrary.hpp.html">this documentation</a> for how to add more to <code class="language-plaintext highlighter-rouge">Instructions.h</code></li>
+  <li>Try changing the mutation rate and/or amount of points associated with the task(s) and/or needed to reproduce and see how evolution changes</li>
+  <li>Study the <code class="language-plaintext highlighter-rouge">IO</code> and <code class="language-plaintext highlighter-rouge">Reproduce</code> instructions and try to make your own new instruction</li>
+</ul>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>The starter code for this lab (and the associated homework assignment) was largely written by Sylvie Dirkswager, thanks Sylvie!</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

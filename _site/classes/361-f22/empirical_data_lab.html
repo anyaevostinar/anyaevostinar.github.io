@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Empirical DataFiles Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Empirical DataFiles Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-f22/empirical_data_lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-f22/empirical_data_lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Empirical DataFiles Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Empirical DataFiles Lab","url":"http://localhost:4000/classes/361-f22/empirical_data_lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Empirical DataFiles Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To use Empirical’s DataFiles and DataNodes to record data from an artificial life simulation.</p>
+
+<h2 id="setup">Setup</h2>
+<ol>
+  <li>
+    <p>Open the Empirical Data Lab starter link on Moodle to get the Git repository template.</p>
+  </li>
+  <li>Open Terminal and clone your repository:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git clone &lt;your repository link&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Open VSCode and then open your repository folder.</p>
+  </li>
+  <li>
+    <p>Open a Terminal in VSCode and pull down the submodules for the starter code:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git submodule update --init --recursive
+</code></pre></div>    </div>
+
+    <p>(We won’t be using Emscripten in this lab so you don’t need to set it up.)</p>
+  </li>
+</ol>
+
+<p>You’ll probably want to have <a href="/classes/361-w21/data_intro">the reading</a> open as reference.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>I’ve provided starter code for a simple artificial life system (that might look familiar by now). Look through the files in <code class="language-plaintext highlighter-rouge">source</code> to see how I wrote the code, though it still doesn’t actually do anything interesting.</p>
+
+<p>Compile and run using <code class="language-plaintext highlighter-rouge">compile-run.sh</code> to verify everything is working. (Don’t worry about the warnings.)</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>The first thing you’ll practice is recording the count of organisms into a file.</p>
+
+<p>a. Create a <code class="language-plaintext highlighter-rouge">DataMonitor</code> pointer for your organism count as an instance variable of <code class="language-plaintext highlighter-rouge">OrgWorld</code>.</p>
+
+<p>b. Create a destructor for <code class="language-plaintext highlighter-rouge">OrgWorld</code> and make sure that your DataMonitor will be deleted when the world is destroyed (rather ominous sounding isn’t it?).</p>
+
+<p>c. Create a method <code class="language-plaintext highlighter-rouge">GetOrgCountDataNode()</code> that creates the data node if it doesn’t exist according to the method in the reading. You’ll want to think about what your data node should do for each occupied space in the world (don’t over think it!).</p>
+
+<p>d. Create a method <code class="language-plaintext highlighter-rouge">SetupOrgFile()</code> that grabs the total count from your data monitor and records it in the file according to the method in the reading.</p>
+
+<p>e. Call your set up file in <code class="language-plaintext highlighter-rouge">native.cpp</code>, then compile and run your code to verify that it works.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Generally we will want to know about the traits of organisms in the population as well.
+Let’s imagine that you are doing a simulation of evolving cooperation among organisms.</p>
+
+<p>a. Add a trait to the Organism class that is a double called <code class="language-plaintext highlighter-rouge">cooperation_probability</code>. Assume that this value goes from 0 to 1 and is the probability that the organism cooperates (though we won’t immediately implement the actual cooperation). Take an initial value for the trait in as a parameter to the constructor and set it.</p>
+
+<p>b. Make an accessor and mutator method for the trait, since you’ll need them later.</p>
+
+<p>c. Set up mutation on the trait during reproduction. Refer back to the <a href="evo_alg_lab">Evolutionary Algorithm Lab</a> for how to do this.</p>
+
+<p>d. Verify that your trait is mutating with print statements in <code class="language-plaintext highlighter-rouge">native.cpp</code> before moving on to making a data file for it.</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>You may also be interested in the distribution of values for the cooperation probability that the organisms currently have, even though it is just drifting around currently.</p>
+
+<p>a. Create a <code class="language-plaintext highlighter-rouge">DataMonitor</code> pointer for the cooperation values that will hold both a double and a histogram.</p>
+
+<p>b. Add this data node to your destructor.</p>
+
+<p>c. Create a method for getting the data node, remember that it has to return a type that matches the type of your data monitor.</p>
+
+<p>d. Add the code to your file setup method to create the bins of your histogram and add them and the mean of the data to the file.</p>
+
+<p>e. Compile and run your code to see how the distribution changes over time.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>Try some of the following:</p>
+<ul>
+  <li>Create a second trait and another data file to track information about that trait</li>
+  <li>Combine what you know from the configuration lab to control the name of your data file(s) with a configuration setting and include the random number seed in the file name as well so you don’t overwrite your data when you run multiple experiments</li>
+  <li>Getting data to display nicely on your web GUI is a pretty big task, but you can start to look through <a href="https://empirical.readthedocs.io/en/latest/library/web/d3/d3-intro.html">Empirical’s support for using D3</a> if you are interested in trying</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

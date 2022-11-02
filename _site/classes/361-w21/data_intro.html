@@ -50,21 +50,21 @@
 <h1 id="include">Include</h1>
 <p>Empirical’s data tools are located in <code class="language-plaintext highlighter-rouge">include/emp/data/DataFile.hpp</code> and so you’ll need to include that in your <code class="language-plaintext highlighter-rouge">World</code> file:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include "../../Empirical/include/emp/data/DataFile.hpp"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include "emp/data/DataFile.hpp"
 </code></pre></div></div>
 
 <h1 id="recording-a-count">Recording a count</h1>
 <p>A common thing you’ll likely want to do is record how many of something there are in your world every so many timesteps. You will output the count every interval and so don’t need your <code class="language-plaintext highlighter-rouge">DataNode</code> to worry about previous recordings. This is a common enough pattern that there is a built-in version of the <code class="language-plaintext highlighter-rouge">DataNode</code> that does this called the <code class="language-plaintext highlighter-rouge">DataMonitor</code>:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>usingDataMonitor = DataNode&lt;T, data::Current, data::Info, data::Range, data::Stats, MODS...&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using DataMonitor = DataNode&lt;T, data::Current, data::Info, data::Range, data::Stats, MODS...&gt;
 </code></pre></div></div>
-<p>“A node that stores data about the most recent value it recieved, as well as the distribution (min, max, count, total, and mean) of values it has recieved since the last reset. It also allows you to give it a name, description, and keyword.”</p>
+<p>“A node that stores data about the most recent value it received, as well as the distribution (min, max, count, total, and mean) of values it has received since the last reset. It also allows you to give it a name, description, and keyword.”</p>
 
 <p>If I wanted to save a count of how many symbionts there are in the world in my software <a href="https://github.com/anyaevostinar/SymbulationEmp/blob/master/source/SymWorld.h">Symbulation</a>, I would declare a <code class="language-plaintext highlighter-rouge">DataMonitor</code> in my <code class="language-plaintext highlighter-rouge">SymWorld</code> class like so:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::Ptr&lt;emp::DataMonitor&lt;int&gt;&gt; data_node_symcount;
 </code></pre></div></div>
 
 <h2 id="destruction">Destruction</h2>
-<p>Because C++ doesn’t manage memory for us, we need to make sure that our <code class="language-plaintext highlighter-rouge">DataNode</code>s are cleaned up once our world is done, otherwise we’ll get memory leaks. The destructor for a class is called when an object of that class is destroyed and always starts with <code class="language-plaintext highlighter-rouge">~</code> and then the name of the class:</p>
+<p>Because C++ doesn’t manage memory for us, we need to make sure that our <code class="language-plaintext highlighter-rouge">DataNode</code>s are cleaned up once our world is done, otherwise we’ll get memory leaks. The destructor for a class is called when an object of that class is destroyed and always starts with <code class="language-plaintext highlighter-rouge">~</code> and then the name of the class (the example  below is for my class <code class="language-plaintext highlighter-rouge">SymWorld</code>):</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~SymWorld() {
     if(data_node_symcount) data_node_symcount.Delete();
@@ -93,7 +93,7 @@ return *data_node_symcount;
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>emp::DataMonitor&lt;int&gt;&amp; GetSymCountDataNode() {
 </code></pre></div></div>
-<p>Our code is a getter for the actual DataMonitor and so it’ll either create it and/or return the intialized instance variable.</p>
+<p>Our code is a getter for the actual DataMonitor and so it’ll either create it and/or return the initialized instance variable.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if(!data_node_symcount) {
     data_node_symcount.New();

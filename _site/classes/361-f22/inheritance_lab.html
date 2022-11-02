@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Inheritance Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Inheritance Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-f22/inheritance_lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-f22/inheritance_lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Inheritance Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Inheritance Lab","url":"http://localhost:4000/classes/361-f22/inheritance_lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Inheritance Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To be able to use inheritance in C++ effectively.</p>
+
+<h2 id="setup">Setup</h2>
+<ol>
+  <li>
+    <p>Open the Inheritance Lab assignment on Moodle to get the Git repository template.</p>
+  </li>
+  <li>Open Terminal and clone your repository:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git clone &lt;your repository link&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Open VSCode and then open your repository folder.</p>
+  </li>
+  <li>
+    <p>Open a Terminal in VSCode and pull down the submodules for the starter code:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git submodule update --init --recursive
+</code></pre></div>    </div>
+
+    <p>(We won’t be using Emscripten in this lab so you don’t need to set it up.)</p>
+  </li>
+</ol>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>For this lab, you’ll make an <code class="language-plaintext highlighter-rouge">Animal</code> superclass and a couple of subclasses of it. Let’s start with <code class="language-plaintext highlighter-rouge">Animal</code>.</p>
+
+<ol>
+  <li>
+    <p>Make a new file <code class="language-plaintext highlighter-rouge">Animal.h</code> and define an <code class="language-plaintext highlighter-rouge">Animal</code> class with a private instance variable <code class="language-plaintext highlighter-rouge">age</code>:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+     <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+ <span class="p">};</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create a constructor for your class and set the age from a parameter. Remember that you can do this in the fancy C++ way like so:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nl">public:</span>
+ <span class="n">Animal</span><span class="p">(</span><span class="kt">int</span> <span class="n">_age</span><span class="p">)</span> <span class="o">:</span> <span class="n">age</span><span class="p">(</span><span class="n">_age</span><span class="p">)</span> <span class="p">{</span>
+     <span class="c1">//doesn't do anything else</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>We want to be able to easily tell which class is being accessed, so also make a method <code class="language-plaintext highlighter-rouge">GetType()</code> that returns the string “Animal”:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="nf">GetType</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="s">"Animal"</span><span class="p">;}</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now we need to make a subclass to experiment with.</p>
+
+<ol>
+  <li>
+    <p>Create a new file for a <code class="language-plaintext highlighter-rouge">Dog</code> subclass. In that subclass, define a <code class="language-plaintext highlighter-rouge">Dog</code> class that inherits from <code class="language-plaintext highlighter-rouge">Animal</code> (you’ll need to <code class="language-plaintext highlighter-rouge">#include Animal.h</code> as well):</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">class</span> <span class="nc">Dog</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Animal</span> <span class="p">{</span>
+
+ <span class="p">};</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Let’s have our dog have an additional instance variable <code class="language-plaintext highlighter-rouge">num_spots</code>. To allow our dog’s constructor to set both num_spots and age, we need to take them both as parameters and then set them in two slightly different ways:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kt">int</span> <span class="n">num_spots</span><span class="p">;</span>
+
+ <span class="k">public</span><span class="o">:</span>
+     <span class="n">Dog</span><span class="p">(</span><span class="kt">int</span> <span class="n">_age</span><span class="p">,</span> <span class="kt">int</span> <span class="n">_num_spots</span><span class="p">)</span> <span class="o">:</span> <span class="n">Animal</span><span class="p">(</span><span class="n">_age</span><span class="p">),</span> <span class="c1">//Calls Animal constructor and gives it age</span>
+     <span class="n">num_spots</span><span class="p">(</span><span class="n">_num_spots</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//Sets num_spots</span>
+         <span class="c1">//Doesn't do anything else</span>
+     <span class="p">}</span>
+</code></pre></div>    </div>
+
+    <p>This code is calling the <code class="language-plaintext highlighter-rouge">Animal</code> constructor and passing the <code class="language-plaintext highlighter-rouge">_age</code> variable to it since <code class="language-plaintext highlighter-rouge">Animal</code> is in charge of that variable. Then it sets the dog specific variable.</p>
+  </li>
+  <li>
+    <p>Also create a <code class="language-plaintext highlighter-rouge">GetType()</code> method that returns “Dog” so that we can tell the difference easily.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Okay, let’s see what we get with this setup.</p>
+
+<ol>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">main.cpp</code>, create an Empirical vector of Empirical pointers to <code class="language-plaintext highlighter-rouge">Animal</code> called <code class="language-plaintext highlighter-rouge">population</code>:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">emp</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">emp</span><span class="o">::</span><span class="n">Ptr</span><span class="o">&lt;</span><span class="n">Animal</span><span class="o">&gt;&gt;</span> <span class="n">population</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create a new <code class="language-plaintext highlighter-rouge">Dog</code> instance and add it to the vector. Note that because the vector holds pointers to the superclass of <code class="language-plaintext highlighter-rouge">Dog</code>, it’s fine to put <code class="language-plaintext highlighter-rouge">Dog</code> objects in it:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">population</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="k">new</span> <span class="nf">Dog</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">));</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>While you could get away with just including <code class="language-plaintext highlighter-rouge">Dog.h</code>, this is a good time to observe and fix one problem you’ll eventually run into. At the top of your file, make sure you have included both <code class="language-plaintext highlighter-rouge">Animal.h</code> and <code class="language-plaintext highlighter-rouge">Dog.h</code>:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">#include "Animal.h"
+</span> <span class="cp">#include "Dog.h"
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Then run the <code class="language-plaintext highlighter-rouge">compile-run.sh</code> script. You should get an error <code class="language-plaintext highlighter-rouge">redefintion of Animal</code>. This is because <code class="language-plaintext highlighter-rouge">Animal</code> is included in <code class="language-plaintext highlighter-rouge">Dog</code>, and so C++ thinks you are trying to define the <code class="language-plaintext highlighter-rouge">Animal</code> class twice. The slick way of getting around this is with the use of C++ macros, which are instructions run by the preprocessor. At the top of <code class="language-plaintext highlighter-rouge">Animal.h</code>, add the following:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">#ifndef ANIMAL
+</span> <span class="cp">#define ANIMAL
+</span></code></pre></div>    </div>
+
+    <p>This macro is saying “check if the ANIMAL name is already defined, if it isn’t, define it and run all the following code”, which means that if it’s already been defined, the code won’t run!</p>
+  </li>
+  <li>
+    <p>You also need to close your if at the very end of your <code class="language-plaintext highlighter-rouge">Animal.h</code> file:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">#endif
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You should now be able to compile and run without a problem.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>You need to now check which class’ methods are getting accessed (and make some fixes).</p>
+
+<ol>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">main.cpp</code>, call the <code class="language-plaintext highlighter-rouge">GetType()</code> method of the only item in your population and print it out:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">GetType</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>It should be printing “Animal” meaning it’s calling the <code class="language-plaintext highlighter-rouge">Animal</code> method instead of the <code class="language-plaintext highlighter-rouge">Dog</code> method! Because C++ “bundles” both types together when it makes a subclass object, it is defaulting to the superclass method since that is what the vector knows that it is holding. You can tell C++ that you want it to actually default to the subclass method with the <code class="language-plaintext highlighter-rouge">virtual</code> keyword. In <code class="language-plaintext highlighter-rouge">Animal.h</code> add the keyword <code class="language-plaintext highlighter-rouge">virtual</code> before the return type of the <code class="language-plaintext highlighter-rouge">GetType()</code> method:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="nf">GetType</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="s">"Animal"</span><span class="p">;}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Now when you compile and run, you should get “Dog” printing out. This means that anytime you have a superclass method that you want the base class method to be called instead, you should put <code class="language-plaintext highlighter-rouge">virtual</code> in front of it.</p>
+  </li>
+  <li>
+    <p>This process only works because these are pointers! If you ever dereference the pointer and save it to an <code class="language-plaintext highlighter-rouge">Animal</code> variable, C++ cuts off the <code class="language-plaintext highlighter-rouge">Dog</code> portion. Test this out in <code class="language-plaintext highlighter-rouge">main.cpp</code>:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">Animal</span> <span class="n">test</span> <span class="o">=</span> <span class="o">*</span><span class="n">population</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+ <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">test</span><span class="p">.</span><span class="n">GetType</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>What about those instance variables that you made? How do the two classes deal with those?</p>
+
+<ol>
+  <li>
+    <p>If we want to be able to get access to the <code class="language-plaintext highlighter-rouge">age</code> variable, we’ll need an accessor method, since it’s private (and should stay that way). Make a <code class="language-plaintext highlighter-rouge">GetAge()</code> method in <code class="language-plaintext highlighter-rouge">Animal</code>:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kt">int</span> <span class="nf">GetAge</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="n">age</span><span class="p">;}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>What if you want to print out the dog’s age? You didn’t define a <code class="language-plaintext highlighter-rouge">GetAge()</code> function for the <code class="language-plaintext highlighter-rouge">Dog</code> class, but you didn’t have to, because the super class is in charge of that! In <code class="language-plaintext highlighter-rouge">main.cpp</code> call and print out the age of your dog using <code class="language-plaintext highlighter-rouge">GetAge()</code>:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">GetAge</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>    </div>
+
+    <p>This is the great thing about inheritance: you can have functionality in <code class="language-plaintext highlighter-rouge">Animal</code> that is shared across all the subclasses (once you have more of them) and only need to implement it once (and you can keep them all in the same vector).</p>
+  </li>
+  <li>
+    <p>What if you wanted to make a custom <code class="language-plaintext highlighter-rouge">GetAge</code> method for dog, for example to express the dog’s age in dog years (multiplied by 7) instead? You can’t access the <code class="language-plaintext highlighter-rouge">age</code> variable directly since it is private to the <code class="language-plaintext highlighter-rouge">Animal</code> class. Instead, you need to use the same accessor method, but specify that you want to call the super class version in <code class="language-plaintext highlighter-rouge">Dog</code>’s <code class="language-plaintext highlighter-rouge">GetAge()</code> method:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kt">int</span> <span class="nf">GetAge</span><span class="p">()</span> <span class="p">{</span>
+     <span class="k">return</span> <span class="n">Animal</span><span class="o">::</span><span class="n">GetAge</span><span class="p">()</span> <span class="o">*</span> <span class="mi">7</span><span class="p">;</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Try compiling and running your code again. Are you getting the correct age calculation? Probably not if you forgot to go back to <code class="language-plaintext highlighter-rouge">Animal</code> and put in the <code class="language-plaintext highlighter-rouge">virtual</code> keyword. Go do that and make sure that you are getting the correct age now.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-6">Exercise 6</h2>
+<p>What about when you want your animals to make new animals? Time to make a reproduction method and think more about how subclasses interact with superclasses!</p>
+
+<ol>
+  <li>
+    <p>Make a virtual <code class="language-plaintext highlighter-rouge">Reproduce</code> method in the <code class="language-plaintext highlighter-rouge">Animal</code> class that return a new <code class="language-plaintext highlighter-rouge">Animal</code> (you could argue that this shouldn’t do anything, or throw an exception, but we’re assuming that maybe you do want to make just animals sometimes):</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">virtual</span> <span class="n">emp</span><span class="o">::</span><span class="n">Ptr</span><span class="o">&lt;</span><span class="n">Animal</span><span class="o">&gt;</span> <span class="n">Reproduce</span><span class="p">()</span> <span class="p">{</span>
+     <span class="k">return</span> <span class="k">new</span> <span class="n">Animal</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Go into your <code class="language-plaintext highlighter-rouge">Dog</code> class and make a <code class="language-plaintext highlighter-rouge">Reproduce</code> method. It needs to <em>return</em> the same type as <code class="language-plaintext highlighter-rouge">Animal</code>, but it should <em>make</em> a dog, because we can again make an actual <em>instance</em> of type <code class="language-plaintext highlighter-rouge">Dog</code>, but pass it around as an <code class="language-plaintext highlighter-rouge">Animal</code> without a problem. Note also that you can use the <code class="language-plaintext highlighter-rouge">Dog</code> specific method <code class="language-plaintext highlighter-rouge">GetSpots()</code> without a problem because it is a <code class="language-plaintext highlighter-rouge">Dog</code> instance and C++ knows that at this point:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">emp</span><span class="o">::</span><span class="n">Ptr</span><span class="o">&lt;</span><span class="n">Animal</span><span class="o">&gt;</span> <span class="n">Reproduce</span><span class="p">()</span> <span class="p">{</span>
+     <span class="k">return</span> <span class="k">new</span> <span class="n">Dog</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">GetSpots</span><span class="p">());</span> <span class="c1">//assuming it should have the same number of spots as parent</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">main.cpp</code>, call the <code class="language-plaintext highlighter-rouge">Reproduce</code> method of your existing dog and add the offspring to the population, then make sure that it is the correct type:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">population</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">Reproduce</span><span class="p">());</span>
+ <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">population</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">GetType</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="exercise-7">Exercise 7</h2>
+<p>What if you want to access dog specific methods? While it’s generally best to avoid needing to access methods special to the subclasses in this kind of setup, sometimes you need to. Fortunately, Empirical’s pointer makes that fairly easy to do.</p>
+
+<ol>
+  <li>
+    <p>First, let’s see the problem. In <code class="language-plaintext highlighter-rouge">main.cpp</code> try to print the number of spots of your dog:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">population</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">GetSpots</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You should be seeing an error that <code class="language-plaintext highlighter-rouge">Animal</code> has no member <code class="language-plaintext highlighter-rouge">GetSpots()</code>. This is because C++ only knows that this object is of type <code class="language-plaintext highlighter-rouge">Animal</code>, it doesn’t know that it’s actually a <code class="language-plaintext highlighter-rouge">Dog</code>. Because you know for sure that the object is a dog at this point in the code, you can cast it to type <code class="language-plaintext highlighter-rouge">Dog</code> and then call the <code class="language-plaintext highlighter-rouge">Dog</code> specific method (you should only do this when you know for sure!):</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">population</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">DynamicCast</span><span class="o">&lt;</span><span class="n">Dog</span><span class="o">&gt;</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">GetSpots</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You should avoid dynamic casting whenever you can, and instead override methods of the superclass for subclass specific behavior. So for example, we could have a <code class="language-plaintext highlighter-rouge">GetAttributes</code> method that all <code class="language-plaintext highlighter-rouge">Animals</code> have and gets whatever the subclass specific attributes are.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-8">Exercise 8</h2>
+<p>The big reason that you’re going to be wanting to use inheritance is so that you can have objects of multiple different types all in the same vector (the <code class="language-plaintext highlighter-rouge">pop</code> vector of your world), but you aren’t actually doing that right now. Create another subclass of <code class="language-plaintext highlighter-rouge">Animal</code> and play around with having both it and <code class="language-plaintext highlighter-rouge">Dog</code>s in the same vector and accessing their methods correctly.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

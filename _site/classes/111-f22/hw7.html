@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW7 | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW7" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-f22/hw7" />
+<meta property="og:url" content="http://localhost:4000/classes/111-f22/hw7" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW7" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW7","url":"http://localhost:4000/classes/111-f22/hw7"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW7</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>This is a paired assignment, so you should complete it with your <strong>new</strong> assigned partner, if you have one, via <strong>paired programming</strong>. 
+The whole time that you are working, you should both be present and actively working on the problem at hand. 
+(Two brains, one keyboard.) 
+Switch off the typing duties so that you each type for roughly half of the time.</p>
+
+<p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
+
+<p>This assignment is due on Wednesday November 2nd at 10pm. 
+As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>Get practice with recursion.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Again, I recommend you complete this assignment in Olin 310, though it isn’t required to do so.</p>
+
+<p><a href="https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&amp;title=CS+111+and+201+workflow+in+CS+labs">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW7</code></li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW7</code> folder in VSCode</li>
+</ul>
+
+<h2 id="recmaxfinder">recMaxFinder</h2>
+<p>In this problem set, you’ll get a chance to play with a visual example of recursion, but, first, one warm-up exercise. 
+In a file called <code class="language-plaintext highlighter-rouge">max.py</code>, write a <em>recursive</em> function <code class="language-plaintext highlighter-rouge">recMaxFinder</code> that takes a list of numbers as an argument and returns the <strong>value of the maximum element</strong> as follows:</p>
+<ul>
+  <li>the maximum element in a list of length one is that one element.</li>
+  <li>in a list of two or more numbers, the maximum element of the list is either the maximum element of the list containing all but the first element of the list (i.e., the maximum of <code class="language-plaintext highlighter-rouge">a_list[1:]</code>) or the first element of the list, depending on which is bigger. Note that you are <strong>not allowed</strong> to use the <code class="language-plaintext highlighter-rouge">max</code> or <code class="language-plaintext highlighter-rouge">min</code> functions.</li>
+</ul>
+
+<p>For example:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">recMaxFinder</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">]))</span>
+<span class="c1">#Should print 10
+</span><span class="k">print</span><span class="p">(</span><span class="n">recMaxFinder</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">]))</span>
+<span class="c1">#Should print 5
+</span></code></pre></div></div>
+
+<h2 id="fractals">Fractals</h2>
+
+<h3 id="overview">Overview</h3>
+<p>A <em>fractal</em> is an image that is composed of smaller copies of itself. When drawing fractals, you typically specify a level, which tells you how “deep” to go in drawing smaller versions of the image. 
+In this assignment, you’ll write a recursive function to generate the <em>von Koch snowflake</em>:</p>
+
+<p><img src="/classes/111-w22/vonKochSnowflakes.png" alt="A series of five progressively more complex snowflakes" /></p>
+
+<p>One way to think about a von Koch snowflake is as follows:</p>
+
+<p>Start with a triangle, for every line in the triangle (like the one on the left), replace it by a four-line piece (like the one on the right):</p>
+
+<p><img src="/classes/111-w22/vonKoch0.png" alt="A horizontal line" /> <img src="/classes/111-w22/vonKoch1.png" alt="A horizontal line with an upward pointing trianguular section in the center" /></p>
+
+<p>Then you repeat the exact same process on the resulting lines, and do it again, and again. The level of a fractal is the number of times that you repeat this “expansion” process.</p>
+
+<h3 id="your-task">Your Task</h3>
+
+<p>Copy the <a href="/classes/111-w22/graphics.py"><code class="language-plaintext highlighter-rouge">graphics.py</code></a> module into your folder.
+In a file called <code class="language-plaintext highlighter-rouge">fractals.py</code>, first copy this starter code:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">graphics</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">def</span> <span class="nf">vonKochSegment</span><span class="p">(</span><span class="n">level</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">heading</span><span class="p">,</span><span class="n">length</span><span class="p">,</span><span class="n">window</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">level</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">end</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">start</span><span class="p">.</span><span class="n">getX</span><span class="p">()</span> <span class="o">+</span> <span class="n">length</span> <span class="o">*</span> <span class="n">math</span><span class="p">.</span><span class="n">cos</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="n">radians</span><span class="p">(</span><span class="n">heading</span><span class="p">)),</span> 
+            <span class="n">start</span><span class="p">.</span><span class="n">getY</span><span class="p">()</span> <span class="o">-</span> <span class="n">length</span> <span class="o">*</span> <span class="n">math</span><span class="p">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="n">radians</span><span class="p">(</span><span class="n">heading</span><span class="p">)))</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>
+        <span class="n">line</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">window</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">end</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># your code here
+</span>
+<span class="k">def</span> <span class="nf">vonKoch</span><span class="p">(</span><span class="n">length</span><span class="p">,</span><span class="n">level</span><span class="p">):</span>
+    <span class="n">window</span> <span class="o">=</span> <span class="n">GraphWin</span><span class="p">(</span><span class="s">"von Koch Snowflake"</span><span class="p">,</span> <span class="n">length</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">,</span> <span class="n">length</span> <span class="o">*</span> <span class="mf">1.5</span><span class="p">)</span>
+    <span class="n">p1</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="n">length</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span>
+    <span class="n">p2</span> <span class="o">=</span> <span class="n">vonKochSegment</span><span class="p">(</span><span class="n">level</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">window</span><span class="p">)</span>
+    <span class="c1"># more of your code here
+</span></code></pre></div></div>
+
+<h4 id="vonkochsegment">vonKochSegment</h4>
+<p>The function `vonKochSegment takes five arguments: a level (the
+number of times that you do expansion), a starting point, a heading (in degrees counterclockwise from due east on the screen), a length of the line, and the graphics window in which to draw the resulting
+image. 
+The function should return the ending point of the segment.</p>
+
+<p>I’ve provided the base case when the level is 0.
+In this situation, the program calculates the ending point of the segment (this requires some trigonometry: go length units in the direction of the heading, which means length * cos(heading)
+in the x direction and -length * sin(heading) in the y direction), and then draws a line from the starting point to the ending point in window.
+This generates one third of a von Koch snowflake of level 0.</p>
+
+<p>You need to fill in the recursive case when the level is at least 1.
+For the recursive case, you should draw four <code class="language-plaintext highlighter-rouge">level - 1</code> segments by making <strong>four recursive calls</strong> with the appropriate arguments:</p>
+<ul>
+  <li>segment #1 starts at the starting point and goes <code class="language-plaintext highlighter-rouge">length / 3</code> units in direction <code class="language-plaintext highlighter-rouge">heading</code>.</li>
+  <li>segment #2 starts where segment #1 ends and goes <code class="language-plaintext highlighter-rouge">length / 3</code> units in direction <code class="language-plaintext highlighter-rouge">heading - 60</code>.</li>
+  <li>segment #3 starts where segment #2 ends and goes <code class="language-plaintext highlighter-rouge">length / 3</code> units in direction <code class="language-plaintext highlighter-rouge">heading + 60</code>.</li>
+  <li>segment #4 starts where segment #3 ends and goes <code class="language-plaintext highlighter-rouge">length / 3</code> units in direction <code class="language-plaintext highlighter-rouge">heading</code>.</li>
+</ul>
+
+<p>Remember to test your code at this point to be sure that it draws a segment correctly.
+For example, the call <code class="language-plaintext highlighter-rouge">vonKoch(200, 3)</code> should result in an image like this:</p>
+
+<p><img src="/classes/111-w22/vonKochPartial3.png" alt="A partial von Koch snowflake" /></p>
+
+<h4 id="vonkoch">vonKoch</h4>
+<p>Finally, you should expand the <code class="language-plaintext highlighter-rouge">vonKoch</code> function so that it draws three von Koch segments of level <code class="language-plaintext highlighter-rouge">level</code> arranged in an equilateral triangle. The first segment should head in direction 0, the second should head in direction 120 from the end of the first side, and the third should head in direction 240 from the end of the second side.</p>
+
+<p>Include test code that draws von Koch snowflakes of levels 1, 2, 3, and 4 when <code class="language-plaintext highlighter-rouge">fractals.py</code> is run and doesn’t close the window until the user hits “Enter” (this is to make it easy for the graders, don’t make life difficult for the graders!).
+Make sure to choose a length value that doesn’t take too long to run but is big enough to see.</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>You will be assessed on the following rubric.
+Be sure to remove the starter comments that are no longer relevant, add additional comments, and update or add headers as necessary.</p>
+
+<p>To <strong>demonstrate proficiency</strong>:</p>
+<ul>
+  <li>Program passes all the tests in Gradescope</li>
+  <li>Both files have accurate headers</li>
+  <li><code class="language-plaintext highlighter-rouge">recMaxFinder</code> is recursive and meets requirements</li>
+  <li>von Koch snowflakes of levels 1, 2, 3, and 4 created when <code class="language-plaintext highlighter-rouge">fractals.py</code> is run</li>
+  <li>von Koch snowflakes meet requirements</li>
+  <li>Contain descriptive docstrings for each function</li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to demonstrate proficiency as well as having:</p>
+<ul>
+  <li>Useful comments (including removal of any outline/todo comments)</li>
+  <li>Descriptive variable names</li>
+  <li>Good spacing</li>
+  <li>Use conditionals organize your programs and prevent any unnecessary duplication of code</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

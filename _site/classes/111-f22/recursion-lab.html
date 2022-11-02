@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Recursion Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Recursion Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-f22/recursion-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/111-f22/recursion-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Recursion Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Recursion Lab","url":"http://localhost:4000/classes/111-f22/recursion-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Recursion Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>(This is a repeat from the start of class.)
+This lab has you try writing many recursive functions.
+This is a really tricky concept, and you’ll probably need lots of practice to start getting comfortable with it.
+<a href="https://pythontutor.com/">PythonTutor</a> is your friend for understanding what is going on with your functions!</p>
+
+<p>For this exercise, write a <strong>recursive</strong> function called <code class="language-plaintext highlighter-rouge">power(b, n)</code> that returns <code class="language-plaintext highlighter-rouge">b</code> raised to the <code class="language-plaintext highlighter-rouge">n</code>th power. You can assume that they are both non-negative integers. (You should not use Python’s <code class="language-plaintext highlighter-rouge">**</code> functionality for this one.)</p>
+
+<p>If you get stuck, walk through <a href="http://pythontutor.com/visualize.html#code=def%20power%28b,%20n%29%3A%0A%20%20%20%20%22%22%22Return%20b%20raised%20to%20the%20power%20of%20n.%22%22%22%0A%20%20%20%20if%20n%20%3D%3D%200%3A%20%20%23%20Base%20case%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%20%20%23%20General%20case%0A%20%20%20%20%20%20%20%20return%20b%20*%20power%28b,%20n-1%29%0A%0A%0Aprint%28power%28b%3D3,%20n%3D3%29%29&amp;cumulative=false&amp;heapPrimitives=nevernest&amp;mode=edit&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false">this solution on PythonTutor</a>.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Write a <strong>recursive</strong> function called <code class="language-plaintext highlighter-rouge">countdown(n)</code> that takes a positive integer <code class="language-plaintext highlighter-rouge">n</code> and prints out each value from <code class="language-plaintext highlighter-rouge">n</code> to 0, decreasing by 1 at each step, printing each value on its own line. (Note: this function asks you to print values, not return them. What, if anything, needs to be returned in that case?)</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Write a recursive function called <code class="language-plaintext highlighter-rouge">fib(n)</code> that returns the <code class="language-plaintext highlighter-rouge">n</code>th Fibonacci number. For the record, the first and second Fibonacci numbers are defined to be <code class="language-plaintext highlighter-rouge">0</code> and <code class="language-plaintext highlighter-rouge">1</code>, respectively. 
+After that, the <code class="language-plaintext highlighter-rouge">n</code>th Fibonacci number is defined as the sum of the two Fibonacci numbers that precede it. For example, the sequence begins <code class="language-plaintext highlighter-rouge">0 1 1 2 3 5 8 13</code>…</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Write a recursive function called <code class="language-plaintext highlighter-rouge">countVal(val, lst)</code> that returns a count representing the number of times that the value <code class="language-plaintext highlighter-rouge">val</code> is present in the list <code class="language-plaintext highlighter-rouge">lst</code>.</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Write a recursive function called <code class="language-plaintext highlighter-rouge">countup(n)</code> that takes a positive integer <code class="language-plaintext highlighter-rouge">n</code> and prints out each value from 0 to <code class="language-plaintext highlighter-rouge">n</code>, increasing by 1 at each step, printing each value on its own line.</p>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>Write a recursive function called <code class="language-plaintext highlighter-rouge">getMin(lst)</code> that returns the minimum element from a given list of integers.</p>
+
+<h2 id="exercise-6">Exercise 6</h2>
+<p>Write a modified version of the recursive Fibonacci function from Problem 2 above, and call it <code class="language-plaintext highlighter-rouge">countFib(n)</code>. This function should return a list with two items (or a tuple if you prefer) containing a) the <code class="language-plaintext highlighter-rouge">n</code>th Fibonacci number and b) the number of times <code class="language-plaintext highlighter-rouge">countFib()</code> is called. The easiest approach will be to modify the <code class="language-plaintext highlighter-rouge">fib(n)</code> from above.</p>
+
+<h2 id="exercise-7">Exercise 7</h2>
+<p>Write a recursive function called <code class="language-plaintext highlighter-rouge">mod(a, b)</code> that computes the remainder we get when we divide <code class="language-plaintext highlighter-rouge">a</code> by <code class="language-plaintext highlighter-rouge">b</code>. This is precisely what the <code class="language-plaintext highlighter-rouge">%</code> operator does in Python, but your function should instead use recursion to compute this remainder.</p>
+
+<h2 id="extra">Extra</h2>
+<p>Write a recursive that will generate all the anagrams (rearrangements of the letters) of a string. For example, all the anagrams of the string <code class="language-plaintext highlighter-rouge">abca</code> are <code class="language-plaintext highlighter-rouge">['abca', 'abac', 'acba', 'acab', 'aabc', 'aacb', 'baca', 'baac', 'bcaa', 'bcaa', 'baca', 'baac', 'caba', 'caab', 'cbaa', 'cbaa', 'caba', 'caab', 'abca', 'abac', 'acba', 'acab', 'aabc', 'aacb']</code>.</p>
+
+<p>This is a tricky problem! I recommend you take the following approach:</p>
+
+<ol>
+  <li>What is your base case? What string has the simplest list of anagrams?</li>
+  <li>If the string is longer than your base case:
+ a. For each character in that string:
+     i. Create a copy of the string with the character removed (you can do this with <code class="language-plaintext highlighter-rouge">string.replace(letter, "", 1)</code> to replace <code class="language-plaintext highlighter-rouge">letter</code> with the empty string one time)
+     ii. Generate all the anagrams of the remaining letters with a recursive call
+     iii. For each of those generated anagrams, attach the removed character to the front of the anagram</li>
+</ol>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

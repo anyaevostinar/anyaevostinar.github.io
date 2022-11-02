@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>More Functions Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="More Functions Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-f22/lab-functions2" />
+<meta property="og:url" content="http://localhost:4000/classes/111-f22/lab-functions2" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="More Functions Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"More Functions Lab","url":"http://localhost:4000/classes/111-f22/lab-functions2"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">More Functions Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>For each of the following snippets of code, predict what they will do and then walk through their execution by clicking the Next button:</p>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20bar%28lst%29%3A%0A%20%20%20%20print%28lst%29%0A%20%20%20%20lst%5B0%5D%20%2B%3D%2010%0A%20%20%20%20print%28lst%29%0A%0AmyList%20%3D%20%5B1,%202,%203%5D%0A%0Abar%28myList%29%0A%0Aprint%28myList%29%0A%0A&amp;codeDivHeight=400&amp;codeDivWidth=350&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=nevernest&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false"> </iframe>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20addTileToHand%28tile,%20hand%29%3A%0A%20%20%20%20tile%20%3D%20'-'%20%2B%20tile%20%2B%20'-'%0A%0A%20%20%20%20hand.append%28tile%29%0A%0AmyTile%20%3D%20'a'%0AmyHand%20%3D%20%5B'-b-',%20'-c-'%5D%0AaddTileToHand%28myTile,%20myHand%29%0Aprint%28myTile%29%0Aprint%28myHand%29%0A%0A&amp;codeDivHeight=400&amp;codeDivWidth=350&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=nevernest&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false"> </iframe>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20mystery%28n%29%3A%0A%20%20%20%20total%20%3D%201%0A%20%20%20%20for%20i%20in%20range%28n,%200,%20-1%29%3A%0A%20%20%20%20%20%20%20%20total%20*%3D%20n%0A%20%20%20%20return%20total%0A%0Ax%20%3D%204%0Amystery%28x%29&amp;codeDivHeight=400&amp;codeDivWidth=350&amp;cumulative=false&amp;curInstr=16&amp;heapPrimitives=nevernest&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false"> </iframe>
+
+<h2 id="exercise-2">Exercise 2</h2>
+
+<p>The <a href="functions1">previous lab</a> had you make several functions to reverse the letters in words which just printed their information to the output.
+Often, it is useful to instead <em>return</em> values so that they can be used by other parts of a program.
+Pull up one of your previous code (or write the functions fresh) and update those functions so that the <code class="language-plaintext highlighter-rouge">reverseWord()</code> and <code class="language-plaintext highlighter-rouge">reverseAllWords()</code> functions return their results instead of printing them, and then <code class="language-plaintext highlighter-rouge">main()</code> takes care of the printing.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>A “palindrome” is a word that can be written the same way both forwards and backwards. 
+For instance, “racecar” and “anna” are palindromes, while “sedan” and “david” are not.</p>
+
+<p>Create a new file called <code class="language-plaintext highlighter-rouge">palindrome.py</code>. 
+This program will take a word as input from the user and then tell the user whether or not it is a palindrome. 
+You should include at least two function definitions: one for <code class="language-plaintext highlighter-rouge">main()</code> and one for <code class="language-plaintext highlighter-rouge">isPalindrome(word)</code> which takes a string as a parameter and returns a boolean value indicating whether or not the given word is a palindrome.</p>
+
+<p>Your program should also make use of the <code class="language-plaintext highlighter-rouge">reverseWord</code> function that you created in <code class="language-plaintext highlighter-rouge">reverse.py</code>. 
+To allow for this function to be used in another program, you should not copy and paste the function into the new file, but instead <code class="language-plaintext highlighter-rouge">import</code> the function from <code class="language-plaintext highlighter-rouge">reverse.py</code> into <code class="language-plaintext highlighter-rouge">palindrome.py</code>. 
+This will allow you to use that function in <code class="language-plaintext highlighter-rouge">palindrome.py</code>, even though it was defined in another program! 
+This is a very common practice in Python programs, which often span multiple files. 
+To import and use the <code class="language-plaintext highlighter-rouge">reverseWord</code> function from <code class="language-plaintext highlighter-rouge">reverse.py</code> in <code class="language-plaintext highlighter-rouge">palindrome.py</code>, use code like this (import statements should always go at the top of a file):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from reverse import reverseWord
+
+name = "Anya"
+reversedName = reverseWord(name)
+</code></pre></div></div>
+
+<p>Note that this will only work if <code class="language-plaintext highlighter-rouge">palindrome.py</code> and <code class="language-plaintext highlighter-rouge">reverse.py</code> are in the same folder on your computer. 
+But you may now experience a strange issue: whenever you run <code class="language-plaintext highlighter-rouge">palindrome.py</code>, it bizarrely runs the <code class="language-plaintext highlighter-rouge">main()</code> function of your <code class="language-plaintext highlighter-rouge">reverse.py</code>. 
+The reason is as follows. 
+Whenever Python imports code from one file, what it’s actually doing is running every line in the file that you’re importing, because this is necessary to execute the definitions for all the functions that you want to import! 
+But the problem is that it will eventually get to the line in <code class="language-plaintext highlighter-rouge">reverse.py</code> with your <code class="language-plaintext highlighter-rouge">main()</code> call, which it will execute, because it’s executing every line in <code class="language-plaintext highlighter-rouge">reverse.py</code> as part of the import process. 
+To fix this issue, replace the line <code class="language-plaintext highlighter-rouge">main()</code> in your <code class="language-plaintext highlighter-rouge">reverse.py</code> file with the following two lines:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if __name__ == "__main__":
+    # Any code indented below this line will only
+    # be executed if this file is *directly* invoked,
+    # not merely imported from another file.
+    main()
+</code></pre></div></div>
+
+<p>Remember that <code class="language-plaintext highlighter-rouge">__name__</code> is just another variable, one that is set when your code is run. 
+That variable is set to <code class="language-plaintext highlighter-rouge">__main__</code> if you program is run directly, but to something else if your code is imported.
+That means that these lines are telling Python “Only run the code in this block if you’re directly running this file — if you’re just importing this file into another one, do not run all the code under this block.”
+You can put any code there, to be clear; there’s nothing special about <code class="language-plaintext highlighter-rouge">main()</code> in this case, though this is a frequent use of this block.</p>
+
+<h2 id="extra">Extra</h2>
+<p>If you have extra time, try to write another version of the <code class="language-plaintext highlighter-rouge">isPalindrome</code> function from above that does not make use of <code class="language-plaintext highlighter-rouge">reverseWord</code>, and does not make use of an additional string variable at all — rather, it should determine its answer purely by looping through the given word to the function.</p>
+
+<p>Functions can also be useful for making nested loops easier to read by putting the inner loops into a function. Revisit the <a href="lab-nested">Nested Loops Lab</a> and try making small functions for the inner loops to make the snippets easier to understand.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

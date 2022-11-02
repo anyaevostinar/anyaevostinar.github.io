@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating Classes Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Creating Classes Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-f22/creating-classes" />
+<meta property="og:url" content="http://localhost:4000/classes/111-f22/creating-classes" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating Classes Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Creating Classes Lab","url":"http://localhost:4000/classes/111-f22/creating-classes"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Creating Classes Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>You should again download the file <a href="/classes/111-w22/graphics.py">graphics.py</a> and put it into the folder for today’s lab. 
+Then also download the file <a href="/classes/111-f22/example_prerefactor.py">example_prerefactor.py</a> and put it in your folder as well.</p>
+
+<ol>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">example_prerefactor.py</code> to see the flower that is made. Your goal is going to be to make the exact same flower, but with improved code organization!</p>
+  </li>
+  <li>
+    <p>Create a file <code class="language-plaintext highlighter-rouge">Flower.py</code> and define a class <code class="language-plaintext highlighter-rouge">Flower</code> that will allow for the same exact flower to be drawn when the following code is run (which you should put in a <code class="language-plaintext highlighter-rouge">main</code> function in the <code class="language-plaintext highlighter-rouge">Flower.py</code> file):</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">win</span> <span class="o">=</span> <span class="n">GraphWin</span><span class="p">(</span><span class="s">"My fancy window"</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+ <span class="n">my_flower</span> <span class="o">=</span> <span class="n">Flower</span><span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">200</span><span class="p">),</span> <span class="s">"purple"</span><span class="p">)</span>
+ <span class="n">my_flower</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+ <span class="nb">input</span><span class="p">(</span><span class="s">"Press Enter when done"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>If the only method that you defined was your <code class="language-plaintext highlighter-rouge">draw</code> method, think about how you can split it up further. Ideally, you should have about six methods (including the constructor and <code class="language-plaintext highlighter-rouge">draw</code>) that are each no more than 5 lines long.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>There are so many things you can do once you’ve bundled your shapes together into a class! Let’s explore a few of them:</p>
+
+<ol>
+  <li>
+    <p>Update your <code class="language-plaintext highlighter-rouge">Flower</code> constructor so that it takes parameters for the center of the flower and the color of the petals.</p>
+  </li>
+  <li>
+    <p>In your <code class="language-plaintext highlighter-rouge">main</code>, draw several flowers of different colors and at different locations (maybe even draw some soil at the bottom of the window for them to be growing out of…).</p>
+  </li>
+  <li>
+    <p>The graphics library lets you get the location that a user clicks with the <code class="language-plaintext highlighter-rouge">getMouse()</code> method of the <code class="language-plaintext highlighter-rouge">GraphWin</code> class. It returns the information as a <code class="language-plaintext highlighter-rouge">Point</code> object. Use this method to draw a flower where ever the user clicks in the window!</p>
+  </li>
+  <li>
+    <p>The graphics library also lets you detect what key on the keyboard a user has pressed with the <code class="language-plaintext highlighter-rouge">getKey()</code> method of <code class="language-plaintext highlighter-rouge">GraphWin</code>. It returns the key as a string of the character key that was pressed. For example, if the user hit the ‘Y’ key, the method would return the string <code class="language-plaintext highlighter-rouge">"y"</code>. Experiment with this method by first printing what you get when you do:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> input_key = win.getKey()
+ print(input_key)
+</code></pre></div>    </div>
+
+    <p>And then use it to allow the user to pick from a couple of different colors for their flower (for example, ‘y’ for yellow and ‘p’ for purple).</p>
+  </li>
+</ol>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Object-oriented programming is very useful for both simulations and games since we are often thinking about things in terms of items in those contexts.
+You’re going to turn your flower program into a simple simulation (or even game?).</p>
+
+<ol>
+  <li>
+    <p>Add an <code class="language-plaintext highlighter-rouge">age</code> instance variable to your Flower class that starts equal to 0.</p>
+  </li>
+  <li>
+    <p>Add an <code class="language-plaintext highlighter-rouge">undraw</code> method to your Flower class that goes through and calls the <code class="language-plaintext highlighter-rouge">undraw()</code> method on each of the flower’s components. If you hadn’t already been saving the petals, stem, and center shapes as instance variables, you should do that now so that you can then undraw them.</p>
+  </li>
+  <li>
+    <p>Add a <code class="language-plaintext highlighter-rouge">dayPasses</code> method that adds one to the age of the flower and checks if the flower is older than 3 days. If it is, have it print out ‘dead!’ and call its undraw method.</p>
+  </li>
+  <li>
+    <p>Test to make sure that your <code class="language-plaintext highlighter-rouge">undraw</code> and <code class="language-plaintext highlighter-rouge">dayPasses</code> methods work on your existing flowers.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Simulations and games usually run until the user decides they are done. So let’s update your <code class="language-plaintext highlighter-rouge">main</code> to do that.</p>
+
+<ol>
+  <li>
+    <p>We’re going to soon have a lot of flowers, so make a list and add all your current flowers to that list.</p>
+  </li>
+  <li>
+    <p>Make a loop that calls the <code class="language-plaintext highlighter-rouge">dayPasses</code> method on each of the flowers in your list.</p>
+  </li>
+  <li>
+    <p>Nest your existing loop inside of another loop that first calls <code class="language-plaintext highlighter-rouge">dayPasses</code> on all the flowers, and then allows the user to place a new flower. When you run your program, you should now see some flowers dying while others continue because they were planted later by the user.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>There are many more kinds of flowers and plants in the world!</p>
+
+<ol>
+  <li>
+    <p>Make a new file <code class="language-plaintext highlighter-rouge">Plant.py</code> that defines another class that is a different kind of flower or plant (perhaps based on your design from previously). Perhaps it has different flowers/leaves and ages differently.</p>
+  </li>
+  <li>
+    <p>Create a new file <code class="language-plaintext highlighter-rouge">main.py</code> that imports both classes (and graphics). Move your flower simulation loop into this file.</p>
+  </li>
+  <li>
+    <p>Update your simulation so that it simulates some of each type of class (feel free to let the user choose or choose randomly or some other way).</p>
+  </li>
+</ol>
+
+<h2 id="extra">Extra</h2>
+<p>There are a lot of ways to expand on your flower simulation/game, so try out any of these or your own ideas:</p>
+<ul>
+  <li>Make the aging process slower by having one petal fall off each day until the whole flower dies</li>
+  <li>Make the number of petals/leaves or length of the stem of the flower somewhat random and perhaps even influence how fast the flower dies</li>
+  <li>Have the flowers “sway” slightly by shifting back and forth each day with the <code class="language-plaintext highlighter-rouge">move</code> method of each component shape</li>
+  <li>Force the user-drawn flowers to all be at the right height so they aren’t floating in the air (perhaps by making their stems longer too?)</li>
+  <li>Make a caterpillar class that randomly moves around the screen and eats flowers that it runs into (this will be tricky, you’ll have to calculate if it ran into any of the flowers based your calculations of the space they take up!)</li>
+  <li>Add a chance for random events like storms or allow the user to water the flowers to keep them from dying (again this will be tricky, you’ll have to see where the user clicks and see which flower, if any, it overlaps)</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

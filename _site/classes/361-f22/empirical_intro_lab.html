@@ -203,6 +203,59 @@
   </li>
 </ol>
 
+<h2 id="exercise-6">Exercise 6</h2>
+<p>Organisms just sitting around isn’t the most exciting, so how do you get them to move?
+It’s unfortunately a little bit awkward because Empirical doesn’t have the exact built-in functions that we need.</p>
+
+<ol>
+  <li>
+    <p>First, you’ll need to make a new method in your <code class="language-plaintext highlighter-rouge">World</code> subclass that removes an organism from the population and returns it. I recommend calling it <code class="language-plaintext highlighter-rouge">ExtractOrganism</code>. You already know how to get an organism at a particular position in the world, and ‘removing’ it from the population just involves setting its spot to null:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pop[i] = nullptr;
+</code></pre></div>    </div>
+
+    <p>Then you just need to return the organism that you grabbed.</p>
+  </li>
+  <li>
+    <p>Once you’ve extracted an organism that you want to move, you need to decide where you want to put it. Assuming that you want to place it in a neighboring location to it according to your grid world structure, you can use <code class="language-plaintext highlighter-rouge">World</code>’s <code class="language-plaintext highlighter-rouge">GetRandomNeighborPos(i)</code> which takes the organism’s current index location and returns an <code class="language-plaintext highlighter-rouge">emp::WorldPosition</code> that can be treated as an index location (it’s not quite just a number, but you can pass it around like it is).</p>
+  </li>
+  <li>
+    <p>Now you need to put your organism back into the world at the location that you’ve chosen. You can use <code class="language-plaintext highlighter-rouge">World</code>’s <code class="language-plaintext highlighter-rouge">AddOrgAt</code> method to place it at a particular location:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> AddOrgAt(Organism, position);
+</code></pre></div>    </div>
+
+    <p>You’ll need to decide if you let an organism move into a space that is already occupied!</p>
+  </li>
+  <li>
+    <p>To test your movement, I recommend preventing reproduction and having just one organism so you can watch them scoot around the grid!</p>
+  </li>
+</ol>
+
+<h2 id="exercise-7">Exercise 7</h2>
+<p>For your assignment, you’re going to need more than one species. Empirical’s <code class="language-plaintext highlighter-rouge">World</code> can only hold one type, so you have to get a little bit creative to have multiple species and there are two main ways of going about it: an instance variable in <code class="language-plaintext highlighter-rouge">Organism</code> and subclasses.</p>
+
+<ol>
+  <li>
+    <p>The instance variable approach is simpler but less elegant, so let’s do that first. Create an instance variable <code class="language-plaintext highlighter-rouge">int species</code> in <code class="language-plaintext highlighter-rouge">Organism</code> along with a <code class="language-plaintext highlighter-rouge">GetSpecies</code> method and set the species in the constructor. Make sure your species is set correctly during reproduction too!</p>
+  </li>
+  <li>
+    <p>Update your <code class="language-plaintext highlighter-rouge">.cpp</code> files so that they make one of each species to start.</p>
+  </li>
+  <li>
+    <p>Update your <code class="language-plaintext highlighter-rouge">web.cpp</code> so that it draws a different color rectangle based on the species of the organism and make sure that you are seeing your two species. You’ll find the <code class="language-plaintext highlighter-rouge">GetOrg(position)</code> method of <code class="language-plaintext highlighter-rouge">World</code> helpful for this.</p>
+  </li>
+  <li>
+    <p>Species aren’t interesting if they don’t do something different, so make a conditional statement in <code class="language-plaintext highlighter-rouge">Process</code> and/or <code class="language-plaintext highlighter-rouge">CheckReproduction</code> so that something is different based on the species. Maybe one of your species doesn’t get all the points each update or takes more points to reproduce.</p>
+  </li>
+  <li>
+    <p>Make sure that you are seeing the difference between your species’ behavior in the web GUI.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-8">Exercise 8</h2>
+<p>Having to use conditionals to check on the species all over the place is very inelegant and this is a perfect situation for inheritance! Create two subclasses (probably in their own files) that inherit from <code class="language-plaintext highlighter-rouge">Organism</code> and move your different behaviors into those files. You’ll need to think about what can be shared in the superclass and what needs to be defined in the subclasses. You’ll also need to update your <code class="language-plaintext highlighter-rouge">.cpp</code> files so that they create the correct types of organisms.</p>
+
 <h2 id="extensions">Extensions</h2>
 <p>If you have extra time, try adding mutation to your organism’s reproduction or adding to your organism’s <code class="language-plaintext highlighter-rouge">Process</code> method so that it actually does something based on your instance variable genome. Ideas include:</p>
 <ul>
@@ -211,7 +264,7 @@
   <li>Spend resources to build defense from the environment or other organisms</li>
 </ul>
 
-<p>You could also try out Empirical’s <a href="https://empirical.readthedocs.io/en/latest/api/classemp_1_1web_1_1Image.html#classemp_1_1web_1_1Image">Canvas image support</a> so your organisms can be more than just colored boxes!</p>
+<p>You could also try out Empirical’s <a href="https://empirical.readthedocs.io/en/latest/api/classemp_1_1web_1_1Canvas.html?highlight=canvas#_CPPv4IDpEN3emp3web6Canvas5ImageER6CanvasRKN3emp8RawImageE5PointDpRR2Ts">Canvas image support</a> so your organisms can be more than just colored boxes!</p>
 
 <h2 id="credit">Credit</h2>
 <p>This lab uses the <a href="https://github.com/devosoft/cookiecutter-empirical-project.git">cookie-cutter material</a> from <a href="https://mmore500.com/waves/tutorials/lesson02.html">this tutorial</a> by <a href="https://github.com/mmore500">Matthew Andres Moreno</a> and <a href="https://github.com/rodsan0/">Santiago Rodriguez Papa</a></p>

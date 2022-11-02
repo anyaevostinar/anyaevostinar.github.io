@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Empirical Config Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Empirical Config Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-f22/emp_config_lab" />
+<meta property="og:url" content="http://localhost:4000/classes/361-f22/emp_config_lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Empirical Config Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Empirical Config Lab","url":"http://localhost:4000/classes/361-f22/emp_config_lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Empirical Config Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To use Empirical’s configuration management system in a command-line and web-version of a project.</p>
+
+<h2 id="setup">Setup</h2>
+<p>Follow the <a href="gradient-lab">usual steps</a> for setting up a repository using Empirical and emsdk using the Configuration Lab starter code.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>I’ve provided you with a basic artificial life simulation with just one species reproducing and filling the world (following the first few exercises of the <a href="empirical_intro_lab">Empirical intro lab</a>). You can run <code class="language-plaintext highlighter-rouge">compile-run.sh</code> to get a command line version of the program and <code class="language-plaintext highlighter-rouge">compile-run-web.sh</code> to get a web version.</p>
+
+<p>We’ll start with making a configuration management system for the command-line version.</p>
+
+<ol>
+  <li>Following the <a href="config_intro">steps in the reading</a>, make a configuration system that handles at least:
+    <ul>
+      <li>The random number seed</li>
+      <li>The number of starting organisms in the world (you’ll have to update the code to make this work)</li>
+    </ul>
+  </li>
+  <li>Make sure that you can control these settings both through the “MySettings.cfg” file and through the command line.</li>
+</ol>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Because Empirical supports cross-compilation, you can use the same configuration system for the web-based version of your program and Empirical even has several pre-made ways to make your configuration settings look nice on your web page!</p>
+
+<ol>
+  <li>
+    <p>It wouldn’t be great to just copy and paste your configuration type declaration into <code class="language-plaintext highlighter-rouge">web.cpp</code>. Instead, you should put it into its own header file that can be included in both versions. Move the <code class="language-plaintext highlighter-rouge">EMP_BUILD_CONFIG()</code> to a new file <code class="language-plaintext highlighter-rouge">ConfigSetup.h</code> and include that in both <code class="language-plaintext highlighter-rouge">native.cpp</code> and <code class="language-plaintext highlighter-rouge">web.cpp</code> (it would be good to confirm that the native version still works at this point).</p>
+  </li>
+  <li>
+    <p>Your configuration object needs to exist outside of the animator class, like your <code class="language-plaintext highlighter-rouge">Document</code>, so add <code class="language-plaintext highlighter-rouge">MyConfigType config;</code> just under your declaration of your <code class="language-plaintext highlighter-rouge">Document</code> at the top of <code class="language-plaintext highlighter-rouge">web.cc</code>.</p>
+  </li>
+  <li>
+    <p>Empirical provides several <a href="https://devosoft.github.io/empirical-prefab-demo/empirical-prefab-demo">prefabricated UI elements</a> to make development easier. We’re going to use the <code class="language-plaintext highlighter-rouge">ConfigPanel</code> element. First though, we need to include some new files from Empirical:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">#include "emp/config/ArgManager.hpp"
+</span> <span class="cp">#include "emp/prefab/ConfigPanel.hpp"
+</span> <span class="cp">#include "emp/web/UrlParams.hpp"
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>The config panel uses the URL to set and load configuration values when the webpage is loaded. The following code is necessary for this to work, though it’s a bit complicated what it is actually doing, so don’t worry about the specifics. Place this in the constructor for the animator:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c1">// apply configuration query params and config files to config</span>
+ <span class="k">auto</span> <span class="n">specs</span> <span class="o">=</span> <span class="n">emp</span><span class="o">::</span><span class="n">ArgManager</span><span class="o">::</span><span class="n">make_builtin_specs</span><span class="p">(</span><span class="o">&amp;</span><span class="n">config</span><span class="p">);</span>
+ <span class="n">emp</span><span class="o">::</span><span class="n">ArgManager</span> <span class="nf">am</span><span class="p">(</span><span class="n">emp</span><span class="o">::</span><span class="n">web</span><span class="o">::</span><span class="n">GetUrlParams</span><span class="p">(),</span> <span class="n">specs</span><span class="p">);</span>
+ <span class="n">am</span><span class="p">.</span><span class="n">UseCallbacks</span><span class="p">();</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">am</span><span class="p">.</span><span class="n">HasUnused</span><span class="p">())</span> <span class="n">std</span><span class="o">::</span><span class="n">exit</span><span class="p">(</span><span class="n">EXIT_FAILURE</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Finally, we need to actually create the <code class="language-plaintext highlighter-rouge">ConfigPanel</code> object that will be tied to our existing <code class="language-plaintext highlighter-rouge">config</code> object and place it in the webpage:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c1">// setup configuration panel</span>
+ <span class="n">emp</span><span class="o">::</span><span class="n">prefab</span><span class="o">::</span><span class="n">ConfigPanel</span> <span class="nf">config_panel</span><span class="p">(</span><span class="n">config</span><span class="p">);</span>
+ <span class="n">doc</span> <span class="o">&lt;&lt;</span> <span class="n">config_panel</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>At this point, you should build and view your page. You should see a somewhat comically large configuration panel along with the existing animation. The configuration panel won’t actually control the animation yet though, but you can move the sliders and see how the URL parameters work.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>You still need to change the provided <code class="language-plaintext highlighter-rouge">web.cpp</code> code so that it actually uses the configuration values. That process is the exact same as you did for the <code class="language-plaintext highlighter-rouge">native.cpp</code> version though, since you can interact with <code class="language-plaintext highlighter-rouge">config</code> the same way. Edit the code so that it uses the two configuration values correctly (this will be very similar to what you have in <code class="language-plaintext highlighter-rouge">native.cpp</code>). Make sure to test out the webpage to see it working at this point.</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>You might not be loving the layout that you currently have for this website. While this class isn’t focused on HTML, a little bit of HTML (and <a href="https://getbootstrap.com/">Bootstrap</a>) will help a lot in making the layout a bit better.</p>
+
+<ol>
+  <li>
+    <p>Open <code class="language-plaintext highlighter-rouge">index.html</code>. Most of what you see are external Javascript files that are being used to make the prefab configuration panel look nice. Skip down to the <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> tag.</p>
+  </li>
+  <li>
+    <p>HTML uses the <code class="language-plaintext highlighter-rouge">div</code> tag to mark out sections of a page and the Bootstrap toolkit defines a bunch of different <code class="language-plaintext highlighter-rouge">class</code>es of tags that have pre-set formatting for you to use. To make a basic page that looks a bit nicer, we’ll use these. The existing <code class="language-plaintext highlighter-rouge">&lt;div id="target"&gt;</code> is what hooks up your <code class="language-plaintext highlighter-rouge">Document</code> to the webpage (remember that <code class="language-plaintext highlighter-rouge">"target"</code> parameter that you have to pass when you make a <code class="language-plaintext highlighter-rouge">Document</code>?).</p>
+  </li>
+  <li>
+    <p>First, place the tag <code class="language-plaintext highlighter-rouge">&lt;div class="container"&gt; &lt;/div&gt;</code> around your existing <code class="language-plaintext highlighter-rouge">&lt;div id="target"&gt;</code>, so that your body looks like this:</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;body&gt;</span>
+     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"target"</span><span class="nt">&gt;</span> <span class="nt">&lt;/div&gt;</span>
+     <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/body&gt;</span>
+</code></pre></div>    </div>
+
+    <p>Then refresh your page to take a look at what that changes.</p>
+  </li>
+  <li>
+    <p>It’d be nice to have the settings to the side of the canvas, and you can do that with a combination of changes. First, we’re going to need a <code class="language-plaintext highlighter-rouge">row</code> and a couple of <code class="language-plaintext highlighter-rouge">col</code> (columns) within that row:</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;body&gt;</span>
+     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+                 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"target"</span><span class="nt">&gt;</span> <span class="nt">&lt;/div&gt;</span>
+             <span class="nt">&lt;/div&gt;</span>
+             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;/div&gt;</span>
+         <span class="nt">&lt;/div&gt;</span>
+     <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/body&gt;</span>
+</code></pre></div>    </div>
+
+    <p>You should now see your canvas in just the left column instead of the whole page.</p>
+  </li>
+  <li>
+    <p>Next, we’re going to make a new <code class="language-plaintext highlighter-rouge">id</code> to hook the settings to and put that in the second column. Within the second <code class="language-plaintext highlighter-rouge">col</code> div tags, put <code class="language-plaintext highlighter-rouge">&lt;div id="settings"&gt;&lt;/div&gt;</code></p>
+  </li>
+  <li>
+    <p>Now we need to go use that hook. Open <code class="language-plaintext highlighter-rouge">web.cpp</code> and add a new <code class="language-plaintext highlighter-rouge">Document</code> under your original <code class="language-plaintext highlighter-rouge">doc</code> that uses the <code class="language-plaintext highlighter-rouge">settings</code> id tag:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">emp</span><span class="o">::</span><span class="n">web</span><span class="o">::</span><span class="n">Document</span> <span class="nf">doc</span><span class="p">(</span><span class="s">"target"</span><span class="p">);</span>
+ <span class="n">emp</span><span class="o">::</span><span class="n">web</span><span class="o">::</span><span class="n">Document</span> <span class="nf">settings</span><span class="p">(</span><span class="s">"settings"</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Finally, go down to where you had been putting <code class="language-plaintext highlighter-rouge">config_panel</code> into <code class="language-plaintext highlighter-rouge">doc</code> and put it into <code class="language-plaintext highlighter-rouge">settings</code> instead:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">settings</span> <span class="o">&lt;&lt;</span> <span class="n">config_panel</span><span class="p">;</span>
+</code></pre></div>    </div>
+
+    <p>You should now recompile and see your settings panel in the right hand column.</p>
+  </li>
+  <li>
+    <p>You can make as many <code class="language-plaintext highlighter-rouge">id</code>s that you hook <code class="language-plaintext highlighter-rouge">Document</code>s to as you want. Try making one for your buttons so you can place them underneath of your canvas.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>While the config panel is pretty good at picking ranges that are reasonable, it isn’t perfect and you might want to force the range to something you know is correct.</p>
+
+<ol>
+  <li>
+    <p>You can set the range for a configuration setting on the panel using the <code class="language-plaintext highlighter-rouge">SetRange</code> method, though it takes only strings, which you probably don’t expect. For example, to set the range of a configuration option <code class="language-plaintext highlighter-rouge">NUM_START</code> that holds an integer and should only be 1 or 2, I would do:</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">config_panel</span><span class="p">.</span><span class="n">SetRange</span><span class="p">(</span><span class="s">"NUM_START"</span><span class="p">,</span> <span class="s">"1"</span><span class="p">,</span> <span class="s">"2"</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You can also exclude settings from the panel that are useful for the native version of your program but not appropriate for the web GUI using <code class="language-plaintext highlighter-rouge">ExcludeSetting(setting_to_exclude);</code>. Try hiding the random number seed from the panel.</p>
+  </li>
+  <li>
+    <p>If you have some familiarity with CSS, you can adjust the default style settings through your C++ with the <code class="language-plaintext highlighter-rouge">SetCSS()</code> method. For example, you could do <code class="language-plaintext highlighter-rouge">settings.SetCSS("max-width", "500px");</code> to keep the settings document from stretching beyond 500 pixels. Explore some of the <a href="https://www.w3schools.com/cssref/pr_dim_max-width.asp">CSS properties</a> that you might want to change.</p>
+  </li>
+</ol>
+
+<h2 id="extra">Extra</h2>
+<p>There are a bunch of other prefabricated GUI elements that you can use now that you are set up. Check out <a href="https://devosoft.github.io/empirical-prefab-demo/empirical-prefab-demo">this demonstration of each of them</a> and try adding some more!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
