@@ -50,6 +50,6 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 11/11 | None  | Catch-up and work day |	 |
 | **Week 10** | **Wrapping Up** |  | |
 | M 11/14	| Project First Draft | Working on Final Projects |  |
-| W 11/16 | Study! | Quiz 9; Wrap-up and course evals | |
+| W 11/16 | Study! | [Quiz 9](quiz9); Wrap-up and course evals | |
 | Exam Period | | | |
 | | Final Project |  | |
