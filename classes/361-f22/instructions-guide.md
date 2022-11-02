@@ -67,10 +67,12 @@ Since the printing of the genome is a custom method in the starter code, any ins
 In `CPU.h`, there is a method `PrintGenome` that creates a map of instruction names and how many registers the instruction uses ("arity"). To add a new instruction, just add a new pair to this map:
 
 ```cpp
+{%raw %}
 std::map<std::string, size_t> arities{{"Multiply", 3}, {"Add", 3},
                                           {"Subtract", 3}, {"Divide", 3},
                                           {"IO", 1},       {"Reproduce", 0}, 
                                           {"NEW", 3}}; //NEW instruction uses 3 registers
+{%endraw %}
 ```
 
 ## Avida Instruction Set
@@ -95,3 +97,4 @@ uint32_t reg_c = core.registers[inst.args[2]]; //grab value from third register
 uint32_t nand_val = ~(reg_b & reg_c); //compute NAND
 
 core.registers[inst.args[0]] = nand_val; //place NAND value in first register
+```
