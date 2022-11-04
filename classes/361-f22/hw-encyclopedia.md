@@ -89,7 +89,7 @@ These are topics that others are already approved to do, so you should make sure
 If you want to do something related to one of these, feel free to talk to me about how you can make sure that your topic is different enough.
 
 * (Artificial) Neural networks - how they work in deep learning to emulate human brains
-* Artificial Chemistries - introduction
+* [Artificial Chemistries - introduction](https://alife.org/encyclopedia/artificial-chemistry/artificial-chemistries/)
 * Artificial Chemistries - simulation of cell systems chemistry
 * Open-ended evolution - introduction
 * Xenobots - overview
