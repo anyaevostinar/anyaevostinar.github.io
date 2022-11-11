@@ -101,7 +101,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Bibites - overview
 * Geb - overview
 * Game theory - introduction
-* Game theory - evolutionary games
+* [Game theory - evolutionary games](https://alife.org/encyclopedia/game-theory/game-theory/)
 * Synthetic biology - introduction
 * Synthetic ecology - introduction
 * Ethics of Artificial Life - introduction
