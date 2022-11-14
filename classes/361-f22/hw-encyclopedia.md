@@ -91,7 +91,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * (Artificial) Neural networks - how they work in deep learning to emulate human brains
 * [Artificial Chemistries - introduction](https://alife.org/encyclopedia/artificial-chemistry/artificial-chemistries/)
 * Artificial Chemistries - simulation of cell systems chemistry
-* Open-ended evolution - introduction
+* [Open-ended evolution - introduction](https://alife.org/encyclopedia/introduction/open-ended-evolution/)
 * Xenobots - overview
 * Physicell - overview
 * Florarobotica - overview
