@@ -78,7 +78,9 @@ std::map<std::string, size_t> arities{{"Multiply", 3}, {"Add", 3},
 ## Avida Instruction Set
 To get close to the original default Avida instruction set, I recommend grabbing the following from SGP-Lite (it's not a perfect list or a perfect match, but will get your organisms started, feel free to play around with others from the [CompleteOpLibrary](https://github.com/mmore500/signalgp-lite/blob/master/include/sgpl/library/prefab/CompleteOpLibrary.hpp)):
 
-* sgpl::NopOpLibrary
+* sgpl::Nop<0>
+* sgpl::Nop<1>
+* sgpl::Nop<2>
 * sgpl::BitwiseShift
 * sgpl::Increment
 * sgpl::Decrement
