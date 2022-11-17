@@ -37,7 +37,7 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | Week 7 | |  | |
 | M 10/24 | Project topic checkin; [Git Prep](git-prep) |   GitHub	| |
 | W 10/26 | |	Guest Speaker: [Dr. Alexander Lalejini](https://lalejini.com/)	 | |
-| F 10/28 | Project proposal |	Proposal peer review	| Final project  |
+| F 10/28 | Project proposal |	Proposal peer review	| [Final project](https://anyaevostinar.github.io/classes/361-f22/project-overview)  |
 | Week 8 | |  | |
 | M 10/31 | [Data Collection Prep](data-prep)  | [Empirical Data Lab](empirical_data_lab)	| |
 | W 11/2 | Encyclopedia second drafts | [Graphing Data](r-lab)		 | |	
