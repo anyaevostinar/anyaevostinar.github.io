@@ -81,7 +81,7 @@ To demonstrate mastery on this assignment, it needs to:
 * Accurately summarize information from both of the references for a general audience
 * Have at least four well-organized and clear paragraphs
 * Use appropriate grammar and tone
-* Make a contribution to the Encyclopedia of Artificial Life that is useful to readers in the artificial life community
+* **Be ready to** make a contribution to the Encyclopedia of Artificial Life that is useful to readers in the artificial life community (**actually submitting is not necessary**)
 * Demonstrate a clear understanding of the topic and convey that understanding to the reader
 
 ## Claimed Topics
