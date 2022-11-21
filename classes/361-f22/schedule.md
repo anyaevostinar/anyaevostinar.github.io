@@ -51,4 +51,4 @@ This is a rough schedule of topics for each day and the release and due dates fo
 | W 11/16 |  | Final project; Wrap up; course evaluations	| |
 | Exam Period | | | |
 | |Nothing scheduled, projects due 11/21 3pm | | |
-| | | All revisions due at 3pm 11/21. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
+| | | All revisions due at 9:30pm 11/21. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |

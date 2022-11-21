@@ -21,7 +21,7 @@ You are able to get help from many sources as detailed in the [collaboration](co
 The final project is a programming deliverable in the course, however there won't be the same amount of time for revising after feedback. Because the project is large and open-ended, you will have several opportunities for feedback along the way:
 * Project proposal **due 11/7 at 10pm**
 * Projects peer review **11/14 in class**
-* Project code and report **due 11/21 at 2pm**
+* Project code and report **due 11/21 at 8:30pm**
 
 ## Project Requirements
 You have two options for categories of projects.
