@@ -97,12 +97,12 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Florarobotica - overview
 * Tierra - overview
 * Boids - overview
-* Stringmol - overview
+* [Stringmol - overview](https://alife.org/encyclopedia/artificial-chemistry/stringmol/)
 * Bibites - overview
 * Geb - overview
 * Game theory - introduction
 * [Game theory - evolutionary games](https://alife.org/encyclopedia/game-theory/game-theory/)
-* Synthetic biology - introduction
+* [Synthetic biology - introduction](https://alife.org/encyclopedia/introduction/synthetic-biology/)
 * Synthetic ecology - introduction
 * Ethics of Artificial Life - introduction
 * ALife for Social Good - introduction
