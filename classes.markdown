@@ -4,6 +4,10 @@ title: Classes
 permalink: /Classes/
 ---
 
+### Fall 2023
+
+CS 257: Software Design ([Syllabus](/classes/257-f23/syllabus), Schedule)
+
 ### Fall 2022
 
 CS 111: Introduction to Computer Science ([Syllabus](/classes/111-f22/syllabus), [Schedule](/classes/111-f22/schedule))
