@@ -6,7 +6,7 @@ permalink: /Classes/
 
 ### Fall 2023
 
-CS 257: Software Design ([Syllabus](/classes/257-f23/syllabus), Schedule)
+CS 257: Software Design ([Syllabus](/classes/257-f23/syllabus), [Schedule](/classes/257-f23/schedule))
 
 ### Fall 2022
 
