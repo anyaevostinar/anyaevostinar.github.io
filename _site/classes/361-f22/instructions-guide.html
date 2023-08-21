@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Instructions Guide | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Instructions Guide" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/361-f22/instructions-guide" />
+<meta property="og:url" content="http://localhost:4000/classes/361-f22/instructions-guide" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Instructions Guide" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Instructions Guide","url":"http://localhost:4000/classes/361-f22/instructions-guide"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Instructions Guide</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="overview">Overview</h2>
+<p>Many of you are using the SGP-Lite framework and will be needing to make new instructions. This guide is aimed at explaining the syntax for doing so.</p>
+
+<h2 id="instruction-syntax">Instruction syntax</h2>
+<p>The general syntax of an instruction is the following:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="nc">NAME</span> <span class="p">{</span> <span class="c1">//struct is similar to class but everything is default public</span>
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">Spec</span><span class="p">&gt;</span>
+    <span class="k">static</span> <span class="kt">void</span> <span class="n">run</span><span class="p">(</span><span class="n">sgpl</span><span class="o">::</span><span class="n">Core</span><span class="o">&lt;</span><span class="n">Spec</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">core</span><span class="p">,</span> <span class="k">const</span> <span class="n">sgpl</span><span class="o">::</span><span class="n">Instruction</span><span class="o">&lt;</span><span class="n">Spec</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">inst</span><span class="p">,</span>
+                  <span class="k">const</span> <span class="n">sgpl</span><span class="o">::</span><span class="n">Program</span><span class="o">&lt;</span><span class="n">Spec</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="p">,</span>
+                  <span class="k">typename</span> <span class="n">Spec</span><span class="o">::</span><span class="n">peripheral_t</span> <span class="o">&amp;</span><span class="n">state</span><span class="p">)</span> <span class="k">noexcept</span> <span class="p">{</span>
+
+        <span class="c1">//Whatever you want to happen when the instruction is executed by the organism</span>
+
+    <span class="p">}</span>
+
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">name</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s">"NAME"</span><span class="p">;</span> <span class="p">}</span> <span class="c1">//Whatever you want the human readable name to be</span>
+    <span class="k">static</span> <span class="kt">size_t</span> <span class="n">prevalence</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span> <span class="p">}</span> <span class="c1">//How prevalent you want this instruction to be relative to others, 1 is a good value</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="parameters">Parameters</h2>
+<p>There are quite a few complicated parameters that an instruction’s <code class="language-plaintext highlighter-rouge">run</code> has access to and you might want to use. The provided <code class="language-plaintext highlighter-rouge">IOInstruction</code> demonstrates using the important ones:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">uint32_t</span> <span class="n">output</span> <span class="o">=</span> <span class="n">core</span><span class="p">.</span><span class="n">registers</span><span class="p">[</span><span class="n">inst</span><span class="p">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]];</span>
+</code></pre></div></div>
+
+<p>To access the values in the organism’s registers, you get the registers through the <code class="language-plaintext highlighter-rouge">core</code> with <code class="language-plaintext highlighter-rouge">core.registers</code>. This is basically an array so you can access it with <code class="language-plaintext highlighter-rouge">[]</code> as you would expect.
+Typically you want to access the register that the instruction specified. 
+You can access information about the instruction that the organism just executed through the <code class="language-plaintext highlighter-rouge">inst</code> parameter and specifically find out about which of the registers the instruction was trying to act on by indexing into <code class="language-plaintext highlighter-rouge">inst.args</code>.</p>
+
+<p>For example, if the organism had just done <code class="language-plaintext highlighter-rouge">io          r3</code>, <code class="language-plaintext highlighter-rouge">inst.args[0]</code> would return the <code class="language-plaintext highlighter-rouge">r3</code> register information, which is then used to look up what is in that register with <code class="language-plaintext highlighter-rouge">core.registers[inst.args[0]]</code>.</p>
+
+<p>You can also make changes to what is in any of the organism’s registers, for example when IO gets a new random number and puts it into the same register:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">uint32_t</span> <span class="n">input</span> <span class="o">=</span> <span class="n">sgpl</span><span class="o">::</span><span class="n">tlrand</span><span class="p">.</span><span class="n">Get</span><span class="p">().</span><span class="n">GetUInt</span><span class="p">();</span>
+<span class="n">core</span><span class="p">.</span><span class="n">registers</span><span class="p">[</span><span class="n">inst</span><span class="p">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">input</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>You can access your <code class="language-plaintext highlighter-rouge">World</code> subclass through the <code class="language-plaintext highlighter-rouge">state</code> parameter with <code class="language-plaintext highlighter-rouge">state.world</code>, for instance when IO checks if the organism solved a task with <code class="language-plaintext highlighter-rouge">CheckOutput</code>:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">state</span><span class="p">.</span><span class="n">world</span><span class="o">-&gt;</span><span class="n">CheckOutput</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">state</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="adding-to-library">Adding to library</h2>
+<p>Once you’ve made your new instructions, you just need to add them to the type declaration for your <code class="language-plaintext highlighter-rouge">Library</code> at the end of <code class="language-plaintext highlighter-rouge">Instructions.h</code>:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="n">Library</span> <span class="o">=</span> <span class="n">sgpl</span><span class="o">::</span><span class="n">OpLibraryCoupler</span><span class="o">&lt;</span><span class="n">sgpl</span><span class="o">::</span><span class="n">CompleteOpLibrary</span><span class="p">,</span> <span class="n">IOInstruction</span><span class="p">,</span>
+                           <span class="n">ReproduceInstruction</span><span class="p">,</span> <span class="n">NewInstruction</span><span class="p">,</span> <span class="n">OtherNewInstruction</span><span class="o">&gt;</span><span class="p">;</span>
+                           <span class="c1">//Just add a comma and your instruction name with the &lt;&gt;</span>
+</code></pre></div></div>
+
+<h2 id="printing-nicely">Printing nicely</h2>
+<p>Since the printing of the genome is a custom method in the starter code, any instructions you add, including using more of the SGP-Lite provided instructions, will need to be added to the print genome functionality.</p>
+
+<p>In <code class="language-plaintext highlighter-rouge">CPU.h</code>, there is a method <code class="language-plaintext highlighter-rouge">PrintGenome</code> that creates a map of instruction names and how many registers the instruction uses (“arity”). To add a new instruction, just add a new pair to this map:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="kt">size_t</span><span class="o">&gt;</span> <span class="n">arities</span><span class="p">{{</span><span class="s">"Multiply"</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span> <span class="p">{</span><span class="s">"Add"</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span>
+                                          <span class="p">{</span><span class="s">"Subtract"</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span> <span class="p">{</span><span class="s">"Divide"</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span>
+                                          <span class="p">{</span><span class="s">"IO"</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span>       <span class="p">{</span><span class="s">"Reproduce"</span><span class="p">,</span> <span class="mi">0</span><span class="p">},</span> 
+                                          <span class="p">{</span><span class="s">"NEW"</span><span class="p">,</span> <span class="mi">3</span><span class="p">}};</span> <span class="c1">//NEW instruction uses 3 registers</span>
+
+</code></pre></div></div>
+
+<h2 id="avida-instruction-set">Avida Instruction Set</h2>
+<p>To get close to the original default Avida instruction set, I recommend grabbing the following from SGP-Lite (it’s not a perfect list or a perfect match, but will get your organisms started, feel free to play around with others from the <a href="https://github.com/mmore500/signalgp-lite/blob/master/include/sgpl/library/prefab/CompleteOpLibrary.hpp">CompleteOpLibrary</a>):</p>
+
+<ul>
+  <li>sgpl::Nop&lt;0&gt;</li>
+  <li>sgpl::Nop&lt;1&gt;</li>
+  <li>sgpl::Nop&lt;2&gt;</li>
+  <li>sgpl::BitwiseShift</li>
+  <li>sgpl::Increment</li>
+  <li>sgpl::Decrement</li>
+  <li>sgpl::Add</li>
+  <li>sgpl::Subtract</li>
+  <li>sgpl::global::JumpIfNot</li>
+  <li>sgpl::local::JumpIfNot</li>
+  <li>sgpl::global::Anchor</li>
+</ul>
+
+<p>And making a <code class="language-plaintext highlighter-rouge">Nand</code> instruction, with the following internal logic:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kt">uint32_t</span> <span class="n">reg_b</span> <span class="o">=</span> <span class="n">core</span><span class="p">.</span><span class="n">registers</span><span class="p">[</span><span class="n">inst</span><span class="p">.</span><span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">]];</span> <span class="c1">//grab value from second register</span>
+<span class="kt">uint32_t</span> <span class="n">reg_c</span> <span class="o">=</span> <span class="n">core</span><span class="p">.</span><span class="n">registers</span><span class="p">[</span><span class="n">inst</span><span class="p">.</span><span class="n">args</span><span class="p">[</span><span class="mi">2</span><span class="p">]];</span> <span class="c1">//grab value from third register</span>
+<span class="kt">uint32_t</span> <span class="n">nand_val</span> <span class="o">=</span> <span class="o">~</span><span class="p">(</span><span class="n">reg_b</span> <span class="o">&amp;</span> <span class="n">reg_c</span><span class="p">);</span> <span class="c1">//compute NAND</span>
+
+<span class="n">core</span><span class="p">.</span><span class="n">registers</span><span class="p">[</span><span class="n">inst</span><span class="p">.</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">nand_val</span><span class="p">;</span> <span class="c1">//place NAND value in first register</span>
+</code></pre></div></div>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

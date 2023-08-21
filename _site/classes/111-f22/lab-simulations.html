@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Making Simulations Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Making Simulations Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-f22/lab-simulations" />
+<meta property="og:url" content="http://localhost:4000/classes/111-f22/lab-simulations" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Making Simulations Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Making Simulations Lab","url":"http://localhost:4000/classes/111-f22/lab-simulations"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Making Simulations Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on the final project so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do as well as pull up <a href="https://mcsp.wartburg.edu/zelle/python/graphics/graphics/">Zelle’s documentation for the library</a>.</p>
+
+<h2 id="setup">Setup</h2>
+<p>Download the file <a href="/classes/111-w22/graphics.py">graphics.py</a> and put it into the folder for today’s lab. 
+Then, make a new file <code class="language-plaintext highlighter-rouge">main.py</code> where you’ll work today.</p>
+
+<p>In <code class="language-plaintext highlighter-rouge">main.py</code>, you will first want to import everything from the graphics library. You can do this with an <code class="language-plaintext highlighter-rouge">import graphics</code> statement, but I suggest the following instead:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from graphics import *
+</code></pre></div></div>
+
+<p>This will import all of the class definitions in <code class="language-plaintext highlighter-rouge">graphics.py</code>, and will do so in a way that won’t make you type <code class="language-plaintext highlighter-rouge">graphics.</code> before every use of these classes.</p>
+
+<p>We’ll also be using the <code class="language-plaintext highlighter-rouge">random</code> module today, so add an import for that:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import random
+</code></pre></div></div>
+
+<h2 id="exercise-0">Exercise 0</h2>
+
+<ol>
+  <li>
+    <p>As always, you should make a <code class="language-plaintext highlighter-rouge">main</code> function and make your <code class="language-plaintext highlighter-rouge">GraphWin</code>:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+     <span class="n">win</span> <span class="o">=</span> <span class="n">GraphWin</span><span class="p">(</span><span class="s">"My fancy window"</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>For this lab, you’ll be making a simple simulation/game involving circles and squares, but since you’ll have some additional functionality for them, you’ll need to make your own class. Create a <code class="language-plaintext highlighter-rouge">MovingCircle</code> class that takes three parameters: <code class="language-plaintext highlighter-rouge">centerX, centerY, color</code>. Your constructor should create the <code class="language-plaintext highlighter-rouge">Point</code> object, the <code class="language-plaintext highlighter-rouge">Circle</code> object, and <code class="language-plaintext highlighter-rouge">setFill</code> the color (refer to the <a href="graphics-intro">Graphics Lab</a> if you don’t remember how):</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">class</span> <span class="nc">MovingCircle</span><span class="p">:</span>
+     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">centerX</span><span class="p">,</span> <span class="n">centerY</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
+         <span class="c1">#create your Point object
+</span>         <span class="c1">#create the Circle object
+</span>         <span class="c1">#setFill the color
+</span></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Often in a simulation or game, you’ll want your graphics to move.</p>
+
+<ol>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">main</code>, create and draw a <code class="language-plaintext highlighter-rouge">MovingCircle</code> object. You can make a <code class="language-plaintext highlighter-rouge">draw</code> method within your class or <code class="language-plaintext highlighter-rouge">draw</code> the <code class="language-plaintext highlighter-rouge">MovingCircle</code>’s <code class="language-plaintext highlighter-rouge">Circle</code> directly.</p>
+  </li>
+  <li>
+    <p>All graphics objects support the <code class="language-plaintext highlighter-rouge">.move(dx, dy)</code> method, which takes two parameters, the amount you want it to move in the x direction and the amount to move in the y direction. Make a <code class="language-plaintext highlighter-rouge">move</code> method for your <code class="language-plaintext highlighter-rouge">MovingCircle</code> that moves the <code class="language-plaintext highlighter-rouge">Circle</code> a random amount:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+     <span class="n">ranX</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+     <span class="n">ranY</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+     <span class="c1"># call move on Circle object with ranX and ranY
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">main</code>, write a for-loop that calls the <code class="language-plaintext highlighter-rouge">move</code> method of your <code class="language-plaintext highlighter-rouge">MovingCircle</code> 5 times and make sure that it’s working.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Generally, you want simulations and games to continue for a while.</p>
+
+<ol>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">GraphWin</code> class has an <code class="language-plaintext highlighter-rouge">isClosed()</code> method that lets you keep running your program until the user closes the window (by pressing the X in the upper left). Change your for-loop to a <code class="language-plaintext highlighter-rouge">while</code> loop that uses this method:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">while</span> <span class="ow">not</span> <span class="n">win</span><span class="p">.</span><span class="n">isClosed</span><span class="p">():</span>
+     <span class="c1">#your code
+</span></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>A few more circles would make this more interesting. Before your while loop, create a list of <code class="language-plaintext highlighter-rouge">MovingCircle</code>s at different locations, draw them all, and then add a for loop within your while loop so that they all move randomly each time. Make sure that your code is working at this point.</p>
+  </li>
+  <li>
+    <p>If the circles are moving too fast for you, you can use the <code class="language-plaintext highlighter-rouge">time</code> module to have them move more slowly:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kn">import</span> <span class="nn">time</span>
+
+ <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span> <span class="c1">#sleeps 0.1 seconds before next line
+</span></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="exercise-3">Exercise 3</h2>
+
+<p>You’ll probably also want to respond to user input in your game or simulation. There are a couple of ways to do that. Let’s start by letting the user draw some circles:</p>
+
+<ol>
+  <li>
+    <p>The graphics library lets you get the location that a user clicks with the <code class="language-plaintext highlighter-rouge">getMouse()</code> method of the <code class="language-plaintext highlighter-rouge">GraphWin</code> class. It returns the information as a <code class="language-plaintext highlighter-rouge">Point</code> object. Use this method to draw a circle where ever the user clicks in the window!</p>
+  </li>
+  <li>
+    <p>The graphics library also lets you detect what key on the keyboard a user has pressed with the <code class="language-plaintext highlighter-rouge">getKey()</code> method of <code class="language-plaintext highlighter-rouge">GraphWin</code>. It returns the key as a string of the character key that was pressed. For example, if the user hit the ‘Y’ key, the method would return the string <code class="language-plaintext highlighter-rouge">"y"</code>. Experiment with this method by first printing what you get when you do:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> input_key = win.getKey()
+ print(input_key)
+</code></pre></div>    </div>
+
+    <p>And then use it to allow the user to pick from a couple of different colors for their circle (for example, ‘y’ for yellow and ‘p’ for purple).</p>
+  </li>
+  <li>
+    <p>You probably don’t want to force the user to make a new circle each loop. You can instead use the <code class="language-plaintext highlighter-rouge">checkMouse()</code> method, which doesn’t pause the program, but just checks if the user has clicked since the last time (there is also a <code class="language-plaintext highlighter-rouge">checkKey()</code> equivalent). <code class="language-plaintext highlighter-rouge">checkMouse()</code> returns <code class="language-plaintext highlighter-rouge">None</code> if there is no new click, so you’ll need to use a conditional to see if there is actually input to use:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">clickPoint</span> <span class="o">=</span> <span class="n">win</span><span class="p">.</span><span class="n">checkMouse</span><span class="p">()</span>
+ <span class="k">if</span> <span class="n">clickPoint</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+     <span class="c1">#don't do anything
+</span> <span class="k">else</span><span class="p">:</span>
+     <span class="c1">#check on color and draw a new circle
+</span></code></pre></div>    </div>
+
+    <p>Switch to the <code class="language-plaintext highlighter-rouge">checkMouse()</code> method so that your circles wiggle around until the user clicks, and then a new circle is drawn and added to the list of moving circles.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Perhaps you want the user to be able to get rid of some of the circles if they click on one. This requires detecting a collision, which is a bit of a tricky process.</p>
+
+<ol>
+  <li>
+    <p>In your <code class="language-plaintext highlighter-rouge">MovingCircle</code> class, create a new method <code class="language-plaintext highlighter-rouge">collision</code> that takes a Point object.</p>
+  </li>
+  <li>
+    <p>All graphics objects have a “bounding box” formed by two or more Points. For <code class="language-plaintext highlighter-rouge">Circle</code>s, you can get access to the two points that form their bounding boxes with <code class="language-plaintext highlighter-rouge">getP1()</code> and <code class="language-plaintext highlighter-rouge">getP2()</code>. Together these two points form the rectangle that the <code class="language-plaintext highlighter-rouge">Circle</code> would fit in. It’s not a perfect way to detect a collision, but it’s good enough for our purposes. First, get the x and y coordinates of the two points of your circle, which I called <code class="language-plaintext highlighter-rouge">self.body</code>:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">collision</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_point</span><span class="p">):</span>
+     <span class="n">x1</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">body</span><span class="p">.</span><span class="n">getP1</span><span class="p">().</span><span class="n">getX</span><span class="p">()</span> <span class="c1">#change self.body to what your Circle is
+</span>     <span class="n">x2</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">body</span><span class="p">.</span><span class="n">getP2</span><span class="p">().</span><span class="n">getX</span><span class="p">()</span>
+     <span class="n">y1</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">body</span><span class="p">.</span><span class="n">getP1</span><span class="p">().</span><span class="n">getY</span><span class="p">()</span>
+     <span class="n">y2</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">body</span><span class="p">.</span><span class="n">getP2</span><span class="p">().</span><span class="n">getY</span><span class="p">()</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>We’ll say there is a collision when the point’s x is between <code class="language-plaintext highlighter-rouge">x1</code> and <code class="language-plaintext highlighter-rouge">x2</code> AND the point’s y is between <code class="language-plaintext highlighter-rouge">y1</code> and <code class="language-plaintext highlighter-rouge">y2</code>:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">if</span> <span class="n">x1</span> <span class="o">&lt;</span> <span class="n">other_point</span><span class="p">.</span><span class="n">getX</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">x2</span><span class="p">:</span>
+     <span class="c1">#within x coordinates
+</span>     <span class="k">if</span> <span class="n">y1</span> <span class="o">&lt;</span> <span class="n">other_point</span><span class="p">.</span><span class="n">getY</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">y2</span><span class="p">:</span>
+         <span class="c1">#within y coordinates
+</span>         <span class="k">return</span> <span class="bp">True</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Now update your <code class="language-plaintext highlighter-rouge">main</code> code so that it first checks if the point where the user clicked collided with any of the existing circles. If it does, undraw that circle and remove it from your list of circles. If there wasn’t a collision, draw a new circle like you were already doing. Make sure you code works at this point. (You might need to slow down your circles or make them bigger to be able to test this easily!)</p>
+  </li>
+</ol>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>You are already pretty far along in making something game/simulation like, but a frequent other way to control a game is with the arrow keys. You might have already figured out how to do that, but we’ll walk it through here and combine the various things from previously.</p>
+
+<ol>
+  <li>
+    <p>Let’s make a new class that is a <code class="language-plaintext highlighter-rouge">PredatorSquare</code> which will be controlled by the user to eat the <code class="language-plaintext highlighter-rouge">MovingCircle</code>s. You’ll want your class constructor to take in a couple of points and create a <code class="language-plaintext highlighter-rouge">Rectangle</code> with them. Feel free to make it a specific color as well.</p>
+  </li>
+  <li>
+    <p>To control your predatory square, we’ll use the <code class="language-plaintext highlighter-rouge">checkKey()</code> method again. If the user hits the arrow keys, it gets saved as “Up”, “Down”, “Left”, or “Right”. Create a conditional that moves your square based on if any of those arrow keys were pressed:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">direction</span> <span class="o">=</span> <span class="n">win</span><span class="p">.</span><span class="n">checkKey</span><span class="p">()</span>
+ <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">"Up"</span><span class="p">:</span>
+     <span class="c1">#move square up
+</span> <span class="k">elif</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">"Down"</span><span class="p">:</span>
+     <span class="c1">#move square down
+</span> <span class="k">elif</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">"Left"</span><span class="p">:</span>
+     <span class="c1">#move square left
+</span> <span class="k">elif</span> <span class="n">direction</span> <span class="o">==</span> <span class="s">"Right"</span><span class="p">:</span>
+     <span class="c1">#move square right
+</span></code></pre></div>    </div>
+
+    <p>Notice that there isn’t an <code class="language-plaintext highlighter-rouge">else</code> because the <code class="language-plaintext highlighter-rouge">direction</code> could be a lot of other things, and we don’t want the square to default to moving right!</p>
+
+    <p>Make sure that you can now control your predatory square’s movement.</p>
+  </li>
+  <li>
+    <p>Finally, you’ll want to check if your square runs into any of the circles and eats them. Fortunately, you already have a method for your circles to check for collisions. Make a loop that loops over each of the circles in your list and check if they have collided with the square’s <code class="language-plaintext highlighter-rouge">P1</code> or <code class="language-plaintext highlighter-rouge">P2</code>. (This again is not a perfect way of detecting collisions, but fine for now.) If there is a collision, undraw the circle and remove it from your list.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-6">Exercise 6</h2>
+<p>With that, you know about nearly everything that you need from the graphics library for making a simulation or game! Here are a couple of other things to check out:</p>
+
+<ol>
+  <li>
+    <p>Use the <code class="language-plaintext highlighter-rouge">Text</code> object to create some text by <a href="https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node11.html">checking the documentation</a>.</p>
+  </li>
+  <li>
+    <p>Use the <code class="language-plaintext highlighter-rouge">Entry</code> object to <a href="https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node12.html">get text from the user</a>.</p>
+  </li>
+  <li>
+    <p><a href="https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node13.html">Add an image to your window</a> with the <code class="language-plaintext highlighter-rouge">Image</code> object.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-7">Exercise 7</h2>
+<p>Start planning out what classes you’ll need for your final project and get implementing!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

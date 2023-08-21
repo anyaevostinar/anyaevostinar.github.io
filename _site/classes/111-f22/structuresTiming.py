@@ -2,6 +2,7 @@
 # CS 111, F22
 # Prof Anya Vostinar
 # Starter code for testing the efficiency of various list and dictionary methods
+import random
 
 def dictionaryLookup(dictionary, item):
   '''A simple function that looks up if an item is a key 
@@ -27,7 +28,7 @@ def generateDict(size):
   Parameter: integer for size of desired dictionary
   Return: a dictionary of that size'''
   example_dict = {}
-  for i in range(100):
+  for i in range(size):
     example_dict[i] = True
   return example_dict
 
@@ -39,6 +40,16 @@ def generateList(size):
   for i in range(size):
     lst.append(i)
 
+  return lst
+
+def generateRandomList(size):
+  '''A function to generate a list of specific size with random numbers
+  Parameter: integer for size of desired list
+  Return: a list of that size'''
+  lst = []
+  for i in range(size):
+    #Generating number within range of size list, might have duplicates though
+    lst.append(random.randint(0,size))
   return lst
 
 

@@ -1,0 +1,1 @@
+Somewhat similar to https://open.substack.com/pub/gradingforgrowth/p/using-a-class-journal-to-build-writing

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Slow(ish) Sorting Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Slow(ish) Sorting Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-f22/slow-sorting" />
+<meta property="og:url" content="http://localhost:4000/classes/111-f22/slow-sorting" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Slow(ish) Sorting Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Slow(ish) Sorting Lab","url":"http://localhost:4000/classes/111-f22/slow-sorting"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Slow(ish) Sorting Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.
+I also recommend opening the <a href="https://runestone.academy/ns/books/published/pythonds3/SortSearch/sorting.html?mode=browsing">readings</a> for today for reference (that’s a link that doesn’t require login).</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>(Repeat of what we talked about at the beginning of class.)
+For class today, you read about selection and insertion sort. Here is a reminder of insertion sort.</p>
+
+<h3 id="insertion-sort-overview">Insertion Sort Overview</h3>
+<p>Insertion sort follows the following general algorithm:</p>
+
+<ul>
+  <li>Going from left to right:
+    <ul>
+      <li>For each value you reach, <strong>insert it</strong> into its proper place in the list to its left (by continuously swapping it with smaller values until it is in place).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="an-example">An example</h3>
+<p>For instance, here are the steps to sort the list <code class="language-plaintext highlighter-rouge">[3, 5, 1, 2, 4]</code></p>
+
+<p>1) Start with item at index 0:</p>
+
+<ul>
+  <li>[<strong>3</strong>, 5, 1, 2, 4] <em>Nothing to the left of index 0, so no swaps necessary</em></li>
+</ul>
+
+<p>2) Process item at index 1:</p>
+
+<ul>
+  <li>[3, <strong>5</strong>, 1, 2, 4] <em>5 &gt; 3, so no swaps necessary</em></li>
+</ul>
+
+<p>3) Process item at index 2:</p>
+
+<ul>
+  <li>[3, 5, <strong>1</strong>, 2, 4] <em>1 &lt; 5, so swap them</em></li>
+  <li>[3, <strong>1</strong>, 5, 2, 4] <em>1 &lt; 3, so swap them</em></li>
+  <li>[<strong>1</strong>, 3, 5, 2, 4] <em>Nothing to the left of 1, so no more swaps</em></li>
+</ul>
+
+<p>4) Process item at index 3:</p>
+
+<ul>
+  <li>[1, 3, 5, <strong>2</strong>, 4] <em>2 &lt; 5, so swap them</em></li>
+  <li>[1, 3, <strong>2</strong>, 5, 4] <em>2 &lt; 3, so swap them</em></li>
+  <li>[1, <strong>2</strong>, 3, 5, 4] <em>2 &gt; 1, so no more swaps needed</em></li>
+</ul>
+
+<p>5) Process item at index 4:</p>
+
+<ul>
+  <li>[1, 2, 3, 5, <strong>4</strong>] <em>4 &lt; 5, so swap them</em></li>
+  <li>[1, 2, 3, <strong>4</strong>, 5] <em>4 &gt; 3, so no more swaps needed</em></li>
+</ul>
+
+<p>Note that at each step of the way, we are maintaining a list that is fully sorted to the <strong>left</strong> of the index that we are currently considering. This means that as soon as we find a value that is less than the one we are currently considering, we can stop swapping!</p>
+
+<h3 id="the-code">The code</h3>
+<p>Here is the code for insertion sort being used to sort a small list of strings:</p>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20insertionSort%28lst%29%3A%0A%20%20for%20i%20in%20range%28len%28lst%29%29%3A%0A%20%20%20%20j%20%3D%20i%0A%20%20%20%20while%20j%20%3E%200%20and%20lst%5Bj%5D%20%3C%20lst%5Bj-1%5D%3A%0A%20%20%20%20%20%20lst%5Bj%5D,%20lst%5Bj-1%5D%20%3D%20lst%5Bj-1%5D,%20lst%5Bj%5D%0A%20%20%20%20%20%20j%20%3D%20j%20-%201%0A%20%20%20%20%20%20%0AinsertionSort%28%5B%22c%22,%20%22b%22,%20%22a%22%5D%29&amp;codeDivHeight=400&amp;codeDivWidth=350&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=nevernest&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false"> </iframe>
+
+<p>Familiarize yourself with this code and try to understand how it works. (It might help to try out the algorithm on a few small lists of your own creation.)</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Answer the following questions about the program itself:</p>
+<ul>
+  <li>Why doesn’t this function require a return value?</li>
+  <li>Why are we using a while loop for <code class="language-plaintext highlighter-rouge">j</code> rather than a for loop?</li>
+  <li>Does <code class="language-plaintext highlighter-rouge">i</code> really need to start at 0? Why or why not?</li>
+</ul>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>a) Come up with two lists of length 5 with the following properties:</p>
+<ul>
+  <li>One for which insertion sort will go as <em>fast</em> as possible</li>
+  <li>One for which insertion sort will go as <em>slow</em> as possible</li>
+</ul>
+
+<p>b) How many times does insertion sort need to swap values when performed on each of the two lists you created?</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>a) Using big-O analysis, determine what is the <strong>best case</strong> runtime of insertion sort?</p>
+
+<p>b) Using big-O analysis, determine what is the <strong>worst case</strong> runtime of insertion sort?</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Given these best- and worst-case runtimes, do you think insertion sort is better or worse than <strong>bubble sort and selection sort</strong>? (The code for selection sort is below.)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def selectionSort(lst):
+  for i in range(len(lst)):
+    small = i
+    for j in range(i+1, len(lst)):
+      if lst[j] &lt; lst[small]:
+        small = j
+    lst[i], lst[small] = lst[small], lst[i]
+</code></pre></div></div>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>Adapt the code from <a href="/classes/111-f22/structuresTiming.py">structuresTiming.py</a> and the reading to perform benchmark tests on each of the sorting algorithms in the best and worst case to see how they do.</p>
+
+<h2 id="extra">Extra</h2>
+<p>If you have extra time, try coming up with a sorting algorithm that has a similar ‘divide and conquer’ approach as binary search (i.e. makes two recursive calls to split the list into two halves).</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
