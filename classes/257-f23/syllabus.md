@@ -256,6 +256,12 @@ It is expected that you complete the preparation work ahead of the class period 
 All that said: This (like every term for a while now) term is going to be weird, and hard, and disruptive, for all sorts of non-academic reasons. If you're staring down a deadline that you know you can't meet, or if you've fallen behind, **get in touch with me immediately and we'll work something out.** While I need to put boundaries in place for my own health and wellness, and for fairness to everyone in the class, I also want to make sure you are progressing in your learning.
 
 ## Doing honest work
+
+### AI-Assistance
+Only use an AI text generator if the assignment explicitly calls for it or allows it, and follow specific assignment guidelines to disclose which text comes from the AI. 
+Most assignments (probably all) in this course will NOT allow the use of an AI text/code generator, since you need to learn how to write the code yourself.
+
+### Groups
 Working in groups is a great way to learn computer science, and learning how to work with others is an essential skill. The opportunity to work in groups also comes with some additional responsibilities:
 
 * **As a member of a team, it is your responsibility to contribute equally and fully to the final product.** For example, it is not acceptable to let a teammate "finish the project" without you and put your name on it before submitting it, or work on significant portions of the project without you, or any permutation of this. When pair programming, I expect you to actively work side-by-side with your partner the majority of the time.

@@ -6,6 +6,7 @@ permalink: /classes/257-f23/schedule
 
 This is a rough schedule of topics for each week and the expected completion of assignments.
 It will continue to be filled in throughout the term.  
+Many of the links will be dead-ends until closer to the relevant date.
 
 **Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses.
 
@@ -22,7 +23,7 @@ Other readings will be linked through Moodle.
 | W 9/13 | [Project Aristotle](https://rework.withgoogle.com/print/guides/5721312655835136/), [Agile](https://medium.com/shecancode/an-introduction-to-agile-software-development-914339dcec66) | Effective teams and Agile, [start setting up computers](/classes/257-s22/getting-started) |  |
 | F 9/15 | Unix and Vim Tutorials | [Unix Scavenger Hunt](unix-scavenger-hunt) | |
 | **Week 2** | **Project Foundations** | | |
-| M 9/18 | Looking for Datasets | Start on Project Proposal | Project Proposal Part 1 (due 4/11) | 
+| M 9/18 | Looking for Datasets | Start on Project Proposal | Project Proposal Part 1 (due 9/25) | 
 | W 9/20 | Reading about Git [1](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/),[2](https://dev.to/doylecodes/git-for-dummies-1a2i),[3](https://medium.com/@RedRoxProjects/how-do-i-git-three-ways-to-solve-a-merge-conflict-cde4d7924c80) | Git Practice Labs | |
 | F 9/22 | Reading about CLI [1](https://realpython.com/python-command-line-arguments), [2](https://eng.localytics.com/exploring-cli-best-practices/) | [Start on CLI Design](command-line-design) | |
 | **Week 3** | **Core Functionality** | | |
