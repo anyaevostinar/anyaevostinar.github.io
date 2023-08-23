@@ -21,7 +21,7 @@ Other readings will be linked through Moodle.
 | **Week 1** | **Getting Started** |  | |
 | M 9/11 | [Intro to Software Design Prep](intro-prep) | Course overview and discussion|  |
 | W 9/13 | [Agile and Effective Teams Prep](agile-prep) | Development Processes and Getting Started, [start setting up computers](getting-started) |  |
-| F 9/15 | Unix and Vim Tutorials | [Unix Scavenger Hunt](unix-scavenger-hunt) | |
+| F 9/15 | [Unix and Vim Prep](unix-prep) | [Unix Scavenger Hunt](unix-scavenger-hunt) | |
 | **Week 2** | **Project Foundations** | | |
 | M 9/18 | Looking for Datasets | Start on Project Proposal | Project Proposal Part 1 (due 9/25) | 
 | W 9/20 | Reading about Git [1](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/),[2](https://dev.to/doylecodes/git-for-dummies-1a2i),[3](https://medium.com/@RedRoxProjects/how-do-i-git-three-ways-to-solve-a-merge-conflict-cde4d7924c80) | Git Practice Labs | |
