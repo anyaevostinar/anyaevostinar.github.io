@@ -20,7 +20,7 @@ Other readings will be linked through Moodle.
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Getting Started** |  | |
 | M 9/11 | [Intro to Software Design Prep](intro-prep) | Course overview and discussion|  |
-| W 9/13 | [Project Aristotle](https://rework.withgoogle.com/print/guides/5721312655835136/), [Agile](https://medium.com/shecancode/an-introduction-to-agile-software-development-914339dcec66) | Effective teams and Agile, [start setting up computers](/classes/257-s22/getting-started) |  |
+| W 9/13 | [Agile and Effective Teams Prep](agile-prep) | Development Processes and Getting Started, [start setting up computers](getting-started) |  |
 | F 9/15 | Unix and Vim Tutorials | [Unix Scavenger Hunt](unix-scavenger-hunt) | |
 | **Week 2** | **Project Foundations** | | |
 | M 9/18 | Looking for Datasets | Start on Project Proposal | Project Proposal Part 1 (due 9/25) | 

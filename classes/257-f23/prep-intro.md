@@ -25,6 +25,7 @@ Before class, you should be able to:
 After class, you should be able to:
 * List the assignments and structure of the class
 * Explain the goals of the course
+* Explain at a basic level some ways software can be badly designed
 
 ## Readings
 To achieve the basic learning objectives, you should read the following:
