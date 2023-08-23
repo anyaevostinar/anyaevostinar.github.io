@@ -27,7 +27,7 @@ Other readings will be linked through Moodle.
 | W 9/20 | Reading about Git [1](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/),[2](https://dev.to/doylecodes/git-for-dummies-1a2i),[3](https://medium.com/@RedRoxProjects/how-do-i-git-three-ways-to-solve-a-merge-conflict-cde4d7924c80) | Git Practice Labs | |
 | F 9/22 | Reading about CLI [1](https://realpython.com/python-command-line-arguments), [2](https://eng.localytics.com/exploring-cli-best-practices/) | [Start on CLI Design](command-line-design) | |
 | **Week 3** | **Core Functionality** | | |
-| M 9/25 | Reading about TDD [1](http://en.wikipedia.org/wiki/Test-driven_development), [2](https://realpython.com/python-testing/), (Optional) Martin Ch 9 </br> Project Proposal Part 1 due | [TDD Lab](tdd) | [Team - Command Line](project-command-line), [Individual - Tests](project-1-ind) |
+| M 9/25 | Reading about TDD [1](http://en.wikipedia.org/wiki/Test-driven_development), [2](https://realpython.com/python-testing/), (Optional) Martin Ch 9  Project Proposal Part 1 due | [TDD Lab](tdd) | [Team - Command Line](project-command-line), [Individual - Tests](project-1-ind) |
 | W 9/27 | Read Martin Ch 3 | Function Design | |
 | F 9/29 | Read about Ethics in Tech: [1](https://www.acm.org/code-of-ethics), [2](https://medium.com/humane-tech/12-things-everyone-should-understand-about-tech-d158f5a26411) | Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
