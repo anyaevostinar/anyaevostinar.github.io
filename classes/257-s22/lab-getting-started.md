@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Getting Started
-permalink: /classes/257-s22/getting-started
+permalink: /classes/257-f23/getting-started
 ---
 
 ## Goal
