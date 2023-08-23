@@ -5,7 +5,7 @@ permalink: /classes/257-f23/agile-prep
 ---
 
 ## Overview
-
+There are many different ways to go about organizing large teams and projects. A popular current approach is called *Agile* and today we'll be learning about how to follow this methodology, the history behind it, and getting setup for the term.
 
 ## Basic Learning Objectives
 Before class, you should be able to:
