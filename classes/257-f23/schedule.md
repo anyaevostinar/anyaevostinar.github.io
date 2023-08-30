@@ -24,7 +24,7 @@ Other readings will be linked through Moodle.
 | F 9/15 | [Unix and Vim Prep](unix-prep) | [Unix Scavenger Hunt](unix-scavenger-hunt) | |
 | **Week 2** | **Project Foundations** | | |
 | M 9/18 | Looking for Datasets | Start on Project Proposal | Project Proposal (due 9/25) | 
-| W 9/20 | Reading about Git [1](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/),[2](https://dev.to/doylecodes/git-for-dummies-1a2i),[3](https://medium.com/@RedRoxProjects/how-do-i-git-three-ways-to-solve-a-merge-conflict-cde4d7924c80) | Git Practice Labs | |
+| W 9/20 | Reading about Git [1](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/),[2](https://dev.to/doylecodes/git-for-dummies-1a2i),[3](https://medium.com/@RedRoxProjects/how-do-i-git-three-ways-to-solve-a-merge-conflict-cde4d7924c80) | [Git Practice Lab](lab-git) | |
 | F 9/22 |Reading about TDD [1](http://en.wikipedia.org/wiki/Test-driven_development), [2](https://realpython.com/python-testing/), (Optional) Martin Ch 9  |[TDD Lab](tdd)  |[Individual - Tests](project-1-ind) |
 | **Week 3** | **Core Functionality** | | |
 | M 9/25 |Reading about CLI [1](https://realpython.com/python-command-line-arguments), [2](https://eng.localytics.com/exploring-cli-best-practices/), Individual Deliverable 1 due,   Project Proposal due | [Start on CLI Design](command-line-design) | [Team - Command Line](project-command-line),  |
