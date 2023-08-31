@@ -56,6 +56,31 @@ In your team contract, you should address the following prompts.
     * What process will you follow if someone does not live up to their responsibilities and/or meet the standards for work set by the team?
     * How will you address conflict or deal with disagreements within the team?
 
+## Dataset Questions
+*"I want to use a dataset that's not listed in the research guide. How do I know if I can use it?"*
+
+The safest thing to do is to select a dataset that is available for public use. If you're not sure where to look, ask Anya and/or contact the library liaison for Computer Science, and we can help you find the relevant information.
+
+*"If a dataset says it's ok for academic use, is that sufficient?"*
+
+Usually. We won't be publishing our sites outside of Carleton, so often even "restricted" datasets are ok to use. That said, check the restrictions carefully, and ask the librarian or Anya if you have questions.
+
+*"What's the maximum size allowable dataset for this project?"*
+
+The database file size per group needs to be around 20MB. However, there is some wiggle room, so long as everyone does not exceed the 20MB limit. There are ways to limit the size of the data you're storing in your database -- for instance, you may not need every field from the dataset. If you want to work with a large dataset, I can help you figure out a way to make it manageable. The main thing is no images or movies!
+
+*"I want to use Reddit data..."*
+
+A word of caution: Reddit data is certainly rich, and sometimes entertaining, but in the past student teams have struggled a lot to make viable and interesting projects with this data. The data itself is hard to wrangle and work with, and it's hard to distill the essence of Reddit into a web project that can be completed in 7 weeks. I would suggest rethinking your project idea.
+
+*"I want to write a recommender system to..."*
+
+Whoa there, we only have 7 weeks for this project! A good way to think about how to scope your project is to think about what interesting questions you might be able to answer with your chosen data. What aspects of the data do you want to highlight? Some of the best projects in recent memory aimed to answer a few core questions with a dataset and built a compelling and intuitive web site around this data. For example: word frequencies in Billboard Top 100 songs; Oscar winners by category, year, genre; wildlife in national parks.
+
+*"The data I want exists on a website, but there's no dataset available per se."*
+
+It's not common, but every once in a while a team wants to use data from, say, the Registrar, or some other site that doesn't have a downloadable dataset. In these cases, you might be able to write a "web scraper", which is a program that reads off the HTML from a website and extracts the data. First, you need to make sure that the site allows web scraping before you proceed. Once you've established that you have permission, there are some resources I can point you towards that other student teams have found helpful. Please talk to me if you want to go this route, but if there are other ideas that you have, those will probably be better given the limited time that you have.
+
 ## How to Submit
 Turn in your proposal (which includes your team contract) and data on GitHub, by pushing these items to your team's repository. You data must be in the `Data` folder and your proposal should be titled `Proposal.md`. Tag the commit with the tag "proposal" with the following command:
 

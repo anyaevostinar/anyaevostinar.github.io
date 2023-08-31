@@ -16,6 +16,7 @@ Before class, you should be able to:
 
 ## Advanced Learning Objectives
 After class, you should be able to:
+* Explain what the team project is about
 * Locate and cite the dataset your team will be using (or have narrowed it down to a couple as a team)
 * Answer several of the questions on the Team Charter assignment, if not all of them
 
