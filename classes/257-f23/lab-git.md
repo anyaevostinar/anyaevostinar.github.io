@@ -329,3 +329,5 @@ To create the merge conflict:
 You don't have to do anything else --- just make sure you have all the lab files you created in your team's repository.
 
 **If there is still time in class, keep working on your dataset and team contract!**
+
+*This lab was adapted from one written by Prof. Amy Csizmar Dalal, thanks Amy!*
