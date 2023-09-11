@@ -25,7 +25,7 @@ From the [Getting Started Lab](getting-started), you should already have:
 ## Step 1: Accept the assignment
 Normally you would make your own new repository at this point, but we're going to use a tool called Git Classroom that let's us keep all of your repositories a bit more organized.
 
-**Accept the assignment by clicking on the link in Moodle**, which will set up a new git repository for you that I also have access to. We'll be using this repository for your individual deliverables during the term. You should now see this (with your username instead):
+**Accept the assignment by clicking on the link in Moodle "Git Individual Link"**, which will set up a new git repository for you that I also have access to. We'll be using this repository for your individual deliverables during the term. You should now see this (with your username instead):
 
 ![Empty git classroom repository](git-lab-images/Image1.png)
 

@@ -9,12 +9,14 @@ Engage in test-driven development as you start on the team and individual delive
 
 ## First Though
 
-You should already have an Individual Deliverable 1 and team deliverable git repo setup. If you haven't finished the Git setup from the previous lab, go do that.
+If you haven't finished the Git setup from the previous lab, go do that.
 
 ## Overview
 In this lab, you'll practice test-driven development to get started on your [first individual deliverable](project-1-ind).
 
 ## Step 1: A First Failing Test
+* Accept the assignment by clicking on the `Individual Deliverable 1 Assignment` on Moodle and cloning down the repository.
+
 In TDD, you always want to start with a failing test: 
 * In your Individual Deliverable 1 repository, in the `Tests` folder, make a Python file with a name that starts with `test`
 * Add the following boilerplate code:
