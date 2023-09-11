@@ -12,6 +12,8 @@ Jeff Ondich has a nice walk through for setting up your computer for this course
 
 I recommend you also install [VSCode](https://code.visualstudio.com/download) since it's what I'll be using to demonstrate things and it has a whole lot of really useful extensions, such as [Remote Development](https://code.visualstudio.com/docs/remote/ssh) and [Live Share](https://code.visualstudio.com/learn/collaboration/live-share).
 
+If you're using WSL (i.e. on Windows), you will want ot check out the [VSCode guide to working with WSL](https://code.visualstudio.com/docs/remote/wsl).
+
 Also work through Section 3 but don't make a repository yet and send your GitHub username [to this survey](https://docs.google.com/forms/d/e/1FAIpQLSdL5ovH96K7nij6KPn9RicFxPylq20N2Wa3e52XPfCkXkkmCw/viewform?usp=sf_link) instead.
 
 ## Python Refreshing

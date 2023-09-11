@@ -25,7 +25,7 @@ Other readings will be linked through Moodle.
 | **Week 2** | **Project Foundations** | | |
 | M 9/18 | [Data and Team Prep](data-prep) | [Start on Project Proposal](lab-proposal) | [Project Proposal](project-proposal) (due 9/25) | 
 | W 9/20 | [Git Prep](git-prep) | [Git Practice Lab](lab-git) | |
-| F 9/22 |Reading about TDD [1](http://en.wikipedia.org/wiki/Test-driven_development), [2](https://realpython.com/python-testing/), (Optional) Martin Ch 9  |[TDD Lab](tdd)  |[Individual - Tests](project-1-ind) |
+| F 9/22 | [TDD Prep](tdd-prep) |[TDD Lab](tdd)  |[Individual - Tests](project-1-ind) |
 | **Week 3** | **Core Functionality** | | |
 | M 9/25 |Reading about CLI [1](https://realpython.com/python-command-line-arguments), [2](https://eng.localytics.com/exploring-cli-best-practices/), Individual Deliverable 1 due,   Project Proposal due | [Start on CLI Design](command-line-design) | [Team - Command Line](project-command-line),  |
 | W 9/27 | Read Martin Ch 3 | Function Design | |
