@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Git Labs | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Git Labs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-f23/lab-git" />
+<meta property="og:url" content="http://localhost:4000/classes/257-f23/lab-git" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Git Labs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Git Labs","url":"http://localhost:4000/classes/257-f23/lab-git"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Git Labs</h1>
+  </header>
+
+  <div class="post-content">
+    <ul>
+  <li><a href="#part-1-objectives">Part 1 (Individual)</a></li>
+  <li><a href="#part-2-objectives">Part 2 (Team)</a></li>
+</ul>
+
+<h2 id="part-1-objectives">Part 1 Objectives</h2>
+<ul>
+  <li>Introduce you to git and GitHub (or re-introduce you if you’ve used it before).</li>
+  <li>Practice the git workflow for using version control on software projects, in your individual repositories</li>
+  <li>Practice the git command line interface</li>
+  <li>Work with both your local repository (via git) and your personal remote repository (on GitHub).</li>
+</ul>
+
+<h2 id="collaboration">Collaboration</h2>
+<p>You should work individually on this part, but feel free to work simultaneously with nearby classmates for moral support and help.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>From the <a href="getting-started">Getting Started Lab</a>, you should already have:</p>
+
+<ul>
+  <li>A GitHub account</li>
+  <li>A local installation of git on your machine</li>
+</ul>
+
+<h2 id="step-1-accept-the-assignment">Step 1: Accept the assignment</h2>
+<p>Normally you would make your own new repository at this point, but we’re going to use a tool called Git Classroom that let’s us keep all of your repositories a bit more organized.</p>
+
+<p><strong>Accept the assignment by clicking on the link in Moodle</strong>, which will set up a new git repository for you that I also have access to. We’ll be using this repository for your individual deliverables during the term. You should now see this (with your username instead):</p>
+
+<p><img src="/classes/257-f23/git-lab-images/Image1.png" alt="Empty git classroom repository" /></p>
+
+<p>There is some extra stuff that has to do with a feature for giving feedback that we are going to try out, but don’t worry about it right now.</p>
+
+<h2 id="step-2-readme">Step 2: README</h2>
+<p>You should always have a README file for a repository and GitHub let’s you do some editing of files like this right in the browser. Click the “Add a README” button:</p>
+
+<p><img src="/classes/257-f23/git-lab-images/Step2.png" alt="Green button says Add a README" /></p>
+
+<p>If the syntax doesn’t look familiar to you, this is <em>markdown</em>, which is a quick way of adding rich text-like features to plain text. The “#” indicates a top-level heading; “normal” text is just typed. You can just type normal text and be just fine, but if you’re interested in learning more, check out <a href="https://www.markdownguide.org/basic-syntax/">this resource</a>.</p>
+
+<p>There is a lot of opinion out there on what should all be in a README, but at a minimum it should provide an overview of the contents and links to any relevant information such as documentation. You don’t actually know what all is going to go into this repo yet, and that’s okay. <strong>Add the creation date and a description about how it will contain the individual deliverables for this course.</strong></p>
+
+<p><strong>Scroll to the bottom to commit the file to the repository.</strong> (Since this is our remote repository, we don’t need to push the file this time.) Make sure you <strong>add a commit message</strong> to the log like I’ve done. This allows you to go back and read descriptions of what you’ve committed, rather than trying to deduce this later from the set of files you committed:</p>
+
+<p><img src="/classes/257-f23/git-lab-images/Step2-2.png" alt="Dialog box for adding a commit message" /></p>
+
+<p>So now your repo should look something like:</p>
+
+<p><img src="/classes/257-f23/git-lab-images/Step2-3.png" alt="Repository with a README.md file" /></p>
+
+<h2 id="step-3-make-a-local-version-of-your-repository">Step 3: Make a local version of your repository</h2>
+<p>For this next set of steps, you will need access to a terminal.</p>
+
+<p>We don’t currently have a local version of our repository. To create one, we can clone the remote repository.</p>
+
+<p>First, go to a terminal, and create a directory. This is where your local repository will live. (Use your newly-acquired Unix skills to do so!)</p>
+
+<p>Now we’re ready to rock. Go to the GitHub page for the repository that you created. Click on the green “Code” button. You should see something that looks like this:</p>
+
+<p><img src="/classes/257-f23/git-lab-images/Step3.png" alt="Code button selected and showing dropdown" /></p>
+
+<p><strong>Make sure you see https:// as the first part of the URL</strong>. If you don’t, click on “Use HTTPS” in the right hand corner of that box.</p>
+
+<p>Copy the URL (pressing the clipboard icon next to the URL should do the trick). Then, in your terminal, type the following:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="o">[</span>URL]
+</code></pre></div></div>
+
+<p>replacing <code class="language-plaintext highlighter-rouge">[URL]</code> with the URL that you copied and pasted from GitHub. For instance, I’d do:</p>
+
+<p><code class="language-plaintext highlighter-rouge">git clone https://github.com/CS-257-S22/individual-deliverables-anyaevostinar.git</code></p>
+
+<p>List the contents of your current directory and make sure you see the name of your repo (for instance, I’d see a directory named <code class="language-plaintext highlighter-rouge">individual-deliverables-anyaevostinar</code>). Change into that directory. You should see <code class="language-plaintext highlighter-rouge">README.md</code> listed. If so, huzzah! You now have a local version of your repository.</p>
+
+<h2 id="step-4-add-files-locally">Step 4: Add files locally</h2>
+<p>Most of the work you’ll do will be in your local repository. In other words, you’ll create and edit files on your own computer. You’ll then have to add and commit these to your local repository, and then make sure these edits are pushed to the remote repository, so that everything is in sync.</p>
+
+<p>Modern IDEs make it a lot easier to work with git repositories and I highly recommend you use VSCode in this class since it has some additional functionality that will come in handy. <strong>Open VSCode and open your repository folder within VSCode.</strong> One thing nice about VSCode is that it has a built-in Terminal that you can use. To open the Terminal, <strong>drag up from the bottom of your VSCode window or use the “Terminal” option in your menu bar.</strong> Make sure that you are in the correct folder in your Terminal by listing the contents and changing directory if needed.</p>
+
+<p>Let’s create a file for our repository, named <code class="language-plaintext highlighter-rouge">favorite_foods.txt</code>. This is a plain text file, and should list your three favorite foods. Within VSCode, you can make a new file with the “File” menu option or there is a new file shortcut above the list of all the files on the left side.</p>
+
+<p>Satisfied with the list? Make sure you’ve saved the file in your local repo directory. (Do an <code class="language-plaintext highlighter-rouge">ls</code> in the terminal to make sure it’s there. If you don’t see it, go back to the text editor and do a “Save As”, making sure you’re saving it to the right directory.)</p>
+
+<p>Now let’s add it to our local repository. To do this, we need to <em>stage</em> the file and then <em>commit</em> the file. Staging tells git we intend to make this change to the local repository, and commit follows through with this intention and actually makes the change.</p>
+
+<p>In the terminal (make sure you’re still in your repo directory!):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add favorite_foods.txt
+git commit <span class="nt">-m</span> <span class="s2">"Some favorite foods"</span>
+</code></pre></div></div>
+
+<p>The part <code class="language-plaintext highlighter-rouge">-m "Some favorite foods"</code> writes the message “Some favorite foods” to the git log, similarly to what we did when we directly edited our <code class="language-plaintext highlighter-rouge">README.md</code> file on GitHub.</p>
+
+<p>We’ve changed our local repository; now let’s change the remote repository to reflect these changes by pushing our changes “upstream”. In the terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push
+</code></pre></div></div>
+<p>Now if you go back to GitHub and refresh the page, you should see the changes you made locally.</p>
+
+<p>You should see something in that middle box that says “4 commits”, or something similar:</p>
+
+<p><img src="/classes/257-f23/git-lab-images/Step4.png" alt="Git repository screen with 4 commits circled" /></p>
+
+<p>If you click on what I’ve circled, you can see a history of what you’ve committed, including the log messages you typed.</p>
+
+<p>You can also see this history locally by typing in your terminal or repl:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    git log
+</code></pre></div></div>
+
+<h2 id="step-5-adding-and-modifying-files">Step 5: Adding and modifying files</h2>
+<p>Anytime you add a new file OR make a change to an existing file, you need to stage the file using <code class="language-plaintext highlighter-rouge">git add</code>. If you want to add all of the files that have changed, you can type <code class="language-plaintext highlighter-rouge">git add *</code> (but I recommend you don’t do that most of the time, since you might end up adding things that you didn’t mean to add!).</p>
+
+<p>Here are some things to try. After each one, make sure you add, commit, and push your changes as outlined above.</p>
+
+<ol>
+  <li>Modify your <code class="language-plaintext highlighter-rouge">favorite_foods.txt</code> file so that it lists a few more foods.</li>
+  <li>Add a text file named <code class="language-plaintext highlighter-rouge">favorite_hobbies.txt</code> that lists some of your favorite hobbies.</li>
+  <li>Add a text file named <code class="language-plaintext highlighter-rouge">least_favorite_foods.txt</code> listing a few of your least favorite foods.</li>
+</ol>
+
+<h2 id="step-6-removing-files-but-keeping-them-in-the-history">Step 6: Removing files but keeping them in the history</h2>
+<p>You’ve decided that you don’t want that kind of negativity in your life right now, so you want to remove <code class="language-plaintext highlighter-rouge">least_favorite_foods.txt</code> so that you don’t see it in your repository anymore. However, you do want to maintain its existence in the commit history. How do you do this?</p>
+
+<p>Basically, you “reverse-stage” the file using <code class="language-plaintext highlighter-rouge">git rm</code>, and then commit and push as usual:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git <span class="nb">rm </span>least_favorite_foods.txt
+git commit <span class="nt">-m</span> <span class="s2">"removed least favorite foods"</span>
+git push
+</code></pre></div></div>
+
+<p>You should no longer see it in your repository, although it will still be in the history.</p>
+
+<h2 id="step-7-practicing-merge-conflicts-on-your-own">Step 7: Practicing merge conflicts on your own</h2>
+<p>One of the most annoying and frustrating aspects of working on a shared codebase is when two people make changes to the same file at the same time, and one commits and pushes before the other. How do you recover from this?</p>
+
+<p>The fancy term for this scenario is a <em>merge conflict</em>, and it is quite common. There are some ways we can minimize the odds of a merge conflict occurring:</p>
+
+<ul>
+  <li>Before you start working on your code, and before/after you commit/push changes, make sure you bring your local repository up to date. You can do this via either git checkout or git fetch in your repo directory.</li>
+  <li>Try to have different people work on different branches, and merge the changes back in later. (We’ll cover that in Part 2 of the lab.)</li>
+  <li>Communicate about who’s working on what, to avoid duplicating efforts. This is probably the easiest and most overlooked way to avoid merge conflicts!</li>
+</ul>
+
+<p>For this part, you are going to create your own merge conflict, so that you can learn how to resolve merge conflicts when the stakes are low and you don’t have to coordinate with other people.</p>
+
+<p>First, I’m going to dutifully update my repository before I start making local changes. In my repo directory (in a terminal):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    git checkout
+</code></pre></div></div>
+
+<p>It should tell you that “Your branch is up to date with origin/main” which is a happy moment!</p>
+
+<p>Now, go back to GitHub and click on one of the files in your repository. You’re going to edit this on GitHub directly, by clicking on the pencil icon:</p>
+
+<p><img src="/classes/257-f23/git-lab-images/Step5.png" alt="Github file view with pencil icon circled" /></p>
+
+<p>Edit, add a commit message, and then commit like we did with the <code class="language-plaintext highlighter-rouge">README.md</code> file earlier.</p>
+
+<p>Now, go back to your local copy of the repository, and <strong>edit the same file.</strong> Add and commit as you normally do. When you push, however, you’ll get an error that looks something like this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="o">!</span> <span class="o">[</span>rejected]        main -&gt; main <span class="o">(</span>fetch first<span class="o">)</span>
+    error: failed to push some refs to <span class="s1">'https://github.com/CS-257-S22/individual-deliverables-anyaevostinar.git'</span>
+    hint: Updates were rejected because the remote contains work that you <span class="k">do
+    </span>hint: not have locally. This is usually caused by another repository pushing
+    hint: to the same ref. You may want to first integrate the remote changes
+    hint: <span class="o">(</span>e.g., <span class="s1">'git pull ...'</span><span class="o">)</span> before pushing again.
+    hint: See the <span class="s1">'Note about fast-forwards'</span> <span class="k">in</span> <span class="s1">'git push --help'</span> <span class="k">for </span>details.
+
+</code></pre></div></div>
+
+<p>Stay calm! Git messages are actually pretty helpful, and it’s telling you why your update was rejected. It even gives you a hint of what to do next! To fix this, you will need to first pull:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull
+</code></pre></div></div>
+
+<p>And git will try to smoosh the changed files together, but it won’t be able to do the merging automatically because it doesn’t know which version of the changes you actually want to keep. This is a time when using VSCode is nice because it helps you with “merge conflicts” if you know what it’s doing. Open the file that you changed in VSCode and you should see something like this:</p>
+
+<p><img src="/classes/257-f23/git-lab-images/Step6.png" alt="Merge conflict in VSCode" /></p>
+
+<p>Whether you are using VSCode or not, those funky “««««&lt; HEAD” “»»»»»»»»” with a long alphanumeric string mean that git isn’t sure which of these lines you want in this file. If you aren’t using VSCode, you might have to just manually delete one or the other (or just get rid of two weird lines if you want to keep both), but VSCode gives you some nice buttons to speed up this process. You can click “Accept Current Change”, “Accept Incoming Change”, or “Accept Both Changes” and VSCode will fix the file for you.</p>
+
+<p>Now you just need to save, add, commit, and push and everything will be fixed.</p>
+
+<p>Now try this:</p>
+
+<ol>
+  <li>Create a merge conflict the same way you just did, i.e. edit the same file both directly on GitHub and locally.</li>
+  <li>Resolve the merge conflict locally like you just did, except this time <strong>delete</strong> the item you added when you edited the file on GitHub. So, in the example above, instead of keeping “underwater basket weaving”, delete that from the text file you’re editing locally.</li>
+  <li>Add, commit, and push.</li>
+</ol>
+
+<h2 id="part-1-is-done">Part 1 is done!</h2>
+<p>Make sure all of your lab files are committed and pushed to your GitHub repository.</p>
+
+<h2 id="part-2-objectives">Part 2 Objectives</h2>
+
+<ul>
+  <li>Introduce, or re-introduce, you to git and GitHub.</li>
+  <li>Practice the git workflow for using version control on software projects, in your team repositories</li>
+  <li>Practice the git command line interface</li>
+  <li>Work with both your local repository (via git) and your team’s remote repository (on GitHub).</li>
+</ul>
+
+<h2 id="collaboration-1">Collaboration</h2>
+<p>Work with your project teams on this part of the lab. Make sure you finish Part 1 before attempting this part of the lab.</p>
+
+<h2 id="step-1-make-a-team-repository">Step 1: Make a team repository</h2>
+<p>You will need to set up your team’s project repository before you begin. To do so, do the following:</p>
+
+<ul>
+  <li>Accept the invitation by clicking on the link in Moodle (“Git Team Link”)</li>
+  <li>Accept the assignment.</li>
+  <li>Have <strong>one</strong> member of your team make a repository and invite the other team members to this repository. <strong>Name your repository “X”, where you replace “X” with the (capitalized) letter of your team.</strong></li>
+</ul>
+
+<p>The team member that creates the team repository should update the README file. For now, just list your team members’ names in this file. You can edit it directly in GitHub, as we did in Step 2 of Part 1.</p>
+
+<h2 id="step-2-set-up-your-local-repository">Step 2: Set up your local repository</h2>
+<p>For the rest of the lab, you will need access to a terminal.</p>
+
+<p>Clone the team’s repository in a terminal, as you did with your own repository in Part 1. <code class="language-plaintext highlighter-rouge">cd</code> into that directory and make sure you see the README file.</p>
+
+<h2 id="step-3-creating-your-own-working-branch">Step 3: Creating your own working branch</h2>
+<p>In Part 1, I mentioned that one way you could minimize merge conflicts was to have team members work on separate branches of the code. We are going to practice branching in this part of the lab.</p>
+
+<p>A branch can be thought of as a “parallel track” to the main track of the repository. The main is the “official”, ready-to-deploy-if-necessary version of the codebase. Branches are works in progress that ideally will be integrated into main at some point. Branches allow you to try out ideas, or work on particular features, until you’re satisfied with them.</p>
+
+<p><a href="https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/">This article</a> is a nice, easy to follow introduction to branches and branching, and a lot of what we’ll be doing in this part of the lab is similar to what you’ll find in that article.</p>
+
+<p>First, create a branch locally. In your terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> my-branch-NAME
+</code></pre></div></div>
+
+<p>Replace NAME with your first name (no spaces or special characters). This command creates the branch, and then performs a checkout, which creates a “snapshot” of the codebase at that moment within your branch.</p>
+
+<p>(If you want to check out a branch that’s already been created, do <code class="language-plaintext highlighter-rouge">git checkout BRANCH_NAME</code>)</p>
+
+<p>Since we’ll eventually merge everyone’s branches back into main, this next part will require a bit of coordination on the part of team members. Each person’s branch should contain two text files: one containing a list of each team member’s favorite <strong>__, and one containing a list of each team member’s least favorite __</strong>. (This part will thus require you to communicate with your team, and will teach you a bit about your team members.)</p>
+
+<p>The topics you can choose from, although feel free to substitute your own:</p>
+
+<ul>
+  <li>Movies</li>
+  <li>Foods</li>
+  <li>Animals</li>
+  <li>Hobbies</li>
+  <li>Hot beverages</li>
+  <li>Cold beverages</li>
+  <li>Books</li>
+</ul>
+
+<p>This is easier with an example, so I’m going to use the mythical Team Q to illustrate.</p>
+
+<ul>
+  <li>Team Q decides to go with “movies”, “foods”, “animals”, and “hot beverages”.</li>
+  <li>Team Q assigns one topic to each team member:
+    <ul>
+      <li>Radia is assigned “movies”</li>
+      <li>Manuel is assigned “foods”</li>
+      <li>Timnit is assigned “animals”</li>
+      <li>Joy is assigned “hot beverages”</li>
+    </ul>
+  </li>
+  <li>Let’s follow Radia as she works on her branch:
+    <ul>
+      <li>Radia creates a branch named <code class="language-plaintext highlighter-rouge">my-branch-radia</code></li>
+      <li>Radia creates two text files: <code class="language-plaintext highlighter-rouge">favorite_animals.txt</code> and <code class="language-plaintext highlighter-rouge">least_favorite_animals.txt</code></li>
+      <li>Radia asks everyone to let her know what their favorite and least favorite animals are.</li>
+      <li>A fight breaks out between the cat people and the dog people….</li>
+      <li>…but Radia ignores the fight that’s brewing, and adds everyone’s favorite animal (along with their name) to the <code class="language-plaintext highlighter-rouge">favorite_animals.txt</code> file, and everyone’s least favorite animal (along with their name) to <code class="language-plaintext highlighter-rouge">least_favorite_animals.txt</code>.</li>
+    </ul>
+  </li>
+  <li>Everyone else on Team Q does the same with their topics, on their own branches.</li>
+</ul>
+
+<p>Once you’ve added the appropriate information to the appropriate text files, commit and push your branch upstream. To do so:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="k">*</span>
+git commit <span class="nt">-m</span> <span class="s2">"favorites from my teammates"</span>
+git push <span class="nt">-u</span> origin BRANCH
+</code></pre></div></div>
+
+<p>Replace BRANCH with your branch name.</p>
+
+<p>Now, if you go to GitHub, you should be able to see your branch (and your teammates’ branches too, if they’ve already pushed their branches). Go to the circled drop-down menu:</p>
+
+<p><img src="/classes/257-f23/git-lab-images/TeamStep3-1.png" alt="Git repository with main circled" /></p>
+
+<p>When you click on it, you should see this drop-down:</p>
+
+<p><img src="/classes/257-f23/git-lab-images/TeamStep3-2.png" alt="Main with drop down" /></p>
+
+<p>Select your branch (or one of your teammate’s branches), and you’ll see the snapshot of that branch displayed.</p>
+
+<h2 id="step-4-merging-your-branch-back-into-main">Step 4: Merging your branch back into main</h2>
+<p>Once you’re satisfied with your changes, and your teammates agree, it’s a good idea to merge your branch back into the main track, and delete the branch.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout main
+git pull
+git merge BRANCH <span class="nt">-m</span> <span class="s2">"merging my branch into main"</span>
+git push
+</code></pre></div></div>
+
+<p>(Replace BRANCH with your branch name.)</p>
+
+<p>Now go back to GitHub and switch back to viewing main. You should see your branch’s files.</p>
+
+<p>If you want to delete your branch, go ahead and do so:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-d</span> BRANCH
+</code></pre></div></div>
+
+<p>(Replace BRANCH with your branch name.)</p>
+
+<h2 id="step-5-practicing-merge-conflicts-with-your-team">Step 5: Practicing merge conflicts with your team</h2>
+<p>For this part of the lab, split into pairs. The first pair (A and B) will create a merge conflict and then resolve it, while the other pair (C and D) also creates a merge conflict and resolves it with different files.</p>
+
+<p>To create the merge conflict:</p>
+
+<ol>
+  <li>Make sure you all have the latest snapshot of the main branch locally:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git checkout main
+ git pull
+</code></pre></div>    </div>
+  </li>
+  <li>A and B should agree on which file they’ll edit simultaneously, in your local repository. C and D should agree on a different file that they’ll edit simultaneously as well.</li>
+  <li>Everyone should edit and commit the file that they are working with locally.</li>
+  <li><strong>A and C</strong> should push changes to the repo first.</li>
+  <li>Once they have successfully pushed their changes, B and D should try to push their changes. Bingo: merge conflict achieved! (Though note that the changes from the other pair aren’t an issue!)</li>
+  <li>Repeat the steps from Part 1 to resolve the conflict.</li>
+</ol>
+
+<h2 id="part-2-is-done">Part 2 is done!</h2>
+<p>You don’t have to do anything else — just make sure you have all the lab files you created in your team’s repository.</p>
+
+<p><strong>If there is still time in class, keep working on your dataset and team contract!</strong></p>
+
+<p><em>This lab was adapted from one written by Prof. Amy Csizmar Dalal, thanks Amy!</em></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
