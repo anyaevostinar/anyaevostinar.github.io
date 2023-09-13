@@ -27,7 +27,7 @@ Other readings will be linked through Moodle.
 | W 9/20 | [Git Prep](git-prep) | [Git Practice Lab](lab-git) | |
 | F 9/22 | [TDD Prep](tdd-prep) |[TDD Lab](tdd)  |[Individual - Tests](project-1-ind) |
 | **Week 3** | **Core Functionality** | | |
-| M 9/25 |Reading about CLI [1](https://realpython.com/python-command-line-arguments), [2](https://eng.localytics.com/exploring-cli-best-practices/), [Individual Deliverable 1 due](project-1-ind),   [Project Proposal due](project-proposal) | [Start on CLI Design](command-line-design) | [Team - Command Line](project-command-line),  |
+| M 9/25 |[Command Line Prep](cl-prep), [Individual Deliverable 1 due 10pm](project-1-ind),   [Project Proposal due 10pm](project-proposal) | [Start on CLI Design](command-line-design) | [Team - Command Line](project-command-line),  |
 | W 9/27 | Read Martin Ch 3 | Function Design | |
 | F 9/29 | Read about Ethics in Tech: [1](https://www.acm.org/code-of-ethics), [2](https://medium.com/humane-tech/12-things-everyone-should-understand-about-tech-d158f5a26411) | Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
