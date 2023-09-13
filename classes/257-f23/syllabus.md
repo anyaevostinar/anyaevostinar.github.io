@@ -4,8 +4,6 @@ title: CS257 Software Design F23 Syllabus
 permalink: /classes/257-f23/syllabus
 ---
 
-IN PROGRESS DRAFT
-
 ## Table of Contents
 
 * [Quick Facts](#quick-facts)
