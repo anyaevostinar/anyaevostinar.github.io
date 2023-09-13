@@ -5,7 +5,7 @@ permalink: /classes/257-f23/cl-prep
 ---
 
 ## Overview
-The first version of your team project is going to be just a command line interface to interact with your dataset. The goal will be that it can let the user get some basic/useful information from the dataset so that you are starting to think about what that information/functionality should be before you worry about making a website or a database. 
+The first component of your team project is going to be just a command line interface to interact with your dataset. The goal will be that it can let the user get some basic/useful information from the dataset so that you are starting to think about what that information/functionality should be before you worry about making a website or a database. 
 
 There is actually a lot that goes into making a good command line interface (and you won't need to make a super polished one), so today's reading is to get you started thinking about all that could be involved.
 
