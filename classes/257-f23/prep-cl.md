@@ -19,7 +19,7 @@ Before class, you should be able to:
 
 ## Advanced Learning Objectives
 After class, you should be able to:
-
+* Design a minimal command-line interface app that includes a usage statement and several features
 
 ## Readings
 To achieve the basic learning objectives, you should read the following before class:
