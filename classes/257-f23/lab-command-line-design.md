@@ -52,7 +52,7 @@ These functions will probably call lots of other functions, but these will be th
 
 
 ## Step 6: TDD
-You're all set to write a first failing test for your code and then write some production code to pass the test!
+You're all set to write a first failing test for your code and then write some production code to pass the test, so you should start on the [command line component](project-command-line) of your group project.
 
 ## Submitting
 Put your draft command line interface design and function signatures in a text file `usage.txt` and push it to your team's repository so you don't lose it. I might take a look at these and give feedback on some in class.
