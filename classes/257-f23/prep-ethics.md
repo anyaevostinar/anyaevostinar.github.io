@@ -15,9 +15,11 @@ Before class, you should be able to:
 
 ## Advanced Learning Objectives
 After class, you should be able to:
-* Analyze a case study using a specified ethical framework
+* Be able to explain foundational ideas of ethics frameworks
+* Analyze a technology case study using a specified ethical framework
 * Continue to develop your own ethical framework regarding technology
 * Identify how to navigate challenging ethical situations in software development
+
 
 ## Readings
 To achieve the basic learning objectives, you should read the following:
