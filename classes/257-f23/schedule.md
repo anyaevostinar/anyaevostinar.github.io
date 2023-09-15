@@ -29,7 +29,7 @@ Other readings will be linked through Moodle.
 | **Week 3** | **Core Functionality** | | |
 | M 9/25 |[Command Line Prep](cl-prep), [Individual Deliverable 1 due 10pm](project-1-ind),   [Project Proposal due 10pm](project-proposal) | [Start on CLI Design](command-line-design) | [Team - Command Line](project-command-line),  |
 | W 9/27 | [Function Design Prep](function-prep) | [Function Design](lab-functions.pdf) | |
-| F 9/29 | Read about Ethics in Tech: [1](https://www.acm.org/code-of-ethics), [2](https://medium.com/humane-tech/12-things-everyone-should-understand-about-tech-d158f5a26411) | Intro to Tech Ethics | |
+| F 9/29 | [Ethics in Tech Prep](ethics-prep) | Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
 | M 10/2 | Command Line project due; Flask readings [1](https://pythonbasics.org/what-is-flask-python/), [2](https://pythonbasics.org/flask-tutorial-hello-world/#Hello-World), [3](https://pythonbasics.org/flask-tutorial-routes/) | [Intro to Flask](flask-intro) | [Flask app project](project-2-flask), [Individual component](project-2-ind) |
 | W 10/4 | Code review readings | Code review | |
