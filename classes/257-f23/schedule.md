@@ -32,7 +32,7 @@ Other readings will be linked through Moodle.
 | F 9/29 | [Ethics in Tech Prep](ethics-prep) | Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
 | M 10/2 | [Command Line project due 10pm](project-command-line); [Flask Prep](flask-prep)| [Intro to Flask](flask-intro) | [Flask app project](project-2-flask), [Individual component](project-2-ind) |
-| W 10/4 | Code review readings | Code review | |
+| W 10/4 | [Code Review Prep](code-review-prep) | Code review | |
 | F 10/6 | [Individual component](project-2-ind), HTML with Flask readings | [HTML Flask Lab](flask-html) | |
 | **Week 5** | **Front-End Component** | | |
 | M 10/9 | [Flask app](project-2-flask), Krug Ch 1-3 and 6 | Webpage analysis | [Individual front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-ind), [Team front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-front-end)|
