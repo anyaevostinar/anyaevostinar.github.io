@@ -79,6 +79,7 @@ The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below
 
 ### Proficiency
 * Functionality:
+  * The tests all pass
   * The directory structure and filenames are as specified
   * The tests run with production code that has the signature specified above
   * There is one basic unit test for each of the `get` methods (4 tests total)
@@ -108,3 +109,7 @@ The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below
   * Are the column headers included in the data?
 
   Yes, the column headers are row 0 of the data and can be accessed as such.
+
+  * Is the data 0-indexed or 1-indexed?
+
+  Even though the data values are 1-indexed, you should still use Python's typical 0-indexing. The data is just being read into a nested list; nothing fancy!
