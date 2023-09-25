@@ -33,7 +33,7 @@ Other readings will be linked through Moodle.
 | **Week 4** | **Flask Component** | | |
 | M 10/2 | [Command Line project due 10pm](project-command-line); [Flask Prep](flask-prep)| [Intro to Flask](flask-intro) | [Flask app project](project-2-flask), [Individual component](project-2-ind) |
 | W 10/4 | [Code Review Prep](code-review-prep) | Code review | |
-| F 10/6 | [Individual component](project-2-ind), HTML with Flask readings | [HTML Flask Lab](flask-html) | |
+| F 10/6 | [Individual component](project-2-ind), [HTML with Flask Prep](html-prep) | [HTML Flask Lab](flask-html) | |
 | **Week 5** | **Front-End Component** | | |
 | M 10/9 | [Flask app](project-2-flask), Krug Ch 1-3 and 6 | Webpage analysis | [Individual front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-ind), [Team front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-front-end)|
 | W 10/11 | HTML and CSS readings: [1](http://learn.shayhowe.com/html-css/building-your-first-web-page/), [2](http://learn.shayhowe.com/html-css/getting-to-know-html/), [3](http://learn.shayhowe.com/html-css/getting-to-know-css/) | HTML and CSS lab | |
