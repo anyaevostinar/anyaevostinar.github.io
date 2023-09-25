@@ -96,3 +96,15 @@ The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below
   * The test code is very clear, potentially using helper functions to ensure that test functions are at a single layer of abstraction
   * There is barely any duplicated code
   * Style mostly follows the [style guide](https://peps.python.org/pep-0008/)
+
+
+  ## Questions
+  Here are questions that have previously come up about this assignment:
+
+  * Does `load_data` need a test?
+
+  No, `load_data` doesn't need a specific test.
+
+  * Are the column headers included in the data?
+
+  Yes, the column headers are row 0 of the data and can be accessed as such.
