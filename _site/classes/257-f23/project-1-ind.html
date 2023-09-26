@@ -55,7 +55,7 @@ You can get conceptual help from your team and others, however what you submit m
 
 <h2 id="due-date">Due Date</h2>
 
-<p>The individual deliverable for this iteration is due Monday Sept 25th at 10pm on your individual GitHub.</p>
+<p>The individual deliverable 1 is due Monday Sept 25th at 10pm on your individual GitHub.</p>
 
 <h2 id="your-task">Your Task</h2>
 
@@ -119,6 +119,7 @@ Purpose: Maintains command line interface, loads data. Usage statement: "Usage: 
 <ul>
   <li>Functionality:
     <ul>
+      <li>The tests all pass</li>
       <li>The directory structure and filenames are as specified</li>
       <li>The tests run with production code that has the signature specified above</li>
       <li>There is one basic unit test for each of the <code class="language-plaintext highlighter-rouge">get</code> methods (4 tests total)</li>
@@ -148,6 +149,27 @@ Purpose: Maintains command line interface, loads data. Usage statement: "Usage: 
       <li>There is barely any duplicated code</li>
       <li>Style mostly follows the <a href="https://peps.python.org/pep-0008/">style guide</a></li>
     </ul>
+
+    <h2 id="questions">Questions</h2>
+    <p>Here are questions that have previously come up about this assignment:</p>
+
+    <ul>
+      <li>Does <code class="language-plaintext highlighter-rouge">load_data</code> need a test?</li>
+    </ul>
+
+    <p>No, <code class="language-plaintext highlighter-rouge">load_data</code> doesn’t need a specific test.</p>
+
+    <ul>
+      <li>Are the column headers included in the data?</li>
+    </ul>
+
+    <p>Yes, the column headers are row 0 of the data and can be accessed as such.</p>
+
+    <ul>
+      <li>Is the data 0-indexed or 1-indexed?</li>
+    </ul>
+
+    <p>Even though the data values are 1-indexed, you should still use Python’s typical 0-indexing. The data is just being read into a nested list; nothing fancy!</p>
   </li>
 </ul>
 

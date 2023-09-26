@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Command Line Design | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Command Line Design" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-f23/command-line-design" />
+<meta property="og:url" content="http://localhost:4000/classes/257-f23/command-line-design" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Command Line Design" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Command Line Design","url":"http://localhost:4000/classes/257-f23/command-line-design"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Command Line Design</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goal">Goal</h2>
+<p>Start on a design for a command line app for your dataset. DON’T START CODING IT YET!</p>
+
+<h2 id="first-though">First Though</h2>
+<p>If you haven’t finished both parts of Git Practice, do that first.</p>
+
+<p>If your team hasn’t settled on a dataset yet, you should focus on that, since this lab assumes you have an idea of what data you’ll be working with.</p>
+
+<h2 id="overview">Overview</h2>
+<p>Your command line app should allow the user to do at least two interesting things with your dataset, which probably will both involve searching the data based on some information and getting back a subset of the data that fits some criteria.
+Maybe you already have an idea of a couple of interesting things that you want to support; great! This lab will walk you through coming up with a couple more and starting to design the command line interface.</p>
+
+<h2 id="step-1-identify-the-interesting-columns">Step 1: Identify the interesting columns</h2>
+<p>In any dataset, some of the columns are more interesting than others.
+In a dataset with books, I don’t care a whole lot about the <a href="https://en.wikipedia.org/wiki/International_Standard_Book_Number">ISBN</a> personally (though maybe you have an idea of how it could be interesting!).</p>
+
+<p>First identify 3-5 columns in your dataset that are the most interesting. 
+These are the columns on which a user is likely to search and want information about.
+There will probably be 1-2 columns that are the absolutely most interesting, but try to also think about a couple of other columns that might be interesting because of how they relate to the 1-2 columns.</p>
+
+<h2 id="step-2-identify-the-relationships">Step 2: Identify the relationships</h2>
+<p>Some of your columns are probably interesting all on their own, but most likely a user will want to know some information about a relationship across columns (for example, which author wrote a book or all the books by a given author).</p>
+
+<p>Think about all the possible combinations of your interesting columns and decide if you want to focus on that combination somehow. Do you want to let the user look up which authors published a book in 2019 or is that not particularly interesting to you?</p>
+
+<h2 id="step-3-turn-those-relationships-into-features">Step 3: Turn those relationships into features</h2>
+<p>From the interesting columns and relationships, come up with at least four features that would be interesting to support (you will only need to do two of them, but it’s good to have backups). 
+These would be something like allowing the user to look up a row based on a string or number, getting a list of entries based on a range, etc.</p>
+
+<h2 id="step-4-design-the-cli">Step 4: Design the CLI</h2>
+<p>Now, decide on the two features that you want to actually include. For each, come up with the command line options and format for them, along with a usage statement.</p>
+
+<p>These two features should be independent and use a flag to mark which feature is being used. For example, if I had feature A and feature B for my app <code class="language-plaintext highlighter-rouge">example.py</code>, I should be able to do:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 example.py -a "hello"
+python3 example.py -b 3
+</code></pre></div></div>
+<p>assuming that feature A takes a string and feature B takes a number.</p>
+
+<h2 id="step-5-deciding-on-function-signatures">Step 5: Deciding on Function Signatures</h2>
+<p>Before you can jump into test-driven development, you need to decide as a group on <em>function signatures</em> for your features.
+A function signature is the name of the function (or method if you are using a class), which variable it takes, and what it returns.</p>
+
+<p>For each of your features, you should decide on function signatures. 
+These functions will probably call lots of other functions, but these will be the functions that you first call from <code class="language-plaintext highlighter-rouge">main</code> based on the option that the user selects.</p>
+
+<h2 id="step-6-tdd">Step 6: TDD</h2>
+<p>You’re all set to write a first failing test for your code and then write some production code to pass the test, so you should start on the <a href="project-command-line">command line component</a> of your group project.</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>Put your draft command line interface design in the Google doc linked from Moodle; I’ll go through and give feedback to some at the end of class.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
