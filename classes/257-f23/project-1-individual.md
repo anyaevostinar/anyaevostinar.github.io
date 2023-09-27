@@ -98,30 +98,30 @@ The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below
   * There is barely any duplicated code
   * Style mostly follows the [style guide](https://peps.python.org/pep-0008/)
 
-  ## Addendums
-  You weren't required to do this for the first submission, but if you are submitting a revision, you need to add these things (they should have been specified originally, but I forgot!):
+## Addendums
+You weren't required to do this for the first submission, but if you are submitting a revision, you need to add these things (they should have been specified originally, but I forgot!):
 
-  * You should make a Tests directory that you put your tests in
-  * You should add the following method to the top of (each of) your test class(es), which makes sure that the data is loaded before each test is run:
-    ```python
-    def setUp(self):
-      load_data()
-    ```
-  * Make sure that you are importing the production code correctly, it imports the same as the [TDD lab describes](tdd)
-  * Check your [Feedback PR](pr-guide) to see why your tests failed
+* You should make a Tests directory that you put your tests in
+* You should add the following method to the top of (each of) your test class(es), which makes sure that the data is loaded before each test is run:
+  ```python
+  def setUp(self):
+    load_data()
+  ```
+* Make sure that you are importing the production code correctly, it imports the same as the [TDD lab describes](tdd)
+* Check your [Feedback PR](pr-guide) to see why your tests failed
 
 
-  ## Questions
-  Here are questions that have previously come up about this assignment:
+## Questions
+Here are questions that have previously come up about this assignment:
 
-  * Does `load_data` need a test?
+* Does `load_data` need a test?
 
-  No, `load_data` doesn't need a specific test.
+No, `load_data` doesn't need a specific test.
 
-  * Are the column headers included in the data?
+* Are the column headers included in the data?
 
-  Yes, the column headers are row 0 of the data and can be accessed as such.
+Yes, the column headers are row 0 of the data and can be accessed as such.
 
-  * Is the data 0-indexed or 1-indexed?
+* Is the data 0-indexed or 1-indexed?
 
-  Even though the data values are 1-indexed, you should still use Python's typical 0-indexing. The data is just being read into a nested list; nothing fancy!
+Even though the data values are 1-indexed, you should still use Python's typical 0-indexing. The data is just being read into a nested list; nothing fancy!
