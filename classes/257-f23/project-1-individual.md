@@ -109,7 +109,10 @@ You weren't required to do this for the first submission, but if you are submitt
   ```
 * Make sure that you are importing the production code correctly, it imports the same as the [TDD lab describes](tdd)
 * Check your [Feedback PR](pr-guide) to see why your tests failed
-
+* Remember to set the correct location for `basic_cl.py` when writing the `main` tests (i.e. it's in `ProductionCode`)
+* When invalid indices are given as command line arguments, `main` prints the usage statement
+* Remember that Python will not throw an error if you do `my_list[-1]`
+* Remember to cite your sources if you use outside resources
 
 ## Questions
 Here are questions that have previously come up about this assignment:
