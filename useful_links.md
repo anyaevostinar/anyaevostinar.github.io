@@ -50,3 +50,6 @@ I have a couple of projects getting evolutionary dynamics into Minecraft and so 
 * [Video on mixins](https://www.youtube.com/watch?v=Y4rqyv0qbps&t=43s)
 * [Series walk through](https://www.youtube.com/playlist?list=PLHTNHyaaUBPYq-lKVfrtkjXaGn9UGS3Iq)
 
+## Ruby
+[Using asdf package manager](https://mac.install.guide/ruby/7.html)
+
