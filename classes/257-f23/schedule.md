@@ -37,7 +37,7 @@ Other readings will be linked through Moodle.
 | **Week 5** | **Front-End Component** | | |
 | M 10/9 | [Flask app](project-2-flask), [Usability Prep](web-usability-prep) | Webpage analysis | [Individual front-end](project-3-ind), [Team front-end](project-3-front-end)|
 | W 10/11 | [CSS and HTML Prep](css-html-prep) | HTML and CSS lab | |
-| F 10/13 | Readings: [1](https://www.w3schools.com/tags/ref_httpmethods.asp), [2](https://www.w3schools.com/html/html_forms.asp), [3](https://vegibit.com/how-to-use-forms-in-python-flask/) | [Flask Forms Lab](https://anyaevostinar.github.io/classes/257-s22/flask-form) | |
+| F 10/13 | [HTTP Prep](http-prep) | [Flask Forms Lab](https://anyaevostinar.github.io/classes/257-s22/flask-form) | |
 | **Week 6** | **Front-End Component Cont'd** | | |
 | M 10/16 | Midterm break! | | |
 | W 10/18 |[Individual front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-ind); Readings: Krug Ch 12, [1](http://webaim.org/intro/), two stories from [2](http://www.w3.org/WAI/intro/people-use-web/stories) | Accessibility Analysis | |
