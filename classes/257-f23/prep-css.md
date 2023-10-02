@@ -31,6 +31,8 @@ To achieve the basic learning objectives, you should read the following:
 
 * Optional: [Making columns](https://www.w3schools.com/howto/howto_css_two_columns.asp) Many groups in the past have wanted to make columns on their website, so here is a guide for that
 
+* Optional: [CSS learning games](https://whatpixel.com/css-learning-games/) If you want to challenge yourself and get better at CSS, try out some of these
+
 Feel free to poke around the rest of the site as well, particularly if you've already done some HTML and CSS and know the basics.
 
 You may also find the [HTML](https://www.w3schools.com/html/default.asp) and [CSS](https://www.w3schools.com/css/default.asp) tutorials on W3Schools useful. Bonus: you can try out code right in the browser!
