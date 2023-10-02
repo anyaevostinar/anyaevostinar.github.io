@@ -36,7 +36,7 @@ Other readings will be linked through Moodle.
 | F 10/6 | [Individual component](project-2-ind), [HTML with Flask Prep](html-prep) | [HTML Flask Lab](flask-html) | |
 | **Week 5** | **Front-End Component** | | |
 | M 10/9 | [Flask app](project-2-flask), [Usability Prep](web-usability-prep) | Webpage analysis | [Individual front-end](project-3-ind), [Team front-end](project-3-front-end)|
-| W 10/11 | HTML and CSS readings: [1](http://learn.shayhowe.com/html-css/building-your-first-web-page/), [2](http://learn.shayhowe.com/html-css/getting-to-know-html/), [3](http://learn.shayhowe.com/html-css/getting-to-know-css/) | HTML and CSS lab | |
+| W 10/11 | [CSS and HTML Prep](css-html-prep) | HTML and CSS lab | |
 | F 10/13 | Readings: [1](https://www.w3schools.com/tags/ref_httpmethods.asp), [2](https://www.w3schools.com/html/html_forms.asp), [3](https://vegibit.com/how-to-use-forms-in-python-flask/) | [Flask Forms Lab](https://anyaevostinar.github.io/classes/257-s22/flask-form) | |
 | **Week 6** | **Front-End Component Cont'd** | | |
 | M 10/16 | Midterm break! | | |
