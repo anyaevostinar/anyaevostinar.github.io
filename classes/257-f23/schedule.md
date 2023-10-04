@@ -37,13 +37,13 @@ Other readings will be linked through Moodle.
 | **Week 5** | **Front-End Component** | | |
 | M 10/9 | [Flask app](project-2-flask), [Usability Prep](web-usability-prep) | Webpage analysis | [Individual front-end](project-3-ind), [Team front-end](project-3-front-end)|
 | W 10/11 | [CSS and HTML Prep](css-html-prep) | HTML and CSS lab | |
-| F 10/13 | [HTTP Prep](http-prep) | [Flask Forms Lab](https://anyaevostinar.github.io/classes/257-s22/flask-form) | |
+| F 10/13 | [HTTP Prep](http-prep) | [Flask Forms Lab](flask-form) | |
 | **Week 6** | **Front-End Component Cont'd** | | |
 | M 10/16 | Midterm break! | | |
 | W 10/18 |[Individual front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-ind); Readings: Krug Ch 12, [1](http://webaim.org/intro/), two stories from [2](http://www.w3.org/WAI/intro/people-use-web/stories) | Accessibility Analysis | |
 | F 10/20 | Readings: Various resources | Working on Front-end component | |
 | **Week 7** | **Database Component** | | |
-| M 10/23 | [Team front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-front-end); Readings: [MVC](https://www.tomdalling.com/blog/software-design/model-view-controller-explained/), sections of [SQL](http://www.w3schools.com/sql/default.asp) | Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend)|
+| M 10/23 | [Team front-end](project-3-front-end); Readings: [MVC](https://www.tomdalling.com/blog/software-design/model-view-controller-explained/), sections of [SQL](http://www.w3schools.com/sql/default.asp) | Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend)|
 | W 10/25 | Readings: [Database normalization](https://blog.udemy.com/normalization-in-database-with-example/) | More with Databases | |
 | F 10/27 | [Individual back-end](project-4-ind); Readings: [psycopg2](https://www.psycopg.org/docs/) | [Connecting Flask and Database](psycopg2) | |
 | **Week 8** | **Refactoring** | | |
@@ -53,7 +53,7 @@ Other readings will be linked through Moodle.
 | **Week 9** | **More Refactoring**
 | M 11/6 | Readings: Martin Ch 10 | Designing classes | |
 | W 11/8 | Readings: TBD | Design Patterns | |
-| F 11/10 | Readings: TBD | | |
+| F 11/10 | Readings: TBD | Test Coverage? | |
 | **Week 10** | **Wrapping Up** | | |
 | M 11/13 | Readings: TBD | | |
 | W 11/15 | No readings | Final project showcase | |
