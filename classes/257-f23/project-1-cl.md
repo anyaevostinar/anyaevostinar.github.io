@@ -76,3 +76,33 @@ When evaluating your project, the grader will pull down your team's repo, checko
   * Function names, return values, and parameters all follow the principles of good design
   * Function/method [docstrings](https://peps.python.org/pep-0257/) all provide the required information
   * There is barely any duplicated code
+
+  ## Addendums
+  These are changes that weren't marked against you in the initial submission, but you need to make during revisions:
+  * Your README.md needs to include an example of how to run your code to demonstrate each of your features, i.e.
+
+    ```zsh
+    python3 ProductionCode/dragon_characters.py --name "Anya"
+    python3 ProductionCode/dragon_characters.py --color "purple"
+    ```
+
+* While your test coverage doesn't have to be 100% to get Mastery, I will use test coverage to get an idea of how thorough your test suite is. To check your own test coverage, do the following:
+
+  * Install the coverage module:
+    ```bash
+    pip3 install coverage
+    ```
+  * Run the tests while collecting coverage data:
+    ```bash
+    python3 -m coverage run --source ProductionCode -m unittest discover Tests
+    ```
+
+  * Generate a report:
+    ```bash
+    python3 -m coverage report -m
+    ```
+  
+  * You can also generate a fancy HTML report that shows you the exact lines!
+  ```bash
+  python3 -m coverage html
+  ```
