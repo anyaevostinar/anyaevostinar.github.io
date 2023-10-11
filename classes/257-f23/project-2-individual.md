@@ -30,10 +30,11 @@ To get 'demonstrates mastery' that route should use a route parameter and you sh
 Specifically, the grader will:
 * Pull down your group's files that are tagged 'cl'
 * Pull down your submission for this deliverable from the ID2 repository
-* Place your Flask app file in the top level directory of your group's code
+* Place your Flask app file  in the top level directory of your group's code (and any templates into a templates folder)
 * Run your Flask app file
 * Based on the information on your homepage, type in a URL to see the data
 * Examine your code for style and requirements
+* If you have them, place your tests into the `Tests` folder and run them
 
 ## Turning it in
 
@@ -64,3 +65,9 @@ The criteria for "Demonstrates Mastery" and "Demonstrates Proficiency" are below
   * The Flask app code is very clear, potentially using helper functions to ensure that Flask-specific functions are at a single layer of abstraction
   * There is barely any duplicated code
   * The docstrings are thorough and clear
+
+## Addendums
+
+* Your Flask app should be named `app.py` and be placed in the TOP-LEVEL directory, i.e. **NOT** in `ProductionCode` (the various imports just won't work correctly if it is in `ProductionCode` unfortunately)
+* Do not specify the port when running the app, it doesn't work the same on different operating systems and so can mess up the grading. I.e., when you run your app, it should be just `app.run()` without any arguments
+* Your tests (if you include them) will be placed in the `Tests` folder, so be sure to write them assuming that 
