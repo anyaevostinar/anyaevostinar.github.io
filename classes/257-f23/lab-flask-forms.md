@@ -151,7 +151,7 @@ Fortunately, with a little bit of Jinja, we can automatically generate a dropdow
 3. Finally, we need to make the Flask route specified:
 
     ```python
-    @app.route('rowbytitle')
+    @app.route('/rowbytitle')
     def display_row_by_title():
         return str(getRowByTitle(request.args['rowchoice']))
     ```
