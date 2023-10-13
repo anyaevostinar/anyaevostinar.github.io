@@ -26,6 +26,8 @@ To achieve the basic learning objectives, pick at least one of the below resourc
 
 * [How to display Matplotlib in Flask](https://towardsdatascience.com/how-to-easily-show-your-matplotlib-plots-and-pandas-dataframes-dynamically-on-your-website-a9613eff7ae3) - probably should read with one of the previous two
 
+* [Displaying matplotlib in Flask code snippet](https://gitlab.com/-/snippets/1924163) A non paywalled code snippet
+
 * If you want to learn more about Javascript, read these sections in the W3 schools [Javascript tutorial](https://www.w3schools.com/js/default.asp):
 
     * JS Introduction
