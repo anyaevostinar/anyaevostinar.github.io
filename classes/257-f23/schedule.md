@@ -47,7 +47,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 7** | **Database Component** | | |
 | M 10/23 | [Team front-end](project-3-front-end); [Intro Databases Prep](intro-database-prep) | Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend)|
 | W 10/25 | [Database Normalization](normalization-prep) | More with Databases | |
-| F 10/27 | [Individual back-end](project-4-ind); Readings: [psycopg2](https://www.psycopg.org/docs/) | [Connecting Flask and Database](psycopg2) | |
+| F 10/27 | [Individual back-end](project-4-ind); No prep | [Connecting Flask and Database](psycopg2) | |
 | **Week 8** | **Refactoring** | | |
 | M 10/30 | Readings: Martin Ch 2 and 4 | Naming and comments | |
 | W 11/1 | [Team back-end](project-4-backend); Readings: Martin Ch 17 | Code Smells | |

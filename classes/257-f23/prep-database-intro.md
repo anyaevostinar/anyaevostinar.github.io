@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Databases Intro
+title: Databases Intro Prep
 permalink: /classes/257-f23/intro-database-prep
 ---
 
