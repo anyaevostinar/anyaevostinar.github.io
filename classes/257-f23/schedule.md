@@ -45,8 +45,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 10/18 |[Individual front-end](project-3-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](https://docs.google.com/presentation/d/1KKJFO7i4octKryn0dO-khlOWnyV4jI0-qJ0CeYqGlKU/edit?usp=sharing), Accessibility Analysis | |
 | F 10/20 | [More Front-End Prep](more-front-prep) | [Slides], Working on Front-end component | |
 | **Week 7** | **Database Component** | | |
-| M 10/23 | [Team front-end](project-3-front-end); Readings: [MVC](https://www.tomdalling.com/blog/software-design/model-view-controller-explained/), sections of [SQL](http://www.w3schools.com/sql/default.asp) | Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend)|
-| W 10/25 | Readings: [Database normalization](https://blog.udemy.com/normalization-in-database-with-example/) | More with Databases | |
+| M 10/23 | [Team front-end](project-3-front-end); [Intro Databases Prep](intro-database-prep) | Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend)|
+| W 10/25 | [Database Normalization](normalization-prep) | More with Databases | |
 | F 10/27 | [Individual back-end](project-4-ind); Readings: [psycopg2](https://www.psycopg.org/docs/) | [Connecting Flask and Database](psycopg2) | |
 | **Week 8** | **Refactoring** | | |
 | M 10/30 | Readings: Martin Ch 2 and 4 | Naming and comments | |
