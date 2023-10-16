@@ -29,7 +29,10 @@ To achieve the basic learning objectives, you should read the following:
     * [Intro](http://www.w3schools.com/sql/sql_intro.asp) **through and including** [SQL Between](http://www.w3schools.com/sql/sql_between.asp)
     * [SQL Create Table](http://www.w3schools.com/sql/sql_create_table.asp)
     * [SQL Data Types](http://www.w3schools.com/sql/sql_datatypes_general.asp)
+    * [Postgres Data Types](https://www.postgresql.org/docs/current/datatype.html) for reference
 
 ## Checks
 Write down your answer to the following and bring it to class:
 * What is one query that you'd like to be able to do for your team project?
+
+You should also be able to answer the [relevant exercises on W3Schools](https://www.w3schools.com/sql/exercise.asp)
