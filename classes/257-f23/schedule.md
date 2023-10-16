@@ -43,7 +43,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 6** | **Front-End Component Cont'd** | | |
 | M 10/16 | Midterm break! | | |
 | W 10/18 |[Individual front-end](https://anyaevostinar.github.io/classes/257-s22/project-3-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](https://docs.google.com/presentation/d/1KKJFO7i4octKryn0dO-khlOWnyV4jI0-qJ0CeYqGlKU/edit?usp=sharing), Accessibility Analysis | |
-| F 10/20 | [More Front-End Prep](more-front-prep) | Working on Front-end component | |
+| F 10/20 | [More Front-End Prep](more-front-prep) | [Slides], Working on Front-end component | |
 | **Week 7** | **Database Component** | | |
 | M 10/23 | [Team front-end](project-3-front-end); Readings: [MVC](https://www.tomdalling.com/blog/software-design/model-view-controller-explained/), sections of [SQL](http://www.w3schools.com/sql/default.asp) | Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend)|
 | W 10/25 | Readings: [Database normalization](https://blog.udemy.com/normalization-in-database-with-example/) | More with Databases | |
@@ -55,10 +55,10 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 9** | **More Refactoring**
 | M 11/6 | Readings: Martin Ch 10 | Designing classes | |
 | W 11/8 | Readings: TBD | Design Patterns | |
-| F 11/10 | Readings: TBD | Test Coverage? | |
+| F 11/10 | Readings: TBD | Specific design patterns | |
 | **Week 10** | **Wrapping Up** | | |
-| M 11/13 | Readings: TBD | | |
-| W 11/15 | No readings | Final project showcase | |
+| M 11/13 | Readings: TBD | User stories | |
+| W 11/15 | Readings: TBD | Usability testing, Final project showcase | |
 | **Exam Week** | | |
 | M 11/20 | Exam Slot 12-2:30 | Optional help time | |
 | [Final project due](project-final) at 5pm | | |
