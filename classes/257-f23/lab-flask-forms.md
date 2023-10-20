@@ -69,9 +69,9 @@ You might have noticed in the URL that the user's selection is shown there. This
         <p>POST version: Which row would you like to see?</p>
         <form action="displayrow" method="post">
             <label for="1">Row 1</label>
-            <input type="radio" name="rowchoice" value="1">
+            <input type="radio" id="1" name="rowchoice" value="1">
             <label for="2">Row 2</label>
-            <input type="radio" name="rowchoice" value="2">
+            <input type="radio" id="2" name="rowchoice" value="2">
             <input type="submit" value="Submit">
         </form>
     ```
@@ -137,7 +137,7 @@ Fortunately, with a little bit of Jinja, we can automatically generate a dropdow
     <p>Dropdown version: Which row would you like to see?</p>
     <form action="rowbytitle">
         <label for="rows">Choose a row</label>
-        <select name="rowchoice">
+        <select  id="rows" name="rowchoice">
             {%raw %}
             {% for row in rows: %}
             <option value="{{row}}">{{row}}</option>

@@ -24,7 +24,7 @@ To achieve the basic learning objectives, pick at least one of the below resourc
 
 * W3's [Matplotlib tutorial](https://www.w3schools.com/python/matplotlib_intro.asp) - same as above but if you like W3's style of tutorial more
 
-* [How to display Matplotlib in Flask](https://towardsdatascience.com/how-to-easily-show-your-matplotlib-plots-and-pandas-dataframes-dynamically-on-your-website-a9613eff7ae3) - probably should read with one of the previous two
+* [How to display Matplotlib in Flask](https://towardsdatascience.com/how-to-easily-show-your-matplotlib-plots-and-pandas-dataframes-dynamically-on-your-website-a9613eff7ae3) - probably should read with one of the previous two (paywalled now unfortunately)
 
 * [Displaying matplotlib in Flask code snippet](https://gitlab.com/-/snippets/1924163) A non paywalled code snippet
 
