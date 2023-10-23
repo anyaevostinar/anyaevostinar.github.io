@@ -49,9 +49,9 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 10/25 | No prep |[Slides](https://docs.google.com/presentation/d/1eDIyGAgtkJ5GpBD2N8NWNJmtE8uX7GPWamWFhfsXgRw/edit?usp=sharing), [Database Connections and Relations](psycopg2)  | |
 | F 10/27 | [Individual back-end](project-4-ind); [Database Normalization](normalization-prep) | [Slides](https://docs.google.com/presentation/d/1nbsisszRxCRLL6J8OWtnRuo_G888GLDAB5sBXbFC8HQ/edit?usp=sharing), More with Databases | |
 | **Week 8** | **Refactoring** | | |
-| M 10/30 | Readings: Martin Ch 2 and 4 | Naming and comments | |
-| W 11/1 | [Team back-end](project-4-backend); Readings: Martin Ch 17 | Code Smells | |
-| F 11/3 | Code review prep | Code review | |
+| M 10/30 | [Naming and Commenting Prep](naming-prep) | Naming and comments | |
+| W 11/1 | [Team back-end](project-4-backend); [Code Smells Prep](code-smells-prep) | Code Smells | |
+| F 11/3 | [Code Review 2 Prep](review-2-prep) | Code review | |
 | **Week 9** | **More Refactoring**
 | M 11/6 | Readings: Martin Ch 10 | Designing classes | |
 | W 11/8 | Readings: TBD | Design Patterns | |

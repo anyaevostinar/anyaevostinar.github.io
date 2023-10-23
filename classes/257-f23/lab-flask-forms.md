@@ -36,9 +36,9 @@ We're first going to use radio buttons to let the user choose which row of the s
         <p>Which row would you like to see?</p>
         <form action="displayrow">
             <label for="1">Row 1</label>
-            <input type="radio" name="rowchoice" value="1">
+            <input type="radio" id="1" name="rowchoice" value="1">
             <label for="2">Row 2</label>
-            <input type="radio" name="rowchoice" value="2">
+            <input type="radio" id="2" name="rowchoice" value="2">
             <input type="submit" value="Submit">
         </form>
     ```
