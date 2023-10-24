@@ -71,3 +71,10 @@ The criteria for "Demonstrates Mastery" and "Demonstrates Proficiency" are below
 * Your Flask app should be named `app.py` and be placed in the TOP-LEVEL directory, i.e. **NOT** in `ProductionCode` (the various imports just won't work correctly if it is in `ProductionCode` unfortunately)
 * Do not specify the port when running the app, it doesn't work the same on different operating systems and so can mess up the grading. I.e., when you run your app, it should be just `app.run()` without any arguments
 * Your tests (if you include them) will be placed in the `Tests` folder, so be sure to write them assuming that 
+
+### Subsequent revisions option
+Some of you have group 'cl' code that is broken or pretty far behind what you are working on currently, so in the interest of preserving everyone's sanity, you can make your subsequent revisions of your individual flask deliverable independent from your group code by:
+* Creating a `ProductionCode` folder in your individual deliverable
+* Hard coding data in `ProductionCode` files or loading in dummy data
+* Having your flask app code work with your hard-coded/dummy data version of the core functionality
+* If you have a `ProductionCode` folder, we will assume that you are using this option. If you don't, we will assume your code works with the 'cl' tag of your group repository
