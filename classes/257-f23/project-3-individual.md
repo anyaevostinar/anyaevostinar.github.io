@@ -64,7 +64,7 @@ The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below
   * There is a homepage
   * There is at least one additional page that displays hard-coded data from the dataset
 * Front-end:
-  * Site makes a good attempt at providing navigation 
+  * Site makes a good attempt at providing navigation, which includes a navigation bar 
   * Accessibility partially addressed
   * The HTML and CSS are in separate files
   * HTML code is acceptable, perhaps with minor presentation aspects bleeding in
@@ -80,9 +80,18 @@ The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below
 * All the Proficiency criteria are met
 * Functionality:
   * One of the following:
-    * Navigation from homepage to other page is through form/drop-down/something other than a link
+    * Can navigate from homepage to other page through HTML `form` (which could be drop-down box, text box, etc)
     * Data displayed in format other than text/static images, for example a generated plot
 * Front-end:
   * Page does an excellent job enabling scanability, satisficing, and muddling through. Strong execution of conventions and best practices for content organization and accessibility.
   * HTML only deals with content structure and not any aspect of presentation. Code is clearly and concisely written. All tags used appropriately.
   * CSS clearly captures the look-and-feel of the site and renders correctly. Code is clearly and concisely written.
+
+
+## Addendums
+
+* Do we have to have a nav bar? What if it only has one or two things on it?
+
+Yes, part of 'good attempt at providing navigation' and scanability is a navigation bar. I've updated the above requirements to be clearer on that. Feel free to add extra links to the nav bar to demonstrate how it would look with the links just dead or to mostly empty pages
+
+* Your forms  need to have labels and matching id tags for accessibility
