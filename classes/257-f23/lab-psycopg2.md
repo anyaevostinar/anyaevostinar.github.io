@@ -12,7 +12,7 @@ Learn how to connect a Flask Python app with a Postgres database using the `psyc
 You should first complete this lab in your individual repository to complete your submission for the [individual back-end deliverable](project-4-ind). 
 You'll then want to coordinate with your team since you'll need to apply what you learn to your team project.
 
-You should create most of these files locally and push them to your individual repository before then connecting to stearns and testing them out.
+You should edit most of these files locally and push them to your individual repository before then connecting to stearns and testing them out.
 Remember that if you're on stearns and want to push, you'll probably need to use a [GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to do so.
 It'll generally be easier to just create files locally and not need to push from stearns.
 
@@ -28,16 +28,16 @@ In general, you should never push passwords to a git repository, so we're going 
 
 
 ## datasource.py
-You should create a file named `datasource.py` in your ID4 repository.
-This file will be responsible for connecting your database to your Flask app.
+I've provided a file named `datasource.py` in your ID4 repository.
+This file is responsible for connecting your database to your Flask app.
 
-1. In that file, you should first import the module we'll be using and the configuration file that you will make on stearns:
+1. In that file, there are two import statements, the first imports the module we'll be using and second is the configuration file that you will make on stearns:
     ```python
     import psycopg2
-    import psqlConfig as config
+    import ProductionCode.psqlConfig as config
     ```
 
-2. It's best to structure this file in an object-oriented style, so you should first make a class called `DataSource`:
+2. This file is structured in an object-oriented style, so there is a class called `DataSource`:
 
     ```python
     class DataSource:
@@ -49,7 +49,7 @@ This file will be responsible for connecting your database to your Flask app.
             pass
     ```
 
-3. A common thing that you will need to do is connect to your database, hence why there is a `connect` method. The `psycopg2` module makes that pretty easy, add the following to the `connect` method:
+3. A common thing that you will need to do is connect to your database, hence why there is a `connect` method. The `psycopg2` module makes that pretty easy with the following in the `connect` method (already provided):
     ```python
     try:
         connection = psycopg2.connect(database=config.database, user=config.user, password=config.password, host="localhost")
@@ -59,9 +59,9 @@ This file will be responsible for connecting your database to your Flask app.
     return connection
     ```
 
-4. Your constructor should call the `connect` method and save the resulting connection object as an instance variable; write that code now.
+4. Your constructor calls the `connect` method and saves the resulting connection object as an instance variable that you'll use next, called `self.connection`
 
-5. Finally, you'll need to write a method to execute one of your queries on your database and print the resulting information. To execute a query on the database, you need to use the `cursor()` method of the connection. Here is an example adapted from the [psycopg2 documentation](https://www.psycopg.org/docs/install.html#quick-install)
+5. You'll need to write a method to execute one of your queries on your database and print the resulting information. To execute a query on the database, you need to use the `cursor()` method of the connection. Here is an example adapted from the [psycopg2 documentation](https://www.psycopg.org/docs/install.html#quick-install)
     ```python
     def getExample(self):
 
@@ -97,14 +97,9 @@ This file will be responsible for connecting your database to your Flask app.
             return None
     ```
 
-7. For testing purposes, create a `DataSource` object and call one or more of your methods at the bottom of your `datasource.py` file:
-    ```python
-    if __name__ == '__main__':
-        my_source = DataSource()
-        #call your method
-    ```
-    
-8. Add your `datasource.py` file, commit, and push.
+7. For testing purposes, open `app.py`. There is a `DataSource` object already created.Call one or more of your methods at the bottom of your `app.py` file.
+
+8. Add your `datasource.py` and `app.py` file changes, commit, and push.
 
 
 ## On stearns
@@ -122,7 +117,7 @@ Now you're ready to test out your code with your database.
     ```
     That should be your Carleton username for the first two and the password that I provided to you for the last one.
 
-4. Try running your `datasource.py` and see if it is able to connect to your database!
+4. Try running your `app.py` and see if it is able to connect to your database!
 
 5. If that works, great job, you're done with the [individual deliverable](project-4-ind)! Back on your local setup, add the correct tag and push it.
 
