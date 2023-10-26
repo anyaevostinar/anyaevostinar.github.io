@@ -20,6 +20,7 @@ After class, you should be able to:
 ## Readings
 To achieve the basic learning objectives, read the following in *Clean Code*:
 * Ch 17 (you can skip the Java specific ones, though you might find them interesting)
+* (Optional) [Specific Code Smells](https://refactoring.guru/refactoring/smells) from Refactoring Guru 
 
 ## Checks
 You don't need to memorize all these code smells, but you probably spotted a few that you are particularly likely cause. Make a list of the code smells from this chapter that you think are most important for you to remember.
