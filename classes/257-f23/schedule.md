@@ -53,7 +53,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 11/1 | [Team back-end](project-4-backend); [Code Smells Prep](code-smells-prep) | [Slides](https://docs.google.com/presentation/d/1ItHmeYbHCQbdK9oeLGv0rpGbJ544Zw3gFcHyReTSbXg/edit?usp=sharing), Code Smells | |
 | F 11/3 | [Code Review 2 Prep](review-2-prep) | [Code review](https://docs.google.com/document/d/14XSNJiFra4qo2RKNFcvgE5eRlLiUNyHS-X55gtiRHjk/edit?usp=sharing) | |
 | **Week 9** | **More Refactoring**
-| M 11/6 | Readings: Martin Ch 10 | Designing classes | |
+| M 11/6 | [Classes Prep](classes-prep) | Designing classes | |
 | W 11/8 | Readings: TBD | Design Patterns | |
 | F 11/10 | Readings: TBD | Specific design patterns | |
 | **Week 10** | **Wrapping Up** | | |
