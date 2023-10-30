@@ -50,8 +50,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 10/27 | [Individual back-end](project-4-ind); [Database Normalization](normalization-prep) | [Slides](https://docs.google.com/presentation/d/1nbsisszRxCRLL6J8OWtnRuo_G888GLDAB5sBXbFC8HQ/edit?usp=sharing), More with Databases | |
 | **Week 8** | **Refactoring** | | |
 | M 10/30 | [Naming and Commenting Prep](naming-prep) | [Slides](https://docs.google.com/presentation/d/1XVbCCYVVdYCnpjbCTnmdRbLWiRk70lgja1ToElQ9y28/edit?usp=sharing), [Naming and comments](https://docs.google.com/document/d/17oI-pCdvU2ICfR14rQbEbVLrZdhzQvPp4CSt_qmtXNs/edit?usp=sharing) | |
-| W 11/1 | [Team back-end](project-4-backend); [Code Smells Prep](code-smells-prep) | Code Smells | |
-| F 11/3 | [Code Review 2 Prep](review-2-prep) | Code review | |
+| W 11/1 | [Team back-end](project-4-backend); [Code Smells Prep](code-smells-prep) | [Slides](https://docs.google.com/presentation/d/1ItHmeYbHCQbdK9oeLGv0rpGbJ544Zw3gFcHyReTSbXg/edit?usp=sharing), Code Smells | |
+| F 11/3 | [Code Review 2 Prep](review-2-prep) | [Code review](https://docs.google.com/document/d/14XSNJiFra4qo2RKNFcvgE5eRlLiUNyHS-X55gtiRHjk/edit?usp=sharing) | |
 | **Week 9** | **More Refactoring**
 | M 11/6 | Readings: Martin Ch 10 | Designing classes | |
 | W 11/8 | Readings: TBD | Design Patterns | |
