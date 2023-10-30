@@ -54,7 +54,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 11/3 | [Code Review 2 Prep](review-2-prep) | [Code review](https://docs.google.com/document/d/14XSNJiFra4qo2RKNFcvgE5eRlLiUNyHS-X55gtiRHjk/edit?usp=sharing) | |
 | **Week 9** | **More Refactoring**
 | M 11/6 | [Classes Prep](classes-prep) | Designing classes | |
-| W 11/8 | Readings: TBD | Design Patterns | |
+| W 11/8 | [Design Patterns Prep](patterns-prep) | Design Patterns | |
 | F 11/10 | Readings: TBD | Specific design patterns | |
 | **Week 10** | **Wrapping Up** | | |
 | M 11/13 | Readings: TBD | User stories | |
