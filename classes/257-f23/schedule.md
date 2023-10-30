@@ -55,7 +55,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 9** | **More Refactoring**
 | M 11/6 | [Classes Prep](classes-prep) | Designing classes | |
 | W 11/8 | [Design Patterns Prep](patterns-prep) | Design Patterns | |
-| F 11/10 | Readings: TBD | Specific design patterns | |
+| F 11/10 | [Specific Patterns Prep](more-patterns-prep) | Specific design patterns | |
 | **Week 10** | **Wrapping Up** | | |
 | M 11/13 | Readings: TBD | User stories | |
 | W 11/15 | Readings: TBD | Usability testing, Final project showcase | |
