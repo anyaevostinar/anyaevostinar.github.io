@@ -53,8 +53,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 11/1 | [Team back-end](project-4-backend); [Code Smells Prep](code-smells-prep) | [Slides](https://docs.google.com/presentation/d/1ItHmeYbHCQbdK9oeLGv0rpGbJ544Zw3gFcHyReTSbXg/edit?usp=sharing), Code Smells | |
 | F 11/3 | [Code Review 2 Prep](review-2-prep) | [Code review](https://docs.google.com/document/d/14XSNJiFra4qo2RKNFcvgE5eRlLiUNyHS-X55gtiRHjk/edit?usp=sharing) | |
 | **Week 9** | **More Refactoring**
-| M 11/6 | [Classes Prep](classes-prep) | Designing classes | |
-| W 11/8 | [Design Patterns Prep](patterns-prep) | Design Patterns | |
+| M 11/6 | [Classes Prep](classes-prep) | [Slides](https://docs.google.com/presentation/d/17ybKfyvQnjybvtLWWlwMatwNoP2F-Md7xRdDTcfoDEk/edit?usp=sharing), Designing classes | |
+| W 11/8 | [Design Patterns Prep](patterns-prep) | [Slides](https://docs.google.com/presentation/d/1zZSa5M73PbKpZmF2FHKcSX7h7vyac5JQGmHFY1yRbQE/edit?usp=sharing), Design Patterns | |
 | F 11/10 | [Specific Patterns Prep](more-patterns-prep) | Specific design patterns | |
 | **Week 10** | **Wrapping Up** | | |
 | M 11/13 | Readings: TBD | User stories | |
