@@ -26,8 +26,8 @@ The individual deliverable for this iteration is due **Friday Oct 27th** at 10pm
 I recommend that you work on this component on the `stearns` server since it has all the necessary things installed already.
 
 You should:
-* Copy some or all of your team's data into your ID4 repository in the `Data` folder
-* Edit the `Data/createtable.sql` file so that it creates a table with some (or all) of your team's data 
+* Copy *some* of your team's data into your ID4 repository in the `Data` folder (should only be a couple of columns max)
+* Edit the `Data/createtable.sql` file so that it creates a table with some of your team's data 
 * Add the necessary `\copy` command to your `README.md` file
     (For example `\copy earthquakes FROM 'Data/earthquakeData.csv' DELIMITER ',' CSV`)
 * Expand on the `datasource.py` file by adding a method that uses the `psycopg2` module to connect to the database, execute a query, and return the result (note that I've provided the `connect` method already, so you should use the instance variable `self.connection`)
@@ -70,7 +70,7 @@ The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below
 ### Mastery
 * All the Proficiency criteria are met
 * Functionality:
-  * Data is well-curated from the original dataset, with no extraneous data
+  * Data is well-curated from the original dataset, with no extraneous data that isn't used by the query
   * Data types are well-chosen for the dataset
   * Data tables (if used) contain little to no overlap (higher degree of normalization)
 * Design:

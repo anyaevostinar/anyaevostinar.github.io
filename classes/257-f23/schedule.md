@@ -57,8 +57,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 11/8 | [Design Patterns Prep](patterns-prep) | [Slides](https://docs.google.com/presentation/d/1zZSa5M73PbKpZmF2FHKcSX7h7vyac5JQGmHFY1yRbQE/edit?usp=sharing), Design Patterns | |
 | F 11/10 | [Specific Patterns Prep](more-patterns-prep) | [Slides](https://docs.google.com/presentation/d/1VJ9HunHLnyhoDGk2Ul0hgR8Vpw4hXyaykrNk1bbguK0/edit?usp=sharing), More design patterns | |
 | **Week 10** | **Wrapping Up** | | |
-| M 11/13 | Readings: TBD | User stories | |
-| W 11/15 | Readings: TBD | Usability testing, Final project showcase | |
+| M 11/13 | [User Story Prep](user-stories-prep) | User stories | |
+| W 11/15 | [Usability Testing Prep](usability-prep) | Usability testing, Final project showcase | |
 | **Exam Week** | | |
 | M 11/20 | Exam Slot 12-2:30 | Optional help time | |
 | [Final project due](project-final) at 5pm | | |
