@@ -74,4 +74,4 @@ When evaluating your project, the grader will pull down your team's repo and run
 
 ## Addendums
 
-For mastery, your website needs to be complete, polished, and cohesive.
+For mastery, your website needs to be complete, polished, and cohesive. If you don't feel strong in design, it can be a simple and clean design, but it should look professional.
