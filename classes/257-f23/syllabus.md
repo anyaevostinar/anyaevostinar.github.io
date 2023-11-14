@@ -260,7 +260,7 @@ All that said: This (like every term for a while now) term is going to be weird,
 
 ### AI-Assistance
 Only use an AI text generator if the assignment explicitly calls for it or allows it, and follow specific assignment guidelines to disclose which text comes from the AI. 
-Most assignments (probably all) in this course will NOT allow the use of an AI text/code generator, since you need to learn how to write the code yourself.
+Most assignments (probably all) in this course will NOT allow the use of an AI text/code generator, since you need to learn how to write the code yourself. If you already have the GitHub Co-pilot extension in VSCode, [you must disable it](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment#enabling-or-disabling-github-copilot) for all course work.
 
 ### Groups
 Working in groups is a great way to learn computer science, and learning how to work with others is an essential skill. The opportunity to work in groups also comes with some additional responsibilities:

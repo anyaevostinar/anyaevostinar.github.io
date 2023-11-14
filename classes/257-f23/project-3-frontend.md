@@ -57,7 +57,7 @@ When evaluating your project, the grader will pull down your team's repo and run
     * headings used to structure page
     * alt text for any images
     * color and contrast chosen well for overall readability and colorblind-friendly
-    * forms labeled correctly
+    * [forms labeled correctly](https://webaim.org/techniques/forms/controls#input)
     * links make sense out of context
     * [correct use of bold vs strong](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)
   * The HTML and CSS are in separate files
@@ -71,3 +71,7 @@ When evaluating your project, the grader will pull down your team's repo and run
   * Page does an excellent job enabling scanability, satisficing, and muddling through. Strong execution of conventions and best practices for content organization and accessibility.
   * HTML only deals with content structure and not any aspect of presentation. Code is clearly and concisely written. All tags used appropriately.
   * CSS clearly captures the look-and-feel of the site and renders correctly. Code is clearly and concisely written.
+
+## Addendums
+
+For mastery, your website needs to be complete, polished, and cohesive.

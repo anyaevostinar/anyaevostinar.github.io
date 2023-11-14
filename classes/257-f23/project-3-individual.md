@@ -94,4 +94,4 @@ The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below
 
 Yes, part of 'good attempt at providing navigation' and scanability is a navigation bar. I've updated the above requirements to be clearer on that. Feel free to add extra links to the nav bar to demonstrate how it would look with the links just dead or to mostly empty pages
 
-* Your forms  need to have labels and matching id tags for accessibility
+* Your forms  [need to have labels and matching id tags](https://webaim.org/techniques/forms/controls#input) for accessibility
