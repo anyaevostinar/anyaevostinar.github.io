@@ -103,3 +103,88 @@ The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below
 * All requirements for proficiency are met
 * All required metadata is included in the submission for the dataset
 * Documents are are clear and concise, easy to read, with few to no spelling or grammar errors
+
+
+## Inspiration
+Here are screenshots of final products of the F23 257 course for future students' inspiration:
+
+<div class="row">
+  <div class="column">
+    <a href="/assets/images/F23-257-Exoplanets.png">
+    <div class="card">
+    <img src="/assets/images/F23-257-Exoplanets.png" alt="Screenshot of Exoplanets website" style="width:100%">
+        <div class="container">
+            <h4><b>Exoplanets!</b></h4>
+             <br>
+        </div>
+    </div></a>
+    <a href="/assets/images/F23-257-Cancer.png">
+    <div class="card">
+    <img src="/assets/images/F23-257-Cancer.png" alt="Screenshot of WATCH website" style="width:100%">
+        <div class="container">
+            <h4><b>Web Analysis Tool of Cancer History</b></h4>
+             <br>
+        </div>
+    </div></a>
+    <a href="/assets/images/F23-257-BirthControl.png">
+    <div class="card">
+    <img src="/assets/images/F23-257-BirthControl.png" alt="Screenshot of Birth Control website" style="width:100%">
+        <div class="container">
+            <h4><b>Reproductive Health</b></h4>
+             <br>
+        </div>
+    </div></a>
+  </div>
+  <div class="column">
+    <a href="/assets/images/F23-257-PySpill.png">
+    <div class="card">
+    <img src="/assets/images/F23-257-PySpill.png" alt="Screenshot of PySpill website" style="width:100%">
+        <div class="container">
+            <h4><b>PySpill</b></h4>
+             <br>
+        </div>
+    </div></a>
+    <a href="/assets/images/F23-257-PySpillMap.png">
+    <div class="card">
+    <img src="/assets/images/F23-257-PySpillMap.png" alt="Screenshot of PySpill Map " style="width:100%">
+        <div class="container">
+            <h4><b>PySpil Map page</b></h4>
+             <br>
+        </div>
+    </div></a>
+    <a href="/assets/images/F23-257-World.png">
+    <div class="card">
+    <img src="/assets/images/F23-257-World.png" alt="Screenshot of World Data website " style="width:100%">
+        <div class="container">
+            <h4><b>World Bank Financial Data</b></h4>
+             <br>
+        </div>
+    </div></a>
+  </div>
+  <div class="column">
+  <a href="/assets/images/F23-257-Justice.png">
+  <div class="card">
+    <img src="/assets/images/F23-257-Justice.png" alt="Screenshot of Supreme Court website " style="width:100%">
+        <div class="container">
+            <h4><b>Supreme Court Database</b></h4>
+             <br>
+        </div>
+    </div></a>
+    <a href="/assets/images/F23-257-Food.png">
+    <div class="card">
+    <img src="/assets/images/F23-257-Food.png" alt="Screenshot of Food website " style="width:100%">
+        <div class="container">
+            <h4><b>Chick-fil-A Nutrition</b></h4>
+            <br>
+        </div>
+    </div></a>
+    <a href="/assets/images/F23-257-Stocks.png">
+    <div class="card">
+    <img src="/assets/images/F23-257-Stocks.png" alt="Screenshot of Stock Data website " style="width:100%">
+        <div class="container">
+            <h4><b>Stock Data</b></h4>
+             <br>
+        </div>
+    </div></a>
+    </div>
+</div>

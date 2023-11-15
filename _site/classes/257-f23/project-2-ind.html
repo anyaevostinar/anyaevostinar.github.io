@@ -70,10 +70,11 @@ To get ‘demonstrates mastery’ that route should use a route parameter and yo
 <ul>
   <li>Pull down your group’s files that are tagged ‘cl’</li>
   <li>Pull down your submission for this deliverable from the ID2 repository</li>
-  <li>Place your Flask app file in the top level directory of your group’s code</li>
+  <li>Place your Flask app file  in the top level directory of your group’s code (and any templates into a templates folder)</li>
   <li>Run your Flask app file</li>
   <li>Based on the information on your homepage, type in a URL to see the data</li>
   <li>Examine your code for style and requirements</li>
+  <li>If you have them, place your tests into the <code class="language-plaintext highlighter-rouge">Tests</code> folder and run them</li>
 </ul>
 
 <h2 id="turning-it-in">Turning it in</h2>
@@ -119,6 +120,23 @@ To get ‘demonstrates mastery’ that route should use a route parameter and yo
       <li>The docstrings are thorough and clear</li>
     </ul>
   </li>
+</ul>
+
+<h2 id="addendums">Addendums</h2>
+
+<ul>
+  <li>Your Flask app should be named <code class="language-plaintext highlighter-rouge">app.py</code> and be placed in the TOP-LEVEL directory, i.e. <strong>NOT</strong> in <code class="language-plaintext highlighter-rouge">ProductionCode</code> (the various imports just won’t work correctly if it is in <code class="language-plaintext highlighter-rouge">ProductionCode</code> unfortunately)</li>
+  <li>Do not specify the port when running the app, it doesn’t work the same on different operating systems and so can mess up the grading. I.e., when you run your app, it should be just <code class="language-plaintext highlighter-rouge">app.run()</code> without any arguments</li>
+  <li>Your tests (if you include them) will be placed in the <code class="language-plaintext highlighter-rouge">Tests</code> folder, so be sure to write them assuming that</li>
+</ul>
+
+<h3 id="subsequent-revisions-option">Subsequent revisions option</h3>
+<p>Some of you have group ‘cl’ code that is broken or pretty far behind what you are working on currently, so in the interest of preserving everyone’s sanity, you can make your subsequent revisions of your individual flask deliverable independent from your group code by:</p>
+<ul>
+  <li>Creating a <code class="language-plaintext highlighter-rouge">ProductionCode</code> folder in your individual deliverable</li>
+  <li>Hard coding data in <code class="language-plaintext highlighter-rouge">ProductionCode</code> files or loading in dummy data</li>
+  <li>Having your flask app code work with your hard-coded/dummy data version of the core functionality</li>
+  <li>If you have a <code class="language-plaintext highlighter-rouge">ProductionCode</code> folder, we will assume that you are using this option. If you don’t, we will assume your code works with the ‘cl’ tag of your group repository</li>
 </ul>
 
   </div>

@@ -128,3 +128,5 @@ Yes, the column headers are row 0 of the data and can be accessed as such.
 * Is the data 0-indexed or 1-indexed?
 
 Even though the data values are 1-indexed, you should still use Python's typical 0-indexing. The data is just being read into a nested list; nothing fancy!
+
+* At least one edge case should be for invalid input

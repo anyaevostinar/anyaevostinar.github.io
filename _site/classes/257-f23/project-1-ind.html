@@ -149,28 +149,50 @@ Purpose: Maintains command line interface, loads data. Usage statement: "Usage: 
       <li>There is barely any duplicated code</li>
       <li>Style mostly follows the <a href="https://peps.python.org/pep-0008/">style guide</a></li>
     </ul>
-
-    <h2 id="questions">Questions</h2>
-    <p>Here are questions that have previously come up about this assignment:</p>
-
-    <ul>
-      <li>Does <code class="language-plaintext highlighter-rouge">load_data</code> need a test?</li>
-    </ul>
-
-    <p>No, <code class="language-plaintext highlighter-rouge">load_data</code> doesn’t need a specific test.</p>
-
-    <ul>
-      <li>Are the column headers included in the data?</li>
-    </ul>
-
-    <p>Yes, the column headers are row 0 of the data and can be accessed as such.</p>
-
-    <ul>
-      <li>Is the data 0-indexed or 1-indexed?</li>
-    </ul>
-
-    <p>Even though the data values are 1-indexed, you should still use Python’s typical 0-indexing. The data is just being read into a nested list; nothing fancy!</p>
   </li>
+</ul>
+
+<h2 id="addendums">Addendums</h2>
+<p>You weren’t required to do this for the first submission, but if you are submitting a revision, you need to add these things (they should have been specified originally, but I forgot!):</p>
+
+<ul>
+  <li>You should make a Tests directory that you put your tests in</li>
+  <li>You should add the following method to the top of (each of) your test class(es), which makes sure that the data is loaded before each test is run:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+  <span class="n">load_data</span><span class="p">()</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Make sure that you are importing the production code correctly, it imports the same as the <a href="tdd">TDD lab describes</a></li>
+  <li>Check your <a href="pr-guide">Feedback PR</a> to see why your tests failed</li>
+  <li>Remember to set the correct location for <code class="language-plaintext highlighter-rouge">basic_cl.py</code> when writing the <code class="language-plaintext highlighter-rouge">main</code> tests (i.e. it’s in <code class="language-plaintext highlighter-rouge">ProductionCode</code>, so the path is <code class="language-plaintext highlighter-rouge">ProductionCode/basic_cl.py</code>)</li>
+  <li>When invalid indices are given as command line arguments, <code class="language-plaintext highlighter-rouge">main</code> prints the usage statement</li>
+  <li>Remember that Python will not throw an error if you do <code class="language-plaintext highlighter-rouge">my_list[-1]</code></li>
+  <li>Remember to cite your sources if you use outside resources</li>
+</ul>
+
+<h2 id="questions">Questions</h2>
+<p>Here are questions that have previously come up about this assignment:</p>
+
+<ul>
+  <li>Does <code class="language-plaintext highlighter-rouge">load_data</code> need a test?</li>
+</ul>
+
+<p>No, <code class="language-plaintext highlighter-rouge">load_data</code> doesn’t need a specific test.</p>
+
+<ul>
+  <li>Are the column headers included in the data?</li>
+</ul>
+
+<p>Yes, the column headers are row 0 of the data and can be accessed as such.</p>
+
+<ul>
+  <li>Is the data 0-indexed or 1-indexed?</li>
+</ul>
+
+<p>Even though the data values are 1-indexed, you should still use Python’s typical 0-indexing. The data is just being read into a nested list; nothing fancy!</p>
+
+<ul>
+  <li>At least one edge case should be for invalid input</li>
 </ul>
 
   </div>

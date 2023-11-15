@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Useful Links | Anya E. Vostinar</title>
+<title>Database Normalization Prep | Anya E. Vostinar</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Useful Links" />
+<meta property="og:title" content="Database Normalization Prep" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
 <meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
-<link rel="canonical" href="http://localhost:4000/useful_links" />
-<meta property="og:url" content="http://localhost:4000/useful_links" />
+<link rel="canonical" href="http://localhost:4000/classes/257-f23/normalization-prep" />
+<meta property="og:url" content="http://localhost:4000/classes/257-f23/normalization-prep" />
 <meta property="og:site_name" content="Anya E. Vostinar" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Useful Links" />
+<meta property="twitter:title" content="Database Normalization Prep" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Useful Links","url":"http://localhost:4000/useful_links"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Database Normalization Prep","url":"http://localhost:4000/classes/257-f23/normalization-prep"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
 <body><header class="site-header" role="banner">
@@ -39,61 +39,41 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Useful Links</h1>
+    <h1 class="post-title">Database Normalization Prep</h1>
   </header>
 
   <div class="post-content">
-    <p>These are links that I think are useful for myself and possibly others.</p>
+    <h2 id="overview">Overview</h2>
+<p>There are a lot of levels of organization to think about with large dataset and databases. We aren’t going to dive too deeply (since it’s a deep rabbit hole), but today we’re going to learn a bit about <em>database normalization</em> and how we can better organize our tables within a database.</p>
 
-<h2 id="coding">Coding</h2>
+<h2 id="basic-learning-objectives">Basic Learning Objectives</h2>
 
-<p><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork">Allowing changes to a pull request by the maintainer of the original repo</a></p>
-
-<p><a href="https://goodresearch.dev/index.html">The Good Research Code Handbook</a> - Python focused, but useful info (h/t Emily Dolson)</p>
-
-<p><a href="https://cs.carleton.edu/faculty/jondich/documents/unixtutorial/">UNIX Tutorial</a> - customized for Carleton’s setup, but generally useful</p>
-
-<p><a href="https://anonymous.4open.science/">Anonymous GitHub</a> - tool to anonymize GitHub repos for double-blind review purposes</p>
-
-<h2 id="faculty">Faculty</h2>
-<p><a href="https://github.com/crazyhottommy/The-world-of-faculty">Collection of links useful for faculty</a> - includes negotiation/job-search materials, grant proposals, structuring papers, teaching, and more, some links I pulled out and include in other sections</p>
-
-<p><a href="https://austinhenley.com/blog/500kgrant.html">Example CS CAREER proposal with thoughts on structure</a></p>
-
-<p><a href="https://sites.google.com/view/ecrdatabase/home">Early Career Reviewer Database</a></p>
-
-<p><a href="https://gradingforgrowth.com/">Grading for Growth Substack</a> - if you’re curious about alternative approaches to grading that emphasize feedback and student growth, this is a great resource</p>
-
-<h2 id="books">Books</h2>
-
-<p>Range: Why Generalists Triumph in a Specialized World by David Epstein</p>
-
-<p>Data Feminism by Catherine D’Ignazio and Lauren Klein</p>
-
-<p>Writing Science by Joshue Schimel</p>
-
-<p>Rescuing Socrates by Roosevelt Montas</p>
-
-<h2 id="paper-lists">Paper Lists</h2>
-<p>These are my ReadCube lists for various projects that I am mostly sharing here to point my students and collaborators at, but perhaps they will be useful for others as well.
-Apologies in advance for the PDFs that didn’t get their metadata automatically parsed correctly, if you are particularly interested in a topic, let me know and I can try to go and fix those.</p>
-
-<p>(Lysis/Lysogeny)[https://lists.papersapp.com/HW0haxy4YDj5]
-(Endosymbiosis)[https://lists.papersapp.com/I8q25lRcZz9z]
-(Symbiosis in Digital Evolution)[https://lists.papersapp.com/aBnTfcR3VzbC]</p>
-
-<h2 id="minecraft-guides">Minecraft Guides</h2>
-<p>I have a couple of projects getting evolutionary dynamics into Minecraft and so need to save the best guides to modding Minecraft:</p>
-
+<p>Before class, you should be able to:</p>
 <ul>
-  <li><a href="https://github.com/SpongePowered/Mixin/wiki">SpongePowered mixin</a></li>
-  <li><a href="https://www.youtube.com/watch?v=Y4rqyv0qbps&amp;t=43s">Video on mixins</a></li>
-  <li><a href="https://www.youtube.com/playlist?list=PLHTNHyaaUBPYq-lKVfrtkjXaGn9UGS3Iq">Series walk through</a></li>
+  <li>Define database normalization</li>
+  <li>Give an example of first normal form and third normal form</li>
 </ul>
 
-<h2 id="ruby">Ruby</h2>
-<p><a href="https://mac.install.guide/ruby/7.html">Using asdf package manager</a></p>
+<h2 id="advanced-learning-objectives">Advanced Learning Objectives</h2>
+<p>After class, you should be able to:</p>
+<ul>
+  <li>Explain the trade-offs that should be considered when deciding how to structure database tables</li>
+  <li>Explain why database normalization is important</li>
+</ul>
 
+<h2 id="readings">Readings</h2>
+<p>To achieve the basic learning objectives, you should read the following:</p>
+<ul>
+  <li><a href="https://launchschool.com/books/sql_first_edition/read/normalization#designingtables">Database Design and Normalization</a></li>
+</ul>
+
+<p>NOTE: You do not need to know the finer details of first normal form vs. fourth normal form, etc. Read these to get a sense of the ways you could, and should, be cutting down on redundancy and inefficiencies in database tables.</p>
+
+<h2 id="checks">Checks</h2>
+<p>Write down your answer to the following and bring it to class:</p>
+<ul>
+  <li>Identify a real or hypothetical duplication of data in your team dataset (i.e. if you don’t think there is any data duplication, come up with a way there could be) and how a normal form could reduce that duplication.</li>
+</ul>
 
   </div>
 

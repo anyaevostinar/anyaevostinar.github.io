@@ -130,6 +130,40 @@ When evaluating your project, the grader will pull down your team’s repo, chec
       <li>Function/method <a href="https://peps.python.org/pep-0257/">docstrings</a> all provide the required information</li>
       <li>There is barely any duplicated code</li>
     </ul>
+
+    <h2 id="addendums">Addendums</h2>
+    <p>These are changes that weren’t marked against you in the initial submission, but you need to make during revisions:</p>
+    <ul>
+      <li>
+        <p>Your README.md needs to include an example of how to run your code to demonstrate each of your features, i.e.</p>
+
+        <div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 ProductionCode/dragon_characters.py <span class="nt">--name</span> <span class="s2">"Anya"</span>
+python3 ProductionCode/dragon_characters.py <span class="nt">--color</span> <span class="s2">"purple"</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>While your test coverage doesn’t have to be 100% to get Mastery, I will use test coverage to get an idea of how thorough your test suite is. To check your own test coverage, do the following:</p>
+
+    <ul>
+      <li>Install the coverage module:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 <span class="nb">install </span>coverage
+</code></pre></div>        </div>
+      </li>
+      <li>Run the tests while collecting coverage data:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> coverage run <span class="nt">--source</span> ProductionCode <span class="nt">-m</span> unittest discover Tests
+</code></pre></div>        </div>
+      </li>
+      <li>Generate a report:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> coverage report <span class="nt">-m</span>
+</code></pre></div>        </div>
+      </li>
+      <li>You can also generate a fancy HTML report that shows you the exact lines!
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> coverage html
+</code></pre></div>        </div>
+      </li>
+    </ul>
   </li>
 </ul>
 
