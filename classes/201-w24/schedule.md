@@ -52,4 +52,5 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 3/6 | Final project initial submission | TBD | |
 | F 3/8 |  | Wrap up; review; course evaluations	| |
 | Exam Period | | | |
+| Self-scheduled | | Quiz 10 (No new learning objectives) | |
 | | | All revisions due Wednesday, 3/13, 6pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |

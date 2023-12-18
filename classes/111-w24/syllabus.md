@@ -77,8 +77,8 @@ All materials will be released at least 48 hours before they are due.
 Attendance is not strictly required in this class, though I believe that you will do much better if you attend every session. 
 Because much of the classtime is spent working with partners on lab activities, if you miss class, you will miss out on that opportunity.
 
-On Wednesdays there will typically be a quiz in the first half of class.
-If you do not attend on a Wednesday, you will not be able to make up that quiz, though you will be able to demonstrate your understanding on the learning objectives on subsequent quizzes still.
+On Mondays there will typically be a quiz in the first half of class.
+If you do not attend on a Monday, you will not be able to make up that quiz, though you will be able to demonstrate your understanding on the learning objectives on subsequent quizzes still.
 
 ## Types of Engagement and Collaboration Policies
 We'll have lots of different ways of engaging with the course material: 
@@ -86,7 +86,7 @@ We'll have lots of different ways of engaging with the course material:
 * Interactive lectures at the start of class that will include discussions to check your understand of the reading and give you a chance to ask questions.
 * Labs for writing somewhat longer code with significant guidance from the instructions in order to make ideas from readings more concrete.
 * Programming assignments where you complete more extended projects to provide opportunities to design solutions and see the ideas from class applied in real contexts. Some of these you will complete with a partner and some will be individual.
-* In-class quizzes, generally on Wednesdays, for you to demonstrate your understanding of specific learning objectives.
+* In-class quizzes, generally on Mondays, for you to demonstrate your understanding of specific learning objectives.
 * Final project, where you pull together everything you've learned to create something that interests you.
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
@@ -105,7 +105,7 @@ Towards that end, your performance in this class will be evaluated in the follow
 
 * **Programming deliverables** There will be weekly programming homework assignments during the term, some of which you'll complete individually and some with a partner. You will also complete a final programming project at the end of the term. The programming deliverables allow you to demonstrate mastery of some of the key learning objectives in this course -- particularly those focused on writing and organizing larger programs. These contribute to your final grade according to the *specifications grading* scale outlined below. You will have the opportunity to revise these *individually* (regardless of whether they were originally individual or paired assignments), as detailed below.
 
-* **In-class quizzes** Some of the learning objectives for the course can't be measured through programming assignments. Instead, your mastery of these objectives will be assessed in weekly in-class quizzes, generally on Wednesdays. There is a specific list of learning objectives that you should demonstrate your mastery of on these quizzes, and each objective will appear on at least two quizzes, though often more. This means that you have multiple chances to demonstrate your understanding, and where you are with each objective at the end of the term is what will matter for your grade. I realize this is different than how you are probably used to having quizzes, so we'll discuss this more in class and throughout the term. There are also more details below.
+* **In-class quizzes** Some of the learning objectives for the course can't be measured through programming assignments. Instead, your mastery of these objectives will be assessed in weekly in-class quizzes, generally on Mondays. There is a specific list of learning objectives that you should demonstrate your mastery of on these quizzes, and each objective will appear on at least two quizzes, though often more. This means that you have multiple chances to demonstrate your understanding, and where you are with each objective at the end of the term is what will matter for your grade. I realize this is different than how you are probably used to having quizzes, so we'll discuss this more in class and throughout the term. There are also more details below.
 
 
 ### Programming Grading Scale

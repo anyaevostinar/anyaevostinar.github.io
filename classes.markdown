@@ -8,7 +8,7 @@ permalink: /Classes/
 
 ### Winter 2024
 
-CS 111: Introduction to Computer Science ([Syllabus](/classes/111-w24/syllabus), Schedule)
+CS 111: Introduction to Computer Science ([Syllabus](/classes/111-w24/syllabus), [Schedule](/classes/111-w24/schedule))
 
 CS 201: Data Structures ([Syllabus](/classes/201-w24/syllabus), [Schedule](/classes/201-w24/schedule))
 
