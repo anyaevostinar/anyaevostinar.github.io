@@ -10,7 +10,7 @@ permalink: /Classes/
 
 CS 111: Introduction to Computer Science ([Syllabus](/classes/111-w24/syllabus), Schedule)
 
-CS 201: Data Structures ([Syllabus](/classes/201-w24/syllabus), [Schedule])
+CS 201: Data Structures ([Syllabus](/classes/201-w24/syllabus), [Schedule](/classes/201-w24/schedule))
 
 ## Future Classes
 Subject to change!
