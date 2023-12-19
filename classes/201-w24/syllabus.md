@@ -4,6 +4,8 @@ title: CS201 Data Structures W24 Syllabus
 permalink: /classes/201-w24/syllabus
 ---
 
+[Schedule](schedule)
+
 * [Quick Facts](#quick-facts)
 * [Overview and Learning Goals](#overview-and-learning-goals)
 * [Course Expectations](#course-expectations)

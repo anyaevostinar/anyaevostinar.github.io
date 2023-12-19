@@ -4,6 +4,8 @@ title: CS111 Introduction to Computer Science F22 Syllabus
 permalink: /classes/111-w24/syllabus
 ---
 
+[Schedule](schedule)
+
 ## Table of Contents
 
 * [Quick Facts](#quick-facts)

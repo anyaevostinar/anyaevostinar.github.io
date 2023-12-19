@@ -4,9 +4,11 @@ title: CS111 Introduction to Computer Science W24 Schedule
 permalink: /classes/111-w24/schedule
 ---
 
+[Syllabus](syllabus)
+
 This is a rough schedule of topics for each day and the release and due dates for each homework assignment.  
 
-**Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses.
+**Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses. Most of the links will be dead until closer to the date.
 
 Preparation should be completed **before** the class day that they are listed. Class is structured expecting that you have completed the preparation activities and responded to them on Moodle.
 

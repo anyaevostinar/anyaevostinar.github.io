@@ -4,6 +4,8 @@ title: CS201 Data Structures W24 Schedule
 permalink: /classes/201-w24/schedule
 ---
 
+[Syllabus](syllabus)
+
 This is a rough schedule of topics for each day and the release and due dates for each homework assignment.
 
 Class topics and homework information may change over the course of the term. Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses. However, I will put all relevant links on this page, so consider this a quick reference for what we have seen so far (that is easier to search than Moodle). Many of the links for future content will be invalid until we get closer to that date.
