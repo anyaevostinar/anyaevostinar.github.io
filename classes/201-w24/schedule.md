@@ -15,7 +15,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Date	| Homework/Preparation Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Java | |
-| W 1/3| Reading: [Syllabus](Syllabus), this schedule, [collaboration policies](collaboration); Fill out Background Survey| [Java Scavenger Hunt](java_scavenger)| |
+| W 1/3| [Intro Prep](intro-prep) | [Java Scavenger Hunt](java_scavenger)| |
 | F 1/5 | Reading: [Jumping into Java](jumping_java) | First Java Program |	[HW1: Object-Oriented Practice](hw1-oop-practice) |
 | Week 2 | | Intermediate Java | |
 | M 1/8 |	| [Inheritance](inheritance-activity) |	 |
