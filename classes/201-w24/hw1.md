@@ -55,7 +55,7 @@ Total pages: 120
 ```
 
 Additionally, your submission should:
-* Follow the style guide
+* Be well-styled, considering consistency and readability 
 * Have JavaDocs-style method comments for all public methods
 * Have a detailed `README.md` file as specified below
 
