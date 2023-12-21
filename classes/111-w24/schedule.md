@@ -34,8 +34,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 1/31 | [Functions Prep 2](functions2-prep) | [Return of the Functions](lab-functions2) | |
 | 2/2 |	[Indefinite Loops Prep](while-prep);  [HW4](hw4)	|  [Using While Loops](while-loops)	| [HW5](hw5) |
 | **Week 6** | **Objects and Classes** |  | |
-| 2/5 | [Dictionaries Prep](dictionaries-prep) |	[Quiz 5](quiz5);[Using Dictionaries](dictionaries)	| |
-| 2/7	| |	Mid-term Break!	| |
+| 2/5 |  |	Midterm break!	| |
+| 2/7	| [Dictionaries Prep](dictionaries-prep) |	[Quiz 5](quiz5);[Using Dictionaries](dictionaries)	| |
 | 2/9 | [OOP Preparation](oop1-prep); HW5  |  [Graphics Intro Lab](graphics-intro)	| [HW6](hw6) |
 | **Week 7**| **Recursion and Efficiency**|  | |
 | 2/12 | [Working with Classes](oop2-prep)	| [Quiz 6](quiz6); [Creating Flower Classes](creating-classes)	|  |
@@ -43,7 +43,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 2/16 | [Algorithm Analysis Prep](analysis-prep); HW6 |	 [Analyzing Algorithms](efficiency)		 | [HW7](hw7) |
 | **Week 8** | **Searching and Sorting** |   | |
 | 2/19 | [Lists and Dictionary Analysis Prep](list-efficiency-prep)	 | [Quiz 7](quiz7);  [Efficiency of Python Lists and Dictionaries](lab-efficiency2)	|  |
-| 2/21 | [Searching Prep](searching-prep) |	(Guest Prof) Sequential and Binary Search	| |
+| 2/21 | [Searching Prep](searching-prep) |	Sequential and Binary Search	| |
 | 2/23 | 	[Sorting Prep 1](sorting-basic-prep); HW7	 | [Slow(ish) Sorting Algorithms](slow-sorting) | |	
 | **Week 9** | **Final Project**|  | |
 | 2/26 | [Sorting Prep 2](mergesort-prep); [Final Project Info](final-project)	| [Mergesort](MergeSortWorksheet_111F22.pdf) and Final Project  | [Final Project Proposal](final-project#project-proposal)	 |
@@ -55,4 +55,4 @@ Preparation should be completed **before** the class day that they are listed. C
 | 3/9 | Study! | [Quiz 9](quiz9); Wrap-up and course evals | |
 | Exam Period | | | |
 | W 3/13 12-2:30pm | | [Quiz 10]() (No new learning objectives) | | 
-| | All revisions due Wednesday, 3/13, 6pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time.|  | |
+| |  | All revisions due Wednesday, 3/13, 6pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time.  | |
