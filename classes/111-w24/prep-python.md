@@ -30,7 +30,6 @@ You should complete the following Runestone readings [through this Moodle link](
 
 * 1.1-1.4
 * 1.7-1.9
-* Revisit the [collaboration document](collaboration)
 * Optional 1.5-1.6 
 
 ## Checks
