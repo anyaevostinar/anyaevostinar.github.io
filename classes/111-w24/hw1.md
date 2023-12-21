@@ -17,12 +17,12 @@ The goal of this assignment is two-fold: to get started with basic Python progra
 ## Setup
 I recommend that you complete this assignment in Olin 310.
 
-[Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=Fall+2022%3A+CS+111+and+201+workflow+in+CS+labs) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
+[Mount the COURSES drive](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=152558) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `HW1`
 * Open your `HW1` folder in VSCode
 * Create two files `helloworld.py`, and `input.py`.
 
-If you really want to use your personal machine, there are instructions for installing VSCode and Python available: [Mac](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=153181) and [Windows](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=153195). You can also [remotely connect to COURSES](https://wiki.carleton.edu/display/carl/How+to+Map+the+Courses+Network+Drive+on+Personal+Machines). If you run into trouble with these setups, you can ask me or Mike Tie for help, but I do really recommend just working in Olin 310.
+If you really want to use your personal machine, there are instructions for installing VSCode and Python available: [Mac](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=153181) and [Windows](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=153195). You can also [remotely connect to COURSES](https://stolafcarleton.teamdynamix.com/TDClient/2092/Carleton/KB/ArticleDet?ID=148546). If you run into trouble with these setups, you can ask me or Mike Tie for help, but I do really recommend just working in Olin 310.
 
 ## Hello World
 

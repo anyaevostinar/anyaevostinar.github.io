@@ -23,7 +23,7 @@ This lab will guide you through making a reference sheet of the important things
 
 b. Download the [Comparing Python and Java](Comparing-Python-and-Java.zip) project.
 
-c. (If you haven't already) [Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=Fall+2022%3A+CS+111+and+201+workflow+in+CS+labs) and move your project into your STUWORK folder so that you don't lose it. **If you don't do this, everything you write will disappear when you log out!!!!**
+c. (If you haven't already) [Mount the COURSES drive](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=152558) and move your project into your STUWORK folder so that you don't lose it. **If you don't do this, everything you write will disappear when you log out!!!!**
 
 c. Open VSCode.
 
