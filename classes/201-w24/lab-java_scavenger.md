@@ -98,3 +98,14 @@ java Hello
 ```
 
 Put those two commands in your reference sheet as well.
+
+## Extra
+If you finish all of that early, try changing the `Die` class so that it rolls the dice one-by-one and waits for the user to tell it to roll the next one (or two?), using the following code hints:
+
+```java
+import java.util.Scanner;
+
+Scanner input = new Scanner(System.in);
+String newString = input.next();
+Integer newInt = input.nextInt();
+```
