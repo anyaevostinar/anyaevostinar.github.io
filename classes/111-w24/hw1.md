@@ -29,7 +29,7 @@ If you really want to use your personal machine, there are instructions for inst
 * In `helloworld.py` type out the following (don't copy and paste, copying even comments in Python often leads to weird errors):
 ```python
 # helloworld.py
-# CS 111, Fall 2022
+# CS 111, Winter 2024
 # This is the traditional first program to write in any programming language.
 ```
 This is a header.
