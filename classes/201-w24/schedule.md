@@ -16,7 +16,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Java | |
 | W 1/3| [Intro Prep](intro-prep) | [Java Scavenger Hunt](java_scavenger)| |
-| F 1/5 | Reading: [Jumping into Java](jumping_java) | First Java Program |	[HW1: Object-Oriented Practice](hw1-oop-practice) |
+| F 1/5 | [Starting Java Prep](java-prep) | First Java Program |	[HW1: Object-Oriented Practice](hw1-oop-practice) |
 | Week 2 | | Intermediate Java | |
 | M 1/8 |	| Quiz 1; [Inheritance](inheritance-activity) |	 |
 | W 1/10 | 	|	[ArrayLists and Interfaces](interface-lab)	| |
