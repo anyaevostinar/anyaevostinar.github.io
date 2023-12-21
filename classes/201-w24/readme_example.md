@@ -19,23 +19,23 @@ With this program, you can:
 
 ## Usage
 To use the Dragon Item Program, run the following after downloading the code:
-```
-$ javac *.java
-$ java DragonItem mode
-```
+    ```
+    $ javac *.java
+    $ java DragonItem mode
+    ```
 where `mode` is which mode you would like the program to run in. 
 The options are `pirate` and `dragon` and will determine whether the program writes to you in pirate voice or dragon voice.
 
 The program will then ask you what you'd like to do:
-```
-$ javac *.java
-$ java DragonItem dragon
-Welcome mortal, would you like to browse the collection or enter a new item? (browse/new)
-$ new
-Acceptable, what is the name of the new item?
-$ 2021 Notebook
-Wonderful, what is the description of the new item? Be sure to mention the dragon-related aspects, they are all that really matters after all....
-$ Lined notebook with purple dragon on the cover, sitting on a stack of books and sipping coffee
-```
+    ```
+    $ javac *.java
+    $ java DragonItem dragon
+    Welcome mortal, would you like to browse the collection or enter a new item? (browse/new)
+    $ new
+    Acceptable, what is the name of the new item?
+    $ 2021 Notebook
+    Wonderful, what is the description of the new item? Be sure to mention the dragon-related aspects, they are all that really matters after all....
+    $ Lined notebook with purple dragon on the cover, sitting on a stack of books and sipping coffee
+    ```
 
 ```
