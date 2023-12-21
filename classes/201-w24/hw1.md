@@ -101,6 +101,7 @@ If you see a message like this, you should follow the instructions and add `-Xli
 To **demonstrate proficiency**, your program needs to:
 * Pass all tests on Gradescope
 * Follow the specification of the `Book` class
+* Use the `Book` class effectively
 * Have a README with an overview and example
 * Have JavaDocs documentation for all public methods
 * Be somewhat well-styled
@@ -108,6 +109,7 @@ To **demonstrate proficiency**, your program needs to:
 To **demonstrate mastery**, your program needs to:
 * Demonstrate proficiency
 * Use private variables correctly
+* Use programming elements such as loops, conditionals, and lists effectively
 * Be extremely well-styled and clear by choosing descriptive variable names and including useful comments 
 * Have a thorough and well-styled README
 * Have clear and thorough documentation
