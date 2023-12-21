@@ -30,4 +30,4 @@ You should read the [reading assignment through Moodle](https://moodle.carleton.
 * 1.1-1.7 (things you can skim: Array, switch, Boolean Operators)
 
 ## Checks
-You should complete the reading check on Moodle.
+You should complete the reading checks embedded in the reading assignment on Moodle.
