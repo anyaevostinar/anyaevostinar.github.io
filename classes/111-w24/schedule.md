@@ -15,8 +15,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | Date	| Homework/Reading Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Algorithmic Thinking** |  | |
-| W 1/3 | [Start of Class Prep](intro-prep) | Intro to the class |  |
-| F 1/5 | [Intro Python Prep](python-prep) | [Starting with Python](getting-started)  | [HW1](hw1)	 |
+| W 1/3 | [Start of Class Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1qv7pLo0NQhIm5L8mH_FEHtS66DaE_SgzJxmLP5KqBYk/edit?usp=sharing), Intro to the class |  |
+| F 1/5 | [Intro Python Prep](python-prep) | [Slides](https://docs.google.com/presentation/d/1KT39m3rPrhkUVLDkUuaAA5vTVDqqjv3ct3ve37M3Dd4/edit?usp=sharing), [Starting with Python](getting-started)  | [HW1](hw1)	 |
 | **Week 2** | **Building Blocks Part 1** |  | |
 | 1/8 | [Building Blocks Prep](build-blocks-prep) | [Quiz 1](quiz1); [Values, Operations, and Types](building-blocks) | | 
 | 1/10 | [Variables Prep](variables-prep)	| [Variables and Evaluation](variables) |	 |
