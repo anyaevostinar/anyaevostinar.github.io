@@ -13,7 +13,7 @@ Switch off the typing duties so that you each type for roughly half of the time.
 
 You are able to get help from many sources as detailed in the [collaboration](collaboration) policy.
 
-This assignment is due on Friday Jan 12th at 10pm. 
+This assignment is due on Friday Jan 19th at 10pm. 
 As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.
 
 ## Goals
