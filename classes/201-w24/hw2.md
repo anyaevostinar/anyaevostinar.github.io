@@ -4,6 +4,12 @@ title: HW 2 Country Stats Displayer
 permalink: /classes/201-w24/hw2
 ---
 
+* [Logistics](#logistics)
+* [Specification](#specification)
+* [Advice](#advice)
+* [README](#readme)
+* [Assessment](#assessment)
+
 ## Logistics
 This is a paired assignment, so you should complete it with your assigned partner, if you have one, via **paired programming**. 
 The whole time that you are working, you should both be present and actively working on the problem at hand. 
@@ -15,10 +21,10 @@ You are able to get help from many sources as detailed in the [collaboration](co
 This assignment is due on Friday Jan 19th at 10pm. 
 As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.
 
-## Goals
+### Goals
 To build a non-trivial program with Java that works with Java's ArrayLists and/or HashMaps and classes.
 
-## Setup and Requirements
+### Setup
 Again, I recommend you complete the programming portion in Olin 310. 
 
 [Mount the COURSES drive](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=152558) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
