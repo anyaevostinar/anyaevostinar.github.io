@@ -18,7 +18,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 1/3| [Intro Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1VW51d9Oo4cZOt1euV9U1dllRZCXSfHojlPVQ9DArNqQ/edit), [Java Scavenger Hunt](java_scavenger)| |
 | F 1/5 | [Starting Java Prep](java-prep) | [Slides](https://docs.google.com/presentation/d/1GalKVDubBhzVOX-ivQn3BLFyUbEPs15L-txZLhjlVOA/edit?usp=sharing), [Getting Started Lab](getting-started) |	[HW1: Object-Oriented Practice](hw1-oop-practice) |
 | Week 2 | | Intermediate Java | |
-| M 1/8 |	| [Quiz 1](quiz1); [Inheritance](inheritance-activity) |	 |
+| M 1/8 | [OOP Prep](oop-prep)	| [Quiz 1](quiz1); [Inheritance](inheritance-activity) |	 |
 | W 1/10 | 	|	[ArrayLists and Interfaces](interface-lab)	| |
 | F 1/12 | HW1 |		Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|
 | Week 3 | | Stacks and Queues | |
