@@ -54,7 +54,7 @@ Try to come up with test input that will check for all the types of cases that y
 
 
 ## Extra
-If you finish early, work on some of the [end of chapter exercises](https://runestone.academy/ns/books/published/intro-cs/SimplePythonData/Exercises.html) for more practice.
+If you finish early, work on some of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=902144) for more practice.
 
 ## Acknowledgements
 This lab is adapted from labs by Profs. James Ryan and Eric Alexander.
