@@ -96,6 +96,23 @@ If you see a message like this, you should follow the instructions and add `-Xli
 ```
 (Add this to your reference sheet!)
 
+* Throughout the course you’ll be required to include informative comments above each method in “JavaDocs” style. This style allows for a website to be generated with those comments nicely formatted and looking like the Java documentation that you’ll become quite familiar with.
+
+    JavaDocs style is the following:
+
+    ```java
+    /**
+    * Generally descriptive few sentences about the method.
+    * @param nameOfParameter description of the parameter if useful, probably should mention the type
+    * @param anotherParameter if you have multiple parameters
+    * @return description of what if anything is returned, should definitely mention the type
+    */
+    public int exampleMethod(int nameOfParameter, int anotherParameter){
+    return 0;
+    }
+    ```
+
+
 ## Assessment
 
 To **demonstrate proficiency**, your program needs to:
