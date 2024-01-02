@@ -78,4 +78,4 @@ If you didn't already, go back and add JavaDocs method documentation for each of
 
 ## Extra
 
-If you finish early, work on the exercises linked through Moodle. Some of them go beyond the Java syntax that we're focused on, but feel free to refer to the included readings to learn more!
+If you finish early, work on the [exercises linked through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=902252). Some of them go beyond the Java syntax that we're focused on, but feel free to refer to the included readings to learn more!
