@@ -21,9 +21,9 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the [reading assignment through Moodle](), which covers the following sections of OpenDSA's CS2:
+You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=902218), which covers the following sections of OpenDSA's CS2:
 
-* [2.1](https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS2/html/IntroOO.html)
+* 2.1 Introduction to Object Oriented Programming
 
 ## Checks
 You should complete the reading checks embedded in the reading assignment on Moodle.
