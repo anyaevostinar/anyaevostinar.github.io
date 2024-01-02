@@ -7,7 +7,7 @@ permalink: /classes/111-w24/building-blocks
 Make a folder for today's lab in COURSES ([here are the instructions from the previous lab](getting-started)).
 
 ## Exercise 1
-Work through the expressions listed below, one at a time, with your partner. For each expression, you should work together to predict a) the value produced by the expression, and b) the data type of that value. Write down your predictions on the worksheet. For instance, the expression `2 + 2` produces the value 4, which has the type `int` (for integer). Once you’ve made your prediction(s) for an expression, type in the corresponding Python code to see if you’re right and write down the actual output and type on your worksheet.
+Work through the expressions listed below, one at a time, with your partner. For each expression, you should work together to predict a) the value produced by the expression, and b) the data type of that value. **Write down your predictions on the worksheet.** For instance, the expression `2 + 2` produces the value 4, which has the type `int` (for integer). Once you’ve made your prediction(s) for an expression, **type in the corresponding Python code to see if you’re right and write down the actual output** and type on your worksheet.
 
 The easiest way to test your predictions will be to type in the code in an interactive session with the Python interpreter. As a reminder, you can start an interactive session with a Python interpreter by typing the command `python3` in Terminal, which you can pull up from the bottom of VSCode. To check the type of the value produced by an expression, use a command like `type(2 + 2)` (this will return the value `int`). 
 
