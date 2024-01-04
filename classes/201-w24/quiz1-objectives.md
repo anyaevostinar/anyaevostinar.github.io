@@ -11,7 +11,7 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 1. Defining variables with appropriate type in Java
 2. Writing loops (definite and indefinite) in Java
 3. Writing conditional statements in Java
-4. Defining functions in Java
+4. Defining methods in Java
 5. Instantiating and using objects in Java
 
 ## Suggestions
