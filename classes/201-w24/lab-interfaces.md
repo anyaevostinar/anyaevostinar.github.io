@@ -5,7 +5,7 @@ permalink: /classes/201-w24/interface-lab
 published: true
 ---
 
-This is a lab assignment and so you will not be submitting it. However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
+This is a lab assignment and so you will not be submitting it. However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
 
 ## Goals
 To work out what it means to implement an interface, see one advantage of having interfaces in practice, and try out working with Lists.
