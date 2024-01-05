@@ -19,7 +19,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 1/5 | [Starting Java Prep](java-prep) | [Slides](https://docs.google.com/presentation/d/1GalKVDubBhzVOX-ivQn3BLFyUbEPs15L-txZLhjlVOA/edit?usp=sharing), [Getting Started Lab](getting-started) |	[HW1: Object-Oriented Practice](hw1-oop-practice) |
 | Week 2 | | Intermediate Java | |
 | M 1/8 | [OOP Prep](oop-prep)	| [Quiz 1](quiz1); [Inheritance](inheritance-activity) |	 |
-| W 1/10 | [Interfaces Prep](interfaces-prep) 	|	[ArrayLists and Interfaces](interface-lab)	| |
+| W 1/10 | [Interfaces Prep](interfaces-prep) 	|	[Slides](https://docs.google.com/presentation/d/1GqbzJ7bFyviOqDIsDaNas7GsXWaBmShSgABOCWV2A34/edit?usp=sharing), [ArrayLists and Interfaces](interface-lab)	| |
 | F 1/12 | HW1; [Generics Prep](generics-prep) |		Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|
 | Week 3 | | Stacks and Queues | |
 | M 1/15 | | Quiz 2; [Linked Data Structures](linked-structures)	| |
