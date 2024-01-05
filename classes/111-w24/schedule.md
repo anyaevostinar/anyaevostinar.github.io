@@ -18,8 +18,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 1/3 | [Start of Class Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1qv7pLo0NQhIm5L8mH_FEHtS66DaE_SgzJxmLP5KqBYk/edit?usp=sharing), Intro to the class |  |
 | F 1/5 | [Intro Python Prep](python-prep) | [Slides](https://docs.google.com/presentation/d/1KT39m3rPrhkUVLDkUuaAA5vTVDqqjv3ct3ve37M3Dd4/edit?usp=sharing), [Starting with Python](getting-started)  | [HW1](hw1)	 |
 | **Week 2** | **Building Blocks Part 1** |  | |
-| 1/8 | [Building Blocks Prep](build-blocks-prep) | [Quiz 1](quiz1); [Building Blocks Lab](building-blocks) | | 
-| 1/10 | [Variables Prep](variables-prep)	| [Variables and Evaluation](variables) |	 |
+| 1/8 | [Building Blocks Prep](build-blocks-prep) | [Quiz 1](quiz1); [Slides](https://docs.google.com/presentation/d/1o5-w73r9cBxqXQ3zWEbaTNCbkr596Ednzp_dxhgl918/edit?usp=sharing),  [Building Blocks Lab](building-blocks) | | 
+| 1/10 | [Variables Prep](variables-prep)	| [Slides](https://docs.google.com/presentation/d/1daGwKhqrUNkO1PzdBffKVienZdFgVBUxsxSBqnsS6vk/edit?usp=sharing), [Variables and Evaluation](variables) |	 |
 | 1/12 | [Modules Prep](turtle-prep); HW1 |  [Random Turtles](random-turtle)	| [HW2](hw2) |
 | **Week 3** | **Building Blocks Part 2** |  | |
 | 1/15 | [Sequences Prep](sequences-prep) | [Quiz 2](quiz2); [Using Sequences](sequences)	| |
