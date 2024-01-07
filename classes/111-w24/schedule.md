@@ -20,7 +20,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 2** | **Building Blocks Part 1** |  | |
 | 1/8 | [Building Blocks Prep](build-blocks-prep) | [Quiz 1](quiz1); [Slides](https://docs.google.com/presentation/d/1o5-w73r9cBxqXQ3zWEbaTNCbkr596Ednzp_dxhgl918/edit?usp=sharing),  [Building Blocks Lab](building-blocks) | | 
 | 1/10 | [Variables Prep](variables-prep)	| [Slides](https://docs.google.com/presentation/d/1daGwKhqrUNkO1PzdBffKVienZdFgVBUxsxSBqnsS6vk/edit?usp=sharing), [Variables and Evaluation](variables) |	 |
-| 1/12 | [Modules Prep](turtle-prep); HW1 |  [Random Turtles](random-turtle)	| [HW2](hw2) |
+| 1/12 | [Modules Prep](turtle-prep); HW1 |  [Slides](https://docs.google.com/presentation/d/1o5gH_ggOdBno0lhxaocqsv4fl0SdUkbnoRJrHDEUg0U/edit?usp=sharing), [Random Turtles](random-turtle)	| [HW2](hw2) |
 | **Week 3** | **Building Blocks Part 2** |  | |
 | 1/15 | [Sequences Prep](sequences-prep) | [Quiz 2](quiz2); [Using Sequences](sequences)	| |
 | 1/17 | [Iteration Prep](iteration-prep)	| [Iteration Lab](iteration-lab)	| |
