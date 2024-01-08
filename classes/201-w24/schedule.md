@@ -22,7 +22,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 1/10 | [Interfaces Prep](interfaces-prep) 	|	[Slides](https://docs.google.com/presentation/d/1GqbzJ7bFyviOqDIsDaNas7GsXWaBmShSgABOCWV2A34/edit?usp=sharing), [ArrayLists and Interfaces](interface-lab)	| |
 | F 1/12 | HW1; [Generics Prep](generics-prep) |		[Slides](https://docs.google.com/presentation/d/1H00OHU7Eyi8kVk_rb0_PmLN5uJr-A3c8jyJLq5GQXpM/edit?usp=sharing), Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|
 | Week 3 | | Stacks and Queues | |
-| M 1/15 | | Quiz 2; [Linked Data Structures](linked-structures)	| |
+| M 1/15 | | Quiz 2; Guest professor, Linked Lists	| |
 | W 1/17 | Reading: [Fairytales about Stacks and Queues](http://computationaltales.blogspot.com/2011/04/stacks-queues-priority-queues-and.html)  |	[Queues](queues) |  |
 | F 1/19 | HW2 |		Stacks	| [HW3: Maze Solver](hw3) |
 | Week 4 | | Efficiency and Lists | |
