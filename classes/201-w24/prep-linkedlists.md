@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Linked Lists Preparation
-permalink: /classes/201-w24/ll-prep
+permalink: /classes/201-w24/linkedlist-prep
 ---
 
 ## Overview
