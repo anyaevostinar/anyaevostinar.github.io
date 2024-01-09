@@ -21,11 +21,11 @@ Preparation should be completed **before** the class day that they are listed. C
 | M 1/8 | [OOP Prep](oop-prep)	| [Quiz 1](quiz1); [Inheritance](inheritance-activity) |	 |
 | W 1/10 | [Interfaces Prep](interfaces-prep) 	|	[Slides](https://docs.google.com/presentation/d/1GqbzJ7bFyviOqDIsDaNas7GsXWaBmShSgABOCWV2A34/edit?usp=sharing), [ArrayLists and Interfaces](interface-lab)	| |
 | F 1/12 | HW1; [Generics Prep](generics-prep) |		[Slides](https://docs.google.com/presentation/d/1H00OHU7Eyi8kVk_rb0_PmLN5uJr-A3c8jyJLq5GQXpM/edit?usp=sharing), Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|
-| Week 3 | | Stacks and Queues | |
+| Week 3 | | Linear ADTs | |
 | M 1/15 | [Linked Lists Prep](linkedlist-prep) | [Quiz 2](quiz2); Guest professor, Linked Lists	| |
 | W 1/17 | [Queues Prep](queues-prep)  |	[Queues](queues) |  |
-| F 1/19 | HW2 |		Stacks	| [HW3: Maze Solver](hw3) |
-| Week 4 | | Efficiency and Lists | |
+| F 1/19 | HW2; [Stacks Prep](stacks-prep) |		Stacks	| [HW3: Maze Solver](hw3) |
+| Week 4 | | Efficiency | |
 | M 1/22 | |	Quiz 3; [Asymptotic Analysis](analysis-activity)	| |
 | W 1/24 | | [Linked Lists Part 1](linked-list)	|  |
 | F 1/26 | HW3 |	Linked Lists Part 2	| [HW4: Country Sorter List](hw4)|

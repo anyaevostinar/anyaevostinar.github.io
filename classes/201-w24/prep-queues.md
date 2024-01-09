@@ -23,6 +23,7 @@ After class, you should be able to:
 You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=905631):
 
 * 3.10, 3.11, 3.12, 3.14
+* Optional additional resource: [OpenDSA Queues](https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS2/html/Queue.html)
 * Optional: [Fairytales about Stacks and Queues](http://computationaltales.blogspot.com/2011/04/stacks-queues-priority-queues-and.html)
 
 ## Checks
