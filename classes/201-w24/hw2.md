@@ -39,6 +39,8 @@ The code that you write for this assignment will build on top of Java's ArrayLis
 The [official Java API documentation for ArrayList](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html) will likely be helpful for knowing what methods are supported by the `ArrayList`.
 You may also want to use the documentation for [HashMap](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html).
 
+You may find [this reference page](https://kennethalambert.com/pythontojava/index.htm) helpful for Java syntax.
+
 ## Specification
 For this assignment, you will write a program that reads from a text file with one line for each country.
 You will create two classes, `CountryDisplayer` and `Country`.
