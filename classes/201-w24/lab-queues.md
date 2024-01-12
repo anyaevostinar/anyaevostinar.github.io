@@ -45,7 +45,7 @@ d. Use `System.out.println` to print out the contents of your queue in `main`.
 e. Add multiple items to your test queue and print the contents to see what happens.
 
 
-## Exericse 4
+## Exercise 4
 Finally, we want to also be able to remove items from a queue with `dequeue`.
 
 a. Create a `dequeue` method that returns a `T item` from the head of the queue.
@@ -53,6 +53,9 @@ a. Create a `dequeue` method that returns a `T item` from the head of the queue.
 b. If the queue is empty, return null.
 
 c. Verify via printing that you are able to dequeue several items (print both the dequeued item and the queue to verify the item has been removed).
+
+## Exercise 5
+Make a `size` variable. How can you change your methods based on this variable? Is it worth having?
 
 
 ## Extensions
