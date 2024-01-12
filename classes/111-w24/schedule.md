@@ -23,7 +23,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 1/12 | [Modules Prep](turtle-prep); HW1 |  [Slides](https://docs.google.com/presentation/d/1o5gH_ggOdBno0lhxaocqsv4fl0SdUkbnoRJrHDEUg0U/edit?usp=sharing), [Random Turtles](random-turtle)	| [HW2](hw2) |
 | **Week 3** | **Building Blocks Part 2** |  | |
 | 1/15 | [Sequences Prep](sequences-prep) | [Quiz 2](quiz2); [Using Sequences](sequences)	| |
-| 1/17 | [Iteration Prep](iteration-prep)	| [Iteration Lab](iteration-lab)	| |
+| 1/17 | [Iteration Prep](iteration-prep)	| [Slides](https://docs.google.com/presentation/d/11YVNuLJ6fYLYNjHulYn3k6pb2jUY1BmjEmTdfNi8v1U/edit?usp=sharing), [Iteration Lab](iteration-lab)	| |
 | 1/19 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Conditionals Lab](conditionals-lab)	 | [HW3](hw3) |
 | **Week 4** | **Advanced Blocks** | | |
 | 1/22 | [Debugging Prep](debugging-nested-prep)  |	[Quiz 3](quiz3); [Debugging Strategies and Nested Structures](lab-nested) |  |
