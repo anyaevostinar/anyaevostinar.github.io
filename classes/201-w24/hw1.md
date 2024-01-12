@@ -137,3 +137,10 @@ To **demonstrate mastery**, your program needs to:
 Remember to update your `Collaborations.txt` file with any sources that you consulted.
 
 Then upload all of your files to the Gradescope link on Moodle, at which point the autograder will run and let you know if your code works correctly. You are able to submit your code as many times as you wish before the deadline to fix any issues. If you have questions about what the autograder is telling you is wrong, please ask!
+
+## Addendums
+
+This is additional information/clarifications posted after the homework originally went out.
+
+* The autograder doesn't have newlines after each input value, so `nextLine` won't work unfortunately. You should use `next` instead for this homework. Future autograders will have newlines.
+* You can assume that all book titles are single words without spaces.
