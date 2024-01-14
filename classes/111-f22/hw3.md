@@ -1,19 +1,19 @@
 ---
 layout: page
 title: HW3 
-permalink: /classes/111-f22/hw3
+permalink: /classes/111-w24/hw3
 ---
 
 ## Logistics
 
-This is a paired assignment, so you should complete it with your assigned partner (same one as from HW2), if you have one, via **paired programming**. 
+This is a paired assignment, so you should complete it with your assigned partner for HW3, if you have one, via **paired programming**. 
 The whole time that you are working, you should both be present and actively working on the problem at hand. 
 (Two brains, one keyboard.) 
 Switch off the typing duties so that you each type for roughly half of the time. 
 
 You are able to get help from many sources as detailed in the [collaboration](collaboration) policy.
 
-This assignment is due on Wednesday Oct 5th at 10pm. 
+This assignment is due on Friday January 26th at 10pm. 
 As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.
 
 ## Goals
@@ -23,11 +23,11 @@ Demonstrate your understanding of conditionals and iteration to solve problems a
 
 Again, I recommend you complete the programming portion in Olin 310. 
 
-[Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=CS+111+and+201+workflow+in+CS+labs) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
+[Mount the COURSES drive](getting-started) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `HW3`
 * Open your `HW3` folder in VSCode
 * Create a file `writeout.py`
-* Download the two starter files from Moodle (`bike.py` and the CSV file) and put them into your folder
+* Download the [two starter files from Moodle](https://moodle.carleton.edu/mod/resource/view.php?id=906614) (`bike.py` and the CSV file) and put them into your folder
 
 ## Bikes
 An increasing number of cities in the United States have begun to offer bikeshare programs: there are a number of stations scattered across the city, with kiosks, pay stations, and locked bikes. People can rent a bike for a short period of time, picking up at any one of the stations and dropping off at the same station or any other station. There’s Nice Ride in Minneapolis/St. Paul, Citi Bike in New York, among many others. Here we’ll play around with a bit of data from Capital Bikeshare, in Washington DC. You will have access to a file reporting all rides from Capital Bikeshare in August 2021. (The original data came from https://www.capitalbikeshare.com/system-data; there are a few formatting modifications to make your lives easier.) A typical line of the file is of the form
@@ -167,7 +167,7 @@ To **demonstrate proficiency**, your programs need to:
 * Not have an excessive amount of duplicated code
 
 To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
-* Useful comments
+* Useful comments (and no remaining starter comments such as FIX THIS)
 * Descriptive variable names
 * Good spacing
 * Use iteration and conditionals to prevent any unnecessary duplication of code
