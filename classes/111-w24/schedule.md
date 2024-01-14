@@ -24,7 +24,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 3** | **Building Blocks Part 2** |  | |
 | 1/15 | [Sequences Prep](sequences-prep) | [Quiz 2](quiz2); [Using Sequences](sequences)	| |
 | 1/17 | [Iteration Prep](iteration-prep)	| [Slides](https://docs.google.com/presentation/d/11YVNuLJ6fYLYNjHulYn3k6pb2jUY1BmjEmTdfNi8v1U/edit?usp=sharing), [Iteration Lab](iteration-lab)	| |
-| 1/19 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Conditionals Lab](conditionals-lab)	 | [HW3](hw3) |
+| 1/19 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Slides](https://docs.google.com/presentation/d/19wbtHKn2uzw3wdrANb8NU640_NcjepvImIYyXMlryNI/edit?usp=sharing)[Conditionals Lab](conditionals-lab)	 | [HW3](hw3) |
 | **Week 4** | **Advanced Blocks** | | |
 | 1/22 | [Debugging Prep](debugging-nested-prep)  |	[Quiz 3](quiz3); [Debugging Strategies and Nested Structures](lab-nested) |  |
 | 1/24 | [Mutating Lists Prep](mutating-lists-prep) | [Working with Lists](lab-mutating-lists)	| |
