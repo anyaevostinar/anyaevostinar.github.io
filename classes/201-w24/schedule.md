@@ -24,10 +24,10 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 3 | | Linear ADTs | |
 | M 1/15 | [Linked Lists Prep](linkedlist-prep) | [Quiz 2](quiz2); Guest professor, Linked Lists	| |
 | W 1/17 | [Queues Prep](queues-prep)  |	[Slides](https://docs.google.com/presentation/d/1xg12NcENddz_2ZmWieCM6UsJ5w4Eo6fbfQzlASDPQcg/edit?usp=sharing), [Linked Queues](queues-lab) |  |
-| F 1/19 | HW2; [Stacks Prep](stacks-prep) |		Stacks	| [HW3: Maze Solver](hw3) |
+| F 1/19 | HW2; [Stacks Prep](stacks-prep) |		[Slides](https://docs.google.com/presentation/d/1XD5bKAREEpr9q8DS0qleeO5BcJwOiJcGsxLgWKxYbqA/edit?usp=sharing), [Stacks](stacks)	| [HW3: Maze Solver](hw3) |
 | Week 4 | | Efficiency | |
 | M 1/22 | |	Quiz 3; [Asymptotic Analysis](analysis-activity)	| |
-| W 1/24 | | [Linked Lists Part 1](linked-list)	|  |
+| W 1/24 | | [Linked Lists Revisited](linked-list)	|  |
 | F 1/26 | HW3 |	Linked Lists Part 2	| [HW4: Country Sorter List](hw4)|
 | Week 5 | | Recursion and Sorting | |
 | M 1/29 | |	Quiz 4; [Array Efficiency](array-efficiency) | |
