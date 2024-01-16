@@ -209,14 +209,14 @@ To **demonstrate proficiency**, your program needs to:
 * Handle incorrect command-line user input as specified
 * Have a README with an overview, example, and response to the prompt
 * Have JavaDocs documentation for all public methods
-* Be somewhat well-styled
+* Be somewhat [well-styled](style-reference)
 
 To **demonstrate mastery**, your program needs to:
 * Demonstrate proficiency
 * Have clear and helpful output
 * Use private variables correctly and effectively
 * Use programming elements such as `ArrayLists` or `HashMaps` effectively
-* Be extremely well-styled and clear by choosing descriptive variable names and including useful comments 
+* Be extremely [well-styled](style-reference) and clear by choosing descriptive variable names and including useful comments 
 * Have a thorough, well-styled README with thoughtful prompt response
 * Have clear and thorough documentation
 
