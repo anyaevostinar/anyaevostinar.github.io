@@ -28,7 +28,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 4 | | Efficiency | |
 | M 1/22 | [Asymptotic Analysis Prep](analysis-prep)|	Quiz 3; [Asymptotic Analysis](analysis-activity)	| |
 | W 1/24 | [Built-in Complexity Prep](built-in-prep) | [Linked Lists Revisited](linked-list)	|  |
-| F 1/26 | HW3 |	Linked Lists Part 2	| [HW4: Country Sorter List](hw4)|
+| F 1/26 | [HW3](hw3), [Ordered List Prep](ordered-list-prep) |	Ordered Linked Lists	| [HW4: Country Sorter List](hw4)|
 | Week 5 | | Recursion and Sorting | |
 | M 1/29 | |	Quiz 4; [Array Efficiency](array-efficiency) | |
 | W 1/31 |		| [Recursion](recursion)	|  |
