@@ -23,6 +23,8 @@ I recommend that you complete this assignment in Olin 310.
 
 If you really want to use your personal machine, there are instructions for installing VSCode and Java available: [Mac](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=153179) and [Windows](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=153191). You can also [remotely connect to COURSES](https://stolafcarleton.teamdynamix.com/TDClient/2092/Carleton/KB/ArticleDet?ID=148546). If you run into trouble with these setups, you can ask me or Mike Tie for help, but I do really recommend just working in Olin 310.
 
+You may find [resources on this list](resources) helpful for Java-specific things.
+
 ## Specification
 For this project, you will make a simple `Book` class with the following functionality:
 * Constructor that takes a `String` for the title of the book and an `Integer` for the page count and sets them to private instance variables

@@ -21,6 +21,8 @@ The code that you write for this assignment will build on top of the Stack ADT a
 
 Create a file Collaborations.txt and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the [Collaboration page](collaboration) on what collaborations are allowed for homework assignments.
 
+You may find [resources on this list](resources) helpful for Java-specific things.
+
 ## Specification
 In this assignment, you will load in a maze from a file and solve the maze, printing the maze either with or without the solution marked. I've provided you with a `load` and `print` method and with most of the `MazeSquare` class.
 You will implement a `LinkedStack` and the method for solving the maze.
