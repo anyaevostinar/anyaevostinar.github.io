@@ -26,7 +26,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 1/17 | [Iteration Prep](iteration-prep)	| [Slides](https://docs.google.com/presentation/d/11YVNuLJ6fYLYNjHulYn3k6pb2jUY1BmjEmTdfNi8v1U/edit?usp=sharing), [Iteration Lab](iteration-lab)	| |
 | 1/19 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Slides](https://docs.google.com/presentation/d/19wbtHKn2uzw3wdrANb8NU640_NcjepvImIYyXMlryNI/edit?usp=sharing)[Conditionals Lab](conditionals-lab)	 | [HW3](hw3) |
 | **Week 4** | **Advanced Blocks** | | |
-| 1/22 | [Debugging Prep](debugging-nested-prep)  |	[Quiz 3](quiz3); [Debugging Strategies and Nested Structures](lab-nested) |  |
+| 1/22 | [Debugging Prep](debugging-nested-prep)  |	[Quiz 3](quiz3); [Slides](https://docs.google.com/presentation/d/1_9fpvGqHKv5Lr_SYt1bv0jaw-Il-37qgByXNVXCep0I/edit?usp=sharing),  [Debugging Strategies and Nested Structures](lab-nested) |  |
 | 1/24 | [Mutating Lists Prep](mutating-lists-prep) | [Working with Lists](lab-mutating-lists)	| |
 | 1/26 | [Files Prep](files-prep); [HW3](hw3)	| [Working with Files](files)	| [HW4](hw4) |
 | **Week 5** | **Functions** |  | |

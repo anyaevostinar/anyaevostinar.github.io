@@ -172,7 +172,7 @@ Some notes:
 * Digits, spaces, and punctuation should be printed out as they are, without being rotated at all.
 * The `ord()` function converts characters into their ASCII value (e.g., `ord("a")` will return 97, `ord("z")` will return 122). I've included a conversion chart on Moodle to make it easy to check.
 * The `chr()` function goes in the opposite direction, converting an ASCII value to a string (e.g., `chr(97)` returns "a", `chr(122)` returns "z").
-* You may also find [this list of Python string methods](https://docs.python.org/3/library/stdtypes.html#string-methods) helpful for reference and [section 9.9 of your textbook](https://runestone.academy/ns/books/published/intro-cs/TransformingSequences/NonmutatingMethodsonStrings.html)
+* You may also find [this list of Python string methods](https://docs.python.org/3/library/stdtypes.html#string-methods) helpful for reference and [section 9.9 of your textbook](https://moodle.carleton.edu/mod/lti/view.php?id=907737)
 
 ## Exercise 6
 Write another Python program that will *encrypt* a message for a user, so it will move every letter forward in the alphabet by 13. 
