@@ -25,7 +25,7 @@ Again, I recommend you complete this assignment in Olin 310, though it isn't req
 [Mount the COURSES drive](getting-started) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `HW4`
 * Open your `HW4` folder in VSCode
-* Download the starter code that is linked on Moodle and move the starter files into your folder
+* Download the starter code that is [linked on Moodle](https://moodle.carleton.edu/mod/resource/view.php?id=908003) and move the starter files into your folder
 
 Both of these programs use command-line arguments as input to the program. 
 Remember, those are things typed at the prompt in Terminal. 
@@ -175,7 +175,7 @@ To **demonstrate proficiency**, your programs need to:
 * Not have an excessive amount of duplicated code
 
 To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
-* Useful comments
+* Useful comments (and non-useful starter ones removed)
 * Descriptive variable names
 * Good spacing
 * Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code
