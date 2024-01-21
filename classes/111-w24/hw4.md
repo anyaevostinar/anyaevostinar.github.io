@@ -5,7 +5,7 @@ permalink: /classes/111-w24/hw4
 ---
 
 ## Logistics
-This is a paired assignment, so you should complete it with your **new** assigned partner, if you have one, via **paired programming**. 
+This is a paired assignment, so you should complete it with your assigned partner, if you have one, via **paired programming**.  You should continue to work with your partner from homework 3.
 The whole time that you are working, you should both be present and actively working on the problem at hand. 
 (Two brains, one keyboard.) 
 Switch off the typing duties so that you each type for roughly half of the time. 
