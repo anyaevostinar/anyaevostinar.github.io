@@ -73,4 +73,4 @@ Let's expand the functionality of your program now that it can take other files.
 If you have extra time, come up with more analysis that you can do on the `us_cities.txt` file.
 For example: Which city has the longest name? How many cities start with each letter of the alphabet?
 
-You can also try some of the [end of chapter exercises](https://runestone.academy/ns/books/published/intro-cs/Files/Exercises.html) and [chapter assessment](https://runestone.academy/ns/books/published/intro-cs/Files/ChapterAssessment.html) for more practice.
+You can also try some of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=908298) and chapter assessment for more practice.
