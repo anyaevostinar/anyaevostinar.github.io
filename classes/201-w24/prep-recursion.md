@@ -21,5 +21,5 @@ After class, you should be able to:
 
 ## Reading
 You should read/watch the following and complete the embedded checks:
-* Runestone [4.1-4.4 & 4.7](https://moodle.carleton.edu/mod/lti/view.php?id=908522)
+* Runestone [4.1-4.4 & 5.11](https://moodle.carleton.edu/mod/lti/view.php?id=908522)
 

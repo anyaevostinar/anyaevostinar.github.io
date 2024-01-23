@@ -29,10 +29,10 @@ Preparation should be completed **before** the class day that they are listed. C
 | M 1/22 | [Asymptotic Analysis Prep](analysis-prep)|	[Quiz 3](quiz3); [Slides](https://docs.google.com/presentation/d/1IBLrqDDTR7VeDf4AAX6qta04u7BIPmF0CqTTW0biGDM/edit?usp=sharing),  [Asymptotic Analysis](analysis-activity)	| |
 | W 1/24 | [Built-in Complexity Prep](built-in-prep) | [Slides](https://docs.google.com/presentation/d/1Xx7a8y-Zf4EyV0w4Pwf1P_aJ03NoyrhDcC6GSEEUZpI/edit?usp=sharing), [Linked Lists Revisited](linked-list-lab)	|  |
 | F 1/26 | [HW3](hw3), [Ordered List Prep](ordered-list-prep) |	Ordered Linked Lists	| [HW4: Country Sorter List](hw4)|
-| Week 5 | [Recursion Prep](recursion-prep) | Recursion and Sorting | |
+| Week 5 |  | Recursion and Sorting | |
 | M 1/29 | [Array Prep](array-prep)|	Quiz 4; [Array Efficiency](array-efficiency) | |
-| W 1/31 |		| [Recursion](recursion)	|  |
-| F 2/2 | HW4|	Quicksort	| [HW5: Quicksort Analysis](hw5) |
+| W 1/31 |	[Recursion Prep](recursion-prep)	| [Recursion](recursion)	|  |
+| F 2/2 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	Quicksort	| [HW5: Quicksort Analysis](hw5) |
 | Week 6 | | Trees | |
 | M 2/5	| |	Mid-term Break!	| |
 | W 2/7 |  |	Quiz 5; [Binary Search Trees](BST-lab)| |
