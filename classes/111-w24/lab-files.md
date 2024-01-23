@@ -14,7 +14,7 @@ Get practice with reading from/writing to files.
 
 ## Exercise 1
 Predict what the following code will do when run:
-```
+```python
 filename = input("What is the file? ")
 
 cur_file = open(filename, 'r')
@@ -39,7 +39,7 @@ This "text file" (hence .txt) contains a short list of the alphabetically first 
 Your task is to make your program:
 1. Open the file,
 2. Iterate over its contents, 
-3. Retrieve all cities from the file that end with either 'y' or 'a'. If you run into trouble, print out each of the last characters to see what they are. They might not be what you expect.
+3. Retrieve all cities from the file that end with either 'y' or 'a'. If you run into trouble, print out each of the last characters to see what they are. Remember that they might not be what you expect.
 4. Place all of the retrieved cities in a list called `selectedCities`. This is a good point to run your code and print out part of the list to make sure that it is doing what you expect.
 6. Create a new file called `selected_us_cities.txt` and write to it such that, once your program finishes running, this file will contain all the city names that you retrieved from the original `us_cities_small.txt` file. Each selected city name should be placed on its own line.
 
