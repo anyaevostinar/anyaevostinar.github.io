@@ -77,6 +77,8 @@ Read through the methods and fill in the JavaDocs documentation.
 ### LinkedStack
 I've provided a `Stack.class` file with the Stack interface and a starter file `LinkedStack.java` with the necessary stubs for the Stack interface and the private `Node` class. Implement each of the methods as specified by the JavaDocs method comment.
 
+Note that VSCode won't quite understand that `Stack.class` exists without `Stack.java` so there might be a squiggly error line underneath `Stack`, but the code will compile just fine still. Don't trust the squiggles!
+
 ### Solving the maze
 Stacks are very useful when solving a maze and a classic algorithm is actually based on this idea. We'll talk about the algorithm more later in the term, but I'll just give you the steps for now:
 

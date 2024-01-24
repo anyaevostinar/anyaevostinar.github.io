@@ -89,7 +89,7 @@ There are all sorts of fascinating questions you could ask about these data. Whe
 
     You should round the number of hours to the nearest integer.
 
-5. Also add code to compute the *average* length of all docked-bike rides in the dataset, in minutes and fix this line:
+5. Also add code to compute the *average* length of all *docked-bike* rides in the dataset, in minutes and fix this line:
 
     ```
     print("The mean docked-bike ride lasted X minutes.") # FIX THIS
