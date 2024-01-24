@@ -33,7 +33,7 @@ score. Note that your program should work for any list in this format, not just 
 in particular, the list can include more or less than 6 Pokemon, though you can assume that it is
 stored in the variable `my_team`. For the example, your program should print out `Articuno`.
 
-You can solve this problem both by looping over the list and by using mostly list methods. You should try to come up with both kinds of solutions.
+If you solved this problem without a loop, using mostly list methods, you should try to come up with a solution that loops over the list.
 
 ## Exercise 3
 Imagine you have a list `example = [1, 2, 3, 4]`. Write a program that rotates the items of that list to the left by one position and then prints `example`:

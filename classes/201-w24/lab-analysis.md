@@ -113,6 +113,9 @@ b. We want to do something similar to 2c to deal with the n<sup>3</sup> term. Ho
 
 c. Even though the expressions are equal when n is 1, we need to respect the inequality for all n larger than n<sub>0</sub> so you should always check a couple of larger values when doing substitutions. We have to change our n<sub>0</sub> so that we can make the substitution. Try out larger values of n until you find one where for it and all values larger than it, 2<sup>n</sup> is larger than n<sup>3</sup>. You could use software to plot both functions and find where they intersect, but for this exercise, you can probably just try a few values.
 
+Here is a plot to give you a hint:
+<iframe src="https://www.desmos.com/calculator/v2dmt3orun?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
 d. With our new n<sub>0</sub>, we know that 2<sup>n</sup> will always be larger than n<sup>3</sup> and so can make the substitution in our expression. 
 
 e. Simplify your expression until you have a value for C and report your values the same as in 2e.
