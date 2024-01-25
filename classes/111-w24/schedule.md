@@ -31,7 +31,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 1/26 | [Files Prep](files-prep); [HW3](hw3)	| [Slides](https://docs.google.com/presentation/d/1oojobOXIRdslZMbHQO-LNHQBNYwXNtyM3NVB6JjrRa8/edit?usp=sharing), [Working with Files](files)	| [HW4](hw4) |
 | **Week 5** | **Functions** |  | |
 | 1/29 | [Functions Prep 1](functions1-prep) |[Slides](https://docs.google.com/presentation/d/1WLpCjihckZckoyjAuYnBON3kdH2RsajoUBLl9OUmDqg/edit?usp=sharing), [Quiz 4](quiz4); [Function Basics](functions1)	 | |
-| 1/31 | [Functions Prep 2](functions2-prep) | [Return of the Functions](lab-functions2) | |
+| 1/31 | [Functions Prep 2](functions2-prep) | [Slides](https://docs.google.com/presentation/d/1OSOZBWSkIPSUrW7AEMbjj4QHJUT_z5jAtn6FZVZGkas/edit?usp=sharing), [Return of the Functions](lab-functions2) | |
 | 2/2 |	[Indefinite Loops Prep](while-prep);  [HW4](hw4)	|  [Using While Loops](while-loops)	| [HW5](hw5) |
 | **Week 6** | **Objects and Classes** |  | |
 | 2/5 |  |	Midterm break!	| |
