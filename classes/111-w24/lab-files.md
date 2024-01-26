@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Files Lab 
-permalink: /classes/111-f22/files
+permalink: /classes/111-w24/files
 ---
 
 This is a lab assignment and so you will not be submitting it.
