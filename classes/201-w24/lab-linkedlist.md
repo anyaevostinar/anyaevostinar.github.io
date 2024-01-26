@@ -21,7 +21,7 @@ a. Create a generic `LinkedList` class (note that we are not implementing the Li
 public class LinkedList<T> {}
 ```
 
-b. **Within** your LinkedList class, copy the private Node class from (`LinkedStructure.java`)[LinkedStructure.java]
+b. **Within** your LinkedList class, copy the private Node class from []`LinkedStructure.java`](LinkedStructure.java)
 
 c. Create a private instance variable to store the `LinkedLists`'s head node:
 ```
