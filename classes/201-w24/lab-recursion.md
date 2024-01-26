@@ -57,4 +57,4 @@ public static void mergesort(int[] array, int[] temp, int start, int end)
 ```
 
 ## Extensions
-There are several more recursion activities on CodingBat to try if you'd like more practice with recursion. You can also look through the end of chapter exercises from the reading.
+There are several more recursion activities on CodingBat to try if you'd like more practice with recursion. You can also look through the end of chapter exercises from the reading. I also have [more recursion exercises](https://anyaevostinar.github.io/classes/111-f22/recursion-lab) for my intro students that you could do in Java.
