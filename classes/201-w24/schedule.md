@@ -36,7 +36,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 6 | | Trees | |
 | M 2/5	| |	Mid-term Break!	| |
 | W 2/7 | [Tree Prep](tree-prep) |	[Quiz 5](quiz5); [Binary Search Trees](BST-lab)| |
-| F 2/9 | HW5| Tree traversals	| [HW6: WordCloud Maker](hw6) |
+| F 2/9 | [HW5](hw5), [Tree Traversals Prep](tree-traversals-prep)| Tree traversals	| [HW6: WordCloud Maker](hw6) |
 | Week 7 | | Advanced Trees | |
 | M 2/12 | |	Quiz 6;	Balanced Binary Search Trees	| |
 | W 2/14 | Reading: [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Sections 12.17.1 & 12.17.3; (Optional) [Heap Computational Fairytale](http://computationaltales.blogspot.com/2011/04/president-of-heap.html)|	[Heaps](heap)		 | |
