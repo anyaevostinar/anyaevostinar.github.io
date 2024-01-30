@@ -173,9 +173,9 @@ To **demonstrate mastery**, your program needs to:
 * Demonstrate proficiency
 * Include two distinct mazes and one unsolvable maze
 * Work on unsolvable mazes correctly
-* Use private variables correctly and effectively
+* Create and use helper methods correctly and effectively
 * Use `LinkedStack` effectively
-* Be extremely [well-styled](style-reference) and clear by choosing descriptive variable names and including useful comments 
+* Be extremely [well-styled](style-reference) and clear by choosing descriptive variable names, using helper methods, and including useful comments 
 * Have a thorough, well-styled README with thoughtful prompt response
 * Have clear and thorough documentation
 
