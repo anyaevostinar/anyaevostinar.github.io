@@ -35,7 +35,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 2/2 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	Quicksort	| [HW5: Quicksort Analysis](hw5) |
 | Week 6 | | Trees | |
 | M 2/5	| |	Mid-term Break!	| |
-| W 2/7 |  |	Quiz 5; [Binary Search Trees](BST-lab)| |
+| W 2/7 | [Tree Prep](tree-prep) |	Quiz 5; [Binary Search Trees](BST-lab)| |
 | F 2/9 | HW5| Tree traversals	| [HW6: WordCloud Maker](hw6) |
 | Week 7 | | Advanced Trees | |
 | M 2/12 | |	Quiz 6;	[2-3 Trees](two-three-tree)	| |
