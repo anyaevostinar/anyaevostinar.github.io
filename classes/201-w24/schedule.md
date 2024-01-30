@@ -35,10 +35,10 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 2/2 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	Quicksort	| [HW5: Quicksort Analysis](hw5) |
 | Week 6 | | Trees | |
 | M 2/5	| |	Mid-term Break!	| |
-| W 2/7 | [Tree Prep](tree-prep) |	Quiz 5; [Binary Search Trees](BST-lab)| |
+| W 2/7 | [Tree Prep](tree-prep) |	[Quiz 5](quiz5); [Binary Search Trees](BST-lab)| |
 | F 2/9 | HW5| Tree traversals	| [HW6: WordCloud Maker](hw6) |
 | Week 7 | | Advanced Trees | |
-| M 2/12 | |	Quiz 6;	[2-3 Trees](two-three-tree)	| |
+| M 2/12 | |	Quiz 6;	Balanced Binary Search Trees	| |
 | W 2/14 | Reading: [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Sections 12.17.1 & 12.17.3; (Optional) [Heap Computational Fairytale](http://computationaltales.blogspot.com/2011/04/president-of-heap.html)|	[Heaps](heap)		 | |
 | F 2/16 |	HW6; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heapsort.html) Section 13.12.1; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Section 12.17.4 |	Uses of Heaps	| [HW7: Flashcard Displayer](hw7) |
 | Week 8 | | Graphs and Hashing | |
