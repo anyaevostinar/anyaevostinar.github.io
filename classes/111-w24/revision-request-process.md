@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Revision Assessment Process
-permalink: /classes/111-f22/revision-process
+permalink: /classes/111-w24/revision-process
 ---
 
 ## Overview
