@@ -5,7 +5,7 @@ permalink: /classes/201-w24/hw6
 ---
 
 ## Logistics
-This is a paired assignment, so you should complete it with your assigned partner, if you have one, via paired programming. You should continue to work with your partner from homework 3. The whole time that you are working, you should both be present and actively working on the problem at hand. (Two brains, one keyboard.) Switch off the typing duties so that you each type for roughly half of the time.
+This is a paired assignment, so you should complete it with your assigned partner, if you have one, via paired programming. The whole time that you are working, you should both be present and actively working on the problem at hand. (Two brains, one keyboard.) Switch off the typing duties so that you each type for roughly half of the time.
 
 You are able to get help from many sources as detailed in the [collaboration policy](collaboration).
 
@@ -107,49 +107,79 @@ public int getCount(String word);
 
 For the methods above that must be recursive, it's fine for each one to call a helper method where the recursion actually takes place, and it's also fine if your method implementation includes some loops, as long as there is recursion as well. (Frequently, you might loop over the children while changing levels in the tree recursively.)
 
-
-### Testing WordCountTree
-As always you should test your code as you implement each method. For each required method in `WordCountTree` **you must have an example of it working** in the `main()` method of `WordCountTree.java`. At minimum these examples should call the method and print the results, though double checking the results would be a good additional thing to do.
-
 ## WordCounter.java
 In order to actually make a word cloud, we need to process a data file and output something useful. 
 I've provided you a `WordCounter` class that will use `WordCountTree` to count the words in a text file. WordCounter counts all of the words in the file except "stop words". A list of stop words is included in the download of files for this assignment (`StopWords.txt`); your WordCounter can assume that this file is present in the same directory where it is being run.
 
-You need to write the `main` of WordCounter to allow for the user to:
+You need to write the `main` of WordCounter to allow for the user to (via command line arguments):
 * specify the file to be counted (you can assume that you'll always use the same `StopWords.txt`)
-* specify the number of words that should be in the word cloud (and you should let the user know if that number is too big given the file they chose)
+* specify the number of words that should be in the word cloud (if the user specifies more than how many words are possible, you should output all the words)
 
-And then you should adapt `printWordCloudHTML` to print the associated HTML of the word cloud (you can see what you're word clouds look like at [here](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro), though it isn't as pretty as the normal ones).
-(If the text contains fewer than the specified number of non-stopwords, then the cloud can just use all the words or you can tell the user that they need to pick a smaller number, and if some words are tied, any method of tie-breaking is fine.)
+You will likely need to slightly adapt `printWordCloudHTML` to print the associated HTML of the word cloud with the correct number of words (you can see what you're word clouds look like at [here](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro), though it isn't as pretty as the normal ones).
+
+Here is an example interaction:
+```bash
+% java WordCounter WutheringHeights.txt 10
+<!DOCTYPE html>
+<head>
+<title>Word Counts</title>
+</head>
+<body>
+<h1>Word Counts</h1>
+<div style="
+ width: 800px;
+ background-color: rgb(250,250,250);
+ border: 5px grey solid;
+text-align: center">
+<span style="color:#880000;font-size:96px;">&nbspheathcliff&nbsp</span>
+<span style="color:#006633;font-size:89px;">&nbspno&nbsp</span>
+<span style="color:#0033FF;font-size:69px;">&nbsplinton&nbsp</span>
+<span style="color:#6600CC;font-size:65px;">&nbspcatherine&nbsp</span>
+<span style="color:#CC0000;font-size:55px;">&nbspmr&nbsp</span>
+<span style="color:#009966;font-size:55px;">&nbspout&nbsp</span>
+<span style="color:#0099FF;font-size:47px;">&nbspup&nbsp</span>
+<span style="color:#CC99FF;font-size:27px;">&nbspnow&nbsp</span>
+<span style="color:#FF99CC;font-size:14px;">&nbspshall&nbsp</span>
+<span style="color:#66FFCC;font-size:14px;">&nbspmust&nbsp</span>
+
+</div>
+</body>
+</html>
+
+
+```
 
 I've provided you with the text of the book Wuthering Heights, which you can use to ultimately test your word cloud maker, though I recommend you initially start with a smaller file.
 The starter code in WordCounter handles normalizing the words to lowercase and remove punctuation.
 
 ## README
 As always, you should include a detailed README for this homework. 
-It should include a brief overview of your project, a short example of how to run your program and see its interesting behavior, and a more detailed section that has **demonstration input or code/line numbers for each of the rubric items**. Remember, you want to make it as easy as possible for the grader to see that your homework does everything its supposed to!
-
-Remember that you should use Word or Google Docs or Markdown to make a nicely formatted README. 
-You should not have a README in plain text!
+It should include a brief overview of your project and a short example of how to run your program and see its interesting behavior.
 
 There is no additional prompt for this homework.
 
-## Grading
-Your code will be graded on the following rubric:
+## Assessment
+To demonstrate proficiency, your program needs to:
 
-|Item | Points |
-|-----|---------|
-|README clear and complete | 6 |
-|incrementCount method implemented correctly | 4 | 
-|incrementCount method example provided | 1 |
-|contains method implemented correctly|4|
-|contains method example provided|1|
-|getCount method implemented correctly|4| 
-|getCount method example provided|1|
-|getNodeCount method implemented correctly|4|
-|getNodeCount example provided|1|
-|WordCounter works as specified | 1 |
-|Good style |1|
-|JavaDocs style documentation | 2 |
+* Pass all tests on Gradescope
+* Follow the specifications for the command-line
+* Implemented `incrementCount`, `contains`, `getCount`, `getNodeCount` and `WordCounter` correctly
+* Be object-oriented
+* Have a README with an overview and example
+* Have JavaDocs documentation for all public methods
+* Be somewhat [well-styled](style-reference)
+
+To **demonstrate mastery**, your program needs to:
+* Demonstrate proficiency
+* Use helper methods correctly and effectively
+* Use the tree structure effectively and efficiently
+* Be extremely [well-styled](style-reference) and clear by choosing descriptive variable names and including only useful comments 
+* Have a thorough, well-styled README with thoughtful prompt response
+* Have clear and thorough documentation
+
+## Submission
+Remember to update your Collaborations.txt file with any sources that you consulted.
+
+Then upload all of your files to the Gradescope link on Moodle, at which point the autograder will run and let you know if your code works correctly. You are able to submit your code as many times as you wish before the deadline to fix any issues. If you have questions about what the autograder is telling you is wrong, please ask!
 
 
