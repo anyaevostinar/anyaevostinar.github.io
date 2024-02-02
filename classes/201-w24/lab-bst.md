@@ -1,28 +1,25 @@
 ---
 layout: page
 title: Binary Search Tree Lab
-permalink: /classes/201-f21/BST-lab
+permalink: /classes/201-w24/BST-lab
 published: true
 ---
+
+This is a lab assignment and so you will not be submitting it. However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
 
 ## Goals
 To better understand binary search trees by implementing some of their methods yourself. You will also get more practice with recursive methods and thinking.
 
-## Logistics
-You should complete this on Wednesday Oct 20th, 2021, but it isn't due until Friday Oct 22nd, 2021 at 5pm. 
-
-You should work on this with your in-class partner, but you both need to submit separately. 
-If you finish it outside of class without your partner, note which sections you completed together and which you completed separately in your `Collaborations.txt`.
-
 ## Setup
-[Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=CS+111+and+201+workflow+in+CS+labs) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
+[Mount the COURSES drive](getting-started) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `BSTLab`
 * Create your `Collaborations.txt` document in that folder
 * Download the [starter code](/classes/201-f21/BST-Starter.zip) and put it into your BSTLab folder
 * Open your BSTLab folder in VSCode
  
 
-## Exercise 1
+## Exercise 0
+(Repeat of what we walked through together.)
 I've provided you with a class `BSTNode` that holds four things:
 * a `String` which is the key for the node and what will be used for ordering the nodes
 * an `int` which is the value for the node, and you can imagine is something that you are trying to store, such as the number of times the key has appeared in a document
@@ -36,7 +33,7 @@ I've also provided you with the start of the `BST` class, which includes a coupl
 
 **Your task:** In `main` you should first create a `BST`, call the `test` method on it, and then call the `printTree()` method to see how things work. Make sure that you understand why the tree prints out the way that it does.
 
-## Exercise 2
+## Exercise 1
 You will next implement the `getHelper` method.
 There are four cases that you need to handle in `getHelper`: the base case and the cases for if the keys are equal, one is less than the other, and vice versa.
 
@@ -46,7 +43,7 @@ There are four cases that you need to handle in `getHelper`: the base case and t
 
 3. In `main` test your `get` method by retrieving the values associated with the keys that are set in the `test` method.
 
-## Exercise 3
+## Exercise 2
 You will now implement the `addHelper` method.
 The construction of this recursive method is a bit more complicated than `get` because you need to attach the node to the tree in the right place.
  
@@ -68,10 +65,4 @@ The construction of this recursive method is a bit more complicated than `get` b
 If you have extra time, try
 * changing `add` and `addHelper` so that instead of returning a `boolean`, they return a `BSTNode` and have a structure more similar to `getHelper`. Be careful with making sure that a duplicate key doesn't erase the previous key.
 * implementing `remove`
-
-## Submission
-Compress your files as a zip, and upload that zip to Moodle under the appropriate assignment.
-Remember that partners need to submit their code separately and you should share the code you wrote in class with your partner.
-
-This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations.txt file) and to use comments in the code to indicate things you tried but what went wrong/where you got stuck.
 
