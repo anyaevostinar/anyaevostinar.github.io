@@ -32,10 +32,10 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 5 |  | Recursion and Sorting | |
 | M 1/29 | [Array Prep](array-prep)|	[Slides](https://docs.google.com/presentation/d/1kDdtAY73DFh_sroQqP7UHrrtlQ7bD6ZSTee9jMt1ozI/edit?usp=sharing), [Quiz 4](quiz4); [Array Efficiency](array-efficiency) | |
 | W 1/31 |	[Recursion Prep](recursion-prep)	| [Slides](https://docs.google.com/presentation/d/1C50pGKi5QcEVn4ze9sphJcOpRVyOvpe3gPNb3DxJ4QQ/edit?usp=sharing), [Recursion](recursion)	|  |
-| F 2/2 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	Quicksort	| [HW5: Quicksort Analysis](hw5) |
+| F 2/2 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	Quicksort	| [Slides](https://docs.google.com/presentation/d/1m0kzx6gRLNB6PXW__64UfH7fhtA07yhQRnWcF9pA79o/edit?usp=sharing), [HW5: Quicksort Analysis](hw5) |
 | Week 6 | | Trees | |
 | M 2/5	| |	Mid-term Break!	| |
-| W 2/7 | [Tree Prep](tree-prep) |	[Quiz 5](quiz5); [Binary Search Trees](BST-lab)| |
+| W 2/7 | [Tree Prep](tree-prep) | [Slides](https://docs.google.com/presentation/d/1uKFmB6EhCFBVLRIoooK8O0wTLgT3tW5Rr1Kx1TrIF_k/edit?usp=sharing); [Quiz 5](quiz5); [Binary Search Trees](BST-lab)| |
 | F 2/9 | [HW5](hw5), [Tree Traversals Prep](tree-traversals-prep)| Tree traversals	| [HW6: WordCloud Maker](hw6) |
 | Week 7 | | Advanced Trees | |
 | M 2/12 | |	Quiz 6;	Balanced Binary Search Trees	| |
