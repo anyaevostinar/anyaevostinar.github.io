@@ -29,8 +29,8 @@ The learning objectives that will ultimately all be assessed via quizzes are:
 17. Comparing pros and cons of different ADTs and data structures
 18. Explaining quicksort
 19. Explaining heapsort
-20. Analyzing time complexity of quicksort
-21. Analyzing time complexity of heapsort
+20. Explaining time complexity of quicksort
+21. Explaining time complexity of heapsort
 22. Using recursion
 23. Using balanced binary search trees
 24. Using heaps
