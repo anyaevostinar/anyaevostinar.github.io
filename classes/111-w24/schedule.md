@@ -35,8 +35,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 2/2 |	[Indefinite Loops Prep](while-prep);  [HW4](hw4)	|  [Slides](https://docs.google.com/presentation/d/1aUDIXMWCxTWODX5tU1i_BiCVm6h-vB_HX5pHmcPrQNs/edit?usp=sharing), [Using While Loops](while-loops)	| [HW5](hw5) |
 | **Week 6** | **Objects and Classes** |  | |
 | 2/5 |  |	Midterm break!	| |
-| 2/7	| [Dictionaries Prep](dictionaries-prep) |	[Quiz 5](quiz5);[Using Dictionaries](dictionaries)	| |
-| 2/9 | [OOP Preparation](oop1-prep); HW5  |  [Graphics Intro Lab](graphics-intro)	| [HW6](hw6) |
+| 2/7	| [Dictionaries Prep](dictionaries-prep) |	[Slides](https://docs.google.com/presentation/d/1EHJp8ZYCMN4lO6i3KCgzqsvTVc1Lwb4FIw5IyCVqPSw/edit?usp=sharing), [Quiz 5](quiz5);[Using Dictionaries](dictionaries)	| |
+| 2/9 | [OOP Preparation](oop1-prep); HW5  |  [Slides](https://docs.google.com/presentation/d/1JojAaRSvZuYvHtU87r9uzJHMyw7R39S9TaM0Oia1EjE/edit?usp=sharing), [Graphics Intro Lab](graphics-intro)	| [HW6](hw6) |
 | **Week 7**| **Recursion and Efficiency**|  | |
 | 2/12 | [Working with Classes](oop2-prep)	| [Quiz 6](quiz6); [Creating Flower Classes](creating-classes)	|  |
 | 2/14 |  [Recursion Prep](recursion-prep) | [Intro to Recursion](recursion-lab)	| |
