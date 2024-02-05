@@ -32,18 +32,18 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 5 |  | Recursion and Sorting | |
 | M 1/29 | [Array Prep](array-prep)|	[Slides](https://docs.google.com/presentation/d/1kDdtAY73DFh_sroQqP7UHrrtlQ7bD6ZSTee9jMt1ozI/edit?usp=sharing), [Quiz 4](quiz4); [Array Efficiency](array-efficiency) | |
 | W 1/31 |	[Recursion Prep](recursion-prep)	| [Slides](https://docs.google.com/presentation/d/1C50pGKi5QcEVn4ze9sphJcOpRVyOvpe3gPNb3DxJ4QQ/edit?usp=sharing), [Recursion](recursion)	|  |
-| F 2/2 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	Quicksort	| [Slides](https://docs.google.com/presentation/d/1m0kzx6gRLNB6PXW__64UfH7fhtA07yhQRnWcF9pA79o/edit?usp=sharing), [HW5: Quicksort Analysis](hw5) |
+| F 2/2 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	[Slides](https://docs.google.com/presentation/d/1m0kzx6gRLNB6PXW__64UfH7fhtA07yhQRnWcF9pA79o/edit?usp=sharing),Quicksort	|  [HW5: Quicksort Analysis](hw5) |
 | Week 6 | | Trees | |
 | M 2/5	| |	Mid-term Break!	| |
 | W 2/7 | [Tree Prep](tree-prep) | [Slides](https://docs.google.com/presentation/d/1uKFmB6EhCFBVLRIoooK8O0wTLgT3tW5Rr1Kx1TrIF_k/edit?usp=sharing); [Quiz 5](quiz5); [Binary Search Trees](BST-lab)| |
 | F 2/9 | [HW5](hw5), [Tree Traversals Prep](tree-traversals-prep)| Tree traversals	| [HW6: WordCloud Maker](hw6) |
 | Week 7 | | Advanced Trees | |
 | M 2/12 | |	Quiz 6;	Balanced Binary Search Trees	| |
-| W 2/14 | Reading: [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Sections 12.17.1 & 12.17.3; (Optional) [Heap Computational Fairytale](http://computationaltales.blogspot.com/2011/04/president-of-heap.html)|	[Heaps](heap)		 | |
-| F 2/16 |	HW6; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heapsort.html) Section 13.12.1; [This page](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/Heaps.html) Section 12.17.4 |	Uses of Heaps	| [HW7: Flashcard Displayer](hw7) |
+| W 2/14 | |	[Heaps](heap)		 | |
+| F 2/16 |	HW6;  |	[Graph implementations](graphs)	| (No HW7) |
 | Week 8 | | Graphs and Hashing | |
-| M 2/19 |  |	Quiz 7;	[Graph implementations](graphs)	| |
-| W 2/21 | HW7 |[BFS and DFS](traversal-analysis)		 | [HW8: WikiPaths](hw8) |	
+| M 2/19 | Study! |	Quiz 7/Catch up		| |
+| W 2/21 |  |[BFS and DFS](traversal-analysis)		 | [HW8: WikiPaths](hw8) |	
 | F 2/23 | 	|  [Hashing](hashing) |	 |
 | Week 9 | | Collisions and Final Project | |
 | M 2/26 | Reading: OpenDSA [Open Hashing](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html) and [Collision Resolution](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html)|		Quiz 8; [Collision Resolution](collisionresolution)	| |	
