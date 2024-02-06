@@ -40,7 +40,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 7 | | Advanced Trees | |
 | M 2/12 | [2-3 Tree Prep](2-3-prep) |	[Quiz 6](quiz6);	Balanced Binary Search Trees	| |
 | W 2/14 | [Heap Prep](heaps-prep)|	[Heaps](heap)		 | |
-| F 2/16 |	HW6;  |	[Graph implementations](graphs)	| (No HW7) |
+| F 2/16 |	[HW6](hw6); [Graphs Prep](graphs-prep)  |	[Graph implementations](graphs)	| (No HW7) |
 | Week 8 | | Graphs and Hashing | |
 | M 2/19 | Study! |	Quiz 7/Catch up		| |
 | W 2/21 |  |[BFS and DFS](traversal-analysis)		 | [HW8: WikiPaths](hw8) |	
