@@ -40,14 +40,14 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 7 | | Advanced Trees | |
 | M 2/12 | [2-3 Tree Prep](2-3-prep) |	[Quiz 6](quiz6);	Balanced Binary Search Trees	| |
 | W 2/14 | [Heap Prep](heaps-prep)|	[Heaps](heap)		 | |
-| F 2/16 |	[HW6](hw6); [Graphs Prep](graphs-prep)  |	[Graph implementations](graphs)	| (No HW7) |
+| F 2/16 |	[HW6](hw6); [Graphs Prep](graphs-prep)  |	[Graph implementations](graphs)	| (No HW7) [HW8: WikiPaths](hw8) |
 | Week 8 | | Graphs and Hashing | |
 | M 2/19 | Study! |	Quiz 7/Catch up		| |
-| W 2/21 |  |[BFS and DFS](traversal-analysis)		 | [HW8: WikiPaths](hw8) |	
-| F 2/23 | 	|  [Hashing](hashing) |	 |
+| W 2/21 |  |[BFS and DFS](traversal-analysis)		 |  |	
+| F 2/23 | HW8	|  [Hashing](hashing) |	 |
 | Week 9 | | Collisions and Final Project | |
 | M 2/26 | Reading: OpenDSA [Open Hashing](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html) and [Collision Resolution](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html)|		Quiz 8; [Collision Resolution](collisionresolution)	| |	
-| W 2/28 |  HW8 |	[Intro to final project](project-intro) |[Final project](final-project) |
+| W 2/28 |   |	[Intro to final project](project-intro) |[Final project](final-project) |
 | F 3/1 |  |[Minimum Viable Product](project-checkin)	 |	 |
 | Week 10 | | Wrapping up | |
 | M 3/4	| | Quiz 9  | |

@@ -32,7 +32,7 @@ The learning objectives that will ultimately all be assessed via quizzes are:
 20. Explaining time complexity of quicksort
 21. Explaining time complexity of heapsort
 22. Using recursion
-23. Using balanced binary search trees
+23. Using balanced search trees
 24. Using heaps
 25. Demonstrating breadth-first search
 26. Analyzing time complexity of breadth-first search

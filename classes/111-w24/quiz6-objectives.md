@@ -5,7 +5,7 @@ permalink: /classes/111-w24/quiz6
 ---
 
 ## Learning Objectives
-The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 5 are:
+The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 6 are:
 
 
 * **Using objects - mastery**

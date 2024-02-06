@@ -8,7 +8,7 @@ permalink: /classes/201-w24/quiz6
 
 The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 6 are:
 
-* **Using balanced binary search trees - Mastery**
+* **Using balanced search trees - Mastery**
 * **Selecting the appropriate data structure - Mastery**
 * **Comparing pros and cons of different ADTs and data structures - Mastery**
 * Defining methods - Mastery
