@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Debugging and Nested Loops Preparation
-permalink: /classes/208-s24/getting-started
+permalink: /classes/208-s24/strings-prep
 ---
 
 ## Overview
