@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Recursion Preparation
+title: Quicksort Preparation
 permalink: /classes/201-w24/quicksort-prep
 ---
 

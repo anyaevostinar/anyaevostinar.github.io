@@ -39,7 +39,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 2/9 | [HW5](hw5), [Tree Traversals Prep](tree-traversals-prep)| Tree traversals	| [HW6: WordCloud Maker](hw6) |
 | Week 7 | | Advanced Trees | |
 | M 2/12 | [2-3 Tree Prep](2-3-prep) |	[Quiz 6](quiz6);	Balanced Binary Search Trees	| |
-| W 2/14 | |	[Heaps](heap)		 | |
+| W 2/14 | [Heap Prep](heaps-prep)|	[Heaps](heap)		 | |
 | F 2/16 |	HW6;  |	[Graph implementations](graphs)	| (No HW7) |
 | Week 8 | | Graphs and Hashing | |
 | M 2/19 | Study! |	Quiz 7/Catch up		| |
