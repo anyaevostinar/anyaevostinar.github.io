@@ -15,7 +15,7 @@ However, the concepts and practice will help you on both the homework and exams 
 ## Setup
 [Mount the COURSES drive](getting-started) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK/username called `23TreeLab`
-* Download the [starter code](/classes/201-f21/2-3-Tree-Lab-Starter.zip) and put it into your 23TreeLab folder
+* Download the [starter code `Node.java`](/classes/201-w24/2-3-Tree-Lab-Starter/Node.java) and put it into your 23TreeLab folder
 * Open your `23TreeLab` folder in VSCode
 
 ## Exercise 1
