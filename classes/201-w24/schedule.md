@@ -38,7 +38,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 2/7 | [Tree Prep](tree-prep) | [Slides](https://docs.google.com/presentation/d/1uKFmB6EhCFBVLRIoooK8O0wTLgT3tW5Rr1Kx1TrIF_k/edit?usp=sharing); [Quiz 5](quiz5); [Binary Search Trees](BST-lab)| |
 | F 2/9 | [HW5](hw5), [Tree Traversals Prep](tree-traversals-prep)| Tree traversals	| [HW6: WordCloud Maker](hw6) |
 | Week 7 | | Advanced Trees | |
-| M 2/12 | [2-3 Tree Prep](2-3-prep) |	[Quiz 6](quiz6);	[Balanced Search Trees](two-three-tree)	| |
+| M 2/12 | [2-3 Tree Prep](2-3-prep) |	[Slides](https://docs.google.com/presentation/d/1pXGHwNXr70RpGC16YOVA0esmQhEEizHtvY8WU8Nn4IE/edit?usp=sharing), [Quiz 6](quiz6);	[Balanced Search Trees](two-three-tree)	| |
 | W 2/14 | [Heap Prep](heaps-prep)|	[Heaps](heap)		 | |
 | F 2/16 |	[HW6](hw6); [Graphs Prep](graphs-prep)  |	[Graph implementations](graphs)	|  [HW8: WikiPaths](hw8) (No HW7) |
 | Week 8 | | Graphs and Hashing | |

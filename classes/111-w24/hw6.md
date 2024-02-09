@@ -119,7 +119,7 @@ Finally, it's time to improve the visualization a little bit.
 
 Make the size of the circle representing a zip code scale with its physical area, and its color represent its population, where redder means higher population and bluer means lower population. 
 You’ll do this by modifying the `drawCircle` method appropriately. A good way to do this is taking the square root of the area and dividing by 5000, and taking the population divided by 100. 
-You’ll want to make use of `min` or `max` functions to make sure that your dots are visible and your colors are in the range from 0 to 255.
+You’ll want to make use of `min` or `max` functions to make sure that your dots are visible and your colors are in the range from 0 to 255 using the [`color_rgb` function](https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node14.html)
 
 You are welcome to go further with your improved visualization as well!
 
