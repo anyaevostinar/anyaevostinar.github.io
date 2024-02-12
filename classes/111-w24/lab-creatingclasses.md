@@ -10,7 +10,7 @@ However, the concepts and practice will help you on both the homework and exams 
 I recommend making a folder for today's lab in COURSES as you usually do.
 
 ## Exercise 1
-You should again download the file [graphics.py](/classes/111-w22/graphics.py) and put it into the folder for today's lab. 
+You should again download the file [graphics.py](/classes/111-w22/graphics.py) and put it into the folder for today's lab, along with a [PDF of the documentation](/classes/111-w24/graphics.pdf) for reference. 
 Then also download the file [example_prerefactor.py](/classes/111-f22/example_prerefactor.py) and put it in your folder as well.
 
 1. Run `example_prerefactor.py` to see the flower that is made. Your goal is going to be to make the exact same flower, but with improved code organization!
