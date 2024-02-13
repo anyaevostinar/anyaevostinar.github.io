@@ -29,7 +29,7 @@ a. Open `AdjacencyListGraphImplementation.java` and note what instance variables
 b. Open `AdjacencyMatrixGraphImplementation.java` and note what instance variables this implementation has and how they differ from the Adjacency List. Also look at the constructor and `addVertex` and note the similarity/difference in initialization.
 
 ## Exercise 2
-Now you'll draw out some graph implementations on paper. You don't need to submit these, but I highly recommend you actually do this to improve your understanding of how these implementations work!
+Now you'll draw out some graph implementations on the worksheet. 
 
 Here is the graph you'll be implementing on paper:
 
