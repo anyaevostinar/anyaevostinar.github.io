@@ -2,11 +2,27 @@ import turtle
 
 
 def lineIter(branch_len, t):
+
+    #one branch
     num_branches = int(branch_len/30)
     for i in range(num_branches-1):
         t.forward(branch_len)
         t.right(20)
         branch_len = branch_len-30
+
+    #back to the start
+    for i in range(num_branches-1):
+        t.left(20)
+        t.backward(branch_len+30)
+        branch_len = branch_len+30
+
+    #another branch
+    for i in range(num_branches-1):
+        t.forward(branch_len)
+        t.left(20)
+        branch_len = branch_len-30
+
+    
 
     
 
@@ -23,12 +39,18 @@ def tree(branch_len, t):
 def main():
     t = turtle.Turtle()
     my_win = turtle.Screen()
+
+    #getting in place
     t.left(90)
     t.up()
     t.backward(100)
     t.down()
     t.color("green")
+
+    #recursive tree
     tree(120, t)
+
+    #trying to do it iteratively
     t2 = turtle.Turtle()
     t2.up()
     t2.forward(10)
