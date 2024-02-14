@@ -40,10 +40,10 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 7 | | Advanced Trees | |
 | M 2/12 | [2-3 Tree Prep](2-3-prep) |	[Slides](https://docs.google.com/presentation/d/1pXGHwNXr70RpGC16YOVA0esmQhEEizHtvY8WU8Nn4IE/edit?usp=sharing), [Quiz 6](quiz6);	[Balanced Search Trees](two-three-tree)	| |
 | W 2/14 | [Heap Prep](heaps-prep)| [Slides](https://docs.google.com/presentation/d/1a_9TgcbCJ6bGipZP-3TCzbZZlxEXCXyR0W4EM6SeJ_w/edit?usp=sharing),	[Heaps](heap)		 | |
-| F 2/16 |	[HW6](hw6); [Graphs Prep](graphs-prep)  |	[Graph implementations](graphs)	|  [HW8: WikiPaths](hw8) (No HW7) |
+| F 2/16 |	[HW6](hw6); [Graphs Prep](graphs-prep)  |	[Slides](https://docs.google.com/presentation/d/1XEmAh7o5X2IqSWFQiaaKeYq5WdobCECYjZMOcD33gv8/edit?usp=sharing), [Graph implementations](graphs)	|  [HW8: WikiPaths](hw8) (No HW7) |
 | Week 8 | | Graphs and Hashing | |
 | M 2/19 | Study! |	[Quiz 7](quiz7)/Catch up		| |
-| W 2/21 |  |[BFS and DFS](traversal-analysis)		 |  |	
+| W 2/21 | [BFS and DFS Prep](bfs-dfs-prep)  |[BFS and DFS](traversal-analysis)		 |  |	
 | F 2/23 | HW8	|  [Hashing](hashing) |	 |
 | Week 9 | | Collisions and Final Project | |
 | M 2/26 | Reading: OpenDSA [Open Hashing](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html) and [Collision Resolution](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html)|		Quiz 8; [Collision Resolution](collisionresolution)	| |	
