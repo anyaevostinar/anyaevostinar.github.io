@@ -44,7 +44,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 8 | | Graphs and Hashing | |
 | M 2/19 | Study! |	[Quiz 7](quiz7)/Catch up		| |
 | W 2/21 | [BFS and DFS Prep](bfs-dfs-prep)  |[BFS and DFS](traversal-analysis)		 |  |	
-| F 2/23 | HW8	|  [Hashing](hashing) |	 |
+| F 2/23 | HW8; [Hashing Prep](hashing-prep)	|  [Hashing](hashing) |	 |
 | Week 9 | | Collisions and Final Project | |
 | M 2/26 | Reading: OpenDSA [Open Hashing](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html) and [Collision Resolution](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html)|		Quiz 8; [Collision Resolution](collisionresolution)	| |	
 | W 2/28 |   |	[Intro to final project](project-intro) |[Final project](final-project) |

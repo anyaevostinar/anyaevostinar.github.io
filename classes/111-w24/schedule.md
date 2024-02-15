@@ -52,7 +52,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 10** | **Wrapping Up** |  | |
 | 3/4 | Final project initial submission  | Working on Final Projects|	 |
 | 3/6	|   | Final project peer review |  |
-| 3/9 | Study! | [Quiz 9](quiz9); Wrap-up and course evals | |
+| 3/8 | Study! | [Quiz 9](quiz9); Wrap-up and course evals | |
 | Exam Period | | | |
 | W 3/13 12-2:30pm | | [Quiz 10]() (No new learning objectives) | | 
 | |  | All revisions due Wednesday, 3/13, 6pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time.  | |
