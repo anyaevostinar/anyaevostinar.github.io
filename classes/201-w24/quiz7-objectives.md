@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Quiz 6 Objectives
-permalink: /classes/201-w24/quiz6
+title: Quiz 7 Objectives
+permalink: /classes/201-w24/quiz7
 ---
 
 ## Learning Objectives
