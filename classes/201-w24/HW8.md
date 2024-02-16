@@ -76,7 +76,7 @@ Collections.reverse(myList);
 
 Test your algorithm on your test data where you know what the correct answer is. Note that you should return an empty list if there is not a path between the start and end article.
 
-Your program should output the links the user should click on to follow a shortest path from the starting page to the ending page or tell the user that there isn't a path.
+Your program should output the links the user should click on to follow a shortest path from the starting page to the ending page or tell the user `There isn't a path`.
 
 ## README
 As always, you should include a detailed README for this homework. 

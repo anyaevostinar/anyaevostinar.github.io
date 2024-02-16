@@ -42,7 +42,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 2/14 |  [Recursion Prep](recursion-prep) | [Slides](https://docs.google.com/presentation/d/1xgSWswkOmugVe2PpaOomCTqwwtFcKm60PiqERcoH5P8/edit?usp=sharing), [Intro to Recursion](recursion-lab)	| |
 | 2/16 | [Algorithm Analysis Prep](analysis-prep); HW6 |	[Slides](https://docs.google.com/presentation/d/1fUe05dU2OCnOm8BVHDu5iceCtafuGz_busXM_XEEB94/edit?usp=sharing), [Analyzing Algorithms](efficiency)		 | [HW7](hw7) |
 | **Week 8** | **Searching and Sorting** |   | |
-| 2/19 | [Lists and Dictionary Analysis Prep](list-efficiency-prep)	 | [Quiz 7](quiz7);  [Efficiency of Python Lists and Dictionaries](lab-efficiency2)	|  |
+| 2/19 | [Lists and Dictionary Analysis Prep](list-efficiency-prep)	 | [Quiz 7](quiz7);[Slides](https://docs.google.com/presentation/d/1iHMSADIpC9ffAdkq0_QTSAwRzpkIs-lyX6PV4ESVxpU/edit?usp=sharing),  [Structures Efficiency](lab-efficiency2)	|  |
 | 2/21 | [Searching Prep](searching-prep) |	Sequential and Binary Search	| |
 | 2/23 | 	[Sorting Prep 1](sorting-basic-prep); HW7	 | [Slow(ish) Sorting Algorithms](slow-sorting) | |	
 | **Week 9** | **Final Project**|  | |
