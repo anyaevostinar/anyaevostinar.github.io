@@ -55,7 +55,7 @@ Implement the `toString` method so that it returns a `String` with the number of
 Create an instance of `PathFinder` with your test files and verify that it reads in the files properly by printing the number of nodes and edges. Note that you can just pass your PathFinder instance to `println` without calling `toString` manually and Java will use your `toString` method.
 
 ## breadthFirstSearch
-As you've learned in class, the way to find the shortest path between two nodes in a graph is to perform breadth-first search. Your `breadthFirstSearch` method should return a map of the predecessor of each node on the shortest path from the start node.
+The way to find the shortest path between two nodes in a graph is to perform breadth-first search. Your `breadthFirstSearch` method should return a map of the predecessor of each node on the shortest path from the start node.
 
 First, fill in the documentation for the method with the correct JavaDocs style of specifying the `@param` and `@return` along with what the method actually does.
 
