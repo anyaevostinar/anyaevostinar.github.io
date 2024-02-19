@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Traversals Analysis
-permalink: /classes/201-f21/traversal-analysis
+permalink: /classes/201-w24/traversal-analysis
 published: true
 ---
 
@@ -98,14 +98,14 @@ c. What is the worst case time complexity of the `getDegree` method of the adjac
 
 d. What is the worst case time complexity of the `getDegree` method of the adjacency list graph implementation in big-O notation? Write a sentence explaining why. Remember to account for the time complexity of the underlying linked list operations!
 
-## Extensions
+## Extra
 When you finish with the above three exercises, work on implementing breadth first traversal.
-Here is [starter code](BFSStarter.zip) and the associated [JavaDocs](/classes/201-f20/hw-6javadoc) for a graph implementation. 
+Here is [starter code](/classes/201-f21/BFSStarter.zip) and the associated [JavaDocs](/classes/201-f20/hw-6javadoc) for a graph implementation. 
 In `Main.java` I've provided code to create this graph:
 
 ![Undirected graph with edge between node 0 and 3, node 3 and 1, node 3 and 2, and node 1 and 2](/classes/201-f20/UndirectedGraph.png)
 
-**Implement breadth first traversal** based on the book's pseudocode. 
+**Implement breadth first traversal** based on the pseudocode above. 
 You can use the `getNeighbors` graph method like so:
 ```
 for(Integer neighbor : inputGraph.getNeighbors(frontVertex)) {
@@ -124,8 +124,3 @@ If you have more time, try these:
 
 1. The algorithm given in [homework 3 (the maze solver)](hw3) is a specialized version of depth-first search. Analyze it and determine what it's time complexity is; why is it different than general depth-first search?
 2. Implement depth-first search as well.
-
-## Submitting
-This activity is not a homework assignment. That means that you're evaluated on whether you attempted all parts of it, but your work will not be graded for correctness as long as a clear effort has been made. If you aren't able to complete some parts, great ways to indicate clear effort are to reach out for help before the deadline (note ways you did so in your Collaborations section) and to use comments in the document to indicate things you tried but what went wrong/where you got stuck. 
-
-Submit your PDF to Moodle as always. (If you did the extensions, just submit the PDF please.)
