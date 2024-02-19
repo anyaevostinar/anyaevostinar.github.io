@@ -182,4 +182,12 @@ Remember to update your Collaborations.txt file with any sources that you consul
 
 Then upload all of your files to the Gradescope link on Moodle, at which point the autograder will run and let you know if your code works correctly. You are able to submit your code as many times as you wish before the deadline to fix any issues. If you have questions about what the autograder is telling you is wrong, please ask!
 
+## FAQ
+I'm getting index out of bounds errors on Gradescope but not on my computer, what gives?
+* Make sure that you are using `.equals` to compare a string to the empty string, that tends to be a difference in different versions of Java, leading to your base case not triggering when run on Gradescope
 
+I'm getting Gradescope errors talking about "reference to assertEquals is ambiguous", how do I fix it?
+* Your methods aren't returning the exact type that Gradescope is expecting and Java is trying to figure out a conversion, but there are multiple options. You should first check the assignment to see if a return type is specified and match that exactly (i.e. `int` versus `Integer` often causes a problem). Generally it's that you should have `int` instead of `Integer` or vice versa.
+
+I'm failing the "Test WutheringHeights.txt with 10 words (0/0)" and getting "Test Failed: list index out of range", what is wrong?
+* Revisit the part of the homework talking about needing to slightly adapt `printWordCloudHTML`, you are missing some required functionality.
