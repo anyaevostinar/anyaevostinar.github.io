@@ -90,13 +90,13 @@ c. Identify the asymptotic order of the time complexity of the algorithm (the bi
 ## Exercise 3
 Let's analyze the time complexity of the two graph implementations that you've seen. You should reference the code from the [Graph Implementation](graphs) lab.
 
-a. What is the worst case time complexity of adding a vertex in an adjacency matrix graph implementation (without adding any edges)? Express your answer in big-O notation and write a sentence explaining why.
+a. What is the worst case time complexity of adding a vertex in an adjacency matrix graph implementation (without adding any edges)? Express your answer in big-O notation.
 
-b. What is the worst case time complexity of adding a vertex in an adjacency **list** graph implementation (without adding any edges)? Express your answer in big-O notation and write a sentence explaining why.
+b. What is the worst case time complexity of adding a vertex in an adjacency **list** graph implementation (without adding any edges)? Express your answer in big-O notation.
 
-c. What is the worst case time complexity of the `getDegree` method of the adjacency matrix graph implementation in big-O notation? Write a sentence explaining why.
+c. What is the worst case time complexity of the `getDegree` method of the adjacency matrix graph implementation in big-O notation?
 
-d. What is the worst case time complexity of the `getDegree` method of the adjacency list graph implementation in big-O notation? Write a sentence explaining why. Remember to account for the time complexity of the underlying linked list operations!
+d. What is the worst case time complexity of the `getDegree` method of the adjacency list graph implementation in big-O notation? Remember to account for the time complexity of the underlying linked list operations!
 
 ## Exercise 4
 Try out implementing breadth-first traversal.
