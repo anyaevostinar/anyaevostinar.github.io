@@ -24,7 +24,7 @@ The final project is a programming deliverable in the course, however there wonâ
 The final project is purposefully open-ended so that you can implement software that is of interest to you. Your task is to implement a medium-sized (slightly larger than a homework) piece of software that does something interesting and substantial using inheritance and some of the other concepts we've learned about this term. Your project can be basically anything that incorporates the requirements below, but here are a couple of broad ideas to get you started:
 
 * A modified board game (not a full AI of course, but allowing for two users at the same computer to play the game, or even just single player!)
-    * Examples: simplified chess, various card games (with AI players or different modes), battleship (with special ships), simplified monopoly
+    * Examples: simplified chess, various card games (with AI players or different modes), battleship (with special ships), simplified monopoly, text-based RPG (but not too much text)
 * A simulation of some kind (my [research software is an example](https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html), though yours wouldn't have a GUI, here is [an example assignment](https://github.com/anyaevostinar/alife-assignment/tree/master) that does something similar, but you'd need to expand on it)
     * Examples: ecological simulation, societal simulation
 
