@@ -42,6 +42,20 @@ Your project must also correctly and efficiently use the Java built-in version (
 * One of the various trees we've seen (there aren't built-in Java ones)
 * [PriorityQueue](https://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html)
 
+## Project Proposal
+To make sure that you are poised for success, you must write a short proposal of what you plan to do. 
+You will submit this through Gradescope (it's a fill in the blank on Gradescope assignment, so you don't need to create a separate document first, though you can). 
+Your proposal is due by Wednesday Feb 28th, at 10pm, and will include the following components:
+
+* Who’s working on the project, and how you plan to divide the work.
+* The game or simulation you plan to implement for your final project. Include a brief description of the game and its rules (or, for a simulation, what you aim to model and a basic overview of how it will run).
+* How you will be using inheritance (i.e. what superclass and subclasses you will have) and what other two class concepts you will use
+* A brief development plan: what order will you implement classes and functionality and how will you test your project along the way to make sure the first things are working correctly
+* A description of your primary outcome(s) for the project. I’ll raise concerns if these outcomes seem too ambitious or not ambitious enough.
+* A description of your stretch goal(s) for the project. These are outcomes that you hope to achieve, but that you realize may be too difficult given the time frame and your current programming expertise.
+
+After confirming the details and making sure you’re poised to succeed, I’ll officially sign off on your project, which means you’re free to start working on the project. **Feel free to submit this early and I will be aiming to get feedback to you sooner than the due date.**
+
 ## README
 As always, you should include a detailed README for this project. 
 It should include a brief overview of your project, a short example of how to run your program and see its interesting behavior, and a more detailed section that has **demonstration input or code/line numbers for each of the coding-related rubric items**. Remember, you want to make it as easy as possible for the grader to see that your project does everything its supposed to!
