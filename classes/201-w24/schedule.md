@@ -44,7 +44,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 8 | | Graphs and Hashing | |
 | M 2/19 | Study! |	[Slides](https://docs.google.com/presentation/d/1IuxX8KEydNwS5HeI2vNloA4O5TEaorKyvde7lWnVbwI/edit?usp=sharing), [Quiz 7](quiz7)/Catch up		| |
 | W 2/21 | [BFS and DFS Prep](bfs-dfs-prep)  |[Slides](https://docs.google.com/presentation/d/1LNYax6sVvZk2O3tqlfeUpiFpjhIKfTzvYkSE5cTvuMQ/edit?usp=sharing), [BFS and DFS](traversal-analysis)		 |  |	
-| F 2/23 | HW8; [Hashing Prep](hashing-prep)	|  [Hashing](hashing) and [Collision Resolution](collisionresolution) |	 |
+| F 2/23 | HW8; [Hashing Prep](hashing-prep)	|  [Hashing and Collisions](hashing)  |	 |
 | Week 9 | | Final Project | |
 | M 2/26 | Read about [Final project](final-project) |		 [Intro to final project](project-intro) 	| [Final project](final-project) |	
 | W 2/28 | Study  | Quiz 8;	| |
