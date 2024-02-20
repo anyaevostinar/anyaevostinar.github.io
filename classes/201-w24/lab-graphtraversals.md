@@ -46,13 +46,13 @@ return traversalOrder
 When we analyze the time and space complexity of graph algorithms, the convention is to use `|V|` for the number of vertices/nodes in the graph and `|E|` for the number of edges in the graph.
 Because the complexity of graphs often depends on both the number of vertices and the number of edges, you'll often need to express the complexity in terms of `|V|` and `|E|`. 
 
-a. Analyze the number of simple operations that are required at each step of the above algorithm. You are welcome to copy the steps above and then put your analysis on each line. 
+a. Analyze the number of simple operations that are required at each step of the above algorithm and note them on your worksheet
 
 b. Some of the lines of pseudocode are hiding a fair amount of detail, such as `frontVertex has a neighbor` and `nextNeighbor = next neighbor of frontVertex`. What assumptions are you making about the implementation details and efficiency of those lines? What could lead to those lines being more/less efficient?
 
 c. Based on your step-by-step analysis, provide a function that describes the worst-case time complexity of the algorithm using `V` and `E`. This function should include the constants and coefficients. 
 
-d. Identify the asymptotic order of the time complexity of the algorithm (the big-O) by finding a C,  |V|<sub>0</sub>, and |E|<sub>0</sub>.
+d. Identify the asymptotic order of the time complexity of the algorithm (the big-O) by finding a C,  <code>|V|</code><sub>0</sub>, and <code>|E|</code><sub>0</sub>.
 
 
 ## Exercise 2
@@ -85,7 +85,7 @@ a. Again analyze the number of simple operations that are required at each step 
 
 b. Based on your step-by-step analysis, provide a function that describes the worst-case time complexity of the algorithm using `|V|` and `|E|`. This function should include the constants and coefficients. 
 
-c. Identify the asymptotic order of the time complexity of the algorithm (the big-O) by finding a C,  |V|<sub>0</sub>, and |E|<sub>0</sub>.
+c. Identify the asymptotic order of the time complexity of the algorithm (the big-O) by finding a C,  `|V|`<sub>0</sub>, and `|E|`<sub>0</sub>.
 
 ## Exercise 3
 Let's analyze the time complexity of the two graph implementations that you've seen. You should reference the code from the [Graph Implementation](graphs) lab.
