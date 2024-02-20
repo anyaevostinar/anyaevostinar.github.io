@@ -98,8 +98,8 @@ c. What is the worst case time complexity of the `getDegree` method of the adjac
 
 d. What is the worst case time complexity of the `getDegree` method of the adjacency list graph implementation in big-O notation? Write a sentence explaining why. Remember to account for the time complexity of the underlying linked list operations!
 
-## Extra
-When you finish with the above three exercises, work on implementing breadth first traversal.
+## Exercise 4
+Try out implementing breadth-first traversal.
 Here is [starter code](/classes/201-f21/BFSStarter.zip) and the associated [JavaDocs](/classes/201-f20/hw-6javadoc) for a graph implementation. 
 In `Main.java` I've provided code to create this graph:
 
@@ -119,6 +119,7 @@ Here are the JavaDocs for `Map` and `Queue`:
 
 You'll probably want to use a map to store if a vertex is visited.
 
+## Extra
 
 If you have more time, try these:
 
