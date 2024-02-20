@@ -42,8 +42,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 2/14 | [Heap Prep](heaps-prep)| [Slides](https://docs.google.com/presentation/d/1a_9TgcbCJ6bGipZP-3TCzbZZlxEXCXyR0W4EM6SeJ_w/edit?usp=sharing),	[Heaps](heap)		 | |
 | F 2/16 |	[HW6](hw6); [Graphs Prep](graphs-prep)  |	[Slides](https://docs.google.com/presentation/d/1XEmAh7o5X2IqSWFQiaaKeYq5WdobCECYjZMOcD33gv8/edit?usp=sharing), [Graph implementations](graphs)	|  [HW8: WikiPaths](hw8) (No HW7) |
 | Week 8 | | Graphs and Hashing | |
-| M 2/19 | Study! |	[Quiz 7](quiz7)/Catch up		| |
-| W 2/21 | [BFS and DFS Prep](bfs-dfs-prep)  |[BFS and DFS](traversal-analysis)		 |  |	
+| M 2/19 | Study! |	[Slides](https://docs.google.com/presentation/d/1IuxX8KEydNwS5HeI2vNloA4O5TEaorKyvde7lWnVbwI/edit?usp=sharing), [Quiz 7](quiz7)/Catch up		| |
+| W 2/21 | [BFS and DFS Prep](bfs-dfs-prep)  |[Slides](https://docs.google.com/presentation/d/1LNYax6sVvZk2O3tqlfeUpiFpjhIKfTzvYkSE5cTvuMQ/edit?usp=sharing), [BFS and DFS](traversal-analysis)		 |  |	
 | F 2/23 | HW8; [Hashing Prep](hashing-prep)	|  [Hashing](hashing) and [Collision Resolution](collisionresolution) |	 |
 | Week 9 | | Final Project | |
 | M 2/26 | Read about [Final project](final-project) |		 [Intro to final project](project-intro) 	| [Final project](final-project) |	
