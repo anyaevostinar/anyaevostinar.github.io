@@ -165,7 +165,7 @@ public class HashCodeCalculations {
         List<List<Double>>  statistics = new ArrayList<List<Double>>();
         for(int i = 0; i < bucketSizes.length; i++) {
             System.out.println("numBuckets = " + bucketSizes[i]);
-            for(int j = 0; j <= 4; j++) {
+            for(int j = 1; j < 4; j++) {
                 int[] counts = collisionCounter(bucketSizes[i], filename, j);
                 List<Double> curStats = new ArrayList<Double>();
                 curStats.add(getAverageInNonEmptyBuckets(counts));

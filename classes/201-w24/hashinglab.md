@@ -32,9 +32,6 @@ b. Use the function `printCollisionInformation` to test 1000 slots (also called 
 c. Run the same experiment with the text file `HoundOfTheBaskervilles.txt` and report on what if any difference there is and why that would be the case. 
 
 ## Exercise 3
-Finally, repeat your experiments for hashtable sizes of 2039 (a prime number) and 2048 (a non-prime number). Write down your results as well as what difference if any you see between them. 
-
-## Exercise 4
 Now you get to implement your own hash table! Look through `HashTable.java` to see a basic hash table that doesn't deal with collisions. Your job is to implement linear probing to deal with collision resolution.
 
 a. Update `insertKey` to use the linear probing strategy where if the home position is taken, you just move to the right by one until you find an open position.
@@ -45,12 +42,12 @@ b. Test your linear probing strategy by inserting 9877, 9050, 2037, 1059, and 72
 9050 7200 null null null null null 9877 2037 1059
 ```
 
-## Exercise 5
-You can clearly see the issue of primary clustering in Exercise 4. One way of improving your collision resolution is to move right by more than 1 when linear probing.
+## Exercise 4
+You can clearly see the issue of primary clustering above. One way of improving your collision resolution is to move right by more than 1 when linear probing.
 
 a. Create a new function `insertKey2(Integer key)` that does the same as `insertKey` but skips by 3 instead of 1. (Note that I had you skip 3, not 2. Think about what would happen if you skipped 2 with this particular hash table size and make sure you understand why 3 is preferable.)
 
-## Exercise 6
+## Exercise 5
 The issue with linear probing by more than 1 is that you have to make sure your skip amount is relatively prime to the size of your table, otherwise you will end up not checking certain spots in the hashtable at all on certain hash codes. There are a number of other techniques that can help with that, however they still run into the problem of **secondary clustering** where all the keys that hash to the same hashcode will follow the same probing sequence, leading to a lot of collision resolution work. 
 
 You can use a technique called **double hashing** where the probe technique uses the original key so that different keys with the same hash code follow a different probe sequence.
