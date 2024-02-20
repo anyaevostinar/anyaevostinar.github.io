@@ -15,7 +15,7 @@ To work with different hash code generating functions and gain a better understa
 * Open your `HashingLab` folder in VSCode
 
 ## Exercise 1
-a. Determine and write on your worksheet the hashcode for each of the provided `hashCode` functions for each of the following words:
+Determine and write on your worksheet the hashcode for each of the provided `hashCode` functions for each of the following words:
 
 * ant
 * tan
@@ -45,7 +45,7 @@ b. Test your linear probing strategy by inserting 9877, 9050, 2037, 1059, and 72
 ## Exercise 4
 You can clearly see the issue of primary clustering above. One way of improving your collision resolution is to move right by more than 1 when linear probing.
 
-a. Create a new function `insertKey2(Integer key)` that does the same as `insertKey` but skips by 3 instead of 1. (Note that I had you skip 3, not 2. Think about what would happen if you skipped 2 with this particular hash table size and make sure you understand why 3 is preferable.)
+Create a new function `insertKey2(Integer key)` that does the same as `insertKey` but skips by 3 instead of 1. (Note that I had you skip 3, not 2. Think about what would happen if you skipped 2 with this particular hash table size and make sure you understand why 3 is preferable.)
 
 ## Exercise 5
 The issue with linear probing by more than 1 is that you have to make sure your skip amount is relatively prime to the size of your table, otherwise you will end up not checking certain spots in the hashtable at all on certain hash codes. There are a number of other techniques that can help with that, however they still run into the problem of **secondary clustering** where all the keys that hash to the same hashcode will follow the same probing sequence, leading to a lot of collision resolution work. 
