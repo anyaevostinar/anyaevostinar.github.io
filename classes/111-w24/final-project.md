@@ -32,10 +32,10 @@ You will find the [documentation for the graphics module](/classes/111-w24/graph
 
 ### Option 1 - Game
 The first type of project is a computer game. 
-Your game should incorporate some level of actual AI decision making. 
+Your game should incorporate **some level of actual AI** decision making. 
 By this, I mean that the computer should play against you or manage your game in a moderately intelligent way. 
 You don't need the computer to be a world-class player — or even close! 
-That's what CS 321: Artificial Intelligence is for. 
+That's what CS 320 and 321 are for. 
 But you should make a concerted effort on this front, meaning that your AI will go above and beyond a simple random strategy. 
 Remember that your time is limited, so pick a game that you will be able to implement between now and the end of the term. 
 
@@ -148,7 +148,8 @@ To demonstrate proficiency, your project must:
 
 * Use the graphics.py library
 * Create at least two classes
-* Run without errors and exhibit complexity in one of the described ways
+* Run without errors
+* Exhibit complexity in one of the described ways
 * Have a descriptive header for each file
 * Have a `README.txt` report that includes all required information
 
