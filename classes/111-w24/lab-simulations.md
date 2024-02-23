@@ -48,7 +48,7 @@ import random
 ## Exercise 1
 Often in a simulation or game, you'll want your graphics to move. 
 
-1. In `main`, create and draw a `MovingCircle` object. You can make a `draw` method within your class or `draw` the `MovingCircle`'s `Circle` directly.
+1. In `main`, create and draw a `MovingCircle` object. Make a `draw` method within your class that calls the `Circle`'s `draw` method.
 
 2. All graphics objects support the `.move(dx, dy)` method, which takes two parameters, the amount you want it to move in the x direction and the amount to move in the y direction. Make a `move` method for your `MovingCircle` that moves the `Circle` a random amount:
 

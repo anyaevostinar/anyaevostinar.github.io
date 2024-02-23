@@ -47,7 +47,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 2/23 | 	[Sorting Prep 1](sorting-basic-prep); HW7	 | [Slides](https://docs.google.com/presentation/d/1vY_VaOm0FV4vpoSldihuRVEElhH9dZHqKBzhKAZGTC0/edit?usp=sharing), [Slow(ish) Sorting Algorithms](slow-sorting) | |	
 | **Week 9** | **Final Project**|  | |
 | 2/26 | [Sorting Prep 2](mergesort-prep); [Final Project Info](final-project)	| [Slides](https://docs.google.com/presentation/d/1J4v8LiKEibrz2w1DltJjJjIkCNTD7Ohdifw6CpzhlmU/edit?usp=sharing), Mergesort and Final Project  | [Final Project Proposal](final-project#project-proposal)	 |
-| 2/28 | Final Project Proposal |	[Making Simulations](lab-simulations) | |	
+| 2/28 | Final Project Proposal |	[Slides](https://docs.google.com/presentation/d/1_EH94OXMgK3de4Mvp8ry7JdpXImsHh6axZONi2TJ1o0/edit?usp=sharing), [Making Simulations](lab-simulations) | |	
 | 3/1 | Study! | [Quiz 8](quiz8) | [Final Project](final-project) |
 | **Week 10** | **Wrapping Up** |  | |
 | 3/4 | Final project initial submission  | Working on Final Projects|	 |
