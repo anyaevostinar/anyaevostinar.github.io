@@ -55,7 +55,7 @@ Implement the `toString` method so that it returns a `String` with the number of
 Create an instance of `PathFinder` with your test files and verify that it reads in the files properly by printing the number of nodes and edges. Note that you can just pass your PathFinder instance to `println` without calling `toString` manually and Java will use your `toString` method.
 
 ## breadthFirstSearch
-The way to find the shortest path between two nodes in a graph is to perform breadth-first search. Your `breadthFirstSearch` method should return a map of the predecessor of each node on the shortest path from the start node.
+The way to find the shortest path between two nodes in a graph is to perform breadth-first search. Your `breadthFirstSearch` method should return a `Map<Integer, Integer>` of the *predecessor* of each node on the shortest path from the start node.
 
 First, fill in the documentation for the method with the correct JavaDocs style of specifying the `@param` and `@return` along with what the method actually does.
 
@@ -63,8 +63,10 @@ Then, implement the `breadthFirstSearch` method. Note that the `wikiGraph` only 
 
 I recommend putting in some print statements and then calling your `breadthFirstSearch` method to make sure that it is working as your expect. Remove the print statements after it works however.
 
-## getShortestPath
-This method should first call your `breadthFirstSearch` method with your start article and save the resulting map of predecessor nodes.
+## getShortestPath(String start, String end)
+This method should return a `List<String>` containing the list of articles that the user needs to click on to get from the start node to the finish node. Note that you should return an empty list if there is not a path between the start and end article.
+
+You should first call your `breadthFirstSearch` method with your start article and save the resulting map of predecessor nodes.
 
 Now you have a map of the node that comes before each node on a shortest path from the start node and you just need to trace through them.
 Since you can only look up the predecessor of a given node, you need to start at the end article and look up its predecessor node until you get to the start article node.
@@ -74,9 +76,15 @@ Note that there is a static method that belongs to the `Collections` class that 
 Collections.reverse(myList);
 ```
 
-Test your algorithm on your test data where you know what the correct answer is. Note that you should return an empty list if there is not a path between the start and end article.
+Test your algorithm on your test data where you know what the correct answer is. 
 
-Your program should output the links the user should click on to follow a shortest path from the starting page to the ending page or tell the user `There isn't a path`.
+## main
+Your main should handle the following command line interface:
+```bash
+java PathFinder articles.tsv links.tsv startNode endNode
+```
+
+Your program should output the article names of the links the user should click on to follow a shortest path from the starting page to the ending page or tell the user `There isn't a path`.
 
 ## README
 As always, you should include a detailed README for this homework. 
