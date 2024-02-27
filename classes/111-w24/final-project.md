@@ -149,13 +149,13 @@ To demonstrate proficiency, your project must:
 * Use the graphics.py library
 * Create at least two classes
 * Run without errors
-* Exhibit complexity in one of the described ways
 * Have a descriptive header for each file
 * Have a `README.txt` report that includes all required information
 
 ### Mastery
 To demonstrate mastery, your program must meet all the 'proficiency' requirements, as well as:
 
+* Exhibit complexity in one of the described ways
 * Useful comments
 * Descriptive variable names
 * Good spacing
