@@ -47,8 +47,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | F 2/23 | HW8; [Hashing Prep](hashing-prep)	| [Slides](https://docs.google.com/presentation/d/1xy3i1jxSYp078B45ANrC1VyjleRF-T4iM-jW4huhyjk/edit?usp=sharing), [Hashing and Collisions](hashing)  |	 |
 | Week 9 | | Final Project | |
 | M 2/26 | Read about [Final project](final-project) |		[Slides](https://docs.google.com/presentation/d/1PCFHM6_lZjcZmtJuHdYsolSqFWVP_F9_TpHidRBB5Ss/edit?usp=sharing), [Intro to final project](project-intro) 	| [Final project](final-project) |	
-| W 2/28 | Study; [Project proposal](final-project#project-proposal)  | [Quiz 8](quiz8)	| |
-| F 3/1 |  |[Minimum Viable Product](project-checkin)	 |	 |
+| W 2/28 | Study; [Project proposal](final-project#project-proposal)  | [Slides](https://docs.google.com/presentation/d/1Qg_Eza4hrGsx9uAF3qwRxo_SOg2NLKZA2a52IGA6uaE/edit?usp=sharing), [Quiz 8](quiz8)	| |
+| F 3/1 |  |[Slides](https://docs.google.com/presentation/d/1EeB9IiPjy709A0GxGNZgF0B9Pnx30QmNFHkNrK4D0yM/edit?usp=sharing), [Minimum Viable Product](project-checkin)	 |	 |
 | Week 10 | | Wrapping up | |
 | M 3/4	| | Quiz 9  | |
 | W 3/6 | Final project initial submission | Project peer review | |

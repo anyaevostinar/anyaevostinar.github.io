@@ -19,7 +19,6 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 9. Using arrays
 10. Explaining time complexity of linked list operations
 11. Explaining time complexity of array operations
-12. Using stacks
 13. Explaining time complexity of stack operations
 14. Using queues
 15. Explaining time complexity of queue operations

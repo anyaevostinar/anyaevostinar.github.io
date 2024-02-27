@@ -48,7 +48,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 9** | **Final Project**|  | |
 | 2/26 | [Sorting Prep 2](mergesort-prep); [Final Project Info](final-project)	| [Slides](https://docs.google.com/presentation/d/1J4v8LiKEibrz2w1DltJjJjIkCNTD7Ohdifw6CpzhlmU/edit?usp=sharing), Mergesort and Final Project  | [Final Project Proposal](final-project#project-proposal)	 |
 | 2/28 | Final Project Proposal |	[Slides](https://docs.google.com/presentation/d/1_EH94OXMgK3de4Mvp8ry7JdpXImsHh6axZONi2TJ1o0/edit?usp=sharing), [Making Simulations](lab-simulations) | |	
-| 3/1 | Study! | [Quiz 8](quiz8) | [Final Project](final-project) |
+| 3/1 | Study! | [Slides](https://docs.google.com/presentation/d/1ma4ZsG9XcKGgHAFjNQVktjApZftGXXnkDDB2y62MWLQ/edit?usp=sharing), [Quiz 8](quiz8) | [Final Project](final-project) |
 | **Week 10** | **Wrapping Up** |  | |
 | 3/4 | Final project initial submission  | Working on Final Projects|	 |
 | 3/6	|   | Final project peer review |  |
