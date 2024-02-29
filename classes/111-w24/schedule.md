@@ -50,7 +50,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 2/28 | Final Project Proposal |	[Slides](https://docs.google.com/presentation/d/1_EH94OXMgK3de4Mvp8ry7JdpXImsHh6axZONi2TJ1o0/edit?usp=sharing), [Making Simulations](lab-simulations) | |	
 | 3/1 | Study! | [Slides](https://docs.google.com/presentation/d/1ma4ZsG9XcKGgHAFjNQVktjApZftGXXnkDDB2y62MWLQ/edit?usp=sharing), [Quiz 8](quiz8) | [Final Project](final-project) |
 | **Week 10** | **Wrapping Up** |  | |
-| 3/4 | Final project initial submission  | Working on Final Projects|	 |
+| 3/4 | Final project initial submission  | [Slides](https://docs.google.com/presentation/d/1apqIPHFXtCOY1w2OdVlMlCycs08mGx1VgJWEeMwjLEM/edit?usp=sharing), Minimum Viable Product|	 |
 | 3/6	|   | Final project peer review |  |
 | 3/8 | Study! | [Quiz 9](quiz9); Wrap-up and course evals | |
 | Exam Period | | | |
