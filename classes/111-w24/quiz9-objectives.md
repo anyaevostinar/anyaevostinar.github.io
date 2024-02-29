@@ -37,7 +37,7 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 29. Demonstrating the worst case efficiency of the core sort and search algorithms
 30. Explaining the general idea of core efficiency classes
 
-You can print and bring along this [checklist](https://docs.google.com/document/d/1iVDE-CqBAEls1l5UPqw3eqJTY7vLZt_HTRCVTbA99Wo/edit?usp=sharing) to help you keep track in the quiz.
+You can print and bring along this [checklist](https://docs.google.com/document/d/1YYpU53vYT79LQ2g8wtkag6ESQZhTdV0fPXRAb0fM-TU/edit?usp=sharing) to help you keep track in the quiz.
 
 ## Suggestions
 Remember that this isn't your only chance to demonstrate your understanding of these learning objectives, so try not to stress too much.
