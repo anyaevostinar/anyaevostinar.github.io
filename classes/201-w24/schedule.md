@@ -50,9 +50,9 @@ Preparation should be completed **before** the class day that they are listed. C
 | W 2/28 | Study; [Project proposal](final-project#project-proposal)  | [Slides](https://docs.google.com/presentation/d/1Qg_Eza4hrGsx9uAF3qwRxo_SOg2NLKZA2a52IGA6uaE/edit?usp=sharing), [Quiz 8](quiz8)	| |
 | F 3/1 |  |[Slides](https://docs.google.com/presentation/d/1EeB9IiPjy709A0GxGNZgF0B9Pnx30QmNFHkNrK4D0yM/edit?usp=sharing), [Minimum Viable Product](project-checkin)	 |	 |
 | Week 10 | | Wrapping up | |
-| M 3/4	| | Quiz 9  | |
+| M 3/4	| | [Quiz 9](quiz9)  | |
 | W 3/6 | Final project initial submission | Project peer review | |
 | F 3/8 |  | Wrap up; review; course evaluations	| |
 | Exam Period | | | |
-| Self-scheduled | | Quiz 10 (No new learning objectives) | |
+| Self-scheduled | | [Quiz 10](quiz10) (No new learning objectives) | |
 | | | All revisions due Wednesday, 3/13, 6pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
