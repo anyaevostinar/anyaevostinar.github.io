@@ -6,20 +6,23 @@ permalink: /Classes/
 
 ## Current Classes
 
+### Spring 2024
+
+CS 201: Data Structures ([Syllabus](), [Schedule](/classes/201-s24/schedule))
+
+CS 208: Intro to Systems ([Syllabus](), [Schedule](/classes/208-s24/schedule))
+
+## Future Classes
+Subject to change!
+
+
+## Previous Classes
+
 ### Winter 2024
 
 CS 111: Introduction to Computer Science ([Syllabus](/classes/111-w24/syllabus), [Schedule](/classes/111-w24/schedule))
 
 CS 201: Data Structures ([Syllabus](/classes/201-w24/syllabus), [Schedule](/classes/201-w24/schedule))
-
-## Future Classes
-Subject to change!
-
-CS 201
-
-CS 208
-
-## Previous Classes
 
 ### Fall 2023
 

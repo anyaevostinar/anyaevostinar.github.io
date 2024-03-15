@@ -1,0 +1,59 @@
+---
+layout: page
+title: CS201 Data Structures S24 Schedule
+permalink: /classes/201-s24/schedule
+---
+
+[Syllabus](syllabus)
+
+This is a rough schedule of topics for each day and the release and due dates for each homework assignment.
+
+Class topics and homework information may change over the course of the term. Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses. However, I will put all relevant links on this page, so consider this a quick reference for what we have seen so far (that is easier to search than Moodle). Many of the links for future content will be invalid until we get closer to that date.
+
+Preparation should be completed **before** the class day that they are listed. Class is structured expecting that you have completed the preparation activities and responded to them on Moodle.
+
+| Date	| Homework/Preparation Due	| In Class |	Homework Out |
+| ------- | --------------- | ------------- | -------------- |
+| Week 1 | | Intro to Java | |
+| 3/25| [Intro Prep](intro-prep) |  [Java Scavenger Hunt](java_scavenger)| |
+| 3/27 | [Starting Java Prep](java-prep) |  [Getting Started Lab](getting-started) |	[HW1: Object-Oriented Practice](hw1-oop-practice) |
+| 3/29 | [OOP Prep](oop-prep)	|  [Inheritance](inheritance-activity) |	 |
+| Week 2 | | Intermediate Java | |
+| 4/1 | [Interfaces Prep](interfaces-prep) 	|	 [Quiz 1](quiz1); [ArrayLists and Interfaces](interface-lab)	| |
+| 4/3 | HW1; [Generics Prep](generics-prep) |		Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|
+| 4/5 | [Linked Lists Prep](linkedlist-prep) |  Linked Lists	| |
+| Week 3 | | Linear ADTs | |
+| 4/8 | [Queues Prep](queues-prep)  |	 [Quiz 2](quiz2); [Linked Queues](queues-lab) |  |
+| 4/10 | HW2; [Stacks Prep](stacks-prep) |		 [Stacks](stacks)	| [HW3: Maze Solver](hw3) |
+| 4/12 | [Asymptotic Analysis Prep](analysis-prep)|	   [Asymptotic Analysis](analysis-activity)	| |
+| Week 4 | | Efficiency | |
+| 4/15 | [Built-in Complexity Prep](built-in-prep) |  [Quiz 3](quiz3);[Linked Lists Revisited](linked-list-lab)	|  |
+| 4/17 | [HW3](hw3), [Ordered List Prep](ordered-list-prep) |	Ordered Linked Lists	| [HW4: Country Sorter List](hw4)|
+| 4/19 | [Array Prep](array-prep)|	 [Array Efficiency](array-efficiency) | |
+| Week 5 |  | Recursion and applications | |
+| 4/22 |	[Recursion Prep](recursion-prep)	|  [Quiz 4](quiz4); [Recursion](recursion)	|  |
+| 4/24 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	Quicksort	| (No HW5)   |
+| 4/26	| [Tree Prep](tree-prep) |	[Binary Search Trees](BST-lab)	| |
+| Week 6 | | Advanced Trees | |
+| 4/29 |  | Midterm break! | |
+| 5/1 |  [Tree Traversals Prep](tree-traversals-prep)|[Quiz 5](quiz5); Tree traversals	| [HW6: WordCloud Maker](hw6) |
+| 5/3 | [2-3 Tree Prep](2-3-prep) |		[Balanced Search Trees](two-three-tree)	| |
+| Week 7 | | More structures | |
+| 5/6 | [Heap Prep](heaps-prep)| [Quiz 6](quiz6);	[Heaps](heap)		 | |
+| 5/8 |	[HW6](hw6); [Graphs Prep](graphs-prep)  |	[Graph implementations](graphs)	|  [HW8: WikiPaths](hw8) (No HW7) |
+| 5/10 | [BFS and DFS Prep](bfs-dfs-prep) |	[BFS and DFS](traversal-analysis)		| |
+| Week 8 | | Graphs and Hashing | |
+| 5/13 |  Study! | [Quiz 7](quiz7); Catch up		 |  |	
+| 5/15 | HW8; [Hashing Prep](hashing-prep)	|  [Hashing and Collisions](hashing)  |	 |
+| 5/17 | Read about [Final project](final-project) | [Intro to final project](project-intro) 	| [Final project](final-project) |	
+| Week 9 | | Final Project | |
+| 5/20 | Study; [Project proposal](final-project#project-proposal)  |  [Quiz 8](quiz8)	| |
+| 5/22 |  | [Minimum Viable Product](project-checkin)	 |	 |
+| 5/24	| Final project initial submission | Working on projects  | |
+| Week 10 | | Wrapping up | |
+| 5/27 |  | Project peer review | |
+| 5/29 |  | [Quiz 9](quiz9) | |
+| 5/31 | Submit checklist for SS exam | Reading days!| |
+| Exam Period | | | |
+| Self-scheduled | | [Quiz 10](quiz10) (No new learning objectives) | |
+| | | All revisions due Monday 6/3, 9:30pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
