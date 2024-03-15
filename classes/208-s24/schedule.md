@@ -20,39 +20,39 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 3/25| Course info, advice |  VSCode & mantis, starting C| HW1: select-column |
 | 3/27 | DIS 1.1, 1.2, 1.5, 2.9.2 |  More C|	 |
 | 3/29 | HW1; DIS 2.6, 2.8	|  Strings and IO |	 HW2: minigrep |
-| Week 2 | |  | |
+| Week 2 | | More C | |
 | 4/1 |  HW2; DIS 2.1, 2.2, 2.4; [Binky Pointer Video](https://www.youtube.com/watch?v=5VnDaHBi8dM) | Memory	| HW3: readline |
 | 4/3 | DIS 4.1, 4.2, 4.3 |	Binary and Debugging	| |
 | 4/5 | HW3 | Types 	| HW4: Queues in C |
-| Week 3 | | | |
+| Week 3 | |  Machine Languages | |
 | 4/8 |   |	  |  |
 | 4/10 | HW4; DIS 4.4, 4.6, 4.7 |	Encodings	 	| HW5: Bit operations and UTF-8 |
 | 4/12 | [UTF-8](https://en.wikipedia.org/wiki/UTF-8)|	   UTF-8	| |
-| Week 4 | |  | |
+| Week 4 | | More Machine Languages | |
 | 4/15 | HW5 |  	|  |
 | 4/17 | |		| |
 | 4/19 | |	  | |
-| Week 5 |  |  | |
+| Week 5 |  Assembly |  | |
 | 4/22 |		|  x86-64 assembly language	|  |
 | 4/24 | DIS 6, 7.0, 7.1, 7.2 | | HW6: asm-to-C puzzles  |
 | 4/26	|  |		| |
-| Week 6 | |  | |
+| Week 6 | | Reverse Engineering | |
 | 4/29 |  | Midterm break! | |
 | 5/1 | | | |
 | 5/3 | HW6  |		Intro to gdb	|  HW7: Escape from the Zoo |
-| Week 7 | | | |
+| Week 7 | | Buffer Overflow, Concurrency | |
 | 5/6 | DIS 3 | 		 | |
 | 5/8 |	 |		|   |
 | 5/10 | HW7 |		| HW8: Buffer Overflow |
-| Week 8 | |  | |
+| Week 8 | | Processes, threads | |
 | 5/13 | | 		 |  |	
 | 5/15 | HW8	|   |	HW9: Command shell 1 |
 | 5/17 | DIS 13.2 | 	|  |	
-| Week 9 | |  | |
+| Week 9 | | Networking with sockets | |
 | 5/20 |  HW9 |  	| HW10: Command shell 2 |
 | 5/22 |  | 	 | 	 |
 | 5/24	| HW10  |   | |
-| Week 10 | |  | |
+| Week 10 | | Wrapping up | |
 | 5/27 |  |  | |
 | 5/29 |  |  | |
 | 5/31 | Submit checklist for SS exam | Reading days!| |

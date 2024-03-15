@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CS201 Data Structures S24 Syllabus
-permalink: /classes/201-s24/syllabus
+title: CS208 Intro to Systems S24 Syllabus
+permalink: /classes/208-s24/syllabus
 ---
 
 [Schedule](schedule)
@@ -43,19 +43,9 @@ All drop-in hours in Edge Lounge, Olin 306
 Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 9-5 M-F and either send a calendar invite to an event or email me.
 
 ## Overview and Learning Goals
-Welcome to Data Structures! In this course, you'll be learning about how to work with data, how to design solutions that are efficient for a particular application, and developing more complex programs than in the introductory CS course. 
-Whether or not you're interested in taking future computer science courses, this class should help you to develop your problem solving and analysis skills as well as learn coding skills that you can apply in a variety of domains.
-If you are interested in more computer science courses, data structures will prepare you for the upper level courses and give you a foundation in some of the ideas underlying much of the field.
+Are you curious what’s really going on when a computer runs your code? In this course we will demystify the machine and the tools that we use to program it. Our broad survey of how computer systems execute programs, store information, and communicate will focus on the hardware/software interface, including data representation, instruction set architecture, the C programming language, memory management, and the operating system process model.
 
-By the time you complete this course, you'll be able to do the following:
-
-* Read a problem description and think through the pros and cons of different data representations and implementations.
-* Work with basic programming building blocks (data structures and abstract data types), including lists, arrays, stacks, queues, trees, maps, and graphs.
-* Analyze the efficiency of an algorithm to understand how the time and space the algorithm needs varies with the size of the data it's working on.
-* Create non-trivial Java programs.
-
-**Prerequisites**: CS111 (Introduction to Computer Science) or an introductory computer science course completed elsewhere.
-Please talk to me if your background is something other than CS111 or AP CS in high school.
+**Prerequisites**: CS201 (Data Structures) or instructor permission.
 
 ## Course expectations
 I have done my best to design the course so that everyone can be successful, regardless of personal circumstances. 
@@ -75,12 +65,12 @@ All materials will be released at least 48 hours before they are due.
 ### Attendance
 Attendance is not strictly required in this class, though I believe that you will do much better if you attend every session and there are consequences to missing class on some days. 
 Because much of the classtime is spent working with partners on lab activities, if you miss class, you will miss out on that opportunity.
-This is particularly important on most Wednesdays when you will usually have time to get started on the homework assignment.
-**If you are absent on Wednesday and your homework partner is in class, you will be split up so that your homework partner can start on the homework assignment.**
-This means that if you miss class on Wednesday and haven't made prior arrangements with me and your homework partner, you will likely need to do that week's homework individually. 
+Some class days will have time to get started on the homework assignment.
+**If you are absent on one of these days and your homework partner is in class, you will be split up so that your homework partner can start on the homework assignment.**
+This means that if you miss class on one of these days and haven't made prior arrangements with me and your homework partner, you will likely need to do that week's homework individually. 
 
-On Mondays there will typically be a quiz in the first half of class.
-If you do not attend on a Monday, you will not be able to make up that quiz, though you will be able to demonstrate your understanding on the learning objectives on subsequent quizzes still without penalty.
+Some days (as noted on the schedule) there will be a quiz in the first half of class.
+If you do not attend one of these days, you will not be able to make up that quiz, though you will be able to demonstrate your understanding on the learning objectives on subsequent quizzes still without penalty.
 
 ## Types of Engagement and Collaboration Policies
 We'll have lots of different ways of engaging with the course material: 
@@ -88,8 +78,7 @@ We'll have lots of different ways of engaging with the course material:
 * Interactive lectures at the start of class that will include discussions to check your understand of the reading and give you a chance to ask questions.
 * Labs for writing somewhat longer code with significant guidance from the instructions in order to make ideas from readings more concrete.
 * Homework where you complete more extended projects to provide opportunities to design solutions and see the ideas from class applied in real contexts.
-* Weekly in-class quizzes, that provide you with a check on whether you've understood the key ideas from the previous week and are summative.
-* Final project, where you pull together everything you've learned to create something that interests you.
+* In-class quizzes, that provide you with a check on whether you've understood the key ideas from the previous weeks and are summative.
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
 In many of these activities you'll have the option to work collaboratively, and throughout the course you'll have assigned programming partners who you will complete the labs and homework with. 
@@ -105,9 +94,9 @@ Therefore, my goal with the following evaluation metrics is to balance providing
 
 Towards that end, your performance in this class will be evaluated in the following ways according to the learning goals for the course:
 
-* **Programming deliverables** There will be weekly(ish) programming homework assignments during the term, some of which you'll complete individually and some with a partner. You will also complete a final programming project at the end of the term. The programming deliverables allow you to demonstrate mastery of some of the key learning objectives in this course -- particularly those focused on writing and organizing larger programs. These contribute to your final grade according to the *specifications grading* scale outlined below. You will have the opportunity to revise these *individually* (regardless of whether they were originally individual or paired assignments), as detailed below.
+* **Programming deliverables** There will be weekly(ish) programming homework assignments during the term, some of which you'll complete individually and some with a partner. The programming deliverables allow you to demonstrate mastery of some of the key learning objectives in this course -- particularly those focused on writing and organizing larger programs. These contribute to your final grade according to the *specifications grading* scale outlined below. You will have the opportunity to revise these *individually* (regardless of whether they were originally individual or paired assignments), as detailed below.
 
-* **In-class quizzes** Some of the learning objectives for the course can't be measured through programming assignments. Instead, your mastery of these objectives will be assessed in weekly in-class quizzes, generally on Mondays. There is a specific list of learning objectives that you should demonstrate your mastery of on these quizzes, and each objective will appear on at least two quizzes, though often more. This means that you have multiple chances to demonstrate your understanding, and where you are with each objective at the end of the term is what will matter for your grade. I realize this is different than how you are probably used to having quizzes, so we'll discuss this more in class and throughout the term. There are also more details below.
+* **In-class quizzes** Some of the learning objectives for the course can't be measured through programming assignments. Instead, your mastery of these objectives will be assessed in in-class quizzes. There is a specific list of learning objectives that you should demonstrate your mastery of on these quizzes, and each objective will appear on at least two quizzes, though often more. This means that you have multiple chances to demonstrate your understanding, and where you are with each objective at the end of the term is what will matter for your grade. I realize this is different than how you are probably used to having quizzes, so we'll discuss this more in class and throughout the term. There are also more details below.
 
 
 ### Programming Grading Scale
@@ -128,7 +117,7 @@ Even if an assignment was initially a paired assignment, all revisions should be
 
 ### Quiz Assessment
 
-Each weekly quiz will have a subset of [learning objectives](quizzes-overview) that can be demonstrated on that quiz, which you will know ahead of time.
+Each quiz will have a subset of [learning objectives](quizzes-overview) that can be demonstrated on that quiz, which you will know ahead of time.
 Each of the 'quiz' learning objectives will appear on at least two quizzes, so that you will have multiple chances to demonstrate your understanding of the material.
 Answers on quizzes will be assessed on the same four-level scale:
 
@@ -180,9 +169,9 @@ Take handwritten notes when in class and reading from the textbook.
 Research has also shown that handwritten instead of typed notes help you retain the information better.
 
 * Pay attention to longer-term homework assignments and start early: 
-When I've asked students what advice they'd give to future 201 students, the most common thing they said was to start the homework early! The homeworks are likely slightly longer than you experienced in intro, as the goal is to help you learn to create more complex programs and make design decisions. By starting early, you have more opportunities to work through problems that come up and time to ask for help! Even if you can't immediately start on the homework, read over the prompt so that your brain can start thinking about it in the background; it really does help!
+When I've asked students what advice they'd give to future 208 students, the most common thing they said was to start the homework early! By starting early, you have more opportunities to work through problems that come up and time to ask for help! Even if you can't immediately start on the homework, read over the prompt so that your brain can start thinking about it in the background; it really does help!
 
-* Test your code: One of the key parts of writing successful code is debugging it - testing whether it works, finding where it doesn’t, and fixing it so it does. The assignments in this class are likely more complex than what you saw in intro, so you’ll need to spend more time making sure that your code works. Learning to debug your code is essential for any later coding projects you may do.
+* Test your code: One of the key parts of writing successful code is debugging it - testing whether it works, finding where it doesn’t, and fixing it so it does. C is a notoriously unhelpful language when it comes to errors, so you’ll need to spend more time making sure that your code works. Learning to debug your code is essential for any later coding projects you may do.
 
 * Ask questions and reach out for help: If you have a question about something, chances are other people do too. By asking questions in class, on the forum, and in office hours, you'll keep up with the course and gain a deeper understanding of the concepts.
 
@@ -199,7 +188,7 @@ Leave yourself enough time to be able to take breaks!
 * Prefect sessions: This course has a prefect. 
 The Prefect Program offers in person tutoring and/or optional collaborative learning sessions for participating classes. 
 Prefect sessions review course concepts and often focus on critical thinking and problem-solving exercises centered on the course material. 
-Our course prefect(s) will use email or CampusWire to inform everyone in the class about upcoming sessions and availability for 1:1 tutoring.
+Our course prefect will use email or CampusWire to inform everyone in the class about upcoming sessions and availability for 1:1 tutoring.
 * Q&A CampusWire Forum:
 You're welcome to post questions about readings and labs on the forum, as well as about homework. 
 You shouldn't post much homework code, but you can post code related to other assignments. 
@@ -250,9 +239,7 @@ It's not worth it -- please seek help using the resources above instead.
 ### AI-Assistance
 In this new age of AI assistants everywhere, we need to cautiously navigate their relationship with academic honesty together.
 In general, only use an AI text/code generator if the assignment explicitly calls for it or allows it, and follow specific assignment guidelines to disclose which text comes from the AI. 
-Most assignments (probably all) in this course will NOT allow the use of an AI text/code generator, since you need to learn how to write the code yourself. If you already have the GitHub Co-pilot extension in VSCode, [you must disable it](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment#enabling-or-disabling-github-copilot) for all course work.
-
-We may explore some use cases for generative AI, but I'll also emphasize and demonstrate how it regularly produces quite horrible solutions. 
+Most assignments (probably all) in this course will NOT allow the use of an AI text/code generator, since you need to learn how to write the code yourself. If you already have the GitHub Co-pilot extension in VSCode, [you must disable it](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment#enabling-or-disabling-github-copilot) for all course work. 
 You can write way better code yourself, trust me!
 
 ## Pedagogy
@@ -264,7 +251,7 @@ If you aren't interested in pedagogy, you can skip this.
 Research has shown that active learning in the classroom leads to better retention of material for all students, but especially those from historically marginalized groups.
 Computer science classes are well-suited to active learning, because we can practice ideas in class by programming and writing out algorithms, for example.
 In this class, a large portion of in-class time will be spent with you grappling with ideas and trying to solve problems that I've given you while I and the prefect circulate to answer questions.
-This requires that you've read the assigned reading ahead of time, so that I don't need to lecture and we can spend more time learning how to actually use the ideas.
+This requires that you've read the assigned reading ahead of time, so that I don't need to lecture as much and we can spend more time learning how to actually use the ideas.
 Active learning can feel less effective or productive in the moment, because you are struggling to figure things out instead of me just explaining things to you.
 However, that process of struggling is exactly what is needed for you to learn the material most effectively for long-term retention.
 

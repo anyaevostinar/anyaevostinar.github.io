@@ -38,12 +38,12 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/29 |  | Midterm break! | |
 | 5/1 |  [Tree Traversals Prep](tree-traversals-prep)|[Quiz 5](quiz5); Tree traversals	| [HW6: WordCloud Maker](hw6) |
 | 5/3 | [2-3 Tree Prep](2-3-prep) |		[Balanced Search Trees](two-three-tree)	| |
-| Week 7 | | More structures | |
-| 5/6 | [Heap Prep](heaps-prep)| [Quiz 6](quiz6);	[Heaps](heap)		 | |
+| Week 7 | | Graphs | |
+| 5/6 | Study! | [Quiz 6](quiz6); Catch up			 | |
 | 5/8 |	[HW6](hw6); [Graphs Prep](graphs-prep)  |	[Graph implementations](graphs)	|  [HW8: WikiPaths](hw8) (No HW7) |
 | 5/10 | [BFS and DFS Prep](bfs-dfs-prep) |	[BFS and DFS](traversal-analysis)		| |
-| Week 8 | | Graphs and Hashing | |
-| 5/13 |  Study! | [Quiz 7](quiz7); Catch up		 |  |	
+| Week 8 | | Heaps and Hashing | |
+| 5/13 | [Heap Prep](heaps-prep) | [Quiz 7](quiz7); [Heaps](heap)		 |  |	
 | 5/15 | HW8; [Hashing Prep](hashing-prep)	|  [Hashing and Collisions](hashing)  |	 |
 | 5/17 | Read about [Final project](final-project) | [Intro to final project](project-intro) 	| [Final project](final-project) |	
 | Week 9 | | Final Project | |
