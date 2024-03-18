@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Debugging and Nested Loops Preparation
+title: Getting Started with C Preparation
 permalink: /classes/208-s24/getting-started
 ---
 

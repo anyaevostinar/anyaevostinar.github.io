@@ -17,7 +17,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Date	| Homework/Preparation Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Starting with C | |
-| 3/25| [Resources](resources), [Syllabus](syllabus), [Collaboration](collaboration) [Samples](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/samples/) |  VSCode & mantis, starting C| HW1: select-column |
+| 3/25| [Resources](resources), [Syllabus](syllabus), [Collaboration](collaboration),  [Samples](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/samples/) |  VSCode & mantis, starting C| HW1: select-column |
 | 3/27 | [Getting Started with C](getting-started) |  More C|	 |
 | 3/29 | HW1; [Strings and Files](strings-prep)	|  Strings and IO |	 HW2: minigrep |
 | Week 2 | | More C | |
