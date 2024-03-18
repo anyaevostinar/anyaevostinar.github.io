@@ -18,8 +18,8 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Starting with C | |
 | 3/25| Course info, advice |  VSCode & mantis, starting C| HW1: select-column |
-| 3/27 | DIS 1.1, 1.2, 1.5, 2.9.2 |  More C|	 |
-| 3/29 | HW1; DIS 2.6, 2.8	|  Strings and IO |	 HW2: minigrep |
+| 3/27 | [Getting Started with C](getting-started) |  More C|	 |
+| 3/29 | HW1; [Strings and Files](strings-prep)	|  Strings and IO |	 HW2: minigrep |
 | Week 2 | | More C | |
 | 4/1 |  HW2; DIS 2.1, 2.2, 2.4; [Binky Pointer Video](https://www.youtube.com/watch?v=5VnDaHBi8dM) | Memory	| HW3: readline |
 | 4/3 | DIS 4.1, 4.2, 4.3 |	Binary and Debugging	| |

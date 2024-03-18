@@ -4,9 +4,7 @@ title: Debugging and Nested Loops Preparation
 permalink: /classes/208-s24/getting-started
 ---
 
-## Overview
-
-
+<!--## Overview-->
 ## Basic Learning Objectives
 Before class, you should  be able to:
 * Write the `main` for a C program
@@ -28,3 +26,9 @@ You should read the following in DIS:
 * [1.5](https://diveintosystems.org/book/C1-C_intro/arrays_strings.html)
 * [2.9.2](https://diveintosystems.org/book/C2-C_depth/advanced_cmd_line_args.html)
 * Feel free to reference the rest of Ch. 1 for other C syntax
+
+## Checks
+Complete the following checks:
+* [1.1](http://runestone.cs.swarthmore.edu/DIS_Exercises/section-1_1.html)
+* [1.2](http://runestone.cs.swarthmore.edu/DIS_Exercises/section-1_2.html)
+* [1.5](http://runestone.cs.swarthmore.edu/DIS_Exercises/section-1_5.html)
