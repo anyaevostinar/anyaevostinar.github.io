@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Debugging and Nested Loops Preparation
+title: Strings and Files Preparation
 permalink: /classes/208-s24/strings-prep
 ---
 
