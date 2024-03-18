@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Starting Java Preparation
-permalink: /classes/201-w24/java-prep
+permalink: /classes/201-s24/java-prep
 ---
 
 ## Overview
@@ -25,7 +25,7 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=897176), which covers the following sections of Brad Miller's *Welcome to Java for Python Programmers*:
+You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=922927), which covers the following sections of Brad Miller's *Welcome to Java for Python Programmers*:
 
 * 1.1-1.7 (things you can skim: Array, switch, Boolean Operators)
 
