@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Homework 1 - OOP Practice
-permalink: /classes/201-w24/hw1-oop-practice
+permalink: /classes/201-s24/hw1-oop-practice
 ---
 
 ## Logistics
@@ -129,7 +129,7 @@ If you see a message like this, you should follow the instructions and add `-Xli
     * @return description of what if anything is returned, should definitely mention the type
     */
     public int exampleMethod(int nameOfParameter, int anotherParameter){
-    return 0;
+        return 0;
     }
     ```
 
