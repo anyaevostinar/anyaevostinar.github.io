@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Style Reference
-permalink: /classes/201-w24/style-reference
+permalink: /classes/201-s24/style-reference
 ---
 
 ## Overview
