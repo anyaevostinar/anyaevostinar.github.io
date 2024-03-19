@@ -17,12 +17,12 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Date	| Homework/Preparation Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Starting with C | |
-| 3/25| [Resources](resources), [Syllabus](syllabus), [Collaboration](collaboration),  [Samples](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/samples/) |  VSCode & mantis, starting C| [HW1: select-column](hw1) |
+| 3/25| [Resources](resources), [Syllabus](syllabus), [Collaboration](collaboration),  [Samples](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/samples/) |  [Slides](https://docs.google.com/presentation/d/18gQp1-_nuBINSEXm64UqVyxsRL3bUxIXYigi4osI7CA/edit?usp=sharing), VSCode & mantis, starting C| [HW1: select-column](hw1) |
 | 3/27 | [Getting Started with C](getting-started) |  More C|	 |
 | 3/29 | HW1; [Strings and Files](strings-prep)	|  Strings and IO |	 HW2: minigrep |
 | Week 2 | | More C | |
 | 4/1 |  HW2; DIS 2.1, 2.2, 2.4; [Binky Pointer Video](https://www.youtube.com/watch?v=5VnDaHBi8dM) | Memory	| HW3: readline |
-| 4/3 | DIS 4.1, 4.2, 4.3 |	Binary and Debugging	| |
+| 4/3 | DIS 4.1, 4.2, 4.3 |	Quiz 1; Binary and Debugging	| |
 | 4/5 | HW3 | Types 	| HW4: Queues in C |
 | Week 3 | |  Machine Languages | |
 | 4/8 |   |	  |  |
