@@ -22,7 +22,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 3/29 | HW1; [Strings and Files](strings-prep)	|  Strings and IO |	 HW2: minigrep |
 | Week 2 | | More C | |
 | 4/1 |  HW2; DIS 2.1, 2.2, 2.4; [Binky Pointer Video](https://www.youtube.com/watch?v=5VnDaHBi8dM) | Memory	| HW3: readline |
-| 4/3 | DIS 4.1, 4.2, 4.3 |	Quiz 1; Binary and Debugging	| |
+| 4/3 | DIS 4.1, 4.2, 4.3 |	Binary and Debugging	| |
 | 4/5 | HW3 | Types 	| HW4: Queues in C |
 | Week 3 | |  Machine Languages | |
 | 4/8 |   |	  |  |
