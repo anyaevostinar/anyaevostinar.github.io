@@ -9,7 +9,6 @@ Inheritance is powerful, but often you want to require that a class implement sp
 
 ## Basic Learning Objectives
 Before class, you should be able to: 
-* Write a subclass using inheritance
 * Identify the keyword for implementing an *interface*
 * Explain the difference between using an interface and inheritance
 * Give an example of when *static* would be used
@@ -24,9 +23,9 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=903026):
+You should read the [reading assignment through Moodle]():
 
-* Java for Python Programmers 1.8
+* Java for Python Programmers 1.8.4-1.8.6
 
 ## Checks
 You should complete the reading checks embedded in the reading assignment on Moodle.

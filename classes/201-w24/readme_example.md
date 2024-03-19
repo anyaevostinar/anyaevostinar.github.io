@@ -38,4 +38,7 @@ The program will then ask you what you'd like to do:
     $ Lined notebook with purple dragon on the cover, sitting on a stack of books and sipping coffee
     ```
 
+## Prompt Response
+Printing with `System.out.println` was easy for me. Figuring out for loop syntax was difficult for me.
+
 ```
