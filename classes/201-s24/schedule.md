@@ -17,7 +17,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 1 | | Intro to Java | |
 | 3/25| [Intro Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1UHLuNHEqkFgvyjIP7NlQ8gmTNcQV6MV_BW7tZKu3KSI/edit?usp=sharing), [Java Scavenger Hunt](java_scavenger)| |
 | 3/27 | [Starting Java Prep](java-prep) | [Slides](https://docs.google.com/presentation/d/111e8aN22RVuWTrkehnOiu9Vakl-7yaWsE-jG0N_wAb0/edit?usp=sharing), [Getting Started Lab](getting-started) |	[HW1: Object-Oriented Practice](hw1-oop-practice) |
-| 3/29 | [OOP Prep](oop-prep)	|  [Inheritance](inheritance-activity) |	 |
+| 3/29 | [OOP Prep](oop-prep)	|  [Slides](https://docs.google.com/presentation/d/10Otmzbc3xmomu9reYlA7BkfQrjTV0PT8Ff0z7bXFccE/edit?usp=sharing), [Inheritance](inheritance-activity) |	 |
 | Week 2 | | Intermediate Java | |
 | 4/1 | [Interfaces Prep](interfaces-prep) 	|	 [Quiz 1](quiz1); [ArrayLists and Interfaces](interface-lab)	| |
 | 4/3 | HW1; [Generics Prep](generics-prep) |		Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|

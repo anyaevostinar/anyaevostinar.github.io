@@ -26,7 +26,7 @@ To **demonstrate mastery**, your submission needs to:
 ## Logistics
 This is an **individual** assignment, so you should write all the code individually, though you can get help, as detailed in the [collaboration](collaboration) document.
 
-This assignment is due Friday March 29th at 10pm. As with all assignments, you will have the opportunity to revise this submission based on feedback.
+This assignment is due Friday March 29th at 10pm. As with all assignments, you will have the opportunity to [revise](revision-process) this submission based on feedback.
 
 
 ## GETTING STARTED WITH C
