@@ -23,6 +23,10 @@ To **demonstrate mastery**, your submission needs to:
 * Use `fgets` in a memory-safe way
 * Have thorough error handling
 
+## Collaboration
+This is an **individual** assignment, so you should write all the code individually, though you can get help, as detailed in the [collaboration](collaboration) document.
+Like all assignments, you will have the opportunity to revise this submission based on feedback.
+
 ## GREP
 If you ever want to search for strings in one or a million files in a Unix environment, you should get to know [grep](https://en.wikipedia.org/wiki/Grep).
 

@@ -6,7 +6,7 @@ permalink: /classes/208-s24/hw1
 
 Starter code: [select-column-package.tar](select-column-package.tar)
 
-Upload solutions via Gradescope as: select-column.tar
+Upload solutions via Gradescope as: `select-column.tar`
 
 ## Goals
 * Get started with some of the fundamentals of C programming
@@ -21,9 +21,11 @@ To **demonstrate proficiency**, your submission needs to:
 To **demonstrate mastery**, your submission needs to:
 * Be quite [well-styled](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html), particularly well-chosen variable names, naming all magic numbers, and good indentation
 * Have a well-chosen algorithm (i.e. don't over-complicate this task!)
+* Have thorough error-handling
 
 ## Collaboration
 This is an **individual** assignment, so you should write all the code individually, though you can get help, as detailed in the [collaboration](collaboration) document.
+Like all assignments, you will have the opportunity to revise this submission based on feedback.
 
 
 ## GETTING STARTED WITH C
