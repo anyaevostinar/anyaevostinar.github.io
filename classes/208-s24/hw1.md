@@ -23,9 +23,10 @@ To **demonstrate mastery**, your submission needs to:
 * Have a well-chosen algorithm (i.e. don't over-complicate this task!)
 * Have thorough error-handling
 
-## Collaboration
+## Logistics
 This is an **individual** assignment, so you should write all the code individually, though you can get help, as detailed in the [collaboration](collaboration) document.
-Like all assignments, you will have the opportunity to revise this submission based on feedback.
+
+This assignment is due Friday March 29th at 10pm. As with all assignments, you will have the opportunity to revise this submission based on feedback.
 
 
 ## GETTING STARTED WITH C
