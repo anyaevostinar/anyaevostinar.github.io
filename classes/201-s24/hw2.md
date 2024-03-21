@@ -16,6 +16,7 @@ This is a paired assignment, so you should complete it with your assigned partne
 The whole time that you are working, you should both be present and actively working on the problem at hand. 
 (Two brains, one keyboard.) 
 Switch off the typing duties so that you each type for roughly half of the time. 
+You should only submit **one** assignment for your pair and then add your partner to the submission on Gradescope.
 
 You are able to get help from many sources as detailed in the [collaboration](collaboration) policy.
 
@@ -266,6 +267,6 @@ In addition, you should specifically have a section discussing the following des
 
 
 ## Submitting
-Remember to update your `Collaborations.txt` file with any sources that you consulted.
+Remember to update your `Collaborations.txt` file with any sources that you consulted and that you should only submit **one** assignment for your pair and then add your partner to the submission on Gradescope..
 
 Then upload all of your files to the Gradescope link on Moodle, at which point the autograder will run and let you know if your code works correctly. You are able to submit your code as many times as you wish before the deadline to fix any issues. If you have questions about what the autograder is telling you is wrong, please ask!
