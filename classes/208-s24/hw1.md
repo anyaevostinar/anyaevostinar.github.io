@@ -19,6 +19,7 @@ To **demonstrate proficiency**, your submission needs to:
 * Be somewhat [well-styled](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html)
 
 To **demonstrate mastery**, your submission needs to:
+* Demonstrate proficiency
 * Be quite [well-styled](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html), particularly well-chosen variable names, naming all magic numbers, and good indentation
 * Have a well-chosen algorithm (i.e. don't over-complicate this task!)
 * Have thorough error-handling
