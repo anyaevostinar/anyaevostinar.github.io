@@ -134,7 +134,7 @@ Population Total
 China
 ```
 
-### `Country`
+### Country
 Your `Country` class must use the following methods:
 
 ```java
@@ -166,7 +166,7 @@ public class Country {
 }
 ```
 
-### `CountryDisplayer`
+### CountryDisplayer
 Your code must be objected-oriented. What this means is that you must create instances of `Country` and `CountryDisplayer`. You should not create any additional static methods. You can and should create additional non-static methods however and aim to keep your methods short and focused.
 
 Your `CountryDisplayer` class must use the following methods:
