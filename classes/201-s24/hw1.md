@@ -7,7 +7,7 @@ permalink: /classes/201-s24/hw1-oop-practice
 ## Logistics
 This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the [collaboration](collaboration) policy.
 
-This assignment is due on Wednesday April 3rd at 10pm. As with all assignments, you will have the opportunity to revise this assignment based on the feedback that you get.
+This assignment is due on Wednesday April 3rd at 10pm. As with all assignments, you will have the opportunity to [revise](revision-process) this assignment based on the feedback that you get.
 
 ## Goals
 Demonstrate your understanding of private variables, ability to create objects of your own making, and use other Java functionality.
