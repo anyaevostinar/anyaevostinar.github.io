@@ -6,7 +6,7 @@ permalink: /classes/208-s24/hw3
 
 No starter code
 
-Upload solutions via Gradescope as: `readline.tar`
+Upload solutions via Gradescope as: `readline.c`
 
 ## GOALS
 * Yet more C practice
@@ -121,7 +121,7 @@ But doing this exercise in this class has two benefits.
 * You get to practice using `malloc` and `free` in a reasonably natural context.
 
 ## SUBMITTING YOUR WORK
-You know the drill by now. See the expected tar file name shown at the top of the page. You may but need not include your `main.c`. The autograder will ignore it anyway.
+You know the drill by now. See the expected file name shown at the top of the page. You may but need not include your `main.c`. The autograder will ignore it anyway.
 
 ## ADVICE
 Think carefully about when errors can occur naturally, and what to do when they do. As usual, consult the samples and reading for examples of error-handling.

@@ -7,6 +7,7 @@ permalink: /classes/208-s24/resources
 ## Useful all term
 * [CS 208 Quick Reference](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/quick-reference.html) (by Aaron Bauer, hosted by Jeff Ondich)
 * [CS208 Style Guide](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html) (by Jeff Ondich)
+* [Jeff's Other Resources](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/resources.html/)
 
 ## Useful commands
 Things you'll probably forget and want a reminder for:

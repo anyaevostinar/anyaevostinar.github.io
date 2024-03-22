@@ -6,7 +6,7 @@ permalink: /classes/208-s24/hw2
 
 Starter code: [minigrep-package.tar](minigrep-package.tar)
 
-Upload solutions via Gradescope as: `minigrep.tar`
+Upload solutions via Gradescope as: `minigrep.c`
 
 ## GOALS
 * More C practice
@@ -102,7 +102,7 @@ $ ./minigrep animals.txt ing
 **You may assume that no line of your file contains more than 200 bytes/chars, including the newline character.**
 
 ## SUBMITTING YOUR WORK
-As you did for your [first homework assignment](hw1), put all the files you want to submit in a folder named `minigrep` (this should probably just be a single source file `minigrep.c`), run `tar cvf minigrep.tar minigrep`, and then submit the tar file via Gradescope.
+As you did for your [first homework assignment](hw1), upload `minigrep.c` to Gradescope.
 
 ## REMEMBER THAT ADVICE FROM LAST TIME?
 * Think ahead of time about error handling. What could go wrong with the command-line or the input file or anything else in your program? What should your program do when those things happen?

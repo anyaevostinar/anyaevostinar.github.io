@@ -6,7 +6,7 @@ permalink: /classes/208-s24/hw1
 
 Starter code: [select-column-package.tar](select-column-package.tar)
 
-Upload solutions via Gradescope as: `select-column.tar`
+Upload solutions via Gradescope as: `select-column.c`
 
 ## Goals
 * Get started with some of the fundamentals of C programming
@@ -99,7 +99,7 @@ To get started on this first assignment:
 * Login to `mantis.mathcs.carleton.edu` using VS Code and open your `cs208` folder
 * In your VS Code terminal, run:
     ```bash
-    wget https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/assignments/packages/select-column-package.tar
+    wget https://anyaevostinar.github.io/classes/208-s24/select-column-package.tar
     ```
 * Still in your VS Code terminal, extract the select-column-package folder:
     ```bash
@@ -119,14 +119,7 @@ In the [select-column-package.tar](select-column-package.tar) file linked at the
 For most assignments, I will only give you very simple tests in the assignment's starter package. The Gradescope autograder will run some more sophisticated tests to explore the boundaries of a given assignment. You are, of course, free to use the testing infrastructure from the starter package to add your own tests. Getting used to automated testing and to writing detailed tests of your own will serve you well in the long-run.
 
 ## SUBMITTING YOUR WORK
-* put your source file select-column.c in a folder named select-column
-* cd to the parent directory of select-column/
-* create a tar file:
-    ```bash
-    tar cvf select-column.tar select-column
-    ```
-* download the tar file to your local machine (in Visual Studio Code while connected to mantis.mathcs.carleton.edu, you can right-click on starting-c.tar and select Download)
-* use the Gradescope web interface to submit your tar file
+* upload `select-column.c` to Gradescope
 * wait for the autograder to run and feel free to resubmit if the autograder points out an issue
 
 ## A LITTLE ADVICE
