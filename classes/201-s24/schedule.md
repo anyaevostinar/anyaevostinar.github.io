@@ -21,9 +21,9 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 2 | | Intermediate Java | |
 | 4/1 | [Interfaces Prep](interfaces-prep) 	|	 [Quiz 1](quiz1); [ArrayLists and Interfaces](interface-lab)	| |
 | 4/3 | HW1; [Generics Prep](generics-prep) |		Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|
-| 4/5 | [Linked Lists Prep](linkedlist-prep) |  Linked Lists	| |
+| 4/5 |[Queues Prep](queues-prep)  |  [Linked Queues](queues-lab)	| |
 | Week 3 | | Linear ADTs | |
-| 4/8 | [Queues Prep](queues-prep)  |	 [Quiz 2](quiz2); [Linked Queues](queues-lab) |  |
+| 4/8 | [Linked Lists Prep](linkedlist-prep)  |	 [Quiz 2](quiz2);  Linked Lists |  |
 | 4/10 | HW2; [Stacks Prep](stacks-prep) |		 [Stacks](stacks)	| [HW3: Maze Solver](hw3) |
 | 4/12 | [Asymptotic Analysis Prep](analysis-prep)|	   [Asymptotic Analysis](analysis-activity)	| |
 | Week 4 | | Efficiency | |
