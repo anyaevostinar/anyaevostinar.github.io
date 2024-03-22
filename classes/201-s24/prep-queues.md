@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Queues Preparation
-permalink: /classes/201-w24/queues-prep
+permalink: /classes/201-s24/queues-prep
 ---
 
 ## Overview
