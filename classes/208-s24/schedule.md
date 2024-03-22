@@ -25,7 +25,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/3 | [Binary Prep](binary-prep) |	Binary and Debugging	| |
 | 4/5 | HW3; [Structs Prep](structs-prep) | Types 	| [HW4: Queues in C](hw4) |
 | Week 3 | |  Machine Languages | |
-| 4/8 |   |	  |  |
+| 4/8 |   |	 Quiz 1 |  |
 | 4/10 | HW4; DIS 4.4, 4.6, 4.7 |	Encodings	 	| HW5: Bit operations and UTF-8 |
 | 4/12 | [UTF-8](https://en.wikipedia.org/wiki/UTF-8)|	   UTF-8	| |
 | Week 4 | | More Machine Languages | |

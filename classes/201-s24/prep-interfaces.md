@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Interfaces Preparation
-permalink: /classes/201-w24/interfaces-prep
+permalink: /classes/201-s24/interfaces-prep
 ---
 
 ## Overview
@@ -23,7 +23,7 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the [reading assignment through Moodle]():
+You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=928063):
 
 * Java for Python Programmers 1.8.4-1.8.6
 
