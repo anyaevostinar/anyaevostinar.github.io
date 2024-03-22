@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Binary Preparation
-permalink: /classes/208-s24/binary-prep
+title: Structs Preparation
+permalink: /classes/208-s24/structs-prep
 ---
 
 <!--
