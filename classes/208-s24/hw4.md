@@ -34,7 +34,7 @@ To **demonstrate proficiency**, your submission needs to:
 To **demonstrate mastery**, your submission needs to:
 * Demonstrate proficiency
 * Score the full 13 points on the tests (checked by Gradescope)
-* Be quite [well-styled](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html), particularly well-chosen variable names, naming all magic numbers, and good indentation
+* Be quite [well-styled](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html), particularly well-chosen variable names and helper methods to reduce code duplication
 
 Your program's correctness and efficiency will be evaluated using the "traces" described below. You will get credit (between 0 and 2 points, depending on the trace) for each one that executes correctly and fast enough. The provided `driver.py` runs `qtest` on the traces and computes the score. This is the same program that will be used to compute your correctness/efficiency scores. You can invoke the driver directly with the command:
 
