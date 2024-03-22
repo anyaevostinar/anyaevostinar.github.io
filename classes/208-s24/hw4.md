@@ -5,6 +5,7 @@ permalink: /classes/208-s24/hw4
 ---
 
 Starter code: [queues-package.tar](queues-package.tar)
+
 Upload via Moodle as: `queue.c` and `queue.h`
 
 This assignment is an adaptation of [this lab](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/labs/cprogramminglab.pdf) developed for the Carnegie Mellon University's 15-213 (Introduction to Computer Systems) course, which is the course for which a previous textbook was written. These labs are great, but they come with a lot of infrastructure, which will take you a little while to get used to. We'll talk about this in detail in class.
@@ -32,7 +33,7 @@ To **demonstrate proficiency**, your submission needs to:
 
 To **demonstrate mastery**, your submission needs to:
 * Demonstrate proficiency
-* Score the full 13 points on the tests (check by Gradescope)
+* Score the full 13 points on the tests (checked by Gradescope)
 * Be quite [well-styled](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html), particularly well-chosen variable names, naming all magic numbers, and good indentation
 
 Your program's correctness and efficiency will be evaluated using the "traces" described below. You will get credit (between 0 and 2 points, depending on the trace) for each one that executes correctly and fast enough. The provided `driver.py` runs `qtest` on the traces and computes the score. This is the same program that will be used to compute your correctness/efficiency scores. You can invoke the driver directly with the command:
@@ -133,7 +134,7 @@ You'll use gdb a lot later in the term. But for now, here's a thing you can do t
     ./qtest -v 1 -f traces/trace-10-malloc.cmd
     ```
 
-This is is exactly what the `driver.py` program executes for trace #10 when you you do make test, but now you're doing it manually. You should see another report of a segmentation fault (with possibly some more detail of what happens before).
+    This is is exactly what the `driver.py` program executes for trace #10 when you you do make test, but now you're doing it manually. You should see another report of a segmentation fault (with possibly some more detail of what happens before).
 
 * Launch the for-now-mysterious program `gdb`:
 
@@ -178,11 +179,11 @@ To submit this homework (probably after you have run `make test` and made sure y
 ## Q & A
 Here are some frequently asked questions:
 
-I'm getting `ERROR: Corruption detected in block with address 0x7ff436f060a0 when attempting to free it`, what does that mean???
-* That means the end of your strings aren't formed correctly. You should think carefully about how much space they need and how to make sure the null ends up in the right spot.
+* I'm getting `ERROR: Corruption detected in block with address 0x7ff436f060a0 when attempting to free it`, what does that mean???
+    That means the end of your strings aren't formed correctly. You should think carefully about how much space they need and how to make sure the null ends up in the right spot.
 
-I'm getting a bunch of errors that say something about `multiple definition of` in the starter code, what gives?
-* You aren't running on `mantis` are you? Certain versions of `gcc` don't work with this starter code, make sure to do everything on `mantis`.
+* I'm getting a bunch of errors that say something about `multiple definition of` in the starter code, what gives?
+    You aren't running on `mantis` are you? Certain versions of `gcc` don't work with this starter code, make sure to do everything on `mantis`.
 
-I'm getting something about a loop in my list but I definitely didn't make a loop.
-* Make sure that you are setting things to `NULL` that should be, you never know what is lurking in uninitialized pointer variables >.> <.<
+* I'm getting something about a loop in my list but I definitely didn't make a loop.
+    Make sure that you are setting things to `NULL` that should be, you never know what is lurking in uninitialized pointer variables >.> <.<
