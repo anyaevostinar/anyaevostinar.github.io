@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Generic Collections Preparation
-permalink: /classes/201-w24/generics-prep
+permalink: /classes/201-s24/generics-prep
 ---
 
 ## Overview
@@ -22,8 +22,6 @@ After class, you should be able to:
 ## Readings
 You should read the following from the book Problem Solving with Algorithms and Data Structures using Java:
 
-* [1.9 Collections and Wrapper Classes](https://runestone.academy/ns/books/published/javads/introduction_collections-and-wrappers.html?mode=browsing)
+* [1.9 Collections and Wrapper Classes](https://moodle.carleton.edu/mod/lti/view.php?id=928121)
 * [A.5 Java Generics](https://runestone.academy/ns/books/published/javads/oop_generics.html?mode=browsing)
 
-## Checks
-Complete the reading check quiz on Moodle.
