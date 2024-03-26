@@ -15,6 +15,7 @@ permalink: /classes/208-s24/binary-prep
 
 ## Resources
 Read the following:
+* [DIS 4.0](https://diveintosystems.org/book/C4-Binary/index.html)
 * [DIS 4.1](https://diveintosystems.org/book/C4-Binary/bases.html)
 * [DIS 4.2](https://diveintosystems.org/book/C4-Binary/conversion.html)
 * [DIS 4.3](https://diveintosystems.org/book/C4-Binary/signed.html)
