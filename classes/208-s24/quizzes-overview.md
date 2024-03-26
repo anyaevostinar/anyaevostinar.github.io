@@ -9,7 +9,15 @@ As discussed in the [syllabus](syllabus), the quizzes in this class are meant to
 Each quiz will have a posted set of learning objectives that you can demonstrate proficiency/mastery in for that quiz, and each learning objective will appear on at least 2 quizzes.
 
 ## Quiz Learning Objectives
-The learning objectives that have appeared on quizzes will be listed here.
+The learning objectives that have appeared (or soon will) on quizzes will be listed here.
+
+* Explaining how arrays are stored in memory
+* Using null-terminated strings
+* Using binary notation
+* Using hexadecimal notation
+* Using two's complement representation
+* Using pointer arithmetic
+* Using bit-level operations
 
 You can see how you are doing on each of these on Moodle under the "Grades" tab.
 I will continue to update this page throughout the term.
