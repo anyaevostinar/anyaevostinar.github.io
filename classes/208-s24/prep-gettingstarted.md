@@ -28,7 +28,7 @@ You should read the following in DIS:
 * Feel free to reference the rest of Ch. 1 for other C syntax
 
 ## Checks
-Complete the following checks:
+Complete the following checks. If you have any questions on them, post to CampusWire please!
 * [1.1](http://runestone.cs.swarthmore.edu/DIS_Exercises/section-1_1.html)
 * [1.2](http://runestone.cs.swarthmore.edu/DIS_Exercises/section-1_2.html)
 * [1.5](http://runestone.cs.swarthmore.edu/DIS_Exercises/section-1_5.html)
