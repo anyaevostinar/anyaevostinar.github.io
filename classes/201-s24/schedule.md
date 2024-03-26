@@ -19,7 +19,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 3/27 | [Starting Java Prep](java-prep) | [Slides](https://docs.google.com/presentation/d/111e8aN22RVuWTrkehnOiu9Vakl-7yaWsE-jG0N_wAb0/edit?usp=sharing), [Getting Started Lab](getting-started) |	[HW1: Object-Oriented Practice](hw1-oop-practice) |
 | 3/29 | [OOP Prep](oop-prep)	|  [Slides](https://docs.google.com/presentation/d/10Otmzbc3xmomu9reYlA7BkfQrjTV0PT8Ff0z7bXFccE/edit?usp=sharing), [Inheritance](inheritance-activity) |	 |
 | Week 2 | | Intermediate Java | |
-| 4/1 | [Interfaces Prep](interfaces-prep) 	|	 [Quiz 1](quiz1); [ArrayLists and Interfaces](interface-lab)	| |
+| 4/1 | [Interfaces Prep](interfaces-prep) 	|	 [Quiz 1](quiz1); [Interfaces](interface-lab)	| |
 | 4/3 | HW1; [Generics Prep](generics-prep) |		Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|
 | 4/5 |[Queues Prep](queues-prep)  |  [Linked Queues](queues-lab)	| |
 | Week 3 | | Linear ADTs | |

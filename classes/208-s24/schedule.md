@@ -21,7 +21,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 3/27 | [Getting Started with C](getting-started) |  [Slides](https://docs.google.com/presentation/d/1YKGerjz0Dg1U6-WX_dJi6KCPgvINt06BT4SPdIoaZXU/edit?usp=sharing), More C|	 |
 | 3/29 | HW1; [Strings and Files](strings-prep)	| [Slides](https://docs.google.com/presentation/d/1JEEk2yuQ0vvsgFRmnagPWA58XKGhr1NUtdVbhb7_G-I/edit?usp=sharing), Strings and IO |	 [HW2: minigrep](hw2) |
 | Week 2 | | More C | |
-| 4/1 |  HW2; [Pointers Prep](pointers-prep) | Memory	| [HW3: readline](hw3) |
+| 4/1 |  HW2; [Pointers Prep](pointers-prep) | [Slides](https://docs.google.com/presentation/d/1oguX2-QtQWu3dTT0_BP3CDyb8jV0qk9uc5YbdeSy4Z4/edit?usp=sharing), Memory	| [HW3: readline](hw3) |
 | 4/3 | [Binary Prep](binary-prep) |	Binary and Debugging	| |
 | 4/5 | HW3; [Structs Prep](structs-prep) | Types 	| [HW4: Queues in C](hw4) |
 | Week 3 | |  Machine Languages | |

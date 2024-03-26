@@ -13,6 +13,7 @@ The learning objectives that have appeared (or soon will) on quizzes will be lis
 
 * Explaining how arrays are stored in memory
 * Using null-terminated strings
+* Using pointers
 * Using binary notation
 * Using hexadecimal notation
 * Using two's complement representation

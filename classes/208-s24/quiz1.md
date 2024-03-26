@@ -10,6 +10,7 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 
 * Explaining how arrays are stored in memory
 * Using null-terminated strings
+* Using pointers
 * Using binary notation
 * Using hexadecimal notation
 * Using two's complement representation
