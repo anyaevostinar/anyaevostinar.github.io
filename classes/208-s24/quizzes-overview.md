@@ -15,8 +15,12 @@ The learning objectives that have appeared (or soon will) on quizzes will be lis
 * Using null-terminated strings
 * Using pointers
 * Using binary notation
+    * Converting from unsigned binary to decimal and hex
 * Using hexadecimal notation
+    * Converting from hex to binary and decimal
 * Using two's complement representation
+    * Proficiency: Negating a positive binary value with two's complement
+    * Mastery: Converting from decimal to two's complement form
 * Using pointer arithmetic
 * Using bit-level operations
 
