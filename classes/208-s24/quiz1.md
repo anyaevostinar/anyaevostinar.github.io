@@ -19,7 +19,6 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
     * Proficiency: Negating a positive binary value with two's complement
     * Mastery: Converting from decimal to two's complement form
 * Using pointer arithmetic
-* Using bit-level operations
 
 ## Suggestions
 Remember that this isn't your only chance to demonstrate your understanding of these learning objectives, so try not to stress too much.
