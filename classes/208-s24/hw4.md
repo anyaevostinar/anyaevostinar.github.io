@@ -180,10 +180,13 @@ To submit this homework (probably after you have run `make test` and made sure y
 Here are some frequently asked questions:
 
 * I'm getting `ERROR: Corruption detected in block with address 0x7ff436f060a0 when attempting to free it`, what does that mean???
+
     That means the end of your strings aren't formed correctly. You should think carefully about how much space they need and how to make sure the null ends up in the right spot.
 
 * I'm getting a bunch of errors that say something about `multiple definition of` in the starter code, what gives?
+
     You aren't running on `mantis` are you? Certain versions of `gcc` don't work with this starter code, make sure to do everything on `mantis`.
 
 * I'm getting something about a loop in my list but I definitely didn't make a loop.
+
     Make sure that you are setting things to `NULL` that should be, you never know what is lurking in uninitialized pointer variables >.> <.<
