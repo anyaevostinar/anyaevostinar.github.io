@@ -139,7 +139,7 @@ Answers on quizzes will be assessed on the same four-level scale:
 
 Here is a table that lays out how +/- work (and everything overall):
 
-| Grade | Percent LOs at Mastery | Percent LOs at Proficiency | Percent LOs at Not Yet Proficient |
+| Grade | Percent LOs at Mastery | Percent LOs at Proficiency (or higher) | Percent LOs at Not Yet Proficient |
 |-------|----------|-------------|------------|
 | A | 100% | 0% | 0% |
 | A- | 75-99% | 1-25% | 0% |
