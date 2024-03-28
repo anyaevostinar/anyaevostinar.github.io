@@ -29,7 +29,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/10 | HW4; DIS 4.4, 4.6, 4.7 |	Encodings	 	| HW5: Bit operations and UTF-8 |
 | 4/12 | [UTF-8](https://en.wikipedia.org/wiki/UTF-8)|	   UTF-8	| |
 | Week 4 | | More Machine Languages | |
-| 4/15 | HW5 |  	|  |
+| 4/15 | HW5 |  Quiz 2/TBD	|  |
 | 4/17 | |		| |
 | 4/19 | |	  | |
 | Week 5 |  Assembly |  | |

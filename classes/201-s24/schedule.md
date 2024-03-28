@@ -20,7 +20,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 3/29 | [OOP Prep](oop-prep)	|  [Slides](https://docs.google.com/presentation/d/10Otmzbc3xmomu9reYlA7BkfQrjTV0PT8Ff0z7bXFccE/edit?usp=sharing), [Inheritance](inheritance-activity) |	 |
 | Week 2 | | Intermediate Java | |
 | 4/1 | [Interfaces Prep](interfaces-prep) 	|	 [Quiz 1](quiz1); [Slides](https://docs.google.com/presentation/d/1DK4AKcj88e0xmk8cSTuQ8_A9aclOzpennhihtsYQ3M8/edit?usp=sharing), [Interfaces](interface-lab)	| |
-| 4/3 | HW1; [Generics Prep](generics-prep) |		Generics and HashMaps	| [HW2: Country Stats Displayer](hw2)|
+| 4/3 | HW1; [Generics Prep](generics-prep) |	[Slides](https://docs.google.com/presentation/d/1cepRCKPmYA0e6pVS9zCuVTNt05ol-6iohUyGVbYe7Yg/edit?usp=sharing),	[Generics and HashMaps](maps-lab)	| [HW2: Country Stats Displayer](hw2)|
 | 4/5 |[Queues Prep](queues-prep)  |  [Linked Queues](queues-lab)	| |
 | Week 3 | | Linear ADTs | |
 | 4/8 | [Linked Lists Prep](linkedlist-prep)  |	 [Quiz 2](quiz2);  Linked Lists |  |
