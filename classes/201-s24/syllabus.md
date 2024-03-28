@@ -163,10 +163,10 @@ Here is a table that lays out how +/- work (and everything overall):
 | C- | ? |  75-99% | 1-25% |
 | D+ | ? | 51-74%| 24-49% |
 | D | ? | 50% | 50% |
-| D- | 25-49%  |  51-75% |
+| D- | ?| 25-49%  |  51-75% |
 | F | ? | 0-24% | 76-100% |
 
-* \* Note:* It is possible for a student to end up in a situation where they have most objectives at mastery but one objective at 'not yet proficient' at the end of the term. In those cases (just **one** objective NYP, nearly everything else mastery), the student might be able to earn up to a B depending on the specific objective at NYP, the status of the rest of the objectives, and the rest of the evidence of understanding I have from the student. Aim to not be in that situation by working continuously throughout the term to make progress on the objectives and checking with me when you misunderstand things. By doing so, you'll be more likely to qualify for a boost if you do end up there. **I make no guarantee that you will get such a boost.**
+*\* Note:* It is possible for a student to end up in a situation where they have most objectives at mastery but one objective at 'not yet proficient' at the end of the term. In those cases (just **one** objective NYP, nearly everything else mastery), the student might be able to earn up to a B depending on the specific objective at NYP, the status of the rest of the objectives, and the rest of the evidence of understanding I have from the student. Aim to not be in that situation by working continuously throughout the term to make progress on the objectives and checking with me when you misunderstand things. By doing so, you'll be more likely to qualify for a boost if you do end up there. **I make no guarantee that you will get such a boost.**
 
 ### Late work and extensions
 In this course, we need to balance flexibility for individuals with structure for partners, the class as a whole, and a reasonable workload for the grader and me (your instructor). I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. 
