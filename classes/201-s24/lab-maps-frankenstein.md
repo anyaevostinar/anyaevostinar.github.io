@@ -13,7 +13,7 @@ This is a lab assignment and so you will not be submitting it. However, the conc
 ## Setup
 * [Mount the COURSES drive](getting-started)
 * Create a new folder in your STUWORK called `MapsLab`
-* Download [`Frankenstein.txt`](/classes/201-s24/Frankenstein.txt) and move it into your folder
+* Download [`Frankenstein.txt`](/classes/201-s24/Frankenstein.txt) (by right-clicking the link and selecting "Save Link As") and move it into your folder
 * Create a file `Main.java`
 * Open the [reading](https://moodle.carleton.edu/mod/lti/view.php?id=928121) for reference
 
