@@ -23,7 +23,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 2 | | More C | |
 | 4/1 |  HW2; [Pointers Prep](pointers-prep) | [Slides](https://docs.google.com/presentation/d/1oguX2-QtQWu3dTT0_BP3CDyb8jV0qk9uc5YbdeSy4Z4/edit?usp=sharing), Memory	| [HW3: readline](hw3) |
 | 4/3 | [Binary Prep](binary-prep) |	[Slides](https://docs.google.com/presentation/d/127O7Gax_9IOuDq7JoFEQlDhesS2ri6InQQSFeT3349s/edit?usp=sharing), Binary and [Debugging](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/assignments/03-lab-vscode-debugging.html)	| |
-| 4/5 | HW3; [Structs Prep](structs-prep) | Types 	| [HW4: Queues in C](hw4) |
+| 4/5 | HW3; [Structs Prep](structs-prep) | [Slides](https://docs.google.com/presentation/d/1Ro-JXdtBv6_tWZbDmgEXqKPGFLxpct8R2Kr2JrfgpP0/edit?usp=sharing), Types 	| [HW4: Queues in C](hw4) |
 | Week 3 | |  Machine Languages | |
 | 4/8 |   |	 [Quiz 1](quiz1) |  |
 | 4/10 | HW4; DIS 4.4, 4.6, 4.7 |	Encodings	 	| HW5: Bit operations and UTF-8 |

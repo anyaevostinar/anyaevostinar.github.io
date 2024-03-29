@@ -127,6 +127,7 @@ For most assignments, I will only give you very simple tests in the assignment's
 * Think ahead of time about testing. What special cases should you test? How can you test them?
 * Assume that each line ends either with a newline character `\n` (ASCII 10) or with the end of the file. You'll want your program to work even if the last line doesn't end with `\n`.
 * For this program, you won't need to read entire lines into memory. This problem is solvable just reading one character at a time using `fgetc` (and you shouldn't over complicate it).
+* You'll probably find the `atoi` function helpful, check in 2.6 of the book or do `man atoi` on the Terminal to learn more
 
 ## HAVE FUN!
 Don't by shy about experimenting and asking lots of questions.
