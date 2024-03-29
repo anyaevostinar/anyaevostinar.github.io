@@ -22,7 +22,22 @@ Let's start with adding things to the queue with the `enqueue` method.
 
 a. Create an `enqueue` method that takes a `T newItem`, creates a Node for that item and adds that item to the tail of the queue. 
 
+b. Make sure that you can enqueue multiple items and print out the tail data to see that it is being updated.
+
 ## Exercise 2
+
+Finally, we want to also be able to remove items from a queue with `dequeue`.
+
+a. Create a `dequeue` method that returns a `T item` from the head of the queue.
+
+b. If the queue is empty, return null.
+
+c. Verify via printing that you are able to dequeue several items (print both the dequeued item and the head of the queue to verify the item has been removed).
+
+## Exercise 3
+Make a `size` variable. How can you change your methods based on this variable? Is it worth having?
+
+## Exercise 4
 Whenever you are making a data structure, you'll probably want to be able to print out its contents while testing it.
 You can make your own data structures work directly with `System.out.println()` by implementing the `toString()` method.
 
@@ -43,19 +58,6 @@ d. Use `System.out.println` to print out the contents of your queue in `main`:
     ```
 
 e. Add multiple items to your test queue and print the contents to see what happens.
-
-
-## Exercise 3
-Finally, we want to also be able to remove items from a queue with `dequeue`.
-
-a. Create a `dequeue` method that returns a `T item` from the head of the queue.
-
-b. If the queue is empty, return null.
-
-c. Verify via printing that you are able to dequeue several items (print both the dequeued item and the queue to verify the item has been removed).
-
-## Exercise 4
-Make a `size` variable. How can you change your methods based on this variable? Is it worth having?
 
 
 ## Extensions

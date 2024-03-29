@@ -3,8 +3,8 @@
 Acknowledgements: Uses the node class and method descriptions provided by Data Structures and Abstractions with Java by Frank M. Carrano, Timothy M. Henry
 */
 public class LinkedStructure<T> {
-    Node<T> head = null;
-    Node<T> tail = null;
+    Node<T> front = null;//or head
+    Node<T> end = null;//or tail
 
 
 }
