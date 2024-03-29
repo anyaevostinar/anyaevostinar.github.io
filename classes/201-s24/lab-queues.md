@@ -5,6 +5,8 @@ permalink: /classes/201-s24/queues-lab
 published: true
 ---
 
+This is a lab assignment and so you will not be submitting it. However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
+
 ## Goals
 To better learn about how queues work by creating a linked queue.
 
