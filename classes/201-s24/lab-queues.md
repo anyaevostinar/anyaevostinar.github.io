@@ -49,13 +49,13 @@ c. Within your while loop, grab the data of the `currentNode` and add it to a `S
 
 d. Use `System.out.println` to print out the contents of your queue in `main`:
 
-    ```java
-    public void static main(String[] args) {
-        LinkedQueue my_queue = new LinkedQueue<String>();
-        my_queue.enqueue("Dog");
-        System.out.println(my_queue);
-    }
-    ```
+```java
+public void static main(String[] args) {
+    LinkedQueue my_queue = new LinkedQueue<String>();
+    my_queue.enqueue("Dog");
+    System.out.println(my_queue);
+}
+```
 
 e. Add multiple items to your test queue and print the contents to see what happens.
 
