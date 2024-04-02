@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Linked Lists Preparation
-permalink: /classes/201-w24/linkedlist-prep
+permalink: /classes/201-s24/linkedlist-prep
 ---
 
 ## Overview
@@ -20,7 +20,7 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=905601):
+You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=934952):
 
 * Problem Solving with Algorithms and Data Structures using Java 3.2, 3.19-3.21
 
