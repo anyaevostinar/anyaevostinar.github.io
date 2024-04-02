@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Asymptotic Analysis Preparation
-permalink: /classes/201-w24/analysis-prep
+permalink: /classes/201-s24/analysis-prep
 ---
 
 ## Overview
@@ -20,6 +20,6 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=907079) and complete the embedded checks:
+You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=934959) and complete the embedded checks:
 
 * 2.2-2.4
