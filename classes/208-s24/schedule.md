@@ -26,8 +26,8 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/5 | HW3; [Structs Prep](structs-prep) | [Slides](https://docs.google.com/presentation/d/1Ro-JXdtBv6_tWZbDmgEXqKPGFLxpct8R2Kr2JrfgpP0/edit?usp=sharing), Types 	| [HW4: Queues in C](hw4) |
 | Week 3 | |  Machine Languages | |
 | 4/8 |   |	 [Quiz 1](quiz1) |  |
-| 4/10 | HW4; DIS 4.4, 4.6, 4.7 |	Encodings	 	| HW5: Bit operations and UTF-8 |
-| 4/12 | [UTF-8](https://en.wikipedia.org/wiki/UTF-8)|	   UTF-8	| |
+| 4/10 | HW4; [Bit Ops Prep](bitops-prep) |	Encodings	 	| HW5: Bit operations and UTF-8 |
+| 4/12 | [Unicode Prep](unicode-prep)|	   UTF-8	| |
 | Week 4 | | More Machine Languages | |
 | 4/15 | HW5 |  Quiz 2/TBD	|  |
 | 4/17 | |		| |
