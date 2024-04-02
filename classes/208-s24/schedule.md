@@ -25,7 +25,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/3 | [Binary Prep](binary-prep) |	[Slides](https://docs.google.com/presentation/d/127O7Gax_9IOuDq7JoFEQlDhesS2ri6InQQSFeT3349s/edit?usp=sharing), Binary and [Debugging](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/assignments/03-lab-vscode-debugging.html)	| |
 | 4/5 | HW3; [Structs Prep](structs-prep) | [Slides](https://docs.google.com/presentation/d/1Ro-JXdtBv6_tWZbDmgEXqKPGFLxpct8R2Kr2JrfgpP0/edit?usp=sharing), Types 	| [HW4: Queues in C](hw4) |
 | Week 3 | |  Machine Languages | |
-| 4/8 |   |	 [Quiz 1](quiz1) |  |
+| 4/8 | Study!  |	[Slides](https://docs.google.com/presentation/d/1AveTQoKg0EkgVX-o7V_aGp0f13jhvqoTNuDmcVPD0uU/edit?usp=sharing), [Quiz 1](quiz1) |  |
 | 4/10 | HW4; [Bit Ops Prep](bitops-prep) |	Encodings	 	| HW5: Bit operations and UTF-8 |
 | 4/12 | [Unicode Prep](unicode-prep)|	   UTF-8	| |
 | Week 4 | | More Machine Languages | |

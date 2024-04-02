@@ -23,7 +23,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/3 | HW1; [Generics Prep](generics-prep) |	[Slides](https://docs.google.com/presentation/d/1cepRCKPmYA0e6pVS9zCuVTNt05ol-6iohUyGVbYe7Yg/edit?usp=sharing),	[Generics and HashMaps](maps-lab)	| [HW2: Country Stats Displayer](hw2)|
 | 4/5 |[Queues Prep](queues-prep)  | [Slides](https://docs.google.com/presentation/d/1afPoQCxaKTGpSYQhgG7YnMQI_OusOVIyhpfuhZoaYM0/edit?usp=sharing), [Linked Queues](queues-lab)	| |
 | Week 3 | | Linear ADTs | |
-| 4/8 | [Linked Lists Prep](linkedlist-prep)  |	 [Quiz 2](quiz2);  Linked Lists |  |
+| 4/8 | [Linked Lists Prep](linkedlist-prep)  |	 [Quiz 2](quiz2);  [Linked Lists](linked-list-lab) |  |
 | 4/10 | HW2; [Stacks Prep](stacks-prep) |		 [Stacks](stacks)	| [HW3: Maze Solver](hw3) |
 | 4/12 | [Asymptotic Analysis Prep](analysis-prep)|	   [Asymptotic Analysis](analysis-activity)	| |
 | Week 4 | | Efficiency | |
