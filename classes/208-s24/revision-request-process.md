@@ -20,6 +20,6 @@ If you wish to revise after you get the feedback from the first revision, you ca
 4. Wait for the revision to be assessed, which might take until the end of term, or might happen more quickly than that (but you should assume it will be the end of term!)
 5. Repeat from step 1 if you want
 
-**You must submit a request through the form; your submission will not automatically be reassessed for style!**
+**You must submit a request through the form; your submission will not automatically be reassessed for style etc!**
 
 If you have questions about this process, please ask Anya right away!
