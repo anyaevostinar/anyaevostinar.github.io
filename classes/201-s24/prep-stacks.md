@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Stacks Preparation
-permalink: /classes/201-w24/stacks-prep
+permalink: /classes/201-s24/stacks-prep
 ---
 
 ## Overview
@@ -20,10 +20,10 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=905634):
+You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=934956):
 
 * 3.3-3.7
 * Optional additional resource: [OpenDSA Stacks](https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS2/html/StackArray.html)
 
 ## Checks
-No additional checks.
+Checks through the Moodle assignment.
