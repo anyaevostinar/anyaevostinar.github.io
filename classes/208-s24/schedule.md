@@ -26,20 +26,20 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/5 | HW3; [Structs Prep](structs-prep) | [Slides](https://docs.google.com/presentation/d/1Ro-JXdtBv6_tWZbDmgEXqKPGFLxpct8R2Kr2JrfgpP0/edit?usp=sharing), Types 	| [HW4: Queues in C](hw4) |
 | Week 3 | |  Machine Languages | |
 | 4/8 | Study!  |	[Slides](https://docs.google.com/presentation/d/1AveTQoKg0EkgVX-o7V_aGp0f13jhvqoTNuDmcVPD0uU/edit?usp=sharing), [Quiz 1](quiz1) |  |
-| 4/10 | HW4; [Bit Ops Prep](bitops-prep) |	Encodings	 	| HW5: Bit operations and UTF-8 |
+| 4/10 | HW4; [Bit Ops Prep](bitops-prep) |	[Slides](https://docs.google.com/presentation/d/1-C5E-YLaNheDrBQ0ViByuh13vtgoSh8ZiCslCwbEpNg/edit?usp=sharing), Bit Ops	 	| [HW5: Bit operations and UTF-8](hw5) |
 | 4/12 | [Unicode Prep](unicode-prep)|	   UTF-8	| |
-| Week 4 | | More Machine Languages | |
+| Week 4 | | Assembly | |
 | 4/15 | HW5 |  Quiz 2/TBD	|  |
-| 4/17 | |		| |
+| 4/17 | DIS 6, 7.0, 7.1, 7.2 |	x86-64 assembly language	| HW6: asm-to-C puzzles |
 | 4/19 | |	  | |
-| Week 5 |  Assembly |  | |
-| 4/22 |		|  x86-64 assembly language	|  |
-| 4/24 | DIS 6, 7.0, 7.1, 7.2 | | HW6: asm-to-C puzzles  |
+| Week 5 |  More Assembly |  | |
+| 4/22 |		| Quiz 3/TBD 	|  |
+| 4/24 | HW6 | |   |
 | 4/26	|  |		| |
 | Week 6 | | Reverse Engineering | |
 | 4/29 |  | Midterm break! | |
-| 5/1 | | | |
-| 5/3 | HW6  |		Intro to gdb	|  HW7: Escape from the Zoo |
+| 5/1 | |Intro to gdb |HW7: Escape from the Zoo |
+| 5/3 |   |			|   |
 | Week 7 | | Buffer Overflow, Concurrency | |
 | 5/6 | DIS 3 | 		 | |
 | 5/8 |	 |		|   |
