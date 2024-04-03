@@ -24,7 +24,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/5 |[Queues Prep](queues-prep)  | [Slides](https://docs.google.com/presentation/d/1afPoQCxaKTGpSYQhgG7YnMQI_OusOVIyhpfuhZoaYM0/edit?usp=sharing), [Linked Queues](queues-lab)	| |
 | Week 3 | | Linear ADTs | |
 | 4/8 | [Linked Lists Prep](linkedlist-prep)  | [Slides](https://docs.google.com/presentation/d/10hNAX9AdW95L692k9iYUtOuD7k41yKhpkOzwnejqL7Q/edit?usp=sharing),	[Quiz 2](quiz2);  [Linked Lists](linked-list-lab) |  |
-| 4/10 | HW2; [Stacks Prep](stacks-prep) |		 [Stacks](stacks)	| [HW3: Maze Solver](hw3) |
+| 4/10 | HW2; [Stacks Prep](stacks-prep) |		[Slides](https://docs.google.com/presentation/d/1H7QT2hsZKnSrNqYjM5RTblezNSdyccRDXZGk7Ksc35Y/edit?usp=sharing), [Stacks](stacks)	| [HW3: Maze Solver](hw3) |
 | 4/12 | [Asymptotic Analysis Prep](analysis-prep)|	   [Asymptotic Analysis](analysis-activity)	| |
 | Week 4 | | Efficiency | |
 | 4/15 | [Built-in Complexity Prep](built-in-prep) |  [Quiz 3](quiz3);[Linked Lists Revisited](linked-list-lab)	|  |
