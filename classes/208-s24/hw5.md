@@ -14,7 +14,7 @@ permalink: /classes/208-s24/hw5
 ## Logistics
 This is an **individual** assignment, so you should write all the code individually, though you can get help, as detailed in the [collaboration](collaboration) document.
 
-This assignment is due Monday April 15th at 10pm. As with all assignments, you will have the opportunity to [revise](revision-process) this submission based on feedback.
+This assignment is due Wednesday April 17th at 10pm. As with all assignments, you will have the opportunity to [revise](revision-process) this submission based on feedback.
 
 ## Assessment
 To **demonstrate proficiency**, your submission needs to:

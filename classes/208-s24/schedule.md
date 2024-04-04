@@ -29,8 +29,8 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/10 | HW4; [Bit Ops Prep](bitops-prep) |	[Slides](https://docs.google.com/presentation/d/1-C5E-YLaNheDrBQ0ViByuh13vtgoSh8ZiCslCwbEpNg/edit?usp=sharing), Bit Ops	 	| [HW5: Bit operations and UTF-8](hw5) |
 | 4/12 | [Unicode Prep](unicode-prep)|	   [Slides](https://docs.google.com/presentation/d/1IRr1Apq1jqzSc1Nw2U852ZufT_jf6FG3CE_99alpSfM/edit?usp=sharing), UTF-8, [Data Rep Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab3/)	| |
 | Week 4 | | Assembly | |
-| 4/15 | HW5 |  Quiz 2/TBD	|  |
-| 4/17 | DIS 6, 7.0, 7.1, 7.2 |	x86-64 assembly language	| HW6: asm-to-C puzzles |
+| 4/15 |  |  Quiz 2/TBD	|  |
+| 4/17 | HW5; DIS 6, 7.0, 7.1, 7.2 |	x86-64 assembly language	| HW6: asm-to-C puzzles |
 | 4/19 | |	  | |
 | Week 5 |  More Assembly |  | |
 | 4/22 |		| Quiz 3/TBD 	|  |
