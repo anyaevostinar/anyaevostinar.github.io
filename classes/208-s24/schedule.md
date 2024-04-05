@@ -29,20 +29,20 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/10 | HW4; [Bit Ops Prep](bitops-prep) |	[Slides](https://docs.google.com/presentation/d/1-C5E-YLaNheDrBQ0ViByuh13vtgoSh8ZiCslCwbEpNg/edit?usp=sharing), Bit Ops	 	| [HW5: Bit operations and UTF-8](hw5) |
 | 4/12 | [Unicode Prep](unicode-prep)|	   [Slides](https://docs.google.com/presentation/d/1IRr1Apq1jqzSc1Nw2U852ZufT_jf6FG3CE_99alpSfM/edit?usp=sharing), UTF-8, [Data Rep Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab3/)	| |
 | Week 4 | | Assembly | |
-| 4/15 |  |  Quiz 2/TBD	|  |
-| 4/17 | HW5; DIS 6, 7.0, 7.1, 7.2 |	x86-64 assembly language	| HW6: asm-to-C puzzles |
-| 4/19 | |	  | |
+| 4/15 | DIS 6; Study! |  Quiz 2; [Compiler Explorer](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab4/)	|  |
+| 4/17 | HW5; DIS 7.0, 7.1, 7.2 |	x86-64 assembly language	| HW6: asm-to-C puzzles |
+| 4/19 | DIS 7.4 |	  | |
 | Week 5 |  More Assembly |  | |
-| 4/22 |		| Quiz 3/TBD 	|  |
-| 4/24 | HW6 | |   |
-| 4/26	|  |		| |
+| 4/22 |	DIS 7.3	| Quiz 3/TBD 	|  |
+| 4/24 | HW6; 7.5  | |   |
+| 4/26	|7.6 |		| |
 | Week 6 | | Reverse Engineering | |
 | 4/29 |  | Midterm break! | |
-| 5/1 | |Intro to gdb |HW7: Escape from the Zoo |
-| 5/3 |   |			|   |
+| 5/1 |DIS 3, 7.7|Intro to gdb |HW7: Escape from the Zoo |
+| 5/3 | 7.9  |			|   |
 | Week 7 | | Buffer Overflow, Concurrency | |
-| 5/6 | DIS 3 | 		 | |
-| 5/8 |	 |		|   |
+| 5/6 | 7.10 | 		 | |
+| 5/8 |	17.1, 17.12, 17.13 |		|   |
 | 5/10 | HW7 |		| HW8: Buffer Overflow |
 | Week 8 | | Processes, threads | |
 | 5/13 | | 		 |  |	
