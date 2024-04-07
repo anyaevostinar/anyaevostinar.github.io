@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Complexity of Built-ins Preparation
-permalink: /classes/201-w24/built-in-prep
+permalink: /classes/201-s24/built-in-prep
 ---
 
 ## Overview
@@ -11,21 +11,22 @@ We have been using several of Java's built-in data structures so far and its imp
 Before class, you should be able to: 
 * Identify the Big-O efficiency of `ArrayList` and `HashMap` operations
 * Explain at a high level what garbage collection is
-* Recall what a linked list is at a high level
-
+* Initialize a new array
+* Explain at a high level how an array differs from a linked list
 
 ## Advanced Learning Objectives
 After class, you should be able to:
 * Reason about when the Java built-ins should be fastest
-* Be able to conduct time experiments
-* Be able to implement a linked list
+* Explain the worst-case efficiency of adding to an array
+* Implement your own array
+* Explain the pros and cons of array-based and linked-based structures
 
 
 ## Readings
 You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=907093):
 
+* 8.2
 * 2.5- 2.7
-* Review [Linked List](https://moodle.carleton.edu/mod/lti/view.php?id=905601) Reading
 
 ## Checks
 You should complete the reading checks embedded in the reading assignment on Moodle.

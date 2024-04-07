@@ -29,7 +29,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 4 | | Efficiency | |
 | 4/15 | Study! |  [Quiz 3](quiz3)	|  |
 | 4/17 | [HW3](hw3), [Ordered List Prep](ordered-list-prep) |	Ordered Linked Lists	| [HW4: Country Sorter List](hw4)|
-| 4/19 |[Array Prep](array-prep) [Built-in Complexity Prep](built-in-prep) |	[Array Efficiency](array-efficiency)  | |
+| 4/19 |[Built-in Complexity Prep](built-in-prep) |	[Array Efficiency](array-efficiency)  | |
 | Week 5 |  | Recursion and applications | |
 | 4/22 |	[Recursion Prep](recursion-prep)	|  [Quiz 4](quiz4); [Recursion](recursion)	|  |
 | 4/24 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	Quicksort	| (No HW5)   |

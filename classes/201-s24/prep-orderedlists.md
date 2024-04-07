@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ordered Lists Preparation
-permalink: /classes/201-w24/ordered-list-prep
+permalink: /classes/201-s24/ordered-list-prep
 ---
 
 ## Overview
@@ -19,7 +19,7 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=907096):
+You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=936211):
 
 * 3.22 and 3.23
 
