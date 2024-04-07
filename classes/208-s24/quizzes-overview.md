@@ -23,6 +23,7 @@ The learning objectives that have appeared (or soon will) on quizzes will be lis
     * Mastery: Converting from decimal to two's complement form
 * Using pointer arithmetic
 * Using bit-level operations
+* Using UTF-8 encoding (with table provided)
 
 You can see how you are doing on each of these on Moodle under the "Grades" tab.
 I will continue to update this page throughout the term.
