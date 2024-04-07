@@ -23,7 +23,7 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=907093):
+You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=936213):
 
 * 8.2
 * 2.5- 2.7
