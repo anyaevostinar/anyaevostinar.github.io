@@ -27,9 +27,9 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/10 | HW2; [Stacks Prep](stacks-prep) |		[Slides](https://docs.google.com/presentation/d/1H7QT2hsZKnSrNqYjM5RTblezNSdyccRDXZGk7Ksc35Y/edit?usp=sharing), [Stacks](stacks)	| [HW3: Maze Solver](hw3) |
 | 4/12 | [Asymptotic Analysis Prep](analysis-prep)|	  [Slides](https://docs.google.com/presentation/d/1Eyix3Jq1u4XgrfTGZ6AhqX01Vk4NFflqzUfb5u-rmMs/edit?usp=sharing), [Asymptotic Analysis](analysis-activity)	| |
 | Week 4 | | Efficiency | |
-| 4/15 | [Built-in Complexity Prep](built-in-prep) |  [Quiz 3](quiz3);[Linked Lists Revisited](linked-list-lab)	|  |
+| 4/15 | Study! |  [Quiz 3](quiz3)	|  |
 | 4/17 | [HW3](hw3), [Ordered List Prep](ordered-list-prep) |	Ordered Linked Lists	| [HW4: Country Sorter List](hw4)|
-| 4/19 | [Array Prep](array-prep)|	 [Array Efficiency](array-efficiency) | |
+| 4/19 |[Array Prep](array-prep) [Built-in Complexity Prep](built-in-prep) |	[Array Efficiency](array-efficiency)  | |
 | Week 5 |  | Recursion and applications | |
 | 4/22 |	[Recursion Prep](recursion-prep)	|  [Quiz 4](quiz4); [Recursion](recursion)	|  |
 | 4/24 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	Quicksort	| (No HW5)   |
