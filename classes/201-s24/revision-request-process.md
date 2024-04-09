@@ -16,7 +16,7 @@ The first revision on each homework assignment is due a week after the initial s
 If you wish to revise after you get the feedback from the first revision, you can do so by following these steps:
 1. Read the feedback and correct your homework
 2. Submit your corrected homework to the same Gradescope assignment (will reopen after the feedback is released)
-3. Submit a request on [this form (link will work once needed)]()
+3. Submit a request on [this form](https://docs.google.com/forms/d/e/1FAIpQLSdulbM9VUwqBsE0QzFoUous7Oh4aOGWU2vq-jI4TXXIjONLtw/viewform?usp=sf_link)
 4. Wait for the revision to be assessed, which might take until the end of term, or might happen more quickly than that (but you should assume it will be the end of term!)
 5. Repeat from step 1 if you want
 
