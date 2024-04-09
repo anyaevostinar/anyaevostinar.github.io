@@ -9,7 +9,11 @@ permalink: /classes/208-s24/quiz2
 The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 2 are (new in bold):
 
 * **Using bit-level operations**
+    * Proficiency: solve given bitwise operation
+    * Mastery: Use mask to make bitwise transformation
 * **Using UTF-8 encoding (with table provided)**
+    * Proficiency: codepoint that only needs 1 byte
+    * Mastery: codepoint that needs 2 bytes
 * Explaining how arrays are stored in memory
 * Using null-terminated strings
 * Using pointers

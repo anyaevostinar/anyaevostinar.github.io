@@ -29,7 +29,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/10 | HW4; [Bit Ops Prep](bitops-prep) |	[Slides](https://docs.google.com/presentation/d/1-C5E-YLaNheDrBQ0ViByuh13vtgoSh8ZiCslCwbEpNg/edit?usp=sharing), Bit Ops	 	| [HW5: Bit operations and UTF-8](hw5) |
 | 4/12 | [Unicode Prep](unicode-prep)|	   [Slides](https://docs.google.com/presentation/d/1IRr1Apq1jqzSc1Nw2U852ZufT_jf6FG3CE_99alpSfM/edit?usp=sharing), UTF-8, [Data Rep Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab3/)	| |
 | Week 4 | | Assembly | |
-| 4/15 | [Starting Assembly Prep](start-asm-prep); Study! |  [Quiz 2](quiz2); [Compiler Explorer](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab4/)	|  |
+| 4/15 | [Starting Assembly Prep](start-asm-prep); Study! | [Slides](https://docs.google.com/presentation/d/16XIO66ST54EOoFl04_c7EjNUnhc0sDR9aUUeXZoipoA/edit?usp=sharing), [Quiz 2](quiz2); [Compiler Explorer](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab4/)	|  |
 | 4/17 | HW5; [Assembly Basics Prep](asm-basics-prep) |	x86-64 assembly language	| HW6: asm-to-C puzzles |
 | 4/19 | [Assembly Flow Control Prep](asm-flow-prep) |	Flow Control in Assembly  | |
 | Week 5 |  More Assembly |  | |

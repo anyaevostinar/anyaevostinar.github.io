@@ -14,6 +14,7 @@ The learning objectives that have appeared (or soon will) on quizzes will be lis
 * Explaining how arrays are stored in memory
 * Using null-terminated strings
 * Using pointers
+* Using pointer arithmetic
 * Using binary notation
     * Converting from unsigned binary to decimal and hex
 * Using hexadecimal notation
@@ -21,9 +22,12 @@ The learning objectives that have appeared (or soon will) on quizzes will be lis
 * Using two's complement representation
     * Proficiency: Negating a positive binary value with two's complement
     * Mastery: Converting from decimal to two's complement form
-* Using pointer arithmetic
 * Using bit-level operations
+    * Proficiency: solve given bitwise operation
+    * Mastery: Use mask to make bitwise transformation
 * Using UTF-8 encoding (with table provided)
+    * Proficiency: codepoint that only needs 1 byte
+    * Mastery: codepoint that needs 2 bytes
 
 You can see how you are doing on each of these on Moodle under the "Grades" tab.
 I will continue to update this page throughout the term.
