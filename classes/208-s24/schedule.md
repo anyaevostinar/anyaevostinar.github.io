@@ -30,7 +30,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/12 | [Unicode Prep](unicode-prep)|	   [Slides](https://docs.google.com/presentation/d/1IRr1Apq1jqzSc1Nw2U852ZufT_jf6FG3CE_99alpSfM/edit?usp=sharing), UTF-8, [Data Rep Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab3/)	| |
 | Week 4 | | Assembly | |
 | 4/15 | [Starting Assembly Prep](start-asm-prep); Study! | [Slides](https://docs.google.com/presentation/d/16XIO66ST54EOoFl04_c7EjNUnhc0sDR9aUUeXZoipoA/edit?usp=sharing), [Quiz 2](quiz2); [Compiler Explorer](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab4/)	|  |
-| 4/17 | HW5; [Assembly Basics Prep](asm-basics-prep) |	x86-64 assembly language	| [HW6.1: asm-to-C puzzles](hw6-1) |
+| 4/17 | HW5; [Assembly Basics Prep](asm-basics-prep) |	[Slides](https://docs.google.com/presentation/d/1E4wcpPfSBZkVw61aPOVNfw8Dq6topShf4lYIjsVlMCM/edit?usp=sharing), x86-64 assembly language	| [HW6.1: asm-to-C puzzles](hw6-1) |
 | 4/19 | [Assembly Flow Control Prep](asm-flow-prep) |	Flow Control in Assembly  | |
 | Week 5 |  More Assembly |  | |
 | 4/22 |	DIS 7.3	| Quiz 3; Bit Shifting in Assembly 	|  |

@@ -83,12 +83,11 @@ Your `CountrySorterList` should use an object of type `CountryComparator` to det
 #### add(Country newEntry)
 
 You should create an `add` method that takes a `Country` object and puts it into the correct spot in the sorted list based on the comparator. 
-The reading gives you a good start on this method and you can and should copy over the relevant code and credit it in your `Collaborations.txt` document.
-You will need to adapt the code to work with your `CountryComparator` though.
+The reading shows a version with `Comparable` that you can reference (and cite in `Collaborations.txt` document), but you will have to make enough changes that you might be better off writing it from scratch to work with your `CountryComparator`.
 
 #### Double linking
 
-You should adapt the starter code and reading code to have a doubly-linked list, which is a list where the `Node`s have a link to the node before them, often called `previous` and you maintain a `lastNode` pointer as well as a `firstNode` pointer.
+You should adapt the starter code to have a doubly-linked list, which is a list where the `Node`s have a link to the node before them, often called `previous` and you maintain a `lastNode` pointer as well as a `firstNode` pointer.
 
 #### User interaction
 
