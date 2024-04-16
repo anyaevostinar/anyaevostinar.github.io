@@ -28,6 +28,18 @@ The learning objectives that have appeared (or soon will) on quizzes will be lis
 * Using UTF-8 encoding (with table provided)
     * Proficiency: codepoint that only needs 1 byte
     * Mastery: codepoint that needs 2 bytes
+* Interpreting assembly addressing modes
+    * Proficiency: constant, registers, basic memory
+    * Mastery: Offsets, indexing, and scaling
+* Interpreting core assembly instructions
+    * Proficiency: mov, add
+    * Mastery: sub
+* Explaining the call stack
+    * Proficiency: Draw call stack after push/pop
+    * Mastery: Identify locations on the call stack with offsets
+* Interpreting assembly jumps
+    * Proficiency: Determine outcome of cmp jump sequence
+    * Mastery: Determine outcome of test jump sequence
 
 You can see how you are doing on each of these on Moodle under the "Grades" tab.
 I will continue to update this page throughout the term.
