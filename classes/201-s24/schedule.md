@@ -28,7 +28,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/12 | [Asymptotic Analysis Prep](analysis-prep)|	  [Slides](https://docs.google.com/presentation/d/1Eyix3Jq1u4XgrfTGZ6AhqX01Vk4NFflqzUfb5u-rmMs/edit?usp=sharing), [Asymptotic Analysis](analysis-activity)	| |
 | Week 4 | | Efficiency | |
 | 4/15 | Study! | [Slides](https://docs.google.com/presentation/d/1XXJufttGR5lfuN4X1TFGb3UxrRjT7z9iNqBob34Z8w4/edit?usp=sharing), [Quiz 3](quiz3)	|  |
-| 4/17 | [HW3](hw3), [Ordered List Prep](ordered-list-prep) |	Ordered Linked Lists	| [HW4: Country Sorter List](hw4)|
+| 4/17 | [HW3](hw3), [Ordered List Prep](ordered-list-prep) |	[Slides](https://docs.google.com/presentation/d/16uGYvidvPjq8MTTqrfF-yFOwc-0RJZxCb5YvjJ_hWEk/edit?usp=sharing), Ordered Linked Lists	| [HW4: Country Sorter List](hw4)|
 | 4/19 |[Built-in Complexity Prep](built-in-prep) |	[Array Efficiency](array-efficiency)  | |
 | Week 5 |  | Recursion and applications | |
 | 4/22 |	[Recursion Prep](recursion-prep)	|  [Quiz 4](quiz4); [Recursion](recursion)	|  |
