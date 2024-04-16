@@ -31,11 +31,11 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 4 | | Assembly | |
 | 4/15 | [Starting Assembly Prep](start-asm-prep); Study! | [Slides](https://docs.google.com/presentation/d/16XIO66ST54EOoFl04_c7EjNUnhc0sDR9aUUeXZoipoA/edit?usp=sharing), [Quiz 2](quiz2); [Compiler Explorer](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab4/)	|  |
 | 4/17 | HW5; [Assembly Basics Prep](asm-basics-prep) |	[Slides](https://docs.google.com/presentation/d/1E4wcpPfSBZkVw61aPOVNfw8Dq6topShf4lYIjsVlMCM/edit?usp=sharing), x86-64 assembly language	| [HW6.1: asm-to-C puzzles](hw6-1) |
-| 4/19 | [Assembly Flow Control Prep](asm-flow-prep) |	Flow Control in Assembly  | |
+| 4/19 | [Assembly Flow Control Prep](asm-flow-prep) |	[Slides](https://docs.google.com/presentation/d/1Mlf6xe-E-t6qud39M-entoZFcNn9WcYoYEzaIFziix8/edit?usp=sharing), Flow Control in Assembly  | |
 | Week 5 |  More Assembly |  | |
-| 4/22 |	DIS 7.3	| Quiz 3; Bit Shifting in Assembly 	|  |
-| 4/24 | HW6.1; 7.5  | Functions in Assembly | HW6.2: More puzzles!  |
-| 4/26	|7.6 |	Recursion in Assembly	| |
+| 4/22 |	[Assembly Bits and LEA Prep](asm-bit-lea-prep)	| Quiz 3; LEA 	|  |
+| 4/24 | HW6.1; [Assembly Functions Prep](asm-functions-prep)  | Functions in Assembly | HW6.2: More puzzles!  |
+| 4/26	| [Assembly Recursion Prep](asm-recursion-prep) |	Recursion in Assembly	| |
 | Week 6 | | Reverse Engineering | |
 | 4/29 |  | Midterm break! | |
 | 5/1 |HW6.2, DIS 3, 7.7|Intro to gdb; Arrays in Assembly |HW7: Escape from the Zoo |
