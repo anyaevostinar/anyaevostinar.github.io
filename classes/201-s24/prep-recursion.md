@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Recursion Preparation
-permalink: /classes/201-w24/recursion-prep
+permalink: /classes/201-s24/recursion-prep
 ---
 
 ## Overview
@@ -21,5 +21,5 @@ After class, you should be able to:
 
 ## Reading
 You should read/watch the following and complete the embedded checks:
-* Runestone [4.1-4.4 & 5.11](https://moodle.carleton.edu/mod/lti/view.php?id=908522)
+* Runestone [4.1-4.4 & 5.11](https://moodle.carleton.edu/mod/lti/view.php?id=937726)
 

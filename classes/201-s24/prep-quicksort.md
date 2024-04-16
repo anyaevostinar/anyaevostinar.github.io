@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Quicksort Preparation
-permalink: /classes/201-w24/quicksort-prep
+permalink: /classes/201-s24/quicksort-prep
 ---
 
 ## Overview
@@ -20,5 +20,5 @@ After class, you should be able to:
 
 ## Reading
 You should read/watch the following and complete the embedded checks:
-* Runestone [5.6, 5.12, 5.13](https://moodle.carleton.edu/mod/lti/view.php?id=908534)
+* Runestone [5.6, 5.12, 5.13](https://moodle.carleton.edu/mod/lti/view.php?id=937732)
 

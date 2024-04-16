@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tree Preparation
-permalink: /classes/201-w24/tree-prep
+permalink: /classes/201-s24/tree-prep
 ---
 
 ## Overview
@@ -18,7 +18,7 @@ After class, you should be able to:
 * Implement a binary search tree
 
 ## Resources
-You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=909966):
+You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=937737):
 * Runestone 6.2-6.4
 * 6.6
 * 6.14
