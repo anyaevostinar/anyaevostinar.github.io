@@ -9,6 +9,7 @@ permalink: /classes/201-s24/quiz4
 The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 3 are (new ones in bold):
 
 16. **Using recursion**
+    a. Proficiency - defining the "three laws of recursion", M - writing a recursive function
 9. Explaining time complexity of linked list operations
     a. Proficiency - define Big-O of specified operation, M - demonstrate how you get that Big-O
 10. Using stacks
