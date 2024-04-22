@@ -32,7 +32,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/19 |[Built-in Complexity Prep](built-in-prep) |[Slides](https://docs.google.com/presentation/d/1ixf9mfSU1yI62J6o9VgpEv827wsolrNos5t-EA9xp6g/edit?usp=sharing),	[Array Efficiency](array-efficiency)  | |
 | Week 5 |  | Recursion and applications | |
 | 4/22 |	[Recursion Prep](recursion-prep)	| [Slides](https://docs.google.com/presentation/d/1J5yUGCvuD5na3zzMB1Gwcfw9oquvuZjrBn6rQY_whCk/edit?usp=sharing), [Quiz 4](quiz4); [Recursion](recursion)	|  |
-| 4/24 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	Quicksort	| (No HW5)   |
+| 4/24 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	[Quicksort](quicksort-lab)	| (No HW5)   |
 | 4/26	| [Tree Prep](tree-prep) |	[Binary Search Trees](BST-lab)	| |
 | Week 6 | | Advanced Trees | |
 | 4/29 |  | Midterm break! | |
