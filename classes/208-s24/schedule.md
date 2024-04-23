@@ -34,7 +34,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/19 | [Assembly Flow Control Prep](asm-flow-prep) |	[Slides](https://docs.google.com/presentation/d/1Mlf6xe-E-t6qud39M-entoZFcNn9WcYoYEzaIFziix8/edit?usp=sharing), Flow Control in Assembly  | |
 | Week 5 |  More Assembly |  | |
 | 4/22 |	[Assembly Bits and LEA Prep](asm-bit-lea-prep)	| [Slides](https://docs.google.com/presentation/d/1zmEXKGicZZA2sdy48PkXP8_a-HNV3WLpWTxAVD7CwBw/edit?usp=sharing), [Quiz 3](quiz3); LEA 	|  |
-| 4/24 | HW6.1; [Assembly Functions Prep](asm-functions-prep)  | [Slides](https://docs.google.com/presentation/d/1GNUF44SHekNmMJifZrLdWR2IrbXq3MOPLqbS96D0yXg/edit?usp=sharing), Functions in Assembly | HW6.2: More puzzles!  |
+| 4/24 | HW6.1; [Assembly Functions Prep](asm-functions-prep)  | [Slides](https://docs.google.com/presentation/d/1GNUF44SHekNmMJifZrLdWR2IrbXq3MOPLqbS96D0yXg/edit?usp=sharing), Functions in Assembly | [HW6.2: More puzzles!](hw6-2)  |
 | 4/26	| [Assembly Recursion Prep](asm-recursion-prep) |	Recursion in Assembly	| |
 | Week 6 | | Reverse Engineering | |
 | 4/29 |  | Midterm break! | |
