@@ -37,6 +37,7 @@ The learning objectives that will ultimately all be assessed via quizzes are:
 15. Explaining time complexity of quicksort
     a. Proficiency - define Big-O of best and worst case, M - explain how you get those Big-O
 16. Using recursion
+    a. Proficiency - defining the "three laws of recursion", M - writing a recursive function
 17. Using balanced search trees
     a. Proficiency - demonstrate adding in basic case to 2-3 tree, M - demonstrate adding that requires splitting and promotion
 18. Using heaps

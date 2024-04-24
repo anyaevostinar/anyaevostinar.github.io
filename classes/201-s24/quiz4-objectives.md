@@ -6,7 +6,7 @@ permalink: /classes/201-s24/quiz4
 
 ## Learning Objectives
 
-The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 3 are (new ones in bold):
+The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 4 are (new ones in bold):
 
 16. **Using recursion**
     a. Proficiency - defining the "three laws of recursion", M - writing a recursive function
