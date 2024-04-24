@@ -38,8 +38,8 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/26	| [Assembly Recursion Prep](asm-recursion-prep) |	Recursion in Assembly	| |
 | Week 6 | | Reverse Engineering | |
 | 4/29 |  | Midterm break! | |
-| 5/1 |HW6.2, DIS 3, 7.7|Intro to gdb; Arrays in Assembly |HW7: Escape from the Zoo |
-| 5/3 | 7.9  |		Structs in Assembly	|   |
+| 5/1 |HW6.2, [GDB and Arrays Prep](asm-gdb-arrays-prep) |Intro to gdb; Arrays in Assembly |HW7: Escape from the Zoo |
+| 5/3 | [More GDB and Structs Prep](asm-gdb-structs-prep)  |		Structs in Assembly	|   |
 | Week 7 | | Buffer Overflow, Concurrency | |
 | 5/6 | 7.10 | 	Quiz 4	 | |
 | 5/8 |	17.1, 17.12, 17.13 |Buffer Overflows	|   |
