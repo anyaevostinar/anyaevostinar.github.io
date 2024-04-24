@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tree Traversals Preparation
-permalink: /classes/201-w24/tree-traversals-prep
+permalink: /classes/201-s24/tree-traversals-prep
 ---
 
 ## Overview
@@ -16,5 +16,5 @@ After class, you should be able to:
 * Implement a specific kind of tree to solve a given problem
 
 ## Resources
-You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=910114):
+You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=938810):
 * Runestone 6.7-6.8

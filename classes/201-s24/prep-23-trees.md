@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tree Traversals Preparation
-permalink: /classes/201-w24/2-3-prep
+permalink: /classes/201-s24/2-3-prep
 ---
 
 ## Overview
