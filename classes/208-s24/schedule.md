@@ -35,7 +35,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 5 |  More Assembly |  | |
 | 4/22 |	[Assembly Bits and LEA Prep](asm-bit-lea-prep)	| [Slides](https://docs.google.com/presentation/d/1zmEXKGicZZA2sdy48PkXP8_a-HNV3WLpWTxAVD7CwBw/edit?usp=sharing), [Quiz 3](quiz3); LEA 	|  |
 | 4/24 | HW6.1; [Assembly Functions Prep](asm-functions-prep)  | [Slides](https://docs.google.com/presentation/d/1GNUF44SHekNmMJifZrLdWR2IrbXq3MOPLqbS96D0yXg/edit?usp=sharing), Functions in Assembly | [HW6.2: More puzzles!](hw6-2)  |
-| 4/26	| [Assembly Recursion Prep](asm-recursion-prep) |	Recursion in Assembly	| |
+| 4/26	| [Assembly Recursion Prep](asm-recursion-prep) |	[Slides](https://docs.google.com/presentation/d/1KfatNBvfnfL5gtnGWD7bJ4wJQXjYo0sQpyt8aTqb05E/edit?usp=sharing), Recursion in Assembly	| |
 | Week 6 | | Reverse Engineering | |
 | 4/29 |  | Midterm break! | |
 | 5/1 |HW6.2, [GDB and Arrays Prep](asm-gdb-arrays-prep) |Intro to gdb; Arrays in Assembly |HW7: Escape from the Zoo |
