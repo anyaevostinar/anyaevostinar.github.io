@@ -33,7 +33,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 5 |  | Recursion and applications | |
 | 4/22 |	[Recursion Prep](recursion-prep)	| [Slides](https://docs.google.com/presentation/d/1J5yUGCvuD5na3zzMB1Gwcfw9oquvuZjrBn6rQY_whCk/edit?usp=sharing), [Quiz 4](quiz4); [Recursion](recursion)	|  |
 | 4/24 | [HW4](hw4); [Quicksort Prep](quicksort-prep)|	[Slides](https://docs.google.com/presentation/d/1nNYV5THRf3mmhkOm3ZIOxikL4s1S2gsd-ggW0HTf6JQ/edit?usp=sharing), [Quicksort](quicksort-lab)	| (No HW5)   |
-| 4/26	| [Tree Prep](tree-prep) |	[Binary Search Trees](BST-lab)	| |
+| 4/26	| [Tree Prep](tree-prep) |	[Slides](https://docs.google.com/presentation/d/1zY85kdjeIpR4TfMIYpEUQY1X8X9eZc-GQ3y77tTFR-M/edit?usp=sharing), [Binary Search Trees](BST-lab)	| |
 | Week 6 | | Advanced Trees | |
 | 4/29 |  | Midterm break! | |
 | 5/1 |  [Tree Traversals Prep](tree-traversals-prep)|[Quiz 5](quiz5); Tree traversals	| [HW6: WordCloud Maker](hw6) |
