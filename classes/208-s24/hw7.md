@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HW7 ESCAPE FROM THE ZOO: A REVERSE ENGINEERING ADVENTURE
+title: HW7 ESCAPE FROM THE ZOO - A REVERSE ENGINEERING ADVENTURE
 permalink: /classes/208-s24/hw7
 ---
 
@@ -106,11 +106,11 @@ Put your descriptions in `descriptions.txt`.
 ## SUGGESTIONS AND HINTS
 * If you run your zoo program with a command line argument, like:
 
-```bash
-./zoo passcodes.txt
-```
+    ```bash
+    ./zoo passcodes.txt
+    ```
 
-the program will read the input lines from `passcodes.txt` until it reaches EOF (end of file), and then switch over to reading from the command line. The beaver seems to have added this as a debugging feature when prepping the doors, but forgot to remove it. Either way, you can use it to avoid retyping the solutions to doors you have already opened.
+    the program will read the input lines from `passcodes.txt` until it reaches EOF (end of file), and then switch over to reading from the command line. The beaver seems to have added this as a debugging feature when prepping the doors, but forgot to remove it. Either way, you can use it to avoid retyping the solutions to doors you have already opened.
 
 * The `zoo` program ignores blank input lines, both from the keyboard and from the input file. This means that you can space your `passcodes.txt` lines out if you want to. But note that the order of the `passcodes.txt` lines needs to correspond to the order of the door puzzles.
 * You have to open the doors in order.
@@ -132,6 +132,7 @@ There are many tools designed to help you figure out how programs work and what 
     * Here's a [handy quick reference sheet](http://csapp.cs.cmu.edu/3e/docs/gdbnotes-x86-64.txt).
     * To keep the zoo program from triggering the alarm every time you provide a wrong input, you'll want to learn how to set breakpoints.
     * For documentation, type `help` at the `(gdb)` command prompt.
+    
 
 * `objdump -t`
 
