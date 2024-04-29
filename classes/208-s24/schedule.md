@@ -42,8 +42,8 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 5/3 | [More GDB and Structs Prep](asm-gdb-structs-prep)  |		Structs in Assembly	|   |
 | Week 7 | | Buffer Overflow, Concurrency | |
 | 5/6 | 7.10 | 	Quiz 4	 | |
-| 5/8 |	17.1, 17.12, 17.13 |Buffer Overflows	|   |
-| 5/10 | HW7 |	Useful Unix		| HW8: Buffer Overflow |
+| 5/8 |	HW7; 17.1, 17.12, 17.13 |Buffer Overflows	| HW8: Buffer Overflow  |
+| 5/10 |  |	Useful Unix		|  |
 | Week 8 | | Processes, threads | |
 | 5/13 | | 		 |  |	
 | 5/15 | HW8	|   |	HW9: Command shell 1 |

@@ -16,7 +16,7 @@ This is a **paired** assignment, so you should continue to work with your assign
 
 (HW8, the next homework, will be the start of the assignments where you choose your own partner by the way.)
 
-This assignment is due Wednesday May 15th at 10pm. As with all assignments, you will have the opportunity to **individually** [revise](revision-process) this submission based on feedback.
+This assignment is due Wednesday May 8th at 10pm. As with all assignments, you will have the opportunity to **individually** [revise](revision-process) this submission based on feedback.
 
 ## Assessment
 Scoring on this one is a little complicated, and this rubric won't make a lot of sense until you read the rest of the assignment.
@@ -132,7 +132,7 @@ There are many tools designed to help you figure out how programs work and what 
     * Here's a [handy quick reference sheet](http://csapp.cs.cmu.edu/3e/docs/gdbnotes-x86-64.txt).
     * To keep the zoo program from triggering the alarm every time you provide a wrong input, you'll want to learn how to set breakpoints.
     * For documentation, type `help` at the `(gdb)` command prompt.
-    
+
 
 * `objdump -t`
 
