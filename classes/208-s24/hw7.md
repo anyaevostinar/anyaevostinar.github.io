@@ -128,6 +128,7 @@ There are many tools designed to help you figure out how programs work and what 
 
     This is a command-line debugger tool available on virtually every platform. You can trace through a program line by line, examine memory and registers, look at both the source code and assembly code (which will be important, since I am not giving you the source code for most of your `zoo` program), set breakpoints, set memory watch points, and write scripts.
 
+    * The [GDB section](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/resources.html#gdb) on the Resources page has lots of good stuff, especially [gdb help](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/gdb-help.html)
     * Here's a [good tutorial on gdb](http://beej.us/guide/bggdb/).
     * Here's a [handy quick reference sheet](http://csapp.cs.cmu.edu/3e/docs/gdbnotes-x86-64.txt).
     * To keep the zoo program from triggering the alarm every time you provide a wrong input, you'll want to learn how to set breakpoints.

@@ -38,12 +38,12 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 4/26	| [Assembly Recursion Prep](asm-recursion-prep) |	[Slides](https://docs.google.com/presentation/d/1KfatNBvfnfL5gtnGWD7bJ4wJQXjYo0sQpyt8aTqb05E/edit?usp=sharing), Recursion in Assembly	| |
 | Week 6 | | Reverse Engineering | |
 | 4/29 |  | Midterm break! | |
-| 5/1 |HW6.2, [GDB and Arrays Prep](asm-gdb-arrays-prep) |Intro to gdb; Arrays in Assembly |[HW7: Escape from the Zoo](hw7) |
+| 5/1 |HW6.2, [GDB and Arrays Prep](asm-gdb-arrays-prep) | [Slides](https://docs.google.com/presentation/d/1IXeQw54wirambsg64wGlPIA9k6d1Fb6xLhMXc_20O-8/edit?usp=sharing), [Intro to gdb](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/assignments/13-lab-gdb.html); Arrays in Assembly |[HW7: Escape from the Zoo](hw7) |
 | 5/3 | [More GDB and Structs Prep](asm-gdb-structs-prep)  |		Structs in Assembly	|   |
 | Week 7 | | Buffer Overflow, Concurrency | |
-| 5/6 | 7.10 | 	Quiz 4	 | |
-| 5/8 |	HW7; 17.1, 17.12, 17.13 |Buffer Overflows	| HW8: Buffer Overflow  |
-| 5/10 |  |	Useful Unix		|  |
+| 5/6 | Study! | 	Quiz 4	 | |
+| 5/8 |	HW7; 7.10 |Buffer Overflows	| HW8: Buffer Overflow  |
+| 5/10 |17.1, 17.12, 17.13  |	Useful Unix		|  |
 | Week 8 | | Processes, threads | |
 | 5/13 | | 		 |  |	
 | 5/15 | HW8	|   |	HW9: Command shell 1 |
