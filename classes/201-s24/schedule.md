@@ -36,7 +36,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/26	| [Tree Prep](tree-prep) |	[Slides](https://docs.google.com/presentation/d/1zY85kdjeIpR4TfMIYpEUQY1X8X9eZc-GQ3y77tTFR-M/edit?usp=sharing), [Binary Search Trees](BST-lab)	| |
 | Week 6 | | Advanced Trees | |
 | 4/29 |  | Midterm break! | |
-| 5/1 |  [Tree Traversals Prep](tree-traversals-prep)|[Quiz 5](quiz5); Tree traversals	| [HW6: WordCloud Maker](hw6) |
+| 5/1 |  [Tree Traversals Prep](tree-traversals-prep)|[Slides](https://docs.google.com/presentation/d/12-3NDH-lGf-9iwJOBd-HDihYPmZMybZ9lRUPu6rkGAw/edit?usp=sharing), [Quiz 5](quiz5); Tree traversals	| [HW6: WordCloud Maker](hw6) |
 | 5/3 | [2-3 Tree Prep](2-3-prep) |		[Balanced Search Trees](two-three-tree)	| |
 | Week 7 | | Graphs | |
 | 5/6 | Study! | [Quiz 6](quiz6); Catch up			 | |
