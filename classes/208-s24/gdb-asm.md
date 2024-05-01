@@ -69,9 +69,9 @@ We’ll now explore the proc function.
 
 We want to explore the inputs to `proc`. We expect to find the first six arguments in registers, with arguments 7 and 8 (x4 and p4, respectively) instead on the stack. In this case, `proc` is called on line 23, as follows:
 
-    ```bash
-    proc(10, &a, 20, &b, 30, &c, 40, &d);
-    ```
+```c
+proc(10, &a, 20, &b, 30, &c, 40, &d);
+```
 
 Here is a reasonable hypothesis of a drawing to represent the state of the stack at the start of a call to `proc`: 
 
@@ -105,9 +105,9 @@ Let’s find the arguments!
 
 By default, this seems to display in decimal, which is kind of useless for addresses. Use `/x` to make it display in hex instead:
 
-    ```bash
-    (gdb) print /x $rsi
-    ```
+```bash
+(gdb) print /x $rsi
+```
 
 * Arguments 3–6 should be in registers `%rdx`, `%rcx`, `%r8`, and `%r9`, respectively. It’s tedious to view each individually, so let’s look at all registers instead:
 
