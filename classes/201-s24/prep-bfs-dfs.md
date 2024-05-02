@@ -19,5 +19,5 @@ After class, you should be able to:
 
 ## Reading
 You should read/watch the following and complete the embedded checks:
-* Runestone [7.7,7.9, 7.10, 7.15, 7.16](https://moodle.carleton.edu/mod/lti/view.php?id=913315)
+* Runestone [7.7,7.9, 7.10, 7.15, 7.16](https://moodle.carleton.edu/mod/lti/view.php?id=939825)
 
