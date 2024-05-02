@@ -43,7 +43,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 7 | | Buffer Overflow | |
 | 5/6 | Study! | 	[Quiz 4](quiz4)	 | |
 | 5/8 |	HW7; [Buffer Overflow Prep](buffer-overflow-prep) |Buffer Overflows	| HW8: Buffer Overflow  |
-| 5/10 |17.1, 17.12, 17.13  |	Useful Unix		|  |
+| 5/10 |[Unix Prep](useful-unix-prep)  |	Useful Unix		|  |
 | Week 8 | | Processes, threads | |
 | 5/13 | | 		 |  |	
 | 5/15 | HW8	|   |	HW9: Command shell 1 |
