@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Graph Implementations Preparation
-permalink: /classes/201-w24/graphs-prep
+permalink: /classes/201-s24/graphs-prep
 ---
 
 ## Overview
@@ -19,6 +19,6 @@ After class, you should be able to:
 
 ## Reading
 You should read the following:
-* Runestone [7.2-7.6](https://moodle.carleton.edu/mod/lti/view.php?id=911559)
+* Runestone [7.2-7.6](https://moodle.carleton.edu/mod/lti/view.php?id=939822)
 
 
