@@ -123,7 +123,7 @@ public int getCount(String word);
  public int getNodeCount(); 
 
  ```
-
+ 
 For the methods above that must be recursive, it's fine (and recommended) for each one to call a helper method where the recursion actually takes place, and it's also fine if your method implementation includes some loops, as long as there is recursion as well. (Frequently, you might loop over the children while changing levels in the tree recursively.)
 
 ## WordCounter.java
