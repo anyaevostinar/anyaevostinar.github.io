@@ -96,12 +96,12 @@ You can use many tools to help you unlock all the doors. See the [Suggestions](#
 ## STEP 3: WRITE YOUR DESCRIPTIONS
 See the [Assessment](#assessment) section above for a description of descriptions. As noted there, you're looking for a short description of "what is this code doing".
 
-Put your descriptions in `descriptions.txt`.
+Put your descriptions in `descriptions.txt` **along with your zoo number**.
 
 ## STEP 4: SUBMIT YOUR WORK
 * While connected to the Carleton network, run your zoo program and unlock as many doors as you can. This will cause your successful escape progress to get logged on the grading server. You can check to make sure your opened doors got logged properly by going to [http://cs208.mathcs.carleton.edu:55057/progress](http://cs208.mathcs.carleton.edu:55057/progress).
 * NOTE: your `zoo-quiet` program will not report your progress, so you eventually need to submit your solutions via `zoo`, at least once.
-* Submit `descriptions.txt` and `passcodes.txt` to Gradescope (one submission per partnership please! Though you can resubmit as much as you want).
+* Submit `descriptions.txt` and `passcodes.txt` to Gradescope (one submission per partnership please! Though you can resubmit as much as you want). **Make sure to include your zoo number in your descriptions document.**
 
 ## SUGGESTIONS AND HINTS
 * If you run your zoo program with a command line argument, like:
