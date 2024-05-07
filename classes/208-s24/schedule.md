@@ -42,7 +42,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 5/3 | [More GDB and Structs Prep](asm-gdb-structs-prep)  |	[Slides](https://docs.google.com/presentation/d/1BBJwVD0dHzvXgN8g5dRup7-lQoFylC8zJQHNEY4mglM/edit?usp=sharing), [GDB Assembly Lab](lab-gdb-asm)	|   |
 | Week 7 | | Buffer Overflow | |
 | 5/6 | Study! | [Slides](https://docs.google.com/presentation/d/1FKye-AxBxTFqMEUyLnrF2ukBXB9XnFi_8PKniu8kK6s/edit?usp=sharing),	[Quiz 4](quiz4)	 | |
-| 5/8 |	HW7; [Buffer Overflow Prep](buffer-overflow-prep) |Buffer Overflows	| HW8: Buffer Overflow  |
+| 5/8 |	HW7; [Buffer Overflow Prep](buffer-overflow-prep) |[Slides](https://docs.google.com/presentation/d/11v_ZALoPM2UCcbGGkrqg5Y0JUcVE6mIcaac-__QJqKY/edit?usp=sharing), Buffer Overflows	| [HW8: Buffer Overflow](hw8)  |
 | 5/10 |[Unix Prep](useful-unix-prep)  |	Useful Unix		|  |
 | Week 8 | | Processes, threads | |
 | 5/13 | | 		 |  |	
