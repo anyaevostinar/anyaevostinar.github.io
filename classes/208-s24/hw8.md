@@ -27,7 +27,7 @@ To **demonstrate mastery**, your submission needs to:
 
 Your progress through the phases will be automatically tracked as it was during the zoo escape assignment. For this assignment, your entire score will be based on your completion of the three phases of the assignment; all you need to hand in is a document `info.txt` that includes your target number (we can see it as well, but it makes it easier on the grader).
 
-Check your progress here: [http://cs208.mathcs.carleton.edu:1866/progress]
+Check your progress here: [http://cs208.mathcs.carleton.edu:1866/progress](http://cs208.mathcs.carleton.edu:1866/progress)
 
 ## BUFFER OVERFLOW ATTACKS
 Suppose you write a program that includes this function:
@@ -55,7 +55,7 @@ If our users are clever enough, they can type input that will (1) overflow `str`
 This kind of sneaky user is engaged in what is known as a [buffer overflow attack](https://owasp.org/www-community/attacks/Buffer_overflow_attack). In this assignment, you are going to play the role of buffer-overflow attacker. In the process, you'll get more familiar with the way function calling works at the assembly language level.
 
 ## WHAT TO DO
-1. **Get your attack target.** Fill out the form at [http://cs208.mathcs.carleton.edu:1866/] to download your `targetN.tar file`. This file is analogous to the `zooN.tar` file you obtained during the the [zoo-escape assignment](hw7).
+1. **Get your attack target.** Fill out the form at [http://cs208.mathcs.carleton.edu:1866/](http://cs208.mathcs.carleton.edu:1866/) to download your `targetN.tar file`. This file is analogous to the `zooN.tar` file you obtained during the the [zoo-escape assignment](hw7).
 2. **Move your `targetN.tar` file to mantis** and expand it there (with `tar xvf targetN.tar`). The `targetN.tar` file contains a whole bunch of files, some of which you will not need because we're doing only a portion of the original lab. The files you will need are:
     * `ctarget` — the executable program that you will attack. This program is vulnerable to code injection attacks.
     * `ctarget.phaseN` for N = 1, 2, and 3 — files where you can put your solutions to the phases as you work (analogous to the `passcodes.txt` file from the zoo assignment).
@@ -77,7 +77,7 @@ Ignore `rtarget*` and `farm.c`
 
     If you're successful, ctarget will let you know.
     * Make sure you run the attack on mantis so your success will get recorded.
-    * Check out your progress at [http://cs208.mathcs.carleton.edu:1866/progress]
+    * Check out your progress at [http://cs208.mathcs.carleton.edu:1866/progress](http://cs208.mathcs.carleton.edu:1866/progress)
     Unless you run `ctarget` with the `-q` flag, your exploit string will be sent to the assignment server and tested. The server will then update your status on the progress page.
 
     There is no penalty for making mistakes in this assignment, nor are mistakes even recorded anywhere. Experiment at will!
