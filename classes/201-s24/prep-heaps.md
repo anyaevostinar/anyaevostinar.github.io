@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Heaps Preparation
-permalink: /classes/201-w24/heaps-prep
+permalink: /classes/201-s24/heaps-prep
 ---
 
 ## Overview
@@ -21,6 +21,6 @@ After class, you should be able to:
 
 ## Reading
 You should read/watch the following:
-* Runestone [6.9-6.11](https://moodle.carleton.edu/mod/lti/view.php?id=911534)
+* Runestone [6.9-6.11](https://moodle.carleton.edu/mod/lti/view.php?id=940757)
 * OpenDSA [8.12](https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/Heapsort.html)
 
