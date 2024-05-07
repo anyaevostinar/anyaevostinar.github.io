@@ -40,7 +40,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/3 | [2-3 Tree Prep](2-3-prep) |	[Slides](https://docs.google.com/presentation/d/1XyWxBzy9mau_PItICmap2KxLQF1CkqzhqaTo3kJIqvY/edit?usp=sharing),	[Balanced Search Trees](two-three-tree)	| |
 | Week 7 | | Graphs | |
 | 5/6 | Study! | [Slides](https://docs.google.com/presentation/d/1LiCZk0vNAt91dgrWNwdRoUh_yfAR7oEEm6VNRWdwvaU/edit?usp=sharing), [Quiz 6](quiz6)	 | |
-| 5/8 |	[HW6](hw6); [Graphs Prep](graphs-prep)  |	[Graph implementations](graphs)	|  [HW8: WikiPaths](hw8) (No HW7) |
+| 5/8 |	[HW6](hw6); [Graphs Prep](graphs-prep)  | [Slides](https://docs.google.com/presentation/d/1KbL67M0tj4RsW1GJ-z1nMIGopICpXgGj8NxGONNOjlk/edit?usp=sharing),	[Graph implementations](graphs)	|  [HW8: WikiPaths](hw8) (No HW7) |
 | 5/10 | [BFS and DFS Prep](bfs-dfs-prep) |	[BFS and DFS](traversal-analysis)		| |
 | Week 8 | | Heaps and Hashing | |
 | 5/13 | [Heap Prep](heaps-prep) | [Quiz 7](quiz7); [Heaps](heap)		 |  |	
