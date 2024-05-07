@@ -45,15 +45,15 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 5/8 |	HW7; [Buffer Overflow Prep](buffer-overflow-prep) |[Slides](https://docs.google.com/presentation/d/11v_ZALoPM2UCcbGGkrqg5Y0JUcVE6mIcaac-__QJqKY/edit?usp=sharing), Buffer Overflows	| [HW8: Buffer Overflow](hw8)  |
 | 5/10 |[Unix Prep](useful-unix-prep)  |	Useful Unix		|  |
 | Week 8 | | Processes, threads | |
-| 5/13 | | 		 |  |	
-| 5/15 | HW8	|   |	HW9: Command shell 1 |
-| 5/17 | DIS 13.2 | 	|  |	
+| 5/13 |[OS and Processes Prep](os-processes-prep) | 	The OS; Getting Started with Processes Lab	 |  |	
+| 5/15 | HW8; [Signals and Messages Prep](os-signals-prep)	|  Intro to HW9 |	HW9: Command shell 1 |
+| 5/17 | No prep | 	|  |	
 | Week 9 | | Networking with sockets | |
-| 5/20 |  HW9 |  	| HW10: Command shell 2 |
-| 5/22 |  | 	 | 	 |
-| 5/24	| HW10  |   | |
+| 5/20 |  HW9 |  Quiz 5	| HW10: Command shell 2 |
+| 5/22 | 11.1-11.3 | 	 | 	 |
+| 5/24	| HW10; 11.4-11.5  |   | |
 | Week 10 | | Wrapping up | |
-| 5/27 |  |  | |
+| 5/27 |  | Quiz 6 | |
 | 5/29 |  |  | |
 | 5/31 | Submit checklist for SS exam | Reading days!| |
 | Exam Period | | | |
