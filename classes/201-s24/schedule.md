@@ -41,7 +41,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 7 | | Graphs | |
 | 5/6 | Study! | [Slides](https://docs.google.com/presentation/d/1LiCZk0vNAt91dgrWNwdRoUh_yfAR7oEEm6VNRWdwvaU/edit?usp=sharing), [Quiz 6](quiz6)	 | |
 | 5/8 |	[HW6](hw6); [Graphs Prep](graphs-prep)  | [Slides](https://docs.google.com/presentation/d/1KbL67M0tj4RsW1GJ-z1nMIGopICpXgGj8NxGONNOjlk/edit?usp=sharing),	[Graph implementations](graphs)	|  [HW8: WikiPaths](hw8) (No HW7) |
-| 5/10 | [BFS and DFS Prep](bfs-dfs-prep) |	[BFS and DFS](traversal-lab)		| |
+| 5/10 | [BFS and DFS Prep](bfs-dfs-prep) |	[Slides](https://docs.google.com/presentation/d/16XjCC--i2X3qDYPpNTs-9ltu2gUX8z-551ZXv3t6aeI/edit?usp=sharing), [BFS and DFS](traversal-lab)		| |
 | Week 8 | | Heaps and Hashing | |
 | 5/13 | [Heap Prep](heaps-prep) | [Quiz 7](quiz7); [Heaps](heap)		 |  |	
 | 5/15 | HW8; [Hashing Prep](hashing-prep)	|  [Hashing and Collisions](hashing)  |	 |
