@@ -46,7 +46,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 5/10 |[Unix Prep](useful-unix-prep)  |[Slides](https://docs.google.com/presentation/d/1YjuwBn9FgqfKC1eCxf2Rv01noYJRtCtx0Km_1z-Tgio/edit?usp=sharing),	Useful Unix		|  |
 | Week 8 | | Processes, threads | |
 | 5/13 |[OS and Processes Prep](os-processes-prep) | 	The OS; Getting Started with Processes Lab	 |  |	
-| 5/15 | HW8; [Signals and Messages Prep](os-signals-prep)	|  Intro to HW9 |	HW9: Command shell 1 |
+| 5/15 | HW8; [Signals and Messages Prep](os-signals-prep)	|  Intro to HW9 |	[HW9: Command shell 1](hw9) |
 | 5/17 | No prep | 	|  |	
 | Week 9 | | Networking with sockets | |
 | 5/20 |  HW9 |  Quiz 5	| HW10: Command shell 2 |
