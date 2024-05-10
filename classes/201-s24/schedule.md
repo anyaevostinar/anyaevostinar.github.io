@@ -43,7 +43,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/8 |	[HW6](hw6); [Graphs Prep](graphs-prep)  | [Slides](https://docs.google.com/presentation/d/1KbL67M0tj4RsW1GJ-z1nMIGopICpXgGj8NxGONNOjlk/edit?usp=sharing),	[Graph implementations](graphs)	|  [HW8: WikiPaths](hw8) (No HW7) |
 | 5/10 | [BFS and DFS Prep](bfs-dfs-prep) |	[Slides](https://docs.google.com/presentation/d/16XjCC--i2X3qDYPpNTs-9ltu2gUX8z-551ZXv3t6aeI/edit?usp=sharing), [BFS and DFS](traversal-lab)		| |
 | Week 8 | | Heaps and Hashing | |
-| 5/13 | [Heap Prep](heaps-prep) | [Quiz 7](quiz7); [Heaps](heap)		 |  |	
+| 5/13 | [Heap Prep](heaps-prep) | [Slides](https://docs.google.com/presentation/d/19lBCI_qNVBPek7LzbuYIWVGSn37PDvEr69pnKD4zGsc/edit?usp=sharing), [Quiz 7](quiz7); [Heaps](heap)		 |  |	
 | 5/15 | HW8; [Hashing Prep](hashing-prep)	|  [Hashing and Collisions](hashing)  |	 |
 | 5/17 | Read about [Final project](final-project) | [Intro to final project](project-intro) 	| [Final project](final-project) |	
 | Week 9 | | Final Project | |

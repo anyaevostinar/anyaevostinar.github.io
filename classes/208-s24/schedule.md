@@ -45,7 +45,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 5/8 |	HW7; [Buffer Overflow Prep](buffer-overflow-prep) |[Slides](https://docs.google.com/presentation/d/11v_ZALoPM2UCcbGGkrqg5Y0JUcVE6mIcaac-__QJqKY/edit?usp=sharing), Buffer Overflows	| [HW8: Buffer Overflow](hw8)  |
 | 5/10 |[Unix Prep](useful-unix-prep)  |[Slides](https://docs.google.com/presentation/d/1YjuwBn9FgqfKC1eCxf2Rv01noYJRtCtx0Km_1z-Tgio/edit?usp=sharing),	Useful Unix		|  |
 | Week 8 | | Processes, threads | |
-| 5/13 |[OS and Processes Prep](os-processes-prep) | 	The OS; Getting Started with Processes Lab	 |  |	
+| 5/13 |[OS and Processes Prep](os-processes-prep) | [Slides](https://docs.google.com/presentation/d/1BRQ_TNfMew7520SUhlunLJBchn5MuG0oU89_0eE-2vY/edit?usp=sharing),	The OS; [Getting Started with Processes Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab7/)	 |  |	
 | 5/15 | HW8; [Signals and Messages Prep](os-signals-prep)	|  Intro to HW9 |	[HW9: Command shell 1](hw9) |
 | 5/17 | No prep | 	|  |	
 | Week 9 | | Networking with sockets | |
