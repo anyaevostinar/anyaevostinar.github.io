@@ -36,7 +36,7 @@ Specify for each:
 * What ideas do you have for the superclass and subclasses?
 * What are possible other class concepts you would use for the implementation (from the list on the [project page](final-project)!)
 
-Discuss with a group near you what ideas you've each come up with (don't worry if there is overlap, that's fine! Everyone can do a chess game if they want). Pay special attention to if the inheritance is meaningful.
+Discuss with a group near you what ideas you've each come up with (don't worry if there is overlap, that's fine! Everyone can do a chess game if they want). Pay special attention to if the inheritance is meaningful and help the other group if you have ideas for them.
 
 ## Exercise 3
 Make sure you have the inheritance clearly planned out for one of the ideas and mark it. You'll share at the end of class about the plan for the inheritance. Then get started on the project proposal (submission link on Moodle) and your [minimum viable product](project-checkin).
