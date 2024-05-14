@@ -48,11 +48,11 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/17 | Read about [Final project](final-project) | [Intro to final project](project-intro) 	| [Final project](final-project) |	
 | Week 9 | | Final Project | |
 | 5/20 | Study; [Project proposal](final-project#project-proposal)  |  [Quiz 8](quiz8)	| |
-| 5/22 |  | [Minimum Viable Product](project-checkin)	 |	 |
+| 5/22 | No prep, work on projects! | [Minimum Viable Product](project-checkin)	 |	 |
 | 5/24	| Final project initial submission | Working on projects  | |
 | Week 10 | | Wrapping up | |
-| 5/27 |  | Project peer review | |
-| 5/29 |  | [Quiz 9](quiz9) | |
+| 5/27 | No prep | Project peer review | |
+| 5/29 | Study! | [Quiz 9](quiz9) | |
 | 5/31 | Submit checklist for SS exam | Reading days!| |
 | Exam Period | | | |
 | Self-scheduled | | [Quiz 10](quiz10) (No new learning objectives) | |
