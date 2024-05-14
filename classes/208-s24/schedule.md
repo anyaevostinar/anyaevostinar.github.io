@@ -47,7 +47,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 8 | | Processes, threads, and sockets | |
 | 5/13 |[OS and Processes Prep](os-processes-prep) | [Slides](https://docs.google.com/presentation/d/1BRQ_TNfMew7520SUhlunLJBchn5MuG0oU89_0eE-2vY/edit?usp=sharing),	The OS; [Getting Started with Processes Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab7/)	 |  |	
 | 5/15 | HW8; [Signals and Messages Prep](os-signals-prep)	|  [Slides](https://docs.google.com/presentation/d/1UQC8B-_rQ4vTuiBHhy11ICueJqAibZo3HKXAECaKTJg/edit?usp=sharing), Intro to HW9 |	[HW9: Command shell 1](hw9) |
-| 5/17 | No prep | 	|  |	
+| 5/17 | No prep | [Slides](https://docs.google.com/presentation/d/1GToszplGUdTQKMVxNip6ZDIKGG_WYuY5TnCIC5X9ihw/edit?usp=sharing), Catch up	|  |	
 | Week 9 | | Memory | |
 | 5/20 |  HW9 | [Quiz 5](quiz5)	| [HW10: Command shell 2](hw10) |
 | 5/22 | [Memory Hierarchy Prep](mem-hierarchy-prep) | Memory	 | 	 |
