@@ -44,7 +44,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/10 | [BFS and DFS Prep](bfs-dfs-prep) |	[Slides](https://docs.google.com/presentation/d/16XjCC--i2X3qDYPpNTs-9ltu2gUX8z-551ZXv3t6aeI/edit?usp=sharing), [BFS and DFS](traversal-lab)		| |
 | Week 8 | | Heaps and Hashing | |
 | 5/13 | [Heap Prep](heaps-prep) | [Slides](https://docs.google.com/presentation/d/19lBCI_qNVBPek7LzbuYIWVGSn37PDvEr69pnKD4zGsc/edit?usp=sharing), [Quiz 7](quiz7); [Heaps](heap)		 |  |	
-| 5/15 | HW8; [Hashing Prep](hashing-prep)	|  [Hashing and Collisions](hashing)  |	 |
+| 5/15 | HW8; [Hashing Prep](hashing-prep)	| [Slides](https://docs.google.com/presentation/d/1j6xr0lDVwpwQz940O3Ary_nPBjgwQcrkJphAE-HiFyg/edit?usp=sharing), [Hashing and Collisions](hashing)  |	 |
 | 5/17 | Read about [Final project](final-project) | [Intro to final project](project-intro) 	| [Final project](final-project) |	
 | Week 9 | | Final Project | |
 | 5/20 | Study; [Project proposal](final-project#project-proposal)  |  [Quiz 8](quiz8)	| |
