@@ -50,11 +50,11 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 5/17 | No prep | 	|  |	
 | Week 9 | | Networking with sockets | |
 | 5/20 |  HW9 |  Quiz 5	| HW10: Command shell 2 |
-| 5/22 | 11.1-11.3 | 	 | 	 |
-| 5/24	| HW10; 11.4-11.5  |   | |
+| 5/22 | [Memory Hierarchy Prep](mem-hierarchy-prep) | Memory	 | 	 |
+| 5/24	| HW10; [Caching Prep](caching-prep)  | Caching  | |
 | Week 10 | | Wrapping up | |
-| 5/27 |  | Quiz 6 | |
-| 5/29 |  | Something fun :) | |
+| 5/27 | Study! | Quiz 6 | |
+| 5/29 | No prep | Something fun :) | |
 | 5/31 | Submit checklist for SS exam | Reading days!| |
 | Exam Period | | | |
 | Self-scheduled | |  | |
