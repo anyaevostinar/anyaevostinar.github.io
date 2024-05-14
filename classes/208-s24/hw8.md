@@ -322,3 +322,9 @@ This is also a valid input you can pass through `hex2raw` before sending to one 
 * Learning how to exploit software vulnerabilities helps you to understand those vulnerabilities and how to prevent them. At the same time, of course, this knowledge could potentially be used to harm other people. [Don't do that.](https://apps.carleton.edu/handbook/community/?a=student&policy_id=6131)
 
 ## HAVE FUN!
+
+## Q & A
+Questions that have come up:
+* I am getting a message that I have solved the phase but then cause a seg fault within notify_server; what gives?
+
+    You might be running into an issue of stack alignment. Later in the code, there is a floating point instruction that assumes its parameter is stored at an address that is a multiple of 16. This can happen when you overflow the stack frame into the previous function's stack frame and then doing two jumps (with ret) to your injected code and a touch function. Doing an extra ret without a corresponding 8-byte push makes rsp into a multiple of 8 that is not also a multiple of 16, which causes the issue later. **The solution is to make sure that your `push` with your injected code before you `ret` to keep the stack aligned correctly.**
