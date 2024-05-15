@@ -43,6 +43,8 @@ The learning objectives that have appeared (or soon will) on quizzes will be lis
 * Identifying core assembly structures (such as loop vs recursion vs conditional etc)
 * Explaining high-level functionality of given assembly (similar to HW6.1)
 * Explaining fork call execution
+    * Proficiency: Single fork call
+    * Mastery: Multiple fork calls
 
 You can see how you are doing on each of these on Moodle under the "Grades" tab.
 I will continue to update this page throughout the term.

@@ -9,6 +9,8 @@ permalink: /classes/208-s24/quiz5
 The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 5 are (new in bold):
 
 * **Explaining fork call execution**
+    * Proficiency: Single fork call
+    * Mastery: Multiple fork calls
 * Explaining how arrays are stored in memory
 * Using pointers
 * Using pointer arithmetic
