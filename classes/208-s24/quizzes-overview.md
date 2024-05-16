@@ -45,6 +45,7 @@ The learning objectives that have appeared (or soon will) on quizzes will be lis
 * Explaining fork call execution
     * Proficiency: Single fork call
     * Mastery: Multiple fork calls
+* Explaining direct-mapped cache address division
 
 You can see how you are doing on each of these on Moodle under the "Grades" tab.
 I will continue to update this page throughout the term.
