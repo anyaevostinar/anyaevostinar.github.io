@@ -8,7 +8,7 @@ permalink: /classes/201-s24/project-checkin
 To check in on your final project to make sure it is the right balance of fitting the requirements and feasible. 
 
 ## Exercise 1
-Hopefully you've already spent time thinking about the requirements for the final project and have an idea of a project that will meet the requirements. 
+You've already spent time thinking about the [requirements for the final project](final-project) and have an idea of a project that will meet the requirements. 
 A common issue however is having a project that is too big for the time you have and so you end up stressed to get it to a finished state.
 
 To avoid this situation, it's important to think about a minimum viable product that will meet the requirements of the project's rubric and be somewhat complete even if it isn't everything you wanted.
