@@ -52,8 +52,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/24	| Final project initial submission | Working on projects  | |
 | Week 10 | | Wrapping up | |
 | 5/27 | No prep | Project peer review | |
-| 5/29 | Study! | [Quiz 9](quiz9) | |
-| 5/31 | Submit checklist for SS exam | Reading days!| |
+| 5/29 | Study!; Submit checklist for SS exam | [Quiz 9](quiz9) | |
+| 5/31 |  | Reading days!| |
 | Exam Period | | | |
 | Self-scheduled | | [Quiz 10](quiz10) (No new learning objectives) | |
 | | | All revisions due Monday 6/3, 9:30pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
