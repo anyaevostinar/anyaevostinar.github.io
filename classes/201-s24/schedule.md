@@ -47,7 +47,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/15 | HW8; [Hashing Prep](hashing-prep)	| [Slides](https://docs.google.com/presentation/d/1j6xr0lDVwpwQz940O3Ary_nPBjgwQcrkJphAE-HiFyg/edit?usp=sharing), [Hashing and Collisions](hashing)  |	 |
 | 5/17 | Read about [Final project](final-project) | [Slides](https://docs.google.com/presentation/d/1y08yA4QQWkliACEdWDikzuuEBd2LUzj3ZwzG8djUUz0/edit?usp=sharing), [Intro to final project](project-intro) 	| [Final project](final-project) |	
 | Week 9 | | Final Project | |
-| 5/20 | Study; [Project proposal](final-project#project-proposal)  |  [Quiz 8](quiz8)	| |
+| 5/20 | Study; [Project proposal](final-project#project-proposal)  | [Slides](https://docs.google.com/presentation/d/1i2rHquZ0YNO8r4wYxwg3CzqmgzGhniRuPfbZ0j6KyL4/edit?usp=sharing),  [Quiz 8](quiz8)	| |
 | 5/22 | No prep, work on projects! | [Minimum Viable Product](project-checkin)	 |	 |
 | 5/24	| Final project initial submission | Working on projects  | |
 | Week 10 | | Wrapping up | |
