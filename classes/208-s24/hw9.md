@@ -19,7 +19,7 @@ This assignment is due **Monday May 20th** at 10pm. As with all assignments, you
 ## Assessment
 
 To **demonstrate proficiency**, your submission needs to:
-* Pass the tests on Gradescope
+* Pass the tests on Gradescope (though see [Addendums](#addendums))
 * Support "help", printing a short summary of your shell's current features
 * Implement the simplest mode: print prompt; get one-word command from user; execute
     command (or print an error message); repeat forever
@@ -65,3 +65,6 @@ There is a [collection of sample programs](https://cs.carleton.edu/faculty/jondi
 
 ## HAVE FUN!
 This program is pretty cool once you get it working.
+
+## Addendums
+It's not straightforward to have an autograder that works without some kind of "exit" functionality in your shell program, so to make the autograder work correctly, your shell should `exit` when the user types "exit". If you don't have this implemented, however, we'll just manually test your submission instead, so you'll still ultimately be evaluated on the rubric specified above. 
