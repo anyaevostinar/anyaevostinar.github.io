@@ -39,7 +39,7 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 * Identifying core assembly structures (such as loop vs recursion vs conditional etc)
 * Explaining high-level functionality of given assembly (similar to HW6.1)
 
-You will not be able to bring a checklist. Instead, you should make sure to fill out the form linked on Moodle and I will include your checklist in your exam for you.
+You will not be able to bring a checklist. Instead, you should make sure to [fill out the form linked on Moodle](https://docs.google.com/forms/d/e/1FAIpQLSdqhyrmmyIKrfwADXrenyrb7-xXJjio7VlZoeLVuqA6VeKEgg/viewform?usp=sf_link) by May 29th at 10pm and I will include your checklist in your exam for you.
 
 ## Suggestions
 Good ways to study for the quizzes are:
