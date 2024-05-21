@@ -53,9 +53,9 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 5/22 | [Memory Hierarchy Prep](mem-hierarchy-prep) |[Slides](https://docs.google.com/presentation/d/1S8ANiUdX7W3Euqs6HReSANzxiQy59cTjFKHSzaLZBqs/edit?usp=sharing), Locality and Memory	 | 	 |
 | 5/24	| HW10; [Caching Prep](caching-prep)  | Caching  | |
 | Week 10 | | Wrapping up | |
-| 5/27 | Study! | Quiz 6 | |
+| 5/27 | Study! | [Quiz 6](quiz6) | |
 | 5/29 | No prep; Submit checklist for SS exam | Something fun :) | |
 | 5/31 |  | Reading days!| |
 | Exam Period | | | |
-| Self-scheduled | |  | |
+| [Self-scheduled](quiz-final) | |  | |
 | | | All revisions due Monday 6/3, 9:30pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
