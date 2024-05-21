@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Quiz 9 Objectives
-permalink: /classes/201-s24/quiz9
+title: Quiz 10 Objectives
+permalink: /classes/201-s24/quiz10
 ---
 
 ## Learning Objectives
 
-The  [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 9 are (no new objectives):
+The  [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 10 are:
 
 1. Defining variables with appropriate type in Java
     a. Proficiency - basic types, M - Collections with generics
@@ -47,7 +47,7 @@ The  [learning objectives](quizzes-overview) that you can demonstrate your profi
 24. Explaining time complexity of hashing
     a. Proficiency - define Big-O in worst case, M - explain how you get that Big-O
 
-You may print out and bring with you a copy of [this checklist](https://docs.google.com/document/d/1iBYzuF_wVHefPmjX5TGET-gnEpiCUSV_A9kYhogr-zM/edit?usp=sharing) to help you keep track of the learning objectives that you are still working on during the quiz.
+You are not allowed to bring anything to the self-scheduled final, so instead you should fill out the [checklist form linked on Moodle](https://docs.google.com/forms/d/e/1FAIpQLSdCXloRKJrImuJ7hzNGtCYH1KB2jYU_keQQ5BgceuD9RkuLwA/viewform?usp=sf_link) and I will include your checklist in your exam booklet.
 
 ## Suggestions
 Good ways to study for the quizzes are:
