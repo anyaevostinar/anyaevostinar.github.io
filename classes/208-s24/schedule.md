@@ -51,10 +51,10 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 9 | | Memory | |
 | 5/20 |  HW9 | [Slides](https://docs.google.com/presentation/d/1Pjsrxx1KalRtfX3FzIBXtH81rxEr16lLq6Tj4I4V0r8/edit?usp=sharing), [Quiz 5](quiz5)	| [HW10: Command shell 2](hw10) |
 | 5/22 | [Memory Hierarchy Prep](mem-hierarchy-prep) |[Slides](https://docs.google.com/presentation/d/1S8ANiUdX7W3Euqs6HReSANzxiQy59cTjFKHSzaLZBqs/edit?usp=sharing), Locality and Memory	 | 	 |
-| 5/24	| HW10; [Caching Prep](caching-prep)  | Caching  | |
+| 5/24	| HW10; [Caching Prep](caching-prep)  | [Slides](https://docs.google.com/presentation/d/1nIt4QTXqEWa4tlKULzmoyHtxNJEBzG3MGAzcGhGEZks/edit?usp=sharing), Caching  | |
 | Week 10 | | Wrapping up | |
-| 5/27 | Study! | [Quiz 6](quiz6) | |
-| 5/29 | No prep; Submit checklist for SS exam | Something fun :) | |
+| 5/27 | Study! |[Slides](https://docs.google.com/presentation/d/1jdGRNvu7YCiX0iQ71TggU7y0dmuM95kH8MPDZiu-Cx4/edit?usp=sharing), [Quiz 6](quiz6) | |
+| 5/29 | No prep; Submit checklist for SS exam | [Slides](https://docs.google.com/presentation/d/1FsSpfnv2aH7bb4h7fzREE4JovBZ9jLJEWY0gYK7gze0/edit?usp=sharing), Something fun :) | |
 | 5/31 |  | Reading days!| |
 | Exam Period | | | |
 | [Self-scheduled](quiz-final) | |  | |
