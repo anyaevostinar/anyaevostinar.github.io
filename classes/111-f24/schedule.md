@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS111 Introduction to Computer Science W24 Schedule
-permalink: /classes/111-w24/schedule
+permalink: /classes/111-f24/schedule
 ---
 
 [Syllabus](syllabus)

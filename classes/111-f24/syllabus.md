@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CS111 Introduction to Computer Science F22 Syllabus
-permalink: /classes/111-w24/syllabus
+title: CS111 Introduction to Computer Science F24 Syllabus
+permalink: /classes/111-f24/syllabus
 ---
 
 [Schedule](schedule)
@@ -21,7 +21,7 @@ permalink: /classes/111-w24/syllabus
 
 ## Quick Facts
 
-Winter 2024
+Fall 2024
 
 **Instructor**: Anya E. Vostinar
 
@@ -39,9 +39,7 @@ Specific free versions (linked on Moodle) of:
 
 **Drop in student hours**:
 
-M: 1-2pm in Olin 306
-W: 2-3pm in Olin 306
-Th: 2:30-3:30pm in Olin 306
+TBD
 
 Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 9-5 M-F and either send a calendar invite to an event or email me.
 
@@ -148,7 +146,22 @@ Answers on quizzes will be assessed on the same four-level scale:
 
 **To earn an A in the course:** you must show that you have *mastered all* of the learning objectives in the course by having all programming deliverables and quiz objectives at 'demonstrates mastery'
 
-(Yes, I do also give +/- grades. They follow the logical distribution where if you're closer to an A than a B, you get an A-, if you're closer to a B, you get a B+.)
+Here is a table that lays out how +/- work (and everything overall):
+
+| Grade | Percent LOs at Mastery | Percent LOs at Proficiency (or higher) | Percent LOs at Not Yet Proficient |
+|-------|----------|-------------|------------|
+| A | 100% | 0% | 0% |
+| A- | 75-99% | 1-25% | 0% |
+| B+ | 51-74%| 24-49% | 0% |
+| B | 50%  |  50%  | 0%* |
+| B- | 25-49%  |  51-75%  |   0% |
+| C+ |  1-24%  |  76-99%  |   0% |
+|C |  0%   |   100%  |   0% |
+| C- | ? |  75-99% | 1-25% |
+| D+ | ? | 51-74%| 24-49% |
+| D | ? | 50% | 50% |
+| D- | ?| 25-49%  |  51-75% |
+| F | ? | 0-24% | 76-100% |
 
 ### Late work and extensions
 In this course, we need to balance flexibility for individuals with structure for partners, the class as a whole, and a reasonable workload for the grader and me (your instructor). I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. 
