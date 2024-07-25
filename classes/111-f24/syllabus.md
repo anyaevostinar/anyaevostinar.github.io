@@ -121,7 +121,7 @@ I'll be using a version of *specifications grading* this term for the programmin
 * Demonstrates mastery (the submission provides evidence of mastery of the learning objective(s))
 
 An important aspect of specifications grading is revision. **You may revise any programming deliverable up until the end of exams.** Learning is not a linear process, and it involves making mistakes and learning from them. You may *individually* revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
-You may *individually* [further revise](revision-process) that deliverable before the end of the term and request additional feedback via a form ([link TBD]()), however I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.
+You may *individually* [further revise](revision-process) that deliverable before the end of the term and request additional feedback via a form ([link TBD]()), however **I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.**
 Even if an assignment was initially a paired assignment, all revisions should be completed individually.
 
 ### Quiz Assessment
@@ -146,22 +146,25 @@ Answers on quizzes will be assessed on the same four-level scale:
 
 **To earn an A in the course:** you must show that you have *mastered all* of the learning objectives in the course by having all programming deliverables and quiz objectives at 'demonstrates mastery'
 
-Here is a table that lays out how +/- work (and everything overall):
+Here are two tables that lay out how everything breaks down:
 
-| Grade | Percent LOs at Mastery | Percent LOs at Proficiency (or higher) | Percent LOs at Not Yet Proficient |
-|-------|----------|-------------|------------|
-| A | 100% | 0% | 0% |
-| A- | 75-99% | 1-25% | 0% |
-| B+ | 51-74%| 24-49% | 0% |
-| B | 50%  |  50%  | 0%* |
-| B- | 25-49%  |  51-75%  |   0% |
-| C+ |  1-24%  |  76-99%  |   0% |
-|C |  0%   |   100%  |   0% |
-| C- | ? |  75-99% | 1-25% |
-| D+ | ? | 51-74%| 24-49% |
-| D | ? | 50% | 50% |
-| D- | ?| 25-49%  |  51-75% |
-| F | ? | 0-24% | 76-100% |
+| Grade | Percent LOs at **Mastery** | Percent LOs at **Proficiency** |
+|-------|----------|-------------|
+| A | 100% | 0% |
+| A- | 75-99% | 1-25% |
+| B+ | 51-74%| 24-49% | 
+| B | 50%  |  50%  | 
+| B- | 25-49%  |  51-75%  |  
+| C+ |  1-24%  |  76-99%  |  
+|C |  0%   |   100%  | 
+
+| Grade | Percent LOs at Proficiency or Mastery | Percent LOs at **Not Yet Proficient** |
+|-------|----------|-------------|
+| C- | 75-99% | 1-25% |
+| D+ | 51-74%| 24-49% |
+| D |  50% | 50% |
+| D- | 25-49%  |  51-75% |
+| F | 0-24% | 76-100% |
 
 ### Late work and extensions
 In this course, we need to balance flexibility for individuals with structure for partners, the class as a whole, and a reasonable workload for the grader and me (your instructor). I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. 
