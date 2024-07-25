@@ -13,6 +13,7 @@ permalink: /classes/111-f24/syllabus
 * [Course Expectations](#course-expectations)
 * [Types of Engagement and Collaboration Policies](#types-of-engagement-and-collaboration-policies)
 * [Assessment](#assessment)
+    * [Grade Table](#how-this-translates-to-course-grades)
 * [How to Succeed](#how-to-succeed-in-this-class)
 * [Inclusivity](#inclusivity-and-universal-learning)
 * [Academic Honesty and Collaboration Policy](#academic-honesty-and-collaboration-policy)
