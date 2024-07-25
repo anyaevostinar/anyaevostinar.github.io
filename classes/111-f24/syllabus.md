@@ -159,6 +159,8 @@ Here are two tables that lay out how everything breaks down:
 | C+ |  1-24%  |  76-99%  |  
 |C |  0%   |   100%  | 
 
+**Note that all LOs must be at proficiency or master for a C or higher.**
+
 | Grade | Percent LOs at Proficiency or Mastery | Percent LOs at **Not Yet Proficient** |
 |-------|----------|-------------|
 | C- | 75-99% | 1-25% |
