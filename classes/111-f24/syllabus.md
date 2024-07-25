@@ -143,7 +143,7 @@ Answers on quizzes will be assessed on the same four-level scale:
 
 **To earn a C in the course:** you must show that you are *proficient in all* the learning objectives of the course by having all programming deliverables and quiz objectives at 'demonstrates proficiency'
 
-**To earn a B in the course:** you must show that you are *proficient in all* the learning objectives of the course and *have mastered half* of the learning objectives by having all programming deliverables and quiz objectives at 'demonstrates proficiency' and half of programming deliverables and quiz objectives at 'demonstrates mastery'
+**To earn a B in the course:** you must show that you are *proficient in all* the learning objectives of the course and *have mastered approximately half* of the learning objectives by having all programming deliverables and quiz objectives at 'demonstrates proficiency' and half of programming deliverables and quiz objectives at 'demonstrates mastery'
 
 **To earn an A in the course:** you must show that you have *mastered all* of the learning objectives in the course by having all programming deliverables and quiz objectives at 'demonstrates mastery'
 
@@ -152,22 +152,22 @@ Here are two tables that lay out how everything breaks down:
 | Grade | Percent LOs at **Mastery** | Percent LOs at **Proficiency** |
 |-------|----------|-------------|
 | A | 100% | 0% |
-| A- | 75-99% | 1-25% |
-| B+ | 51-74%| 24-49% | 
-| B | 50%  |  50%  | 
-| B- | 25-49%  |  51-75%  |  
-| C+ |  1-24%  |  76-99%  |  
+| A- | 80-99% | 1-20% |
+| B+ | 60-79%| 21-40% | 
+| B | 40-59%  |  41-60%  | 
+| B- | 20-39%  |  61-80%  |  
+| C+ |  1-19%  |  81-99%  |  
 |C |  0%   |   100%  | 
 
 **Note that all LOs must be at proficiency or mastery for a C or higher.**
 
 | Grade | Percent LOs at Proficiency or Mastery | Percent LOs at **Not Yet Proficient** |
 |-------|----------|-------------|
-| C- | 75-99% | 1-25% |
-| D+ | 51-74%| 24-49% |
-| D |  50% | 50% |
-| D- | 25-49%  |  51-75% |
-| F | 0-24% | 76-100% |
+| C- | 80-99% | 1-20% |
+| D+ | 60-79%| 21-40% |
+| D |  40-59% | 41-60% |
+| D- | 20-39%  |  61-80% |
+| F | 0-19% | 81-100% |
 
 ### Late work and extensions
 In this course, we need to balance flexibility for individuals with structure for partners, the class as a whole, and a reasonable workload for the grader and me (your instructor). I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. 
