@@ -78,8 +78,8 @@ All materials will be released at least 48 hours before they are due.
 Attendance is not strictly required in this class, though I believe that you will do much better if you attend every session. 
 Because much of the classtime is spent working with partners on lab activities, if you miss class, you will miss out on that opportunity.
 
-On Mondays there will typically be a quiz in the first half of class.
-If you do not attend on a Monday, you will not be able to make up that quiz, though you will be able to demonstrate your understanding on the learning objectives on subsequent quizzes still.
+On Wednesdays there will typically be a quiz in the first half of class.
+If you do not attend on a Wednesday, you will not be able to make up that quiz, though you will be able to demonstrate your understanding on the learning objectives on subsequent quizzes still.
 
 ## Types of Engagement and Collaboration Policies
 We'll have lots of different ways of engaging with the course material: 
@@ -87,7 +87,7 @@ We'll have lots of different ways of engaging with the course material:
 * Interactive lectures at the start of class that will include discussions to check your understand of the reading and give you a chance to ask questions.
 * Labs for writing somewhat longer code with significant guidance from the instructions in order to make ideas from readings more concrete.
 * Programming assignments where you complete more extended projects to provide opportunities to design solutions and see the ideas from class applied in real contexts. Some of these you will complete with a partner and some will be individual.
-* In-class quizzes, generally on Mondays, for you to demonstrate your understanding of specific learning objectives.
+* In-class quizzes, generally on Wednesdays, for you to demonstrate your understanding of specific learning objectives.
 * Final project, where you pull together everything you've learned to create something that interests you.
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
@@ -121,8 +121,8 @@ I'll be using a version of *specifications grading* this term for the programmin
 
 * Demonstrates mastery (the submission provides evidence of mastery of the learning objective(s))
 
-An important aspect of specifications grading is revision. **You may revise any programming deliverable up until the end of exams.** Learning is not a linear process, and it involves making mistakes and learning from them. You may *individually* revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
-You may *individually* [further revise](revision-process) that deliverable before the end of the term and request additional feedback via a form ([link TBD]()), however **I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.**
+An important aspect of specifications grading is revision. **You may revise any programming deliverable up until the end of classes.** Learning is not a linear process, and it involves making mistakes and learning from them. You may *individually* revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
+You may *individually* [further revise](revision-process) that deliverable before the end of **classes** (*not the end of exams*) and request additional feedback via a form ([link TBD]()), however **I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.**
 Even if an assignment was initially a paired assignment, all revisions should be completed individually.
 
 ### Quiz Assessment
@@ -180,7 +180,7 @@ In this course, we need to balance flexibility for individuals with structure fo
 It is expected that you complete the preparation work ahead of the class period that it is associated with, however if you aren't able to, I recommend you complete it as soon afterward as you can.
 
 
-**All work must be submitted by the end of the last finals period as per College policy.**
+**All work other than the final project must be submitted by the end of the last day of class as per College policy.** (Only the final project is allowed to be submitted during exams according to college policy.)
 All that said: If you're staring down a deadline that you know you can't meet, or if you've fallen behind, **get in touch with me immediately and we'll work something out.** While I need to put boundaries in place for my own health and wellness, and for fairness to everyone in the class, I also want to make sure you are progressing in your learning.
 
 ## How to Succeed in this Class
