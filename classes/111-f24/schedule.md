@@ -29,6 +29,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 4** | **Advanced Blocks** | | |
 | 10/7 | [Mutating Lists Prep](mutating-lists-prep) | [Working with Lists](lab-mutating-lists)	| |
 | 10/9 | [Files Prep](files-prep); [HW3](hw3)	| Quiz 4, [Working with Files](files)	| [HW4](hw4) |
+| 10/10 | Early voting at Carleton | Vote if you are eligible! | |
 | 10/11 | [Functions Prep 1](functions1-prep) | [Function Basics](functions1)	 | |
 | **Week 5** | **Functions** |  | |
 | 10/14 | [Functions Prep 2](functions2-prep) |  [Return of the Functions](lab-functions2) | |
@@ -44,6 +45,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 11/1 | [Lists and Dictionary Analysis Prep](list-efficiency-prep)	 |  [Structures Efficiency](lab-efficiency2)	|  |
 | **Week 8** | **Searching and Sorting** |   | |
 | 11/4 | [Searching Prep](searching-prep) |	 [Sequential and Binary Search](binary-search)	| |
+| 11/5 | Election Day! | Vote if you are eligible! | |
 | 11/6 | 	[Sorting Prep 1](sorting-basic-prep); HW7	 | Quiz 8, [Slow(ish) Sorting Algorithms](slow-sorting) | |	
 | 11/8 | [Sorting Prep 2](mergesort-prep); [Final Project Info](final-project)	|  Mergesort and Final Project  | [Final Project Proposal](final-project#project-proposal)	 |
 | **Week 9** | **Final Project**|  | |
