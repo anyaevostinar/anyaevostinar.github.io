@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Revision Assessment Process
-permalink: /classes/111-w24/revision-process
+permalink: /classes/111-f24/revision-process
 ---
 
 ## Overview
@@ -16,7 +16,7 @@ The first revision on each homework assignment is due a week after the initial s
 If you wish to revise after you get the feedback from the first revision, you can do so by following these steps:
 1. Read the feedback and correct your homework
 2. Submit your corrected homework to the same Gradescope assignment (will reopen after the feedback is released)
-3. Submit a request on [this form](https://forms.gle/v9BqtTH7CERSXyKK8)
+3. Submit a request on [this form](https://docs.google.com/forms/d/e/1FAIpQLSeRDDUr_JqAr2-7-YekVp3biyiEnNmwOe709gjOHhE-on1FkQ/viewform?usp=sf_link)
 4. Wait for the revision to be assessed, which might take until the end of term, or might happen more quickly than that
 5. Repeat from step 1 if you want
 
