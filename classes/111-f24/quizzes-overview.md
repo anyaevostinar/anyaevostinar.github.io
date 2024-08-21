@@ -28,7 +28,7 @@ The learning objectives that will ultimately all be assessed via quizzes are:
 6. Using lists
     * Proficiency: Creating and accessing a list
     * Mastery: Changing values in a list
-7. Using returns values
+7. Using return values
     * Proficiency: Using a return statement
     * Mastery: Saving and using returned result
 8. Using function parameters
@@ -61,7 +61,7 @@ The learning objectives that will ultimately all be assessed via quizzes are:
 17. Explaining binary search
     * Proficiency: Demonstrate the process of binary search with an off-by-one-error
     * Mastery: Demonstrate the process of binary search without error
-18. Identifying the worst case efficiency of the core sort and search algorithms
+18. Identifying worst case efficiency
     * Proficiency: Identify the worst case efficiency of sequential search
     * Mastery: Identify the worst case efficiency of insertion or selection sort
 
