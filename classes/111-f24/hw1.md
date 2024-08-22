@@ -20,8 +20,10 @@ To **demonstrate proficiency**, your programs need to pass all the tests in Grad
 To **demonstrate mastery**, your programs need to demonstrate proficiency as well as having:
 * Descriptive headers
 * Useful comments
-* Descriptive variable names
-* Good spacing
+* Descriptive variable names that follow `snake_case`
+* Good line grouping and spacing (i.e. use blank newlines to group your lines of code)
+* No unnecessary casts to `int`
+* No unnecessary parentheses
 
 ## Setup
 I recommend that you complete this assignment in Olin 310.
@@ -120,7 +122,7 @@ You are now twice the age you were in <answer>
 ```
 One slightly strange thing that you might have noticed is that you might be being told a year that’s represented using a decimal point, which is probably not how you think of years. 
 (Was the Magna Carta really signed in year 1215.0?) 
-We’ll talk about this issue more in a little while — it’s related to the way that numbers are stored internally in Python — but you can fix it right now. Instead of printing the value of `currentYear - age/2` for example, you can print the value of `int(currentYear - age/2)`. The function `int` stands for **int**eger, and it converts any number it’s given into an integer. (The function `int` is “generous” about your age: it rounds down.)
+We’ll talk about this issue more in a little while — it’s related to the way that numbers are stored internally in Python — but you can fix it right now. Instead of printing the value of `currentYear - age/2` for example, you can print the value of `currentYear - int(age/2)`. The function `int` stands for **int**eger, and it converts any number it’s given into an integer. (The function `int` is “generous” about your age: it rounds down.)
 You should go with the later year if they are an odd-numbered year.
 
 You should now get the following:
