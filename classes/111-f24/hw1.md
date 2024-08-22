@@ -39,7 +39,7 @@ If you really want to use your personal machine, there are instructions for inst
 
 ```python
 # helloworld.py
-# CS 111, Winter 2024
+# CS 111, Fall 2024
 # This is the traditional first program to write in any programming language.
 ```
 
@@ -152,7 +152,6 @@ You will be twice your current age in 2224
 ```
 
 * Any program with more than a few lines of code (so nearly all of them), should have comments describing what blocks of the code do. We'll learn more about how to better organize code in the future, but for now you should put in a couple of comments describing what blocks of code are doing so that someone reading your program can easily see what is going on. You should also make sure any variables you used are named well and make sure your header describes what the program does. Finally, be mindful of the spacing in your program: how can you use an extra line here or there to make it easier to read, but not too many? There are several right answers to these style questions, so go with what you think makes it easiest to read and stay consistent. The graders will give feedback on style to help you improve it.
-
 
 ## Submission
 You should submit your two files through the Gradescope link on Moodle for this assignment.
