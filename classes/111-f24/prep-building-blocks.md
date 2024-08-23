@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Building Blocks Preparation
-permalink: /classes/111-w24/build-blocks-prep
+permalink: /classes/111-f24/build-blocks-prep
 ---
 
 ## Overview
@@ -29,4 +29,4 @@ You should complete the following Runestone readings [through this Moodle link](
 * 2.1-2.6
 
 ## Checks
-Just the questions embedded in the reading.
+* [Through  Moodle link](https://moodle.carleton.edu/mod/lti/view.php?id=899055)
