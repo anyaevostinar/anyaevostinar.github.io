@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Intro to Python Preparation
-permalink: /classes/111-w24/python-prep
+permalink: /classes/111-f24/python-prep
 ---
 
 ## Overview
@@ -14,7 +14,6 @@ Before class, you should be able to:
 * Explain the difference between an *algorithm* and a *program*
 * Edit and run Python programs embedded in the textbook
 * Use the `print` function
-* List the roles in pair programming
 
 ## Advanced Learning Objectives
 
@@ -26,11 +25,11 @@ After class, you should be able to:
 
 ## Readings
 
-You should complete the following Runestone readings [through this Moodle link](https://moodle.carleton.edu/mod/lti/view.php?id=897112).
+You should complete the following Runestone readings [through this Moodle link](https://moodle.carleton.edu/mod/lti/view.php?id=953624).
 
 * 1.1-1.4
 * 1.7-1.9
 * Optional 1.5-1.6 
 
 ## Checks
-* [1.12](https://moodle.carleton.edu/mod/lti/view.php?id=897112)
+* [1.12](https://moodle.carleton.edu/mod/lti/view.php?id=953624)

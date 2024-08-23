@@ -15,7 +15,10 @@ As with all assignments, you will have the opportunity to [revise](revision-proc
 The goal of this assignment is two-fold: to get started with basic Python programming and also thinking algorithmically. 
 
 ## Assessment
-To **demonstrate proficiency**, your programs need to pass all the tests in Gradescope.
+To **demonstrate proficiency**, your programs need to pass all the tests in Gradescope, which test:
+* Correct functionality
+* Header with three lines that start with `#` for each file
+* Basic style that can be checked automatically (not complete!)
 
 To **demonstrate mastery**, your programs need to demonstrate proficiency as well as having:
 * Descriptive headers
