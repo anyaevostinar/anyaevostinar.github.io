@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Getting Started Lab 
-permalink: /classes/111-w24/getting-started
+permalink: /classes/111-f24/getting-started
 ---
 
 This is a lab assignment and so you will not be submitting it.
@@ -9,7 +9,8 @@ However, the concepts and practice will help you on both the homework and exams 
 
 ## Exercise 0
 
-1. [Mount the COURSES drive](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=152558)
+([This link has screenshots]((https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=152558)) to accompany these instructions if you want them.)
+1. Mount the COURSES drive by double clicking the courses Desktop icon (if you didn't use the checkbox when you logged in)
 2. Create a new folder in your STUWORK folder called `Lab1`
 3. Open VSCode
 4. Click and drag you `Lab1` folder to the VSCode window to open it
@@ -29,7 +30,7 @@ You'll now test out using Gradescope.
 7.	Upload `hello.py` to Gradescope again and make sure that you pass the first test case
 8. Add your partner to the submission on Gradescope:
 
-![Screenshot of how to add group member on Gradescope](AddingGroupMember.png)
+![Screenshot of how to add group member on Gradescope](/classes/111-w24/AddingGroupMember.png)
 
 ## Exercise 2
 We'll be doing a lot with getting input from the Terminal in these first few weeks and it's a little annoying to make sure that the formatting is just right for this sort of thing, so you'll now get some practice.
@@ -49,10 +50,10 @@ Hello, Anya!
 ```
 5. Upload both of your files to the Gradescope In Class Assignment to check if all the test cases are now passing.
 
-<!-- 
+
 ## Exercise 3
 Let me know that you've submitted your Gradescope assignment. I'll aim to give you 'feedback' right away so you can see what that looks like as well.
--->
+
 
 ## Extra
 If you finish everything above, work on the Runestone problems in Getting Started Lab Extra linked on Moodle.
