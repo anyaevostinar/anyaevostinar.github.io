@@ -5,25 +5,23 @@ permalink: /research/undergrad
 ---
 
 If you are a Carleton student, there are two ways that you can do research with me: for pay or for academic credit. 
-I sometimes have positions during the summer and term that are paid, I will announce those opportunities through the CS mailing list.
+I sometimes have positions during the summer that are paid; I will announce those opportunities through the CS mailing list.
 I am often open to supervising an independent study and/or research during the term, though it will need to be on a project that I am actively working so that it is a good use of my time.
 If you are interested in working with me for academic credit, please email me and I'm happy to chat about the options. 
 I also will give more detail on what that involves on this page.
 
 ## I want to be in your lab!
 Awesome, I’m excited to hear of your interest! 
-I have two main research areas, one focused on questions in biology and one focused on teaching biological concepts using computer programs.
-
-## Choose Your Own Adventure: Bio questions
-If you're interested in research that seeks to answer open questions in biology, this is the section for you.
 To best prepare for doing this kind of research with me, please read this page thoroughly, try out [Symbulation](https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html), and read [this review article](https://www.frontiersin.org/articles/10.3389/fevo.2021.739047/full). You can also read at least the introduction of [this paper](https://www.biorxiv.org/content/biorxiv/early/2018/08/20/393868.full.pdf). These will give you a solid grasp of what my research involves and what projects I’m looking to get students involved with. If you’re even more excited after reading these materials, check my calendar (linked on homepage) and email me a time you’d like to meet and talk further.
 
+<!-- 
 ## Choose Your Own Adventure: Education questions
 If you're interested in how computer programs can be used to teach biological concepts, this is the section for you.
 This is a newer direction for the lab, but you can get a basic idea of the premise by reading this page thoroughly, and [this paper](https://arxiv.org/pdf/2007.03787.pdf).
 The main idea is putting evolution into games and interactive websites to improve students' intuition about the tricky parts.
 So far we've done this in the games [Stardew Valley](https://github.com/anyaevostinar/RealisticFishing) and [Minecraft](https://github.com/eliarbogast/evolution) and by setting challenges on the [Symbulation](https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html) GUI.
 If you’re even more excited after reading these materials, check my calendar (linked on homepage) and email me a time you’d like to meet and talk further.
+-->
 
 ## Symbu what?…..
 The SymbuLab is a combination of [Symbulation](https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html), our main software, and Lab, the thing this is.
