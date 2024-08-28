@@ -50,6 +50,11 @@ Hello, Anya!
 ```
 5. Upload both of your files to the Gradescope In Class Assignment to check if all the test cases are now passing.
 
+6. Try adding some extra parentheses to `hello_input.py` and see what the Style checker thinks:
+
+```python
+new_name = (input("What is your name?"))
+```
 
 ## Exercise 3
 Let me know that you've submitted your Gradescope assignment. I'll aim to give you 'feedback' right away so you can see what that looks like as well.
