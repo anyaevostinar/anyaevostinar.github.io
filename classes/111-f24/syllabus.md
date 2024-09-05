@@ -264,12 +264,18 @@ It's not worth it -- please seek help using the resources above instead.
 
 ### AI-Assistance
 In this new age of AI assistants everywhere, we need to cautiously navigate their relationship with academic honesty together. 
-(You may not have heard of any of these tools and that's completely okay! This is just covering all bases in case you have/when you do and we'll discuss them some in class.)
-In general, only use an AI text/code generator if the assignment explicitly calls for it or allows it, and follow specific assignment guidelines to disclose which text comes from the AI. 
-Most assignments (probably all) in this course will NOT allow the use of an AI text/code generator, since you need to learn how to write the code yourself. If you already have the GitHub Co-pilot extension in VSCode, [you must disable it](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment#enabling-or-disabling-github-copilot) for all course work.
+(You may not have heard of any of these tools and that's completely okay! This is just covering all bases in case you have/when you do.)
+The programming assignments in this course are designed to help you learn the course material and develop problem-solving skills that are vital to computer science (and pretty useful in general). These assignments assume that you will do the intellectual work required to complete them, which includes processing the assignments as they're presented, actively engaging in the class material, and developing and testing your own ideas in your programming. Using AI tools in any significant way will diminish the value of these assignments and ultimately hinder your learning.
 
-We may explore some use cases for generative AI, but I'll also emphasize and demonstrate how it regularly produces quite horrible solutions. 
-You can write way better code yourself, trust me!
+Therefore, I'm prohibiting the use of AI tools such as Gemini, ChatGPT or GitHub CoPilot for any purpose related to this class. Specifically, **you may not use AI tools to**:
+* Summarize course readings
+* Explain assignment prompts (ask me instead!)
+* Brainstorm programming solutions
+* Look up syntax
+* Generate any part of your programming assignments -- this includes asking AI to generate comments, documentation, or code (it's okay to use the suggestions from VSCode that appear automatically, though watch out since they are frequently wrong!)
+* Offer revision advice other than catching spelling errors
+
+If you already have the GitHub Co-pilot extension in VSCode, [you must disable it](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment#enabling-or-disabling-github-copilot) for all course work. 
 
 ## Pedagogy
 This section discusses some of the pedagogical principles that you'll see in this class.
