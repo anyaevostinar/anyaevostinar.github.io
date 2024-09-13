@@ -160,7 +160,7 @@ Here are two tables that lay out how everything breaks down:
 | C+ |  1-19%  |  81-99%  |  
 |C |  0%   |   100%  | 
 
-**Note that all LOs must be at proficiency or mastery for a C or higher.**
+**Note that generally all LOs must be at proficiency or mastery for a C or higher.** It is possible for a student to end up in a situation where they have most objectives at mastery but one objective at ‘not yet proficient’ at the end of the term. In those cases (just one objective NYP, nearly everything else mastery), the student might be able to earn up to a B depending on the specific objective at NYP, the status of the rest of the objectives, and the state of the objective at NYP. **There is no guarantee that you will get such a boost.**
 
 | Grade | Percent LOs at Proficiency or Mastery | Percent LOs at **Not Yet Proficient** |
 |-------|----------|-------------|
