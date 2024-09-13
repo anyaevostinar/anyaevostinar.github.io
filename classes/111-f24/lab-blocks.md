@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Building Blocks Lab 
-permalink: /classes/111-w24/building-blocks
+permalink: /classes/111-f24/building-blocks
 ---
 
 Make a folder for today's lab in COURSES ([here are the instructions from the previous lab](getting-started)).

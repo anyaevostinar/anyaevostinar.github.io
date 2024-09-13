@@ -17,7 +17,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 1** | **Algorithmic Thinking** |  | |
 | 9/16 | [Start of Class Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1Ro5wur5xiTvsJ8f0CGlNYyl1tW6MVM9nblMTnFKfWi0/edit?usp=sharing), Intro to the class |  |
 | 9/18 | [Intro Python Prep](python-prep) | [Slides](https://docs.google.com/presentation/d/1WdPXUvWebjiOGuZFj4-LGJRSkyMmLib92elI1CODl-s/edit?usp=sharing), [Quiz 1](quiz1), [Starting with Python](getting-started)  | [HW1](hw1)	 |
-| 9/20 | [Building Blocks Prep](build-blocks-prep) |   [Building Blocks Lab](building-blocks) | | 
+| 9/20 | [Building Blocks Prep](build-blocks-prep) |  [Slides](https://docs.google.com/presentation/d/14lRutCorbBFSc4Ja71F9F8m9PbMxFG228ZY2RHYfXSU/edit?usp=sharing), [Building Blocks Lab](building-blocks) | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
 | 9/23 | [Variables Prep](variables-prep)	|  [Variables and Evaluation](variables) |	 |
 | 9/25 | [Modules Prep](turtle-prep); HW1 | Quiz 2, [Random Turtles](random-turtle)	| [HW2](hw2) |
