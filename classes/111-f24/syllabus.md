@@ -30,8 +30,6 @@ Fall 2024
 
 **Anya's Office**: Olin 323
 
-**Prefect**: See Moodle
-
 **Course materials**: 
 
 Specific free versions (linked on Moodle) of:
@@ -40,7 +38,10 @@ Specific free versions (linked on Moodle) of:
 
 **Drop in student hours**:
 
-TBD
+All in Olin 306/308 (the Edge Lounge/Tree Lab):
+* Mondays 3-4pm
+* Wednesdays 2-3pm
+* Thursdays 1-2pm
 
 Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 9-5 M-F and either send a calendar invite to an event or email me.
 

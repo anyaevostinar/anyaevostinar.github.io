@@ -50,7 +50,7 @@ The learning objectives that will ultimately all be assessed via quizzes are:
     * Proficiency: Identifying and explaining `TypeError`s
     * Mastery: Identifying and explaining scope errors
 14. Predicting the behavior of a program
-    * Proficiency: Predicting behavior of imperative program
+    * Proficiency: Predicting behavior of imperative program with changing variables
     * Mastery: Predicting behavior of functional/object-oriented program
 15. Explaining the difference between objects and classes
     * Proficiency: Identifying classes and objects in example code

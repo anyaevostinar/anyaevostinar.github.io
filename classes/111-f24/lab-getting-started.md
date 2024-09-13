@@ -9,7 +9,7 @@ However, the concepts and practice will help you on both the homework and exams 
 
 ## Exercise 0
 
-([This link has screenshots]((https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=152558)) to accompany these instructions if you want them.)
+([This link has screenshots](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=152558) to accompany these instructions if you want them.)
 1. Mount the COURSES drive by double clicking the courses Desktop icon (if you didn't use the checkbox when you logged in)
 2. Create a new folder in your STUWORK folder called `Lab1`
 3. Open VSCode
