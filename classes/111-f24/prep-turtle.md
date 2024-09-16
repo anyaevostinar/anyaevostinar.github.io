@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Turtle Preparation
-permalink: /classes/111-w24/turtle-prep
+permalink: /classes/111-f24/turtle-prep
 ---
 
 ## Overview
@@ -21,7 +21,7 @@ After class, you should be able to:
 * Use a for loop to reduce the lines of code of your program
 
 ## Resources
-You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=903021):
+You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=964959):
 * 4.1-4.3 (Intro to Python Modules - The random module)
 * 5.1-5.2 (Hello Little Turtles! - Our First Turtle Program)
 * 5.5 (Repetition with a For Loop)
