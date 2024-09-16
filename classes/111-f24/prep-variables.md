@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Variables Lesson Preparation
-permalink: /classes/111-w24/variables-prep
+permalink: /classes/111-f24/variables-prep
 ---
 
 ## Overview
@@ -30,7 +30,7 @@ After class, you should be able to:
 ## Readings
 You should read/watch each of the following and complete the check through Moodle:
 
-* [2.7-2.15](https://moodle.carleton.edu/mod/lti/view.php?id=903017)
+* [2.7-2.15](https://moodle.carleton.edu/mod/lti/view.php?id=964930)
 
 ## Checks
 Complete the embedded checks through Moodle.
