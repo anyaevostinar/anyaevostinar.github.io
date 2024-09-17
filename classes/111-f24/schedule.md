@@ -19,7 +19,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 9/18 | [Intro Python Prep](python-prep) | [Slides](https://docs.google.com/presentation/d/1WdPXUvWebjiOGuZFj4-LGJRSkyMmLib92elI1CODl-s/edit?usp=sharing), [Quiz 1](quiz1), [Starting with Python](getting-started)  | [HW1](hw1)	 |
 | 9/20 | [Building Blocks Prep](build-blocks-prep) |  [Slides](https://docs.google.com/presentation/d/14lRutCorbBFSc4Ja71F9F8m9PbMxFG228ZY2RHYfXSU/edit?usp=sharing), [Building Blocks Lab](building-blocks) | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
-| 9/23 | [Variables Prep](variables-prep)	|  [Variables and Evaluation](variables) |	 |
+| 9/23 | [Variables Prep](variables-prep)	|  [Slides](https://docs.google.com/presentation/d/1Wv4wo5xsD5UUXDhUImVk7Ve7p8W5ZZC3WHv_xBbgv5Y/edit?usp=sharing), [Variables and Evaluation](variables) |	 |
 | 9/25 | [Modules Prep](turtle-prep); HW1 | Quiz 2, [Random Turtles](random-turtle)	| [HW2](hw2) |
 | 9/27 | [Sequences Prep](sequences-prep) |  [Using Sequences](sequences)	| |
 | **Week 3** | **Building Blocks Part 2** |  | |
