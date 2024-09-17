@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Quiz 2 Objectives
-permalink: /classes/111-w24/quiz2
+permalink: /classes/111-f24/quiz2
 ---
 
 ## Learning Objectives
@@ -9,10 +9,7 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 
 * Using variables - **mastery**
 * Predicting the behavior of a program - proficiency
-* Using a function - **mastery**
-* Debugging syntax errors (type errors specifically) - proficiency
-
-You can print and bring along this [checklist](https://docs.google.com/document/d/1R0J8U7j-QVGqD0y_3hgghUMEbyZqrXLL2ZWnv77ICJE/edit?usp=sharing) to help you keep track in the quiz.
+* **Debugging syntax errors - proficiency**
 
 ## Suggestions
 Remember that this isn't your only chance to demonstrate your understanding of these learning objectives, so try not to stress too much.
