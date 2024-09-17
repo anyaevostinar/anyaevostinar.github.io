@@ -1,19 +1,19 @@
 ---
 layout: page
 title: Variables Lab 
-permalink: /classes/111-w24/variables
+permalink: /classes/111-f24/variables
 ---
 
 This is a lab assignment and so you will not be submitting it.
 However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
 
-I recommend making a folder for today's lab in COURSES as you usually do.
+I recommend making a folder for today's lab in [COURSES as you usually do](getting-started).
 
 ## Exercise 1
 Debugging poorly written and buggy code is a valuable skill.
 To help you practice it, I've written a painfully bad program called `bad.py` (or is it??) that attempts to convert Celsius temperature to Fahrenheit.
 That calculation should be `(C * 9/5) + 32` where `C` is the value in Celsius.
-Download [this code](bad-1.py), move it to your folder for today, and open it in VSCode.
+Download [this code](/classes/111-w24/bad-1.py), move it to your folder for today, and open it in VSCode.
 
 This code is both badly styled, making it very difficult to read, and has a bug or two.
 You should aim to improve it, which will probably involve:
@@ -56,7 +56,7 @@ Extend your program to print out how many days that value is equal to (in both w
 
 
 ## Extra
-If you finish early, work on some more of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=902144) for more practice.
+If you finish early, work on some more of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=961111) for more practice.
 
 
 ## Acknowledgements
