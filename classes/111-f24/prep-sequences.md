@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sequences Preparation
-permalink: /classes/111-w24/sequences-prep
+permalink: /classes/111-f24/sequences-prep
 ---
 
 ## Overview
@@ -21,8 +21,7 @@ After class, you should be able to:
 
 ## Readings
 You should complete the following readings/videos and embedded checks in Runestone:
-* [6.1-6.9](https://moodle.carleton.edu/mod/lti/view.php?id=905590)
+* [6.1-6.9](https://moodle.carleton.edu/mod/lti/view.php?id=965301)
 
 ## Checks
-Complete the following check through Moodle:
-* [6.10 Exercises](https://moodle.carleton.edu/mod/lti/view.php?id=905590)
+Complete the embedded checks in the [reading assignment](https://moodle.carleton.edu/mod/lti/view.php?id=965301).
