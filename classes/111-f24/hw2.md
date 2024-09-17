@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HW2 
-permalink: /classes/111-w24/hw2
+permalink: /classes/111-f24/hw2
 ---
 
 ## Logistics
@@ -13,17 +13,30 @@ Switch off the typing duties so that you each type for roughly half of the time.
 
 You are able to get help from many sources as detailed in the [collaboration](collaboration) policy.
 
-This assignment is due on Friday Jan 19th at 10pm. 
-As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.
+This assignment is due on Wednesday Oct 2nd at 10pm. 
+As with all assignments, you will have the opportunity to [revise](revision-process) this assignment individually based on the feedback that you get.
 
 ## Goals
 Get practice with various numerical operations and functions in Python.
+
+## Assessment
+To **demonstrate proficiency**, your program needs to pass all the proficiency-level tests in Gradescope, which test:
+* Correct functionality for the basic cases
+* Header with three lines that start with `#` for each file
+* Basic style that can be checked automatically (not complete!)
+
+To **demonstrate mastery**, your program needs to demonstrate proficiency as well as:
+* Passing all the Mastery-level tests, which check for edge cases
+* Descriptive header
+* Useful comments
+* Descriptive variable names that follow `snake_case`
+* Good line grouping and spacing (i.e. use blank newlines to group your lines of code)
 
 ## Setup
 
 Again, I recommend you complete the programming portion in Olin 310. 
 
-[Mount the COURSES drive](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=152558) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
+[Mount the COURSES drive](getting-started) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `HW2`
 * Open your `HW2` folder in VSCode
 * Create a file `solar.py`.
@@ -54,23 +67,14 @@ Here are the assumptions:
 
 * A single solar panel takes up 17.5 ft<sup>2</sup> of roof. You cannot cut solar panels in half, so the number of solar panels that you can fit on a roof that’s, say, 100 ft<sup>2</sup> is 100/17.5 = 5.71... *rounded down*, otherwise known as 5 panels. We’ll assume that the shape of the roof is such that it’s possible to tile the usable part completely with solar panels, without any wasted space.
 
-* A single solar panel is rated for 265 watts. In Minnesota, you can expect to generate 1.248 kilowatt-hours per year for each watt of your system, and electricity costs about $0.12 per kilowatt-hour. The dollar amount should be always printed with exactly two digits after the decimal place. (So it’s “$1.00” and not “$1.0”, for example.) See [section 9.10 of your textbook](https://runestone.academy/ns/books/published/carletoncollege_fopp_winter23/TransformingSequences/StringFormatting.html#format-strings) for a useful method for accomplishing the dollar amount.
+* A single solar panel is rated for 265 watts. In Minnesota, you can expect to generate 1.248 kilowatt-hours per year for each watt of your system, and electricity costs about $0.12 per kilowatt-hour. The dollar amount should be always printed with exactly two digits after the decimal place. (So it’s “$1.00” and not “$1.0”, for example.) See [section 9.10 of your textbook](https://runestone.academy/ns/books/published/carletoncollege_fopp_fall24/TransformingSequences/StringFormatting.html#format-strings) for a useful method for accomplishing the dollar amount.
 
 Fill in `solar.py` with a program that performs as specified here.
 
 
 ## Submission
-You should submit your file through the Gradescope link on Moodle for this assignment.
+You should submit your file through the Gradescope link on Moodle for this assignment (just one partner needs to submit!).
 You are able to submit your code as many times as you wish before the deadline to fix any issues.
 If you have questions about what the autograder is telling you is wrong, please ask!
 
 If you have a partner for this assignment, you can indicate who they are via Gradescope, so be sure to set that up correctly and then between the two of you, you should only need to submit once.
-
-## Assessment
-To **demonstrate proficiency**, your program needs to pass all the proficiency-level tests in Gradescope and contain descriptive headers.
-
-To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
-* Passing all the Mastery-level tests
-* Useful comments
-* Descriptive variable names
-* Good spacing
