@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Random Turtle Lab 
-permalink: /classes/111-w24/random-turtle
+permalink: /classes/111-f24/random-turtle
 ---
 
 This is a lab assignment and so you will not be submitting it.
@@ -10,8 +10,8 @@ However, the concepts and practice will help you on both the homework and quizze
 I recommend making a folder for today's lab in COURSES [as you usually do](getting-started).
 
 ## Exercise 1
-There are a lot of things that you can tell the turtles to do, so open up the [list of turtle methods](https://runestone.academy/ns/books/published/carletoncollege_fopp_winter23/PythonTurtle/SummaryOfTurtleMethods.html) from the reading for reference today.
-You might also want to open the [list of common turtle problems](https://runestone.academy/ns/books/published/carletoncollege_fopp_winter23/PythonTurtle/WPCommonTurtleErrors.html) to check if you are getting weird behavior from your turtle.
+There are a lot of things that you can tell the turtles to do, so open up the [list of turtle methods](https://moodle.carleton.edu/mod/lti/view.php?id=965490) from the reading for reference today.
+You might also want to refer to the second page on [Common turtle Errors](https://moodle.carleton.edu/mod/lti/view.php?id=965490) if you are getting weird behavior from your turtle.
 
 1. Create a new file in your folder for today's lab called `random_turtle.py`.
 
@@ -110,7 +110,7 @@ You can always refer to the list of turtle methods to double check your predicti
 With all those methods, you can draw a lot! 
 Make a new file `drawing.py` and make something new with the turtle drawing.
 You could use `random` to shake things up in your drawing, but be sure to use lots of colors and shapes. 
-Try making multiple turtles and having them be in charge of different aspects of your drawing.
+Try making multiple turtles and having them be in charge of different aspects of your drawing (see section 5.3 for how to do that).
 If you are stuck on what to draw, try making a house with some trees.
 
 There are also even more methods that you can use with the turtle, so feel free to look through the [official documentation](https://docs.python.org/3/library/turtle.html) and play around with them.
