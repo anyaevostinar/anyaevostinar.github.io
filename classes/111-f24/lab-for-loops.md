@@ -20,6 +20,8 @@ After you've made a prediction, test out the code.
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20i%20in%20range%280%29%3A%0A%20%20%20%20print%28%22hi%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
+<iframe width="800" height="800" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=words%20%3D%20%5B'limitless',%20'knowledge',%20'provoking',%20'quadruple',%20'happiness'%5D%0Aj%20%3D%20-1%0Afor%20k%20in%20range%283,%200,%20-1%29%3A%0A%20%20%20%20print%28words%5Bk%5D%5Bj%5D,%20end%3D''%29%0A%20%20%20%20j%20%3D%20j%20-%201%0A%0Aprint%28%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
 ## Exercise 2
 Create a new file and write short program to compute the *factorial* of a positive integer given by the user. The factorial of a positive integer is the product of all of the numbers from 1 up to that integer. For example, 4 factorial (written “4!”) is equal to 1 * 2 * 3 * 4 = 24.
 
