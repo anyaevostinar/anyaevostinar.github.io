@@ -29,6 +29,10 @@ This last snippet gives you a preview of the cool things that you can do with fo
 2. Update your program so that instead of counting vowels, it asks the user for characters to count in a given string (could be just one, or more than one, so you will need a for-loop for this problem).
 
 ## Exercise 3
+Lists and strings are both sequences, though they have some differences in how you can use them.
+Write out all the similarities and differences that you can think of between them. Think about things like how you made new ones, how you can change them (or can't), and how they can be used.
+
+## Exercise 4
 Now that you know how to make lists of strings, you could make a list of colors or stamps that the turtles use to generate rainbows, random combinations, and other fun creations. 
 
 A particularly powerful function from the random module is `choice`:
