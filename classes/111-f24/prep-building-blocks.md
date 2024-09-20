@@ -24,9 +24,9 @@ After class, you should be able to:
 * Use the modulus `%` operator
 
 ## Readings
-You should complete the following Runestone readings [through this Moodle link](https://moodle.carleton.edu/mod/lti/view.php?id=899055).
+You should complete the following Runestone readings [through this Moodle link](https://moodle.carleton.edu/mod/lti/view.php?id=953628).
 
 * 2.1-2.6
 
 ## Checks
-* [Through  Moodle link](https://moodle.carleton.edu/mod/lti/view.php?id=899055)
+* [Through  Moodle link](https://moodle.carleton.edu/mod/lti/view.php?id=953628)
