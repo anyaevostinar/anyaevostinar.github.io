@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Iteration Preparation
-permalink: /classes/111-w24/iteration-prep
+permalink: /classes/111-f24/iteration-prep
 ---
 
 ## Overview
@@ -21,4 +21,4 @@ After class, you should be able to:
 
 ## Resources
 Read/watch the following and complete the embedded checks through Moodle:
-* Runestone [7.1-7.7](https://moodle.carleton.edu/mod/lti/view.php?id=905616)
+* Runestone [7.1-7.7](https://moodle.carleton.edu/mod/lti/view.php?id=966848)
