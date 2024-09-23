@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Debugging and Nested Loops Preparation
-permalink: /classes/111-w24/debugging-nested-prep
+permalink: /classes/111-f24/debugging-nested-prep
 ---
 
 ## Overview
@@ -21,6 +21,6 @@ After class, you should be able to:
 * Combine for-loops and conditionals
 
 ## Resources
-You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=907074):
+You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=966858):
 * Runestone 3.1-3.8
 * Runestone 7.8-7.10
