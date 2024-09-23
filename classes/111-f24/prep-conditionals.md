@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Conditionals Preparation
-permalink: /classes/111-w24/conditionals-prep
+permalink: /classes/111-f24/conditionals-prep
 ---
 
 ## Overview
@@ -24,4 +24,4 @@ After class, you should  be able to:
 
 ## Resources
 You should read/watch the following and complete the embedded checks through Moodle:
-* Runestone [8.1-8.9](https://moodle.carleton.edu/mod/lti/view.php?id=905619)
+* Runestone [8.1-8.9](https://moodle.carleton.edu/mod/lti/view.php?id=966851)
