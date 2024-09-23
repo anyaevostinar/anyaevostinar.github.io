@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Quiz 3 Objectives
-permalink: /classes/111-w24/quiz3
+permalink: /classes/111-f24/quiz3
 ---
 
 ## Learning Objectives
@@ -12,10 +12,9 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 * **Using conditional statements - mastery**
 * Using variables - mastery
 * Predicting the behavior of a program - proficiency
-* Using a function - mastery
-* Debugging syntax errors (type errors specifically) - proficiency
+* Debugging syntax errors - proficiency
 
-You can print and bring along this [checklist](https://docs.google.com/document/d/1l-WDZfeyp3FrqgZ5druqpQy_45lZ0Fop53FzF4abWes/edit?usp=sharing) to help you keep track in the quiz.
+You can print and bring along this [checklist](https://docs.google.com/document/d/1LGloDc_kMiVxcU1YIjcj9YsVYpkZ_xFa07iSYqizsWA/edit?usp=sharing) to help you keep track in the quiz.
 
 ## Suggestions
 Remember that this isn't your only chance to demonstrate your understanding of these learning objectives, so try not to stress too much.
