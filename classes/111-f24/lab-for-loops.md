@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Iteration Lab 
-permalink: /classes/111-w24/iteration-lab
+permalink: /classes/111-f24/iteration-lab
 ---
 
 This is a lab assignment and so you will not be submitting it.
@@ -9,7 +9,7 @@ However, the concepts and practice will help you on both the homework and quizze
 
 I recommend making a folder for today's lab in COURSES [as you usually do](getting-started).
 
-Remember you can refer to the [textbook readings](https://moodle.carleton.edu/mod/lti/view.php?id=905616) if you forget the syntax for something.
+Remember you can refer to the [textbook readings](https://moodle.carleton.edu/mod/lti/view.php?id=966848) if you forget the syntax for something.
 
 
 ## Exercise 1
@@ -45,7 +45,7 @@ As with any program, we should start out by laying out our algorithm, which at a
     * Print the reversed word
 
 Expand on `reverse.py` to carry out the above algorithm.
-[Here is a link](https://moodle.carleton.edu/mod/lti/view.php?id=905590) to the sequences reading if you need to refresh on working with strings.
+[Here is a link](https://moodle.carleton.edu/mod/lti/view.php?id=965301) to the sequences reading if you need to refresh on working with strings.
 
 ## Extra
-If you finish all of the above, try out some of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=906151) for more practice.
+If you finish all of the above, try out some of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=966928) for more practice.

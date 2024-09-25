@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HW3 
-permalink: /classes/111-f22/hw3
+permalink: /classes/111-f24/hw3
 ---
 
 ## Logistics
@@ -13,17 +13,30 @@ Switch off the typing duties so that you each type for roughly half of the time.
 
 You are able to get help from many sources as detailed in the [collaboration](collaboration) policy.
 
-This assignment is due on Wednesday Oct 5th at 10pm. 
-As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.
+This assignment is due on Wednesday Oct 9th at 10pm. 
+As with all assignments, you will have the opportunity to [revise](revision-process) this assignment individually based on the feedback that you get.
 
 ## Goals
 Demonstrate your understanding of conditionals and iteration to solve problems and write well-structured code.
+
+## Assessment
+To **demonstrate proficiency**, your programs need to pass all the tests in Gradescope, which test:
+* Correct functionality 
+* Header with three lines that start with `#` for each file
+* Basic style that can be checked automatically
+
+To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
+* Descriptive headers
+* Useful comments and removal of all starter comments (i.e. `YOU FILL THIS IN` etc)
+* Descriptive variable names that follow `snake_case`
+* Good line grouping and spacing (i.e. use blank newlines to group your lines of code)
+* Use of iteration and conditionals to prevent any unnecessary duplication of code
 
 ## Setup
 
 Again, I recommend you complete the programming portion in Olin 310. 
 
-[Mount the COURSES drive](https://wiki.carleton.edu/pages/viewpage.action?spaceKey=carl&title=CS+111+and+201+workflow+in+CS+labs) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
+[Mount the COURSES drive](getting-started) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `HW3`
 * Open your `HW3` folder in VSCode
 * Create a file `writeout.py`
@@ -51,7 +64,7 @@ There are all sorts of fascinating questions you could ask about these data. Whe
 
 1. First, take a look at the `bike.py`. Your task in this assignment will be to add some functionality to this program. First, fill in the code that calculates the **duration of each ride in seconds**. The lines
 
-    ```
+    ```python
     times = duration.split(":")
     hours, minutes, seconds = 0, 0, 0 # YOU FILL THIS IN! 
     durationInSeconds = 0 # YOU FILL THIS IN!
@@ -63,7 +76,7 @@ There are all sorts of fascinating questions you could ask about these data. Whe
 
 2. Let’s figure out the net traffic into/out of the Kennedy Center station. The `netChangeAtKennedy` variable should count how many more bikes arrive at Kennedy Center in the data than leave Kennedy Center. This variable needs to be updated for every ride. Here are the lines that ought to do it:
 
-    ```
+    ```python
     # YOU FIX THESE CONDITIONS:
     if "this ride left one bike at station ’Kennedy Center’":
         netChangeAtKennedy = netChangeAtKennedy + 1
@@ -73,17 +86,15 @@ There are all sorts of fascinating questions you could ask about these data. Whe
 
     Modify the conditions of the two if statements so that they correctly update the number of bikes entering/leaving this station. Also correct the “???” in the following lines to be the correct value:
 
-    ```
+    ```python
     elif netChangeAtKennedy < 0:
         print("There are now ??? fewer bikes at Kennedy Center", # FIX THIS!
     "than when we started.")
     ```
 
-3. Note the code from the previous question (computing the net change at the Kennedy Center) with two separate if statements, rather than a single if ... elif statement. Why would this be the best choice? Add a comment to `bike.py` to explain why it’s structured this way.
-
 4. Let’s combine and extend the modifications that you made in the last two questions to find the **duration of the longest ride that departs from the Kennedy Center**. You’ll need to create a second variable analogous to `longestRideDuration`, which will store the length of the longest ride from Kennedy Center that you’ve encountered so far. You’ll need to update that variable at the appropriate times in the program, as we did with `longestRideDuration` — that is, whenever we encounter a ride leaving the Kennedy Center whose duration is longer than all previously encountered rides leaving the Kennedy Center. Finally, you’ll need to update this line:
 
-    ```
+    ```python
     print("The longest ride that departed from the Kennedy Center lasted ??? seconds or about ??? hours.") # FIX THIS
     ```
 
@@ -91,7 +102,7 @@ There are all sorts of fascinating questions you could ask about these data. Whe
 
 5. Also add code to compute the *average* length of all *docked-bike* rides in the dataset, in minutes and fix this line:
 
-    ```
+    ```python
     print("The mean docked-bike ride lasted X minutes.") # FIX THIS
     ```
 
@@ -149,25 +160,18 @@ For example, you might want to use the following steps to produce your output:
 5. Figure out whether you're outputting a ones digit.
 
 You will also find code like the following helpful:
-```
+```python
 digits = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
 decades = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
 print(decades[4], digits[5]) # Notice how this prints "forty five", due to clever list construction
 ```
 
 In the past, students have sometimes over-complicated this program. 
-You can solve this problem with about 40 lines (including blank lines and comments), so if you are going beyond that, you should think about how you can simplify.
+You can solve this problem with about 40 lines (including blank lines and comments), so if you are going beyond that, you should think about how you can simplify (and revisit the recommended steps above). For example, you should only be printing "Your number is pronounced" once at the very end of your program!
 
+## Submission
+You should submit your file through the Gradescope link on Moodle for this assignment (just one partner needs to submit!).
+You are able to submit your code as many times as you wish before the deadline to fix any issues (and you should do so).
+If you have questions about what the autograder is telling you is wrong, please ask!
 
-## Assessment
-To **demonstrate proficiency**, your programs need to:
-* Pass all the tests in Gradescope 
-* Contain descriptive headers
-* Contain an answer to Bike question 3 that demonstrates proficient understanding of conditional structures
-* Not have an excessive amount of duplicated code
-
-To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
-* Useful comments
-* Descriptive variable names
-* Good spacing
-* Use iteration and conditionals to prevent any unnecessary duplication of code
+If you have a partner for this assignment, you can indicate who they are via Gradescope, so be sure to set that up correctly and then between the two of you, you should only need to submit once.
