@@ -95,10 +95,11 @@ There are all sorts of fascinating questions you could ask about these data. Whe
 4. Let’s combine and extend the modifications that you made in the last two questions to find the **duration of the longest ride that departs from the Kennedy Center**. You’ll need to create a second variable analogous to `longestRideDuration`, which will store the length of the longest ride from Kennedy Center that you’ve encountered so far. You’ll need to update that variable at the appropriate times in the program, as we did with `longestRideDuration` — that is, whenever we encounter a ride leaving the Kennedy Center whose duration is longer than all previously encountered rides leaving the Kennedy Center. Finally, you’ll need to update this line:
 
     ```python
-    print("The longest ride that departed from the Kennedy Center lasted ??? seconds or about ??? hours.") # FIX THIS
+    print("The longest ride that departed from the Kennedy Center \
+      lasted ??? seconds or about ??? hours.") # FIX THIS
     ```
 
-    You should round the number of hours to the nearest integer.
+    You should round the number of hours to the nearest integer. (Note the `\` which allows you to split that string over multiple lines, so the style checker is happy.)
 
 5. Also add code to compute the *average* length of all *docked-bike* rides in the dataset, in minutes and fix this line:
 
