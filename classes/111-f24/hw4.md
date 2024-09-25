@@ -1,22 +1,37 @@
 ---
 layout: page
 title: HW4 
-permalink: /classes/111-w24/hw4
+permalink: /classes/111-f24/hw4
 ---
 
 ## Logistics
-This is a paired assignment, so you should complete it with your assigned partner, if you have one, via **paired programming**.  You should continue to work with your partner from homework 3.
+This is a paired assignment, so you should complete it with your NEW assigned partner, if you have one, via **paired programming**.
 The whole time that you are working, you should both be present and actively working on the problem at hand. 
 (Two brains, one keyboard.) 
 Switch off the typing duties so that you each type for roughly half of the time. 
 
 You are able to get help from many sources as detailed in the [collaboration](collaboration) policy.
 
-This assignment is due on Friday Feb 2nd at 10pm. 
-As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.
+This assignment is due on Wednesday Oct 16th at 10pm. 
+As with all assignments, you will have the opportunity to [revise](revision-process) this assignment individually based on the feedback that you get.
 
 ## Goals
 Get practice with reading from files, loops, functions, and command-line arguments.
+
+## Assessment
+To **demonstrate proficiency**, your programs need to pass all the tests in Gradescope, which test:
+* Correct functionality
+* Header with three lines that start with `#` for each file
+* Contain docstrings for each function (checked automatically)
+* Other basic style that can be checked automatically
+
+To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
+* *Descriptive* headers
+* *Descriptive* docstrings for each function
+* Useful comments (and removal of non-useful starter comments)
+* Descriptive variable names that follow `snake_case`
+* Good line grouping and spacing
+* Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code
 
 ## Setup
 
@@ -25,7 +40,7 @@ Again, I recommend you complete this assignment in Olin 310, though it isn't req
 [Mount the COURSES drive](getting-started) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `HW4`
 * Open your `HW4` folder in VSCode
-* Download the starter code that is [linked on Moodle](https://moodle.carleton.edu/mod/resource/view.php?id=908003) and move the starter files into your folder
+* Download the starter code that is linked on Moodle and move the starter files into your folder
 
 Both of these programs use command-line arguments as input to the program. 
 Remember, those are things typed at the prompt in Terminal. 
@@ -106,7 +121,7 @@ You should be sure to add a function header for the `weather` function.
 
 ### Overview
 Scrabble is a word game in which players form words from a collection of tiles in their hand. 
-There are multiple players — usually up to four in the living-room version of the game, and precisely two in the *Word Freak* version). (*Word Freak* is a real book about the high-rolling world of international Scrabble contestants.)
+There are multiple players — usually up to four in the living-room version of the game, and precisely two in the *Word Freak* version. (*Word Freak* is a real book about the high-rolling world of international Scrabble contestants.)
 
 * The first player draws a “hand” of seven tiles from a collection of 100, each of which has a letter printed on it. They then form a legal word and place it in the middle of the 15-by-15 grid that serves as the gameboard. The player then randomly draws tiles from the unused tiles from the original set of 100
 to replenish their hand up to seven tiles.
@@ -116,7 +131,6 @@ set of 100 to replenish their hand up to seven tiles (or until the pool of unuse
 who has scored the most total points at the end of the game wins.
 
 In this assignment, you’ll concentrate on the very first move of the game, where there’s nothing yet on the board (and thus so that every letter in the words that you find must come from the seven tiles in the hand).
-Of course, you are welcome to think about how you would attack the more complicated question of how to play as part of a game when there are some tiles already on the board, but you’re not required to do so.
 
 ### Your Task
 Get started, as usual, with the starter code on Moodle. Take a look through `scrabble.py`; you’re going to be adding some functionality to it in this assignment, and it will pay to know how what’s already there works.
@@ -132,7 +146,7 @@ Fill in `playable(word, hand)`, which should return `True` if `word` can be prod
 function, think about how you are changing lists when you might not mean to. Are you doing something that causes you trouble down the road?
 
 ### allPlayable
-Add a function `allPlayable(hand, words)` that returns a list of all valid words from `words` that can be played using only the tiles from `hand`. One suggestion for an approach to this is to implement something like the following:
+Add a function `allPlayable(hand, words)` that takes a *string* `hand` and list of strings `words` and returns a list of all valid words from `words` that can be played using only the tiles from `hand`. One suggestion for an approach to this is to implement something like the following:
 
 ```
 make an empty list of playable words
@@ -142,15 +156,11 @@ for every word in the dictionary:
 return the list of playable words
 ```
 
-Be sure to add a function header for your new function.
-To test this function in the Python shell, you can make a call like this:
-```
->>> import scrabble
->>> scrabble.allPlayable("PYTHONS", scrabble.loadDictionary())
-```
+Be sure to add a function header for your new function. Note that if you have a string `"HI"` and want a list of each separate letter, you can use `list("HI")` to get `['H','I']`. It isn't necessary to use this information to solve this problem, but you might find it useful.
 
 ### bestPlayable
-Add a function `bestPlayable(hand, words)` that computes and returns a list of the highest-scoring word(s) that can be played from the tiles in hand.
+Add a function `bestPlayable(hand, words)` that computes and returns a list of the highest-scoring word(s) that can be played from the tiles in hand. 
+(Again `hand` is a string and `words` is a list of words.)
 If the best score that can be achieved is X and only one word scores X, then you should return a list with one item.
 If multiple words can achieve X, you should return a list with each of them.
 
@@ -167,15 +177,9 @@ What is your hand? PYTHONS
 The best possible play(s) will earn you 65 and are: ['PHYTONS', 'PYTHONS', 'TYPHONS']
 ```
 
-## Assessment
-To **demonstrate proficiency**, your programs need to:
-* Pass all the tests in Gradescope 
-* Contain descriptive headers
-* Contain descriptive docstrings for each function
-* Not have an excessive amount of duplicated code
+## Submission
+You should submit your file through the Gradescope link on Moodle for this assignment (just one partner needs to submit!).
+You are able to submit your code as many times as you wish before the deadline to fix any issues (and you should do so).
+If you have questions about what the autograder is telling you is wrong, please ask!
 
-To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
-* Useful comments (and non-useful starter ones removed)
-* Descriptive variable names
-* Good spacing
-* Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code
+If you have a partner for this assignment, you can indicate who they are via Gradescope, so be sure to set that up correctly and then between the two of you, you should only need to submit once.

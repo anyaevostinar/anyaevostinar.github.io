@@ -40,7 +40,7 @@ Again, I recommend you complete the programming portion in Olin 310.
 * Create a new folder in your STUWORK called `HW3`
 * Open your `HW3` folder in VSCode
 * Create a file `writeout.py`
-* Download the two starter files from Moodle (`bike.py` and the CSV file) and put them into your folder
+* Download the two starter files from [Moodle](https://moodle.carleton.edu/mod/resource/view.php?id=967228) (`bike.py` and the CSV file) and put them into your folder
 
 ## Bikes
 An increasing number of cities in the United States have begun to offer bikeshare programs: there are a number of stations scattered across the city, with kiosks, pay stations, and locked bikes. People can rent a bike for a short period of time, picking up at any one of the stations and dropping off at the same station or any other station. There’s Nice Ride in Minneapolis/St. Paul, Citi Bike in New York, among many others. Here we’ll play around with a bit of data from Capital Bikeshare, in Washington DC. You will have access to a file reporting all rides from Capital Bikeshare in August 2021. (The original data came from https://www.capitalbikeshare.com/system-data; there are a few formatting modifications to make your lives easier.) A typical line of the file is of the form
