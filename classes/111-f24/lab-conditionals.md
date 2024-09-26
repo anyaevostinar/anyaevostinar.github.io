@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Conditionals Lab 
-permalink: /classes/111-w24/conditionals-lab
+permalink: /classes/111-f24/conditionals-lab
 ---
 
 This is a lab assignment and so you will not be submitting it.
@@ -9,18 +9,18 @@ However, the concepts and practice will help you on both the homework and quizze
 
 I recommend making a folder for today's lab in COURSES [as you usually do](getting-started).
 
-Remember you can refer to the [textbook readings](https://moodle.carleton.edu/mod/lti/view.php?id=905619) if you forget the syntax for something.
+Remember you can refer to the [textbook readings](conditionals-prep#resources) if you forget the syntax for something.
 
 ## Exercise 1
-Say that we define the following variables defined at the beginning of our program:
+Say that we define the following variables at the beginning of our program:
 ```
 a = 3
 b = 10
 c = 15
 ```
 
-What would we expect each of the following statements to print out? Discuss each one with your partner. If you think one might generate an error, discuss why that’s the case. Check your answers by typing in and running the lines as you proceed! Whenever one of them confuses you, throw up your hand to receive some clarification.
-```
+What would we expect each of the following statements to print out? Discuss each one with your partner and write down your answers on the worksheet. If you think one might generate an error, discuss why that’s the case. Check your answers by typing in and running the lines as you proceed! Note down any that are confusing or you have questions about.
+```python
   print((a > b) or (c > b))
   print((c == a) or True)
   print((a == b - 7) and False)
@@ -30,13 +30,15 @@ What would we expect each of the following statements to print out? Discuss each
   print(a != 0 and 1/a)
   print(1 or 0)
   if True or '': print('it prints!')
+  if not []: print('hmmm')
+  if -1: print("interesting...")
 ```
 
 ## Exercise 2
-What will this snippet of code print out to the screen? If you think there will be an error, indicate the line with the error and explain why.
-After you've made a prediction, test out the code.
+What will this snippet of code print out to the screen? If you think there will be an error, indicate the line on the worksheet with the error and explain why.
+After you've written down your prediction on the worksheet, test out the code.
 
-``` 
+```python 
 for i in range(10):  
   if i % 2 == 0:  
     print(i, 'is even')  
@@ -80,7 +82,7 @@ It may help to know that a year is a leap year if it is divisible by 4, unless i
 
 
 ## Extra
-If you finish all of the above, work through some of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=906612).
+If you finish all of the above, work through some of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=967581).
 
 
 ## Acknowledgements
