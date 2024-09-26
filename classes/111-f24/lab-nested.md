@@ -1,19 +1,19 @@
 ---
 layout: page
 title: Nested Loops Lab 
-permalink: /classes/111-w24/lab-nested
+permalink: /classes/111-f24/lab-nested
 ---
 
 This is a lab assignment and so you will not be submitting it.
 However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
 
-I recommend making a folder for today's lab in COURSES as you usually do.
+I recommend making a folder for today's lab in [COURSES as you usually do](getting-started).
 
 ## Exercise 1
 Think about what the output of each of these snippets will be and then test them.
 Feel free to put them into [PythonTutor](https://pythontutor.com/visualize.html#mode=edit) to help with tracing through them.
 
-```
+```python
 # Snippet 1
 
 n = 4
@@ -170,9 +170,25 @@ Some notes:
 
 * You can assume the message is entirely in lowercase.
 * Digits, spaces, and punctuation should be printed out as they are, without being rotated at all.
-* The `ord()` function converts characters into their ASCII value (e.g., `ord("a")` will return 97, `ord("z")` will return 122). I've included a conversion chart on Moodle to make it easy to check.
+* The `ord()` function converts characters into their ASCII value (e.g., `ord("a")` will return 97, `ord("z")` will return 122). 
+    <button type="button" class="collapsible">ASCII Reference</button>
+    <div class="content">
+32 sp    33  !    34  "    35  #    36  $    37  %    38  &    39  '
+40  (    41  )    42  *    43  +    44  ,    45  -    46  .    47  /
+48  0    49  1    50  2    51  3    52  4    53  5    54  6    55  7
+56  8    57  9    58  :    59  ;    60  <    61  =    62  >    63  ?
+64  @    65  A    66  B    67  C    68  D    69  E    70  F    71  G
+72  H    73  I    74  J    75  K    76  L    77  M    78  N    79  O
+80  P    81  Q    82  R    83  S    84  T    85  U    86  V    87  W
+88  X    89  Y    90  Z    91  [    92  \    93  ]    94  ^    95  _
+96  `    97  a    98  b    99  c   100  d   101  e   102  f   103  g
+104  h   105  i   106  j   107  k   108  l   109  m   110  n   111  o
+112  p   113  q   114  r   115  s   116  t   117  u   118  v   119  w
+120  x   121  y   122  z   123  {   124  |   125  }   126  ~   
+</div>
+
 * The `chr()` function goes in the opposite direction, converting an ASCII value to a string (e.g., `chr(97)` returns "a", `chr(122)` returns "z").
-* You may also find [this list of Python string methods](https://docs.python.org/3/library/stdtypes.html#string-methods) helpful for reference and [section 9.9 of your textbook](https://moodle.carleton.edu/mod/lti/view.php?id=907737)
+* You may also find [this list of Python string methods](https://docs.python.org/3/library/stdtypes.html#string-methods) helpful for reference and section 9.9 of your textbook
 
 ## Exercise 6
 Write another Python program that will *encrypt* a message for a user, so it will move every letter forward in the alphabet by 13. 
