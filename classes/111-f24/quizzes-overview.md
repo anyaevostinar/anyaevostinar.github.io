@@ -14,8 +14,8 @@ The learning objectives that will ultimately all be assessed via quizzes are:
     * Proficiency: create and use several variables
     * Mastery: Draw memory diagram for how variables change
 2. Using definite loops
-    * Proficiency: Basic loop
-    * Mastery: Loop using `range` and indexing
+    * Proficiency: Basic loop over sequence
+    * Mastery: Loop using `range`
 3. Using indefinite loops
     * Proficiency: Basic counter loop
     * Mastery: Loop that stops based on user input

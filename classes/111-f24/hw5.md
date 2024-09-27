@@ -1,17 +1,37 @@
 ---
 layout: page
 title: HW5 
-permalink: /classes/111-w24/hw5
+permalink: /classes/111-f24/hw5
 ---
 
 ## Logistics
-This is an **individual** assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the [collaboration](collaboration) policy.
+This is a paired assignment, so you should complete it with your assigned partner (same one as from HW4), if you have one, via **paired programming**. 
+The whole time that you are working, you should both be present and actively working on the problem at hand. 
+(Two brains, one keyboard.) 
+Switch off the typing duties so that you each type for roughly half of the time. 
 
-This assignment is due on Friday February 9th at 10pm. 
-As with all assignments, you will have the opportunity to revise this assignment based on the feedback that you get.
+You are able to get help from many sources as detailed in the [collaboration](collaboration) policy.
+This assignment is due on Wednesday Oct 23rd at 10pm. 
+As with all assignments, you will have the opportunity to *individually* [revise](revision-process) this assignment based on the feedback that you get.
 
 ## Goals
-Get practice with loops, functions, and command-line arguments.
+Get practice with indefinite loops, functions, and command-line arguments.
+
+## Assessment
+To **demonstrate proficiency**, your program needs to pass all the tests on Gradescope, which test:
+* Correct functionality
+* Header with three lines that start with `#`
+* Contain docstrings for each function (checked automatically)
+* Other basic style that can be checked automatically
+
+To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
+* *Descriptive* headers
+* *Descriptive* docstrings for each function
+* Useful comments (and removal of non-useful starter comments)
+* Descriptive variable names that follow `snake_case`
+* Good line grouping and spacing
+* Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code
+    * In particular, try to get down to just one `while` loop
 
 ## Setup
 Again, I recommend that you complete this assignment in Olin 310, though it isn't required to do so.
@@ -19,7 +39,7 @@ Again, I recommend that you complete this assignment in Olin 310, though it isn'
 [Mount the COURSES drive](getting-started) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `HW5`
 * Open your `HW5` folder in VSCode
-* Download the [starter code that is linked on Moodle](https://moodle.carleton.edu/mod/resource/view.php?id=909929) and place it in your folder
+* Download the starter code that is linked on Moodle and place it in your folder
 
 This program uses command-line parameters as input to the program. 
 Remember, those are things typed at the prompt. 
@@ -48,7 +68,7 @@ Once your colleague receives the ciphertext `Xf bsf ejtdpwfsfe; gmff bu podf!`, 
 First, read through the provided starter code for `caesar.py`. 
 Your task will be to complete this program.
 Note that command-line arguments that are strings need to be in single quotes, for example:
-```
+```bash
 python3 caesar.py 'We are discovered; flee at once!' 3
 ```
 (Depending on your computer setup, you may experience trouble if you use double quotes at the terminal and put an exclamation point inside. So, if weird things are happening, be sure you’re using `'We are discovered; flee at once!'` instead of `"We are discovered; flee at once!"` .)
@@ -61,7 +81,7 @@ You should leave all non-alphabetic characters unchanged, and you should maintai
 Make the changes to the function `caesar` so that it constructs ciphertext, again one character at a time, to use this new specification.
 
 Here are some examples of how the function should work:
-```
+```bash
 >>> caesar("This is the way the world ends, dontcha know?", 0)
 ’This is the way the world ends, dontcha know?’
 >>> caesar("This is the way the world ends, dontcha know?", 1)
@@ -86,30 +106,31 @@ otherwise,
     do nothing
 ```
 
-The `ord()` function converts characters into their ASCII value (e.g., `ord("a")` will return 97, `ord("z")` will return 122). I've included a [conversion chart on Moodle](https://moodle.carleton.edu/mod/resource/view.php?id=909930) to make it easy to check.
+The `ord()` function converts characters into their ASCII value (e.g., `ord("a")` will return 97, `ord("z")` will return 122). 
 The `chr()` function goes in the opposite direction, converting an ASCII value to a string (e.g., `chr(97)` returns "a", `chr(122)` returns "z").
+    <details><summary>Here is an ASCII reference table</summary>
+    <p>
+    <img src="/classes/111-f24/ASCIIChart.png">  
+    </p>
+    </details>
+
+Note that the outline above has a bit of duplication, in particular two while loops that look very similar. See if you can make a small function that reduces that duplication of code.
 
 Finally, you should add error-checking code to the main function. 
 What happens if the user enters a non-integer as the shift? Make your program robust, so that it doesn’t crash regardless of what the user tries to enter as the number of letters by which to shift and informs the user of the problem with the following message:
-```
+```bash
 $ python3 caesar.py "hi" a
 Invalid argument, shift must be a number, given a.
 ```
 
 ### Cleaning up
 You should remember to go and clean up the file once you've finished. In particular you should:
-* Update the header to include your name
+* Update the header to include your name(s)
 * Remove/rewrite the comments that described what you needed to do in the file if you haven't already
 
-## Assessment
-To **demonstrate proficiency**, your program needs to:
-* Pass all the tests in Gradescope 
-* Contain a descriptive header (with your name)
-* Contain descriptive docstrings for each function
-* Not have an excessive amount of duplicated code
+## Submission
+You should submit your file through the Gradescope link on Moodle for this assignment (just one partner needs to submit!).
+You are able to submit your code as many times as you wish before the deadline to fix any issues (and you should do so).
+If you have questions about what the autograder is telling you is wrong, please ask!
 
-To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
-* Useful comments (including removal of any outline/todo comments)
-* Descriptive variable names
-* Good spacing
-* Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code
+If you have a partner for this assignment, you can indicate who they are via Gradescope, so be sure to set that up correctly and then between the two of you, you should only need to submit once.
