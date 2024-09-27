@@ -32,7 +32,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/10 | Early voting at Carleton | Vote if you are eligible! | |
 | 10/11 | [Functions Prep 1](functions1-prep) | [Function Basics](functions1)	 | |
 | **Week 5** | **Functions** |  | |
-| 10/14 | [Functions Prep 2](functions2-prep) and Indefinite Loops |  [Return of the Functions](lab-functions2) and [Using While Loops](while-loops) | |
+| 10/14 | [Functions 2 and Indefinite Iteration Prep](functions2-prep) |  [Return of the Functions](lab-functions2) and [Using While Loops](while-loops) | |
 | 10/16 |	Study;  [HW4](hw4)	|  Quiz 5 	| [HW5](hw5) |
 | 10/18	| [Dictionaries Prep](dictionaries-prep) |	[Using Dictionaries](dictionaries)	| |
 | **Week 6** | **Objects and Classes** |  | |
