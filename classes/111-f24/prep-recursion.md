@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Recursion Preparation
-permalink: /classes/111-w24/recursion-prep
+permalink: /classes/111-f24/recursion-prep
 ---
 
 ## Overview
@@ -20,7 +20,7 @@ After class, you should be able to:
 * Write a recursive function to solve a problem
 
 ## Reading
-You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=911526):
+You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=967857):
 * Runestone (new book!) 4.2-4.4
 * Runestone (new book) 4.7
 

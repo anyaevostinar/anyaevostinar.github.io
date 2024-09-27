@@ -1,7 +1,7 @@
 ---
 layout: page
 title: List and Dictionary Efficiency Preparation
-permalink: /classes/111-w24/list-efficiency-prep
+permalink: /classes/111-f24/list-efficiency-prep
 ---
 
 ## Overview
@@ -21,4 +21,4 @@ After class, you should be able to:
 
 ## Resources
 Read/watch the following and complete the embedded checks:
-* Runestone [2.5-2.7](https://moodle.carleton.edu/mod/lti/view.php?id=913304)
+* Runestone [2.5-2.7](https://moodle.carleton.edu/mod/lti/view.php?id=967863)

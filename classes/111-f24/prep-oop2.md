@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Working with Classes Preparation
-permalink: /classes/111-w24/oop2-prep
+permalink: /classes/111-f24/oop2-prep
 ---
 
 ## Overview
@@ -19,5 +19,5 @@ After class, you should be able to:
 
 ## Resources
 You should read/watch the following and complete the embedded checks through Moodle:
-* Runestone [20.6-20.8](https://moodle.carleton.edu/mod/lti/view.php?id=911441)
+* Runestone [20.6-20.8](https://moodle.carleton.edu/mod/lti/view.php?id=967852)
 * Optional: Runestone 20.9-20.10

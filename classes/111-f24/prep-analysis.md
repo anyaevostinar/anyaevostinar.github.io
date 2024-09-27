@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Algorithm Analysis Preparation
-permalink: /classes/111-w24/analysis-prep
+permalink: /classes/111-f24/analysis-prep
 ---
 
 ## Overview
@@ -21,4 +21,4 @@ After class, you should be able to:
 
 ## Resources
 You should read/watch the following and complete the embedded checks:
-* Runestone [2.2-2.4](https://moodle.carleton.edu/mod/lti/view.php?id=911555)
+* Runestone [2.2-2.4](https://moodle.carleton.edu/mod/lti/view.php?id=967860)

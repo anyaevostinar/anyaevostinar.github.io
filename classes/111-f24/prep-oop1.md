@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Object Oriented Preparation
-permalink: /classes/111-w24/oop1-prep
+permalink: /classes/111-f24/oop1-prep
 ---
 
 ## Overview
@@ -21,6 +21,6 @@ After class, you should be able to:
 * Start defining your own class
 
 ## Resources
-You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=910110):
+You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=967849):
 * Runestone 5.3-5.4
 * Runestone 20.1-20.5
