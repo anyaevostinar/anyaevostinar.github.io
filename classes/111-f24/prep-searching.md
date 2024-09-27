@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Searching Algorithms Preparation
-permalink: /classes/111-w24/searching-prep
+permalink: /classes/111-f24/searching-prep
 ---
 
 ## Overview
@@ -22,4 +22,4 @@ After class, you should be able to:
 
 ## Resources
 You should read/watch the following and complete the embedded checks:
-* Runestone [5.2-5.4](https://moodle.carleton.edu/mod/lti/view.php?id=913308)
+* Runestone [5.2-5.4](https://moodle.carleton.edu/mod/lti/view.php?id=967865)

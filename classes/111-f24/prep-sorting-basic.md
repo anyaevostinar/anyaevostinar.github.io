@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Slow(ish) Sorting Preparation
-permalink: /classes/111-w24/sorting-basic-prep
+permalink: /classes/111-f24/sorting-basic-prep
 ---
 
 ## Overview
@@ -22,4 +22,4 @@ After class, you should be able to:
 
 ## Resources
 You should read/watch the following and complete the embedded checks:
-* Runestone [5.6-5.9](https://moodle.carleton.edu/mod/lti/view.php?id=913309)
+* Runestone [5.6-5.9](https://moodle.carleton.edu/mod/lti/view.php?id=967869)
