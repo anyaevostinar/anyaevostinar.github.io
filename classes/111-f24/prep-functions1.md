@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Functions Lesson 1 Preparation
-permalink: /classes/111-w24/functions1-prep
+permalink: /classes/111-f24/functions1-prep
 ---
 
 ## Overview
@@ -25,4 +25,4 @@ During and after class, you should be able to:
 ## Readings
 
 You should read/watch the following and complete the checks:
-* Runestone [12.1-12.5](https://moodle.carleton.edu/mod/lti/view.php?id=908503)
+* Runestone [12.1-12.5](https://moodle.carleton.edu/mod/lti/view.php?id=967838)

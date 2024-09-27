@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Files Preparation
-permalink: /classes/111-w24/files-prep
+permalink: /classes/111-f24/files-prep
 ---
 
 ## Overview
@@ -19,6 +19,6 @@ After class, you should be able to:
 * Solve problems that involve writing to files
 
 ## Resources
-You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=907101):
+You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=967833):
 * Runestone 10.1-10.4
 * Runestone 10.8-10.10

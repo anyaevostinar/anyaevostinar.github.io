@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Mutating Lists Preparation
-permalink: /classes/111-w24/mutating-lists-prep
+permalink: /classes/111-f24/mutating-lists-prep
 ---
 
 ## Overview
@@ -19,6 +19,6 @@ After class, you should be able to:
 * Use a simple nested list
 
 ## Resources
-You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=907099):
+You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=967831):
 * Runestone 9.1-9.3
 * Runestone 9.5-9.8
