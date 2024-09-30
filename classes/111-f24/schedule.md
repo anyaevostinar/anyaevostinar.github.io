@@ -28,7 +28,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/4 | [Debugging Prep](debugging-nested-prep)  | [Slides](https://docs.google.com/presentation/d/1gipR9YAcO-3zDLO3ETlkQaY4NHYprzJTvDCpXGfpzao/edit?usp=sharing), [Debugging Strategies and Nested Structures](lab-nested) |  |
 | **Week 4** | **Advanced Blocks** | | |
 | 10/7 | [Mutating Lists Prep](mutating-lists-prep) | [Working with Lists](lab-mutating-lists)	| |
-| 10/9 | [Files Prep](files-prep); [HW3](hw3)	| Quiz 4, [Working with Files](files)	| [HW4](hw4) |
+| 10/9 | [Files Prep](files-prep); [HW3](hw3)	| [Quiz 4](quiz4), [Working with Files](files)	| [HW4](hw4) |
 | 10/10 | Early voting at Carleton | Vote if you are eligible! | |
 | 10/11 | [Functions Prep 1](functions1-prep) | [Function Basics](functions1)	 | |
 | **Week 5** | **Functions** |  | |
