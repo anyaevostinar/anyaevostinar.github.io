@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Quiz 4 Objectives
-permalink: /classes/111-w24/quiz4
+permalink: /classes/111-f24/quiz4
 ---
 
 ## Learning Objectives
@@ -12,7 +12,7 @@ The subset of [learning objectives](quizzes-overview) that you can demonstrate y
 * Using lists - **Mastery**
 * Using conditional statements - mastery
 
-You can print and bring along this [checklist](https://docs.google.com/document/d/1sL6KvAxvFf6k9e4l9ne0S5j8gLiL4pHRc8oQmM09ghQ/edit?usp=sharing) to help you keep track in the quiz.
+You can print and bring along this [checklist](https://docs.google.com/document/d/1eBfNESZ7cbWBenLowxvn3GNaiycSMCFDCvbGk9Ffat0/edit?usp=sharing) to help you keep track in the quiz.
 
 ## Suggestions
 Remember that this isn't your only chance to demonstrate your understanding of these learning objectives, so try not to stress too much.
