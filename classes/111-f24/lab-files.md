@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Files Lab 
-permalink: /classes/111-w24/files
+permalink: /classes/111-f24/files
 ---
 
 This is a lab assignment and so you will not be submitting it.
@@ -34,12 +34,13 @@ Once you've made a prediction, create the necessary files and test your predicti
 
 ## Exercise 2
 In this exercise, you’ll be working with reading and writing files in Python. 
-First, make a new Python file and call it `citySelector.py`. Next, download the file [`us_cities_small.txt`](us_cities_small.txt) (by right-clicking on the link and selecting `Save Link As`).
-This "text file" (hence .txt) contains a short list of the alphabetically first 10 US cities, with one city name on each line.
+First, make a new Python file and call it `citySelector.py`. Next, download the file [`us_cities_small.txt`](/classes/111-w24/us_cities_small.txt) (by right-clicking on the link and selecting `Save Link As`).
+This "text file" (hence `.txt`) contains a short list of the alphabetically first 10 US cities, with one city name on each line.
 Your task is to make your program:
 1. Open the file,
 2. Iterate over its contents, 
-3. Retrieve all cities from the file that end with either 'y' or 'a'. If you run into trouble, print out each of the last characters to see what they are. Remember that they might not be what you expect.
+3. Retrieve all cities from the file that end with either 'y' or 'a'. 
+    * If you run into trouble, print out each of the last characters to see what they are. Remember that they might not be what you expect.
 4. Place all of the retrieved cities in a list called `selectedCities`. This is a good point to run your code and print out part of the list to make sure that it is doing what you expect.
 6. Create a new file called `selected_us_cities.txt` and write to it such that, once your program finishes running, this file will contain all the city names that you retrieved from the original `us_cities_small.txt` file. Each selected city name should be placed on its own line.
 
@@ -73,4 +74,4 @@ Let's expand the functionality of your program now that it can take other files.
 If you have extra time, come up with more analysis that you can do on the `us_cities.txt` file.
 For example: Which city has the longest name? How many cities start with each letter of the alphabet?
 
-You can also try some of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=908298) and chapter assessment for more practice.
+You can also try some of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=968122) and chapter assessment for more practice.
