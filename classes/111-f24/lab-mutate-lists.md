@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Mutating Lists Lab 
-permalink: /classes/111-w24/lab-mutating-lists
+permalink: /classes/111-f24/lab-mutating-lists
 ---
 
 This is a lab assignment and so you will not be submitting it.
 However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
 
-I recommend making a folder for today's lab in COURSES as you usually do.
+I recommend making a folder for today's lab in [COURSES](getting-started) as you usually do.
 
 ## Exercise 1
 Predict what the reference diagram will look like after the following code snippet has run:
@@ -58,4 +58,4 @@ Try writing code snippets which accomplish the same things as the built-in list 
 * Sort a list - we'll talk about sorting in a few weeks, but think about how you could do it
 
 ## Extra
-If you have extra time, work through some of the [end of chapter exercises and assessments](https://moodle.carleton.edu/mod/lti/view.php?id=907888) from the textbook.
+If you have extra time, work through some of the [end of chapter exercises and assessments](https://moodle.carleton.edu/mod/lti/view.php?id=968100) from the textbook.
