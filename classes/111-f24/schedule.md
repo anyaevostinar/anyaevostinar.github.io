@@ -30,7 +30,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/7 | [Mutating Lists Prep](mutating-lists-prep) | [Slides](https://docs.google.com/presentation/d/1jiSEBI5x1c5WXVARnnAgcpqgWlktJr7snvVijoC77bY/edit?usp=sharing), [Working with Lists](lab-mutating-lists)	| |
 | 10/9 | [Files Prep](files-prep); [HW3](hw3)	| [Slides](https://docs.google.com/presentation/d/1v-KMe_dqgk0PdgbiPuyjWya1n6DSIjChu5ywAM-pr3M/edit?usp=sharing), [Quiz 4](quiz4), [Working with Files](files)	| [HW4](hw4) |
 | 10/10 | Early voting at Carleton | Vote if you are eligible! | |
-| 10/11 | [Functions Prep 1](functions1-prep) | [Function Basics](functions1)	 | |
+| 10/11 | [Functions Prep 1](functions1-prep) | [Slides](https://docs.google.com/presentation/d/1VoD_6fOlKle5Vabw-SCCt62FJ5Z-1RiDkh5O2_zBLI4/edit?usp=sharing), [Function Basics](functions1)	 | |
 | **Week 5** | **Functions** |  | |
 | 10/14 | [Functions 2 and Indefinite Iteration Prep](functions2-prep) |  [Return of the Functions](lab-functions2) and [Using While Loops](while-loops) | |
 | 10/16 |	Study;  [HW4](hw4)	|  Quiz 5 	| [HW5](hw5) |

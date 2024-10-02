@@ -1,7 +1,7 @@
 ---
 layout: page
 title: First Functions Lab 
-permalink: /classes/111-w24/functions1
+permalink: /classes/111-f24/functions1
 ---
 
 This is a lab assignment and so you will not be submitting it.
@@ -19,28 +19,28 @@ For each of the following snippets of code:
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%203%0A%0Adef%20f%28x%29%3A%0A%20%20%20%20print%28x%2B3%29%0A%0Af%285%29%0Aprint%28x%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20g%28y%29%3A%0A%20%20%20%20a%20%3D%204%0A%20%20%20%20print%28a%20%2B%20y%29%0A%0Ag%281%29%0Aprint%28a%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20g%28y%29%3A%0A%20%20%20%20a%20%3D%204%0A%20%20%20%20print%28a%20%2B%20y%29%0A%0Ag%281%29%0Aprint%28a%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20peacock%28%29%3A%0A%20%20%20%20print%28msg%29%0A%20%20%20%20print%28'Caw!'%29%0A%0Adef%20main%28%29%3A%0A%20%20%20%20msg%20%3D%20'Quiet...'%0A%20%20%20%20peacock%28%29%0A%20%20%20%20msg%20%3D%20'Wow!'%0A%20%20%20%20peacock%28%29%0A%0Amain%28%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20peacock%28%29%3A%0A%20%20%20%20print%28msg%29%0A%20%20%20%20print%28'Caw!'%29%0A%0Adef%20main%28%29%3A%0A%20%20%20%20msg%20%3D%20'Quiet...'%0A%20%20%20%20peacock%28%29%0A%20%20%20%20msg%20%3D%20'Wow!'%0A%20%20%20%20peacock%28%29%0A%0Amain%28%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=1&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 ## Exercise 2
 
 You may recall previously writing a program `reverse.py`.
 Here is a reminder in case you have forgotten:
-    The program receives a phrase from the user, reverses the order of each word, and then prints the result back out to the screen. 
-    The order of the words relative to one another should remain the same, but each word's letters should be reversed, as in the following example:
-    ```
-    Input a phrase: stay warm out there
-    yats mraw tuo ereht
-    ```
+The program receives a phrase from the user, reverses the order of each word, and then prints the result back out to the screen. 
+The order of the words relative to one another should remain the same, but each word's letters should be reversed, as in the following example: 
+```
+Input a phrase: stay warm out there
+yats mraw tuo ereht
+```
 
-    As with any program, we should start out by laying out our algorithm, which at a high level might look something like this:
-    1. Get phrase from user.
-    2. Split phrase into words
-    3. For each word in the phrase
-        * Reverse the letters
-        * Combine the letters back together
-        * Print the reversed word
+As with any program, we should start out by laying out our algorithm, which at a high level might look something like this:
+1. Get phrase from user.
+2. Split phrase into words
+3. For each word in the phrase
+    * Reverse the letters
+    * Combine the letters back together
+    * Print the reversed word
 
 
 You are going to write/rewrite this program so that it uses functions to organize the code more effectively.
