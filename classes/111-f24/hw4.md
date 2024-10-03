@@ -76,7 +76,8 @@ where those daily temperatures are measured in Fahrenheit.
 First, you should modify the given `weather.py` to output the following for the `demand` command-line option:
 
 ```
-Carleton was on full wind power for 12105 minutes, which is 201.75 hours or approximately 8 days.
+Carleton was on full wind power for 12105 minutes.
+That is 201.75 hours or approximately 8 days.
 The fraction of time on full wind power was approximately 7.11% of the total time.
 ```
 
@@ -100,7 +101,9 @@ Second, modify the given `weather` function to compute the "average high", "aver
 
 You should report the average temperatures of 2017 in the following format:
 ```
-In 2017, the average high temperature was 52.91F, the average low temperature was 35.86F and the average average temperature was 45.25F.
+In 2017, the average high temperature was 52.91F.
+The average low temperature was 52.91F.
+The average average temperature was 45.25F.
 ```
 
 Finally, also in the `weather` function, you'll calculate the longest streak of *stifling* weather days.
@@ -111,19 +114,13 @@ in 2017 in addition to the averages, such that your full output is:
 
 ```bash
 $python3 weather.py weather
-In 2017, the average high temperature was 52.91F, the average low temperature was 35.86F and the average average temperature was 45.25F.
+In 2017, the average high temperature was 52.91F.
+The average low temperature was 52.91F.
+The average average temperature was 45.25F.
 The longest sequence of stifling days in 2017 was 164.
 ```
 
 You should be sure to add a function header for the `weather` function.
-
-Note that you may end up with print lines that are too long.
-Remember that you can break a string across multiple lines using `\`.
-For example:
-```python
-my_string = "this string is going to be quite long and the \
-    style checker will be mad at me with the forward slash."
-```
 
 ## Scrabble
 
