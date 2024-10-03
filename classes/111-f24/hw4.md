@@ -29,7 +29,7 @@ To **demonstrate mastery**, your program needs to demonstrate proficiency as wel
 * *Descriptive* headers
 * *Descriptive* docstrings for each function
 * Useful comments (and removal of non-useful starter comments)
-* Descriptive variable names that follow `snake_case`
+* Descriptive variable and function names that follow `snake_case`
 * Good line grouping and spacing
 * Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code
 
@@ -109,13 +109,21 @@ freezing that day.
 Report the length of the longest sequence of stifling days
 in 2017 in addition to the averages, such that your full output is:
 
-```
+```bash
 $python3 weather.py weather
 In 2017, the average high temperature was 52.91F, the average low temperature was 35.86F and the average average temperature was 45.25F.
 The longest sequence of stifling days in 2017 was 164.
 ```
 
 You should be sure to add a function header for the `weather` function.
+
+Note that you may end up with print lines that are too long.
+Remember that you can break a string across multiple lines using `\`.
+For example:
+```python
+my_string = "this string is going to be quite long and the \
+    style checker will be mad at me with the forward slash."
+```
 
 ## Scrabble
 
@@ -135,18 +143,18 @@ In this assignment, you’ll concentrate on the very first move of the game, whe
 ### Your Task
 Get started, as usual, with the starter code on Moodle. Take a look through `scrabble.py`; you’re going to be adding some functionality to it in this assignment, and it will pay to know how what’s already there works.
 
-### scoreWord
-Fill in `scoreWord(word)`, which should compute the score of the `word` given to it by adding up the scores of all of the letters in it, and adding a bonus if appropriate. (Do not check whether `word` is actually in the dictionary in `scoreWord`.)
+### score_word
+Fill in `score_word(word)`, which should compute the score of the `word` given to it by adding up the scores of all of the letters in it, and adding a bonus if appropriate. (Do not check whether `word` is actually in the dictionary in `score_word`.)
 
-A great way to check if your `scoreWord` implementation is working is to start the Python shell with `python3` and then `import scrabble` and call your method on the provided examples, for example `scrabble.scoreWord("TSKTSK")` should return 14.
+A great way to check if your `score_word` implementation is working is to start the Python shell with `python3` and then `import scrabble` and call your method on the provided examples, for example `scrabble.score_word("TSKTSK")` should return 14.
 
 ### playable
 Fill in `playable(word, hand)`, which should return `True` if `word` can be produced solely by using the tiles in `hand`. (Do not check whether `word` is actually in the dictionary in `playable`.)
 *(Think through this question before you start typing! There are easy ways and hard ways to attack this problem. It’s worth thinking about how to make sure that you don’t repeat a letter more than the number of times you have that tile.)* **Hint**: if you see apparently bizarre behavior when you run your
 function, think about how you are changing lists when you might not mean to. Are you doing something that causes you trouble down the road?
 
-### allPlayable
-Add a function `allPlayable(hand, words)` that takes a *string* `hand` and list of strings `words` and returns a list of all valid words from `words` that can be played using only the tiles from `hand`. One suggestion for an approach to this is to implement something like the following:
+### all_playable
+Add a function `all_playable(hand, words)` that takes a *string* `hand` and list of strings `words` and returns a list of all valid words from `words` that can be played using only the tiles from `hand`. One suggestion for an approach to this is to implement something like the following:
 
 ```
 make an empty list of playable words
@@ -158,8 +166,8 @@ return the list of playable words
 
 Be sure to add a function header for your new function. Note that if you have a string `"HI"` and want a list of each separate letter, you can use `list("HI")` to get `['H','I']`. It isn't necessary to use this information to solve this problem, but you might find it useful.
 
-### bestPlayable
-Add a function `bestPlayable(hand, words)` that computes and returns a list of the highest-scoring word(s) that can be played from the tiles in hand. 
+### best_playable
+Add a function `best_playable(hand, words)` that computes and returns a list of the highest-scoring word(s) that can be played from the tiles in hand. 
 (Again `hand` is a string and `words` is a list of words.)
 If the best score that can be achieved is X and only one word scores X, then you should return a list with one item.
 If multiple words can achieve X, you should return a list with each of them.
@@ -168,7 +176,7 @@ I recommend first figuring out how to return just one best-scoring word and then
 
 ### main
 Add to `main` such that the user can specify via command-line argument if they want to provide their hand (`provide`) or get a random hand (`random`) and then allow them to have the following interactions:
-```
+```bash
 $ python3 scrabble.py random
 Your hand is: ['E', 'D', 'C', 'N', 'D', 'U', 'U']
 The best possible play(s) will earn you 8 and are: ['DUNCE']
