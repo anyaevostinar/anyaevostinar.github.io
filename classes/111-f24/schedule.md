@@ -33,27 +33,27 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/11 | [Functions Prep 1](functions1-prep) | [Slides](https://docs.google.com/presentation/d/1VoD_6fOlKle5Vabw-SCCt62FJ5Z-1RiDkh5O2_zBLI4/edit?usp=sharing), [Function Basics](functions1)	 | |
 | **Week 5** | **Functions** |  | |
 | 10/14 | [Functions 2 and Indefinite Iteration Prep](functions2-prep) |  [Return of the Functions](lab-functions2) and [Using While Loops](while-loops) | |
-| 10/16 |	Study;  [HW4](hw4)	|  Quiz 5 	| [HW5](hw5) |
+| 10/16 |	Study;  [HW4](hw4)	|  [Quiz 5](quiz5) 	| [HW5](hw5) |
 | 10/18	| [Dictionaries Prep](dictionaries-prep) |	[Using Dictionaries](dictionaries)	| |
 | **Week 6** | **Objects and Classes** |  | |
 | 10/21 |  |	Midterm break!	| |
-| 10/23 | [OOP Preparation](oop1-prep); HW5  |  Quiz 6, [Graphics Intro Lab](graphics-intro)	| [HW6](hw6) |
+| 10/23 | [OOP Preparation](oop1-prep); HW5  |  [Quiz 6](quiz6), [Graphics Intro Lab](graphics-intro)	| [HW6](hw6) |
 | 10/25 | [Working with Classes Prep](oop2-prep)	| [Creating Flower Classes](creating-classes)	|  |
 | **Week 7**| **Recursion and Efficiency**|  | |
 | 10/28 |  [Recursion Prep](recursion-prep) |  [Intro to Recursion](recursion-lab)	| |
-| 10/30 | [Algorithm Analysis Prep](analysis-prep); HW6 |	Quiz 7,  [Analyzing Algorithms](efficiency)		 | [HW7](hw7) |
+| 10/30 | [Algorithm Analysis Prep](analysis-prep); HW6 |	[Quiz 7](quiz7),  [Analyzing Algorithms](efficiency)		 | [HW7](hw7) |
 | 11/1 | [Lists and Dictionary Analysis Prep](list-efficiency-prep)	 |  [Structures Efficiency](lab-efficiency2)	|  |
 | **Week 8** | **Searching and Sorting** |   | |
 | 11/4 | [Searching Prep](searching-prep) |	 [Sequential and Binary Search](binary-search)	| |
 | 11/5 | Election Day! | Vote if you are eligible! | |
-| 11/6 | 	[Sorting Prep 1](sorting-basic-prep); HW7	 | Quiz 8, [Slow(ish) Sorting Algorithms](slow-sorting) | |	
+| 11/6 | 	[Sorting Prep 1](sorting-basic-prep); HW7	 | [Quiz 8](quiz8), [Slow(ish) Sorting Algorithms](slow-sorting) | |	
 | 11/8 | [Sorting Prep 2](mergesort-prep); [Final Project Info](final-project)	|  Mergesort and Final Project  | [Final Project Proposal](final-project#project-proposal)	 |
 | **Week 9** | **Final Project**|  | |
 | 11/11 | Final Project Proposal |	[Making Simulations](lab-simulations) | |	
-| 11/13 | Study! | Quiz 9 | [Final Project](final-project) |
+| 11/13 | Study! | [Quiz 9](quiz9) | [Final Project](final-project) |
 | 11/15 | Final project initial submission  |  Minimum Viable Product|	 |
 | **Week 10** | **Wrapping Up** |  | |
 | 11/18	|   |  Final project peer review |  |
-| 11/20 | Study! | Quiz 10, Wrap-up and course evals | All homework revisions due 10pm |
+| 11/20 | Study! | [Quiz 10](quiz10), Wrap-up and course evals | All homework revisions due 10pm |
 | Exams | | | |
 |  | | Final project due Monday Nov 25th at 8:30pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time.  | | 
