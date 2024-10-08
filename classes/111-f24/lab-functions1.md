@@ -45,11 +45,11 @@ As with any program, we should start out by laying out our algorithm, which at a
 
 You are going to write/rewrite this program so that it uses functions to organize the code more effectively.
 
-a. First, write the `reverseWord(word)` function, which should take a string word as a parameter and print a string containing the same word in reverse order (The subparts of Step 3). Test your function right away.
+a. First, write the `reverse_word(word)` function, which should take a string word as a parameter and print a string containing the same word in reverse order (The subparts of Step 3). Test your function right away.
 
-b. Now write the function `reverseAllWords(phrase)`, which should take a string phrase as a parameter and print a string containing the same phrase with every word reversed (Steps 2 and 3), using `reverseWord`. Test your new function!
+b. Now write the function `reverse_all_words(phrase)`, which should take a string phrase as a parameter and print a string containing the same phrase with every word reversed (Steps 2 and 3), using `reverse_word`. Test your new function!
 
-c. Finally, write `main()`, which should use `reverseAllWords` and contain the high-level algorithm (Steps 1 – 3).
+c. Finally, write `main()`, which should use `reverse_all_words` and contain the high-level algorithm (Steps 1 – 3).
 
 Here's a couple of string functions that might be helpful to you:
 * `.split()` will split a string into a list of substrings that had been separated by whitespace in the original string. Note: this cannot be used to break a string into a list of each of its characters. If you want to do this, try something like `strList = list(str)` or just a for-loop.
