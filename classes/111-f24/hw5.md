@@ -25,7 +25,7 @@ To **demonstrate proficiency**, your program needs to pass all the tests on Grad
 * Other basic style that can be checked automatically
 
 To **demonstrate mastery**, your program needs to demonstrate proficiency as well as having:
-* *Descriptive* headers
+* *Descriptive* header (and removal of non-useful starter content)
 * *Descriptive* docstrings for each function
 * Useful comments (and removal of non-useful starter comments)
 * Descriptive variable names that follow `snake_case`
