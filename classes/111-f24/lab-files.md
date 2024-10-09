@@ -55,8 +55,8 @@ if(len(sys.argv)>1):
 	#do something with the argument
 else:
 	#tell the user what they should do and then end program
-    print(“Usage: python3 my_program argument1”)
-    sys.exit(“Command line argument needed”)
+    print("Usage: python3 my_program argument1")
+    sys.exit("Command line argument needed")
 ```
 
 Download the file [us_cities.txt](/classes/111-w22/us_cities.txt), which has all of the US cities in a massive file. Test out your program with this larger file.
