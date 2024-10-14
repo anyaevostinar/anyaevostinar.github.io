@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dictionaries Lab
-permalink: /classes/111-w24/dictionaries
+permalink: /classes/111-f24/dictionaries
 ---
 
 This is a lab assignment and so you will not be submitting it.
@@ -14,36 +14,18 @@ I recommend making a folder for today's lab in COURSES as you usually do.
 
 Download the [starter files](/classes/111-f22/DictionaryLabStarterFiles.zip) for today's lab and copy those files into your folder for today.
 
-### Overview
-In text analysis, **n-grams** are phrases that are *n* words long that appear in sequence together. 
-So, for instance "hello" is a *one-gram*, "black knight" is a *two-gram*, "spam and eggs" is a *three-gram*, etc.
-
-A common first step in analyzing the contents of a document is to count up all the individual instances of each n-gram within it, generally for all values of n smaller than some relatively small number, like 3 or 4. 
-Say we were going to count all the two-grams in the following text:
-```
-    To be, or not to be, that is the question.
-```
-
-The first two-gram is "to be", the second is "be or", the third is "or not", etc. 
-Notice that the two-grams overlap with one another. 
-In this particular text, the only two-gram that would have a count higher than 1 would be "to be", which appears twice. 
-*(Note: capitalization and punctuation are often ignored when performing n-gram analysis, though not always.)*
-
-Though this is a simple process as far as statistical analyses go, it can tell us quite a lot. As an example, comparing relative values of the proportions of n-grams within documents can help us algorithmically determine who wrote given documents (part of a broader branch of analysis called [stylometry](https://en.wikipedia.org/wiki/Stylometry)).
-
-In this lab you'll do some of this kind of analysis yourself using Python dictionaries.
-
-### Your Task
 The zip that you downloaded contains:
 
 * `ngrams.py`: the beginnings of an implementation that will let us count n-grams
 * `main.py`: A file with some testing code for `ngrams.py`
 * `corpora/`: a directory of text files written by various famous authors.
 
+### Your Task
 Open `ngrams.py` and take a look at `getOneGrams()`, a function that should count all the one-grams (i.e., words, otherwise known as "unigrams") in a given file and returns the counts as a Python dictionary.
 You'll see that there is currently pseudocode where the main functionality should be.
 **Turn that pseudocode into Python to complete the function.**
 When you are done, running `main.py` should print out the top 10 most frequent words in Hamlet. 
+**Note: do not remove the code with the weird punctuation `!@#$%^&*()_+-=;:",./<>?\\`, that is getting rid of punctuation for you.**
 
 You should get:
 ```
@@ -60,13 +42,12 @@ in 414
 ```
 
 ## Exercise 1
-As interesting as Hamlet is, you will likely find that these top 10 words aren't very interesting - at least, not in a way that would distinguish them from the top 10 words for any other play. 
-Try changing the code to print out the top 10 words from A Midsummer Night's Dream. 
+a. **Change the code to print out the top 10 words from A Midsummer Night's Dream.** 
 Despite being a very different play, the words won't have changed much. 
 While we can learn a surprising amount from these small "function" words, they do tend to drown out more interesting topic/content words in frequency analysis.
 An easy way to address this issue is to simply ignore such words when making our counts. Words that a researcher removes before performing analysis are typically called **stopwords**.
 
-**Add another parameter to the `getOneGrams()` function called `ignoreStopwords`.**
+b. **Add another parameter to the `getOneGrams()` function called `ignoreStopwords`.**
 This parameter should contain a Boolean value (`True` or `False`) indicating whether or not the function should ignore stopwords or consider them as it performs its counting. To implement this, you will need to:
 
 * Check whether or not `ignoreStopwords` is True, using a conditional statement
