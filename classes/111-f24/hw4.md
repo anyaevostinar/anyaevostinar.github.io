@@ -115,7 +115,7 @@ in 2017 in addition to the averages, such that your full output is:
 ```bash
 $python3 weather.py weather
 In 2017, the average high temperature was 52.91F.
-The average low temperature was 52.91F.
+The average low temperature was 35.86F.
 The average average temperature was 45.25F.
 The longest sequence of stifling days in 2017 was 164.
 ```
