@@ -34,7 +34,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 5** | **Functions** |  | |
 | 10/14 | [Functions 2 and Indefinite Iteration Prep](functions2-prep) |  [Slides](https://docs.google.com/presentation/d/1R4ot-OS0JNu1RgfRbXFJwb6dYwwKJsgYRK2-YpbqfLE/edit?usp=sharing), [More Functions and Loops](lab-return-while) | |
 | 10/16 |	Study;  [HW4](hw4)	|  [Slides](https://docs.google.com/presentation/d/16b4Iq2n0q_DsIhWSEnbnkamzoEajF_2LLEVwBpGneGE/edit?usp=sharing), [Quiz 5](quiz5) 	| [Slides](https://docs.google.com/presentation/d/16b4Iq2n0q_DsIhWSEnbnkamzoEajF_2LLEVwBpGneGE/edit?usp=sharing), [HW5](hw5) |
-| 10/18	| [Dictionaries Prep](dictionaries-prep) |	[Using Dictionaries](dictionaries)	| |
+| 10/18	| [Dictionaries Prep](dictionaries-prep) |	[Slides](https://docs.google.com/presentation/d/1ly40OMzXS_rp4UuQPUuh-fYS3KSxNoG3H3HZl0gnWoY/edit?usp=sharing), [Using Dictionaries](dictionaries)	| |
 | **Week 6** | **Objects and Classes** |  | |
 | 10/21 |  |	Midterm break!	| |
 | 10/23 | [OOP Preparation](oop1-prep); HW5  |  [Quiz 6](quiz6), [Graphics Intro Lab](graphics-intro)	| [HW6](hw6) |
