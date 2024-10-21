@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Graphics Intro Lab
-permalink: /classes/111-w24/graphics-intro
+permalink: /classes/111-f24/graphics-intro
 ---
 
 This is a lab assignment and so you will not be submitting it.
@@ -31,7 +31,7 @@ win = GraphWin("My fancy window", 400, 400)
 
 The call above creates an *object* of the `GraphWin` *class* and stores it in the `win` variable. 
 We are using the **constructor** of the `GraphWin` class. 
-This particular constructor takes 3 parameters: the name of the window, its width, and its height. ([Here is the documentation for this class which says more.](https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node3.html)
+This particular constructor takes 3 parameters: the name of the window, its width, and its height. ([Here is the documentation for this class which says more.](https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node3.html) If that link doesn't work, you can download the [PDF here](/classes/111-w24/graphics.pdf).
 )
 
 Run `main.py` to see what happens. 

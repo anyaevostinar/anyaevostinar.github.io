@@ -60,7 +60,7 @@ You will find you now have a file `Minnesota.svg`, which just has the text TODO.
 Your first task is to finish the basics of the `ZipCode` class. Specifically, add/complete the following methods:
 * Constructor (`__init__`): save all the incoming parameters to appropriate instance variables
 * `get_zip(self)`,`get_population(self)`, `get_latitude(self)`, `get_longitude(self)`: return the appropriate instance variable
-* `get_area(self)`: add the zip code’s **total** geographic area to the code. You'll need to update the constructor as well as adding this method.
+* `get_area(self)`: add the zip code’s **total** geographic area in square meters to the code. You'll need to update the constructor as well as adding this method. (Place the new parameter for the constructor at the end of the existing ones.)
 
 (Leave `draw_circle` alone for now, you'll come back to it later.)
 
@@ -69,7 +69,7 @@ Your first task is to finish the basics of the `ZipCode` class. Specifically, ad
 
 * Next create the `total_population(zips)` function, which takes in your list of `ZipCode`s and returns the total population of the state, which should be 5,534,466 based on this data. You can call this from `main` to make sure you are getting the right answer.
 
-* Next create the `total_area(zips)` function, which takes in your list of `ZipCode`s and returns the total area of the state **in square miles** (convert from square meters to square miles). It should be around 82,458. (It’s not totally consistent with statistics you may find on the web, probably because portions of the state are outside of any zip code, but I’m not 100% sure!)
+* Next create the `total_area(zips)` function, which takes in your list of `ZipCode`s and returns the total area of the state **in square miles** (convert from square meters to square miles) and rounded to the nearest whole number. It should be 82,458. (It’s not totally consistent with statistics you may find on the web, probably because portions of the state are outside of any zip code, but I’m not 100% sure!)
 
 ### Visualization
 Finally, it's time to make a cool visualization of this data!

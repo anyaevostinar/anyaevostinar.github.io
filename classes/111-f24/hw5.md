@@ -108,11 +108,13 @@ otherwise,
 
 The `ord()` function converts characters into their ASCII value (e.g., `ord("a")` will return 97, `ord("z")` will return 122). 
 The `chr()` function goes in the opposite direction, converting an ASCII value to a string (e.g., `chr(97)` returns "a", `chr(122)` returns "z").
-    <details><summary>Here is an ASCII reference table</summary>
-    <p>
-    <img src="/classes/111-f24/ASCIIChart.png">  
-    </p>
-    </details>
+<details>
+<summary><strong>Click here to view a character to ASCII reference table</strong></summary>
+<p>
+<img src="/classes/111-f24/ASCIIChart.png">  
+</p>
+</details>
+
 
 Note that the outline above has a bit of duplication, in particular two while loops that look very similar. See if you can make a small function that reduces that duplication of code.
 
