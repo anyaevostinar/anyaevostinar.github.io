@@ -1,43 +1,31 @@
 ---
 layout: page
 title: Quiz 10 Objectives
-permalink: /classes/111-w24/quiz10
+permalink: /classes/111-f24/quiz10
 ---
 
 ## Learning Objectives
-The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 10 are (all at mastery level):
+All [learning objectives](quizzes-overview) will be on quiz 9 at mastery level (minus the ones that everyone has mastered already!):
 
 1. Using variables
-2. Using definite loops
 3. Using indefinite loops
 4. Using nested loops
 5. Using conditional statements
 6. Using lists
-7. Using functions
-8. Using returns values
+8. Using return values
 9. Using function parameters
-10. Using list parameters with functions
 11. Using objects
 12. Using classes
 13. Using instance variables
-14. Using instance methods
 15. Using recursion
 16. Debugging syntax errors
 17. Predicting the behavior of a program
-18. Explaining function execution
-19. Explaining function scope limits
 21. Explaining the difference between objects and classes
-22. Explaining how objects are stored in memory
-23. Explaining selection sort
-24. Explaining insertion sort
-25. Explaining merge sort
-26. Explaining linear search
-27. Explaining binary search
-28. Explaining algorithmic efficiency at a high-level
-29. Demonstrating the worst case efficiency of the core sort and search algorithms
-30. Explaining the general idea of core efficiency classes
+23. Explaining sorting algorithms
+24. Explaining binary search
+25. Identifying worst case efficiency
 
-You can print and bring along this [checklist](hhttps://docs.google.com/document/d/1YYpU53vYT79LQ2g8wtkag6ESQZhTdV0fPXRAb0fM-TU/edit?usp=sharing) to help you keep track in the quiz.
+You can print and bring along this [checklist](https://docs.google.com/document/d/11isMvRNxjpLVLQ4Qyns_Nhlgu6QM_bqjIg9MipN5CFA/edit?usp=sharing) to help you keep track in the quiz.
 
 ## Suggestions
 Good ways to study for the quizzes are:

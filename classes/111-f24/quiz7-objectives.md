@@ -1,37 +1,19 @@
 ---
 layout: page
 title: Quiz 7 Objectives
-permalink: /classes/111-w24/quiz7
+permalink: /classes/111-f24/quiz7
 ---
 
 ## Learning Objectives
-The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 7 are (all at mastery level):
+The subset of [learning objectives](quizzes-overview) that you can demonstrate your proficiency/mastery on for quiz 7 are (new in bold):
 
-* Using variables
-* Using definite loops
-* Using indefinite loops
-* Using nested loops
-* Using conditional statements
-* Using lists
-* Using functions
-* Using returns values
-* Using function parameters
-* Using list parameters with functions
-* Using objects
-* Using classes
-* Using instance variables
-* Using instance methods
-* **Using recursion**
-* Debugging syntax errors
-* Predicting the behavior of a program
-* Explaining function execution
-* Explaining function scope limits
-* Explaining the difference between objects and classes
-* Explaining how objects are stored in memory
-* **Explaining algorithmic efficiency at a high-level**
-* **Explaining the general idea of core efficiency classes**
+* **Using classes - M**
+* **Using instance variables - M**
+* **Using recursion - M**
+* **Explaining the difference between objects and classes - M**
+* Using objects - M
 
-You can print and bring along this [checklist](https://docs.google.com/document/d/1CyJeeZGRChLH2mP2MnHzfIixu3damj8UY3ffstK1LFw/edit?usp=sharing) to help you keep track in the quiz.
+You can print and bring along this [checklist](https://docs.google.com/document/d/1XiU824eemkLkvbw9DMUEMdV7bntLEVxnFI58skCkYYM/edit?usp=sharing) to help you keep track in the quiz.
 
 ## Suggestions
 Remember that this isn't your only chance to demonstrate your understanding of these learning objectives, so try not to stress too much.
