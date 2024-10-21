@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Flower Lab
-permalink: /classes/111-w24/creating-classes
+permalink: /classes/111-f24/creating-classes
 ---
 
 This is a lab assignment and so you will not be submitting it.
@@ -37,7 +37,7 @@ There are so many things you can do once you've bundled your shapes together int
 
 4. The graphics library also lets you detect what key on the keyboard a user has pressed with the `getKey()` method of `GraphWin`. It returns the key as a string of the character key that was pressed. For example, if the user hit the 'Y' key, the method would return the string `"y"`. Experiment with this method by first printing what you get when you do:
 
-    ```
+    ```python
     input_key = win.getKey()
     print(input_key)
     ```

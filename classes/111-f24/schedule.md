@@ -38,7 +38,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 6** | **Objects and Classes** |  | |
 | 10/21 |  |	Midterm break!	| |
 | 10/23 | [OOP Preparation](oop1-prep); HW5  |  [Slides](https://docs.google.com/presentation/d/1MNb2CauQK003ldkqwpJRZ-7kQdY-i0laCqIS7XxMQmY/edit?usp=sharing), [Quiz 6](quiz6), [Graphics Intro Lab](graphics-intro)	| [HW6](hw6) |
-| 10/25 | [Working with Classes Prep](oop2-prep)	| [Creating Flower Classes](creating-classes)	|  |
+| 10/25 | [Working with Classes Prep](oop2-prep)	| [Slides](https://docs.google.com/presentation/d/1AiUG16lTtPhkMdUky2ttvUTNolkRqB8bCzDViqlvd1A/edit?usp=sharing), [Creating Flower Classes](creating-classes)	|  |
 | **Week 7**| **Recursion and Efficiency**|  | |
 | 10/28 |  [Recursion Prep](recursion-prep) |  Visitor! [Intro to Recursion](recursion-lab)	| |
 | 10/30 | [Algorithm Analysis Prep](analysis-prep); HW6 |	[Quiz 7](quiz7),  [Analyzing Algorithms](efficiency)		 | [HW7](hw7) |
