@@ -17,7 +17,7 @@ Then, make a new file `main.py` where you'll work today.
 
 In `main.py`, you will first want to import everything from the graphics library. You can do this with an `import graphics` statement, but I suggest the following instead:
 
-```
+```python
 from graphics import *
 ```
 
@@ -38,7 +38,7 @@ Run `main.py` to see what happens.
 You'll notice that your window seems to just close right away, because the program runs and then closes the window when it's done.
 An easy way to keep that from happening, so you can actually see what you're doing, is to add a line at the end of your program that waits for input from the user:
 
-```
+```python
 input("When done, press Enter")
 ```
 
@@ -49,7 +49,7 @@ The different shapes you can make are listed under "Graphics Objects" in [Zelle'
 Each specific shape has its own constructor (described in its own page). 
 So, for instance, to create a [`Point`](https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node5.html), I can call:
 
-```
+```python
 my_point = Point(100,100)
 ```
 
@@ -57,7 +57,7 @@ This will create a point at the coordinate 100, 100.
 You might notice though that you don't actually *see* the point object.
 To see it, you need to tell Python which window to draw it in:
 
-```
+```python
 my_point.draw(win)
 ```
 
@@ -68,7 +68,7 @@ Make sure that you can now see a small dot on your window.
 Points aren't very interesting, so let's draw a circle.
 To create a `Circle`, I need to pass it both a `Point` (which will represent the center of the `Circle`) and a radius, like this:
 
-```
+```python
 my_circle = Circle(Point(50,50), 25)
 my_circle.draw(win)
 ```
