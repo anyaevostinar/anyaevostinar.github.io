@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Efficiency Lab
-permalink: /classes/111-w24/efficiency
+permalink: /classes/111-f24/efficiency
 ---
 
 This is a lab assignment and so you will not be submitting it.
@@ -10,11 +10,11 @@ However, the concepts and practice will help you on both the homework and exams 
 I recommend making a folder for today's lab in COURSES as you usually do.
 
 ## Exercise 0
-(This is a repeat of what we did together.)
+(Finish the analysis that we started together:)
 
 Consider the following program:
 
-```
+```python
 def avgList(lst):
   ''' Return the mean of a list of integers. '''
   tot = 0
@@ -23,7 +23,7 @@ def avgList(lst):
   return tot / len(lst)
 ```
 
-a. Run this program with the [`functionsTiming.py`](/classes/111-f22/functionsTiming.py) starter code with several different lengths of lists and plot how the time changes as the size of the list grows with the [Desmos calculator](https://www.desmos.com/calculator) (click the + and choose "table" to enter in your timing data points). Record your data and plot on the worksheet.  Based on the plot you see, which of the Big-O common functions does it seem to fit?
+a. Run this program with the [`functionsTiming.py`](/classes/111-f24/functionsTiming.py) starter code with several different lengths of lists and plot how the time changes as the size of the list grows with the [Desmos calculator](https://www.desmos.com/calculator) (click the + and choose "table" to enter in your timing data points, then click the magnifying glass for it to adjust the axes to show you data clearly). Record your data and plot on the worksheet.  Based on the plot you see, which of the Big-O common functions does it seem to fit?
 
 ![Image of main Big-O functions](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Comparison_computational_complexity.svg/512px-Comparison_computational_complexity.svg.png?20170623110746)
 Source: [Wikimedia user Cmglee](https://commons.wikimedia.org/wiki/File:Comparison_computational_complexity.svg)
