@@ -85,5 +85,5 @@ When you run your code, your `Minnesota.svg` file should now have a data visuali
 This visualization can't be autograded, but you will see on Gradescope what the graders will see when they assess your submission.
 
 ## Submission
-You should submit through Gradescope as always.
+You should submit through Gradescope as always.  If you have a partner, remember only one of you should submit and you should add the other to the submission.
 
