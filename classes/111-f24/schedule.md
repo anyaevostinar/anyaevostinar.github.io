@@ -42,7 +42,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 7**| **Recursion and Efficiency**|  | |
 | 10/28 |  [Recursion Prep](recursion-prep) |  Visitor! [Intro to Recursion](recursion-lab)	| |
 | 10/30 | [Algorithm Analysis Prep](analysis-prep); HW6 |	[Slides](https://docs.google.com/presentation/d/11vcknCqEXvkqMkFrXpNH8oZBG2utewpNshnVq9X3r7E/edit?usp=sharing), [Quiz 7](quiz7),  [Analyzing Algorithms](efficiency)		 | [HW7](hw7) |
-| 11/1 | [Lists and Dictionary Analysis Prep](list-efficiency-prep)	 |  [Structures Efficiency](lab-efficiency2)	|  |
+| 11/1 | [Lists and Dictionary Analysis Prep](list-efficiency-prep)	 |  [Slides](https://docs.google.com/presentation/d/1yL4fPqrkpc4ZUCKb9jIKjBPVm18kW2NjbfEHts7ehrE/edit?usp=sharing), [Structures Efficiency](lab-efficiency2)	|  |
 | **Week 8** | **Searching and Sorting** |   | |
 | 11/4 | [Searching Prep](searching-prep) |	 [Sequential and Binary Search](binary-search)	| |
 | 11/5 | Election Day! | Vote if you are eligible! | |

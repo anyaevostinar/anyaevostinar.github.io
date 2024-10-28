@@ -5,7 +5,7 @@ permalink: /classes/111-f24/quiz10
 ---
 
 ## Learning Objectives
-All [learning objectives](quizzes-overview) will be on quiz 9 at mastery level (minus the ones that everyone has mastered already!):
+All [learning objectives](quizzes-overview) will be on quiz 10 at mastery level (minus the ones that everyone has mastered already!):
 
 1. Using variables
 3. Using indefinite loops

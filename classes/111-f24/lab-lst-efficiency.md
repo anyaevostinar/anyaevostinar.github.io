@@ -5,7 +5,7 @@ permalink: /classes/111-f24/lab-efficiency2
 ---
 
 This is a lab assignment and so you will not be submitting it.
-However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
+However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
 
 I recommend making a folder for today's lab in COURSES as you usually do.
 You can pull up the ad-supported version of the textbooks that doesn't require logging in for reference [here](https://runestone.academy/ns/books/published/fopp/index.html?mode=browsing) and [here](https://runestone.academy/ns/books/published/pythonds3/index.html?mode=browsing).
@@ -46,8 +46,8 @@ What about the best case scenario?
 Instead of looking for -1, look for 1 and again run the code with the five sizes and plot the resulting data. Now which structure is better to use?
 
 ## Exercise 3
-Let's test some other functionality common to lists and dictionaries. Edit the `listLookup` method (or create a new method and update the timing code) to test getting something from a **specific index of a list**.
-There isn't really a corresponding dictionary functionality; you could loop over the keys of the dictionary to find the ith key if you want to try it with `.keys()`.
+Let's test some other functionality common to lists. Edit the `listLookup` method (or create a new method and update the timing code) to test getting something from a **specific index of a list**.
+There isn't really a corresponding dictionary functionality; you could loop over the keys of the dictionary to find the `i`th key if you want to try it with `.keys()`.
 
 Try any other list and dictionary methods that don't make changes to the structure too!
 

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Final Project 
-permalink: /classes/111-w24/final-project
+permalink: /classes/111-f24/final-project
 ---
 ## Overview
 For your final project, you’ll be working on a program of your own design with or without a partner. 
 To provide some structure, I’ll be expecting projects of a specific type discussed below. 
-**Your project code must be object-oriented, meaning it centers on the use of one or more classes that you have created and it must use the provided graphics.py library.**
+**Your project code must be object-oriented, meaning it centers on the use of two or more classes that you have created and it must use the provided graphics.py library.**
 It’s okay to have additional functions, too, but your core functionality should be handled by classes.
 
 (This project description has been adapted, with permission, from earlier descriptions by Profs. Amy Csizmar Dalal, Titus Klinge, James Ryan, and Eric Alexander.)
@@ -29,10 +29,10 @@ You will be assessed on the following rubric.
 ### Proficiency
 To demonstrate proficiency, your project must:
 
-* Use the `graphics.py` library
-* Create at least two classes
+* Use the `graphics.py` library to implement a game
+* Create at least two classes and use objects from those classes
 * Run without errors during basic user interaction
-* Have a `README.txt` report that includes all required information
+* Have a [`README.txt` report](#project-code-and-report) that includes all required information
 
 ### Mastery
 To demonstrate mastery, your program must meet all the 'proficiency' requirements, as well as:
@@ -45,17 +45,18 @@ To demonstrate mastery, your program must meet all the 'proficiency' requirement
 * Good line grouping and spacing
 * Use iteration, conditionals, functions, and classes to organize your program and prevent any unnecessary duplication of code
 * Use instance variables and methods effectively
+* Have a clear and thorough `README.txt`
 
 ## Project Requirements
 Your project must be an object-oriented game and use at least two classes of your own design meaningfully.
-You must also include graphics using the graphics.py library that you've been provided.
+You must also include graphics using the [graphics.py](/classes/111-w22/graphics.py) library that you've been provided.
 You will find the [documentation for the graphics module](/classes/111-w24/graphics.pdf) helpful and should look through it!
 
 Your game should incorporate **meaningful interaction between objects of your two (or more) classes** (meaning one object causes another object to react differently than it otherwise would have). These classes can be ones that support the graphics component as well.
 This requirement is easiest to explain with some examples:
-* In [Snake](https://en.wikipedia.org/wiki/Snake_(video_game_genre)), the Snake object eats Food objects. You could also have a SnakeHead object that pulls the SnakeBody objects forward
-* In Chess, Pawn objects can only move forward if they aren't blocked by another piece
-* In [Battleship](https://en.wikipedia.org/wiki/Battleship_(game)), Ship objects are attacked by the other Player object. You could also have a Board object that determines if the Ship objects are hit or not.
+* In [Snake](https://en.wikipedia.org/wiki/Snake_(video_game_genre)), the `Snake` object eats `Food` objects. You could also have a `SnakeHead` object that pulls the `SnakeBody` objects forward
+* In Chess, `Pawn` objects can only move forward if they aren't blocked by another piece
+* In [Battleship](https://en.wikipedia.org/wiki/Battleship_(game)), `Ship` objects are attacked by the other `Player` object. You could also have a `Board` object that determines if the `Ship` objects are hit or not (and draws or undraws them appropriately).
 
 Remember that your time is limited, so pick a game that you will be able to implement between now and the end of the term. 
 
@@ -74,24 +75,25 @@ To get you started with project ideas, here are some examples that students have
 
 ## Project Proposal
 To make sure that you are poised for success, you must write a short proposal of what you plan to do. 
-You will submit this through Gradescope (it's a fill in the blank on Gradescope assignment, so you don't need to create a separate document first, though you can). 
-Your proposal is due by Wednesday Feb 28th, at 10pm, and will include the following components:
+You will submit this through Gradescope as a PDF. 
+Your proposal is due by Monday Nov. 11th, at 10pm, and should have **clearly indicated sections** answering each of the following questions:
 
-* Who’s working on the project, and how you plan to divide the work.
-* The game or simulation you plan to implement for your final project. Include a brief description of the game and its rules (or, for a simulation, what you aim to model and a basic overview of how it will run).
-* A brief development plan: what sort of classes and methods you will need to write and generally how these will work together.
-* What kind of graphics will be incorporated into your project.
-* A description of your primary outcome(s) for the project. I’ll raise concerns if these outcomes seem too ambitious or not ambitious enough.
-* A description of your stretch goal(s) for the project. These are outcomes that you hope to achieve, but that you realize may be too difficult given the time frame and your current programming expertise.
+1. Who’s working on the project?
+    * If you are working individually, state that
+2. What is the game you plan to implement for your final project?
+    * Include a brief description of the game and the version of rules that you plan to implement (you don't have to include all the rules of more complex games)
+3. What are the (at least) two classes you will implement and what methods will they have? 
+4. How will objects of your two classes meaningfully interact with each other?
+5. What kind of graphics will be incorporated into your project?
+6. What are some "stretch goal(s)" for the project? These are outcomes that you hope to achieve, but that you realize may be too difficult given the time frame and your current programming expertise.
 
-After confirming the details and making sure you’re poised to succeed, I’ll officially sign off on your project, which means you’re free to start working on the project. **Feel free to submit this early and I will be aiming to get feedback to you sooner than the due date.**
+I'll give you feedback on your proposal and let you know if it seems feasible or if I have any concerns.
 
 ## Project Peer Review
-During class on March 6th, you will present your project draft in a "gallery walk".
+During class on Nov 18th, you will present your project draft in a "gallery walk".
 I'll provide more details as that approaches, but the basic idea will be that half of you will get your game or simulation running on a lab computer and tell the other half about the project and then we'll switch partway through. 
 You'll be required to both present your project and learn about a specific number of other projects.
-An initial submission of a basic version of your project will be due **March 4th at 10pm**, so that you have something in working order for the presentation.
-I will be aiming to get feedback back to you quickly on this initial submission so that you can make revisions before the end of term.
+An initial submission of a basic version of your project will be due **Nov 15th at 10pm**, so that you have something in working order for the presentation.
 You should aim to have your project at this point be a first draft so that you can get feedback and show off the cool project that you are working on.
 
 ## Project Code and Report
@@ -99,21 +101,18 @@ Finally, your programming deliverable will be the code for the project, along wi
 **The report is required!** 
 Specifically, you will include a `README` file with your project submission, which will contain your report. 
 A `README` file is a simple text file that describes your project in more detail. 
-The `README` file should be named `README.txt`, and it should include the following:
+The `README` file should be named `README.txt`, and it should include the following in **clearly labeled sections**:
 
-* The name of your project.
-* Your names.
-* Whether your project is a game or a simulation.
-* The particular type of complexity that is represented in your program. Per the grading rubric below, your program must exhibit complexity in at least one of the following ways:
-    * Rich "AI" strategy in the case of a computer game.
-    * Rich and varied results in the case of a computer simulation.
-        * That is, the simulation results are quite different every time the program is run.
-* How to play the game (also describe the game rules) and/or how to run the simulation. This should include information such as what extra files, if any, are needed to run the program. (If your program requires extra files, such as images, please include these with your project submission.)
-* A brief description of any known bugs or issues with the program.
+1. Your names.
+2. The kind of game that you made
+4. How to play the game (also describe the game rules).
+    * This should include information such as what extra files, if any, are needed to run the program. (If your program requires extra files, such as images, please include these with your project submission.)
+3. How objects of your two classes meaningfully interact in your game
+5. A brief description of any known bugs or issues with the program.
 
 I recommend that you start working on your project as soon as I’ve signed off on your idea. 
-Any revisions for the project are due March 13th at 6pm and no extensions are possible except through the Dean of Students office.
-You are encouraged to submit sooner than the deadline and I will be aiming to get feedback on early submissions before the deadline.
+Any revisions for the project are due Nov 25th at 8:30pm and no extensions are possible except through the Dean of Students office.
+You are encouraged to submit sooner than the deadline.
 
 You will submit your project and report through Gradescope.
 

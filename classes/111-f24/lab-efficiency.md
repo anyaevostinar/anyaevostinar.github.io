@@ -5,7 +5,7 @@ permalink: /classes/111-f24/efficiency
 ---
 
 This is a lab assignment and so you will not be submitting it.
-However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
+However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
 
 I recommend making a folder for today's lab in COURSES as you usually do.
 
