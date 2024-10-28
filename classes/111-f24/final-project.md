@@ -3,6 +3,16 @@ layout: page
 title: Final Project 
 permalink: /classes/111-f24/final-project
 ---
+
+* [Overview](#overview)
+* [Logistics](#logistics)
+* [Assessment](#assessment)
+* [Requirements](#project-requirements)
+* [Proposal](#project-proposal)
+* [Peer Review](#project-peer-review)
+* [Report](#project-report)
+* [Resources](#resources)
+
 ## Overview
 For your final project, you’ll be working on a program of your own design with or without a partner. 
 To provide some structure, I’ll be expecting projects of a specific type discussed below. 
@@ -96,7 +106,7 @@ You'll be required to both present your project and learn about a specific numbe
 An initial submission of a basic version of your project will be due **Nov 15th at 10pm**, so that you have something in working order for the presentation.
 You should aim to have your project at this point be a first draft so that you can get feedback and show off the cool project that you are working on.
 
-## Project Code and Report
+## Project Report
 Finally, your programming deliverable will be the code for the project, along with documentation of that code in the form of a report. 
 **The report is required!** 
 Specifically, you will include a `README` file with your project submission, which will contain your report. 
