@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Recursion Lab
-permalink: /classes/111-w24/recursion-lab
+permalink: /classes/111-f24/recursion-lab
 ---
 
 ## Logistics
@@ -9,16 +9,6 @@ This is a lab assignment and so you will not be submitting it.
 However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
 
 I recommend making a folder for today's lab in COURSES as you usually do.
-
-## Exercise 0
-(This is a repeat from the start of class.)
-This lab has you try writing many recursive functions.
-This is a really tricky concept, and you'll probably need lots of practice to start getting comfortable with it.
-[PythonTutor](https://pythontutor.com/) is your friend for understanding what is going on with your functions!
-
-For this exercise, write a **recursive** function called `multiply2(n)` that returns 2*n. You can assume that n is a non-negative integers. (You should not use Python's `*` functionality for this one.)
-
-
 
 ## Exercise 1
 Write a **recursive** function called `countdown(n)` that takes a positive integer `n` and prints out each value from `n` to 0, decreasing by 1 at each step, printing each value on its own line. (Note: this function asks you to print values, not return them. What, if anything, needs to be returned in that case?)
