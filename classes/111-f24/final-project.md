@@ -31,7 +31,7 @@ The final project is a programming deliverable in the course, however there won'
 * Project proposal **due 11/11 at 10pm**
 * Project initial submission **due 11/15 at 10pm**
 * Projects peer review **11/18 in class**
-* Project revisions **due 11/25 at 8:30pm**
+* Final project submission **due 11/25 at 8:30pm** (plus one hour grace period) (completed with your partner)
 
 ## Assessment
 You will be assessed on the following rubric.
@@ -43,6 +43,7 @@ To demonstrate proficiency, your project must:
 * Create at least two classes and use objects from those classes
 * Run without errors during basic user interaction
 * Have a [`README.txt` report](#project-code-and-report) that includes all required information
+* Generally follow the rules described in your `README`
 
 ### Mastery
 To demonstrate mastery, your program must meet all the 'proficiency' requirements, as well as:
@@ -56,6 +57,7 @@ To demonstrate mastery, your program must meet all the 'proficiency' requirement
 * Use iteration, conditionals, functions, and classes to organize your program and prevent any unnecessary duplication of code
 * Use instance variables and methods effectively
 * Have a clear and thorough `README.txt`
+* Consistently follow the rules of the game described in your `README`
 
 ## Project Requirements
 Your project must be an object-oriented game and use at least two classes of your own design meaningfully.
@@ -115,13 +117,14 @@ The `README` file should be named `README.txt`, and it should include the follow
 
 1. Your names.
 2. The kind of game that you made
-4. How to play the game (also describe the game rules).
+3. The rules of the game as you've implemented it (can be simplified from the "real" version)
+4. How to play the game
     * This should include information such as what extra files, if any, are needed to run the program. (If your program requires extra files, such as images, please include these with your project submission.)
-3. How objects of your two classes meaningfully interact in your game
-5. A brief description of any known bugs or issues with the program.
+5. How objects of your two classes meaningfully interact in your game
+6. A brief description of any known bugs or issues with the program.
 
 I recommend that you start working on your project as soon as I’ve signed off on your idea. 
-Any revisions for the project are due Nov 25th at 8:30pm and no extensions are possible except through the Dean of Students office.
+Any revisions for the project are due Nov 25th at 8:30pm (+1 hour grace window) and no extensions are possible except through the Dean of Students office.
 You are encouraged to submit sooner than the deadline.
 
 You will submit your project and report through Gradescope.
