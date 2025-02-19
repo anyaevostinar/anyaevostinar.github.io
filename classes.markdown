@@ -6,20 +6,22 @@ permalink: /Classes/
 
 ## Current Classes
 
-### Fall 2024
 
-CS 111: Introduction to Computer Science ([Syllabus](/classes/111-f24/syllabus), [Schedule](/classes/111-f24/schedule))
 
 ## Future Classes
 
 Subject to change!
 ### Spring 2025
 
-CS 257: Software Design
+CS 257: Software Design ([Syllabus](/classes/257-s25/syllabus), [Schedule](/classes/257-s25/schedule))
 
 CS 361: Artificial Life and Digital Evolution
 
 ## Previous Classes
+
+### Fall 2024
+
+CS 111: Introduction to Computer Science ([Syllabus](/classes/111-f24/syllabus), [Schedule](/classes/111-f24/schedule))
 
 ### Spring 2024
 
