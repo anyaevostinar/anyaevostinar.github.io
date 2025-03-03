@@ -16,6 +16,8 @@ These are links that I think are useful for myself and possibly others.
 
 [Anonymous GitHub](https://anonymous.4open.science/) - tool to anonymize GitHub repos for double-blind review purposes
 
+[VSCode Format Document](https://code.visualstudio.com/docs/editor/codebasics#:~:text=Format%20Document%20(Ctrl%2BShift%2B,)%20%2D%20Format%20the%20selected%20text.)
+
 ## Faculty
 [Collection of links useful for faculty](https://github.com/crazyhottommy/The-world-of-faculty) - includes negotiation/job-search materials, grant proposals, structuring papers, teaching, and more, some links I pulled out and include in other sections
 
