@@ -1,14 +1,14 @@
 ---
 layout: page
 title: What is AL Preparation
-permalink: /classes/361-f22/intro-prep
+permalink: /classes/361-s25/intro-prep
 ---
 
 ## Overview
 Welcome to Artificial Life and Digital Evolution!
 Most class meetings will have preparation that you should do beforehand and learning objectives that you should be comfortable with before class and after class. 
 
-I know that this first one you might not be able to get done before class, so please just get it done as soon as you can after.
+I know that this first one you might not be able to get done before class, so I've extended the due date for the check to 10pm tonight **for this check only**.
 
 All of these preparation pages will have checks of some kind that you need to submit and which will be evaluated for completeness. You need to submit a complete check to earn the engagement credit for that day.
 
@@ -39,9 +39,7 @@ To achieve the basic learning objectives, you can read the following:
 * Complexity pg 113-116 (Section title *What Is Life?*)
 
 ## Checks
-Complete the following:
-* Join CampusWire and post an introduction in "General" with the following:
-    * Your preferred name and optionally your pronouns
-    * Your class year
-    * Why you decided to take this class/what you're hoping to get out of this class
-    * One hobby/thing you like to do for fun
+Submit answers to the following through Moodle:
+* What is the criteria for an A in the course?
+* What are three requirements that have been proposed for something being "alive"?
+* What does the field of artificial life try to do?

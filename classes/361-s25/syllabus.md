@@ -4,8 +4,6 @@ title: CS361 Artificial Life and Digital Evolution
 permalink: /classes/361-s25/syllabus
 ---
 
-DRAFT!!!!
-
 Spring 2025
 
 **Instructor**: Anya E. Vostinar

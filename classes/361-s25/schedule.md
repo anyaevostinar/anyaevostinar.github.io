@@ -3,7 +3,6 @@ layout: page
 title: CS361 Artificial Life and Digital Evolution S25 Schedule
 permalink: /classes/361-s25/schedule
 ---
-DRAFT!!
 
 This is a rough schedule of topics for each day and the release and due dates for each assignment.
 

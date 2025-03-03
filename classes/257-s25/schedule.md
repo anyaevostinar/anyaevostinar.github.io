@@ -4,8 +4,6 @@ title: CS 257 Software Design S25 Schedule
 permalink: /classes/257-s25/schedule
 ---
 
-DRAFT!!!
-
 This is a rough schedule of topics for each week and the expected completion of assignments.
 It will continue to be filled in throughout the term.  
 Many of the links will be dead-ends until closer to the relevant date.
