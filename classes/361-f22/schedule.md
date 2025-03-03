@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS361 Evolutionary Computing and Artificial Life F22 Schedule
+title: CS361 Artificial Life and Digital Evolution F22 Schedule
 permalink: /classes/361-f22/schedule
 ---
 

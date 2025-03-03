@@ -99,7 +99,7 @@ c. There are a whole lot of ways of mutating organisms and whole dissertations h
 
 This is such a common task that Empirical provides a function for it:
 ```
-random.GetRandNormal(0.0, 0.002); //pull a random number from a normal
+random.GetRandNormal(0.0, 0.02); //pull a random number from a normal
 //distribution with a mean of 0 and a standard deviation of 0.002.
 ```
 Add the random number you get to the organism's `behavior` value.

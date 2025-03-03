@@ -31,7 +31,7 @@ Spring 2025
 
 Recommended:
 * Don't Make Me Think! Revisited, by Steve Krug
-* Clean Code, by Robert C. Martin
+* Clean Code, by Robert C. Martin. Free [online access](https://bridge.primo.exlibrisgroup.com/permalink/01BRC_INST/11mmqid/cdi_askewsholts_vlebooks_9780136083252) through Carleton library
 * Some additional reading materials will be linked through Moodle
 
 I recognize the potential financial burden of additional course fees, supply requirements, and travel costs. If you are in need of assistance to cover course expenses, please speak with me by Friday of Week 1.
@@ -216,7 +216,7 @@ Therefore, my goal with the following evaluation metrics is to balance providing
 
 Towards that end, your performance in this class will be evaluated in three different ways according to the learning goals for the course:
 
-* **Engagement credits** There is a great benefit to you to fully and authentically engage with the course content in and out of class time. To encourage this engagement while providing some flexibility, the course has an "engagement credit" system. You will need a specific number of engagement credits to earn a specific grade (shown in the table below). You can earn these credits in many ways, but the main way is through completing the preparatory work and attending (and engaging with class). You may earn 1 credit for completely preparatory work satisfactorily and 1 credit for attending and engaging effectively in class. There may be additional ways to earn engagement credits during the term as well.
+* **Engagement credits** There is a great benefit to you to fully and authentically engage with the course content in and out of class time. To encourage this engagement while providing some flexibility, the course has an "engagement credit" system. You will need a specific number of engagement credits to earn a specific grade (shown in the list below). You can earn these credits in many ways, but the main way is through completing the preparatory work and attending (and engaging with class). You may earn 1 credit for completely preparatory work satisfactorily and 1 credit for attending and engaging effectively in class. There may be additional ways to earn engagement credits during the term as well.
 
 * **Group deliverables** This course consists of a [team project](project-final) that lasts the majority of the course and has components that you will create and get feedback on along the way. Your work will be evaluated on the effectiveness of the process you and your team utilize, the product you attain (and how closely this product meets the project deliverable requirements), and the effectiveness of your team's collaboration. This contributes to your final grade according to the *specifications grading* scale outlined below.
 
@@ -234,8 +234,8 @@ I'll be using a version of *specifications grading* this term. Each assessment t
 
 * Exemplary (the submission demonstrates achievement of the learning objective(s) at a higher level (e.g. more nuance, sophistication, etc).)
 
-An important aspect of specifications grading is revision. **You may revise any group or individual deliverable up until the end of exams.** Learning is not a linear process, and learning involves making mistakes and learning from them. You may revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
-You may further revise that deliverable before the final submission and [request additional feedback via this form](https://docs.google.com/forms/d/e/1FAIpQLSeQzRc5ADqSZzfvTaN_9b3PRTcgniYoyja8Ap3NzcfJ8y-bJQ/viewform?usp=sf_link). However, **you may only request one additional individual and team assessment per week**. 
+An important aspect of specifications grading is revision. **You may revise any group or individual deliverable up until the end of classes.** Learning is not a linear process, and learning involves making mistakes and learning from them. You may revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
+You may further revise that deliverable before the final submission and [request additional feedback via this form](). However, **you may only request one additional individual and team assessment per week**. 
 
 ### How this translates to course grades
 
@@ -247,6 +247,8 @@ You may further revise that deliverable before the final submission and [request
 
 (There are 28 class days, so by just completing preparatory work and engaging in class, you will earn 56 engagement credits.)
 
+If you have met the deliverables requirements for a letter grade, but not the engagement credits, you will receive that grade with a "-". For example, if you have completed all the deliverables at an Exemplary level but have only 40 engagement credits, you will receive an A-.
+
 ### Late work and extensions
 In this course, we need to balance flexibility for individuals with structure for teams and the class as a whole. I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. Therefore, the late work/extension policy varies depending on the type of work:
 
@@ -254,7 +256,7 @@ In this course, we need to balance flexibility for individuals with structure fo
 
 **Preparation work** cannot be submitted late. If you miss the submission for a given day, you cannot earn the engagement credit for that work.
 
-**All work must be submitted by the end of the last finals period as per College policy.**
+**All work except for the final team submission must be submitted by the end of the last day of classes as per College policy.** The final team submission must be submitted the the end of the last final.
 All that said: This (like every term for a while now) term is going to be weird, and hard, and disruptive, for all sorts of non-academic reasons. If you're staring down a deadline that you know you can't meet, or if you've fallen behind, **get in touch with me immediately and we'll work something out.** While I need to put boundaries in place for my own health and wellness, and for fairness to everyone in the class, I also want to make sure you are progressing in your learning.
 
 ## AI-Assistance

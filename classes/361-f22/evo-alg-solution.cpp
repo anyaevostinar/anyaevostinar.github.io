@@ -7,7 +7,7 @@ class Organism {
   Organism(double _behavior=0): behavior(_behavior) {}
 
   void mutate(emp::Random random) {
-    behavior += random.GetRandNormal(0.0, 0.002);
+    behavior += random.GetRandNormal(0.0, 0.02);
   }
 
   Organism* reproduce(emp::Random random) {

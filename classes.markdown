@@ -15,7 +15,7 @@ Subject to change!
 
 CS 257: Software Design ([Syllabus](/classes/257-s25/syllabus), [Schedule](/classes/257-s25/schedule))
 
-CS 361: Artificial Life and Digital Evolution
+CS 361: Artificial Life and Digital Evolution ([Syllabus](/classes/361-s25/syllabus), [Schedule](/classes/361-s25/schedule))
 
 ## Previous Classes
 
