@@ -21,7 +21,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Date	| Assignments Due	| In Class |	Assignments Out |
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Getting Started** |  | |
-| M 3/31 | [Intro to Software Design Prep](intro-prep) | [Slides](), Course overview and discussion|  |
+| M 3/31 | [Intro to Software Design Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1WnPY3SFwvPkgFUhUWt5_yYeiLyoN_4-BSbDSUv4mNZ0/edit?usp=sharing), Course overview and discussion|  |
 | W 4/2 | [Agile and Effective Teams Prep](agile-prep) | [Slides](),<br> Development Processes and Getting Started, [start setting up computers](getting-started) |  |
 | F 4/4 | [Unix and Vim Prep](unix-prep) | [Slides](), [Unix Scavenger Hunt](unix-scavenger-hunt) | |
 | **Week 2** | **Project Foundations** | | |

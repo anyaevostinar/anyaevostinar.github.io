@@ -13,7 +13,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Date	| Assignment/Reading Due	| Class Topic |	Assignment Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | |  | |
-| M 3/31 | [What is AL Prep](intro-prep) | What is (artificial) life? |  |
+| M 3/31 | [What is AL Prep](intro-prep) | What is (artificial) life? [Slides](https://docs.google.com/presentation/d/1_dQ3RyPPnzJqQV0fkyZYafqOjtEtY628AK-yYRQZat8/edit?usp=sharing) |  |
 | W 4/2 | [C++ Prep](cpp-prep)|	[Java to C++](cpp_lab) |	|
 | F 4/4 |	[Evolutionary Algorithms](evocomp-prep)	| [Evolutionary Algorithm Lab](evo_alg_lab)  |	 |
 | Week 2 | |  | |
@@ -49,7 +49,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 5/27 | [Replication reports](https://anyaevostinar.github.io/classes/361-f22/project-overview#replication-drafts) |	Sharing reports | |
 | F 5/29 |  | TBD	|	 |
 | Week 10 | | | |
-| M 6/2	| TBD |   | |
+| M 6/2	| Guest Speaker: Dr. Lisa Soros |   | |
 | W 6/4 |  | Final project; Wrap up; course evaluations	| |
 | Exam Period | | | |
 | |Nothing scheduled, projects due 6/9 5pm | | |
