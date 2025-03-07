@@ -27,6 +27,6 @@ To achieve the basic learning objectives, you can work through the following, id
     * [Unix/Linux - The vi Editor Tutorial](https://www.tutorialspoint.com/unix/unix-vi-editor.htm) -- a classic-style tutorial from Tutorials Point
 
 ## Checks
-Write down answers to the following and bring them to class:
+Submit answers to the following on Moodle:
 * What are the commands for inserting text, deleting text and quitting out of Vi(m)?
 * What commands in Unix do you think are most important?
