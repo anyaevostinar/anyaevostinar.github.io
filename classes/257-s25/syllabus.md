@@ -36,8 +36,6 @@ Recommended:
 
 I recognize the potential financial burden of additional course fees, supply requirements, and travel costs. If you are in need of assistance to cover course expenses, please speak with me by Friday of Week 1.
 
-Both of these books are available through the library.
-
 **Drop in student hours**:
 
 All in Olin 306/308:

@@ -50,7 +50,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 5/16 | [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
 | **Week 8** | **Refactoring** | | |
 | M 5/19 | [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments](https://docs.google.com/document/d/17oI-pCdvU2ICfR14rQbEbVLrZdhzQvPp4CSt_qmtXNs/edit?usp=sharing) | |
-| W 5/21 | [Team back-end](project-4-backend); [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells | |
+| W 5/21 | [Team back-end](project-4-backend); [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells | Design Improvements and Final Reflection (due 6/9)|
 | F 5/23 | [Code Review 2 Prep](review-2-prep) | [Code review](https://docs.google.com/document/d/14XSNJiFra4qo2RKNFcvgE5eRlLiUNyHS-X55gtiRHjk/edit?usp=sharing) | |
 | **Week 9** | **More Refactoring** | | |
 | M 5/26 | [Classes Prep](classes-prep) | [Slides](), Designing classes | |
@@ -60,6 +60,6 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | M 6/2 | [User Story Prep](user-stories-prep) | [Slides](), [User stories](https://docs.google.com/document/d/10skIpunG7DqVl95JcwhzcgapS85rneG9tflb7XZBRTo/edit?usp=sharing) | |
 | W 6/4 | [Usability Testing Prep](usability-prep) | [Slides](), [Usability testing](https://docs.google.com/document/d/167KzdJLn9OehrfxzPmUA9xB4zunkNrkrBJB40GsDlBk/edit?usp=drive_link), Final project showcase | |
 | **Exam Week** | | |
-| |Nothing scheduled, projects due 6/9 8:30pm (+1 hour grace period) | | |
+| |Nothing scheduled, final project submissions due 6/9 8:30pm (+1 hour grace period) | | |
 | | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
 
