@@ -22,7 +22,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Getting Started** |  | |
 | M 3/31 | [Intro to Software Design Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1WnPY3SFwvPkgFUhUWt5_yYeiLyoN_4-BSbDSUv4mNZ0/edit?usp=sharing), Course overview and discussion|  |
-| W 4/2 | [Agile and Effective Teams Prep](agile-prep) | [Slides](),<br> Development Processes and Getting Started, [start setting up computers](getting-started) |  |
+| W 4/2 | [Agile and Effective Teams Prep](agile-prep) | [Slides](https://docs.google.com/presentation/d/1YZo8-zWXact2-LJYutwCY5qA1w8643E17TTaG-6gjdY/edit?usp=sharing),<br> Development Processes and Getting Started, [start setting up computers](getting-started) |  |
 | F 4/4 | [Unix and Vim Prep](unix-prep) | [Slides](), [Unix Scavenger Hunt](unix-scavenger-hunt) | |
 | **Week 2** | **Project Foundations** | | |
 | M 4/7 | [Data and Team Prep](data-prep) |[Slides](), [Start on Project Proposal](lab-proposal) | [Project Proposal](project-proposal)  | 
@@ -60,6 +60,6 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | M 6/2 | [User Story Prep](user-stories-prep) | [Slides](), [User stories](https://docs.google.com/document/d/10skIpunG7DqVl95JcwhzcgapS85rneG9tflb7XZBRTo/edit?usp=sharing) | |
 | W 6/4 | [Usability Testing Prep](usability-prep) | [Slides](), [Usability testing](https://docs.google.com/document/d/167KzdJLn9OehrfxzPmUA9xB4zunkNrkrBJB40GsDlBk/edit?usp=drive_link), Final project showcase | |
 | **Exam Week** | | |
-|  | Exam Slot  | Optional help time | |
-| [Final project due](project-final) at 5pm | | |
+| |Nothing scheduled, projects due 6/9 8:30pm (+1 hour grace period) | | |
+| | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
 

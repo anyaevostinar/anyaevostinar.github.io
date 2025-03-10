@@ -34,11 +34,11 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 5/2 | None  | 	DE Project help time	| |
 | Week 6 | |  | |
 | M 5/5	| |	Mid-term Break!	| |
-| W 5/7 | [DE project](hw-de) | 	Peer review of DE projects  | |
-| F 5/9 | Encyclopedia first drafts; group preference form	| Project introduction; Peer review of encyclopedia drafts | [Project proposal](project-overview#proposal) |
+| W 5/7 | [DE project](hw-de), group preference form | 	Project introduction;Peer review of DE projects  | [Project proposal](project-overview#proposal)|
+| F 5/9 |  	| Guest Speaker: Dr. Alexander Lalejini  |  |
 | Week 7 | |  | |
-| M 5/12 | Project topic checkin; [Git Prep](git-prep) |   GitHub	| |
-| W 5/14 | |	TBD	 | |
+| M 5/12 | Encyclopedia first drafts;	|Peer review of encyclopedia drafts |
+| W 5/14 | Project topic checkin; [Git Prep](git-prep) |   GitHub | |
 | F 5/16 | Project proposal |	Proposal peer review	| [Final project](https://anyaevostinar.github.io/classes/361-f22/project-overview)  |
 | Week 8 | |  | |
 | M 5/19 | [Data Collection Prep](data-prep)  | [Empirical Data Lab](empirical_data_lab)	| |
@@ -52,5 +52,5 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | M 6/2	| Guest Speaker: Dr. Lisa Soros |   | |
 | W 6/4 |  | Final project; Wrap up; course evaluations	| |
 | Exam Period | | | |
-| |Nothing scheduled, projects due 6/9 5pm | | |
+| |Nothing scheduled, projects due 6/9 8:30pm (+1 hour grace period) | | |
 | | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
