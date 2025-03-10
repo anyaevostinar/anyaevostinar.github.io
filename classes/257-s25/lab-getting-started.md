@@ -80,7 +80,7 @@ You know how when you are working on a programming project with a partner and on
 1. If you already have a GitHub account and you want to use it for 257, great, just make sure that your Carleton email address is associated with it (Settings->Emails).
     1. If you don't have one or want a new one, go to [https://github.com/](https://github.com/) and use your Carleton email address to make it. I strongly recommend you pick a name that you'd be comfortable putting on a resume.
 2. Sign up for GitHub's [Student Pack](https://education.github.com/discount_requests/application?type=student) if you haven't already
-3. Create a []"classic Personal Access Token"](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) (**not a fine-grained PAT**, they are still in beta). Save your **classic** PAT somewhere safe. This will serve as your password when downloading your repositories for class. Some notes:
+3. Create a ["classic Personal Access Token"](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) (**not a fine-grained PAT**, they are still in beta). Save your **classic** PAT somewhere safe. This will serve as your password when downloading your repositories for class. Some notes:
     1. Set the expiration date past the end of term
     2. In the "Select the scopes", just check "repo", nothing else needed
     3. Remember to copy and paste it into a note on your local machine!
