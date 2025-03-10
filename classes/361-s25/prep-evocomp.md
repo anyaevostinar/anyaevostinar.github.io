@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Evolutionary Computation Preparation
-permalink: /classes/361-f22/evocomp-prep
+permalink: /classes/361-s25/evocomp-prep
 ---
 
 ## Overview
@@ -20,6 +20,7 @@ After class, you should be able to:
 * Write a genetic algorithm program to solve a simple problem
 
 ## Reading
+You can read the following to achieve the basic learning objectives:
 * Complexity Ch 9 (you might not need to read the entire example)
 
 ## Checks

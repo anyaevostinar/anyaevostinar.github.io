@@ -35,10 +35,10 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 4** | **Flask Component** | | |
 | M 4/21 | [Command Line project due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](), [Intro to Flask](flask-intro) | [Flask app project](project-2-flask), [Individual component](project-2-ind) |
 | W 4/23 | [Code Review Prep](code-review-prep) | [Slides](), Code review | |
-| F 4/25 | [Individual component](project-2-ind), [Intro Databases Prep](intro-database-prep) | [Slides](), Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend)|
+| F 4/25 | [Individual component](project-2-ind), [Intro Databases Prep](intro-database-prep) | [Slides](), Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend), Midterm Reflection|
 | **Week 5** | **Database Component** | | |
 | M 4/28 | [Flask app](project-2-flask), No prep |[Slides](), [Database Connections and Relations](psycopg2)  | |
-| W 4/30 | [Individual back-end](project-4-ind); [Database Normalization](normalization-prep) | [Slides](), More with Databases | |
+| W 4/30 | [Individual back-end](project-4-ind); [Database Normalization](normalization-prep) | [Slides](), More with Databases |  |
 | F 5/2 | [Usability Prep](web-usability-prep) | [Slides](), Webpage analysis | [Individual front-end](project-3-ind), [Team front-end](project-3-front-end)|
 | **Week 6** | **Front-End Component** | | |
 | M 5/5 | Midterm break! | | |
