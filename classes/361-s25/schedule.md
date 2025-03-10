@@ -4,6 +4,8 @@ title: CS361 Artificial Life and Digital Evolution S25 Schedule
 permalink: /classes/361-s25/schedule
 ---
 
+[Syllabus](https://anyaevostinar.github.io/classes/361-s25/syllabus)
+
 This is a rough schedule of topics for each day and the release and due dates for each assignment.
 
 **Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses.
