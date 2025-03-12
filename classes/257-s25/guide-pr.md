@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Finding PR Feedback Guide
-permalink: /classes/257-f23/pr-guide
+permalink: /classes/257-s25/pr-guide
 ---
 
 Some feedback is too long to put into Moodle comments, so it will be on your Feedback PR on the associated repository.
