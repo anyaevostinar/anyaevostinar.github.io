@@ -17,6 +17,8 @@ You should refer to the [TDD Lab](tdd) for help on this assignment.
 You should work individually on this deliverable.
 You can get conceptual help from your team and others, however what you submit must be all your own work.
 
+Like all assignments, you are allowed to use GitHub Copilot and Google Gemini when working on this. However, in my experience, Copilot will be the worst kind of team member by pretending it knows the answers but being off in subtle or not-so-subtle ways. Make sure to double check its work!
+
 ## Due Date
 
 The this deliverable is due Monday April 14th at 10pm on your individual git repo.

@@ -38,13 +38,13 @@ def main():
     load_data()
     if len(sys.argv) != 3:
         print("Usage: python3 basic_cl.py row column")
-        exit()
+        sys.exit()
     try:
         row = int(sys.argv[1])
         column = int(sys.argv[2])
     except:
         print("Usage: python3 basic_cl.py row column")
-        exit()
+        sys.exit()
     if 0 <= row <= 3 and 0 <= column <= 3:
         print(get_cell(row, column))
     else:

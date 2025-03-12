@@ -23,7 +23,8 @@ After class, you should be able to:
 To achieve the basic learning objectives, you should read the following:
 * Read the Wikipedia article on [Test-Driven Development (TDD)](http://en.wikipedia.org/wiki/Test-driven_development). The core idea here is very simple, but as you'll see from the Wikipedia article, it has accumulated a lot of formalism. Read from the beginning up through the "Limitations" section. 
 * [Getting Started with Testing in Python](https://realpython.com/python-testing/). Read up to but **not including** Testing for Web Frameworks like Django and Flask.
-* Optional: Clean Code Ch 9 - goes more into specific tips from the pros and 'war stories'
+* [Professionalism and Test-Driven Development](https://www.computer.org/csdl/magazine/so/2007/03/s3032/13rRUyYBleZ) by Robert C. Martin
+* Optional: Clean Code Ch 9 - goes more into specific tips
 
 ## Checks
 Write down answers to the following and bring them to class:

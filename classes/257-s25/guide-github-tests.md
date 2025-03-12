@@ -24,3 +24,5 @@ Some of your deliverables will have GitHub "Actions" set up to automatically tes
 ![Screenshot of action output](/classes/257-s25/test-screenshot4.png)
 
 5. Read the information in the Traceback carefully, it likely points to exactly the difference between your test and the correct output. If you aren't sure how to fix it, reach out for help!
+
+6. Note that you can also look at the results of "Coverage report" to see how much of the production code you are testing at a basic level, i.e. is that code even run when the tests run.
