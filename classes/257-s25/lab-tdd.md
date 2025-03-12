@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Test-Driven Development
-permalink: /classes/257-f23/tdd
+permalink: /classes/257-s25/tdd
 ---
 
 ## Goal
@@ -15,7 +15,7 @@ If you haven't finished the Git setup from the [previous lab](lab-git), go do th
 In this lab, you'll practice test-driven development to get started on your [first individual deliverable](project-1-ind).
 
 ## Step 1: A First Failing Test
-* Accept the assignment by clicking on the `Individual Deliverable 1 Assignment` on Moodle and clone down the repository.
+* Accept the assignment by clicking on the `Individual Deliverable - Tests Assignment` on Moodle and clone down the repository.
 
 In TDD, you always want to start with a failing test: 
 * In your Individual Deliverable 1 repository, navigate to the `Tests` subdirectory
@@ -41,7 +41,7 @@ To get to your first real failing test case, you'll need to make a tester class 
 class TestFUNCTION_NAME(unittest.TestCase):
     def setUp(self):
          load_data() # Loads data before each test 
-         
+
     def test_A_DESCRIPTIVE_NAME(self):
         """ A DESCRIPTIVE DOCSTRING """
         # test one of the functions
