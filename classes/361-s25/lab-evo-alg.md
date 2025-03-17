@@ -1,17 +1,19 @@
 ---
 layout: page
 title: First Evolutionary Algorithm
-permalink: /classes/361-f22/evo_alg_lab
+permalink: /classes/361-s25/evo_alg_lab
 ---
 
 ## Goals
 To learn about evolutionary algorithms by making your own. Also to get more C++ practice and test out GitHub Classroom.
 
+Work individually on this assignment, though you are encouraged to ask your neighbors for help as well as see if Copilot is helpful.
+
 ## Setup
 1. Open the Evolutionary Algorithm classroom assignment (linked on Moodle), which will make a GitHub repository with starter code.
 
-2. Open Terminal and clone your repository (if neither of you is sure how to do this, wave for help):
-```
+2. Open Terminal and clone your repository (if you aren't sure how to do this, wave for help):
+```bash
 git clone <your repository link>
 ```
 
@@ -43,7 +45,7 @@ b. As you learned, evolution doesn't occur at the level of the individual, and s
 In `main`, create an `emp::vector<Organism>` called population.
 
 c. Then fill your population with 100 `Organism`s with all the same starting behavior value. You add an item to a vector like this:
-```
+```cpp
 population.push_back(*new Organism(0.5));
 ```
 
@@ -66,7 +68,7 @@ We also need competition and time for our organisms.
 a. In `main` create a for-loop that loops 100 times, which we'll call 'updates'. In more complicated programs, organisms would do some behavior every update, but currently they don't actually do anything.
 
 b. To create competition, we need to compare the organisms' behavior values and find the best. You can loop through Empirical vectors easily like so:
-```
+```cpp
 for(Organism j : population) {
   ...
 }
@@ -77,7 +79,7 @@ Loop through every organism in the population and find the organism with the max
 c. Once you find the organism with the maximum behavior value, call its reproduce method and save that new organism.
 
 d. We don't want to just add the offspring to the end of the vector since then the population would just grow and there wouldn't actually be competition. For evolution to occur, organisms must die. You could go through again and find the minimum behavior value organism, but the first organism in the population will be fine for the moment:
-```
+```cpp
 population[0] = *new_org; //or whatever you named your new organism
 ```
 
@@ -87,7 +89,7 @@ e. Print out the size of your population using the `.size()` method after runnin
 If we left things there, we couldn't get evolution because all your organisms are the same and reproducing clones. To introduce variation, we need to be able to mutate the organisms. (We'll be focusing on a single organism reproducing 'asexually' for the most part in this class to keep things simple.)
 
 a. To mutate organisms, you'll need access to randomness. C++ has built-in randomness of course, but Empirical provides useful tools for this as well. In `main`, create a random number generator like so:
-```
+```cpp
 emp::Random random(1); //create an object of type emp::Random called random
 //and pass 1 as an argument to its constructor
 //this is c++ shorthand for emp::Random random = *new emp::Random(1);
@@ -98,7 +100,7 @@ b. Now create a function in your `Organism` class called `mutate` that doesn't r
 c. There are a whole lot of ways of mutating organisms and whole dissertations have been devoted to what the 'best' way is. A generally good way to mutate a value that is of type double is to pull a random number from a [normal distribution/bell curve](https://en.wikipedia.org/wiki/Normal_distribution) that is centered at 0. This means that you are just as likely to mutate up as down and mutations will generally be small but have the chance at being large, which is fairly biologically accurate.
 
 This is such a common task that Empirical provides a function for it:
-```
+```cpp
 random.GetRandNormal(0.0, 0.02); //pull a random number from a normal
 //distribution with a mean of 0 and a standard deviation of 0.002.
 ```
@@ -107,7 +109,7 @@ Add the random number you get to the organism's `behavior` value.
 d. We probably want to use our new-found power in several places. The most critical is in `reproduce`. Add an argument to `reproduce` that is of type `emp::Random` and pass the `random` that you made in `main` to `reproduce` when you call it. 
 
 e. Within reproduce, mutate the offspring after you create it and before returning it. Remember that in C++, you use the `->` syntax to call the functions of pointers:
-```
+```cpp
 offspring->mutate(random);
 ```
 
@@ -119,7 +121,7 @@ Congrats, you have made your first functional evolutionary algorithm!
 It is really not ideal to always be only overwriting the first organism in the population, so let's fix that really quick.
 
 Empirical has a function for getting a random unsigned (ie always positive) integer:
-```
+```cpp
 int overwrite = random.GetUInt(0,100);
 population[overwrite] = *new_org;
 ```

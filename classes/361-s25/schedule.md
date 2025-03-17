@@ -17,7 +17,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Week 1 | |  | |
 | M 3/31 | [What is AL Prep](intro-prep) | What is (artificial) life? [Slides](https://docs.google.com/presentation/d/1_dQ3RyPPnzJqQV0fkyZYafqOjtEtY628AK-yYRQZat8/edit?usp=sharing) |  |
 | W 4/2 | [C++ Prep](cpp-prep)|	[Getting Started and C++](cpp_lab), [Slides](https://docs.google.com/presentation/d/175rsm5y-LWGS6yd6xJFBrIUdEQcS7aoPWyFQnoVWDSY/edit?usp=sharing) |	|
-| F 4/4 |	[Evolutionary Algorithms](evocomp-prep)	| [Evolutionary Algorithm Lab](evo_alg_lab)  |	 |
+| F 4/4 |	[Evolutionary Algorithms](evocomp-prep)	| [Evolutionary Algorithm Lab](evo_alg_lab), [Slides](https://docs.google.com/presentation/d/1kSe_rQa_9mSOZ-J-JmpGp0R_XQ4ZmSFPdR2pkcYFehs/edit?usp=sharing)  |	 |
 | Week 2 | |  | |
 | M 4/7 |	| Finishing EA Lab | |
 | W 4/9 | [Cellular Automata Prep](ca-intro-prep)	| [Finding Neighbors](nf-lab)  | [CA project](hw-ca) |
