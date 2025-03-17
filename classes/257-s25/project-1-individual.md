@@ -100,17 +100,19 @@ The criteria for "Proficiency" and "Exemplary" are below. I will put your grade 
   - [ ] The tests all pass
   - [ ] The directory structure and filenames are as specified
   - [ ] The tests run with production code that has the signature specified above
-  - [ ] There is one standard unit test for each of the `get` methods (4 tests total)
+  - [ ] One standard unit test for each of the `get` methods (4 tests total)
+  - [ ] One standard unit test for the command line method `main`
+  - [ ] At least one edge case for `get_row_by_title`, `get_cell`, and `main` (docstring should mention they are edge cases and make clear what edge they are testing)
 * Design:
   - [ ] Tests have [docstrings](https://peps.python.org/pep-0257/) describing what they are testing
+  - [ ] Style - Proficiency test passes
 
 ### Exemplary
 - [ ] All the Proficiency criteria are met
 * Functionality:
-  - [ ] One standard unit test for the command line method `main`
-  - [ ] At least one edge case for `get_row_by_title`, `get_cell`, and `main` (docstring should mention they are edge cases and make clear what edge they are testing)
-  - [ ] At least one of the edge cases is for invalid input (e.g. index out of bounds, type errors)
+  - [ ] Coverage above 90%. See [this guide](test-guide) (step 6) for how to see your coverage.
 * Design:
+  - [ ] Style - Exemplary test passes
   - [ ] Method [docstrings](https://peps.python.org/pep-0257/) all provide the required information (i.e. functionality, arguments if applicable)
   - [ ] There is no unnecessary duplicated code (e.g. please use helper functions, loops, etc to reduce duplicated code)
 
@@ -132,3 +134,7 @@ Even though the data values are 1-indexed, you should still use Python's typical
 * It says my tests are failing, but how do I see which one?
 
 See my guide on understanding [GitHub Actions and tests](test-guide).
+
+* I'm not at high enough coverage, but how can I know what to add without seeing the production code?
+
+It is an unusual challenge to hit high coverage without seeing production code, but I believe in you. By testing just standard cases and reasonable edge cases (invalid input to the functions and main, no input at all, etc.), I was able to hit 98% coverage. If you are really stuck, feel free to reach out for a hint.
