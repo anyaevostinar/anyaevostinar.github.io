@@ -97,7 +97,6 @@ The criteria for "Proficiency" and "Exemplary" are below. I will put your grade 
 
 ### Proficiency
 * Functionality:
-  - [ ] The tests all pass
   - [ ] The directory structure and filenames are as specified
   - [ ] The tests run with production code that has the signature specified above
   - [ ] One standard unit test for each of the `get` methods (4 tests total)
