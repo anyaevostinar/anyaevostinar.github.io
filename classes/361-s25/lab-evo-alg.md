@@ -95,7 +95,7 @@ emp::Random random(1); //create an object of type emp::Random called random
 //this is c++ shorthand for emp::Random random = *new emp::Random(1);
 ```
 
-b. Now create a function in your `Organism` class called `mutate` that doesn't return anything but receives an `emp::Random` as input. 
+b. Now create a function in your `Organism` class called `mutate` that doesn't return anything but receives an `emp::Random` as input. (Why do you think we are passing it instead of just making another one?)
 
 c. There are a whole lot of ways of mutating organisms and whole dissertations have been devoted to what the 'best' way is. A generally good way to mutate a value that is of type double is to pull a random number from a [normal distribution/bell curve](https://en.wikipedia.org/wiki/Normal_distribution) that is centered at 0. This means that you are just as likely to mutate up as down and mutations will generally be small but have the chance at being large, which is fairly biologically accurate.
 
