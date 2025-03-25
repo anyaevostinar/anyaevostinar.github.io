@@ -25,7 +25,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 4/2 | [Agile and Effective Teams Prep](agile-prep) | [Slides](https://docs.google.com/presentation/d/1YZo8-zWXact2-LJYutwCY5qA1w8643E17TTaG-6gjdY/edit?usp=sharing),<br> Development Processes and Getting Started, [start setting up computers](getting-started) |  |
 | F 4/4 | [Unix and Vim Prep](unix-prep) | [Slides](), [Unix Scavenger Hunt](unix-scavenger-hunt) | |
 | **Week 2** | **Project Foundations** | | |
-| M 4/7 | [Data and Team Prep](data-prep) |[Slides](), [Start on Project Proposal](lab-proposal) | [Project Proposal](project-proposal)  | 
+| M 4/7 | [Data and Team Prep](data-prep) |[Slides](https://docs.google.com/presentation/d/1fKEwC6sWXF5k5m1qVVtHMG2OoYyJpuGtoQmWvaW6goY/edit?usp=sharing), [Start on Project Proposal](lab-proposal) | [Project Proposal](project-proposal)  | 
 | W 4/9 | [Git Prep](git-prep) | [Slides](), [Git Practice Lab](lab-git) | |
 | F 4/11 | [TDD Prep](tdd-prep) | [Slides](), [TDD Lab](tdd)  |[Individual - Tests](project-1-ind) |
 | **Week 3** | **Core Functionality** | | |

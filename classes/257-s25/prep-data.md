@@ -13,6 +13,7 @@ Before class, you should be able to:
 * Identify a few datasets that you find interesting
 * Cite the source of a dataset that you find
 * Explain what the team contract will need to contain
+* Identify some expectations you would like to have of your teammates
 
 ## Advanced Learning Objectives
 After class, you should be able to:
@@ -30,7 +31,7 @@ To achieve the basic learning objectives, you should read the following sections
 You should also read the [Team Proposal assignment](project-proposal) and start thinking about what you would want in your team contract.
 
 ## Checks
-Write down answers to the following questions and bring them to class:
+Submit answers to the following on Moodle:
 * What are 2-3 general data categories or specific datasets that you'd be interested in working with for your team project?
 * What are your goals (currently) for the project experience?
 * What strengths are you bringing to the project?
