@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cellular Automata 2 Preparation
-permalink: /classes/361-f22/ca-2-prep
+permalink: /classes/361-s25/ca-2-prep
 ---
 
 ## Overview
@@ -10,7 +10,6 @@ Today's preparation is focused on finding inspiration for something more complex
 
 ## Basic Learning Objectives
 Before class, you should be able to:
-* Explain one CA pattern other than the glider
 * Explain at a high-level how modern CA models have moved beyond discrete cellular automata
 
 ## Advanced Learning Objectives
@@ -19,5 +18,13 @@ After class, you should be able to:
 * Start on making a continuous cellular automata
 
 ## Resources
-* 3.1 of [Biological Bits](https://users.monash.edu/~aland/BiologicalBits.html) - this is a very short free textbook; if you have Apple devices, you can get the iBook free, otherwise the PDF is linked on the page as well through ResearchGate. The [Game of Life widget](https://users.monash.edu/~aland/BiologicalBits/Life.wdgt/) provided through the book has several examples of other patterns
+The following are resources that I think will help you achieve the basic learning objectives. Remember that you can also interact with [Gemini](https://gemini.google.com/app) but you should check the answers provided.
+
 * [Encyclopedia of Artificial Life Article on Cellular Automata](https://alife.org/encyclopedia/soft-artificial-life/cellular-automata/)
+* [Growing Neural Cellular Automata](https://distill.pub/2020/growing-ca/) - don't worry if you don't have the machine learning background to understand exactly how they trained the rule set, just focus on how they built upon the basic idea of a CA
+* [Lenia Resources](https://chakazul.github.io/lenia.html) - lots of videos and additional pages linked from here
+
+## Checks
+Submit answers to the following on Moodle:
+* How is the Lenia system different than a traditional CA?
+* How can CA's be expanded to "grow" and "heal"?

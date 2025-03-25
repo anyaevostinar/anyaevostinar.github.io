@@ -19,16 +19,16 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 4/2 | [C++ Prep](cpp-prep)|	[Getting Started and C++](cpp_lab), [Slides](https://docs.google.com/presentation/d/175rsm5y-LWGS6yd6xJFBrIUdEQcS7aoPWyFQnoVWDSY/edit?usp=sharing) |	|
 | F 4/4 |	[Evolutionary Algorithms](evocomp-prep)	| [Evolutionary Algorithm Lab](evo_alg_lab), [Slides](https://docs.google.com/presentation/d/1kSe_rQa_9mSOZ-J-JmpGp0R_XQ4ZmSFPdR2pkcYFehs/edit?usp=sharing)  |	 |
 | Week 2 | |  | |
-| M 4/7 |	| Finishing EA Lab | |
+| M 4/7 | Read about [CA project](hw-ca), Week 2 Checkin	| Finishing EA Lab | |
 | W 4/9 | [Cellular Automata Prep](ca-intro-prep)	| [Finding Neighbors](nf-lab)  | [CA project](hw-ca) |
 | F 4/11 | [CA 2 Prep](ca-2-prep)	| [Gradient Lab](gradient-lab)	| |
 | Week 3 | |  | |
-| M 4/14 | None | Peer review of CA projects|  |
+| M 4/14 | Inheritance Prep | Peer review of CA projects, [Inheritance in C++](inheritance_lab) |  |
 | W 4/16 |	[Ecosystem Models Prep](eco-models-prep), [CA project](hw-ca) | [Empirical World Intro](empirical_intro_lab)	| [AE project](hw-ae) |
 | F 4/18 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab	 |  |
 | Week 4 | | | |
-| M 4/21 |  | Peer review of AE projects | [Encyclopedia assignment](encyclopedia-hw) |
-| W 4/23 |	| [Inheritance in C++](inheritance_lab); worktime | |  
+| M 4/21 | Avida-Ed Prep | Peer review of AE projects; Avida-Ed | [Encyclopedia assignment](encyclopedia-hw) |
+| W 4/23 |[Data Collection Prep](data-prep)	| [Empirical Data Lab](empirical_data_lab) | |  
 | F 4/25 | [AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) | [Signal-GP Lite Lab](sgplite_lab) | [DE project](hw-de)  |
 | Week 5 | |  | |
 | M 4/28 | [Configuration Preparation](config_intro)| [Using Empirical Configuration](emp_config_lab) | |  |
@@ -43,7 +43,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 5/14 | Project topic checkin; [Git Prep](git-prep) |   GitHub | |
 | F 5/16 | Project proposal |	Proposal peer review	| [Final project](https://anyaevostinar.github.io/classes/361-f22/project-overview)  |
 | Week 8 | |  | |
-| M 5/19 | [Data Collection Prep](data-prep)  | [Empirical Data Lab](empirical_data_lab)	| |
+| M 5/19 |   | TBD 	| |
 | W 5/21 | Encyclopedia second drafts | [Graphing Data](r-lab)		 | |	
 | F 5/23 | 	| TBD |	|
 | Week 9 | |  | |
