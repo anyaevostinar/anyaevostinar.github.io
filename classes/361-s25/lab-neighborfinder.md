@@ -41,7 +41,7 @@ source ./emsdk_env.sh
 ./compile-run.sh
 ```
 
-You will see just a blank page currently if you go to [http://[::]:8000/](http://[::]:8000/), but soon you'll be putting content onto that page!
+You will see just a blank page currently if you go to [http://localhost:8000/](http://localhost:8000/), but soon you'll be putting content onto that page!
 
 ## Exercise 1
 

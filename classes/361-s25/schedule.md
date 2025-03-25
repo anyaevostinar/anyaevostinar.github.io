@@ -20,8 +20,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 4/4 |	[Evolutionary Algorithms](evocomp-prep)	| [Evolutionary Algorithm Lab](evo_alg_lab), [Slides](https://docs.google.com/presentation/d/1kSe_rQa_9mSOZ-J-JmpGp0R_XQ4ZmSFPdR2pkcYFehs/edit?usp=sharing)  |	 |
 | Week 2 | |  | |
 | M 4/7 | Read about [CA project](hw-ca), Week 2 Checkin	| Finishing EA Lab, [Slides](https://docs.google.com/presentation/d/1K6XTreah0xjEQaeLB16LgNH8zno9JDrGMAb9erMSQ_w/edit?usp=sharing) | |
-| W 4/9 | [Cellular Automata Prep](ca-intro-prep)	| [Finding Neighbors](nf-lab)  | [CA project](hw-ca) |
-| F 4/11 | [CA 2 Prep](ca-2-prep)	| [Gradient Lab](gradient-lab)	| |
+| W 4/9 | [Cellular Automata Prep](ca-intro-prep)	| [Finding Neighbors](nf-lab), [Slides](https://docs.google.com/presentation/d/1PuEkv5l5tjz_a15iilrbIj-10AgxviqYcpH3BkGwcZw/edit?usp=sharing)  | [CA project](hw-ca) |
+| F 4/11 | [CA 2 Prep](ca-2-prep)	| [Gradient Lab](gradient-lab), [Slides](https://docs.google.com/presentation/d/1l5dLjabav9RBcpgAQnqinVFzbAdSEQ2oWo4xizMXq40/edit?usp=sharing)	| |
 | Week 3 | |  | |
 | M 4/14 | Inheritance Prep | Peer review of CA projects, [Inheritance in C++](inheritance_lab) |  |
 | W 4/16 |	[Ecosystem Models Prep](eco-models-prep), [CA project](hw-ca) | [Empirical World Intro](empirical_intro_lab)	| [AE project](hw-ae) |
