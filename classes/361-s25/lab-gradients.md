@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Gradient Lab
-permalink: /classes/361-f22/gradient-lab
+permalink: /classes/361-s25/gradient-lab
 ---
 
 ## Goals
@@ -48,13 +48,13 @@ This time, your code will go in `GradientAnimate.cpp` but it is completely blank
 
 1. Whenever you make a web GUI with Empirical, you'll need to include the two files you've already seen:
 
-```
+```cpp
 #include "emp/web/Animate.hpp"
 #include "emp/web/web.hpp"
 ```
 
 2. You'll also always need a `Document` as a global variable:
-```
+```cpp
 emp::web::Document doc{"target"};
 ```
 
@@ -70,7 +70,7 @@ emp::web::Document doc{"target"};
 Also send your canvas to your document with the `<<`.
 
 2. Since we'll be aiming to animate this time, you'll want some buttons to control turning the animation on and going one step at a time. Fortunately, Empirical provides built-in buttons for just those purposes that are already hooked up to control the animation once you put them in your document:
-```
+```cpp
 doc << GetToggleButton("Toggle");
 doc << GetStepButton("Step");
 ```
@@ -78,7 +78,7 @@ doc << GetStepButton("Step");
 3. Next you need a `DoFrame` method, which is what is called at each step of the animation. This is a `void` method that takes no parameters.
 
 4. In your `DoFrame` method, you will eventually draw some shapes, but to get a basic idea of how it works, create a instance variable (up above the constructor) to just hold a number. In `DoFrame`, first clear the canvas with `canvas.Clear();`, then increment your number variable. Then add a `Text` object to your canvas with your number:
-```
+```cpp
 canvas.Text(*new emp::Point(10,10), std::to_string(number));
 ```
 
@@ -92,7 +92,7 @@ We'll focus on HSV, since it makes greyscale easier to depict, but you could als
 
 1. Get rid of the incrementing number and instead draw a rectangle on your canvas with the color specified as a shade of grey using HSV:
 
-    ```
+    ```cpp
     canvas.Rect(10, 10, 10, 10, emp::ColorHSV(0, 0, 0.5), "black");
     ```
 
@@ -106,13 +106,13 @@ Time to make a proper grid of cells that you can have change over time.
 
 1. Create an instance variable that is a vector of vectors of floats:
 
-    ```
+    ```cpp
     std::vector<std::vector<float>> cells;
     ```
 
 2. In the constructor for you animator, set the number of cells you want in the width (`num_w_boxes` in the example) and height (`num_h_boxes` in the example) and set them all to start with 0:
 
-    ```
+    ```cpp
     cells.resize(num_w_boxes, std::vector<float>(num_h_boxes, 0));
     ```
 

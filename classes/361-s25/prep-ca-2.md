@@ -21,6 +21,7 @@ After class, you should be able to:
 The following are resources that I think will help you achieve the basic learning objectives. Remember that you can also interact with [Gemini](https://gemini.google.com/app) but you should check the answers provided.
 
 * [Encyclopedia of Artificial Life Article on Cellular Automata](https://alife.org/encyclopedia/soft-artificial-life/cellular-automata/)
+    * The embedded video is currently in French for some reason, [here is another one](https://www.youtube.com/watch?v=6kiBYjvyojQ)
 * [Growing Neural Cellular Automata](https://distill.pub/2020/growing-ca/) - don't worry if you don't have the machine learning background to understand exactly how they trained the rule set, just focus on how they built upon the basic idea of a CA
 * [Lenia Resources](https://chakazul.github.io/lenia.html) - lots of videos and additional pages linked from here
 

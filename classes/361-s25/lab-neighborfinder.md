@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Neighbor Finder
-permalink: /classes/361-f22/nf-lab
+permalink: /classes/361-s25/nf-lab
 ---
 
 ## Goals
@@ -10,7 +10,7 @@ Get familiar with using Empirical for visualizations and working with toroidal n
 ## Setup
 (A lot of this is similar/identical to how you will set things up for your CA homework.)
 
-1. Open the Neighbor Finder Github classroom assignment (linked on Moodle), which will make a GitHub repository with starter code.
+1. Open the Neighbor Finder Classroom Link (linked on Moodle), which will make a GitHub repository with starter code.
 
 2. Open Terminal and clone your repository:
 ```
@@ -48,21 +48,21 @@ You will see just a blank page currently if you go to [http://[::]:8000/](http:/
 First look through the starter code provided in `NFAnimate.cpp`.
 This is the file that you'll be making changes to.
 
-```
+```cpp
 #include "emp/web/Animate.hpp"
 #include "emp/web/web.hpp"
 ```
 
 These two lines are including files from the Empirical library that provide a lot of functionality for making animations in the web browser.
 
-```
+```cpp
 emp::web::Document doc{"target"};
 ```
 
 This is a bit of strange syntax, but it is making an object of type `emp::web::Document` called `doc` and passing the constructor the string `"target"` as an argument.
 Using the `{}` to pass actual parameters is a shorthand that C++ allows.
 
-```
+```cpp
 class NFAnimator : public emp::web::Animate {
 
 };
@@ -71,7 +71,7 @@ class NFAnimator : public emp::web::Animate {
 This is declaring your new class `NFAnimator`, which inherits from `emp::web::Animate`.
 Within those curly braces is where you'll be defining your code.
 
-```
+```cpp
 NFAnimator animator;
 
 int main() {
@@ -87,7 +87,7 @@ Even though you haven't defined the `Step` method, it is inherited from the pare
 There are a couple of things that you'll need to define to get your Neighbor-finder animation working. 
 
 1. First you need to create an *instance variable* in your `NFAnimator` class that will be your canvas:
-    ```
+    ```cpp
     emp::web::Canvas canvas{100, 100, "canvas"};
     ```
 
@@ -95,7 +95,7 @@ There are a couple of things that you'll need to define to get your Neighbor-fin
 
 2. Next, you need to define a constructor for your class and have your `canvas` placed into your `doc`:
 
-    ```
+    ```cpp
     public: 
 
         NFAnimator() {
@@ -106,7 +106,7 @@ There are a couple of things that you'll need to define to get your Neighbor-fin
     You probably recognize the `<<` from how you send things to standard output and the Empirical `Document` class supports the same syntax. Anytime you want to add things to the webpage that you are making, you will use this syntax.
 
 3. To actually see that something is showing up on your webpage, send a quick message to your `doc` after you send the `canvas`:
-    ```
+    ```cpp
     doc << "Hi";
     ```
 
@@ -118,7 +118,7 @@ Time to make a grid of cells! Or just one cell to start...
 
 1. Empirical makes it easy to draw [your typical shapes](https://empirical.readthedocs.io/en/latest/api/classemp_1_1web_1_1Canvas.html#exhale-class-classemp-1-1web-1-1canvas) on the canvas.
 To draw a rectangle, you just need to call `Canvas`' `Rect` method:
-    ```
+    ```cpp
     canvas.Rect(0, 0, 10, 10, "white", "black");
     ```
 
@@ -126,7 +126,7 @@ To draw a rectangle, you just need to call `Canvas`' `Rect` method:
     All the typical colors are supported, so feel free to play around making a more colorful rectangle!
 
 2. To get a grid of squares, you'll need some nested for loops and to think about how the upper left corner of each square is going to be positioned. 
-Remember that the syntax for a for loop in C++ is the same as in Java: `for(int x = 0; x < 10; x++) {}`.
+Remember that the syntax for a for loop in C++ is the same as in Java: `for(int x = 0; x < 10; x++) {}`. (Remember also that you can use Copilot to help, but double check what it suggests!)
 See if you can get a grid of cells to show up!
 
 ## Exercise 4
@@ -137,21 +137,37 @@ Create a new method `void FindNeighbors(x, y)` that:
 
 I recommend you get it working for a cell that is in the middle of your grid first and then figure out how you need to change your code to work for cells along the edge of your grid.
 Remember that it's fine to make an inelegant solution first (that probably uses a bunch of if-else statements) and then think about how to revise it to be more elegant.
+This is a place where writing a clear comment and leaning on Copilot can be actually quite helpful, so give it a try!
 
 If along the way, you wish you could see the x,y position of each cell, use Empirical's text drawing method:
-```
+```cpp
 canvas.CenterText(x+5, y+5, std::to_string(x)+","+std::to_string(y), "black", "black");
 ```
 
 You may also want to use modulus (you can solve the problem with a bunch of nested conditionals, and that's fine, but you can make it more elegant using modulus). [C++ actually does modulus weirdly with negative numbers](https://www.geeksforgeeks.org/modulus-on-negative-numbers/), so you should use Empirical's modulus instead:
-```
+```cpp
 #include "emp/math/math.hpp"
 
 emp::Mod(x, y); //Will do x % y, handling negative numbers as you would expect
 ```
 
 ## Wrapping up
-Make sure to push your code to the remote repository (`git add *`, `git commit -m "message about your code"`, `git push`) both so that I can see how far everyone got and so you and your partner will continue to have access to the code.
+Make sure to push your code to the remote repository (`git add *`, `git commit -m "message about your code"`, `git push`) both so that I can see how far everyone got and so you will continue to have access to the code.
 
 ## Extra
-If you finish early, look at the buttons and `DoFrame` method from the starter code for the CA assignment and see if you can incorporate an animation into your current visualization. For example, have the focal cell and each neighbor light up one at a time.
+If you finish early, see if you can incorporate an animation into your current visualization. For example, have the focal cell and each neighbor light up one at a time.
+
+To send buttons to your document:
+    ```cpp
+    doc << GetToggleButton("Toggle");
+    doc << GetStepButton("Step");
+    ```
+
+And to specify what should happen in each animation frame, you need to override and define your own `DoFrame` method:
+
+```cpp
+void DoFrame() override {
+        canvas.Clear();
+        //Draw something new!
+}
+```

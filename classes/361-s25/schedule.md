@@ -19,7 +19,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 4/2 | [C++ Prep](cpp-prep)|	[Getting Started and C++](cpp_lab), [Slides](https://docs.google.com/presentation/d/175rsm5y-LWGS6yd6xJFBrIUdEQcS7aoPWyFQnoVWDSY/edit?usp=sharing) |	|
 | F 4/4 |	[Evolutionary Algorithms](evocomp-prep)	| [Evolutionary Algorithm Lab](evo_alg_lab), [Slides](https://docs.google.com/presentation/d/1kSe_rQa_9mSOZ-J-JmpGp0R_XQ4ZmSFPdR2pkcYFehs/edit?usp=sharing)  |	 |
 | Week 2 | |  | |
-| M 4/7 | Read about [CA project](hw-ca), Week 2 Checkin	| Finishing EA Lab | |
+| M 4/7 | Read about [CA project](hw-ca), Week 2 Checkin	| Finishing EA Lab, [Slides](https://docs.google.com/presentation/d/1K6XTreah0xjEQaeLB16LgNH8zno9JDrGMAb9erMSQ_w/edit?usp=sharing) | |
 | W 4/9 | [Cellular Automata Prep](ca-intro-prep)	| [Finding Neighbors](nf-lab)  | [CA project](hw-ca) |
 | F 4/11 | [CA 2 Prep](ca-2-prep)	| [Gradient Lab](gradient-lab)	| |
 | Week 3 | |  | |
