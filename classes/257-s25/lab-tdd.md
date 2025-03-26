@@ -99,6 +99,10 @@ python3 -m coverage report -m
 
 This will tell you what percentage of lines of the file were called during the tests and which lines weren't called. You should aim for 100% coverage in this lab.
 
+## Step 6: Push to Classroom
+
+You should now (if you hadn't already) push your code to the remote repository. I have it set up to automatically run your tests, check style, and check coverage, just like it will for the deliverables. Make sure that you understand the results that you are getting and check out the [GitHub Tests](test-guide) and [PR](pr-guide) guides.
+
 ## Start on ID1
 You are now all set to start on [Individual Deliverable - Tests](project-1-ind)
 
