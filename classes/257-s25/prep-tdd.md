@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Test-Driven Development Prep
-permalink: /classes/257-f23/tdd-prep
+permalink: /classes/257-s25/tdd-prep
 ---
 
 ## Overview
@@ -16,18 +16,18 @@ Before class, you should be able to:
 ## Advanced Learning Objectives
 After class, you should be able to:
 * Argue about the pros and cons of writing unit tests as a mechanism for developing and testing functions
-* Use 'unittest' to write tests in Python
+* Use `unittest` to write tests in Python
 * Identify edge cases for a basic project
 
 ## Readings
-To achieve the basic learning objectives, you should read the following:
-* Read the Wikipedia article on [Test-Driven Development (TDD)](http://en.wikipedia.org/wiki/Test-driven_development). The core idea here is very simple, but as you'll see from the Wikipedia article, it has accumulated a lot of formalism. Read from the beginning up through the "Limitations" section. 
+To achieve the basic learning objectives, you can read the following:
+* Wikipedia article on [Test-Driven Development (TDD)](http://en.wikipedia.org/wiki/Test-driven_development). The core idea here is very simple, but as you'll see from the Wikipedia article, it has accumulated a lot of formalism. Read from the beginning up through the "Limitations" section. 
 * [Getting Started with Testing in Python](https://realpython.com/python-testing/). Read up to but **not including** Testing for Web Frameworks like Django and Flask.
 * [Professionalism and Test-Driven Development](https://www.computer.org/csdl/magazine/so/2007/03/s3032/13rRUyYBleZ) by Robert C. Martin
-* Optional: Clean Code Ch 9 - goes more into specific tips
+* Clean Code Ch 9 - goes more into specific tips
 
 ## Checks
-Write down answers to the following and bring them to class:
+Submit answers to the following through Moodle:
 * What are the steps to test-driven development?
-* What is the basic structure of a test using 'unittest'?
-* How do you run your tests using 'unittest'?
+* What is the basic structure of a test using `unittest`?
+* How do you run your tests using `unittest`?

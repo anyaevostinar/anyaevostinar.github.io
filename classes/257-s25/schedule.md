@@ -26,7 +26,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 4/4 | [Unix and Vim Prep](unix-prep) | [Slides](), [Unix Scavenger Hunt](unix-scavenger-hunt) | |
 | **Week 2** | **Project Foundations** | | |
 | M 4/7 | [Data and Team Prep](data-prep) |[Slides](https://docs.google.com/presentation/d/1fKEwC6sWXF5k5m1qVVtHMG2OoYyJpuGtoQmWvaW6goY/edit?usp=sharing), [Start on Project Proposal](lab-proposal) | [Project Proposal](project-proposal)  | 
-| W 4/9 | [Git Prep](git-prep) | [Slides](), [Git Practice Lab](lab-git) | |
+| W 4/9 | [Git Prep](git-prep) | [Slides](https://docs.google.com/presentation/d/11FOH8S5oi6lDcU9LW_lSYhOqd8k8UQD83fUCPcwsXxE/edit?usp=sharing), [Git Practice Lab](lab-git) | |
 | F 4/11 | [TDD Prep](tdd-prep) | [Slides](), [TDD Lab](tdd)  |[Individual - Tests](project-1-ind) |
 | **Week 3** | **Core Functionality** | | |
 | M 4/14 |[Command Line Prep](cl-prep), [Individual Deliverable 1 due 10pm](project-1-ind),   [Project Proposal due 10pm](project-proposal) | [Slides](), [Start on CLI Design](command-line-design) | [Team - Command Line](project-command-line)  |

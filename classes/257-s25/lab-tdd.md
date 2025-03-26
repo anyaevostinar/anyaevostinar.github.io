@@ -60,21 +60,22 @@ You should aim to complete as much of the requirements for the first individual 
 
 ## Step 5: Command-line testing
 You'll also need to test command-line functionality for multiple deliverables.
-Testing command-line functionality is much trickier than at the function level. 
-You need to use the [`subprocess`](https://docs.python.org/3/library/subprocess.html) Python module to do so. 
-Below is an annotated example of a test for checking if an intro assignment has produced the correct output.
+Testing command-line functionality is a bit trickier than at the function level, though you basically can just treat `main` like a function. (Note that these snippets are outside of a function for brevity, you should put the code in a better location!)
 
-*Important caveat:  In the example below, `caesar.py` is in the same directory as the test, but in this deliverable, the code you are testing will be in a different directory, so remember to set the correct location for `basic_cl.py` (i.e. it’s in `ProductionCode`, so the path is `ProductionCode/basic_cl.py`).*
-
+1. It turns out, you can change the value of `sys.argv` directly:
 
 ```python
-def test_caesar_normal(self):
-    """Check if caesar.py works for valid command line arguments"""
-    #First use subprocess to make the command line call
-    code = subprocess.Popen(['python3', '-u', 'caesar.py', "This is the way the world ends, dontcha know?", '25'], #give it a list of the exact things you want to be "typed" on the command line, -u keeps stdout unbuffered so it goes through all at once
-                            stdin=subprocess.PIPE, stdout=subprocess.PIPE, #you are piping stdin and stdout so subprocess can use them
-                            encoding='utf8') #use the normal utf8 text
-    output, err = code.communicate() #interact with the process, which runs it, and save the things returned to output and err
-    self.assertEqual(output.strip(), "Sghr hr sgd vzx sgd vnqkc dmcr, cnmsbgz jmnv?") #strip extra whitespace from the output and compare it to what you think it should be
-    code.terminate() #stop the process to clean up after yourself
+import sys
+sys.argv = ['basic_cl.py', '1', '1'] #setting the command-line arguments to 1 1
 ```
+
+2. Checking what is printed is a little bit more difficult, but not much. You just change where `sys.stdout` goes so that you can grab the results:
+
+```python
+from io import StringIO
+sys.stdout = StringIO() #make a StringIO object and have sys.stdout point to it instead of the usual spot
+
+printed_output = sys.stdout.getvalue() #I can get what is printed as a normal string!
+```
+
+3. You then can compare `printed_output` to whatever you think should be printed. (Note you should call main first, which you can call like any other function.)
