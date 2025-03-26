@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Version Control (Git) Prep
-permalink: /classes/257-f23/git-prep
+permalink: /classes/257-s25/git-prep
 ---
 
 ## Overview
@@ -23,7 +23,7 @@ After class, you should be able to:
 * Have your team repository setup
 
 ## Readings
-To achieve the basic learning objectives, you should read the following before class:
+To achieve the basic learning objectives, you can read the following before class (this is a topic where [Gemini](https://gemini.google.com/u/1/app) is likely quite a good resource as well):
 
 * ["Learn the basics of git in under 10 minutes"](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/): Read only up to Step 0; we'll be adding to our repos a bit differently.
 
@@ -31,14 +31,11 @@ To achieve the basic learning objectives, you should read the following before c
 
 * ["How do I git? Three ways to solve a merge conflict"](https://medium.com/@RedRoxProjects/how-do-i-git-three-ways-to-solve-a-merge-conflict-cde4d7924c80). Read the introduction and "Method 2::Using the command line". (Since we're not dealing with pull requests, Method 1 does not apply, and Method 3 only applies if you want to use Git Desktop.)
 
+* Feel free to also start on the individual portion of the [Git Lab](lab-git)
+
 ## Checks
-Write answers to the following and bring them to class:
-1. What is git? What is its purpose?
-2. What is the difference between git and GitHub?
-3. What is a repository?
-4. What is the difference between a stage and a working directory?
+Submit answers to the following on Moodle:
 5. What is the typical git workflow, from start to finish, when you want to add or modify a file in a repository and make sure the changes are on GitHub?
-6. What is a merge conflict?
 7. Describe a situation in which a merge conflict might occur.
 8. What are the markers in a file that indicate where the conflict is?
 9. Describe the workflow you would use to resolve a merge conflict (i.e. what sequence of git commands would you use?).
