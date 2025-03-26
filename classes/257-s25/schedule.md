@@ -27,7 +27,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 2** | **Project Foundations** | | |
 | M 4/7 | [Data and Team Prep](data-prep) |[Slides](https://docs.google.com/presentation/d/1fKEwC6sWXF5k5m1qVVtHMG2OoYyJpuGtoQmWvaW6goY/edit?usp=sharing), [Start on Project Proposal](lab-proposal) | [Project Proposal](project-proposal)  | 
 | W 4/9 | [Git Prep](git-prep) | [Slides](https://docs.google.com/presentation/d/11FOH8S5oi6lDcU9LW_lSYhOqd8k8UQD83fUCPcwsXxE/edit?usp=sharing), [Git Practice Lab](lab-git) | |
-| F 4/11 | [TDD Prep](tdd-prep) | [Slides](), [TDD Lab](tdd-lab)  |[Individual - Tests](project-1-ind) |
+| F 4/11 | [TDD Prep](tdd-prep) | [Slides](https://docs.google.com/presentation/d/15NvFCa9MTJhoj0wQ4EHBn4_rPMKyQx5cH7XyX8qfH_0/edit?usp=sharing), [TDD Lab](tdd-lab)  |[Individual - Tests](project-1-ind) |
 | **Week 3** | **Core Functionality** | | |
 | M 4/14 |[Command Line Prep](cl-prep),    [Project Proposal due 10pm](project-proposal) | [Slides](), [Start on CLI Design](command-line-design) | [Team - Command Line](project-command-line)  |
 | W 4/16 | [Function Design Prep](function-prep) | [Slides](), [Function Design](lab-functions.pdf) | |

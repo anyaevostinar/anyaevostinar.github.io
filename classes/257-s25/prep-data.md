@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Thinking about Dataset and Team
-permalink: /classes/257-f23/data-prep
+permalink: /classes/257-s25/data-prep
 ---
 
 ## Overview
@@ -11,24 +11,29 @@ This course is focused on a term-long team project where you will build a databa
 
 Before class, you should be able to:
 * Identify a few datasets that you find interesting
-* Cite the source of a dataset that you find
+* Define user story in a computer science context
+* Define acceptance criteria and how it relates to user stories
 * Explain what the team contract will need to contain
-* Identify some expectations you would like to have of your teammates
+
 
 ## Advanced Learning Objectives
 After class, you should be able to:
+* Be able to write your own user stories and acceptance criteria for the team project
 * Explain what the team project is about
 * Locate and cite the dataset your team will be using (or have narrowed it down to a couple as a team)
 * Answer several of the questions on the Team Charter assignment, if not all of them
 
 ## Readings
-To achieve the basic learning objectives, you should read the following sections on the [research guide for the course](https://gouldguides.carleton.edu/cs257):
+To achieve the basic learning objectives, you should read the following:
 
-* "Finding Data". This page lists a number of sources of datasets, along with other suggestions for finding datasets.
-* "Keeping Track of What You Find". This page covers what information you should retain about your dataset. You will need to incorporate some of this info into your website design.
-* "Citing your Data". This page covers what information you should share with your audience on your (eventual) website about the source of the data.
+* These sections on the [research guide for the course](https://gouldguides.carleton.edu/cs257):
 
-You should also read the [Team Proposal assignment](project-proposal) and start thinking about what you would want in your team contract.
+    * "Finding Data". This page lists a number of sources of datasets, along with other suggestions for finding datasets.
+    * "Keeping Track of What You Find". This page covers what information you should retain about your dataset. You will need to incorporate some of this info into your website design.
+    * "Citing your Data". This page covers what information you should share with your audience on your (eventual) website about the source of the data.
+
+* The [Team Proposal assignment](project-proposal)
+* The Wikipedia article on [User Story](https://en.wikipedia.org/wiki/User_story) up through "Limitations"
 
 ## Checks
 Submit answers to the following on Moodle:

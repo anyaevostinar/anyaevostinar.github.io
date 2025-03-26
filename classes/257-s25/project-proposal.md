@@ -61,14 +61,9 @@ In your project proposal, you should include the following:
 3. Metadata for the dataset(s) from the Dataset Records (URL, date downloaded, authorship, exact name and version, terms of use, suggested citation)
     * If you’re having trouble filling out the following fields for your dataset, it may be a sign that you need to double-check the source of your dataset.
 
-4. 3 interesting/meaningful ways that a user could interact with the data. For each user interaction, include descriptions of:
-    * Potential Users: Who may interact with your data? What are their motivations for interacting with the data?
-    * Interaction Mechanism: How may they interact with the data? (e.g. Search bar? Different tabs? Which variables in your dataset?) What are the pros and cons to different interaction mechanisms?
-    * Potential Benefits: How may interacting with your data benefit users? Why?
-        * If you don’t think users will benefit, then why bother developing that user interaction? ¯\_(ツ)_/¯ 
-    * Potential Harms: How may interacting with your data harm or exclude users? Why? 
-        * If you don’t think users will feel harmed or excluded by interacting with your data, explain why.
-
+4. 3 user stories and acceptance criteria:
+    * The user stories should follow one of the typical formats
+    * The acceptance criteria detail more specific examples for each user story
 
 
 ## Dataset Questions
@@ -115,7 +110,7 @@ The criteria for "Proficiency" and "Exemplary" are below. I will put your grade 
 
 ### Proficiency
 - [ ] Team contract answers all four high-level questions (Team Contract Requirements Questions 1-4; the ones in bold)
-- [ ] Proposal includes a working title, a summary of the dataset, and descriptions of 3 user interactions (user, interaction, potential benefits, and potential harms)
+- [ ] Proposal includes a working title, a summary of the dataset, and 3 user stories with acceptance criteria
 - [ ] Dataset if clearly identified and appropriate
 - [ ] Dataset is less than 100MB
 
@@ -123,7 +118,7 @@ The criteria for "Proficiency" and "Exemplary" are below. I will put your grade 
 - [ ] All requirements for proficiency are met
 - [ ] Team contract addresses all the listed expectations (Team Contract Requirements Subquestions to 4)
 - [ ] The commit to evaluate on the team repo is tagged with `proposal` (See instructions in [How to Submit](#how-to-submit))
-- [ ] Descriptions of 3 user interactions include considerations of (1) the advantages and disadvantages of their chosen dataset and interaction mechanisms and (2) different types of benefits and harms. If the team does not think a user may be harmed, they have provided a detailed justification. 
+- [ ] The 3 user stories and acceptance criteria are detailed enough that they could be turned into tests immediately
 - [ ] Proposal includes the metadata for the dataset(s)
 - [ ] Both the team contract and proposal are clear and concise, easy to understand, with few to no spelling or grammatical errors
 - [ ] Dataset is 25MB or smaller
