@@ -21,7 +21,7 @@ Like all assignments, you are allowed to use GitHub Copilot and Google Gemini wh
 
 ## Due Date
 
-The this deliverable is due Monday April 14th at 10pm on your individual git repo.
+The this deliverable is due Friday April 18th at 10pm on your individual git repo.
 
 ## What to Submit
 - [ ] Your modified `test_cl.py` in the `Tests` subdirectory of your individual git repo. Do NOT change anything in the `ProductionCode` subdirectory.
