@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Command Line Interfaces Prep
-permalink: /classes/257-f23/cl-prep
+permalink: /classes/257-s25/cl-prep
 ---
 
 ## Overview
@@ -22,13 +22,13 @@ After class, you should be able to:
 * Design a minimal command-line interface app that includes a usage statement and several features
 
 ## Readings
-To achieve the basic learning objectives, you should read the following before class:
+To achieve the basic learning objectives, you can read the following before class (this is a topic where [Gemini](https://gemini.google.com/u/1/app) is likely quite a good resource as well):
 
 * [Python Command Line Interface](https://realpython.com/python-command-line-arguments) - focus on "The sys.argv Array" section
 * [Exploring CLI Best Practices, by Kevin Deisz.](https://eng.localytics.com/exploring-cli-best-practices/) There are many articles about this topic online. This one is a good place to start because the author gives you a numbered list of pretty straight-forward general principles to work with. You can stop reading after principle #12, since the rest is less generally about the topic at hand.
 
 ## Checks
-Come up with (at least) one meaningful way that a user could interact with your dataset and what the command line interface for that functionality could be. **Write it down and bring it to class.** For example, if I had a dataset of all the dragon characters ever created and one of the columns was their name, I could have a command line interface to get a list of all of the dragon characters with the name Anya by typing:
+Come up with (at least) one meaningful way that a user could interact with your dataset and what the command line interface for that functionality could be. **Submit this to Moodle.** For example, if I had a dataset of all the dragon characters ever created and one of the columns was their name, I could have a command line interface to get a list of all of the dragon characters with the name Anya by typing:
 
 ```bash
 python3 dragon_characters.py --name "Anya"
