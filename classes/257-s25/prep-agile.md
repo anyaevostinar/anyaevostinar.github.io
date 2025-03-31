@@ -20,7 +20,7 @@ After class, you should be able to:
 ## Readings
 To achieve the basic learning objectives, you can read the following:
 
-* Google's writeup on [Project Aristotle](https://rework.withgoogle.com/print/guides/5721312655835136/), a long-term study Google conducted on the characteristics of effective teams.
+* Google's writeup on [Project Aristotle](https://www.inc.com/michael-schneider/google-thought-they-knew-how-to-create-the-perfect.html), a long-term study Google conducted on the characteristics of effective teams.
 * [An Introduction to: Agile Software Development](https://medium.com/shecancode/an-introduction-to-agile-software-development-914339dcec66)
 * [Python Tutorial](https://www.w3schools.com/python/default.asp) (if it's been a while since you used Python)
 * [Kanban vs. scrum](https://www.atlassian.com/agile/kanban/kanban-vs-scrum)
