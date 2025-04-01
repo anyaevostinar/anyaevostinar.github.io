@@ -337,6 +337,8 @@ To create the merge conflict:
 ## Part 2 is done!
 You can now delete the favorite and least favorite files from your team repository and transfer the information from your team contract Google doc notes and data set into your team repository!
 
+Make sure to add your dataset metadata and the dataset itself to the team git repository.
+
 **If there is still time in class, keep working on your dataset and team contract!**
 
 *This lab was adapted from one written by Prof. Amy Csizmar Dalal, thanks Amy!*

@@ -23,7 +23,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 4/9 | [Cellular Automata Prep](ca-intro-prep)	| [Finding Neighbors](nf-lab), [Slides](https://docs.google.com/presentation/d/1PuEkv5l5tjz_a15iilrbIj-10AgxviqYcpH3BkGwcZw/edit?usp=sharing)  | [CA project](hw-ca) |
 | F 4/11 | [CA 2 Prep](ca-2-prep)	| [Gradient Lab](gradient-lab), [Slides](https://docs.google.com/presentation/d/1l5dLjabav9RBcpgAQnqinVFzbAdSEQ2oWo4xizMXq40/edit?usp=sharing)	| |
 | Week 3 | |  | |
-| M 4/14 | Inheritance Prep | Peer review of CA projects, [Inheritance in C++](inheritance_lab) |  |
+| M 4/14 | [Inheritance Prep](inheritance-prep) | Peer review of CA projects, [Inheritance in C++](inheritance_lab) |  |
 | W 4/16 |	[Ecosystem Models Prep](eco-models-prep), [CA project](hw-ca) | [Empirical World Intro](empirical_intro_lab)	| [AE project](hw-ae) |
 | F 4/18 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab	 |  |
 | Week 4 | | | |

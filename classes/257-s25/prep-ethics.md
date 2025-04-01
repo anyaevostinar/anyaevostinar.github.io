@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ethics in Tech Prep
-permalink: /classes/257-f23/ethics-prep
+permalink: /classes/257-s25/ethics-prep
 ---
 
 ## Overview
@@ -22,14 +22,14 @@ After class, you should be able to:
 
 
 ## Readings
-To achieve the basic learning objectives, you should read the following:
+To achieve the basic learning objectives, you can read the following:
 
 * [The ACM Code of Ethics.](https://www.acm.org/code-of-ethics) ACM is one of the professional organizations for computer scientists.
 * Anil Dash's [12 Things Everyone Should Understand About Tech](https://medium.com/humane-tech/12-things-everyone-should-understand-about-tech-d158f5a26411)
-* [The Rise of Ethical Concerns about AI Content Creation: A Call to Action](https://www.computer.org/publications/tech-news/trends/ethical-concerns-on-ai-content-creation) - we'll discuss the case of generative AI in class
+* [The Rise of Ethical Concerns about AI Content Creation: A Call to Action](https://www.computer.org/publications/tech-news/trends/ethical-concerns-on-ai-content-creation) - this article is now quite old, but still gives a decent overview of the issues of GenAI which we will discuss in class
 
 ## Checks
-Write down answers to the following and bring them to class:
-1. Give an example (different from the ones in the reading) that illustrates how tech is not neutral (Dash's first point).
-2. Select three of Dash's points, and for each one, give a real-life example that illustrates that point.
-3. What is the purpose of the ACM Code of Ethics?
+Submit answers to the following through Moodle:
+1. What is the purpose of the ACM Code of Ethics?
+2. Give an example (different from the ones in the reading) that illustrates how tech is not neutral (Dash's first point).
+3. What is one ethical concern regarding generative AI?

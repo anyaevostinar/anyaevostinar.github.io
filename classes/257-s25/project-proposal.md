@@ -10,8 +10,9 @@ The purpose of this project as a whole is to introduce you to the design, testin
 ## Collaboration
 Work with your project team on this deliverable.
 
-## Due Date
-Monday April 14th at 10pm on Team Deliverable GitHub.
+## Due Dates
+* Your dataset metadata is due Wednesday April 9th at 10pm in your team github
+* Your team contract and proposal are due Monday April 14th at 10pm on Team Deliverable GitHub.
 
 ## What to submit
 This deliverable has three components
