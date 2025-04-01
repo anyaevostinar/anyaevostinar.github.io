@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ecosystem Models Preparation
-permalink: /classes/361-f22/eco-models-prep
+permalink: /classes/361-s25/eco-models-prep
 ---
 
 ## Overview
@@ -22,3 +22,8 @@ After class, you should be able to:
 ## Resources
 You should read the following:
 * 7.1 of [Biological Bits](BiologicalBits_PDF_edn1.pdf) - this is a very short free textbook; if you have Apple devices, you can get the iBook free and see the interactive examples
+
+## Checks
+Submit answers to the following on Moodle:
+* What is the *Daisyworld* model?
+* How do agent-based models differ from equation-based models? What are the pros and cons of each?

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Artificial Ecologies Preparation
-permalink: /classes/361-f22/art-eco-prep
+permalink: /classes/361-s25/art-eco-prep
 ---
 
 ## Overview
@@ -17,8 +17,12 @@ Before class, you should be able to:
 ## Advanced Learning Objectives
 After class, you should be able to:
 
-* Create and use an Empirical configuration object to control a grid of cells
+* Create an Empirical world with multiple interacting species
 
 ## Resources
-You should read and watch the following:
+You can read and watch the following:
 * Encyclopedia of Artificial Life page on [Artificial Ecologies](https://alife.org/encyclopedia/artificial-ecology/artificial-ecologies/)
+
+## Checks
+Submit an answer to the following on Moodle:
+* What is one example artificial ecology project in artificial life and what kind of ecological interaction does it contain?
