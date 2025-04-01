@@ -23,7 +23,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 1** | **Getting Started** |  | |
 | M 3/31 | [Intro to Software Design Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1WnPY3SFwvPkgFUhUWt5_yYeiLyoN_4-BSbDSUv4mNZ0/edit?usp=sharing), Course overview and discussion|  |
 | W 4/2 | [Agile and Effective Teams Prep](agile-prep) | [Slides](https://docs.google.com/presentation/d/1YZo8-zWXact2-LJYutwCY5qA1w8643E17TTaG-6gjdY/edit?usp=sharing),<br> Development Processes and Getting Started, [start setting up computers](getting-started) |  |
-| F 4/4 | [Unix and Vim Prep](unix-prep) | [Slides](), [Unix Scavenger Hunt](unix-scavenger-hunt) | |
+| F 4/4 | [Unix and Vim Prep](unix-prep) | [Slides](https://docs.google.com/presentation/d/1fKEwC6sWXF5k5m1qVVtHMG2OoYyJpuGtoQmWvaW6goY/edit?usp=drive_link), [Unix Scavenger Hunt](unix-scavenger-hunt) | |
 | **Week 2** | **Project Foundations** | | |
 | M 4/7 | [Data and Team Prep](data-prep) |[Slides](https://docs.google.com/presentation/d/1fKEwC6sWXF5k5m1qVVtHMG2OoYyJpuGtoQmWvaW6goY/edit?usp=sharing), [Start on Project Proposal](lab-proposal) | [Project Proposal](project-proposal)  | 
 | W 4/9 | [Git Prep](git-prep) | [Slides](https://docs.google.com/presentation/d/11FOH8S5oi6lDcU9LW_lSYhOqd8k8UQD83fUCPcwsXxE/edit?usp=sharing), [Git Practice Lab](lab-git) | |
