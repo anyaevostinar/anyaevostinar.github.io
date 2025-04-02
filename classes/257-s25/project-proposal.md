@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project Proposal
-permalink: /classes/257-fs25/project-proposal
+permalink: /classes/257-s25/project-proposal
 ---
 
 ## Overview
