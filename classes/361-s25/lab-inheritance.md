@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Inheritance Lab
-permalink: /classes/361-f22/inheritance_lab
+permalink: /classes/361-s25/inheritance_lab
 ---
 
 ## Goals
@@ -11,7 +11,7 @@ To be able to use inheritance in C++ effectively.
 1. Open the Inheritance Lab assignment on Moodle to get the Git repository template. 
 
 2. Open Terminal and clone your repository:
-    ```
+    ```bash
     git clone <your repository link>
     ```
 
