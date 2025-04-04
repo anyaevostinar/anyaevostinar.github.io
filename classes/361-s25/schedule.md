@@ -25,7 +25,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Week 3 | |  | |
 | M 4/14 | [Inheritance Prep](inheritance-prep) | [Inheritance in C++](inheritance_lab) [Slides](https://docs.google.com/presentation/d/1Q98MK3XoulFJLqRWlvjoi3UggM7ydaX8QiGwUyPup34/edit?usp=sharing) |  |
 | W 4/16 |	[Ecosystem Models Prep](eco-models-prep), [CA project](hw-ca) | [Empirical World Intro](empirical_intro_lab), [Slides](https://docs.google.com/presentation/d/1spNo6wZmx_ePQfC8M6OVsWfrHE7pSSdECCPvPOKWwIw/edit?usp=sharing)	| [AE project](hw-ae) |
-| F 4/18 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab	 |  |
+| F 4/18 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab, [Slides](https://docs.google.com/presentation/d/1EoEWoJQzrJWxRnPa14Jo10s3idMYwkTv2s2mLQHDJR0/edit?usp=sharing)	 |  |
 | Week 4 | | | |
 | M 4/21 | Avida-Ed Prep | Peer review of AE projects; Avida-Ed | [Encyclopedia assignment](encyclopedia-hw) |
 | W 4/23 |[Data Collection Prep](data-prep)	| [Empirical Data Lab](empirical_data_lab) | |  
