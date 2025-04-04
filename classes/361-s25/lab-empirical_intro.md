@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Empirical Introductory Lab
-permalink: /classes/361-f22/empirical_intro_lab
+permalink: /classes/361-s25/empirical_intro_lab
 ---
 
 ## Goals
@@ -48,20 +48,17 @@ Now it's time to actually make time proceed for your world.
 
 The starter code has a simple `Update` method in your world that doesn't do much other than call the superclass' method. 
 
-1. Add to this method so that it goes through every organism in the population and calls their `Process` method. You can get the size of the world with `GetSize()` and the population of organisms is stored in the variable `pop`.
-
-2. Go back to `native.cpp` and call your world's `Update` method, then compile and run to see what happens.
-
-3. You should notice that way more than one organism seems to be processing. This is because you need to check if a location is occupied before processing it (there are ghost organisms in all the 'empty' spots). Go back to `World.h` and add a check to your `Update` loop that if a position isn't occupied, it skips that position in `pop`:
+1. Add to this method so that it goes through every organism in the population and calls their `Process` method. You can get the size of the world with `GetSize()` and the population of organisms is stored in the variable `pop`. You'll need to check if a location is occupied before processing it (there are ghost organisms in all the 'empty' spots). Go back to `World.h` and add a check to your `Update` loop that if a position isn't occupied, it skips that position in `pop`:
 
     ```
     if(!IsOccupied(i)) {continue;}
     ```
 
+2. Go back to `native.cpp` and call your world's `Update` method.
 
-4. Compile and run again to make sure that the correct number of organisms are processing (i.e. just one!).
+3. Compile and run again to make sure that the correct number of organisms are processing (i.e. just one!).
 
-5. Now you are ready to run for more updates. Write a for loop in `native.cpp` that calls `Update` 10 times.
+4. Now you are ready to run for more updates. Write a for loop in `native.cpp` that calls `Update` 10 times.
 
 ## Exercise 3
 Because your `Process()` method in `Organism` doesn't do any reproduction, your starting organism can't actually reproduce. We could have the world take care of that process, but with the goal of keeping our organism class highly modular, we'll have it do it instead.
@@ -204,6 +201,7 @@ If you have extra time, try adding mutation to your organism's reproduction or a
 * Donate resources to another organism
 * Spend resources to steal from another organism
 * Spend resources to build defense from the environment or other organisms
+* Have the shade of the color depend on how many points the organism has or their instance variable genome
 
 You could also try out Empirical's [Canvas image support](https://empirical.readthedocs.io/en/latest/api/classemp_1_1web_1_1Canvas.html?highlight=canvas#_CPPv4IDpEN3emp3web6Canvas5ImageER6CanvasRKN3emp8RawImageE5PointDpRR2Ts) so your organisms can be more than just colored boxes!
 
