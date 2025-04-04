@@ -194,7 +194,9 @@ For your assignment, you're going to need more than one species. Empirical's `Wo
 5. Make sure that you are seeing the difference between your species' behavior in the web GUI.
 
 ## Exercise 8
-Having to use conditionals to check on the species all over the place is very inelegant and this is a perfect situation for inheritance! Create two subclasses (probably in their own files) that inherit from `Organism` and move your different behaviors into those files. You'll need to think about what can be shared in the superclass and what needs to be defined in the subclasses. You'll also need to update your `.cpp` files so that they create the correct types of organisms. 
+1. Having to use conditionals to check on the species all over the place is very inelegant and this is a perfect situation for inheritance! Create two subclasses (probably in their own files) that inherit from `Organism` and move your different behaviors into those files. You'll need to think about what can be shared in the superclass and what needs to be defined in the subclasses. You'll also need to update your `.cpp` files so that they create the correct types of organisms. 
+
+2. Weird things happening where it seems like your organisms aren't staying as subclasses? `DoBirth` squashes subclasses unfortunately, so you'll need to switch to using `AddOrgAt` and deciding on the location yourself at this point.
 
 ## Extensions
 If you have extra time, try adding mutation to your organism's reproduction or adding to your organism's `Process` method so that it actually does something based on your instance variable genome. Ideas include:

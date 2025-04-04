@@ -4,8 +4,6 @@ title: Empirical Introduction
 permalink: /classes/361-w21/empirical_intro
 ---
 
-*(Note: This reading is a work in progress and there may be typos, please let me know if you find any!)*
-
 # Introduction 
 [Empirical](https://empirical.readthedocs.io/en/latest/index.html) is an open-source software library of tools for scientific software development that currently provides tools for building evolutionary algorithms and artificial life models in the "Evolve" directory, though the plan is to eventually have the evolutionary tools be their own sublibrary. It also provides tools for creating web interfaces on top of scientific software easily by allowing the programmer to program in C++ and Empirical then uses Mozilla's Emscripten compiler to convert the C++ into Javascript.
 
@@ -87,6 +85,13 @@ If you aren't reproducing an organism and just want to put a specific organism i
 ```
 emp::Ptr<Organism> new_org = new Organism();
 Inject(*new_org);
+```
+
+## AddOrgAt
+If you need to pass a pointer instead of a reference to the world, you'll need to use `AddOrgAt`, which takes a pointer to the organism and the position that you want it added at:
+```
+emp::Ptr<Organism> new_org = new Organism();
+AddOrgAt(new_org, 4);
 ```
 
 ## Resize
