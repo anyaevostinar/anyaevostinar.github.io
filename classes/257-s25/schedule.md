@@ -31,7 +31,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 3** | **Core Functionality** | | |
 | M 4/14 |[Command Line Prep](cl-prep),    [Project Proposal due 10pm](project-proposal) | [Slides](https://docs.google.com/presentation/d/1JQQRwkaVAuDf7s-O0jg-I9EXZvEWkDh2shnNciliDKc/edit?usp=sharing), [Start on CLI Design](command-line-design) | [Team - Command Line](project-command-line)  |
 | W 4/16 | [Function Design Prep](function-prep) | [Slides](https://docs.google.com/presentation/d/1B6AarW7Rxt5TNfaYHdRIWPHw7mwW7nZfBvwt8k_fD1g/edit?usp=sharing), [Function Design](labfunctions.pdf) | |
-| F 4/18 | [Ethics in Tech Prep](ethics-prep), [Individual Deliverable 1 due 10pm](project-1-ind) | [Slides](), Intro to Tech Ethics | |
+| F 4/18 | [Ethics in Tech Prep](ethics-prep), [Individual Deliverable 1 due 10pm](project-1-ind) | [Slides](https://docs.google.com/presentation/d/1j6S1cAIV4xTPk9ahTNXzXG3dcHpNnw-PG_gD0Hwf_-s/edit?usp=sharing), Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
 | M 4/21 | [Command Line project due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](), [Intro to Flask](flask-intro) | [Flask app project](project-2-flask), [Individual component](project-2-ind) |
 | W 4/23 | [Code Review Prep](code-review-prep) | [Slides](), Code review | |
