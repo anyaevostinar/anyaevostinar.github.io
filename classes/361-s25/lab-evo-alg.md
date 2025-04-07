@@ -14,7 +14,7 @@ Work individually on this assignment, though you are encouraged to ask your neig
 
 2. Open Terminal and clone your repository (if you aren't sure how to do this, wave for help):
 ```bash
-git clone <your repository link>
+git clone your repository link
 ```
 
 3. Open VSCode and then open your repository folder. 
