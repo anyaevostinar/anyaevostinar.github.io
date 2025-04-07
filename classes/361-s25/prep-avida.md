@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Avida Preparation
-permalink: /classes/361-s25/avid-prep
+permalink: /classes/361-s25/avida-prep
 ---
 
 ## Overview
