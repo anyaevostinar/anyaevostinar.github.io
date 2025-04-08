@@ -5,11 +5,16 @@ permalink: /classes/361-f22/encyclopedia-hw
 ---
 
 ## Logistics
-This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the syllabus.
+This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the syllabus. 
 
-This assignment has several intermediate due dates. The first is the topic choice, which is due October 12th at 10pm.
+This assignment has several intermediate due dates. The first is the topic choice, which is due April 30th at 10pm.
 See the [full list of dates below](#due-dates).
 As with all assignments, you will have the opportunity to revise this assignment based on the feedback that you get.
+
+## AI Use
+You may use Gemini to assist you in any aspect of this assignment.
+However, you are responsible for verifying the complete correctness of everything you submit.
+Remember that generative AI tends to hallucinate facts and citations.
 
 ## Goal
 The goals of this assignment are two-fold.
@@ -59,10 +64,10 @@ Please do the following to submit your text for each draft:
 
 | Item | Due Date |
 |------|----------|
-| Topic and two references | 10/12 |
-| First draft | 10/21 |
-| Second draft | 11/2 |
-| Final draft | 11/21 |
+| Topic and two references | 4/30 |
+| First draft | 5/12 |
+| Second draft | 5/21 |
+| Final draft | 6/4 |
 
 ## Assessment
 Your assignment will ultimately be assessed by the following criteria.
@@ -75,8 +80,8 @@ To demonstrate proficiency on this assignment, it needs to:
 * Demonstrate a proficient understanding of the topic
 * Use appropriate grammar and tone
 
-### Mastery
-To demonstrate mastery on this assignment, it needs to:
+### Exemplary
+For your assignment to be exemplary, it needs to:
 * Include at least two references, one of which is a peer-reviewed scientific article
 * Accurately summarize information from both of the references for a general audience
 * Have at least four well-organized and clear paragraphs
@@ -88,32 +93,6 @@ To demonstrate mastery on this assignment, it needs to:
 These are topics that others are already approved to do, so you should make sure that you don't overlap with them.
 If you want to do something related to one of these, feel free to talk to me about how you can make sure that your topic is different enough.
 
-* (Artificial) Neural networks - how they work in deep learning to emulate human brains
-* [Artificial Chemistries - introduction](https://alife.org/encyclopedia/artificial-chemistry/artificial-chemistries/)
-* Artificial Chemistries - simulation of cell systems chemistry
-* [Open-ended evolution - introduction](https://alife.org/encyclopedia/introduction/open-ended-evolution/)
-* Xenobots - overview
-* Physicell - overview
-* Florarobotica - overview
-* Tierra - overview
-* Boids - overview
-* [Stringmol - overview](https://alife.org/encyclopedia/artificial-chemistry/stringmol/)
-* Bibites - overview
-* Geb - overview
-* Game theory - introduction
-* [Game theory - evolutionary games](https://alife.org/encyclopedia/game-theory/game-theory/)
-* [Synthetic biology - introduction](https://alife.org/encyclopedia/introduction/synthetic-biology/)
-* Synthetic ecology - introduction
-* Ethics of Artificial Life - introduction
-* ALife for Social Good - introduction
-* Chemobrionics - introduction
-* Cognitive Robotics - introduction
-* Cognitive Robotics - Intelligent Adaptive Curiosity system
-* Developmental/epigenetic Robotics
-* Evolutionary Robotics - introduction
-* Complex Adaptive Systems - introduction
-* Evolutionary computation - introduction
-* ALife Art - introduction
 
 ## Resources
 The following are potential references/places to look for references:
@@ -122,8 +101,7 @@ The following are potential references/places to look for references:
 * [ALIFE Conference Proceedings](https://direct.mit.edu/isal/volumes/browse-by-conference) 
 * [The Surprising Creativity of Digital Evolution](https://direct.mit.edu/artl/article/26/2/274/93255/The-Surprising-Creativity-of-Digital-Evolution-A) is a fun collection and overview of different digital evolution systems
 * [ALife Newsletter](https://alife.org/category/newsletter/)
-* [ALifePapers Twitter feed](https://twitter.com/AlifePapers)
-* [Biological Bits](https://users.monash.edu/~aland/BiologicalBits.html) - this is a very short free textbook; if you have Apple devices, you can get the iBook free, otherwise the PDF is linked on the page as well through ResearchGate.
+* [Biological Bits](/classes/361-s25/BiologicalBits_PDF_edn1.pdf)
 * [Rise of the Self-Replicators](https://www.tim-taylor.com/selfrepbook/) - history of self-replicators through literature and science
 * Complexity by Melanie Mitchell
 * [Dave Ackley's Artificial Life playlist](https://www.youtube.com/playlist?list=PLm5k2NUmpIP-j5oOSEljDo3evg-wBIrMM)
@@ -131,3 +109,12 @@ The following are potential references/places to look for references:
 * [ISAL Summer School 2021 Playlist](https://www.youtube.com/playlist?list=PLdq5pX0lUTK0PS5yM4Aqwki-Tl1wwepui)
 * Articles listed in [Avida Encyclopedia entry](https://alife.org/encyclopedia/digital-evolution/avida/)
 * Articles listed in [Aevol Encyclopedia entry](https://alife.org/encyclopedia/software-platforms/aevol/)
+
+## Examples
+You can see examples of articles written and ultimately published from the previous iteration of this class here:
+* [Artificial Chemistry](https://alife.org/encyclopedia/artificial-chemistry/artificial-chemistries/)
+* [Complex Adaptive Systems](https://alife.org/encyclopedia/introduction/introduction-to-complex-adaptive-system-cas/)
+* [Game Theory](https://alife.org/encyclopedia/game-theory/game-theory/)
+* [Synthetic Biology](https://alife.org/encyclopedia/introduction/synthetic-biology/)
+* [Stringmol](https://alife.org/encyclopedia/artificial-chemistry/stringmol/)
+* [Open-ended evolution](https://alife.org/encyclopedia/introduction/open-ended-evolution/)
