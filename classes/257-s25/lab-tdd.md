@@ -9,7 +9,9 @@ Engage in test-driven development with a simple example. For this lab, you are g
 
 ## First Though
 
-If you haven't finished the Git setup from the [previous lab](lab-git), go do that. Remember to be in your [virtual environment](venv-guide) for this class.
+1. If you haven't finished the Git setup from the [previous lab](lab-git), go do that. 
+
+2. Then work through the [virtual environment](venv-guide) for this class to get all the modules that you'll need. Stay in your virtual environment for this lab.
 
 ## Step 1: A First Failing Test
 1. Accept the assignment by clicking on the `TDD Lab Classroom Link` on Moodle and clone down the repository.
