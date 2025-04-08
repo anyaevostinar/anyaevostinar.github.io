@@ -34,26 +34,26 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 4/18 | [Ethics in Tech Prep](ethics-prep), [Individual Deliverable 1 due 10pm](project-1-ind) | [Slides](https://docs.google.com/presentation/d/1j6S1cAIV4xTPk9ahTNXzXG3dcHpNnw-PG_gD0Hwf_-s/edit?usp=sharing), Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
 | M 4/21 | [Command Line project due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](), [Intro to Flask](flask-intro) | [Flask app project](project-2-flask), [Individual component](project-2-ind) |
-| W 4/23 | [Code Review Prep](code-review-prep) | [Slides](), Code review | |
-| F 4/25 | [Individual component](project-2-ind), [Intro Databases Prep](intro-database-prep) | [Slides](), Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend), Midterm Reflection|
+| W 4/23 | [Classes Prep](classes-prep) | [Slides](), Designing classes | |
+| F 4/25 | [Individual component](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
 | **Week 5** | **Database Component** | | |
-| M 4/28 | [Flask app](project-2-flask), No prep |[Slides](), [Database Connections and Relations](psycopg2)  | |
-| W 4/30 | [Individual back-end](project-4-ind); [Database Normalization](normalization-prep) | [Slides](), More with Databases |  |
-| F 5/2 | [Usability Prep](web-usability-prep) | [Slides](), Webpage analysis | [Individual front-end](project-3-ind), [Team front-end](project-3-front-end)|
+| M 4/28 | [Flask app](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend), Midterm Reflection|
+| W 4/30 |  No prep |[Slides](), [Database Connections and Relations](psycopg2)  | |
+| F 5/2 | [Individual back-end](project-4-ind); [Database Normalization](normalization-prep) | [Slides](), More with Databases |  |
 | **Week 6** | **Front-End Component** | | |
 | M 5/5 | Midterm break! | | |
-| W 5/7 | [HTML with Flask Prep](html-prep) | [Slides](), [HTML Flask Lab](flask-html)
- | F 5/9 | [CSS and HTML Prep](css-html-prep) | [Slides]() HTML and CSS lab | |
+| W 5/7 |[Team back-end](project-4-backend);  [Usability Prep](web-usability-prep) | [Slides](), Webpage analysis | [Individual front-end](project-3-ind), [Team front-end](project-3-front-end)|
+| F 5/9 | [HTML with Flask Prep](html-prep) | [Slides](), [HTML Flask Lab](flask-html) | |
 | **Week 7** | **Front-End Component Cont'd** | | |
-| M 5/12 | [HTTP Prep](http-prep) | [Slides](), [Flask Forms Lab](flask-form) | |
-| W 5/14 |[Individual front-end](project-3-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](), Accessibility Analysis | |
-| F 5/16 | [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
+| M 5/12 | [CSS and HTML Prep](css-html-prep) | [Slides]() HTML and CSS lab | |
+| W 5/14 | [HTTP Prep](http-prep) | [Slides](), [Flask Forms Lab](flask-form) | |
+| F 5/16 |[Individual front-end](project-3-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](), Accessibility Analysis | |
 | **Week 8** | **Refactoring** | | |
-| M 5/19 | [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments](https://docs.google.com/document/d/17oI-pCdvU2ICfR14rQbEbVLrZdhzQvPp4CSt_qmtXNs/edit?usp=sharing) | |
-| W 5/21 | [Team back-end](project-4-backend); [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells | Design Improvements and Final Reflection (due 6/9)|
-| F 5/23 | [Code Review 2 Prep](review-2-prep) | [Code review](https://docs.google.com/document/d/14XSNJiFra4qo2RKNFcvgE5eRlLiUNyHS-X55gtiRHjk/edit?usp=sharing) | |
+| M 5/19 | [Team front-end](project-3-front-end), [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
+| W 5/21 | [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments](https://docs.google.com/document/d/17oI-pCdvU2ICfR14rQbEbVLrZdhzQvPp4CSt_qmtXNs/edit?usp=sharing) | |
+| F 5/23 | [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells | Design Improvements and Final Reflection (due 6/9)|
 | **Week 9** | **More Refactoring** | | |
-| M 5/26 | [Classes Prep](classes-prep) | [Slides](), Designing classes | |
+| M 5/26 | [Code Review 2 Prep](review-2-prep) | [Code review](https://docs.google.com/document/d/14XSNJiFra4qo2RKNFcvgE5eRlLiUNyHS-X55gtiRHjk/edit?usp=sharing) | |
 | W 5/28 | [Design Patterns Prep](patterns-prep) | [Slides](), Design Patterns | |
 | F 5/30 | [Specific Patterns Prep](more-patterns-prep) | [Slides](), More design patterns | |
 | **Week 10** | **Wrapping Up** | | |
