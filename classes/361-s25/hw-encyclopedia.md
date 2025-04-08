@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Encyclopedia Assignment
-permalink: /classes/361-f22/encyclopedia-hw
+permalink: /classes/361-s25/encyclopedia-hw
 ---
 
 ## Logistics
