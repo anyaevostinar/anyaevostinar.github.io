@@ -127,8 +127,6 @@ Once you make more complicated pages, you can use `assertIn` to check for the sp
 
 Make a test file and test your existing functions and routes. (Yes, we're breaking TDD since we already have the production code written. It'd be a good idea to purposefully break your production code to make sure your tests fail first.)
 
-*Acknowledgements: I adapted code from [this guide](https://www.patricksoftwareblog.com/unit-testing-a-flask-application/) for this section. Check there if you're curious about more advanced testing.*
-
 ## Applying to your project
 You're now all set to turn your command-line interface project into a Flask app.
 It's good to separate the underlying logic of your program from the Flask-specific portion so that it will be easier to refactor the logic portion once we add a database.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Individual Deliverable 2 - Flask
-permalink: /classes/257-f23/project-2-ind
+permalink: /classes/257-s25/project-2-ind
 ---
 
 ## Overview
@@ -19,22 +19,28 @@ You can get conceptual help from your team and others, however what you submit m
 
 ## Due Date
 
-The individual deliverable for this iteration is due **Friday Oct 6th** at 10pm on the associated repository (link on Moodle).
+The individual deliverable for this iteration is due **April 25th** at 10pm on the associated repository (link on Moodle).
+
+## What to Submit
+
+- [ ] Your flask app `app.py` in the top-level of your repository
+- [ ] All necessary production code files in `ProductionCode`
+- [ ] (For exemplary) Your tests in the `Tests` folder
+
+*Do not specify the port when running the app, it doesn't work the same on different operating systems and so can mess up the grading. I.e., when you run your app, it should be just `app.run()` without any arguments*
 
 ## Your Task
+(Remember that you will want to be in your [virtual environment](venv-guide) when working on this.)
 
-You should write a basic Flask app with at least one route. Your Flask app should import the files from your group's command-line interface app and use those functions to provide some of the data from your dataset on a web page.
-The home page of your app should provide instructions for what URL to go to to see the data you choose.
-To get 'demonstrates mastery' that route should use a route parameter and you should have a couple of tests in another file for your Flask-specific functions.
+You should write a basic Flask app with at least one route based on your team's core functionality. Specifically, you should:
 
-Specifically, the grader will:
-* Pull down your group's files that are tagged 'cl'
-* Pull down your submission for this deliverable from the ID2 repository
-* Place your Flask app file  in the top level directory of your group's code (and any templates into a templates folder)
-* Run your Flask app file
-* Based on the information on your homepage, type in a URL to see the data
-* Examine your code for style and requirements
-* If you have them, place your tests into the `Tests` folder and run them
+1. Copy over the file(s) from your team repo that contain necessary helper functions that interact with the data and put those files into the `ProductionCode` subdirectory.
+  * (P.S: The more efficient way to copy files from a repo would be a [git fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) of your team repo, but alas, GitHub classroom doesn’t keep track of forks & therefore, neither I nor the grader will have access.🙁)
+  * You are allowed to refactor the helper functions from your team repo to work for your purposes
+  * You should put in "dummy data" to make the core functions work without your full dataset. This can be by hard-coding the data in your ProductionCode files or making a data folder with the dummy data.
+2. Make a Flask app in `app.py` with at least one route that uses the core functionality in `ProductionCode`
+3. The home page of your app should provide instructions for what URL to go to to see the data you choose.
+4. To get 'exemplary' that route should use a route parameter and you should have a couple of tests in `Tests` for your Flask-specific functions.
 
 ## Turning it in
 
@@ -43,38 +49,27 @@ You should submit the file with your individual Flask app to the ID2 repository 
 
 ## Evaluation
 
-The criteria for "Demonstrates Mastery" and "Demonstrates Proficiency" are below.
+The criteria for "Exemplary" and "Proficiency" are below.
 
 ### Proficiency
 * Functionality:
-  * The Flask app works with the team's core command line code
+  * The Flask app is using (possibly refactored) code from the team's project
   * There is a homepage with instructions
   * There is at least one route that uses the team's code to display data from the dataset
 * Design:
   * Flask app code is reasonably easy to read and understand
   * The Flask app code has appropriate [docstrings](https://peps.python.org/pep-0257/) 
   * There isn't an excessive amount of repeated code
-  * Style mostly follows the [style guide](https://peps.python.org/pep-0008/)
+  * Style checks are all 5 or higher
 
-### Mastery
+### Exemplary
 * All the Proficiency criteria are met
 * Functionality:
-  * Route uses a parameter to change what data is displayed
-  * There is a reasonable automated test suite for the Flask-specific functions including tests for the routes
+  * One route uses parameter(s) to recreate one feature from the team’s command-line interface
+  * The test suite passes
+  * The test suite has at least 90% coverage
 * Design:
   * The Flask app code is very clear, potentially using helper functions to ensure that Flask-specific functions are at a single layer of abstraction
-  * There is barely any duplicated code
+  * There is no unnecessary duplicated code (e.g. using helper functions, loops, etc)
   * The docstrings are thorough and clear
-
-## Addendums
-
-* Your Flask app should be named `app.py` and be placed in the TOP-LEVEL directory, i.e. **NOT** in `ProductionCode` (the various imports just won't work correctly if it is in `ProductionCode` unfortunately)
-* Do not specify the port when running the app, it doesn't work the same on different operating systems and so can mess up the grading. I.e., when you run your app, it should be just `app.run()` without any arguments
-* Your tests (if you include them) will be placed in the `Tests` folder, so be sure to write them assuming that 
-
-### Subsequent revisions option
-Some of you have group 'cl' code that is broken or pretty far behind what you are working on currently, so in the interest of preserving everyone's sanity, you can make your subsequent revisions of your individual flask deliverable independent from your group code by:
-* Creating a `ProductionCode` folder in your individual deliverable
-* Hard coding data in `ProductionCode` files or loading in dummy data
-* Having your flask app code work with your hard-coded/dummy data version of the core functionality
-* If you have a `ProductionCode` folder, we will assume that you are using this option. If you don't, we will assume your code works with the 'cl' tag of your group repository
+  * Style checks are all 10
