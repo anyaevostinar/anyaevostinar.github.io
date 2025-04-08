@@ -33,11 +33,11 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 4/16 | [Function Design Prep](function-prep) | [Slides](https://docs.google.com/presentation/d/1B6AarW7Rxt5TNfaYHdRIWPHw7mwW7nZfBvwt8k_fD1g/edit?usp=sharing), [Function Design](labfunctions.pdf) | |
 | F 4/18 | [Ethics in Tech Prep](ethics-prep), [Individual Deliverable 1 due 10pm](project-1-ind) | [Slides](https://docs.google.com/presentation/d/1j6S1cAIV4xTPk9ahTNXzXG3dcHpNnw-PG_gD0Hwf_-s/edit?usp=sharing), Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
-| M 4/21 | [Command Line project due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](), [Intro to Flask](flask-intro) | [Flask app project](project-2-flask), [Individual component](project-2-ind) |
+| M 4/21 | [Command Line project due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](), [Intro to Flask](flask-intro) | [Team Flask app](project-2-flask), [Individual flask app](project-2-ind) |
 | W 4/23 | [Classes Prep](classes-prep) | [Slides](), Designing classes | |
-| F 4/25 | [Individual component](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
+| F 4/25 | [Individual Flask app](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
 | **Week 5** | **Database Component** | | |
-| M 4/28 | [Flask app](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend), Midterm Reflection|
+| M 4/28 | [Team Flask app](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend), Midterm Reflection|
 | W 4/30 |  No prep |[Slides](), [Database Connections and Relations](psycopg2)  | |
 | F 5/2 | [Individual back-end](project-4-ind); [Database Normalization](normalization-prep) | [Slides](), More with Databases |  |
 | **Week 6** | **Front-End Component** | | |
