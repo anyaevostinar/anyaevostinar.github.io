@@ -32,42 +32,6 @@ On your team repository, you should have (at least) the following files:
 - [ ] `README.md`
 - [ ] `UserStories.md`
 
-## Evaluation
-
-The criteria for "Proficient" and "Exemplary" are below.
-When evaluating your project, the grader will consult the GitHub action output regarding tests and style. They will also separately pull down your team's repo, checkout the `cl` tag, and run both your production code and test suite, and further look through your code for style.
-
-#### Proficient
-* Functionality:
-  * There is a correct usage statement in both the README and `main`
-    * "Correct" means the grader can run your code with your usage statement
-  * There are two independent features controlled by a command line interface that allows the user to get information from the chosen dataset
-  * There is an automated test suite that achieves 75% coverage
-* Design:
-  * The correct directory structure is used (`Tests` and `ProductionCode`)
-  * All style checks have a score of at least 5
-  * The functions/methods are mostly written at a single layer of abstraction
-  * Function names, return values, and parameters generally follow the principles of good design
-  * Function/method [docstrings](https://peps.python.org/pep-0257/) generally provide the required information
-  * There isn't an excessive amount of repeated code
-
-#### Exemplary
-* All the Proficiency criteria are met
-* The commit to evaluate is correctly tagged with the tag `cl`
-* The `UserStories.md` file contains (at least) two of the user stories from your proposal and information about where their acceptance tests are
-  * If you have needed to change your user stories, you need to get approval from Anya
-* Functionality:
-  * The test suite has over 90% coverage
-  * The usage statement provides more comprehensive instruction on how to use the command-line interface in both the README and main
-  * There are acceptance tests for each user story, which are clearly marked
-* Design:
-  * All style checks are 9 or above
-  * The functions/methods are all written at a single layer of abstraction
-  * Function names, return values, and parameters all follow the principles of good design
-  * Function/method [docstrings](https://peps.python.org/pep-0257/) all provide the required information
-  * There is barely any duplicated code
-
-
 ## Your Task
 
 Your team should write a program that:
@@ -103,3 +67,38 @@ git push origin cl
 ```
 
 If you forgot to tag your comment, you can [retroactively tag](https://docs.google.com/document/d/1gt8cAmhFV9YxFE5ml2ReiGyVvwoum1MH9L0wzttqdkA/edit?usp=sharing).
+
+## Evaluation
+
+The criteria for "Proficient" and "Exemplary" are below.
+When evaluating your project, the grader will consult the GitHub action output regarding tests and style. They will also separately pull down your team's repo, checkout the `cl` tag, and run both your production code and test suite, and further look through your code for style.
+
+#### Proficient
+* Functionality:
+  * There is a correct usage statement in both the README and `main`
+    * "Correct" means the grader can run your code with your usage statement
+  * There are two independent features controlled by a command line interface that allows the user to get information from the chosen dataset
+  * There is an automated test suite that achieves 75% coverage
+* Design:
+  * The correct directory structure is used (`Tests` and `ProductionCode`)
+  * All style checks have a score of at least 5
+  * The functions/methods are mostly written at a single layer of abstraction
+  * Function names, return values, and parameters generally follow the principles of good design
+  * Function/method [docstrings](https://peps.python.org/pep-0257/) generally provide the required information
+  * There isn't an excessive amount of repeated code
+
+#### Exemplary
+* All the Proficiency criteria are met
+* The commit to evaluate is correctly tagged with the tag `cl`
+* The `UserStories.md` file contains (at least) two of the user stories from your proposal and information about where their acceptance tests are
+  * If you have needed to change your user stories, you need to get approval from Anya
+* Functionality:
+  * The test suite has over 90% coverage
+  * The usage statement provides more comprehensive instruction on how to use the command-line interface in both the README and main
+  * There are acceptance tests for each user story, which are clearly marked
+* Design:
+  * All style checks are 9 or above
+  * The functions/methods are all written at a single layer of abstraction
+  * Function names, return values, and parameters all follow the principles of good design
+  * Function/method [docstrings](https://peps.python.org/pep-0257/) all provide the required information
+  * There is barely any duplicated code
