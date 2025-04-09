@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code Review Prep
-permalink: /classes/257-f23/code-review-prep
+permalink: /classes/257-s25/code-review-prep
 ---
 
 ## Overview
@@ -21,15 +21,17 @@ After class, you should be able to:
 * Improve your team's codebase based on feedback from a code review
 
 ## Readings
-To achieve the basic learning objectives, you should read the following before class:
+To achieve the basic learning objectives, you can read the following:
 * [Code review guidelines](http://www.codeproject.com/Articles/524235/Codeplusreviewplusguidelines) from Code Project
 * Skim Martin Ch 2 (Meaningful Names) - we will revisit this more in-depth in the future, but these principles are good things to look for during a code review
+
+You will additionally be required to:
 * Read and make notes about the code sent to you (information forthcoming on Monday). Pay special attention to the principles of function design that we have been discussing as well as the style principles that you have learned about in previous classes. 
 
 ## Checks
-Write answers to the following and bring them to class:
-* For your *own* team's project, write a brief overview of your team's design approach and the main classes/functions/decisions that you've made. You will use this to introduce your project code to the people reviewing it, so it should give them a high-level idea of your project codebase
-* For the repository you are assigned to review:
+Write answers to the following. You should submit your answer to 1 on Moodle and bring your notes from 2 to class:
+1. For your *own* team's project, write a brief overview of your team's design approach and the main classes/functions/decisions that you've made. You will use this to introduce your project code to the people reviewing it, so it should give them a high-level idea of your project codebase
+2. For the repository you are assigned to review:
     * 2 or 3 things you like about their code, that you think they should keep doing.
     * 2 or 3 things you think could be improved. Ideally, you should include suggestions on how to make those improvements, but sometimes, you won't be sure how to fix a particular thing.
     * [optional] If there are things about the code that you don't understand, or about which you have questions, you may include a couple of those items at the end of your writeup.
