@@ -27,14 +27,14 @@ Normally you would make your own new repository at this point, but we're going t
 
 **Accept the assignment by clicking on the link in Moodle "Git Individual Link"**, which will set up a new git repository for you that I also have access to. You should now see this (with your username instead):
 
-![Empty git classroom repository](git-lab-images/Image1.png)
+![Empty git classroom repository](/classes/257-f23/git-lab-images/Image1.png)
 
 There is some extra stuff that has to do with a feature for giving feedback that we are going to try out, but don't worry about it right now.
 
 ## Step 2: README
 You should always have a README file for a repository and GitHub let's you do some editing of files like this right in the browser. Click the "Add a README" button:
 
-![Green button says Add a README](git-lab-images/Step2.png)
+![Green button says Add a README](/classes/257-f23/git-lab-images/Step2.png)
 
 If the syntax doesn't look familiar to you, this is *markdown*, which is a quick way of adding rich text-like features to plain text. The "#" indicates a top-level heading; "normal" text is just typed. You can just type normal text and be just fine, but if you're interested in learning more, check out [this resource](https://www.markdownguide.org/basic-syntax/).
 
@@ -42,11 +42,11 @@ There is a lot of opinion out there on what should all be in a README, but at a 
 
 **Scroll to the bottom to commit the file to the repository.** (Since this is our remote repository, we don't need to push the file this time.) Make sure you **add a commit message** to the log like I've done. This allows you to go back and read descriptions of what you've committed, rather than trying to deduce this later from the set of files you committed:
 
-![Dialog box for adding a commit message](git-lab-images/Step2-2.png)
+![Dialog box for adding a commit message](/classes/257-f23/git-lab-images/Step2-2.png)
 
 So now your repo should look something like:
 
-![Repository with a README.md file](git-lab-images/Step2-3.png)
+![Repository with a README.md file](/classes/257-f23/git-lab-images/Step2-3.png)
 
 ## Step 3: Make a local version of your repository
 For this next set of steps, you should open VSCode and work through its Terminal.
@@ -57,7 +57,7 @@ First, go to a terminal, and create a directory for this class `CS257`. This is 
 
 Now we're ready to rock. Go to the GitHub page for the repository that you created. Click on the green "Code" button. You should see something that looks like this: 
 
-![Code button selected and showing dropdown](git-lab-images/Step3.png)
+![Code button selected and showing dropdown](/classes/257-f23/git-lab-images/Step3.png)
 
 **Make sure you see https:// as the first part of the URL**. If you don't, click on "Use HTTPS" in the right hand corner of that box.
 
@@ -102,7 +102,7 @@ git push
 
 You should see something in that middle box that says "4 commits", or something similar:
 
-![Git repository screen with 4 commits circled](git-lab-images/Step4.png)
+![Git repository screen with 4 commits circled](/classes/257-f23/git-lab-images/Step4.png)
 
 If you click on what I've circled, you can see a history of what you've committed, including the log messages you typed.
 
@@ -155,7 +155,7 @@ It should tell you that "Your branch is up to date with origin/main" which is a 
 
 2. Now, go back to GitHub and click on one of the files in your repository. You're going to edit this on GitHub directly, by clicking on the pencil icon:
 
-![Github file view with pencil icon circled](git-lab-images/Step5.png)
+![Github file view with pencil icon circled](/classes/257-f23/git-lab-images/Step5.png)
 
 Edit, add a commit message, and then commit like we did with the `README.md` file earlier.
 
@@ -185,7 +185,7 @@ And git will try to smoosh the changed files together, but it won't be able to d
 
 5. Open the file that you changed in VSCode and you should see something like this:
 
-![Merge conflict in VSCode](git-lab-images/Step6.png)
+![Merge conflict in VSCode](/classes/257-f23/git-lab-images/Step6.png)
 
 Whether you are using VSCode or not, those funky "<<<<<<<<< HEAD" ">>>>>>>>>>>>>>>>" with a long alphanumeric string mean that git isn't sure which of these lines you want in this file. If you aren't using VSCode, you might have to just manually delete one or the other (or just get rid of two weird lines if you want to keep both), but VSCode gives you some nice buttons to speed up this process. 
 
@@ -288,11 +288,11 @@ Replace BRANCH with your branch name.
 
 3, Now, if you go to GitHub, you should be able to see your branch (and your teammates' branches too, if they've already pushed their branches). Go to the circled drop-down menu: 
 
-![Git repository with main circled](git-lab-images/TeamStep3-1.png)
+![Git repository with main circled](/classes/257-f23/git-lab-images/TeamStep3-1.png)
 
 When you click on it, you should see this drop-down:
 
-![Main with drop down](git-lab-images/TeamStep3-2.png)
+![Main with drop down](/classes/257-f23/git-lab-images/TeamStep3-2.png)
 
 Select your branch (or one of your teammate's branches), and you'll see the snapshot of that branch displayed.
 
