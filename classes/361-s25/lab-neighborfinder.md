@@ -158,10 +158,10 @@ Make sure to push your code to the remote repository (`git add *`, `git commit -
 If you finish early, see if you can incorporate an animation into your current visualization. For example, have the focal cell and each neighbor light up one at a time.
 
 To send buttons to your document:
-    ```cpp
-    doc << GetToggleButton("Toggle");
-    doc << GetStepButton("Step");
-    ```
+```cpp
+doc << GetToggleButton("Toggle");
+doc << GetStepButton("Step");
+```
 
 And to specify what should happen in each animation frame, you need to override and define your own `DoFrame` method:
 
