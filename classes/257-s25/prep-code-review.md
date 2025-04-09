@@ -26,10 +26,10 @@ To achieve the basic learning objectives, you can read the following:
 * Skim Martin Ch 2 (Meaningful Names) - we will revisit this more in-depth in the future, but these principles are good things to look for during a code review
 
 You will additionally be required to:
-* Read and make notes about the code sent to you (information forthcoming on Monday). Pay special attention to the principles of function design that we have been discussing as well as the style principles that you have learned about in previous classes. 
+* Read and make notes about the code sent to you (info on Moodle under "Code Review Pods"). Pay special attention to the principles of function design that we have been discussing as well as the style principles that you have learned about in previous classes. 
 
 ## Checks
-Write answers to the following. You should submit your answer to 1 on Moodle and bring your notes from 2 to class:
+Write answers to the following and submit them to Moodle:
 1. For your *own* team's project, write a brief overview of your team's design approach and the main classes/functions/decisions that you've made. You will use this to introduce your project code to the people reviewing it, so it should give them a high-level idea of your project codebase
 2. For the repository you are assigned to review:
     * 2 or 3 things you like about their code, that you think they should keep doing.
