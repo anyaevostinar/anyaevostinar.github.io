@@ -116,7 +116,7 @@ There are a couple of things that you'll need to define to get your Neighbor-fin
 
 Time to make a grid of cells! Or just one cell to start...
 
-1. Empirical makes it easy to draw [your typical shapes](https://empirical.readthedocs.io/en/latest/api/classemp_1_1web_1_1Canvas.html#exhale-class-classemp-1-1web-1-1canvas) on the canvas.
+1. Empirical makes it easy to draw rectangles and [circles](https://empirical.readthedocs.io/en/latest/library/web/api/Canvas.html#_CPPv4IDpEN6Canvas6CircleER6Canvas5PointdDpRR2Ts) on the canvas.
 To draw a rectangle, you just need to call `Canvas`' `Rect` method:
     ```cpp
     canvas.Rect(0, 0, 10, 10, "white", "black");
