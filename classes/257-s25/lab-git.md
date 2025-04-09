@@ -193,13 +193,6 @@ Whether you are using VSCode or not, those funky "<<<<<<<<< HEAD" ">>>>>>>>>>>>>
 
 7. Now you just need to save, add, commit, and push and everything will be fixed.
 
-## Step 8: More practice with merge conflicts
-Now try this:
-
-1. Create a merge conflict the same way you just did, i.e. edit the same file both directly on GitHub and locally.
-2. Resolve the merge conflict locally like you just did, except this time **delete** the item you added when you edited the file on GitHub. So, in the example above, instead of keeping "underwater basket weaving", delete that from the text file you're editing locally.
-3. Add, commit, and push.
-
 ## Part 1 is done!
 Make sure all of your lab files are committed and pushed to your GitHub repository.
 
@@ -324,10 +317,10 @@ For this part of the lab, split into pairs. The first pair (A and B) will create
 To create the merge conflict:
 
 1. Make sure you all have the latest snapshot of the main branch locally:
-    ```bash 
-    git checkout main
-    git pull
-    ```
+```bash 
+git checkout main
+git pull
+```
 2. A and B should agree on which file they'll edit simultaneously, in your local repository. C and D should agree on a different file that they'll edit simultaneously as well.
 3. Everyone should edit and commit the file that they are working with locally.
 4. **A and C** should push changes to the repo first.
