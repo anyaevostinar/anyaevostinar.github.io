@@ -4,8 +4,6 @@ title: Empirical Data Recording Intro
 permalink: /classes/361-w21/data_intro
 ---
 
-*(Note: This reading is a work in progress and there may be typos, please let me know if you find any!)*
-
 [Empirical](https://empirical.readthedocs.io/) provides a robust set of tools for [collecting data](https://empirical.readthedocs.io/en/latest/library/data/data.html) from your simulation at regular intervals. We'll look at a few specific approaches to doing so in this reading.
 
 # Include
@@ -198,4 +196,4 @@ file.AddHistBin(node, 19, "Hist_0.9", "Count for histogram bin 0.9 to 1.0");
 ```
 Like I said, not beautiful, but functional. This will then give you the count of values that fall into each range.
 
-There are even more things (such as min, max, median, percentile, etc) supported and feel free to look through the [documentation for the DataFile](https://empirical.readthedocs.io/en/latest/api/classemp_1_1DataFile.html) to see them.
+There are even more things (such as min, max, median, percentile, etc) supported and feel free to look through the [documentation for the DataFile](https://empirical.readthedocs.io/en/latest/library/data/api/DataFile.html) to see them.
