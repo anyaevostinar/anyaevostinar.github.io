@@ -23,11 +23,11 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 4/9 | [Cellular Automata Prep](ca-intro-prep)	| [Finding Neighbors](nf-lab), [Slides](https://docs.google.com/presentation/d/1PuEkv5l5tjz_a15iilrbIj-10AgxviqYcpH3BkGwcZw/edit?usp=sharing)  | [CA project](hw-ca) |
 | F 4/11 | [CA 2 Prep](ca-2-prep)	| [Gradient Lab](gradient-lab), [Slides](https://docs.google.com/presentation/d/1l5dLjabav9RBcpgAQnqinVFzbAdSEQ2oWo4xizMXq40/edit?usp=sharing)	| |
 | Week 3 | |  | |
-| M 4/14 | [Inheritance Prep](inheritance-prep) | [Inheritance in C++](inheritance_lab) [Slides](https://docs.google.com/presentation/d/1Q98MK3XoulFJLqRWlvjoi3UggM7ydaX8QiGwUyPup34/edit?usp=sharing) |  |
+| M 4/14 | [Inheritance Prep](inheritance-prep) | [Inheritance in C++](inheritance_lab), CA Peer Review, [Slides](https://docs.google.com/presentation/d/1Q98MK3XoulFJLqRWlvjoi3UggM7ydaX8QiGwUyPup34/edit?usp=sharing) |  |
 | W 4/16 |	[Ecosystem Models Prep](eco-models-prep), [CA project](hw-ca) | [Empirical World Intro](empirical_intro_lab), [Slides](https://docs.google.com/presentation/d/1spNo6wZmx_ePQfC8M6OVsWfrHE7pSSdECCPvPOKWwIw/edit?usp=sharing)	| [AE project](hw-ae) |
 | F 4/18 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab, [Slides](https://docs.google.com/presentation/d/1EoEWoJQzrJWxRnPa14Jo10s3idMYwkTv2s2mLQHDJR0/edit?usp=sharing)	 |  |
 | Week 4 | | | |
-| M 4/21 | [Avida Prep](avida-prep) | Peer review of AE projects; [Avida-Ed](avida-ed-lab) |  |
+| M 4/21 | [Avida Prep](avida-prep) | Peer review of AE projects; [Avida-Ed](avida-ed-lab), [Slides](https://docs.google.com/presentation/d/1yVmwg65OCISubdkyq0kuN1qJggWpbCs_gTc0lmtWDvc/edit?usp=sharing) |  |
 | W 4/23 |[Data Collection Prep](data-prep)	| [Empirical Data Lab](empirical_data_lab) | [Encyclopedia assignment](encyclopedia-hw) |  
 | F 4/25 | [AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) | [Signal-GP Lite Lab](sgplite_lab) | [DE project](hw-de)  |
 | Week 5 | |  | |

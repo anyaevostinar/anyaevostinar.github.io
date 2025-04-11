@@ -7,6 +7,7 @@ permalink: /classes/361-s25/avida-ed-lab
 ## Goals
 To get a better idea of how Avida works and get inspiration for how a digital evolution system can be visually presented.
 
+## Steps
 
 1. Open [Avida-Ed](https://avida-ed.msu.edu/app4/index.html) and the [Quick Start Manual](https://avida-ed.msu.edu/app4/images/Avida-ED_UserManualv3.0.pdf).
 
