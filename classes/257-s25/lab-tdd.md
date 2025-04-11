@@ -14,37 +14,37 @@ Engage in test-driven development with a simple example. For this lab, you are g
 2. Then work through the [virtual environment](venv-guide) for this class to get all the modules that you'll need. Stay in your virtual environment for this lab.
 
 ## Step 1: A First Failing Test
-1. Accept the assignment by clicking on the `TDD Lab Classroom Link` on Moodle and clone down the repository.
+a. Accept the assignment by clicking on the `TDD Lab Classroom Link` on Moodle and clone down the repository.
 
 In TDD, you always want to start with a failing test. Your first goal is to eventually have a function `reverse_word` that takes a word and returns it reversed. However, you are going to write the test first:
 
-2. In `test_production.py` import your (non-existent) `reverse_word` function:
+b. In `test_production.py` import your (non-existent) `reverse_word` function:
 
 ```python
 from production import reverse_word
 ```
 
-3. Then create your test class:
+c. Then create your test class:
 
 ```python
 class TestReverseWord(unittest.TestCase):
 ```
 
-4. Then write some tests. You know exactly what a reverse word function should do, so you can definitely write the tests even though you haven't written the production code. (Hint, if I give it "hello", it should return "olleh".)
+d. Then write some tests. You know exactly what a reverse word function should do, so you can definitely write the tests even though you haven't written the production code. (Hint, if I give it "hello", it should return "olleh".)
 
-5. Verify your tests all fail due to an `ImportError`:
+e. Verify your tests all fail due to an `ImportError`:
 
 ```python
 python3 -m unittest discover Tests
 ```
 
-6. Fix that by creating a stub of the function (don't write the actual code yet!!!) in `production.py`:
+f. Fix that by creating a stub of the function (don't write the actual code yet!!!) in `production.py`:
 ```python
 def reverse_word(word):
     pass
 ```
 
-7. Verify that your tests still fail but now because your function isn't doing what it should do. Excellent, you are now at the "red" stage and can be confident that your tests are actually testing the code. You also have perfect clarity on what your production code should do.
+g. Verify that your tests still fail but now because your function isn't doing what it should do. Excellent, you are now at the "red" stage and can be confident that your tests are actually testing the code. You also have perfect clarity on what your production code should do.
 
 ## Step 2: Passing that test
 Now you can finally write the code to implement `reverse_word`. There are lots of ways of doing this and Copilot certainly has a suggestion; feel free to use it since you'll be able to check if it is correct! Or brush up on your Python by implementing it yourself.
@@ -64,14 +64,14 @@ Testing command-line functionality is a bit trickier than at the function level,
 
 Your goal is to allow the user to enter a phrase at the command line and then print out the phrase in the correct order but with the words reversed.
 
-1. It turns out, you can change the value of `sys.argv` directly:
+a. It turns out, you can change the value of `sys.argv` directly:
 
 ```python
 import sys
 sys.argv = ['production.py', 'this is a test'] #setting the command-line argument "this is a test"
 ```
 
-2. Checking what is printed is a little bit more difficult, but not much. You just change where `sys.stdout` goes so that you can grab the results:
+b. Checking what is printed is a little bit more difficult, but not much. You just change where `sys.stdout` goes so that you can grab the results:
 
 ```python
 from io import StringIO
@@ -80,12 +80,12 @@ sys.stdout = StringIO() #make a StringIO object and have sys.stdout point to it 
 printed_output = sys.stdout.getvalue() #I can get what is printed as a normal string!
 ```
 
-3. You then can compare `printed_output` to whatever you think should be printed. (Note you should call main first, which you can call like any other function.) You should NOT use your `reverse_all_words` function to check against what is printed, why do you think that is?
+c. You then can compare `printed_output` to whatever you think should be printed. (Note you should call main first, which you can call like any other function.) You should NOT use your `reverse_all_words` function to check against what is printed, why do you think that is?
 
 ## Step 5: Coverage checking
 When you are writing tests, you want to make sure that you have tests for all lines and scenarios of your code. One tool for making sure you at least execute each line of code (the bare minimum check) is "coverage". Python has a module for automatically checking [coverage](https://coverage.readthedocs.io/en/7.7.1/), which you hopefully already have installed.
 
-1. You run your tests with coverage, so first run this command:
+a. You run your tests with coverage, so first run this command:
 ```bash
 python3 -m coverage run --source production -m unittest discover Tests
 ```
@@ -94,7 +94,7 @@ Note that it is `production` not `production.py`, but if it was a folder, it wou
 
 This runs the tests while collecting coverage data, so it will just tell you that the tests passed as usual.
 
-2. To see the coverage data:
+b. To see the coverage data:
 ```bash
 python3 -m coverage report -m
 ```
