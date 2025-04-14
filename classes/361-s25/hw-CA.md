@@ -76,3 +76,8 @@ If you are unsure how to use Git to push your code, please ask!
 Remember that you can and should ask for help on everything from annoying C++ bugs to Git to "is this a reasonable CA to implement?"
 The CampusWire is probably the best place to ask, as long as you don't have to share too much of your code to do so, because you'll get faster responses on average.
 You are also welcome to come to drop-in hours, Kai's help hours, and schedule a one-on-one meeting if that works better for you.
+
+## Q & A
+*My GUI runs for a bit and then freezes.*
+
+You might be running out of memory in your browser. Right-click and choose "Inspect", then look in the Console of the webpage for any errors. If you see one about "Aborted(OOM)", that means you are running out of memory. Add `-s ALLOW_MEMORY_GROWTH=1` to your compile-run.sh compile line (ask for help if you aren't sure how).

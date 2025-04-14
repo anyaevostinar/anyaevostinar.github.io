@@ -14,7 +14,7 @@ Make sure that you have [installed Flask in your virtual environment](venv-guide
 As you know from the reading, Flask is a web framework that lets you build dynamic a dynamic website using Python.
 You're first going to build a very simple app that grabs data from a file and displays it on dynamically-built (and ugly) web pages.
 
-1. Make a new folder `FlaskLab` and open it in VSCode
+1. Clone down the (empty) Flask Lab classroom repository (linked on Moodle) and cd into that directory
 2. Make a new file `flask_lab_app.py`
 3. In that file, put the boilerplate for Flask apps:
 ```python
