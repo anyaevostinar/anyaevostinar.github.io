@@ -7,9 +7,6 @@ permalink: /classes/257-s25/command-line-design
 ## Goal
 Start on a design for a command line app for your dataset. DON'T START CODING IT YET!
 
-## First Though
-If you haven't finished both parts of [Git Practice](git-lab), do that first.
-
 ## Overview
 Your command line app should allow the user to do at least two interesting things with your dataset, which probably will both involve searching the data based on some information and getting back a subset of the data that fits some criteria.
 Maybe you already have an idea of a couple of user stories that you want to support; great! This lab will walk you through coming up with a couple more and starting to design the command line interface.
