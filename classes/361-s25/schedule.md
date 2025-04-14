@@ -28,7 +28,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 4/18 | [Artificial Ecologies](art-eco-prep) | Continuing Empirical Intro Lab, [Slides](https://docs.google.com/presentation/d/1EoEWoJQzrJWxRnPa14Jo10s3idMYwkTv2s2mLQHDJR0/edit?usp=sharing)	 |  |
 | Week 4 | | | |
 | M 4/21 | [Avida Prep](avida-prep) | Peer review of AE projects; [Avida-Ed](avida-ed-lab), [Slides](https://docs.google.com/presentation/d/1yVmwg65OCISubdkyq0kuN1qJggWpbCs_gTc0lmtWDvc/edit?usp=sharing) |  |
-| W 4/23 |[Data Collection Prep](data-prep)	| [Empirical Data Lab](empirical_data_lab) | [Encyclopedia assignment](encyclopedia-hw) |  
+| W 4/23 |[Data Collection Prep](data-prep)	| [Empirical Data Lab](empirical_data_lab), [Slides](https://docs.google.com/presentation/d/1TA-lmlqRrAuz8QPT40wT7fdRKMX2en5GhN9id4yu44g/edit?usp=sharing) | [Encyclopedia assignment](encyclopedia-hw) |  
 | F 4/25 | [AE project](hw-ae); [Digital Evolution Prep](dig-evo-prep) | [Signal-GP Lite Lab](sgplite_lab) | [DE project](hw-de)  |
 | Week 5 | |  | |
 | M 4/28 | [Configuration Preparation](config_intro)| [Using Empirical Configuration](emp_config_lab) | |  |
