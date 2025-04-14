@@ -107,17 +107,16 @@ Fun fact, you can!
 ## Testing
 You can test the Flask-specific functions the normal way by just calling them directly and checking that they return the correct thing.
 You can also test that your Flask app returns the correct thing based on a URL with the following:
+```python
+from app import *
+import unittest
 
-    ```python
-    from app import *
-    import unittest
-
-    class TestSOMETHING(unittest.TestCase):
-        def test_route(self):
-            self.app = app.test_client()
-            response = self.app.get('/', follow_redirects=True)
-            self.assertEqual(b'hello, this is the homepage', response.data)
-    ```
+class TestSOMETHING(unittest.TestCase):
+    def test_route(self):
+        self.app = app.test_client()
+        response = self.app.get('/', follow_redirects=True)
+        self.assertEqual(b'hello, this is the homepage', response.data)
+```
       
 The `b` stands for byte and its because `response.data` is a 'bytes-like object'.
 Once you make more complicated pages, you can use `assertIn` to check for the specific data that you care about without worrying about the HTML tags.
