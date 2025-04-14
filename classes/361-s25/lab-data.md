@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Empirical DataFiles Lab
-permalink: /classes/361-f22/empirical_data_lab
+permalink: /classes/361-s25/empirical_data_lab
 ---
 
 ## Goals
@@ -11,15 +11,14 @@ To use Empirical's DataFiles and DataNodes to record data from an artificial lif
 1. Open the Empirical Data Lab starter link on Moodle to get the Git repository template. 
 
 2. Open Terminal and clone your repository:
-    ```
+    ```bash
     git clone <your repository link>
     ```
 
 3. Open VSCode and then open your repository folder. 
 
 4. Open a Terminal in VSCode and pull down the submodules for the starter code:
-
-    ```
+    ```bash
     git submodule update --init --recursive
     ```
 
