@@ -34,8 +34,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 4/18 | [Ethics in Tech Prep](ethics-prep), [Individual Deliverable 1 due 10pm](project-1-ind) | [Slides](https://docs.google.com/presentation/d/1j6S1cAIV4xTPk9ahTNXzXG3dcHpNnw-PG_gD0Hwf_-s/edit?usp=sharing), Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
 | M 4/21 | [Command Line project due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](https://docs.google.com/presentation/d/1d-OCON0Hts7RwoBznL5TLp8covV02Av4EhsF9dRzVho/edit?usp=sharing), [Intro to Flask](flask-intro) | [Team Flask app](project-2-flask), [Individual flask app](project-2-ind) |
-| W 4/23 | [Classes Prep](classes-prep) | [Slides](), Designing classes | |
-| F 4/25 | [Individual Flask app](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
+| W 4/23 | [Classes Prep](classes-prep) | [Slides](https://docs.google.com/presentation/d/18i21nuvvKw7Ol5hzfGTYwmFMMq7dUylt2S33AKUevuo/edit?usp=sharing), Designing classes | |
+| F 4/25 | [Individual Flask app](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](https://docs.google.com/presentation/d/13tOSQE_wzQZOjPVFRxc5or_YTKDC0ukpZfZ7bI27MGk/edit?usp=sharing), Code review | |
 | **Week 5** | **Database Component** | | |
 | M 4/28 | [Team Flask app](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), Starting with Databases | [Individual Database](project-4-ind); [Team Database](project-4-backend), Midterm Reflection|
 | W 4/30 |  No prep |[Slides](), [Database Connections and Relations](psycopg2)  | |
