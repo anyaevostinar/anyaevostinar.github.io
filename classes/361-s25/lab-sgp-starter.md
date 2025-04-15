@@ -85,7 +85,7 @@ Time to specify a task for the organisms to be rewarded for doing.
         //Since these are floats, allowing for some floating point error
         if (fabs(output - square) < 0.001) {
             //They squared an input, yey!
-            std::cout << "Squared!" << std::endl;
+            std::cout << "Successfully squared an input!" << std::endl;
             //Give them 5 points for solving this task
             return 5.0
         }
@@ -132,7 +132,7 @@ It's not ideal to only be able to see that an organism solved a task by outputti
 
 2. In `World.h`, change `CheckOutput` so that it changes the `state`'s boolean variable to true if the organism does actually get points for solving the task.
 
-3. In your world's `Update`, add a counter for how many organisms have solved the task and print it out each update so you can see if your population is getting better as a whole. This is a good time to compile and run to see how things are working and do any needed debugging!
+3. In your world's `Update`, add a counter for how many organisms have solved the task and print it out each update so you can see if your population is getting better as a whole. This is a good time to compile and run to see how things are working and do any needed debugging! (You could also make a `DataMonitor` for this instead.)
 
 4. Finally, if you are curious to see what one of your organisms' genomes looks like at the end of your experiment, you can print it out with the `PrintGenome()` method in `native.cpp`:
 
