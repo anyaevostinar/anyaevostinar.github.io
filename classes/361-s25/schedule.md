@@ -31,7 +31,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 4/23 |[Data Collection Prep](data-prep)	| [Empirical Data Lab](empirical_data_lab), [Slides](https://docs.google.com/presentation/d/1TA-lmlqRrAuz8QPT40wT7fdRKMX2en5GhN9id4yu44g/edit?usp=sharing) | [Encyclopedia assignment](encyclopedia-hw) |  
 | F 4/25 | [AE project](hw-ae) | AE project help time, [Slides](https://docs.google.com/presentation/d/1VDkoe6FQ8QD-rT8dBAVA8wfnGc5N4spR-XBDFtO72vs/edit?usp=sharing) |   |
 | Week 5 | |  | |
-| M 4/28 | [Digital Evolution Prep](dig-evo-prep) | [Signal-GP Lite Lab](sgplite_lab), [Slides](https://docs.google.com/presentation/d/1QdAhZqkl7FtRX6KCXXg3sbhbhSTcb-Qr2BZaOJNdV-U/edit?usp=sharing) | | [DE project](hw-de) |
+| M 4/28 | [Digital Evolution Prep](dig-evo-prep) | [Signal-GP Lite Lab](sgplite_lab), [Slides](https://docs.google.com/presentation/d/1QdAhZqkl7FtRX6KCXXg3sbhbhSTcb-Qr2BZaOJNdV-U/edit?usp=sharing) |  [DE project](hw-de) |
 | W 4/30 |	Encyclopedia topic, [Configuration Preparation](config_intro) |[Using Empirical Configuration](emp_config_lab) | |
 | F 5/2 | None  | 	DE Project help time	| |
 | Week 6 | |  | |
