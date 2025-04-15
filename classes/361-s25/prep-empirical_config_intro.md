@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Empirical Configuration Management
-permalink: /classes/361-f22/config_intro
+permalink: /classes/361-s25/config_intro
 ---
 
 ## Overview
@@ -18,10 +18,13 @@ After class, you should be able to:
 * Implement a configuration manager using the `ArgManager` functionality
 * Display a configuration panel on a web GUI
 
+## Checks
+After reading the following, submit answers to the prep questions:
+* From the reading example, what is the syntax for getting the value of the START_PROB configuration value?
+* Why do we want command-line configuration support?
+
 ## Resources
 Read the following introductory documentation.
-
-*(Note: This reading is a work in progress and there may be typos, please let me know if you find any!)*
 
 
 ### Include
