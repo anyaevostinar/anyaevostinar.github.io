@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SGP-Lite Lab
-permalink: /classes/361-f22/sgplite_lab
+permalink: /classes/361-s25/sgplite_lab
 ---
 
 ## Goals
