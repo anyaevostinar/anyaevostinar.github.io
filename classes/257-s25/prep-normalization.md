@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Database Normalization Prep
-permalink: /classes/257-f23/normalization-prep
+permalink: /classes/257-s25/normalization-prep
 ---
 
 ## Overview
@@ -26,5 +26,5 @@ To achieve the basic learning objectives, you should read the following:
 NOTE: You do not need to know the finer details of first normal form vs. fourth normal form, etc. Read these to get a sense of the ways you could, and should, be cutting down on redundancy and inefficiencies in database tables.
 
 ## Checks
-Write down your answer to the following and bring it to class:
+Submit an answer to the following on Moodle:
 * Identify a real or hypothetical duplication of data in your team dataset (i.e. if you don't think there is any data duplication, come up with a way there could be) and how a normal form could reduce that duplication.
