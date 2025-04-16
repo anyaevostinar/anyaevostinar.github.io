@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Databases Intro Prep
-permalink: /classes/257-f23/intro-database-prep
+permalink: /classes/257-s25/intro-database-prep
 ---
 
 ## Overview
@@ -32,7 +32,7 @@ To achieve the basic learning objectives, you should read the following:
     * [Postgres Data Types](https://www.postgresql.org/docs/current/datatype.html) for reference
 
 ## Checks
-Write down your answer to the following and bring it to class:
+Submit your answer to the following on Moodle:
 * What is one query that you'd like to be able to do for your team project?
 
 You should also be able to answer the [relevant exercises on W3Schools](https://www.w3schools.com/sql/exercise.asp)
