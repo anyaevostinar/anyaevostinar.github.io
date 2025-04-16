@@ -45,7 +45,7 @@ def main():
     except:
         print("Usage: python3 basic_cl.py row column")
         return
-    if 0 <= row <= 3 and 0 <= column <= 3:
+    if 0 <= row < 3 and 0 <= column <= 3:
         print(get_cell(row, column))
     else:
         print("Usage: python3 basic_cl.py row column")
