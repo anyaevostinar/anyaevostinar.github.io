@@ -37,19 +37,19 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 4/23 | [Classes Prep](classes-prep) | [Slides](https://docs.google.com/presentation/d/18i21nuvvKw7Ol5hzfGTYwmFMMq7dUylt2S33AKUevuo/edit?usp=sharing), Designing classes | |
 | F 4/25 | [Individual Flask app](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](https://docs.google.com/presentation/d/13tOSQE_wzQZOjPVFRxc5or_YTKDC0ukpZfZ7bI27MGk/edit?usp=sharing), Code review | |
 | **Week 5** | **Database Component** | | |
-| M 4/28 | [Team Flask app](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), Starting with Databases | [Individual Database](project-3-ind); [Team Database](project-4-backend), [Midterm Reflection](reflection-mid)|
+| M 4/28 | [Team Flask app](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), Starting with Databases | [Individual Database](project-3-ind); [Team Database](project-3-backend), [Midterm Reflection](reflection-mid)|
 | W 4/30 |  No prep |[Slides](), [Database Connections and Relations](psycopg2)  | |
 | F 5/2 | [Midterm Reflection](reflection-mid), [Individual back-end](project-3-ind); [Database Normalization](normalization-prep) | [Slides](), More with Databases |  |
 | **Week 6** | **Front-End Component** | | |
 | M 5/5 | Midterm break! | | |
-| W 5/7 |[Team back-end](project-4-backend);  [Usability Prep](web-usability-prep) | [Slides](), Webpage analysis | [Individual front-end](project-3-ind), [Team front-end](project-3-front-end)|
+| W 5/7 |[Team back-end](project-3-backend);  [Usability Prep](web-usability-prep) | [Slides](), Webpage analysis | [Individual front-end](project-4-ind), [Team front-end](project-4-front-end)|
 | F 5/9 | [HTML with Flask Prep](html-prep) | [Slides](), [HTML Flask Lab](flask-html) | |
 | **Week 7** | **Front-End Component Cont'd** | | |
 | M 5/12 | [CSS and HTML Prep](css-html-prep) | [Slides]() HTML and CSS lab | |
 | W 5/14 | [HTTP Prep](http-prep) | [Slides](), [Flask Forms Lab](flask-form) | |
-| F 5/16 |[Individual front-end](project-3-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](), Accessibility Analysis | |
+| F 5/16 |[Individual front-end](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](), Accessibility Analysis | |
 | **Week 8** | **Refactoring** | | |
-| M 5/19 | [Team front-end](project-3-front-end), [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
+| M 5/19 | [Team front-end](project-4-front-end), [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
 | W 5/21 | [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments](https://docs.google.com/document/d/17oI-pCdvU2ICfR14rQbEbVLrZdhzQvPp4CSt_qmtXNs/edit?usp=sharing) | |
 | F 5/23 | [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells | Design Improvements and Final Reflection (due 6/9)|
 | **Week 9** | **More Refactoring** | | |
