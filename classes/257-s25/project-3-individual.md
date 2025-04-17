@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Individual Deliverable 4 - Back-end
-permalink: /classes/257-f23/project-4-ind
+title: Individual Deliverable 3 - Back-end
+permalink: /classes/257-s25/project-3-ind
 ---
 
 ## Overview
 
-This is the individual component of the [back-end component](project-4-backend) of your team's project.
+This is the individual component of the [back-end component](project-3-backend) of your team's project.
 For this component, you need to create a database with at least one table with a portion of your team's data and use `psycopg2` to access some of the data.
 Much of this code won't end up in your team's repository because it will be duplicate. 
 Instead, the goal is to get you to practice and start thinking about the back-end individually.
@@ -19,7 +19,7 @@ You can get conceptual help from your team and others, however what you submit m
 
 ## Due Date
 
-The individual deliverable for this iteration is due **Friday Oct 27th** at 10pm on the ID4 git repository.
+The individual deliverable for this iteration is due **Friday May 2nd** at 10pm on the ID3 git repository.
 
 ## Your Task
 
@@ -44,21 +44,20 @@ The grader will grade your assignment by:
 
 ## Turning it in
 
-You should submit the files with your individual database to your ID4 repository.
+You should submit the files with your individual database to your ID3 repository.
 
 
 ## Evaluation
 
-The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below.
+The criteria for "Proficiency" and "Exemplary" are below.
 
 
 ### Proficiency
-* Files:
-  * Table is created with `createtable.sql`
-  * `README` specifies the correct copy command
-  * Code to be run is named `app.py`
 * Functionality:
-  * Executes the expected query correctly.
+  * Table is created with `createtable.sql`
+  * `README` specifies the correct copy command with a **relative file path**
+  * Code to be run is named `app.py`
+  * Executes the expected query correctly
   * Data types match the types from the original dataset and/or are appropriate for the modified data from the dataset
 * Design:
   * Code contains appropriate names and mostly appropriate comments. 
@@ -67,15 +66,13 @@ The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below
   * Docstrings exist for all methods
   
 
-### Mastery
+### Exemplary
 * All the Proficiency criteria are met
 * Functionality:
   * Data is well-curated from the original dataset, with no extraneous data that isn't used by the query
   * Data types are well-chosen for the dataset
-  * Data tables (if used) contain little to no overlap (higher degree of normalization)
 * Design:
-   * Code is strongly self-documenting. 
-   * Code contains excellent and appropriate comments. 
-   * Design of individual methods is strong (parameters, return values, responsibilities).  
-   * There is a strong connection between the method signatures and the high-level actions of the website audience (which in turn strongly match the queries).
-   * Column names strongly signify the data they contain
+  * Code is strongly self-documenting. 
+  * Function/method docstrings all provide the required information (i.e. functionality, arguments if applicable)
+  * Function/method signatures match the SQL queries (i.e. `get_events_by_type()` correspond to a SQL query that selects all events of that type)
+  * Column names strongly signify the data they contain (e.g. clear names, no obscure acronyms)
