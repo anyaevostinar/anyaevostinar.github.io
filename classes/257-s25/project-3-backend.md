@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Project Component 4 - Backend
-permalink: /classes/257-f23/project-4-backend
+title: Project Component 3 - Database Backend
+permalink: /classes/257-s25/project-3-backend
 ---
 
 ## Overview
@@ -17,12 +17,21 @@ You are able to get help from outside sources, as specified in the syllabus, but
 
 ## Due Date
 
-This component of the project is due Wednesday November 1st at 10pm on GitHub.
+This component of the project is due Wednesday May 7th at 10pm on GitHub.
+
+## What to submit
+### Individual
+* [Sprint Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSc-BRKK_0TJzMYL_DTiJElwL216B8CRkHcchna5jzh3P-6QGg/viewform?usp=dialog)
+
+### Team
+* Dataset in database on `stearns`
+* `ProductionCode` updated to work with database
+* `cl.py`, `app.py`, `Tests` still functional and updated if necessary
 
 ## Your Task
 
 Your team should create a Postgres database back-end for your Flask app using the [psycopg2](https://www.psycopg.org/docs/index.html) module. Specifically, you should:
-* Put your data into a well-structured database named based on your team name on `stearns` (as specified on Moodle) (most likely with multiple tables)
+* Put your data into a well-structured database named based on your team name on `stearns` (as specified on Moodle)
 * Use `psycopg2` to connect your existing functionality to the database and update your code to make appropriate queries on the database
 * Update your test suite if necessary based on the refactoring that you do on your code
 
@@ -47,43 +56,44 @@ git push origin database
 
 ## Evaluation
 
-The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below.
+The criteria for "Proficiency" and "Exemplary" are below.
 
 ### Proficiency
 * Files:
-  * Database is in correct team database on `stearns`
-  * Code is written to work for the database to be named as specified on Moodle
+  * Database is in your team's database on `stearns`
+  * Code is written to work for your team's database name as specified on Moodle
   * Flask app file named `app.py`
 * Functionality:
-  * Previous subcomponents still work with the new database (i.e. command line works with database too)
-  * Executes the expected queries correctly most of the time. Some strange queries may fail to execute completely correctly.
-  * The automated test suite passes (no additional tests are required)
-  * Data types match the types from the original dataset and/or are appropriate for the modified data from the dataset
-  * Some separation of data into tables where applicable
+  * Command line interface works with the new database
+  * Flask app interface works with the new database
+  * Executes queries for standard cases correctly
+  * The automated test suite passes (no additional tests are required) and has 50% coverage
+  * SQL data types match the types from the original dataset and/or are appropriate for the modified data from the dataset
 * Design:
   * Good separation of responsibilities. Some minor tweaks to class design could improve the code (i.e., tighter cohesion and/or looser coupling). 
   * Model-view-controller paradigm followed.
-  * Code contains appropriate names and mostly appropriate comments. 
-  * Sufficient design of individual methods, with most best practices (parameters, return values, responsibilities) followed.
-  * Method signatures adequately match most high-level queries
-  * Column names somewhat signify the data they contain
+  * Functions/methods follow the principles of good design (e.g. descriptive names, only necessary arguments)
+  * Function/method signatures match the SQL queries (i.e. get_events_by_type() correspond to a SQL query that selects all events of that type)
+  * Column names strongly signify the data they contain (e.g. clear names, no obscure acronyms)
   * Docstrings for each method
+  * Style checks all at 5 or higher
   
 
-### Mastery Criteria
+### Exemplary
 * All the Proficiency criteria are met
+* The commit to evaluate on the team repo is tagged with `database` (See instructions in [How to Submit](https://docs.google.com/document/d/1WJfFKe-xE7ytKzmMba3vMOORZe6_m-0v854SnAb6mWk/edit?tab=t.0#heading=h.h8jfjcdyduzb))
 * Functionality:
-  * Executes robustly, without error or with very rare errors. All queries either succeed or fail gracefully.
+  * Failing queries have helpful error messages
   * Data is well-curated from the original dataset, with no extraneous data
+    * By "extraneous data", we mean data that won’t be used for the final project website.
+    * If you have columns that aren’t being used in this deliverable but have plans to be used in the front-end deliverable, let us know in `README.md`
   * Data types are well-chosen for the dataset
-  * Data tables contain little to no overlap (higher degree of normalization)
+  * The test coverage is at 90% or higher
 * Design:
    * Strong separation of responsibilities between classes, and between methods within classes. 
    * Tight cohesion in each class, and loose coupling between classes. 
-   * Code is strongly self-documenting. 
-   * Code contains excellent and appropriate comments. 
    * Design of individual methods is strong (parameters, return values, responsibilities). 
-   * Code is appropriately tagged. 
    * There is a strong connection between the method signatures and the high-level actions of the website audience (which in turn strongly match the queries).
    * Column names strongly signify the data they contain
    * Docstrings are clear and consistent for each method
+   * Style checks are all at 10
