@@ -76,7 +76,7 @@ The criteria for "Proficiency" and "Exemplary" are below.
   * The command-line interface still works
   * The correct directory structure is used
 * Design:
-  * All style checks at at 5 or higher
+  * All style checks are at 5 or higher
   * The functions/methods are mostly written at a single layer of abstraction
   * Function names, return values, and parameters generally follow the principles of good naming
   * Function/method [docstrings](https://peps.python.org/pep-0257/) generally provide the required information

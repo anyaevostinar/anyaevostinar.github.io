@@ -60,6 +60,7 @@ The criteria for "Proficiency" and "Exemplary" are below.
   * Executes the expected query correctly
   * Data types match the types from the original dataset and/or are appropriate for the modified data from the dataset
 * Design:
+  * All style checks at 5 or higher
   * Code contains appropriate names and mostly appropriate comments. 
   * Sufficient design of individual methods, with most best practices (parameters, return values, responsibilities) followed.
   * Column names somewhat signify the data they contain
@@ -72,6 +73,7 @@ The criteria for "Proficiency" and "Exemplary" are below.
   * Data is well-curated from the original dataset, with no extraneous data that isn't used by the query
   * Data types are well-chosen for the dataset
 * Design:
+  * All style checks are at a 10
   * Code is strongly self-documenting. 
   * Function/method docstrings all provide the required information (i.e. functionality, arguments if applicable)
   * Function/method signatures match the SQL queries (i.e. `get_events_by_type()` correspond to a SQL query that selects all events of that type)
