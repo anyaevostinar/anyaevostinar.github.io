@@ -114,7 +114,7 @@ if(offspring) {
 }
 ```
 
-This is a good time to recompile and run to see your population size increase.
+This is a good time to recompile and run to make sure things are working.
 
 ## Exercise 5
 Because Empirical supports cross-compiling from C++ to Javascript, you can visualize your simulation without a lot of extra code. The `web.cpp` file contains the typical starter code for a browser visualization that you've seen before. You just need to add a few things from `native.cpp` and draw your rectangles.
