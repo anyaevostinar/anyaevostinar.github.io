@@ -108,7 +108,7 @@ Fun fact, you can!
 You can test the Flask-specific functions the normal way by just calling them directly and checking that they return the correct thing.
 You can also test that your Flask app returns the correct thing based on a URL with the following:
 ```python
-from app import *
+from flask_lab_app import *
 import unittest
 
 class TestSOMETHING(unittest.TestCase):
