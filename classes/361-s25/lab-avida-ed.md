@@ -27,3 +27,6 @@ To get a better idea of how Avida works and get inspiration for how a digital ev
 4. Try restarting with different mutation rates, dish size, population size, and Unlimited vs Limited resources and see what happens!
 
 5. Reflect on what aspects of this GUI you think are most interesting and you'd like to implement for your projects.
+
+## Extra
+Try also playing around with the [Symbulation GUI](https://anyaevostinar.github.io/SymbulationEmp/web/symbulation.html). It's not nearly as advanced, but is something that you could aim for in your project since it's made with Empirical!
