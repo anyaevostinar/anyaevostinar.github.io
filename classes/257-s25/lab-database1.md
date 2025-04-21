@@ -35,7 +35,7 @@ If it asks you about authorizes the fingerprint, confirm.
 ### Step 2: Getting setup
 It might take a minute for the login to complete. Once you are on stearns, you can 'ls' to get an idea of what is already there (there might be a lot if you've worked with other servers on campus since they share a file structure). I recommend you make a folder to keep all your work in for today called 'webProject'.
 
-Before we go any further, we need to get our code and data into our working directory on stearns. Once you've ssh'ed in and you've navigated to your working directory, clone your ID4 repository by grabbing the URL from GitHub and typing the following into your connected Terminal: 
+Before we go any further, we need to get our code and data into our working directory on stearns. Once you've ssh'ed in and you've navigated to your working directory, clone your ID3 repository by grabbing the URL from GitHub and typing the following into your connected Terminal: 
 
 ```bash
 git clone [URL of repository]
@@ -93,7 +93,7 @@ Next, while you have the data open in a spreadsheet or text editor, think about 
 You will need to remove the headers for columns from the dataset that you import to your database, so do that now.
 
 ### Step 4: Push to individual repo
-Once you are happy with the size and structure of your data (make sure it is less than 20MB!), add, commit, and push it to your ID4 repository.
+Once you are happy with the size and structure of your data (make sure it is less than 20MB!), add, commit, and push it to your ID3 repository.
 
 Verify on GitHub that it is there since that's how we'll be getting it onto the server.
 
@@ -101,7 +101,7 @@ Verify on GitHub that it is there since that's how we'll be getting it onto the 
 ## Working with your data
 Now you're ready to import your data onto the server. 
 
-1. Connect back to stearns if you are no longer connected and navigate back to your ID4 repository.
+1. Connect back to stearns if you are no longer connected and navigate back to your ID3 repository.
 
 2. Get back into the psql interpreter with `psql`.
 
