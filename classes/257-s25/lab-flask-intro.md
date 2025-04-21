@@ -55,7 +55,7 @@ You're first going to build a very simple app that grabs data from a file and di
 The main goal of using Flask is that we are able to display data from your dataset onto your website.
 Eventually, we'll put your data into a database, but for now, we'll stick with loading it in from a file so we can focus on how Flask itself works.
 
-1. Download [this](dataset.csv) very exciting dataset (it's not exciting, sorry) and put it into the folder with your flask app python file
+1. Download [this](/classes/257-f23/dataset.csv) very exciting dataset (it's not exciting, sorry) and put it into the folder with your flask app python file
 2. We're going to keep things simple by just making a global variable `data` and saving the dataset into that:
     ```python
     data = []
