@@ -94,6 +94,8 @@ The criteria for "Proficiency" and "Exemplary" are below.
    * Tight cohesion in each class, and loose coupling between classes. 
    * Design of individual methods is strong (parameters, return values, responsibilities). 
    * There is a strong connection between the method signatures and the high-level actions of the website audience (which in turn strongly match the queries).
+   * Only necessary data is pulled from the database
+    * This means that the filtering should be done with SQL query logic, not Python
    * Column names strongly signify the data they contain
    * Docstrings are clear and consistent for each method
    * Style checks are all at 10
