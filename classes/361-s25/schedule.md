@@ -34,7 +34,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Week 5 | |  | |
 | M 4/28 | [Digital Evolution Prep](dig-evo-prep) | [Signal-GP Lite Lab](sgplite_lab), [Slides](https://docs.google.com/presentation/d/1QdAhZqkl7FtRX6KCXXg3sbhbhSTcb-Qr2BZaOJNdV-U/edit?usp=sharing) |  [DE project](hw-de) |
 | W 4/30 |	Encyclopedia topic, [Configuration Preparation](config_intro) |[Using Empirical Configuration](emp_config_lab), [Slides](https://docs.google.com/presentation/d/1Nsi0KzLELSEGINQdFQlXyWw1x6ztErQFJfwC8naIak0/edit?usp=sharing) | |
-| F 5/2 | None  | 	DE Project help time	| |
+| F 5/2 | Check-in questions  | 	DE Project help time, [Slides](https://docs.google.com/presentation/d/1R-ymdYrQFufcX3eFCYIVD39ZKGWTLYm3MaA-_L30LK0/edit?usp=sharing)	| |
 | Week 6 | |  | |
 | M 5/5	| |	Mid-term Break!	| |
 | W 5/7 | [DE project](hw-de), group preference form | 	Project introduction;Peer review of DE projects  | [Project proposal](project-overview#proposal)|

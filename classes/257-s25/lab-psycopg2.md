@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Psycopg2 Lab
-permalink: /classes/257-f23/psycopg2
+permalink: /classes/257-s25/psycopg2
 ---
 
 ## Goal
@@ -9,7 +9,7 @@ Learn how to connect a Flask Python app with a Postgres database using the `psyc
 
 ## Setup
 
-You should first complete this lab in your individual repository to complete your submission for the [individual back-end deliverable](project-4-ind). 
+You should first complete this lab in your individual repository to complete your submission for the [individual back-end deliverable](project-3-ind). 
 You'll then want to coordinate with your team since you'll need to apply what you learn to your team project.
 
 You should edit most of these files locally and push them to your individual repository before then connecting to stearns and testing them out.
@@ -19,16 +19,14 @@ It'll generally be easier to just create files locally and not need to push from
 ## psqlConfig.py
 The module we'll be using will allow for connection between your database and your Flask app.
 However, for it to make that connection, it needs to know the relevant information about your database, including your database password.
-In general, you should never push passwords to a git repository, so we're going to first ensure that you don't accidentally push this new file with that information to the remote repository.
+In general, you should never push passwords to a git repository, so we're going to first verify that you can't accidentally push this new file with that information to the remote repository.
 
-1. Create a file `.gitignore` (or open the existing one if there is already one in your repo)
-2. Add the line `psqlConfig.py` (this tells git to not add this file even when you do `git add *`, which you should generally avoid). If you've been having trouble with `__pycache__` files getting into your team repository, you can always add that to your `.gitignore` as well!
-3. You won't make the `psqlConfig.py` yet, since you'll need to just make it directly on stearns. Add your changes to `.gitignore` and commit and push to your individual repository.
-
+1. Open the file `.gitignore` that should be in your repository
+2. Verify that the line `psqlConfig.py` is in there (this tells git to not add this file even when you do `git add *`, which you should generally avoid). If you've been having trouble with `__pycache__` files getting into your team repository, you can always add that to your `.gitignore`! (If you do, be sure to add/commit/push)
 
 
 ## datasource.py
-I've provided a file named `datasource.py` in your ID4 repository.
+I've provided a file named `datasource.py` in your repository.
 This file is responsible for connecting your database to your Flask app.
 
 1. In that file, there are two import statements, the first imports the module we'll be using and second is the configuration file that you will make on stearns:
@@ -77,7 +75,7 @@ This file is responsible for connecting your database to your Flask app.
         print(records)
     ```
 
-6. You might want to be able to use arguments in your queries, which you can do with a particular syntax ([more details are in the psycopg2 documentation](https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries)). Here is an example method for your reference (that uses the earthquake data):
+6. You might want to be able to use arguments in your queries, which you can do with a particular syntax ([more details are in the psycopg2 documentation](https://www.psycopg.org/docs/usage.html#passing-parameters-to-sql-queries)). Here is an example method for your reference (that uses some earthquake data):
     ```python
     def getQuakesAboveMagnitude(self, magnitude):
         try:
@@ -119,6 +117,6 @@ Now you're ready to test out your code with your database.
 
 4. Try running your `app.py` and see if it is able to connect to your database!
 
-5. If that works, great job, you're done with the [individual deliverable](project-4-ind)! Back on your local setup, add the correct tag and push it.
+5. If that works, great job, you're almost done with your [individual deliverable](project-3-ind)! (You might need to do some additional style fixes still.)
 
 Once you finish with the individual deliverable, start thinking about the changes to your team project that will be needed to connect your Flask app to your new database. 
