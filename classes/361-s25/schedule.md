@@ -5,6 +5,7 @@ permalink: /classes/361-s25/schedule
 ---
 
 [Syllabus](https://anyaevostinar.github.io/classes/361-s25/syllabus)
+[FAQ](faq)
 
 This is a rough schedule of topics for each day and the release and due dates for each assignment.
 
@@ -32,7 +33,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 4/25 | [AE project](hw-ae) | AE project help time, [Slides](https://docs.google.com/presentation/d/1VDkoe6FQ8QD-rT8dBAVA8wfnGc5N4spR-XBDFtO72vs/edit?usp=sharing) |   |
 | Week 5 | |  | |
 | M 4/28 | [Digital Evolution Prep](dig-evo-prep) | [Signal-GP Lite Lab](sgplite_lab), [Slides](https://docs.google.com/presentation/d/1QdAhZqkl7FtRX6KCXXg3sbhbhSTcb-Qr2BZaOJNdV-U/edit?usp=sharing) |  [DE project](hw-de) |
-| W 4/30 |	Encyclopedia topic, [Configuration Preparation](config_intro) |[Using Empirical Configuration](emp_config_lab) | |
+| W 4/30 |	Encyclopedia topic, [Configuration Preparation](config_intro) |[Using Empirical Configuration](emp_config_lab), [Slides](https://docs.google.com/presentation/d/1Nsi0KzLELSEGINQdFQlXyWw1x6ztErQFJfwC8naIak0/edit?usp=sharing) | |
 | F 5/2 | None  | 	DE Project help time	| |
 | Week 6 | |  | |
 | M 5/5	| |	Mid-term Break!	| |
