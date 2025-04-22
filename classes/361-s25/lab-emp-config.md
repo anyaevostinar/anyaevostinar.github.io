@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Empirical Config Lab
-permalink: /classes/361-f22/emp_config_lab
+permalink: /classes/361-s25/emp_config_lab
 ---
 
 ## Goals
@@ -13,13 +13,17 @@ Follow the [usual steps](gradient-lab) for setting up a repository using Empiric
 ## Exercise 1
 I've provided you with a basic artificial life simulation with just one species reproducing and filling the world (following the first few exercises of the [Empirical intro lab](empirical_intro_lab)). You can run `compile-run.sh` to get a command line version of the program and `compile-run-web.sh` to get a web version.
 
-We'll start with making a configuration management system for the command-line version.
+We'll start with making a configuration management system for the command-line version in `native.cpp`.
 
 1. Following the [steps in the reading](config_intro), make a configuration system that handles at least:
     * The random number seed
-    * The number of starting organisms in the world (you'll have to update the code to make this work)
+    * The number of starting organisms in the world (you'll have to update the code to make this work) `NUM_START`
 
-2. Make sure that you can control these settings both through the "MySettings.cfg" file and through the command line.
+2. Make sure that you can control these settings both through the "MySettings.cfg" file and through the command line:
+```bash
+g++ -O3 -DNDEBUG -msse4.2 -Wall -Wno-unused-function -std=c++17 -IEmpirical/include/ native.cpp -o config_lab
+./config_lab -NUM_START 5 -SEED 11
+```
 
 ## Exercise 2
 Because Empirical supports cross-compilation, you can use the same configuration system for the web-based version of your program and Empirical even has several pre-made ways to make your configuration settings look nice on your web page!
