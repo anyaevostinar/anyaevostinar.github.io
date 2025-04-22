@@ -37,7 +37,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 4/23 | [Classes Prep](classes-prep) | [Slides](https://docs.google.com/presentation/d/18i21nuvvKw7Ol5hzfGTYwmFMMq7dUylt2S33AKUevuo/edit?usp=sharing), Designing classes | |
 | F 4/25 | [Individual Flask app](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](https://docs.google.com/presentation/d/13tOSQE_wzQZOjPVFRxc5or_YTKDC0ukpZfZ7bI27MGk/edit?usp=sharing), Code review | |
 | **Week 5** | **Database Component** | | |
-| M 4/28 | [Team Flask app](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), [Starting with Databases](database-lab) | [Individual Database](project-3-ind); [Team Database](project-3-backend), [Midterm Reflection](reflection-mid)|
+| M 4/28 | [Team Flask app](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](https://docs.google.com/presentation/d/1mEIbAmk6QN8w8FbpP8R8QULP5oUUez-oec-T_TPuo5U/edit?usp=sharing), [Starting with Databases](database-lab) | [Individual Database](project-3-ind); [Team Database](project-3-backend), [Midterm Reflection](reflection-mid)|
 | W 4/30 |  No prep |[Slides](), [Database Connections and Relations](psycopg2)  | |
 | F 5/2 | [Midterm Reflection](reflection-mid), [Individual back-end](project-3-ind); [Database Normalization](normalization-prep) | [Slides](), More with Databases |  |
 | **Week 6** | **Front-End Component** | | |
