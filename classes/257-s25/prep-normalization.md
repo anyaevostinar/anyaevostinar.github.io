@@ -21,7 +21,7 @@ After class, you should be able to:
 
 ## Readings
 To achieve the basic learning objectives, you should read the following:
-* [Database Design and Normalization](https://launchschool.com/books/sql_first_edition/read/normalization#designingtables)
+* [Normalization in Databases](https://blog.udemy.com/normalization-in-database-with-example/)
 
 NOTE: You do not need to know the finer details of first normal form vs. fourth normal form, etc. Read these to get a sense of the ways you could, and should, be cutting down on redundancy and inefficiencies in database tables.
 
