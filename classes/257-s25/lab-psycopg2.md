@@ -22,7 +22,7 @@ However, for it to make that connection, it needs to know the relevant informati
 In general, you should never push passwords to a git repository, so we're going to first verify that you can't accidentally push this new file with that information to the remote repository.
 
 1. Open the file `.gitignore` that should be in your repository
-2. Verify that the line `psqlConfig.py` is in there (this tells git to not add this file even when you do `git add *`, which you should generally avoid). If you've been having trouble with `__pycache__` files getting into your team repository, you can always add that to your `.gitignore`! (If you do, be sure to add/commit/push)
+2. Verify that the line `psql_config.py` is in there (this tells git to not add this file even when you do `git add *`, which you should generally avoid). If you've been having trouble with `__pycache__` files getting into your team repository, you can always add that to your `.gitignore`! (If you do, be sure to add/commit/push)
 
 
 ## datasource.py
@@ -32,7 +32,7 @@ This file is responsible for connecting your database to your Flask app.
 1. In that file, there are two import statements, the first imports the module we'll be using and second is the configuration file that you will make on stearns:
     ```python
     import psycopg2
-    import ProductionCode.psqlConfig as config
+    import ProductionCode.psql_config as config
     ```
 
 2. This file is structured in an object-oriented style, so there is a class called `DataSource`:
@@ -50,7 +50,7 @@ This file is responsible for connecting your database to your Flask app.
 3. A common thing that you will need to do is connect to your database, hence why there is a `connect` method. The `psycopg2` module makes that pretty easy with the following in the `connect` method (already provided):
     ```python
     try:
-        connection = psycopg2.connect(database=config.database, user=config.user, password=config.password, host="localhost")
+        connection = psycopg2.connect(database=config.DATABASE, user=config.USER, password=config.PASSWORD, host="localhost")
     except Exception as e:
         print("Connection error: ", e)
         exit()
@@ -109,9 +109,9 @@ Now you're ready to test out your code with your database.
 
 3. Add the following three lines with your individual database information:
     ```python
-    database = 'YOUR_DATABASE_NAME'
-    user = 'YOUR_CARLETON_USERNAME'
-    password = 'YOUR_DATABASE_PASSWORD'
+    DATABASE = 'YOUR_DATABASE_NAME'
+    USER = 'YOUR_CARLETON_USERNAME'
+    PASSWORD = 'YOUR_DATABASE_PASSWORD'
     ```
     That should be your Carleton username for the first two and the password that I provided to you for the last one.
 
