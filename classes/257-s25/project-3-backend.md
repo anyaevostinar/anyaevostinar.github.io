@@ -38,7 +38,7 @@ Your team should create a Postgres database back-end for your Flask app using th
 The grader will assess your project with the following workflow:
 * Connect to `stearns`
 * Pull down your repository from the appropriate tag
-* Create the `psqlConfig.py` file with your team database name and information
+* Create the `psql_config.py` file with your team database name and information
 * Run your Flask app `app.py`
 * Run your test suite
 * Look at your code
