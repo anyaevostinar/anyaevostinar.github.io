@@ -40,8 +40,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 5/7 | [DE project](hw-de), group preference form | 	Project introduction;Peer review of DE projects  | [Project proposal](project-overview#proposal)|
 | F 5/9 |  	| Guest Speaker: Dr. Alexander Lalejini  |  |
 | Week 7 | |  | |
-| M 5/12 | Encyclopedia first drafts;[Git Prep](git-prep) 	|Peer review of encyclopedia drafts; GitHub |
-| W 5/14 | Project topic checkin; |  Guest Speaker: Dr. Luis Zaman  | |
+| M 5/12 | Project topic checkin; Encyclopedia first drafts;[Git Prep](git-prep) 	|Peer review of encyclopedia drafts; GitHub |
+| W 5/14 |  |  Guest Speaker: Dr. Luis Zaman  | |
 | F 5/16 | Project proposal |	Proposal peer review	| [Final project](https://anyaevostinar.github.io/classes/361-f22/project-overview)  |
 | Week 8 | |  | |
 | M 5/19 |   | TBD 	| |
