@@ -97,6 +97,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Neural networks (Introduction)
 * Boids Overview
 * Biobots (Xenobots and Anthrobots)
+* Cognitive Robotics
 
 
 ## Resources
