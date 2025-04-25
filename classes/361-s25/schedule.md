@@ -52,7 +52,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 5/28 | [Replication reports](https://anyaevostinar.github.io/classes/361-f22/project-overview#replication-drafts) |	Sharing reports | |
 | F 5/30 |  | Guest Speaker: Dr. Emily Dolson	|	 |
 | Week 10 | | | |
-| M 6/2	| Guest Speaker: Dr. Lisa Soros |   | |
+| M 6/2	| | Guest Speaker: Dr. Lisa Soros    | |
 | W 6/4 |  | Final project; Wrap up; course evaluations	| |
 | Exam Period | | | |
 | |Nothing scheduled, projects due 6/9 8:30pm (+1 hour grace period) | | |
