@@ -93,6 +93,11 @@ For your assignment to be exemplary, it needs to:
 These are topics that others are already approved to do, so you should make sure that you don't overlap with them.
 If you want to do something related to one of these, feel free to talk to me about how you can make sure that your topic is different enough.
 
+* Emergence (Introduction)
+* Neural networks (Introduction)
+* Boids Overview
+* Biobots (Xenobots and Anthrobots)
+
 
 ## Resources
 The following are potential references/places to look for references:
