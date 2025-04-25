@@ -98,6 +98,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Boids Overview
 * Biobots (Xenobots and Anthrobots)
 * Cognitive Robotics
+* ALife for Social Good (Intro and why it's important)
 
 
 ## Resources
