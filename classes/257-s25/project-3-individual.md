@@ -26,7 +26,7 @@ The individual deliverable for this iteration is due **Friday May 2nd** at 10pm 
 I recommend that you work on this component on the `stearns` server since it has all the necessary things installed already.
 
 You should:
-* Copy *some* of your team's data into your ID4 repository in the `Data` folder (should only be a couple of columns max)
+* Copy *some* of your team's data into your ID3 repository in the `Data` folder (should only be a couple of columns max)
 * Edit the `Data/createtable.sql` file so that it creates a table with some of your team's data 
 * Add the necessary `\copy` command to your `README.md` file
     (For example `\copy earthquakes FROM 'Data/earthquakeData.csv' DELIMITER ',' CSV`)

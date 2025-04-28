@@ -92,7 +92,7 @@ Time to specify a task for the organisms to be rewarded for doing.
     }
     ```
 
-4. You also need to define the name method for your new task. This just needs to be a method called `name()` that returns a `std::string` that is the name you want to call your task, such as `Square`.
+4. You also need to define the name method for your new task. This just needs to be a method called `name() const` that returns a `std::string` that is the name you want to call your task, such as `Square`. (Note: yes you need the `const` following the `()` just like the super class, that's part of the method signature.)
 
 4. You can make as many subclasses of `Task` in this file as you want, but let's stick to one for now and finish setting things up for this one. In `World.h` you need to specify a vector of the tasks that are available for organisms to solve. Create a new instance variable that is a vector of `Task *` and put instances of all of your tasks into it (in this case just one):
 
@@ -143,7 +143,7 @@ It's not ideal to only be able to see that an organism solved a task by outputti
 ## Extra
 If you finish early, there are lots of other things to try:
 * Try making another task that requires more than just one of the input values to complete
-* Look through the supplemental material section F of [this paper](https://mmore500.com/pubs/moreno2021case) to see what all the instructions do and [this documentation](https://signalgp-lite.readthedocs.io/en/latest/api/program_listing_file_include_sgpl_library_prefab_CompleteOpLibrary.hpp.html) for how to add more to `Instructions.h`
+* Look through the supplemental material section F of [this paper](https://mmore500.com/pubs/moreno2021case) to see what all the instructions do and [this guide](instructions-guide) and [this documentation](https://signalgp-lite.readthedocs.io/en/latest/api/program_listing_file_include_sgpl_library_prefab_CompleteOpLibrary.hpp.html) for how to add more to `Instructions.h`
 * Try changing the mutation rate and/or amount of points associated with the task(s) and/or needed to reproduce and see how evolution changes
 * Study the `IO` and `Reproduce` instructions and try to make your own new instruction
 

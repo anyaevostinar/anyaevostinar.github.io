@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Instructions Guide
-permalink: /classes/361-f22/instructions-guide
+permalink: /classes/361-s25/instructions-guide
 ---
 
 ## Overview
