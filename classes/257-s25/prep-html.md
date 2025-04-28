@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HTML Flask Prep
-permalink: /classes/257-f23/html-prep
+permalink: /classes/257-s25/html-prep
 ---
 
 ## Overview
@@ -21,16 +21,16 @@ After class, you should be able to:
 
 
 ## Readings
-To achieve the basic learning objectives, you should read the following before class.
-There is a nice open source book on web development using Flask that we'll use periodically and you can look through further for more details on some things. For today, read:
+To achieve the basic learning objectives, you can read the following before class.
+There is a nice open source book on web development using Flask that we'll use periodically and you can look through further for more details on some things. For today, I recommend:
 
-* [Introduction](https://runestone.academy/ns/books/published/webfundamentals/WWW/intro.html) - very quick intro and definitions
-* [HTML](https://runestone.academy/ns/books/published/webfundamentals/HTML/intro.html) - this section demonstrates what I like about this book, you can run and change the code 
+* [Introduction](https://runestone.academy/ns/books/published/webfundamentals/WWW/intro.html?mode=browsing) - very quick intro and definitions
+* [HTML](https://runestone.academy/ns/books/published/webfundamentals/HTML/intro.html?mode=browsing) - this section demonstrates what I like about this book, you can run and change the code 
 * [Flask Templates](https://pythonbasics.org/flask-tutorial-templates/) - how to connect Python code to HTML files (Note: that weird endif thing is Jinja syntax, you can avoid it completely, but if you want to use it, [here is a cheatsheet](https://devhints.io/jinja))
 
 
 
 ## Checks
-Write answers to the following and bring them to class:
+Submit answers to the following on Moodle:
 * What is the first template that you want to/could make for your project? 
 * What variable(s) would you pass to that template?
