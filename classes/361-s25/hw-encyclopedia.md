@@ -96,9 +96,13 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Emergence (Introduction)
 * Neural networks (Introduction)
 * Boids Overview
-* Biobots (Xenobots and Anthrobots)
-* Cognitive Robotics
+* Biobots (Xenobots and Anthrobots Introduction)
+* Cognitive Robotics (Introduction)
 * ALife for Social Good (Intro and why it's important)
+* Language as Artificial Life (Intro)
+* Xenobots kinematic replication
+* Synthetic ecology (Introduction)
+* Physicell introduction
 
 
 ## Resources
