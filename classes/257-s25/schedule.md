@@ -42,7 +42,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 5/2 | [Midterm Reflection](reflection-mid), [Individual back-end](project-3-ind); [Database Normalization](normalization-prep) | [Slides](https://docs.google.com/presentation/d/1tK5MQR1cWRzb_IXgoZYPn0lmoo1VO7nskWv5-tMtENk/edit?usp=sharing), [Team Database Lab](team-database-lab) |  |
 | **Week 6** | **Front-End Component** | | |
 | M 5/5 | Midterm break! | | |
-| W 5/7 |[Team back-end](project-3-backend);  [Usability Prep](web-usability-prep) | [Slides](), Webpage analysis | [Individual front-end](project-4-ind), [Team front-end](project-4-front-end)|
+| W 5/7 |[Team back-end](project-3-backend);  [Web Usability Prep](web-usability-prep) | [Slides](), Webpage analysis | [Individual front-end](project-4-ind), [Team front-end](project-4-front-end)|
 | F 5/9 | [HTML with Flask Prep](html-prep) | [Slides](), [HTML Flask Lab](flask-html) | |
 | **Week 7** | **Front-End Component Cont'd** | | |
 | M 5/12 | [CSS and HTML Prep](css-html-prep) | [Slides]() HTML and CSS lab | |
