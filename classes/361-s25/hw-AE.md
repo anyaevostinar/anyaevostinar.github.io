@@ -29,14 +29,16 @@ Your submission should:
 
 * Run and display an artificial ecosystem with at least two species of organisms when the `compile-run.sh` script is run, using the web-browser and Empirical library
 * Handle the toroidal spatial structure correctly (i.e. organisms don't get caught on edges and move from location to location reasonably)
-* Have well-documented and styled code
-    * Lack of duplicate code (i.e. using inheritance) is part of being nicely styled
+* Have somewhat well-documented and styled code
+    * Lack of duplicate code (i.e. using inheritance) is part of being somewhat well-styled
 * Specify in a file `README.md` what your two species of organisms are and how they interact with each other
 
 ### Exemplary
 Your submission should do everything from the proficient category, as well as:
 * Have starting settings that result in persistence of at least two species for a reasonable amount of time (obviously we can't test if they will persist forever, but I should be able to run your simulation for a minute or two and still see two species)
 * Have text on your webpage explaining thoroughly what the user is seeing. Imagine that this is a basic demonstration for the public and you are explaining this ecological dynamic.
+* Have very well-documented and styled code
+    * This requires all methods to be less than ~15 lines of code, have doc strings and inheritance to be used effectively
 
 ## Submitting
 You will submit your assignment by pushing your code to the GitHub Classroom repository that you start from.
@@ -47,3 +49,5 @@ Remember that you can and should ask for help on everything from annoying C++ bu
 The CampusWire is probably the best place to ask, as long as you don't have to share too much of your code to do so, because you'll get faster responses on average.
 You are also welcome to come to drop-in hours, and schedule a one-on-one meeting if that works better for you.
 
+## Addendums
+Since there was only a style component on Proficiency, most of you scored Not Yet Proficient on the first submission. I am updating the requirements to split out the style for revisions so there is a "Proficient" that is less than what I expect for "Exemplary". I have therefore added the specifics of what is necessary for exemplary style. Feel free to check with me on if your code already hits the new Proficient requirement.
