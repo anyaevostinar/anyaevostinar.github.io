@@ -35,7 +35,8 @@ For the native data-only version, you need to add some data file support to your
 * Run and display a digital evolution system when the `compile-run-web.sh` script is run, using the web-browser, SignalGP-Lite, and Empirical libraries
 * Handle the toroidal spatial structure correctly (i.e. organisms reproduce and/or move correctly across the edges of the grid when using a grid spatial structure)
 * Have at least two tasks that organisms evolve to perform within a reasonable amount of time (running your code for about 10 minutes) which are visually represented in your GUI
-* Have well-documented and styled code
+* Have somewhat well-documented and styled code
+    * Lack of duplicate code (i.e. using inheritance) is part of being somewhat well-styled
 * Specify in a file `README.md` what your tasks are and how they are visually represented in your GUI
 
 **Exemplary** for this assignment, requires your submission to do everything from the proficiency category, as well as:
@@ -43,6 +44,8 @@ For the native data-only version, you need to add some data file support to your
 * Have at least five tasks that organisms can evolve to perform
 * Have a configuration panel on the GUI that allows the user to change at least two settings that impact the evolution of the population
 * Have text on your webpage explaining the tasks and what the user is seeing
+* Have very well-documented and styled code
+    * This requires all methods to be less than ~15 lines of code and have doc strings
 
 ## Submitting
 You will submit your assignment by pushing your code to the GitHub Classroom repository that you start from.
