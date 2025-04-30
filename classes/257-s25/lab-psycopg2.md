@@ -16,7 +16,7 @@ You should edit most of these files locally and push them to your individual rep
 Remember that if you're on stearns and want to push, you'll probably need to use a [GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to do so.
 It'll generally be easier to just create files locally and not need to push from stearns.
 
-## psqlConfig.py
+## psql_config.py
 The module we'll be using will allow for connection between your database and your Flask app.
 However, for it to make that connection, it needs to know the relevant information about your database, including your database password.
 In general, you should never push passwords to a git repository, so we're going to first verify that you can't accidentally push this new file with that information to the remote repository.
