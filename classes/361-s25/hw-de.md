@@ -60,7 +60,7 @@ You are also welcome to come to drop-in hours, Kai's help hours, and schedule a 
 Most of the starter code was implemented by Sylvie Dirkswager, thanks Sylvie!
 
 ## Addendums
-
+(If you accepted the assignment after 4/30 at 9:06, you have the fixed version already)
 The following bugs with the starter code need to be fixed:
 * Since the reproduce instruction checks for the right number of points and changes it, you should remove the check from Org `GetPoints() > REPRODUCE_POINTS`
 * In `CPU.h` `GetDouble()` should instead be `GetUInt()` since the inputs are of type `uint32`, not doubles
