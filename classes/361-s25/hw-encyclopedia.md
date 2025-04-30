@@ -105,6 +105,7 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Physicell introduction
 * ALife in the Social Sciences (Introduction)
 * ALife in Art (Introduction)
+* DISHTINY (Introduction)
 
 
 ## Resources
