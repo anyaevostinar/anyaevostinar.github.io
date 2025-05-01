@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Project Version 3 - Frontend
-permalink: /classes/257-f23/project-3-front-end
+title: Project Version 4 - Frontend
+permalink: /classes/257-s25/project-4-front-end
 ---
 
 ## Overview
@@ -17,13 +17,13 @@ You are able to get help from outside sources, as specified in the syllabus, but
 
 ## Due Date
 
-This iteration of the project is due Monday Oct 23rd at 10pm on GitHub.
+This iteration of the project is due Monday May 19th at 10pm on GitHub.
 
 ## Your Task
 
 Your team should add a front-end GUI component to your Flask app that:
 * Uses HTML and CSS correctly to create a usable and accessible website that follows the web design best principles we have discussed in class
-* Allows the user to interact with your dataset in at least two meaningful ways (i.e. the features that you have been developing all along)
+* Allows the user to interact with your dataset in at least two meaningful ways (i.e. the user stories that you have been working to support all along)
 * Has a useful message when the user enters an incorrect URL
 * Keeps the HTML and CSS separate and uses them for their appropriate purposes
 * Organizes the HTML and CSS so that the files are readable
@@ -41,17 +41,22 @@ git push origin front-end
 
 ## Evaluation
 
-The criteria for "Demonstrates Proficiency" and "Demonstrates Mastery" are below.
-When evaluating your project, the grader will pull down your team's repo and run both your production code and test suite, as well as look through your code for style.
+The criteria for "Proficiency" and "Exemplary" are below.
+When evaluating your project, the grader will pull down your team's repo on `stearns` and run both your production code and test suite, as well as look through your code for style.
 
 ### Proficiency Criteria
 * Functionality:
-  * The front-end works with the existing components (Flask and command-line)
-  * There is a useful 404 page
+  * The command-line interface still works
+  * The Flask component still works
+  * There is a useful 404 page with instructions on how to correctly use the website features
   * There are two independent features that allow the user to get information from the chosen dataset
   * The automated test suite passes (no additional tests are required)
+  * Coverage is still at 50%
 * Design:
-  * Site makes a good attempt at providing navigation 
+  * `README.md` explains how your website enables:
+    * Scanability
+    * Satisficing
+    * Muddling through
   * Accessibility features
     * resizing text to 150-200% works
     * headings used to structure page
@@ -61,17 +66,15 @@ When evaluating your project, the grader will pull down your team's repo and run
     * links make sense out of context
     * [correct use of bold vs strong](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)
   * The HTML and CSS are in separate files
-  * HTML code is acceptable, perhaps with minor presentation aspects bleeding in
-  * HTML and CSS code is somewhat organized
+  * HTML code only deals with content structure and not any aspect of presentation
   * CSS code is acceptable; Some aspects of the CSS could be accomplished more efficiently.
+  * All HTML tags used appropriately
+  * Style checks at all at 5 or higher
 
-### Mastery Criteria
+### Exemplary Criteria
 * All the Proficiency criteria are met
+* Coverage is at 90% still
 * Front-end:
-  * Page does an excellent job enabling scanability, satisficing, and muddling through. Strong execution of conventions and best practices for content organization and accessibility.
-  * HTML only deals with content structure and not any aspect of presentation. Code is clearly and concisely written. All tags used appropriately.
-  * CSS clearly captures the look-and-feel of the site and renders correctly. Code is clearly and concisely written.
-
-## Addendums
-
-For mastery, your website needs to be complete, polished, and cohesive. If you don't feel strong in design, it can be a simple and clean design, but it should look professional.
+  * Style checks are all at 10
+  * Website is complete, polished, and cohesive. It can be a simple and clean design, but it should look professional.
+    * Refer to examples in the [Inspiration section of the Project Proposal](/project-proposal#inspiration)
