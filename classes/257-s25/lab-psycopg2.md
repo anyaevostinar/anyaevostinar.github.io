@@ -51,9 +51,9 @@ This file is responsible for connecting your database to your Flask app.
     ```python
     try:
         connection = psycopg2.connect(database=config.DATABASE, user=config.USER, password=config.PASSWORD, host="localhost")
-    except Exception as e:
+    except psycopg2.Error as e:
         print("Connection error: ", e)
-        exit()
+        sys.exit(1)
     return connection
     ```
 
@@ -90,7 +90,7 @@ This file is responsible for connecting your database to your Flask app.
             cursor.execute(query, (magnitude,))
             print(cursor.fetchall())
 
-        except Exception as e:
+        except psycopg2.Error as e:
             print ("Something went wrong when executing the query: ", e)
             return None
     ```
