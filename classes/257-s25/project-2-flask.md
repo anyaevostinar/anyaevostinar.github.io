@@ -99,5 +99,6 @@ The criteria for "Proficiency" and "Exemplary" are below.
   * There is barely any duplicated code
 
 
-
+## Addendums
+* Your 404 and homepage should include specific example routes that I can use to see your app working. This should be something that I can just copy and paste.
 

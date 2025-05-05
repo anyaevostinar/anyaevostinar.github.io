@@ -102,3 +102,7 @@ When evaluating your project, the grader will consult the GitHub action output r
   * Function names, return values, and parameters all follow the principles of good design
   * Function/method [docstrings](https://peps.python.org/pep-0257/) all provide the required information
   * There is barely any duplicated code
+
+
+## Addendums
+* Your README needs to specify exact examples that the grader can copy and paste to run your code, not just your usage statement.
