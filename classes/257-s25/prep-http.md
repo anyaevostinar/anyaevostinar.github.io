@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HTTP and Forms Prep
-permalink: /classes/257-f23/http-prep
+permalink: /classes/257-s25/http-prep
 ---
 
 ## Overview
@@ -28,4 +28,4 @@ To achieve the basic learning objectives, you should read the following:
 
 
 ## Checks
-While it works all right to have the user type in a specific URL to get the data they want, I think you'll agree that it would be more usable for them to use some kind of form. What is a way that you could use a form on your team project? Write down your ideas and bring it to class.
+While it works all right to have the user type in a specific URL to get the data they want, I think you'll agree that it would be more usable for them to use some kind of form. What is a way that you could use a form on your team project? Submit your answer to Moodle.

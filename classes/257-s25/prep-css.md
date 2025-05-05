@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSS and HTML
-permalink: /classes/257-f23/css-html-prep
+permalink: /classes/257-s25/css-html-prep
 ---
 
 ## Overview
@@ -36,4 +36,7 @@ To achieve the basic learning objectives, you should read the following:
 You may also find the [HTML](https://www.w3schools.com/html/default.asp) and [CSS](https://www.w3schools.com/css/default.asp) tutorials on W3Schools useful. Bonus: you can try out code right in the browser!
 
 ## Checks
-Write down a list of CSS attributes that you want to use for your website and bring it to class to use as a reference.
+Submit answers to the following:
+* What is the fundamental difference between the purpose of HTML and CSS?
+* If two CSS elements within a style file conflict, which one is prioritized?
+* What is the difference between and HTML tag and HTML attribute?
