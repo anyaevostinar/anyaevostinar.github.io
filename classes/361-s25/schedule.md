@@ -37,8 +37,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 5/2 | Check-in questions  | 	DE Project help time, [Slides](https://docs.google.com/presentation/d/1R-ymdYrQFufcX3eFCYIVD39ZKGWTLYm3MaA-_L30LK0/edit?usp=sharing)	| |
 | Week 6 | |  | |
 | M 5/5	| |	Mid-term Break!	| |
-| W 5/7 | [DE project](hw-de), group preference form | 	Project introduction;Peer review of DE projects  | [Project proposal](project-overview#proposal)|
-| F 5/9 |  [Guest Speaker Prep](lalejini-prep)	| Guest Speaker: Dr. Alexander Lalejini  |  |
+| W 5/7 | [DE project](hw-de), group preference form | 	 Project introduction;Peer review of DE projects, [Slides](https://docs.google.com/presentation/d/1-TWPWhrXXI5Zfc-0YG6jj6EZEjTsVldMeKwJdAHK2Fc/edit?usp=sharing)  | [Project proposal](project-overview#proposal)|
+| F 5/9 |  [Guest Speaker Prep](lalejini-prep)	| Guest Speaker: Dr. Alexander Lalejini, [Slides](https://docs.google.com/presentation/d/1q2SCUetcsAbdsTJJkq3d_5Dxlpsshn5YCAEUvfrkq_M/edit?usp=sharing)  |  |
 | Week 7 | |  | |
 | M 5/12 | Project topic checkin; Encyclopedia first drafts;[Git Prep](git-prep) 	|Peer review of encyclopedia drafts; GitHub |
 | W 5/14 |  |  Guest Speaker: Dr. Luis Zaman  | |

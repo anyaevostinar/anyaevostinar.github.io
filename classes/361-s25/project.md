@@ -31,7 +31,7 @@ However, there is a lot to this project, and so you will have intermediate oppor
 | Item | Due date |
 |------|----------|
 | Project topic checkin | 5/12|
-| Project proposal | 5/16 |
+| Project proposal | 5/19 |
 | Replication first drafts | 5/28|
 | Final project peer review | 6/4 |
 | Final project | 6/9 |
