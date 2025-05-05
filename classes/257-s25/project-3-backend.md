@@ -99,3 +99,13 @@ The criteria for "Proficiency" and "Exemplary" are below.
    * Column names strongly signify the data they contain
    * Docstrings are clear and consistent for each method
    * Style checks are all at 10
+
+
+## Q&A
+
+* How do I get the names of the columns?
+
+You can get the names of the columns with this command:
+```sql
+select column_name from INFORMATION_SCHEMA.COLUMNS where table_name = 'YOUR_TABLE_NAME_HERE';
+```

@@ -42,11 +42,11 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Week 7 | |  | |
 | M 5/12 | Project topic checkin; Encyclopedia first drafts;[Git Prep](git-prep) 	|Peer review of encyclopedia drafts; GitHub |
 | W 5/14 |  |  Guest Speaker: Dr. Luis Zaman  | |
-| F 5/16 | Project proposal |	Proposal peer review	| [Final project](project-overview)  |
+| F 5/16 | Attend 5/15 Bits and Bytes if you are able | Visiting Speaker: Dr. Betty Cheng | | 
 | Week 8 | |  | |
-| M 5/19 |   | TBD 	| |
+| M 5/19 |  Project proposal |	Proposal peer review	| [Final project](project-overview)  |
 | W 5/21 | Encyclopedia second drafts | [Graphing Data](r-lab)		 | |	
-| F 5/23 | 	| TBD |	|
+| F 5/23 | 	| Work time |	|
 | Week 9 | |  | |
 | M 5/26 | |	Guest Speaker: Dr. Matthew A. Moreno		| |	
 | W 5/28 | [Replication reports](project-overview#replication-drafts) |	Sharing reports | |
