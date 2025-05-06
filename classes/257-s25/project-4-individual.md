@@ -80,7 +80,7 @@ You should submit the file with your individual front-end app to the ID4 reposit
   * One of the following:
     * Can navigate from homepage to other page through HTML `form` (which could be drop-down box, text box, etc)
     * Data displayed in format other than text/static images, for example a generated plot, map, or word cloud
-  * Accessibility addressed with [matching id tags and labels]((https://webaim.org/techniques/forms/controls#input) )
+  * Accessibility addressed with [matching id tags and labels](https://webaim.org/techniques/forms/controls#input)
 * Front-end:
   * `README.md` explains how your page enables:
     * scanability
