@@ -77,4 +77,4 @@ When evaluating your project, the grader will pull down your team's repo on `ste
 * Front-end:
   * Style checks are all at 10
   * Website is complete, polished, and cohesive. It can be a simple and clean design, but it should look professional.
-    * Refer to examples in the [Inspiration section of the Project Proposal](/project-proposal#inspiration)
+    * Refer to examples in the [Inspiration section of the Project Proposal](/classes/257-s25/project-proposal#inspiration)
