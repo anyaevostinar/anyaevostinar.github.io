@@ -76,5 +76,6 @@ When evaluating your project, the grader will pull down your team's repo on `ste
 * Coverage is at 90% still
 * Front-end:
   * Style checks are all at 10
+  * The user stories in `UserStories.md` are meaningful and well-supported by the website
   * Website is complete, polished, and cohesive. It can be a simple and clean design, but it should look professional.
     * Refer to examples in the [Inspiration section of the Project Proposal](/classes/257-s25/project-proposal#inspiration)
