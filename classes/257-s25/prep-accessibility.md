@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Web Accessibility Prep
-permalink: /classes/257-f23/accessibility-prep
+permalink: /classes/257-s25/accessibility-prep
 ---
 
 ## Overview
@@ -31,4 +31,4 @@ To achieve the basic learning objectives, you should read the following:
 * Select and read at least two stories from ["Stories of web users: How people with disabilities use the web"](http://www.w3.org/WAI/intro/people-use-web/stories), by the Web Accessibility Initiative. Feel free to click around to whatever examples look compelling to you.
 
 ## Checks
-Use the [WAVE Web Accessibility Tool](http://wave.webaim.org/) to test the accessibility of a safe-for-work and database-driven web page of your choice. Post the website name and one of your observations/findings on CampusWire under the Week6Wednesday category.
+Use the [WAVE Web Accessibility Tool](http://wave.webaim.org/) to test the accessibility of a safe-for-work and database-driven web page of your choice. Submit the website name, URL, and one of your observations/findings to Moodle.
