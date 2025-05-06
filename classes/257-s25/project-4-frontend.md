@@ -73,6 +73,7 @@ When evaluating your project, the grader will pull down your team's repo on `ste
 
 ### Exemplary Criteria
 * All the Proficiency criteria are met
+* Commit to evaluate is tagged with `front-end`
 * Coverage is at 90% still
 * Front-end:
   * Style checks are all at 10
