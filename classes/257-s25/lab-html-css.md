@@ -54,9 +54,9 @@ The `<!-- -->` lines are comments. We don't need them here, but they are useful 
 
 *How do I view my web pages? Is there something special I need to do?*
 
-    You can actually view local files in your web browser. There should be an "open file" option in the File menu of your browser. Also, if you double click on an HTML file, it should open automatically in your web browser.
+* You can actually view local files in your web browser. There should be an "open file" option in the File menu of your browser. Also, if you double click on an HTML file, it should open automatically in your web browser.
 
-    If you are using WSL, right-click and select 'reveal in Explorer', then double click as normal and it should display in your web browser of choice.
+* If you are using WSL, right-click and select 'reveal in Explorer', then double click as normal and it should display in your web browser of choice.
 
 ## Step 2: Fill in the header info
 While this page will render just fine (although look somewhat sparse) in the browser, we often include additional information in the header. At a minimum, we need to provide links to any external style files (and, later on, Javascript scripts) attached to this page.
@@ -241,3 +241,10 @@ The CSS files are considered 'static' files, and so they should go in a new fold
 
 **DO THIS:** Make a basic Flask app to connect to your HTML and CSS files. Push everything to your lab repository and then continue working on your ID4.
 
+## File links
+If you want them all in one place:
+
+* [data.html](/classes/257-s25/html-images/data.html)
+* [data_v1.html](/classes/257-s25/html-images/data_v1.html)
+* [datastyle.css](/classes/257-s25/html-images/datastyle.css)
+* [Sewardhwy.jpg](/classes/257-s25/html-images/Sewardhwy.jpg)
