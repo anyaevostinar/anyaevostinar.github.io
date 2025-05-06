@@ -87,7 +87,7 @@ You should submit the file with your individual front-end app to the ID4 reposit
     * satisficing
     * muddling through
 * Code Design:
-  * The Flask code style check is at 9 or higher
+  * The Flask code style check is at 10
   * HTML only deals with content structure and not any aspect of presentation.
   * All tags used appropriately.
   * CSS clearly captures the look-and-feel of the site and renders correctly.
