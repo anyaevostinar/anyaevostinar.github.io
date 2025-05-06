@@ -40,7 +40,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 5/7 | [DE project](hw-de), group preference form | 	 Project introduction;Peer review of DE projects, [Slides](https://docs.google.com/presentation/d/1-TWPWhrXXI5Zfc-0YG6jj6EZEjTsVldMeKwJdAHK2Fc/edit?usp=sharing)  | [Project proposal](project-overview#proposal)|
 | F 5/9 |  [Guest Speaker Prep](lalejini-prep)	| Guest Speaker: Dr. Alexander Lalejini, [Slides](https://docs.google.com/presentation/d/1q2SCUetcsAbdsTJJkq3d_5Dxlpsshn5YCAEUvfrkq_M/edit?usp=sharing)  |  |
 | Week 7 | |  | |
-| M 5/12 | Project topic checkin; Encyclopedia first drafts; [Git Prep](git-prep) 	|Peer review of encyclopedia drafts; GitHub |
+| M 5/12 | Project topic checkin; Encyclopedia first drafts; [Git Prep](git-prep) 	|Peer review of encyclopedia drafts; [Git Lab](lab-git) |
 | W 5/14 | [Guest Speaker Prep](zaman-prep)  |  Guest Speaker: Dr. Luis Zaman  | |
 | F 5/16 | Attend 5/15 Bits and Bytes if you are able | Visiting Speaker: Dr. Betty Cheng | | 
 | Week 8 | |  | |
