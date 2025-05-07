@@ -1,4 +1,7 @@
-'''Fake login credentials for PostgreSQL database connection.'''
+'''
+Fake login credentials for PostgreSQL database connection.
+'''
+
 USER="test"
 PASSWORD="test"
 HOST="localhost"
