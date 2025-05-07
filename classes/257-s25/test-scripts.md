@@ -55,3 +55,7 @@ TODO:
 curl -o ProductionCode/basic_cl.py https://anyaevostinar.github.io/classes/Summer-21/basic_cl.py
 ```
 
+To reset a database password
+```sql
+alter user teamx with password newpassword;
+```

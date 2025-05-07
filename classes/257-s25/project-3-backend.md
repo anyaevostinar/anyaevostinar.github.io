@@ -109,3 +109,4 @@ You can get the names of the columns with this command:
 ```sql
 select column_name from INFORMATION_SCHEMA.COLUMNS where table_name = 'YOUR_TABLE_NAME_HERE';
 ```
+
