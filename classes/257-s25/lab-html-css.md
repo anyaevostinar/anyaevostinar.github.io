@@ -237,7 +237,9 @@ The final question you are probably wondering about is how to use CSS with Flask
 The CSS files are considered 'static' files, and so they should go in a new folder called 'static'. To point your HTML file to which CSS it should use, you can use the following when in a Flask app:
 
 ```html
+{%raw%}
 <link rel="stylesheet" href="{{ url_for('static', filename='datastyle.css') }}">
+{%endraw%}
 ```
 
 **DO THIS:** Make a basic Flask app to connect to your HTML and CSS files. Push everything to your lab repository and then continue working on your ID Front-end.

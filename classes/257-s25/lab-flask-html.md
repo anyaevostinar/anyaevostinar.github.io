@@ -42,7 +42,7 @@ Flask handles finding these as long as you put them where it is expecting.
     <h1>Welcome to the {{title}}!</h1>
     {%endraw%}
     ```
-5. Now you need to go edit your existing Flask app to use your new template. Open `app.py` and edit your `index()` function so that instead of just returning a plain string, it returns the result of calling `render_template` with your title of choice:
+5. Now you need to go edit your existing Flask app to use your new template. Open `app.py` and edit your `index()` function so that instead of just returning a plain string, it returns the result of calling `render_template` with your title of choice (yes, you'll need to add an import statement):
     ```python
     @app.route('/')
     def index():
