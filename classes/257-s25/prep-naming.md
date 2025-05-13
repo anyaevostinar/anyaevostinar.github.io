@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Naming and Comments Prep
-permalink: /classes/257-f23/naming-prep
+permalink: /classes/257-s25/naming-prep
 ---
 
 ## Overview
@@ -24,4 +24,4 @@ To achieve the basic learning objectives, read the following in *Clean Code*:
 * Chapter 4, "Comments"
 
 ## Checks
-Look through (some of) your group's project code and see what examples or anti-examples you can find for the different naming and commenting principles. Take note of them to discuss with your team in class.
+Look through (some of) your group's project code and see what examples or anti-examples you can find for the different naming and commenting principles. Submit three and an explanation of what they are an example or anti-example of to Moodle.
