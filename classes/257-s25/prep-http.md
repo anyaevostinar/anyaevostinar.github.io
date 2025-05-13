@@ -22,7 +22,7 @@ After class, you should be able to:
 To achieve the basic learning objectives, you should read the following:
 * [HTTP](https://www.w3schools.com/tags/ref_httpmethods.asp) 
 * [HTML Forms](https://www.w3schools.com/html/html_forms.asp)
-* [Use Forms in Flask](https://vegibit.com/how-to-use-forms-in-python-flask/)
+* Use Forms in Flask - my old link is broken, ask Gemini to "walk me through a simple example of using forms with Python flask"
 * Optional: [Auto-complete search bar](https://www.geeksforgeeks.org/autocomplete-input-suggestion-using-python-and-flask/) In the past, groups have wanted a searchbar with autocomplete. This example shows you how, but does require little Javascript to work.
 
 
