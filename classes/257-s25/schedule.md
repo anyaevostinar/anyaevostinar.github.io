@@ -46,7 +46,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 5/9 | [HTML with Flask Prep](html-prep) | [Slides](https://docs.google.com/presentation/d/1ZE0huatpV9CzWhDmZ8JElYY3R7YArxRxqmdRx3pDvzI/edit?usp=sharing), [HTML Flask Lab](flask-html) | |
 | **Week 7** | **Front-End Component Cont'd** | | |
 | M 5/12 | [CSS and HTML Prep](css-html-prep) | [Slides](https://docs.google.com/presentation/d/1vtkISlcEg1PoZh828RCyIRpOWVs4odMCSYIfRT-fjx8/edit?usp=sharing), [HTML and CSS lab](lab-html-css) | |
-| W 5/14 | [HTTP Prep](http-prep) | [Slides](), [Flask Forms Lab](flask-form) | |
+| W 5/14 | [HTTP Prep](http-prep) | [Slides](https://docs.google.com/presentation/d/1dXNoZirxS3ZBXIC8V7AZYa1bs39Ug9_qyCsTl_qYu90/edit?usp=sharing), [Flask Forms Lab](flask-form) | |
 | F 5/16 |[Individual front-end](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](), Accessibility Analysis | |
 | **Week 8** | **Refactoring** | | |
 | M 5/19 | [Team front-end](project-4-front-end), [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |

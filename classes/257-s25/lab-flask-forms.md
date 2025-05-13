@@ -1,15 +1,15 @@
 ---
 layout: page
 title: Flask Forms
-permalink: /classes/257-f23/flask-form
+permalink: /classes/257-s25/flask-form
 ---
 
 ## Goal
 Be able to add a form to your Flask app and use POST HTTP requests correctly.
 
 ## Setup
-We'll be continuing to use the [silly dataset](dataset.csv) as an example, though you don't have to if you don't want to.
-If you want to follow along, I recommend you have your previous version of the lab code up or make a quick new Flask app to work with. 
+We'll be continuing to use the [silly dataset](dataset.csv) as an example.
+Clone down the Flask Forms Lab repository linked on Moodle.
 If you need the previous two Flask labs for reference, they are here: [Intro to Flask](flask-intro) and [Flask and HTML](flask-html).
 
 ## Table of Contents
@@ -18,7 +18,7 @@ If you want specific functionality, here are the sections:
 * [Simple Radio Buttons](#simple-row-display)
 * [POST requests](#post-requests)
 * [Dynamically generated dropdowns](#dynamically-generated-dropdowns)
-* [Autocomplete search bar](#applying-to-your-project) - link to tutorial and hints
+* [Autocomplete search bar](#extra) - link to tutorial and hints
 
 ## Simple Row Display
 We're first going to use radio buttons to let the user choose which row of the silly dataset to view.
@@ -156,8 +156,8 @@ Fortunately, with a little bit of Jinja, we can automatically generate a dropdow
         return str(getRowByTitle(request.args['rowchoice']))
     ```
 
-## Applying to your project
-You're now all set to implement a fancy way to navigate from the homepage to the data page for your [individual front-end deliverable](project-3-ind).
+## Extra
+You're now all set to implement a fancy way to navigate from the homepage to the data page for your [individual front-end deliverable](project-4-ind).
 
 If you want, see if you can get a [autocomplete search box](https://www.geeksforgeeks.org/autocomplete-input-suggestion-using-python-and-flask/) working. 
 *Hint: text input always goes through POST, so make sure to have your Flask method set up for POST. You'll also need to add the `form` tags and `submit` button and add a `name` argument to the `input` tag.*

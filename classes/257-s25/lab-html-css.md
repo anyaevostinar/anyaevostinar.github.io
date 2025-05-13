@@ -238,7 +238,7 @@ The CSS files are considered 'static' files, and so they should go in a new fold
 
 ```html
 {%raw%}
-<link rel="stylesheet" href="{{ url_for('static', filename='datastyle.css') }}">
+<link rel="stylesheet" href="{{url_for('static',filename='datastyle.css')}}">
 {%endraw%}
 ```
 
