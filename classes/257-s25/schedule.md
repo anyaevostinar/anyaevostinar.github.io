@@ -47,7 +47,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 7** | **Front-End Component Cont'd** | | |
 | M 5/12 | [CSS and HTML Prep](css-html-prep) | [Slides](https://docs.google.com/presentation/d/1vtkISlcEg1PoZh828RCyIRpOWVs4odMCSYIfRT-fjx8/edit?usp=sharing), [HTML and CSS lab](lab-html-css) | |
 | W 5/14 | [HTTP Prep](http-prep) | [Slides](https://docs.google.com/presentation/d/1dXNoZirxS3ZBXIC8V7AZYa1bs39Ug9_qyCsTl_qYu90/edit?usp=sharing), [Flask Forms Lab](flask-form) | |
-| F 5/16 |[Individual front-end](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](), Accessibility Analysis | |
+| F 5/16 |[Individual front-end](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](https://docs.google.com/presentation/d/1_Z2d163Vuo4E7t6kDptH4WpWy8i1eJmL7NFYW2JZUJI/edit?usp=sharing), Accessibility Analysis | |
 | **Week 8** | **Refactoring** | | |
 | M 5/19 | [Team front-end](project-4-front-end), [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
 | W 5/21 | [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments](https://docs.google.com/document/d/17oI-pCdvU2ICfR14rQbEbVLrZdhzQvPp4CSt_qmtXNs/edit?usp=sharing) | |
