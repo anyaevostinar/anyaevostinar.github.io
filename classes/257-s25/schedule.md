@@ -49,7 +49,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 5/14 | [HTTP Prep](http-prep) | [Slides](https://docs.google.com/presentation/d/1dXNoZirxS3ZBXIC8V7AZYa1bs39Ug9_qyCsTl_qYu90/edit?usp=sharing), [Flask Forms Lab](flask-form) | |
 | F 5/16 |[Individual front-end](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](https://docs.google.com/presentation/d/1_Z2d163Vuo4E7t6kDptH4WpWy8i1eJmL7NFYW2JZUJI/edit?usp=sharing), Accessibility Analysis | |
 | **Week 8** | **Refactoring** | | |
-| M 5/19 | [Team front-end](project-4-front-end), [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
+| M 5/19 | [Team front-end](project-4-front-end), [More Front-End Prep](more-front-prep) | [Slides](https://docs.google.com/presentation/d/1A4jfPHbC_2_R5XOmd1TaxJBhL4LIJhEzwRL26-Pi6ck/edit?usp=sharing), Working on Front-end component | |
 | W 5/21 | [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments](https://docs.google.com/document/d/17oI-pCdvU2ICfR14rQbEbVLrZdhzQvPp4CSt_qmtXNs/edit?usp=sharing) | |
 | F 5/23 | [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells | Design Improvements and Final Reflection (due 6/9)|
 | **Week 9** | **More Refactoring** | | |

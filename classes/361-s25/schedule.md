@@ -44,7 +44,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 5/14 | [Guest Speaker Prep](zaman-prep)  |  Guest Speaker: Dr. Luis Zaman, [Slides](https://docs.google.com/presentation/d/1rZZss1q3V_4VbWSYinMcLzWK79rHVZQB37Jd4YPSSfA/edit?usp=sharing)  | |
 | F 5/16 | Attend 5/15 Bits and Bytes if you are able | Visiting Speaker: Dr. Betty Cheng, [Slides](https://docs.google.com/presentation/d/1cgIR0KKvrEPIEc5ShFSwyOcyPwOpU0KXhbV-EknuByE/edit?usp=sharing) | | 
 | Week 8 | |  | |
-| M 5/19 |  Project proposal |	Proposal peer review	| [Final project](project-overview)  |
+| M 5/19 |  Project proposal |	Proposal peer review, [Slides](https://docs.google.com/presentation/d/1termRSSAHVtybeo-mOBWh9OepMBjsMq5DCD8GwLNI4o/edit?usp=sharing)	| [Final project](project-overview)  |
 | W 5/21 | Encyclopedia second drafts | [Graphing Data](r-lab)		 | |	
 | F 5/23 | 	| Work time |	|
 | Week 9 | |  | |
