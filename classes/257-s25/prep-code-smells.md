@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code Smells Prep
-permalink: /classes/257-f23/code-smells-prep
+permalink: /classes/257-s25/code-smells-prep
 ---
 
 ## Overview
@@ -23,4 +23,4 @@ To achieve the basic learning objectives, read the following in *Clean Code*:
 * (Optional) [Specific Code Smells](https://refactoring.guru/refactoring/smells) from Refactoring Guru 
 
 ## Checks
-You don't need to memorize all these code smells, but you probably spotted a few that you are particularly likely cause. Make a list of the code smells from this chapter that you think are most important for you to remember.
+You don't need to memorize all these code smells, but you probably spotted a few that you are particularly likely cause. Submit a list of the code smells from this chapter that you think are most important for you to remember.
