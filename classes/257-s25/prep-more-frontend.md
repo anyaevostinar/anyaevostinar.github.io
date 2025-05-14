@@ -33,6 +33,7 @@ To achieve the basic learning objectives, pick at least one of the below resourc
 
 ### Map
 * [Add a Google Map with markers with HTML:](https://developers.google.com/maps/documentation/javascript/add-google-map-wc-tut) You can get a free trial with $300 of Google Cloud credit with your Carleton email, which should be more than enough to get you through a demo for this class.
+* [Plotly Maps](https://plotly.com/python/tile-scatter-maps/) Another library that students have used in the past to make a map with markers
 
 ### World Cloud
 * [Word Cloud in HTML & CSS](https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90)

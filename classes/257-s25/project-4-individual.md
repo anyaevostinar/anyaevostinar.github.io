@@ -48,7 +48,7 @@ For exemplary you should do at least one of the following:
 For exemplary you also need:
 * Explanations in your `README.md` of how your page enables "scanability, satisficing, and muddling through".
 * A navigation bar 
-* [Matching id tags and labels]((https://webaim.org/techniques/forms/controls#input) ) for accessibility
+* [Matching id tags and labels](https://webaim.org/techniques/forms/controls#input) for accessibility
 
 The grader will grade your assignment by doing the following:
 * Pull down your submission for this deliverable from ID4 repository
