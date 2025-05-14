@@ -1,7 +1,7 @@
 ---
 layout: page
 title: R/Ggplot2 Lab
-permalink: /classes/361-f22/r-lab
+permalink: /classes/361-s25/r-lab
 ---
 
 ## Goals
