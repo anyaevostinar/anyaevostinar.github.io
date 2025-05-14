@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project Design Improvements
-permalink: /classes/257-f23/project-improvements
+permalink: /classes/257-s25/project-improvements
 ---
 
 ## Overview
