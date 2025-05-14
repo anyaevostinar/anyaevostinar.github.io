@@ -45,8 +45,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 5/16 | Attend 5/15 Bits and Bytes if you are able | Visiting Speaker: Dr. Betty Cheng, [Slides](https://docs.google.com/presentation/d/1cgIR0KKvrEPIEc5ShFSwyOcyPwOpU0KXhbV-EknuByE/edit?usp=sharing) | | 
 | Week 8 | |  | |
 | M 5/19 |  Project proposal |	Proposal peer review, [Slides](https://docs.google.com/presentation/d/1termRSSAHVtybeo-mOBWh9OepMBjsMq5DCD8GwLNI4o/edit?usp=sharing)	| [Final project](project-overview)  |
-| W 5/21 | Encyclopedia second drafts | [Graphing Data](r-lab)		 | |	
-| F 5/23 | 	| Work time |	|
+| W 5/21 | Encyclopedia second drafts | [Graphing Data](r-lab), [Slides](https://docs.google.com/presentation/d/1z0TBTX0a5arl5V9ZpBJewwutDmBon_hwBUCwa2-6QlM/edit?usp=sharing)		 | |	
+| F 5/23 | 	| Work time, [Slides](https://docs.google.com/presentation/d/1kMoKlx0u68p_rjHAwxtllFiA93O0yq_162cPfr-u04k/edit?usp=sharing) |	|
 | Week 9 | |  | |
 | M 5/26 | |	Guest Speaker: Dr. Matthew A. Moreno		| |	
 | W 5/28 | [Replication reports](project-overview#replication-drafts) |	Sharing reports | |
