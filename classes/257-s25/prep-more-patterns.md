@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Specific Patterns Prep
-permalink: /classes/257-f23/more-patterns-prep
+permalink: /classes/257-s25/more-patterns-prep
 ---
 
 ## Overview
@@ -23,4 +23,7 @@ To achieve the basic learning objectives, read the following:
 * [Decorator Design Pattern](https://refactoring.guru/design-patterns/decorator) - ditto, [Python](https://refactoring.guru/design-patterns/decorator/python/example) example
 
 ## Checks
-Complete the prep check on Moodle.
+Submit answers to the following on Moodle:
+* What does the Observer pattern do?
+* What does the Iterator pattern do?
+* What does the Decorator pattern do?

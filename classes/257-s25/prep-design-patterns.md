@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Design Patterns Prep
-permalink: /classes/257-f23/patterns-prep
+permalink: /classes/257-s25/patterns-prep
 ---
 
 ## Overview
@@ -25,4 +25,7 @@ To achieve the basic learning objectives, read the following:
 * Optional: [Python Design Patterns](https://www.toptal.com/python/python-design-patterns) - the article is generally assuming you already know what the patterns are and gives opinions on them, which you are welcome to read if you are interested, but not required
 
 ## Checks
-Complete the prep check on Moodle.
+Submit answers to the following on Moodle:
+* What is a design pattern in programming?
+* Who first described the concept of patterns?
+* What are the three categories of patterns based on the intent of the pattern?
