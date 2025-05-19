@@ -48,7 +48,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 5/21 | Encyclopedia second drafts | [Graphing Data](r-lab), [Slides](https://docs.google.com/presentation/d/1z0TBTX0a5arl5V9ZpBJewwutDmBon_hwBUCwa2-6QlM/edit?usp=sharing)		 | |	
 | F 5/23 | 	| Work time, [Slides](https://docs.google.com/presentation/d/1kMoKlx0u68p_rjHAwxtllFiA93O0yq_162cPfr-u04k/edit?usp=sharing) |	|
 | Week 9 | |  | |
-| M 5/26 | |	Guest Speaker: Dr. Matthew A. Moreno		| |	
+| M 5/26 | [Guest Speaker Prep](moreno-prep)|	Guest Speaker: Dr. Matthew A. Moreno		| |	
 | W 5/28 | [Replication reports](project-overview#replication-drafts) |	Sharing reports | |
 | F 5/30 |  | Guest Speaker: Dr. Emily Dolson	|	 |
 | Week 10 | | | |
