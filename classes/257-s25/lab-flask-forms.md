@@ -16,6 +16,7 @@ If you need the previous two Flask labs for reference, they are here: [Intro to 
 If you want specific functionality, here are the sections:
 
 * [Simple Radio Buttons](#simple-row-display)
+* [Testing](#test-forms)
 * [POST requests](#post-requests)
 * [Dynamically generated dropdowns](#dynamically-generated-dropdowns)
 * [Autocomplete search bar](#extra) - link to tutorial and hints
@@ -61,6 +62,20 @@ We're first going to use radio buttons to let the user choose which row of the s
 
     Now if you try your app again, you should see the data that the user requested!
 
+## Test Forms
+How to test your new formy page? It's nice and simple for a GET request:
+
+```python
+    def setUp(self):
+        self.app = app.test_client()
+
+    def test_display_row(self):
+        response = self.app.get('/displayrow?rowchoice=1')
+        self.assertIn(b"Your choice: 1", response.data)
+```
+
+You just include the `?my_var=X` after your normal route address.
+
 ## POST Requests
 You might have noticed in the URL that the user's selection is shown there. This is fine for non-sensitive data, but might not always be what you want. If you don't want the information included right in the URL, then you need to use a POST method.
 
@@ -96,6 +111,8 @@ You might have noticed in the URL that the user's selection is shown there. This
     ```
 
     Try out your app now and verify that you are able to get the information using either request method. Awesome!
+
+To test your POST request, it's a bit more complicated, [but explained here](https://flask.palletsprojects.com/en/stable/testing/#form-data) (not required for the lab, just in case you want to know).
 
 ## Dynamically Generated Dropdowns
 You might have realized that it will be really annoying if you have to manually make radio buttons for every possible choice that the user might want to look up in your dataset. 
