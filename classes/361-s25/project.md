@@ -67,8 +67,9 @@ Your proposal must include the following:
     1. Absolute baseline: the simplest possible result you can think of from the paper that should be trivial to do
     2. Basic controlled experiment: a single experimental variation with a control, again something pretty basic from the paper
     3. Ideal result: the result that you'd actually really like to be able to recreate but is beyond the most basic
+        * You should include the relevant plot from the paper or quoted text of results if there isn't a relevant plot
     4. **Note**: You won't be required to complete all three of these, the goal is that you are able to get at least the absolute baseline because things are always more complicated than you think!
-* A sketch of how you are thinking of visually presenting the system. This shouldn't be a data plot, but instead something similar to the UIs that you've made for the projects so far.
+* A picture/sketch of how you are thinking of visually presenting the system. This shouldn't be a data plot, but instead something similar to the UIs that you've made for the projects so far. You should include an actual picture, either a picture of hand drawing or generated with whatever you like to use to make computer graphics
 * Two ideas (at least) of extensions to the result that you would like to try. These don't need to be big, but they shouldn't repeat the other results in the paper. They can be along the lines of 'try this with two other mutation rates' or 'try adjusting population size.' One of them can be more ambitious, but one should be something that you think will be trivial to do.
 
 ## Replication Drafts
@@ -87,6 +88,7 @@ Your final report should be a `.md` or `.pdf` file in your Git repository.
 
 ### Helpful things
 If you are doing an Avida paper, check out the guide for [logic nine tasks](logic-nine) and [new instructions](instructions-guide).
+Also note that Avida rewarded organisms with "merit" and you will instead reward organisms with points, as you did in the digital evolution project.
 
 ## Assessment
 Generally, you will be assessed based on the specifications above. 
