@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code Review 2 Prep
-permalink: /classes/257-f23/review-2-prep
+permalink: /classes/257-s25/review-2-prep
 ---
 
 ## Overview
@@ -22,10 +22,10 @@ After class, you should be able to:
 ## Readings
 To achieve the basic learning objectives, you should read the following before class:
 * Review [Code review guidelines](http://www.codeproject.com/Articles/524235/Codeplusreviewplusguidelines) from CodeProject
-* Read and make notes about the code sent to you (information forthcoming on Wednesday on Moodle). Pay special attention to the comments, naming, and 'code smell' ideas that we have been discussing as well as the style principles that you have learned about in previous classes. 
+* Read and make notes about the code sent to you (information forthcoming on Friday on Moodle). Pay special attention to the comments, naming, and 'code smell' ideas that we have been discussing as well as the style principles that you have learned about in previous classes. 
 
 ## Checks
-Write answers to the following and bring them to class:
+Write answers to the following and submit them to Moodle:
 * For your *own* team's project, write a brief overview of your team's design approach and the main classes/functions/decisions that you've made. You will use this to introduce your project code to the people reviewing it, so it should give them a high-level idea of your project codebase
 * For the repository you are assigned to review:
     * 2 or 3 things you like about their code, that you think they should keep doing.
