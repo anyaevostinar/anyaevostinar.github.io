@@ -53,7 +53,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 5/30 |  | Guest Speaker: Dr. Emily Dolson	|	 |
 | Week 10 | | | |
 | M 6/2	| | Guest Speaker: Dr. Lisa Soros    | |
-| W 6/4 |  | Final project; Wrap up; course evaluations	| |
+| W 6/4 | Encyclopedia final draft due 10pm | Final project showcase; course evaluations	| |
 | Exam Period | | | |
 | |Nothing scheduled, projects due 6/9 8:30pm (+1 hour grace period) | | |
 | | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
