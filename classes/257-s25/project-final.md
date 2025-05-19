@@ -65,8 +65,8 @@ The grader will evaluate your project by:
 * Git checkout the tag `improved-design` to see what your codebase and/or front-end looks like after your design improvements
 
 ### Proficiency
-* All the previous components (Command Line, Flask, Database, & Front-End) still work.
-* Your team’s code fulfilled the Proficiency requirements below for EITHER the code OR front-end design improvement option
+* All the previous components (Command Line, Flask, Database, Front-End, & Tests) still work.
+* Your team’s code fulfilled the requirements below for EITHER the code OR front-end design improvement option
 
 #### Option A: Code Design Improvements
 For each of the **TWO** code smells/naming & commenting issues:

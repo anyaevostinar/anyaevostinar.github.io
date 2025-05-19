@@ -50,8 +50,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 5/16 |[Individual front-end](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](https://docs.google.com/presentation/d/1_Z2d163Vuo4E7t6kDptH4WpWy8i1eJmL7NFYW2JZUJI/edit?usp=sharing), Accessibility Analysis | |
 | **Week 8** | **Refactoring** | | |
 | M 5/19 | [Team front-end](project-4-front-end), [More Front-End Prep](more-front-prep) | [Slides](https://docs.google.com/presentation/d/1A4jfPHbC_2_R5XOmd1TaxJBhL4LIJhEzwRL26-Pi6ck/edit?usp=sharing), Working on Front-end component | |
-| W 5/21 | [Naming and Commenting Prep](naming-prep) | [Slides](https://docs.google.com/presentation/d/1NsnOD3xenPzWiE8WTWvZA_mHR-0k6jSOuYFAMSqccrk/edit?usp=sharing), [Naming and comments](https://docs.google.com/document/d/17oI-pCdvU2ICfR14rQbEbVLrZdhzQvPp4CSt_qmtXNs/edit?usp=sharing) |[Design Improvements and Final Reflection](project-improvements) (due 6/9) |
-| F 5/23 | [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells | |
+| W 5/21 | [Naming and Commenting Prep](naming-prep) | [Slides](https://docs.google.com/presentation/d/1NsnOD3xenPzWiE8WTWvZA_mHR-0k6jSOuYFAMSqccrk/edit?usp=sharing), [Naming and comments](https://docs.google.com/document/d/17oI-pCdvU2ICfR14rQbEbVLrZdhzQvPp4CSt_qmtXNs/edit?usp=sharing) | |
+| F 5/23 | [Code Smells Prep](code-smells-prep) | [Slides](https://docs.google.com/presentation/d/1XmORJKDJJS6hpnP6tTIuypF2e8EIZh0VVZmvw5RauSo/edit?usp=sharing), Code Smells | [Design Improvements and Final Reflection](project-improvements) (due 6/9) |
 | **Week 9** | **More Refactoring** | | |
 | M 5/26 | [Code Review 2 Prep](review-2-prep) | [Code review](https://docs.google.com/document/d/14XSNJiFra4qo2RKNFcvgE5eRlLiUNyHS-X55gtiRHjk/edit?usp=sharing) | |
 | W 5/28 | [Design Patterns Prep](patterns-prep) | [Slides](), Design Patterns | |

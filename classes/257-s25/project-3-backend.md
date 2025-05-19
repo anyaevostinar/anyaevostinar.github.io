@@ -101,6 +101,10 @@ The criteria for "Proficiency" and "Exemplary" are below.
    * Style checks are all at 10
 
 
+## Addendums
+You weren't penalized for this on the initial submissions, but revisions need to hold to it:
+* You need to remove your old code that references your data files (in general, you should always remove "dead code" that isn't used anymore)
+
 ## Q&A
 
 * How do I get the names of the columns?
