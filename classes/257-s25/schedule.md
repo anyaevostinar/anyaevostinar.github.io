@@ -53,7 +53,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 5/21 | [Naming and Commenting Prep](naming-prep) | [Slides](https://docs.google.com/presentation/d/1NsnOD3xenPzWiE8WTWvZA_mHR-0k6jSOuYFAMSqccrk/edit?usp=sharing), [Naming and comments](https://docs.google.com/document/d/17oI-pCdvU2ICfR14rQbEbVLrZdhzQvPp4CSt_qmtXNs/edit?usp=sharing) | |
 | F 5/23 | [Code Smells Prep](code-smells-prep) | [Slides](https://docs.google.com/presentation/d/1XmORJKDJJS6hpnP6tTIuypF2e8EIZh0VVZmvw5RauSo/edit?usp=sharing), Code Smells | [Design Improvements and Final Reflection](project-improvements) (due 6/9) |
 | **Week 9** | **More Refactoring** | | |
-| M 5/26 | [Code Review 2 Prep](review-2-prep) | [Code review](https://docs.google.com/document/d/14XSNJiFra4qo2RKNFcvgE5eRlLiUNyHS-X55gtiRHjk/edit?usp=sharing) | |
+| M 5/26 | [Code Review 2 Prep](review-2-prep) | [Slides](https://docs.google.com/presentation/d/1rTeVMZsY0oWtvPkLfGI9Lx2x9gplCCGM4pcanm1Ay2A/edit?usp=sharing), [Code review](https://docs.google.com/document/d/1LTLzYZ1_Dl9Mnddsgu72cmVc3a_sUwW3Ad69ZvGkJXw/edit?usp=sharing) | |
 | W 5/28 | [Design Patterns Prep](patterns-prep) | [Slides](), Design Patterns | |
 | F 5/30 | [Specific Patterns Prep](more-patterns-prep) | [Slides](), More design patterns | |
 | **Week 10** | **Wrapping Up** | | |

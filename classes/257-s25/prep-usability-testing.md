@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Usability Testing Prep
-permalink: /classes/257-f23/usability-prep
+permalink: /classes/257-s25/usability-prep
 ---
 
 ## Overview
@@ -21,4 +21,4 @@ To achieve the basic learning objectives, read the following:
 * Wikipedia article on [Usability Testing](https://en.wikipedia.org/wiki/Usability_testing)
 
 ## Checks
-On the [Usability Testing Tasks Google Doc](https://docs.google.com/document/d/1iMEBZsP5udtH54XWq-zQKp5KR8T-CBynh2ClFr-uel0/edit?usp=sharing), post a task that a user should be able to accomplish on your team's website (in your team's section).
+On the [Usability Testing Tasks Google Doc](https://docs.google.com/document/d/14pOq11D8EoqkodxRs-cPm1_yW4VRtszwHLpb-Z6yUw4/edit?usp=sharing), post a task that a user should be able to accomplish on your team's website (in your team's section) as well as submitting to Moodle.
