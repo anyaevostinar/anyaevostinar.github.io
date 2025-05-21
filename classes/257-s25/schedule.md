@@ -55,7 +55,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 9** | **More Refactoring** | | |
 | M 5/26 | [Code Review 2 Prep](review-2-prep) | [Slides](https://docs.google.com/presentation/d/1rTeVMZsY0oWtvPkLfGI9Lx2x9gplCCGM4pcanm1Ay2A/edit?usp=sharing), [Code review](https://docs.google.com/document/d/1LTLzYZ1_Dl9Mnddsgu72cmVc3a_sUwW3Ad69ZvGkJXw/edit?usp=sharing) | |
 | W 5/28 | [Design Patterns Prep](patterns-prep) | [Slides](https://docs.google.com/presentation/d/1_wF_AzLLYYvlQR8dS5znJX_w80xLFqZguX-TDq_G7pg/edit?usp=sharing), Design Patterns | |
-| F 5/30 | [Specific Patterns Prep](more-patterns-prep) | [Slides](), More design patterns | |
+| F 5/30 | [Specific Patterns Prep](more-patterns-prep) | [Slides](https://docs.google.com/presentation/d/11enMgy8UMlUrqgF7goI-9YxDgKZ1LpH9x-f7n-bhJCU/edit?usp=sharing), More design patterns | |
 | **Week 10** | **Wrapping Up** | | |
 | M 6/2 | [User Story Prep](user-stories-prep) | [Slides](), [User stories](https://docs.google.com/document/d/10skIpunG7DqVl95JcwhzcgapS85rneG9tflb7XZBRTo/edit?usp=sharing) | |
 | W 6/4 | [Usability Testing Prep](usability-prep) | [Slides](), [Usability testing](https://docs.google.com/document/d/167KzdJLn9OehrfxzPmUA9xB4zunkNrkrBJB40GsDlBk/edit?usp=drive_link), Final project showcase | |
