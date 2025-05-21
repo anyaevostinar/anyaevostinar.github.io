@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Logic 9 Tasks Guide
-permalink: /classes/361-f22/logic-nine
+permalink: /classes/361-s25/logic-nine
 ---
 
 ## Overview

@@ -50,7 +50,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Week 9 | |  | |
 | M 5/26 | [Guest Speaker Prep](moreno-prep)|	Guest Speaker: Dr. Matthew A. Moreno, [Slides](https://docs.google.com/presentation/d/1iLD5uqhj6NgpP89FQ0KFe-mIGd7hkt4Ah7VmB5euLgk/edit?usp=sharing)		| |	
 | W 5/28 | [Replication reports](project-overview#replication-drafts) |	Sharing reports, [Slides](https://docs.google.com/presentation/d/1vxt9bYFMXqXWMXesJwkpi0R9xzfk-Ex4Eu1jvqn13Qc/edit?usp=sharing) | |
-| F 5/30 | [Guest Speaker Prep](dolson-prep) | Guest Speaker: Dr. Emily Dolson	|	 |
+| F 5/30 | [Guest Speaker Prep](dolson-prep) | Guest Speaker: Dr. Emily Dolson, [Slides](https://docs.google.com/presentation/d/1dHLgzRVxe1X4OssxcsDzngqQbxwFt9baK96DzzSOqw8/edit?usp=sharing)	|	 |
 | Week 10 | | | |
 | M 6/2	| [Guest Speaker Prep](soros-prep)| Guest Speaker: Dr. Lisa Soros    | |
 | W 6/4 | Encyclopedia final draft due 10pm | Final project showcase; course evaluations	| |
