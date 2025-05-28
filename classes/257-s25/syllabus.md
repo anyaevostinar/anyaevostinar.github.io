@@ -240,7 +240,7 @@ You may further revise that deliverable before the final submission and [request
 
 **To earn a C in the course:** you must have 75% of the deliverables at "Proficient" and have earned 40 engagement credits.
 
-**To earn a B in the course:** you must have 100% of the deliverables at "Proficient" and have earned 45 engagement credits.
+**To earn a B in the course:** you must have 100% of the deliverables at "Proficient" and have earned 45 engagement credits. If you received Not Yet Proficient on the Midterm Reflection but Proficient/Exemplary on the Final Reflection, you may still earn a B.
 
 **To earn an A in the course:** you must have 90% of the deliverables at "Exemplary", the remaining 10% at "Proficient" and have earned 50 engagement credits.
 

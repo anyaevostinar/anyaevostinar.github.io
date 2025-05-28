@@ -25,7 +25,7 @@ Here is a running list of questions that have come up and I suspect will come up
 * Certain computers don't support this option, which I realized only after sending starter code out to you all. Open compile-run.sh and replace -march=native with -msse4.2
 
 *When I run my web version, it crashes after a bit with an error about memory allocation.*
-* You are using more memory than the browser thinks you should be. Make sure you aren't making excessive copies of things, but you can also increase the amount of memory the browser lets you use by opening compile-run.sh and adding -s TOTAL_MEMORY=268435456 just before AEAnimate.cpp. If you're still running out of memory, you should try to find where that might be happening since you should be able to work within that amount.
+* You are using more memory than the browser thinks you should be. Make sure you aren't making excessive copies of things (and make sure that you are clearing your canvas each frame), but you can also increase the amount of memory the browser lets you use by opening compile-run.sh and adding -s TOTAL_MEMORY=268435456 just before AEAnimate.cpp. If you're still running out of memory, you should try to find where that might be happening since you should be able to work within that amount.
 
 *I'm getting "Segmentation fault" when running native, how to fix?*
 * "segfaults" mean that you are accessing memory that you shouldn't be. They are difficult to debug because you don't by default get much information about where the error is happening. There are several ways of finding the location of the problem. lldb or gdb are good tools depending on your operating system (lldb comes with Mac, gdb is the normal one to use with WSL). [Guide that previous course staff made.](GDB_Instructions.pdf)
