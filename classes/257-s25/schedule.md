@@ -57,8 +57,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 5/28 | [Design Patterns Prep](patterns-prep) | [Slides](https://docs.google.com/presentation/d/1_wF_AzLLYYvlQR8dS5znJX_w80xLFqZguX-TDq_G7pg/edit?usp=sharing), Design Patterns | |
 | F 5/30 | [Specific Patterns Prep](more-patterns-prep) | [Slides](https://docs.google.com/presentation/d/11enMgy8UMlUrqgF7goI-9YxDgKZ1LpH9x-f7n-bhJCU/edit?usp=sharing), More design patterns | |
 | **Week 10** | **Wrapping Up** | | |
-| M 6/2 | [User Story Prep](user-stories-prep) | [Slides](), [User stories](https://docs.google.com/document/d/10skIpunG7DqVl95JcwhzcgapS85rneG9tflb7XZBRTo/edit?usp=sharing) | |
-| W 6/4 | [Usability Testing Prep](usability-prep) | [Slides](), [Usability testing](https://docs.google.com/document/d/167KzdJLn9OehrfxzPmUA9xB4zunkNrkrBJB40GsDlBk/edit?usp=drive_link), Final project showcase | |
+| M 6/2 | [User Story Prep](user-stories-prep) | [Slides](https://docs.google.com/presentation/d/17zbekBmV1uVUy8PzabAf5aGtPJVpklIaQiCKVULxbhE/edit?usp=sharing), [User stories](https://docs.google.com/document/d/10skIpunG7DqVl95JcwhzcgapS85rneG9tflb7XZBRTo/edit?usp=sharing) | |
+| W 6/4 | [Usability Testing Prep](usability-prep) | [Slides](https://docs.google.com/presentation/d/11DTJFSQA0rcBijxxlGiXftiuMT4m4mccy63hLgZ0iEE/edit?usp=sharing), [Usability testing](https://docs.google.com/document/d/167KzdJLn9OehrfxzPmUA9xB4zunkNrkrBJB40GsDlBk/edit?usp=drive_link), Final project showcase | |
 | **Exam Week** | | |
 | |Nothing scheduled, final project submissions due 6/9 8:30pm (+1 hour grace period) | | |
 | | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |

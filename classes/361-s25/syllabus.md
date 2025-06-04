@@ -97,7 +97,7 @@ You may further revise that deliverable before the final submission and [request
 
 **To earn a B in the course:** you must have 100% of the deliverables at "Proficient" and have earned 45 engagement credits.
 
-**To earn an A in the course:** you must have 90% of the deliverables at "Exemplary", the remaining 10% at "Proficient" and have earned 50 engagement credits.
+**To earn an A in the course:** you must have 4 of the deliverables at "Exemplary", the remaining 1 at "Proficient" and have earned 50 engagement credits.
 
 (There are 28 class days, so by just completing preparatory work and engaging in class, you will earn 56 engagement credits.)
 
