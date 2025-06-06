@@ -65,8 +65,8 @@ You should submit the file with your individual front-end app to the ID4 reposit
 ### Proficiency Criteria
 * Functionality:
   * The Flask app `app.py` works and relies on a dummy function from `core.py`
-  * There is a homepage
-  * There is at least one additional page that displays hard-coded data from the dataset
+  * There is a styled homepage
+  * There is at least one additional styled page that displays hard-coded data from the dataset
 * Code Design:
   * The HTML and CSS are in separate files
   * Flask code is reasonably easy to read and understand

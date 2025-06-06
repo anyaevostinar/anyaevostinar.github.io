@@ -61,7 +61,7 @@ The criteria for “Proficiency” and “Exemplary” are below.
 
 The grader will evaluate your project by:
 * Looking at your `README.md` to know what design improvements you made to your codebase and/or front-end
-* Git checkout the tag `front-end` or `front-end-revisions`, whichever is the most updated, to see what your codebase and/or front-end looked like before your design improvements
+* Git checkout the tag `front-end` to see what your codebase and/or front-end looked like before your design improvements
 * Git checkout the tag `improved-design` to see what your codebase and/or front-end looks like after your design improvements
 
 ### Proficiency
