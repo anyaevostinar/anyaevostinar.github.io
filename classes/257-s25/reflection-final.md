@@ -16,8 +16,9 @@ Fill out the [form here](https://docs.google.com/forms/d/e/1FAIpQLScm44F-r1VdZvU
 
 ## Evaluation
 **Proficiency** for this deliverable requires:
-* You submit complete answers to each question
+* You submitted the final reflection form
 * At least one of your teammates reviews your overall contribution to the project as equal to other teammates
 
 **Exemplary** for this deliverable requires:
+* You submitted full answers for the final reflection
 * At least two of your teammates reviews your overall contribution to the project as equal to other teammates
