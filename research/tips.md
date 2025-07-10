@@ -20,7 +20,7 @@ You can ssh on to shiver and then push jobs to our two servers like so:
 * `srun -p facultynode --nodelist=margulis2024 python3 /Accounts/yourUserName/simple_repeat.py`
 
 
-(Curious about the names? Read about [John Edmonstone](https://en.wikipedia.org/wiki/John_Edmonstone) and [Lynn Margulis](https://en.wikipedia.org/wiki/Lynn_Margulis))
+(Curious about the names? Read about [John Edmonstone](https://en.wikipedia.org/wiki/John_Edmonstone), [Lynn Margulis](https://en.wikipedia.org/wiki/Lynn_Margulis), [Esther Lederberg](https://en.wikipedia.org/wiki/Esther_Lederberg), [George Carver](https://en.wikipedia.org/wiki/George_Washington_Carver))
 
 
 ## Software 
