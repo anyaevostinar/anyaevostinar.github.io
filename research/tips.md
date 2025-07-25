@@ -59,3 +59,9 @@ To clone a git repository recursively (i.e. to get all its submodules as well):
 To get the submodules after you've cloned a repository normally (and then realize you forgot to get the submodules):
 
 `git submodule update --init --recursive`
+
+To see how much RAM Symbulation is using:
+
+```bash
+ps -eo size,pid,user,command --sort -size | awk '{ hr=$1/1024 ; printf("%13.2f Mb ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' | cut -d "" -f2 | cut -d "-" -f1 | grep symbulation
+```
