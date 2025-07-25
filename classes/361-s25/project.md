@@ -14,6 +14,7 @@ Therefore, this project is focused on allowing you to dive in to an area of arti
 ## Specifics
 To give you some structure, your project will need to meet the following requirements:
 * (Attempt to) replicate a published result from the scientific literature using the Empirical platform
+* Be agent-based/individual-based (this can include cellular automata where the agent's are individual cells) 
 * Visually present an aspect of that result in a browser-based GUI using the Empirical platform
 * Expand beyond the published result in some way
 * Write a short report on what results you (attempted to) replicate and how you expanded on them
