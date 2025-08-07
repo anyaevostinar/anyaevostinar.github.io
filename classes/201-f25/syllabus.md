@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CS201 Data Structures S24 Syllabus
-permalink: /classes/201-s24/syllabus
+title: CS201 Data Structures F25 Syllabus
+permalink: /classes/201-f25/syllabus
 ---
 
 [Schedule](schedule)
@@ -19,7 +19,7 @@ permalink: /classes/201-s24/syllabus
 
 ## Quick Facts
 
-Spring 2024
+Fall 2025
 
 **Instructor**: Anya E. Vostinar
 
@@ -34,6 +34,8 @@ Spring 2024
 All materials are freely available and will be linked through the schedule.
 
 **Drop in student hours**:
+
+TBD
 
 M: 1-2pm
 W: 2-3pm
@@ -52,7 +54,7 @@ By the time you complete this course, you'll be able to do the following:
 * Read a problem description and think through the pros and cons of different data representations and implementations.
 * Work with basic programming building blocks (data structures and abstract data types), including lists, arrays, stacks, queues, trees, maps, and graphs.
 * Analyze the efficiency of an algorithm to understand how the time and space the algorithm needs varies with the size of the data it's working on.
-* Create non-trivial Java programs.
+* Create non-trivial programs.
 
 **Prerequisites**: CS111 (Introduction to Computer Science) or an introductory computer science course completed elsewhere.
 Please talk to me if your background is something other than CS111 or AP CS in high school.
@@ -73,14 +75,7 @@ Each class day will have activities for you to complete *before* class in additi
 All materials will be released at least 48 hours before they are due.
 
 ### Attendance
-Attendance is not strictly required in this class, though I believe that you will do much better if you attend every session and there are consequences to missing class on some days. 
-Because much of the classtime is spent working with partners on lab activities, if you miss class, you will miss out on that opportunity.
-This is particularly important on most Wednesdays when you will usually have time to get started on the homework assignment.
-**If you are absent on Wednesday and your homework partner is in class, you will be split up so that your homework partner can start on the homework assignment.**
-This means that if you miss class on Wednesday and haven't made prior arrangements with me and your homework partner, you will likely need to do that week's homework individually. 
-
-On Mondays there will typically be a quiz in the first half of class.
-If you do not attend on a Monday, you will not be able to make up that quiz, though you will be able to demonstrate your understanding on the learning objectives on subsequent quizzes still without penalty.
+Attendance is expected in this class and, therefore, it is one main way that you are able to earn "engagement credits," which are a portion of your final grade (see below).
 
 ## Types of Engagement and Collaboration Policies
 We'll have lots of different ways of engaging with the course material: 
@@ -88,8 +83,7 @@ We'll have lots of different ways of engaging with the course material:
 * Interactive lectures at the start of class that will include discussions to check your understand of the reading and give you a chance to ask questions.
 * Labs for writing somewhat longer code with significant guidance from the instructions in order to make ideas from readings more concrete.
 * Homework where you complete more extended projects to provide opportunities to design solutions and see the ideas from class applied in real contexts.
-* Weekly in-class quizzes, that provide you with a check on whether you've understood the key ideas from the previous week and are summative.
-* Final project, where you pull together everything you've learned to create something that interests you.
+* Exams that assess where you are with the learning objectives of the course.
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
 In many of these activities you'll have the option to work collaboratively, and throughout the course you'll have assigned programming partners who you will complete the labs and homework with. 
@@ -105,81 +99,77 @@ Therefore, my goal with the following evaluation metrics is to balance providing
 
 Towards that end, your performance in this class will be evaluated in the following ways according to the learning goals for the course:
 
-* **Programming deliverables** There will be weekly(ish) programming homework assignments during the term, some of which you'll complete individually and some with a partner. You will also complete a final programming project at the end of the term. The programming deliverables allow you to demonstrate mastery of some of the key learning objectives in this course -- particularly those focused on writing and organizing larger programs. These contribute to your final grade according to the *specifications grading* scale outlined below. You will have the opportunity to revise these *individually* (regardless of whether they were originally individual or paired assignments), as detailed below.
+* **Homework deliverables** There will be weekly(ish) homework assignments during the term, some of which you'll complete individually and some with a partner. The homework deliverables allow you to practice some of the key learning objectives in this course -- particularly those focused on writing and organizing larger programs. These contribute to your final grade according to the *specifications grading* scale outlined below. You will have the opportunity to revise these *individually* (regardless of whether they were originally individual or paired assignments), as detailed below.
 
-* **In-class quizzes** Some of the learning objectives for the course can't be measured through programming assignments. Instead, your mastery of these objectives will be assessed in weekly in-class quizzes, generally on Mondays. There is a specific list of learning objectives that you should demonstrate your mastery of on these quizzes, and each objective will appear on at least two quizzes, though often more. This means that you have multiple chances to demonstrate your understanding, and where you are with each objective at the end of the term is what will matter for your grade. I realize this is different than how you are probably used to having quizzes, so we'll discuss this more in class and throughout the term. There are also more details below.
+* **In-class exams** Some of the learning objectives for the course can't be measured through programming assignments. Instead, your mastery of these objectives will be assessed via in-class exams (dates specified on the schedule). There is a specific list of learning objectives that you should demonstrate your mastery of on these quizzes, and most objectives will appear on at least two exams, though often more. This means that you have multiple chances to demonstrate your understanding, and where you are with each objective at the end of the term is what will matter for your grade. I realize this is different than how you are probably used to having exams, so we'll discuss this more in class and throughout the term. There are also more details below.
 
 
-### Programming Grading Scale
+### Grading Scale
 
-I'll be using a version of *specifications grading* this term for the programming deliverables. Each programming assessment that you hand in will be evaluated against a checklist or rubric related to one or more of the course learning objectives. I will distribute the rubrics and checklists I'll use to assess each assignment so that you know exactly what constitutes each of these levels. I will rank the overall submission according to a four-level scale:
+I'll be using a version of *standards and specifications grading* this term for the programming assignments and exams. Each assessment that you hand in will receive narrative feedback and be marked on the following scale:
 
-* Insufficient evidence (basically nothing turned in)
+* **IE**: Insufficient evidence (basically nothing turned in)
 
-* Does not yet demonstrate proficiency (something was turned in but it did not completely fulfill the criteria)
+* **RR**: Revise or retake (does not meet the core requirements yet)
 
-* Demonstrates proficiency (the submission provides evidence of proficiency in the learning objective(s))
+* **S**: Satisfactory (meets the requirements)
 
-* Demonstrates mastery (the submission provides evidence of mastery of the learning objective(s))
+Learning objectives (exams) and requirements (programming homework) will be in one of two categories:
 
-An important aspect of specifications grading is revision. **You may revise any programming deliverable up until the end of exams.** Learning is not a linear process, and it involves making mistakes and learning from them. You may *individually* revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
-You may *individually* [further revise](revision-process) that deliverable before the end of the term and request additional feedback via a form (linked [here](revision-process)), however I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.
-Even if an assignment was initially a paired assignment, all revisions should be completed individually.
+* **CR**: Core
 
-### Quiz Assessment
-
-Each weekly quiz will have a subset of [learning objectives](quizzes-overview) that can be demonstrated on that quiz, which you will know ahead of time.
-Each of the 'quiz' learning objectives will appear on at least two quizzes, so that you will have multiple chances to demonstrate your understanding of the material.
-Answers on quizzes will be assessed on the same four-level scale:
-
-* Insufficient evidence (basically nothing written down)
-
-* Does not yet demonstrate proficiency (something was written down but it did not demonstrate proficiency of the learning objective)
-
-* Demonstrates proficiency (the answer provides evidence of proficiency in the learning objective(s))
-
-* Demonstrates mastery (the answer provides evidence of mastery of the learning objective(s))
+* **AD**: Advanced
 
 ### How this translates to course grades
 
-**To earn a C in the course:** you must show that you are *proficient in all* the learning objectives of the course by having all programming deliverables and quiz objectives at 'demonstrates proficiency'
+Your final course grade will be based on how many advanced and core requirements/objectives you have satisfied (from the exam learning objectives and the homework requirements) as well as how many engagement credits you earned. 
+The table below show the **minimum** requirement for each letter grade for each category. To calculate your grade, I will find the highest letter grade for which you have met **all** requirements. For example, if you satisfied 23 advanced objectives, 36 core objectives and had 55 engagement credits, you would receive a B+ due to the missing core objective. 
+Note that a "-" is due to not having all the required engagement credits and a "+" is due to having more advanced requirements satisfied.
 
-**To earn a B in the course:** you must show that you are *proficient in all* the learning objectives of the course and *have mastered half* of the learning objectives by having all programming deliverables and quiz objectives at 'demonstrates proficiency' and half of programming deliverables and quiz objectives at 'demonstrates mastery'
-
-**To earn an A in the course:** you must show that you have *mastered all* of the learning objectives in the course by having all programming deliverables and quiz objectives at 'demonstrates mastery'
-
-
-Here is a table that lays out how +/- work (and everything overall):
-
-| Grade | Percent LOs at Mastery | Percent LOs at Proficiency (or higher) | Percent LOs at Not Yet Proficient |
+| Grade | Advanced Satisfied | Core Satisfied | Engagement Credits |
 |-------|----------|-------------|------------|
-| A | 100% | 0% | 0% |
-| A- | 75-99% | 1-25% | 0% |
-| B+ | 51-74%| 24-49% | 0% |
-| B | 50%  |  50%  | 0%* |
-| B- | 25-49%  |  51-75%  |   0%* |
-| C+ |  1-24%  |  76-99%  |   0%* |
-|C |  0%   |   100%  |   0%* |
-| C- | ? |  75-99% | 1-25% |
-| D+ | ? | 51-74%| 24-49% |
-| D | ? | 50% | 50% |
-| D- | ?| 25-49%  |  51-75% |
-| F | ? | 0-24% | 76-100% |
+| Total| 15 (Exam) + 8 (HW) = 23 | 29 (Exam) + 8 (HW) = 37 | >54 |
+| A | 22 | 37 | 50 |
+| A- | 22 | 37 | <50 |
+| B+ | 17 | 36 | 45 |
+| B | 12  |  36 | 45|
+| B- | 12 |  36 |  <45 |
+| C+ |  6  |  35 |   40|
+|C | 0   |   35 |   40|
+| C- | 0 |  35 | <40 |
+| D+ | 1 | 27| 35 |
+| D | 0 | 27 | 35 |
+| D- | 0| 27 |  <35 |
+| F | 0 | 0 | 0|
 
-*\* Note:* It is possible for a student to end up in a situation where they have most objectives at mastery but one objective at 'not yet proficient' at the end of the term. In those cases (just **one** objective NYP, nearly everything else mastery), the student might be able to earn up to a B depending on the specific objective at NYP, the status of the rest of the objectives, and the rest of the evidence of understanding I have from the student. Aim to not be in that situation by working continuously throughout the term to make progress on the objectives and checking with me when you misunderstand things. By doing so, you'll be more likely to qualify for a boost if you do end up there. **I make no guarantee that you will get such a boost.**
+
+### Homework revisions
+
+An important aspect of specifications grading is revision. **You may revise any homework deliverable up until the last day of classes.** Learning is not a linear process, and it involves making mistakes and learning from them. You may *individually* revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
+You may *individually* [further revise](revision-process) that deliverable before the end of the term and request additional feedback via a form (linked [here](revision-process)), however I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.
+Even if an assignment was initially a paired assignment, all revisions should be completed individually.
+
+### Exam retakes and revisions
+
+If you get **"Retake"** on an exam question, that means that you didn't demonstrate sufficient understanding. You will have the opportunity to try a question on that learning objective again up until the final exam. When you get the question correct, you will get S for that objective, regardless of how many attempts it took you to get there.
+
+Sometimes an answer on an exam is close but has a small error that makes it unclear if you understood the learning objective completely. In these cases, I will indicate that you can **"Revise"** your answer. To revise an exam answer:
+* Print out your exam question from Gradescope
+* Figure out what the error is (with help from anyone)
+* Come to drop-in hours with the print out and explain to me the error and the fix
+* If I am convinced that you do understand the objective, I'll ask you to email me to update you to S
+* Note that I'm happy to help you understand the error, but there must be 24 hours between my helping and you officially revising
 
 ### Late work and extensions
 In this course, we need to balance flexibility for individuals with structure for partners, the class as a whole, and a reasonable workload for the grader and me (your instructor). I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. 
 
 **All programming deliverables** have a 1-hour grace period after their posted due date and time to account for slight delays in submission while allowing assessment of submissions to start soon after the due date. If you miss that cutoff, you will still be able to submit something during the revision period. I highly recommend you aim to submit something in the original submission window, even if it isn't complete, so that you can benefit from feedback and revision.
 
-**In-class quizzes** cannot be made up because missing one quiz will not at all impact your grade. If you fall behind on quiz objectives, there is the possibility of demonstrating your understanding outside of class, and there will be extra assessment opportunities towards the end of the term. If you're worried about where you are on the quiz objectives, get in touch and we can make a plan.
+**In-class exams** cannot be made up because missing one exam with not impact your grade. If you fall behind on learning objectives, there is the possibility of demonstrating your understanding outside of class. If you're worried about where you are on the learning objectives, get in touch and we can make a plan. If you know you will miss an exam, you might be able to take it ahead of time, but I don't guarantee it.
 
-**Preparation work** does not specifically contribute to your grade, and so a late work or extension policy doesn't make sense for it.
-It is expected that you complete the preparation work ahead of the class period that it is associated with, however if you aren't able to, I recommend you complete it as soon afterward as you can.
+**Preparation work** cannot be submitted late. If you miss the submission for a given day, you cannot earn the engagement credit for that work.
 
-
-**All work must be submitted by the end of the last finals period as per College policy.**
+**All work must be submitted by the end of the last day of classes per College policy.**
 All that said: If you're staring down a deadline that you know you can't meet, or if you've fallen behind, **get in touch with me immediately and we'll work something out.** While I need to put boundaries in place for my own health and wellness, and for fairness to everyone in the class, I also want to make sure you are progressing in your learning.
 
 ## How to Succeed in this Class
@@ -227,7 +217,7 @@ Talking to students is literally my favorite part of this job, please talk to me
 * Other Carleton resources: 
 There are lots of resources to help you at Carleton. 
 Lab assistants are available on a regular basis; see the top of Moodle for details. 
-They can help you with debugging and making progress on your homework, or if you're having trouble understanding something about Java. 
+They can help you with debugging and making progress on your homework, or if you're having trouble understanding something about Kotlin. 
 The Academic Skills center is a wonderful resource for helping you develop study skills, improve your ability to prep for exams, or manage procrastination. 
 Oscar Alarez is an academic skills coach in the office with whom you can make individual video conferencing appointments. 
 
@@ -265,11 +255,26 @@ It's not worth it -- please seek help using the resources above instead.
 
 ### AI-Assistance
 In this new age of AI assistants everywhere, we need to cautiously navigate their relationship with academic honesty together.
-In general, only use an AI text/code generator if the assignment explicitly calls for it or allows it, and follow specific assignment guidelines to disclose which text comes from the AI. 
-Most assignments (probably all) in this course will NOT allow the use of an AI text/code generator, since you need to learn how to write the code yourself. If you already have the GitHub Co-pilot extension in VSCode, [you must disable it](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment#enabling-or-disabling-github-copilot) for all course work.
+There are many many (many) ways that generative AI is (sort of) helping you and some are more clearly acceptable or unacceptable than others. I can't make an exhaustive list of what is allowed and isn't, because there is just too much and something new is going to pop up within the ten weeks of this term. I will do my best to guide you, but you also are going to need to use good judgement at times (and don't rely on the AI's judgement!).
 
-We may explore some use cases for generative AI, but I'll also emphasize and demonstrate how it regularly produces quite horrible solutions. 
-You can write way better code yourself, trust me!
+Clearly unacceptable:
+* Pasting the entire assignment prompt into anything (even if you don't use the code that comes out)
+* Using GitHub Co-pilot extension in VSCode (If you already have it, [you must disable it](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment#enabling-or-disabling-github-copilot) for all course work.)
+* Submitting for credit any code that you did not write yourself (and wasn't from the starter code). This class is about learning to write the code yourself after all!
+
+Clearly acceptable:
+* Asking gen AI to give you practice exam questions to study
+* Asking gen AI to explain a class concept that you are struggling with (but triple check it is giving accurate information!)
+
+Borderline (i.e. you could easily slip into unacceptable):
+* Asking gen AI to help you understand what an assignment is asking
+* Asking gen AI to help you understand a bug or error on an assignment
+* Asking gen AI a question instead of coming to drop-in hours or posting to CampusWire
+
+If you are in a borderline situation, you could try prefacing your request with something like the following:
+"I'm working on a programming assignment and need some guidance. I'm not looking for the direct solution, but rather help understanding the concepts involved and strategies for approaching the problem. Could you please provide hints, explanations of relevant topics, or suggest debugging techniques based on my question, without giving away the exact code?"
+
+If I'm being honest, the most depressing thing about genAI to me on a personal level is that students are using it instead of coming to drop-in hours. I really love talking with you in drop-in hours or 1-on-1 meetings and helping students in that setting is my favorite part of this job. Please remember that you wouldn't be bothering me to come by, you would be making my day better. I doubt that the genAI can say the same.
 
 ## Pedagogy
 This section discusses some of the pedagogical principles that you'll see in this class.
