@@ -15,44 +15,44 @@ Preparation should be completed **before** the class day that they are listed. C
 | Date	| Homework/Preparation Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Kotlin | |
-| 3/25| [Intro Prep](intro-prep) | [Slides](), Kotlin Scavenger Hunt| |
-| 3/27 | [Kotlin Basics Prep]() | [Slides](),  |	 |
-| 3/29 | [Classes and Null Safety]()	|  [Slides]() |	 |
+| 9/15| [Intro Prep](intro-prep) | [Slides](), Kotlin Scavenger Hunt| |
+| 9/17 | [Kotlin Basics Prep]() | [Slides](),  |	 |
+| 9/19 | [Classes and Null Safety]()	|  [Slides]() |	 |
 | Week 2 | | OOP and Analysis| |
-| 4/1 | [Constructors Prep]() 	|	  [Slides]() |HW1: Lunar Lander |
-| 4/3 | [Inheritance and Interfaces Prep]()   |	[Slides]() 	| |
-| 4/5 | [Analysis Prep]()| [Slides]()	| |
+| 9/22 | [Constructors Prep]() 	|	  [Slides]() |HW1: Lunar Lander |
+| 9/24 | [Inheritance and Interfaces Prep]()   |	[Slides]() 	| |
+| 9/26 | [Analysis Prep]()| [Slides]()	| |
 | Week 3 | | Stacks and Linked Lists | |
-| 4/8 | HW1;  **Exam 1**   | [Slides]()  | [HW2: Computational Complexity](hw2) |
-| 4/10 | [Stacks and Backtracking Prep]()   |		[Slides]()	|  |
-| 4/12 |Linked Lists Prep |	 	| |
+| 9/29 | HW1;  **Exam 1**   | [Slides]()  | [HW2: Computational Complexity](hw2) |
+| 10/1 | [Stacks and Backtracking Prep]()   |		[Slides]()	|  |
+| 10/3 | [Linked Lists Prep]() |	 	| |
 | Week 4 | | Queues and Hashing| |
-| 4/15 |HW2;[Queues Prep]() | [Slides]() | [HW3: Solving Mazes](hw3) |
-| 4/17 |  [Doubly-linked Lists and Deques Prep]() |	[Slides]()	| |
-| 4/19 | [Sets and Hashing Prep]() |[Slides]() | |
+| 10/6 |HW2;[Queues Prep]() | [Slides]() | [HW3: Solving Mazes](hw3) |
+| 10/8 |  [Doubly-linked Lists and Deques Prep]() |	[Slides]()	| |
+| 10/10 | [Sets and Hashing Prep]() |[Slides]() | [HW4: Deck of Card Operations](hw4)|
 | Week 5 |  | Recursion | |
-| 4/22 |[HW3](hw3),	  **Exam 2**	| [Slides]()	| [HW4: Deck of Card Operations](hw4) |
-| 4/24 |   [Rehashing Prep]() |	[Slides]()	|   |
-| 4/26	|[Recursion and Analysis Prep]()   |	Stacks, Linked Lists, Queues	| |
+| 10/13 |[HW3](hw3),	  **Exam 2**	| [Slides]()	|  |
+| 10/15 |   [Rehashing Prep]() |	[Slides]()	|   |
+| 10/17	|[Recursion and Analysis Prep]()   |	Stacks, Linked Lists, Queues	| |
 | Week 6 | | Trees| |
-| 4/29 |  | Midterm break! | |
-| 5/1 |  [HW4](hw4); [Recursion and Trees Prep]()  |[Slides]()	|HW5: Cuckoo Hashing;  |
-| 5/3 |  Prefix Trees Prep |	[Slides]() | |
+| 10/20 |  | Midterm break! | |
+| 10/22 |  [HW4](hw4); [Recursion and Trees Prep]()  |[Slides]()	|HW5: Cuckoo Hashing;  |
+| 10/24 |  [Prefix Trees Prep]() |	[Slides]() | |
 | Week 7 | | Search Trees | |
-| 5/6 | Binary Search Trees  | [Slides]() | |
-| 5/8 |	HW5; 2-3 Trees Prep | [Slides]()|  [HW6: Word Counter](hw6) |
-| 5/10 | Graphs Prep;  |			| |
+| 10/27 | [Binary Search Trees]()  | [Slides]() | |
+| 10/29 |	HW5; [2-3 Trees Prep]() | [Slides]()|  [HW6: Word Counter](hw6) |
+| 10/31 | [Graphs Prep]()  |			| |
 | Week 8 | | Sorting | |
-| 5/13 | **Exam 3**    | [Slides]()	 |   |	
-| 5/15 | HW6;Graph Searches Prep   	| [Slides]() | 	HW7: IMDB Graph  |
-| 5/17 | Heaps and PQs;   | [Slides]()	|  |	
+| 11/3 | **Exam 3**    | [Slides]()	 |   |	
+| 11/5 | HW6;Graph Searches Prep   	| [Slides]() | 	HW7: IMDB Graph  |
+| 11/7 | Heaps and PQs;   | [Slides]()	|  |	
 | Week 9 | | Search Trees | |
-| 5/20 |  Mergesort Prep  | [Slides]() |  |
-| 5/22 | HW7; Quicksort and Heapsort Prep Prep | [Slides]() 	 | HW8: Sorting 	 |
-| 5/24	| **Exam 4** | [Slides]()  |  |
+| 11/10 |  Mergesort Prep  | [Slides]() |  |
+| 11/12 | HW7; Quicksort and Heapsort Prep Prep | [Slides]() 	 | HW8: Sorting 	 |
+| 11/14	| **Exam 4** | [Slides]()  |  |
 | Week 10 | | Wrapping up | |
-| 5/27 | HW8; | [Slides]() | |
-| 5/29 | No prep; All revisions due 10pm | Review and Revise | |
-| 5/31 |  | Reading days!| |
+| 11/17 | HW8; TBD | [Slides]() | |
+| 11/19 | No prep; All revisions due 10pm | Review and Revise | |
+| 11/21 |  | Reading days!| |
 | Exam Period | | | |
 | Self-scheduled Exam | Topics: Trees, Heaps, PQs, Sorting, Graphs, Retakes on Exam 1-3 topics |  | |
