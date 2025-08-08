@@ -16,46 +16,46 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 
 | Date	| Homework/Preparation Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
-| Week 1 | | Starting with C | |
-| 3/25| [Resources](resources), [Syllabus](syllabus), [Collaboration](collaboration),  [Samples](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/samples/) |  [Slides](), VSCode & mantis, starting C| [HW1: select-column](hw1) |
-| 3/27 | [Getting Started with C](getting-started) |  [Slides](), More C|	 |
-| 3/29 | HW1; [Strings and Files](strings-prep)	| [Slides](), Strings and IO |	 [HW2: minigrep](hw2) |
+| Week 1 | | Bits of C| |
+| 9/15| [Resources](resources), [Syllabus](syllabus), [Collaboration](collaboration),  [Samples](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/samples/) |  [Slides](), Logistics and C| [HW1: Bits and Bytes](hw1) |
+| 9/17 |  |  [Slides](), Bit Ops and Numbers|	 |
+| 9/19 | HW1; | [Slides](), UTF-8, [Data Rep Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab3/)|	 [HW2: Character Encodings](hw2) |
 | Week 2 | | More C | |
-| 4/1 |  HW2; [Pointers Prep](pointers-prep) | [Slides](), Memory	| [HW3: readline](hw3) |
-| 4/3 | [Binary Prep](binary-prep) |	[Slides](), Binary and [Debugging](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/assignments/03-lab-vscode-debugging.html)	| |
-| 4/5 | HW3; [Structs Prep](structs-prep) | [Slides](), Types 	| [HW4: Queues in C](hw4) |
-| Week 3 | |  Machine Languages | |
-| 4/8 | Study!  |	[Slides](), Exam 1 |  |
-| 4/10 | HW4; [Bit Ops Prep](bitops-prep) |	[Slides](), Bit Ops	 	| [HW5: Bit operations and UTF-8](hw5) |
-| 4/12 | [Unicode Prep](unicode-prep)|	   [Slides](), UTF-8, [Data Rep Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab3/)	| |
-| Week 4 | | Assembly | |
-| 4/15 | [Starting Assembly Prep](start-asm-prep); [Assembly Basics Prep](asm-basics-prep)| [Slides](), x86-64 assembly language, GDB first look, [Compiler Explorer](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab4/)	|  |
-| 4/17 | HW5; [Assembly Bits and LEA Prep](asm-bit-lea-prep) |	[Slides](),  LEA	| [HW6.1: asm-to-C puzzles](hw6-1) |
-| 4/19 | [Assembly Flow Control Prep](asm-flow-prep) |	[Slides](), Flow Control in Assembly  | |
+| 9/22 |    | [Slides](), Arrays in C	|  |
+| 9/24 | HW2;  |	[Slides](), Structs and arrays [Debugging](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/assignments/03-lab-vscode-debugging.html)	|[HW3: String Things](hw3) |
+| 9/26 |   | [Slides](), Memory 	|  |
+| Week 3 | |  Numbers | |
+| 9/29 | Study!  |	[Slides](), Exam 1 |  |
+| 10/1 | HW3; |	[Slides](),  Pointers and strings| [HW4: Queues in C](hw4)|
+| 10/3 | |	   [Slides](), 	Signed integers| |
+| Week 4 | | Starting Assembly | |
+| 10/6 | | [Slides](), Overflow and 2's complement	|  |
+| 10/8 | HW4; |	[Slides](), Fractions and floating point	|  |
+| 10/10 |  |	[Slides](), Assembly Basics |[HW5: asm-to-C puzzles](hw6-1) |
 | Week 5 |  More Assembly |  | |
-| 4/22 |	Study	| [Slides](), Exam 2	|  |
-| 4/24 | HW6.1; [Assembly Functions Prep](asm-functions-prep), [Assembly Recursion Prep](asm-recursion-prep)  | [Slides](), Functions and Recursion in Assembly | [HW6.2: More puzzles!](hw6-2)  |
-| 4/26	| [More GDB and Structs Prep](asm-gdb-structs-prep), [GDB and Arrays Prep](asm-gdb-arrays-prep)  |	[Slides](), Arrays and Structs in Assembly, [Intro to gdb](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/assignments/13-lab-gdb.html)	| |
+| 10/13 |		| [Slides](), mov and lea	|  |
+| 10/15 |    | [Slides](), Exam 2| [ |
+| 10/17	|HW5,  |	[Slides](),  Trusting Trust	| |
 | Week 6 | | Reverse Engineering | |
-| 4/29 |  | Midterm break! | |
-| 5/1 |HW6.2,  | [Slides](), Complex Structures; [GDB Assembly Lab](lab-gdb-asm) |[HW7: Escape from the Zoo](hw7) |
-| 5/3 |  |	[Slides](), 	|   |
+| 10/20 |  | Midterm break! | |
+| 10/22 |  | [Slides](), Condition codes| HW6: Escape from the Zoo](hw7)|
+| 10/24 |  |	[Slides](), Stack and functions	|   |
 | Week 7 | | Buffer Overflow | |
-| 5/6 | Study! | [Slides](),	[Quiz 4](quiz4)	 | |
-| 5/8 |	HW7; [Buffer Overflow Prep](buffer-overflow-prep) |[Slides](), Buffer Overflows	| [HW8: Buffer Overflow](hw8)  |
-| 5/10 |[Unix Prep](useful-unix-prep)  |[Slides](),	Useful Unix		|  |
+| 10/27 | | [Slides](),	Exam 3	 | |
+| 10/29 |	HW6; [Buffer Overflow Prep](buffer-overflow-prep) |[Slides](), Buffer Overflows	| [HW7: Buffer Overflow](hw8)  |
+| 10/31 |[Unix Prep](useful-unix-prep)  |[Slides](),	File systems and Unix	|  |
 | Week 8 | | Processes, threads, and memory| |
-| 5/13 |[OS and Processes Prep](os-processes-prep) | [Slides](),	The OS; [Getting Started with Processes Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab7/)	 |  |	
-| 5/15 | HW8; [Signals and Messages Prep](os-signals-prep)	|  [Slides](), Intro to HW9 |	[HW9: Command shell 1](hw9), [HW10: Command shell 2](hw10) |
-| 5/17 | [Memory Hierarchy Prep](mem-hierarchy-prep) | [Slides](), Locality and Memory	|  |	
+| 11/3 |[OS and Processes Prep](os-processes-prep) | [Slides](),	Processes; [Getting Started with Processes Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab7/)	 |  |	
+| 11/5 | HW7; [Signals and Messages Prep](os-signals-prep)	|  [Slides](), Forks and Pipes |	[HW8: Simple Command Shell]() |
+| 11/7 |[Caching Prep](caching-prep) [Memory Hierarchy Prep](mem-hierarchy-prep) | [Slides](), Caching	|  |	
 | Week 9 | | Caches| |
-| 5/20 |   [Caching Prep](caching-prep)| [Slides]()	|  |
-| 5/22 |  |[Slides](), 	Exam | 	 |
-| 5/24	|   | [Slides](), Trusting Trust Discussion | |
+| 11/10 |   | [Slides]()	Exam 4|  |
+| 11/12 | HW8; |[Slides](),  Cache aware code |  |
+| 11/14	|   | [Slides](), Networking basics | |
 | Week 10 | | Wrapping up | |
-| 5/27 | [How DNS Works](https://howdns.works/) |[Slides](), | |
-| 5/29 | Study; Submit checklist for SS exam | [Slides](), Mini-exam, Review | |
-| 5/31 |  | Reading days!| |
+| 11/17 | [How DNS Works](https://howdns.works/) |[Slides](), IP and DNS| |
+| 11/19 |  Study; Submit checklist for SS exam | [Slides](), Mini-exam, Review |All revisions due 10pm|
+| 11/21 |  | Reading days!| |
 | Exam Period | | | |
 | [Self-scheduled](quiz-final) | |  | |
-| | | All revisions due Monday 6/3, 9:30pm. Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
+| | |   | |
