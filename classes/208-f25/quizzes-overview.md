@@ -6,7 +6,7 @@ permalink: /classes/208-sf25/exams-overview
 
 ## Exam Structure
 As discussed in the [syllabus](syllabus), the exams in this class are meant to assess your proficiency on a specific set of learning objectives.
-Each exam will have a posted set of learning objectives that you can demonstrate your understanding of for that quiz, and most learning objectives will appear on at least 2 exams.
+Each exam will have a posted set of learning objectives that you can demonstrate your understanding of for that quiz, and all core learning objectives will appear on at least 2 exams.
 
 ## Exam Learning Objectives
 The learning objectives that will be on exams are:
@@ -81,8 +81,8 @@ The learning objectives that will be on exams are:
 
 ### Networking
 
-#### Core
-* NW1: Provide a high-level explanation of DNS
+#### Advanced
+* NW1-AD: Provide a high-level explanation of DNS
 
 ### Operating Systems
 
