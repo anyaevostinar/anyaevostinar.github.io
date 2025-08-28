@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Exams Overview
-permalink: /classes/208-sf25/exams-overview
+permalink: /classes/208-f25/exams-overview
 ---
 
 ## Exam Structure
