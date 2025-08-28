@@ -34,7 +34,8 @@ After class, you should be able to:
 Read and complete the following:
 * [Syllabus](syllabus)
 * [Schedule](schedule)
-* [Lab 0]()
+* [Lab 0](mantis-lab)
 
 ## Checks
-TBD
+* Fill out the background survey linked on Moodle.
+* There are reflection questions in the lab to answer.

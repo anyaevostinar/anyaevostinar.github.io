@@ -54,28 +54,22 @@ You’re all set up now, and you won’t need to repeat most of the previous ste
 
 * Where is your `hello.py` file stored? 
 
-* Will your file still be on `mantis` after you log out?
+* Will your file still be on `mantis` after you close the browser window?
 
-* Is there a copy on your computer after you log out?
+* Is there a copy on your computer after you close the browser window?
 
 5. **Download a file from `mantis`:** Copy a file from `mantis` to your local computer (e.g., so you can submit homework via Moodle in your web browser). To do so, in the `fern` file explorer, right-click on the file you want to download and select `Download` from the right-click menu. There doesn’t seem to be a drag-and-drop option for this.
 
-UPDATE below
-6. **Upload a file to `mantis`:** Open the folder containing your file (e.g., `new_hello.c`) on your local machine. This will be a Windows Explorer, macOS Finder, or Linux folder display. Drag the icon of your file into the VS Code Explorer panel while you’re logged in to `mantis`.
-
-7. **Always log out when you’re done:** Don’t just close the VS Code window. Logging out helps `mantis` clean up after your connection, which helps keep `mantis` usable for you and your classmates.
-
-## One caveat about working on the lab computers
-When you log out of the computers on the 3rd floor of Olin, your changes on that computer are discarded. So, for example, if you did `Add New SSH Host` on an Olin 310 computer, the resulting menu option would not be there anymore when you returned to that computer later. This can be frustrating, and is one of many reasons we encourage you to do most of your work by SSHing from your own computer.
+6. **Upload a file to `mantis`:** Open the folder containing your file (e.g., `new_hello.c`) on your local machine. This will be a Windows Explorer, macOS Finder, or Linux folder display. Drag the icon of your file into the files panel on `fern`.
 
 ## Next steps
-Now that you’re able to connect to mantis, you’re almost ready to work on the first assignment! Take a look at [Assignment 1 - Bits & Bytes](hw1) to get an idea of what you need to do, and then upload a few [samples](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/samples/), compile, and run them on mantis.
+Now that you’re able to connect to `mantis`, you’re almost ready to work on the first assignment! Take a look at [Assignment 1 - Bits & Bytes](hw1) to get an idea of what you need to do, and then upload a few [samples](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/samples/), compile, and run them on mantis.
 
 After you’ve tried some samples, you can get started with Assignment 1. Follow the instructions on the assignment page for getting the code and testing it out.
 
-## If VSCode won't connect to mantis
+## If you can't connect to `fern`
 
-`mantis` might get overwhelmed with VSCode connections during the term, since VSCode dumps A LOT of stuff onto `mantis` when connecting. If that happens, don't get stuck. You don't need VSCode to work on `mantis`!
+`mantis` might get overwhelmed with connections during the term. If that happens, don't get stuck. You don't need `fern` to work on `mantis`!
 
 ### Getting a Terminal
 If you are on Mac, open the `Terminal` app separate from VSCode (it's just called Terminal). If you are on Windows, you can use several things, including Command Prompt or [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install).
@@ -89,7 +83,7 @@ ssh YOUR_CARLETON_USER_NAME@mantis.mathcs.carleton.edu
 And then your password (don't worry that it looks like you aren't typing, just keep typing and hit enter).
 
 ### Running files
-You now run everything just like you would through VSCode's Terminal, yey!
+You now run everything just like you would through `fern`'s Terminal, yey!
 
 ### Editing files
 The tricky part is editing files. You can either explore using [Emacs](https://quickref.me/emacs.html) or [Vi](https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf) or you can download to your local computer, make changes, and then upload back to `mantis`.
