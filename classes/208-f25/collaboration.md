@@ -79,7 +79,7 @@ You should always be either starting from scratch or starting from files that I 
 
 ## Specific Scenarios
 Adapted from [Academic Integrity at MIT](https://integrity.mit.edu/handbook/writing-code).
-Note all of these scenarios assume the students aren't assigned as pair programming partners and don't have a pair programming partner (if they did, they should be working with their partner).
+Note all of these scenarios assume the students aren't chosen partners and don't have a chosen partner (if they did, they should be working with their partner).
 
 ### Example 1 
 

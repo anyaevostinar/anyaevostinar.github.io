@@ -18,7 +18,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Bits of C| |
 | 9/15| [Logistics Prep](intro-logistics-prep) |  [Slides](), Logistics and C| [HW1: Bits and Bytes](hw1) |
-| 9/17 |  |  [Slides](), Bit Ops and Numbers|	 |
+| 9/17 | [Bits and C Prep](bits-c-prep) |  [Slides](), Bit Ops and Numbers|	 |
 | 9/19 | HW1; | [Slides](), UTF-8, [Data Rep Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab3/)|	 [HW2: Character Encodings](hw2) |
 | Week 2 | | More C | |
 | 9/22 |    | [Slides](), Arrays in C	|  |
