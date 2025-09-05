@@ -15,7 +15,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Date	| Homework/Preparation Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Kotlin | |
-| 9/15| [Intro Prep](intro-prep) | [Slides](), Kotlin Scavenger Hunt| |
+| 9/15| [Intro Prep](intro-prep) | [Slides](), [Kotlin Scavenger Hunt](kotlin-lab)| |
 | 9/17 | [Kotlin Basics Prep]() | [Slides](),  |	 |
 | 9/19 | [Classes and Null Safety]()	|  [Slides]() |	 |
 | Week 2 | | OOP and Analysis| |
