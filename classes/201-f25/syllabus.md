@@ -125,23 +125,23 @@ Learning objectives (exams) and requirements (programming homework) will be in o
 ### How this translates to course grades
 
 Your final course grade will be based on how many advanced and core requirements/objectives you have satisfied (from the exam learning objectives and the homework requirements) as well as how many engagement credits you earned. 
-The table below show the **minimum** requirement for each letter grade for each category. To calculate your grade, I will find the highest letter grade for which you have met **all** requirements. For example, if you satisfied 23 advanced objectives, 36 core objectives and had 55 engagement credits, you would receive a B+ due to the missing core objective. 
+The table below show the **minimum** requirement for each letter grade for each category. To calculate your grade, I will find the highest letter grade for which you have met **all** requirements. For example, if you satisfied 25 advanced objectives, 34 core objectives and had 55 engagement credits, you would receive a B+ due to the missing core objective. 
 Note that a "-" is due to not having all the required engagement credits and a "+" is due to having more advanced requirements satisfied.
 
 | Grade | Advanced Satisfied | Core Satisfied | Engagement Credits |
 |-------|----------|-------------|------------|
-| Total| 15 (Exam) + 8 (HW) = 23 | 29 (Exam) + 8 (HW) = 37 | >54 |
-| A | 22 | 37 | 50 |
-| A- | 22 | 37 | <50 |
-| B+ | 17 | 36 | 45 |
-| B | 12  |  36 | 45|
-| B- | 12 |  36 |  <45 |
-| C+ |  6  |  35 |   40|
-|C | 0   |   35 |   40|
-| C- | 0 |  35 | <40 |
-| D+ | 1 | 27| 35 |
-| D | 0 | 27 | 35 |
-| D- | 0| 27 |  <35 |
+| Total| 17 (Exam) + 8 (HW) = 25 | 27 (Exam) + 8 (HW) = 35 | >54 |
+| A | 24 | 35 | 50 |
+| A- | 24 | 35 | <50 |
+| B+ | 19 | 34 | 45 |
+| B | 14  |  34 | 45|
+| B- | 14 |  34 |  <45 |
+| C+ |  8  |  33 |   40|
+|C | 0   |   33 |   40|
+| C- | 0 |  33 | <40 |
+| D+ | 1 | 25| 35 |
+| D | 0 | 25 | 35 |
+| D- | 0| 25 |  <35 |
 | F | 0 | 0 | 0|
 
 

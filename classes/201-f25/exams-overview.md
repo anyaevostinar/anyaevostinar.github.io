@@ -18,13 +18,11 @@ The learning objectives that will ultimately all be assessed via exams are:
 * KF2: Write if-else statements
 * KF3: Write a basic indefinite and definite loop
 * KF4: Write a specified function 
+* KF5: Instantiate and use an object
 
-### Object orientation
-
-#### Core
-* OO1: Instantiate and use an object
-* OO2: Implement a specified interface
-* OO3: Implement a subclass
+#### Advanced
+* KF6-AD: Implement a specified interface
+* KF7-AD: Implement a subclass
 
 ### Time Complexity
 
@@ -109,8 +107,8 @@ The learning objectives that will ultimately all be assessed via exams are:
 ### Graphs
 
 #### Core
-* GR1: Identify the first level of BFS
-* GR2: Identify the first sequence of DFS
+* GR1: Identify the full sequence of BFS
+* GR2: Identify the full sequence of DFS
 * GR3: Define the Big-O of BFS and DFS
 
 #### Advanced
