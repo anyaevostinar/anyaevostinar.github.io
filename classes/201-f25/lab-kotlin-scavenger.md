@@ -98,6 +98,10 @@ kotlin HelloKt.class
 
 Put these two commands in your reference sheet.
 
+## Submitting
+
+Now take a picture of the first page of your completed reference sheet and upload it to Moodle's "Kotlin Lab Upload" assignment!
+
 ## Want more to do?
 
 If you finish that and have time, you can try changing the `Die` class so it rolls the dice one-by-one and waits for the user to tell it to roll the next one (or two?).  _(Hint: See `Conditionals.kt` for an example of getting a number from the user.)_
