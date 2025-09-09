@@ -15,7 +15,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Date	| Homework/Preparation Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Kotlin | |
-| 9/15| [Intro Prep](intro-prep) | [Slides](), [Kotlin Scavenger Hunt](kotlin-lab)| |
+| 9/15| [Intro Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1klzu1ol4JahGk7Q0FUOgYIzOKGxG5Cnz6QX-YA4iWVk/edit?usp=sharing), [Kotlin Scavenger Hunt](kotlin-lab)| |
 | 9/17 | [Kotlin Basics Prep]() | [Slides](),  |	 |
 | 9/19 | [Classes and Null Safety]()	|  [Slides]() |	 |
 | Week 2 | | OOP and Analysis| |
@@ -47,8 +47,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 11/5 | HW6;Graph Searches Prep   	| [Slides]() | 	HW7: IMDB Graph  |
 | 11/7 | Heaps and PQs;   | [Slides]()	|  |	
 | Week 9 | | Search Trees | |
-| 11/10 |  Mergesort Prep  | [Slides]() |  |
-| 11/12 | HW7; Quicksort and Heapsort Prep Prep | [Slides]() 	 | HW8: Sorting 	 |
+| 11/10 |  Mergesort Prep  | [Slides]() | HW8: Sorting  |
+| 11/12 | HW7; Quicksort and Heapsort Prep Prep | [Slides]() 	 | 	 |
 | 11/14	| **Exam 4** | [Slides]()  |  |
 | Week 10 | | Wrapping up | |
 | 11/17 | HW8; TBD | [Slides]() | |

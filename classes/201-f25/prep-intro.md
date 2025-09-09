@@ -26,7 +26,6 @@ The following objectives should  be mastered by each student during and followin
 
 You should be able to:
 * Explain what the AI policy is in the class
-* Explain how exams and homework assessment leads to your final grade
 * Explain what *data structures* are
 * Identify how to write basic Kotlin using a reference sheet
 
