@@ -34,7 +34,7 @@ You should submit answers to the following on the Gradescope assignment linked t
     Elephant savings amount = 17.0
     Elephant total = 35.5
     ```
-<iframe src="https://pl.kotl.in/4ffgXyuEj"></iframe>
+<iframe src="https://pl.kotl.in/4ffgXyuEj" width="700" height="700"></iframe>
 
 2. Out of the code snippets below, identify which snippet(s) will throw a compiler error.
 

@@ -36,7 +36,7 @@ You should submit answers to the following on the Gradescope assignment linked t
     Student’s GPA: 3.65
     ```
 
-    <iframe src="https://pl.kotl.in/fBQXxV369"></iframe>
+    <iframe src="https://pl.kotl.in/fBQXxV369" width="700" height="700"></iframe>
 
 * Given a list of letter grades from a student’s transcript, the function `calculateGPA` computes a student’s GPA based on [Carleton’s grading system](https://www.carleton.edu/handbook/academics/?policy=385&a=student), but some parts are missing. Fill in the blanks for the code for the function `calculateGPA`. (`main` is already complete.)  The output of this program should be:
     ```
@@ -46,4 +46,4 @@ You should submit answers to the following on the Gradescope assignment linked t
     ```
 
 
-    <iframe src="https://pl.kotl.in/mlZyvA1hE"></iframe>
+    <iframe src="https://pl.kotl.in/mlZyvA1hE" width="700" height="700"></iframe>
