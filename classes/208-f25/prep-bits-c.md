@@ -16,8 +16,8 @@ Before class, you should be able to:
 ## Advanced Learning Objectives
 After class, you should be able to:
 * Explain the process of homework revisions and exams retakes for the course
-* Use bitwise operators to achieve specific output
 * Get started on Assignment 1
+* Use GDB to debug your code
 
 ## Resources
 Read and complete the following:
