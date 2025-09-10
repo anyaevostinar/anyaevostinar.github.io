@@ -22,7 +22,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 9/19 | [Unicode Prep](unicode-prep), [HW1](hw1) | [Slides](), UTF-8|	 [HW2: Character Encodings](hw2) |
 | Week 2 | | More C | |
 | 9/22 |    | [Slides](), Arrays in C	|  |
-| 9/24 | HW2;  |	[Slides](), Structs and arrays [Debugging](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/assignments/03-lab-vscode-debugging.html)	|[HW3: String Things](hw3) |
+| 9/24 | [HW2](hw2);  |	[Slides](), Structs and arrays [Debugging](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/assignments/03-lab-vscode-debugging.html)	|[HW3: String Things](hw3) |
 | 9/26 |   | [Slides](), Memory 	|  |
 | Week 3 | |  Numbers | |
 | 9/29 | Study!  |	[Slides](), Exam 1 |  |
