@@ -30,7 +30,7 @@ To achieve the pre-class learning objectives, you should read the following sect
 
 ## Checks
 You should submit answers to the following on the Gradescope assignment linked through Moodle (note that you can and should [try typing up and running your answers](https://pl.kotl.in/2YMTJHlUF)). You may upload them in the same file or different files and the name of the files doesn't matter.
-* The code below computes a student’s GPA, but some lines are in the wrong order. Put the lines in the correct order. The output of this program should be: 
+1. The code below computes a student’s GPA, but some lines are in the wrong order. Put the lines in the correct order. The output of this program should be: 
 
     ```
     Student’s GPA: 3.65
@@ -38,7 +38,7 @@ You should submit answers to the following on the Gradescope assignment linked t
 
     <iframe src="https://pl.kotl.in/fBQXxV369" width="700" height="700"></iframe>
 
-* Given a list of letter grades from a student’s transcript, the function `calculateGPA` computes a student’s GPA based on [Carleton’s grading system](https://www.carleton.edu/handbook/academics/?policy=385&a=student), but some parts are missing. Fill in the blanks for the code for the function `calculateGPA`. (`main` is already complete.)  The output of this program should be:
+2. Given a list of letter grades from a student’s transcript, the function `calculateGPA` computes a student’s GPA based on [Carleton’s grading system](https://www.carleton.edu/handbook/academics/?policy=385&a=student), but some parts are missing. Fill in the blanks for the code for the function `calculateGPA`. (`main` is already complete.)  The output of this program should be:
     ```
     Student’s GPA: 3.25
     Student’s GPA: 2.42

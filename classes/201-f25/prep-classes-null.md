@@ -25,7 +25,7 @@ To achieve the pre-class learning objectives, you should read the following sect
 
 
 ## Checks
-You should submit answers to the following on the Gradescope assignment linked through Moodle (note that you can and should [try typing up and running your answers](https://pl.kotl.in/2YMTJHlUF)). You may upload them in the same file or different files and the name of the files doesn't matter.
+You should submit answers to the following on the Gradescope assignment linked through Moodle. You may upload your answers in one file or different files and the name of the files doesn't matter.
 1. Fill in the code below for a class that maintains balances for two bank accounts: a checking account, and a savings account. The types should be `Double`, and they should each have a default value of 0.0 for each account if none are specified.
 
     The output of this program should be:
@@ -34,7 +34,7 @@ You should submit answers to the following on the Gradescope assignment linked t
     Elephant savings amount = 17.0
     Elephant total = 35.5
     ```
-<iframe src="https://pl.kotl.in/4ffgXyuEj" width="700" height="700"></iframe>
+    <iframe src="https://pl.kotl.in/4ffgXyuEj" width="700" height="700"></iframe>
 
 2. Out of the code snippets below, identify which snippet(s) will throw a compiler error.
 
