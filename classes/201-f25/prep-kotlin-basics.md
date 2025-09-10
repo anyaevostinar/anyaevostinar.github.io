@@ -36,35 +36,7 @@ You should submit answers to the following on the Gradescope assignment linked t
     Student’s GPA: 3.65
     ```
 
-    ```kotlin
-    fun main() {
-    // Number of classes with each letter grade
-    val numA = 12
-    val numAminus = 14
-    val numBplus = 6
-    val numB = 4
-
-    // Start of lines in wrong order
-
-    totalGradePoints = totalGradePoints + numBplus * 3.333
-
-    val gpa = String.format("%.2f", totalGradePoints / totalClasses)
-
-    totalGradePoints = totalGradePoints + numB * 3.0
-
-    var totalGradePoints :Double = 0.0
-
-    totalGradePoints = totalGradePoints + numAminus * 3.667
-
-    val totalClasses = numA + numAminus + numBplus + numB
-
-        totalGradePoints = totalGradePoints + numA * 4.0
-
-    // End of lines in wrong order
-
-    println("Student's GPA: ${gpa}")
-    }
-    ```
+    <iframe src="https://pl.kotl.in/fBQXxV369"></iframe>
 
 * Given a list of letter grades from a student’s transcript, the function `calculateGPA` computes a student’s GPA based on [Carleton’s grading system](https://www.carleton.edu/handbook/academics/?policy=385&a=student), but some parts are missing. Fill in the blanks for the code for the function `calculateGPA`. (`main` is already complete.)  The output of this program should be:
     ```
@@ -74,30 +46,4 @@ You should submit answers to the following on the Gradescope assignment linked t
     ```
 
 
-    ```kotlin
-    fun calculateGPA(grades: Missing collection type) : Missing return type {
-        
-    var totalGradePoints:Double = 0.0
-
-        //Missing code to iterate over the list
-        
-        // Missing the conditions for other letter grades
-        when(grade){
-    "A" -> totalGradePoints += 4.0
-    }
-
-    val gpa = String.format("%.2f", totalGradePoints / grades.count())
-    
-    return gpa
-    }
-
-
-    fun main() {
-    println("Student's GPA: ${calculateGPA(listOf("A-", "B+", "C", "A"))}")
-
-    println("Student's GPA: ${calculateGPA(listOf("C-", "B", "D+", "A-"))}")
-
-        println("Student's GPA: ${calculateGPA(listOf("F", "A-", "C+", "B-"))}")
-
-    }
-    ```
+    <iframe src="https://pl.kotl.in/mlZyvA1hE"></iframe>
