@@ -17,9 +17,9 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Date	| Homework/Preparation Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Bits of C| |
-| 9/15| [Logistics Prep](intro-logistics-prep) |  [Slides](), Bits Ops and C| [HW1: Bits and Bytes](hw1) |
-| 9/17 | [Bits and C Prep](bits-c-prep) |  [Slides](), Logistics and [Debugging with GDB Lab](c-gdb-lab)|	 |
-| 9/19 | [Unicode Prep](unicode-prep), [HW1](hw1) | [Slides](), UTF-8|	 [HW2: Character Encodings](hw2) |
+| 9/15| [Logistics Prep](intro-logistics-prep) |  [Slides](), Bit Ops and C| [HW1: Bits and Bytes](hw1) |
+| 9/17 | [Bits and C Prep](bits-c-prep) |  [Slides](https://docs.google.com/presentation/d/1mQ_tI4UWB0xVPrqaux1pCCNGKk_3tVcMWN6rrwCBLjc/edit?usp=sharing), Logistics and [Debugging with GDB Lab](c-gdb-lab)|	 |
+| 9/19 | [Unicode Prep](unicode-prep), [HW1](hw1) | [Slides](https://docs.google.com/presentation/d/1KUi0jrs8UeXemMSyNfRSvCnf8j3MFFv0y3nOgGV1-aU/edit?usp=sharing), UTF-8|	 [HW2: Character Encodings](hw2) |
 | Week 2 | | More C | |
 | 9/22 |    | [Slides](), Arrays in C	|  |
 | 9/24 | [HW2](hw2);  |	[Slides](), Structs and arrays [Debugging](https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/assignments/03-lab-vscode-debugging.html)	|[HW3: String Things](hw3) |

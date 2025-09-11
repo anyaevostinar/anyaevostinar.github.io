@@ -48,7 +48,7 @@ You should submit answers to the following on the Gradescope assignment linked t
     course_title = null
 
     //Code Snippet C
-    var course_prof: String? = "Prof. Jean"
+    var course_prof: String? = "Prof. Anya"
     val length = course_prof.length
 
     //Code Snippet D
