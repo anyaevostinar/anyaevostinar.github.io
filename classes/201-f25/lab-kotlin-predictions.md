@@ -139,4 +139,4 @@ fun main() {
 }
 ```
 
-Then consult your reference sheet or the [scavenger hunt files](kotlin-lab) for how to compile and run it.
+Then consult your reference sheet or the [scavenger hunt files](kotlin-lab) for how to compile and run it. Upload your completed code to Moodle for an engagement credit.

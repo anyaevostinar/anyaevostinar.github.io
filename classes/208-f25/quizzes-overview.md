@@ -45,7 +45,7 @@ The learning objectives that will be on exams are:
 * OP4: Use addresses of members of a struct or elements in a `char` array correctly
 
 #### Advanced
-* OP5-AD: Provide bitwise/logical operations for a given affect (e.g. via masking)
+* OP5-AD: Provide bitwise/shift/logical operations for a given affect (e.g. via masking)
 * OP6-AD: Resize an integer value to a larger size (signed or unsigned)
 * OP7-AD: Demonstrate the correct use of `&` and `*` operators
 
