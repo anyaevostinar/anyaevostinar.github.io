@@ -17,7 +17,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 1 | | Intro to Kotlin | |
 | 9/15| [Intro Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1klzu1ol4JahGk7Q0FUOgYIzOKGxG5Cnz6QX-YA4iWVk/edit?usp=sharing), [Kotlin Scavenger Hunt](kotlin-lab)| |
 | 9/17 | [Kotlin Basics Prep](kotlin-basics-prep) | [Slides](https://docs.google.com/presentation/d/1w0WABIXjEGIQW2Fi9ZDA9QEd7byLyM5xP31b4dx3_2Q/edit?usp=sharing), Mutables and Functions, [Predictions Lab](kotlin-predictions-lab) |	 |
-| 9/19 | [Classes and Null Safety](classes-null-prep)	|  [Slides]() |	HW1: Lunar Lander |
+| 9/19 | [Classes and Null Safety](classes-null-prep)	|  [Slides](), [Kotlin Classes Lab](kotlin-classes-lab) |	HW1: Lunar Lander |
 | Week 2 | | Analysis| |
 | 9/22 | [Inheritance and Interfaces Prep]()|	  [Slides]() | |
 | 9/24 |  [Analysis Prep]()  |	[Slides]() 	| |
