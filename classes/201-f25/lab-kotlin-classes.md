@@ -4,6 +4,9 @@ title: Kotlin Classes Lab
 permalink: /classes/201-f25/kotlin-classes-lab
 ---
 
+## Set up
+Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES drive. Make a folder `ClassesLab` in your STUWORK/username folder and open it in VSCode for today's labwork.
+
 ## Exercise 1: `Pet`
 
 Your goal is to write a class named `Pet`, which allows us to store information about our pets.
