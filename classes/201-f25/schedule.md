@@ -17,42 +17,42 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 1 | | Intro to Kotlin | |
 | 9/15| [Intro Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1klzu1ol4JahGk7Q0FUOgYIzOKGxG5Cnz6QX-YA4iWVk/edit?usp=sharing), [Kotlin Scavenger Hunt](kotlin-lab)| |
 | 9/17 | [Kotlin Basics Prep](kotlin-basics-prep) | [Slides](https://docs.google.com/presentation/d/1w0WABIXjEGIQW2Fi9ZDA9QEd7byLyM5xP31b4dx3_2Q/edit?usp=sharing), Mutables and Functions, [Predictions Lab](kotlin-predictions-lab) |	 |
-| 9/19 | [Classes and Null Safety](classes-null-prep)	|  [Slides]() |	 |
-| Week 2 | | OOP and Analysis| |
-| 9/22 | [Constructors Prep]() 	|	  [Slides]() |HW1: Lunar Lander |
-| 9/24 | [Inheritance and Interfaces Prep]()   |	[Slides]() 	| |
-| 9/26 | [Analysis Prep]()| [Slides]()	| |
+| 9/19 | [Classes and Null Safety](classes-null-prep)	|  [Slides]() |	HW1: Lunar Lander |
+| Week 2 | | Analysis| |
+| 9/22 | [Inheritance and Interfaces Prep]()|	  [Slides]() | |
+| 9/24 |  [Analysis Prep]()  |	[Slides]() 	| |
+| 9/26 | HW1; [Recursion and Analysis Prep]() | [Slides]()	| [HW2: Computational Complexity](hw2)|
 | Week 3 | | Stacks and Linked Lists | |
-| 9/29 | HW1;  **Exam 1**   | [Slides]()  | [HW2: Computational Complexity](hw2) |
+| 9/29 |   **Exam 1**   | [Slides]()  |  |
 | 10/1 | [Stacks and Backtracking Prep]()   |		[Slides]()	|  |
-| 10/3 | [Linked Lists Prep]() |	 	| |
+| 10/3 | HW2;[Linked Lists Prep]() |	 	| [HW3: Solving Mazes](hw3)|
 | Week 4 | | Queues and Hashing| |
-| 10/6 |HW2;[Queues Prep]() | [Slides]() | [HW3: Solving Mazes](hw3) |
+| 10/6 |[Queues Prep]() | [Slides]() |  |
 | 10/8 |  [Doubly-linked Lists and Deques Prep]() |	[Slides]()	| |
-| 10/10 | [Sets and Hashing Prep]() |[Slides]() | [HW4: Deck of Card Operations](hw4)|
-| Week 5 |  | Recursion | |
-| 10/13 |[HW3](hw3),	  **Exam 2**	| [Slides]()	|  |
+| 10/10 |[HW3](hw3), [Sets and Hashing Prep]() |[Slides]() | [HW4: Deck of Card Operations](hw4)|
+| Week 5 |  | Hashing | |
+| 10/13 |	  **Exam 2**	| [Slides]()	|  |
 | 10/15 |   [Rehashing Prep]() |	[Slides]()	|   |
-| 10/17	|[Recursion and Analysis Prep]()   |	Stacks, Linked Lists, Queues	| |
+| 10/17	| [HW4](hw4)  |	TBD	| HW5: Cuckoo Hashing;|
 | Week 6 | | Trees| |
 | 10/20 |  | Midterm break! | |
-| 10/22 |  [HW4](hw4); [Recursion and Trees Prep]()  |[Slides]()	|HW5: Cuckoo Hashing;  |
-| 10/24 |  [Prefix Trees Prep]() |	[Slides]() | |
+| 10/22 |   [Recursion and Trees Prep]()  |[Slides]()	|  |
+| 10/24 | HW5; [Prefix Trees Prep]() |	[Slides]() |  [HW6: Word Counter](hw6)|
 | Week 7 | | Search Trees | |
 | 10/27 | [Binary Search Trees]()  | [Slides]() | |
-| 10/29 |	HW5; [2-3 Trees Prep]() | [Slides]()|  [HW6: Word Counter](hw6) |
-| 10/31 | [Graphs Prep]()  |			| |
+| 10/29 |	 [2-3 Trees Prep]() | [Slides]()|   |
+| 10/31 | HW6;[Graphs Prep]()  |			| HW7: IMDB Graph|
 | Week 8 | | Sorting | |
 | 11/3 | **Exam 3**    | [Slides]()	 |   |	
-| 11/5 | HW6;Graph Searches Prep   	| [Slides]() | 	HW7: IMDB Graph  |
+| 11/5 | Graph Searches Prep   	| [Slides]() | 	  |
 | 11/7 | Heaps and PQs;   | [Slides]()	|  |	
 | Week 9 | | Search Trees | |
-| 11/10 |  Mergesort Prep  | [Slides]() | HW8: Sorting  |
-| 11/12 | HW7; Quicksort and Heapsort Prep Prep | [Slides]() 	 | 	 |
+| 11/10 | HW7; Mergesort Prep  | [Slides]() | HW8: Sorting  |
+| 11/12 |  Quicksort and Heapsort Prep Prep | [Slides]() 	 | 	 |
 | 11/14	| **Exam 4** | [Slides]()  |  |
 | Week 10 | | Wrapping up | |
 | 11/17 | HW8; TBD | [Slides]() | |
 | 11/19 | No prep; All revisions due 10pm | Review and Revise | |
 | 11/21 |  | Reading days!| |
 | Exam Period | | | |
-| Self-scheduled Exam | Topics: Trees, Heaps, PQs, Sorting, Graphs, Retakes on Exam 1-3 topics |  | |
+| | Self-scheduled Exam  |  | |
