@@ -35,14 +35,11 @@ All materials are freely available and will be linked through the schedule.
 
 **Drop in student hours**:
 
-TBD
+M: 1-2pm in Olin **304**
+W: 2-3pm in Olin 306/308
+Th: 2:30-3:30pm in Olin 306/308
 
-M: 1-2pm
-W: 2-3pm
-Th: 2:30-3:30pm
-All drop-in hours in Edge Lounge, Olin 306
-
-Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 9-5 M-F and either send a calendar invite to an event or email me.
+Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 8-5 M-F and either send a calendar invite to an event or email me.
 
 ## Overview and Learning Goals
 Are you curious what’s really going on when a computer runs your code? In this course we will demystify the machine and the tools that we use to program it. Our broad survey of how computer systems execute programs, store information, and communicate will focus on the hardware/software interface, including data representation, instruction set architecture, the C programming language, memory management, and the operating system process model.

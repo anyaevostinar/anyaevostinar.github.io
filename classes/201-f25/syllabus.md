@@ -35,14 +35,11 @@ All materials are freely available and will be linked through the schedule.
 
 **Drop in student hours**:
 
-TBD
+M: 1-2pm in Olin **304**
+W: 2-3pm in Olin 306/308
+Th: 2:30-3:30pm in Olin 306/308
 
-M: 1-2pm
-W: 2-3pm
-Th: 2:30-3:30pm
-All drop-in hours in Edge Lounge, Olin 306
-
-Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 9-5 M-F and either send a calendar invite to an event or email me.
+Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 8-5 M-F and either send a calendar invite to an event or email me.
 
 ## Overview and Learning Goals
 Welcome to Data Structures! In this course, you'll be learning about how to work with data, how to design solutions that are efficient for a particular application, and developing more complex programs than in the introductory CS course. 
