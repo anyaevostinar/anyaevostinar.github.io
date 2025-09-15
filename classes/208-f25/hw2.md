@@ -43,7 +43,7 @@ The **advanced** requirements for your submission are:
 * include your name and collaboration statement at the top of your C source file(s)
 
 ## Your assignment
-This assignment is based on the same original codebase as [Assignment ](hw1), but without all of the machinery around it.
+This assignment is based on the same original codebase as [Homework 1](hw1), but without all of the machinery around it.
 
 In this assignment, your job is to implement the five functions described in `bits.h`; all of your coding will be done in `bits.c`.
 

@@ -43,7 +43,7 @@ The following style guidelines are expected moving forward:
 
 The **core** requirements for your submission are:
 
-* complete Part A and the Reflection
+* complete Part A
 * pass the basic `LunarLander` class autograder tests (see the six tests in the provided code)
 * satisfy the code style expectations #1-#4 above
 * include a reflection in comments at the bottom of your `LunarLander.kt` file
@@ -68,7 +68,9 @@ Your mission: Program this simulation in Kotlin.
 
 ## Getting started
 
-Create a folder in which to store your work for course assignments.  For example, I created a folder `CS201` on my computer for this course, and made a folder `HW1` inside of it.  I've got other folders there, too, like `InClass`.
+If you are working on your own computer, you need to install Kotlin. Follow these instructions to either [set up your personal Mac computer](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=160536) or [set up your personal Windows computer](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=160646). If you are working on the lab computers, you don't need to install Kotlin.
+
+Next, create a folder in which to store your work for course assignments.  For example, I created a folder `CS201` on my computer for this course, and made a folder `HW1` inside of it.  I've got other folders there, too, like `InClass`.
 
 Where you put the `CS201` folder depends on the machine you're working on:
 * If you're on your own computer, anywhere is fine.  You could put it on your `Desktop`, in `Documents`, or somewhere else you can find it easily. (Or you could have a `Classes` folder for everything!)

@@ -22,6 +22,7 @@ To achieve the pre-class learning objectives, you should read the following sect
 
 * [Classes](https://kotlinlang.org/docs/kotlin-tour-classes.html)
 * [Null safety](https://kotlinlang.org/docs/kotlin-tour-null-safety.html)
+* [HW1](hw1) - Read the page, download the starter code and make sure you can compile it (there will be errors in the tests until you complete the assignment)
 
 
 ## Checks
