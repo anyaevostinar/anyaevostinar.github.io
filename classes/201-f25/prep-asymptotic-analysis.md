@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Asymptotic Analysis Preparation
-permalink: /classes/201-s24/analysis-prep
+permalink: /classes/201-f25/analysis-prep
 ---
 
 ## Overview

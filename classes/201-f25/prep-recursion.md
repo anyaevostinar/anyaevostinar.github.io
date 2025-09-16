@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Recursion Preparation
-permalink: /classes/201-s24/recursion-prep
+permalink: /classes/201-f25/recursion-prep
 ---
 
 ## Overview
