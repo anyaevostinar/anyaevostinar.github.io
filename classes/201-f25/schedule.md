@@ -21,7 +21,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 2 | | Analysis| |
 | 9/22 | [Inheritance and Interfaces Prep](inheritance-prep)|	  [Slides]() | |
 | 9/24 |  [Analysis Prep](analysis-prep)  |	[Slides]() 	| |
-| 9/26 | HW1; [Recursion and Analysis Prep]() | [Slides]()	| [HW2: Computational Complexity](hw2)|
+| 9/26 | HW1; [Recursion Prep](recursion-prep) | [Slides]()	| [HW2: Computational Complexity](hw2)|
 | Week 3 | | Stacks and Linked Lists | |
 | 9/29 |   **Exam 1**   | [Slides]()  |  |
 | 10/1 | [Stacks and Backtracking Prep]()   |		[Slides]()	|  |
