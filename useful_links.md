@@ -55,3 +55,5 @@ I have a couple of projects getting evolutionary dynamics into Minecraft and so 
 ## Ruby
 [Using asdf package manager](https://mac.install.guide/ruby/7.html)
 
+## Grad School
+[PhD-level abilities and character traits](https://blog.genesmindsmachines.com/p/phd-level-abilities-and-character) - A nice analysis of what traits are actually the most important for pursuing a PhD, i.e. it's not about being smart enough.
