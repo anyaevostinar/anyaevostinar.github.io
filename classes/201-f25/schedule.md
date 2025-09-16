@@ -20,7 +20,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 9/19 | [Classes and Null Safety](classes-null-prep)	|  [Slides](https://docs.google.com/presentation/d/1oFN5NhPoZyosQQpKv3ogctizuCVHrisLCgziTBMk_rA/edit?usp=sharing), [Kotlin Classes Lab](kotlin-classes-lab) |	[HW1: Lunar Lander](hw1) |
 | Week 2 | | Analysis| |
 | 9/22 | [Inheritance and Interfaces Prep](inheritance-prep)|	  [Slides]() | |
-| 9/24 |  [Analysis Prep]()  |	[Slides]() 	| |
+| 9/24 |  [Analysis Prep](analysis-prep)  |	[Slides]() 	| |
 | 9/26 | HW1; [Recursion and Analysis Prep]() | [Slides]()	| [HW2: Computational Complexity](hw2)|
 | Week 3 | | Stacks and Linked Lists | |
 | 9/29 |   **Exam 1**   | [Slides]()  |  |
