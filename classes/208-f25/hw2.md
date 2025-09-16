@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bits and Character Encodings
+title: HW2 - Bits and Character Encodings
 permalink: /classes/208-f25/hw2
 
 ---
