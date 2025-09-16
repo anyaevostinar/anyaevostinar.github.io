@@ -5,7 +5,7 @@ permalink: /classes/208-f25/hw3
 
 ---
 
-**Due: Wednesday, Oct 1st, at 10:00pm**
+**Due: Friday, Oct 3rd, at 10:00pm**
 
 * Starter code: [a3.tar](a3.tar)
 * Upload solutions via Gradescope as: `ds.c` and `ss.c`

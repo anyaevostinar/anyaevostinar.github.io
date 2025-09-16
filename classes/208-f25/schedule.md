@@ -26,12 +26,12 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 9/26 | [Pointers Prep](pointers-prep)  | [Slides](), Memory 	|  |
 | Week 3 | |  Numbers | |
 | 9/29 | Study!  |	[Slides](), Exam 1 |  |
-| 10/1 | HW3; |	[Slides](),  Pointers and strings| [HW4: Queues in C](hw4)|
-| 10/3 | |	   [Slides](), 	Signed integers| |
+| 10/1 |  |	[Slides](),  Pointers and strings| |
+| 10/3 | HW3; |	   [Slides](), 	Signed integers|[HW4: Queues in C](hw4) |
 | Week 4 | | Starting Assembly | |
 | 10/6 | | [Slides](), Overflow and 2's complement	|  |
-| 10/8 | HW4; |	[Slides](), Fractions and floating point	|  |
-| 10/10 |  |	[Slides](), Assembly Basics |[HW5: asm-to-C puzzles](hw6-1) |
+| 10/8 |  |	[Slides](), Fractions and floating point	|  |
+| 10/10 | HW4; |	[Slides](), Assembly Basics |[HW5: asm-to-C puzzles](hw6-1) |
 | Week 5 |  More Assembly |  | |
 | 10/13 |		| [Slides](), mov and lea	|  |
 | 10/15 |    | [Slides](), Exam 2| [ |
