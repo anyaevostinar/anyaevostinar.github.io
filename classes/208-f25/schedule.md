@@ -23,7 +23,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 2 | | More C | |
 | 9/22 |  [Strings and Arrays Prep](strings-prep)  | [Slides](), Arrays and Strings	|  |
 | 9/24 | [HW2](hw2); [Structs Prep](structs-prep)  |	[Slides](), Structs and String Lab	|[HW3: String Things](hw3) |
-| 9/26 |   | [Slides](), Memory 	|  |
+| 9/26 | [Pointers Prep](pointers-prep)  | [Slides](), Memory 	|  |
 | Week 3 | |  Numbers | |
 | 9/29 | Study!  |	[Slides](), Exam 1 |  |
 | 10/1 | HW3; |	[Slides](),  Pointers and strings| [HW4: Queues in C](hw4)|
