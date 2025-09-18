@@ -23,7 +23,7 @@ The learning objectives that will be on exams are:
 ### Data representations
 
 #### Core
-* DR1: Demonstrate how a struct is stored in memory with arrays (no buffer bytes)
+* DR1: Demonstrate how a struct is stored in memory with arrays (no buffer bytes/padding)
 * DR2: Encode a codepoint (given the byte count) (with table provided)
 * DR3: Explain how bytes are interpreted with `%c` and `%d`
 * DR4: Demonstrate how an integer is stored in big- and little-endian
@@ -31,7 +31,7 @@ The learning objectives that will be on exams are:
 * DR6: Demonstrate the difference between a value and its address
 
 #### Advanced
-* DR7-AD: Demonstrate how complex elements (e.g. structs with nested arrays) of an array are stored in memory
+* DR7-AD: Demonstrate how complex elements (e.g. structs with nested arrays) of an array are stored in memory (including padding/buffer bytes)
 * DR8-AD: Decode a multi-character encoded byte sequence (any byte count) (with table provided)
 
 
