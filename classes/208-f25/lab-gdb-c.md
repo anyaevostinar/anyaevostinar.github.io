@@ -152,7 +152,7 @@ Let’s set our first breakpoint and explore. A breakpoint is a place where gdb 
 * Now set a new breakpoint at the start of factorial:
 
     ```bash
-    (gdb) b main
+    (gdb) b factorial
     ```
 
 * Now, step through your code. Try restarting and stepping through line by line, watching where your program is at:

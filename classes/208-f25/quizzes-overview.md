@@ -32,7 +32,7 @@ The learning objectives that will be on exams are:
 
 #### Advanced
 * DR7-AD: Demonstrate how complex elements (e.g. structs with nested arrays) of an array are stored in memory
-* DR8-AD: Decode a multi-character encoded byte seqeuence (any byte count) (with table provided)
+* DR8-AD: Decode a multi-character encoded byte sequence (any byte count) (with table provided)
 
 
 

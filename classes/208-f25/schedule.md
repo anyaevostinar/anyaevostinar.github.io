@@ -21,11 +21,11 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 9/17 | [Bits and C Prep](bits-c-prep) |  [Slides](https://docs.google.com/presentation/d/1mQ_tI4UWB0xVPrqaux1pCCNGKk_3tVcMWN6rrwCBLjc/edit?usp=sharing), Logistics and [Debugging with GDB Lab](c-gdb-lab)|	 |
 | 9/19 | [Unicode Prep](unicode-prep), [HW1](hw1) | [Slides](https://docs.google.com/presentation/d/1KUi0jrs8UeXemMSyNfRSvCnf8j3MFFv0y3nOgGV1-aU/edit?usp=sharing), UTF-8|	 [HW2: Character Encodings](hw2) |
 | Week 2 | | More C | |
-| 9/22 |  [Strings and Arrays Prep](strings-prep)  | [Slides](), Arrays and Strings	|  |
+| 9/22 |  [Strings and Arrays Prep](strings-prep)  | [Slides](https://docs.google.com/presentation/d/12CUWNNlhgl-NJ3fmvAnyxf3QyPXrgzCDLxOJV6kASJ4/edit?usp=sharing), Arrays and Strings, [String Rep Lab](char-rep-lab)	|  |
 | 9/24 | [HW2](hw2); [Structs Prep](structs-prep)  |	[Slides](), Structs and String Lab	|[HW3: String Things](hw3) |
 | 9/26 | [Pointers Prep](pointers-prep)  | [Slides](), Memory 	|  |
 | Week 3 | |  Numbers | |
-| 9/29 | Study!  |	[Slides](), Exam 1 |  |
+| 9/29 | Study!  |	[Slides](), [Exam 1](exam1) |  |
 | 10/1 |  |	[Slides](),  Pointers and strings| |
 | 10/3 | HW3; |	   [Slides](), 	Signed integers|[HW4: Queues in C](hw4) |
 | Week 4 | | Starting Assembly | |
