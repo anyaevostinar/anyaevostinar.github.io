@@ -46,7 +46,7 @@ fun main() {
 
 If you finished Exercise 1 early, you can start Exercise 2 for fun.  We won't go over it in class.
 
-Your goal is to write a class named `MyMap`, which allows us to associate _keys_ with _values_.  For example, we may want to map the string `"blue"` to the number `3` and the string `"yellow"` to the number `4`.
+Your goal is to write a class named `MyMap`, which allows us to associate _keys_ with _values_.  For example, we may want to map the string `"blue"` to the number `3` and the string `"yellow"` to the number `4`. Note that you should not use any built-in Kotlin map, you are implementing your own instead!
 
 The `MyMap` class should have the following methods:
 * `MyMap()` constructor: takes no actual parameters, but initializes necessary data structures; returns `None`
