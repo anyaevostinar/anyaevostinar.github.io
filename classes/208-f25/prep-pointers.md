@@ -23,6 +23,7 @@ You should read/watch the following (if you aren't a fan of goofy videos, you ca
 * [Binky Pointer Video](https://www.youtube.com/watch?v=5VnDaHBi8dM) - silly intro to pointers
 * [DIS 2.1 Parts of Program Memory and Scope](https://diveintosystems.org/book/C2-C_depth/scope_memory.html)
 * [DIS 2.2 C Pointer Variables](https://diveintosystems.org/book/C2-C_depth/pointers.html)
+* [DIS 2.3 Pointers and Functions](https://diveintosystems.org/book/C2-C_depth/pointers_functions.html)
 * [Pointer basics from Standford](http://cslibrary.stanford.edu/106/)
 
 
@@ -38,3 +39,4 @@ Submit answers to the following on Moodle:
 There are a lot more exercises on DIS if you'd like more practice:
 * [DIS 2.1](http://runestone.cs.swarthmore.edu/DIS_Exercises/section-2_1.html)
 * [DIS 2.2](http://runestone.cs.swarthmore.edu/DIS_Exercises/section-2_2.html)
+* [DIS 2.3](https://diveintosystems.org/exercises/section-2_3.html)
