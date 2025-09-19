@@ -20,8 +20,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 9/19 | [Classes and Null Safety](classes-null-prep)	|  [Slides](https://docs.google.com/presentation/d/1oFN5NhPoZyosQQpKv3ogctizuCVHrisLCgziTBMk_rA/edit?usp=sharing), [Kotlin Classes Lab](kotlin-classes-lab) |	[HW1: Lunar Lander](hw1) |
 | Week 2 | | Analysis| |
 | 9/22 | [Inheritance and Interfaces Prep](inheritance-prep)|	  [Slides](https://docs.google.com/presentation/d/1d3LkJb9Khse6BUbvCUElnBSIHuTf3lwSVJXGRtKXqpc/edit?usp=sharing), [Interfaces Lab](interfaces-lab) | |
-| 9/24 |  [Analysis Prep](analysis-prep)  |	[Slides](), [Analysis Lab](analysis-lab) 	| |
-| 9/26 | HW1; [Recursion Prep](recursion-prep) | [Slides]()	| [HW2: Computational Complexity](hw2)|
+| 9/24 |  [Analysis Prep](analysis-prep)  |	[Slides](https://docs.google.com/presentation/d/1QMRA-Tj_9wEPwZIfpz2WMtAPSLEPcH9A02AmrfY8qqM/edit?usp=sharing), [Analysis Lab](analysis-lab) 	| |
+| 9/26 | HW1; [Recursion Prep](recursion-prep) | [Slides](https://docs.google.com/presentation/d/1RdmYQTmhizfCzPg09bRRktajzZjzaJNiAhMHS_LVYSM/edit?usp=sharing), [Recursion Lab](recursion-lab)	| [HW2: Computational Complexity](hw2)|
 | Week 3 | | Stacks and Linked Lists | |
 | 9/29 |   [**Exam 1** ](exam1)  | [Slides]()  |  |
 | 10/1 | [Stacks and Backtracking Prep]()   |		[Slides]()	|  |

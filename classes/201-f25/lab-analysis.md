@@ -97,7 +97,7 @@ public boolean binarySearch(int[] list, int item) {
 Analyze the time complexity (you'll have to think about how many times the while loop in Binary Search will actually run) in the same way you did for the previous several problems. How does your analysis change if the list isn't already sorted?
 
 ## Extra
-You should submit what you've completed above and then think about this one. We'll come back to these ideas a little later in the term.
+You should submit what you've completed above (by taking a picture and uploading to Moodle) and then think about this one. We'll come back to these ideas a little later in the term.
 
 The following is a function for sorting two lists of numbers, which you might have seen in CS 111: [mergesort](https://runestone.academy/ns/books/published/pythonds3/SortSearch/TheMergeSort.html?mode=browsing). It uses recursion to do the sorting. 
 
