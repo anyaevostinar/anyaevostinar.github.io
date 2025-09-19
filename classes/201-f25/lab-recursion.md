@@ -74,10 +74,10 @@ Write a recursive function called `getMin(lst)` that returns the minimum element
 Write a modified version of the recursive Fibonacci function from Problem 2 above, and call it `countFib(n)`. This function should return a list with two items (or a tuple if you prefer) containing a) the `n`th Fibonacci number and b) the number of times `countFib()` is called. The easiest approach will be to modify the `fib(n)` from above.
 
 ## Exercise 11
-Write a recursive function called `mod(a, b)` that computes the remainder we get when we divide `a` by `b`. This is precisely what the `%` operator does in Python, but your function should instead use recursion to compute this remainder.
+Write a recursive function called `mod(a, b)` that computes the remainder we get when we divide `a` by `b`. This is precisely what the `%` operator does, but your function should instead use recursion to compute this remainder.
 
 ## Exercise 12
-For this exercise, write a **recursive** function called `power(b, n)` that returns `b` raised to the `n`th power. You can assume that they are both non-negative integers. (You should not use Python's `**` functionality for this one.)
+For this exercise, write a **recursive** function called `power(b, n)` that returns `b` raised to the `n`th power. You can assume that they are both non-negative integers. (You should not use the built-in `**` functionality for this one.)
 
 
 Submit the completed file `recursionLab.kt` to Moodle for an extra engagement credit.
