@@ -32,9 +32,9 @@ You should read/watch the following (if you aren't a fan of goofy videos, you ca
 Submit answers to the following on Moodle:
 1. Given a variable `int count=5`, what is the C code to define a variable `count_ptr` that holds the memory address of `count`?
 
-2. Complete the following code that swaps the values stored at two `int` pointers: 
+2. Complete the following code that swaps the values stored at two `char` pointers: 
 
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=//void%20swap%28%20%3F%3F%20a,%20%3F%3F%20b%29%20%7B%0A%0A//%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20int%20first%20%3D%201%3B%0A%20%20int%20second%20%3D%202%3B%0A%20%20%0A%20%20//swap%28%3F%3F,%20%3F%3F%29%3B%0A%20%20//first%20should%20now%20hold%202%20and%20second%20should%20hold%201%0A%0A%20%20return%200%3B%0A%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=//void%20swap%28%20%3F%3F%20a,%20%3F%3F%20b%29%20%7B%0A%0A//%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20char%20first%20%3D%20'a'%3B%0A%20%20char%20second%20%3D%20'b'%3B%0A%20%20%0A%20%20//swap%28%3F%3F,%20%3F%3F%29%3B%0A%20%20//first%20should%20now%20hold%20b%20and%20second%20should%20hold%20a%0A%0A%20%20return%200%3B%0A%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=c_gcc9.3.0&rawInputLstJSON=%5B%5D&textReferences=true"> </iframe>
 
 There are a lot more exercises on DIS if you'd like more practice:
 * [DIS 2.1](http://runestone.cs.swarthmore.edu/DIS_Exercises/section-2_1.html)
