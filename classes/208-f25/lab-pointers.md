@@ -12,6 +12,8 @@ a. What mistake is the following code demonstrating?
 b. Write a correct `swap` function for two `int`s in a file `swap.c`:
 
 ```c
+// compile with gcc -Wall -Werror -g -o swap swap.c
+#include <stdio.h>
 void swap(______ a, ________ b) {
 
 	
@@ -20,15 +22,25 @@ int main() {
 	int first = 1;
 	int second = 2;
 	swap(_________, _________);
-	printf(“first value is: %d\n”, first);
+	printf("first value is: %d\n", first);
 	return 0;
 }
 ```
+
+c. Recompile `swap.c` for use with gdb and explore `swap` with gdb by trying out the following:
+
+* Put a breakpoint just before going into swap (check the [GDB lab](c-gdb-lab) if you don't remember the commands)
+* Print out the addresses of `first` and `second` with `p &first` etc
+* Step into `swap` and check what the values of `a` and `b` are
+* What happens when you print the addresses of `a` and `b`? 
+
+d. You can also "examine" specific locations in memory with `x/ YOUR_LOCATION`. For example, my value of `a` is `0x7fffffffe980` (yours may be different), and so I can see the data at that location with `x/0x7fffffffe980`, which should be 1 before any swapping happens. 
 
 ## Exercise 2
 a. Predict what the following will print:
 
 ```c
+#include <stdio.h>
 int main() {
   char buffer[4] = "cat";
   char *ptr = buffer;
@@ -64,6 +76,8 @@ What will be printed after this code runs:
 Copy the following into a file `calculate.c`:
 
 ```c
+#include <stdio.h>
+//// compile with gcc -Wall -Werror -g -o calculate calculate.c
 /* Returns the sums two numbers. */
 int compute_sum(int x, int y) {
     return x + y;
@@ -96,3 +110,9 @@ Complete the calculate function and call it in `main`.
 
 ## Submission
 You can submit your completed `swap.c` and `calculate.c` to the assignment on Moodle for an extra engagement credit.
+
+
+## Extra
+If you finish the lab early, you can work on your homework and revisions.
+
+You can also check out [this blog post](https://jvns.ca/blog/2021/05/17/how-to-look-at-the-stack-in-gdb/) that has some more fun things to do with GDB to see how things are stored in memory. We'll be doing a lot more of this in the coming weeks!
