@@ -27,7 +27,7 @@ int main() {
 }
 ```
 
-c. Recompile `swap.c` for use with gdb and explore `swap` with gdb by trying out the following:
+c. Recompile `swap.c` for use with gdb (`gcc -Wall -Werror -g -Og -o swap swap.c`) and explore `swap` with gdb by trying out the following:
 
 * Put a breakpoint just before going into swap (check the [GDB lab](c-gdb-lab) if you don't remember the commands)
 * Print out the addresses of `first` and `second` with `p &first` etc
