@@ -42,7 +42,7 @@ First, we'll do some planning and basic setup.
 
 4. Add in stub bodies of the methods, having them just returning a default value (like `0` or `""`) for their return type:
 >```kotlin
->    override getName(): String {
+>    override fun getName(): String {
 >        return ""
 >    }
 >```
