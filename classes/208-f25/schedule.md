@@ -25,7 +25,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 9/24 | [HW2](hw2); [Structs Prep](structs-prep)  |	[Slides](https://docs.google.com/presentation/d/10fLXS17QT_Rxf3JRab855Fnm4S4IdocfXMpiNLM_CWU/edit?usp=sharing), [Structs and Files Lab](structs-files-lab)	|[HW3: String Things](hw3) |
 | 9/26 | [Pointers Prep](pointers-prep)  | [Slides](https://docs.google.com/presentation/d/1eul5sVl1u_siIX5Ou0nyXhDgrH4Ve_qCXgUyxwgYq9w/edit?usp=sharing), Memory and [Pointers Lab](pointers-lab) 	|  |
 | Week 3 | |  Numbers | |
-| 9/29 | Study!  |	[Slides](), [Exam 1](exam1) |  |
+| 9/29 | Study!  |	[Slides](https://docs.google.com/presentation/d/16nVL6HKOmwamiC_-UP1o53df6ybZxKiIh-O11ISOZTQ/edit?usp=sharing), [Exam 1](exam1) |  |
 | 10/1 | [Dynamic Memory Prep](dynamic-prep)  |	[Slides](),  [Dynamic Memory Lab](dynamic-lab) | |
 | 10/3 | HW3; [Signed Ints Prep](signed-prep) |	   [Slides](), 	Signed integers |[HW4: Queues in C](hw4) |
 | Week 4 | | Starting Assembly | |
