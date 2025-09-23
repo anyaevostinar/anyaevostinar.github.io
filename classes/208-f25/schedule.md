@@ -26,10 +26,10 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 9/26 | [Pointers Prep](pointers-prep)  | [Slides](https://docs.google.com/presentation/d/1eul5sVl1u_siIX5Ou0nyXhDgrH4Ve_qCXgUyxwgYq9w/edit?usp=sharing), Memory and [Pointers Lab](pointers-lab) 	|  |
 | Week 3 | |  Numbers | |
 | 9/29 | Study!  |	[Slides](), [Exam 1](exam1) |  |
-| 10/1 |  |	[Slides](),  Dynamic Memory | |
-| 10/3 | HW3; |	   [Slides](), 	Signed integers|[HW4: Queues in C](hw4) |
+| 10/1 | [Dynamic Memory Prep](dynamic-prep)  |	[Slides](),  [Dynamic Memory Lab](dynamic-lab) | |
+| 10/3 | HW3; [Signed Ints Prep](signed-prep) |	   [Slides](), 	Signed integers |[HW4: Queues in C](hw4) |
 | Week 4 | | Starting Assembly | |
-| 10/6 | | [Slides](), Overflow and 2's complement	|  |
+| 10/6 | | [Slides](), Overflow 	|  |
 | 10/8 |  |	[Slides](), Fractions and floating point	|  |
 | 10/10 | HW4; |	[Slides](), Assembly Basics |[HW5: asm-to-C puzzles](hw6-1) |
 | Week 5 |  More Assembly |  | |
