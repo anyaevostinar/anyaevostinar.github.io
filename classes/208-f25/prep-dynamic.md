@@ -25,6 +25,6 @@ You should read the following in DIS:
 
 
 ## Checks
-Submit the following to Moodle:
+Submit the following to Moodle (one file or two or just text on Moodle is all good):
 * Write a program to create two arrays, one on the stack and one on the heap and fill them both with the values `[1, 2, 3, 4, 5]`
 * Write a sentence or two on the pros and cons of dynamic memory allocation instead of static memory allocation.
