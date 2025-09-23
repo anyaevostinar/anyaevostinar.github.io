@@ -40,13 +40,13 @@ Submit answers to the follows on Moodle:
 ```
 
 1. Given the stack above,
-    a. What will calling `peek()` on this stack return? 
-    b. What will the stack look like after calling `peek()`?
+    1. What will calling `peek()` on this stack return? 
+    2. What will the stack look like after calling `peek()`?
 
 2. Given the status of the stack after Step 1, 
-    a. What will calling `pop()` on this stack return? 
-    b. What will the stack look like after calling `pop()`?
+    1. What will calling `pop()` on this stack return? 
+    2. What will the stack look like after calling `pop()`?
 
 3. Given the status of the stack after Step 2,
-    a. What will calling `push(“Allison”)` on this stack return? 
-    b. What will the stack look like after calling  `push(“Allison”)`?
+    1. What will calling `push(“Allison”)` on this stack return? 
+    2. What will the stack look like after calling  `push(“Allison”)`?
