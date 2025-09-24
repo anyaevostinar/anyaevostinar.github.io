@@ -31,20 +31,20 @@ Now, write a function `print_data` that takes in a `data_t` and prints out the e
 
 Once this works, create a new variable `data` using this `struct` definition in `main`, fill it with values, and print it. Use whatever you want for `a` and `b`, but store `"systems"` in C as follows:
 
-    ```c
-    data.c[0] = 's';
-    data.c[1] = 'y';
-    ...
-    ```
+```c
+data.c[0] = 's';
+data.c[1] = 'y';
+...
+```
 
 Don’t forget to null-terminate `data.c`! Then go ahead and put some bytes in `d`. Some UTF-8 encoded bytes would work nicely:
 
-    ```c
-    data.d[0] = 0xeb;
-    data.d[1] = 0xb4;
-    data.d[2] = 0x84;
-    data.d[3] = '\0';
-    ```
+```c
+data.d[0] = 0xeb;
+data.d[1] = 0xb4;
+data.d[2] = 0x84;
+data.d[3] = '\0';
+```
 
 Finally, call your `print_data` function, and make sure to return `1` from `main` to indicate a successful program completion.
 
