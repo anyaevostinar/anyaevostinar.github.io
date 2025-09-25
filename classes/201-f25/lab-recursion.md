@@ -5,7 +5,7 @@ permalink: /classes/201-f25/recursion-lab
 ---
 
 ## Set up
-Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES drive. Make a folder `ClassesLab` in your STUWORK/username folder and open it in VSCode for today's labwork.
+Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES drive. Make a folder `RecursionLab` in your STUWORK/username folder and open it in VSCode for today's labwork.
 
 ## Exercise 1
 Identify the base case, recursive call, and how you know the function works towards the base case for the following recursive functions:

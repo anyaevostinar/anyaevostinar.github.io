@@ -24,7 +24,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 9/26 | HW1; [Recursion Prep](recursion-prep) | [Slides](https://docs.google.com/presentation/d/1RdmYQTmhizfCzPg09bRRktajzZjzaJNiAhMHS_LVYSM/edit?usp=sharing), [Recursion Lab](recursion-lab)	| [HW2: Computational Complexity](hw2)|
 | Week 3 | | Stacks and Linked Lists | |
 | 9/29 |   [**Exam 1** ](exam1)  | [Slides](https://docs.google.com/presentation/d/10CBVR7qIstOsnIqNEZWEoQF2E9han7WM3x80eLNlwIw/edit?usp=sharing)  |  |
-| 10/1 | [Stacks and Backtracking Prep](stacks-prep)   |		[Slides]()	|  |
+| 10/1 | [Stacks and Backtracking Prep](stacks-prep)   |		[Slides](https://docs.google.com/presentation/d/1I31LfgIM_jK6HEDwdHmWnad6-AReWlN1UeQiy-m_Trg/edit?usp=sharing), [Stack Lab](stack-lab)	|  |
 | 10/3 | HW2;[Linked Lists Prep](linkedlist-prep) |	 	| [HW3: Solving Mazes](hw3)|
 | Week 4 | | Queues and Hashing| |
 | 10/6 |[Queues Prep]() | [Slides]() |  |
