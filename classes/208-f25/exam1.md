@@ -26,7 +26,7 @@ The subset of [learning objectives](exams-overview) that you can demonstrate you
 * OP5-AD: Provide bitwise/shift/logical operations for a given affect (e.g. via masking)
 * OP7-AD: Demonstrate the correct use of `&` and `*` operators
 
-You will be allowed to bring your checklist with you but there should be no writing on it other than your name and you will submit it with your exam. I'll return them after the exam.
+You will be allowed to bring [your checklist](https://docs.google.com/document/d/1HaqG8Pgep0ZP7_FAvRT-354Mq3HxXsUSIjUOLqgBSYM/edit?usp=sharing) with you but there should be no writing on it other than your name and you will submit it with your exam. I'll return them after the exam.
 
 ## Suggestions
 Remember that this isn't your only chance to demonstrate your understanding of these learning objectives, so try not to stress too much.
