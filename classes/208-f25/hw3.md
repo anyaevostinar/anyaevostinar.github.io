@@ -122,7 +122,7 @@ Split s1's label (0x78901234) into id=0x1e24048, entry=0x6, data pos=0x4
 ```
 
 #### Part B: String Splitter
-For this part, you’ll implement a program that can divide one large string up into several small strings. To satisfy the core requirements, you’ll need to implement the following function:
+For this part, you’ll implement a program in `ss.c` that can divide one large string up into several small strings. To satisfy the core requirements, you’ll need to implement the following function:
 
 ```c
 int split_string(char *s, char delim, char **substrings);
