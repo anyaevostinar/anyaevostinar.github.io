@@ -40,6 +40,7 @@ The following style guidelines are expected moving forward:
 9. **You should use helper functions to reduce how big `solveMaze` is. It shouldn't be longer than 40 lines including empty lines.**
 
 ## Assessment
+Note that on this assignment, the Gradescope tests can only run your code and display the output. **Just because they are green, doesn't mean that you have correctly implemented the Maze.** A human grader will review the output to make sure that you are displaying the right thing and **you should look at the output and make sure that it meets the requirements.**
 
 The **core** requirements for your submission are:
 
@@ -108,7 +109,7 @@ Each row description includes a single character for each square in that row, an
 * `7` means that the square has both a top wall and a right wall
 * `|` (vertical bar or "pipe") means that the square has a right wall, but no top wall
 * `_` (underscore) means that the square has a top wall, but no right wall
-* `*` (asterisk) means thatthe square has neither a top wall nor a right wall
+* `*` (asterisk) means that the square has neither a top wall nor a right wall
 
 Putting this together in a small example, if the input file contains the following:
 ```
