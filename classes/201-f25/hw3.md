@@ -44,7 +44,10 @@ Note that on this assignment, the Gradescope tests can only run your code and di
 
 The **core** requirements for your submission are:
 
-* complete Parts B (just solving looking at the "up" neighbor, ignoring the others -- this should solve `maze1.txt`, labeled as "Test 1" in the maven output), C, and E
+* complete Parts B, C, and E
+    * B: implementing `solveMaze`
+    * C: printing the solution
+    * E: reflection
 * satisfy the code style expectations #1-#4 above
 * include a reflection in comments at the bottom of your `Main.kt` file
 
@@ -52,6 +55,7 @@ The **advanced** requirements for your submission are:
 
 * satisfy the core requirements
 * complete all of Parts B-E
+    * D: getting command line arguments
 * satisfy all code style expectations listed above (#1-#9)
 * include your name and collaboration statement at the top of your `Main.kt` file
 
