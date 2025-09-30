@@ -27,6 +27,19 @@ Read the following:
 * [DIS 7.4 Conditional Control and Loops](https://diveintosystems.org/book/C7-x86_64/conditional_control_loops.html)
 
 ## Checks
-Complete these checks (and reach out with questions!)
-* [DIS 7.1](https://diveintosystems.org/exercises/section-7_1.html)
-* [DIS 7.2](https://diveintosystems.org/exercises/section-7_2.html)
+Submit answers the following on Moodle.
+
+1. Given the following values in memory and registers:
+    ![Layout of registers and memory](/classes/208-f25/memory_values.png)
+
+    Write the value of each of the following:
+    * `$0x31B0`
+    * `%rsi`
+    * `(%rdi)`
+    * `0x8(%rdi)`
+    * `(%rdi, %rsi)`
+    * `(%rdi, %rsi, 2)`
+
+2. Assuming `%rdx` contains `0x32A0` and `%rax` contains `0x8`, what will both registers contain after `addq %rdx %rax`?
+
+3. Assuming `rdx` contains `0x6` and `%rax` contains `0x8`, what will both registers contain after `subq %rdx %rax`?
