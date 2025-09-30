@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW 3 Solving Mazes | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW 3 Solving Mazes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-w24/hw3" />
+<meta property="og:url" content="http://localhost:4000/classes/201-w24/hw3" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW 3 Solving Mazes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW 3 Solving Mazes","url":"http://localhost:4000/classes/201-w24/hw3"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW 3 Solving Mazes</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>This is a paired assignment, so you should complete it with your assigned partner, if you have one, via paired programming. The whole time that you are working, you should both be present and actively working on the problem at hand. (Two brains, one keyboard.) Switch off the typing duties so that you each type for roughly half of the time.</p>
+
+<p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
+
+<p>This assignment is due on Friday Jan 26th at 10pm. As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>To gain practice with Stacks and see how they can be useful.</p>
+
+<h2 id="setup-and-requirements">Setup and Requirements</h2>
+<p>Mount COURSES, download the <a href="/classes/201-w24/HW3Starter.zip">HW3 starter code</a> and move it to your StuWork/username folder.</p>
+
+<p>The code that you write for this assignment will build on top of the Stack ADT and an interface that I have provided. Java deals with Stacks rather oddly in that Stack is a class, rather than an interface. Instead of using Java’s Stack, you will use the Stack interface I’ve provided (<code class="language-plaintext highlighter-rouge">Stack.class</code>) and make your own implementation. <strong>For this assignment, you must use the Stack interface and your own implementation. You may not use the built in Java Stack or Deque.</strong></p>
+
+<p>Create a file Collaborations.txt and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the <a href="collaboration">Collaboration page</a> on what collaborations are allowed for homework assignments.</p>
+
+<p>You may find <a href="resources">resources on this list</a> helpful for Java-specific things.</p>
+
+<h2 id="specification">Specification</h2>
+<p>In this assignment, you will load in a maze from a file and solve the maze, printing the maze either with or without the solution marked. I’ve provided you with a <code class="language-plaintext highlighter-rouge">load</code> and <code class="language-plaintext highlighter-rouge">print</code> method and with most of the <code class="language-plaintext highlighter-rouge">MazeSquare</code> class.
+You will implement a <code class="language-plaintext highlighter-rouge">LinkedStack</code> and the method for solving the maze.</p>
+
+<h3 id="the-maze-file-format">The maze file format</h3>
+<p>Mazes are stored in text files and follow a particular format. We assume that our mazes are rectangular, and that they have walls along the entire outside of the maze, with no gaps in these outer walls. We will also specify a “start square” (S) and a “finish square” (F) to indicate the goal of the maze-solver — to get from S to F.</p>
+
+<p>Maze files have the following structure:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Number of rows&gt; &lt;Number of columns&gt;
+&lt;0-based row number of the start square&gt; &lt;0-based column number of the start square&gt;
+&lt;0-based row number of the finish square&gt; &lt;0-based column number of the finish square&gt;
+&lt;Row 0 description&gt;
+&lt;Row 1 description&gt;
+...
+</code></pre></div></div>
+<p>Each row description includes a single character for each square in that row, and each character describes the right and top walls for its square. Specifically:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">7</code> means that the square has both a top wall and a right wall</li>
+  <li><code class="language-plaintext highlighter-rouge">|</code> (vertical bar or pipe) means that the square has a right wall, but no top wall</li>
+  <li><code class="language-plaintext highlighter-rouge">_</code> (underscore) means that the square has a top wall, but no right wall</li>
+  <li><code class="language-plaintext highlighter-rouge">*</code> (asterisk) means that the square has neither a top wall nor a right wall
+Putting this together in a small example, if the input file contains the following:</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">2 3</code></td>
+      <td>The maze has 2 rows and 3 columns</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">1 1</code></td>
+      <td>The start square is in the bottom middle.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">0 2</code></td>
+      <td>The finish square is in the upper right.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">__7</code></td>
+      <td>(0,0) has a top wall; (0,1) has a top wall; (0,2) has a top and right wall</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*_7 </code></td>
+      <td>(1,0) has neither top or right walls; (1,1) has a top wall; (1,2) has a top and right wall</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>then the resulting maze would be printed as follows:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+-----+-----+-----+
+|                 |
+|              F  |
+|                 |
++     +-----+-----+
+|                 |
+|        S        |
+|                 |
++-----+-----+-----+
+</code></pre></div></div>
+
+<p>Note that we specify only the top and right walls for each square, and not the bottom and left walls. This is sufficient to describe the whole maze; make sure to understand why this is.</p>
+
+<h3 id="javadocs">JavaDocs</h3>
+<p>There is a lot of provided code, but the documentation is missing for many of the methods.
+Read through the methods and fill in the JavaDocs documentation.</p>
+
+<h3 id="linkedstack">LinkedStack</h3>
+<p>I’ve provided a <code class="language-plaintext highlighter-rouge">Stack.class</code> file with the Stack interface and a starter file <code class="language-plaintext highlighter-rouge">LinkedStack.java</code> with the necessary stubs for the Stack interface and the private <code class="language-plaintext highlighter-rouge">Node</code> class. Implement each of the methods as specified by the JavaDocs method comment.</p>
+
+<p>Note that VSCode won’t quite understand that <code class="language-plaintext highlighter-rouge">Stack.class</code> exists without <code class="language-plaintext highlighter-rouge">Stack.java</code> so there might be a squiggly error line underneath <code class="language-plaintext highlighter-rouge">Stack</code>, but the code will compile just fine still. Don’t trust the squiggles!</p>
+
+<h3 id="solving-the-maze">Solving the maze</h3>
+<p>Stacks are very useful when solving a maze and a classic algorithm is actually based on this idea. We’ll talk about the algorithm more later in the term, but I’ll just give you the steps for now:</p>
+
+<ol>
+  <li>Create an empty stack of maze squares.</li>
+  <li>Get the start square.</li>
+  <li>Add the start square to the stack and mark the start square as ‘visited’.</li>
+  <li>While the stack isn’t empty:
+    <ol>
+      <li>Check if the top item is the finish square, if it is, you’re done and the stack contains a solution to the maze.</li>
+      <li>Look at each square adjacent to the top item (up, down, right, and left, not diagonals) and look for one that is neither blocked (by a wall) nor already visited. If you find one, mark it as visited and put it on the stack. Go back to step 4. (I recommend you make methods to check in each direction to keep your code more organized.)</li>
+      <li>If there are no squares adjacent to the top item that are neither blocked nor already visited, remove the top item from the stack and go back to step 4. (This is like hitting a dead end in a maze and backtracking.)</li>
+    </ol>
+  </li>
+  <li>If the stack becomes empty before you find the finish square, the maze is unsolvable and you should return the empty stack.</li>
+</ol>
+
+<p>You should implement these steps in <code class="language-plaintext highlighter-rouge">getSolution()</code>.
+As you are working on implementing these steps, you should definitely create new methods in <code class="language-plaintext highlighter-rouge">Maze.java</code> that are called within <code class="language-plaintext highlighter-rouge">getSolution()</code> to make the method shorter and easier to read.
+You should also test your code frequently to make sure that small pieces are working as you expect.</p>
+
+<p>You may encounter an infinite while loop when you try to run your code for the first time (where the program just keeps running and doesn’t stop). A helpful debugging approach is to temporarily add a <code class="language-plaintext highlighter-rouge">count</code> variable that cuts the while loop off after a reasonable number of steps based on your maze and put in print statements to track through what your code is doing and find where it is getting stuck.</p>
+
+<p>You should at least make sure that you code stops looping before moving on.</p>
+
+<h3 id="printing-the-solution">Printing the solution</h3>
+<p>A solution isn’t very helpful if you can’t see it! You should update <code class="language-plaintext highlighter-rouge">getSolution</code> so that it marks <code class="language-plaintext highlighter-rouge">MazeSquare</code>s appropriately and your <code class="language-plaintext highlighter-rouge">main</code> so that, when the user includes the command-line argument <code class="language-plaintext highlighter-rouge">--solution</code>, your program produces a solved maze like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+-----+-----+-----+
+|                 |
+|  *     *     F  |
+|                 |
++     +-----+-----+
+|                 |
+|  *     S        |
+|                 |
++-----+-----+-----+
+</code></pre></div></div>
+
+<p>Check that you are now able to print a solution to the maze and successfully solved the example maze.</p>
+
+<p>If the maze is not solvable, your program should print a friendly message stating that.</p>
+
+<h3 id="user-input">User Input</h3>
+<p>You should edit the <code class="language-plaintext highlighter-rouge">main</code> method of <code class="language-plaintext highlighter-rouge">Maze.java</code> so that it takes in information from the user on which maze they want solved and whether they want it displayed as solved or not with the following command-line argument structure: <code class="language-plaintext highlighter-rouge">java Maze mazefile --solution</code>. The first command line argument is the name of the maze file and the second command line argument is <em>optional</em> and indicates the user wants the solution shown. Here are two example interactions that you should support:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% java Maze maze.txt
++-----+-----+-----+
+|                 |
+|              F  |
+|                 |
++     +-----+-----+
+|                 |
+|        S        |
+|                 |
++-----+-----+-----+
+% java Maze maze.txt <span class="nt">--solution</span>
++-----+-----+-----+
+|                 |
+|  <span class="k">*</span>     <span class="k">*</span>     F  |
+|                 |
++     +-----+-----+
+|                 |
+|  <span class="k">*</span>     S        |
+|                 |
++-----+-----+-----+
+</code></pre></div></div>
+
+<p>If the maze is unsolvable, your program should state that instead of displaying the solution.</p>
+
+<h2 id="stress-testing">Stress testing</h2>
+<p>You should create at least one unsolvable maze to verify and demonstrate how your program handles those, which you should name <code class="language-plaintext highlighter-rouge">unsolvable.txt</code>.</p>
+
+<p>You should also create at least 2 of your own mazes that are more complicated and test your program in unique ways (for example, needing to go right to find the finish instead of left, or needing to move down). You are welcome to create more maze files, but you must create at least 2 and verify that your program behaves correctly. You must name them <code class="language-plaintext highlighter-rouge">maze2.txt</code> and <code class="language-plaintext highlighter-rouge">maze3.txt</code>.</p>
+
+<h2 id="readme">README</h2>
+<p>As always, you should include a detailed README for this homework. 
+It should include a brief overview of your project and a short example of how to run your program and see its interesting behavior.</p>
+
+<h3 id="prompt">Prompt</h3>
+<p>Your solver may not find the shortest path through a complex maze, but it does find a path if there is one (as long as its implemented correctly). We’ll discuss more on why that is in the coming weeks, but for this README, <strong>explain why the Stack is an appropriate ADT to use to simulate a human solving a maze (as opposed to a Queue).</strong></p>
+
+<h2 id="assessment">Assessment</h2>
+<p>To demonstrate proficiency, your program needs to:</p>
+
+<ul>
+  <li>Pass all tests on Gradescope</li>
+  <li>Display mazes and solutions as specified</li>
+  <li>Follow the specifications for the command-line</li>
+  <li>Implemented <code class="language-plaintext highlighter-rouge">LinkedStack</code> correctly</li>
+  <li>Be object-oriented</li>
+  <li>Have a README with an overview, example, and response to the prompt</li>
+  <li>Have JavaDocs documentation for all public methods</li>
+  <li>Be somewhat <a href="style-reference">well-styled</a></li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to:</p>
+<ul>
+  <li>Demonstrate proficiency</li>
+  <li>Include two distinct mazes and one unsolvable maze</li>
+  <li>Work on unsolvable mazes correctly</li>
+  <li>Create and use helper methods correctly and effectively</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">LinkedStack</code> effectively</li>
+  <li>Be extremely <a href="style-reference">well-styled</a> and clear by choosing descriptive variable names, using helper methods, and including useful comments</li>
+  <li>Have a thorough, well-styled README with thoughtful prompt response</li>
+  <li>Have clear and thorough documentation</li>
+</ul>
+
+<h2 id="submission">Submission</h2>
+<p>Remember to update your Collaborations.txt file with any sources that you consulted.</p>
+
+<p>Then upload all of your files to the Gradescope link on Moodle, at which point the autograder will run and let you know if your code works correctly. You are able to submit your code as many times as you wish before the deadline to fix any issues. If you have questions about what the autograder is telling you is wrong, please ask!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

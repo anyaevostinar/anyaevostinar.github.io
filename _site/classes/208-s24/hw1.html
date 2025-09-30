@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>INTRO TO C HW1 SELECT-COLUMN | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="INTRO TO C HW1 SELECT-COLUMN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-s24/hw1" />
+<meta property="og:url" content="http://localhost:4000/classes/208-s24/hw1" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="INTRO TO C HW1 SELECT-COLUMN" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"INTRO TO C HW1 SELECT-COLUMN","url":"http://localhost:4000/classes/208-s24/hw1"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">INTRO TO C HW1 SELECT-COLUMN</h1>
+  </header>
+
+  <div class="post-content">
+    <p>Starter code: <a href="/classes/208-s24/select-column-package.tar">select-column-package.tar</a></p>
+
+<p>Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">select-column.c</code></p>
+
+<h2 id="goals">Goals</h2>
+<ul>
+  <li>Get started with some of the fundamentals of C programming</li>
+  <li>Get used to using some simple program testing automation in the form of a Makefile and sample test data</li>
+  <li>Get experience reading <a href="https://en.wikipedia.org/wiki/Man_page">man</a> pages</li>
+</ul>
+
+<h2 id="assessment">Assessment</h2>
+<p>To <strong>demonstrate proficiency</strong>, your submission needs to:</p>
+<ul>
+  <li>Pass the autograder tests</li>
+  <li>Be somewhat <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html">well-styled</a></li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your submission needs to:</p>
+<ul>
+  <li>Demonstrate proficiency</li>
+  <li>Be quite <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html">well-styled</a>, particularly well-chosen variable names, naming all magic numbers, and good indentation</li>
+  <li>Have a well-chosen algorithm (i.e. don’t over-complicate this task!)</li>
+  <li>Have thorough error-handling</li>
+</ul>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is an <strong>individual</strong> assignment, so you should write all the code individually, though you can get help, as detailed in the <a href="collaboration">collaboration</a> document.</p>
+
+<p>This assignment is due Friday March 29th at 10pm. As with all assignments, you will have the opportunity to <a href="revision-process">revise</a> this submission based on feedback.</p>
+
+<h2 id="getting-started-with-c">GETTING STARTED WITH C</h2>
+<p>This term, nearly all of your work will involve the C programming language either directly or indirectly. As we get started with C, I am assuming that you have a working knowledge of both Python and Java, to the level they are taught in CS 111 and 201.</p>
+
+<p>I also assume you will familiarize yourself with the program examples from the <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/samples/">Samples page</a>. You should definitely study and play with those programs, and you may feel free to plunder them for code to use in your own programs.</p>
+
+<p>Your first few homework assignments will focus on a few core C concepts:</p>
+
+<ul>
+  <li>program structure: <code class="language-plaintext highlighter-rouge">main</code>, <code class="language-plaintext highlighter-rouge">#include</code>, functions, and function prototypes</li>
+  <li>input: <code class="language-plaintext highlighter-rouge">scanf</code>, <code class="language-plaintext highlighter-rouge">fscanf</code>, <code class="language-plaintext highlighter-rouge">fgetc</code>, and <code class="language-plaintext highlighter-rouge">fgets</code></li>
+  <li>output: <code class="language-plaintext highlighter-rouge">printf</code>, <code class="language-plaintext highlighter-rouge">fprintf</code>, <code class="language-plaintext highlighter-rouge">fputc</code>, and <code class="language-plaintext highlighter-rouge">fputs</code></li>
+  <li>essential variable types: <code class="language-plaintext highlighter-rouge">char</code>, <code class="language-plaintext highlighter-rouge">int</code>, <code class="language-plaintext highlighter-rouge">float</code>, <code class="language-plaintext highlighter-rouge">long</code>, and <code class="language-plaintext highlighter-rouge">double</code></li>
+  <li>conditionals: <code class="language-plaintext highlighter-rouge">if</code>, <code class="language-plaintext highlighter-rouge">else</code>, and boolean expressions</li>
+  <li>loops: <code class="language-plaintext highlighter-rouge">while</code> and <code class="language-plaintext highlighter-rouge">for</code></li>
+  <li>arrays</li>
+  <li>null-terminated <code class="language-plaintext highlighter-rouge">char</code> strings along with their associated library functions <code class="language-plaintext highlighter-rouge">strlen</code>, <code class="language-plaintext highlighter-rouge">strcmp</code>, <code class="language-plaintext highlighter-rouge">strncpy</code>, and <code class="language-plaintext highlighter-rouge">strncat</code></li>
+  <li>command-line arguments with <code class="language-plaintext highlighter-rouge">argc</code> and <code class="language-plaintext highlighter-rouge">argv</code></li>
+  <li>structs</li>
+  <li>pointers, including the operators <code class="language-plaintext highlighter-rouge">*</code>, <code class="language-plaintext highlighter-rouge">&amp;</code>, and <code class="language-plaintext highlighter-rouge">-&gt;</code></li>
+  <li>memory allocation: <code class="language-plaintext highlighter-rouge">malloc</code> and <code class="language-plaintext highlighter-rouge">free</code></li>
+</ul>
+
+<h2 id="csv-files">CSV FILES</h2>
+<p>The input for your first program will come in the form of a <a href="https://en.wikipedia.org/wiki/Comma-separated_values">comma-separated values</a> file. CSV files give us a simple way of representing tables. Each line of text represents one row of the table, and each row is separated into columns by commas. For example, here is a simple CSV file <code class="language-plaintext highlighter-rouge">animals.csv</code> representing a table with a heading row followed by five data rows, with three data cells (or columns, if you prefer) per row:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Animal,leg count,eye count
+dog,4,2
+emu,2,2
+spider,8,8
+ant,6,2
+sea star,5,5
+</code></pre></div></div>
+
+<p>The official CSV format has to worry about whether any of the data in the cells contain commas, but we’re not going to worry about that. <em>For this assignment, you may assume that there are no commas in the data, so any comma in the CSV file marks a separation between adjacent data cells.</em></p>
+
+<h2 id="programming-assignment-1-select-column">PROGRAMMING ASSIGNMENT #1: SELECT-COLUMN</h2>
+<p>For this assignment, you will write a C program <code class="language-plaintext highlighter-rouge">select-column.c</code> that takes a CSV file and a 1-based column number as command-line arguments, and prints the specified column of the file to standard output.</p>
+
+<p>For example, suppose we run your program like so:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./select-column animals.csv 2
+</code></pre></div></div>
+
+<p>where the file <code class="language-plaintext highlighter-rouge">animals.csv</code> is as shown above. Then the expected output is:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>leg count
+4
+2
+8
+6
+5
+</code></pre></div></div>
+
+<p>If the specified column does not exist in a particular row of the file, print an empty line for that row.</p>
+
+<h2 id="getting-the-starter-package">GETTING THE STARTER PACKAGE</h2>
+<p>For many assignments this term, you’ll receive some starter code, some testing tools, or miscellaneous other materials to help you get started. These will generally be delivered to you via downloadable <a href="https://en.wikipedia.org/wiki/Tar_(computing)">tar files</a>. As noted in this <a href="https://kb.iu.edu/d/acfi">handy tutorial from Indiana University</a>, you can extract the files and folders contained in a tar file by using the command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">tar </span>xvf whatever.tar
+</code></pre></div></div>
+
+<p>To get started on this first assignment:</p>
+
+<ul>
+  <li>Login to <code class="language-plaintext highlighter-rouge">mantis.mathcs.carleton.edu</code> using VS Code and open your <code class="language-plaintext highlighter-rouge">cs208</code> folder</li>
+  <li>In your VS Code terminal, run:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  wget https://anyaevostinar.github.io/classes/208-s24/select-column-package.tar
+</code></pre></div>    </div>
+  </li>
+  <li>Still in your VS Code terminal, extract the select-column-package folder:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">tar </span>xvf <span class="k">select</span><span class="nt">-column-package</span>.tar
+</code></pre></div>    </div>
+    <p>This will create a folder named “select-column-package” with some stuff in it.</p>
+  </li>
+  <li>Read the <code class="language-plaintext highlighter-rouge">readme.txt</code> file and get started.</li>
+</ul>
+
+<h2 id="automated-testing">AUTOMATED TESTING</h2>
+<p>In the <a href="/classes/208-s24/select-column-package.tar">select-column-package.tar</a> file linked at the top of this page, you will find:</p>
+
+<ul>
+  <li>Makefile: a file that you’ll use to compile your program and run one very simple test</li>
+  <li>readme.txt: an explanation of how to use the Makefile</li>
+  <li>some test data files</li>
+</ul>
+
+<p>For most assignments, I will only give you very simple tests in the assignment’s starter package. The Gradescope autograder will run some more sophisticated tests to explore the boundaries of a given assignment. You are, of course, free to use the testing infrastructure from the starter package to add your own tests. Getting used to automated testing and to writing detailed tests of your own will serve you well in the long-run.</p>
+
+<h2 id="submitting-your-work">SUBMITTING YOUR WORK</h2>
+<ul>
+  <li>upload <code class="language-plaintext highlighter-rouge">select-column.c</code> to Gradescope</li>
+  <li>wait for the autograder to run and feel free to resubmit if the autograder points out an issue</li>
+</ul>
+
+<h2 id="a-little-advice">A LITTLE ADVICE</h2>
+<ul>
+  <li>Think ahead of time about error handling. What could go wrong with the command-line or the input file or anything else in your program? What should your program do when those things happen? (And look at the sample programs for error handling examples!)</li>
+  <li>Think ahead of time about testing. What special cases should you test? How can you test them?</li>
+  <li>Assume that each line ends either with a newline character <code class="language-plaintext highlighter-rouge">\n</code> (ASCII 10) or with the end of the file. You’ll want your program to work even if the last line doesn’t end with <code class="language-plaintext highlighter-rouge">\n</code>.</li>
+  <li>For this program, you won’t need to read entire lines into memory. This problem is solvable just reading one character at a time using <code class="language-plaintext highlighter-rouge">fgetc</code> (and you shouldn’t over complicate it).</li>
+  <li>You’ll probably find the <code class="language-plaintext highlighter-rouge">atoi</code> function helpful, check in 2.6 of the book or do <code class="language-plaintext highlighter-rouge">man atoi</code> on the Terminal to learn more</li>
+</ul>
+
+<h2 id="have-fun">HAVE FUN!</h2>
+<p>Don’t by shy about experimenting and asking lots of questions.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

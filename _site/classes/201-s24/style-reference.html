@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Style Reference | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Style Reference" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-s24/style-reference" />
+<meta property="og:url" content="http://localhost:4000/classes/201-s24/style-reference" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Style Reference" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Style Reference","url":"http://localhost:4000/classes/201-s24/style-reference"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Style Reference</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="overview">Overview</h2>
+<p>There are various bits of information that you need to do for style in particular and this is a page that collects them together for you.</p>
+
+<h2 id="capitalization">Capitalization:</h2>
+<ul>
+  <li>Class names always start with a capital letter (e.g. <code class="language-plaintext highlighter-rouge">String</code>).</li>
+  <li>Variable names start with a lower case letter (e.g. <code class="language-plaintext highlighter-rouge">word</code>), but if they contain multiple words, they use “camel case’” where all words except for the first start with a capital letter (e.g. <code class="language-plaintext highlighter-rouge">myLongVariableWithManyWords</code>) (and long variable names are good!)</li>
+  <li>If you are declaring a constant variable, you use all capital letters (e.g. <code class="language-plaintext highlighter-rouge">public static final double PI = 3.14159;</code>).  If the constant variable uses multiple words, use an underscore to separate the words (e.g. <code class="language-plaintext highlighter-rouge">MINIMUM_SIZE</code>).</li>
+</ul>
+
+<h2 id="comments">Comments:</h2>
+<ul>
+  <li>Use Javadoc style comments (<code class="language-plaintext highlighter-rouge">/** ... */</code>) to summarize the whole class, and as a comment for each method that describes what the method does.  You may also use these comments to indicate the purpose of all the fields in a class.</li>
+  <li>As appropriate use regular comments (<code class="language-plaintext highlighter-rouge">/* ... */</code> or <code class="language-plaintext highlighter-rouge">//...</code>) within methods to provide further detail on any underlying logic.  I suggest writing comments by considering an audience that knows Java, but is not familiar with the details of what exactly you are trying to implement.</li>
+  <li>You should aim to have comments for blocks of code that are a logical unit. If you have many small methods, you might not actually need many comments. However, if you have a longer method, you should use comments to explain why each block of code is doing what it is doing.</li>
+  <li>When writing a single line comment use <code class="language-plaintext highlighter-rouge">//</code> instead of <code class="language-plaintext highlighter-rouge">/* ... */</code>.</li>
+  <li>This is what I mean by JavaDocs style comments:
+```java
+/**
+    <ul>
+      <li>Generally descriptive few sentences about the method.</li>
+      <li>@param nameOfParameter description of the parameter if useful, probably should mention the type</li>
+      <li>@param anotherParameter if you have multiple parameters</li>
+      <li>@return description of what if anything is returned, should definitely mention the type
+*/
+public int exampleMethod(int nameOfParameter, int anotherParameter){
+return 0;
+}
+```</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="file-organization">File Organization:</h2>
+<ul>
+  <li>Import statements go at the top of the file.</li>
+  <li>Javadoc comments (those that start with <code class="language-plaintext highlighter-rouge">/**</code>) about the class/interface should include your name and go in between the import statements and the declaration of the class/interface.</li>
+  <li>Instance variables and static fields go before any constructors or methods.</li>
+  <li>All constructors appear before any methods.
+If you have a <code class="language-plaintext highlighter-rouge">main</code> method, it goes after all other methods.</li>
+</ul>
+
+<h2 id="variable-and-method-names">Variable and Method Names:</h2>
+<ul>
+  <li>Use descriptive names for variables and methods.  The names should give you some clue as to what data a variable stores or what the method does.  It’s fine to use names like i or j for the incrementor in a loop.</li>
+  <li>Class Design:  Think carefully about how you design your classes.  In particular, consider the following:
+    <ul>
+      <li>Should fields be public or private?  Don’t make them public unless you have a good reason to do so.</li>
+      <li>Instance variable vs local variable? If it refers to a persistent state it should probably be an instance variable.  If it will only be used once, or only by one specific method that resets it value at the beginning, then it should probably be a local variable.</li>
+      <li>Should fields be static or non-static? (usually non-static)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="braces">Braces:</h2>
+<ul>
+  <li>Always include braces around the body of if/else/for/while/etc., even if the body is only one line long. I tend to start my braces on the same line as the if/else/for/etc.  For example,
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">(</span><span class="n">line</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">line</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>You can also line up your braces on the left side, like so:
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">(</span><span class="n">line</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+<span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">line</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="indentation">Indentation:</h2>
+<ul>
+  <li>Use indentation to separate out blocks of code (like you do for Python).  For example, indent the bodies of methods, the bodies of loops, etc.  Note: Unlike Python, this type of indentation is not required, but is quite useful for making code more readable.</li>
+</ul>
+
+<h2 id="white-space">White Space:</h2>
+<ul>
+  <li>Do not use whitespace before a comma, semicolon, or colon.</li>
+  <li>Do use whitespace after a comma, semicolon, or colon except at the end of a line.</li>
+  <li>Surround binary operators (+, -, =, /, etc.) by a single space on either side.</li>
+  <li>Surround comparisons (==, &lt;, &gt;, !=, &lt;=, =&gt;) by a single space on either side.</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Surround booleans (&amp;&amp;,</td>
+          <td> </td>
+          <td>) by a single space on either side.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>Not (!) can be placed directly in front of a variable or method without a space after it.</li>
+</ul>
+
+<h2 id="commented-out-code">Commented Out Code:</h2>
+<ul>
+  <li>Do not include any code you’ve commented out when submitting an assignment (e.g. an old version of a method that didn’t work correctly), unless you are explicitly told to do so.  You would never turn in an essay with paragraph simply struck through with a pen, so don’t turn in code that does that.</li>
+</ul>
+
+<h2 id="readme">README</h2>
+<p>Writing good and detailed documentation for your code is an important skill, so important that <a href="https://www.writethedocs.org/">whole communities</a> exist in industry that are focused on good documentation. 
+One part of good documentation is the JavaDocs method comments that you’ll already be doing. 
+However, another part is a <code class="language-plaintext highlighter-rouge">README</code> that is generally the first thing that people look at when they look into your project.
+If you are planning on applying for internships or full-time jobs in the computer science industry, a <a href="https://github.com/">GitHub</a> account with projects with good READMEs is a really helpful part of your application. 
+READMEs are generally written in a language called <a href="https://www.markdownguide.org/">MarkDown</a>, which is fairly straightforward to get the hang of and you can keep yours very simple.</p>
+
+<p>In general (and so therefore for all homework in this class), a README should include:</p>
+
+<ul>
+  <li>An overview section that describes at a high level what your program does, for someone that just found it randomly</li>
+  <li>A small example of your code running and showing its main functionality</li>
+</ul>
+
+<p>For this class in particular, your README must also include answers to any README prompts, which will often ask you to include discussion of the pros and cons of a certain data structure or implementation choice.</p>
+
+<p>I have an <a href="/classes/201-w24/readme_example">example README</a> that you can look at for a project that is a bit more involved.</p>
+
+<h2 id="method-size">Method size</h2>
+<p>You should aim for your methods to be short, as in they fit on the screen, certainly no more than 20 lines. You should achieve this by making lots of smaller methods for the logical groups of actions that you are doing, which we usually call ‘helper’ methods. You can make these methods <code class="language-plaintext highlighter-rouge">private</code> so you don’t have to do JavaDocs for them :).</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This style guide is adapted from one written by Layla Oesper, with modifications by Eric Alexander and Sneha Narayan.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

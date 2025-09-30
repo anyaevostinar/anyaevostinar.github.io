@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW 6 Word Counter | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW 6 Word Counter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-s24/hw6" />
+<meta property="og:url" content="http://localhost:4000/classes/201-s24/hw6" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW 6 Word Counter" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW 6 Word Counter","url":"http://localhost:4000/classes/201-s24/hw6"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW 6 Word Counter</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>This is a paired assignment, so you should complete it with your assigned partner, if you have one, via paired programming. The whole time that you are working, you should both be present and actively working on the problem at hand. (Two brains, one keyboard.) Switch off the typing duties so that you each type for roughly half of the time.</p>
+
+<p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration policy</a>.</p>
+
+<p>This assignment is due on Wednesday May 8th at 10pm. As with all assignments, you will have the opportunity to <a href="revision-process">revise</a> this assignment individually based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>To implement a particular tree structure and use it to store words and counts. You’ll generalize some of the ideas that you’ve been learning about trees to a slightly different tree structure. Also to practice recursion on trees.</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>To demonstrate proficiency, your program needs to:</p>
+
+<ul>
+  <li>Pass all tests on Gradescope</li>
+  <li>Follow the specifications for the command-line</li>
+  <li>Implemented <code class="language-plaintext highlighter-rouge">incrementCount</code>, <code class="language-plaintext highlighter-rouge">contains</code>, <code class="language-plaintext highlighter-rouge">getCount</code>, <code class="language-plaintext highlighter-rouge">getNodeCount</code> and <code class="language-plaintext highlighter-rouge">WordCounter</code> correctly</li>
+  <li>Be object-oriented</li>
+  <li>Have a README with an overview and example</li>
+  <li>Be somewhat <a href="style-reference">well-styled</a></li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to:</p>
+<ul>
+  <li>Demonstrate proficiency</li>
+  <li>Have JavaDocs documentation for all public methods</li>
+  <li>Use helper methods correctly and effectively</li>
+  <li>Use the tree structure effectively and efficiently</li>
+  <li>Be extremely <a href="style-reference">well-styled</a> and clear by choosing descriptive variable names and including only useful comments</li>
+  <li>Have a thorough, well-styled README</li>
+  <li>Have clear and thorough documentation</li>
+</ul>
+
+<h2 id="setup-and-requirements">Setup and Requirements</h2>
+<p>Mount COURSES, download the <a href="/classes/201-w24/HW6-Starter.zip">HW 6 Starter Code</a> and move it to your StuWork/username folder.</p>
+
+<p>Create a file <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the <a href="collaboration">Collaboration page</a> on what collaborations are allowed for homework assignments.</p>
+
+<h2 id="what-is-a-word-cloud">What is a Word Cloud</h2>
+<p>You’ve probably seen word clouds like the one below generated from Hound of the Baskervilles by Sir Arthur Conan Doyle:</p>
+
+<p><img src="/classes/201-f20/BaskervillesWordCloud.png" alt="Words of varying sizes" /></p>
+
+<p>The neat thing about word clouds is that words are displayed in a size proportional to the number of times they are used in the text on which the cloud is based. (Note that very common words, also known as stopwords, are typically not included in the cloud. Otherwise, all English word clouds would be dominated by “the”, “and”, “a”, “in”, etc.) In this assignment, you’ll implement a particular type of search tree to count words and their counts in text, allowing you to make your own word clouds.</p>
+
+<h2 id="wordcounttree">WordCountTree</h2>
+<p>First you’ll build a <code class="language-plaintext highlighter-rouge">WordCountTree</code> class to hold your words and their counts. Your <code class="language-plaintext highlighter-rouge">WordCountTree</code> will be a particular kind of tree. Each node except for the root will represent a character as well as a count. The children of a node will be characters that could come after the current character to represent a word. To find a word, you’ll work down the tree until you reach the final character in the word, and then look at the count for that node. For example, imagine that we had a (very short) book that had the following words and counts:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Word</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>the</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>that</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>cat</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>chomp</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>then</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <code class="language-plaintext highlighter-rouge">WordCountTree</code> would then look like this:</p>
+
+<p><img src="/classes/201-f20/TreeImage.png" alt="Tree with nodes showing characters and counts" /></p>
+
+<p>To trace down the tree to find “the”, you would follow the steps:</p>
+<ul>
+  <li>You start at the root (which represents an empty string or null character), and then find the child that represents ‘t’.</li>
+  <li>You then find the child of ‘t’ that represents ‘h’.</li>
+  <li>Then you find the child of ‘h’ that represents ‘e’.</li>
+  <li>Since you’ve now found all of “the”, you look at count to see how many times “the” appeared, which is 50.</li>
+  <li>If you were looking for “then”, you’d start exactly the same way as for “the”, but continue on to the child that represents ‘n’.</li>
+</ul>
+
+<p>There are a couple of things to note about this tree:</p>
+<ul>
+  <li>It’s not a binary tree – each node can have any number of children.</li>
+  <li>The ordering of the children doesn’t really matter.</li>
+  <li>Any node that exists in the tree either has a non-zero count or has a descendant with a non-zero count. (In the above example, the root doesn’t have a child that represents ‘a’ because we didn’t see any words stating with ‘a’.)</li>
+</ul>
+
+<p>You’ll find a <code class="language-plaintext highlighter-rouge">Node</code> class inside of your <code class="language-plaintext highlighter-rouge">WordCountTree</code> class like we usually do with trees. You must directly create your tree structure, though you may use Java implementations of other data structures such as <code class="language-plaintext highlighter-rouge">List</code>s to support your implementation.</p>
+
+<p>Remember that characters are a primitive type in Java:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>char myChar = 'a';
+char nullChar;
+char example = myString.charAt(0); //gets the first character in a string myString
+</code></pre></div></div>
+
+<p>You should look at the <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html">String Java Documentation</a> for more helpful <code class="language-plaintext highlighter-rouge">String</code> methods.</p>
+
+<p>Your <code class="language-plaintext highlighter-rouge">WordCountTree</code> must have the constructor and methods below implemented and with properly styled JavaDocs method comments; it may also have any other methods of your choosing (i.e. helper methods are a really good idea).</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cm">/**
+ * Constructs an empty WordCountTree.
+ */</span>         
+<span class="kd">public</span> <span class="nf">WordCountTree</span><span class="o">();</span>
+ 
+<span class="cm">/**
+ * Adds 1 to the existing count for word, or adds word to the WordCountTree
+ * with a count of 1 if it was not already present.
+ * Implementation must be recursive, not iterative.
+ */</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">incrementCount</span><span class="o">(</span><span class="nc">String</span> <span class="n">word</span><span class="o">);</span>
+ 
+<span class="cm">/**
+ * Returns true if word is stored in this WordCountTree with
+ * a count greater than 0, and false otherwise.
+ * Implementation must be recursive, not iterative.
+ */</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">contains</span><span class="o">(</span><span class="nc">String</span> <span class="n">word</span><span class="o">);</span>
+ 
+<span class="cm">/**
+ * Returns the count of word, or -1 if word is not in the WordCountTree.
+ * Implementation must be recursive, not iterative.
+ */</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">getCount</span><span class="o">(</span><span class="nc">String</span> <span class="n">word</span><span class="o">);</span>
+ 
+  
+<span class="cm">/** 
+ * Returns a count of the total number of nodes in the tree. 
+ * A tree with only a root is a tree with one node; it is an acceptable
+ * implementation to have a tree that represents no words have either
+ * 1 node (the root) or 0 nodes.
+ * Can be recursive or use an instance variable.
+ */</span>
+ <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getNodeCount</span><span class="o">();</span> 
+
+</code></pre></div></div>
+
+<p>For the methods above that must be recursive, it’s fine (and recommended) for each one to call a helper method where the recursion actually takes place, and it’s also fine if your method implementation includes some loops, as long as there is recursion as well. (Frequently, you might loop over the children while changing levels in the tree recursively.)</p>
+
+<h2 id="wordcounterjava">WordCounter.java</h2>
+<p>In order to actually make a word cloud, we need to process a data file and output something useful. 
+I’ve provided you a <code class="language-plaintext highlighter-rouge">WordCounter</code> class that will use <code class="language-plaintext highlighter-rouge">WordCountTree</code> to count the words in a text file. WordCounter counts all of the words in the file except “stop words”. A list of stop words is included in the download of files for this assignment (<code class="language-plaintext highlighter-rouge">StopWords.txt</code>); your WordCounter can assume that this file is present in the same directory where it is being run.</p>
+
+<p>You need to write the <code class="language-plaintext highlighter-rouge">main</code> of WordCounter to allow for the user to (via command line arguments):</p>
+<ul>
+  <li>specify the file to be counted (you can assume that you’ll always use the same <code class="language-plaintext highlighter-rouge">StopWords.txt</code>)</li>
+  <li>specify the number of words that should be in the word cloud (if the user specifies more than how many words are possible, you should output all the words)</li>
+</ul>
+
+<p><strong>You will need to slightly adapt <code class="language-plaintext highlighter-rouge">printWordCloudHTML</code> to print the associated HTML of the word cloud with the correct number of words</strong> (you can see what you’re word clouds look like at <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro">here</a>, though it isn’t as pretty as the normal ones).</p>
+
+<p>Here is an example interaction:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% java WordCounter WutheringHeights.txt 10
+&lt;<span class="o">!</span>DOCTYPE html&gt;
+&lt;<span class="nb">head</span><span class="o">&gt;</span>
+&lt;title&gt;Word Counts&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Word Counts&lt;/h1&gt;
+&lt;div <span class="nv">style</span><span class="o">=</span><span class="s2">"
+ width: 800px;
+ background-color: rgb(250,250,250);
+ border: 5px grey solid;
+text-align: center"</span><span class="o">&gt;</span>
+&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">"color:#880000;font-size:96px;"</span><span class="o">&gt;</span>&amp;nbspheathcliff&amp;nbsp&lt;/span&gt;
+&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">"color:#006633;font-size:89px;"</span><span class="o">&gt;</span>&amp;nbspno&amp;nbsp&lt;/span&gt;
+&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">"color:#0033FF;font-size:69px;"</span><span class="o">&gt;</span>&amp;nbsplinton&amp;nbsp&lt;/span&gt;
+&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">"color:#6600CC;font-size:65px;"</span><span class="o">&gt;</span>&amp;nbspcatherine&amp;nbsp&lt;/span&gt;
+&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">"color:#CC0000;font-size:55px;"</span><span class="o">&gt;</span>&amp;nbspmr&amp;nbsp&lt;/span&gt;
+&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">"color:#009966;font-size:55px;"</span><span class="o">&gt;</span>&amp;nbspout&amp;nbsp&lt;/span&gt;
+&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">"color:#0099FF;font-size:47px;"</span><span class="o">&gt;</span>&amp;nbspup&amp;nbsp&lt;/span&gt;
+&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">"color:#CC99FF;font-size:27px;"</span><span class="o">&gt;</span>&amp;nbspnow&amp;nbsp&lt;/span&gt;
+&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">"color:#FF99CC;font-size:14px;"</span><span class="o">&gt;</span>&amp;nbspshall&amp;nbsp&lt;/span&gt;
+&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">"color:#66FFCC;font-size:14px;"</span><span class="o">&gt;</span>&amp;nbspmust&amp;nbsp&lt;/span&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</code></pre></div></div>
+
+<p>I’ve provided you with the text of the book Wuthering Heights, which you can use to ultimately test your word cloud maker, though I recommend you initially start with a smaller file.
+The starter code in WordCounter handles normalizing the words to lowercase and remove punctuation.</p>
+
+<h2 id="readme">README</h2>
+<p>As always, you should include a detailed README for this homework. 
+It should include a brief overview of your project and a short example of how to run your program and see its interesting behavior.</p>
+
+<p>There is no additional prompt for this homework.</p>
+
+<h2 id="submission">Submission</h2>
+<p>Remember to update your Collaborations.txt file with any sources that you consulted.</p>
+
+<p>Then upload all of your files to the Gradescope link on Moodle, at which point the autograder will run and let you know if your code works correctly. You are able to submit your code as many times as you wish before the deadline to fix any issues. If you have questions about what the autograder is telling you is wrong, please ask!</p>
+
+<h2 id="faq">FAQ</h2>
+<p>I’m getting index out of bounds errors on Gradescope but not on my computer, what gives?</p>
+<ul>
+  <li>Make sure that you are using <code class="language-plaintext highlighter-rouge">.equals</code> to compare a string to the empty string, that tends to be a difference in different versions of Java, leading to your base case not triggering when run on Gradescope</li>
+</ul>
+
+<p>I’m getting Gradescope errors talking about “reference to assertEquals is ambiguous”, how do I fix it?</p>
+<ul>
+  <li>Your methods aren’t returning the exact type that Gradescope is expecting and Java is trying to figure out a conversion, but there are multiple options. You should first check the assignment to see if a return type is specified and match that exactly (i.e. <code class="language-plaintext highlighter-rouge">int</code> versus <code class="language-plaintext highlighter-rouge">Integer</code> often causes a problem). Generally it’s that you should have <code class="language-plaintext highlighter-rouge">int</code> instead of <code class="language-plaintext highlighter-rouge">Integer</code> for this assignment.</li>
+</ul>
+
+<p>I’m failing the “Test WutheringHeights.txt with 10 words (0/0)” and getting “Test Failed: list index out of range”, what is wrong?</p>
+<ul>
+  <li>Revisit the part of the homework talking about needing to slightly adapt <code class="language-plaintext highlighter-rouge">printWordCloudHTML</code>, you are missing some required functionality.</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

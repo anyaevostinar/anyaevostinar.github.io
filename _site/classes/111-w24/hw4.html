@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW4 | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW4" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w24/hw4" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w24/hw4" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW4" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW4","url":"http://localhost:4000/classes/111-w24/hw4"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW4</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>This is a paired assignment, so you should complete it with your assigned partner, if you have one, via <strong>paired programming</strong>.  You should continue to work with your partner from homework 3.
+The whole time that you are working, you should both be present and actively working on the problem at hand. 
+(Two brains, one keyboard.) 
+Switch off the typing duties so that you each type for roughly half of the time.</p>
+
+<p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
+
+<p>This assignment is due on Friday Feb 2nd at 10pm. 
+As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>Get practice with reading from files, loops, functions, and command-line arguments.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Again, I recommend you complete this assignment in Olin 310, though it isn’t required to do so.</p>
+
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW4</code></li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW4</code> folder in VSCode</li>
+  <li>Download the starter code that is <a href="https://moodle.carleton.edu/mod/resource/view.php?id=908003">linked on Moodle</a> and move the starter files into your folder</li>
+</ul>
+
+<p>Both of these programs use command-line arguments as input to the program. 
+Remember, those are things typed at the prompt in Terminal. 
+Clicking the run button won’t work for this program (which is why hopefully you haven’t been using it this whole time anyway). 
+If you’ve forgotten how to run in the Terminal, open a terminal window (in VSCode: Terminal -&gt; New Terminal, or ask the lab assistant if you’re having trouble). 
+Then type something like <code class="language-plaintext highlighter-rouge">python3 name_of_program.py argument1 argument1</code> depending on which of the following programs you are running.</p>
+
+<h2 id="weather">Weather</h2>
+
+<h3 id="overview">Overview</h3>
+<p>You’ve be given two files of local Carleton data (one about energy consumption on campus, one about weather on campus), and you’ll change the <code class="language-plaintext highlighter-rouge">weather.py</code> file to answer some basic questions about them.</p>
+
+<p>The starter code that you are given is broken out into two functions for two different tasks, and which task is performed is controlled by command-line arguments.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">demand</code> function of <code class="language-plaintext highlighter-rouge">weather.py</code> reads a data file kindly provided for the class by Martha Larson, the former Manager of Campus Energy and Sustainability. This file gives you readings of the instantaneous demand from Carleton’s electrical system, in kilowatts, every 5 minutes for a ∼6-month period (from a little while ago now).
+(There’s been a change in the sensors, so we don’t have exactly this data for the last several years. 
+As a result, you’ll use outdated data for this assignment.) 
+The lines of the file are of the following form:</p>
+
+<p><code class="language-plaintext highlighter-rouge">[M]M/[D]D/YYYY,[H]H:MM:SS,demand</code></p>
+
+<p>When <code class="language-plaintext highlighter-rouge">demand == 0</code>, that’s because we’re generating enough wind power via Wind Turbine #2 to meet all of the campus’s energy demand at that moment.</p>
+
+<p><code class="language-plaintext highlighter-rouge">weather.py</code> also has a <code class="language-plaintext highlighter-rouge">weather</code> command-line option and function. In the <code class="language-plaintext highlighter-rouge">weather</code> function are a few skeletal lines that read the lines of a second data file kindly provided for the class by Doug Foxgrover, the Curator of Weather Data at Carleton (among other
+titles!). 
+The lines of this file are of the form:</p>
+
+<p><code class="language-plaintext highlighter-rouge">MM/DD/YYYY,hiTemp,loTemp,avgTemp</code></p>
+
+<p>where those daily temperatures are measured in Fahrenheit.</p>
+
+<h3 id="your-task---demand">Your Task - Demand</h3>
+<p>First, you should modify the given <code class="language-plaintext highlighter-rouge">weather.py</code> to output the following for the <code class="language-plaintext highlighter-rouge">demand</code> command-line option:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Carleton was on full wind power for 12105 minutes, which is 201.75 hours or approximately 8 days.
+The fraction of time on full wind power was approximately 7.11% of the total time.
+</code></pre></div></div>
+
+<p>To achieve this output, you should:</p>
+
+<ul>
+  <li>Compute the number of minutes during the time period of the given dataset in which Carleton was operating on full wind power. 
+(Assume that each measurement is accurate for the next 5 minutes.)</li>
+  <li>Print the number of minutes that we were on full wind power.</li>
+  <li>Convert this number of minutes into hours, and print that number.</li>
+  <li>Also convert this number to days, and print that number rounded to the nearest whole number.</li>
+  <li>Also print the percent of the time that we were on full wind power, rounded to two decimal places.</li>
+</ul>
+
+<p>You should be sure to add a function header for the <code class="language-plaintext highlighter-rouge">demand</code> function.</p>
+
+<h3 id="your-task---weather">Your Task - Weather</h3>
+
+<p>Second, modify the given <code class="language-plaintext highlighter-rouge">weather</code> function to compute the “average high”, “average low”, and “average average” temperature in the year 2017. 
+(We don’t have full data for 2018, 2019, 2020, or 2021, because of the move to the new Science Complex.) 
+<strong>Note:</strong> There are many lines from the file that contain data from other years, so you will need to figure out which lines should count as part of the average. (Hint: use split twice.)</p>
+
+<p>You should report the average temperatures of 2017 in the following format:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In 2017, the average high temperature was 52.91F, the average low temperature was 35.86F and the average average temperature was 45.25F.
+</code></pre></div></div>
+
+<p>Finally, also in the <code class="language-plaintext highlighter-rouge">weather</code> function, you’ll calculate the longest streak of <em>stifling</em> weather days.
+Let’s call a day stifling if the low temperature that day is <strong>greater</strong> than 32 degrees — that is, if it never gets below
+freezing that day. 
+Report the length of the longest sequence of stifling days
+in 2017 in addition to the averages, such that your full output is:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$python3 weather.py weather
+In 2017, the average high temperature was 52.91F, the average low temperature was 35.86F and the average average temperature was 45.25F.
+The longest sequence of stifling days in 2017 was 164.
+</code></pre></div></div>
+
+<p>You should be sure to add a function header for the <code class="language-plaintext highlighter-rouge">weather</code> function.</p>
+
+<h2 id="scrabble">Scrabble</h2>
+
+<h3 id="overview-1">Overview</h3>
+<p>Scrabble is a word game in which players form words from a collection of tiles in their hand. 
+There are multiple players — usually up to four in the living-room version of the game, and precisely two in the <em>Word Freak</em> version). (<em>Word Freak</em> is a real book about the high-rolling world of international Scrabble contestants.)</p>
+
+<ul>
+  <li>The first player draws a “hand” of seven tiles from a collection of 100, each of which has a letter printed on it. They then form a legal word and place it in the middle of the 15-by-15 grid that serves as the gameboard. The player then randomly draws tiles from the unused tiles from the original set of 100
+to replenish their hand up to seven tiles.</li>
+  <li>All subsequent turns proceed as follows. The current player forms another legal word by adding one or more tiles from their hand to one or more tiles already on the board (so a new word must build off an already-played tile). The player then randomly draws tiles from the unused tiles from the original
+set of 100 to replenish their hand up to seven tiles (or until the pool of unused tiles is empty).</li>
+  <li>Scoring: each letter has a number of points (more common letters are worth 1 point; rarer letters are worth as many as 10 points). The total point value of a word is the sum of the point values of each letter played in the word, plus a bonus of 50 points if the word played is seven letters long. The player
+who has scored the most total points at the end of the game wins.</li>
+</ul>
+
+<p>In this assignment, you’ll concentrate on the very first move of the game, where there’s nothing yet on the board (and thus so that every letter in the words that you find must come from the seven tiles in the hand).
+Of course, you are welcome to think about how you would attack the more complicated question of how to play as part of a game when there are some tiles already on the board, but you’re not required to do so.</p>
+
+<h3 id="your-task">Your Task</h3>
+<p>Get started, as usual, with the starter code on Moodle. Take a look through <code class="language-plaintext highlighter-rouge">scrabble.py</code>; you’re going to be adding some functionality to it in this assignment, and it will pay to know how what’s already there works.</p>
+
+<h3 id="scoreword">scoreWord</h3>
+<p>Fill in <code class="language-plaintext highlighter-rouge">scoreWord(word)</code>, which should compute the score of the <code class="language-plaintext highlighter-rouge">word</code> given to it by adding up the scores of all of the letters in it, and adding a bonus if appropriate. (Do not check whether <code class="language-plaintext highlighter-rouge">word</code> is actually in the dictionary in <code class="language-plaintext highlighter-rouge">scoreWord</code>.)</p>
+
+<p>A great way to check if your <code class="language-plaintext highlighter-rouge">scoreWord</code> implementation is working is to start the Python shell with <code class="language-plaintext highlighter-rouge">python3</code> and then <code class="language-plaintext highlighter-rouge">import scrabble</code> and call your method on the provided examples, for example <code class="language-plaintext highlighter-rouge">scrabble.scoreWord("TSKTSK")</code> should return 14.</p>
+
+<h3 id="playable">playable</h3>
+<p>Fill in <code class="language-plaintext highlighter-rouge">playable(word, hand)</code>, which should return <code class="language-plaintext highlighter-rouge">True</code> if <code class="language-plaintext highlighter-rouge">word</code> can be produced solely by using the tiles in <code class="language-plaintext highlighter-rouge">hand</code>. (Do not check whether <code class="language-plaintext highlighter-rouge">word</code> is actually in the dictionary in <code class="language-plaintext highlighter-rouge">playable</code>.)
+<em>(Think through this question before you start typing! There are easy ways and hard ways to attack this problem. It’s worth thinking about how to make sure that you don’t repeat a letter more than the number of times you have that tile.)</em> <strong>Hint</strong>: if you see apparently bizarre behavior when you run your
+function, think about how you are changing lists when you might not mean to. Are you doing something that causes you trouble down the road?</p>
+
+<h3 id="allplayable">allPlayable</h3>
+<p>Add a function <code class="language-plaintext highlighter-rouge">allPlayable(hand, words)</code> that returns a list of all valid words from <code class="language-plaintext highlighter-rouge">words</code> that can be played using only the tiles from <code class="language-plaintext highlighter-rouge">hand</code>. One suggestion for an approach to this is to implement something like the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make an empty list of playable words
+for every word in the dictionary:
+    if that word is playable given this hand:
+        add that word to the list of playable words
+return the list of playable words
+</code></pre></div></div>
+
+<p>Be sure to add a function header for your new function.
+To test this function in the Python shell, you can make a call like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import scrabble
+&gt;&gt;&gt; scrabble.allPlayable("PYTHONS", scrabble.loadDictionary())
+</code></pre></div></div>
+
+<h3 id="bestplayable">bestPlayable</h3>
+<p>Add a function <code class="language-plaintext highlighter-rouge">bestPlayable(hand, words)</code> that computes and returns a list of the highest-scoring word(s) that can be played from the tiles in hand.
+If the best score that can be achieved is X and only one word scores X, then you should return a list with one item.
+If multiple words can achieve X, you should return a list with each of them.</p>
+
+<p>I recommend first figuring out how to return just one best-scoring word and then working on how to maintain a list of only the best-scoring words.</p>
+
+<h3 id="main">main</h3>
+<p>Add to <code class="language-plaintext highlighter-rouge">main</code> such that the user can specify via command-line argument if they want to provide their hand (<code class="language-plaintext highlighter-rouge">provide</code>) or get a random hand (<code class="language-plaintext highlighter-rouge">random</code>) and then allow them to have the following interactions:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python3 scrabble.py random
+Your hand is: ['E', 'D', 'C', 'N', 'D', 'U', 'U']
+The best possible play(s) will earn you 8 and are: ['DUNCE']
+$ python3 scrabble.py provide
+What is your hand? PYTHONS
+The best possible play(s) will earn you 65 and are: ['PHYTONS', 'PYTHONS', 'TYPHONS']
+</code></pre></div></div>
+
+<h2 id="assessment">Assessment</h2>
+<p>To <strong>demonstrate proficiency</strong>, your programs need to:</p>
+<ul>
+  <li>Pass all the tests in Gradescope</li>
+  <li>Contain descriptive headers</li>
+  <li>Contain descriptive docstrings for each function</li>
+  <li>Not have an excessive amount of duplicated code</li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to demonstrate proficiency as well as having:</p>
+<ul>
+  <li>Useful comments (and non-useful starter ones removed)</li>
+  <li>Descriptive variable names</li>
+  <li>Good spacing</li>
+  <li>Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

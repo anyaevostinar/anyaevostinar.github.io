@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Traversals Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Traversals Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-s24/traversal-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/201-s24/traversal-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Traversals Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Traversals Lab","url":"http://localhost:4000/classes/201-s24/traversal-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Traversals Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To implement and analyze breadth-first traversal (and possible depth-first as well).</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>We’re going to implement breadth-first traversal based on this pseudocode:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Algorithm getBreadthFirstTraversal(originVertex) {
+   traversalOrder = a new queue for the resulting traversal order
+   vertexQueue = a new queue to hold vertices as they are visited
+   Mark originVertex as visited
+   traversalOrder.enqueue(originVertex)
+   vertexQueue.enqueue(originVertex)
+   while vertexQueue isn't empty
+   {
+      frontVertex = vertexQueue.dequeue()
+      for each neighbor of frontVertex
+      {
+         nextNeighbor = next neighbor of frontVertex
+         if (nextNeighbor is not visited)
+         {
+            Mark nextNeighbor as visited
+            traversalOrder.enqueue(nextNeighbor)
+            vertexQueue.enqueue(nextNeighbor)
+         }
+      }
+   }
+   return traversalOrder
+}
+</code></pre></div></div>
+
+<p>Here is <a href="/classes/201-f21/BFSStarter.zip">starter code</a> and the associated <a href="/classes/201-f20/hw-6javadoc">JavaDocs</a> for a graph implementation. 
+In <code class="language-plaintext highlighter-rouge">Main.java</code> I’ve provided code to create this graph:</p>
+
+<p><img src="/classes/201-f20/UndirectedGraph.png" alt="Undirected graph with edge between node 0 and 3, node 3 and 1, node 3 and 2, and node 1 and 2" /></p>
+
+<p><strong>Implement breadth first traversal</strong> based on the pseudocode above (I recommend copying the pseudocode into VSCode as comments to guide you). 
+You can use the <code class="language-plaintext highlighter-rouge">getNeighbors</code> graph method like so:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for(Integer neighbor : inputGraph.getNeighbors(frontVertex)) {
+    ...
+}
+</code></pre></div></div>
+
+<p>Here are the JavaDocs for <code class="language-plaintext highlighter-rouge">Map</code> and <code class="language-plaintext highlighter-rouge">Queue</code>:</p>
+<ul>
+  <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html">Queue interface</a></li>
+  <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map interface</a></li>
+</ul>
+
+<p>You’ll probably want to use a map to store if a vertex is visited for the sake of efficiency.</p>
+
+<p><strong>Note: make sure both partners have this code, it will be quite helpful for the homework. Feel free to adapt it for the homework, but cite your lab partner if you do so.</strong></p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now let’s think about the time complexity of breadth-first traversal (or breadth-first search in the worst case). When we analyze the time and space complexity of graph algorithms, the convention is to use <code class="language-plaintext highlighter-rouge">|V|</code> for the number of vertices/nodes in the graph and <code class="language-plaintext highlighter-rouge">|E|</code> for the number of edges in the graph.
+Because the complexity of graphs often depends on both the number of vertices and the number of edges, you’ll often need to express the complexity in terms of <code class="language-plaintext highlighter-rouge">|V|</code> and <code class="language-plaintext highlighter-rouge">|E|</code>.</p>
+
+<p>a. Analyze the number of simple operations that are required at each step of the above algorithm and note them on your worksheet</p>
+
+<p>b. Some of the lines of pseudocode are hiding a fair amount of detail, such as <code class="language-plaintext highlighter-rouge">for each neighbor of frontVertex</code> and <code class="language-plaintext highlighter-rouge">nextNeighbor = next neighbor of frontVertex</code>. What assumptions are you making about the implementation details and efficiency of those lines? What could lead to those lines being more/less efficient?</p>
+
+<p>c. Based on your step-by-step analysis, provide a function that describes the worst-case time complexity of the algorithm using <em>only</em> <code class="language-plaintext highlighter-rouge">V</code>. This function should include the constants and coefficients.</p>
+
+<p>d. What is the Big-O time complexity of BFS in terms of <code class="language-plaintext highlighter-rouge">V</code>?</p>
+
+<p>e. This is actually an over-estimate for most graphs. If you were going to use <code class="language-plaintext highlighter-rouge">E</code> as well, how could you make your time complexity potentially more accurate for <em>sparse</em> graphs?</p>
+
+<h2 id="challenge-problem">Challenge Problem</h2>
+<p>Depth-first traversal is much more difficult to analyze the time complexity, but here is some pseudocode, give it a shot! (Or feel free to just try to implement it instead if you prefer):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Algorithm getDepthFirstTraversal(originVertex) {
+   traversalOrder = a new queue for the resulting traversal order
+   vertexStack = a new stack to hold vertices as they are visited
+   Mark originVertex as visited
+   traversalOrder.enqueue(originVertex)
+   vertexStack.push(originVertex)
+   while (!vertexStack.isEmpty()) //hint, this is the tricky part, 
+                                 //how many times will this loop?? More than V!
+   {
+      topVertex = vertexStack.peek()
+      if (topVertex has an unvisited neighbor)
+      {
+         nextNeighbor = next unvisited neighbor of topVertex
+         Mark nextNeighbor as visited
+         traversalOrder.enqueue(nextNeighbor)
+         vertexStack.push(nextNeighbor)
+      }
+      else // All neighbors are visited
+         vertexStack.pop()
+   }
+   return traversalOrder
+}
+</code></pre></div></div>
+
+<h2 id="extra">Extra</h2>
+
+<p>If you have more time, try these:</p>
+
+<ol>
+  <li>The algorithm given in <a href="hw3">homework 3 (the maze solver)</a> is a specialized version of depth-first search. Analyze it and determine what it’s time complexity is; why is it different than general depth-first search?</li>
+  <li>Implement depth-first search as well.</li>
+</ol>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

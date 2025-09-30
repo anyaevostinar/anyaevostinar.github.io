@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW2 | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-f24/hw2" />
+<meta property="og:url" content="http://localhost:4000/classes/111-f24/hw2" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW2","url":"http://localhost:4000/classes/111-f24/hw2"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW2</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>This is a paired assignment, so you should complete it with your assigned partner, if you have one, via <strong>paired programming</strong>. 
+The whole time that you are working, you should both be present and actively working on the problem at hand. 
+(Two brains, one keyboard.) 
+Switch off the typing duties so that you each type for roughly half of the time.</p>
+
+<p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
+
+<p>This assignment is due on Wednesday Oct 2nd at 10pm. 
+As with all assignments, you will have the opportunity to <a href="revision-process">revise</a> this assignment individually based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>Get practice with various numerical operations and functions in Python.</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>To <strong>demonstrate proficiency</strong>, your program needs to pass all the proficiency-level tests in Gradescope, which test:</p>
+<ul>
+  <li>Correct functionality for the basic cases</li>
+  <li>Header with three lines that start with <code class="language-plaintext highlighter-rouge">#</code> for each file</li>
+  <li>Basic style that can be checked automatically (not complete!)</li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to demonstrate proficiency as well as:</p>
+<ul>
+  <li>Passing all the Mastery-level tests, which check for edge cases</li>
+  <li>Descriptive header</li>
+  <li>Useful comments</li>
+  <li>Descriptive variable names that follow <code class="language-plaintext highlighter-rouge">snake_case</code></li>
+  <li>Good line grouping and spacing (i.e. use blank newlines to group your lines of code)</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+
+<p>Again, I recommend you complete the programming portion in Olin 310.</p>
+
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW2</code></li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW2</code> folder in VSCode</li>
+  <li>Create a file <code class="language-plaintext highlighter-rouge">solar.py</code>.</li>
+</ul>
+
+<h2 id="solar">Solar</h2>
+<p>In this problem, you will write a program that asks the user for information about their house — namely, the length and width of the house (both in feet) — and then computes the amount of energy that can be generated with rooftop solar for this house.</p>
+
+<p>Here is a sample interaction of the way that your program should work (the numbers 30 and 40 are entered by the user; the rest is automatically produced as output):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter the width (in feet): 30
+Enter the length (in feet): 40
+You have 1200.0 square feet of roof area.
+You have 450.0 square feet of south-facing roof, excluding the setback.
+You can fit 25 solar panels on your roof.
+That leaves 762.5 square feet of unused roof area for a rooftop garden.
+You can install a system rated for 6625 watts.
+You can generate about 8268 kilowatt-hours in a year.
+That's equivalent to about $992.16 of electricity.
+</code></pre></div></div>
+
+<p>To perform the calculations shown in this sample, we will make some highly simplifying assumptions about the energy production capacity of a roof and of solar panels — but they’re not too far off (see https://solarpowerrocks.com/square-feet-solar-roof/).</p>
+
+<p>Here are the assumptions:</p>
+
+<ul>
+  <li>
+    <p>Exactly half of the area of the roof of a house faces south (towards the sun); only the south-facing roof is suitable for solar panels. Of the south-facing roof, only 75% can be used for panels, because there must be a setback (to allow walking space for firefighters if they need to access the roof).</p>
+  </li>
+  <li>
+    <p>A single solar panel takes up 17.5 ft<sup>2</sup> of roof. You cannot cut solar panels in half, so the number of solar panels that you can fit on a roof that’s, say, 100 ft<sup>2</sup> is 100/17.5 = 5.71… <em>rounded down</em>, otherwise known as 5 panels. We’ll assume that the shape of the roof is such that it’s possible to tile the usable part completely with solar panels, without any wasted space.</p>
+  </li>
+  <li>
+    <p>A single solar panel is rated for 265 watts. In Minnesota, you can expect to generate 1.248 kilowatt-hours per year for each watt of your system, and electricity costs about $0.12 per kilowatt-hour. The dollar amount should be always printed with exactly two digits after the decimal place. (So it’s “$1.00” and not “$1.0”, for example.) See <a href="https://runestone.academy/ns/books/published/carletoncollege_fopp_fall24/TransformingSequences/StringFormatting.html#format-strings">section 9.10 of your textbook</a> for a useful method for accomplishing the dollar amount.</p>
+  </li>
+</ul>
+
+<p>Fill in <code class="language-plaintext highlighter-rouge">solar.py</code> with a program that performs as specified here.</p>
+
+<h2 id="submission">Submission</h2>
+<p>You should submit your file through the Gradescope link on Moodle for this assignment (just one partner needs to submit!).
+You are able to submit your code as many times as you wish before the deadline to fix any issues.
+If you have questions about what the autograder is telling you is wrong, please ask!</p>
+
+<p>If you have a partner for this assignment, you can indicate who they are via Gradescope, so be sure to set that up correctly and then between the two of you, you should only need to submit once.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

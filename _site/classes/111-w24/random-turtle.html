@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Random Turtle Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Random Turtle Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w24/random-turtle" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w24/random-turtle" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Random Turtle Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Random Turtle Lab","url":"http://localhost:4000/classes/111-w24/random-turtle"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Random Turtle Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES <a href="getting-started">as you usually do</a>.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>There are a lot of things that you can tell the turtles to do, so open up the <a href="https://runestone.academy/ns/books/published/carletoncollege_fopp_winter23/PythonTurtle/SummaryOfTurtleMethods.html">list of turtle methods</a> from the reading for reference today.
+You might also want to open the <a href="https://runestone.academy/ns/books/published/carletoncollege_fopp_winter23/PythonTurtle/WPCommonTurtleErrors.html">list of common turtle problems</a> to check if you are getting weird behavior from your turtle.</p>
+
+<ol>
+  <li>
+    <p>Create a new file in your folder for today’s lab called <code class="language-plaintext highlighter-rouge">random_turtle.py</code>.</p>
+  </li>
+  <li>
+    <p>In that file, import both the <code class="language-plaintext highlighter-rouge">turtle</code> and <code class="language-plaintext highlighter-rouge">random</code> modules:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kn">import</span> <span class="nn">turtle</span>
+ <span class="kn">import</span> <span class="nn">random</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create your window and one turtle, and tell the window not to close until you click:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">window</span> <span class="o">=</span> <span class="n">turtle</span><span class="p">.</span><span class="n">Screen</span><span class="p">()</span>
+ <span class="n">my_turtle</span> <span class="o">=</span> <span class="n">turtle</span><span class="p">.</span><span class="n">Turtle</span><span class="p">()</span>
+
+ <span class="n">window</span><span class="p">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>It’s good to run your code frequently to make sure that there aren’t errors, so open a <code class="language-plaintext highlighter-rouge">Terminal</code> (by dragging up from the bottom of the screen), and run your program:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python3 random_turtle.py
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Your turtle won’t do anything interesting yet, but you should see it and the screen should wait for you to click before closing.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now you’re ready to have your turtle do something!</p>
+
+<ol>
+  <li>
+    <p>Use the <code class="language-plaintext highlighter-rouge">random.randrange()</code> method to have your turtle go forward by a random amount between 10 and 100.</p>
+  </li>
+  <li>
+    <p>Have your turtle make a square with a side length randomly between 10 and 100.
+Remember that you can use a for-loop to repeat several lines of code multiple times:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+     <span class="c1">#do something
+</span>     <span class="c1">#do some more things
+</span></code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>There are several more turtle methods that do some fun things. 
+Create a new file <code class="language-plaintext highlighter-rouge">example_one.py</code> to test out the following.</p>
+
+<ol>
+  <li>
+    <p>Here is some code that uses a couple of new turtle methods:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kn">import</span> <span class="nn">turtle</span>
+
+ <span class="n">window</span> <span class="o">=</span> <span class="n">turtle</span><span class="p">.</span><span class="n">Screen</span><span class="p">()</span>
+ <span class="n">turtle1</span> <span class="o">=</span> <span class="n">turtle</span><span class="p">.</span><span class="n">Turtle</span><span class="p">()</span>
+
+ <span class="n">turtle1</span><span class="p">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="s">"purple"</span><span class="p">)</span>
+ <span class="n">turtle1</span><span class="p">.</span><span class="n">begin_fill</span><span class="p">()</span>
+
+ <span class="k">for</span> <span class="n">side</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+     <span class="n">turtle1</span><span class="p">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+     <span class="n">turtle1</span><span class="p">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+ <span class="n">turtle1</span><span class="p">.</span><span class="n">end_fill</span><span class="p">()</span>
+
+ <span class="n">window</span><span class="p">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</code></pre></div>    </div>
+
+    <p>Copy and paste it into your file, run it, and figure out what the three new methods do. 
+ Feel free to experiment by changing the code to see what happens when you move lines around or change values.</p>
+  </li>
+  <li>
+    <p>Expand on the provided code to make several more connected shapes in different colors.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Let’s look at some more example code (from section 5.6 of the book).
+Create another new file <code class="language-plaintext highlighter-rouge">example_two.py</code> and paste in the following:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">turtle</span>
+<span class="n">wn</span> <span class="o">=</span> <span class="n">turtle</span><span class="p">.</span><span class="n">Screen</span><span class="p">()</span>
+<span class="n">wn</span><span class="p">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="s">"lightgreen"</span><span class="p">)</span>
+<span class="n">tess</span> <span class="o">=</span> <span class="n">turtle</span><span class="p">.</span><span class="n">Turtle</span><span class="p">()</span>
+<span class="n">tess</span><span class="p">.</span><span class="n">color</span><span class="p">(</span><span class="s">"blue"</span><span class="p">)</span>
+<span class="n">tess</span><span class="p">.</span><span class="n">shape</span><span class="p">(</span><span class="s">"turtle"</span><span class="p">)</span> <span class="c1">#other shape options: arrow, blank, circle, classic, square, triangle
+</span>
+<span class="n">dist</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">tess</span><span class="p">.</span><span class="n">up</span><span class="p">()</span>                     <span class="c1"># this is new
+</span><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">):</span>    <span class="c1"># start with size = 5 and grow by 2
+</span>    <span class="n">tess</span><span class="p">.</span><span class="n">stamp</span><span class="p">()</span>                <span class="c1"># leave an impression on the canvas
+</span>    <span class="n">tess</span><span class="p">.</span><span class="n">forward</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span>          <span class="c1"># move tess along
+</span>    <span class="n">tess</span><span class="p">.</span><span class="n">right</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>              <span class="c1"># and turn her
+</span>    <span class="n">dist</span> <span class="o">=</span> <span class="n">dist</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="n">wn</span><span class="p">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>There are quite a few new methods, experiment by removing them or changing them one at a time to see what they do!
+You can always refer to the list of turtle methods to double check your prediction.</p>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>With all those methods, you can draw a lot! 
+Make a new file <code class="language-plaintext highlighter-rouge">drawing.py</code> and make something new with the turtle drawing.
+You could use <code class="language-plaintext highlighter-rouge">random</code> to shake things up in your drawing, but be sure to use lots of colors and shapes. 
+Try making multiple turtles and having them be in charge of different aspects of your drawing.
+If you are stuck on what to draw, try making a house with some trees.</p>
+
+<p>There are also even more methods that you can use with the turtle, so feel free to look through the <a href="https://docs.python.org/3/library/turtle.html">official documentation</a> and play around with them.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

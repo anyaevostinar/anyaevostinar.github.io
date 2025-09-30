@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>CS208 Intro to Systems S24 Samples | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="CS208 Intro to Systems S24 Samples" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-s24/samples" />
+<meta property="og:url" content="http://localhost:4000/classes/208-s24/samples" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CS208 Intro to Systems S24 Samples" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"CS208 Intro to Systems S24 Samples","url":"http://localhost:4000/classes/208-s24/samples"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">CS208 Intro to Systems S24 Samples</h1>
+  </header>
+
+  <div class="post-content">
+    <p>DRAFT PAGE</p>
+
+<p>The following sample programs (adapted from those provided by Jeff Ondich) will help you explore many useful features in C.</p>
+
+<ul>
+  <li><strong>STUDY THESE PROGRAMS.</strong> Reading and understanding what’s going on in these samples is part of your homework, and I will assume that you have done that work as the term progresses.</li>
+  <li>Ask questions. You won’t understand everything in these samples on first reading, so collect your questions and get them answered.</li>
+  <li>Experiment. You won’t understand everything in these samples on first reading, so play around with them. Some of your best learning will start with “I wonder what happens if I make this change…”.</li>
+  <li>Building these programs. For most of our programs, you should use the following compilation approach. We’ll discuss all the parts of this command over the first few days of the term.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-g</span> <span class="nt">-o</span> hello hello.c
+</code></pre></div>    </div>
+  </li>
+  <li>Pedagogical comments vs. production comments. These programs have tons of explanatory comments, because they are intended as pedagogical programs, not production programs. Production code (i.e., code intended for use by end users or submission as homework) should follow the <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html#comments">commenting advice in our style guide</a>. You’re welcome to borrow code from these samples, but delete the original comments before you’re done working.</li>
+</ul>
+
+<h2 id="samples">SAMPLES</h2>
+<p>hello.c (printf)
+args.c (argc and argv)
+character_counter.c (command-line arguments and reading from a file)
+charstar.c (exploring the many notations for pointers to chars)
+strings.c (null-terminated character strings)
+output.c (what are stdout and stderr?)
+pointers.c (starting to talk about pointers)
+printing-bytes.c (printing one byte in hex is hard)
+sizes.c (sizeof &amp; how many bytes do standard types require?)
+integers0.c (misc experiments with integers)
+integers1.c (writing integers to output in various ways)
+integers2.c (more integer stuff)
+memory.c (*, &amp;, ., and -&gt;)
+Relevant to the bits and encoding assignment:</p>
+
+<p>bitwise.c (&amp;, |, and »)
+sscanf-test.c
+smiley.c (storing UTF-8 by hand and printing it in a couple ways)
+environment.c (two ways to access environment variables in C)
+Process-related samples for command-shell assignment</p>
+
+<p>Makefile
+Getting started with processes</p>
+
+<p>forktest.c
+exectest.c
+getanumber.c
+Redirection and piping</p>
+
+<p>files.c
+pipe.c
+redirect.c
+Helpful for writing your shell</p>
+
+<p>shell208.c
+argv.c
+exectest_with_args.c
+signaltest.c
+Race conditions</p>
+
+<p>race.c (shared memory and a simple race condition)
+race_with_lock.c (a failed attempt to protect shared memory with a shared lock)
+norace.c (protecting shared memory with a semaphore)
+Threads</p>
+
+<p>pthreads_test.c (using POSIX Threads)
+Network programming with sockets</p>
+
+<p>hello_client.c
+hello_server.c
+hello_server_concurrent.c
+tcp_utilities.c
+tcp_utilities.h</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

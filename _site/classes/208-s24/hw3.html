@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>INTRO TO C 3 READLINE | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="INTRO TO C 3 READLINE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-s24/hw3" />
+<meta property="og:url" content="http://localhost:4000/classes/208-s24/hw3" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="INTRO TO C 3 READLINE" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"INTRO TO C 3 READLINE","url":"http://localhost:4000/classes/208-s24/hw3"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">INTRO TO C 3 READLINE</h1>
+  </header>
+
+  <div class="post-content">
+    <p>No starter code</p>
+
+<p>Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">readline.c</code></p>
+
+<h2 id="goals">GOALS</h2>
+<ul>
+  <li>Yet more C practice</li>
+  <li>Thinking in terms of functional interfaces rather than complete programs</li>
+  <li>Using <code class="language-plaintext highlighter-rouge">malloc</code> and <code class="language-plaintext highlighter-rouge">free</code></li>
+</ul>
+
+<h2 id="assessment">Assessment</h2>
+<p>To <strong>demonstrate proficiency</strong>, your submission needs to:</p>
+<ul>
+  <li>Pass the autograder tests</li>
+  <li>Be somewhat <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html">well-styled</a></li>
+  <li>Follow the specified algorithm</li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your submission needs to:</p>
+<ul>
+  <li>Demonstrate proficiency</li>
+  <li>Be quite <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html">well-styled</a>, particularly well-chosen variable names, naming all magic numbers, and good indentation</li>
+  <li>Free memory correctly</li>
+  <li>Return a null-terminated C string</li>
+  <li>Have thorough error-handling</li>
+</ul>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is an <strong>individual</strong> assignment, so you should write all the code individually, though you can get help, as detailed in the <a href="collaboration">collaboration</a> document.</p>
+
+<p>This assignment is due Friday April 5th at 10pm. As with all assignments, you will have the opportunity to <a href="revision-process">revise</a> this submission based on feedback.</p>
+
+<h2 id="the-problem-with-fgets">THE PROBLEM WITH FGETS</h2>
+<p>You used <code class="language-plaintext highlighter-rouge">fgets</code> during the last assignment, but there was a big problem: you could only read as many bytes (minus one, to account for the null-termination) from the file as your buffer would hold. That’s why I told you to assume that no line would be longer than 200 bytes including the newline character.</p>
+
+<p>But what if we could read a whole line, no matter how long? That would be cool, right? We don’t have infinite memory, of course, so there will still be constraints on just how long our lines can be. But we ought to be able to create something more convenient than <code class="language-plaintext highlighter-rouge">fgets</code>. That’s the goal of this assignment.</p>
+
+<h2 id="programming-assignment-3-readline">PROGRAMMING ASSIGNMENT #3: READLINE</h2>
+<p>For this assignment, you will write one C function, not a whole program. Here’s its specification.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reads bytes from the input stream until encountering</span>
+<span class="c1">// either a newline character '\n' or the end of the stream, or</span>
+<span class="c1">// an error condition. Returns a pointer to a dynamically allocated</span>
+<span class="c1">// (i.e., malloc'd) buffer containing the bytes, including the newline</span>
+<span class="c1">// character (if any) and a null-terminator.</span>
+<span class="c1">//</span>
+<span class="c1">// If any error occurs during reading from the stream or memory </span>
+<span class="c1">// allocation, or if the first byte the input stream is at end-of-file</span>
+<span class="c1">// when readline is called, then readline frees any allocated memory</span>
+<span class="c1">// and returns NULL.</span>
+<span class="c1">//</span>
+<span class="c1">// It is the caller's responsibility to free the returned buffer when </span>
+<span class="c1">// the caller no longer needs it.</span>
+
+
+<span class="kt">char</span> <span class="o">*</span><span class="nf">readline</span><span class="p">(</span><span class="kt">FILE</span> <span class="o">*</span><span class="n">input_stream</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>If you have a function like that, you can do things like this:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">line</span> <span class="o">=</span> <span class="n">readline</span><span class="p">(</span><span class="n">input_file</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">line</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// ... do something interesting with line ...</span>
+    <span class="n">free</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>So far, so good. But I’m going to add more constraints on this function. Here’s how I want your <code class="language-plaintext highlighter-rouge">readline</code> implementation to work.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">buffer</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">we</span><span class="err">'</span><span class="n">re</span> <span class="n">not</span> <span class="n">yet</span> <span class="n">at</span> <span class="n">the</span> <span class="n">end</span> <span class="n">of</span> <span class="n">the</span> <span class="n">line</span>
+    <span class="n">read</span> <span class="n">a</span> <span class="n">byte</span> <span class="n">b</span>
+    <span class="k">if</span> <span class="n">buffer</span> <span class="n">doesn</span><span class="err">'</span><span class="n">t</span> <span class="n">have</span> <span class="n">space</span> <span class="n">to</span> <span class="n">hold</span> <span class="n">b</span> <span class="n">and</span> <span class="n">a</span> <span class="sc">'\0'</span><span class="o">:</span>
+        <span class="n">allocate</span> <span class="n">a</span> <span class="n">new</span> <span class="n">buffer</span> <span class="n">two</span> <span class="n">times</span> <span class="n">as</span> <span class="n">big</span> <span class="n">as</span> <span class="n">buffer</span>
+        <span class="n">copy</span> <span class="n">the</span> <span class="n">contents</span> <span class="n">of</span> <span class="n">the</span> <span class="n">old</span> <span class="n">buffer</span> <span class="n">to</span> <span class="n">the</span> <span class="n">new</span> <span class="n">buffer</span>
+        <span class="n">free</span> <span class="n">the</span> <span class="n">old</span> <span class="n">buffer</span>
+        <span class="n">make</span> <span class="n">the</span> <span class="n">new</span> <span class="n">buffer</span> <span class="n">the</span> <span class="n">current</span> <span class="n">buffer</span>
+<span class="n">null</span><span class="o">-</span><span class="n">terminate</span> <span class="n">the</span> <span class="n">buffer</span>
+<span class="k">return</span> <span class="n">buffer</span>
+</code></pre></div></div>
+
+<p><strong>IMPORTANT:</strong> put your implementation of <code class="language-plaintext highlighter-rouge">readline</code> alone in a file named <code class="language-plaintext highlighter-rouge">readline.c</code>. To test your function, use a separate file called <code class="language-plaintext highlighter-rouge">main.c</code> that looks like this:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;whatever-you-need.h&gt;
+</span>
+<span class="kt">char</span> <span class="o">*</span><span class="nf">readline</span><span class="p">(</span><span class="kt">FILE</span> <span class="o">*</span><span class="n">input_stream</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// ... do whatever testing of readline you want to do ...</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>To compile your <code class="language-plaintext highlighter-rouge">readline.c</code> and <code class="language-plaintext highlighter-rouge">main.c</code> into a single executable program, you do this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-o</span> readline readline.c main.c
+</code></pre></div></div>
+
+<p>That is, include both <code class="language-plaintext highlighter-rouge">.c</code> files as command-line arguments for the <code class="language-plaintext highlighter-rouge">gcc</code> command.</p>
+
+<p><strong>IMPORTANT, PART 2:</strong> you may not call the standard library function <code class="language-plaintext highlighter-rouge">realloc</code>, but you might want to read about what it does. (It’s pretty cool!)</p>
+
+<h2 id="now-wait-a-second">NOW WAIT A SECOND…</h2>
+<p>If this <code class="language-plaintext highlighter-rouge">readline</code> is so cool, why isn’t it part of the standard library?</p>
+
+<p>The big reason is that doing what I’ve described above is super-slow, and if you want to write slow code, you should probably just pick a language that does this automatic resizing for you, like Java or Python. (Burn…)</p>
+
+<p>But doing this exercise in this class has two benefits.</p>
+
+<ul>
+  <li>You learn about the “double + copy” algorithm for dynamically increasing the memory size of a data structure. This is a very important algorithm, and we’ll discuss its big-O performance in class. (You’ve perhaps heard of it already depending on previous classes.)</li>
+  <li>You get to practice using <code class="language-plaintext highlighter-rouge">malloc</code> and <code class="language-plaintext highlighter-rouge">free</code> in a reasonably natural context.</li>
+</ul>
+
+<h2 id="submitting-your-work">SUBMITTING YOUR WORK</h2>
+<p>You know the drill by now. See the expected file name shown at the top of the page. You may but need not include your <code class="language-plaintext highlighter-rouge">main.c</code>. The autograder will ignore it anyway.</p>
+
+<h2 id="advice">ADVICE</h2>
+<p>Think carefully about when errors can occur naturally, and what to do when they do. As usual, consult the samples and reading for examples of error-handling.</p>
+
+<h2 id="have-fun">HAVE FUN!</h2>
+<p>Keep experimenting! Keep asking questions!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

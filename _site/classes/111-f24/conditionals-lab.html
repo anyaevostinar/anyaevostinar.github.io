@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Conditionals Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Conditionals Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-f24/conditionals-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/111-f24/conditionals-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Conditionals Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Conditionals Lab","url":"http://localhost:4000/classes/111-f24/conditionals-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Conditionals Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES <a href="getting-started">as you usually do</a>.</p>
+
+<p>Remember you can refer to the <a href="conditionals-prep#resources">textbook readings</a> if you forget the syntax for something.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Say that we define the following variables at the beginning of our program:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 3
+b = 10
+c = 15
+</code></pre></div></div>
+
+<p>What would we expect each of the following statements to print out? Discuss each one with your partner and write down your answers on the worksheet. If you think one might generate an error, discuss why that’s the case. Check your answers by typing in and running the lines as you proceed! Note down any that are confusing or you have questions about.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">print</span><span class="p">((</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">c</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">))</span>
+  <span class="k">print</span><span class="p">((</span><span class="n">c</span> <span class="o">==</span> <span class="n">a</span><span class="p">)</span> <span class="ow">or</span> <span class="bp">True</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">((</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">-</span> <span class="mi">7</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">False</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="ow">not</span> <span class="p">((</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">c</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)))</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="ow">and</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">a</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="mi">1</span><span class="o">/</span><span class="n">a</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="mi">1</span> <span class="ow">or</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="k">if</span> <span class="bp">True</span> <span class="ow">or</span> <span class="s">''</span><span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="s">'it prints!'</span><span class="p">)</span>
+  <span class="k">if</span> <span class="ow">not</span> <span class="p">[]:</span> <span class="k">print</span><span class="p">(</span><span class="s">'hmmm'</span><span class="p">)</span>
+  <span class="k">if</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="s">"interesting..."</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>What will this snippet of code print out to the screen? If you think there will be an error, indicate the line on the worksheet with the error and explain why.
+After you’ve written down your prediction on the worksheet, test out the code.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>  
+  <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s">'is even'</span><span class="p">)</span>  
+  <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s">'is special'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="exercise-3">Exercise 3</h2>
+
+<p>Say the policy for speeding tickets in Northfield is $50, plus $5 for each mph over the limit, plus an extra penalty of $200 for any speed over 90 mph.</p>
+
+<ul>
+  <li>
+    <p>Create a file called <code class="language-plaintext highlighter-rouge">speeding.py</code> containing a program that accepts a speed limit and a clocked speed and either prints a message indicating that the speed was legal or prints the amount of the fine if the speed was illegal.</p>
+  </li>
+  <li>
+    <p>In order to see if your program works, come up with a list of test inputs that account the variety of different values a user might provide. In the comments at the top of <code class="language-plaintext highlighter-rouge">speeding.py</code>, list these input values and the result that gets printed to the screen.</p>
+  </li>
+</ul>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>A formula for computing Easter in the years 1982–2048, inclusive, is as follows. Let:</p>
+
+<ul>
+  <li>a = year % 19</li>
+  <li>b = year % 4</li>
+  <li>c = year % 7</li>
+  <li>d = (19a + 24) % 30</li>
+  <li>e = (2b + 4c + 6d + 5) % 7</li>
+</ul>
+
+<p>The date of Easter is March 22 + d + e (which could be in April).</p>
+
+<ul>
+  <li>Create a file called <code class="language-plaintext highlighter-rouge">easter.py</code> that inputs a year, verifies it is in the proper range, and then prints out the date of Easter that year.</li>
+  <li>The above formula works for every year inside the range 1900-2099 except for 1954, 1981, 2049, and 2076. For these four years, it produces a date that is one week too late. Modify your program to work for the entire range 1900-2099.</li>
+  <li>Identify a list of test inputs for your program to verify that it works for the variety of values that a user might provide. In the comments of <code class="language-plaintext highlighter-rouge">easter.py</code>, list these input values and the results that get printed to the screen.</li>
+  <li>You may have ended up with a lot of repeated code in the process of making modifications. It’s always good to ‘refactor’ your code after you complete a first draft by going and trying to streamline and improve it. See what repeated code you can streamline, if any.</li>
+</ul>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>In a file called <code class="language-plaintext highlighter-rouge">validDate.py</code>:</p>
+
+<ol>
+  <li>
+    <p>Write a program that accepts a date in the form of a month, a day, and a year, and outputs whether or not the date is valid. For example, 5/24/1988 is valid, but 9/31/2000 is not. (September has only 30 days.)
+(Note: you can either take the number in the form <code class="language-plaintext highlighter-rouge">&lt;month&gt;/&lt;day&gt;/&lt;year&gt;</code> and parse the string, or just use three input statements.)
+It may help to know that a year is a leap year if it is divisible by 4, unless it is a century year that is not divisible by 400. (1800 and 1900 are not leap years while 1600 and 2000 are.)</p>
+  </li>
+  <li>
+    <p>Identify a list of test inputs for your program to verify that it works for the variety of values that a user might provide. In the comments of <code class="language-plaintext highlighter-rouge">validDate.py</code>, list these input values and the results that get printed to the screen.</p>
+  </li>
+</ol>
+
+<h2 id="extra">Extra</h2>
+<p>If you finish all of the above, work through some of the <a href="https://moodle.carleton.edu/mod/lti/view.php?id=967581">end of chapter exercises</a>.</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>These exercises are adapted from a lab by Prof. Eric Alexander and problems from Python Programming: An Introduction to Computer Science by John Zelle.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

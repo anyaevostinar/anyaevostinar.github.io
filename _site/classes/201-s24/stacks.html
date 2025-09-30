@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>BookStack Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="BookStack Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-s24/stacks" />
+<meta property="og:url" content="http://localhost:4000/classes/201-s24/stacks" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="BookStack Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"BookStack Lab","url":"http://localhost:4000/classes/201-s24/stacks"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">BookStack Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To better learn about how stacks work by creating a variation of a stack and get some more practice with arrays.</p>
+
+<h2 id="setup">Setup</h2>
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK/username folder called <code class="language-plaintext highlighter-rouge">BookStackLab</code></li>
+  <li>Open that folder through VSCode</li>
+</ul>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>For this lab, you’ll create an array-based double stack for storing the books that you want to read and the books that you’ve already read. 
+I don’t know about you, but my books often end up in a literal stack, such that I can only access the book at the top, and then once I’ve read it, I put it on my stack of read books that I plan to shelve someday (emphasis on someday!). 
+We’re going to simulate that ‘organization’ of books.</p>
+
+<p>a. Create a <code class="language-plaintext highlighter-rouge">BookStack</code> class in a file <code class="language-plaintext highlighter-rouge">BookStack.java</code>.</p>
+
+<p>b. Declare three instance <code class="language-plaintext highlighter-rouge">Integer</code>s for number of books to read, number of books already read, and the array size, as well as one String array instance variable:</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">String</span><span class="o">[]</span> <span class="n">bookArray</span><span class="o">;</span>
+</code></pre></div></div>
+
+<p>c. Create a constructor for your <code class="language-plaintext highlighter-rouge">BookStack</code> that doesn’t take any parameters, starts the <code class="language-plaintext highlighter-rouge">arraySize</code> at 3, instantiates your <code class="language-plaintext highlighter-rouge">String</code> array to the appropriate size, and initializes number of books to read and number of books read to 0. You can initialize an array with a set size with the following:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">bookArray</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+</code></pre></div></div>
+
+<p>d. As we’ve seen before, it’s helpful to make a <code class="language-plaintext highlighter-rouge">toString</code> method right away so that you can see if your other methods are working easily. Have your <code class="language-plaintext highlighter-rouge">toString</code> method return a string in the following format:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Number to <span class="nb">read</span>: X, Number <span class="nb">read</span>: Y
+<span class="s2">"Contents1"</span> <span class="s2">"Contents2"</span> <span class="s2">"Contents3"</span>
+</code></pre></div></div>
+<p>The “Contents” should have the quotation marks around them, remember that you can achieve that in a string with <code class="language-plaintext highlighter-rouge">\"</code>.</p>
+
+<p>Check that your class works so far by creating a new <code class="language-plaintext highlighter-rouge">BookStack</code> in the <code class="language-plaintext highlighter-rouge">main()</code> method of <code class="language-plaintext highlighter-rouge">BookStack.java</code> and printing it. You should see:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Number to <span class="nb">read</span>: 0, Number <span class="nb">read</span>: 0
+<span class="s2">"null"</span> <span class="s2">"null"</span> <span class="s2">"null"</span>
+</code></pre></div></div>
+
+<p>You are printing the entire contents of the array so that you can more easily reason about what is going on with both of your stacks, so you must print out the nulls!</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now let’s actually be able to put some books onto the to-read stack!</p>
+
+<p>a. Create a <code class="language-plaintext highlighter-rouge">push(String)</code> method that takes the title of the book you just got and pushes it onto the ‘top’ of your to read stack. Remember that array-based stacks should have the ‘bottom’ of the stack be the beginning of the array. For now, don’t worry about growing  beyond the bounds of the array, just get three books in first. Don’t forget to update the number of books to read!</p>
+
+<p>b. Test to make sure that your code works for adding three books. You should print the contents after adding each book to make sure that your stack is growing in the correct direction (which should be towards the end of the array).</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>I personally have way more than three books on my to read stack, so let’s allow the stack to grow larger.</p>
+
+<p>a. Update your <code class="language-plaintext highlighter-rouge">push</code> method so that it checks if the new book will fit on the stack and if it won’t fit, create a new array that is double the size of the current array and copy all of the contents of the current array into the new array.</p>
+
+<p>b. Verify that your code now allows you to push more books onto the to-read stack.</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Hopefully eventually you find time to actually read books on your to read stack, so it’s time to implement that method.</p>
+
+<p>a. The read stack will exist on the other side of the <code class="language-plaintext highlighter-rouge">bookArray</code> so that it’s ‘bottom’ is the end of the array and it grows towards the front of the array. Create a <code class="language-plaintext highlighter-rouge">read</code> method that moves the top book from the to read stack to the top of the read stack. If you aren’t sure how to do this, draw out a small example on paper. Make sure to adjust the number of books to read and the number of books read.</p>
+
+<p>b. You’ll need to update your code for growing the array since you will now need to also copy over the contents of the read stack. Remember that the read stack should start at the end of the array, so when they are copied over to a new array, their index values will shift quite a lot. Again, if you are unsure of how to do this, draw it out on paper. It’s always easier to think about real numbers for the index values.</p>
+
+<p>c. Test that your new code works correctly by printing your <code class="language-plaintext highlighter-rouge">BookStack</code> before and after you call <code class="language-plaintext highlighter-rouge">read</code>. Also verify that growing your array with the read stack works.</p>
+
+<h2 id="extensions">Extensions</h2>
+<ul>
+  <li>I sometimes find myself reading multiple books at once and doing so in a stack-like way where I get bored of a book and start another, which I finish before then going back to the other book. Could you make a triple stack in the array with a ‘currently reading’ stack?</li>
+  <li>Try implementing the functionality of the <code class="language-plaintext highlighter-rouge">BookStack</code> with a linked list instead of an array.</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

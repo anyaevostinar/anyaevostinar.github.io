@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Maps Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Maps Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-s24/maps-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/201-s24/maps-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Maps Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Maps Lab","url":"http://localhost:4000/classes/201-s24/maps-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Maps Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>Get practice using maps.</p>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a lab assignment and so you will not be submitting it. However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<h2 id="setup">Setup</h2>
+<ul>
+  <li><a href="getting-started">Mount the COURSES drive</a></li>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">MapsLab</code></li>
+  <li>Download <a href="/classes/201-s24/Frankenstein.txt"><code class="language-plaintext highlighter-rouge">Frankenstein.txt</code></a> (by right-clicking the link and selecting “Save Link As”) and move it into your folder</li>
+  <li>Create a file <code class="language-plaintext highlighter-rouge">Main.java</code></li>
+  <li>Open the <a href="https://moodle.carleton.edu/mod/lti/view.php?id=928121">reading</a> for reference</li>
+</ul>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>a. In <code class="language-plaintext highlighter-rouge">Main.java</code> import <code class="language-plaintext highlighter-rouge">Map</code> and <code class="language-plaintext highlighter-rouge">HashMap</code>.</p>
+
+<p>b. Create a <code class="language-plaintext highlighter-rouge">HashMap</code> that will contain <code class="language-plaintext highlighter-rouge">String</code> keys and <code class="language-plaintext highlighter-rouge">Integer</code> values called <code class="language-plaintext highlighter-rouge">wordCounts</code></p>
+
+<p>c. Create a file scanner for <code class="language-plaintext highlighter-rouge">Frankenstein.txt</code> (if you don’t remember how, check the example from the <a href="java_scavenger">Comparing Python and Java</a> activity)</p>
+
+<p>d. Loop over the first 5 words and add them and a count of 1 to your Map</p>
+
+<p>e. Loop over your <code class="language-plaintext highlighter-rouge">keySet</code> and print out the word and the number of times it has been seen (your ordering might be different, why is that??):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> javac Main.java
+<span class="o">&gt;</span> java Main
+<span class="s2">"The"</span> has been seen 1 times.
+<span class="s2">"eBook"</span> has been seen 1 times.
+<span class="s2">"Project"</span> has been seen 1 times.
+<span class="s2">"of"</span> has been seen 1 times.
+<span class="s2">"Gutenberg"</span> has been seen 1 times.
+</code></pre></div></div>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>a. You may have realized that you won’t actually increase your count of words with your previous code. Using <code class="language-plaintext highlighter-rouge">containsKey()</code> and <code class="language-plaintext highlighter-rouge">get()</code>, add an if statement that first checks if the key is in the map and increases the existing count if so. Otherwise, add the key and a count of 1 like before.</p>
+
+<p>b. Change your loop to count the first twenty words in the file and verify that “of” occurs twice in the first twenty words.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Sometimes we want to know what words occur before other words during text analysis. To track that, we need to make a more complicated storage structure.</p>
+
+<p>a. Create a new HashMap that has <code class="language-plaintext highlighter-rouge">String</code>s for the keys and <code class="language-plaintext highlighter-rouge">ArrayList</code>s of <code class="language-plaintext highlighter-rouge">String</code>s for the values:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Map</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span><span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;&gt;</span> <span class="n">nearbyWords</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HashMap</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span><span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;&gt;();</span>
+</code></pre></div></div>
+
+<p>b. We’ll have to track what the previous word was before reading the next one, so make a variable that will hold it:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nc">String</span> <span class="n">previousWord</span><span class="o">;</span>
+    <span class="nc">String</span> <span class="n">newWord</span> <span class="o">=</span> <span class="n">scanner</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+</code></pre></div></div>
+
+<p>c. Make a for loop that will loop over the next 500 words (<strong>leave your previous for loop</strong> so that we skip over some of the boring stuff). Within your new for loop, save the <code class="language-plaintext highlighter-rouge">newWord</code> to the <code class="language-plaintext highlighter-rouge">previousWord</code> before reading the next word.</p>
+
+<p>d. Again check if the <code class="language-plaintext highlighter-rouge">Map</code> already has the key and if it does, add the <code class="language-plaintext highlighter-rouge">previousWord</code> to the list:</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nearbyWords</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">newWord</span><span class="o">).</span><span class="na">add</span><span class="o">(</span><span class="n">previousWord</span><span class="o">);</span>
+</code></pre></div></div>
+
+<p>Notice that you don’t need to use <code class="language-plaintext highlighter-rouge">put</code>. This is because the map is storing a <em>reference</em> to the <code class="language-plaintext highlighter-rouge">ArrayList</code> so any changes you make to it will stick. This is because <code class="language-plaintext highlighter-rouge">List</code>s are mutable (changeable) and so you can change the existing one instead of making a new one (like with <code class="language-plaintext highlighter-rouge">String</code>s).</p>
+
+<p>If the Map doesn’t already have the key, make a new <code class="language-plaintext highlighter-rouge">ArrayList</code>, add the <code class="language-plaintext highlighter-rouge">previousWord</code>, and use <code class="language-plaintext highlighter-rouge">put</code> to add the key and <code class="language-plaintext highlighter-rouge">ArrayList</code> to the <code class="language-plaintext highlighter-rouge">Map</code>.</p>
+
+<p>e. Finally, use you newly created map to output all of the words in this section of text that precede the word “of”:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>parts, terms, laws, commencement, sister, success, north, streets, foretaste, wind,
+ seat, region, phenomena, country, sight, part, foot, fear]
+</code></pre></div></div>
+
+<h2 id="extensions">Extensions</h2>
+<p>There are a lot of ways that you could extend this code to better analyze text, here are just a few ideas to try if you have extra time:</p>
+<ul>
+  <li>Remove punctuation and convert all words to lowercase so that you don’t have entries for ‘of’ and “Of” and “of.”</li>
+  <li>Track words that appear both before and after a given word</li>
+  <li>Create a nested Map (a Map that stores another Map as a value) to track how often a given word appears before (or after) another word</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

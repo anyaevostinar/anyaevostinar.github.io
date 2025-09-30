@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>INTRO TO C 2 MINIGREP | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="INTRO TO C 2 MINIGREP" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-s24/hw2" />
+<meta property="og:url" content="http://localhost:4000/classes/208-s24/hw2" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="INTRO TO C 2 MINIGREP" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"INTRO TO C 2 MINIGREP","url":"http://localhost:4000/classes/208-s24/hw2"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">INTRO TO C 2 MINIGREP</h1>
+  </header>
+
+  <div class="post-content">
+    <p>Starter code: <a href="/classes/208-s24/minigrep-package.tar">minigrep-package.tar</a></p>
+
+<p>Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">minigrep.c</code></p>
+
+<h2 id="goals">GOALS</h2>
+<ul>
+  <li>More C practice</li>
+  <li>Using <code class="language-plaintext highlighter-rouge">fgets</code>, and learning its limitations</li>
+  <li>Keep reading those <a href="https://en.wikipedia.org/wiki/Man_page">man</a> pages!</li>
+</ul>
+
+<h2 id="assessment">Assessment</h2>
+<p>To <strong>demonstrate proficiency</strong>, your submission needs to:</p>
+<ul>
+  <li>Pass the autograder tests</li>
+  <li>Be somewhat <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html">well-styled</a></li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your submission needs to:</p>
+<ul>
+  <li>Demonstrate proficiency</li>
+  <li>Be quite <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html">well-styled</a>, particularly well-chosen variable names, naming all magic numbers, and good indentation</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">fgets</code> in a memory-safe way</li>
+  <li>Have thorough error handling</li>
+</ul>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is an <strong>individual</strong> assignment, so you should write all the code individually, though you can get help, as detailed in the <a href="collaboration">collaboration</a> document.</p>
+
+<p>This assignment is due Monday April 1st at 10pm. As with all assignments, you will have the opportunity to <a href="revision-process">revise</a> this submission based on feedback.</p>
+
+<h2 id="grep">GREP</h2>
+<p>If you ever want to search for strings in one or a million files in a Unix environment, you should get to know <a href="https://en.wikipedia.org/wiki/Grep">grep</a>.</p>
+
+<p>Let me be more direct: you should get to know <a href="https://en.wikipedia.org/wiki/Grep">grep</a>, period.</p>
+
+<p>Here are some example grep commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep </span>moose myfile
+    prints every line of myfile that contains the string <span class="s2">"moose"</span>
+<span class="nb">grep</span> <span class="nt">-v</span> moose myfile
+    prints every line of myfile that does NOT contain the string <span class="s2">"moose"</span>
+<span class="nb">grep</span> <span class="nt">-i</span> moose myfile
+    prints every line of myfile that contains <span class="s2">"moose"</span> <span class="k">case</span><span class="nt">-insensitively</span>
+    <span class="o">(</span><span class="s2">"Moose"</span>, <span class="s2">"MoOsE"</span>, <span class="s2">"mOOSe"</span>,...<span class="p">)</span>
+<span class="nb">grep</span> <span class="nt">-r</span> moose mydirectory
+    prints every line containing <span class="s2">"moose"</span> <span class="k">for </span>every file <span class="k">in </span>mydirectory or
+    any of its descendant directories
+<span class="nb">grep</span> <span class="s1">'^A'</span> myfile
+    prints every line starting with A
+<span class="nb">grep</span> <span class="s1">'B^'</span> myfile
+    prints every line ending with B
+<span class="nb">grep</span> <span class="s1">'moose.*goat'</span> myfile
+    prints every line containing <span class="s2">"moose"</span> followed eventually by <span class="s2">"goat"</span>
+etc.
+</code></pre></div></div>
+
+<h2 id="reading-lines-of-text-with-fgets">READING LINES OF TEXT WITH FGETS</h2>
+<p>For your previous assignment, you could do the whole thing reading one byte (i.e., one <code class="language-plaintext highlighter-rouge">char</code>) at a time from the input file. Thus, the standard library function <code class="language-plaintext highlighter-rouge">fgetc</code> was exactly what you needed.</p>
+
+<p>But sometimes, you need a whole line of text. In those cases, <code class="language-plaintext highlighter-rouge">fgets</code> is often the right tool. Here’s a quick reminder of how to use it (though you should also refer to your reading):</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">FILE</span> <span class="o">*</span><span class="n">input_file</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="n">input_file_name</span><span class="p">,</span> <span class="s">"r"</span><span class="p">);</span>
+<span class="c1">// ... skipping the error-handling code ...</span>
+
+<span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">fgets</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">input_file</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Do something with the null-terminated string now in buffer</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Read the description of <code class="language-plaintext highlighter-rouge">fgets</code> on its man page to answer questions like: does the newline character get stored in <code class="language-plaintext highlighter-rouge">buffer</code>? is the string in <code class="language-plaintext highlighter-rouge">buffer</code> always null-terminated? what happens if the line in the the file is longer than the size of the buffer?</p>
+
+<h2 id="programming-assignment-2-minigrep">PROGRAMMING ASSIGNMENT #2: MINIGREP</h2>
+<p>For this assignment, you will write a C program <code class="language-plaintext highlighter-rouge">minigrep.c</code> that takes the name of an input file and a search string as command-line parameters (in that order) and prints to standard output every line of the input file that contains the search string, preceded by the (1-based) line number of the line.</p>
+
+<p>For example, suppose you have this file named <code class="language-plaintext highlighter-rouge">animals.txt</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>moose
+coatimundi
+starling
+dingo
+parrot
+flamingo
+dorking chicken
+goat
+</code></pre></div></div>
+
+<p>Then running your <code class="language-plaintext highlighter-rouge">minigrep</code> program on this file should look like this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./minigrep animals.txt ing
+3: starling
+4: dingo
+6: flamingo
+7: dorking chicken
+</code></pre></div></div>
+
+<p><strong>You may assume that no line of your file contains more than 200 bytes/chars, including the newline character.</strong></p>
+
+<h2 id="submitting-your-work">SUBMITTING YOUR WORK</h2>
+<p>As you did for your <a href="hw1">first homework assignment</a>, upload <code class="language-plaintext highlighter-rouge">minigrep.c</code> to Gradescope.</p>
+
+<h2 id="remember-that-advice-from-last-time">REMEMBER THAT ADVICE FROM LAST TIME?</h2>
+<ul>
+  <li>Think ahead of time about error handling. What could go wrong with the command-line or the input file or anything else in your program? What should your program do when those things happen?</li>
+  <li>Think ahead of time about testing. What special cases should you test? How can you test them?</li>
+  <li>Assume that each line ends either with a newline character <code class="language-plaintext highlighter-rouge">\n</code> (ASCII 10) or with the end of the file. You’ll want your program to work even if the last line doesn’t end with <code class="language-plaintext highlighter-rouge">\n</code>.</li>
+</ul>
+
+<h2 id="have-fun">HAVE FUN!</h2>
+<p>Keep experimenting! Keep asking questions!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW6 | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW6" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-f24/hw6" />
+<meta property="og:url" content="http://localhost:4000/classes/111-f24/hw6" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW6" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW6","url":"http://localhost:4000/classes/111-f24/hw6"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW6</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>This is a paired assignment, so you should complete it with your new assigned partner, if you have one, via <strong>paired programming</strong>. 
+The whole time that you are working, you should both be present and actively working on the problem at hand. 
+(Two brains, one keyboard.) 
+Switch off the typing duties so that you each type for roughly half of the time.</p>
+
+<p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.
+There is only a partial autograder for this assignment due to the use of graphics, so you should check carefully that you’ve followed the instructions and make sure that your program works as it should.</p>
+
+<p>This assignment is due on Wednesday October 30th at 10pm. As with all assignments, you will have the opportunity to <a href="revision-process">revise this assignment individually</a> based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>Use and adapt classes for data visualization.</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>You will be assessed on the following rubric.
+Be sure to remove the starter comments that are no longer relevant, add additional comments, and update or add headers as necessary.</p>
+
+<p>To <strong>demonstrate proficiency</strong>:</p>
+<ul>
+  <li>Correct functionality</li>
+  <li>Header with three lines that start with <code class="language-plaintext highlighter-rouge">#</code> for each file</li>
+  <li>Contain docstrings for each function and method (checked automatically)</li>
+  <li>Other basic style that can be checked automatically</li>
+  <li><code class="language-plaintext highlighter-rouge">gis.py</code> displays a basic visualization of Minnesota zipcodes</li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to demonstrate proficiency as well as having:</p>
+<ul>
+  <li><em>Descriptive</em> headers</li>
+  <li><em>Descriptive</em> docstrings for each function and method</li>
+  <li>Useful comments (and removal of non-useful starter comments)</li>
+  <li>Descriptive variable and function/method names that follow <code class="language-plaintext highlighter-rouge">snake_case</code></li>
+  <li>Good line grouping and spacing</li>
+  <li>Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code</li>
+  <li>Visualization of Minnesota follows specification (larger circles for larger physical area, red-blue scale where redder is higher population)</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+
+<p>Again, I recommend you complete this assignment in Olin 310. (This assignment will be especially difficult to complete on your own machine! If you really want to complete it on your own machine, you’ll have to install additional packages Tkinter, which is detailed at the bottom of the <a href="hw1">installation guides</a> for this class.)</p>
+
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW6</code></li>
+  <li>Download the starter code linked on Moodle and copy those files into your folder</li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW6</code> folder in VSCode</li>
+</ul>
+
+<h2 id="gis">GIS</h2>
+<p>In <code class="language-plaintext highlighter-rouge">gis.py</code> — as in Geographic Information System — you will find the beginnings of a <code class="language-plaintext highlighter-rouge">ZipCode</code> class to represent a zip code region in the United States, or, more particularly, Minnesota.</p>
+
+<p>You should first run <code class="language-plaintext highlighter-rouge">python3 gis.py</code> to see what is already provided.
+You will find you now have a file <code class="language-plaintext highlighter-rouge">Minnesota.svg</code>, which just has the text TODO. 
+(SVG is a type of image format like JPEG and PNG, but one that we can save Graphics windows to!)</p>
+
+<h3 id="zipcode-class">ZipCode Class</h3>
+<p>Your first task is to finish the basics of the <code class="language-plaintext highlighter-rouge">ZipCode</code> class. Specifically, add/complete the following methods:</p>
+<ul>
+  <li>Constructor (<code class="language-plaintext highlighter-rouge">__init__</code>): save all the incoming parameters to appropriate instance variables</li>
+  <li><code class="language-plaintext highlighter-rouge">get_zip(self)</code>,<code class="language-plaintext highlighter-rouge">get_population(self)</code>, <code class="language-plaintext highlighter-rouge">get_latitude(self)</code>, <code class="language-plaintext highlighter-rouge">get_longitude(self)</code>: return the appropriate instance variable</li>
+  <li><code class="language-plaintext highlighter-rouge">get_area(self)</code>: add the zip code’s <strong>total</strong> geographic area in square meters to the code. You’ll need to update the constructor as well as adding this method. (Place the new parameter for the constructor at the end of the existing ones.)</li>
+</ul>
+
+<p>(Leave <code class="language-plaintext highlighter-rouge">draw_circle</code> alone for now, you’ll come back to it later.)</p>
+
+<h3 id="loading-the-data">Loading the data</h3>
+<ul>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">load_data</code> function is started and already has pulled out the relevant data into local variables for you. You should complete <code class="language-plaintext highlighter-rouge">load_data</code> so that it creates and returns the list of <code class="language-plaintext highlighter-rouge">ZipCode</code> objects, as specified by the documentation.</p>
+  </li>
+  <li>
+    <p>Next create the <code class="language-plaintext highlighter-rouge">total_population(zips)</code> function, which takes in your list of <code class="language-plaintext highlighter-rouge">ZipCode</code>s and returns the total population of the state, which should be 5,534,466 based on this data. You can call this from <code class="language-plaintext highlighter-rouge">main</code> to make sure you are getting the right answer.</p>
+  </li>
+  <li>
+    <p>Next create the <code class="language-plaintext highlighter-rouge">total_area(zips)</code> function, which takes in your list of <code class="language-plaintext highlighter-rouge">ZipCode</code>s and returns the total area of the state <strong>in square miles</strong> (convert from square meters to square miles) and rounded to the nearest whole number. It should be 82,458. (It’s not totally consistent with statistics you may find on the web, probably because portions of the state are outside of any zip code, but I’m not 100% sure!)</p>
+  </li>
+</ul>
+
+<h3 id="visualization">Visualization</h3>
+<p>Finally, it’s time to make a cool visualization of this data!
+The <code class="language-plaintext highlighter-rouge">draw_circle(self, window)</code> method should draw a <code class="language-plaintext highlighter-rouge">Circle</code> (from the <code class="language-plaintext highlighter-rouge">graphics.py</code> library that you have been using) in <code class="language-plaintext highlighter-rouge">window</code> centered at the location of the center of the <code class="language-plaintext highlighter-rouge">ZipCode</code> such that 1) the circle’s size scales with the zipcode’s physical area and 2) the circle’s color represents the population total, where redder means higher population and bluer means lower population (and shades of purple in between).
+There are many ways of accomplishing this, but here are suggestions for both:</p>
+
+<ul>
+  <li>
+    <p>Area: take the square root of the area and divide by 5000 to get the radius of the circle. You’ll want to make use of the <code class="language-plaintext highlighter-rouge">max</code> function to make sure that your dots are visible (i.e. don’t let them get too small, even for very small zipcodes).</p>
+  </li>
+  <li>
+    <p>Population: divide the population by 100 to get the amount of red that the circle should have (the amount of blue plus red should total 255). Then use the <a href="https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node14.html"><code class="language-plaintext highlighter-rouge">color_rgb</code> function</a> to set the circle’s fill to that custom color. 
+You’ll want to make use of the <code class="language-plaintext highlighter-rouge">min</code> or <code class="language-plaintext highlighter-rouge">max</code> functions to make your color amounts are in the range from 0 to 255.</p>
+  </li>
+</ul>
+
+<p>When you run your code, your <code class="language-plaintext highlighter-rouge">Minnesota.svg</code> file should now have a data visualization in the shape of Minnesota with circles of varying sizes and shades from red to purple to blue.
+This visualization can’t be autograded, but you will see on Gradescope what the graders will see when they assess your submission.</p>
+
+<h2 id="submission">Submission</h2>
+<p>You should submit through Gradescope as always.  If you have a partner, remember only one of you should submit and you should add the other to the submission.</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

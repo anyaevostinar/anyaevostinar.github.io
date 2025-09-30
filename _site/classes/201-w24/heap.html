@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Heap Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Heap Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-w24/heap" />
+<meta property="og:url" content="http://localhost:4000/classes/201-w24/heap" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Heap Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Heap Lab","url":"http://localhost:4000/classes/201-w24/heap"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Heap Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To better learn about how heaps work by implementing a more tree-like heap.</p>
+
+<p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+<h2 id="setup">Setup</h2>
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HeapLab</code></li>
+  <li>Download the <a href="/classes/201-f21/Heap.java">starter code</a> and put it into your HeapLab folder</li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HeapLab</code> folder in VSCode</li>
+</ul>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>In this lab, you’ll make a heap that uses Nodes like we’ve seen in other tree data structures. <strong>This is not an efficient way of making a heap at all</strong>, the goal is just to practice with the concepts of a heap.</p>
+
+<p>a. First you’ll want to get your Node’s <code class="language-plaintext highlighter-rouge">compareTo</code> set up so that you can use it later. You should compare Nodes based on their priority and since the <code class="language-plaintext highlighter-rouge">priority</code> is an <code class="language-plaintext highlighter-rouge">Integer</code> it also supports <code class="language-plaintext highlighter-rouge">compareTo</code> so you can just use that:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>this.priority.compareTo(b.priority);
+</code></pre></div></div>
+
+<p>b. You’ll also need to set up your <code class="language-plaintext highlighter-rouge">Node</code> constructor by setting the instance variables.</p>
+
+<p>c. Next you’ll need to set up the <code class="language-plaintext highlighter-rouge">parent</code> method of <code class="language-plaintext highlighter-rouge">Heap</code>, which takes a position and returns the <code class="language-plaintext highlighter-rouge">Node</code> at the parent position of <code class="language-plaintext highlighter-rouge">nodes</code>. Recall that the parent is at <code class="language-plaintext highlighter-rouge">(index -1)/2</code>.</p>
+
+<p>d. Finally implement the <code class="language-plaintext highlighter-rouge">test</code> method by having it put three <code class="language-plaintext highlighter-rouge">Node</code>s manually into your <code class="language-plaintext highlighter-rouge">nodes</code> <code class="language-plaintext highlighter-rouge">ArrayList</code> and setting all the other things up correctly about those <code class="language-plaintext highlighter-rouge">Node</code>s, such as which is the root and the parent of the second two nodes, assuming a max heap based on priority. Within <code class="language-plaintext highlighter-rouge">test</code> also call <code class="language-plaintext highlighter-rouge">compareTo</code> and <code class="language-plaintext highlighter-rouge">parent</code> to verify those methods are working correctly.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now you’ll implement the main pieces of your heap.</p>
+
+<p>a. Implement the <code class="language-plaintext highlighter-rouge">swap</code> method so that it swaps the priorities and values of the nodes, but not the nodes themselves. Think of the nodes as the offices, which don’t change, and just the occupants of the office change. This means you won’t have to change the parent settings at all.</p>
+
+<p>b. Update your test method so that it checks that <code class="language-plaintext highlighter-rouge">swap</code> is working.</p>
+
+<p>c. Implement <code class="language-plaintext highlighter-rouge">heapifyUp</code>, which takes a Node, checks if it is a higher priority than its parent, and if so, swaps the node with its parent and then continues to do so recursively until the node isn’t higher priority than its parent or the node is the root.</p>
+
+<p>d. Update your test method so that it checks that <code class="language-plaintext highlighter-rouge">heapifyUp</code> is working.</p>
+
+<p>e. Finally implement <code class="language-plaintext highlighter-rouge">insert</code>, which should call <code class="language-plaintext highlighter-rouge">heapifyUp</code> after some initial work. Remember to implement <code class="language-plaintext highlighter-rouge">insert</code> using the <strong>tree structure</strong>, not using the <code class="language-plaintext highlighter-rouge">ArrayList</code>. You will need to add the new node to the <code class="language-plaintext highlighter-rouge">ArrayList</code>, but should then attach it to your tree structure and use <code class="language-plaintext highlighter-rouge">heapifyUp</code>.</p>
+
+<p>f. Test that you are able to insert nodes into your heap and that the top value of the heap’s <code class="language-plaintext highlighter-rouge">ArrayList</code> is the highest priority item you’ve inserted.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>You might have noticed that our heap implementation is missing a rather large functionality of a heap, which is removing the top item and then fixing the heap. If you have extra time, implement <code class="language-plaintext highlighter-rouge">heapifyDown</code> and <code class="language-plaintext highlighter-rouge">removeMax</code>.</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

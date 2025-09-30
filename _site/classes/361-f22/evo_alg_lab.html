@@ -137,7 +137,7 @@
 <p>c. There are a whole lot of ways of mutating organisms and whole dissertations have been devoted to what the ‘best’ way is. A generally good way to mutate a value that is of type double is to pull a random number from a <a href="https://en.wikipedia.org/wiki/Normal_distribution">normal distribution/bell curve</a> that is centered at 0. This means that you are just as likely to mutate up as down and mutations will generally be small but have the chance at being large, which is fairly biologically accurate.</p>
 
 <p>This is such a common task that Empirical provides a function for it:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>random.GetRandNormal(0.0, 0.002); //pull a random number from a normal
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>random.GetRandNormal(0.0, 0.02); //pull a random number from a normal
 //distribution with a mean of 0 and a standard deviation of 0.002.
 </code></pre></div></div>
 <p>Add the random number you get to the organism’s <code class="language-plaintext highlighter-rouge">behavior</code> value.</p>

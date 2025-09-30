@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Mutating Lists Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Mutating Lists Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w24/lab-mutating-lists" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w24/lab-mutating-lists" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Mutating Lists Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Mutating Lists Lab","url":"http://localhost:4000/classes/111-w24/lab-mutating-lists"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Mutating Lists Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Predict what the reference diagram will look like after the following code snippet has run:</p>
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=my_list%20%3D%20%5B1,%202,%203,%204%5D%0Amy_other_list%20%3D%20my_list%0Amy_list%5B0%5D%20%3D%205%0Amy_other_list%5B1%5D%20%3D%204&amp;codeDivHeight=400&amp;codeDivWidth=350&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=true&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false"> </iframe>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>In the game Pokemon, you have a team of creatures (i.e. Pokemon) that battle other teams of
+Pokemon. 
+Most rounds are 1-on-1 and so you have to choose which of your Pokemon will fight in
+a round. 
+Imagine that I’ve developed an algorithm that scores each of the Pokemon on my team
+for how well they will do against an opponent, and I’ve compiled those scores in a nested list, for
+example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_team</span> <span class="o">=</span> <span class="p">[[</span><span class="s">"Bulbasaur"</span><span class="p">,</span> <span class="mi">32</span><span class="p">],</span> <span class="p">[</span><span class="s">"Chimchar"</span><span class="p">,</span> <span class="mi">45</span><span class="p">],</span> <span class="p">[</span><span class="s">"Pidgey"</span><span class="p">,</span> <span class="mi">36</span><span class="p">],</span>
+<span class="p">[</span><span class="s">"Articuno"</span><span class="p">,</span> <span class="mi">57</span><span class="p">],</span> <span class="p">[</span><span class="s">"Drifloon"</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="p">[</span><span class="s">"Pikachu"</span><span class="p">,</span> <span class="mi">18</span><span class="p">]]</span>
+</code></pre></div></div>
+
+<p>Write Python code that will determine from such a list which Pokemon I should choose for a
+round and print out its name. The Pokemon that should be chosen is the one with the highest
+score. Note that your program should work for any list in this format, not just this example list;
+in particular, the list can include more or less than 6 Pokemon, though you can assume that it is
+stored in the variable <code class="language-plaintext highlighter-rouge">my_team</code>. For the example, your program should print out <code class="language-plaintext highlighter-rouge">Articuno</code>.</p>
+
+<p>If you solved this problem without a loop, using mostly list methods, you should try to come up with a solution that loops over the list.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Imagine you have a list <code class="language-plaintext highlighter-rouge">example = [1, 2, 3, 4]</code>. Write a program that rotates the items of that list to the left by one position and then prints <code class="language-plaintext highlighter-rouge">example</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="c1">#your code here
+</span>
+<span class="k">print</span><span class="p">(</span><span class="n">example</span><span class="p">)</span> <span class="c1">#should print [2, 3, 4, 1]
+</span></code></pre></div></div>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Many of the functions for lists aren’t actually needed since you can implement them yourself, though they are convenient.
+Try writing code snippets which accomplish the same things as the built-in list methods:</p>
+<ul>
+  <li>Reverse a list</li>
+  <li>Loop through and print the index of an item in a list</li>
+  <li>Loop through and print the count of an item in a list</li>
+  <li>Remove a specific item from a list - use <code class="language-plaintext highlighter-rouge">del</code> for this</li>
+  <li>Insert an item into a list</li>
+  <li>Slicing (that makes a new list remember!)</li>
+  <li>Sort a list - we’ll talk about sorting in a few weeks, but think about how you could do it</li>
+</ul>
+
+<h2 id="extra">Extra</h2>
+<p>If you have extra time, work through some of the <a href="https://moodle.carleton.edu/mod/lti/view.php?id=907888">end of chapter exercises and assessments</a> from the textbook.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

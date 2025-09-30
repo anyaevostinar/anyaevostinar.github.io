@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Nested Loops Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Nested Loops Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w24/lab-nested" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w24/lab-nested" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Nested Loops Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Nested Loops Lab","url":"http://localhost:4000/classes/111-w24/lab-nested"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Nested Loops Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Think about what the output of each of these snippets will be and then test them.
+Feel free to put them into <a href="https://pythontutor.com/visualize.html#mode=edit">PythonTutor</a> to help with tracing through them.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Snippet 1
+
+n = 4
+m = 3
+for i in range(n):
+  for j in range(m):
+    print('*', end='')
+  print()
+
+
+# Snippet 2
+
+n = 4
+for i in range(n):
+    for j in range(i+1):
+        print('*', end='')
+    print()
+
+
+# Snippet 3
+
+n = 4
+for i in range(n):
+    for j in range(i):
+        print('-', end='')
+    for j in range(i, n+i):
+        print(j, end='')
+    print()
+
+
+# Snippet 4
+
+n = 4
+for i in range(0,n):
+    for j in range(0,n-i-1):
+        print(' ', end='')
+    for j in range(n-i-1,n):
+        print('*', end='')
+    print()
+
+
+# Snippet 5
+
+n = 4
+for i in range(0,n):
+    for j in range(0,n-i-1):
+        print(' ', end='')
+    for j in range(n-i-1,n+i):
+        print('*', end='')
+    print()
+
+
+
+# Snippet 6
+
+n = 4
+for i in range(n):
+    for j in range(0,-1*n,-1):
+        for k in range(2):
+            print(j*k, end='*')
+        print(i, end=' ')
+    print()
+</code></pre></div></div>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Revisit the reverse word problem now that you know how to use nested loops.</p>
+<ol>
+  <li>Get phrase from user.</li>
+  <li>Split phrase into words</li>
+  <li>For each word in the phrase
+    <ul>
+      <li>Reverse the letters</li>
+      <li>Combine the letters back together</li>
+      <li>Print the reversed word</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Consider the following code (with blanks that you will fill in):</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ranks</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Two'</span><span class="p">,</span> <span class="s">'Three'</span><span class="p">,</span> <span class="s">'Four'</span><span class="p">,</span> <span class="s">'Five'</span><span class="p">,</span> <span class="s">'Six'</span><span class="p">,</span> <span class="s">'Seven'</span><span class="p">,</span> <span class="s">'Eight'</span><span class="p">,</span> <span class="s">'Nine'</span><span class="p">,</span> <span class="s">'Ten'</span><span class="p">,</span> <span class="s">'Jack'</span><span class="p">,</span> <span class="s">'Queen'</span><span class="p">,</span> <span class="s">'King'</span><span class="p">,</span> <span class="s">'Ace'</span><span class="p">]</span>
+<span class="n">suits</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Clubs'</span><span class="p">,</span> <span class="s">'Diamonds'</span><span class="p">,</span> <span class="s">'Hearts'</span><span class="p">,</span> <span class="s">'Spades'</span><span class="p">]</span>
+<span class="n">deck</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">_________________</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">_________________</span><span class="p">:</span>
+        <span class="c1">#f"{x}" is another way of doing the format function
+</span>        <span class="n">deck</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">rank</span><span class="si">}</span><span class="s"> of </span><span class="si">{</span><span class="n">suit</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">card</span> <span class="ow">in</span> <span class="n">deck</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">card</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>a. Fill in the blanks above such that the cards are printed out increasing by number (e.g., all of the twos, then all of the threes, then all of the fours, etc.) as below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Two of Clubs
+Two of Diamonds
+Two of Hearts
+Two of Spades
+Three of Clubs
+...
+King of Spades
+Ace of Clubs
+Ace of Diamonds
+Ace of Hearts
+Ace of Spades
+</code></pre></div></div>
+
+<p>b. Fill in the blanks such that the cards are printed out by suit (i.e., all of the clubs, then all of the diamonds, then all of the hearts, then all of the spades), as below:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Two of Clubs
+Three of Clubs
+Four of Clubs
+...
+Ace of Clubs
+Two of Diamonds
+Three of Diamonds
+...
+King of Spades
+Ace of Spades
+</code></pre></div></div>
+
+<h2 id="exericse-4">Exericse 4</h2>
+<p>Write a nested for-loop that creates the following output:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0 x 0 = 0   0 x 1 = 0   0 x 2 = 0   0 x 3 = 0
+1 x 0 = 0   1 x 1 = 1   1 x 2 = 2   1 x 3 = 3
+2 x 0 = 0   2 x 1 = 2   2 x 2 = 4   2 x 3 = 6
+3 x 0 = 0   3 x 1 = 3   3 x 2 = 6   3 x 3 = 9
+</code></pre></div></div>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>There are many ways of encoding or <em>encrypting</em> messages by changing the letters into numbers or other letters.</p>
+
+<p>One common encryption algorithm is ROT-13. It derives its name from the fact that it rotates each letter in a message 13 places forward in the alphabet, rotating around to the beginning if necessary. So, for instance, the letter “A”, which is 1st in the alphabet, will become the letter “N”, which is 14th in the alphabet. “C” (3rd) becomes “P” (16th). “R” is the 18th letter in the alphabet. 18 + 13 = 31, which is more letters than we have–so once we go off the end, we start at the beginning with “A”, which means that “R” will become “E” (5th).</p>
+
+<p>There are a couple of advantages of this algorithm:</p>
+
+<ul>
+  <li>Encrypting messages is easy! Just add 13 to each letter. (Though be careful about going off the edge… seem like a good use of modular arithmetic?)</li>
+  <li>Decrypting messages is just as easy! In fact, because there are 26 letters in the alphabet, we decrypt messages using the same algorithm as decrypting them!</li>
+</ul>
+
+<p>Take a minute to practice by decrypting this secret message:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PF VF NJRFBZR
+</code></pre></div></div>
+
+<p>Once you feel confident in how the algorithm works, <strong>write up a Python program that will decrypt a ROT-13 string given by a user</strong>. In pseudocode, your algorithm should look something like this:</p>
+
+<ul>
+  <li>Get a string from the user (using input())</li>
+  <li>For each letter in the string:
+    <ul>
+      <li>Print out the letter 13 places back in the alphabet–being careful to wrap around to the end if necessary.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Some notes:</p>
+
+<ul>
+  <li>You can assume the message is entirely in lowercase.</li>
+  <li>Digits, spaces, and punctuation should be printed out as they are, without being rotated at all.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">ord()</code> function converts characters into their ASCII value (e.g., <code class="language-plaintext highlighter-rouge">ord("a")</code> will return 97, <code class="language-plaintext highlighter-rouge">ord("z")</code> will return 122). I’ve included a conversion chart on Moodle to make it easy to check.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">chr()</code> function goes in the opposite direction, converting an ASCII value to a string (e.g., <code class="language-plaintext highlighter-rouge">chr(97)</code> returns “a”, <code class="language-plaintext highlighter-rouge">chr(122)</code> returns “z”).</li>
+  <li>You may also find <a href="https://docs.python.org/3/library/stdtypes.html#string-methods">this list of Python string methods</a> helpful for reference and <a href="https://moodle.carleton.edu/mod/lti/view.php?id=907737">section 9.9 of your textbook</a></li>
+</ul>
+
+<h2 id="exercise-6">Exercise 6</h2>
+<p>Write another Python program that will <em>encrypt</em> a message for a user, so it will move every letter forward in the alphabet by 13.</p>
+
+<h2 id="exercise-7">Exercise 7</h2>
+<p>By this point, you have likely surmised that ROT-13 isn’t a very secure method of encryption. 
+One way we could improve it a bit would be to generalize it away from the number 13, allowing users to use any agreed upon number from 1-26. (This generalization is sometimes called the <em>Caesar cipher</em>.)</p>
+
+<p>Extend your program from Exercise 5 to take both a message and a rotation (an integer between -26 and 26) and then apply the rotation to the message. Be careful to check for the need to rotate around to the other side in both directions.</p>
+
+<h2 id="extra">Extra</h2>
+<p><em>Note: this part is much harder, but hopefully a fun extension!</em></p>
+
+<p>Your solution to Exercise 6 is a bit better, but still not quite secure. For one thing, we’re assuming that we have a secure channel across which two people can tell each other what rotation to use. If they can communicate that… why not just communicate their message?</p>
+
+<p>But maybe they shared the rotation in person and no one had the chance to overhear it. How, then, might an eavesdropper still decipher their message?</p>
+
+<p>Write a program that takes as input a message that has been encoded using a Caesar cipher (with an unknown rotation) and <strong>helps you determine what the original message was</strong>. This part is intentionally more open-ended than the previous two. I would suggest first writing a program that might also require some intuition on the part of the user (“Here is a list of things the original message <em>might</em> be…”) and then potentially modify that program to make some informed suggestions about which rotations are most likely to have been the original one.</p>
+
+<p>Some things that you might consider:</p>
+
+<ul>
+  <li>Here are <a href="https://en.wikipedia.org/wiki/Letter_frequency">the frequency of letters in the English language</a>, how could you count the most frequent letter in the input and use that information to help you?</li>
+  <li>Also potentially useful could be <a href="https://en.wikipedia.org/wiki/Most_common_words_in_English">the most common words in the English language</a></li>
+</ul>
+
+<p>There are many ways to approach this problem, and many of those are likely to take much longer than the class period. Brainstorming some pseudocode approaches is a good starting point!</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This lab is based on labs from Profs. Eric Alexander and James Ryan.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

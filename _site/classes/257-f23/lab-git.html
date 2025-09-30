@@ -72,14 +72,14 @@
 
 <p><strong>Accept the assignment by clicking on the link in Moodle “Git Individual Link”</strong>, which will set up a new git repository for you that I also have access to. We’ll be using this repository for your individual deliverables during the term. You should now see this (with your username instead):</p>
 
-<p><img src="/classes/257-f23/git-lab-images/Image1.png" alt="Empty git classroom repository" /></p>
+<p><img src="git-lab-images/Image1.png" alt="Empty git classroom repository" /></p>
 
 <p>There is some extra stuff that has to do with a feature for giving feedback that we are going to try out, but don’t worry about it right now.</p>
 
 <h2 id="step-2-readme">Step 2: README</h2>
 <p>You should always have a README file for a repository and GitHub let’s you do some editing of files like this right in the browser. Click the “Add a README” button:</p>
 
-<p><img src="/classes/257-f23/git-lab-images/Step2.png" alt="Green button says Add a README" /></p>
+<p><img src="git-lab-images/Step2.png" alt="Green button says Add a README" /></p>
 
 <p>If the syntax doesn’t look familiar to you, this is <em>markdown</em>, which is a quick way of adding rich text-like features to plain text. The “#” indicates a top-level heading; “normal” text is just typed. You can just type normal text and be just fine, but if you’re interested in learning more, check out <a href="https://www.markdownguide.org/basic-syntax/">this resource</a>.</p>
 
@@ -87,11 +87,11 @@
 
 <p><strong>Scroll to the bottom to commit the file to the repository.</strong> (Since this is our remote repository, we don’t need to push the file this time.) Make sure you <strong>add a commit message</strong> to the log like I’ve done. This allows you to go back and read descriptions of what you’ve committed, rather than trying to deduce this later from the set of files you committed:</p>
 
-<p><img src="/classes/257-f23/git-lab-images/Step2-2.png" alt="Dialog box for adding a commit message" /></p>
+<p><img src="git-lab-images/Step2-2.png" alt="Dialog box for adding a commit message" /></p>
 
 <p>So now your repo should look something like:</p>
 
-<p><img src="/classes/257-f23/git-lab-images/Step2-3.png" alt="Repository with a README.md file" /></p>
+<p><img src="git-lab-images/Step2-3.png" alt="Repository with a README.md file" /></p>
 
 <h2 id="step-3-make-a-local-version-of-your-repository">Step 3: Make a local version of your repository</h2>
 <p>For this next set of steps, you will need access to a terminal.</p>
@@ -102,7 +102,7 @@
 
 <p>Now we’re ready to rock. Go to the GitHub page for the repository that you created. Click on the green “Code” button. You should see something that looks like this:</p>
 
-<p><img src="/classes/257-f23/git-lab-images/Step3.png" alt="Code button selected and showing dropdown" /></p>
+<p><img src="git-lab-images/Step3.png" alt="Code button selected and showing dropdown" /></p>
 
 <p><strong>Make sure you see https:// as the first part of the URL</strong>. If you don’t, click on “Use HTTPS” in the right hand corner of that box.</p>
 
@@ -144,7 +144,7 @@ git commit <span class="nt">-m</span> <span class="s2">"Some favorite foods"</sp
 
 <p>You should see something in that middle box that says “4 commits”, or something similar:</p>
 
-<p><img src="/classes/257-f23/git-lab-images/Step4.png" alt="Git repository screen with 4 commits circled" /></p>
+<p><img src="git-lab-images/Step4.png" alt="Git repository screen with 4 commits circled" /></p>
 
 <p>If you click on what I’ve circled, you can see a history of what you’ve committed, including the log messages you typed.</p>
 
@@ -198,7 +198,7 @@ git push
 
 <p>Now, go back to GitHub and click on one of the files in your repository. You’re going to edit this on GitHub directly, by clicking on the pencil icon:</p>
 
-<p><img src="/classes/257-f23/git-lab-images/Step5.png" alt="Github file view with pencil icon circled" /></p>
+<p><img src="git-lab-images/Step5.png" alt="Github file view with pencil icon circled" /></p>
 
 <p>Edit, add a commit message, and then commit like we did with the <code class="language-plaintext highlighter-rouge">README.md</code> file earlier.</p>
 
@@ -222,7 +222,7 @@ git push
 
 <p>And git will try to smoosh the changed files together, but it won’t be able to do the merging automatically because it doesn’t know which version of the changes you actually want to keep. This is a time when using VSCode is nice because it helps you with “merge conflicts” if you know what it’s doing. Open the file that you changed in VSCode and you should see something like this:</p>
 
-<p><img src="/classes/257-f23/git-lab-images/Step6.png" alt="Merge conflict in VSCode" /></p>
+<p><img src="git-lab-images/Step6.png" alt="Merge conflict in VSCode" /></p>
 
 <p>Whether you are using VSCode or not, those funky “««««&lt; HEAD” “»»»»»»»»” with a long alphanumeric string mean that git isn’t sure which of these lines you want in this file. If you aren’t using VSCode, you might have to just manually delete one or the other (or just get rid of two weird lines if you want to keep both), but VSCode gives you some nice buttons to speed up this process. You can click “Accept Current Change”, “Accept Incoming Change”, or “Accept Both Changes” and VSCode will fix the file for you.</p>
 
@@ -332,11 +332,11 @@ git push <span class="nt">-u</span> origin BRANCH
 
 <p>Now, if you go to GitHub, you should be able to see your branch (and your teammates’ branches too, if they’ve already pushed their branches). Go to the circled drop-down menu:</p>
 
-<p><img src="/classes/257-f23/git-lab-images/TeamStep3-1.png" alt="Git repository with main circled" /></p>
+<p><img src="git-lab-images/TeamStep3-1.png" alt="Git repository with main circled" /></p>
 
 <p>When you click on it, you should see this drop-down:</p>
 
-<p><img src="/classes/257-f23/git-lab-images/TeamStep3-2.png" alt="Main with drop down" /></p>
+<p><img src="git-lab-images/TeamStep3-2.png" alt="Main with drop down" /></p>
 
 <p>Select your branch (or one of your teammate’s branches), and you’ll see the snapshot of that branch displayed.</p>
 

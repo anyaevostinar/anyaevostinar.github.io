@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW7 ESCAPE FROM THE ZOO - A REVERSE ENGINEERING ADVENTURE | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW7 ESCAPE FROM THE ZOO - A REVERSE ENGINEERING ADVENTURE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-s24/hw7" />
+<meta property="og:url" content="http://localhost:4000/classes/208-s24/hw7" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW7 ESCAPE FROM THE ZOO - A REVERSE ENGINEERING ADVENTURE" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW7 ESCAPE FROM THE ZOO - A REVERSE ENGINEERING ADVENTURE","url":"http://localhost:4000/classes/208-s24/hw7"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW7 ESCAPE FROM THE ZOO - A REVERSE ENGINEERING ADVENTURE</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This assignment is an adaptation by Jeff Ondich and Tanya Amert of Aaron Bauer’s adaptation of <a href="https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/labs/bomblab.pdf">this lab</a> developed for the Carnegie Mellon University’s 15-213 (Introduction to Computer Systems) course, which is the course for which another Systems textbook was written.</p>
+
+<h2 id="goals">GOALS</h2>
+<ul>
+  <li>Experience the beginnings of reverse engineering: using debugging tools (especially <a href="https://www.sourceware.org/gdb/">gdb</a>) to study compiled software at the assembly language level.</li>
+  <li>Deepen your understanding of the x86-64 assembly language</li>
+</ul>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a <strong>paired</strong> assignment, so you should continue to work with your assigned partner from HW6, if you have one. If you chose not to be assigned a partner, you must work individually (you can’t pick your own partner!). As usual, you can get help as detailed in the <a href="collaboration">collaboration</a> document. You should submit only one assignment to Gradescope for your pair and add your partner to the submission. If for some reason you and your partner can’t make things work, you can split, but you have to let me know asap.</p>
+
+<p>(HW8, the next homework, will be the start of the assignments where you choose your own partner by the way.)</p>
+
+<p>This assignment is due Wednesday May 8th at 10pm. As with all assignments, you will have the opportunity to <strong>individually</strong> <a href="revision-process">revise</a> this submission based on feedback.</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>Scoring on this one is a little complicated, and this rubric won’t make a lot of sense until you read the rest of the assignment.</p>
+
+<p>To <strong>demonstrate proficiency</strong>, your submission needs to:</p>
+<ul>
+  <li>Open doors 1-3 (inclusive)</li>
+  <li>Have accurate and concise explanations for doors 1-3</li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your submission needs to:</p>
+<ul>
+  <li>Demonstrate proficiency</li>
+  <li>Open at least two of the doors 4-6</li>
+  <li>Have accurate and concise explanations for at least two of the doors 4-6</li>
+</ul>
+
+<p>Good explanations will be succinct paragraphs describing, at a high level of abstraction, what the door puzzle is computing with your input.</p>
+
+<p>If you are unable to open a door, your explanation of that door is unlikely to be clear or persuasive.</p>
+
+<p>Although the doors get progressively harder to open, the expertise you gain as you move from door to door should offset this difficulty. However, the later doors will likely take quite a bit of time to work through, so don’t wait until the last minute to start.</p>
+
+<h2 id="background">BACKGROUND</h2>
+<p><em>You wake up and find yourself in a strange place. Walking around, you see signs indicating that you’re in a moose enclosure, in what appears to be a zoo. But there’s no moose!</em></p>
+
+<p><em>The only way out is through a door with a touchscreen on it. But how did the moose get out without fingers to activate the screen? Looking around more, you find some suspiciously-nibbled trees. Was there a beaver here, too?</em></p>
+
+<p><em>This is either a really bad day, or the weirdest dream you’ve had in a while. Either way, the only way out is through that door.</em></p>
+
+<p><em>You approach the screen…</em></p>
+
+<p>It would appear that the beaver and the moose are in cahoots and on the loose. They’ve trapped you in their former enclosure. To keep you trapped, they have rigged a series of six locked doors, each of which requires a password to open.</p>
+
+<p>To escape your zoo enclosure, you’ll need to make it through these six doors. Each door is part of one big program, and each door is opened by entering a line of text that we’ll call a passcode. If you type the correct passcode, then the door opens and you may move on to the next door. Otherwise, the doors all lock, their terminal screens display a taunting message, the alarms sound, and you’re back at square one. You can fully escape the zoo only by opening every door.</p>
+
+<h2 id="step-1-access-the-door-control-system">STEP 1: ACCESS THE DOOR-CONTROL SYSTEM</h2>
+<p>You can access the zoo’s security terminal (i.e., obtain your program to open the doors) by filling out the form at <a href="http://cs208.mathcs.carleton.edu:55057/">http://cs208.mathcs.carleton.edu:55057/</a>.</p>
+
+<p>You will need to be on campus or connected to the <a href="https://stolafcarleton.teamdynamix.com/TDClient/2092/Carleton/KB/ArticleDet?ID=137157">Carleton VPN</a> to access this page. Once you have filled out and submitted the form, the server will build your executable and return it to your browser in a file named <code class="language-plaintext highlighter-rouge">zooN.tar</code>, where <code class="language-plaintext highlighter-rouge">N</code> is the unique ID of your zoo enclosure. (Note: <strong>your zoo program will be different from every other student’s zoo program</strong>, though they will have similar structures.)</p>
+
+<p>Upload <code class="language-plaintext highlighter-rouge">zooN.tar</code> to your account on mantis using whatever file transfer technique you prefer. This could be drag-and-drop onto VS Code when you’re logged into mantis. If you are a dedicated command-line user, you could use <code class="language-plaintext highlighter-rouge">scp</code> (“secure copy”), like so:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp zooN.tar YOURUSERNAME@mantis.mathcs.carleton.edu:/Accounts/YOURUSERNAME/wherever
+</code></pre></div></div>
+
+<p>where <code class="language-plaintext highlighter-rouge">wherever</code> is the path to whatever directory you want to store the file in.</p>
+
+<p>Put <code class="language-plaintext highlighter-rouge">zooN.tar</code> wherever you want to work with it, and then un-tar it in the usual way:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">tar </span>xvf zooN.tar
+<span class="o">(</span>x: extract, v: verbose, f: filename<span class="o">)</span>
+</code></pre></div></div>
+
+<p>This will create a directory called <code class="language-plaintext highlighter-rouge">zooN</code> with the following files:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">README</code>: Identifies the moose enclosure and its occupant (that’s you).</li>
+  <li><code class="language-plaintext highlighter-rouge">zoo</code>: The executable program controlling the doors to your zoo enclosure. It will automatically submit your progress to a scorekeeping server. Note that you can run this program on any Linux computer on the Carleton network (including connections via the Carleton VPN), but it’s probably best to do your work on mantis.</li>
+  <li><code class="language-plaintext highlighter-rouge">zoo-quiet</code>: An offline version of the executable door program. You can work on this one without an internet connection. You just need to run zoo once while connected to have your progress recorded.</li>
+  <li><code class="language-plaintext highlighter-rouge">zoo.c</code>: The source file with the door’s terminal screen’s main function and welcome message.</li>
+  <li><code class="language-plaintext highlighter-rouge">descriptions.txt</code>: The file in which you should briefly explain the functionality of each door you open, and how you opened it. (See below for further discussion of this file.)</li>
+  <li><code class="language-plaintext highlighter-rouge">passcodes.txt</code>: The file in which you record your door-opening inputs, one line per door puzzle.</li>
+</ul>
+
+<p>If for some reason you request multiple zoo programs from the web form, this is not a problem. Choose one to work on and delete the rest.</p>
+
+<p><strong>IMPORTANT NOTE</strong>: For many of you, the <code class="language-plaintext highlighter-rouge">zoo</code> and <code class="language-plaintext highlighter-rouge">zoo-quiet</code> files will not be marked as executable in their Unix permissions. This will prevent <code class="language-plaintext highlighter-rouge">gdb</code> from being able to run or debug them. To fix this problem, <code class="language-plaintext highlighter-rouge">cd</code> into your zoo directory and execute this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x zoo zoo-quiet
+</code></pre></div></div>
+
+<h2 id="step-2-the-great-escape">STEP 2: THE GREAT ESCAPE!</h2>
+<p>Your job for this assignment is to escape the zoo. What this means in practice is that you will accumulate a sequence of input strings, one per door, that open each door.</p>
+
+<p>For each string you discover, put it in your <code class="language-plaintext highlighter-rouge">passcodes.txt</code> file. If you open all six doors, <code class="language-plaintext highlighter-rouge">passcodes.txt</code> should have six non-blank lines (note that the zoo program ignores blank lines, so you may space out your passcode strings if you wish.)</p>
+
+<p>You can use many tools to help you unlock all the doors. See the <a href="#suggestions-and-hints">Suggestions</a> section below for details.</p>
+
+<h2 id="step-3-write-your-descriptions">STEP 3: WRITE YOUR DESCRIPTIONS</h2>
+<p>See the <a href="#assessment">Assessment</a> section above for a description of descriptions. As noted there, you’re looking for a short description of “what is this code doing”.</p>
+
+<p>Put your descriptions in <code class="language-plaintext highlighter-rouge">descriptions.txt</code> <strong>along with your zoo number</strong>.</p>
+
+<h2 id="step-4-submit-your-work">STEP 4: SUBMIT YOUR WORK</h2>
+<ul>
+  <li>While connected to the Carleton network, run your zoo program and unlock as many doors as you can. This will cause your successful escape progress to get logged on the grading server. You can check to make sure your opened doors got logged properly by going to <a href="http://cs208.mathcs.carleton.edu:55057/progress">http://cs208.mathcs.carleton.edu:55057/progress</a>.</li>
+  <li>NOTE: your <code class="language-plaintext highlighter-rouge">zoo-quiet</code> program will not report your progress, so you eventually need to submit your solutions via <code class="language-plaintext highlighter-rouge">zoo</code>, at least once.</li>
+  <li>Submit <code class="language-plaintext highlighter-rouge">descriptions.txt</code> and <code class="language-plaintext highlighter-rouge">passcodes.txt</code> to Gradescope (one submission per partnership please! Though you can resubmit as much as you want). <strong>Make sure to include your zoo number in your descriptions document.</strong></li>
+</ul>
+
+<h2 id="suggestions-and-hints">SUGGESTIONS AND HINTS</h2>
+<ul>
+  <li>
+    <p>If you run your zoo program with a command line argument, like:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ./zoo passcodes.txt
+</code></pre></div>    </div>
+
+    <p>the program will read the input lines from <code class="language-plaintext highlighter-rouge">passcodes.txt</code> until it reaches EOF (end of file), and then switch over to reading from the command line. The beaver seems to have added this as a debugging feature when prepping the doors, but forgot to remove it. Either way, you can use it to avoid retyping the solutions to doors you have already opened.</p>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">zoo</code> program ignores blank input lines, both from the keyboard and from the input file. This means that you can space your <code class="language-plaintext highlighter-rouge">passcodes.txt</code> lines out if you want to. But note that the order of the <code class="language-plaintext highlighter-rouge">passcodes.txt</code> lines needs to correspond to the order of the door puzzles.</li>
+  <li>You have to open the doors in order.</li>
+  <li>To avoid accidentally re-locking all doors, you will need to learn how to single-step through the assembly code and how to set breakpoints. You will also need to learn how to inspect both the registers and the memory states. One of the nice side-effects of doing this assignment is that you will get very good at using a debugger. This is a crucial skill that will pay big dividends dealing with buggy software in the future.</li>
+  <li>If you don’t want to have the server record all your incomplete attempts to make sense of the program, you can debug the <code class="language-plaintext highlighter-rouge">zoo-quiet</code> program instead of <code class="language-plaintext highlighter-rouge">zoo</code>. You just need to make sure that eventually, you run <code class="language-plaintext highlighter-rouge">zoo</code> once while connected to the Carleton network (e.g., on mantis) so your progress gets logged.</li>
+  <li>You may assume that functions do what their names imply. For example, <code class="language-plaintext highlighter-rouge">phase1()</code> is most likely the first phase, <code class="language-plaintext highlighter-rouge">printf()</code> is just <code class="language-plaintext highlighter-rouge">printf()</code>, and a function named <code class="language-plaintext highlighter-rouge">strings_not_equal()</code> probably takes two strings and returns whether they are not equal. If there is a function that looks like it might trigger the alarm, it would probably help to set a breakpoint there!</li>
+  <li>Most cryptic function calls you’ll see (e.g. <code class="language-plaintext highlighter-rouge">callq ... &lt;_exit@plt&gt;</code>) are calls to C library functions. (You can safely ignore the @plt as that refers to <em>dynamic linking</em> (whatever that is).)</li>
+  <li>Most phases use the C library function <code class="language-plaintext highlighter-rouge">sscanf</code> to parse the input string, so you will want to understand <a href="https://cplusplus.com/reference/cstdio/sscanf/">how this function works</a>.</li>
+  <li>Avoid going through the assembly for C library functions—reading the documentation and writing your own small experimental C programs will be a much easier path to understanding them!</li>
+</ul>
+
+<h2 id="tools-you-can-use">TOOLS YOU CAN USE</h2>
+<p>There are many tools designed to help you figure out how programs work and what is wrong when they don’t work. Here are some tools you may find useful while analyzing your door puzzles.</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">gdb</code>: the GNU debugger</p>
+
+    <p>This is a command-line debugger tool available on virtually every platform. You can trace through a program line by line, examine memory and registers, look at both the source code and assembly code (which will be important, since I am not giving you the source code for most of your <code class="language-plaintext highlighter-rouge">zoo</code> program), set breakpoints, set memory watch points, and write scripts.</p>
+
+    <ul>
+      <li>The <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/resources.html#gdb">GDB section</a> on the Resources page has lots of good stuff, especially <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/gdb-help.html">gdb help</a></li>
+      <li>Here’s a <a href="http://beej.us/guide/bggdb/">good tutorial on gdb</a>.</li>
+      <li>Here’s a <a href="http://csapp.cs.cmu.edu/3e/docs/gdbnotes-x86-64.txt">handy quick reference sheet</a>.</li>
+      <li>To keep the zoo program from triggering the alarm every time you provide a wrong input, you’ll want to learn how to set breakpoints.</li>
+      <li>For documentation, type <code class="language-plaintext highlighter-rouge">help</code> at the <code class="language-plaintext highlighter-rouge">(gdb)</code> command prompt.</li>
+    </ul>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">objdump -t</code></p>
+
+    <p>This will print out the zoo program’s symbol table. The symbol table includes the names of all functions and global variables in the program, the names of all the functions called, and their addresses. You may learn something by looking at the function names!</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">objdump -d</code></p>
+
+    <p>Use this to disassemble all of the code in the <code class="language-plaintext highlighter-rouge">zoo</code> program. You can also just look at individual functions. Reading the assembly code can tell you how the <code class="language-plaintext highlighter-rouge">zoo</code> program works. Although <code class="language-plaintext highlighter-rouge">objdump -d</code> gives you a lot of information, it doesn’t tell you the whole story. Calls to system-level functions are displayed in a cryptic form. For example, a call to <code class="language-plaintext highlighter-rouge">sscanf</code> might appear as:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  8048c36:  e8 99 fc ff ca  call   80488d4 &lt;_init+0x1a0&gt;
+</code></pre></div>    </div>
+    <p>To determine that the call was to <code class="language-plaintext highlighter-rouge">sscanf</code>, you likely need to disassemble within <code class="language-plaintext highlighter-rouge">gdb</code>.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">strings</code></p>
+
+    <p>This utility will display the printable strings in an executable program, including your zoo program.</p>
+  </li>
+</ul>
+
+<p>HAVE FUN AND GOOD LUCK!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

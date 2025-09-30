@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW6 | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW6" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w24/hw6" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w24/hw6" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW6" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW6","url":"http://localhost:4000/classes/111-w24/hw6"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW6</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>This is a paired assignment, so you should complete it with your assigned partner, if you have one, via <strong>paired programming</strong>. 
+The whole time that you are working, you should both be present and actively working on the problem at hand. 
+(Two brains, one keyboard.) 
+Switch off the typing duties so that you each type for roughly half of the time.</p>
+
+<p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.
+There is not an autograder for this assignment due to the use of graphics, so you should check carefully that you’ve followed the instructions and make sure that your programs work as they should.</p>
+
+<p>This assignment is due on Friday February 16th at 10pm. As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>Use and adapt classes for data visualization and image manipulation.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Again, I recommend you complete this assignment in Olin 310. (This assignment will be especially difficult to complete on your own machine! If you really want to complete it on your own machine, you’ll have to install additional packages Tkinter and Pillow, which is detailed at the bottom of the <a href="https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/?CategoryID=24695">installation guides</a> for this class.)</p>
+
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW6</code></li>
+  <li>Download the starter code linked on Moodle and copy those files into your folder</li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW6</code> folder in VSCode</li>
+</ul>
+
+<h2 id="bluescreen">Bluescreen</h2>
+<p>Everybody’s new favorite piece of software, Zoom, uses “green screening” to allow personalized backgrounds. 
+(The same thing is done for TV weather forecasting, and in a lot of films.) 
+In the simpler version, the participant is filmed in front of a green screen and then the green is removed from the scene and replaced with another background (the Monterey Bay Aquarium, a galaxy, whatever). 
+Sometimes “blue screening” is used instead; there are some interesting tradeoffs related to skin tone and variations in film/camera quality. 
+The non-green-screen version of the Zoom feature uses more complex image processing techniques: most likely looking for faces, and then doing image segmentation.</p>
+
+<p>This problem will ask you to do something similar, though more akin to a basic form of the technology used to put the yellow line (first-down marker) on football broadcasts. 
+The basic idea there is to use very precise geometric information, plus the palette of colors of the field (and not the players) to cause the players’ colors to automatically be displayed “on top of” (instead of, really) the virtual line’s colors.</p>
+
+<p>First, some background. You can think of a digital image as a large two-dimensional array of pixels, each of which has a red (R) value, a green (G) value, and a blue (B) value. 
+An R, G, or B value is just an integer between 0 and 255. 
+To modify the image, you need to “loop through” all of these pixels, one at a time, and do something to some or all of the pixels.</p>
+
+<p>For example, an algorithm to remove all of the green color from each pixel:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> for every row in the image:
+    for every column in the image:
+        set to zero the green value of the pixel in this row and this column
+</code></pre></div></div>
+
+<p>To facilitate reading in, storing, and manipulating image files using some standard image formats (like <code class="language-plaintext highlighter-rouge">.gif</code> and <code class="language-plaintext highlighter-rouge">.png</code>), we will use the <code class="language-plaintext highlighter-rouge">images.py</code> module, provided in the starter code.</p>
+
+<h3 id="your-task-part-1">Your Task Part 1</h3>
+<p>(Note: This one will be especially difficult to complete on your own machine. You need to install PIL/pillow, which can be tricky. Follow the instructions at <a href="https://www.carleton.edu/computer-science/resources/source/">https://www.carleton.edu/computer-science/resources/source/</a>, or just use the labs in Olin!)</p>
+
+<p>Among the files that you have are a handful of sample images, including one of Dr. Anna Rafferty and one of Dr. Sneha Narayan, two of the other CS professors in the department. 
+You also have a skeletal version of a program that loads the picture of Anna and then draws the image. 
+You’ll need to do similar work with new images, so look through <code class="language-plaintext highlighter-rouge">images.py</code> enough to figure out how the code in <code class="language-plaintext highlighter-rouge">bluescreen.py</code> is working. 
+To run this code, open a Terminal, and type <code class="language-plaintext highlighter-rouge">python3 bluescreen.py</code>.</p>
+
+<p>Your task is to add the following functions to <code class="language-plaintext highlighter-rouge">bluescreen.py</code>:</p>
+
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">onlyRed(image)</code>. Creates and returns a new image containing only the red aspects of the original image. You can do this by setting all the values in the green and blue values for each pixel to 0. Note that you shouldn’t change the original image! You may find the <code class="language-plaintext highlighter-rouge">copy()</code> method helpful.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">deuteranopia(image)</code>. Creates and returns a new image that crudely simulates what a red–green colorblind (“deuteranopic”) viewer would see when looking at the image. To do so, set both the red and green pixel values to be the average of the original red and green pixel values. That way (128, 0, 0) and (0, 128, 0) will both come out as (64, 64, 0).</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">negate(image)</code>. Creates and returns a new image that is a conversion of the original image to “negative” form, like a photographic negative. Modify all colors in a way that turns black into white, white into black, dark colors into light, light into dark, etc. (Don’t worry if you don’t exactly match the color correspondence between a photo negative and its print.) Again, don’t change the original image.</p>
+  </li>
+  <li>
+    <p>Update the <code class="language-plaintext highlighter-rouge">main()</code> function so that it tests the above functions by using the picture of Anna and making red, deuteranopic, and negative versions of it appear on the screen.</p>
+  </li>
+</ol>
+
+<h3 id="your-task-part-2">Your Task Part 2</h3>
+
+<p>Now that you have the hang of manipulating images, let’s return to blue screening. 
+We can “combine” an image of, say, a CS faculty member hanging around in front of a plain background (like <code class="language-plaintext highlighter-rouge">sneha.jpg</code>)— in this case, the plain background is a beach instead of a blue/green screen — with an image of scenery (<code class="language-plaintext highlighter-rouge">background1.jpg</code>) by replacing the “beach” pixels in a person picture with pixels from a background picture. 
+To do this, we have to figure out which pixels correspond to the background (and can be changed) and which ones correspond to the person (and should be left alone). 
+Identifying which pixels are in the beach is tricky. 
+Here’s an approach that works reasonably well here:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>count any pixel that satisfies the following formula as part of the beach:
+    red value is at least 100
+    and green value is at least 100
+    and the total value of red + blue + green is at least 450
+</code></pre></div></div>
+
+<p>Add to your <code class="language-plaintext highlighter-rouge">bluescreen.py</code>:</p>
+<ol>
+  <li>
+    <p>A function <code class="language-plaintext highlighter-rouge">replaceBeach(originalImage, replacementImage)</code>. Creates a new image that replaces all “beach” pixels in the original image with the corresponding pixels taken from the replacement image. Note that the main image and the replacement image need to have the same dimensions for this technique to produce the desired effect.</p>
+  </li>
+  <li>
+    <p>Update your <code class="language-plaintext highlighter-rouge">main</code> function to test your new function by putting Sneha in front of the provided backgrounds. Feel free to use your own pictures, too (and try to figure out how to remove the background of those pictures, assuming you don’t hang out near neutral-colored empty beaches as much as the CS faculty).</p>
+  </li>
+</ol>
+
+<h2 id="gis">GIS</h2>
+<p>In <code class="language-plaintext highlighter-rouge">gis.py</code> — as in Geographic Information System — you will find the beginnings of a <code class="language-plaintext highlighter-rouge">ZipCode</code> class to represent a zip code region in the United States, or, more particularly, Minnesota.</p>
+
+<p>You should first run <code class="language-plaintext highlighter-rouge">python3 gis.py</code> to see what is already provided.
+Try clicking.
+You’ll see the zipcode displayed of just one particular zipcode because the functionality of the <code class="language-plaintext highlighter-rouge">Zipcode</code> class isn’t finished yet.</p>
+
+<h3 id="your-task-part-1-1">Your Task Part 1</h3>
+<p>Your first task is to finish the <code class="language-plaintext highlighter-rouge">ZipCode</code> class. Specifically, add the following methods:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">getPopulation(self)</code>: returns the population of the zipcode. (Skeleton code is there, but you’ll need to add code to return the actual population, don’t overthink this though!)</li>
+  <li><code class="language-plaintext highlighter-rouge">distanceToPoint(self, window, point)</code>: compute how far away a given <code class="language-plaintext highlighter-rouge">Point</code> is from this <code class="language-plaintext highlighter-rouge">Zipcode</code>. Right now, the method exists but doesn’t do anything meaningful; you should fill in the code here to return the distance. For our purposes, the distance between two points
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">a=⟨ax,ay⟩</code></li>
+      <li>and <code class="language-plaintext highlighter-rouge">b=⟨bx,by⟩</code></li>
+    </ul>
+
+    <p>is <code class="language-plaintext highlighter-rouge">sqrt( (ax−bx)**2 + (ay−by)**2 )</code>.
+  Note that the <code class="language-plaintext highlighter-rouge">point</code> parameter has methods <code class="language-plaintext highlighter-rouge">getX()</code> and <code class="language-plaintext highlighter-rouge">getY()</code> that you should use. The <code class="language-plaintext highlighter-rouge">Zipcode</code> object’s related methods required the <code class="language-plaintext highlighter-rouge">window</code> to be passed to them: <code class="language-plaintext highlighter-rouge">self.getX(window)</code> and <code class="language-plaintext highlighter-rouge">self.getY(window)</code>.</p>
+  </li>
+</ul>
+
+<p>When you finish <code class="language-plaintext highlighter-rouge">distanceToPoint</code>, left-clicking should cause the nearest zip code object to display its name (not just the numerically first one). Right-clicking should cause all displayed names to disappear [“right clicks” may be the middle button on some mice, including those in the lab—that’s okay, and they may not be detected at all on computers with a touchpad, though sometimes they are Ctrl-click], and the loop at the bottom should output the state’s total population according to this data set.</p>
+
+<p>Second, add the zip code’s <strong>total</strong> geographic area to the code. 
+First, add a parameter to the <code class="language-plaintext highlighter-rouge">ZipCode</code> constructor to store the area, and fill it appropriately in the <code class="language-plaintext highlighter-rouge">loadData</code> function. 
+Add a <code class="language-plaintext highlighter-rouge">getArea</code> method, too. 
+Then add code to the final loop to output the total area of the state (convert from square meters to square miles); print the total area, it should be around 82,458. 
+(It’s not totally consistent with statistics you may find on the web, probably because portions of the state are outside of any zip code, but I’m not 100% sure!)</p>
+
+<h3 id="your-task-part-2-1">Your Task Part 2</h3>
+<p>Finally, it’s time to improve the visualization a little bit.</p>
+
+<p>Make the size of the circle representing a zip code scale with its physical area, and its color represent its population, where redder means higher population and bluer means lower population. 
+You’ll do this by modifying the <code class="language-plaintext highlighter-rouge">drawCircle</code> method appropriately. A good way to do this is taking the square root of the area and dividing by 5000, and taking the population divided by 100. 
+You’ll want to make use of <code class="language-plaintext highlighter-rouge">min</code> or <code class="language-plaintext highlighter-rouge">max</code> functions to make sure that your dots are visible and your colors are in the range from 0 to 255 using the <a href="https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node14.html"><code class="language-plaintext highlighter-rouge">color_rgb</code> function</a></p>
+
+<p>You are welcome to go further with your improved visualization as well!</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>You will be assessed on the following rubric.
+Be sure to remove the starter comments that are no longer relevant, add additional comments, and update or add headers as necessary.</p>
+
+<p>To <strong>demonstrate proficiency</strong>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">bluescreen.py</code> functions <code class="language-plaintext highlighter-rouge">onlyRed</code>, <code class="language-plaintext highlighter-rouge">deuteranopia</code>, <code class="language-plaintext highlighter-rouge">negate</code>, and <code class="language-plaintext highlighter-rouge">replaceBeach</code> implemented correctly and called in <code class="language-plaintext highlighter-rouge">main</code> function</li>
+  <li><code class="language-plaintext highlighter-rouge">gis.py</code> displays an improved visualization of Minnesota zipcodes where the size of the circle scales with area and the color represents population size in some way.</li>
+  <li><code class="language-plaintext highlighter-rouge">gis.py</code> prints out the total square miles and population of Minnesota</li>
+  <li><code class="language-plaintext highlighter-rouge">gis.py</code> zipcode numbers show correctly based on mouse clicks</li>
+  <li>Both files have updated and accurate headers</li>
+  <li>Functions you added or updated have accurate docstrings with 1) description of why you would use the function, 2) the arguments, 3) the return value if any</li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to demonstrate proficiency as well as having:</p>
+<ul>
+  <li>Useful comments (including removal of any outline/todo comments)</li>
+  <li>Descriptive variable names</li>
+  <li>Good spacing</li>
+  <li>Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code</li>
+</ul>
+
+<h2 id="submission">Submission</h2>
+<p>You should submit through Gradescope as always.</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

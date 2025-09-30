@@ -47,41 +47,15 @@
 <p>To analyze the time complexity of depth first and breadth first traversal.</p>
 
 <h2 id="logistics">Logistics</h2>
-<p>This is a lab assignment that you’ll be handing in on Moodle. You should complete it on Wednesday Nov 3rd, but it isn’t due until Friday Nov 5th at 5:00pm Central.</p>
+<p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
 
-<p>There is no coding in this assignment, so you will submit a PDF of your solutions. You have several options for how to produce this PDF:</p>
-<ul>
-  <li>Write it by hand and scan it into a PDF. If you do this, you must write very neatly and clearly. Make sure to check that your scan is completely legible!</li>
-  <li>Write it in a word processing program, then export or print it to PDF.</li>
-  <li>Write it in LaTeX and typeset it as a PDF. LaTeX is complicated to use at first but allows you to format math very nicely. <a href="https://www.overleaf.com/">Overleaf.com</a> is a nice website to use for writing LaTeX.</li>
-</ul>
-
-<p>I recommend just using a word processing program and exporting/printing to PDF!</p>
-
-<p>You should work on this with your in-class partner, but you both need to submit separately and therefore, if you are writing on paper, you both need to be writing your own copies.
-If you finish it outside of class without your partner, note which sections you completed together and which you completed separately in your Collaborations section.</p>
-
-<h2 id="exercise-0">Exercise 0</h2>
-<p>Create a Collaborations section of your document and describe any people you get help from on this lab. Also note any outside sources such as websites that you referenced.</p>
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
 
 <h2 id="exercise-1">Exercise 1</h2>
-<p>First you’ll analyze the time complexity of the two graph implementations that you’ve seen. You should reference the code from the <a href="graphs">Graph Implementation</a> lab.</p>
-
-<p>When we analyze the time and space complexity of graph algorithms, the convention is to use <code class="language-plaintext highlighter-rouge">|V|</code> for the number of vertices/nodes in the graph and <code class="language-plaintext highlighter-rouge">|E|</code> for the number of edges in the graph.
-Because the complexity of graphs often depends on both the number of vertices and the number of edges, you’ll often need to express the complexity in terms of <code class="language-plaintext highlighter-rouge">|V|</code> and <code class="language-plaintext highlighter-rouge">|E|</code>.</p>
-
-<p>a. What is the worst case time complexity of adding a vertex in an adjacency matrix graph implementation (without adding any edges)? Express your answer in big-O notation and write a sentence explaining why.</p>
-
-<p>b. What is the worst case time complexity of adding a vertex in an adjacency <strong>list</strong> graph implementation (without adding any edges)? Express your answer in big-O notation and write a sentence explaining why.</p>
-
-<p>c. What is the worst case time complexity of the <code class="language-plaintext highlighter-rouge">getDegree</code> method of the adjacency matrix graph implementation in big-O notation? Write a sentence explaining why.</p>
-
-<p>d. What is the worst case time complexity of the <code class="language-plaintext highlighter-rouge">getDegree</code> method of the adjacency list graph implementation in big-O notation? Write a sentence explaining why. Remember to account for the time complexity of the underlying linked list operations!</p>
-
-<h2 id="exercise-2">Exercise 2</h2>
 <p>Even though you haven’t seen or written code for graph traversals, you can still analyze the time complexity of pseudocode.</p>
 
-<p>Here is the pseudocode for breadth-first search from the reading:</p>
+<p>Here is pseudocode for breadth-first search:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Algorithm getBreadthFirstTraversal(originVertex)
 traversalOrder = a new queue for the resulting traversal order
@@ -106,7 +80,8 @@ while (!vertexQueue.isEmpty())
 return traversalOrder
 </code></pre></div></div>
 
-<p>Remember that for this class, we aren’t doing formal proofs of time complexity, but we do want to have some justification for the answers.</p>
+<p>When we analyze the time and space complexity of graph algorithms, the convention is to use <code class="language-plaintext highlighter-rouge">|V|</code> for the number of vertices/nodes in the graph and <code class="language-plaintext highlighter-rouge">|E|</code> for the number of edges in the graph.
+Because the complexity of graphs often depends on both the number of vertices and the number of edges, you’ll often need to express the complexity in terms of <code class="language-plaintext highlighter-rouge">|V|</code> and <code class="language-plaintext highlighter-rouge">|E|</code>.</p>
 
 <p>a. Analyze the number of simple operations that are required at each step of the above algorithm. You are welcome to copy the steps above and then put your analysis on each line.</p>
 
@@ -126,9 +101,9 @@ return traversalOrder
   </tbody>
 </table>
 
-<h2 id="exercise-3">Exercise 3</h2>
+<h2 id="exercise-2">Exercise 2</h2>
 <p>Now you’ll analyze the time complexity of depth first search.
-Here is the pseudocode from the book:</p>
+Here is pseudocode:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Algorithm getDepthFirstTraversal(originVertex)
 traversalOrder = a new queue for the resulting traversal order
@@ -166,6 +141,17 @@ return traversalOrder
     </tr>
   </tbody>
 </table>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Let’s analyze the time complexity of the two graph implementations that you’ve seen. You should reference the code from the <a href="graphs">Graph Implementation</a> lab.</p>
+
+<p>a. What is the worst case time complexity of adding a vertex in an adjacency matrix graph implementation (without adding any edges)? Express your answer in big-O notation and write a sentence explaining why.</p>
+
+<p>b. What is the worst case time complexity of adding a vertex in an adjacency <strong>list</strong> graph implementation (without adding any edges)? Express your answer in big-O notation and write a sentence explaining why.</p>
+
+<p>c. What is the worst case time complexity of the <code class="language-plaintext highlighter-rouge">getDegree</code> method of the adjacency matrix graph implementation in big-O notation? Write a sentence explaining why.</p>
+
+<p>d. What is the worst case time complexity of the <code class="language-plaintext highlighter-rouge">getDegree</code> method of the adjacency list graph implementation in big-O notation? Write a sentence explaining why. Remember to account for the time complexity of the underlying linked list operations!</p>
 
 <h2 id="extensions">Extensions</h2>
 <p>When you finish with the above three exercises, work on implementing breadth first traversal.

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Binary Search Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Binary Search Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w24/binary-search" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w24/binary-search" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Binary Search Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Binary Search Lab","url":"http://localhost:4000/classes/111-w24/binary-search"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Binary Search Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it.
+However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<h2 id="exercise-0">Exercise 0</h2>
+<p>For the list <code class="language-plaintext highlighter-rouge">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]</code>, work through the process of binary search when looking for <code class="language-plaintext highlighter-rouge">1</code>.
+You should identify what the midpoint is of the current section of the list as well as the first and last positions are.
+Here is a table with the first line filled out:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>First position</th>
+      <th>Midpoint</th>
+      <th>Last position</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>6</td>
+      <td>13</td>
+      <td>Section to search starts as entire list</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Algorithmically, the steps of binary search are:</p>
+<ul>
+  <li>set the first position as 0</li>
+  <li>set the last position as the length of the list - 1</li>
+  <li>while the first position is less than or equal to the last position (i.e. the first position “pointer” hasn’t gone past the last position “pointer”):
+    <ul>
+      <li>set the midpoint as halfway between the first and last position, rounded down if needed</li>
+      <li>check if the item at the midpoint is the item we’re looking for, if it is we’re done and can return true</li>
+      <li>if not, check if the item comes before (i.e. is ‘less than’) the item at the midpoint
+        <ul>
+          <li>if it is, change the last position pointer to point to the position just before the midpoint</li>
+          <li>otherwise the item we’re looking for is greater than the midpoint item, so set the first position pointer to just after the midpoint</li>
+          <li>go through the loop steps again</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Once the first position pointer has gone past the last position pointer and you haven’t returned True, that means the item isn’t in the list, so return False</li>
+</ul>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>This version of binary search has approximately 7 bugs:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="n">alist</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+    <span class="n">last</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">alist</span><span class="p">)</span>
+    <span class="n">found</span> <span class="o">=</span> <span class="bp">False</span>
+
+    <span class="k">while</span> <span class="n">first</span><span class="o">&lt;=</span><span class="n">last</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">found</span><span class="p">:</span>
+        <span class="n">midpoint</span> <span class="o">=</span> <span class="p">(</span><span class="n">first</span> <span class="o">+</span> <span class="n">last</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span> 
+        <span class="k">if</span> <span class="n">alist</span><span class="p">[</span><span class="n">midpoint</span><span class="p">]</span> <span class="o">==</span> <span class="n">item</span><span class="p">:</span>
+            <span class="n">found</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">item</span> <span class="o">&gt;</span> <span class="n">alist</span><span class="p">[</span><span class="n">midpoint</span><span class="p">]:</span>
+                <span class="n">last</span> <span class="o">=</span> <span class="n">midpoint</span> 
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">first</span> <span class="o">=</span> <span class="n">midpoint</span> 
+                <span class="k">return</span> <span class="n">found</span> 
+
+<span class="k">print</span><span class="p">(</span><span class="n">binarySearch</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="mi">1</span><span class="p">))</span>
+<span class="c1">#should print True
+</span></code></pre></div></div>
+
+<p>Use your debugging skills to figure out and fix all the errors without referring to the reading.
+I highly recommend pasting this into <a href="https://pythontutor.com/visualize.html#mode=edit">PythonTutor</a> to see what it is doing!</p>
+
+<p>There is space on the back of your worksheet to note each bug as you fix it.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Here is a recursive version of binary search that also has several bugs (approximately 4):</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">binarySearch</span><span class="p">(</span><span class="n">alist</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">alist</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> 
+        <span class="k">return</span> <span class="bp">False</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">midpoint</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">alist</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
+        <span class="k">if</span> <span class="n">item</span><span class="o">&gt;</span><span class="n">alist</span><span class="p">[</span><span class="n">midpoint</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="n">binarySearch</span><span class="p">(</span><span class="n">alist</span><span class="p">[:</span><span class="n">midpoint</span><span class="p">],</span><span class="n">midpoint</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">binarySearch</span><span class="p">(</span><span class="n">alist</span><span class="p">[</span><span class="n">midpoint</span><span class="o">+</span><span class="mi">1</span><span class="p">:],</span><span class="n">item</span><span class="p">)</span>
+
+<span class="n">testlist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">42</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">binarySearch</span><span class="p">(</span><span class="n">testlist</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="c1">#should print False
+</span><span class="k">print</span><span class="p">(</span><span class="n">binarySearch</span><span class="p">(</span><span class="n">testlist</span><span class="p">,</span> <span class="mi">13</span><span class="p">))</span> <span class="c1">#should print True
+</span></code></pre></div></div>
+
+<h2 id="extra">Extra</h2>
+<p>If you have extra time, adapt the binary search functions so that they return the index of the item found, not just True or False (if the item isn’t in the list, you could return False or -1).</p>
+
+<p>You could also try returning all the indices if the item is in the list multiple times.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

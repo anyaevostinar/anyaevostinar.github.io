@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW9 A SIMPLE COMMAND SHELL PART 1 | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW9 A SIMPLE COMMAND SHELL PART 1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-s24/hw9" />
+<meta property="og:url" content="http://localhost:4000/classes/208-s24/hw9" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW9 A SIMPLE COMMAND SHELL PART 1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW9 A SIMPLE COMMAND SHELL PART 1","url":"http://localhost:4000/classes/208-s24/hw9"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW9 A SIMPLE COMMAND SHELL PART 1</h1>
+  </header>
+
+  <div class="post-content">
+    <ul>
+  <li>Upload via Gradescope as: <code class="language-plaintext highlighter-rouge">shell208.c</code></li>
+</ul>
+
+<h2 id="goals">GOALS</h2>
+<ul>
+  <li>Practice manipulating Linux processes in C</li>
+  <li>Demystify command shells like bash, zsh, etc.</li>
+  <li>Understand how command-line arguments are arranged in memory</li>
+</ul>
+
+<h2 id="logistics">Logistics</h2>
+<p>This is a <strong>paired</strong> assignment, so you should work with your partner from HW8. If you indicated you would work alone, you can change your mind and join with someone, but you need to let me know asap. As usual, you can get help as detailed in the <a href="collaboration">collaboration</a> document. You should submit only one assignment to Gradescope for your pair and add your partner to the submission. If for some reason you and your partner can’t make things work, you can split, but you have to let me know asap.</p>
+
+<p>This assignment is due <strong>Monday May 20th</strong> at 10pm. As with all assignments, you will have the opportunity to <strong>individually</strong> <a href="revision-process">revise</a> this submission based on feedback.</p>
+
+<h2 id="assessment">Assessment</h2>
+
+<p>To <strong>demonstrate proficiency</strong>, your submission needs to:</p>
+<ul>
+  <li>Pass the tests on Gradescope (though see <a href="#addendums">Addendums</a>)</li>
+  <li>Support “help”, printing a short summary of your shell’s current features</li>
+  <li>Implement the simplest mode: print prompt; get one-word command from user; execute
+  command (or print an error message); repeat forever</li>
+  <li>Support single commands with command-line arguments (e.g., “wc -l file.txt” or “ls -l -a”)</li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your submission needs to:</p>
+<ul>
+  <li>Demonstrate proficiency</li>
+  <li>Support “command &gt; file” (redirecting command’s stdout to a file)</li>
+  <li>Be <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/style-guide.html">well-styled</a> and documented</li>
+</ul>
+
+<h2 id="background">BACKGROUND</h2>
+<p>When you interact with a Unix (or other similar) command prompt, you are interacting with a program known as a <em>command shell</em>. This might be <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a> in a WSL or Linux terminal, <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a> in the terminal in VS Code, <a href="https://en.wikipedia.org/wiki/Z_shell">zsh</a> in a macOS Terminal, <a href="https://en.wikipedia.org/wiki/PowerShell">PowerShell</a> in Windows, <a href="https://en.wikipedia.org/wiki/Cmd.exe">cmd</a> in a Windows “command prompt” window, etc.</p>
+
+<p>Though command shells are typically sophisticated programs with many features and they often implement their own full-fledged programming languages (e.g., “bash scripting”), their flow of control is, at heart, conceptually very simple:</p>
+
+<ol>
+  <li>print a prompt for the user</li>
+  <li>read the user’s command</li>
+  <li>execute the command</li>
+  <li>wait for the command to finish</li>
+  <li>go to step 1</li>
+</ol>
+
+<h2 id="your-assignment">YOUR ASSIGNMENT</h2>
+<p>You will write a simple command shell, named shell208, that performs the most common operations that shells perform. For Part 1 of this project, you will implement the styles of operation listed in the rubric above.</p>
+
+<p>For Part 1, your shell should be able to handle single-word commands, commands with command-line arguments, and redirection of standard output to a file. For example, each of the following should work as they do in bash on mantis:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shell208<span class="nv">$ </span><span class="nb">help
+</span>shell208<span class="nv">$ </span><span class="nb">ls
+</span>shell208<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span> mysubdirectory
+shell208<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span> <span class="o">&gt;</span> listing.txt
+</code></pre></div></div>
+
+<h2 id="submitting-your-work">SUBMITTING YOUR WORK</h2>
+<p>Submit your program via Gradescope as a single C source file named <code class="language-plaintext highlighter-rouge">shell208.c</code>. This program should compile without warnings on mantis using:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-g</span> <span class="nt">-Og</span> <span class="nt">-o</span> shell208 shell208.c
+</code></pre></div></div>
+
+<h2 id="help">HELP</h2>
+<p>There is a <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/samples/index.html#processes">collection of sample programs</a> that demonstrate all of the essential techniques you will need to complete this assignment. You’ll mostly be repurposing the sample programs and making sure the logic fits together. We’ll also, as usual, go through many of the techniques in class, which will be recorded and posted to Moodle.</p>
+
+<h2 id="have-fun">HAVE FUN!</h2>
+<p>This program is pretty cool once you get it working.</p>
+
+<h2 id="addendums">Addendums</h2>
+<p>It’s not straightforward to have an autograder that works without some kind of “exit” functionality in your shell program, so to make the autograder work correctly, your shell should <code class="language-plaintext highlighter-rouge">exit</code> when the user types “exit”. If you don’t have this implemented, however, we’ll just manually test your submission instead, so you’ll still ultimately be evaluated on the rubric specified above.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

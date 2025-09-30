@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Linked Queue Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Linked Queue Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-s24/queues-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/201-s24/queues-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Linked Queue Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Linked Queue Lab","url":"http://localhost:4000/classes/201-s24/queues-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Linked Queue Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it. However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<h2 id="goals">Goals</h2>
+<p>To better learn about how queues work by creating a linked queue.</p>
+
+<h2 id="setup">Setup</h2>
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK/username folder called <code class="language-plaintext highlighter-rouge">QueueLab</code></li>
+  <li>Open that folder through VSCode</li>
+  <li>Download the <a href="/classes/201-s24/LinkedStructure.java">example LinkedStructure</a> and <a href="/classes/201-s24/Node.java">Node</a> code and put them both in your folder. Rename the <code class="language-plaintext highlighter-rouge">LinkedStructure</code> file and class to be <code class="language-plaintext highlighter-rouge">LinkedQueue</code> instead.</li>
+</ul>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Let’s start with adding things to the queue with the <code class="language-plaintext highlighter-rouge">enqueue</code> method.</p>
+
+<p>a. Create an <code class="language-plaintext highlighter-rouge">enqueue</code> method that takes a <code class="language-plaintext highlighter-rouge">T newItem</code>, creates a Node for that item and adds that item to the tail of the queue.</p>
+
+<p>b. Make sure that you can enqueue multiple items and print out the tail data to see that it is being updated.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+
+<p>Finally, we want to also be able to remove items from a queue with <code class="language-plaintext highlighter-rouge">dequeue</code>.</p>
+
+<p>a. Create a <code class="language-plaintext highlighter-rouge">dequeue</code> method that returns a <code class="language-plaintext highlighter-rouge">T item</code> from the head of the queue.</p>
+
+<p>b. If the queue is empty, return null.</p>
+
+<p>c. Verify via printing that you are able to dequeue several items (print both the dequeued item and the head of the queue to verify the item has been removed).</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Make a <code class="language-plaintext highlighter-rouge">size</code> variable. How can you change your methods based on this variable? Is it worth having?</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Whenever you are making a data structure, you’ll probably want to be able to print out its contents while testing it.
+You can make your own data structures work directly with <code class="language-plaintext highlighter-rouge">System.out.println()</code> by implementing the <code class="language-plaintext highlighter-rouge">toString()</code> method.</p>
+
+<p>a. When you are working with linked data structures, you’ll frequently need to navigate through the chain. To do this, you should always create a local variable <code class="language-plaintext highlighter-rouge">currentNode</code> and set it equal to the first node. You should print your queue head/front to tail/end.</p>
+
+<p>b. Use a <code class="language-plaintext highlighter-rouge">while</code> loop to loop over each <code class="language-plaintext highlighter-rouge">Node</code> in your queue. Think about what the stopping condition for the while loop should be and what should happen at each step of the loop to move to the next <code class="language-plaintext highlighter-rouge">Node</code>.</p>
+
+<p>c. Within your while loop, grab the data of the <code class="language-plaintext highlighter-rouge">currentNode</code> and add it to a <code class="language-plaintext highlighter-rouge">String</code> that you can then return.</p>
+
+<p>d. Use <code class="language-plaintext highlighter-rouge">System.out.println</code> to print out the contents of your queue in <code class="language-plaintext highlighter-rouge">main</code>:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">void</span> <span class="kd">static</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">LinkedQueue</span> <span class="n">my_queue</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedQueue</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;();</span>
+    <span class="n">my_queue</span><span class="o">.</span><span class="na">enqueue</span><span class="o">(</span><span class="s">"Dog"</span><span class="o">);</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">my_queue</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>e. Add multiple items to your test queue and print the contents to see what happens.</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you have extra time, try implementing more of the methods from the reading:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">peek()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">isEmpty()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">clear()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">size()</code></li>
+</ul>
+
+<p>Compare your implementation to the one from <a href="https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS2/html/QueueLinked.html">OpenDSA</a></p>
+
+<p>Make a second implementation that has the head and tail reversed. What changes are necessary and how does this impact the elegance and efficiency of your code?</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

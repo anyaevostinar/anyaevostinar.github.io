@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Linked List Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Linked List Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-s24/linked-list-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/201-s24/linked-list-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Linked List Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Linked List Lab","url":"http://localhost:4000/classes/201-s24/linked-list-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Linked List Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To better learn about how linked lists work by implementing your own simple linked list.</p>
+
+<h2 id="setup">Setup</h2>
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK/username called <code class="language-plaintext highlighter-rouge">LinkedListLab</code></li>
+  <li>Create a file <code class="language-plaintext highlighter-rouge">LinkedList.java</code></li>
+</ul>
+
+<h2 id="exercise-1">Exercise 1</h2>
+
+<p>a. Create a generic <code class="language-plaintext highlighter-rouge">LinkedList</code> class (note that we are not implementing the <code class="language-plaintext highlighter-rouge">List</code> interface because we aren’t going to have time for all the methods it requires):</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LinkedList</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{}</span>
+</code></pre></div></div>
+
+<p>b. In the same folder, place <a href="/classes/201-s24/Node.java"><code class="language-plaintext highlighter-rouge">Node.java</code></a></p>
+
+<p>c. Create a private instance variable to store the <code class="language-plaintext highlighter-rouge">LinkedLists</code>’s head node (this will look very similar to <a href="/classes/201-s24/LinkedStructure.java">LinkedStructure</a>, but a different variable name):</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LinkedList</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">Node</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">head</span><span class="o">;</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>d. Make sure your code compiles, it won’t do anything yet, but this is a good time to catch any errors in your setup.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now we’ll finally make a method to add items.</p>
+
+<p>a. Create a method <code class="language-plaintext highlighter-rouge">public void add(T element)</code>. This method will just add to the head of the list.</p>
+
+<p>b. Within your <code class="language-plaintext highlighter-rouge">add</code> method, create a new <code class="language-plaintext highlighter-rouge">Node</code> to hold the <code class="language-plaintext highlighter-rouge">element</code>.</p>
+
+<p>c. What should the new <code class="language-plaintext highlighter-rouge">Node</code>’s <code class="language-plaintext highlighter-rouge">next</code> point to? Set it correctly (ask if you aren’t sure!).</p>
+
+<p>d. Update your list’s <code class="language-plaintext highlighter-rouge">head</code> variable.</p>
+
+<p>e. In <code class="language-plaintext highlighter-rouge">main</code> of your <code class="language-plaintext highlighter-rouge">LinkedList.java</code>, try making a new <code class="language-plaintext highlighter-rouge">LinkedList</code> of <code class="language-plaintext highlighter-rouge">String</code> and adding a few strings. Then print out the <code class="language-plaintext highlighter-rouge">data</code> of the head to make sure that it is correctly set.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>It would be nice to have a <code class="language-plaintext highlighter-rouge">toString()</code> method to easily print your list. Consult <a href="queues-lab#exercise-4">Exercise 4</a> to make a similar method for your <code class="language-plaintext highlighter-rouge">LinkedList</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"hi &gt; friend &gt; "
+</code></pre></div></div>
+
+<p>Don’t worry about the trailing <code class="language-plaintext highlighter-rouge">&gt;</code>, you can fix it later.</p>
+
+<p>Verify your <code class="language-plaintext highlighter-rouge">add</code> and <code class="language-plaintext highlighter-rouge">toString</code> methods work by adding a few items to your <code class="language-plaintext highlighter-rouge">LinkedList</code> in <code class="language-plaintext highlighter-rouge">main()</code> and running it.</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Finally, it would be useful to have another add method that inserted an item in the middle of the list.</p>
+
+<p>a. Create a method <code class="language-plaintext highlighter-rouge">public void add(int index, T element)</code>.</p>
+
+<p>b. You’ll want to be sure that a user doesn’t try to add something far past the end of your existing <code class="language-plaintext highlighter-rouge">LinkedList</code> since that wouldn’t make sense. To do that check ahead of time, add an instance variable <code class="language-plaintext highlighter-rouge">size</code> to your <code class="language-plaintext highlighter-rouge">LinkedList</code> class and update your other <code class="language-plaintext highlighter-rouge">add</code> method to increment it.</p>
+
+<p>c. Check if <code class="language-plaintext highlighter-rouge">index</code> is larger than <code class="language-plaintext highlighter-rouge">size</code> and if it is, print a helpful message to the user.</p>
+
+<p>d. We’ll often want helper methods that do a small job and make a larger method’s code simpler. Implement a method <code class="language-plaintext highlighter-rouge">getNodeAt(int index)</code> so that you can use it here. Then complete your <code class="language-plaintext highlighter-rouge">add(int index, T element)</code> method.</p>
+
+<p>e. As always, test out your code by trying it. Make sure to try adding at index 0 and at the end of your list, as well as the middle somewhere.</p>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>Linked lists are particularly good at efficiently combining. Try making a <code class="language-plaintext highlighter-rouge">combine</code> method that takes another linked list and adds it to the current one. What design decisions can make this process more efficient?</p>
+
+<h2 id="extensions">Extensions</h2>
+<p>If you want have more time, here are something things to try:</p>
+<ul>
+  <li>Write a remove method</li>
+  <li>Fix the trailing <code class="language-plaintext highlighter-rouge">&gt;</code> at the end of your printing of LinkedList</li>
+  <li>Check the JavaDocs for other required methods of the List interface and properly implement them so you can <code class="language-plaintext highlighter-rouge">implements List</code></li>
+  <li>Determine the asymptotic order of each of the methods</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Homework 1 - OOP Practice | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Homework 1 - OOP Practice" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-s24/hw1-oop-practice" />
+<meta property="og:url" content="http://localhost:4000/classes/201-s24/hw1-oop-practice" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Homework 1 - OOP Practice" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Homework 1 - OOP Practice","url":"http://localhost:4000/classes/201-s24/hw1-oop-practice"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Homework 1 - OOP Practice</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
+
+<p>This assignment is due on Wednesday April 3rd at 10pm. As with all assignments, you will have the opportunity to <a href="revision-process">revise</a> this assignment based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>Demonstrate your understanding of private variables, ability to create objects of your own making, and use other Java functionality.</p>
+
+<h2 id="assessment">Assessment</h2>
+
+<p>To <strong>demonstrate proficiency</strong>, your program needs to:</p>
+<ul>
+  <li>Pass all tests on Gradescope</li>
+  <li>Follow the specification of the <code class="language-plaintext highlighter-rouge">Book</code> class</li>
+  <li>Have a README with an overview, example, and response to the prompt</li>
+  <li>Be somewhat <a href="style-reference">well-styled</a></li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to:</p>
+<ul>
+  <li>Demonstrate proficiency</li>
+  <li>Use the <code class="language-plaintext highlighter-rouge">Book</code> class effectively</li>
+  <li>Have JavaDocs documentation for all public methods</li>
+  <li>Use private variables correctly</li>
+  <li>Use programming elements such as loops, conditionals, and lists effectively</li>
+  <li>Be extremely <a href="style-reference">well-styled</a> and clear by choosing descriptive variable names and including useful comments</li>
+  <li>Have a thorough and <a href="style-reference">well-styled README</a></li>
+  <li>Have clear and thorough documentation</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+<p>I recommend that you complete this assignment in Olin 310.</p>
+
+<ul>
+  <li><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. If you don’t do this, everything you write will disappear when you log out!!!!</li>
+  <li>Create a folder for <code class="language-plaintext highlighter-rouge">HW1</code> in STUWORK</li>
+  <li>Open VSCode, and click and drag your <code class="language-plaintext highlighter-rouge">HW1</code> folder into VSCode</li>
+  <li>Now click <code class="language-plaintext highlighter-rouge">Terminal</code>-&gt;<code class="language-plaintext highlighter-rouge">New Terminal</code> or drag up from the bottom to get a Terminal. This is where you will be able to compile and run your Java program.</li>
+  <li>Create a file <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the <a href="collaboration">Collaboration page</a> on what collaborations are allowed for homework assignments.</li>
+</ul>
+
+<p>If you really want to use your personal machine, there are instructions for installing VSCode and Java available: <a href="https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=153179">Mac</a> and <a href="https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=153191">Windows</a>. You can also <a href="https://stolafcarleton.teamdynamix.com/TDClient/2092/Carleton/KB/ArticleDet?ID=148546">remotely connect to COURSES</a>. If you run into trouble with these setups, you can ask me or Mike Tie for help, but I do really recommend just working in Olin 310.</p>
+
+<p>You may find <a href="resources">resources on this list</a> helpful for Java-specific things.</p>
+
+<h2 id="specification">Specification</h2>
+<p>For this project, you will make a simple <code class="language-plaintext highlighter-rouge">Book</code> class with the following functionality:</p>
+<ul>
+  <li>Constructor that takes a <code class="language-plaintext highlighter-rouge">String</code> for the title of the book and an <code class="language-plaintext highlighter-rouge">Integer</code> for the page count and sets them to private instance variables</li>
+  <li><code class="language-plaintext highlighter-rouge">getTitle</code> method that returns the title of the book</li>
+  <li><code class="language-plaintext highlighter-rouge">getPageCount</code> method that returns the page count (as an <code class="language-plaintext highlighter-rouge">Integer</code> NOT <code class="language-plaintext highlighter-rouge">int</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">main</code> method that:
+    <ul>
+      <li>Retrieves a command-line argument indicating how many books the user wants to enter into the program</li>
+      <li>Repeatedly prompts <code class="language-plaintext highlighter-rouge">Title?</code> and then <code class="language-plaintext highlighter-rouge">Page count?</code> so the user can enter in the information for each book and makes a <code class="language-plaintext highlighter-rouge">Book</code> object for each</li>
+      <li>Outputs <code class="language-plaintext highlighter-rouge">Here are your X books!</code> where X is the number of books the user entered</li>
+      <li>Outputs a comma-separated list of the book titles using the information from the <code class="language-plaintext highlighter-rouge">Book</code> objects that you made</li>
+      <li>Outputs <code class="language-plaintext highlighter-rouge">Total pages: Y</code> where Y is the total number of pages using the information from the <code class="language-plaintext highlighter-rouge">Book</code> objects that you made</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Here is an example interaction with this program:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% java Book 3    
+Title?
+<span class="nb">test
+</span>Page count?
+10
+Title?
+test3
+Page count?
+100
+Title?
+<span class="nb">test </span>4
+Page count?
+10
+Here are your 3 books!
+<span class="nb">test</span>, test3, <span class="nb">test </span>4
+Total pages: 120
+</code></pre></div></div>
+
+<p>Additionally, your submission should:</p>
+<ul>
+  <li>Be well-styled, considering consistency and readability</li>
+  <li>Have JavaDocs-style method comments for all public methods</li>
+  <li>Have a detailed <code class="language-plaintext highlighter-rouge">README.md</code> file as specified below</li>
+</ul>
+
+<h3 id="readme-requirements">README Requirements</h3>
+<p>Writing good and detailed documentation for your code is an important skill, so important that <a href="https://www.writethedocs.org/">whole communities</a> exist in industry that are focused on good documentation. 
+One part of good documentation is the JavaDocs method comments that you’ll already be doing. 
+However, another part is a <code class="language-plaintext highlighter-rouge">README</code> that is generally the first thing that people look at when they look into your project.
+If you are planning on applying for internships or full-time jobs in the computer science industry, a <a href="https://github.com/">GitHub</a> account with projects with good READMEs is a really helpful part of your application. 
+READMEs are generally written in a language called <a href="https://www.markdownguide.org/">MarkDown</a>, which is fairly straightforward to get the hang of and you can keep yours very simple.</p>
+
+<p>In general (and so therefore for all homework in this class), a README should include:</p>
+
+<ul>
+  <li>An overview section that describes at a high level what your program does, for someone that just found it randomly</li>
+  <li>A small example of your code running and showing its main functionality</li>
+</ul>
+
+<p>For this class in particular, your README must also include answers to any README prompts, which will often ask you to include discussion of the pros and cons of a certain data structure or implementation choice.</p>
+
+<p>I have an <a href="/classes/201-w24/readme_example">example README</a> that you can look at for a project that is a bit more involved.</p>
+
+<h3 id="readme-prompts">README Prompts</h3>
+<p>Reflect on what you found easy and difficult about this assignment. List at least one thing that was easy, such as “Printing with <code class="language-plaintext highlighter-rouge">System.out.println</code> was easy for me” and one thing that was difficult, such as “Figuring out for loop syntax was difficult for me”.</p>
+
+<h2 id="code-notes-and-tips">Code Notes and Tips</h2>
+<ul>
+  <li>Command line arguments are what is captured in <code class="language-plaintext highlighter-rouge">args</code> in your <code class="language-plaintext highlighter-rouge">main(String[] args)</code> function, NOT just user input after the program is running! Consult the <code class="language-plaintext highlighter-rouge">Comparing Python and Java</code> files from the <a href="resources">Resources</a> page for a file that shows you how to access these</li>
+  <li>Remember that you have to construct variables before you use them. If you run into null pointer exceptions or exceptions about not using a variable before it has been initialized, one possible cause is that you have declared a variable (e.g., <code class="language-plaintext highlighter-rouge">List&lt;Integer&gt; list;</code>) but you haven’t assigned it a value (e.g. <code class="language-plaintext highlighter-rouge">list = new ArrayList&lt;&gt;()</code>).</li>
+  <li>Your code should not produce any warnings. Warnings are extra messages from the compiler like:
+    <code class="language-plaintext highlighter-rouge">
+    Note: RandomList.java uses unchecked or unsafe operations.
+    Note: Recompile with -Xlint:unchecked for details.
+   </code></li>
+</ul>
+
+<p>If you see a message like this, you should follow the instructions and add <code class="language-plaintext highlighter-rouge">-Xlint:unchecked</code> after your compiler command.</p>
+
+<ul>
+  <li>If you want to turn a command line argument into something other than a String, you need to use a method to do so. You will probably want either <code class="language-plaintext highlighter-rouge">parseInt(String in)</code> or <code class="language-plaintext highlighter-rouge">parseDouble(String in)</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  int myInt = Integer.parseInt("1");
+  double myDouble = Double.parseDouble("1.0");
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Throughout the course you’ll be required to include informative comments above each method in “JavaDocs” style. This style allows for a website to be generated with those comments nicely formatted and looking like the Java documentation that you’ll become quite familiar with.</p>
+
+    <p>JavaDocs style is the following:</p>
+
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cm">/**
+  * Generally descriptive few sentences about the method.
+  * @param nameOfParameter description of the parameter if useful, probably should mention the type
+  * @param anotherParameter if you have multiple parameters
+  * @return description of what if anything is returned, should definitely mention the type
+  */</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">exampleMethod</span><span class="o">(</span><span class="kt">int</span> <span class="n">nameOfParameter</span><span class="o">,</span> <span class="kt">int</span> <span class="n">anotherParameter</span><span class="o">){</span>
+      <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
+  <span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="submitting">Submitting</h2>
+<p>Remember to update your <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> file with any sources that you consulted.</p>
+
+<p>Then upload all of your files to the Gradescope link on Moodle, at which point the autograder will run and let you know if your code works correctly. You are able to submit your code as many times as you wish before the deadline to fix any issues. If you have questions about what the autograder is telling you is wrong, please ask!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

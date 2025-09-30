@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW5 | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW5" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w24/hw5" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w24/hw5" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW5" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW5","url":"http://localhost:4000/classes/111-w24/hw5"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW5</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>This is an <strong>individual</strong> assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the <a href="collaboration">collaboration</a> policy.</p>
+
+<p>This assignment is due on Friday February 9th at 10pm. 
+As with all assignments, you will have the opportunity to revise this assignment based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>Get practice with loops, functions, and command-line arguments.</p>
+
+<h2 id="setup">Setup</h2>
+<p>Again, I recommend that you complete this assignment in Olin 310, though it isn’t required to do so.</p>
+
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW5</code></li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW5</code> folder in VSCode</li>
+  <li>Download the <a href="https://moodle.carleton.edu/mod/resource/view.php?id=909929">starter code that is linked on Moodle</a> and place it in your folder</li>
+</ul>
+
+<p>This program uses command-line parameters as input to the program. 
+Remember, those are things typed at the prompt. 
+Clicking the run button won’t work for this program (which is why hopefully you haven’t been using it this whole time anyway). 
+If you’ve forgotten how to run in the Terminal, open a terminal window (in VSCode: Terminal -&gt; New Terminal, or ask the lab assistant if you’re having trouble). 
+Then type something like <code class="language-plaintext highlighter-rouge">python3 name_of_program.py argument1 argument1</code>.</p>
+
+<h2 id="caesar">Caesar</h2>
+
+<h3 id="overview">Overview</h3>
+
+<p>One crucially important application of computer science to day-to-day life — with billions of dollars at stake
+every day — is in the area of digital security. 
+When you log on to your bank’s website, pay your cell phone bill online, or log on to The Hub, you are typing secure information that you would like to (1) be readable to the
+trusted party on the other end of the line, and (2) not be readable to anyone else. 
+Cryptography is the broad area of computer science that attempts to design algorithms and build systems for these operations. 
+If you decide to take CS 202 (Mathematics of Computer Science), CS 231 (Computer and Network Security), or CS 341 (Cryptography), you’ll learn more about some of the cryptographic systems that are actually in use today; here, you’ll explore a simpler approach that reaches all the way back to Julius Caesar.</p>
+
+<p>Here is the idea of what is called the <em>Caesar cipher</em>. 
+To encrypt a message written in English, you will take each letter that appears in the message and shift it forward alphabetically by some predetermined number of letters. 
+For example, the “plaintext” <code class="language-plaintext highlighter-rouge">We are discovered; flee at once!</code> shifted forward by one letter becomes the “ciphertext” <code class="language-plaintext highlighter-rouge">Xf bsf ejtdpwfsfe; gmff bu podf!</code> because <code class="language-plaintext highlighter-rouge">X</code> is alphabetically one letter after <code class="language-plaintext highlighter-rouge">W</code>, <code class="language-plaintext highlighter-rouge">f</code> is alphabetically one letter after <code class="language-plaintext highlighter-rouge">e</code>, etc. 
+(Notice that if you were to shift, say, <code class="language-plaintext highlighter-rouge">w</code> by five, you’d end up with <code class="language-plaintext highlighter-rouge">b</code>: <code class="language-plaintext highlighter-rouge">b</code> is after <code class="language-plaintext highlighter-rouge">a</code> is after <code class="language-plaintext highlighter-rouge">z</code> is after <code class="language-plaintext highlighter-rouge">y</code> is after <code class="language-plaintext highlighter-rouge">x</code> is after <code class="language-plaintext highlighter-rouge">w</code>.) 
+Once your colleague receives the ciphertext <code class="language-plaintext highlighter-rouge">Xf bsf ejtdpwfsfe; gmff bu podf!</code>, they can decode it by shifting each of the letters backwards by one letter in the alphabet, and they will immediately know to head to the safe house that you’ve set up in Hoboken.</p>
+
+<h3 id="your-task">Your Task</h3>
+<p>First, read through the provided starter code for <code class="language-plaintext highlighter-rouge">caesar.py</code>. 
+Your task will be to complete this program.
+Note that command-line arguments that are strings need to be in single quotes, for example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 caesar.py 'We are discovered; flee at once!' 3
+</code></pre></div></div>
+<p>(Depending on your computer setup, you may experience trouble if you use double quotes at the terminal and put an exclamation point inside. So, if weird things are happening, be sure you’re using <code class="language-plaintext highlighter-rouge">'We are discovered; flee at once!'</code> instead of <code class="language-plaintext highlighter-rouge">"We are discovered; flee at once!"</code> .)</p>
+
+<p>Next, work on the function <code class="language-plaintext highlighter-rouge">caesar</code>. 
+Right now, it goes through each character of plaintext and, one by one, adds that character to the end of ciphertext. 
+The function then returns that computed ciphertext. 
+Modify the function <code class="language-plaintext highlighter-rouge">caesar</code> so that it instead returns a string that matches plaintext, except that every letter is shifted <code class="language-plaintext highlighter-rouge">shift</code> letters forward in the alphabet (wrapping around to the beginning of the alphabet as necessary). 
+You should leave all non-alphabetic characters unchanged, and you should maintain the capitalization of all letters. 
+Make the changes to the function <code class="language-plaintext highlighter-rouge">caesar</code> so that it constructs ciphertext, again one character at a time, to use this new specification.</p>
+
+<p>Here are some examples of how the function should work:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; caesar("This is the way the world ends, dontcha know?", 0)
+’This is the way the world ends, dontcha know?’
+&gt;&gt;&gt; caesar("This is the way the world ends, dontcha know?", 1)
+’Uijt jt uif xbz uif xpsme foet, epoudib lopx?’
+&gt;&gt;&gt; caesar("This is the way the world ends, dontcha know?", 25)
+’Sghr hr sgd vzx sgd vnqkc dmcr, cnmsbgz jmnv?’
+&gt;&gt;&gt; caesar("This is the way the world ends, dontcha know?", 26)
+’This is the way the world ends, dontcha know?’
+</code></pre></div></div>
+
+<p>Here are a few hints. 
+The easier situation to handle is the one in which there’s no “wrapping around” the alphabet: that is, when you don’t have to go from <code class="language-plaintext highlighter-rouge">z</code> to <code class="language-plaintext highlighter-rouge">a</code>. 
+Start by getting your code working when there are no shifts. You might consider the following general outline of code:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if we have a lower-case letter,
+    add the offset
+    while the resulting character isn’t in "a" ... "z",
+    subtract 26
+if we have an upper-case letter,
+    do the analogous thing
+otherwise,
+    do nothing
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">ord()</code> function converts characters into their ASCII value (e.g., <code class="language-plaintext highlighter-rouge">ord("a")</code> will return 97, <code class="language-plaintext highlighter-rouge">ord("z")</code> will return 122). I’ve included a <a href="https://moodle.carleton.edu/mod/resource/view.php?id=909930">conversion chart on Moodle</a> to make it easy to check.
+The <code class="language-plaintext highlighter-rouge">chr()</code> function goes in the opposite direction, converting an ASCII value to a string (e.g., <code class="language-plaintext highlighter-rouge">chr(97)</code> returns “a”, <code class="language-plaintext highlighter-rouge">chr(122)</code> returns “z”).</p>
+
+<p>Finally, you should add error-checking code to the main function. 
+What happens if the user enters a non-integer as the shift? Make your program robust, so that it doesn’t crash regardless of what the user tries to enter as the number of letters by which to shift and informs the user of the problem with the following message:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python3 caesar.py "hi" a
+Invalid argument, shift must be a number, given a.
+</code></pre></div></div>
+
+<h3 id="cleaning-up">Cleaning up</h3>
+<p>You should remember to go and clean up the file once you’ve finished. In particular you should:</p>
+<ul>
+  <li>Update the header to include your name</li>
+  <li>Remove/rewrite the comments that described what you needed to do in the file if you haven’t already</li>
+</ul>
+
+<h2 id="assessment">Assessment</h2>
+<p>To <strong>demonstrate proficiency</strong>, your program needs to:</p>
+<ul>
+  <li>Pass all the tests in Gradescope</li>
+  <li>Contain a descriptive header (with your name)</li>
+  <li>Contain descriptive docstrings for each function</li>
+  <li>Not have an excessive amount of duplicated code</li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to demonstrate proficiency as well as having:</p>
+<ul>
+  <li>Useful comments (including removal of any outline/todo comments)</li>
+  <li>Descriptive variable names</li>
+  <li>Good spacing</li>
+  <li>Use iteration, conditionals, and functions to organize your programs and prevent any unnecessary duplication of code</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

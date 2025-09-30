@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Inheritance Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Inheritance Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-w24/inheritance-activity" />
+<meta property="og:url" content="http://localhost:4000/classes/201-w24/inheritance-activity" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Inheritance Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Inheritance Lab","url":"http://localhost:4000/classes/201-w24/inheritance-activity"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Inheritance Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment and so you will not be submitting it. However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.</p>
+
+<h2 id="goal">Goal</h2>
+<p>Get practice writing code that uses inheritance and see how the finer details of inheritance work.</p>
+
+<h2 id="setup">Setup</h2>
+<ul>
+  <li><a href="getting-started">Mount the COURSES drive</a></li>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">InheritanceLab</code></li>
+  <li>Create a document Answers.txt where you’ll write your answers to some questions below</li>
+</ul>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>We’ll first make some classes, remember to compile and run your code after each step to catch any errors early!</p>
+
+<ol>
+  <li>
+    <p>Create an <code class="language-plaintext highlighter-rouge">Animal</code> class that has the instance variables <code class="language-plaintext highlighter-rouge">happiness</code> and <code class="language-plaintext highlighter-rouge">age</code> and getters/setters for these variables. (These can be <code class="language-plaintext highlighter-rouge">Integer</code>s or <code class="language-plaintext highlighter-rouge">String</code>s depending on what you think they should contain.)</p>
+  </li>
+  <li>
+    <p>Choose a species of animal and create a subclass of <code class="language-plaintext highlighter-rouge">Animal</code> in its own file. Remember that you create a subclass with <code class="language-plaintext highlighter-rouge">extends</code>. To compile and test your subclass, you’ll need to also compile <code class="language-plaintext highlighter-rouge">Animal</code>. An easy way to do this is to type <code class="language-plaintext highlighter-rouge">javac *.java</code>, which will compile all the Java files in the directory.</p>
+  </li>
+  <li>
+    <p>Within your subclass, make another instance variable called <code class="language-plaintext highlighter-rouge">happiness</code>. Make a getter and setter with <strong>different</strong> names from the <code class="language-plaintext highlighter-rouge">Animal</code> class getter and setter (so if you had <code class="language-plaintext highlighter-rouge">setHappiness</code> in Animal, you could do <code class="language-plaintext highlighter-rouge">setHappinessDog</code> in a Dog subclass).</p>
+  </li>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">main</code> of your subclass create an instance of your subclass to make sure everything is working.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>We’ll now explore what is going on with those <code class="language-plaintext highlighter-rouge">happiness</code> variables.</p>
+
+<ol>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">main</code>, use your setters to set the <code class="language-plaintext highlighter-rouge">happiness</code> of your instance to two different values (meaning use the <code class="language-plaintext highlighter-rouge">Animal</code> setter to set to 5 and the subclass setter to set to 10, for example)</p>
+  </li>
+  <li>
+    <p>Add <code class="language-plaintext highlighter-rouge">println</code> statements that demonstrate if the setters are accessing the same variable or different variables and write your answer in Answers.txt.</p>
+  </li>
+</ol>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>We’ll now explore how methods in subclasses interact with methods in superclasses.</p>
+
+<ol>
+  <li>
+    <p>Create a method <code class="language-plaintext highlighter-rouge">printStatus</code> in your subclass that prints something to the terminal.</p>
+  </li>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">main</code> create two instances of your subclass but declare one as type <code class="language-plaintext highlighter-rouge">Animal</code> and one as your subclass type:</p>
+  </li>
+</ol>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Animal</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Dog</span><span class="o">();</span>
+<span class="nc">Dog</span> <span class="n">test2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Dog</span><span class="o">();</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>Try to call <code class="language-plaintext highlighter-rouge">printStatus</code> on both objects. One will report an error. Record which one and the error in Answers.txt.</p>
+  </li>
+  <li>
+    <p>Create a method <code class="language-plaintext highlighter-rouge">printStatus</code> in <code class="language-plaintext highlighter-rouge">Animal</code> that prints something different than the method in your subclass.</p>
+  </li>
+  <li>
+    <p>Try again to call <code class="language-plaintext highlighter-rouge">printStatus</code> on the objects you created in (b). Record in Answers.txt which method is accessed for each object.</p>
+  </li>
+  <li>
+    <p>In Answers.txt, reflect on why you think you got the errors that you did and what that tells you about what Java is doing when it tries to compile and when it runs a program. (Don’t worry about being right, we’ll talk about it!)</p>
+  </li>
+</ol>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Let’s think some more about overriding methods in a subclass.</p>
+
+<ol>
+  <li>
+    <p>In your subclass method <code class="language-plaintext highlighter-rouge">printStatus</code>, use <code class="language-plaintext highlighter-rouge">super</code> to call the <code class="language-plaintext highlighter-rouge">printStatus</code> method of <code class="language-plaintext highlighter-rouge">Animal</code>. In Answers.txt, come up with an example of when overriding a superclass method and then calling the superclass method could be useful.</p>
+  </li>
+  <li>
+    <p>In your subclass, add a new method <code class="language-plaintext highlighter-rouge">pet</code> using the <code class="language-plaintext highlighter-rouge">@Override</code> annotation:</p>
+  </li>
+</ol>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">pet</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Petting the animal!"</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>Report the error that you see in Answers.txt.</p>
+  </li>
+  <li>
+    <p>Correct the error by adding <code class="language-plaintext highlighter-rouge">pet</code> to the <code class="language-plaintext highlighter-rouge">Animal</code> class as well and verify the error is resolved.</p>
+  </li>
+  <li>
+    <p>Reflect in Answers.txt on whether you find the <code class="language-plaintext highlighter-rouge">@Override</code> annotation useful and if you plan to use it (there is no right or wrong answer, I just am curious what you think!).</p>
+  </li>
+</ol>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>If you didn’t already, go back and add JavaDocs method documentation for each of your methods.</p>
+
+<h2 id="extra">Extra</h2>
+
+<p>If you finish early, work on the <a href="https://moodle.carleton.edu/mod/lti/view.php?id=902252">exercises linked through Moodle</a>. Some of them go beyond the Java syntax that we’re focused on, but feel free to refer to the included readings to learn more!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

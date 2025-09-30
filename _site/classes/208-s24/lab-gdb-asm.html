@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>GDB Assembly Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="GDB Assembly Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-s24/lab-gdb-asm" />
+<meta property="og:url" content="http://localhost:4000/classes/208-s24/lab-gdb-asm" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="GDB Assembly Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"GDB Assembly Lab","url":"http://localhost:4000/classes/208-s24/lab-gdb-asm"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">GDB Assembly Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>Your primary goal for this lab is to get familiar with using the GNU debugger (<code class="language-plaintext highlighter-rouge">gdb</code>) to explore and debug x86-64 programs, in which you may not be able to view the original C source. As a secondary goal, you’ll get some practice that may help with any sneaky escapades you may undertake.</p>
+
+<p>This lab is based on <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab6/">this lab</a> from Tanya Amert!</p>
+
+<h2 id="documentation-and-tutorials">Documentation and tutorials</h2>
+<p>You will find some potentially <a href="https://cs.carleton.edu/faculty/jondich/courses/cs208_w24/documents/resources.html#gdb">useful gdb resources</a> posted on our Resources page.</p>
+
+<h2 id="getting-started">Getting started</h2>
+<p>In this lab, we’ll be working with a pre-compiled program named <code class="language-plaintext highlighter-rouge">call_proc</code>. Grab the program and what source code I’m giving you, and copy them to mantis, following the steps below:</p>
+
+<ul>
+  <li>
+    <p>SSH into <code class="language-plaintext highlighter-rouge">mantis</code> via VS Code and open a terminal in your <code class="language-plaintext highlighter-rouge">cs208</code> folder.</p>
+  </li>
+  <li>
+    <p>Make a new directory for this lab:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">mkdir </span>lab6
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Change to your new directory:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">cd </span>lab6
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Grab the compiled program and source code:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  wget https://anyaevostinar.github.io/classes/208-s24/call_proc.tar
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Un-tar it:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">tar </span>xvf call_proc.tar
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Look at the source code in <code class="language-plaintext highlighter-rouge">call_proc.c</code>. You should see the <code class="language-plaintext highlighter-rouge">proc</code> function, and some other stuff we’ll explore soon.</p>
+  </li>
+  <li>
+    <p>You won’t be able to compile the program yourself, as you don’t have a definition for the function <code class="language-plaintext highlighter-rouge">phase_0</code>. You do have the executable, however. Try to run <code class="language-plaintext highlighter-rouge">call_proc</code>. Unless you get really lucky, you won’t win. :)</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ./call_proc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Note: If you have any issues running <code class="language-plaintext highlighter-rouge">call_proc</code>, you can use the following command to make it executable:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">chmod</span> +x call_proc
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="step-1-exploring-proc-with-gdb">Step 1: Exploring <code class="language-plaintext highlighter-rouge">proc</code> with <code class="language-plaintext highlighter-rouge">gdb</code></h2>
+
+<p>We’ll now explore the proc function.</p>
+
+<ul>
+  <li>
+    <p>Open the file <code class="language-plaintext highlighter-rouge">call_proc.c</code>. You’ll find the <code class="language-plaintext highlighter-rouge">proc</code> function on lines 5–14.</p>
+  </li>
+  <li>
+    <p>Open a Terminal window in VS Code.</p>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">gdb</code>, ready to step through <code class="language-plaintext highlighter-rouge">call_proc</code>:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  gdb call_proc
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>We want to explore the inputs to <code class="language-plaintext highlighter-rouge">proc</code>. We expect to find the first six arguments in registers, with arguments 7 and 8 (x4 and p4, respectively) instead on the stack. In this case, <code class="language-plaintext highlighter-rouge">proc</code> is called on line 23, as follows:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">proc</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">d</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Here is a reasonable hypothesis of a drawing to represent the state of the stack at the start of a call to <code class="language-plaintext highlighter-rouge">proc</code>:</p>
+
+<p><img src="/classes/208-s24/proc_arguments.png" alt="Stack diagram" /></p>
+
+<p>Let’s find the arguments!</p>
+
+<ul>
+  <li>
+    <p>We’re using <code class="language-plaintext highlighter-rouge">gdb</code>, so set a breakpoint at the start of <code class="language-plaintext highlighter-rouge">proc</code>:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> b proc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run the <code class="language-plaintext highlighter-rouge">call_proc</code> program:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> r
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You’ll have to enter a number, and then you should hit the breakpoint. We expect the first argument to be in register <code class="language-plaintext highlighter-rouge">%rdi</code>; we should find the value 10 there due to our call to <code class="language-plaintext highlighter-rouge">proc</code>:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> print <span class="nv">$rdi</span>
+</code></pre></div>    </div>
+    <p>(Note the very silly convention in <code class="language-plaintext highlighter-rouge">gdb</code> that you use <code class="language-plaintext highlighter-rouge">$</code> for registers instead of <code class="language-plaintext highlighter-rouge">%</code>.)</p>
+  </li>
+  <li>
+    <p>The next argument should be in register <code class="language-plaintext highlighter-rouge">%rsi</code>. This one is an address, and we don’t have a good sense of what the address is yet. We’ll explore that later, in Step 2:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> print <span class="nv">$rsi</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>By default, this seems to display in decimal, which is kind of useless for addresses. Use <code class="language-plaintext highlighter-rouge">/x</code> to make it display in hex instead:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>gdb<span class="o">)</span> print /x <span class="nv">$rsi</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Arguments 3–6 should be in registers <code class="language-plaintext highlighter-rouge">%rdx</code>, <code class="language-plaintext highlighter-rouge">%rcx</code>, <code class="language-plaintext highlighter-rouge">%r8</code>, and <code class="language-plaintext highlighter-rouge">%r9</code>, respectively. It’s tedious to view each individually, so let’s look at all registers instead:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> i r
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You’ll likely notice that the contents of <code class="language-plaintext highlighter-rouge">%rdx</code> and <code class="language-plaintext highlighter-rouge">%r8</code> don’t look like what we expect. Keep in mind that they’re in hex, not decimal! Conveniently, using <code class="language-plaintext highlighter-rouge">i r</code> in gdb displays both, one per column. Make sure you know which one you’re reading.</p>
+  </li>
+  <li>
+    <p>Now let’s look at the stack to find our 7th and 8th arguments (when I ran this, <code class="language-plaintext highlighter-rouge">%rsp</code> contained the value <code class="language-plaintext highlighter-rouge">0x7fffffffe458</code>):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> x/3gx 0x7fffffffe458
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>The first 64 bits (a “giant” word in <code class="language-plaintext highlighter-rouge">gdb</code>, hence the <code class="language-plaintext highlighter-rouge">g</code>) contain the return address for when <code class="language-plaintext highlighter-rouge">proc</code> is done. The next 8 bytes are our 7th parameter (0x28 in hex is 2*16+8 = 40 in decimal), followed by an address that is our 8th parameter.</p>
+  </li>
+  <li>
+    <p>If you type <code class="language-plaintext highlighter-rouge">list</code>, you’ll see the C code for the <code class="language-plaintext highlighter-rouge">proc</code> function:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> list
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>If instead you want to see the assembly, you can type <code class="language-plaintext highlighter-rouge">layout asm</code>. This gives us a split screen with the assembly code on the top and the <code class="language-plaintext highlighter-rouge">(gdb)</code> command prompt on the bottom. Note that it can be a bit erratic, so if it gets messed up visually, press the key combination Ctrl-L to redraw the screen.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> layout asm
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>The assembly is very similar to what we looked at on <a href="https://godbolt.org/z/T64oqxh9q">Compiler Explorer</a>. Read through it (it’s just seven lines) and make sure you can follow what it’s doing.</p>
+
+<p>Next, we’ll look at a function that calls <code class="language-plaintext highlighter-rouge">proc</code>; this function is aptly named <code class="language-plaintext highlighter-rouge">call_proc</code>.</p>
+
+<h2 id="step-2-exploring-call_proc-with-gdb">Step 2: Exploring <code class="language-plaintext highlighter-rouge">call_proc</code> with <code class="language-plaintext highlighter-rouge">gdb</code></h2>
+<p>We’re going to step through <code class="language-plaintext highlighter-rouge">call_proc</code> to see how well it lines up with our understanding of its use of local variables and argument prep on the stack.</p>
+
+<p>If you peek at <code class="language-plaintext highlighter-rouge">call_proc</code>, you’ll see it first makes four local variables:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">long</span> <span class="nf">call_proc</span><span class="p">(</span><span class="kt">long</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">long</span>  <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="kt">int</span>   <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="kt">short</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="kt">char</span>  <span class="n">d</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+</code></pre></div></div>
+<p>Let’s figure out where those variables are stored.</p>
+
+<ul>
+  <li>
+    <p>If you’re continuing from Step #1, type <code class="language-plaintext highlighter-rouge">c</code> to continue the program (this should complete its execution), then type <code class="language-plaintext highlighter-rouge">d</code> to delete all breakpoints. If you’re starting fresh, run <code class="language-plaintext highlighter-rouge">gdb call_proc</code>.</p>
+  </li>
+  <li>
+    <p>Set a breakpoint in the function <code class="language-plaintext highlighter-rouge">call_proc</code>:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> b call_proc
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run the program, and enter a number:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> r
+  Guess a number: 123
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>This should hit the breakpoint. Take a look at the assembly with <code class="language-plaintext highlighter-rouge">layout asm</code>. Where is it storing <code class="language-plaintext highlighter-rouge">$0x1</code>?</p>
+  </li>
+  <li>
+    <p>Draw a picture for yourself that shows the state of the stack based on the assembly, showing where each of the constants are stored.</p>
+  </li>
+  <li>
+    <p>Let’s move down to check the stack. Type <code class="language-plaintext highlighter-rouge">ni</code> for next instruction, and repeat it several times until you’re about to execute the first <code class="language-plaintext highlighter-rouge">lea</code> instruction, i.e. you’ve executed all the instructions saving the constants to the stack.</p>
+  </li>
+  <li>
+    <p>Time to inspect the stack. Let’s look at the 32 bytes starting at the top of the stack (for me, <code class="language-plaintext highlighter-rouge">%rsp</code> has value <code class="language-plaintext highlighter-rouge">0x7fffffffe7c0</code> as I run this, remember you can find what <code class="language-plaintext highlighter-rouge">%rsp</code> is for you with <code class="language-plaintext highlighter-rouge">i r rsp</code>):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> x/32bx 0x7fffffffe7c0
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>One one of the lines, you should see <code class="language-plaintext highlighter-rouge">0x01</code> followed by 7 <code class="language-plaintext highlighter-rouge">0x00</code>s. That’s <code class="language-plaintext highlighter-rouge">a</code>. On the line above, you’ll see each of <code class="language-plaintext highlighter-rouge">b</code> (4 bytes), <code class="language-plaintext highlighter-rouge">c</code> (2 bytes), and <code class="language-plaintext highlighter-rouge">d</code> (1 byte), all next to each other.</p>
+  </li>
+  <li>
+    <p>Let’s keep going, and see the argument building to prep for calling <code class="language-plaintext highlighter-rouge">proc</code>. Notice the <code class="language-plaintext highlighter-rouge">lea</code> instructions; for example, address <code class="language-plaintext highlighter-rouge">0x10(%rsp)</code> (that’s <code class="language-plaintext highlighter-rouge">a</code>) is put in <code class="language-plaintext highlighter-rouge">%rsi</code>, as <code class="language-plaintext highlighter-rouge">&amp;a</code> is provided as our second argument on line 23 of the source code. Additionally, we see that <code class="language-plaintext highlighter-rouge">%rax</code> and <code class="language-plaintext highlighter-rouge">$0x28</code> (that’s 40 in hex) are pushed to the stack; these are arguments 8 and 7, in that order. Update your drawing of the stack based on those changes.</p>
+  </li>
+  <li>
+    <p>Finally, let’s print out the state of the stack right before the <code class="language-plaintext highlighter-rouge">callq</code> to jump to <code class="language-plaintext highlighter-rouge">proc</code> executes. Hit return several more times (and/or type <code class="language-plaintext highlighter-rouge">ni</code> again) to get there, then get the new value of the stack pointer:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> print <span class="nv">$rsp</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Finally, let’s look at the stack (my new value of <code class="language-plaintext highlighter-rouge">%rsp</code> is <code class="language-plaintext highlighter-rouge">0x7fffffffe7b0</code>):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> x/48bx 0x7fffffffe7b0
+</code></pre></div>    </div>
+    <p>How does it compare to your diagram? Can you find all the constants and arguments 7 and 8 for the call to <code class="language-plaintext highlighter-rouge">proc</code>?</p>
+  </li>
+</ul>
+
+<h2 id="step-3-what-is-phase_0">Step 3: What is <code class="language-plaintext highlighter-rouge">phase_0</code>?</h2>
+
+<p>Let’s figure out <code class="language-plaintext highlighter-rouge">phase_0</code>!</p>
+
+<ul>
+  <li>
+    <p>Looking at the assembly itself can be helpful. Get the assembly with:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  objdump <span class="nt">-d</span> call_proc <span class="o">&gt;</span> call_proc.asm
+</code></pre></div>    </div>
+
+    <p>Then open up <code class="language-plaintext highlighter-rouge">call_proc.asm</code> and look through it a bit for the overall structure</p>
+  </li>
+  <li>
+    <p>Another helpful tool is <code class="language-plaintext highlighter-rouge">strings</code>. This tool can tell you the location of every string in a program with <code class="language-plaintext highlighter-rouge">-t</code> (and you need to tell it what base you want the info in, <code class="language-plaintext highlighter-rouge">x</code> for hex):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  strings <span class="nt">-t</span> x call_proc <span class="o">&gt;</span> call_proc_strings.txt
+</code></pre></div>    </div>
+
+    <p>Take a look at the resulting file and find the location for “Guess a number: “. Compare that to your <code class="language-plaintext highlighter-rouge">call_proc.asm</code>. You should see a line:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1357:	48 8d 35 b9 0c 00 00 	lea    0xcb9(%rip),%rsi        # 2017 &lt;_IO_stdin_used+0x17&gt;
+</code></pre></div>    </div>
+
+    <p>This is telling you that <code class="language-plaintext highlighter-rouge">0xcb9(%rip)</code> is pointing at that string.</p>
+  </li>
+  <li>
+    <p>Let’s look at <code class="language-plaintext highlighter-rouge">phase_0</code> in the assembly. Search in the file for the section labeled <code class="language-plaintext highlighter-rouge">phase_0</code>. You can see that <code class="language-plaintext highlighter-rouge">phase_0</code> is doing something with <code class="language-plaintext highlighter-rouge">sscanf</code>, which grabs out chunks of a string based on the format string (and you should <a href="https://cplusplus.com/reference/cstdio/sscanf/">read up about it</a> and its man page). Make notes to yourself in the assembly with <code class="language-plaintext highlighter-rouge">#</code> on what the assembly is doing with the result of the call to <code class="language-plaintext highlighter-rouge">sscanf</code>.</p>
+  </li>
+  <li>
+    <p>What argument is getting passed to <code class="language-plaintext highlighter-rouge">call_proc</code>?</p>
+  </li>
+  <li>
+    <p>What happens with the return value from <code class="language-plaintext highlighter-rouge">call_proc</code>? (0x13a is 314 in decimal) Under what conditions do you get to the string “You win!”?</p>
+  </li>
+  <li>
+    <p>With that, you should be able to reverse engineer what number you need to guess to win!</p>
+  </li>
+</ul>
+
+<p>If you’ve gotten this far, feel free to work on your zoo escape with these new tools!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

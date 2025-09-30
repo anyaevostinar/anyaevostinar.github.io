@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW 8 Wikipedia Paths | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW 8 Wikipedia Paths" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-w24/hw8" />
+<meta property="og:url" content="http://localhost:4000/classes/201-w24/hw8" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW 8 Wikipedia Paths" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW 8 Wikipedia Paths","url":"http://localhost:4000/classes/201-w24/hw8"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW 8 Wikipedia Paths</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+<p>This is a paired assignment, so you should complete it with your assigned partner, if you have one, via paired programming. The whole time that you are working, you should both be present and actively working on the problem at hand. (Two brains, one keyboard.) Switch off the typing duties so that you each type for roughly half of the time.</p>
+
+<p>You are able to get help from many sources as detailed in the <a href="collaboration">collaboration policy</a>.</p>
+
+<p>This assignment is due on Friday February 23rd at 10pm. As with all assignments, you will have the opportunity to revise this assignment individually based on the feedback that you get.</p>
+
+<h2 id="goals">Goals</h2>
+<p>To gain practice with several data structures and ADTs we’ve learned about so far and implement breadth-first search.</p>
+
+<h2 id="setup-and-requirements">Setup and Requirements</h2>
+<p>Mount COURSES, download the <a href="/classes/201-f21/HW8-Starter.zip">HW 8 Starter Code</a> and move it to your StuWork/username folder. You should follow the same process of compressing your files and uploading them to Moodle to submit your homework.</p>
+
+<p>Create a file <code class="language-plaintext highlighter-rouge">Collaborations.txt</code> and put in any help that you get on this assignment including sources that you reference and help from lab assistants or the prefect. Make sure to refer to the <a href="collaboration">Collaboration page</a> on what collaborations are allowed for homework assignments.</p>
+
+<p>The code that you write for this assignment will build on top of a graph implementation that I have provided, the <code class="language-plaintext highlighter-rouge">MysteryUnweightedGraphImplementation</code>. You don’t need to know anything about the implementation, but you can look at the <a href="/classes/201-f20/hw-6javadoc">JavaDocs</a> for it and the <code class="language-plaintext highlighter-rouge">Graph</code> and <code class="language-plaintext highlighter-rouge">UnweightedGraph</code> interfaces it implements to know what methods it provides.</p>
+
+<p>You’ll probably want to open these JavaDoc pages to refer to throughout the homework:</p>
+
+<ul>
+  <li><a href="/classes/201-f20/hw-6javadoc">UnweightedGraph interface</a></li>
+  <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html">Queue interface</a></li>
+  <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map interface</a></li>
+</ul>
+
+<h2 id="specification">Specification</h2>
+<p>There is a ‘game’ where you start from a Wikipedia page and try to get to another specific Wikipedia page in as few pages as possible (here is a <a href="http://en.wikipedia.org/wiki/Wikipedia:Six_degrees_of_Wikipedia">Wikipedia page</a> about it!). You can think about Wikipedia pages as a graph where each page is a vertex in the graph and each link is a directed edge from one node to another. In this assignment, you will use that idea and breadth first traversal to find the shortest path between from one page to another.</p>
+
+<p>You’ll write your code in the <code class="language-plaintext highlighter-rouge">PathFinder</code> class and ultimately should be able to specify the vertices and edges via filenames, a start vertex, and an end vertex via command-line arguments:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java PathFinder articles.tsv links.tsv Canada_Goose Duran_Duran
+[Canada_Goose, Animal, Latin, The_Adventures_of_Tintin, Duran_Duran]
+</code></pre></div></div>
+
+<p>The above means that the shortest path between the article about Canada Goose and the article about Duran Duran goes through three intervening articles. There may be other paths of the same length and it would be fine if your program returned those instead, but it must return a shortest path.</p>
+
+<h2 id="testing-files">Testing files</h2>
+<p>I’ve provided you with a <a href="https://snap.stanford.edu/data/wikispeedia.html">small subset</a> of the Wikipedia articles and links from 2007. But you should make an even smaller set of files that specify around 5 articles and around 5 links between articles. The starter code assumes the articles file is formatted with one article name per line with ‘_’ standing in for spaces in the article name. It also assumes the links file has one link per line, where the line</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a   b
+</code></pre></div></div>
+<p>means there is a link on page ‘a’ to page ‘b’.</p>
+
+<p>On paper, draw out a graph of the information in your test file including the direction of the links. Trust me, you’re going to want it!</p>
+
+<h2 id="tostring">toString</h2>
+<p>The <code class="language-plaintext highlighter-rouge">toString()</code> method won’t be used in the final version of your code, but it is helpful in making sure that everything gets read in properly.</p>
+
+<p>Implement the <code class="language-plaintext highlighter-rouge">toString</code> method so that it returns a <code class="language-plaintext highlighter-rouge">String</code> with the number of nodes and numbers of edges in the <code class="language-plaintext highlighter-rouge">wikiGraph</code>. Check the documentation (linked above) on what methods will give you that information.</p>
+
+<p>Create an instance of <code class="language-plaintext highlighter-rouge">PathFinder</code> with your test files and verify that it reads in the files properly by printing the number of nodes and edges. Note that you can just pass your PathFinder instance to <code class="language-plaintext highlighter-rouge">println</code> without calling <code class="language-plaintext highlighter-rouge">toString</code> manually and Java will use your <code class="language-plaintext highlighter-rouge">toString</code> method.</p>
+
+<h2 id="breadthfirstsearch">breadthFirstSearch</h2>
+<p>The way to find the shortest path between two nodes in a graph is to perform breadth-first search. Your <code class="language-plaintext highlighter-rouge">breadthFirstSearch</code> method should return a <code class="language-plaintext highlighter-rouge">Map&lt;Integer, Integer&gt;</code> of the <em>predecessor</em> of each node on the shortest path from the start node.</p>
+
+<p>First, fill in the documentation for the method with the correct JavaDocs style of specifying the <code class="language-plaintext highlighter-rouge">@param</code> and <code class="language-plaintext highlighter-rouge">@return</code> along with what the method actually does.</p>
+
+<p>Then, implement the <code class="language-plaintext highlighter-rouge">breadthFirstSearch</code> method. Note that the <code class="language-plaintext highlighter-rouge">wikiGraph</code> only knows about node numbers, it doesn’t track article titles, and you need to look up the node number of an article title in the <code class="language-plaintext highlighter-rouge">articleVertex</code> map.</p>
+
+<p>I recommend putting in some print statements and then calling your <code class="language-plaintext highlighter-rouge">breadthFirstSearch</code> method to make sure that it is working as your expect. Remove the print statements after it works however.</p>
+
+<h2 id="getshortestpathstring-start-string-end">getShortestPath(String start, String end)</h2>
+<p>This method should return a <code class="language-plaintext highlighter-rouge">List&lt;String&gt;</code> containing the list of articles that the user needs to click on to get from the start node to the finish node. Note that you should return an empty list if there is not a path between the start and end article.</p>
+
+<p>You should first call your <code class="language-plaintext highlighter-rouge">breadthFirstSearch</code> method with your start article and save the resulting map of predecessor nodes.</p>
+
+<p>Now you have a map of the node that comes before each node on a shortest path from the start node and you just need to trace through them.
+Since you can only look up the predecessor of a given node, you need to start at the end article and look up its predecessor node until you get to the start article node.</p>
+
+<p>Note that there is a static method that belongs to the <code class="language-plaintext highlighter-rouge">Collections</code> class that allows you to reverse a collection:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Collections.reverse(myList);
+</code></pre></div></div>
+
+<p>Test your algorithm on your test data where you know what the correct answer is.</p>
+
+<h2 id="main">main</h2>
+<p>Your main should handle the following command line interface:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java PathFinder articles.tsv links.tsv startNode endNode
+</code></pre></div></div>
+
+<p>Your program should output the article names of the links the user should click on to follow a shortest path from the starting page to the ending page or tell the user <code class="language-plaintext highlighter-rouge">There isn't a path</code>.</p>
+
+<h2 id="readme">README</h2>
+<p>As always, you should include a detailed README for this homework. 
+It should include a brief overview of your project and a short example of how to run your program and see its interesting behavior.</p>
+
+<p>There is no additional prompt for this homework.</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>To demonstrate proficiency, your program needs to:</p>
+
+<ul>
+  <li>Pass all tests on Gradescope</li>
+  <li>States if no path is possible</li>
+  <li>Follow the specifications for the command-line</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">Queue</code> correctly</li>
+  <li>Be object-oriented</li>
+  <li>Have a README with an overview and example</li>
+  <li>Have JavaDocs documentation for all public methods</li>
+  <li>Be somewhat <a href="style-reference">well-styled</a></li>
+</ul>
+
+<p>To <strong>demonstrate mastery</strong>, your program needs to:</p>
+<ul>
+  <li>Demonstrate proficiency</li>
+  <li>Use helper methods correctly and effectively</li>
+  <li>Be extremely <a href="style-reference">well-styled</a> and clear by choosing descriptive variable names and including only useful comments</li>
+  <li>Have a thorough, well-styled README</li>
+  <li>Have clear and thorough documentation</li>
+</ul>
+
+<h2 id="submission">Submission</h2>
+<p>Remember to update your Collaborations.txt file with any sources that you consulted.</p>
+
+<p>Then upload all of your files to the Gradescope link on Moodle, at which point the autograder will run and let you know if your code works correctly. You are able to submit your code as many times as you wish before the deadline to fix any issues. If you have questions about what the autograder is telling you is wrong, please ask!</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
