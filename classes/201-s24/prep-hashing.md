@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hashing Preparation
-permalink: /classes/201-w24/hashing-prep
+permalink: /classes/201-s24/hashing-prep
 ---
 
 ## Overview

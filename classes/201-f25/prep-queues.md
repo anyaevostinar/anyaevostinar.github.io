@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Queues Preparation
-permalink: /classes/201-s24/queues-prep
+permalink: /classes/201-f25/queues-prep
 ---
 
 ## Overview
@@ -21,11 +21,27 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the [reading assignment through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=928125):
+You should read the following:
 
-* 3.10, 3.11,  3.14
-* Optional additional resource: [OpenDSA Queues](https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS2/html/Queue.html)
-* Optional: [Fairytales about Stacks and Queues](http://computationaltales.blogspot.com/2011/04/stacks-queues-priority-queues-and.html)
+* [3.10 Queues](https://runestone.academy/ns/books/published/pswadsup/basic-ds_queues.html?mode=browsing)
+* [3.11 The Queue ADT](https://runestone.academy/ns/books/published/pswadsup/basic-ds_the-queue-abstract-data-type.html?mode=browsing)
+* [3.14 Printing Tasks](https://runestone.academy/ns/books/published/pswadsup/basic-ds_queue-simulation-printing-tasks.html?mode=browsing)
+
+
 
 ## Checks
-No additional checks.
+Submit answers to the following on Moodle, given this [Kotlin Queue Implementation](https://github.com/dmusican/cs201f24share/blob/main/code-for-readings/src/main/kotlin/Queue.kt):
+
+![Diagram of a queue](/classes/201-f25/queue.png)
+
+* `dequeue()` is called on the Queue above. 
+    1. What does the Queue look like now? (i.e. Which elements are in which index?)
+    2. Which index is `front` pointing to?
+    3. Which index is rear pointing to?
+* `enqueue("Nick")` is next called on the Queue.
+    1. What does the Queue look like now? (i.e. Which elements are in which index?)
+    2. Which index is front pointing to?
+    3. Which index is rear pointing to?
+
+## Acknowledgements
+The check questions and diagram are from Prof Jean Salac.

@@ -27,9 +27,9 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/1 | [Stacks and Backtracking Prep](stacks-prep)   |		[Slides](https://docs.google.com/presentation/d/1I31LfgIM_jK6HEDwdHmWnad6-AReWlN1UeQiy-m_Trg/edit?usp=sharing), [Stack Lab](stack-lab)	|  |
 | 10/3 | HW2;[Linked Lists Prep](linkedlist-prep) |	[Slides](https://docs.google.com/presentation/d/1QjEB9xFuxo0s5Xp4168M0TLsOapTsZnAh5AB__YIwuk/edit?usp=sharing), [Linked List Lab](linked-list-lab)	| [HW3: Solving Mazes](hw3)|
 | Week 4 | | Queues and Hashing| |
-| 10/6 |[Queues Prep]() | [Slides]() |  |
-| 10/8 |  [Doubly-linked Lists and Deques Prep]() |	[Slides]()	| |
-| 10/10 |[HW3](hw3), [Sets and Hashing Prep]() |[Slides]() | [HW4: Deck of Card Operations](hw4)|
+| 10/6 |[Queues Prep](queues-prep) | [Slides]() |  |
+| 10/8 |  [Doubly-linked Lists and Deques Prep](doubles-prep) |	[Slides]()	| |
+| 10/10 |[HW3](hw3), [Sets and Hashing Prep](hashing-prep) |[Slides]() | [HW4: Deck of Card Operations](hw4)|
 | Week 5 |  | Hashing | |
 | 10/13 |	  **Exam 2**	| [Slides]()	|  |
 | 10/15 |   [Rehashing Prep]() |	[Slides]()	|   |
