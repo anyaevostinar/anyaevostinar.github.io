@@ -47,7 +47,9 @@ Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES driv
     * You can append another list with `addAll`
     * Make sure to test your code by adding some more `enqueue` lines to your `main`
 
-8. Now it's time to implement `dequeue`. Be sure to consider the case where you are removing the last item from the queue and when the queue is already empty.
+8. Now is a good time to also implement the case when there is room in the queue and it wasn't empty.
+
+8. It's time to implement `dequeue`. Be sure to consider the case where you are removing the last item from the queue and when the queue is already empty.
 
 9. Once you start dequeuing, you need your `toString` to take that into account. Update your `toString` to handle the case where `front` isn't 0 and make sure your `dequeue` is working correctly.
 
