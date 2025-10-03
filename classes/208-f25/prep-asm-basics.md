@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Assembly Basics Preparation
-permalink: /classes/208-s24/asm-basics-prep
+permalink: /classes/208-f25/asm-basics-prep
 ---
 
 ## Overview
