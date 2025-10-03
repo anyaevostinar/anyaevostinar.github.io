@@ -61,7 +61,7 @@ The **advanced** requirements for your submission are:
 
 ## Assignment overview
 
-In this assignment, you will load in a maze from a file and solve the maze, printing the maze either with or without the solution marked.  We've done a lot of the work for you; you're given code for a Stack, as well as code to store a maze and print it.
+In this assignment, you will load in a maze from a file and solve the maze, printing the maze either with or without the solution marked.  We've done a lot of the work for you; **you're given code for a Stack, as well as code to store a maze and print it.**
 
 Your goal: write code to find a solution path through the maze, if one exists.
 

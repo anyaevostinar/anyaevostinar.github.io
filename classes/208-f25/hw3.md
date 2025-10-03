@@ -176,7 +176,9 @@ For the advanced requirements, you’ll need to finish the implementation of the
 void store_string(data_store_t *data_store, int label, char *s);
 ```
 
-Make sure to [clear out the data bits](https://cplusplus.com/reference/cstring/memset/) in the entry and copy over the provided string. After you’ve completed this function, you should be able to test the code again by running `main.c`:
+Make sure to [clear out the data bits](https://cplusplus.com/reference/cstring/memset/) in the entry and copy over the provided string to the `data` portion of the `data_store_entry_t` and the `id` to its location in the entry. 
+
+After you’ve completed this function, you should be able to test the code again by running `main.c`:
 
 ```bash
 $ make

@@ -83,7 +83,7 @@ Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES driv
 
 ## Implementing a linked queue
 
-1. Create a new file `LinkedQ.kt` and implement the `Queue<T>` interface with `LinkedQueue<T>`. You'll want to use the `Node<T>` data class from before:
+1. Create a new file `LinkedQ.kt` and implement the `Queue<T>` interface with `LinkedQueue<T>`. Note that you can and should add a variable `rear` that tracks the end of the linked list for dequeuing. You'll want to use the `Node<T>` data class from before:
 
     ```kotlin
         private data class Node<T>(
