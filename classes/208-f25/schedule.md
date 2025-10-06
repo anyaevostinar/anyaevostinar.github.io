@@ -31,7 +31,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 4 | | Starting Assembly | |
 | 10/6 | [Integer Overflow Prep](int-overflow-prep)| [Slides](https://docs.google.com/presentation/d/1DtBm6GU8ld-44vt0DhHBC3Ca3tXVF8xcZcrnELj-W2M/edit?usp=sharing), Overflow 	|  |
 | 10/8 | [Floats Prep](floats-prep) |	[Slides](https://docs.google.com/presentation/d/18poK0zNyH6qRLdU4hygBB8_WVkCCYN0IdDqVR_VsGKU/edit?usp=sharing), Fractions and floating point	|  |
-| 10/10 | HW4; [Assembly Basics Prep](asm-basics-prep) |	[Slides](), Assembly Basics |[HW5: asm-to-C puzzles](hw6-1) |
+| 10/10 | HW4; [Assembly Basics Prep](asm-basics-prep) |	[Slides](), Assembly Basics |[HW5: asm-to-C puzzles](hw5) |
 | Week 5 |  More Assembly |  | |
 | 10/13 |		| [Slides](), mov and lea	|  |
 | 10/15 |    | [Slides](), Exam 2|  |
