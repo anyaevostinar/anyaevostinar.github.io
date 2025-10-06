@@ -9,13 +9,13 @@ permalink: /classes/201-f25/hw4
 Starter code: [cards-project.zip](cards-project.zip)  
 Upload solutions via Gradescope as: `Deck.kt`
 
-# Goals
+## Goals
 
 This assignment is designed to help you with the following:
 * practice using doubly linked lists
 * practice with null safety in Kotlin
 
-# Collaboration policy
+## Collaboration policy
 
 For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)  You may have at most one partner.
 
@@ -25,7 +25,7 @@ You should list any student or course staff with whom you discussed the assignme
 
 _If you work alone, you should say so instead._
 
-# Note on style:
+## Note on style:
 
 The following style guidelines are expected moving forward:
 
@@ -40,11 +40,13 @@ The following style guidelines are expected moving forward:
 8. The code doesn't compute the right answer by doing extra work (e.g., having a computation in a loop when it could have been done only once, after the loop).
 9. The code uses helper functions to reduce duplication and improve readability.
 
-# Assessment
+## Assessment
 
 The **core** requirements for your submission are:
 
 * complete Parts A and C
+    * A: * `getString(n: Int): String`, `getStringBackwards(n: Int): String`, `countDown(): Int`
+    * C: Reflection
 * satisfy the code style expectations #0-#4 above
 * include a reflection in comments at the bottom of your `Deck.kt` file
 
@@ -52,32 +54,33 @@ The **advanced** requirements for your submission are:
 
 * satisfy core requirements
 * complete all of Parts A-C
+    * B: `swapJokerA()`, `swapJokerB()`, `tripleCut()`
 * satisfy all code style expectations listed above (#0-#9)
 * include your name and collaboration statement at the top of your `Deck.kt` file
 
-# Assignment overview
+## Assignment overview
 
-There is a fun encryption technique called the [Solitaire Cipher](https://en.wikipedia.org/wiki/Solitaire_(cipher)).  It's a hard-to-crack encryption approach designed for sending secure messages with very low tech.  The technique is based on using a deck of caards, and performing a variety of operations on that deck.  We're going to represent that deck of cards as a circular linked list, and implement some of the operations of the encryption technique.
+There is a fun encryption technique called the [Solitaire Cipher](https://en.wikipedia.org/wiki/Solitaire_(cipher)).  It's a hard-to-crack encryption approach designed for sending secure messages with very low tech.  The technique is based on using a deck of cards, and performing a variety of operations on that deck.  We're going to represent that deck of cards as a circular linked list, and implement some of the operations of the encryption technique.
 
-We'll be using a specialized card deck that has 28 cards in it, each numbered with an integer from 1 to 28.  We'll refer to the cards numbered 27 ad 28 as "jokers", because if we were doing this with a real deck of playing cards we would use [joker cards](https://en.wikipedia.org/wiki/Joker_(playing_card)).
+We'll be using a specialized card deck that has 28 cards in it, each numbered with an integer from 1 to 28.  We'll refer to the cards numbered 27 and 28 as "jokers", because if we were doing this with a real deck of playing cards we would use [joker cards](https://en.wikipedia.org/wiki/Joker_(playing_card)).
 
 To be clear, we're not going to implement the (super cool!) encryption algorithm itself, although that would be a fantastic extension if you're interested.  We're going to do a subset of it, which is a series of operations on playing cards.
 
-# Getting started
+## Getting started
 
 Find your `cs201` folder for assignments.  Maybe it contains an `assignments` folder inside of it.
 
-Download [this `card_operations.zip` file](../../resources/assignments/card_operations.zip) to get the starter code.  Put it in the `cs201` folder you just created and unzip it.  This should give you a folder named `card_operations`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
+Download [this `cards-project.zip` file](/classes/201-f25/cards-project.zip) to get the starter code.  Put it in the `cs201` folder you have and unzip it.  This should give you a folder named `cards-project`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
 
 Now open your folder in VS Code.  There are multiple ways to do this, so pick one:
-* Open VS Code, then select `File` -> `Open Folder` and navigate to the `card_operations` folder you just made.
+* Open VS Code, then select `File` -> `Open Folder` and navigate to the `cards-project` folder you just made.
 * Open VS Code, then drag and drop the folder (e.g., from Finder in MacOS or File Explorer in Windows) into VS Code to open it.
 
 Either way, if you are asked, click that you trust the authors.  If you have any issues getting started, ask the lab assistants for help -- any of them should be able to help you get started, even if they aren't super familiar with Kotlin.
 
-# Building your code with Maven
+## Building your code with Maven
 
-Like Assignments #1 and #3, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code <span style="color: #10a5f5">(note that you must be in the top-level folder `card_operations` for these commands to work)</span>:
+Like Assignments #1 and #3, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder `cards-project` for these commands to work):
 
 * `mvn test` runs the tests that we provided (see below)
 
@@ -93,13 +96,13 @@ If you want to see less output from Maven, you can add `-q` (for "quiet") flag:
 
 If you run the tests with the starter code, you should have errors, as you haven't written any code yet.
 
-# Representing a deck of cards
+## Representing a deck of cards
 
 In this assignment, you are provided with a class `Deck` that maintains the list of numbers (1-28) in a **circular doubly linked list**.  A doubly linked list is one where each node has two pointers: one points to the next node, and the other points to the previous one.  A circular linked list is one where the very last item in the list points to the first one.
 
 It turns out the deck-rearranging algorithm described above is more straightforward if your deck can be thought of as one big circle of cards that you can flip through in either direction.  The actual ordering of the numbers is provided as a `String`, which contains the numbers in some given order, on a single line, separated by spaces.
 
-The constructor for the deck, which is provided for you, looks like this:
+The constructor for the deck, **which is provided for you**, looks like this:
 
 ```kotlin
 Deck(initialCardOrdering: String)
@@ -113,13 +116,13 @@ Your assignment is to enhance the class by adding several member functions, desc
 * `swapJokerB()`
 * `tripleCut()`
 
-# Part A: Querying the deck of cards
+## Part A: Querying the deck of cards
 
 For Part A, you should complete the first three methods listed above.  They are each described in more detail below.
 
 ### `getString(n: Int): String`
 
->This method should return a space-delimited `String` consistenting of `n` numbers from your deck.  Note that `n` is an `Int` greater than or equal to 1, but it can be larger than 28.  If it is, your deck should start over from the top and keep adding to the string.
+>This method should return a space-delimited `String` consisting of `n` numbers from your deck.  Note that `n` is an `Int` greater than or equal to 1, but it can be larger than 28.  If it is, your deck should start over from the top and keep adding to the string.
 >
 >Make sure to get your items efficiently: you shouldn't be doing something super-duper slow like "find the first item in the list, add it to the string, then start at the beginning and find the second item, add it to the string, then start at the beginning and find the third item, etc.".
 
@@ -131,7 +134,7 @@ For Part A, you should complete the first three methods listed above.  They are 
 
 >This method looks at the top card's value (if the top card is a joker, assume its value is 27, even if it's actually 28).  It leaves that card on top of the deck.
 >
->Given the value of the top card, it should count down the deck by that many cards, starting with the top one.  Record the value of the _**next**_ card card that in the deck, but don't remove it from the deck.
+>Given the value of the top card, it should count down the deck by that many cards, starting with the top one.  Record the value of the _**next**_ card that is in the deck, but don't remove it from the deck.
 >
 >If the original ordering of our cards is as follows:
 >```
@@ -157,8 +160,6 @@ For Part B, you will complete the last three methods listed above.  They are eac
 
 >This method first finds the `27`, which we'll call "Joker A".  It exchanges it with the card beneath (after) it in the deck, which moves Joker A down the deck by one position.
 >
->(What is the joker is the last card in the deck?  Imagine that the deck of cards is continuous; the card following the bottom card is the top card of the deck, and you'd just exchange them.)
->
 >For example, suppose that the original ordering of our cards is as given below:
 >```
 >1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 27 2 5 8 11 14 17 20 23 26
@@ -167,7 +168,7 @@ For Part B, you will complete the last three methods listed above.  They are eac
 >Then `swapJokerA()` would swap the node holding `27` with the node following it.  In this case, that means the `27` and `2` should be swapped:
 >```
 >1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 2 27 5 8 11 14 17 20 23 26
->                                                 ^^^^
+>                                                ^^^^
 >```
 
 ### `swapJokerB()`
@@ -177,7 +178,7 @@ For Part B, you will complete the last three methods listed above.  They are eac
 >For example, if we started with the deck above after doing `swapJokerA()`, we would then move `28` two places down the list.  It ends up between the `6` and `9`:
 >```
 >1 4 7 10 13 16 19 22 25 3 6 28 9 12 15 18 21 24 2 27 5 8 11 14 17 20 23 26
->                           ^^^^^^
+>                          ^^^^^^
 >```
 
 ### `tripleCut()`
