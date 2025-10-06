@@ -55,7 +55,7 @@ The **advanced** requirements for your submission are:
 * satisfy core requirements
 * complete all of Parts A-C
     * B: `swapJokerA()`, `swapJokerB()`, `tripleCut()`
-* satisfy all code style expectations listed above (#0-#9)
+* satisfy all code style expectations listed above
 * include your name and collaboration statement at the top of your `Deck.kt` file
 
 ## Assignment overview
