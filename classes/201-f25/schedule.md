@@ -33,22 +33,22 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 5 |  | Hashing | |
 | 10/13 |	  **Exam 2**	| [Slides]()	|  |
 | 10/15 |   [Rehashing Prep]() |	[Slides]()	|   |
-| 10/17	| [HW4](hw4)  |	TBD	| HW5: Cuckoo Hashing;|
+| 10/17	| [HW4](hw4), [Recursion and Trees Prep]()  |	Trees	| HW5: Cuckoo Hashing;|
 | Week 6 | | Trees| |
 | 10/20 |  | Midterm break! | |
-| 10/22 |   [Recursion and Trees Prep]()  |[Slides]()	|  |
-| 10/24 | HW5; [Prefix Trees Prep]() |	[Slides]() |  [HW6: Word Counter](hw6)|
+| 10/22 |  [Prefix Trees Prep]()   |[Slides]()	|  |
+| 10/24 | HW5; [Binary Search Trees]()  |	[Slides]() |  [HW6: Word Counter](hw6)|
 | Week 7 | | Search Trees | |
-| 10/27 | [Binary Search Trees]()  | [Slides]() | |
-| 10/29 |	 [2-3 Trees Prep]() | [Slides]()|   |
-| 10/31 | HW6;[Graphs Prep]()  |			| HW7: IMDB Graph|
+| 10/27 | [2-3 Trees Prep]()  | [Slides]() | |
+| 10/29 |	[Graphs Prep]()  | [Slides]()|   |
+| 10/31 | HW6; Graph Searches Prep |			| HW7: IMDB Graph|
 | Week 8 | | Sorting | |
 | 11/3 | **Exam 3**    | [Slides]()	 |   |	
-| 11/5 | Graph Searches Prep   	| [Slides]() | 	  |
-| 11/7 | Heaps and PQs;   | [Slides]()	|  |	
+| 11/5 |   Heaps and PQs Prep ; 	| [Slides]() | 	  |
+| 11/7 |  Mergesort Prep  | [Slides]()	|  |	
 | Week 9 | | Search Trees | |
-| 11/10 | HW7; Mergesort Prep  | [Slides]() | HW8: Sorting  |
-| 11/12 |  Quicksort and Heapsort Prep Prep | [Slides]() 	 | 	 |
+| 11/10 | HW7; Quicksort Prep  | [Slides]() | HW8: Sorting  |
+| 11/12 |  Heapsort Prep  | [Slides]() 	 | 	 |
 | 11/14	| **Exam 4** | [Slides]()  |  |
 | Week 10 | | Wrapping up | |
 | 11/17 | HW8; TBD | [Slides]() | |
