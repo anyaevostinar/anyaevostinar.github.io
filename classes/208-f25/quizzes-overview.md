@@ -55,7 +55,7 @@ The learning objectives that will be on exams are:
 * AI1: Interpret operands with constants, registers, and basic memory lookups
 * AI2: Interpret a basic arithmetic instruction
 * AI3: Interpret instructions using pointer arithmetic
-* AI4: Determine the outcome of a cmp jump sequence
+* AI4: Determine the outcome of a `cmp` jump sequence
 
 #### Advanced
 * AI5-AD: Interpret operands with offsets, indexing, and scaling
