@@ -29,7 +29,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 4 | | Queues and Hashing| |
 | 10/6 |[Queues Prep](queues-prep) | [Slides](https://docs.google.com/presentation/d/1rsxspbKQMM1hSKdy6xpn9G6HLKXt5lq34YfsUZKQrI8/edit?usp=sharing), [Queues Lab](queues-lab) |  |
 | 10/8 |  [Doubly-linked Lists and Deques Prep](doubles-prep) |	[Slides](https://docs.google.com/presentation/d/1h75qmod5cnWMTqV_GEwnRvO-xqNrB_7LGte3vWViL1g/edit?usp=sharing), [Doubly-Linked List Lab](doubly-ll-lab)	| |
-| 10/10 |[HW3](hw3), [Sets and Hashing Prep](hashing-prep) |[Slides]() | [HW4: Deck of Card Operations](hw4)|
+| 10/10 |[HW3](hw3), [Sets and Hashing Prep](hashing-prep) |[Slides](https://docs.google.com/presentation/d/1UnCJDTS504B10p1UqVaBW5Ar38vaYADNAL7MQEGtW4c/edit?usp=sharing) | [HW4: Deck of Card Operations](hw4)|
 | Week 5 |  | Hashing | |
 | 10/13 |	  **Exam 2**	| [Slides]()	|  |
 | 10/15 |   [Rehashing Prep]() |	[Slides]()	|   |
