@@ -35,7 +35,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 5 |  More Assembly |  | |
 | 10/13 |	[lea Prep](asm-lea-prep)	| [Slides](), mov and lea	|  |
 | 10/15 |    | [Slides](), [Exam 2](exam2)|  |
-| 10/17	|HW5,  |	[Slides](),  Trusting Trust	| [HW6: Escape from the Zoo](hw7) |
+| 10/17	|HW5, [Trusting Trust Prep](trust-prep)  |	[Slides](),  Trusting Trust	| [HW6: Escape from the Zoo](hw7) |
 | Week 6 | | Reverse Engineering | |
 | 10/20 |  | Midterm break! | |
 | 10/22 |  | [Slides](), Condition codes| |

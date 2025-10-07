@@ -32,8 +32,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/10 |[HW3](hw3), [Sets and Hashing Prep](hashing-prep) |[Slides](https://docs.google.com/presentation/d/1UnCJDTS504B10p1UqVaBW5Ar38vaYADNAL7MQEGtW4c/edit?usp=sharing), [Hashing Lab](hashing-lab) | [HW4: Deck of Card Operations](hw4)|
 | Week 5 |  | Hashing | |
 | 10/13 |	  [**Exam 2**](exam2)	| [Slides]()	|  |
-| 10/15 |   [Rehashing Prep]() |	[Slides]()	|   |
-| 10/17	| [HW4](hw4), [Recursion and Trees Prep]()  |	Trees	| HW5: Cuckoo Hashing;|
+| 10/15 |   [Rehashing Prep](rehashing-prep) |	[Slides]()	|   |
+| 10/17	| [HW4](hw4), [Recursion and Trees Prep](tree-prep)  |	Trees	| HW5: Cuckoo Hashing;|
 | Week 6 | | Trees| |
 | 10/20 |  | Midterm break! | |
 | 10/22 |  [Prefix Trees Prep]()   |[Slides]()	|  |
