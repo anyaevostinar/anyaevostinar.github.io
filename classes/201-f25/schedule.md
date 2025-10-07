@@ -31,7 +31,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/8 |  [Doubly-linked Lists and Deques Prep](doubles-prep) |	[Slides](https://docs.google.com/presentation/d/1h75qmod5cnWMTqV_GEwnRvO-xqNrB_7LGte3vWViL1g/edit?usp=sharing), [Doubly-Linked List Lab](doubly-ll-lab)	| |
 | 10/10 |[HW3](hw3), [Sets and Hashing Prep](hashing-prep) |[Slides](https://docs.google.com/presentation/d/1UnCJDTS504B10p1UqVaBW5Ar38vaYADNAL7MQEGtW4c/edit?usp=sharing), [Hashing Lab](hashing-lab) | [HW4: Deck of Card Operations](hw4)|
 | Week 5 |  | Hashing | |
-| 10/13 |	  **Exam 2**	| [Slides]()	|  |
+| 10/13 |	  [**Exam 2**](exam2)	| [Slides]()	|  |
 | 10/15 |   [Rehashing Prep]() |	[Slides]()	|   |
 | 10/17	| [HW4](hw4), [Recursion and Trees Prep]()  |	Trees	| HW5: Cuckoo Hashing;|
 | Week 6 | | Trees| |
