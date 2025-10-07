@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hashing Lab
-permalink: /classes/201-f25/hashing
+permalink: /classes/201-f25/hashing-lab
 published: true
 ---
 
