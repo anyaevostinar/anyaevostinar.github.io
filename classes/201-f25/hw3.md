@@ -147,6 +147,7 @@ In this case, the resulting maze would be printed as:
 Note that we specify only the top and right walls for each square, and not the bottom and left walls.  This is sufficient to describe the whole maze; make sure to understand why this is.
 
 ## Part A: Working with the stack and maze squares
+You'll be writing all your code for this assignment in the `solveMaze()` function within `SolvableMaze.kt`. 
 
 To get yourself started, you should not actually attempt to solve the maze, but instead fill in a solution path that starts at the start square and goes to the right until it hits a dead end.  It should stop there, even if it isn't the finish square.  For example, if this is your maze:
 ```
