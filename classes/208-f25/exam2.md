@@ -11,7 +11,7 @@ The subset of [learning objectives](exams-overview) that you can demonstrate you
 New:
 * NR2: Negating a binary value with 2's complement
 * OP3: Identify when overflow will occur in addition
-* OP6-AD: Resize an integer value to a larger size (signed or unsigned)
+* OP6-AD: Resize a value to a larger size (signed or unsigned)
 
 * AI1: Interpret operands with constants, registers, and basic memory lookups
 * AI2: Interpret a basic arithmetic instruction
@@ -21,7 +21,7 @@ New:
 * AI6-AD: Interpret `mov` instructions
 
 * AC1: Distinguish between recursion/looping/branching
-* AC2: Identify parameter count/types and return type of given a given assembly program
+* AC2: Identify parameter count/types and return type of a given assembly program
 * AC3-AD: Describe the functionality of a given assembly program
 * AC4-AD: Reconstruct all of a C program from given assembly
 

@@ -8,7 +8,7 @@ permalink: /classes/208-f25/asm-lea-lab
 Your primary goal for this lab is to play around with Compiler Explorer to write C code that corresponds to specific assembly structures. Through this lab, you will get practice thinking about how different assembly structures are used to work with different sizes and types of data.
 
 ## Getting started
-Open up [Compiler Explorer](https://godbolt.org/). Make sure to modify the settings following the [Getting Started instructions from HW5](hw5/#getting-started), using the `-Og` compiler flag.
+Open up [Compiler Explorer](https://godbolt.org/). Make sure to modify the settings following the [Getting Started instructions from HW5](hw5#getting-started), using the `-Og` compiler flag.
 
 1. Type the following function in the left-hand text editor:
 
@@ -16,7 +16,8 @@ Open up [Compiler Explorer](https://godbolt.org/). Make sure to modify the setti
     char f(char x)
     {
     return x;
-    }```
+    }
+    ```
     
     You should see the following assembly code in the right-hand panel:
     ```c
