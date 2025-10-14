@@ -33,7 +33,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 5 |  | Hashing | |
 | 10/13 |	  [**Exam 2**](exam2)	| [Slides](https://docs.google.com/presentation/d/1d30bLeaMGRGd9-LB8eXSSuSyz9CgjyoRLrb36tIZtiA/edit?usp=sharing)	|  |
 | 10/15 |   [Rehashing Prep](rehashing-prep) |	[Slides](https://docs.google.com/presentation/d/1XSUXXsLnTxprRvdTWEQm6uMrnp4fRRXuiXyIXr3NCHM/edit?usp=sharing)	|   |
-| 10/17	| [HW4](hw4), [Trees and Traversals Prep](tree-prep)  |	Trees	| [HW5: Cuckoo Hashing](hw5)|
+| 10/17	| [HW4](hw4), [Trees and Traversals Prep](tree-prep)  |	[Slides](https://docs.google.com/presentation/d/1bG7R0hYZa5ShLGLoMNIqRWsz2o8PVn00wVdoE5A9Ghc/edit?usp=sharing), [Tree Traversals Lab](tree-traversal-lab)	| [HW5: Cuckoo Hashing](hw5)|
 | Week 6 | | Trees| |
 | 10/20 |  | Midterm break! | |
 | 10/22 |  [Prefix Trees Prep]()   |[Slides]()	|  |
