@@ -66,7 +66,7 @@ It would appear that the beaver and the moose are in cahoots and on the loose. T
 To escape your zoo enclosure, you’ll need to make it through these six doors. Each door is part of one big program, and each door is opened by entering into the computer terminal a specific line of text, which we’ll call a *passcode*. If you type the correct passcode, then the door opens and you may move onto the next door. Otherwise, the doors all lock, their terminal screens display a taunting message, the alarms sound, and you’re back at square one. You can fully escape the zoo only by opening every door.
 
 ## Step 1: Access the terminal
-You can access the zoo’s security terminal (i.e., obtain your program to open the doors) by filling out the form at http://cs208u.mathcs.carleton.edu:55057/.
+You can access the zoo’s security terminal (i.e., obtain your program to open the doors) by filling out the form at [http://cs208u.mathcs.carleton.edu:55057/](http://cs208u.mathcs.carleton.edu:55057/).
 
 You will need to be on campus or connected to the Carleton VPN to access this page. Once you have filled out and submitted the form, the server will build your executable and return it to your browser in a file named `zooN.tar`, where `N` is the unique ID of your zoo enclosure. (Note: **your zoo program will be different from every other student’s zoo program,** even though they have similar structures.)
 
@@ -125,7 +125,7 @@ Put your descriptions in `descriptions.txt`, **along with your zoo enclosure num
 ## Step 4: Submit your work
 To submit your work, follow these steps:
 
-1. While connected to the Carleton network, run your `zoo` program and open as many doors as you can. This will cause your successful escape progress to get logged on the grading server. You can check to make sure your opened doors got logged properly by going to http://cs208u.mathcs.carleton.edu:55057/progress.
+1. While connected to the Carleton network, run your `zoo` program and open as many doors as you can. This will cause your successful escape progress to get logged on the grading server. You can check to make sure your opened doors got logged properly by going to [http://cs208u.mathcs.carleton.edu:55057/progress](http://cs208u.mathcs.carleton.edu:55057/progress).
 
 *Note:* The **zoo-quiet** program does not report your progress, so you eventually need to register your escape by running **zoo** at least once.
 
