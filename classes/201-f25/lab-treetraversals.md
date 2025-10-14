@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hashing Lab
+title: Tree Traversals Lab
 permalink: /classes/201-f25/tree-traversal-lab
 published: true
 ---
