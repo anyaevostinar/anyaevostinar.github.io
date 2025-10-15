@@ -38,8 +38,8 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 10/17	|HW5, [Trusting Trust Prep](trust-prep)  |	[Slides](https://docs.google.com/presentation/d/1zyWuTzHPeQkzzBEI7LBajEkHwaroLteDUVDsosctnj4/edit?usp=sharing),  Trusting Trust	| [HW6: Escape from the Zoo](hw6) |
 | Week 6 | | Reverse Engineering | |
 | 10/20 |  | Midterm break! | |
-| 10/22 | [Assembly Structures](asm-structs-prep) | [Slides](), Arrays, Structs, Condition codes | |
-| 10/24 | [Assembly Functions](asm-functions-prep) |	[Slides](), Stack and functions	|   |
+| 10/22 | [Assembly Structures Prep](asm-structs-prep) | [Slides](), Arrays, Structs, Condition codes | |
+| 10/24 | [Assembly Functions Prep](asm-functions-prep) |	[Slides](), Stack and functions	|   |
 | Week 7 | | Buffer Overflow | |
 | 10/27 | | [Slides](),	Exam 3	 | |
 | 10/29 |	HW6; [Buffer Overflow Prep](buffer-overflow-prep) |[Slides](), Buffer Overflows	| [HW7: Buffer Overflow](hw8)  |

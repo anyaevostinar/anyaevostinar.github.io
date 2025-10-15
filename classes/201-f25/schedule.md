@@ -36,8 +36,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/17	| [HW4](hw4), [Trees and Traversals Prep](tree-prep)  |	[Slides](https://docs.google.com/presentation/d/1bG7R0hYZa5ShLGLoMNIqRWsz2o8PVn00wVdoE5A9Ghc/edit?usp=sharing), [Tree Traversals Lab](tree-traversal-lab)	| [HW5: Cuckoo Hashing](hw5)|
 | Week 6 | | Trees| |
 | 10/20 |  | Midterm break! | |
-| 10/22 |  [Prefix Trees Prep]()   |[Slides]()	|  |
-| 10/24 | HW5; [Binary Search Trees]()  |	[Slides]() |  [HW6: Word Counter](hw6)|
+| 10/22 |  [Prefix Trees Prep](prefix-tree-prep)   |[Slides]()	|  |
+| 10/24 | HW5; [Binary Search Trees Prep](bst-prep)  |	[Slides]() |  [HW6: Word Counter](hw6)|
 | Week 7 | | Search Trees | |
 | 10/27 | [2-3 Trees Prep]()  | [Slides]() | |
 | 10/29 |	[Graphs Prep]()  | [Slides]()|   |
