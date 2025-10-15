@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Assembly Recursion Preparation
-permalink: /classes/208-s24/asm-recursion-prep
+title: Assembly Functions Preparation
+permalink: /classes/208-f25/asm-functions-prep
 ---
 
 ## Overview
@@ -31,4 +31,4 @@ Given this call stack:
 
 ![Diagram of call stack](/classes/208-f25/call_stack.png)
 
-Assuming `%rsp` has a value of `0x110` and `%rdi` has a value of `0x
+Assuming `%rsp` has a value of `0x110` and `%rdi` has a value of `0x7890`, draw the call stack after the instruction `push %rdi` is executed. Be sure to also indicate the values in `%rsp` and `%rbx` as well.

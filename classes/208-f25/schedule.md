@@ -39,7 +39,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 6 | | Reverse Engineering | |
 | 10/20 |  | Midterm break! | |
 | 10/22 | [Assembly Structures](asm-structs-prep) | [Slides](), Arrays, Structs, Condition codes | |
-| 10/24 |  |	[Slides](), Stack and functions	|   |
+| 10/24 | [Assembly Functions](asm-functions-prep) |	[Slides](), Stack and functions	|   |
 | Week 7 | | Buffer Overflow | |
 | 10/27 | | [Slides](),	Exam 3	 | |
 | 10/29 |	HW6; [Buffer Overflow Prep](buffer-overflow-prep) |[Slides](), Buffer Overflows	| [HW7: Buffer Overflow](hw8)  |
