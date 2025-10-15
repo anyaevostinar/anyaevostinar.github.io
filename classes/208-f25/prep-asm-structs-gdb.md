@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Assembly Structs and GDB Preparation
-permalink: /classes/208-s24/asm-gdb-structs-prep
+title: Assembly Structs and Arrays Preparation
+permalink: /classes/208-s24/asm-structs-prep
 ---
 
 ## Overview
