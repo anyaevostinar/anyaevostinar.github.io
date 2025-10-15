@@ -47,7 +47,8 @@ You can use a technique called **double hashing** where the probe technique uses
 
 1. Create a new function `insertKey3(key :String)` that calculates the skip size with the following function:
 ```kotlin
-var skipSize = 1 + (key % (hashTable.size - 1))
+//todo: hash the key
+var skipSize = 1 + (hashedKey % (hashTable.size - 1))
 ```
 
 2. Note that this function only works well when the table size is prime, so change the table size to 11 and then try to come up with some values that will cause secondary clustering (using hashcode1 will make that easier!)
