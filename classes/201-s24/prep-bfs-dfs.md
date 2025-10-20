@@ -1,7 +1,7 @@
 ---
 layout: page
 title: BFS and DFS Preparation
-permalink: /classes/201-w24/bfs-dfs-prep
+permalink: /classes/201-s24/bfs-dfs-prep
 ---
 
 ## Overview
