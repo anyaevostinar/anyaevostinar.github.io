@@ -59,7 +59,7 @@ The **advanced requirements** for your submission are:
     * `contains`
     * `getAutocompletionMap`
 * implement all functions **recursively**, not iteratively
-* satisfy all code style expectations listed above (#0-#9)
+* satisfy all code style expectations listed above
 * include your name and collaboration statement at the top of your `WordCountTree.kt` file
 
 ## Assignment overview
