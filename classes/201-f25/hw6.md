@@ -9,14 +9,14 @@ permalink: /classes/201-f25/hw6
 * Starter code: [word_counter.zip](word_counter.zip)  
 * Upload solutions via Gradescope as: `WordCountTree.kt`
 
-# Goals
+## Goals
 
 This assignment is designed to help you with the following:
 * practice with trees
 * practice with recursion
 * practice extending basic data structures for more complex functionality
 
-# Collaboration policy
+## Collaboration policy
 
 For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)  You may have at most one partner.
 
@@ -26,7 +26,7 @@ You should list any student or course staff with whom you discussed the assignme
 
 _If you work alone, you should say so instead._
 
-# Note on style:
+## Note on style:
 
 The following style guidelines are expected moving forward:
 
@@ -41,36 +41,40 @@ The following style guidelines are expected moving forward:
 8. The code doesn't compute the right answer by doing extra work (e.g., having a computation in a loop when it could have been done only once, after the loop).
 9. Helper functions are used to reduce code duplication.
 
-# Assessment
+## Assessment
 
 The **core requirements** for your submission are:
 
 * complete Parts A and D
-    * incrementCount
-    * getCount
+    * `incrementCount`
+    * `getCount`
 * makes use of the provided map in the `Node` class
 * satisfy the code style expectations #0-#4 above
 * include a reflection in comments at the bottom of your `WordCountTree.kt` file
 
-To **demonstrate mastery**, your submission needs to:
+The **advanced requirements** for your submission are:
 
-* demonstrate proficiency
+* satisfy the core requirements
 * complete all of Parts A-D
-* implement all functions recursively, not iteratively
+    * `contains`
+    * `getAutocompletionMap`
+* implement all functions **recursively**, not iteratively
 * satisfy all code style expectations listed above (#0-#9)
 * include your name and collaboration statement at the top of your `WordCountTree.kt` file
 
-# Assignment overview
+## Assignment overview
 
-Perhaps you've seen word clouds before, like [this word cloud on Wikipedia](https://en.wikipedia.org/wiki/Tag_cloud#/media/File:Foundation-l_word_cloud_without_headers_and_quotes.png).  The neat thing about word clouds is that words are displayed in a size proportional to the number of times they are used in the text on which the word cloud is based.
+![Words of varying sizes](/classes/201-f20/BaskervillesWordCloud.png)
 
-In this assignment, you'll implement a particular type of search tree to count words in a given text, which is a critical task required to produce a word cloud.  (You won't actually get to the step of building the word cloud, but then, summer is coming ;) .)
+Perhaps you've seen word clouds before, like the one above generated from Hound of the Baskervilles by Sir Arthur Conan Doyle.  The neat thing about word clouds is that words are displayed in a size proportional to the number of times they are used in the text on which the word cloud is based.
 
-# Getting started
+In this assignment, you'll implement a particular type of search tree to count words in a given text, which is a critical task required to produce a word cloud.  (You won't actually get to the step of building the word cloud, but then, winter break is coming ;) .)
+
+## Getting started
 
 Find your `cs201` folder for assignments.  Maybe it contains an `assignments` folder inside of it.
 
-Download [this `word_counter.zip` file](../../resources/assignments/word_counter.zip) to get the starter code.  Put it in the `cs201` folder you just created and unzip it.  This should give you a folder named `word_counter`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
+Download [this `word_counter.zip` file](word_counter.zip) to get the starter code.  Put it in the `cs201` folder you just created and unzip it.  This should give you a folder named `word_counter`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
 
 Now open your folder in VS Code.  There are multiple ways to do this, so pick one:
 * Open VS Code, then select `File` -> `Open Folder` and navigate to the `word_counter` folder you just made.
@@ -78,9 +82,9 @@ Now open your folder in VS Code.  There are multiple ways to do this, so pick on
 
 Either way, if you are asked, click that you trust the authors.  If you have any issues getting started, ask the lab assistants for help -- any of them should be able to help you get started, even if they aren't super familiar with Kotlin.
 
-# Building your code with Maven
+## Building your code with Maven
 
-Like most of our assignments, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code <span style="color: #10a5f5">(note that you must be in the top-level folder `word_counter` for these commands to work)</span>:
+Like most of our assignments, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder `word_counter` for these commands to work):
 
 * `mvn test` runs the tests that we provided (see below)
 
@@ -96,11 +100,11 @@ If you want to see less output from Maven, you can add `-q` (for "quiet") flag:
 
 If you run the tests with the starter code, you should have errors, as you haven't written any code yet.
 
-# Counting words using a prefix tree ("trie")
+## Counting words using a prefix tree ("trie")
 
 You can implement a word-counting tree as a prefix tree (a.k.a. a trie).  Each node except for the root will represent a character as well as a count.  The children of a node will be characters that could come after the current character to represent a word.
 
-To find a word, you'll work down the tree until you reah the final character in the word, and then look at the count for that node.  For example, imagine that we had a (very short) book that had the following words and counts:
+To find a word, you'll work down the tree until you reach the final character in the word, and then look at the count for that node.  For example, imagine that we had a (very short) book that had the following words and counts:
 
 | Word   | Count |
 |:-------|------:|
@@ -112,7 +116,7 @@ To find a word, you'll work down the tree until you reah the final character in 
 
 The word-count tree would then look like this:
 
-![Word-Count Tree Example](../images/wct_example.png)
+![Word-Count Tree Example](/classes/201-f20/TreeImage.png)
 
 To trace down the tree to find "the" you would take the following steps:
 
@@ -128,7 +132,7 @@ There are a couple of things to note about this tree:
 * The ordering of the children doesn't really matter.
 * Any node that exists in the tree either has a non-zero `count` or has a descendant with a non-zero `count`.  (In the above example, the root doesn't have a child that represents `'a'` because we didn't see any words starting with `'a'`.)
 
-# Part A: Basic word-counting functionality
+## Part A: Basic word-counting functionality
 
 You will implement the above word-counting tree in the `WordCountTree` class in `WordCountTree.kt`.
 
@@ -142,15 +146,15 @@ Your first task is to implement two functions:
 
 Once you have this basic functionality implemented, you should pass the `testIncrementAndGet` test when you run `mvn test`.
 
-Note: It is important that you do not use any built-in libraries or other functionality that avoids doing it with your own code.  If you are getting around the point of the assignment (i.e., not working with the map in each node, not having a tree represented via connected nodes, etc.) you will not demonstrate Proficiency for this assignment.
+Note: It is important that you do not use any built-in libraries or other functionality that avoids doing it with your own code.  If you are getting around the point of the assignment (i.e., not working with the map in each node, not having a tree represented via connected nodes, etc.) you will not satisfy the core requirements for this assignment.
 
-# Part B: Use recursion!
+## Part B: Use recursion!
 
-You should work to make each of the four functions you'll implement for this assignment (two for Part A and two for Part C) recursive, not iterative.  It is okay for your functions to call a helper method where the recursion actually takes place (like we saw in [`BinarySearchTree.kt`](../../resources/samples/BinarySearchTree.kt)), as long as there is recursion when it goes to the next level of the tree.
+You should work to make each of the four functions you'll implement for this assignment (two for Part A and two for Part C) recursive, not iterative.  It is okay for your functions to call a helper method where the recursion actually takes place (like we saw in [`BSTLab.kt`](/classes/201-f25/BSTLab.kt)), as long as there is recursion when it goes to the next level of the tree.
 
 Take some time to look through your implementations of `incrementCount` and `getCount` from Part A and make them recursive if they aren't already.
 
-# Part C: Remaining word-counting functionality
+## Part C: Remaining word-counting functionality
 
 Finally, you should implement the remaining functionality.  Here are the last two functions you'll write:
 
@@ -162,7 +166,7 @@ Once you have these two functions working, all tests should pass when you run `m
 
 Note that these two functions should also be recursive, as described in [Part B](#part-b-use-recursion).  For `getAutocompletionMap`, you might need to loop over all of the children while changing levels in the tree recursively.
 
-# Part D: Reflection
+## Part D: Reflection
 
 Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?
 
@@ -190,7 +194,7 @@ Here are some examples:
 // I spent 3 hours on this assignment.
 ```
 
-# Hints and suggestions
+## Hints and suggestions
 
 * If you are having trouble remembering how to use a `MutableMap` in Kotlin, go back to the [Kotlin Tour](https://kotlinlang.org/docs/kotlin-tour-collections.html#map).
 
