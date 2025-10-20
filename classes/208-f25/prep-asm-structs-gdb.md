@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Assembly Structs and Arrays Preparation
-permalink: /classes/208-s24/asm-structs-prep
+permalink: /classes/208-f25/asm-structs-prep
 ---
 
 ## Overview
