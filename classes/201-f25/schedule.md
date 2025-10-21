@@ -39,7 +39,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/22 |  [Prefix Trees Prep](prefix-tree-prep)   |[Slides](https://docs.google.com/presentation/d/1r-txW415QPLJYVXic0N4hUZHcrGIrRamCkBJCci_RlM/edit?usp=sharing), [Prefix Tree Lab](prefix-trees-lab)	|  |
 | 10/24 | HW5; [Binary Search Trees Prep](bst-prep)  |	[Slides](https://docs.google.com/presentation/d/1jo3LMpvKj3i-9O9Pk9fm3IWMpbV1eQMUCze7iiB5Ybo/edit?usp=sharing), [BST Lab](bst-lab) |  [HW6: Word Counter](hw6)|
 | Week 7 | | Search Trees | |
-| 10/27 | [2-3 Trees Prep](2-3-prep)  | [Slides]() | |
+| 10/27 | [2-3 Trees Prep](2-3-prep)  | [Slides](), [2-3 Tree Lab](two-three-tree-lab) | |
 | 10/29 |	[Graphs Prep](graphs-prep)  | [Slides]()|   |
 | 10/31 | HW6; [Graph Searches Prep](bfs-dfs-prep) |			| HW7: IMDB Graph|
 | Week 8 | | Sorting | |
