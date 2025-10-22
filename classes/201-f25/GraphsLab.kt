@@ -2,21 +2,27 @@
 // Ported to Kotlin by Dave Musicant from Java code at
 // https://www.programiz.com/dsa/graph-adjacency-matrix
 // https://www.programiz.com/dsa/graph-adjacency-list
-// Adapted for in-class lab by Jean Salac
+// Adapted for in-class lab by Jean Salac and Anya Vostinar
 
 class AdjMatrixGraph(numVertices: Int) {
     var adjMatrix = Array<Array<Boolean>>(numVertices) {Array<Boolean>(numVertices) {false}}
 
-    // Add edges
-    fun addEdge(i: Int, j: Int) {
-        adjMatrix[i][j] = true
-        adjMatrix[j][i] = true
+    /**
+     * Adds an edge to the graph between two existing nodes, start and end
+     * param: index of start node, Int
+     * param: index of end node, Int
+     */
+    fun addEdge(start: Int, end: Int) {
+        
     }
 
-    // Remove edges
-    fun removeEdge(i: Int, j: Int) {
-        adjMatrix[i][j] = false
-        adjMatrix[j][i] = false
+    /**
+     * Removes an edge from the graph between two existing nodes, start and end
+     * param: index of start node, Int
+     * param: index of end node, Int
+     */
+    fun removeEdge(start: Int, end: Int) {
+        
     }
 
     // Implement a function to check if a given node/vertex is in the graph. 
