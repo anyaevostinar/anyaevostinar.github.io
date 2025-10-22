@@ -128,36 +128,36 @@ What questions do you have about the first three?
 ### Logical operations and set instructions
 Now let’s look at the last assignment statement:
 
-    ```c
-    data->v[3] = x && y;
-    ```
+```c
+data->v[3] = x && y;
+```
 
 This one gets a little weird. We need to check if `x` is non-zero and if `y` is non-zero, and, if they’re both non-zero, put a 1 in `data->v[3]` (or a 0 otherwise).
 
 Let’s break down the corresponding assembly:
 
-    ```bash
-    # Determine if x is "true"
-    testq   %rdi, %rdi      # set flags using x & x
-    setne   %cl             # %cl <- ~ZF (0 if x&x==0, 1 otherwise)
-    
-    # Determine if y is "true"
-    testq   %rsi, %rsi      # set flags using y & y
-    setne   %al             # %al <- ~ZF (0 if y&y==0, 1 otherwise)
+```bash
+# Determine if x is "true"
+testq   %rdi, %rdi      # set flags using x & x
+setne   %cl             # %cl <- ~ZF (0 if x&x==0, 1 otherwise)
 
-    # Perform an "and" on the two individual bits
-    andl    %ecx, %eax      # %eax <- %eax & %ecx (y!=0 & x!=0)
+# Determine if y is "true"
+testq   %rsi, %rsi      # set flags using y & y
+setne   %al             # %al <- ~ZF (0 if y&y==0, 1 otherwise)
 
-    # We did the "and" using 32-bit values, but we only stored
-    # stuff in the bottom 8 bits originally, so there could be
-    # garbage bytes still living in the top 24 bits -- extend
-    # %al to the full 32 bits
-    movzbl  %al, %eax
+# Perform an "and" on the two individual bits
+andl    %ecx, %eax      # %eax <- %eax & %ecx (y!=0 & x!=0)
 
-    # Copy the 16 bits we actually care about for our "short" result
-    # in data->v[3]
-    movw    %ax, 30(%rdx)
-    ```
+# We did the "and" using 32-bit values, but we only stored
+# stuff in the bottom 8 bits originally, so there could be
+# garbage bytes still living in the top 24 bits -- extend
+# %al to the full 32 bits
+movzbl  %al, %eax
+
+# Copy the 16 bits we actually care about for our "short" result
+# in data->v[3]
+movw    %ax, 30(%rdx)
+```
 
 ### Checking register values in gdb
 Now let’s step through the assembly to make sense of all of this.
@@ -227,7 +227,7 @@ Now let’s step through the assembly to make sense of all of this.
 
     Note that gdb has its own silly set of prefixes: `b` means “byte”, `h` means “halfword” (two bytes), `w` means “word” (four bytes), and `g` means “giant word” (eight bytes). The expression above `x/4hx` says “examine four half-word (two byte) chunks, starting at the given address”.
 
-    You can find more info here: [https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_55.html].
+    You can find more info here: [https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_55.html](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_55.html).
 
 12. We could instead look at this chunk of memory in individual bytes:
     ```bash

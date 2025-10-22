@@ -26,6 +26,7 @@ You should read the following:
 * [7.3 The Graph ADT](https://runestone.academy/ns/books/published/pswadsup/graphs_the-graph-abstract-data-type.html?mode=browsing)
 * [7.4 Adjacency Matrix](https://runestone.academy/ns/books/published/pswadsup/graphs_an-adjacency-matrix.html?mode=browsing)
 * [7.5 Adjacency List](https://runestone.academy/ns/books/published/pswadsup/graphs_an-adjacency-list.html?mode=browsing)
+* [7.6 Implementation](https://runestone.academy/ns/books/published/pswadsup/graphs_implementation.html?mode=browsing)
 
 ## Checks
 Submit your answers to the following on Moodle.

@@ -39,7 +39,9 @@ The **advanced** requirements for your submission are:
 
 * meet the core requirements
 * implement the remaining four functions in `bits.c` while satisfying the operator count and availability constraints
-* be quite [well-styled](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/style-guide/), particularly with well-chosen variable names, good identation, and comments to explain your operator choices
+* be quite [well-styled](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/style-guide/), particularly with well-chosen variable names, good identation
+* In-line comments to explain your operator choices for each line
+    * These should make it clear that you understand what the operators are doing
 * include your name and collaboration statement at the top of your C source file(s)
 
 ## Assignment overview
