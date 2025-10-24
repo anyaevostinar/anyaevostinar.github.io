@@ -6,7 +6,7 @@ published: true
 ---
 
 ## Goals
-To better understand the tradeoffs of the adjacency matrix and adjacency list graph implementations by implementing them yourself.
+To better understand the trade-offs of the adjacency matrix and adjacency list graph implementations by implementing them yourself.
 
 ## Setup
 [Mount the COURSES drive](scavenger-hunt) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
@@ -31,7 +31,7 @@ Implement the following methods for both implementations:
 * `removeEdge`
 * `getNeighbors`
 
-What is the worst-case time complexity for each of these methods in the two implementations? Write them down on your worksheet and make sure that they are in terms of `|V|` (the number of vertices) and/or `|E|` (the number of edges).
+As you implement each, make sure to uncomment the test code and verify that they are working correctly.
 
 ## Exercise 4
 1. Implement `addVertex` for each of the versions. 
@@ -43,9 +43,10 @@ adjMatrix = adjMatrix + Array<Boolean>(adjMatrix.size + 1) {false}
 
 The above adds a new row to the array and fills it with `false`. You will also need to expand each of the existing rows and should think carefully about how to do that.
 
-2. Write down the worst case time complexity for each of the versions of `addVertex`. 
-
 Submit your completed implementations to Moodle for an extra engagement credit.
+
+## Exercise 5
+What aspects of a problem indicate that you should use an adjacency matrix to implement the graph? What about an adjacency list? Discuss and write down your thoughts on the worksheet.
 
 ## Extra
 We've been focused on undirected and unweighted graph implementations. You can also allow edges to have a value, i.e. a "weight" and/or a direction, so 0->1 but the reverse isn't guaranteed. Try making changes to your implementations to support one or both of those functionalities.
