@@ -1,35 +1,52 @@
 ---
 layout: page
-title: HW8 EXPLOITING BUFFER OVERFLOWS
-permalink: /classes/208-s24/hw8
+title: HW7 - Exploiting Buffer Overflows
+permalink: /classes/208-f25/hw7
 ---
+
+**Due Wednesday Nov 5th at 10pm**
 
 This assignment is an adaptation and contraction by Jeff Ondich of Aaron Bauer's adaption of a lab developed for the Carnegie Mellon University's 15-213 (Introduction to Computer Systems) course.
 
-## GOALS
-* Learn some of the ways that carefully designed malicious input can cause a vulnerable program to behave in ways not intended by the program's creators.
-* Use that knowledge to learn how to avoid creating similar vulnerabilities in your own programs.
-* Learn a little bit about how x86-64 machine language is structured.
-* Deepen your understanding of the stack structures used to implement C function-calling in x86-64.
-* Revisit your gdb skills.
+You may work on this assignment alone or with a single partner.
 
-## Logistics
-This is a **paired** assignment, so you should work with your partner (either chosen by you or set up by me depending on your form response). If you indicated you would work alone, you can change your mind and join with someone, but you need to let me know asap. As usual, you can get help as detailed in the [collaboration](collaboration) document. You should submit only one assignment to Gradescope for your pair and add your partner to the submission. If for some reason you and your partner can't make things work, you can split, but you have to let me know asap.
+## Goals
+This assignment is designed to help you practice with the following:
 
-This assignment is due Wednesday May 15th at 10pm. As with all assignments, you will have the opportunity to **individually** [revise](revision-process) this submission based on feedback.
+* learning some of the ways that carefully designed malicious input can cause a vulnerable program to behave in ways not intended by the program’s creators
+* using that knowledge to learn how to avoid creating similar vulnerabilities in your own programs
+* learning about how x86-64 machine language is structured
+* deepening your understanding of the stack structures used to implement C function-calling in x86-64
+* further strengthening your `gdb` skills
+
+## Collaboration policy
+For this assignment, you may work alone or with a partner, but you must complete your own individual buffer overflow attack (more details below).
+
+You may also discuss the assignment at a high level with other students.
+
+For this assignment, **you should not spoil any of the phases** for people who aren’t your partner. That means you can make sense of how your input is stored on the stack collectively, but once you know how to perform a given attack you can’t share that knowledge with anyone but your partner.
+
+You should list any student with whom you discussed the assignment, and the manner of discussion (high level, partner, etc.) in comments at the top of your **info.txt** file.
+
+*If you work alone, you should say so instead.*
 
 ## Assessment
-To **demonstrate proficiency**, your submission needs to:
-* Pass phases 1 and 2
+The **core requirements** for your submission are:
+* Pass phase 1
+* Include your name, target number, and collaboration statement in your `info.txt` file
 
-To **demonstrate mastery**, your submission needs to:
+The **advanced requirements** for your submission are:
+* Satisfy core requirements
 * Pass all three phases
 
-Your progress through the phases will be automatically tracked as it was during the zoo escape assignment. For this assignment, your entire score will be based on your completion of the three phases of the assignment; all you need to hand in is a document `info.txt` that includes your target number (we can see it as well, but it makes it easier on the grader).
+Your progress through the phases will be automatically tracked as it was during the [zoo escape](hw6) assignment. Check your progress here: [http://cs208.mathcs.carleton.edu:1866/progress](http://cs208.mathcs.carleton.edu:1866/progress).
 
-Check your progress here: [http://cs208.mathcs.carleton.edu:1866/progress](http://cs208.mathcs.carleton.edu:1866/progress)
+There is a lot of setup, but once you get going it should be much more straightforward to move from one phase to the next.
 
-## BUFFER OVERFLOW ATTACKS
+## Submission
+For this assignment, your entire assessment will be based on your completion of the three phases. All you need to hand in is an `info.txt` file that includes your name, target number, and your collaboration statement.
+
+## Background: Buffer Overflow Attacks
 Suppose you write a program that includes this function:
 
 ```c
@@ -54,8 +71,8 @@ If our users are clever enough, they can type input that will (1) overflow `str`
 
 This kind of sneaky user is engaged in what is known as a [buffer overflow attack](https://owasp.org/www-community/attacks/Buffer_overflow_attack). In this assignment, you are going to play the role of buffer-overflow attacker. In the process, you'll get more familiar with the way function calling works at the assembly language level.
 
-## WHAT TO DO
-1. **Get your attack target.** Fill out the form at [http://cs208.mathcs.carleton.edu:1866/](http://cs208.mathcs.carleton.edu:1866/) to download your `targetN.tar file`. This file is analogous to the `zooN.tar` file you obtained during the the [zoo-escape assignment](hw7).
+## What to do
+1. **Get your attack target.** Fill out the form at [http://cs208.mathcs.carleton.edu:1866/](http://cs208.mathcs.carleton.edu:1866/) to download your `targetN.tar file`. This file is analogous to the `zooN.tar` file you obtained during the the [zoo-escape assignment](hw6).
 2. **Move your `targetN.tar` file to mantis** and expand it there (with `tar xvf targetN.tar`). The `targetN.tar` file contains a whole bunch of files, some of which you will not need because we're doing only a portion of the original lab. The files you will need are:
     * `ctarget` — the executable program that you will attack. This program is vulnerable to code injection attacks.
     * `ctarget.phaseN` for N = 1, 2, and 3 — files where you can put your solutions to the phases as you work (analogous to the `passcodes.txt` file from the zoo assignment).
@@ -63,30 +80,30 @@ This kind of sneaky user is engaged in what is known as a [buffer overflow attac
     * `hex2raw` — a utility program that will help you to generate attack strings.
 Ignore `rtarget*` and `farm.c`
 
-3. **For each phase:**
+3. **Complete each phage:** For each phase, you'll want to follow these substeps:
     * Read about the phase. ([Phase1](#phase-1-make-ctarget-call-the-wrong-function), [Phase2](#phase-2-make-ctarget-call-the-wrong-function-with-an-int-parameter), [Phase3](#phase-3-make-ctarget-call-the-wrong-function-with-a-string-parameter))
-    * Use gdb (and [gcc for some phases](#appendix-b-generating-byte-codes)) to figure out what bytes you want to write into (and past) the input buffer so as to corrupt the stack frame in whatever way is required to achieve your goal.
-    * Store the bytes you want to input as space-delimited bytes (2 hexadecimal digits each) in the `ctarget.phaseN` file (with N for whichever phase you're working on).
+    * Use `gdb` (and [gcc for some phases](#appendix-b-generating-byte-codes)) to figure out what bytes you want to write into (and past) the input buffer so as to corrupt the stack frame in whatever way is required to achieve your goal.
+    * Store the bytes you want to input as space-delimited bytes (2 hexadecimal digits each) in the `ctarget.phaseN` file (with `N` for whichever phase you're working on).
 
-    Note that your exploit strings must not contain the byte value 0x0a, since this is the ASCII code for newline ('\n') and `ctarget` will consider it the end of your input.
+    Note that your exploit strings must not contain the byte value `0x0a`, since this is the ASCII code for newline (`'\n'`) and `ctarget` will consider it the end of your input.
 
     * Perform your attack like so:
     ```
     cat ctarget.phaseN | ./hex2raw | ./ctarget
     ```
 
-    If you're successful, ctarget will let you know.
-    * Make sure you run the attack on mantis so your success will get recorded.
+    If you're successful, `ctarget` will let you know. 
+    * Make sure you run the attack on `mantis` so your success will get recorded.
     * Check out your progress at [http://cs208.mathcs.carleton.edu:1866/progress](http://cs208.mathcs.carleton.edu:1866/progress)
     Unless you run `ctarget` with the `-q` flag, your exploit string will be sent to the assignment server and tested. The server will then update your status on the progress page.
 
     There is no penalty for making mistakes in this assignment, nor are mistakes even recorded anywhere. Experiment at will!
 
-    The progress server expects you to work on mantis.mathcs.carleton.edu. You can certainly do your work on any Linux x86-64 computer, but eventually, you'll need to submit your solution to each phase from mantis.
+    The progress server expects you to work on `mantis.mathcs.carleton.edu`. You can certainly do your work on any Linux x86-64 computer, but eventually, you'll need to submit your solution to each phase from mantis.
 
 4. **Celebrate!**
 
-## GENERAL INFORMATION ABOUT CTARGET
+## General information about `ctarget`
 `ctarget` reads strings from standard input. It does so using the function `getbuf`:
 
 ```c
@@ -103,7 +120,7 @@ Functions `Gets` and `gets` have no way to determine whether their destination b
 
 (Note that `getbuf()` is really weird in a "this-is-a-classroom-exercise" sort of way. It reads data into the local variable `buf`, and then immediately returns without doing anything with the data. That seems dumb, right? What you need to imagine is that this same operation — declare a buffer and read data into it — is happening in the context of a real-life program, where the dangerous `Gets(buf)` line is followed by code that does something important with the contents of `buf`. This scenario — uncontrolled input followed by critical computation — is disturbingly common in important code that runs the world.)
 
-For this assignment, we will refer to the bytes entered by the user as the *exploit string*. If your exploit string is sufficiently short, it won't overrun the buffer `buf`, so `getbuf` will finish normally and return 1, as shown by this execution example (user input in yellow):
+For this assignment, we will refer to the bytes entered by the user as the *exploit string*. If your exploit string is sufficiently short, it won't overrun the buffer `buf`, so `getbuf` will finish normally and return 1, as shown by this execution example (the user input is `Look! A moose!`):
 
 ```bash
 ./ctarget
@@ -161,7 +178,7 @@ When `getbuf` executes its return statement, the program ordinarily resumes exec
 6}
 ```
 
-Your task is to get `ctarget` to execute the code for `touch1` when `getbuf` executes its return statement, rather than returning to test. Note that your exploit string may also corrupt parts of the stack not directly related to the this modified return statement, but that's OK with us, since `touch1` causes the program to exit directly.
+Your task is to get `ctarget` to execute the code for `touch1` when `getbuf` executes its return statement, rather than returning to test. Note that your exploit string may also corrupt parts of the stack not directly related to the this modified return statement, but that's OK with us, since `touch1` causes the program to exit directly (via a call to `exit(0)`).
 
 Some Advice:
 
@@ -238,7 +255,7 @@ Some Advice:
 * When functions `hexmatch` and `strncmp` are called, they push data onto the stack, overwriting portions of memory that held the buffer used by `getbuf`. As a result, you will need to be careful where you place the string representation of your cookie.
 
 ## APPENDIX A: USING HEX2RAW
-`hex2raw` is a command-line utility that takes as input a hex-formatted string. In this format, each byte value is represented by two hex digits. For example, the string "012ABC" could be entered in hex format as "30 31 32 41 42 43 00".
+Provided with this assignment is `hex2raw`, which is a command-line utility that takes as input a hex-formatted string. In this format, each byte value is represented by two hex digits. For example, the string `"012ABC"` could be entered in hex format as `"30 31 32 41 42 43 00"`.
 
 The hex characters you pass to `hex2raw` should be separated by whitespace (blanks or newlines). I recommend separating different parts of your exploit string with newlines while you're working on it. `hex2raw` supports C-style block comments, so you can mark off sections of your exploit string. For example:
 
