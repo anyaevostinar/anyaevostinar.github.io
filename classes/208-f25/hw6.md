@@ -156,6 +156,8 @@ To submit your work, follow these steps:
 
 * Avoid going through the assembly for C library functions—reading the documentation and writing your own small experimental C programs will be a much easier path to understanding them!
 
+* Make sure to have a newline at the end of your `passcodes.txt` so that all your input gets read in correctly.
+
 ## Tools you can use
 There are many tools that are designed to help you figure out both how programs work and what is wrong when they don’t work. Here is a list of some of the tools you may find useful in analyzing your `zoo` program, and hints on how to use them:
 
