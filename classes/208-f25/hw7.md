@@ -6,6 +6,8 @@ permalink: /classes/208-f25/hw7
 
 **Due Wednesday Nov 5th at 10pm**
 
+**Note: As of 10/27, the server isn't ready to be setup, but I wanted you to be able to get an idea of the assignment ahead of Wednesday. I guarantee that you'll have a week of live server time for this assignment, which I'm hoping will start on Wednesday, but if I need to push back the due date, I will.**
+
 This assignment is an adaptation and contraction by Jeff Ondich of Aaron Bauer's adaption of a lab developed for the Carnegie Mellon University's 15-213 (Introduction to Computer Systems) course.
 
 You may work on this assignment alone or with a single partner.
