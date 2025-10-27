@@ -84,4 +84,7 @@ Walk through a buffer overflow attack yourself.
 
 6. Step through again, taking a look at your stack along the way and probably with `layout asm` open. Where do you jump to when the buffer overflows?
 
+## More reverse engineering
+Try reverse engineering the correct secret number for some extra practice!
+
 A very similar process will get you through the first part of the Buffer Overflow homework, try it out!
