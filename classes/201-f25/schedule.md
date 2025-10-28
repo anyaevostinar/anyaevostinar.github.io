@@ -44,8 +44,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/31 | HW6; [Graph Searches Prep](bfs-dfs-prep) |	[Slides](https://docs.google.com/presentation/d/1ikoMsElcCwOIR2wLFaolbvbW7P1XzNxQ-UvAVDi9Heg/edit?usp=sharing), [Traversal Lab](traversal-lab)		| HW7: IMDB Graph|
 | Week 8 | | Sorting | |
 | 11/3 | [**Exam 3**](exam3)    | [Slides]()	 |   |	
-| 11/5 |   Heaps and PQs Prep ; 	| [Slides]() | 	  |
-| 11/7 |  Mergesort Prep  | [Slides]()	|  |	
+| 11/5 |   [Heaps and PQs Prep](heaps-prep) 	| [Slides]() | 	  |
+| 11/7 |  [Mergesort Prep](mergesort-prep)  | [Slides]()	|  |	
 | Week 9 | | Search Trees | |
 | 11/10 | HW7; Quicksort Prep  | [Slides]() | HW8: Sorting  |
 | 11/12 |  Heapsort Prep  | [Slides]() 	 | 	 |
