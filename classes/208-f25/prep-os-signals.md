@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Signals and Messages Prep
-permalink: /classes/208-s24/os-signals-prep
+permalink: /classes/208-f25/os-signals-prep
 ---
 
 ## Overview

@@ -47,7 +47,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 8 | | Processes, threads, and memory| |
 | 11/3 |[OS and Processes Prep](os-processes-prep) | [Slides](),	Processes; [Getting Started with Processes Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab7/)	 |  |	
 | 11/5 | HW7; [Signals and Messages Prep](os-signals-prep)	|  [Slides](), Forks and Pipes |	[HW8: Simple Command Shell]() |
-| 11/7 |[Caching Prep](caching-prep) [Memory Hierarchy Prep](mem-hierarchy-prep) | [Slides](), Caching	|  |	
+| 11/7 |[Caching Prep](caching-prep) | [Slides](), Caching	|  |	
 | Week 9 | | Caches| |
 | 11/10 |   | [Slides]()	Exam 4|  |
 | 11/12 | HW8; |[Slides](),  Cache aware code |  |
