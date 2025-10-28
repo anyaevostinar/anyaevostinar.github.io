@@ -41,7 +41,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 7 | | Search Trees | |
 | 10/27 | [2-3 Trees Prep](2-3-prep)  | [Slides](https://docs.google.com/presentation/d/1pOy4NDy7tuVaAmoC8JbEagHPqBKtnw1QTtDU4SUlAsw/edit?usp=sharing), [2-3 Tree Lab](two-three-tree-lab) | |
 | 10/29 |	[Graphs Prep](graphs-prep)  | [Slides](https://docs.google.com/presentation/d/1bBkIjOI2dnM2ntpDy7V58ZaNfGQJRh3UMMYYkwETvYk/edit?usp=sharing), [Graph Implementation Lab](graph-imp-lab)|   |
-| 10/31 | HW6; [Graph Searches Prep](bfs-dfs-prep) |	[Slides](https://docs.google.com/presentation/d/1ikoMsElcCwOIR2wLFaolbvbW7P1XzNxQ-UvAVDi9Heg/edit?usp=sharing), [Traversal Lab](traversal-lab)		| HW7: IMDB Graph|
+| 10/31 | HW6; [Graph Searches Prep](bfs-dfs-prep) |	[Slides](https://docs.google.com/presentation/d/1ikoMsElcCwOIR2wLFaolbvbW7P1XzNxQ-UvAVDi9Heg/edit?usp=sharing), [Traversal Lab](traversal-lab)		| [HW7: IMDB Graph](hw7)|
 | Week 8 | | Sorting | |
 | 11/3 | [**Exam 3**](exam3)    | [Slides]()	 |   |	
 | 11/5 |   [Heaps and PQs Prep](heaps-prep) 	| [Slides]() | 	  |
