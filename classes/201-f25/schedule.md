@@ -43,7 +43,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 10/29 |	[Graphs Prep](graphs-prep)  | [Slides](https://docs.google.com/presentation/d/1bBkIjOI2dnM2ntpDy7V58ZaNfGQJRh3UMMYYkwETvYk/edit?usp=sharing), [Graph Implementation Lab](graph-imp-lab)|   |
 | 10/31 | HW6; [Graph Searches Prep](bfs-dfs-prep) |	[Slides](https://docs.google.com/presentation/d/1ikoMsElcCwOIR2wLFaolbvbW7P1XzNxQ-UvAVDi9Heg/edit?usp=sharing), [Traversal Lab](traversal-lab)		| HW7: IMDB Graph|
 | Week 8 | | Sorting | |
-| 11/3 | **Exam 3**    | [Slides]()	 |   |	
+| 11/3 | [**Exam 3**](exam3)    | [Slides]()	 |   |	
 | 11/5 |   Heaps and PQs Prep ; 	| [Slides]() | 	  |
 | 11/7 |  Mergesort Prep  | [Slides]()	|  |	
 | Week 9 | | Search Trees | |
