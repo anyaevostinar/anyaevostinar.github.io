@@ -43,7 +43,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | Week 7 | | Buffer Overflow | |
 | 10/27 | | [Slides](https://docs.google.com/presentation/d/1DkoAV7GD7KUUNi-s0Is5en1Gdp0xBzw4aUXaqFRJk0I/edit?usp=sharing),	[Exam 3](exam3)	 | |
 | 10/29 |	HW6; [Buffer Overflow Prep](buffer-overflow-prep) |[Slides](https://docs.google.com/presentation/d/1FL8VIoD-zOCz_72gaPLrs3H19kRjyzZ4sTVSjD1xR4I/edit?usp=sharing), [Buffer Overflow Lab](buffer-overflow-lab)	| [HW7: Buffer Overflow](hw7)  |
-| 10/31 |[Unix Prep](useful-unix-prep)  |[Slides](),	File systems and Unix	|  |
+| 10/31 |[Unix Prep](useful-unix-prep)  |[Slides](https://docs.google.com/presentation/d/14VqJ2IsjCmxBl9GXFaoQ_69x98FXRugjEPPmMe4AAZQ/edit?usp=sharing),	File systems and Unix	|  |
 | Week 8 | | Processes, threads, and memory| |
 | 11/3 |[OS and Processes Prep](os-processes-prep) | [Slides](),	Processes; [Getting Started with Processes Lab](https://www.cs.carleton.edu/faculty/tamert/courses/cs208-f23/labs/lab7/)	 |  |	
 | 11/5 | HW7; [Signals and Messages Prep](os-signals-prep)	|  [Slides](), Forks and Pipes |	[HW8: Simple Command Shell]() |
