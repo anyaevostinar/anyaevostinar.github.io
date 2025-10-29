@@ -15,7 +15,9 @@ To better understand the trade-offs of the adjacency matrix and adjacency list g
 * Open your `GraphImpLab` folder in VSCode
 
 ## Exercise 1
-Take a look at `main`, which has two different versions of a graph. Start off by drawing (on the worksheet's last page):
+Take a look at `main`, which has two different versions of an **undirected, unweighted** graph. 
+
+Start off by drawing (on the worksheet's last page):
 * The graph abstractly, with circles for vertices and lines for edges
 * The graph as an adjacency matrix
 * The graph as an adjacency list

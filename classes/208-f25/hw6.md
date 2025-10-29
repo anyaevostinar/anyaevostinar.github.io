@@ -46,7 +46,7 @@ The **advanced requirements** for your submission are:
         * open doors 4–6 (inclusive)
         * have an accurate and concise explanation for at least one of doors 4–6
 
-Good explanations will be succinct paragraphs describing, at a high level of abstraction, what the door puzzle is computing with your input.
+Good explanations will be succinct paragraphs (possibly just a sentence or two for the early phases) describing, at a high level of abstraction, what the door puzzle is computing with your input.
 
 If you are unable to open a door, your explanation of that door is unlikely to be clear or persuasive.
 
@@ -96,7 +96,7 @@ This will create a directory called `zooN` with the following files:
 
 * `zoo-quiet`: An offline version of the executable door program. You can work on this one without an internet connection. You just need to run `zoo` once while connected to have your progress recorded.
 
-* `descriptions.txt`: The file in which you should briefly explain the functionality of each door you open, and how you opened it. (See below for further discussion of this file.)
+* `descriptions.txt`: The file in which you should briefly explain the functionality of each door you open. (See below for further discussion of this file.)
 
 * `passcodes.txt`: The file in which you record your door-opening inputs, one line per door puzzle.
 
@@ -139,6 +139,8 @@ To submit your work, follow these steps:
     ```
 
     the program will read the input lines from `passcodes.txt` until it reaches `EOF` (end of file), and then switch over to reading from the command line. The beaver seems to have added this as a debugging feature when prepping the doors, but forgot to remove it. Either way, you can use it to keep retyping the solutions to doors you have already opened.
+
+* You can also do that in `gdb`: `run passcodes.txt`
 
 * The `zoo` program ignores blank input lines, both from the keyboard and from the input file. This means that you can space out your `passcodes.txt` lines if you want to. But, note that the *order* of the `passcodes.txt` lines must correspond to the order of the door puzzles.
 

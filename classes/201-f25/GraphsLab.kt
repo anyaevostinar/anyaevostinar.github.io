@@ -8,7 +8,7 @@ class AdjMatrixGraph(numVertices: Int) {
     var adjMatrix = Array<Array<Boolean>>(numVertices) {Array<Boolean>(numVertices) {false}}
 
     /**
-     * Add an edge to the graph
+     * Add an edge to the graph, assumes that graph doesn't already contain the edge
      * param: int, starting vertex for edge
      * param: int, ending vertex for edge
      */
@@ -87,7 +87,7 @@ class AdjListGraph(numVertices: Int) {
     }
 
     /**
-     * Add an edge to the graph
+     * Add an edge to the graph, assumes that graph doesn't already contain the edge
      * param: int, starting vertex for edge
      * param: int, ending vertex for edge
      */
@@ -162,7 +162,6 @@ fun main(){
     gMatrix.addEdge(0, 1)
     gMatrix.addEdge(0, 2)
     gMatrix.addEdge(1, 2)
-    gMatrix.addEdge(2, 0)
     gMatrix.addEdge(2, 3)
 
     println(gMatrix.toString())
@@ -179,12 +178,11 @@ fun main(){
     // println(gMatrix)
 
     // Adjacency List Graph Representation
-    val gList = AdjListGraph(5)
+    val gList = AdjListGraph(4)
      
     gList.addEdge(0, 1)
     gList.addEdge(0, 2)
     gList.addEdge(1, 2)
-    gList.addEdge(2, 0)
     gList.addEdge(2, 3)
 
     // println(gList)
