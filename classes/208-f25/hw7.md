@@ -4,9 +4,7 @@ title: HW7 - Exploiting Buffer Overflows
 permalink: /classes/208-f25/hw7
 ---
 
-**Due Wednesday Nov 5th at 10pm**
-
-**Note: As of 10/27, the server isn't ready to be setup, but I wanted you to be able to get an idea of the assignment ahead of Wednesday. I guarantee that you'll have a week of live server time for this assignment, which I'm hoping will start on Wednesday, but if I need to push back the due date, I will.**
+**Due Friday Nov 7th at 10pm**
 
 This assignment is an adaptation and contraction by Jeff Ondich of Aaron Bauer's adaption of a lab developed for the Carnegie Mellon University's 15-213 (Introduction to Computer Systems) course.
 
@@ -41,7 +39,7 @@ The **advanced requirements** for your submission are:
 * Satisfy core requirements
 * Pass all three phases
 
-Your progress through the phases will be automatically tracked as it was during the [zoo escape](hw6) assignment. Check your progress here: [http://cs208.mathcs.carleton.edu:1866/progress](http://cs208.mathcs.carleton.edu:1866/progress).
+Your progress through the phases will be automatically tracked as it was during the [zoo escape](hw6) assignment. Check your progress here: [http://cs208u.mathcs.carleton.edu:1866/progress](http://cs208u.mathcs.carleton.edu:1866/progress).
 
 There is a lot of setup, but once you get going it should be much more straightforward to move from one phase to the next.
 
@@ -74,15 +72,15 @@ If our users are clever enough, they can type input that will (1) overflow `str`
 This kind of sneaky user is engaged in what is known as a [buffer overflow attack](https://owasp.org/www-community/attacks/Buffer_overflow_attack). In this assignment, you are going to play the role of buffer-overflow attacker. In the process, you'll get more familiar with the way function calling works at the assembly language level.
 
 ## What to do
-1. **Get your attack target.** Fill out the form at [http://cs208.mathcs.carleton.edu:1866/](http://cs208.mathcs.carleton.edu:1866/) to download your `targetN.tar file`. This file is analogous to the `zooN.tar` file you obtained during the the [zoo-escape assignment](hw6).
-2. **Move your `targetN.tar` file to mantis** and expand it there (with `tar xvf targetN.tar`). The `targetN.tar` file contains a whole bunch of files, some of which you will not need because we're doing only a portion of the original lab. The files you will need are:
+1. **Get your attack target with Safari/Firefox.** Fill out the form at [http://cs208u.mathcs.carleton.edu:1866/](http://cs208u.mathcs.carleton.edu:1866/) to download your `targetN.tar file`. This file is analogous to the `zooN.tar` file you obtained during the the [zoo-escape assignment](hw6). Chrome does weird things and doesn't always work, Safari or Firefox works as far as we can tell.
+2. **Move your `targetN.tar` file to mantis** and expand it there (with `tar -xvf targetN.tar`). The `targetN.tar` file contains a whole bunch of files, some of which you will not need because we're doing only a portion of the original lab. The files you will need are:
     * `ctarget` — the executable program that you will attack. This program is vulnerable to code injection attacks.
     * `ctarget.phaseN` for N = 1, 2, and 3 — files where you can put your solutions to the phases as you work (analogous to the `passcodes.txt` file from the zoo assignment).
     * `cookie.txt` — an 8-digit hex code that you will use as a unique identifier in your attacks.
     * `hex2raw` — a utility program that will help you to generate attack strings.
 Ignore `rtarget*` and `farm.c`
 
-3. **Complete each phage:** For each phase, you'll want to follow these substeps:
+3. **Complete each phase:** For each phase, you'll want to follow these substeps:
     * Read about the phase. ([Phase1](#phase-1-make-ctarget-call-the-wrong-function), [Phase2](#phase-2-make-ctarget-call-the-wrong-function-with-an-int-parameter), [Phase3](#phase-3-make-ctarget-call-the-wrong-function-with-a-string-parameter))
     * Use `gdb` (and [gcc for some phases](#appendix-b-generating-byte-codes)) to figure out what bytes you want to write into (and past) the input buffer so as to corrupt the stack frame in whatever way is required to achieve your goal.
     * Store the bytes you want to input as space-delimited bytes (2 hexadecimal digits each) in the `ctarget.phaseN` file (with `N` for whichever phase you're working on).
@@ -96,12 +94,12 @@ Ignore `rtarget*` and `farm.c`
 
     If you're successful, `ctarget` will let you know. 
     * Make sure you run the attack on `mantis` so your success will get recorded.
-    * Check out your progress at [http://cs208.mathcs.carleton.edu:1866/progress](http://cs208.mathcs.carleton.edu:1866/progress)
+    * Check out your progress at [http://cs208u.mathcs.carleton.edu:1866/progress](http://cs208u.mathcs.carleton.edu:1866/progress)
     Unless you run `ctarget` with the `-q` flag, your exploit string will be sent to the assignment server and tested. The server will then update your status on the progress page.
 
     There is no penalty for making mistakes in this assignment, nor are mistakes even recorded anywhere. Experiment at will!
 
-    The progress server expects you to work on `mantis.mathcs.carleton.edu`. You can certainly do your work on any Linux x86-64 computer, but eventually, you'll need to submit your solution to each phase from mantis.
+    The progress server expects you to work on `mantis.mathcs.carleton.edu`. You can certainly do your work on any Linux x86-64 computer, but eventually, you'll need to submit your solution to each phase from mantis. (Note, there are subtle version things that might be different, so if something isn't working, try on mantis instead.)
 
 4. **Celebrate!**
 
@@ -336,7 +334,7 @@ This string can then be passed through `hex2raw` to generate an input string for
 This is also a valid input you can pass through `hex2raw` before sending to one of the target programs.
 
 ## SOME FINAL NOTES
-* Section [7.10](https://diveintosystems.org/book/C7-x86_64/buffer_overflow.html) of the textbook provides useful reference material for this assignment.
+* Section [7.10](https://diveintosystems.org/book/C7-x86_64/buffer_overflow.html) of the textbook provides useful reference material for this assignment. The [Buffer Overflow lab](buffer-overflow-lab) also walks you through it.
 * This stuff feels weird at first, but you can figure it out! Draw pictures, step slowly through the code, take a look at the stack and the registers, figure out where function parameters are stored, and just gradually put together a picture of what's going on for yourself. Talk to each other, talk to me, step away and take a walk, and come back to it again.
 * Learning how to exploit software vulnerabilities helps you to understand those vulnerabilities and how to prevent them. At the same time, of course, this knowledge could potentially be used to harm other people. [Don't do that.](https://apps.carleton.edu/handbook/community/?a=student&policy_id=6131)
 
