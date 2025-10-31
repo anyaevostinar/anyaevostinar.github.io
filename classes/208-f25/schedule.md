@@ -45,7 +45,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 10/29 |	HW6; [Buffer Overflow Prep](buffer-overflow-prep) |[Slides](https://docs.google.com/presentation/d/1FL8VIoD-zOCz_72gaPLrs3H19kRjyzZ4sTVSjD1xR4I/edit?usp=sharing), [Buffer Overflow Lab](buffer-overflow-lab)	| [HW7: Buffer Overflow](hw7)  |
 | 10/31 |[Unix Prep](useful-unix-prep)  |[Slides](https://docs.google.com/presentation/d/14VqJ2IsjCmxBl9GXFaoQ_69x98FXRugjEPPmMe4AAZQ/edit?usp=sharing),	File systems and Unix	|  |
 | Week 8 | | Processes, threads, and memory| |
-| 11/3 |[OS and Processes Prep](os-processes-prep) | [Slides](),	Processes; [Getting Started with Processes Lab](processes-lab)	 |  |	
+| 11/3 |[OS and Processes Prep](os-processes-prep) | [Slides](https://docs.google.com/presentation/d/1PCJuxUjCBddUmKUe0PxlwDsx7xBKH3blXgPUpmBbMaE/edit?usp=sharing),	Processes; [Getting Started with Processes Lab](processes-lab)	 |  |	
 | 11/5 |  [Signals and Messages Prep](os-signals-prep)	|  [Slides](),  |	 |
 | 11/7 |HW7;[Caching Prep](caching-prep) | [Slides](), Caching	| [HW8: Simple Command Shell]() |	
 | Week 9 | | Caches| |
