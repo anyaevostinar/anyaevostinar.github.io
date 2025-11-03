@@ -16,15 +16,13 @@ This assignment is designed to help you practice the following:
 * Learn how to handle signals
 
 ## Collaboration policy
-For this assignment, you may work alone or with a partner, but you must complete your own individual buffer overflow attack (more details below).
+For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)
 
 You may also discuss the assignment at a high level with other students.
 
-For this assignment, **you should not spoil any of the phases** for people who aren’t your partner. That means you can make sense of how your input is stored on the stack collectively, but once you know how to perform a given attack you can’t share that knowledge with anyone but your partner.
+You should list any student with whom you discussed the assignment, and the manner of discussion (high level, partner, etc.) in comments at the top of your C source file(s).
 
-You should list any student with whom you discussed the assignment, and the manner of discussion (high level, partner, etc.) in comments at the top of your **info.txt** file.
-
-*If you work alone, you should say so instead.*
+_If you work alone, you should say so instead._
 
 ## Assessment
 
