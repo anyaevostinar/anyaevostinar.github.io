@@ -7,6 +7,8 @@ permalink: /classes/201-f25/mergesort-lab
 ## Set up
 Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES drive. Make a folder `MergesortLab` in your STUWORK/username folder and open it in VSCode for today's labwork.
 
+Download and copy over the [`MergesortLab.kt`](/classes/201-f25/MergesortLab.kt) starter code.
+
 ## Mergesort
 Start off by implementing the recursive `mergesort`. Note that you shouldn't split the list and instead should adjust the index locations to be for smaller sublists.
 
