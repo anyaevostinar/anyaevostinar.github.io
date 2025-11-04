@@ -26,18 +26,14 @@ Retake:
 
 * GR1: Identify the full sequence of BFS
 * GR2: Identify the full sequence of DFS
-* GR3: Define the Big-O of BFS and DFS
 * GR4-AD Explain the idea behind the Big-O of BFS and DFS
 * GR5-AD: Use a graph to solve a problem in very clear pseudocode
 
 * LI1: Demonstrate the effects of a sequence of linked-list operations
 * LI7-AD: Use the appropriate list to solve a problem in very clear pseudocode
-* SQ6-AD: Demonstrate how you get the Big-O of a specified queue operation
 * SQ7-AD: Use the appropriate data structure to solve a problem in very clear pseudocode
 * SH1: Demonstrate the effects of a sequence of set and hash table operations
-* SH2: Define the worst case Big-O of a specified hashing operation
 * SH3-AD: Explain how you get the Big-O of a specified hashing operation
-* KF3: Write a basic indefinite and definite loop
 * KF7-AD: Implement a subclass
 * RC2-AD: Write a recursive function in very clear pseudocode
 
