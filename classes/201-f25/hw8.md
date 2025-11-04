@@ -46,6 +46,8 @@ The questions for this assignment are listed below.  This is assignment does not
 
 This assignment needs to be written in your own handwriting (not typed). You can complete it on paper or on a tablet, but it must be hand-written (life in the age of LLMs).  You will need to submit a PDF to Gradescope, and make sure to select the regions in your PDF that correspond to each solution -- be sure to keep your answers somewhat separated from each other.
 
+You should always assume that the list should sort from least to greatest.
+
 ## Core questions
 
 Complete the following questions for the core requirements.
