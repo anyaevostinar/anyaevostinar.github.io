@@ -62,8 +62,7 @@ On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Quicksort.  
 
 ### #3: Heapsort trace
 
-On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Heapsort.  Assume you always select the pivot as the first element in the subarray, and be sure to show your work.
-
+On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Heapsort.  
 Don't forget to build the initial heap using the `buildHeap` procedure we discussed in class!
 
 
