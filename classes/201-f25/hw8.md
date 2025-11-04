@@ -58,13 +58,14 @@ On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Mergesort.  
 
 ### #2: Quicksort trace
 
-On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Quicksort.  Assume you always select the pivot as the first element in the subarray, and be sure to show your work.
+On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Quicksort.  Assume you always select the pivot as the first element in the subarray, and be sure to show your work, including indicating the pivot values with a P.
 
 ### #3: Heapsort trace
 
-On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Heapsort.  
-Don't forget to build the initial heap using the `buildHeap` procedure we discussed in class!
+On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Heapsort, showing your work.  
+Don't forget to build the initial heap using the `buildHeap` procedure we discussed in class and be careful with what kind of heap you use!
 
+Note: there is a lot of shifting and erasing and swapping with heapsort. You don't need to show every step clearly, you can show the heap in tree form and cross off and swap values, but aim to redraw the heap at progressive steps a few times and show the in progress sorted array at those points. So you should probably redraw the heap in updated states four (ish) times. 
 
 
 ## Advanced questions
@@ -81,7 +82,7 @@ The choice of pivot for Quicksort can dramatically affect its performance.  Some
 * the median element by value
 * the median element of the first three elements
 
-Comment on each of the above choices.  What are the pros and cons of each?  Under what situations are they good or bad ideas? You should include at least 2 sentences for each choice, clearly labeled.
+Comment on each of the above choices.  What are the pros and cons of each?  Under what situations are they good or bad ideas? You should include at least 1 sentence for each choice, clearly labeled.
 
 ### #5: Mergesort temp array
 
