@@ -47,9 +47,9 @@ Preparation should be completed **before** the class day that they are listed. C
 | 11/5 |   [Heaps and PQs Prep](heaps-prep) 	| [Slides](https://docs.google.com/presentation/d/1SyvY7nvw5I9CuCTZ_Sg_Qelgz35MRU470fhMtQSBzw0/edit?usp=sharing), [Heap Lab](heaps-lab) | 	  |
 | 11/7 |  [Mergesort Prep](mergesort-prep)  | [Slides](https://docs.google.com/presentation/d/1CfsJq2hawHWlDuklU9KbeRrJWHlMD6WHWqjxE2LGzdU/edit?usp=sharing), [Mergesort Lab](mergesort-lab)	|  |	
 | Week 9 | | Search Trees | |
-| 11/10 | HW7; Quicksort Prep  | [Slides]() | HW8: Sorting  |
-| 11/12 |  Heapsort Prep  | [Slides]() 	 | 	 |
-| 11/14	| **Exam 4** | [Slides]()  |  |
+| 11/10 | HW7; [Quicksort Prep](quicksort-prep)  | [Slides]() | HW8: Sorting  |
+| 11/12 |  [Heapsort Prep](heapsort-prep)  | [Slides]() 	 | 	 |
+| 11/14	| [**Exam 4**](exam4) | [Slides]()  |  |
 | Week 10 | | Wrapping up | |
 | 11/17 | HW8; TBD | [Slides]() | |
 | 11/19 | No prep; All revisions due 10pm | Review and Revise | |
