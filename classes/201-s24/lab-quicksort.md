@@ -23,7 +23,7 @@ You should first compile everything and run the `Quicksort.java` file to see wha
 
 a. How large of arrays are you initially testing with?
 
-b. How many runs of the experiment are initially occurring? Is the first run being counted?
+b. How many runs of the experiment are initially occurring? Note that the first round isn't being counted because it often takes longer due to setup.
 
 c. Which pivot selection approaches are being tested?
 
@@ -36,7 +36,9 @@ Let's first get a sense of how fast each of the approaches are with the current 
 Plot the resulting values on the [Desmos calculator](https://www.desmos.com/calculator) (click the + and choose "table" to enter in your timing data points). Do some intermediate sizes to get a more complete curve if you'd like. (You can try going higher than 100k, but it might take a while to run.)
 
 ## Exercise 3
-Now let's see what happens when the arrays are partially sorted. Adjust the argument to `shuffle` to be `quicksortArray.length/2` and try running your program again. If you get an error, try shortening the array back down to 1k or 10k. Based on those times, remove the pivot selector that you think might be causing the error and try with larger arrays again. (Mark "Error" in your table for any pivot selectors that can't handle a given array size.)
+Now let's see what happens when the arrays are partially sorted. Adjust the argument to `shuffle` to be `arraySize/2` and try running your program again. If you get an error, try shortening the array back down to 1k or 10k. Based on those times, remove the pivot selector that you think might be causing the error and try with larger arrays again. (Mark "Error" in your table for any pivot selectors that can't handle a given array size.)
+
+*To remove a pivot selector, just delete it from the `selectors` list and the `names` list.*
 
 ## Exercise 4
 What happens if the array is completely sorted? Change the argument to `shuffle` to just be 0 and see what happens. How small of arrays do you need to sort to be able to run all the selectors?
