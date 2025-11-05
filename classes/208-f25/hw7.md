@@ -260,7 +260,7 @@ Provided with this assignment is `hex2raw`, which is a command-line utility that
 The hex characters you pass to `hex2raw` should be separated by whitespace (blanks or newlines). I recommend separating different parts of your exploit string with newlines while you're working on it. `hex2raw` supports C-style block comments, so you can mark off sections of your exploit string. For example:
 
 ```
-48 c7 c1 f0 11 40 00 /* mov $0x40011f0,%rcx */
+48 c7 c1 f0 11 40 00 /* mov $0x004011f0,%rcx */
 ```
 
 Be sure to leave space around both the starting and ending comment strings ("/*", "*/"), so that the comments will be properly ignored.

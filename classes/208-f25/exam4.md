@@ -38,9 +38,6 @@ Retake:
 * DR1: Demonstrate how a struct is stored in memory with arrays (no buffer bytes)
 * DR6: Demonstrate the difference between a value and its address
 * DR7-AD: Demonstrate how complex elements (e.g. structs with nested arrays) of an array are stored in memory
-* DR8-AD: Decode a multi-character encoded byte sequence (any byte count) (with table provided)
-
-
 
 You will be allowed to bring [your checklist](https://docs.google.com/document/d/1HaqG8Pgep0ZP7_FAvRT-354Mq3HxXsUSIjUOLqgBSYM/edit?usp=sharing) with you but there should be no writing on it other than your name and you will submit it with your exam. I'll return them after the exam.  If you have lost your original copy, you can print out a new **stapled** copy to bring.
 
