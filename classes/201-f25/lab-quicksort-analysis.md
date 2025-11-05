@@ -47,17 +47,17 @@ c. Which pivot selection approaches are being tested?
 
 d. How much of the array is being shuffled to start?
 
-## Exercise 3
+## Exercise 3: Full Shuffle
 Now let's get a sense of how fast each of the approaches are with the current settings as the size of the array gets larger.  Record the averages for each at array size 1k, 10k, and 100k (on your worksheet). If you run the program again with the same size, how much variation do you get?
 
 Plot the resulting values on the [Desmos calculator](https://www.desmos.com/calculator) (click the + and choose "table" to enter in your timing data points). Do some intermediate sizes to get a more complete curve if you'd like. (You can try going higher than 100k, but it might take a while to run.) If anything takes longer than a minute to run, you should stop it with `Ctrl-C`.
 
-## Exercise 4
+## Exercise 4: Partially Sorted
 Now let's see what happens when the arrays are partially sorted. Adjust the argument to `shuffleEnd` to be `arraySize/2` and try running your program again. If you get an error or it takes a really long time, try shortening the array back down to 1k or 10k. Based on those times, remove the pivot selector that you think might be causing the error and try with larger arrays again. (Mark "Error" in your table for any pivot selectors that can't handle a given array size.)
 
 *To remove a pivot selector, just delete it from the `selectors` list and the `names` list.*
 
-## Exercise 5
+## Exercise 5: Fully Sorted
 What happens if the array is completely sorted? Change the argument to `shuffleEnd` to just be 0 and see what happens. How small of arrays do you need to sort to be able to run all the selectors?
 
 ## Extra
