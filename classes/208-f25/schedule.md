@@ -49,7 +49,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 11/5 |  [Signals and Messages Prep](os-signals-prep)	|  [Slides](https://docs.google.com/presentation/d/1Fju46TKTnJ71kTa722yrL8JjduJ287QFgk5ytq3OeuA/edit?usp=sharing) |	 |
 | 11/7 |HW7;[Caching Prep](caching-prep) | [Slides](https://docs.google.com/presentation/d/16r90GOPiPYFiBtCScH0dy3Lh6wNa9Op_PtYS9jVjQ_Y/edit?usp=sharing), Caching	| [HW8: Simple Command Shell](hw8) |	
 | Week 9 | | Caches| |
-| 11/10 |   | [Slides](),	[Exam 4](exam4)|  |
+| 11/10 |   | [Slides](https://docs.google.com/presentation/d/1MQINry-n87Bkyki-H3MZ5cMzP-1mrDDjU5RNsUwTg50/edit?usp=sharing),	[Exam 4](exam4)|  |
 | 11/12 | [Cache Aware Prep](cache-aware-prep) |[Slides](),  Cache aware code |  |
 | 11/14	| HW8; [Networking Prep](networking-prep)  | [Slides](), Networking basics | |
 | Week 10 | | Wrapping up | |

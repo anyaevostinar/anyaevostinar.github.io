@@ -46,12 +46,12 @@ Preparation should be completed **before** the class day that they are listed. C
 | 11/3 | [**Exam 3**](exam3)    | [Slides](https://docs.google.com/presentation/d/1w_XmLNffz3L6mtheTP0VOdlV-vJXctUyq4O7EGyceOw/edit?usp=sharing)	 |   |	
 | 11/5 |   [Heaps and PQs Prep](heaps-prep) 	| [Slides](https://docs.google.com/presentation/d/1SyvY7nvw5I9CuCTZ_Sg_Qelgz35MRU470fhMtQSBzw0/edit?usp=sharing), [Heap Lab](heaps-lab) | 	  |
 | 11/7 |  [Mergesort Prep](mergesort-prep)  | [Slides](https://docs.google.com/presentation/d/1CfsJq2hawHWlDuklU9KbeRrJWHlMD6WHWqjxE2LGzdU/edit?usp=sharing), [Mergesort Lab](mergesort-lab)	|  |	
-| Week 9 | | Search Trees | |
+| Week 9 | | Sorting| |
 | 11/10 | HW7; [Quicksort Prep](quicksort-prep)  | [Slides](https://docs.google.com/presentation/d/192Qsgtq22ox6VJZ697hKeuVTT23Rq8UHkDOqSXtrs10/edit?usp=sharing), [Quicksort Analysis Lab](quicksort-lab) | [HW8: Sorting](hw8)  |
-| 11/12 |  [Heapsort Prep](heapsort-prep)  | [Slides]() 	 | 	 |
+| 11/12 |  [Heapsort Prep](heapsort-prep)  | [Slides](), [Heapsort Lab](heapsort-lab) 	 | 	 |
 | 11/14	| [**Exam 4**](exam4) | [Slides]()  |  |
 | Week 10 | | Wrapping up | |
-| 11/17 | HW8; TBD | [Slides]() | |
+| 11/17 | HW8; Binsort and Radix sort prep| [Slides]() | |
 | 11/19 | No prep; All revisions due 10pm | Review and Revise | |
 | 11/21 |  | Reading days!| |
 | Exam Period | | | |
