@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 2-3 Trees Preparation
-permalink: /classes/201-f25/2-3-prep
+permalink: /classes/201-f25/2-3-prep-tanya
 ---
 
 ## Overview
@@ -22,9 +22,10 @@ You should read the following:
 * [OpenDSA 12.5](https://opendsa-server.cs.vt.edu/OpenDSA/Books/CS3/html/TwoThreeTree.html) - note you can skip the code, but the walk through diagrams are nice
 
 ## Checks
-Submit pictures of the following to Moodle.
+Bring answers to the following to class:
 
 Given the following 2-3 tree:
+
 ![Diagram of 2-3 tree](/classes/201-f25/2-3treecheck.png)
 
 Draw the tree after adding each of the following (so you should draw out three trees):

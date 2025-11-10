@@ -48,7 +48,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 11/7 |  [Mergesort Prep](mergesort-prep)  | [Slides](https://docs.google.com/presentation/d/1CfsJq2hawHWlDuklU9KbeRrJWHlMD6WHWqjxE2LGzdU/edit?usp=sharing), [Mergesort Lab](mergesort-lab)	|  |	
 | Week 9 | | Sorting| |
 | 11/10 | HW7; [Quicksort Prep](quicksort-prep)  | [Slides](https://docs.google.com/presentation/d/192Qsgtq22ox6VJZ697hKeuVTT23Rq8UHkDOqSXtrs10/edit?usp=sharing), [Quicksort Analysis Lab](quicksort-lab) | [HW8: Sorting](hw8)  |
-| 11/12 |  [Heapsort Prep](heapsort-prep)  | [Slides](), [Heapsort Lab](heapsort-lab) 	 | 	 |
+| 11/12 |  [Heapsort Prep](heapsort-prep)  | [Slides](https://docs.google.com/presentation/d/1yZfes4wNMjevsr5-crwt1bsbXns2juwIMKfp5jpGHZY/edit?usp=sharing), [Heapsort Lab](heapsort-lab) 	 | 	 |
 | 11/14	| [**Exam 4**](exam4) | [Slides]()  |  |
 | Week 10 | | Wrapping up | |
 | 11/17 | HW8; Binsort and Radix sort prep| [Slides]() | |
