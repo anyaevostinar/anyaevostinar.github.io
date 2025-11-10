@@ -38,16 +38,35 @@ class TwoThreeTree {
         return null
     }
 
+
+    /**
+     * Helper method for handling inserting to the left node
+     * @param subroot, the node that is the root of the current tree
+     * @param key, the new value to be insert
+     * @return a node that is the new root of the current tree
+     */
     private fun insertLeft(subroot: Node?, key : Int) : Node?{
         //TODO
         return null
     }
 
+    /**
+     * Helper method for handling inserting to the center node
+     * @param subroot, the node that is the root of the current tree
+     * @param key, the new value to be insert
+     * @return a node that is the new root of the current tree
+     */
     private fun insertCenter(subroot: Node?, key : Int) : Node?{
         //TODO
         return null
     }
 
+    /**
+     * Helper method for handling inserting to the right node
+     * @param subroot, the node that is the root of the current tree
+     * @param key, the new value to be insert
+     * @return a node that is the new root of the current tree
+     */
     private fun insertRight(subroot: Node?, key : Int) : Node?{
         //TODO
         return null
@@ -92,13 +111,13 @@ class TwoThreeTree {
 
      /*
     * Assumes insert has figured out where a new node should be inserted already. 
-    * This method handles the process of promoting and splitting if necessary.
+    * This method handles the process of splitting and distributing children if necessary.
     * Takes a new node, newNode, that may be the root of a subtree and attempts to
-    * add it to this node. If this node has room, newNode's value and
-    * subtrees are meshed with this node. If this node does not have room, the
-    * children of newNode and this are shuffled as needed and a new root is created
+    * add it to subRoot node. If subRoot node has room, newNode's value and
+    * subtrees are meshed with subRoot's node. If subRoot's node does not have room, the
+    * children of newNode and subRoot are distributed as needed and a new root is created
     * to be a parent of both and returned, or newNode is made to be the parent of
-    * this and new node and returned.
+    * subRoot and new node and returned.
     *
     * @return  a node that will be the root of the subtree 
     */
