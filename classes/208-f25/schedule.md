@@ -50,8 +50,8 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 11/7 |HW7;[Caching Prep](caching-prep) | [Slides](https://docs.google.com/presentation/d/16r90GOPiPYFiBtCScH0dy3Lh6wNa9Op_PtYS9jVjQ_Y/edit?usp=sharing), Caching	| [HW8: Simple Command Shell](hw8) |	
 | Week 9 | | Caches| |
 | 11/10 |   | [Slides](https://docs.google.com/presentation/d/1MQINry-n87Bkyki-H3MZ5cMzP-1mrDDjU5RNsUwTg50/edit?usp=sharing),	[Exam 4](exam4)|  |
-| 11/12 | [Cache Aware Prep](cache-aware-prep) |[Slides](),  Cache aware code |  |
-| 11/14	| HW8; [Networking Prep](networking-prep)  | [Slides](), Networking basics | |
+| 11/12 | [Cache Aware Prep](cache-aware-prep) |[Slides](https://docs.google.com/presentation/d/1m9VVJHa9ObShql6heeHIftZGy-2Nl-cU6onFPDqwVEc/edit?usp=sharing),  Cache aware code |  |
+| 11/14	| HW8; [Networking Prep](networking-prep)  | [Slides](), [Networking Lab](networking-lab) | |
 | Week 10 | | Wrapping up | |
 | 11/17 | [How DNS Works](https://howdns.works/) |[Slides](), IP and DNS| |
 | 11/19 |  Study; Submit checklist for SS exam | [Slides](), Mini-exam, Review |All revisions due 10pm|
