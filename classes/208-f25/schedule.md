@@ -53,8 +53,8 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 11/12 | [Cache Aware Prep](cache-aware-prep) |[Slides](https://docs.google.com/presentation/d/1m9VVJHa9ObShql6heeHIftZGy-2Nl-cU6onFPDqwVEc/edit?usp=sharing),  Cache aware code |  |
 | 11/14	| HW8; [Networking Prep](networking-prep)  | [Slides](https://docs.google.com/presentation/d/1qplzxyqf5EO-yPiwhU9oriuERJJZrDxW/edit?usp=sharing&ouid=114249327680346275662&rtpof=true&sd=true), [Networking Lab](networking-lab) | |
 | Week 10 | | Wrapping up | |
-| 11/17 | [How DNS Works](https://howdns.works/) |[Slides](), IP and DNS| |
-| 11/19 |  Study; Submit checklist for SS exam | [Slides](), Mini-exam, Review |All revisions due 10pm|
+| 11/17 | [DNS Prep](dns-prep) |[Slides](), IP and DNS| |
+| 11/19 |  Study; Submit checklist for SS exam | [Slides](), [Mini-exam](exam5), Review |All revisions due 10pm|
 | 11/21 |  | Reading days!| |
 | Exam Period | | | |
 | [Self-scheduled](quiz-final) | |  | |
