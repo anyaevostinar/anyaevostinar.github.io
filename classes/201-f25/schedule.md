@@ -49,9 +49,9 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 9 | | Sorting| |
 | 11/10 | HW7; [Quicksort Prep](quicksort-prep)  | [Slides](https://docs.google.com/presentation/d/192Qsgtq22ox6VJZ697hKeuVTT23Rq8UHkDOqSXtrs10/edit?usp=sharing), [Quicksort Analysis Lab](quicksort-lab) | [HW8: Sorting](hw8)  |
 | 11/12 |  [Heapsort Prep](heapsort-prep)  | [Slides](https://docs.google.com/presentation/d/1yZfes4wNMjevsr5-crwt1bsbXns2juwIMKfp5jpGHZY/edit?usp=sharing), [Heapsort Lab](heapsort-lab) 	 | 	 |
-| 11/14	| [**Exam 4**](exam4) | [Slides]()  |  |
+| 11/14	| [**Exam 4**](exam4) | [Slides](https://docs.google.com/presentation/d/1_DO3Rta9LS7n-TX_NPZwMlqJ2Ok40Rs1TI-ieJm_sVI/edit?usp=sharing)  |  |
 | Week 10 | | Wrapping up | |
-| 11/17 | HW8; Binsort and Radix sort prep| [Slides]() | |
+| 11/17 | HW8; [Radix Sort Prep](radix-sort-prep)| [Slides]() | |
 | 11/19 | No prep; All revisions due 10pm | Review and Revise | |
 | 11/21 |  | Reading days!| |
 | Exam Period | | | |

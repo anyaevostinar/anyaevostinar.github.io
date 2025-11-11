@@ -19,22 +19,18 @@ New:
 * SO5-AD: Explain the idea behind the Big-O of heapsort
 
 Retake:
-* TR1: Identify in-order, pre-order and/or post-order tree traversal
 * TR2: Demonstrate insertion/deletion in a binary search tree
 * TR3: Demonstrate adding to a 2-3 tree
 * TR4-AD: Use an appropriate tree to solve a problem in very clear pseudocode
 
 * GR1: Identify the full sequence of BFS
-* GR2: Identify the full sequence of DFS
 * GR4-AD Explain the idea behind the Big-O of BFS and DFS
 * GR5-AD: Use a graph to solve a problem in very clear pseudocode
 
 * LI1: Demonstrate the effects of a sequence of linked-list operations
 * LI7-AD: Use the appropriate list to solve a problem in very clear pseudocode
 * SQ7-AD: Use the appropriate data structure to solve a problem in very clear pseudocode
-* SH1: Demonstrate the effects of a sequence of set and hash table operations
 * SH3-AD: Explain how you get the Big-O of a specified hashing operation
-* KF7-AD: Implement a subclass
 * RC2-AD: Write a recursive function in very clear pseudocode
 
 You will be allowed to bring [your checklist](https://docs.google.com/document/d/1OdcJHtAV-88h3KMlmrHMGhQa_ZN-B4rTEeDtlFlxks0/edit?usp=sharing) with you but there should be no writing on it other than your name and you will submit it with your exam. I'll return them after the exam. If you have lost your original copy, you can print out a new **stapled** copy to bring.
