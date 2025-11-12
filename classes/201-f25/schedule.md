@@ -51,7 +51,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 11/12 |  [Heapsort Prep](heapsort-prep)  | [Slides](https://docs.google.com/presentation/d/1yZfes4wNMjevsr5-crwt1bsbXns2juwIMKfp5jpGHZY/edit?usp=sharing), [Heapsort Lab](heapsort-lab) 	 | 	 |
 | 11/14	| [**Exam 4**](exam4) | [Slides](https://docs.google.com/presentation/d/1_DO3Rta9LS7n-TX_NPZwMlqJ2Ok40Rs1TI-ieJm_sVI/edit?usp=sharing)  |  |
 | Week 10 | | Wrapping up | |
-| 11/17 | HW8; [Radix Sort Prep](radix-sort-prep)| [Slides]() | |
+| 11/17 | HW8; [Radix Sort Prep](radix-sort-prep)| [Slides](https://docs.google.com/presentation/d/1HTsac_gd-sjN4dJaixijIIo3XAwmV_8RKKH8-6_Zc6I/edit?usp=sharing), [Radix Sort Lab](radix-sort-lab) | |
 | 11/19 | No prep; All revisions due 10pm | Review and Revise | |
 | 11/21 |  | Reading days!| |
 | Exam Period | | | |
