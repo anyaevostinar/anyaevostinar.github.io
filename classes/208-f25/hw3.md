@@ -275,6 +275,8 @@ For example, if `s` points to the string `"abc-def-gh-i"` that begins at address
 
 Also note: Typically you need to free any memory you malloc. For this function, you can assume that the caller will do that freeing.
 
+Tip: If you make a helper function to count your substrings, make sure not to use `strtok`, since that destroys your string!
+
 ## Submitting your work
 To submit this assignment, you should upload your `ds.c` and `ss.c` files to Gradescope; we will use our own `main.c`, `.h` files, and `Makefile` to do our testing and grading.
 

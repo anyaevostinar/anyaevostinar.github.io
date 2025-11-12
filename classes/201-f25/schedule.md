@@ -52,7 +52,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 11/14	| [**Exam 4**](exam4) | [Slides](https://docs.google.com/presentation/d/1_DO3Rta9LS7n-TX_NPZwMlqJ2Ok40Rs1TI-ieJm_sVI/edit?usp=sharing)  |  |
 | Week 10 | | Wrapping up | |
 | 11/17 | HW8; [Radix Sort Prep](radix-sort-prep)| [Slides](https://docs.google.com/presentation/d/1HTsac_gd-sjN4dJaixijIIo3XAwmV_8RKKH8-6_Zc6I/edit?usp=sharing), [Radix Sort Lab](radix-sort-lab) | |
-| 11/19 | No prep; All revisions due 10pm | Review and Revise | |
+| 11/19 | All revisions due 10pm, [Submit checklist for SS exam](https://docs.google.com/forms/d/e/1FAIpQLSeKB18OEJcm0Lo9X05_cKeOTx4ReIYUhQwf4pJrIDD0med91g/viewform?usp=publish-editor) | [Slides](https://docs.google.com/presentation/d/17X2xCab-CJ4pZKJy-CsTA7QfepLhw25jsMgGUmWoMu8/edit?usp=sharing), Review and Revise | |
 | 11/21 |  | Reading days!| |
 | Exam Period | | | |
 | | Self-scheduled Exam  |  | |
