@@ -57,5 +57,5 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 11/19 |  Study; [Submit checklist for SS exam](https://docs.google.com/forms/d/e/1FAIpQLSeKB18OEJcm0Lo9X05_cKeOTx4ReIYUhQwf4pJrIDD0med91g/viewform?usp=publish-editor) | [Slides](https://docs.google.com/presentation/d/1tWbgurr153joLMc0WBc6Vu494Q9w9p5ElyKZMrySo6g/edit?usp=sharing), [Mini-exam](exam5), Review |All revisions due 10pm|
 | 11/21 |  | Reading days!| |
 | Exam Period | | | |
-| [Self-scheduled]() | |  | |
+| [Self-scheduled](exam6) | |  | |
 | | |   | |
