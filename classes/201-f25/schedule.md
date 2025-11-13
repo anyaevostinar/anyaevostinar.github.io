@@ -55,4 +55,4 @@ Preparation should be completed **before** the class day that they are listed. C
 | 11/19 | All revisions due 10pm, [Submit checklist for SS exam](https://docs.google.com/forms/d/e/1FAIpQLSeKB18OEJcm0Lo9X05_cKeOTx4ReIYUhQwf4pJrIDD0med91g/viewform?usp=publish-editor) | [Slides](https://docs.google.com/presentation/d/17X2xCab-CJ4pZKJy-CsTA7QfepLhw25jsMgGUmWoMu8/edit?usp=sharing), Review and Revise | |
 | 11/21 |  | Reading days!| |
 | Exam Period | | | |
-| | Self-scheduled Exam  |  | |
+| | [Self-scheduled Exam](exam5)  |  | |
