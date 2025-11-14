@@ -54,7 +54,7 @@ DIS refers to [Dive Into Systems](https://diveintosystems.org/book/index.html).
 | 11/14	| HW8; [Networking Prep](networking-prep)  | [Slides](https://docs.google.com/presentation/d/1qplzxyqf5EO-yPiwhU9oriuERJJZrDxW/edit?usp=sharing&ouid=114249327680346275662&rtpof=true&sd=true), [Networking Lab](networking-lab) | |
 | Week 10 | | Wrapping up | |
 | 11/17 | [DNS Prep](dns-prep) |[Slides](https://docs.google.com/presentation/d/1iEGygoBJxq41bSJ_aAl_zkDpzmeKMfvrv8vdmKtGkwU/edit?usp=sharing), IP and DNS| |
-| 11/19 |  Study; [Submit checklist for SS exam](https://docs.google.com/forms/d/e/1FAIpQLSeKB18OEJcm0Lo9X05_cKeOTx4ReIYUhQwf4pJrIDD0med91g/viewform?usp=publish-editor) | [Slides](https://docs.google.com/presentation/d/1tWbgurr153joLMc0WBc6Vu494Q9w9p5ElyKZMrySo6g/edit?usp=sharing), [Mini-exam](exam5), Review |All revisions due 10pm|
+| 11/19 |  Study; [Submit checklist for SS exam](https://docs.google.com/forms/d/e/1FAIpQLSeKB18OEJcm0Lo9X05_cKeOTx4ReIYUhQwf4pJrIDD0med91g/viewform?usp=dialog) | [Slides](https://docs.google.com/presentation/d/1tWbgurr153joLMc0WBc6Vu494Q9w9p5ElyKZMrySo6g/edit?usp=sharing), [Mini-exam](exam5), Review |All revisions due 10pm|
 | 11/21 |  | Reading days!| |
 | Exam Period | | | |
 | [Self-scheduled](exam6) | |  | |
