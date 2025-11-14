@@ -35,6 +35,7 @@ The **core requirements** for your submission are:
 * Support a single command-line argument
 * Support "command > file" (redirecting command's stdout to a file)
 * Do NOT use `system` or any other built-in command that defeats the point of the assignment
+    * The point of the assignment is to use `fork`, `dup2`, and `exec`s to create a shell, if you are using those, you are probably good
 
 The **advanced requirements** of your submission are:
 * Satisfy the core requirements
