@@ -38,35 +38,16 @@ class TwoThreeTree {
         return null
     }
 
-
-    /**
-     * Helper method for handling inserting to the left node
-     * @param subroot, the node that is the root of the current tree
-     * @param key, the new value to be insert
-     * @return a node that is the new root of the current tree
-     */
     private fun insertLeft(subroot: Node?, key : Int) : Node?{
         //TODO
         return null
     }
 
-    /**
-     * Helper method for handling inserting to the center node
-     * @param subroot, the node that is the root of the current tree
-     * @param key, the new value to be insert
-     * @return a node that is the new root of the current tree
-     */
     private fun insertCenter(subroot: Node?, key : Int) : Node?{
         //TODO
         return null
     }
 
-    /**
-     * Helper method for handling inserting to the right node
-     * @param subroot, the node that is the root of the current tree
-     * @param key, the new value to be insert
-     * @return a node that is the new root of the current tree
-     */
     private fun insertRight(subroot: Node?, key : Int) : Node?{
         //TODO
         return null
@@ -111,13 +92,13 @@ class TwoThreeTree {
 
      /*
     * Assumes insert has figured out where a new node should be inserted already. 
-    * This method handles the process of splitting and distributing children if necessary.
+    * This method handles the process of promoting and splitting if necessary.
     * Takes a new node, newNode, that may be the root of a subtree and attempts to
-    * add it to subRoot node. If subRoot node has room, newNode's value and
-    * subtrees are meshed with subRoot's node. If subRoot's node does not have room, the
-    * children of newNode and subRoot are distributed as needed and a new root is created
+    * add it to this node. If this node has room, newNode's value and
+    * subtrees are meshed with this node. If this node does not have room, the
+    * children of newNode and this are shuffled as needed and a new root is created
     * to be a parent of both and returned, or newNode is made to be the parent of
-    * subRoot and new node and returned.
+    * this and new node and returned.
     *
     * @return  a node that will be the root of the subtree 
     */
@@ -174,12 +155,28 @@ class TwoThreeTree {
         println("\n--------------------------")
     }
 
+    fun exampleTree() {
+        //builds example tree from lecture notes
+        var one_node = Node(1, null, null, null, null)
+        var three_four_node = Node(3, 4, null, null, null)
+        var two_node = Node(2, null, one_node, three_four_node, null)
+        root = two_node
+        printTree()
+
+        var five_node = Node(5, null, null, null, null)
+        var sub_root = add(three_four_node, five_node)
+        root = add(two_node, sub_root)
+    }
+
 }
 
 // Driver Program to test the above functions
 fun main() {
     var testTree = TwoThreeTree()
-    testTree.insert(15)
+
+    testTree.exampleTree()
+
+    //testTree.insert(15)
     // testTree.insert(1)
     // testTree.insert(25)
     // testTree.insert(5)
