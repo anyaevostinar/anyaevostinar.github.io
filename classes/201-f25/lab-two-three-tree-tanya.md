@@ -16,7 +16,7 @@ You will ultimately implement all of the `insert` methods. Note that there are `
 
 a. You'll start by implementing part of `insertHelp`. The first case you should consider is inserting a key into an empty tree. Check if `subroot` is null and if so, set it to be a new `Node` that has the key as the left value (using the provided Node constructor) and return it. (You'll frequently be returning the root, it's part of managing the splitting of nodes.)
 
-b. Compile and run your code to verify that the number 15 is inserted as the left value of the root of the tree:
+b. Update the driver code to not build the example tree and instead insert 15. Then, compile and run your code to verify that the number 15 is inserted as the left value of the root of the tree:
 
 ```bash
 -----------------------
