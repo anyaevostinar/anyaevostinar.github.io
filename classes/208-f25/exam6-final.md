@@ -23,18 +23,17 @@ Retake:
 * OS2-AD: Interpret programs with multiple fork calls
 
 * AI7-AD: Draw the stack given push/pop/add/sub instruction(s)
-* OP4: Use addresses of members of a struct or elements in a `char` array correctly
 * OP6-AD: Resize a value to a larger size (signed or unsigned)
-* OP7-AD: Demonstrate the correct use of `&` and `*` operators
 
 * AI3: Interpret instructions using pointer arithmetic
-* AI4: Determine the outcome of a `cmp` jump sequence
 * AI6-AD: Interpret `mov` instructions
+* OP4: Use addresses of members of a struct or elements in a `char` array correctly
 
 * AC1: Distinguish between recursion/looping/branching
 * AC2: Identify parameter count/types and return type of a given assembly program
 * AC3-AD: Describe the functionality of a given assembly program
 * AC4-AD: Reconstruct all of a C program from given assembly
+
 
 I will include a copy of your responses to [this form](https://docs.google.com/forms/d/e/1FAIpQLSeKB18OEJcm0Lo9X05_cKeOTx4ReIYUhQwf4pJrIDD0med91g/viewform?usp=dialog) in your self-scheduled final packet.
 
