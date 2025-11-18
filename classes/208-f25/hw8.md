@@ -99,6 +99,17 @@ shell208$ ^C                                    /* your shell printed ^C to stde
 shell208$ exit
 ```
 
+It's also fine if your shell prints the `^C` on the same line as the user's:
+```bash
+shell208$ ls
+shell208$ ls -l mysubdirectory
+shell208$ ls -l > listing.txt
+shell208$ wc < myfile.txt
+shell208$ ls -lah | wc
+shell208$ ^C^C               /* user pressed ctrl-c and your shell's printed ^C to stderr */
+shell208$ exit
+```
+
 ## SUBMITTING YOUR WORK
 Submit your program via Gradescope as a single C source file named `shell208.c`. This program should compile without warnings on mantis using:
 
