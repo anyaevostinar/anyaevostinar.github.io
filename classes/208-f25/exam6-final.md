@@ -16,10 +16,8 @@ Retake:
 * NW1-AD: Provide a high-level explanation of DNS
 * MH2-AD: Explain the performance implications of loop ordering
 
-* SEC1: Provide a high-level explanation of the trusting-trust attack
 * SEC2: Provide a high-level explanation of buffer-overflow attack and defense
 * OS1: Provide a relative path for a given file system structure
-* MH1: Interpret given cache parameters
 * OS2-AD: Interpret programs with multiple fork calls
 
 * AI7-AD: Draw the stack given push/pop/add/sub instruction(s)
@@ -29,7 +27,6 @@ Retake:
 * AI6-AD: Interpret `mov` instructions
 * OP4: Use addresses of members of a struct or elements in a `char` array correctly
 
-* AC1: Distinguish between recursion/looping/branching
 * AC2: Identify parameter count/types and return type of a given assembly program
 * AC3-AD: Describe the functionality of a given assembly program
 * AC4-AD: Reconstruct all of a C program from given assembly
