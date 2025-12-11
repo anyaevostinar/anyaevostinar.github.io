@@ -1,0 +1,65 @@
+---
+layout: page
+title: CS 257 Software Design W26 Schedule
+permalink: /classes/257-w26/schedule
+---
+
+This is a rough schedule of topics for each week and the expected completion of assignments.
+It will continue to be filled in throughout the term.  
+Many of the links will be dead-ends until closer to the relevant date.
+
+**Class topics and homework information may change over the course of the term.** Please treat this schedule as a rough guide for seeing what we'll be focusing on, and expect that there will be shifts as the term progresses.
+
+Readings should be completed **before** the class day that they are listed. Class is structured expecting that you have completed the reading. You also will need to complete a preparation activity before class, which you'll find on Moodle.
+
+"Krug" refers to our textbook **Don't Make Me Think! Revisited, by Steve Krug**.
+"Martin" refers to our textbook **Clean Code, by Robert C. Martin**.
+Other readings will be linked through Moodle.
+
+The slide links are all restricted to Carleton folks, so make sure you're logged in to your Carleton account if you have one. If you are outside of Carleton and would like to see them, just shoot me an email!
+
+| Date	| Assignments Due	| In Class |	Assignments Out |
+| ------- | --------------- | ------------- | -------------- |
+| **Week 1** | **Getting Started** |  | |
+| M 1/5 | [Intro to Software Design Prep](intro-prep) | [Slides](), Course overview and discussion|  |
+| W 1/7 | [Agile and Effective Teams Prep](agile-prep) | [Slides](),<br> Development Processes and Getting Started, [start setting up computers](getting-started) |  |
+| F 1/9 | [Unix and Vim Prep](unix-prep) | [Slides](), [Unix Scavenger Hunt](unix-scavenger-hunt) | |
+| **Week 2** | **Project Foundations** | | |
+| M 1/12 | [Data and Team Prep](data-prep) |[Slides](), [Start on Project Proposal](lab-proposal) | [Project Proposal](project-proposal)  | 
+| W 1/14 | [Git Prep](git-prep), Dataset due | [Slides](), [Git Practice Lab](lab-git) | |
+| F 1/16 | [TDD Prep](tdd-prep) | [Slides](), [TDD Lab](tdd-lab)  |[Individual - Tests](project-1-ind) |
+| **Week 3** | **Core Functionality** | | |
+| M 1/19 |[Command Line Prep](cl-prep),    [Project Proposal due 10pm](project-proposal) | [Slides](), [Start on CLI Design](command-line-design) | [Team - Command Line](project-command-line)  |
+| W 1/21 | [Function Design Prep](function-prep) | [Slides](), [Function Design](labfunctions.pdf) | |
+| F 1/23 | [Ethics in Tech Prep](ethics-prep), [Individual Deliverable 1 due 10pm](project-1-ind) | [Slides](), Intro to Tech Ethics | |
+| **Week 4** | **Flask Component** | | |
+| M 1/26 | [Command Line project due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](), [Intro to Flask](flask-intro) | [Team Flask app](project-2-flask), [Individual flask app](project-2-ind) |
+| W 1/28 | [Classes Prep](classes-prep) | [Slides](), Designing classes | |
+| F 1/30 | [Individual Flask app](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
+| **Week 5** | **Database Component** | | |
+| M 2/2 | [Team Flask app](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), [Starting with Databases](database-lab) | [Individual Database](project-3-ind); , [Midterm Reflection](reflection-mid)|
+| W 2/4 |  No prep |[Slides](), [Database Connections and Relations](psycopg2)  | |
+| F 2/6 | [Midterm Reflection](reflection-mid), [Individual back-end](project-3-ind); [Database Normalization](normalization-prep) | [Slides](), [Team Database Lab](team-database-lab) | [Team Database](project-3-backend) |
+| **Week 6** | **Connecting Components** | | |
+| M 2/9 | Midterm break! | | |
+| W 2/11 |  [Web Usability Prep](web-usability-prep) | [Slides](), Webpage analysis and design |  |
+| F 2/13 | [HTML with Flask Prep](html-prep) | [Slides](), [HTML Flask Lab](flask-html) | |
+| **Week 7** | **Front-End Component** | | |
+| M 2/16 | [CSS and HTML Prep](css-html-prep), [Team back-end](project-3-backend) | [Slides](), [HTML and CSS lab](lab-html-css) | [Individual front-end](project-4-ind), [Team front-end](project-4-front-end)|
+| W 2/18 | [HTTP Prep](http-prep) | [Slides](), [Flask Forms Lab](flask-form) | |
+| F 2/20 |[Individual front-end](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](), Accessibility Analysis | |
+| **Week 8** | **Refactoring** | | |
+| M 2/23 | [Team front-end](project-4-front-end), [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
+| W 2/25 | [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments]() | |
+| F 2/27 | [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells | [Design Improvements and Final Reflection](project-improvements) (due 6/9) |
+| **Week 9** | **More Refactoring** | | |
+| M 3/2 | [Code Review 2 Prep](review-2-prep) | [Slides](), [Code review](https://docs.google.com/document/d/1LTLzYZ1_Dl9Mnddsgu72cmVc3a_sUwW3Ad69ZvGkJXw/edit?usp=sharing) | |
+| W 3/4 | [Design Patterns Prep](patterns-prep) | [Slides](), Design Patterns | |
+| F 3/6 | [Specific Patterns Prep](more-patterns-prep) | [Slides](), More design patterns | |
+| **Week 10** | **Wrapping Up** | | |
+| M 3/9 | [User Story Prep](user-stories-prep) | [Slides](), [User stories]() | |
+| W 3/11 | [Usability Testing Prep](usability-prep), All revisions due 10pm | [Slides](), [Usability testing](https://docs.google.com/document/d/167KzdJLn9OehrfxzPmUA9xB4zunkNrkrBJB40GsDlBk/edit?usp=drive_link), Final project showcase | |
+| **Exam Week** | | |
+| |Nothing scheduled, final project submissions due 3/16 8:30pm (+1 hour grace period) | | |
+| | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
+

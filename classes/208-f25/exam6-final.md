@@ -14,7 +14,7 @@ New:
 
 Retake:
 * NW1-AD: Provide a high-level explanation of DNS
-* MH2-AD: Explain the performance implications of loop ordering
+* MH2-AD: Explain the cache performance implications of loop ordering
 
 * SEC2: Provide a high-level explanation of buffer-overflow attack and defense
 * OS1: Provide a relative path for a given file system structure

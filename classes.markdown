@@ -6,15 +6,19 @@ permalink: /Classes/
 
 ## Current Classes
 
-CS 201: Data Structures ([Syllabus](/classes/201-f25/syllabus), [Schedule](/classes/201-f25/schedule))
-
-CS 208: Intro to Systems ([Syllabus](/classes/208-f25/syllabus), [Schedule](/classes/208-f25/schedule))
+CS 257: Software Design ([Syllabus](), [Schedule](/classes/257-w26/schedule))
 
 ## Future Classes
 
 Subject to change!
 
 ## Previous Classes
+
+### Fall 2025
+
+CS 201: Data Structures ([Syllabus](/classes/201-f25/syllabus), [Schedule](/classes/201-f25/schedule))
+
+CS 208: Intro to Systems ([Syllabus](/classes/208-f25/syllabus), [Schedule](/classes/208-f25/schedule))
 
 ### Spring 2025
 
