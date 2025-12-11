@@ -23,13 +23,13 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 1** | **Getting Started** |  | |
 | M 1/5 | [Intro to Software Design Prep](intro-prep) | [Slides](), Course overview and discussion|  |
 | W 1/7 | [Agile and Effective Teams Prep](agile-prep) | [Slides](),<br> Development Processes and Getting Started, [start setting up computers](getting-started) |  |
-| F 1/9 | [Unix and Vim Prep](unix-prep) | [Slides](), [Unix Scavenger Hunt](unix-scavenger-hunt) | |
+| F 1/9 | [Data and Team Prep](data-prep) |[Slides](), [Start on Project Proposal](lab-proposal)  | [TD0: Project Proposal](project-proposal) |
 | **Week 2** | **Project Foundations** | | |
-| M 1/12 | [Data and Team Prep](data-prep) |[Slides](), [Start on Project Proposal](lab-proposal) | [Project Proposal](project-proposal)  | 
-| W 1/14 | [Git Prep](git-prep), Dataset due | [Slides](), [Git Practice Lab](lab-git) | |
+| M 1/12 | [Unix and Vim Prep](unix-prep), Dataset due 10pm | [Slides](), [Unix Scavenger Hunt](unix-scavenger-hunt) |  | 
+| W 1/14 | [Git Prep](git-prep) | [Slides](), [Git Practice Lab](lab-git) | |
 | F 1/16 | [TDD Prep](tdd-prep) | [Slides](), [TDD Lab](tdd-lab)  |[ID1: Tests](project-1-ind) |
 | **Week 3** | **Core Functionality** | | |
-| M 1/19 |[Command Line Prep](cl-prep),    [Project Proposal due 10pm](project-proposal) | [Slides](), [Start on CLI Design](command-line-design) | [TD1: Command Line](project-command-line)  |
+| M 1/19 |[Command Line Prep](cl-prep),   [TD0 due 10pm](project-proposal) | [Slides](), [Start on CLI Design](command-line-design) | [TD1: Command Line](project-command-line)  |
 | W 1/21 | [Function Design Prep](function-prep) | [Slides](), [Function Design](labfunctions.pdf) | |
 | F 1/23 | [Ethics in Tech Prep](ethics-prep), [ID1 due 10pm](project-1-ind) | [Slides](), Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
@@ -37,7 +37,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 1/28 | [Classes Prep](classes-prep) | [Slides](), Designing classes | |
 | F 1/30 | [ID2 due 10pm](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
 | **Week 5** | **Database Component** | | |
-| M 2/2 | [TD2 due 10pm](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), [Starting with Databases](database-lab) | [ID3: Database](project-3-ind); , [Midterm Reflection](reflection-mid)|
+| M 2/2 | [TD2 due 10pm](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), [Starting with Databases](database-lab) | [ID3: Database](project-3-ind), [Midterm Reflection](reflection-mid)|
 | W 2/4 |  No prep |[Slides](), [Database Connections and Relations](psycopg2)  | |
 | F 2/6 | [Midterm Reflection due 10pm](reflection-mid), [ID3 due 10pm](project-3-ind); [Database Normalization](normalization-prep) | [Slides](), [Team Database Lab](team-database-lab) | [TD3: Back-end](project-3-backend) |
 | **Week 6** | **Connecting Components** | | |
