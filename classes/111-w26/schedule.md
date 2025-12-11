@@ -16,32 +16,32 @@ Preparation should be completed **before** the class day that they are listed. C
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Algorithmic Thinking** |  | |
 | 1/5 | [Start of Class Prep](intro-prep) | [Slides](), Intro to the class |  |
-| 1/7 | [Intro Python Prep](python-prep) | [Slides](),  [Starting with Python](getting-started)  | [HW1](hw1)	 |
+| 1/7 | [Intro Python Prep](python-prep) | [Slides](),  [Starting with Python](getting-started)  | [HW1: Input](hw1)	 |
 | 1/9 | [Building Blocks Prep](build-blocks-prep) |  [Slides](), [Building Blocks Lab](building-blocks) | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
 | 1/12 | [Variables Prep](variables-prep)	|  [Slides](), [Variables and Evaluation](variables) |	 |
-| 1/14 | [Modules Prep](turtle-prep); HW1 | [Slides](),  [Random Turtles](random-turtle)	| [HW2](hw2) |
+| 1/14 | [Modules Prep](turtle-prep); HW1 | [Slides](),  [Random Turtles](random-turtle)	| [HW2: Solar](hw2) |
 | 1/16 | [Sequences Prep](sequences-prep)[Iteration Prep](iteration-prep) |  [Slides](), [Sequences and Iteration](sequences) [Iteration Lab](iteration-lab)	| |
 | **Week 3** | **Building Blocks Part 2** |  | |
 | 1/19 | Study | [Slides](), Exam 1	| |
-| 1/21 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Slides](),  [Conditionals Lab](conditionals-lab)	 | [HW3](hw3) |
+| 1/21 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Slides](),  [Conditionals Lab](conditionals-lab)	 | [HW3: Bikes](hw3) |
 | 1/23 | [Debugging Prep](debugging-nested-prep)  | [Slides](), [Debugging Strategies and Nested Structures](lab-nested) |  |
 | **Week 4** | **Advanced Blocks** | | |
 | 1/26| [Mutating Lists Prep](mutating-lists-prep) | [Slides](), [Working with Lists](lab-mutating-lists)	| |
-| 1/28 | [Files Prep](files-prep); [HW3](hw3)	| [Slides](), [Working with Files](files)	| [HW4](hw4) |
+| 1/28 | [Files Prep](files-prep); [HW3](hw3)	| [Slides](), [Working with Files](files)	| [HW4: Weather](hw4) |
 | 1/30 | [Functions Prep 1](functions1-prep) | [Slides](), [Function Basics](functions1)	 | |
 | **Week 5** | **Functions** |  | |
 | 2/2 | [Functions 2 and Indefinite Iteration Prep](functions2-prep) |  [Slides](), [More Functions and Loops](lab-return-while) | |
-| 2/4 |	Study;  [HW4](hw4)	|  [Slides](), [Exam 2](exam2) 	|  [HW5](hw5) |
+| 2/4 |	Study;  [HW4](hw4)	|  [Slides](), [Exam 2](exam2) 	|  [HW5: Scrabble](hw5) |
 | 2/6	| [Dictionaries Prep](dictionaries-prep) |	[Slides](), [Using Dictionaries](dictionaries)	| |
 | **Week 6** | **Objects and Classes** |  | |
 | 2/9 |  |	Midterm break!	| |
-| 2/11 | [OOP Preparation](oop1-prep); HW5  |  [Slides](),  [Graphics Intro Lab](graphics-intro)	| [HW6](hw6) |
-| 2/13 | [Working with Classes Prep](oop2-prep),  		| [Slides](), [Creating Flower Classes](creating-classes)	|  |
+| 2/11 | [OOP Preparation](oop1-prep)  |  [Slides](),  [Graphics Intro Lab](graphics-intro)	|  |
+| 2/13 | [Working with Classes Prep](oop2-prep); HW5  		| [Slides](), [Creating Flower Classes](creating-classes)	| [HW6: GIS](hw6) |
 | **Week 7**| **Final Project**|  | |
 | 2/16 | [Final Project Info Prep](final-project), Partner preference form due 6am  | Final Project Overview, [Making Simulations](lab-simulations)  | [Final Project Proposal](final-project#project-proposal) |
 | 2/18 | Final Project Proposal | Minimum Viable Product and Agile  | |
-| 2/20 |  Study  |  Exam 3	|  [Final Project](final-project) |
+| 2/20 |  Study, [HW6](hw6)  |  Exam 3	|  [Final Project](final-project) |
 | **Week 8** | **Recursion and Analysis** | | |
 | 2/23|  [Algorithm Analysis Prep](analysis-prep);   |	[Slides](),  [Analyzing Algorithms](efficiency)		 |  |
 | 2/25 | [Recursion Prep](recursion-prep)	 |  [Slides](), [Intro to Recursion](recursion-lab)	|  |
