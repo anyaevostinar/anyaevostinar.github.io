@@ -27,31 +27,31 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 2** | **Project Foundations** | | |
 | M 1/12 | [Data and Team Prep](data-prep) |[Slides](), [Start on Project Proposal](lab-proposal) | [Project Proposal](project-proposal)  | 
 | W 1/14 | [Git Prep](git-prep), Dataset due | [Slides](), [Git Practice Lab](lab-git) | |
-| F 1/16 | [TDD Prep](tdd-prep) | [Slides](), [TDD Lab](tdd-lab)  |[Individual - Tests](project-1-ind) |
+| F 1/16 | [TDD Prep](tdd-prep) | [Slides](), [TDD Lab](tdd-lab)  |[ID1: Tests](project-1-ind) |
 | **Week 3** | **Core Functionality** | | |
-| M 1/19 |[Command Line Prep](cl-prep),    [Project Proposal due 10pm](project-proposal) | [Slides](), [Start on CLI Design](command-line-design) | [Team - Command Line](project-command-line)  |
+| M 1/19 |[Command Line Prep](cl-prep),    [Project Proposal due 10pm](project-proposal) | [Slides](), [Start on CLI Design](command-line-design) | [TD1: Command Line](project-command-line)  |
 | W 1/21 | [Function Design Prep](function-prep) | [Slides](), [Function Design](labfunctions.pdf) | |
-| F 1/23 | [Ethics in Tech Prep](ethics-prep), [Individual Deliverable 1 due 10pm](project-1-ind) | [Slides](), Intro to Tech Ethics | |
+| F 1/23 | [Ethics in Tech Prep](ethics-prep), [ID1 due 10pm](project-1-ind) | [Slides](), Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
-| M 1/26 | [Command Line project due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](), [Intro to Flask](flask-intro) | [Team Flask app](project-2-flask), [Individual flask app](project-2-ind) |
+| M 1/26 | [TD1 due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](), [Intro to Flask](flask-intro) | [TD2: Flask](project-2-flask), [ID2: Flask](project-2-ind) |
 | W 1/28 | [Classes Prep](classes-prep) | [Slides](), Designing classes | |
-| F 1/30 | [Individual Flask app](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
+| F 1/30 | [ID2 due 10pm](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
 | **Week 5** | **Database Component** | | |
-| M 2/2 | [Team Flask app](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), [Starting with Databases](database-lab) | [Individual Database](project-3-ind); , [Midterm Reflection](reflection-mid)|
+| M 2/2 | [TD2 due 10pm](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), [Starting with Databases](database-lab) | [ID3: Database](project-3-ind); , [Midterm Reflection](reflection-mid)|
 | W 2/4 |  No prep |[Slides](), [Database Connections and Relations](psycopg2)  | |
-| F 2/6 | [Midterm Reflection](reflection-mid), [Individual back-end](project-3-ind); [Database Normalization](normalization-prep) | [Slides](), [Team Database Lab](team-database-lab) | [Team Database](project-3-backend) |
+| F 2/6 | [Midterm Reflection due 10pm](reflection-mid), [ID3 due 10pm](project-3-ind); [Database Normalization](normalization-prep) | [Slides](), [Team Database Lab](team-database-lab) | [TD3: Back-end](project-3-backend) |
 | **Week 6** | **Connecting Components** | | |
 | M 2/9 | Midterm break! | | |
 | W 2/11 |  [Web Usability Prep](web-usability-prep) | [Slides](), Webpage analysis and design |  |
 | F 2/13 | [HTML with Flask Prep](html-prep) | [Slides](), [HTML Flask Lab](flask-html) | |
 | **Week 7** | **Front-End Component** | | |
-| M 2/16 | [CSS and HTML Prep](css-html-prep), [Team back-end](project-3-backend) | [Slides](), [HTML and CSS lab](lab-html-css) | [Individual front-end](project-4-ind), [Team front-end](project-4-front-end)|
+| M 2/16 | [CSS and HTML Prep](css-html-prep), [TD3 due 10pm](project-3-backend) | [Slides](), [HTML and CSS lab](lab-html-css) | [ID4: Front-end](project-4-ind), [TD4: Front-end](project-4-front-end)|
 | W 2/18 | [HTTP Prep](http-prep) | [Slides](), [Flask Forms Lab](flask-form) | |
-| F 2/20 |[Individual front-end](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](), Accessibility Analysis | |
+| F 2/20 |[ID4 due 10pm](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](), Accessibility Analysis | |
 | **Week 8** | **Refactoring** | | |
-| M 2/23 | [Team front-end](project-4-front-end), [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
-| W 2/25 | [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments]() | |
-| F 2/27 | [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells | [Design Improvements and Final Reflection](project-improvements) (due 6/9) |
+| M 2/23 |  [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
+| W 2/25 | [TD4 due 10pm](project-4-front-end), [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments]() | |
+| F 2/27 | [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells | [TD5: Improvements and Final Reflection](project-improvements) (due 6/9) |
 | **Week 9** | **More Refactoring** | | |
 | M 3/2 | [Code Review 2 Prep](review-2-prep) | [Slides](), [Code review](https://docs.google.com/document/d/1LTLzYZ1_Dl9Mnddsgu72cmVc3a_sUwW3Ad69ZvGkJXw/edit?usp=sharing) | |
 | W 3/4 | [Design Patterns Prep](patterns-prep) | [Slides](), Design Patterns | |
