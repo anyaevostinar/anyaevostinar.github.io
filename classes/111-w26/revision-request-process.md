@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Revision Assessment Process
-permalink: /classes/111-f24/revision-process
+permalink: /classes/111-w26/revision-process
 ---
 
 ## Overview
-As stated on the [syllabus](syllabus), you have the chance to revise homework assignments as many times as you want during the term. 
+As stated on the [syllabus](syllabus), you have the chance to revise homework assignments frequently during the term. 
 However, to keep things organized and manageable, there is a process that you need to go through that is detailed here.
 **All revisions are to be completed individually, even if it was a paired assignment.**
 
@@ -16,7 +16,7 @@ The first revision on each homework assignment is due a week after the initial s
 If you wish to revise after you get the feedback from the first revision, you can do so by following these steps:
 1. Read the feedback and correct your homework
 2. Submit your corrected homework to the same Gradescope assignment (will reopen after the feedback is released)
-3. Submit a request on [this form](https://docs.google.com/forms/d/e/1FAIpQLSeRDDUr_JqAr2-7-YekVp3biyiEnNmwOe709gjOHhE-on1FkQ/viewform?usp=sf_link)
+3. Submit a request on [this form](https://docs.google.com/forms/d/e/1FAIpQLScTwp9fI89NkCFjgY9yH6j_QX_GM8Ksw_lbRpP7Hb5ZHqxc1w/viewform?usp=publish-editor)
 4. Wait for the revision to be assessed, which might take until the end of term, or might happen more quickly than that
 5. Repeat from step 1 if you want
 

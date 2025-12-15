@@ -29,10 +29,10 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 4** | **Advanced Blocks** | | |
 | 1/26| [Mutating Lists Prep](mutating-lists-prep) | [Slides](), [Working with Lists](lab-mutating-lists)	| |
 | 1/28 | [Files Prep](files-prep); [HW3](hw3)	| [Slides](), [Working with Files](files)	| [HW4: Weather](hw4) |
-| 1/30 | [Functions Prep 1](functions1-prep) | [Slides](), [Function Basics](functions1)	 | |
+| 1/30 |	Study  	|  [Slides](), [Exam 2](exam2) 	|   |
 | **Week 5** | **Functions** |  | |
-| 2/2 | [Functions 2 and Indefinite Iteration Prep](functions2-prep) |  [Slides](), [More Functions and Loops](lab-return-while) | |
-| 2/4 |	Study;  [HW4](hw4)	|  [Slides](), [Exam 2](exam2) 	|  [HW5: Scrabble](hw5) |
+| 2/2 | [Functions Prep 1](functions1-prep) | [Slides](), [Function Basics](functions1)	 | |
+| 2/4| [Functions 2 and Indefinite Iteration Prep](functions2-prep); [HW4](hw4) |  [Slides](), [More Functions and Loops](lab-return-while) | [HW5: Scrabble](hw5) |
 | 2/6	| [Dictionaries Prep](dictionaries-prep) |	[Slides](), [Using Dictionaries](dictionaries)	| |
 | **Week 6** | **Objects and Classes** |  | |
 | 2/9 |  |	Midterm break!	| |
