@@ -269,6 +269,7 @@ Clearly acceptable:
 * Asking gen AI to give you practice exam questions to study
 * Asking gen AI to explain a class concept that you are struggling with (but triple check it is giving accurate information!)
 * I am exploring creating a custom chatbot to provide acceptable help on the homeworks. If I do provide one of these, you can use it in the way that it is intended to be used.
+* Making an image to go along with your submission to something for fun (please cite and include the prompt)
 
 Borderline (i.e. you could easily slip into unacceptable):
 * Asking outside gen AI to help you understand what an assignment is asking

@@ -1,8 +1,10 @@
 ---
 layout: page
-title: CS257 Software Design S25 Syllabus
-permalink: /classes/257-s25/syllabus
+title: CS257 Software Design W26 Syllabus
+permalink: /classes/257-w26/syllabus
 ---
+
+[Schedule](schedule)
 
 ## Table of Contents
 
@@ -17,13 +19,13 @@ permalink: /classes/257-s25/syllabus
 
 ## Quick Facts
 
-Spring 2025
+Winter 2026
 
 **Instructor**: Anya E. Vostinar
 
-**Room**: Anderson 329
+**Room**: Olin 310
 
-**Time**: 3A
+**Time**: 1A
 
 **Course Staff**: See Moodle
 
@@ -38,9 +40,7 @@ I recognize the potential financial burden of additional course fees, supply req
 
 **Drop in student hours**:
 
-* M: 1-2pm in Olin 308
-* W: 2-3pm in Olin 308
-* F: 1:30-2:30pm in **Olin 304**
+TBD
 
 Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 8-4 M-F and either send a calendar invite to an event or email me. These meetings will be in my office, Olin 323.
 
@@ -188,7 +188,77 @@ Each class day will have preparation activities for you to complete and a sectio
 All materials will be released at least 48 hours before they are due.
 
 ### Attendance
-Attendance is not strictly required in this class, though it is one main way that you are able to earn "engagement credits," which are a portion of your final grade (see below).
+Attendance is expected in this class and, therefore, it is one main way that you are able to earn "engagement credits," which are a portion of your final grade (see below).
+
+## Assessment
+One of my goals for you in this course is for you to continue to develop as an independent programmer and learner.
+I'm much more interested in what skills and understanding you have mastered by the end of the course than the exact pace at which you master them.
+However, it isn't healthy for you or me if you leave everything to the last minute. 
+It also isn't fair to your team if you haven't prepared as much as they have.
+Finally, much of the value of this class comes from engaging with the material and each other throughout the term.
+Therefore, my goal with the following evaluation metrics is to balance providing you flexibility to learn at your own pace while also making sure to spread your learning out over the entire term.
+
+Towards that end, your performance in this class will be evaluated in three different ways according to the learning goals for the course:
+
+* **Engagement credits** There is a great benefit to you to fully and authentically engage with the course content in and out of class time. To encourage this engagement while providing some flexibility, the course has an "engagement credit" system. You will need a specific number of engagement credits to earn a specific grade (shown in the list below). You can earn these credits in many ways, but the main way is through completing the preparatory work and attending (and engaging with class). You may earn 1 credit for completely preparatory work satisfactorily and 1 credit for attending and engaging effectively in class. There may be additional ways to earn engagement credits during the term as well.
+
+* **Group deliverables** This course consists of a [team project](project-final) that lasts the majority of the course and has components that you will create and get feedback on along the way. Your work will be evaluated on the effectiveness of the processes you and your team utilize, the product you attain (and how closely this product meets the project deliverable requirements), and the effectiveness of your team's collaboration. This contributes to your final grade according to the *specifications grading* scale outlined below.
+
+* **Individual deliverables** Many of the team project deliverables will also have an associated individual portion. The individual deliverables allow you to demonstrate individual understanding of the key learning objectives in this course -- which will provide you with more targeted feedback on your performance. These may be programs or written reflections, depending on the learning goal. This contributes to your final grade according to the *specifications grading* scale outlined below.
+
+### Grading Scale
+
+I'll be using a version of *standards and specifications grading* this term for the individual and team deliverables. Each assessment that you hand in will receive narrative feedback and be marked on the following scale:
+
+* **IE**: Insufficient evidence (basically nothing turned in)
+
+* **RR**: Revise (does not meet the requirements yet)
+
+* **S**: Satisfactory (meets the requirements)
+
+Requirements for deliverables will be in one of two categories:
+
+* **CR**: Core
+
+* **AD**: Advanced
+
+### How this translates to course grades
+
+Your final course grade will be based on how many advanced and core requirements you have satisfied (from both individual and team deliverables) as well as how many engagement credits you earned. 
+The table below shows the **minimum** requirement for each letter grade for each category. To calculate your grade, I will find the highest letter grade for which you have met **all** requirements. For example, if you satisfied 11 advanced requirements, 11 core requirements and had 55 engagement credits, you would receive a B+ due to the missing core and advanced requirements. 
+Note that a "-" is due to not having all the required engagement credits and a "+" is due to having more advanced requirements satisfied.
+
+| Grade | Advanced Satisfied | Core Satisfied | Engagement Credits |
+|-------|----------|-------------|------------|
+| Total| 6 (Team) + 6 (Individual) = 12 | 6 (Team) + 6 (Individual) = 12 | >54 |
+| A | 12 | 12 | 50 |
+| A- | 12 | 12 | <50 |
+| B+ | 8 | 11 | 45 |
+| B | 8  |  11 | 45|
+| B- | 8 |  11 |  <45 |
+| C+ |  3  |  10 |   40|
+|C | 0   |   10 |   40|
+| C- | 0 |  10 | <40 |
+| D+ | 1 | 8| 35 |
+| D | 0 | 8 | 35 |
+| D- | 0| 8 |  <35 |
+| F | 0 | 0 | 0|
+
+
+### Homework revisions
+
+An important aspect of specifications grading is revision. **You may revise any individual or team deliverable up until the last day of classes.** Learning is not a linear process, and it involves making mistakes and learning from them. You may revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
+You may further revise that deliverable before the final submission and request additional feedback via [the form linked on this page](revision-process). However, you may only request one subsequent individual and team assessment per week.
+
+### Late work and extensions
+In this course, we need to balance flexibility for individuals with structure for teams and the class as a whole. I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. Therefore, the late work/extension policy varies depending on the type of work:
+
+**All deliverables** have a 1-hour grace period after their posted due date and time to account for slight delays in submission while allowing assessment of submissions to start soon after the due date. If you miss that cutoff, you will still be able to submit something during the revision period. I highly recommend you aim to submit something in the original submission window, even if it isn't complete, so that you can benefit from feedback and revision.
+
+**Preparation work** cannot be submitted late. If you miss the submission for a given day, you cannot earn the engagement credit for that work.
+
+**All work except for the final team submission must be submitted by the end of the last day of classes as per College policy.** The final team submission (and accompanying reflection) must be submitted the the end of the last final.
+All that said: This (like every term for a while now) term is going to be weird, and hard, and disruptive, for all sorts of non-academic reasons. If you're staring down a deadline that you know you can't meet, or if you've fallen behind, **get in touch with me immediately and we'll work something out.** While I need to put boundaries in place for my own health and wellness, and for fairness to everyone in the class, I also want to make sure you are progressing in your learning.
 
 ## Getting help
 There are many resources available to help you succeed in this course -- please take advantage of any or all of them!
@@ -205,69 +275,38 @@ There are many resources available to help you succeed in this course -- please 
 
 * **Student well-being:** Your health and well-being should always be your first priority. At Carleton, we have a wide-array of health and wellness resources to support students. It is important to recognize stressors you may be facing, which can be personal, emotional, physical, financial, mental, or academic. Sleep, exercise, and connecting with others can be strategies to help you flourish at Carleton. For more information, check out Student Health and Counseling (SHAC) or the Office of Health Promotion.
 
-## Assessment
-One of my goals for you in this course is for you to continue to develop as an independent programmer and learner.
-I'm much more interested in what skills and understanding you have mastered by the end of the course than the exact pace at which you master them.
-However, it isn't healthy for you or me if you leave everything to the last minute. 
-It also isn't fair to your team if you haven't prepared as much as they have.
-Finally, much of the value of this class comes from engaging with the material and each other throughout the term.
-Therefore, my goal with the following evaluation metrics is to balance providing you flexibility to learn at your own pace while also making sure to spread your learning out over the entire term.
-
-Towards that end, your performance in this class will be evaluated in three different ways according to the learning goals for the course:
-
-* **Engagement credits** There is a great benefit to you to fully and authentically engage with the course content in and out of class time. To encourage this engagement while providing some flexibility, the course has an "engagement credit" system. You will need a specific number of engagement credits to earn a specific grade (shown in the list below). You can earn these credits in many ways, but the main way is through completing the preparatory work and attending (and engaging with class). You may earn 1 credit for completely preparatory work satisfactorily and 1 credit for attending and engaging effectively in class. There may be additional ways to earn engagement credits during the term as well.
-
-* **Group deliverables** This course consists of a [team project](project-final) that lasts the majority of the course and has components that you will create and get feedback on along the way. Your work will be evaluated on the effectiveness of the process you and your team utilize, the product you attain (and how closely this product meets the project deliverable requirements), and the effectiveness of your team's collaboration. This contributes to your final grade according to the *specifications grading* scale outlined below.
-
-* **Individual deliverables** Many of the team project deliverables will also have an associated individual portion. The individual deliverables allow you to demonstrate individual mastery of the key learning objectives in this course -- which will provide you with more targeted feedback on your performance. These may be programs or written reflections, depending on the learning goal. This contributes to your final grade according to the *specifications grading* scale outlined below.
-
-### Grading Scale
-
-I'll be using a version of *specifications grading* this term. Each assessment that you hand in will be evaluated against a checklist or rubric related to one or more of the course learning objectives. I will distribute the rubrics and checklists I'll use to assess each assignment so that you know exactly what constitutes each of these levels. I will rank each learning objective, and the overall submission, according to a five-level scale:
-
-* Insufficient evidence (basically nothing turned in)
-
-* Not yet proficient (something was turned in but it did not fulfill the criteria)
-
-* Proficient (the submission demonstrates achievement of the learning objectives)
-
-* Exemplary (the submission demonstrates achievement of the learning objective(s) at a higher level (e.g. more nuance, sophistication, etc).)
-
-An important aspect of specifications grading is revision. **You may revise any group or individual deliverable up until the end of classes.** Learning is not a linear process, and learning involves making mistakes and learning from them. You may revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
-You may further revise that deliverable before the final submission and [request additional feedback via this form](). However, **you may only request one additional individual and team assessment per week**. 
-
-### How this translates to course grades
-
-**To earn a C in the course:** you must have 75% of the deliverables at "Proficient" and have earned 40 engagement credits.
-
-**To earn a B in the course:** you must have 100% of the deliverables at "Proficient" and have earned 45 engagement credits. If you received Not Yet Proficient on the Midterm Reflection but Proficient/Exemplary on the Final Reflection, you may still earn a B.
-
-**To earn an A in the course:** you must have 90% of the deliverables at "Exemplary", the remaining 10% at "Proficient" and have earned 50 engagement credits.
-
-(There are 28 class days, so by just completing preparatory work and engaging in class, you will earn 56 engagement credits.)
-
-If you have met the deliverables requirements for a letter grade, but not the engagement credits, you will receive that grade with a "-". For example, if you have completed all the deliverables at an Exemplary level but have only 40 engagement credits, you will receive an A-.
-
-### Late work and extensions
-In this course, we need to balance flexibility for individuals with structure for teams and the class as a whole. I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. Therefore, the late work/extension policy varies depending on the type of work:
-
-**All deliverables** have a 1-hour grace period after their posted due date and time to account for slight delays in submission while allowing assessment of submissions to start soon after the due date. If you miss that cutoff, you will still be able to submit something during the revision period. I highly recommend you aim to submit something in the original submission window, even if it isn't complete, so that you can benefit from feedback and revision.
-
-**Preparation work** cannot be submitted late. If you miss the submission for a given day, you cannot earn the engagement credit for that work.
-
-**All work except for the final team submission must be submitted by the end of the last day of classes as per College policy.** The final team submission must be submitted the the end of the last final.
-All that said: This (like every term for a while now) term is going to be weird, and hard, and disruptive, for all sorts of non-academic reasons. If you're staring down a deadline that you know you can't meet, or if you've fallen behind, **get in touch with me immediately and we'll work something out.** While I need to put boundaries in place for my own health and wellness, and for fairness to everyone in the class, I also want to make sure you are progressing in your learning.
 
 ## AI-Assistance
-We are in a new age of software design and development (and everything else) with the arrival of generative AI. 
-This term, we will be experimenting with what software design means in the face of these new tools.
-You will be expected to use [Github Copilot](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment#enabling-or-disabling-github-copilot) for all coding work and allowed/encouraged to use Google's Gemini for additional assignments.
-We will spend time as a class exploring where these tools are useful and where they might not actually be helpful.
+In this new age of AI assistants everywhere, we need to cautiously navigate their relationship with engaged learning together.
+There are many many (many) ways that generative AI is (sort of) helping you and some are more clearly acceptable or unacceptable than others. While these tools are being used extensively in the software development industry now, you must first learn the concepts yourself so that you can identify when the tools are going off track and potentially causing giant security and functionality errors. I can't make an exhaustive list of what is allowed and isn't, because there is just too much and something new is going to pop up within the ten weeks of this term. I will do my best to guide you, but you also are going to need to use good judgment at times (and don't rely on the AI's judgment!).
+
+Clearly unacceptable:
+* Pasting the entire assignment prompt into anything (even if you don't use the code that comes out)
+* Submitting for credit any code that you have not checked over carefully for security vulnerabilities
+* Having gen AI summarize a reading and write a prep check answer for you
+* Having gen AI write any portion of a reflective assignment for you
+
+Clearly acceptable:
+* Asking gen AI to explain a class concept that you are struggling with (but triple check it is giving accurate information!)
+* I am exploring creating a custom chatbot to provide acceptable help on the programming deliverables. If I do provide one of these, you can use it in the way that it is intended to be used.
+* Making an image to enhance your deliverable
+* Asking gen AI to help YOU understand how to fix a bug or error
+
+Borderline (i.e. you could easily slip into unacceptable):
+* Asking outside gen AI to help you understand what an assignment is asking
+* Asking outside gen AI a question instead of coming to drop-in hours or posting to CampusWire
+* Leaning on a provided chatbot too heavily for your assignments
+* Using GitHub Co-pilot extension in VSCode (remember to be very careful with what code and documentation you use from it)
+
+If you are in a borderline situation, you could try prefacing your request with something like the following (This is part of what I may do with the custom chatbot to make sure it provides only acceptable help):
+"I'm working on a programming assignment and need some guidance. I'm not looking for the direct solution, but rather help understanding the concepts involved and strategies for approaching the problem. Could you please provide hints, explanations of relevant topics, or suggest debugging techniques based on my question, without giving away the exact code?"
+
+If I'm being honest, the most depressing thing about genAI to me on a personal level is that students are using it instead of coming to drop-in hours. I really love talking with you in drop-in hours or 1-on-1 meetings and helping students in that setting is my favorite part of this job. Please remember that you wouldn't be bothering me to come by, you would be making my day better. I doubt that the genAI can say the same.
 
 ## Doing honest work
 
-### Groups
-Working in groups is a great way to learn computer science, and learning how to work with others is an essential skill. The opportunity to work in groups also comes with some additional responsibilities:
+### Teams
+Working in teams is a great way to learn computer science, and learning how to work with others is an essential skill. The opportunity to work in teams also comes with some additional responsibilities:
 
 * **As a member of a team, it is your responsibility to contribute equally and fully to the final product.** For example, it is not acceptable to let a teammate "finish the project" without you and put your name on it before submitting it, or work on significant portions of the project without you, or any permutation of this. When pair programming, I expect you to actively work side-by-side with your partner the majority of the time.
 
@@ -279,7 +318,7 @@ Working in groups is a great way to learn computer science, and learning how to 
 
     ```
     # Method to calculate the first ten prime numbers in a series. 
-        # Thanks to Mary Smith for helping me fix the logic in the # loop in this method.
+        # Thanks to Mary Smith for helping me fix the logic in the loop in this method.
     ```
 
 * **It is never acceptable to turn in a program, or a problem solution, that you have found anywhere (on the Internet, in your textbook or another book, from a friend who took this course before) or commissioned as your own.** **Making cosmetic changes to someone else's program or solution (such as changing the variable names or comments) is also not acceptable.**

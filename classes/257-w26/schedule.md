@@ -4,6 +4,8 @@ title: CS 257 Software Design W26 Schedule
 permalink: /classes/257-w26/schedule
 ---
 
+[Syllabus](syllabus)
+
 This is a rough schedule of topics for each week and the expected completion of assignments.
 It will continue to be filled in throughout the term.  
 Many of the links will be dead-ends until closer to the relevant date.

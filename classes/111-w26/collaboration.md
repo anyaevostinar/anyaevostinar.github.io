@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CS111 Data Structures W26 Collaboration Policies
+title: CS111 W26 Collaboration Policies
 permalink: /classes/111-w26/collaboration
 ---
 
