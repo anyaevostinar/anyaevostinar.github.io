@@ -16,24 +16,24 @@ Preparation should be completed **before** the class day that they are listed. C
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Algorithmic Thinking** |  | |
 | 1/5 | [Start of Class Prep](intro-prep) | [Slides](), Intro to the class |  |
-| 1/7 | [Intro Python Prep](python-prep) | [Slides](),  [Starting with Python](getting-started)  | [HW1: Input](hw1)	 |
+| 1/7 | [Intro Python Prep](python-prep) | [Slides](),  [Starting with Python](getting-started)  | [HW1: Intro](hw1)	 |
 | 1/9 | [Building Blocks Prep](build-blocks-prep) |  [Slides](), [Building Blocks Lab](building-blocks) | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
-| 1/12 | [Variables Prep](variables-prep)	|  [Slides](), [Variables and Evaluation](variables) |	 |
-| 1/14 | [Modules Prep](turtle-prep); HW1 | [Slides](),  [Random Turtles](random-turtle)	| [HW2: Solar](hw2) |
-| 1/16 | [Sequences Prep](sequences-prep)[Iteration Prep](iteration-prep) |  [Slides](), [Sequences and Iteration](sequences) [Iteration Lab](iteration-lab)	| |
+| 1/12 | Looping Graphics Prep	|  [Slides](), Loops and Graphics|	 |
+| 1/14 | Functions Prep; HW1 | [Slides](),  Functions	| [HW2: Drawing Shapes](hw2) |
+| 1/16 | Sequences Prep 	| |
 | **Week 3** | **Building Blocks Part 2** |  | |
 | 1/19 | Study | [Slides](), Exam 1	| |
-| 1/21 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Slides](),  [Conditionals Lab](conditionals-lab)	 | [HW3: Bikes](hw3) |
-| 1/23 | [Debugging Prep](debugging-nested-prep)  | [Slides](), [Debugging Strategies and Nested Structures](lab-nested) |  |
+| 1/21 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Slides](),  [Conditionals Lab](conditionals-lab)	 | [HW3: Tic Tac Toe](hw3) |
+| 1/23 | More Iteration  | [Slides](), [Nested Structures](lab-nested) |  |
 | **Week 4** | **Advanced Blocks** | | |
-| 1/26| [Mutating Lists Prep](mutating-lists-prep) | [Slides](), [Working with Lists](lab-mutating-lists)	| |
-| 1/28 | [Files Prep](files-prep); [HW3](hw3)	| [Slides](), [Working with Files](files)	| [HW4: Weather](hw4) |
+| 1/26| Files Prep | [Slides](), Working with Files	| |
+| 1/28 | TBD; [HW3](hw3)	| [Slides](), TBD | [HW4: Parsing Data](hw4) |
 | 1/30 |	Study  	|  [Slides](), [Exam 2](exam2) 	|   |
 | **Week 5** | **Functions** |  | |
-| 2/2 | [Functions Prep 1](functions1-prep) | [Slides](), [Function Basics](functions1)	 | |
-| 2/4| [Functions 2 and Indefinite Iteration Prep](functions2-prep); [HW4](hw4) |  [Slides](), [More Functions and Loops](lab-return-while) | [HW5: Scrabble](hw5) |
-| 2/6	| [Dictionaries Prep](dictionaries-prep) |	[Slides](), [Using Dictionaries](dictionaries)	| |
+| 2/2 | Dictionaries Prep | [Slides]()	 | |
+| 2/4| Mutating Sequences Prep; [HW4](hw4) |  [Slides]() | [HW5: Scrabble](hw5) |
+| 2/6	| Debugging Prep |	[Slides](), Debugging	| |
 | **Week 6** | **Objects and Classes** |  | |
 | 2/9 |  |	Midterm break!	| |
 | 2/11 | [OOP Preparation](oop1-prep)  |  [Slides](),  [Graphics Intro Lab](graphics-intro)	|  |

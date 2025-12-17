@@ -282,6 +282,13 @@ If you are in a borderline situation, you could try prefacing your request with 
 
 If I'm being honest, the most depressing thing about genAI to me on a personal level is that students are using it instead of coming to drop-in hours. I really love talking with you in drop-in hours or 1-on-1 meetings and helping students in that setting is my favorite part of this job. Please remember that you wouldn't be bothering me to come by, you would be making my day better. I doubt that the genAI can say the same.
 
+## Pair Programming
+Pair programming is a very common practice in computer science industry, where two programmers sit at a shared computer and both engage in the process of writing a program.
+One is the 'driver' at the keyboard for a block of time while the other is the 'navigator' that is watching and thinking through the overall program, as well as spotting typos.
+You switch roles regularly (every 10-15 minutes or whenever the navigator has an 'aha' moment) and are both fully engaged in the task for the whole time.
+This method of programming has been shown to be highly effective in producing better code (not necessarily in a shorter period of time though) and leading to a better understanding of the problem for both programmers.
+We'll use pair programming a lot in this course for several reasons: 1) as I said, it is very common in industry, so it's good for you to get comfortable with it; 2) it is used in many upper level courses at Carleton, so again good for you to be comfortable with it; 3) ultimately it improves the learning and understanding of the people involved; and 4) when you are struggling with new concepts, it can feel a lot more doable when you have someone else there who is struggling with you.
+
 
 ## Pedagogy
 This section discusses some of the pedagogical principles that you'll see in this class.
@@ -306,11 +313,6 @@ However, copious research shows that interleaving is the most effective in the l
 It is again the very process of struggling to recall something you learned a while ago that triggers your brain to then store that information into long term memory.
 Interleaving also leads to higher *transfer* abilities, where you are able to apply what you know to a new problem. (If you want to learn more about this, there are several excellent books, but one I recommend currently is Range: Why Generalists Triumph in a Specialized World by David Epstein.)
 
-### Pair Programming
-Pair programming is a very common practice in computer science industry, where two programmers sit at a shared computer and both engage in the process of writing a program.
-One is the 'driver' at the keyboard for a block of time while the other is the 'navigator' that is watching and thinking through the overall program, as well as spotting typos.
-You switch roles regularly (every 10-15 minutes or whenever the navigator has an 'aha' moment) and are both fully engaged in the task for the whole time.
-This method of programming has been shown to be highly effective in producing better code (not necessarily in a shorter period of time though) and leading to a better understanding of the problem for both programmers.
-We'll use pair programming a lot in this course for several reasons: 1) as I said, it is very common in industry, so it's good for you to get comfortable with it; 2) it is used in many upper level courses at Carleton, so again good for you to be comfortable with it; 3) ultimately it improves the learning and understanding of the people involved; and 4) when you are struggling with new concepts, it can feel a lot more doable when you have someone else there who is struggling with you.
+
 
 *This syllabus is based heavily on the syllabus from Anna Rafferty.*
