@@ -42,3 +42,5 @@ Submit answers to the following on Moodle (some of these are from the embedded c
 * What is the difference between and algorithm and a program? (1-2 sentences)
 * What does the `print` function do?
 * How do you write a comment in Python and why would you?
+
+* You should also try to join the class' Gradescope so that you are ready for the in-class lab

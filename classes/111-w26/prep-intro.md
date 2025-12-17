@@ -40,6 +40,7 @@ You should read each of the following:
 
 ## Checks
 You should do these checks on Moodle:
+* Complete the Homework Partner Preference form if you want a partner for the first homework
 * Join CampusWire and post an introduction in "General" with the following:
     * Your preferred name and optionally your pronouns
     * Your class year

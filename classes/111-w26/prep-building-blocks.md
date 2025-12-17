@@ -3,6 +3,7 @@ layout: page
 title: Building Blocks Preparation
 permalink: /classes/111-w26/build-blocks-prep
 ---
+<script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
 
 ## Overview
 There are several building blocks in Python that you'll need for doing pretty much anything: values, variables, and functions.
@@ -57,6 +58,8 @@ Submit answers to the following on Moodle. For the diagrams, feel free to draw o
     ```
 
 * Write a program that will compute the area of a circle (which is the radius squared, multiplied by pi (3.14)). Have the program work regardless of what value the `radius` variable is set to. Print a nice message back to the user with the answer. Be sure to copy what you write below and save it in Moodle.
+
+
 <script type="py-editor">
   radius = 5
   #how to compute and print the area?
