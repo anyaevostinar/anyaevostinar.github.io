@@ -224,3 +224,6 @@ You should submit your two files through the Gradescope link on Moodle for this 
 You are able to upload them both to Gradescope, at which point the autograder will run and let you know if your code works correctly.
 You are able to submit your code as many times as you wish before the deadline to fix any issues.
 If you have questions about what the autograder is telling you is wrong, please ask!
+
+## Acknowledgements
+This homework is from Prof. Tanya Amert, she has the fun pet names :).
