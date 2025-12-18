@@ -44,3 +44,5 @@ Submit answers to the following through Moodle:
 * What is the criteria for an A in the course?
 * Which of the course's learning goals are you most excited about?
 * What are the basic concepts of software design?
+
+* Remember to also fill out the Background survey asap and join CampusWire

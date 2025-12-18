@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project Proposal
-permalink: /classes/257-s25/project-proposal
+permalink: /classes/257-w26/project-proposal
 ---
 
 ## Overview
@@ -21,7 +21,7 @@ This deliverable has three components
 - [ ] a [team contract](#team-contract-requirements) 
 - [ ] a [project proposal](#project-proposal)
     - [ ] including metadata
-- [ ] a copy of your two [datasets](#dataset-questions) in the "Data" folder. Remember your total data must be less than 100MB!
+- [ ] a copy of your two [datasets](#dataset-questions) in the "Data" folder. Remember your total data must be less than 100MB, ideally less than 25MB for advanced!
 
 
 ### Team Contract Requirements
