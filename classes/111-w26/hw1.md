@@ -137,12 +137,12 @@ length = 8
 tup4 = (animal, length)
 ```
 
-There is also a handy built-in function `min` that can give us the "smallest" of two or more inputs. This behaves logically for numbers, and for strings it compares "alphabetically" (it’s more complicated, but we’ll explore that later). For example:
+There is also a handy built-in function `min` that can give us the "smallest" of two or more inputs. This behaves fairly logically for strings, i.e. "alphabetically" (it’s more complicated, but we’ll explore that later). For example:
 
 ```python
-a = min(4, 2)
+a = min("y", "z")
 b = min(tup1, tup2, tup3, tup4) # defined in the previous code snippets
-print(a) # prints 2
+print(a) # prints y
 print(b) # prints ('cat', 3)
 ```
 

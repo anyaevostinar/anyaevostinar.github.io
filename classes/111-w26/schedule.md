@@ -16,7 +16,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Algorithmic Thinking** |  | |
 | 1/5 | [Start of Class Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1wXX-66ELaa6am9IcEsqCwFh-W-qekI5imQc-jdnm1m8/edit?usp=sharing), [Intro to the class](lab-intro) |  |
-| 1/7 | [Intro Python Prep](python-prep) | [Slides](),  [Starting with Python](getting-started)  | [HW1: Intro](hw1)	 |
+| 1/7 | [Intro Python Prep](python-prep) | [Slides](https://docs.google.com/presentation/d/17DHWad_YptPSszNde56tGgQaXd5yJaUpF54OtT_iSGA/edit?usp=sharing),  [Starting with Python](getting-started)  | [HW1: Intro](hw1)	 |
 | 1/9 | [Building Blocks Prep](build-blocks-prep) |  [Slides](), [Building Blocks Lab](building-blocks) | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
 | 1/12 | Graphics Prep	|  [Slides](),  Graphics|	 |
