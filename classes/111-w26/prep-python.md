@@ -3,6 +3,7 @@ layout: page
 title: Intro to Python Preparation
 permalink: /classes/111-w26/python-prep
 ---
+<script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
 
 ## Overview
 In this class, we'll be using the programming language called **Python** to tell the computer what we want it to do.
@@ -11,10 +12,13 @@ Today will be focused on getting some basic definitions and functionality in Pyt
 ## Basic Learning Objectives
 
 Before class, you should be able to:
-* Explain the difference between an *algorithm* and a *program*
-* Edit and run Python programs embedded in the textbook
-* Use the `print` function
 * Explain what comments in programming are
+* Give examples of at least two *values* of different *types* in Python
+* Use a built-in/provided function 
+* Define the term *variable* in a programming context
+* Make a new variable using an *assignment statement*
+* Use an existing variable
+* Change an existing variable
 
 ## Advanced Learning Objectives
 
@@ -23,24 +27,53 @@ After class, you should be able to:
 * Submit programs to Gradescope
 * Edit programs based on Gradescope feedback
 * Use pair programming to write a program
+* Predict what type an expression will result in
+* Explain how `int` and `float` values interact
+* Use the modulus `%` operator
+* Explain what it means to evaluate a variable and identify when evaluation occurs
+* Predict what value a variable will have at the end of a program, especially when the program uses and changes multiple variables
+* Draw reference diagrams to show what is happening with a variable in a program, especially when the variable is changed
+* Use several variables in a program to solve a problem
 
 ## Readings
 
 You should complete the following Runestone readings and the embedded checks (it looks like a lot, but many of the sections are short):
-
-* [1.1 The Way of the Program](https://runestone.academy/ns/books/published/foppff/general-intro_introduction-the-way-of-the-program.html?mode=browsing)
-* [1.2 Algorithms](https://runestone.academy/ns/books/published/foppff/general-intro_algorithms.html?mode=browsing)
-* [1.3 The Python Programming Language](https://runestone.academy/ns/books/published/foppff/general-intro_the-python-programming-language.html?mode=browsing)
-* [1.4 Executing Python in the book](https://runestone.academy/ns/books/published/foppff/general-intro_special-ways-to-execute-python-in-this-book.html?mode=browsing)
-* [1.7 A Typical First Program](https://runestone.academy/ns/books/published/foppff/general-intro_a-typical-first-program.html?mode=browsing)
 * [1.10 Comments](https://runestone.academy/ns/books/published/foppff/general-intro_comments.html?mode=browsing)
-* Optionally feel free to read the other sections of Chapter 1, they are all useful and interesting!
+* [2.2 Values and Data Types](https://runestone.academy/ns/books/published/foppff/simple-python-data_values-and-data-types.html?mode=browsing)
+* [2.4 Function Calls](https://runestone.academy/ns/books/published/foppff/simple-python-data_function-calls.html?mode=browsing)
+* [2.6 Variables](https://runestone.academy/ns/books/published/foppff/simple-python-data_variables.html?mode=browsing)
+* [2.12 Reassignment](https://runestone.academy/ns/books/published/foppff/simple-python-data_reassignment.html?mode=browsing)
+* [2.13 Updating Variables](https://runestone.academy/ns/books/published/foppff/simple-python-data_updating-variables.html?mode=browsing)
+* [2.15 Input](https://runestone.academy/ns/books/published/foppff/simple-python-data_input.html?mode=browsing)
+
 
 ## Checks
 
-Submit answers to the following on Moodle (some of these are from the embedded checks and others aren't):
-* What is the difference between and algorithm and a program? (1-2 sentences)
-* What does the `print` function do?
-* How do you write a comment in Python and why would you?
+Submit answers to the following on Moodle. For the diagrams, feel free to draw on paper and upload.
+
+* (Checkpoint 2.12.3) After the following statements, what are the values of x and y?
+    ```python
+    x = 15
+    y = x
+    x = 22
+    ```
+
+* Draw the "reference" diagram (i.e. memory diagram) of the following code:
+    ```python
+    a = 3
+    b = 7
+    a = a + b
+    b = 5
+    ```
+
+* Write a program that will compute the area of a circle (which is the radius squared, multiplied by pi (3.14)). Have the program work regardless of what value the `radius` variable is set to. Print a nice message back to the user with the answer. Be sure to copy what you write below and save it in Moodle.
+
+
+<script type="py-editor">
+  radius = 5
+  #how to compute and print the area?
+</script>
+
+
 
 * You should also try to join the class' Gradescope so that you are ready for the in-class lab

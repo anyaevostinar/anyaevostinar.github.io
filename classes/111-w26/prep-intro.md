@@ -22,6 +22,8 @@ Before class, you should be able to:
 * Explain what kinds of collaboration are and aren't allowed
 * Explain the overall timeline of when assignments are due and when exams occur
 * List and explain the Recurse social rules
+* Explain the difference between an *algorithm* and a *program*
+* Edit and run Python programs embedded in the textbook
 
 ## Advanced Learning Objectives
 The following objectives should  be mastered by each student during and following our class session through our in-class work:
@@ -31,12 +33,16 @@ After class, you should be able to:
 * Explain what you'll be able to do after completing this course
 
 ## Readings
-You should read each of the following:
+You should read and do the checks for each of the following (it looks like a lot, but most of the books sections are short):
 
 * [Syllabus](syllabus)
 * [Schedule](schedule)
 * [Collaboration Policy](collaboration)
 * [Recurse Social Rules](https://www.recurse.com/manual#sub-sec-social-rules) - We aren't using the tools mentioned specifically, but this is a good overview for creating a supportive classroom community
+* [1.1 The Way of the Program](https://runestone.academy/ns/books/published/foppff/general-intro_introduction-the-way-of-the-program.html?mode=browsing)
+* [1.2 Algorithms](https://runestone.academy/ns/books/published/foppff/general-intro_algorithms.html?mode=browsing)
+* [1.3 The Python Programming Language](https://runestone.academy/ns/books/published/foppff/general-intro_the-python-programming-language.html?mode=browsing)
+* [1.4 Executing Python in the book](https://runestone.academy/ns/books/published/foppff/general-intro_special-ways-to-execute-python-in-this-book.html?mode=browsing)
 
 ## Checks
 You should do these checks on Moodle:

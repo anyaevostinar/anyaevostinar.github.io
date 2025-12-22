@@ -19,7 +19,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 1/7 | [Intro Python Prep](python-prep) | [Slides](),  [Starting with Python](getting-started)  | [HW1: Intro](hw1)	 |
 | 1/9 | [Building Blocks Prep](build-blocks-prep) |  [Slides](), [Building Blocks Lab](building-blocks) | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
-| 1/12 | Looping Graphics Prep	|  [Slides](), Loops and Graphics|	 |
+| 1/12 | Graphics Prep	|  [Slides](),  Graphics|	 |
 | 1/14 | Functions Prep; HW1 | [Slides](),  Functions	| [HW2: Drawing Shapes](hw2) |
 | 1/16 | Sequences Prep 	| |
 | **Week 3** | **Building Blocks Part 2** |  | |
