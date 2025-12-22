@@ -11,7 +11,6 @@ Get your laptop setup for the course and start refreshing on Python.
 You are likely already familiar with [VSCode](https://code.visualstudio.com/download). **You should download it if you don't already have it.**
 
 ## Laptop Setup
-(Note this guide is heavily based on [Prof. Jeff Ondich's](https://cs.carleton.edu/faculty/jondich/courses/cs257_f21/assignments/01_setup.html#unix))
 
 As you know from your prep, [Unix](https://en.wikipedia.org/wiki/Unix) is a family of operating systems and both [Linux](https://en.wikipedia.org/wiki/Linux) and [macOS](https://en.wikipedia.org/wiki/MacOS) are Unix-based. You've likely already been using Unix a lot if you have used the lab computers at all since they run macOS. Today's goal is to get you setup with a Unix system on your own laptop.
 
@@ -84,7 +83,7 @@ You know how when you are working on a programming project with a partner and on
 4. Fill out [this survey](https://docs.google.com/forms/d/e/1FAIpQLSeT50VfJMYEZLGVm2o3tScHXAz_nv1ZMEiOS74u8uqAppZC6A/viewform?usp=publish-editor) to let me know your GitHub username.
 
 ## Venv
-Work through [this guide](/classes/257-s25/venv-guide) to get your Python virtual environment setup with the packages we'll need.
+Work through [this guide](/classes/257-w26/venv-guide) to get your Python virtual environment setup with the packages we'll need.
 
 ## Python Refreshing
 Work through exercises 1 and 3 of [this lab](https://anyaevostinar.github.io/classes/111-w22/files) (skip Exercise 2). Ignore references to COURSES, that's just for the intro students to worry about.
