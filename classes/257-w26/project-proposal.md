@@ -65,7 +65,7 @@ In your project proposal, you should fill in the following.
     * List out each team member and what their feature will be.
     * For each feature, include at least one user story and the acceptance criteria
 
-4. Metadata for the (at least) two datasets from the [Dataset Records](https://docs.google.com/document/d/1_RyhW9aWnEtCwN0zFL_SjW5bUd44TcVzSJDZwez-Arw/copy) (URL, date downloaded, authorship, exact name and version, terms of use, suggested citation)
+4. Metadata for the (at least) two datasets from the [research guide](https://gouldguides.carleton.edu/c.php?g=972072&p=8845115) (URL, date downloaded, authorship, exact name and version, terms of use, suggested citation)
     * If you’re having trouble filling out the following fields for your dataset, it may be a sign that you need to double-check the source of your dataset.
 
 5. A pencil-paper sketch "mock up" of what you are hoping your final webpage could look like. Dream big! Get excited!

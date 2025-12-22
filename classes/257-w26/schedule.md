@@ -23,7 +23,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Date	| Assignments Due	| In Class |	Assignments Out |
 | ------- | --------------- | ------------- | -------------- |
 | **Week 1** | **Getting Started** |  | |
-| M 1/5 | [Intro to Software Design Prep](intro-prep) | [Slides](), Course overview and discussion|  |
+| M 1/5 | [Intro to Software Design Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1fNLskzAaeA0a89ypa6R-vygXKMGwAF3DTwrWGZQX5dk/edit?usp=sharing), Course overview and discussion|  |
 | W 1/7 | [Agile and Effective Teams Prep](agile-prep) | [Slides](),<br> Development Processes and Getting Started, [start setting up computers](getting-started) |  |
 | F 1/9 | [Data and Team Prep](data-prep) |[Slides](), [Start on Project Proposal](lab-proposal)  | [TD0: Project Proposal](project-proposal) |
 | **Week 2** | **Project Foundations** | | |

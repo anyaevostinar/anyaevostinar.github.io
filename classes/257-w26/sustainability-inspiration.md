@@ -6,6 +6,8 @@ permalink: /classes/257-w26/sustainability-resources
 
 The definition of sustainability for this class is broader than you might think. There are 17 total [UN Sustainable Development Goals](https://sdgs.un.org/goals) that encompass everything from clean energy to peace to gender equality to decent work for all. This page is a catch-all for various links to inspire and guide you.
 
+Reminder, [here is the library guide](https://gouldguides.carleton.edu/cs257) for the course.
+
 ## Website examples
 These all have fancier GUIs that you likely will and that's okay (you don't need to have a map).
 * [Cropping Calendar](https://asheshwor.shinyapps.io/cropcal/)
