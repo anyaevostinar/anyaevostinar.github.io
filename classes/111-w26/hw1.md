@@ -75,6 +75,7 @@ Here is an example of how you can start your file:
 # - Milo: partner (worked on code together)
 # - Hobbes: discussed issues with spaces in print() output
 # - Mal (Course Staff): how to find print() in Python documentation
+# - I asked the HW1 chat bot for help on tuples
 ```
 
 Here is another example:
@@ -86,6 +87,9 @@ Here is another example:
 #
 # Collaboration statement: I worked alone.
 ```
+
+## Gemini Bot
+As mentioned in the syllabus, I am experimenting with custom-made Gemini chatbots ("Gems") that hopefully will help you on the homework without undermining your learning. [Here is the one for homework 1](https://gemini.google.com/gem/1KQHTVvCv_PWtwoRhLC_Qp3FUrAk17E-R?usp=sharing). If you use this, I would appreciate you copying some example interactions with it to a text document and uploading that to Gradescope along with your submission. This is both to give me an idea of whether it is providing correct information and if it is actually being helpful. If you manage to get it to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further.
 
 ## Part 1: Hello, user!
 
