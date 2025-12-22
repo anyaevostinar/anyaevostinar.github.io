@@ -28,7 +28,7 @@ The following objectives should  be mastered by each student during and followin
 
 After class, you should be able to:
 * Explain how exams and homework assessment lead to your final grade
-* Explain what *computer science* is generally
+* Explain what you'll be able to do after completing this course
 
 ## Readings
 You should read each of the following:
