@@ -79,6 +79,14 @@ print(5 / 3)
 print(5 // 3)
 
 print(5 % 3)
+
+print(int(2.718))
+
+print(round(2.718))
+
+print(float(2.718))
+
+print(float(round(2.718))) # order of operations?
 ```
 
 ### 3b: Operators on strings
@@ -94,6 +102,12 @@ print("5" * "3")
 print("5" * 3)
 
 print("5" / "3")
+
+print(float("2.718"))
+
+print(int("2.718"))
+
+print(float("2,718"))
 ```
 
 ### 3c: Combining strings and expressions
