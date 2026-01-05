@@ -29,6 +29,7 @@ The primary goal for this assignment is to get you up and running with Python. Y
 
 ## Assessment
 The **core requirements** are:
+* [Quantitative Literacy Reasoning Assessment completed](https://app.fasttestweb.com/ereg/pr/83/1/register/YPY-624-411)
 * Correct functionality, include exact output detailed below
 * Header with at least five lines that start with `#` for each file
 * Basic style that can be checked automatically (not complete!)
@@ -90,6 +91,17 @@ Here is another example:
 
 ## Gemini Bot
 As mentioned in the syllabus, I am experimenting with custom-made Gemini chatbots ("Gems") that hopefully will help you on the homework without undermining your learning. [Here is the one for homework 1](https://gemini.google.com/gem/1KQHTVvCv_PWtwoRhLC_Qp3FUrAk17E-R?usp=sharing). If you use this, I would appreciate you copying some example interactions with it to a text document and uploading that to Gradescope along with your submission. This is both to give me an idea of whether it is providing correct information and if it is actually being helpful. If you manage to get it to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further.
+
+## Part 0: Quantitative Literacy Reasoning Assessment
+
+**Aim to complete this part by Friday Jan 9th at 10pm**
+Because this course satisfies the QRE requirement and in partnership with the Quantitative Resource Center, we are participating in a pilot of a quantitative assessment. **You are not graded on your score in any way, just on your completion of this 10-question assessment** (you won’t even see your score).
+
+This is part of a pilot study within Carleton, and different students will be stronger or weaker in different areas (and your time since your last quantitative experience may impact your performance as well, as will your enjoyment of those experiences, etc.).
+
+Here’s a link to the assessment: [click me!!](https://app.fasttestweb.com/ereg/pr/83/1/register/YPY-624-411)
+
+Note that if at any time in this course you feel like you could use some extra support in quantitative skills, you can stop by the Quantitative Resource Center for [drop-in](https://www.carleton.edu/quantitative-resource-center/students/#dropin) tutoring or by [appointment](http://go.carleton.edu/QRCtutor). There are also options for [1:1 tutoring](http://go.carleton.edu/tutoring).
 
 ## Part 1: Hello, user!
 
