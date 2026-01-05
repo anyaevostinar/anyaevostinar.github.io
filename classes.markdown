@@ -6,9 +6,9 @@ permalink: /Classes/
 
 ## Current Classes
 
-CS 111: Intro to CS ([Syllabus](), [Schedule](/classes/111-w26/schedule))
+CS 111: Intro to CS ([Syllabus](/classes/111-w26/syllabus), [Schedule](/classes/111-w26/schedule))
 
-CS 257: Software Design ([Syllabus](), [Schedule](/classes/257-w26/schedule))
+CS 257: Software Design ([Syllabus](/classes/257-w26/syllabus), [Schedule](/classes/257-w26/schedule))
 
 ## Future Classes
 
