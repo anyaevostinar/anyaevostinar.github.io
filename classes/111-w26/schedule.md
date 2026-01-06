@@ -19,11 +19,11 @@ Preparation should be completed **before** the class day that they are listed. C
 | 1/7 | [Intro Python Prep](python-prep) | [Slides](https://docs.google.com/presentation/d/17DHWad_YptPSszNde56tGgQaXd5yJaUpF54OtT_iSGA/edit?usp=sharing),  [Starting with Python](getting-started)  | [HW1: Intro](hw1)	 |
 | 1/9 | [Building Blocks Prep](build-blocks-prep) |  [Slides](https://docs.google.com/presentation/d/1ucXuCg2Mw15OFf0q4UI9H2iji-AakSr6Ua-zo0ioeeA/edit?usp=sharing), [Building Blocks Lab](building-blocks) | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
-| 1/12 | [Graphics Prep](graphics-prep)	|  [Slides](),  Graphics|	 |
+| 1/12 | [Graphics Prep](graphics-prep)	|  [Slides](https://docs.google.com/presentation/d/1LepJxphSnh9nNadAXB3dSuPHbA4Hc_YS5BUPsqLvmUA/edit?usp=sharing),  [Graphics Intro](graphics-intro)|	 |
 | 1/14 | [Functions Prep](functions-prep); HW1 | [Slides](),  Functions	| [HW2: Drawing Shapes](hw2) |
 | 1/16 | [Sequences Prep](sequences-prep) 	| |
 | **Week 3** | **Building Blocks Part 2** |  | |
-| 1/19 | Study | [Slides](), Exam 1	| |
+| 1/19 | Study | [Slides](), [Exam 1](exam1)	| |
 | 1/21 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Slides](),  [Conditionals Lab](conditionals-lab)	 | [HW3: Tic Tac Toe](hw3) |
 | 1/23 | More Iteration  | [Slides](), [Nested Structures](lab-nested) |  |
 | **Week 4** | **Advanced Blocks** | | |
@@ -36,7 +36,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 2/6	| Debugging Prep |	[Slides](), Debugging	| |
 | **Week 6** | **Objects and Classes** |  | |
 | 2/9 |  |	Midterm break!	| |
-| 2/11 | [OOP Preparation](oop1-prep)  |  [Slides](),  [Graphics Intro Lab](graphics-intro)	|  |
+| 2/11 | [OOP Preparation](oop1-prep)  |  [Slides](),  Moving Flowers	|  |
 | 2/13 | [Working with Classes Prep](oop2-prep); HW5  		| [Slides](), [Creating Flower Classes](creating-classes)	| [HW6: GIS](hw6) |
 | **Week 7**| **Final Project**|  | |
 | 2/16 | [Final Project Info Prep](final-project), Partner preference form due 6am  | Final Project Overview, [Making Simulations](lab-simulations)  | [Final Project Proposal](final-project#project-proposal) |
