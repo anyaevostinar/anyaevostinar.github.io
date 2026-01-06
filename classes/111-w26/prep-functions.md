@@ -46,6 +46,5 @@ Submit answers to the following on Moodle:
 * Write a function `cheer_up` that takes a string and returns it with a `:)` at the end.
 <script type="py-editor">
   #your code here
-
   print(cheer_up("CS 111")) #should output "CS 111:)"
 </script>
