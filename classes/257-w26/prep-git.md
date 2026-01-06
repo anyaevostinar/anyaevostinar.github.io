@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Version Control (Git) Prep
-permalink: /classes/257-s25/git-prep
+permalink: /classes/257-w26/git-prep
 ---
 
 ## Overview
-Version control is a vital tool when working with a team on software. While there are several different tools that support version control, Git is the most popular and widely used today. Today we'll focus on learning the most important functionalities of Git.
+Version control is a vital tool when working with a team on software. While there are several different tools that support version control, Git is the most popular and widely used today. Today we'll focus on learning the most important functionalities of Git and how Git works under the hood.
 
 ## Basic Learning Objectives
 
@@ -23,15 +23,13 @@ After class, you should be able to:
 * Have your team repository setup
 
 ## Readings
-To achieve the basic learning objectives, you can read the following before class (this is a topic where [Gemini](https://gemini.google.com/u/1/app) is likely quite a good resource as well):
-
-* ["Learn the basics of git in under 10 minutes"](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/): Read only up to Step 0; we'll be adding to our repos a bit differently.
-
-* ["Git for dummies"](https://dev.to/doylecodes/git-for-dummies-1a2i): Read the whole thing. Note that you'll be contributing to your own project, so we will not be dealing with pull requests. (In other words, "git push origin main" is exactly what I'll be expecting you to do.)
-
-* ["How do I git? Three ways to solve a merge conflict"](https://medium.com/@RedRoxProjects/how-do-i-git-three-ways-to-solve-a-merge-conflict-cde4d7924c80). Read the introduction and "Method 2::Using the command line". (Since we're not dealing with pull requests, Method 1 does not apply, and Method 3 only applies if you want to use Git Desktop.)
-
-* Feel free to also start on the individual portion of the [Git Lab](lab-git)
+There are a couple of ways that you can go about achieving the basic learning objectives before class, depending on your preferred way of learning new information today. You should definitely read some combination of these things, and I think this order is ideal, but feel free to skip around if it seems better for you:
+* [About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) - an overview of the idea of version control
+* [What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) - even if you've used Git before, I recommend reading this section, since it highlights how Git actually works under the hood
+* [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository) - an overview of the core git commands (if you want to just focus on them for now), other sections of the early chapters of [this book](https://git-scm.com/book/en/v2) are great to read also if you like reading about more context
+* [Basic Branching and Merging from Pro Git](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+* [Learn Git Branching Game](https://learngitbranching.js.org/) - a browser based game that presents much of the same information as the Pro Git reading but in interactive game form. If this sounds helpful, you can jump right to it.
+* [Git's Data Model](https://missing.csail.mit.edu/2020/version-control/) - a slightly deeper introduction to how Git actually works from MIT and the argument for why it is useful to know that deeper level
 
 ## Checks
 Submit answers to the following on Moodle:

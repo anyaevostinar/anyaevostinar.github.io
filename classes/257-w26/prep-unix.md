@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Unix and Vi(m)
-permalink: /classes/257-s25/unix-prep
+permalink: /classes/257-w26/unix-prep
 ---
 
 ## Overview
@@ -20,7 +20,9 @@ After class, you should be able to:
 ## Readings
 To achieve the basic learning objectives, you can work through the following, ideally on your own machine, but you can also complete these in Olin 310/304/308:
 
-* [UNIX Tutorial for Beginners.](https://www.cs.carleton.edu/courses/course_resources/Unix2/index.html) Get through as much of Tutorials 1-4 and 6 as you can. Tutorial 5 is optional.
+* [UNIX Tutorial for Beginners.](https://www.cs.carleton.edu/courses/course_resources/Unix2/index.html) 
+    * Definitely go through Tutorial One and Tutorial Two
+    * Three, Four, and Five are good things to look through as well, or you can reference them in class
 * One of the following vi / vim tutorials. You don't need to make it through all of any of these; you should just make sure that you know how to do basic text insertion and deletion in Vim, and quit out of it!:
     * [VIM adventures](https://vim-adventures.com/) -- a game
     * [Openvim.com](https://www.openvim.com/) -- an interactive tutorial
@@ -29,4 +31,10 @@ To achieve the basic learning objectives, you can work through the following, id
 ## Checks
 Submit answers to the following on Moodle:
 * What are the commands for inserting text, deleting text and quitting out of Vi(m)?
-* What commands in Unix do you think are most important?
+* What Unix command would get you to your home directory regardless of where you currently are?
+* Do the following and then take a screenshot of your Terminal and upload it to Moodle:
+    * Create a directory named `checkup`
+    * Go into that directory
+    * Create an empty file named `success.txt`
+    * List the files to show your new file exists
+    * Print your working directory

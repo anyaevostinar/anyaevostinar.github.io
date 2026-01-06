@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Test-Driven Development Prep
-permalink: /classes/257-s25/tdd-prep
+permalink: /classes/257-w26/tdd-prep
 ---
 
 ## Overview
@@ -20,11 +20,15 @@ After class, you should be able to:
 * Identify edge cases for a basic project
 
 ## Readings
-To achieve the basic learning objectives, you can read the following:
-* Wikipedia article on [Test-Driven Development (TDD)](http://en.wikipedia.org/wiki/Test-driven_development). The core idea here is very simple, but as you'll see from the Wikipedia article, it has accumulated a lot of formalism. Read from the beginning up through the "Limitations" section. 
-* [Getting Started with Testing in Python](https://realpython.com/python-testing/). Read up to but **not including** Testing for Web Frameworks like Django and Flask.
+To achieve the basic learning objectives, read the following:
+* [A simple introduction to Test Driven Development with Python](https://www.freecodecamp.org/news/learning-to-test-with-python-997ace2d8abe/) - we'll be using `unittest` so this is great for both the concepts of TDD and the syntax you'll be using
+* [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html#TheImportanceOftestAutomation) - read through "The Test Pyramid", not the whole thing! Further sections on Unit and Integration tests are great if you are interested
 * [Professionalism and Test-Driven Development](https://www.computer.org/csdl/magazine/so/2007/03/s3032/13rRUyYBleZ) by Robert C. Martin
-* Clean Code Ch 9 - goes more into specific tips
+* Optional: Clean Code Ch 9 goes into more detail
+
+There is some interesting controversy about TDD (and I definitely don't always follow it), so if you are curious, here are some more things to read to get deeper into what various industry people are saying:
+* [Canon TDD by Kent Beck](https://tidyfirst.substack.com/p/canon-tdd) - the "reviver" or "codifier" of TDD, who is apparently salty at people criticizing it without understanding it
+* [Is TDD Dead?](https://martinfowler.com/articles/is-tdd-dead/) - a collection of conversations between several "big names" in the industry going over the disagreements
 
 ## Checks
 Submit answers to the following through Moodle:
