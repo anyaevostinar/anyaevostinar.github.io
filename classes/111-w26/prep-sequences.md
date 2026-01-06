@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sequences Preparation
-permalink: /classes/111-f24/sequences-prep
+permalink: /classes/111-w26/sequences-prep
 ---
 <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
 
