@@ -31,13 +31,20 @@ git clone https://github.com/acdalal/scavenger-hunt.git
 cd scavenger-hunt
 ```
 
+3. If you are asked to install XCode command line tools, yes, do it
+
 Then take a look at the file `README.md` either in the folder you've created or [here](https://github.com/acdalal/scavenger-hunt/blob/master/README.md) and follow the steps there (you shouldn't need to install git though).
+
+4. If you want to complete the lab for an engagement credit, submit your final clue command and the result to Moodle.
 
 ## Q&A
 A few things seem to go wrong for some people, so things to keep in mind:
 * If you don't have `words` and `ispell` doesn't work, try just installing `words` or `wamerican`
 * Remember that you need to include your secret number and the next clue number for each `next_clue` call
 * Remember that you should put all your hints in " "
+* In the past, some Macs have had issues:
+    * Number of folders in usr directory might be off (did you make sure you generated at `~`?)
+    * You might not have a `hostname` file, you can find it at System Preferences -> Sharing
 
 ## Extras
 If you finish the scavenger hunt before the end of class (congrats!), you should either keep working on refreshing on Python (possibly by solving the lab activities linked from the [Getting Started Lab](getting-started)), keep working on your team proposal, or start on the [preparation for Wednesday](git-prep).

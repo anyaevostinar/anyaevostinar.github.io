@@ -27,7 +27,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 1/7 | [Agile and Effective Teams Prep](agile-prep) | [Slides](https://docs.google.com/presentation/d/1ooJhctSjkP-ak0wBTp7jZdC4MYhscXiUuCkXc-ju_fA/edit?usp=sharing),<br> Development Processes and [start setting up computers](getting-started) |  |
 | F 1/9 | [Data and Team Prep](data-prep) |[Slides](https://docs.google.com/presentation/d/1PGVUIJe87IlZmzxQLXUZMvk6CdsQtRF-ZERTPjMUiZw/edit?usp=sharing), [Start on Project Proposal](lab-proposal)  | [TD0: Project Proposal](project-proposal) |
 | **Week 2** | **Project Foundations** | | |
-| M 1/12 | [Unix and Vim Prep](unix-prep), Dataset due 10pm | [Slides](), [Unix Scavenger Hunt](unix-scavenger-hunt) |  | 
+| M 1/12 | [Unix and Vim Prep](unix-prep), Dataset due 10pm | [Slides](https://docs.google.com/presentation/d/1ppWOLy3djWc-MK6_3-iH3TA_3EzozDQh8QOtb-WqCZw/edit?usp=sharing), [Unix Scavenger Hunt](unix-scavenger-hunt) |  | 
 | W 1/14 | [Git Prep](git-prep) | [Slides](), [Git Practice Lab](lab-git) | |
 | F 1/16 | [TDD Prep](tdd-prep) | [Slides](), [TDD Lab](tdd-lab)  |[ID1: Tests](project-1-ind) |
 | **Week 3** | **Core Functionality** | | |
