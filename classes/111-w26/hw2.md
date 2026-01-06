@@ -24,7 +24,7 @@ _If you work alone, you should say so instead._
 Note: Remember, you should not be using search engines or generative AI when completing your assignments (this includes the Copilot extension in VS Code!). You can, however, search within the official Python documentation: https://docs.python.org/3/.
 
 ## Getting started
-Both parts of this assignment will require you to use the `graphics.py` library. You should download a copy from [here](graphics.py) and save it in the same folder as your assignment code.
+Both parts of this assignment will require you to use the `graphics.py` library and `canvasvg.py`. You should download a copy from [here](graphics.py) and [here](canvasvg.py) and save them both in the same folder as your assignment code.
 
 ## Goals
 The primary goal for this assignment is to give you practice working with the `graphics.py` library. You will additionally get practice writing loops, working with objects, and working on bigger programs.
