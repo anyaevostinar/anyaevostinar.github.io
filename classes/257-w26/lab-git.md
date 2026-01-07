@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Git Labs
-permalink: /classes/257-s25/lab-git
+permalink: /classes/257-w26/lab-git
 ---
 
 * [Part 1 (Individual)](#part-1-objectives)
@@ -9,7 +9,7 @@ permalink: /classes/257-s25/lab-git
 
 ## Part 1 Objectives
 * Introduce you to git and GitHub (or re-introduce you if you've used it before).
-* Practice the git workflow for using version control on software projects, in your individual repositories
+* Practice the git workflow for using version control on software projects, in an individual repository
 * Practice the git command line interface
 * Work with both your local repository (via git) and your personal remote repository (on GitHub).
 
@@ -67,11 +67,11 @@ Copy the URL (pressing the clipboard icon next to the URL should do the trick). 
 git clone [URL]
 ```
 
-replacing `[URL]` with the URL that you copied and pasted from GitHub. For instance, I'd do:
+replacing `[URL]` with the URL that you copied and pasted from GitHub. For instance, past-me (who was doing a version of this lab with a different repository name) would do:
 
 `git clone https://github.com/CS-257-S22/individual-deliverables-anyaevostinar.git`
 
-List the contents of your current directory and make sure you see the name of your repo (for instance, I'd see a directory named `git-lab-anyaevostinar`). Change into that directory. You should see `README.md` listed. If so, huzzah! You now have a local version of your repository.
+List the contents of your current directory and make sure you see the name of your repo (for instance, current-me would see a directory named `git-lab-anyaevostinar`). Change into that directory. You should see `README.md` listed. If so, huzzah! You now have a local version of your repository.
 
 ## Step 4: Add files locally
 Most of the work you'll do will be in your local repository. In other words, you'll create and edit files on your own computer. You'll then have to add and commit these to your local repository, and then make sure these edits are pushed to the remote repository, so that everything is in sync.
@@ -181,7 +181,30 @@ Stay calm! Git messages are actually pretty helpful, and it's telling you why yo
 git pull
 ```
 
-And git will try to smoosh the changed files together, but it won't be able to do the merging automatically because it doesn't know which version of the changes you actually want to keep. This is a time when using VSCode is nice because it helps you with "merge conflicts" if you know what it's doing. 
+You will then likely get another error that looks like this:
+```bash
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+```
+
+5. As that says you need to tell git how to handle the reconciliation that it needs to do. Again, the hints are pretty useful, and you can just do the first one. As it mentions, it's a good idea to have it be a global default so you don't have to do this again:
+
+```bash
+git config --global pull.rebase false
+```
+
+6. Now try pulling again and git will try to smoosh the changed files together, but it won't be able to do the merging automatically because it doesn't know which version of the changes you actually want to keep. This is a time when using VSCode is nice because it helps you with "merge conflicts" if you know what it's doing. 
 
 5. Open the file that you changed in VSCode and you should see something like this:
 
@@ -209,9 +232,10 @@ Work with your project teams on this part of the lab. Make sure you finish Part 
 ## Step 1: Make a team repository
 You will need to set up your team's project repository before you begin. To do so, do the following:
 
-* Accept the invitation by clicking on the link in Moodle ("Team Git Repo")
-* Accept the assignment.
 * Have **one** member of your team make a repository and invite the other team members to this repository. **Name your repository "X", where you replace "X" with the (capitalized) letter of your team.**
+    * That person should accept the invitation by clicking on the link in Moodle ("Team Git Repo")
+    * Accept the assignment.
+* Everyone else should accept the invitation and select your team
 
 The team member that creates the team repository should update the README file. For now, just list your team members' names in this file. You can edit it directly in GitHub, as we did in Step 2 of Part 1.
 
@@ -228,7 +252,7 @@ A branch can be thought of as a "parallel track" to the main track of the reposi
 1. First, create a branch locally. In your terminal:
 
 ```bash
-git checkout -b my-branch-NAME
+git checkout -b dev-branch-NAME
 ```
 
 Replace NAME with your first name (no spaces or special characters). This command creates the branch, and then performs a checkout, which creates a "snapshot" of the codebase at that moment within your branch.
@@ -236,7 +260,7 @@ Replace NAME with your first name (no spaces or special characters). This comman
 (If you want to check out a branch that's already been created, do `git checkout BRANCH_NAME`)
 
 ## Step 4: Making some changes
-Since we'll eventually merge everyone's branches back into main, this next part will require a bit of coordination on the part of team members. 
+Since we'll eventually merge everyone's branches back into main, this next part will require a bit of coordination on the part of team members. If your team members aren't done with Part 1 yet, feel free to just pick two topics and start by listing your information and you can check with them as they are finished.
 
 1. Each person's branch should contain two text files: 
     * one containing a list of each team member's favorite ____, 
@@ -262,7 +286,7 @@ This is easier with an example, so I'm going to use the mythical Team Q to illus
     * Joy is assigned "hot beverages"
 
 * Let's follow Radia as she works on her branch:
-    * Radia creates a branch named `my-branch-radia`
+    * Radia creates a branch named `dev-branch-radia`
     * Radia creates two text files: `favorite_animals.txt` and `least_favorite_animals.txt`
     * Radia asks everyone to let her know what their favorite and least favorite animals are.
     * A fight breaks out between the cat people and the dog people....
@@ -290,7 +314,8 @@ When you click on it, you should see this drop-down:
 Select your branch (or one of your teammate's branches), and you'll see the snapshot of that branch displayed.
 
 ## Step 5: Merging your branch back into main
-1. Once you're satisfied with your changes, and your teammates agree, it's a good idea to merge your branch back into the main track, and delete the branch.
+Only what is on `main` will be considered for deliverable submissions, so you should make sure to regularly merge your branch into main once it is ready to be assessed or combined with your teammates work.
+1. Run the following to merge your branch into main:
 
 ```bash 
 git checkout main
@@ -311,8 +336,10 @@ git branch -d BRANCH
 
 (Replace BRANCH with your branch name.)
 
+It is common practice to have a `dev` branch specific to a new feature such as `dev-book-page` that you then delete once the feature is merged into main. You can do everything from your named branch if you want, but it's good practice to instead have branches for each new feature that you are working on.
+
 ## Step 6: Practicing merge conflicts with your team
-For this part of the lab, split into pairs. The first pair (A and B) will create a merge conflict and then resolve it, while the other pair (C and D) also creates a merge conflict and resolves it with different files.
+For this part of the lab, you will create a merge conflict and then resolve it within your team. You'll do this all through working directly on `main` to make things easier, but this can also happen when you merge a branch into main.
 
 To create the merge conflict:
 
@@ -321,17 +348,17 @@ To create the merge conflict:
 git checkout main
 git pull
 ```
-2. A and B should agree on which file they'll edit simultaneously, in your local repository. C and D should agree on a different file that they'll edit simultaneously as well.
+2. Agree on which file you'll edit simultaneously, in your local repository.
 3. Everyone should edit and commit the file that they are working with locally.
-4. **A and C** should push changes to the repo first.
-5. Once they have successfully pushed their changes, B and D should try to push their changes. Bingo: merge conflict achieved! (Though note that the changes from the other pair aren't an issue!)
-6. Repeat the steps from Part 1 to resolve the conflict.
+4. One person should push changes to the repo first.
+5. Once they have successfully pushed their changes, the other two should try to also push your changes. Bingo: merge conflict achieved!
+6. Repeat the steps from Part 1 to resolve the conflicts.
 
 ## Part 2 is done!
 You can now delete the favorite and least favorite files from your team repository and transfer the information from your team contract Google doc notes and data set into your team repository!
 
 Make sure to add your dataset metadata and the dataset itself to the team git repository.
 
-**If there is still time in class, keep working on your dataset and team contract!**
+**If there is still time in class, keep working on your proposal and team contract!**
 
 *This lab was adapted from one written by Prof. Amy Csizmar Dalal, thanks Amy!*
