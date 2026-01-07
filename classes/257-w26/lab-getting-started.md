@@ -90,4 +90,4 @@ Work through exercises 1 and 3 of [this lab](https://anyaevostinar.github.io/cla
 If you need a reference, check out [W3 Schools' Python tutorial](https://www.w3schools.com/python/default.asp).
 
 ## Data Exploration
-If you've gotten this far, feel free to [start looking for datasets](prep-data) that you might want to use with your team, which is the prep for Friday.
+If you've gotten this far, feel free to [start looking for datasets](data-prep) that you might want to use with your team, which is the prep for Friday.
