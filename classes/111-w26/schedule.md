@@ -20,7 +20,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 1/9 | [Building Blocks Prep](build-blocks-prep) |  [Slides](https://docs.google.com/presentation/d/1ucXuCg2Mw15OFf0q4UI9H2iji-AakSr6Ua-zo0ioeeA/edit?usp=sharing), [Building Blocks Lab](building-blocks) | | 
 | **Week 2** | **Building Blocks Part 1** |  | |
 | 1/12 | [Graphics Prep](graphics-prep)	|  [Slides](https://docs.google.com/presentation/d/1LepJxphSnh9nNadAXB3dSuPHbA4Hc_YS5BUPsqLvmUA/edit?usp=sharing),  [Graphics Intro](graphics-intro)|	 |
-| 1/14 | [Functions Prep](functions-prep); HW1 | [Slides](https://docs.google.com/presentation/d/1ZQTxjx51mGJ3R7WRr_dYUStRONGT92kBsWMtLH-moVY/edit?usp=sharing),  Functions	| [HW2: Drawing Shapes](hw2) |
+| 1/14 | [Functions Prep](functions-prep); HW1 | [Slides](https://docs.google.com/presentation/d/1ZQTxjx51mGJ3R7WRr_dYUStRONGT92kBsWMtLH-moVY/edit?usp=sharing),  [Functions](functions-lab)	| [HW2: Drawing Shapes](hw2) |
 | 1/16 | [Sequences Prep](sequences-prep) 	| |
 | **Week 3** | **Building Blocks Part 2** |  | |
 | 1/19 | Study | [Slides](), [Exam 1](exam1)	| |
