@@ -40,7 +40,9 @@ Winter 2026
 **Drop in student hours**:
 
 All in Olin 306/308 (the Edge Lounge/Tree Lab):
-TBD
+* Mondays 1-2pm
+* Wednesdays 2-3pm
+* Thursdays 2:30-3:30pm
 
 Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 8-5 M-F and either send a calendar invite to an event or email me.
 
