@@ -27,7 +27,7 @@ You should complete the following readings/videos and embedded checks in Runesto
 * [8.5 Length](https://runestone.academy/ns/books/published/foppff/sequences_length.html?mode=browsing)
 * [8.6 The Slice Operator](https://runestone.academy/ns/books/published/foppff/sequences_the-slice-operator.html?mode=browsing)
 * [8.7 Concatenation and Repetition](https://runestone.academy/ns/books/published/foppff/sequences_concatenation-and-repetition.html?mode=browsing)
-* [9.9 Non-mutating Methods on Strings](https://runestone.academy/ns/books/published/foppff/transforming-sequences_non-mutating-methods-on-strings.html?mode=browsing)
+* [9.9 Non-mutating Methods on Strings](https://runestone.academy/ns/books/published/foppff/transforming-sequences_non-mutating-methods-on-strings.html?mode=browsing) - reference for some more useful string methods
 * Feel free to read the other sections if you'd like to know about more operations
 
 ## Checks

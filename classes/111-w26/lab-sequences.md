@@ -4,47 +4,165 @@ title: Sequences Lab
 permalink: /classes/111-f24/sequences
 ---
 
-This is a lab assignment and so you will not be submitting it.
-However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
-
+## Setup
 I recommend making a folder for today's lab in [COURSES as you usually do](getting-started).
 
+Make sure to download [graphics.py](graphics.py) and place it in your lab folder for today.
 
-## Exercise 1
-For each snippet, what would it print out to the screen? If you think there will be an error, indicate the line with the error and explain why.
-After you've made a prediction, test out the code.
-
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=words%20%3D%20%5B'limited',%20'knowledge',%20'provoking',%20'quadruple',%20'happiness'%5D%0A%0Awords%5B0%5D%20%3D%20'limitless'%0A%0Aone_word%20%3D%20words%5B1%5D%0Aone_word%20%3D%20'hello'%0A%0Aprint%28%22%20%22.join%28words%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
-
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=words%20%3D%20%5B'limited',%20'knowledge',%20'provoking',%20'quadruple',%20'happiness'%5D%0A%0Aletter%20%3D%20words%5B0%5D%5B0%5D%0Aprint%28letter%29%0A%0Awords%5B0%5D%5B5%5D%20%3D%20'l'&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
-
-
-This last snippet gives you a preview of the cool things that you can do with for-loops, which we'll officially get to next time. Play around with it to see what happens!
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=words%20%3D%20%5B'limitless',%20'knowledge',%20'provoking',%20'quadruple',%20'happiness'%5D%0Ai%20%3D%200%0Afor%20word%20in%20words%3A%0A%20%20%20%20print%28word%5Bi%5D,%20end%3D''%29%0A%20%20%20%20i%20%3D%20i%20%2B%202%0A%0Aprint%28'%20',%20end%3D''%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
-
-## Exercise 2
-
-1. Create a new file and write a program to count the number of vowels (“aeiouy”) in a user-given string. You can assume the string is all lowercase. You don't need to use any loops to solve this problem, remember to refer to the different methods [in the reading](https://moodle.carleton.edu/mod/lti/view.php?id=965301).
-
-2. Update your program so that instead of counting vowels, it asks the user for characters to count in a given string (could be just one, or more than one, so you will need a for-loop for this problem).
-
-## Exercise 3
-Lists and strings are both sequences, though they have some differences in how you can use them.
-Write out all the similarities and differences that you can think of between them. Think about things like how you made new ones, how you can change them (or can't), and how they can be used.
-
-## Exercise 4
-Now that you know how to make lists of strings, you could make a list of colors or stamps that the turtles use to generate rainbows, random combinations, and other fun creations. 
-
-A particularly powerful function from the random module is `choice`:
+## Exercise 1: Basic list operations
+For this exercise, we’ll use the following statements:
 
 ```python
-import random
-colors = ["red", "blue", "green", "yellow", "purple", "orange"]
-random_color = random.choice(colors)
+numbers = [3, 1, 4, 1, 5]
+words = ["apple", "banana", "cat", "dog", "elephant"]
 ```
 
-Create a program that uses 1) the random module, 2) the turtle module, and 3) a list of colors and/or shapes to generate random turtle artwork.
-You should reference the [Turtle methods](https://moodle.carleton.edu/mod/lti/view.php?id=965490) from the previous lab for this.
+Predict the result of evaluating each of the following list expressions (and write down on your worksheet).
 
-## Extra
-If you finish early, try out the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=965770).
+```python
+#a)
+numbers[-1]
+
+#b) 
+words[1:4]
+
+#c) 
+words[1] + words[2]
+
+#d) 
+len(numbers)
+
+#e) 
+numbers + words
+
+#f) 
+2 * numbers + words
+
+#g) 
+for word in words:
+    print(len(word), word)
+
+#h) 
+"apple" in words
+
+#i) 
+"nana" in words
+```
+
+## Exercise 2: Going backwards
+Write a function to print a sequence of words in reverse order. You cannot use slicing or the existing `reverse` list method.
+
+(Hint: you should use `split` to turn the provided string into a `list`, and use the accumulator pattern to build the resulting list in reversed order. Think carefully about how you can change the typical body of an accumulator loop to put the new value at the *beginning* of the accumulator variable instead of the *end* of the variable.)
+
+Here is an example interaction:
+
+```
+Please enter a sequence of words, separated by spaces: apple banana cat dog elephant fish
+
+The sequence reversed:
+fish elephant dog cat banana apple
+```
+
+## Exercise 3: `for`-loop patterns
+Write a `for` loop using the variables `numbers` and `words` to generate each output. Think about whether you need the element and/or its index for each loop. (This is a good place to put each one into a function so you can test them separately!)
+
+```python
+numbers = [3, 1, 4, 1, 5]
+words = ["apple", "banana", "cat", "dog", "elephant"]
+
+#a) 
+apple 5
+banana 6
+cat 3
+dog 3
+elephant 8
+
+#b) 
+0 apple
+1 banana
+2 cat
+3 dog
+4 elephant
+
+#c) 
+3
+ 1
+  4
+   1
+    5
+```
+
+## Exercise 4: Drawing many shapes
+Write a function that takes in lists of colors and radii and a `Point`, and draws concentric circles centered at that `Point`. The function signature and `main` are given for you.
+
+```python
+from graphics import *
+
+def drawCircles(colorList, radiusList, point, win):
+    """
+    Draws circles all centered at the same point.
+
+    colorList: color of each circle (a list of strings)
+    radiusList: radius of each circle (a list of integers)
+    point: the center of each circle (a Point)
+    win: the window in which to draw (a GraphWin)
+    """
+    # TODO
+
+def main():
+    win = GraphWin("Circles!")
+
+    colors = ["purple", "blue", "green", "yellow", "orange", "red"]
+    radii = [100, 80, 60, 40, 50, 10]
+    center = Point(100, 100)
+    drawCircles(colors, radii, center, win)
+
+    win.getMouse()
+
+main()
+```
+
+## Submission
+Submit the files containing your solutions to exercises 2-4 to Moodle for an extra engagement credit.
+
+## Extra 1
+Let’s switch up your previous `reverse` program so that it receives a phrase from the user, reverses the letters of *each word* (but not the order of the words anymore), and then prints the result back out to the screen.
+The order of the words relative to one another should remain the same, but each word's letters should be reversed, as in the following example:
+```
+Input a phrase: stay warm out there
+yats mraw tuo ereht
+```
+
+As with any program, we should start out by laying out our algorithm, which at a high level might look something like this:
+1. Get phrase from user.
+2. Split phrase into words
+3. For each word in the phrase
+    * Reverse the letters
+    * Combine the letters back together
+    * Print the reversed word
+
+## Extra 2
+We'll get to all the many ways that you can change the contents of lists in a couple of weeks, but here are some operations to explore. Predict the values of `numbers` and `words` after executing each of the following statements. Assume that `numbers` and `words` are reset to their original values before each statement.
+
+```python
+numbers = [3, 1, 4, 1, 5]
+words = ["apple", "banana", "cat", "dog", "elephant"]
+
+#a) 
+numbers.remove(1)
+
+#b) 
+numbers.sort()
+
+#c) 
+words.sort(reverse=True)
+
+#d) 
+numbers.append([words.index("cat")])
+
+#g) 
+words.pop(numbers.pop(3))
+
+#h) 
+words.insert(numbers[0], "fish")
+```
