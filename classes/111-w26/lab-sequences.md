@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sequences Lab 
-permalink: /classes/111-f24/sequences
+permalink: /classes/111-w26/sequences-lab
 ---
 
 ## Setup
