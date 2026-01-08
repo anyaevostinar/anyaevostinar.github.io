@@ -21,7 +21,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 2** | **Building Blocks Part 1** |  | |
 | 1/12 | [Graphics Prep](graphics-prep)	|  [Slides](https://docs.google.com/presentation/d/1LepJxphSnh9nNadAXB3dSuPHbA4Hc_YS5BUPsqLvmUA/edit?usp=sharing),  [Graphics Intro](graphics-intro)|	 |
 | 1/14 | [Functions Prep](functions-prep); HW1 | [Slides](https://docs.google.com/presentation/d/1ZQTxjx51mGJ3R7WRr_dYUStRONGT92kBsWMtLH-moVY/edit?usp=sharing),  [Functions](functions-lab)	| [HW2: Drawing Shapes](hw2) |
-| 1/16 | [Sequences Prep](sequences-prep) 	| |
+| 1/16 | [Sequences Prep](sequences-prep) 	| [Slides](https://docs.google.com/presentation/d/1ZpvDggiSypkfppgwfd0pWmYjDWML1yCruNx9TSzxWBU/edit?usp=sharing), [Sequences Lab](sequences-lab)| | 
 | **Week 3** | **Building Blocks Part 2** |  | |
 | 1/19 | Study | [Slides](), [Exam 1](exam1)	| |
 | 1/21 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Slides](),  [Conditionals Lab](conditionals-lab)	 | [HW3: Tic Tac Toe](hw3) |
