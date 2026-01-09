@@ -27,6 +27,7 @@ To achieve the basic learning objectives, you can read the following:
 * [The ACM Code of Ethics.](https://www.acm.org/code-of-ethics) ACM is one of the professional organizations for computer scientists.
 * Anil Dash's [12 Things Everyone Should Understand About Tech](https://medium.com/humane-tech/12-things-everyone-should-understand-about-tech-d158f5a26411)
 * [The Rise of Ethical Concerns about AI Content Creation: A Call to Action](https://www.computer.org/publications/tech-news/trends/ethical-concerns-on-ai-content-creation) - this article is now quite old, but still gives a decent overview of the issues of GenAI which we will discuss in class
+https://medium.com/@rammilan1610/generative-ai-software-engineering-ethics-trust-accountability-and-transparency-924b37614ed9 
 
 ## Checks
 Submit answers to the following through Moodle:
