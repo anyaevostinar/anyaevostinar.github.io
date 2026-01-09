@@ -18,21 +18,11 @@ def get_cell(row, column):
         raise IndexError("Column argument invalid")
     return data[int(row)][int(column)]
 
-def get_row_titles():
-    row_titles = []
-    for row in data:
-        row_titles.append(row[0])
-
-    return row_titles
-
 def get_row_by_title(title):
     for row in data:
         if row[0] == title:
             return row
     return []
-
-def get_silly():
-    return 2
 
 def main():
     load_data()
