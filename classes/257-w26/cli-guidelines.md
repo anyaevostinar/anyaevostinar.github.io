@@ -1,4 +1,6 @@
-(Note from Anya: What follows is a copy of [this project](https://github.com/cli-guidelines/cli-guidelines), which is normally hosted [here](https://clig.dev/), but that page isn't loading the last that I checked. The following is licensed under a [CC-BY-SA-4.0 license](https://github.com/cli-guidelines/cli-guidelines#CC-BY-SA-4.0-1-ov-file))
+(Notes from Anya: 
+* What follows is a copy of [this project](https://github.com/cli-guidelines/cli-guidelines), which is normally hosted [here](https://clig.dev/), but that page isn't loading the last that I checked. The following is licensed under a [CC-BY-SA-4.0 license](https://github.com/cli-guidelines/cli-guidelines#CC-BY-SA-4.0-1-ov-file)
+* I have removed sections that aren't relevant to our class, if you are interested in CLI design more fully, you should go check out the complete guide.)
 
 # Command Line Interface Guidelines
 
@@ -363,13 +365,6 @@ $ myapp subcommand --help
 $ myapp subcommand -h
 ```
 
-**Provide a support path for feedback and issues.**
-A website or GitHub link in the top-level help text is common.
-
-**In help text, link to the web version of the documentation.**
-If you have a specific page or anchor for a subcommand, link directly to that.
-This is particularly useful if there is more detailed documentation on the web, or further reading that might explain the behavior of something.
-
 **Lead with examples.**
 Users tend to use examples over other forms of documentation, so show them first in the help page, particularly the common complex uses.
 If it helps explain what it’s doing and it isn’t too long, show the actual output too.
@@ -486,47 +481,14 @@ Be intentional in making that decision, and document both syntaxes.
 
 _Further reading: [“Do What I Mean”](http://www.catb.org/~esr/jargon/html/D/DWIM.html)_
 
-**If your command is expecting to have something piped to it and `stdin` is an interactive terminal, display help immediately and quit.**
-This means it doesn’t just hang, like `cat`.
-Alternatively, you could print a log message to `stderr`.
-
 ### Documentation {#documentation}
 
 The purpose of [help text](#help) is to give a brief, immediate sense of what your tool is, what options are available, and how to perform the most common tasks.
 Documentation, on the other hand, is where you go into full detail.
 It’s where people go to understand what your tool is for, what it _isn’t_ for, how it works and how to do everything they might need to do.
 
-**Provide web-based documentation.**
-People need to be able to search online for your tool’s documentation, and to link other people to specific parts.
-The web is the most inclusive documentation format available.
-
 **Provide terminal-based documentation.**
 Documentation in the terminal has several nice properties: it’s fast to access, it stays in sync with the specific installed version of the tool, and it works without an internet connection.
-
-**Consider providing man pages.**
-[man pages](https://en.wikipedia.org/wiki/Man_page), Unix’s original system of documentation, are still in use today, and many users will reflexively check `man mycmd` as a first step when trying to learn about your tool.
-To make them easier to generate, you can use a tool like [ronn](http://rtomayko.github.io/ronn/ronn.1.html) (which can also generate your web docs).
-
-However, not everyone knows about `man`, and it doesn’t run on all platforms, so you should also make sure your terminal docs are accessible via your tool itself.
-For example, `git` and `npm` make their man pages accessible via the `help` subcommand, so `npm help ls` is equivalent to `man npm-ls`.
-
-```
-NPM-LS(1)                                                            NPM-LS(1)
-
-NAME
-       npm-ls - List installed packages
-
-SYNOPSIS
-         npm ls [[<@scope>/]<pkg> ...]
-
-         aliases: list, la, ll
-
-DESCRIPTION
-       This command will print to stdout all the versions of packages that are
-       installed, as well as their dependencies, in a tree-structure.
-
-       ...
-```
 
 ### Output {#output}
 
@@ -537,83 +499,9 @@ Whatever language you’re using, it will have a utility or library for doing th
 
 _Further reading on [what a TTY is](https://unix.stackexchange.com/a/4132)._
 
-**Have machine-readable output where it does not impact usability.**
-Streams of text is the universal interface in UNIX.
-Programs typically output lines of text, and programs typically expect lines of text as input,
-therefore you can compose multiple programs together.
-This is normally done to make it possible to write scripts,
-but it can also help the usability for humans using programs.
-For example, a user should be able to pipe output to `grep` and it should do what they expect.
-
-> “Expect the output of every program to become the input to another, as yet unknown, program.”
-— [Doug McIlroy](http://web.archive.org/web/20220609080931/https://homepage.cs.uri.edu/~thenry/resources/unix_art/ch01s06.html)
-
-**If human-readable output breaks machine-readable output, use `--plain` to display output in plain, tabular text format for integration with tools like `grep` or `awk`.**
-In some cases, you might need to output information in a different way to make it human-readable.
-<!-- (TK example with and without --plain) -->
-For example, if you are displaying a line-based table, you might choose to split a cell into multiple lines, fitting in more information while keeping it within the width of the screen.
-This breaks the expected behavior of there being one piece of data per line, so you should provide a `--plain` flag for scripts, which disables all such manipulation and outputs one record per line.
-
-**Display output as formatted JSON if `--json` is passed.**
-JSON allows for more structure than plain text, so it makes it much easier to output and handle complex data structures.
-[`jq`](https://stedolan.github.io/jq/) is a common tool for working with JSON on the command-line, and there is now a [whole ecosystem of tools](https://ilya-sher.org/2018/04/10/list-of-json-tools-for-command-line/) that output and manipulate JSON.
-
-It is also widely used on the web, so by using JSON as the input and output of programs, you can pipe directly to and from web services using `curl`.
-
-**Display output on success, but keep it brief.**
-Traditionally, when nothing is wrong, UNIX commands display no output to the user.
-This makes sense when they’re being used in scripts, but can make commands appear to be hanging or broken when used by humans.
-For example, `cp` will not print anything, even if it takes a long time.
-
-It’s rare that printing nothing at all is the best default behavior, but it’s usually best to err on the side of less.
-
-For instances where you do want no output (for example, when used in shell scripts), to avoid clumsy redirection of `stderr` to `/dev/null`, you can provide a `-q` option to suppress all non-essential output.
-
-**If you change state, tell the user.**
-When a command changes the state of a system, it’s especially valuable to explain what has just happened, so the user can model the state of the system in their head—particularly if the result doesn’t directly map to what the user requested.
-
-For example, `git push` tells you exactly what it is doing, and what the new state of the remote branch is:
-
-```
-$ git push
-Enumerating objects: 18, done.
-Counting objects: 100% (18/18), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (10/10), done.
-Writing objects: 100% (10/10), 2.09 KiB | 2.09 MiB/s, done.
-Total 10 (delta 8), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (8/8), completed with 8 local objects.
-To github.com:replicate/replicate.git
- + 6c22c90...a2a5217 bfirsh/fix-delete -> bfirsh/fix-delete
-```
-
-**Make it easy to see the current state of the system.**
-If your program does a lot of complex state changes and it is not immediately visible in the filesystem, make sure you make this easy to view.
-
-For example, `git status` tells you as much information as possible about the current state of your Git repository, and some hints at how to modify the state:
-
-```
-$ git status
-On branch bfirsh/fix-delete
-Your branch is up to date with 'origin/bfirsh/fix-delete'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	modified:   cli/pkg/cli/rm.go
-
-no changes added to commit (use "git add" and/or "git commit -a")
-```
-
 **Suggest commands the user should run.**
 When several commands form a workflow, suggesting to the user commands they can run next helps them learn how to use your program and discover new functionality.
 For example, in the `git status` output above, it suggests commands you can run to modify the state you are viewing.
-
-**Actions crossing the boundary of the program’s internal world should usually be explicit.**
-This includes things like:
-
-- Reading or writing files that the user didn’t explicitly pass as arguments (unless those files are storing internal program state, such as a cache).
-- Talking to a remote server, e.g. to download a file.
 
 **Increase information density—with ASCII art!**
 For example, `ls` shows permissions in a scannable way.
@@ -635,21 +523,6 @@ drwxr-xr-x 2 root root   4.0K Jul 20 14:57 skel
 **Use color with intention.**
 For example, you might want to highlight some text so the user notices it, or use red to indicate an error.
 Don’t overuse it—if everything is a different color, then the color means nothing and only makes it harder to read.
-
-**Disable color if your program is not in a terminal or the user requested it.**
-These things should disable colors:
-
-- `stdout` or `stderr` is not an interactive terminal (a TTY).
-  It’s best to individually check—if you’re piping `stdout` to another program, it’s still useful to get colors on `stderr`.
-- The `NO_COLOR` environment variable is set and it is not empty (regardless of its value).
-- The `TERM` environment variable has the value `dumb`.
-- The user passes the option `--no-color`.
-- You may also want to add a `MYAPP_NO_COLOR` environment variable in case users want to disable color specifically for your program.
-
-_Further reading: [no-color.org](https://no-color.org/), [12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)_
-
-**If `stdout` is not an interactive terminal, don’t display any animations.**
-This will stop progress bars turning into Christmas trees in CI log output.
 
 **Use symbols and emoji where it makes things clearer.**
 Pictures can be better than words if you need to make several things distinct, catch the user’s attention, or just add a bit of character.
@@ -683,9 +556,6 @@ If a piece of output serves only to help you (the developer) understand what you
 Invite usability feedback from outsiders and people who are new to your project.
 They’ll help you see important issues that you are too close to the code to notice.
 
-**Don’t treat `stderr` like a log file, at least not by default.**
-Don’t print log level labels (`ERR`, `WARN`, etc.) or extraneous contextual information, unless in verbose mode.
-
 **Use a pager (e.g. `less`) if you are outputting a lot of text.**
 For example, `git diff` does this by default.
 Using a pager can be error-prone, so be careful with your implementation such that you don’t make the experience worse for the user.
@@ -697,32 +567,6 @@ This does not page if the content fills one screen, ignores case when you search
 There might be libraries in your language that are more robust than piping to `less`.
 For example, [pypager](https://github.com/prompt-toolkit/pypager) in Python.
 
-### Errors {#errors}
-
-One of the most common reasons to consult documentation is to fix errors.
-If you can make errors into documentation, then this will save the user loads of time.
-
-**Catch errors and rewrite them for humans.**
-If you’re expecting an error to happen, catch it and rewrite the error message to be useful.
-Think of it like a conversation, where the user has done something wrong and the program is guiding them in the right direction.
-Example: “Can’t write to file.txt. You might need to make it writable by running ‘chmod +w file.txt’.”
-
-**Signal-to-noise ratio is crucial.**
-The more irrelevant output you produce, the longer it’s going to take the user to figure out what they did wrong.
-If your program produces multiple errors of the same type, consider grouping them under a single explanatory header instead of printing many similar-looking lines.
-
-**Consider where the user will look first.**
-Put the most important information at the end of the output.
-The eye will be drawn to red text, so use it intentionally and sparingly.
-
-**If there is an unexpected or unexplainable error, provide debug and traceback information, and instructions on how to submit a bug.**
-That said, don’t forget about the signal-to-noise ratio: you don’t want to overwhelm the user with information they don’t understand.
-Consider writing the debug log to a file instead of printing it to the terminal.
-
-**Make it effortless to submit bug reports.**
-One nice thing you can do is provide a URL and have it pre-populate as much information as possible.
-
-_Further reading: [Google: Writing Helpful Error Messages](https://developers.google.com/tech-writing/error-messages), [Nielsen Norman Group: Error-Message Guidelines](https://www.nngroup.com/articles/error-message-guidelines)_
 
 ### Arguments and flags {#arguments-and-flags}
 
@@ -802,38 +646,10 @@ For example, `ls` has terse default output to optimize for scripts and other his
 
 **Prompt for user input.**
 If a user doesn’t pass an argument or flag, prompt for it.
-(See also: [Interactivity](#interactivity))
 
 **Never _require_ a prompt.**
 Always provide a way of passing input with flags or arguments.
 If `stdin` is not an interactive terminal, skip prompting and just require those flags/args.
-
-**Confirm before doing anything dangerous.**
-A common convention is to prompt for the user to type `y` or `yes` if running interactively, or requiring them to pass `-f` or `--force` otherwise.
-
-“Dangerous” is a subjective term, and there are differing levels of danger:
-
-- **Mild:** A small, local change such as deleting a file.
-  You might want to prompt for confirmation, you might not.
-  For example, if the user is explicitly running a command called something like “delete,” you probably don’t need to ask.
-- **Moderate:** A bigger local change like deleting a directory, a remote change like deleting a resource of some kind, or a complex bulk modification that can’t be easily undone.
-  You usually want to prompt for confirmation here.
-  Consider giving the user a way to “dry run” the operation so they can see what’ll happen before they commit to it.
-- **Severe:** Deleting something complex, like an entire remote application or server.
-  You don’t just want to prompt for confirmation here—you want to make it hard to confirm by accident.
-  Consider asking them to type something non-trivial such as the name of the thing they’re deleting.
-  Let them alternatively pass a flag such as `--confirm="name-of-thing"`, so it’s still scriptable.
-
-Consider whether there are non-obvious ways to accidentally destroy things.
-For example, imagine a situation where changing a number in a configuration file from 10 to 1 means that 9 things will be implicitly deleted—this should be considered a severe risk, and should be difficult to do by accident.
-
-**If input or output is a file, support `-` to read from `stdin` or write to `stdout`.**
-This lets the output of another command be the input of your command and vice versa, without using a temporary file.
-For example, `tar` can extract files from `stdin`:
-
-```
-$ curl https://example.com/something.tar.gz | tar xvf -
-```
 
 **If a flag can accept an optional value, allow a special word like “none”.**
 For example, `ssh -F` takes an optional filename of an alternative `ssh_config` file, and `ssh -F none` runs SSH with no config file. Don’t just use a blank value—this can make it ambiguous whether arguments are flag values or arguments.
@@ -852,62 +668,6 @@ unknown flag: --foo
 
 This can be very confusing for the user—especially given that one of the most common things users do when trying to get a command to work is to hit the up arrow to get the last invocation, stick another option on the end, and run it again.
 If possible, try to make both forms equivalent, although you might run up against the limitations of your argument parser.
-
-**Do not read secrets directly from flags.**
-When a command accepts a secret, e.g. via a `--password` flag,
-the flag value will leak the secret into `ps` output and potentially shell history.
-And, this sort of flag encourages the use of insecure environment variables for secrets.
-(Environment variables are insecure because they can often be read by other users, their values end up in debug logs, etc.)
-
-Consider accepting sensitive data only via files, e.g. with a `--password-file` flag, or via `stdin`.
-A `--password-file` flag allows a secret to be passed in discreetly, in a wide variety of contexts.
-
-(It’s possible to pass a file’s contents into a flag in Bash by using `--password $(< password.txt)`.
-This approach has the same security problems mentioned above.
-It’s best avoided.)
-
-### Interactivity {#interactivity}
-
-**Only use prompts or interactive elements if `stdin` is an interactive terminal (a TTY).**
-This is a pretty reliable way to tell whether you’re piping data into a command or whether it's being run in a script, in which case a prompt won’t work and you should throw an error telling the user what flag to pass.
-
-**If `--no-input` is passed, don’t prompt or do anything interactive.**
-This allows users an explicit way to disable all prompts in commands.
-If the command requires input, fail and tell the user how to pass the information as a flag.
-
-**If you’re prompting for a password, don’t print it as the user types.**
-This is done by turning off echo in the terminal.
-Your language should have helpers for this.
-
-**Let the user escape.**
-Make it clear how to get out.
-(Don’t do what vim does.)
-If your program hangs on network I/O etc, always make Ctrl-C still work.
-If it’s a wrapper around program execution where Ctrl-C can’t quit (SSH, tmux, telnet, etc), make it clear how to do that.
-For example, SSH allows escape sequences with the `~` escape character.
-
-### Subcommands
-
-If you’ve got a tool that’s sufficiently complex, you can reduce its complexity by making a set of subcommands.
-If you have several tools that are very closely related, you can make them easier to use and discover by combining them into a single command (for example, RCS vs. Git).
-
-They’re useful for sharing stuff—global flags, help text, configuration, storage mechanisms.
-
-**Be consistent across subcommands.**
-Use the same flag names for the same things, have similar output formatting, etc. 
-
-**Use consistent names for multiple levels of subcommand.**
-If a complex piece of software has lots of objects and operations that can be performed on those objects, it is a common pattern to use two levels of subcommand for this, where one is a noun and one is a verb.
-For example, `docker container create`.
-Be consistent with the verbs you use across different types of objects.
-
-Either `noun verb` or `verb noun` ordering works, but `noun verb` seems to be more common.
-
-_Further reading: [User experience, CLIs, and breaking the world, by John Starich](https://uxdesign.cc/user-experience-clis-and-breaking-the-world-baed8709244f)._
-
-**Don’t have ambiguous or similarly-named commands.**
-For example, having two subcommands called “update” and “upgrade” is quite confusing.
-You might want to use different words, or disambiguate with extra words.
 
 ### Robustness {#robustness-guidelines}
 
@@ -932,308 +692,6 @@ It’s good to show estimated time remaining, or even just have an animated comp
 
 There are many good libraries for generating progress bars.
 For example, [tqdm](https://github.com/tqdm/tqdm) for Python, [schollz/progressbar](https://github.com/schollz/progressbar) for Go, and [node-progress](https://github.com/visionmedia/node-progress) for Node.js.
-
-**Do stuff in parallel where you can, but be thoughtful about it.**
-It’s already difficult to report progress in the shell; doing it for parallel processes is ten times harder.
-Make sure it’s robust, and that the output isn’t confusingly interleaved.
-If you can use a library, do so—this is code you don’t want to write yourself.
-Libraries like [tqdm](https://github.com/tqdm/tqdm) for Python and [schollz/progressbar](https://github.com/schollz/progressbar) for Go support multiple progress bars natively.
-
-The upside is that it can be a huge usability gain.
-For example, `docker pull`’s multiple progress bars offer crucial insight into what’s going on.
-
-```
-$ docker image pull ruby
-Using default tag: latest
-latest: Pulling from library/ruby
-6c33745f49b4: Pull complete 
-ef072fc32a84: Extracting [================================================>  ]  7.569MB/7.812MB
-c0afb8e68e0b: Download complete 
-d599c07d28e6: Download complete 
-f2ecc74db11a: Downloading [=======================>                           ]  89.11MB/192.3MB
-3568445c8bf2: Download complete 
-b0efebc74f25: Downloading [===========================================>       ]  19.88MB/22.88MB
-9cb1ba6838a0: Download complete 
-```
-
-One thing to be aware of: hiding logs behind progress bars when things go _well_ makes it much easier for the user to understand what’s going on, but if there is an error, make sure you print out the logs.
-Otherwise, it will be very hard to debug.
-
-**Make things time out.**
-Allow network timeouts to be configured, and have a reasonable default so it doesn’t hang forever.
-
-**Make it recoverable.**
-If the program fails for some transient reason (e.g. the internet connection went down), you should be able to hit `<up>` and `<enter>` and it should pick up from where it left off.
-
-**Make it crash-only.**
-This is the next step up from idempotence.
-If you can avoid needing to do any cleanup after operations, or you can defer that cleanup to the next run, your program can exit immediately on failure or interruption.
-This makes it both more robust and more responsive.
-
-_Citation: [Crash-only software: More than meets the eye](https://lwn.net/Articles/191059/)._
-
-**People are going to misuse your program.**
-Be prepared for that.
-They will wrap it in scripts, use it on bad internet connections, run many instances of it at once, and use it in environments you haven’t tested in, with quirks you didn’t anticipate.
-(Did you know macOS filesystems are case-insensitive but also case-preserving?)
-
-### Future-proofing {#future-proofing}
-
-In software of any kind, it’s crucial that interfaces don’t change without a lengthy and well-documented deprecation process.
-Subcommands, arguments, flags, configuration files, environment variables: these are all interfaces, and you’re committing to keeping them working.
-([Semantic versioning](https://semver.org/) can only excuse so much change; if you’re putting out a major version bump every month, it’s meaningless.)
-
-**Keep changes additive where you can.**
-Rather than modify the behavior of a flag in a backwards-incompatible way, maybe you can add a new flag—as long as it doesn’t bloat the interface too much.
-(See also: [Prefer flags to args](#arguments-and-flags).)
-
-**Warn before you make a non-additive change.**
-Eventually, you’ll find that you can’t avoid breaking an interface.
-Before you do, forewarn your users in the program itself: when they pass the flag you’re looking to deprecate, tell them it’s going to change soon.
-Make sure there’s a way they can modify their usage today to make it future-proof, and tell them how to do it.
-
-If possible, you should detect when they’ve changed their usage and not show the warning any more: now they won’t notice a thing when you finally roll out the change.
-
-**Changing output for humans is usually OK.**
-The only way to make an interface easy to use is to iterate on it, and if the output is considered an interface, then you can’t iterate on it.
-Encourage your users to use `--plain` or `--json` in scripts to keep output stable (see [Output](#output)).
-
-**Don’t have a catch-all subcommand.**
-If you have a subcommand that’s likely to be the most-used one, you might be tempted to let people omit it entirely for brevity’s sake.
-For example, say you have a `run` command that wraps an arbitrary shell command:
-
-    $ mycmd run echo "hello world"
-
-You could make it so that if the first argument to `mycmd` isn’t the name of an existing subcommand, you assume the user means `run`, so they can just type this:
-
-    $ mycmd echo "hello world"
-
-This has a serious drawback, though: now you can never add a subcommand named `echo`—or _anything at all_—without risking breaking existing usages.
-If there’s a script out there that uses `mycmd echo`, it will do something entirely different after that user upgrades to the new version of your tool.
-
-**Don’t allow arbitrary abbreviations of subcommands.**
-For example, say your command has an `install` subcommand.
-When you added it, you wanted to save users some typing, so you allowed them to type any non-ambiguous prefix, like `mycmd ins`, or even just `mycmd i`, and have it be an alias for `mycmd install`.
-Now you’re stuck: you can’t add any more commands beginning with `i`, because there are scripts out there that assume `i` means `install`.
-
-There’s nothing wrong with aliases—saving on typing is good—but they should be explicit and remain stable.
-
-**Don’t create a “time bomb.”**
-Imagine it’s 20 years from now.
-Will your command still run the same as it does today, or will it stop working because some external dependency on the internet has changed or is no longer maintained?
-The server most likely to not exist in 20 years is the one that you are maintaining right now.
-(But don’t build in a blocking call to Google Analytics either.)
-
-### Signals and control characters {#signals}
-
-**If a user hits Ctrl-C (the INT signal), exit as soon as possible.**
-Say something immediately, before you start clean-up.
-Add a timeout to any clean-up code so it can’t hang forever.
-
-**If a user hits Ctrl-C during clean-up operations that might take a long time, skip them.**
-Tell the user what will happen when they hit Ctrl-C again, in case it is a destructive action.
-
-For example, when quitting Docker Compose, you can hit Ctrl-C a second time to force your containers to stop immediately instead of shutting them down gracefully.
-
-```
-$  docker-compose up
-…
-^CGracefully stopping... (press Ctrl+C again to force)
-```
-
-Your program should expect to be started in a situation where clean-up has not been run.
-(See [Crash-only software: More than meets the eye](https://lwn.net/Articles/191059/).)
-
-### Configuration {#configuration}
-
-Command-line tools have lots of different types of configuration, and lots of different ways to supply it (flags, environment variables, project-level config files).
-The best way to supply each piece of configuration depends on a few factors, chief among them _specificity_, _stability_ and _complexity_.
-
-Configuration generally falls into a few categories:
-
-1.  Likely to vary from one invocation of the command to the next.
-
-    Examples:
-
-    - Setting the level of debugging output
-    - Enabling a safe mode or dry run of a program
-
-    Recommendation: **Use [flags](#arguments-and-flags).**
-    [Environment variables](#environment-variables) may or may not be useful as well.
-
-2.  Generally stable from one invocation to the next, but not always.
-    Might vary between projects.
-    Definitely varies between different users working on the same project.
-
-    This type of configuration is often specific to an individual computer.
-
-    Examples:
-
-    - Providing a non-default path to items needed for a program to start
-    - Specifying how or whether color should appear in output
-    - Specifying an HTTP proxy server to route all requests through
-
-    Recommendation: **Use [flags](#arguments-and-flags) and probably [environment variables](#environment-variables) too.**
-    Users may want to set the variables in their shell profile so they apply globally, or in `.env` for a particular project.
-
-    If this configuration is sufficiently complex, it may warrant a configuration file of its own, but environment variables are usually good enough.
-
-3.  Stable within a project, for all users.
-
-    This is the type of configuration that belongs in version control.
-    Files like `Makefile`, `package.json` and `docker-compose.yml` are all examples of this.
-
-    Recommendation: **Use a command-specific, version-controlled file.**
-
-**Follow the XDG-spec.**
-In 2010 the X Desktop Group, now [freedesktop.org](https://freedesktop.org), developed a specification for the location of base directories where config files may be located.
-One goal was to limit the proliferation of dotfiles in a user’s home directory by supporting a general-purpose `~/.config` folder.
-The XDG Base Directory Specification ([full spec](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html), [summary](https://wiki.archlinux.org/index.php/XDG_Base_Directory#Specification)) is supported by yarn, fish, wireshark, emacs, neovim, tmux, and many other projects you know and love.
-
-**If you automatically modify configuration that is not your program’s, ask the user for consent and tell them exactly what you’re doing.**
-Prefer creating a new config file (e.g. `/etc/cron.d/myapp`) rather than appending to an existing config file (e.g. `/etc/crontab`).
-If you have to append or modify to a system-wide config file, use a dated comment in that file to delineate your additions.
-
-**Apply configuration parameters in order of precedence.**
-Here is the precedence for config parameters, from highest to lowest:
-
-- Flags
-- The running shell’s environment variables
-- Project-level configuration (e.g. `.env`)
-- User-level configuration
-- System wide configuration
-
-### Environment variables {#environment-variables}
-
-**Environment variables are for behavior that _varies with the context_ in which a command is run.**
-The “environment” of an environment variable is the terminal session—the context in which the command is running.
-So, an env var might change each time a command runs, or between terminal sessions on one machine, or between instantiations of one project across several machines.
-
-Environment variables may duplicate the functionality of flags or configuration parameters, or they may be distinct from those things.
-See [Configuration](#configuration) for a breakdown of common types of configuration and recommendations on when environment variables are most appropriate.
-
-**For maximum portability, environment variable names must only contain uppercase letters, numbers, and underscores (and mustn't start with a number).**
-Which means `O_O` and `OWO` are the only emoticons that are also valid environment variable names.
-
-**Aim for single-line environment variable values.**
-While multi-line values are possible, they create usability issues with the `env` command.
-
-**Avoid commandeering widely used names.**
-Here’s a [list of POSIX standard env vars](https://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap08.html).
-
-**Check general-purpose environment variables for configuration values when possible:**
-
-- `NO_COLOR`, to disable color (see [Output](#output)) or `FORCE_COLOR` to enable it and ignore the detection logic
-- `DEBUG`, to enable more verbose output
-- `EDITOR`, if you need to prompt the user to edit a file or input more than a single line
-- `HTTP_PROXY`, `HTTPS_PROXY`, `ALL_PROXY` and `NO_PROXY`, if you’re going to perform network operations
-  (The HTTP library you’re using might already check for these.)
-- `SHELL`, if you need to open up an interactive session of the user's preferred shell
-  (If you need to execute a shell script, use a specific interpreter like `/bin/sh`)
-- `TERM`, `TERMINFO` and `TERMCAP`, if you’re going to use terminal-specific escape sequences
-- `TMPDIR`, if you’re going to create temporary files
-- `HOME`, for locating configuration files
-- `PAGER`, if you want to automatically page output
-- `LINES` and `COLUMNS`, for output that’s dependent on screen size (e.g. tables)
-
-**Read environment variables from `.env` where appropriate.**
-If a command defines environment variables that are unlikely to change as long as the user is working in a particular directory,
-then it should also read them from a local `.env` file so users can configure it differently for different projects without having to specify them every time.
-Many languages have libraries for reading `.env` files ([Rust](https://crates.io/crates/dotenv), [Node](https://www.npmjs.com/package/dotenv), [Ruby](https://github.com/bkeepers/dotenv)).
-
-**Don’t use `.env` as a substitute for a proper [configuration file](#configuration).**
-`.env` files have a lot of limitations:
-
-- A `.env` file is not commonly stored in source control
-- (Therefore, any configuration stored in it has no history)
-- It has only one data type: string
-- It lends itself to being poorly organized
-- It makes encoding issues easy to introduce
-- It often contains sensitive credentials & key material that would be better stored more securely
-
-If it seems like these limitations will hamper usability or security, then a dedicated config file might be more appropriate.
-
-**Do not read secrets from environment variables.**
-While environment variables may be convenient for storing secrets, they have proven too prone to leakage:
-- Exported environment variables are sent to every process, and from there can easily leak into logs or be exfiltrated
-- Shell substitutions like `curl -H "Authorization: Bearer $BEARER_TOKEN"` will leak into globally-readable process state.
-  (cURL offers the `-H @filename` alternative for reading sensitive headers from a file.)
-- Docker container environment variables can be viewed by anyone with Docker daemon access via `docker inspect`
-- Environment variables in systemd units are globally readable via `systemctl show`
-
-Secrets should only be accepted via credential files, pipes, `AF_UNIX` sockets, secret management services, or another IPC mechanism.
-
-### Naming {#naming}
-
-> “Note the obsessive use of abbreviations and avoidance of capital letters; [Unix] is a system invented by people to whom repetitive stress disorder is what black lung is to miners.
-> Long names get worn down to three-letter nubbins, like stones smoothed by a river.”
-> — Neal Stephenson, _[In the Beginning was the Command Line](https://web.stanford.edu/class/cs81n/command.txt)_
-
-The name of your program is particularly important on the CLI: your users will be typing it all the time, and it needs to be easy to remember and type.
-
-**Make it a simple, memorable word.**
-But not too generic, or you’ll step on the toes of other commands and confuse users.
-For example, both ImageMagick and Windows used the command `convert`.
-
-**Use only lowercase letters, and dashes if you really need to.**
-`curl` is a good name, `DownloadURL` is not.
-
-**Keep it short.**
-Users will be typing it all the time.
-Don’t make it _too_ short: the very shortest commands are best reserved for the common utilities used all the time, such as `cd`, `ls`, `ps`.
-
-**Make it easy to type.**
-If you expect people to type your command name all day, make it easy on their hands.
-
-A real-world example: long before Docker Compose was `docker compose`, it was [`plum`](https://github.com/aanand/fig/blob/0eb7d308615bae1ad4be1ca5112ac7b6b6cbfbaf/setup.py#L26).
-This turned out to be such an awkward, one-handed hopscotch that it was immediately renamed to [`fig`](https://github.com/aanand/fig/commit/0cafdc9c6c19dab2ef2795979dc8b2f48f623379), which – as well as being shorter – flows much more easily.
-
-_Further reading: [The Poetics of CLI Command Names](https://smallstep.com/blog/the-poetics-of-cli-command-names/)_
-
-### Distribution {#distribution}
-
-**If possible, distribute as a single binary.**
-If your language doesn’t compile to binary executables as standard, see if it has something like [PyInstaller](https://www.pyinstaller.org/).
-If you really can’t distribute as a single binary, use the platform’s native package installer so you aren’t scattering things on disk that can’t easily be removed.
-Tread lightly on the user’s computer.
-
-If you’re making a language-specific tool, such as a code linter, then this rule doesn’t apply—it’s safe to assume the user has an interpreter for that language installed on their computer.
-
-**Make it easy to uninstall.**
-If it needs instructions, put them at the bottom of the install instructions—one of the most common times people want to uninstall software is right after installing it.
-
-### Analytics {#analytics}
-
-Usage metrics can be helpful to understand how users are using your program, how to make it better, and where to focus effort.
-But, unlike websites, users of the command-line expect to be in control of their environment, and it is surprising when programs do things in the background without telling them.
-
-**Do not phone home usage or crash data without consent.**
-Users will find out, and they will be angry.
-Be very explicit about what you collect, why you collect it, how anonymous it is and how you go about anonymizing it, and how long you retain it for.
-
-Ideally, ask users whether they want to contribute data (“opt-in”).
-If you choose to do it by default (“opt-out”), then clearly tell users about it on your website or first run, and make it easy to disable.
-
-Examples of projects that collect usage statistics:
-
-- Angular.js [collects detailed analytics using Google Analytics](https://angular.io/analytics), in the name of feature prioritization.
-  You have to explicitly opt in.
-  You can change the tracking ID to point to your own Google Analytics property if you want to track Angular usage inside your organization.
-- Homebrew sends metrics to Google Analytics and has [a nice FAQ](https://docs.brew.sh/Analytics) detailing their practices.
-- Next.js [collects anonymized usage statistics](https://nextjs.org/telemetry) and is enabled by default.
-
-**Consider alternatives to collecting analytics.**
-
-- Instrument your web docs.
-  If you want to know how people are using your CLI tool, make a set of docs around the use cases you’d like to understand best, and see how they perform over time.
-  Look at what people search for within your docs.
-- Instrument your downloads.
-  This can be a rough metric to understand usage and what operating systems your users are running.
-- Talk to your users.
-  Reach out and ask people how they’re using your tool.
-  Encourage feedback and feature requests in your docs and repos, and try to draw out more context from those who submit feedback.
-
-_Further reading: [Open Source Metrics](https://opensource.guide/metrics/)_
 
 ## Further reading
 
