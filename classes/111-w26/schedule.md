@@ -25,14 +25,14 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 3** | **Building Blocks Part 2** |  | |
 | 1/19 | Study | [Slides](), [Exam 1](exam1)	| |
 | 1/21 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Slides](),  [Conditionals Lab](conditionals-lab)	 | [HW3: Tic Tac Toe](hw3) |
-| 1/23 | More Iteration  | [Slides](), [Nested Structures](lab-nested) |  |
+| 1/23 | [More Iteration](more-iteration-prep)  | [Slides](), [Nested Structures](lab-nested) |  |
 | **Week 4** | **Advanced Blocks** | | |
 | 1/26| Files Prep | [Slides](), Working with Files	| |
-| 1/28 | TBD; [HW3](hw3)	| [Slides](), TBD | [HW4: Parsing Data](hw4) |
+| 1/28 | Mutating Sequences Prep; [HW3](hw3)	| [Slides](), TBD | [HW4: Parsing Data](hw4) |
 | 1/30 |	Study  	|  [Slides](), [Exam 2](exam2) 	|   |
 | **Week 5** | **Functions** |  | |
 | 2/2 | Dictionaries Prep | [Slides]()	 | |
-| 2/4| Mutating Sequences Prep; [HW4](hw4) |  [Slides]() | [HW5: Scrabble](hw5) |
+| 2/4| TBD, [HW4](hw4) |  [Slides]() | [HW5: Scrabble](hw5) |
 | 2/6	| Debugging Prep |	[Slides](), Debugging	| |
 | **Week 6** | **Objects and Classes** |  | |
 | 2/9 |  |	Midterm break!	| |

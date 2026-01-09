@@ -124,4 +124,4 @@ See my guide on understanding [GitHub Actions and tests](/classes/257-s25/test-g
 
 * I'm not at high enough coverage, but how can I know what to add without seeing the production code?
 
-It is an unusual challenge to hit high coverage without seeing production code, but I believe in you. By testing just standard cases and reasonable edge cases (invalid input to the functions and main, no input at all, etc.), I was able to hit 98% coverage. If you are really stuck, feel free to reach out for a hint (email or DM on campuswire).
+It is an unusual challenge to hit high coverage without seeing production code, but I believe in you. By testing just standard cases and reasonable edge cases (invalid input to the functions and main, no input at all, etc.), I was able to hit 97% coverage. If you are really stuck, feel free to reach out for a hint (email or DM on campuswire).
