@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ethics in Tech Prep
-permalink: /classes/257-s25/ethics-prep
+permalink: /classes/257-w26/ethics-prep
 ---
 
 ## Overview
@@ -12,6 +12,7 @@ Before class, you should be able to:
 * Give a high-level overview of how the computing industry thinks and reasons about ethics.
 * Identify the ethical standards typically applied in the analysis of technology.
 * Begin to develop your own ethical framework regarding technology.
+* Explain the high-level situation of the case study
 
 ## Advanced Learning Objectives
 After class, you should be able to:
@@ -22,15 +23,14 @@ After class, you should be able to:
 
 
 ## Readings
-To achieve the basic learning objectives, you can read the following:
+To achieve the basic learning objectives, you should read the following:
 
 * [The ACM Code of Ethics.](https://www.acm.org/code-of-ethics) ACM is one of the professional organizations for computer scientists.
 * Anil Dash's [12 Things Everyone Should Understand About Tech](https://medium.com/humane-tech/12-things-everyone-should-understand-about-tech-d158f5a26411)
-* [The Rise of Ethical Concerns about AI Content Creation: A Call to Action](https://www.computer.org/publications/tech-news/trends/ethical-concerns-on-ai-content-creation) - this article is now quite old, but still gives a decent overview of the issues of GenAI which we will discuss in class
-https://medium.com/@rammilan1610/generative-ai-software-engineering-ethics-trust-accountability-and-transparency-924b37614ed9 
+* [Millions of black people affected by racial bias in health-care algorithms](https://www.nature.com/articles/d41586-019-03228-6) - This is the case study that we'll discuss in class, you should have access if you are on Carleton's internet or connected to the VPN. Feel free to read more details in the [research article](https://www.science.org/doi/10.1126/science.aax2342) as well if you are interested.
 
 ## Checks
 Submit answers to the following through Moodle:
 1. What is the purpose of the ACM Code of Ethics?
 2. Give an example (different from the ones in the reading) that illustrates how tech is not neutral (Dash's first point).
-3. What is one ethical concern regarding generative AI?
+3. Which stakeholders' needs were prioritized by Optum's initial cost-based algorithm do you think? Reflect, with a few sentences, on the scenario that you think led to that initial flawed algorithm being used.
