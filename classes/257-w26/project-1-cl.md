@@ -16,6 +16,8 @@ The learning objectives for this subcomponent of your project are to be able to 
 You should work with your team on this portion of the project.
 You are able to get help from outside sources, as specified in the syllabus, but everything that your team submits should be your own.
 
+You may also try out asking [this custom Gemini bot for help](https://gemini.google.com/gem/1KocXu_x22nZb0XKN4FkXExf2-mOHFskK?usp=sharing), which will hopefully help you on the deliverable without undermining your learning. If you use this, I would appreciate you copying some example interactions with it to a text document and emailing it to me. This is both to give me an idea of whether it is providing correct information and if it is actually being helpful. If you manage to get it to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further.
+
 ## Due Date
 
 This subcomponent of your project is due Monday Jan 26th at 10pm on GitHub.

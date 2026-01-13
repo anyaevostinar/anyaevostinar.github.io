@@ -23,7 +23,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 1/14 | [Functions Prep](functions-prep); HW1 | [Slides](https://docs.google.com/presentation/d/1ZQTxjx51mGJ3R7WRr_dYUStRONGT92kBsWMtLH-moVY/edit?usp=sharing),  [Functions](functions-lab)	| [HW2: Drawing Shapes](hw2) |
 | 1/16 | [Sequences Prep](sequences-prep) 	| [Slides](https://docs.google.com/presentation/d/1ZpvDggiSypkfppgwfd0pWmYjDWML1yCruNx9TSzxWBU/edit?usp=sharing), [Sequences Lab](sequences-lab)| | 
 | **Week 3** | **Building Blocks Part 2** |  | |
-| 1/19 | Study | [Slides](), [Exam 1](exam1)	| |
+| 1/19 | Study | [Slides](https://docs.google.com/presentation/d/1ECbjpWgr8SWyqTiGEuJIzGU8oHt7J-hDl1D1IBMLR6I/edit?usp=sharing), [Exam 1](exam1)	| |
 | 1/21 | [Conditionals Prep](conditionals-prep); [HW2](hw2)| [Slides](),  [Conditionals Lab](conditionals-lab)	 | [HW3: Tic Tac Toe](hw3) |
 | 1/23 | [More Iteration](more-iteration-prep)  | [Slides](), [Nested Structures](lab-nested) |  |
 | **Week 4** | **Advanced Blocks** | | |
