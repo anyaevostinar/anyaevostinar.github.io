@@ -31,7 +31,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 1/14 | [Git Prep](git-prep) | [Slides](https://docs.google.com/presentation/d/1YIrt-vfusq0MVlL-pZ-HfBKtl6s2JGFONu1_05qP1yY/edit?usp=sharing), [Git Practice Lab](lab-git) | |
 | F 1/16 | [TDD Prep](tdd-prep) | [Slides](https://docs.google.com/presentation/d/15FUpMB3IrUSQXwfYD9PDGqcBiJKUblmTyt6YnhJxLAA/edit?usp=sharing), [TDD Lab](tdd-lab)  |[ID1: Tests](project-1-ind) |
 | **Week 3** | **Core Functionality** | | |
-| M 1/19 |[Command Line Prep](cl-prep),   [TD0 due 10pm](project-proposal) | [Slides](), [Start on CLI Design](command-line-design) | [TD1: Command Line](project-command-line)  |
+| M 1/19 |[Command Line Prep](cl-prep),   [TD0 due 10pm](project-proposal) | [Slides](https://docs.google.com/presentation/d/1cim0WhkUEGYendDOmBY40NfPKqI7v3HxfAjydtYVQaA/edit?usp=sharing), [Start on CLI Design](command-line-design) | [TD1: Command Line](project-command-line)  |
 | W 1/21 | [Function Design Prep](function-prep) | [Slides](), [Function Design](labfunctions.pdf) | |
 | F 1/23 | [Ethics in Tech Prep](ethics-prep), [ID1 due 10pm](project-1-ind) | [Slides](), Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
