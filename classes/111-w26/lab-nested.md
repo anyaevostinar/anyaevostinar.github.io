@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Nested Loops Lab 
-permalink: /classes/111-f24/lab-nested
+title: Nested Structures Lab 
+permalink: /classes/111-w26/lab-nested
 ---
 
-This is a lab assignment and so you will not be submitting it.
-However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
 
 I recommend making a folder for today's lab in [COURSES as you usually do](getting-started).
 
@@ -79,15 +77,6 @@ for i in range(n):
 ```
 
 ## Exercise 2
-Revisit the reverse word problem now that you know how to use nested loops.
-1. Get phrase from user.
-2. Split phrase into words
-3. For each word in the phrase
-    * Reverse the letters
-    * Combine the letters back together
-    * Print the reversed word
-
-## Exercise 3
 Consider the following code (with blanks that you will fill in):
 
 ```python
@@ -135,7 +124,7 @@ King of Spades
 Ace of Spades
 ```
 
-## Exericse 4
+## Exericse 3
 Write a nested for-loop that creates the following output:
 ```
 0 x 0 = 0   0 x 1 = 0   0 x 2 = 0   0 x 3 = 0
@@ -144,7 +133,7 @@ Write a nested for-loop that creates the following output:
 3 x 0 = 0   3 x 1 = 3   3 x 2 = 6   3 x 3 = 9
 ```
 
-## Exercise 5
+## Exercise 4
 There are many ways of encoding or *encrypting* messages by changing the letters into numbers or other letters.
 
 One common encryption algorithm is ROT-13. It derives its name from the fact that it rotates each letter in a message 13 places forward in the alphabet, rotating around to the beginning if necessary. So, for instance, the letter "A", which is 1st in the alphabet, will become the letter "N", which is 14th in the alphabet. "C" (3rd) becomes "P" (16th). "R" is the 18th letter in the alphabet. 18 + 13 = 31, which is more letters than we have--so once we go off the end, we start at the beginning with "A", which means that "R" will become "E" (5th).
@@ -180,14 +169,17 @@ Some notes:
 * The `chr()` function goes in the opposite direction, converting an ASCII value to a string (e.g., `chr(97)` returns "a", `chr(122)` returns "z").
 * You may also find [this list of Python string methods](https://docs.python.org/3/library/stdtypes.html#string-methods) helpful for reference and section 9.9 of your textbook
 
-## Exercise 6
+## Exercise 5
 Write another Python program that will *encrypt* a message for a user, so it will move every letter forward in the alphabet by 13. 
 
-## Exercise 7
+## Exercise 6
 By this point, you have likely surmised that ROT-13 isn't a very secure method of encryption. 
 One way we could improve it a bit would be to generalize it away from the number 13, allowing users to use any agreed upon number from 1-26. (This generalization is sometimes called the *Caesar cipher*.)
 
-Extend your program from Exercise 5 to take both a message and a rotation (an integer between -26 and 26) and then apply the rotation to the message. Be careful to check for the need to rotate around to the other side in both directions.
+Extend your program from Exercise 4 to take both a message and a rotation (an integer between -26 and 26) and then apply the rotation to the message. Be careful to check for the need to rotate around to the other side in both directions.
+
+## Submission
+Submit your completed solutions for exercise 4-6 to Moodle for an extra engagement credit.
 
 ## Extra
 *Note: this part is much harder, but hopefully a fun extension!*
