@@ -1,13 +1,11 @@
 ---
 layout: page
 title: Conditionals Lab 
-permalink: /classes/111-f24/conditionals-lab
+permalink: /classes/111-w26/conditionals-lab
 ---
 
-This is a lab assignment and so you will not be submitting it.
-However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
-
-I recommend making a folder for today's lab in COURSES [as you usually do](getting-started).
+## Setup
+I recommend making a folder for today's lab in [COURSES as you usually do](getting-started).
 
 Remember you can refer to the [textbook readings](conditionals-prep#resources) if you forget the syntax for something.
 
@@ -80,9 +78,12 @@ It may help to know that a year is a leap year if it is divisible by 4, unless i
 
 2. Identify a list of test inputs for your program to verify that it works for the variety of values that a user might provide. In the comments of `validDate.py`, list these input values and the results that get printed to the screen.
 
+## Submission
+Submit completed solutions for Exercises 3-5 for an extra engagement credit whenever you finish them. Remember that these aren't "due" or required, just good practice and a way to do extra engagement.
+
 
 ## Extra
-If you finish all of the above, work through some of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=967581).
+If you finish all of the above, work through some of the [end of chapter exercises](https://runestone.academy/ns/books/published/fopp/Conditionals/week3a1.html?mode=browsing).
 
 
 ## Acknowledgements
