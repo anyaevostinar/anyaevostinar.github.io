@@ -50,6 +50,8 @@ Your team should write a program that:
   python3 command_line.py --color "purple"
   ```
   These may be repeated in a `help` command or separate examples. **You should have examples in both places.**
+* Your README.md also needs to include a clearly labeled section `Dependencies` which lists all modules/libraries that you are importing and specifically what you are using them to do. You should **triple check** the imports at the top of all of your files to ensure that you have correct imports for only what you intended to import.
+
 
 ## Tips
 You may find the [`csv`](https://docs.python.org/3/library/csv.html) module useful for dealing with your dataset (assuming it's a `.csv`).
@@ -79,6 +81,7 @@ When evaluating your project, the grader will consult the GitHub action output r
 * Functionality:
   * There is a usage statement in both the README and at the command line
   * The `README` contains specific runnable examples for each feature (these can be repeated in a `help` command)
+  * The `README` contains an accurate and clear `Dependencies` section.
   * There are three independent features controlled by a command line interface that allows the user to get information from the chosen dataset
   * There is an automated test suite that achieves 75% coverage
 * Design:
@@ -96,7 +99,7 @@ When evaluating your project, the grader will consult the GitHub action output r
   * If you have needed to change your user stories, you need to get approval from Anya
 * Functionality:
   * The test suite has over 90% coverage
-  * There is comprehensive instruction on how to use the command-line interface in both the README and with a `help` command
+  * There is comprehensive instructions on how to use the command-line interface in both the README and with a `help` command
   * There are acceptance tests for each user story, which are clearly marked
 * Design:
   * All style checks are 9 or above
