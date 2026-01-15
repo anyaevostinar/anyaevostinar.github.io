@@ -20,7 +20,7 @@ As with all assignments in this course, for each file in this assignment, you ar
 
 ## Getting started:
 
-You will do all of your work in a single file, `tictactoe.py`.  **You should download [this starter code](/classes/111-w26/HW3Starter.zip), double-click to "unzip" it, and work within the resulting `HW3Starter` folder. The folder includes a "skeleton" of `tictactoe.py` as well as `graphics.py`. 
+You will do all of your work in a single file, `tictactoe.py`.  You should download [this starter code](/classes/111-w26/HW3Starter.zip), double-click to "unzip" it, and work within the resulting `HW3Starter` folder. The folder includes a "skeleton" of `tictactoe.py` as well as `graphics.py`. 
 
 **You will only be filling in existing function declarations within `tictactoe.py`, though you are welcome to make additional smaller functions if you wish.**
 
@@ -34,8 +34,11 @@ The primary goal for this assignment is to give you practice working with `if` s
 
 ## Parts of this assignment:
 
+Core:
 * [Part 1: Keeping track of game state](#part1)
 * [Part 2: Placing pieces](#part2)
+
+Advanced:
 * [Part 3: Checking for valid positions](#part3)
 * [Part 4: Ending the game](#part4)
 
@@ -58,6 +61,8 @@ The **advanced requirements** are:
 * Make sure not to have code that computes the right answer by doing extra work (e.g., leaving a computation in a for loop when it could have occurred after the for loop, only once).
 * Comments should be used for anything complex, and typically for chunks of 3--5 lines of code, but not every line.
 
+---
+
 ## Core
 ### Part 1: Keeping track of game state <a name="part1"></a>
 
@@ -79,28 +84,6 @@ Here is an example:
 
 For this first part, you will implement the functions needed by the `print_board_state` function.  
 The `print_board_state` function is already written for you (feel free to look through it in the starter code). You should fill in the functions that it needs: `print_row` and `get_cell_string`.
-
-```python
-def get_cell_string(grid_value):
-    """
-    Returns a string corresponding to the provided value from the board state.
-
-    grid_value: 0 (none) or 1 (player 1) or 2 (player 2)
-    returns: " " (0) or "x" (player 1) or "o" (player 2)
-    """
-    # TODO: Part 1
-    return "" # replace with your code
-
-def print_row(board_state, row):
-    """
-    Prints out the current board state of the given row.
-
-    board_state: a nested list containing the board state
-    row: the row for which to print the board state
-    """
-    # TODO: Part 1
-    pass # replace with your code
-```
 
 _Note: For `print_row`, you should iterate through the list and generate the appropriate characters for each piece (or empty spot) with a `|` between each piece. There are multiple ways of achieving this that are reasonable. See below for an example of what the output should look like._
 
@@ -151,31 +134,7 @@ x|o|
 For this next part, you will provide the functionality needed by the `draw_player_marker` function.
 This function draws a player marker in the grid cell `(grid_x, grid_y)`.  The `win` parameter is an instance of the `GraphWin` class, and `player` is either 1 or 2.
 
-To provide this functionality, you should implement the following two functions:
-
-```python
-def draw_x(win, grid_x, grid_y):
-    """
-    Draws an X at the specified grid position.
-
-    win: the GraphWin for the board
-    grid_x: x-coordinate of grid cell (column)
-    grid_y: y-coordinate of grid cell (row)
-    """
-    # TODO: Part 2
-    pass # replace with your code
-
-def draw_o(win, grid_x, grid_y):
-    """
-    Draws an O at the specified grid position.
-
-    win: the GraphWin for the board
-    grid_x: x-coordinate of grid cell (column)
-    grid_y: y-coordinate of grid cell (row)
-    """
-    # TODO: Part 2
-    pass # replace with your code
-```
+To provide this functionality, you should fill in the two functions: `draw_x` and `draw_o`.
 
 * In `draw_o`, your code should draw an "o" in that cell. Note that the coordinate system has again been set to work more intuitively, so `grid_x` and `grid_y` will be already close to where you want to draw your "o", you just need to decide on how to center your "o" in the square.
 
@@ -200,7 +159,7 @@ if __name__ == "__main__":
 
 You should be able to place five markers within the grid.  Note that so far, there is no code to make sure that the user can't place a marker in an occupied space -- that comes later.
 
-![<image: testing marker placement>](/classes/111-w26/hw3_part2_test.png "Testing marker placement")
+<img src="/classes/111-w26/hw3_part2_test.png" alt="image of tic tac toe board" width="800">
 
 ---
 
