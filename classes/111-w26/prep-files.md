@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Files Preparation
-permalink: /classes/111-f24/files-prep
+permalink: /classes/111-w26/files-prep
 ---
 
 ## Overview
@@ -19,6 +19,17 @@ After class, you should be able to:
 * Solve problems that involve writing to files
 
 ## Resources
-You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=967833):
-* Runestone 10.1-10.4
-* Runestone 10.8-10.10
+You should read/watch the following:
+* [11.1 Working with Data Files](https://runestone.academy/ns/books/published/foppff/files_introduction-working-with-data-files.html?mode=browsing)
+* [11.2 Reading a File](https://runestone.academy/ns/books/published/foppff/files_reading-a-file.html?mode=browsing)
+* [11.3 Alternative File Reading Methods](https://runestone.academy/ns/books/published/foppff/files_alternative-file-reading-methods.html?mode=browsing)
+* [11.4 Iterating over lines in a file](https://runestone.academy/ns/books/published/foppff/files_iterating-over-lines-in-a-file.html?mode=browsing)
+* [11.8 Writing Text Files](https://runestone.academy/ns/books/published/foppff/files_writing-text-files.html?mode=browsing)
+* [11.9 CSV Format](https://runestone.academy/ns/books/published/foppff/files_csv-format.html?mode=browsing)
+* [11.10 Reading in data from a CSV File](https://runestone.academy/ns/books/published/foppff/files_reading-in-data-from-a-csv-file.html?mode=browsing)
+
+## Checks
+Submit answers to the following on Moodle:
+1. Checkpoint 11.3.3: Provide code to find the number of characters in a file `school_prompt2.txt` and assign that value to the variable `num_char`.
+2. Checkpoint 11.4.1: Provide code to find out how many lines are in a file `emotion_words.txt`. Save this value to the variable `num_lines`. Do not use the `len` method.
+3. What is some data that you'd like to be able to process with Python?
