@@ -12,9 +12,9 @@ def load_data():
             data.append(row)
 
 def get_cell(row, column):
-    if row > len(data):
+    if row >= len(data):
         raise IndexError("Row argument invalid")
-    if column > len(data[0]):
+    if column >= len(data[0]):
         raise IndexError("Column argument invalid")
     return data[int(row)][int(column)]
 
@@ -35,7 +35,7 @@ def main():
     except:
         print("Usage: python3 basic_cl.py row column")
         return
-    if 0 <= row < 3 and 0 <= column <= 3:
+    if -3 <= row < 3 and -3 <= column <= 3:
         print(get_cell(row, column))
     else:
         print("Usage: python3 basic_cl.py row column")

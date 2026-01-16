@@ -125,3 +125,7 @@ See my guide on understanding [GitHub Actions and tests](/classes/257-s25/test-g
 * I'm not at high enough coverage, but how can I know what to add without seeing the production code?
 
 It is an unusual challenge to hit high coverage without seeing production code, but I believe in you. By testing just standard cases and reasonable edge cases (invalid input to the functions and main, no input at all, etc.), I was able to hit 97% coverage. If you are really stuck, feel free to reach out for a hint (email or DM on campuswire).
+
+* What about negative index values?
+
+Remember that Python can handle negative indices fine, so -1 and -2 and -3 are fine.
