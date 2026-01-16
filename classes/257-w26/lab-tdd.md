@@ -29,7 +29,7 @@ class MyFirstTests(unittest.TestCase):
             self.assertEqual(len([1,2,3]), 3) #you should probably test something more interesting than len
 ```
 
-**Write at least three tests in `test_production.py` in the `TestReverseWord` class. Remember, you know exactly what a reverse word function should do, so you can definitely write the tests even though you haven't written the production code. (Hint, if I give it "hello", it should return "olleh".)
+**Write at least three tests in `test_production.py` in the `TestReverseWord` class.** Remember, you know exactly what a reverse word function should do, so you can definitely write the tests even though you haven't written the production code. (Hint, if I give it "hello", it should return "olleh".)
 
 c. Verify that your tests fail because your function isn't doing what it should do. Excellent, you are now at the "red" stage and can be confident that your tests are actually testing the code. You also have perfect clarity on what your production code should do.
 

@@ -5,14 +5,14 @@ permalink: /classes/257-s25/flask-prep
 ---
 
 ## Overview
-In this course, we'll use a Python module called Flask to build our websites. Today's prep gets you started understanding what Flask is and getting Flask installed so that you can focus on coding in class. If you run into difficulties with installation, please reach out asap!
+In this course, we'll use a Python module called Flask to build our websites. Today's prep gets you started understanding what Flask is and you should make sure that you have Flask installed (which you hopefully did through the [venv guide](venv-guide) at the start of the term).
 
 ## Basic Learning Objectives
 Before class, you should be able to:
 * Explain what Flask is
 * Explain what a web framework is
 * Describe the tasks that a web framework like Flask carries out
-* Have Flask installed on your personal machine
+* Be sure you have Flask installed on your machine
 
 ## Advanced Learning Objectives
 After class, you should be able to:
@@ -20,7 +20,7 @@ After class, you should be able to:
 * Use route parameters to dynamically change your website
 
 ## Readings
-To achieve the basic learning objectives, you can read the following sections of the Flask Tutorial on [pythonbasics.org](https://pythonbasics.org/) and try out the Hello World app:
+To achieve the basic learning objectives, you should read the following sections of the Flask Tutorial on [pythonbasics.org](https://pythonbasics.org/) and try out the Hello World app:
 
 1. [What is Flask](https://pythonbasics.org/what-is-flask-python/)
 2. [Flask Tutorial - Hello World](https://pythonbasics.org/flask-tutorial-hello-world/#Hello-World)
