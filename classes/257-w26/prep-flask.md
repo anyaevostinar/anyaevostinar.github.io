@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Flask Intro Prep
-permalink: /classes/257-s25/flask-prep
+permalink: /classes/257-w26/flask-prep
 ---
 
 ## Overview
@@ -24,10 +24,16 @@ To achieve the basic learning objectives, you should read the following sections
 
 1. [What is Flask](https://pythonbasics.org/what-is-flask-python/)
 2. [Flask Tutorial - Hello World](https://pythonbasics.org/flask-tutorial-hello-world/#Hello-World)
-3. [Flask Tutorial - Routes](https://pythonbasics.org/flask-tutorial-routes/) (ignore the 'flask route post' section)
+3. [Flask Tutorial - Routes](https://pythonbasics.org/flask-tutorial-routes/) (ignore the 'flask route post' section, we'll get to that later)
 
 
 ## Checks
+Verify that you've successfully installed Flask on your machine by:
+1. Activating your [virtual environment](/classes/257-w26/venv-guide)
+2. Making a new file `server.py` and pasting in the boilerplate from the reading
+3. Run with `python server.py` and verify that you can see the "Hello World!" webpage
+4. If you can't, go back to the [virtual environment](/classes/257-w26/venv-guide) guide and follow all the install instructions and try again. 
+
 Submit answers to the following through Moodle:
 1. List one advantage of using Flask as opposed to another web framework.
 2. What is a route, and how is it used in Flask?
