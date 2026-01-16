@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code Review Prep
-permalink: /classes/257-s25/code-review-prep
+permalink: /classes/257-w26/code-review-prep
 ---
 
 ## Overview

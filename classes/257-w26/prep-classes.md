@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Classes Prep
-permalink: /classes/257-s25/classes-prep
+permalink: /classes/257-w26/classes-prep
 ---
 
 ## Overview
