@@ -1,32 +1,32 @@
 ---
 layout: page
 title: Starting with Flask
-permalink: /classes/257-s25/flask-intro
+permalink: /classes/257-w26/flask-intro
 ---
 
 ## Goal
-Get started with Flask by making the simplest app.
+Explore different functionalities of Flask with a simple dataset.
+
+## Table of Contents
+* [Getting Started](#getting-started)
+* [Outputting Data](#outputting-data)
+* [Handling User Errors](#handling-user-errors-and-your-own)
+* [Testing](#testing)
+* [Separating the API](#separating-api)
+* [Applying to Your Project](#applying-to-your-project)
 
 ## Setup
-Make sure that you have [installed Flask in your virtual environment](venv-guide) and activate your virtual environment.
+Make sure that you have [installed Flask in your virtual environment](venv-guide) and activate your virtual environment:
+```bash
+source ~/.venvs/cs257_venv/bin/activate
+```
 
 ## Getting Started
 As you know from the reading, Flask is a web framework that lets you build dynamic a dynamic website using Python.
 You're first going to build a very simple app that grabs data from a file and displays it on dynamically-built (and ugly) web pages.
 
-1. Clone down the (empty) Flask Lab classroom repository (linked on Moodle) and cd into that directory
-2. Make a new file `flask_lab_app.py`
-3. In that file, put the boilerplate for Flask apps:
-    ```python
-    from flask import Flask
-
-    app = Flask(__name__)
-
-    if __name__ == '__main__':
-        app.run()
-    ```
-
-4. As you know from your reading, Flask allows you to mark which function should be called when a user goes to a specific URL, so start by making a `homepage()` function that is called when a user first goes to your website using `@app.route('/')` (feel free to make the string returned more exciting):
+1. Clone down the Flask Lab classroom repository (linked on Moodle) and `cd` into that directory. This repository starts with the Flask boilerplate and loads in the Pokemon data for you.
+4. Start by making a `homepage()` function that is called when a user first goes to your website using `@app.route('/')` (feel free to make the string returned more exciting):
     ```python
     @app.route('/')
     def homepage():
@@ -35,7 +35,7 @@ You're first going to build a very simple app that grabs data from a file and di
 
 6. Open up the Terminal in VSCode and run your python script as you normally would:
     ```bash
-    python3 flask_lab_app.py
+    python flask_lab_app.py
     ```
 
     You should see something like:
@@ -48,39 +48,28 @@ You're first going to build a very simple app that grabs data from a file and di
     * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
     ```
 
-    And if you copy and paste that web address (the thing that starts with `http`) and put it into your web browser of choice, you should see your message. Congrats, you made a website with a Flask!
+    And if you copy that URL and put it into your web browser of choice, you should see your message. Congrats, you made a website with Flask!
 
 
 ## Outputting Data
 The main goal of using Flask is that we are able to display data from your dataset onto your website.
 Eventually, we'll put your data into a database, but for now, we'll stick with loading it in from a file so we can focus on how Flask itself works.
 
-1. Download [this](/classes/257-f23/dataset.csv) very exciting dataset (it's not exciting, sorry) and put it into the folder with your flask app python file
-2. We're going to keep things simple by just making a global variable `data` and saving the dataset into that:
-    ```python
-    data = []
+1. I've provided you with a dataset about Pokemon already in the repository, called `Pokemon.csv`, along with a `load_data` function that handles reading that data into a list of lists
 
-    def load_data():
-        #slightly weird syntax for reading from a file, but apparently the proper Pythonic way:
-        with open('dataset.csv', newline='') as f:
-            reader = csv.reader(f)
-            for row in reader:
-                data.append(row)
+3. Now there are a lot of choices for how to display this data. We'll start by thinking of your command line arguments as being entered in the URL. If you wanted to let the user get a particular cell of your dataset, you could make the decorator for the function include the desired row and column as variables:
+    ```python
+    @app.route('/<int:row>/<int:column>/')
     ```
 
-3. Now there are a lot of choices for how to display this data, though a common mistake is to not have the function return a string. We'll start by thinking of your command line arguments as being entered in the URL. If you wanted to let the user get a particular cell of your dataset, you could make the decorator for the function include the desired row and column as variables:
-    ```python
-    @app.route('/<row>/<column>', strict_slashes=False)
-    ```
-
-    The `<>` indicate that the string inside them should be a variable that is passed to your associated function, which also means that the function has to take those arguments, like so:
+    The `<>` indicate that the string inside them should be a variable that is passed to your associated function, and in this case we are also converting `row` and `column` to `int`s immediately.  The function has to take those exact arguments, like so:
     ```python
     def get_cell(row, column):
     ```
 
-    Use those two snippets to complete the `get_cell` function so that you can go to the page `your_url/0/1` and see a page with `column_2` on it.
+    Use those two snippets to complete the `get_cell` function so that you can go to the page `your_url/0/1` and see a page with `Name` on it.
 
-    You can also try letting the user get an entire row of the dataset, but remember that you'll need to turn the list into a string to do so.
+4. Now try letting the user get an entire row of the dataset, perhaps by specifying the Pokemon name that they want. Remember that you can use additional `/` in your endpoints to specify different commands, such as `/name/<pokemon_name>`.
 
 ## Handling user errors (and your own)
 
@@ -95,13 +84,13 @@ Fun fact, you can!
         return "sorry, wrong format, do this instead...."
     ```
 
-    Make sure that the function lets the user know what format they should use for the URL to get the information they want. 
+    Make sure that the function lets the user know what format they should use for the URL to get the information they want, perhaps with some examples. 
 
 2. You can add a function for internal server errors as well, i.e. when you have a bug in your Python code:
     ```python
     @app.errorhandler(500)
     def python_bug(e):
-        return "Eek, a bug!"
+        return "Eek, a Caterpie!"
     ```
 
 ## Testing
@@ -113,9 +102,12 @@ import unittest
 
 class TestSOMETHING(unittest.TestCase):
     def test_route(self):
-        self.app = app.test_client()
-        response = self.app.get('/', follow_redirects=True)
-        self.assertEqual(b'hello, this is the homepage', response.data)
+        #sets up a special test app
+        self.app = app.test_client() 
+        #test app returns TestResponse object
+        response = self.app.get('/', follow_redirects=True) 
+        #TestResponse has webpage in .data
+        self.assertEqual(b'hello, this is the homepage', response.data) 
 ```
       
 The `b` stands for byte and its because `response.data` is a 'bytes-like object'.
@@ -123,8 +115,28 @@ Once you make more complicated pages, you can use `assertIn` to check for the sp
 
 Make a test file and test your existing functions and routes. (Yes, we're breaking TDD since we already have the production code written. It'd be a good idea to purposefully break your production code to make sure your tests fail first.)
 
+## Separating API
+In the future, you will want your websites to display nice HTML by default, however we don't want your API to disappear either! The best way to separate your API from your (eventual) fancy webpage is with flask's `Blueprint` class.
+
+1. Add `Blueprint` to the import list for `flask` at the top of your `flask_lab_app.py` file.
+2. Create an `api` object around the same place you make your `app` object:
+    ```python
+    api = Blueprint('api', __name__)
+    ```
+
+3. The goal of the API blueprint is to preface all your API URLs appropriately so that the API is still accessible but clearly not what a user would normally navigate to. You do that when you link the Blueprint to your app just before running (so do this down in the `if __name__ == '__main__'` conditional):
+```python
+app.register_blueprint(api, url_prefix='/api')
+```
+
+4. To designate that a route should be used as an API endpoint, you just add it to the `api` instead of `app`, like so:
+```python
+@api.route('/<int:row>/<int:column>/')
+```
+    Try out changing your `get_cell` to be an API endpoint and then go to `your_url/api/0/1` to check that it's working.
+
 ## Applying to your project
 You're now all set to turn your command-line interface project into a Flask app.
 It's good to separate the underlying logic of your program from the Flask-specific portion so that it will be easier to refactor the logic portion once we add a database.
-Therefore, you should have all the Flask functionality in a separate file that imports the file with core functions.
+Therefore, **you should have all the Flask functionality in a separate file that imports the file with core functions**, which hopefully will be easy to do if you kept the command line separate already.
 You should now start on your [individual deliverable](project-2-ind) for this week, which is making a Flask app with a homepage and single data route.

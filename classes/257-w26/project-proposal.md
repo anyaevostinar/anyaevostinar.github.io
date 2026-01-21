@@ -121,7 +121,7 @@ If you forgot to tag your commit, you can retroactively tag them with [these ins
 The "Core" and "Advanced" requirements are below. I will put your grade (and only your grade) on Moodle. Because the evaluation criteria exceeds the Moodle character limit, I'll put feedback on your deliverable as a [Pull Request](https://anyaevostinar.github.io/classes/257-f23/pr-guide) on your repo.
 
 ### Core
-- [ ] Team contract answers all four high-level sections (Team Contract Requirements sections 1-4)
+- [ ] Team contract answers all four high-level sections (Team Contract Requirements sections 1-4: Roles, Meetings, Communication, Conflict resolution)
 - [ ] Proposal includes clear answers for sections 1-3 (Title, UN SDG, features, user stories, acceptance criteria)
 - [ ] Datasets are clearly identified and appropriate
 - [ ] Datasets are less than 100MB total
@@ -131,7 +131,7 @@ The "Core" and "Advanced" requirements are below. I will put your grade (and onl
 - [ ] Team contract addresses all the listed expectations (all subquestions for each section)
 - [ ] The commit to evaluate on the team repo is tagged with `proposal` (See instructions in [How to Submit](#how-to-submit))
 - [ ] The user stories and acceptance criteria are detailed enough that they could be turned into tests immediately
-- [ ] Proposal includes answers to sections 3-6
+- [ ] Proposal includes answers to sections 4-6
 - [ ] Both the team contract and proposal are clear and concise, easy to understand, with few to no spelling or grammatical errors
 - [ ] Datasets are 25MB or smaller
 
