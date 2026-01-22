@@ -35,7 +35,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 1/21 | [Function Design Prep](function-prep) | [Slides](https://docs.google.com/presentation/d/1z5aXDjwGuyrX67ZBW__x4JKo8S1h3AVe51c-IqcuZZc/edit?usp=sharing), [Function Design](/classes/257-s25/labfunctions.pdf) | |
 | F 1/23 | [Ethics in Tech Prep](ethics-prep), [ID1 due 10pm](project-1-ind) | [Slides](https://docs.google.com/presentation/d/1F4_I0_UP8nuzJrqAJdD5PccUY_UNUjwhvoR43g78OVU/edit?usp=sharing), Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
-| M 1/26 | [TD1 due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](), [Intro to Flask](flask-intro) | [TD2: Flask](project-2-flask), [ID2: Flask](project-2-ind) |
+| M 1/26 | [TD1 due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](https://docs.google.com/presentation/d/1Qyxs9RRSoNiYyCdA_P2CQoaeVRqHC6AUiIGcI-BfdeI/edit?usp=sharing), [Intro to Flask](flask-intro) | [TD2: Flask](project-2-flask), [ID2: Flask](project-2-ind) |
 | W 1/28 | [Classes Prep](classes-prep) | [Slides](), Designing classes | |
 | F 1/30 | [ID2 due 10pm](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
 | **Week 5** | **Database Component** | | |

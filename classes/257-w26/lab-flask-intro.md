@@ -113,7 +113,10 @@ class TestSOMETHING(unittest.TestCase):
 The `b` stands for byte and its because `response.data` is a 'bytes-like object'.
 Once you make more complicated pages, you can use `assertIn` to check for the specific data that you care about without worrying about the HTML tags.
 
-Make a test file and test your existing functions and routes. (Yes, we're breaking TDD since we already have the production code written. It'd be a good idea to purposefully break your production code to make sure your tests fail first.)
+Open the `flask_tests.py` file and **write tests for your existing functions and routes** (Yes, we're breaking TDD since we already have the production code written. It'd be a good idea to purposefully break your production code to make sure your tests fail first.) You can run your tests like so:
+```bash
+python -m unittest flask_tests.py
+```
 
 ## Separating API
 In the future, you will want your websites to display nice HTML by default, however we don't want your API to disappear either! The best way to separate your API from your (eventual) fancy webpage is with flask's `Blueprint` class.
