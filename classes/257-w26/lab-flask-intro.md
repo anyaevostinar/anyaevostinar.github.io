@@ -26,7 +26,7 @@ As you know from the reading, Flask is a web framework that lets you build dynam
 You're first going to build a very simple app that grabs data from a file and displays it on dynamically-built (and ugly) web pages.
 
 1. Clone down the Flask Lab classroom repository (linked on Moodle) and `cd` into that directory. This repository starts with the Flask boilerplate and loads in the Pokemon data for you.
-4. Start by making a `homepage()` function that is called when a user first goes to your website using `@app.route('/')` (feel free to make the string returned more exciting):
+4. Note that there is already a `homepage()` function that is called when a user first goes to your website using `@app.route('/')` (feel free to make the string returned more exciting):
     ```python
     @app.route('/')
     def homepage():
@@ -45,7 +45,7 @@ You're first going to build a very simple app that grabs data from a file and di
         WARNING: This is a development server. Do not use it in a production deployment.
         Use a production WSGI server instead.
     * Debug mode: off
-    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+    * Running on http://127.0.0.1:5100/ (Press CTRL+C to quit)
     ```
 
     And if you copy that URL and put it into your web browser of choice, you should see your message. Congrats, you made a website with Flask!
