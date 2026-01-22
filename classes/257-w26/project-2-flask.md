@@ -74,15 +74,16 @@ The criteria for "Core" and "Advanced" are below.
   * There is an automated test suite that has 50% coverage
   * The test suite passes
   * The command-line interface still works
-  * The correct directory structure is used
 * Design:
   * All style checks are at 5 or higher
+  * The correct directory structure is used
   * The functions/methods are mostly written at a single layer of abstraction
   * Function/method [docstrings](https://peps.python.org/pep-0257/) generally provide the required information
   * There isn't an excessive amount of repeated code
 
 ### Advanced
 * All the Core criteria are met
+* The commit to evaluate is on the team repo main branch and tagged with `flask`
 * Functionality:
   * The test suite has 90% coverage
   * The test suite includes integration tests
