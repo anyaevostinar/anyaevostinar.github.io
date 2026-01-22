@@ -67,7 +67,7 @@ Eventually, we'll put your data into a database, but for now, we'll stick with l
     def get_cell(row, column):
     ```
 
-    Use those two snippets to complete the `get_cell` function so that you can go to the page `your_url/0/1` and see a page with `Name` on it.
+    **Use those two snippets to complete the `get_cell` function** so that you can go to the page `your_url/0/1` and see a page with `Name` on it.
 
 4. Now try letting the user get an entire row of the dataset, perhaps by specifying the Pokemon name that they want. Remember that you can use additional `/` in your endpoints to specify different commands, such as `/name/<pokemon_name>`.
 
