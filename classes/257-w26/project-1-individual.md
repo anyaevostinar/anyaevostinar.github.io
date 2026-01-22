@@ -38,6 +38,8 @@ Specifically:
 * Make sure your tests are in the `Tests` subdirectory. The autograder only will find tests in that directory.
 * Remember: You should NOT write any production code for this deliverable.
 
+You likely will want to use additional `assert` methods from `unittest` and you should consult [the Python documentation](https://docs.python.org/3/library/unittest.html) to see all the options.
+
 ### Specification
 
 The Basic Command Line App has the following functions with these exact signatures:
