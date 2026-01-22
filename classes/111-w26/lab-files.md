@@ -1,13 +1,11 @@
 ---
 layout: page
 title: Files Lab 
-permalink: /classes/111-f24/files
+permalink: /classes/111-w26/files
 ---
 
-This is a lab assignment and so you will not be submitting it.
-However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
-
-I recommend making a folder for today's lab in COURSES [as you usually do](getting-started).
+## Setup
+I recommend making a folder for today's lab in [COURSES as you usually do](getting-started).
 
 ## Goals
 Get practice with reading from/writing to files.
@@ -34,9 +32,11 @@ Once you've made a prediction, create the necessary files and test your predicti
 
 ## Exercise 2
 In this exercise, you’ll be working with reading and writing files in Python. 
-First, make a new Python file and call it `citySelector.py`. Next, download the file [`us_cities_small.txt`](/classes/111-w24/us_cities_small.txt) (by right-clicking on the link and selecting `Save Link As`).
-This "text file" (hence `.txt`) contains a short list of the alphabetically first 10 US cities, with one city name on each line.
-Your task is to make your program:
+1. First, make a new Python file and call it `citySelector.py`. 
+2. Next, download the file [`us_cities_small.txt`](/classes/111-w24/us_cities_small.txt) (by right-clicking on the link and selecting `Save Link As`).
+    This "text file" (hence `.txt`) contains a short list of the alphabetically first 10 US cities, with one city name on each line.
+
+Your task is to make your program do the following:
 1. Open the file,
 2. Iterate over its contents, 
 3. Retrieve all cities from the file that end with either 'y' or 'a'. 
@@ -70,8 +70,11 @@ Let's expand the functionality of your program now that it can take other files.
     * (For instance, Birmingham and Chapel Hill would each be retrieved. )
 2. Exclude any city that ends with S, regardless of whether it begins with one of three chosen letters. As one example, Bonita Springs will now be excluded.
 
+## Submission
+Submit your completed `citySelector.py` to Moodle for an extra engagement credit.
+
 ## Extra
 If you have extra time, come up with more analysis that you can do on the `us_cities.txt` file.
 For example: Which city has the longest name? How many cities start with each letter of the alphabet?
 
-You can also try some of the [end of chapter exercises](https://moodle.carleton.edu/mod/lti/view.php?id=968122) and chapter assessment for more practice.
+You can also try some of the [chapter assessment](https://runestone.academy/ns/books/published/fopp/Files/ChapterAssessment.html?mode=browsing) for more practice.
