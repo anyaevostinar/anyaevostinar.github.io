@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Individual Deliverable 2 - Flask
-permalink: /classes/257-w26/project-2-ind
+permalink: /classes/257-s25/project-2-ind
 ---
 
 ## Overview
 
 This is the individual portion of the [Flask component](project-2-flask) of your team's project.
-For this component, you need to write a basic Flask app with two routes.
+For this component, you need to write a basic Flask app with one potential route.
 Much of this code won't end up in your team's repository because it will be duplicate. 
 Instead, the goal is to get you to practice and start thinking about the Flask app individually.
 
@@ -16,17 +16,16 @@ Instead, the goal is to get you to practice and start thinking about the Flask a
 You should work individually on this component.
 You shouldn't coordinate with your team, since the goal is that you get practice individually, and so it's fine if there is some duplication.
 You can get conceptual help from your team and others, however what you submit must be all your own work.
-**What you submit for this component, especially for revisions, cannot duplicate with what another team member had previously submitted for the team deliverable. Duplicating another team member's code will be considered academic dishonesty.** You can certainly use your code from this component for the team deliverable though.
 
 ## Due Date
 
-The individual deliverable for this iteration is due Friday **Jan. 30th** at 10pm on the ID2 repository (link on Moodle).
+The individual deliverable for this iteration is due **April 25th** at 10pm on the associated repository (link on Moodle).
 
 ## What to Submit
 
 - [ ] Your flask app `app.py` in the top-level of your repository
 - [ ] All necessary production code files in `ProductionCode`
-- [ ] (For advanced) Your tests in the `Tests` folder
+- [ ] (For exemplary) Your tests in the `Tests` folder
 
 *Do not specify the port when running the app, it doesn't work the same on different operating systems and so can mess up the grading. I.e., when you run your app, it should be just `app.run()` without any arguments*
 
@@ -35,13 +34,13 @@ The individual deliverable for this iteration is due Friday **Jan. 30th** at 10p
 
 You should write a basic Flask app with at least one route based on your team's core functionality. Specifically, you should:
 
-1. Copy over the code from your team repo that contains necessary helper functions that interact with the data and put those files into the `ProductionCode` subdirectory of your ID2 repository.
+1. Copy over the file(s) from your team repo that contain necessary helper functions that interact with the data and put those files into the `ProductionCode` subdirectory.
   * (P.S: The more efficient way to copy files from a repo would be a [git fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) of your team repo, but alas, GitHub classroom doesn’t keep track of forks & therefore, neither I nor the grader will have access.🙁)
   * You are allowed to refactor the helper functions from your team repo to work for your purposes
-  * You should put in "dummy data" to make the core functions work without your full dataset. This can be by hard-coding the data in your `ProductionCode` files or making a data folder with the dummy data.
+  * You should put in "dummy data" to make the core functions work without your full dataset. This can be by hard-coding the data in your ProductionCode files or making a data folder with the dummy data.
 2. Make a Flask app in `app.py` with at least one route that uses the core functionality in `ProductionCode`
 3. The home page of your app should provide instructions for what URL to go to to see the data you choose.
-4. For the advanced requirements, that route should use a route parameter and you should have a couple of tests in `Tests` for your Flask-specific functions.
+4. To get 'exemplary' that route should use a route parameter and you should have a couple of tests in `Tests` for your Flask-specific functions.
 
 ## Turning it in
 
@@ -50,9 +49,9 @@ You should submit the file with your individual Flask app to the ID2 repository 
 
 ## Evaluation
 
-The criteria for "Advanced" and "Core" are below.
+The criteria for "Exemplary" and "Proficiency" are below.
 
-### Core
+### Proficiency
 * Functionality:
   * The Flask app is using (possibly refactored) code from the team's project
   * There is a homepage with instructions
@@ -63,11 +62,11 @@ The criteria for "Advanced" and "Core" are below.
   * There isn't an excessive amount of repeated code
   * Style checks are all 5 or higher
 
-### Advanced
-* All the Core criteria are met
+### Exemplary
+* All the Proficiency criteria are met
 * Functionality:
   * One route uses parameter(s) to recreate one feature from the team’s command-line interface
-  * There is a test suite that passes
+  * The test suite passes
   * The test suite has at least 90% coverage
 * Design:
   * The Flask app code is very clear, potentially using helper functions to ensure that Flask-specific functions are at a single layer of abstraction
