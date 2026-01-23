@@ -11,6 +11,7 @@ Due: Wednesday, Feb 4th at 10pm
 You may work alone or with a partner, but you must type up the code yourself.  You may also discuss the assignment at a high level with other students.  You should list any student with whom you discussed each part, and the manner of discussion (high-level, partner, etc.) in a comment at the top of each file.  **You should only have one partner for an entire assignment.**
 
 You should submit your assignment on Gradescope. You submit the files `shape_parser.py`, `weather_parser.py`, and `readme.txt`.
+
 ---
 
 ## Getting started:
