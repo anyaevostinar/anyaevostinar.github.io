@@ -39,6 +39,8 @@ As with all assignments in this course, for each file in this assignment, you ar
 
 **You need a collaboration statement, even if just to say that you worked alone.**
 
+Here is the link for the [HW4 Gemini helper bot](https://gemini.google.com/gem/1v832xyNdoJT2PSACbJgi2EbxvDJW4v_f?usp=sharing). Remember that I'd appreciate you uploading an example interaction if you find this helpful so I can get an idea of if/how it is helpful and make sure it is providing accurate information.
+
 ---
 
 ## Assessment
@@ -90,7 +92,7 @@ For this first subpart, you should complete the implementations of the four shap
 * `parse_circle`
 * `parse_square`
 * `parse_rectangle`
-* `parseTriangle`
+* `parse_triangle`
 
 Each function should take in a list of information about the shape, including a possible color.  The specific list varies for each shape type.  Your functions should create the relevant shape object from `graphics.py`, fill it in (if the provided list contains a color string), and **return it**.  These functions have a return value (a shape object), but no side effect.  _They should not draw their shape._
 
