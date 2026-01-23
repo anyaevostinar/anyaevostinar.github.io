@@ -28,7 +28,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 1/23 | [More Iteration](more-iteration-prep)  | [Slides](https://docs.google.com/presentation/d/1npPjLOCfmaQREVKV4wTFXAcxCkmONxr_CoXpAIRY3E8/edit?usp=sharing), [Nested Structures](lab-nested) |  |
 | **Week 4** | **Advanced Blocks** | | |
 | 1/26| [Files Prep](files-prep) | [Slides](https://docs.google.com/presentation/d/1CJLTGmm_6ciJmZOOQ6ILTiPTGw4TfnMCEEEGtf7eGuw/edit?usp=sharing), [Working with Files](files)	| |
-| 1/28 | [Mutating Lists Prep](mutating-lists-prep); [HW3](hw3)	| [Slides](), TBD | [HW4: Parsing Data](hw4) |
+| 1/28 | [Mutating Lists Prep](mutating-lists-prep); [HW3](hw3)	| [Slides](https://docs.google.com/presentation/d/1mUXPXXj5BlXJ38_9zeZSfkkFtVuTsovqf_-89jtrHcY/edit?usp=sharing), [Mutating Lists](lab-mutating-lists) | [HW4: Parsing Data](hw4) |
 | 1/30 |	[Study](exam2)  	|  [Slides](), [Exam 2](exam2) 	|   |
 | **Week 5** | **Functions** |  | |
 | 2/2 | Dictionaries Prep | [Slides]()	 | |
