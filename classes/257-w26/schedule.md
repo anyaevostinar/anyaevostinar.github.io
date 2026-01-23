@@ -36,7 +36,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 1/23 | [Ethics in Tech Prep](ethics-prep), [ID1 due 10pm](project-1-ind) | [Slides](https://docs.google.com/presentation/d/1F4_I0_UP8nuzJrqAJdD5PccUY_UNUjwhvoR43g78OVU/edit?usp=sharing), Intro to Tech Ethics | |
 | **Week 4** | **Flask Component** | | |
 | M 1/26 | [TD1 due 10pm](project-command-line); [Flask Prep](flask-prep)| [Slides](https://docs.google.com/presentation/d/1Qyxs9RRSoNiYyCdA_P2CQoaeVRqHC6AUiIGcI-BfdeI/edit?usp=sharing), [Intro to Flask](flask-intro) | [TD2: Flask](project-2-flask), [ID2: Flask](project-2-ind) |
-| W 1/28 | [Classes Prep](classes-prep) | [Slides](), Designing classes | |
+| W 1/28 | [Classes Prep](classes-prep) | [Slides](https://docs.google.com/presentation/d/1EbSYVXBLzlvSwJS2LMp03-DdgaUiPYYMzLxmNJUpkuk/edit?usp=sharing), Designing classes | |
 | F 1/30 | [ID2 due 10pm](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
 | **Week 5** | **Database Component** | | |
 | M 2/2 | [TD2 due 10pm](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](), [Starting with Databases](database-lab) | [ID3: Database](project-3-ind), [Midterm Reflection](reflection-mid)|

@@ -1,13 +1,11 @@
 ---
 layout: page
 title: Mutating Lists Lab 
-permalink: /classes/111-f24/lab-mutating-lists
+permalink: /classes/111-w26/lab-mutating-lists
 ---
 
-This is a lab assignment and so you will not be submitting it.
-However, the concepts and practice will help you on both the homework and quizzes so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
-
-I recommend making a folder for today's lab in [COURSES](getting-started) as you usually do.
+## Setup
+I recommend making a folder for today's lab in [COURSES as you usually do](getting-started).
 
 ## Exercise 1
 Predict what the reference diagram will look like after the following code snippet has run:
@@ -36,7 +34,7 @@ stored in the variable `my_team`. For the example, your program should print out
 If you solved this problem without a loop, using mostly list methods, you should try to come up with a solution that loops over the list.
 
 ## Exercise 3
-Imagine you have a list `example = [1, 2, 3, 4]`. Write a program that rotates the items of that list to the left by one position and then prints `example`:
+Imagine you have a list `example = [1, 2, 3, 4]`. Write a program that rotates the items of that list to the left by one position and then prints `example`, without using `pop` or `del`:
 
 ```python
 example = [1, 2, 3, 4]
@@ -46,7 +44,10 @@ example = [1, 2, 3, 4]
 print(example) #should print [2, 3, 4, 1]
 ```
 
-## Exercise 4
+## Submission
+Submit solutions to exercises 2 and 3 to Moodle for an extra engagement credit.
+
+## Extra 1
 Many of the functions for lists aren't actually needed since you can implement them yourself, though they are convenient.
 Try writing code snippets which accomplish the same things as the built-in list methods:
 * Reverse a list
@@ -57,5 +58,5 @@ Try writing code snippets which accomplish the same things as the built-in list 
 * Slicing (that makes a new list remember!)
 * Sort a list - we'll talk about sorting in a few weeks, but think about how you could do it
 
-## Extra
-If you have extra time, work through some of the [end of chapter exercises and assessments](https://moodle.carleton.edu/mod/lti/view.php?id=968100) from the textbook.
+## Extra 2
+If you have extra time, work through some of the [end of chapter exercises and assessments](https://runestone.academy/ns/books/published/fopp/TransformingSequences/Exercises.html?mode=browsing) from the textbook.
