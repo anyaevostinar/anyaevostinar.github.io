@@ -30,7 +30,6 @@ for i in range(n):
         print('*', end='')
     print()
 
-
 # Snippet 3
 
 n = 4
@@ -39,40 +38,6 @@ for i in range(n):
         print('-', end='')
     for j in range(i, n+i):
         print(j, end='')
-    print()
-
-
-# Snippet 4
-
-n = 4
-for i in range(0,n):
-    for j in range(0,n-i-1):
-        print(' ', end='')
-    for j in range(n-i-1,n):
-        print('*', end='')
-    print()
-
-
-# Snippet 5
-
-n = 4
-for i in range(0,n):
-    for j in range(0,n-i-1):
-        print(' ', end='')
-    for j in range(n-i-1,n+i):
-        print('*', end='')
-    print()
-
-
-
-# Snippet 6
-
-n = 4
-for i in range(n):
-    for j in range(0,-1*n,-1):
-        for k in range(2):
-            print(j*k, end='*')
-        print(i, end=' ')
     print()
 ```
 
@@ -180,6 +145,45 @@ Extend your program from Exercise 4 to take both a message and a rotation (an in
 
 ## Submission
 Submit your completed solutions for exercise 4-6 to Moodle for an extra engagement credit.
+
+## More practice
+Here are some more snippets to practice predicting:
+
+```python
+
+# Snippet 4
+
+n = 4
+for i in range(0,n):
+    for j in range(0,n-i-1):
+        print(' ', end='')
+    for j in range(n-i-1,n):
+        print('*', end='')
+    print()
+
+
+# Snippet 5
+
+n = 4
+for i in range(0,n):
+    for j in range(0,n-i-1):
+        print(' ', end='')
+    for j in range(n-i-1,n+i):
+        print('*', end='')
+    print()
+
+
+
+# Snippet 6
+
+n = 4
+for i in range(n):
+    for j in range(0,-1*n,-1):
+        for k in range(2):
+            print(j*k, end='*')
+        print(i, end=' ')
+    print()
+```
 
 ## Extra
 *Note: this part is much harder, but hopefully a fun extension!*
