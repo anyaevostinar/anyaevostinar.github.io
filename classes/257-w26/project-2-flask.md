@@ -43,6 +43,7 @@ Your team should write a program that:
 * Has at least one route that uses at least one route parameter meaningfully
 * Has a useful message when the user enters an incorrect URL (i.e. a 404 page)
 * Has an automated test suite with at least 90% coverage for both the core functions and the Flask-specific functions
+* Isolates the API via a Flask `Blueprint`
 * Follows the function design principles and has generally good style
 * Has documentation through [docstrings](https://peps.python.org/pep-0257/) and in-line comments where appropriate
 * Follows the [recommended Python style](https://peps.python.org/pep-0008/)
@@ -88,6 +89,7 @@ The criteria for "Core" and "Advanced" are below.
   * The test suite has 90% coverage
   * The test suite includes integration tests
   * The 404 page has clear instructions on how to use the website features, including specific, functional examples
+  * The API functionality is isolated via a `Blueprint` and appropriate URL
   * The features are interesting and enable the user to gain a large amount of information from the dataset
   * The features support the specified user stories
   * The route parameter(s) are highly effective in enabling the user to gain specific information from the dataset
