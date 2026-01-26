@@ -17,7 +17,7 @@ After class, you should be able to:
 * Use Flask to create a basic website
 
 ## Readings
-To achieve the basic learning objectives, you should read the following sections of the Flask Tutorial on [pythonbasics.org](https://pythonbasics.org/) and try out the Hello World app:
+To achieve the basic learning objectives, you should read the following sections:
 
 1. [What is Flask](https://pythonbasics.org/what-is-flask-python/)
 2. [Flask Tutorial - Hello World](https://pythonbasics.org/flask-tutorial-hello-world/#Hello-World) - note that this references having things installed, don't worry about actually running anything, just read through what each line of the basic app does.
