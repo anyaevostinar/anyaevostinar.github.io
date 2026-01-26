@@ -169,6 +169,8 @@ You should be able to place five markers within the grid.  Note that so far, the
 
 Your code from Part 2 just blindly drew player markers on the board, even if there was already a marker in a given position.  Now, you should fill in the `is_valid_grid_cell` and `update_board_state` functions.
 
+*Note: `update_board_state` requires thinking about mutating lists, which is the material for Wednesday Jan 28th. I'm sorry for not catching that when I rearranged the order of topics, but remember that you can make that update during revisions if you need to.*
+
 Once you have completed this implementation, you can test your code using the `test_placing_valid_markers` function.  This is very similar to the test function for Part 2, except that it waits until the user clicks a valid grid cell (by calling `is_valid_grid_cell`), and then updates the board state using `update_board_state` before printing out the board state (using `print_board_state`).
 
 ---
