@@ -113,7 +113,7 @@ class TestSOMETHING(unittest.TestCase):
 The `b` stands for byte and its because `response.data` is a 'bytes-like object'.
 Once you make more complicated pages, you can use `assertIn` to check for the specific data that you care about without worrying about the HTML tags.
 
-Open the `flask_tests.py` file and **write tests for your existing functions and routes** (Yes, we're breaking TDD since we already have the production code written. It'd be a good idea to purposefully break your production code to make sure your tests fail first.) You can run your tests like so:
+Open the `flask_tests.py` file and **write tests for your existing functions and routes** (Yes, we're breaking TDD since we already have the production code written. It'd be a good idea to purposefully break your production code to make sure your tests fail first.) Remember to call `load_data`, probably in a `setUp` method. You can run your tests like so:
 ```bash
 python -m unittest flask_tests.py
 ```
@@ -137,6 +137,13 @@ app.register_blueprint(api, url_prefix='/api')
 @api.route('/<int:row>/<int:column>/')
 ```
     Try out changing your `get_cell` to be an API endpoint and then go to `your_url/api/0/1` to check that it's working.
+
+5. Once you have the API separated, you need to make sure to register it once (and only once) in your tests. This is also a good time to move that `test_client` creation and `load_data` to a `setUp` method to avoid code duplication if you hadn't already. Add the following to your `setUp` method to allow for testing your API routes:
+    ```python
+    if 'api' not in app.blueprints: #app.blueprints is a dictionary of registered Blueprints
+        app.register_blueprint(api, url_prefix='/api') #if it's not already there, we add it
+    ```
+
 
 ## Applying to your project
 You're now all set to turn your command-line interface project into a Flask app.
