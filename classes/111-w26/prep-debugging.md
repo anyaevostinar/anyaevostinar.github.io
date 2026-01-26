@@ -17,6 +17,7 @@ Before class, you should  be able to:
 After class, you should be able to:
 * Systematically debug a program with each type of error
 * Combine the building blocks we've learned about into larger programs
+* Write basic tests to check your code's functionality
 
 ## Resources
 You should read the following:
