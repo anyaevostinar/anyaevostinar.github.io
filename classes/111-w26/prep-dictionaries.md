@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dictionaries Preparation
-permalink: /classes/111-f24/dictionaries-prep
+permalink: /classes/111-w26/dictionaries-prep
 ---
 
 ## Overview
@@ -21,6 +21,33 @@ After class, you should be able to:
 * Use the accumulator pattern with a dictionary
 
 ## Resources
-You should read/watch the following and complete the embedded checks [through Moodle](https://moodle.carleton.edu/mod/lti/view.php?id=967846):
-* Runestone 11.1-11.4
-* Runestone 11.6-11.9
+You should readthe following (it's a slightly older version of the textbook that we've been using):
+* [11.1 Introduction Dictionaries](https://runestone.academy/ns/books/published/fopp/Dictionaries/intro-DictionaryGoals.html?mode=browsing)
+* [11.2 Getting Started with Dictionaries](https://runestone.academy/ns/books/published/fopp/Dictionaries/intro-Dictionaries.html?mode=browsing)
+* [11.3 Dictionary Operations](https://runestone.academy/ns/books/published/fopp/Dictionaries/Dictionaryoperations.html?mode=browsing)
+* [11.4 Dictionary Methods](https://runestone.academy/ns/books/published/fopp/Dictionaries/Dictionarymethods.html?mode=browsing)
+* [11.6 Intro to Accumulating with a Dictionary](https://runestone.academy/ns/books/published/fopp/Dictionaries/intro-AccumulatingMultipleResultsInaDictionary.html?mode=browsing)
+* [11.7 Accumulating with a Dictionary](https://runestone.academy/ns/books/published/fopp/Dictionaries/AccumulatingResultsFromaDictionary.html?mode=browsing)
+* [11.8 Accumulating the Best Key](https://runestone.academy/ns/books/published/fopp/Dictionaries/AccumulatingtheBestKey.html?mode=browsing)
+* [11.9 When to Use a Dictionary](https://runestone.academy/ns/books/published/fopp/Dictionaries/WPChoosingDictionaries.html?mode=browsing)
+
+## Checks
+Submit answers to the following on Moodle:
+1. What will the following code print?
+    ```python
+    d = {'spring': 'autumn', 'autumn': 'fall', 'fall': 'spring'}
+    print d['autumn']
+    ```
+2. In order to get the last line to print “success”, what should the value `x` (in the last line) be?
+    ```python
+    d = { 'work': 'success', 'success': 'failure', 'failure': 'money', 'time': 'work', 'industry': 'time'}
+    print d[d[x]]
+    ```
+3. What does the following block of code do?
+    ```python
+    d =  {'a': 2, 'b': 3, 'c': 1}
+    e = {}
+    for c in d:
+        e[d[c]] = c
+    print(e)
+    ```
