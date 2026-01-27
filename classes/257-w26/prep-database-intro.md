@@ -22,14 +22,14 @@ After class, you should be able to:
 
 ## Readings
 To achieve the basic learning objectives, you should read the following:
-* The following sections of the [SQL tutorial](http://www.w3schools.com/sql/default.asp):
-    * [SQL Intro](http://www.w3schools.com/sql/sql_intro.asp)
-    * [SQL Syntax](https://www.w3schools.com/sql/sql_syntax.asp)
-    * [SQL Select](https://www.w3schools.com/sql/sql_distinct.asp)
-    * [SQL Where](https://www.w3schools.com/sql/sql_where.asp)
-    * [SQL Order by](https://www.w3schools.com/sql/sql_orderby.asp)
-    * [SQL Create Table](http://www.w3schools.com/sql/sql_create_table.asp)
-    * [SQL Data Types](http://www.w3schools.com/sql/sql_datatypes_general.asp), note that Postgres has some small differences, so here is the [Postgres Data Types](https://www.postgresql.org/docs/current/datatype.html) for future reference
+* The following sections of the SQLBolt tutorial:
+    * [Intro to SQL](https://sqlbolt.com/lesson/introduction)
+    * [Lesson 1: SELECT queries 101](https://sqlbolt.com/lesson/select_queries_introduction)
+    * [Lesson 2: Queries with constraints](https://sqlbolt.com/lesson/select_queries_with_constraints)
+    * [Lesson 4: Filtering and Sorting](https://sqlbolt.com/lesson/filtering_sorting_query_results)
+    * [Lesson 16: Creating tables](https://sqlbolt.com/lesson/creating_tables)
+    * [SQL Create Table](http://www.w3schools.com/sql/sql_create_table.asp), note that Postgres has some small differences, so here is the [Postgres Data Types](https://www.postgresql.org/docs/current/datatype.html) for future reference
+* Other sections of the tutorial may be useful reference depending on what you want to do for your project
 
 
 
