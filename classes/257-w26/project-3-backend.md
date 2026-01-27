@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Project Component 3 - Database Backend
-permalink: /classes/257-s25/project-3-backend
+title: Team Deliverable 3 - Back-end
+permalink: /classes/257-w26/project-3-backend
 ---
 
 ## Overview
@@ -17,7 +17,7 @@ You are able to get help from outside sources, as specified in the syllabus, but
 
 ## Due Date
 
-This component of the project is due Wednesday May 7th at 10pm on GitHub.
+This component of the project is due Monday February 16th at 10pm on GitHub.
 
 ## What to submit
 ### Individual
@@ -26,20 +26,20 @@ This component of the project is due Wednesday May 7th at 10pm on GitHub.
 ### Team
 * Dataset in database on `stearns`
 * `ProductionCode` updated to work with database
-* `cl.py`, `app.py`, `Tests` still functional and updated if necessary
+* `command_line.py`, `flask_app.py`, `Tests` still functional and updated if necessary
 
 ## Your Task
 
-Your team should create a Postgres database back-end for your Flask app using the [psycopg2](https://www.psycopg.org/docs/index.html) module. Specifically, you should:
+Your team should create a Postgres database back-end for your Flask app using the [records](https://github.com/kennethreitz/records) module. Specifically, you should:
 * Put your data into a well-structured database named based on your team name on `stearns` (as specified on Moodle)
-* Use `psycopg2` to connect your existing functionality to the database and update your code to make appropriate queries on the database
+* Use `records` to connect your existing functionality to the database and update your code to make appropriate queries on the database
 * Update your test suite if necessary based on the refactoring that you do on your code
 
 The grader will assess your project with the following workflow:
 * Connect to `stearns`
 * Pull down your repository from the appropriate tag
 * Create the `psql_config.py` file with your team database name and information
-* Run your Flask app `app.py`
+* Run your Flask app `flask_app.py`
 * Run your test suite
 * Look at your code
 
@@ -56,31 +56,31 @@ git push origin database
 
 ## Evaluation
 
-The criteria for "Proficiency" and "Exemplary" are below.
+The criteria for "Core" and "Advanced" are below.
 
-### Proficiency
+### Core
 * Files:
   * Database is in your team's database on `stearns`
   * Code is written to work for your team's database name as specified on Moodle
-  * Flask app file named `app.py`
+  * Flask app file named `flask_app.py`
 * Functionality:
   * Command line interface works with the new database
-  * Flask app interface works with the new database
+  * Flask API works with the new database
   * Executes queries for standard cases correctly
   * The automated test suite passes (no additional tests are required) and has 50% coverage
   * SQL data types match the types from the original dataset and/or are appropriate for the modified data from the dataset
 * Design:
   * Good separation of responsibilities. Some minor tweaks to class design could improve the code (i.e., tighter cohesion and/or looser coupling). 
   * Model-view-controller paradigm followed.
-  * Functions/methods follow the principles of good design (e.g. descriptive names, only necessary arguments)
-  * Function/method signatures match the SQL queries (i.e. get_events_by_type() correspond to a SQL query that selects all events of that type)
-  * Column names strongly signify the data they contain (e.g. clear names, no obscure acronyms)
+  * Functions/methods follow the principles of good design (e.g. only necessary arguments, single layer of abstraction)
+  * Function/method signatures match the SQL queries (i.e. `get_events_by_type()` corresponds to a SQL query that selects all events of that type)
+  * Column names signify the data they contain (e.g. clear names, no obscure acronyms)
   * Docstrings for each method
   * Style checks all at 5 or higher
   
 
-### Exemplary
-* All the Proficiency criteria are met
+### Advanced
+* All the Core criteria are met
 * The commit to evaluate on the team repo is tagged with `database` (See instructions in [How to Submit](https://docs.google.com/document/d/1WJfFKe-xE7ytKzmMba3vMOORZe6_m-0v854SnAb6mWk/edit?tab=t.0#heading=h.h8jfjcdyduzb))
 * Functionality:
   * Failing queries have helpful error messages
@@ -89,6 +89,7 @@ The criteria for "Proficiency" and "Exemplary" are below.
     * If you have columns that aren’t being used in this deliverable but have plans to be used in the front-end deliverable, let us know in `README.md`
   * Data types are well-chosen for the dataset
   * The test coverage is at 90% or higher
+  * All previous code using csv files has been removed and no "dead code"
 * Design:
    * Strong separation of responsibilities between classes, and between methods within classes. 
    * Tight cohesion in each class, and loose coupling between classes. 
@@ -100,10 +101,6 @@ The criteria for "Proficiency" and "Exemplary" are below.
    * Docstrings are clear and consistent for each method
    * Style checks are all at 10
 
-
-## Addendums
-You weren't penalized for this on the initial submissions, but revisions need to hold to it:
-* You need to remove your old code that references your data files (in general, you should always remove "dead code" that isn't used anymore)
 
 ## Q&A
 
