@@ -57,7 +57,8 @@ The criteria for "Core" and "Advanced" are below.
 ### Core
 * Functionality:
   * Table is created with `createtable.sql`
-  * `README` specifies the correct copy command with a **relative file path**
+  * Data is in the `Data` folder
+  * `README` specifies the correct copy command with a **relative file path for your data** from the top-level of the repository, so `Data/` should be in the path
   * Code to be run is named `app.py`
   * Executes the expected query correctly
   * Data types match the types from the original dataset and/or are appropriate for the modified data from the dataset
