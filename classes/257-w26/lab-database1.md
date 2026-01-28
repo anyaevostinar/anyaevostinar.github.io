@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SQL and Database Lab
-permalink: /classes/257-s25/database-lab
+permalink: /classes/257-w26/database-lab
 ---
 
 ## Objectives
@@ -10,122 +10,180 @@ permalink: /classes/257-s25/database-lab
 * Learn how to set up and test your own database tables on the web server.
 * Set up your database for your [individual back-end deliverable](project-3-ind)
 
+## Contents
+* [Working with `stearns`](#working-with-stearns-server)
+* [Working in your database](#working-in-your-database)
+* [Larger dataset](#larger-dataset)
+* [Starting on ID3](#starting-on-id3)
 
-## Setting up your database
+
+## Working with `stearns` server
 First, we'll make sure that you can connect to the remote server.
 
-### Step 1: SSH Login
-VSCode has a handy extension for making it easy to connect to a remote server through VSCode, and you hopefully already have [Remote-SSH installed](https://code.visualstudio.com/docs/remote/ssh). 
+### Step 1: Connect to `fern`
 
-Therefore, you should open the Command Palette (View->Command Palette...) and then select `Remote-SSH: Connect to Host...`
+(If you are used to using VSCode to connect to servers, sorry, you can't anymore because VSCode ultimately crashes the server due to a bug.)
+(If you get stuck, there are screenshots in [this guide](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=168271).)
 
-You can also click this button in the lower-left corner:
+**Go** to [https://fern.mathcs.carleton.edu/jupyter/hub/login](https://fern.mathcs.carleton.edu/jupyter/hub/login) and log in with your Carleton credentials
 
-![Button with > < icons](/classes/257-s25/RemoteButton.png)
+`fern` shares a filesystem with all the other servers and so you'll possibly see things from previous classes and anything you do on `fern` will also show up on `stearns`.
 
-If it asks you what system to use, select Linux (it will reject your request if you select Windows!). 
 
-You should then enter:
+### Step 2: Set up your working space on the file system
 
-`yourCarletonUserName@stearns.mathcs.carleton.edu`
-And your **Carleton** password if prompted.
+* **Open a `Terminal`** by clicking the icon with a $ sign and a black box.
 
-If it asks you about authorizes the fingerprint, confirm.
+* **Set up a long-term working directory named cs257:** In that terminal, create a folder named `cs257`, where you will do your work for the term:
 
-### Step 2: Getting setup
-It might take a minute for the login to complete. Once you are on stearns, you can 'ls' to get an idea of what is already there (there might be a lot if you've worked with other servers on campus since they share a file structure). I recommend you make a folder to keep all your work in for today called 'webProject'.
+    ```bash
+    mkdir cs257
+    ```
 
-Before we go any further, we need to get our code and data into our working directory on stearns. Once you've ssh'ed in and you've navigated to your working directory, clone your ID3 repository by grabbing the URL from GitHub and typing the following into your connected Terminal: 
+    If you type the command `ls` in the terminal after that (and then hit enter/return), you’ll see the new folder listed. You can also look at the file explorer, and the folder should show up there, too.
+
+### Step 3: Log in to `stearns`
+
+In the Terminal, type 
+```bash
+ssh YOUR_USER_NAME@stearns.mathcs.carleton.edu
+```
+
+And then your password. This is where you will be running your code going forward.
+
+### Step 4: Getting setup
+Now clone your ID3 repository by grabbing the URL from GitHub and typing the following into your connected Terminal: 
 
 ```bash
 git clone [URL of repository]
 ```
 
-### Step 3: Creating a table
-Now we're going to get ready to import your data into the database! In this part of the lab, we'll be interacting directly with the database via psql. This [cheatsheet](https://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf) contains all of the psql commands. 
+In this starter repository I've included the `Pokemon.csv` dataset along with a smaller section of it `Pokemon_small.csv` for you to work with initially. It is a good idea to always work with a subset of your data at first as you are figuring things out!
 
-The name of your database is the same as your username. The password you can find in the feedback on the 'assignment' Individual Database information, along with the port numbers that you'll need later.
+## Working in your database
+You're now ready to create the first table in your database. In this class you'll have both an individual database and a team database. Today, you'll be creating a practice table about Pokemon in your individual database. 
 
-First, we need to write a series of SQL statements that will actually create a table. 
+The name of your **individual database** is the same as your username. The password you can find in the feedback on the 'assignment' Individual Database information.
 
-1. Make a script called `createtable.sql` for this purpose and put in the following:
-```sql
-DROP TABLE IF EXISTS test;
-CREATE TABLE test (
-  col1 text,
-  col2 int
-);
-```
+### Step 1: Creating a table
+In this part of the lab, we'll be interacting directly with the database via `psql`. This [cheatsheet](https://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf) contains all of the psql commands in case you want to explore more later.  
 
-Here's what this script does
+1. Open the `Pokemon_small.csv` and note how many columns it has, what types they should be, and what good names for them would be.
 
-* Make sure the table doesn't already exist in the database. If it does, remove it from the database. (This is what the first line in the script does.)
-* Create the table in the database and give it a name. (This is what the second line does.)
-* Tell the database which data to import, what its name in the database should be, and the type of data to import. (Refer to the [SQL tutorial](http://www.w3schools.com/sql/default.asp) for information on [available data types](http://www.w3schools.com/sql/sql_datatypes_general.asp).)
+2. You will use a series of SQL statements to create the table (you could do this in the interactive mode, but its inconvinient). Open the file `createtable.sql` complete it based on the columns of `Pokemon_small.csv`, here is what it starts with:
+  ```sql
+  DROP TABLE IF EXISTS pokemon; --Remove the table if it already exists--
+  CREATE TABLE pokemon ( --Create the table--
+    --Define the columns--
+    number INTEGER,
+    --Your code here--
+  );
+  ```
+  You can refer to the [prep reading](https://sqlbolt.com/lesson/creating_tables) to refresh on `CREATE TABLE`, though we're using a simpler setup to start.
 
 
-2. Modify this script so that it reflects your own data. 
+3. In the Terminal, run the command:
+  ```bash
+  psql --file=createtable.sql
+  ```
+  (The short option is `-f createtable.sql`)
 
-3. Run the command:
-```bash
-psql -f createtable.sql
-```
-You will need to enter your database password if prompted. (Sometimes you aren't prompted for it, which is fine, and I have yet to figure out when you will or won't be, so good to be prepared...)
+  You will need to enter your database password if prompted. (Sometimes you aren't prompted for it, which is fine, and I have yet to figure out when you will or won't be, so good to be prepared...) You're successful if you see:
+  ```bash
+  psql:createtable.sql:1: NOTICE:  table "pokemon" does not exist, skipping
+  DROP TABLE
+  CREATE TABLE
+  ```
 
 4. Run `psql` to enter the "interpreter".
 
-5. Type `\dt` at the prompt. Do you see your table in the database? If not, raise your hand for help.
+5. Type `\dt` at the prompt to make sure you see your table in the database:
+  ```psql
+                      List of relations
+  Schema |            Name            | Type  |  Owner   
+  --------+----------------------------+-------+----------
+  public | pokemon                    | table | your_user_name
+  ```
 
-## Preparing/cleaning the data
-Now we're going to get your data ready. Some preparation of your data files locally will make it easier for you to load your data into a database on the server. You'll be dealing with both an individual deliverable with a database and a team deliverable with a database, but today we are going to focus on just the individual deliverable.
-
-For the individual deliverable, you will use some (or all) of your team's data to get practice creating and working with a database. It's very important that the data you use for your individual deliverable is **less than 20MB!** (Otherwise the server will run out of room!)
-
-### Step 1: Make sure it's CSV
-Most of your datasets are already in CSV format, but if the portion that you want to use isn't in CSV, you can most likely open it in Microsoft Excel (or Google Sheets, or other Excel-like program) and then save it to 'csv' format to convert it.
-
-### Step 2: Thinking about structure
-Next, while you have the data open in a spreadsheet or text editor, think about how you want to structure your database table. Which columns do you want to import? What data types would you like to store this data as? Will you have one table or multiple tables? 
-
-**Modify your data file** so that it only contains the columns that you want to import into your database. (You can do this in Excel/Google Sheets/a text editor, or if you're really feeling ambitious you can write a program in your favorite language to modify the data file.)
-
-### Step 3: Removing column headers
-You will need to remove the headers for columns from the dataset that you import to your database, so do that now.
-
-### Step 4: Push to individual repo
-Once you are happy with the size and structure of your data (make sure it is less than 20MB!), add, commit, and push it to your ID3 repository.
-
-Verify on GitHub that it is there since that's how we'll be getting it onto the server.
-
-
-## Working with your data
-Now you're ready to import your data onto the server. 
-
-1. Connect back to stearns if you are no longer connected and navigate back to your ID3 repository.
-
-2. Get back into the psql interpreter with `psql`.
-
-3. At the prompt, type the following exactly as you see here, all on one line (replacing the values in [ ] with the correct names, and getting rid of the []):
+6. At the prompt, run the copy command to load the data from `Pokemon_small.csv` into the table `pokemon`:
 ```sql
-\copy [your table name] FROM '[data file name]' DELIMITER ',' CSV 
+\copy pokemon FROM 'Pokemon_small.csv' DELIMITER ',' CSV HEADER
 ```
+  This command is also specifying that the file uses ',' to separate and is a CSV with a header line (which shouldn't be loaded into the data).
+  (Note that unlike SQL queries, \copy does not require a semicolon at the end of the statement.)
 
-For example, to import some dragon data into the dragon table, I would type in the following:
-```sql 
-\copy dragons FROM 'dragonData.csv' DELIMITER ',' CSV
-```
+  You should then see:
+  ```psql
+  COPY 14
+  ```
+  Which is how many lines were in the data file.
 
-(Note that unlike SQL queries, \copy does not require a semicolon at the end of the statement.)
-
-4. You will need to specify your copy command in the README for your individual deliverable, so you might as well add it right now
-
-5. Let's test to see if it worked. Type a simple SQL query statement at the prompt. Did you get the expected data back? If you were using the dragon data, you could do something like:
+7. Let's test to see if it worked. Type the necessary SQL query statement at the prompt to just get all the data and make sure that you see data about the first 10 Pokemon, like so:
 ```sql
-SELECT * FROM dragons WHERE age>6 ORDER BY age DESC;
+ number |           name            | type  
+--------+---------------------------+-------
+      1 | Bulbasaur                 | Grass
+      2 | Ivysaur                   | Grass
+      3 | Venusaur                  | Grass
+      3 | VenusaurMega Venusaur     | Grass
+      4 | Charmander                | Fire
+      5 | Charmeleon                | Fire
+      6 | Charizard                 | Fire
+      6 | CharizardMega Charizard X | Fire
+      6 | CharizardMega Charizard Y | Fire
+      7 | Squirtle                  | Water
+      8 | Wartortle                 | Water
+      9 | Blastoise                 | Water
+      9 | BlastoiseMega Blastoise   | Water
+     10 | Caterpie                  | Bug
+(14 rows)
 ```
 
-## Testing your database
-Now is a good time to try out some of the queries that you intend to allow users to do on your data. We'll eventually be using a Python library to script our SQL queries, but for now, it's useful to learn how to construct SQL queries directly, in the psql interpreter
+## Larger Dataset
+You've now gone through the process with a small dataset, great! The next step is to do it with a larger "real" dataset, `Pokemon.csv`. 
+
+### Loading in full dataset
+Go through the same process, but now with something closer to your project datasets:
+
+1. Check `Pokemon.csv` to see what columns it has and think about what good column names and types would be. You can consult the [Postgres Types documentation](https://www.postgresql.org/docs/current/datatype.html) to see what the options are.
+
+2. Update your `createtable.sql` to work with the full dataset.
+
+3. Run your `createtable.sql` script again to recreate your table.
+  Note that you can run `createtable.sql` from within `psql` with:
+  ```psql
+  \i createtable.sql
+  ```
+
+4. Run an updated `\copy` command to load in the full dataset, which is 800 lines.
+
+### Practicing SQL with full dataset
+Try writing single SQL queries to accomplish the following (remember to lean on your team and reference the [prep readings](intro-database-prep) if you aren't sure where to start):
+* Find all the Legendary Pokemon that are water types. Include both their types in your output:
+  ```psql
+          name         | type_1 | type_2 
+  ---------------------+--------+--------
+  Suicune             | Water  | 
+  Kyogre              | Water  | 
+  KyogrePrimal Kyogre | Water  | 
+  Palkia              | Water  | Dragon
+  Volcanion           | Fire   | Water
+  (5 rows)
+  ```
+* Find all the pokemon with HP less than or equal to 10 (there are two).
+* Find the 10 fire pokemon with the highest special attack (remember to check both types). Make sure to order them highest to lowest.
+* Explore the [aggregate function](https://sqlbolt.com/lesson/select_queries_with_aggregates) options to find the average `hp` of each Type 1 group. Try to order by the average hp from greatest to least.
+
+## Submission
+Include your queries from the previous section in a file `examples.sql` and push your changed files to the lab repository to complete this lab.
+
+## Starting on ID3
+Once you finish the lab, you should start going through the same steps for ID3:
+* Identify a *small* subset of your team's data and copy it into a new `.csv` file in your ID3 repository
+* Create a `createtable.sql` file to create a table for your small dataset.
+* Determine the `\copy` command needed to load the data into the table and place that in the `README.md` of the repository
+
+We'll discuss on Wednesday how to do the rest of ID3. For now, practice your SQL more by testing out queries that will grab the necessary data from your database:
 
 1. Identify a simple query that your users might want to do on your data, for example one of your core functions from your team project, or the data route that you chose for your flask deliverable.
 2. Can it be boiled down to a single SQL statement? If not, break the query down into simpler parts.
@@ -134,8 +192,4 @@ Now is a good time to try out some of the queries that you intend to allow users
 5. If you didn't get the expected results, or you got an error, fix the query and try again.
 6. Repeat with other potential queries. Make your queries more complex as you gain confidence.
 
-## Next steps
-On Friday, you'll be setting up your team's database together. In preparation for that, you all should coordinate on cleaning and preparing your data. It would be good to start figuring out what queries can recreate your Python methods that grab data from your dataset. If you want to get ahead on connecting a Flask app to a database, feel free to start looking at [Wednesday's lab](psycopg2).
 
-
-**Acknowledgements: This lab was based off one made by Prof Amy Csizmar Dalal.**
