@@ -175,7 +175,7 @@ Try writing single SQL queries to accomplish the following (remember to lean on 
 * Explore the [aggregate function](https://sqlbolt.com/lesson/select_queries_with_aggregates) options to find the average `hp` of each Type 1 group. Try to order by the average hp from greatest to least.
 
 ## Submission
-Include your queries from the previous section in a file `examples.sql` and push your changed files to the lab repository to complete this lab.
+Include your queries from the previous section in the file `examples.sql` and push your changed files to the lab repository to complete this lab.
 
 ## Starting on ID3
 Once you finish the lab, you should start going through the same steps for ID3:

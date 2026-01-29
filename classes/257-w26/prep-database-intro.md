@@ -26,6 +26,7 @@ To achieve the basic learning objectives, you should read the following:
     * [Intro to SQL](https://sqlbolt.com/lesson/introduction)
     * [Lesson 1: SELECT queries 101](https://sqlbolt.com/lesson/select_queries_introduction)
     * [Lesson 2: Queries with constraints](https://sqlbolt.com/lesson/select_queries_with_constraints)
+    * [Lesson 3: Queries with constraints part 2](https://sqlbolt.com/lesson/select_queries_with_constraints_pt_2)
     * [Lesson 4: Filtering and Sorting](https://sqlbolt.com/lesson/filtering_sorting_query_results)
     * [Lesson 16: Creating tables](https://sqlbolt.com/lesson/creating_tables)
     * [SQL Create Table](http://www.w3schools.com/sql/sql_create_table.asp), note that Postgres has some small differences, so here is the [Postgres Data Types](https://www.postgresql.org/docs/current/datatype.html) for future reference
