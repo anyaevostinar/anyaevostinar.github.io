@@ -37,7 +37,7 @@ id2-flask-your-username
     core.py #or whatever
   Tests
     test_app.py
-app.py
+  app.py
 ```
 
 [Here is an example](https://github.com/anyaevostinar/257-IndDel2) (i.e. the one that I meant to have as a template for you...)
