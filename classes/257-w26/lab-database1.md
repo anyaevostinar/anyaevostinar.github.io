@@ -174,8 +174,23 @@ Try writing single SQL queries to accomplish the following (remember to lean on 
 * Find the 10 fire pokemon with the highest special attack (remember to check both types). Make sure to order them highest to lowest.
 * Explore the [aggregate function](https://sqlbolt.com/lesson/select_queries_with_aggregates) options to find the average `hp` of each Type 1 group. Try to order by the average hp from greatest to least.
 
+## Multiple Tables
+It's time to practice working with multiple tables in a single database. For both `Teams.csv` and `Trainers.csv`, go through the same steps to load the data into tables:
+1. Check what columns they have
+2. Update `createtable.sql` to create three tables.
+3. Rerun your `createtable.sql` script
+4. Run three `\copy` commands to load in all the data
+
+### Practicing INNER JOIN
+There is so much that you can find out now, so feel free to try things out, but here are some ideas to start you off:
+* Find the average and make level of the Pokemon on each trainers' team
+* Find all of "Ash Ketchum"'s Pokemon (you'll need two inner joins for this)
+* Find all of the types of Pokemon that each trainer uses
+* Find out if any trainers have legendary or "Mega" Pokemon
+* Find out which trainers don't give their Pokemon nicknames, sad!
+
 ## Submission
-Include your queries from the previous section in the file `examples.sql` and push your changed files to the lab repository to complete this lab.
+Include your queries from the previous sections in the file `examples.sql` and push your changed files to the lab repository to complete this lab.
 
 ## Starting on ID3
 Once you finish the lab, you should start going through the same steps for ID3:
