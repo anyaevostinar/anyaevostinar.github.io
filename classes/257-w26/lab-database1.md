@@ -172,7 +172,7 @@ Try writing single SQL queries to accomplish the following (remember to lean on 
   ```
 * Find all the pokemon with HP less than or equal to 10 (there are two).
 * Find the 10 fire pokemon with the highest special attack (remember to check both types). Make sure to order them highest to lowest.
-* Explore the [aggregate function](https://sqlbolt.com/lesson/select_queries_with_aggregates) options to find the average `hp` of each Type 1 group. Try to order by the average hp from greatest to least.
+* Explore the [aggregate functions](https://sqlbolt.com/lesson/select_queries_with_aggregates) to find the average `hp` of each Type 1 group. Try to order by the average hp from greatest to least.
 
 ## Multiple Tables
 It's time to practice working with multiple tables in a single database. For both `Teams.csv` and `Trainers.csv`, go through the same steps to load the data into tables:

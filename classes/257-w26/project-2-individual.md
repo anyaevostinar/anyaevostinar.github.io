@@ -30,18 +30,31 @@ The individual deliverable for this iteration is due Friday **Jan. 30th** at 10p
 
 *Do not specify the port when running the app, it doesn't work the same on different operating systems and so can mess up the grading. I.e., when you run your app, it should be just `app.run()` without any arguments*
 
+To be clear, this is the structure that you need for your repository:
+```bash
+id2-flask-your-username
+  ProductionCode
+    core.py #or whatever
+  Tests
+    test_app.py
+app.py
+```
+
+[Here is an example](https://github.com/anyaevostinar/257-IndDel2) (i.e. the one that I meant to have as a template for you...)
+
 ## Your Task
 (Remember that you will want to be in your [virtual environment](venv-guide) when working on this.)
 
 You should write a basic Flask app with at least one route based on your team's core functionality. Specifically, you should:
 
+1. Create a `ProductionCode` folder (sorry, I didn't make that for you)
 1. Copy over the code from your team repo that contains necessary helper functions that interact with the data and put those files into the `ProductionCode` subdirectory of your ID2 repository.
   * (P.S: The more efficient way to copy files from a repo would be a [git fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) of your team repo, but alas, GitHub classroom doesn’t keep track of forks & therefore, neither I nor the grader will have access.🙁)
   * You are allowed to refactor the helper functions from your team repo to work for your purposes
   * You should put in "dummy data" to make the core functions work without your full dataset. This can be by hard-coding the data in your `ProductionCode` files or making a data folder with the dummy data.
 2. Make a Flask app in `app.py` with at least one route that uses the core functionality in `ProductionCode`
 3. The home page of your app should provide instructions for what URL to go to to see the data you choose.
-4. For the advanced requirements, that route should use a route parameter and you should have a couple of tests in `Tests` for your Flask-specific functions.
+4. For the advanced requirements, that route should use a route parameter and you should have a couple of tests in a new folder `Tests` for your Flask-specific functions.
 
 ## Turning it in
 
