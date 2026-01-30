@@ -1,18 +1,16 @@
 ---
 layout: page
 title: Dictionaries Lab
-permalink: /classes/111-f24/dictionaries
+permalink: /classes/111-w26/dictionaries
 ---
 
-This is a lab assignment and so you will not be submitting it.
-However, the concepts and practice will help you on both the homework and exams so I encourage you to make a serious effort on it during class and consider finishing it outside of class.
-
-I recommend making a folder for today's lab in COURSES as you usually do.
+## Setup
+I recommend making a folder for today's lab in [COURSES as you usually do](getting-started).
 
 ## Exercise 0
 (This is a repeat of the demonstration at the start of class.)
 
-Download the [starter files](/classes/111-f22/DictionaryLabStarterFiles.zip) for today's lab and copy those files into your folder for today.
+Download the [starter files](/classes/111-f22/DictionaryLabStarterFiles.zip) for today's lab and copy those files into your folder for today. (Note, these files don't follow our classes style guide, since there are other ways to style code and I haven't had the chance to update them yet.)
 
 The zip that you downloaded contains:
 
@@ -74,3 +72,6 @@ The code you were given removes all punctuation before counting any n-grams. Thi
 **Update your `getTwoGrams()` function so that it counts periods, exclamation points, and question marks *as their own words* when counting bigrams.** 
 (We can use the word "token" to refer to a single countable unit that could be a word or a punctuation mark.) 
 This should be doable just by adding/changing a few lines of code!
+
+## Submission
+Once you complete counting two-grams, submit your finished files to Moodle for an extra engagement credit.

@@ -170,8 +170,8 @@ Try writing single SQL queries to accomplish the following (remember to lean on 
   Volcanion           | Fire   | Water
   (5 rows)
   ```
-* Find all the pokemon with HP less than or equal to 10 (there are two).
-* Find the 10 fire pokemon with the highest special attack (remember to check both types). Make sure to order them highest to lowest.
+* Find all the Pokemon with HP less than or equal to 10 (there are two).
+* Find the 10 fire Pokemon with the highest special attack (remember to check both types). Make sure to order them highest to lowest.
 * Explore the [aggregate functions](https://sqlbolt.com/lesson/select_queries_with_aggregates) to find the average `hp` of each Type 1 group. Try to order by the average hp from greatest to least.
 
 ## Multiple Tables
@@ -183,7 +183,7 @@ It's time to practice working with multiple tables in a single database. For bot
 
 ### Practicing INNER JOIN
 There is so much that you can find out now, so feel free to try things out, but here are some ideas to start you off:
-* Find the average and make level of the Pokemon on each trainers' team
+* Find the average and max level of the Pokemon on each trainers' team
 * Find all of "Ash Ketchum"'s Pokemon (you'll need two inner joins for this)
 * Find all of the types of Pokemon that each trainer uses
 * Find out if any trainers have legendary or "Mega" Pokemon
