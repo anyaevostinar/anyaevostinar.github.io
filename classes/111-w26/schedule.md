@@ -31,7 +31,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 1/28 | [Mutating Lists Prep](mutating-lists-prep); [HW3](hw3)	| [Slides](https://docs.google.com/presentation/d/1mUXPXXj5BlXJ38_9zeZSfkkFtVuTsovqf_-89jtrHcY/edit?usp=sharing), [Mutating Lists](lab-mutating-lists) | [HW4: Parsing Data](hw4) |
 | 1/30 |	[Study](exam2)  	|  [Slides](https://docs.google.com/presentation/d/1YZ_gpuEsK_6VOBKlNEQwM7-UDr97eEjnTH-tmIwDC8Y/edit?usp=sharing), [Exam 2](exam2) 	|   |
 | **Week 5** | **Functions** |  | |
-| 2/2 | [Dictionaries Prep](dictionaries-prep) | [Slides]()	 | |
+| 2/2 | [Dictionaries Prep](dictionaries-prep) | [Slides](https://docs.google.com/presentation/d/170qsSMgltIr1yBqx26xKcALHxDJqcVlyW6ll8KcOcZc/edit?usp=sharing), [Dictionary Lab](dictionaries-lab)	 | |
 | 2/4| [Debugging Prep](debugging-prep), [HW4](hw4) |  [Slides](), Debugging | [HW5: Scrabble](hw5) |
 | 2/6	| [Web Pages Prep](webpages-prep) |	[Slides](), Making a Website with Flask	| |
 | **Week 6** | **Objects and Classes** |  | |
