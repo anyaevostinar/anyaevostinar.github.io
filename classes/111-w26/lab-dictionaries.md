@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dictionaries Lab
-permalink: /classes/111-w26/dictionaries
+permalink: /classes/111-w26/dictionaries-lab
 ---
 
 ## Setup
