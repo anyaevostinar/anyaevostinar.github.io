@@ -40,7 +40,7 @@ Again, I recommend you complete this assignment in Olin 310, though it isn't req
 [Mount the COURSES drive](getting-started) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `HW5`
 * Open your `HW5` folder in VSCode
-* Download the starter code that is linked on Moodle and move the starter files into your folder
+* Download the [starter code](/classes/111-w26/HW5Starter.zip) move the starter files into your folder
 
 This program uses command-line arguments as input to the program. 
 Remember, those are things typed at the prompt in Terminal. 
