@@ -14,6 +14,7 @@ permalink: /classes/257-w26/database-lab
 * [Working with `stearns`](#working-with-stearns-server)
 * [Working in your database](#working-in-your-database)
 * [Larger dataset](#larger-dataset)
+* [Multiple tables](#multiple-tables)
 * [Starting on ID3](#starting-on-id3)
 
 
