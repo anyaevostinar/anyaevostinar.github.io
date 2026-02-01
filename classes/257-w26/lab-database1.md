@@ -54,7 +54,7 @@ ssh YOUR_USER_NAME@stearns.mathcs.carleton.edu
 and then your password. This is where you will be running your code going forward.
 
 ### Step 4: Getting set up
-Now clone your ID3 repository by grabbing the URL from GitHub and typing the following into your connected Terminal: 
+Accept the Database Lab Git Classroom assignment through Moodle and clone the starter repository onto `stearns` as you usually do:
 
 ```bash
 git clone [URL of repository]
@@ -65,7 +65,7 @@ In this starter repository I've included the `Pokemon.csv` dataset along with a 
 ## Working in your database
 You're now ready to create the first table in your database. In this class you'll have both an individual database and a team database. Today, you'll be creating a practice table about Pokemon in your individual database. 
 
-<span style="color:blue">*The name of your **individual database** is the same as your username. The password you can find in the feedback on the 'assignment' Individual Database information on Moodle for today's class.</span>
+<span style="color:blue">The name of your **individual database** is the same as your username. The password you can find in the feedback on the 'assignment' Individual Database information on Moodle for today's class.</span>
 
 ### Step 1: Creating a table
 In this part of the lab, we'll be interacting directly with the database via `psql`. This [cheatsheet](https://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf) contains all of the psql commands in case you want to explore more later.  
