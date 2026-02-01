@@ -66,3 +66,9 @@ psql -U YOURTEAMDATABASENAME -h localhost -d YOURTEAMDATABASENAME
 
 You are now all set up to connect your existing Flask app to your database using records! Get started on the changes you'll need to make for team deliverable 3!
 
+**NOTE:**
+You'll need to switch to running your Flask app with the following command to be able to run on `stearns` using one of the ports assigned to each member of your team:
+```python
+app.run(host='0.0.0.0',port=YOUR_NUMBER)
+```
+
