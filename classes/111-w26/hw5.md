@@ -12,6 +12,8 @@ You may work alone or with a partner, but you must type up the code yourself.  Y
 
 You should submit your assignment on Gradescope. You submit the files `scrabble.py`, and `readme.txt`.
 
+Here is the [homework helper bot for HW5](https://gemini.google.com/gem/1mEIXFbnVj7ssdQKJDifixMGPvLOuQ5r8?usp=sharing).
+
 ---
 ## Goals
 Get practice with reading from files, loops, functions, and command-line arguments.
