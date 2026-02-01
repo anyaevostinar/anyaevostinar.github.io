@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Records Lab
-permalink: /classes/257-w26/records
+permalink: /classes/257-w26/records-lab
 ---
 
 ## Goal
