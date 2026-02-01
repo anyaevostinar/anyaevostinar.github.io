@@ -40,7 +40,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 1/30 | [ID2 due 10pm](project-2-ind), [Code Review Prep](code-review-prep) | [Slides](), Code review | |
 | **Week 5** | **Database Component** | | |
 | M 2/2 | [TD2 due 10pm](project-2-flask), [Intro Databases Prep](intro-database-prep) | [Slides](https://docs.google.com/presentation/d/15WLBvzxs2mAjHua92wPeAU0r1VZUJ8uayCshpsv_EpQ/edit?usp=sharing), [Starting with Databases](database-lab) | [ID3: Database](project-3-ind), [Midterm Reflection](reflection-mid)|
-| W 2/4 |  [Records Prep](records-prep) |[Slides](), [Database Connections and Relations](psycopg2)  | |
+| W 2/4 |  [Records Prep](records-prep) |[Slides](), [Database Connections and Relations](records-lab)  | |
 | F 2/6 | [Midterm Reflection due 10pm](reflection-mid), [ID3 due 10pm](project-3-ind); [Database Normalization](normalization-prep) | [Slides](), [Team Database Lab](team-database-lab) | [TD3: Back-end](project-3-backend) |
 | **Week 6** | **Connecting Components** | | |
 | M 2/9 | Midterm break! | | |
