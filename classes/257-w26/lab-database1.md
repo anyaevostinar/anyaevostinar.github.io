@@ -187,7 +187,7 @@ It's time to practice working with multiple tables in a single database. For bot
 Let's do your first inner join by finding the Pokemon that are on each trainers' team. Here is how to think through constructing this query. Remember the overall structure of an inner join query is:
 
 ```psql
-SELECT <columns you want> FROM <table 1> INNER JOIN <table 2> ON <table 1>.col1 = <table 2>.col2;
+SELECT <columns you want> FROM <table 1> INNER JOIN <table 2> ON <table 1>.<col1> = <table 2>.<col2>;
 ```
 
 Here's how to think it through:
