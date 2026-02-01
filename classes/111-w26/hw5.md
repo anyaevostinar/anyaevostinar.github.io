@@ -32,6 +32,7 @@ The **advanced requirements** are:
 * Descriptive variable and function names that follow `snake_case`
 * Good line grouping and spacing
 * Use iteration, conditionals, and functions to organize your programs and **prevent any unnecessary duplication of code**
+* Not do any extra work, like calling a function multiple times when not needed
 
 ## Setup
 
