@@ -33,7 +33,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 5** | **Functions** |  | |
 | 2/2 | [Dictionaries Prep](dictionaries-prep) | [Slides](https://docs.google.com/presentation/d/170qsSMgltIr1yBqx26xKcALHxDJqcVlyW6ll8KcOcZc/edit?usp=sharing), [Dictionary Lab](dictionaries-lab)	 | |
 | 2/4| [Debugging Prep](debugging-prep), [HW4](hw4) |  [Slides](https://docs.google.com/presentation/d/1tKCgXZgRiYvpkaz0f70MXAkAFuTw3cFHnOGYtmU3jzc/edit?usp=sharing), [Debugging and Plotting](lab-debugging) | [HW5: Scrabble](hw5) |
-| 2/6	| [Web Pages Prep](webpages-prep) |	[Slides](), [Making a Website with Flask](flask-lab)	| |
+| 2/6	| [Web Pages Prep](webpages-prep) |	[Slides](https://docs.google.com/presentation/d/1iXrMqez6c6uYsvW__dGKeAYVvOWX6Tp-Ga8eKxzZn0E/edit?usp=sharing), [Making a Website with Flask](flask-lab)	| |
 | **Week 6** | **Objects and Classes** |  | |
 | 2/9 |  |	Midterm break!	| |
 | 2/11 | [OOP Preparation](oop1-prep)  |  [Slides](),  Moving Flowers	|  |
