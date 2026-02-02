@@ -46,15 +46,15 @@ You will ultimately be working on the `stearns` server, but to connect to `stear
 
 ### Step 3: Log in to `stearns`
 
-In the Terminal, type 
+In the Terminal, type (change to your Carleton username)
 ```bash
 ssh YOUR_USER_NAME@stearns.mathcs.carleton.edu
 ```
 
-and then your password. This is where you will be running your code going forward.
+and then your **Carleton** password. This is where you will be running your code going forward.
 
 ### Step 4: Getting set up
-Accept the Database Lab Git Classroom assignment through Moodle and clone the starter repository onto `stearns` as you usually do:
+Accept the Database Lab Git Classroom assignment through Moodle and clone the starter repository onto `stearns` as you usually do. You will need to enter the PAT that you made at the start of class for your password:
 
 ```bash
 git clone [URL of repository]
@@ -65,14 +65,14 @@ In this starter repository I've included the `Pokemon.csv` dataset along with a 
 ## Working in your database
 You're now ready to create the first table in your database. In this class you'll have both an individual database and a team database. Today, you'll be creating a practice table about Pokemon in your individual database. 
 
-<span style="color:blue">The name of your **individual database** is the same as your username. The password you can find in the feedback on the 'assignment' Individual Database information on Moodle for today's class.</span>
+<span style="color:blue">The name of your **individual database** is the same as your username. The password you can find in the feedback on the 'assignment' Individual Database information on Moodle for today's class.</span> 
 
 ### Step 1: Creating a table
 In this part of the lab, we'll be interacting directly with the database via `psql`. This [cheatsheet](https://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf) contains all of the psql commands in case you want to explore more later.  
 
 1. Open the file `Pokemon_small.csv` and note how many columns it has, what types they should be, and what good names for them would be.
 
-2. Run `psql` to enter the "interpreter". You will need to enter your database password if prompted. (Sometimes you aren't prompted for it, which is fine, and I have yet to figure out when you will or won't be, so good to be prepared...) You will now be in your individual database, which has the same name as your user name, for example my prompt looks like this:
+2. Type `psql` (and Enter) to enter the "interpreter". You will need to enter your database password if prompted. (Sometimes you aren't prompted for it, which is fine, and I have yet to figure out when you will or won't be, so good to be prepared...) You will now be in your individual database, which has the same name as your user name, for example my prompt looks like this:
   ```psql
   vostinar=> 
   ```
