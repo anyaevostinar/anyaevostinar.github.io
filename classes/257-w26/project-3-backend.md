@@ -100,6 +100,7 @@ The criteria for "Core" and "Advanced" are below.
    * Column names strongly signify the data they contain
    * Docstrings are clear and consistent for each method
    * Style checks are all at 10
+* As an individual, you need to have submitted the sprint feedback form for Sprint 3
 
 
 ## Q&A

@@ -98,3 +98,4 @@ The criteria for "Core" and "Advanced" are below.
   * The functions/methods are all written at a single layer of abstraction
   * Function/method [docstrings](https://peps.python.org/pep-0257/) all provide the required information
   * There is barely any duplicated code
+* As an individual, you need to have submitted the sprint feedback form for Sprint 2
