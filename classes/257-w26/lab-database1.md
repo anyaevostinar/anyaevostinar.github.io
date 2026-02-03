@@ -54,13 +54,15 @@ ssh YOUR_USER_NAME@stearns.mathcs.carleton.edu
 and then your **Carleton** password. This is where you will be running your code going forward.
 
 ### Step 4: Getting set up
-Accept the Database Lab Git Classroom assignment through Moodle and clone the starter repository onto `stearns` as you usually do. You will need to enter the PAT that you made at the start of class for your password:
+Accept the Database Lab Git Classroom assignment through Moodle and clone the starter repository onto `stearns` as you usually do. You will need to **enter the PAT that you made at the start of class for your password**. 
 
 ```bash
 git clone [URL of repository]
 ```
 
 In this starter repository I've included the `Pokemon.csv` dataset along with a smaller section of it (`Pokemon_small.csv`) for you to work with initially. It is a good idea to always work with a subset of your data at first as you are figuring things out!
+
+**Make sure to `cd` into your git repository at this point.**
 
 ## Working in your database
 You're now ready to create the first table in your database. In this class you'll have both an individual database and a team database. Today, you'll be creating a practice table about Pokemon in your individual database. 

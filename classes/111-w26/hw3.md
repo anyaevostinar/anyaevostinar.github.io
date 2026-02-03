@@ -16,6 +16,8 @@ As with all assignments in this course, for each file in this assignment, you ar
 
 **You need a collaboration statement, even if just to say that you worked alone.**
 
+[Here is the Gemini Helper Bot](https://gemini.google.com/gem/1t0dNJwdENFfwoegNCS2QXYX_vXP2BXBl?usp=sharing) for Homework 3.
+
 ---
 
 ## Getting started:
