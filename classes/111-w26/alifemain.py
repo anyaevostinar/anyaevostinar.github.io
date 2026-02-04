@@ -35,7 +35,8 @@ class Organism:
     return info
 
   def update(self):
-    '''Updates the organism's fitness based on its age'''
+    '''Updates the organism's fitness based on its age
+    Returns: Boolean, true if committed program cell death'''
     if not self.empty:
       self.age += 1
       cur_gene = self.genome[self.age%len(self.genome)]
@@ -53,6 +54,7 @@ class Organism:
       
 
   def mutate(self):
+    '''Mutates the organism's genome'''
     if random.random() < .02:
       newGenome = self.genome
       flipBit = random.randint(0, len(newGenome)-1)
@@ -65,6 +67,8 @@ class Organism:
     
       
   def findNeighbors(self):
+    '''Finds the organisms neighbors on a toroidal structure
+    Returns: list of neighbor locations'''
     cellID = self.ID
     radius = 1
     world_x = pop_x
@@ -106,26 +110,30 @@ class Population:
     randomBitArray = numpy.random.randint(2, size=(100,))
     newOrg = Organism(len(self.orgs), genome=list(randomBitArray))
     return newOrg
+  
+  def killNonrelatedBacteria(self, neighbors, focalOrg):
+    '''Neighboring bacteria that differ from focal organism are killed
+    Param: list of neighbors
+    Param: Organism that is exploding'''
+    for neighborID in neighbors:
+      neighbor = self.orgs[neighborID]
+      diff = self.compareGenomes(focalOrg, neighbor)
+      if diff > inclusivity:
+      #kill neighbor bacterium
+        self.orgs.pop(neighborID)
+        self.orgs.insert(neighborID, Organism(neighborID, empty=True))
+
 
   def update(self):
     '''A function that runs a single update'''
     self.currentUpdate+=1
-#    current_loc = self.currentUpdate%len(self.orgs[0].genome)
     for org in self.orgs:
       if not org.empty:
-        result = org.update()
-        if not result:
-        #explosion
+        explosion = org.update()
+        if explosion:
           neighbors = org.findNeighbors()
-        #compare genomes between exploding org and neighbors
-          for neighborID in neighbors:
-            neighbor = self.orgs[neighborID]
-            diff = self.compareGenomes(org, neighbor)
-            if diff > inclusivity:
-            #kill neighbor
-              self.orgs.pop(neighborID)
-              self.orgs.insert(neighborID, Organism(neighborID, empty=True))
-        #kill org
+          self.killNonrelatedBacteria(neighbors, org)
+          #kill org
           self.orgs.pop(org.ID)
           self.orgs.insert(org.ID, Organism(org.ID, empty=True))
         elif org.fitness >= len(org.genome):
