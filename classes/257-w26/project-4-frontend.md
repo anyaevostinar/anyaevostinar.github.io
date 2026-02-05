@@ -19,6 +19,15 @@ You are able to get help from outside sources, as specified in the syllabus, but
 
 This iteration of the project is due Monday May 19th at 10pm on GitHub.
 
+## What to submit
+### Individual
+* [Sprint Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSeA_XztxPcqzW-sx_tPOR2RbZJwBnm9UIp43yekK1VjoB0ljg/viewform?usp=dialog)
+
+### Team
+* TODO
+* `command_line.py`, `flask_app.py`, `Tests` still functional and updated if necessary
+
+
 ## Your Task
 
 Your team should add a front-end GUI component to your Flask app that:
