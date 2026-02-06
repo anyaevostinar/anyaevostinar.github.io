@@ -26,16 +26,16 @@ Then also download the file [flower_starter.py](/classes/111-w26/flower_starter.
 3. Copy over the `draw_stem` and `draw_flower` functions and turn them into methods of the `Flower` class by adding the `self` parameter to both.
 
 4. Copy over the `main` (and calling `main`) and then edit it to work with your new `Flower` class by:
-    * Creating a new instance of `Flower`
-    * Calling `draw_stem` and `draw_flower` on that new instance
+    * Creating a new instance of `Flower` called `new_flower`
+    * Calling `new_flower.draw_stem()` and `new_flower.draw_flower()`
 
-5. You should always aim to make small changes and then test that those changes work, so this is a good time to run your `Flower.py` to make sure that you are still successfully drawing the flowers.
+5. You should always aim to make small changes and then test that those changes work, so this is a good time to run your `Flower.py` with `python Flower.py` to make sure that you are still successfully drawing the flowers.
 
 ## Exercise 2: Adding state to your class
 
 You may have noticed that you aren't really taking advantage of the `Flower` class at the moment, especially since it doesn't have any state! Let's fix that by making a constructor and using state to organize our program.
 
-1. Create a constructor with `def __init__` that takes the `GraphWin`, x coordinate, height, and color as parameters and sets them to instance variables. Remember that the first parameter needs to be `self`. 
+1. Create a constructor with `def __init__` that takes a window, x coordinate, height, and color as parameters and sets them to instance variables using `self.`. Remember that the first parameter needs to be `self`. 
 
 2. Change your `draw_stem` and `draw_flower` to rely on the instance variables instead of needing parameters. 
 
@@ -43,16 +43,16 @@ You may have noticed that you aren't really taking advantage of the `Flower` cla
 
 4. We can do some further streamlining by having the drawing methods set instance variables instead of returning. Remove the return values from both `draw_stem` and `draw_flower` and have them create instance variables `self.stem` and `self.center_circle` instead.
 
-5. A flower doesn't really exist unless it's drawn, so switch to calling `draw_stem` and `draw_flower` in `Flower`'s constructor instead of in `main`.
+5. A flower doesn't really exist unless it's drawn, so switch to calling `self.draw_stem()` and `self.draw_flower()` in `Flower`'s constructor instead of in `main`.
 
-6. You can now cut out several lines of code in `main` (yey!) and just append your `Flower` object to `my_flowers` immediately after creating it! Doesn't that look much tidier?!
+6. You can now cut out several lines of code in `main` (yey!) and just append your `new_flower` to `my_flowers` immediately after creating it! Doesn't that look much tidier?
 
 ## Exercise 3: Leveraging OOP
 Now that we have much more contained logic for our flowers, we can add new functionality more easily. Let's make our flowers grow!
 
 1. If our flowers are going to grow, then they need to start off small, so change their initial `self.height` to 1 and remove the `draw_flower` call in the constructor. You should also remove the `height` parameter, since we don't need it anymore (remember to update `main` accordingly). 
 
-2. Add a new instance variable `age` that starts at 0.
+2. Add a new instance variable `self.age` that starts at 0.
 
 3. Define a new method `grow`, which does the following:
     * adds 5 to the height;
@@ -61,7 +61,7 @@ Now that we have much more contained logic for our flowers, we can add new funct
     * checks if `self.age` is equal to 4, if it is, calls `self.draw_flower()`;
     * increments `self.age` by 1.
 
-4. Add an `import time` at the top of your file and add the following to your `main` **outside of the existing for loop**:
+4. Add an `import time` at the top of your file and the following to your `main` **outside of the existing for loop**:
     ```python
     for i in range(7):
         time.sleep(0.5) #pauses for 0.5 seconds so we can savor the flowers
@@ -86,13 +86,13 @@ Now that we have much more contained logic for our flowers, we can add new funct
 7. Verify that you now have lovely growing flowers!
 
 ## Exercise 4: Better flowers
-You can definitely make better flowers than just a circle, though graphics is a little bit limited. Check out [flower_with_petals.py](/classes/111-w26/flower_with_petals.py) for an idea of how to use `move` and more `Circle`s to make a flower that looks like this:
+You can definitely make better flowers than just a circle, though `graphics` is a little bit limited. Check out [flower_with_petals.py](/classes/111-w26/flower_with_petals.py) for an idea of how to use `move` and more `Circle`s to make a flower that looks like this:
 
 ![Flower with purple petals](/classes/111-w26/FlowerWithPetals.png)
 
 A few things to think about while you do it:
 * I recommend that you make a `draw_petal` method as well as a `draw_petals` method.
-* You'll want to save your petals into a list that is an instance variable and feel free to add any other instance variables that make sense.
+* You'll want to save your petals into a list that is an instance variable and add any other instance variables that make sense.
 * I recommend also making a `move_flower` method and possibly a `refresh` method that handles the `undraw` and `draw` combo.
 * You should generally aim for your methods to be 10 lines or less, it's not always easy to write them that way, but it is a lot easier to read them!
 * Remember to make small, incremental changes and run your code frequently.
