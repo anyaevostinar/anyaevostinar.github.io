@@ -36,8 +36,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 2/6	| [Web Pages Prep](webpages-prep) |	[Slides](https://docs.google.com/presentation/d/1iXrMqez6c6uYsvW__dGKeAYVvOWX6Tp-Ga8eKxzZn0E/edit?usp=sharing), [Making a Website with Flask](flask-lab)	| |
 | **Week 6** | **Objects and Classes** |  | |
 | 2/9 |  |	Midterm break!	| |
-| 2/11 | [OOP Preparation](oop1-prep)  |  [Slides](),  Moving Flowers	|  |
-| 2/13 | [Working with Classes Prep](oop2-prep); HW5  		| [Slides](), [Creating Flower Classes](creating-classes)	| [HW6: GIS](hw6) |
+| 2/11 | [OOP Preparation](oop1-prep)  |  [Slides](https://docs.google.com/presentation/d/14pj3Snr7vVDh3iyn0aSdmuSN7fJYjrs124NFcu2-GuU/edit?usp=sharing), [Flower Lab](creating-classes-lab)	|  |
+| 2/13 | [Working with Classes Prep](oop2-prep); HW5  		| [Slides](), 	| [HW6: GIS](hw6) |
 | **Week 7**| **Final Project**|  | |
 | 2/16 | [Final Project Info Prep](final-project), Partner preference form due 6am  | Final Project Overview, [Making Simulations](lab-simulations)  | [Final Project Proposal](final-project#project-proposal) |
 | 2/18 | Final Project Proposal | Minimum Viable Product and Agile  | |
