@@ -15,7 +15,7 @@ Then also download the file [flower_starter.py](/classes/111-w26/flower_starter.
 
 1. Run `flower_starter.py` to see the flowers that are made. Your first goal will be to make the same flowers but with improved code organization.
 
-2. Create a file `Flower.py`. In it, import `graphics` and `random` and define a class `Flower` (it is good style to have the file name match the class name), like so:
+2. Create a file `flower.py`. In it, import `graphics` and `random` and define a class `Flower`, like so:
     ```python
     from graphics import *
     import random
@@ -23,13 +23,13 @@ Then also download the file [flower_starter.py](/classes/111-w26/flower_starter.
     class Flower:
     ```
 
-3. Copy over the `draw_stem` and `draw_flower` functions and turn them into methods of the `Flower` class by adding the `self` parameter to both.
+3. Copy over the `draw_stem` and `draw_flower` functions and turn them into methods of the `Flower` class by adding the `self` parameter to both and indenting them.
 
-4. Copy over the `main` (and calling `main`) and then edit it to work with your new `Flower` class by:
+4. Copy over `main` (and the `if __name__ == '__main__'` block) and then edit it to work with your new `Flower` class by:
     * Creating a new instance of `Flower` called `new_flower`
-    * Calling `new_flower.draw_stem()` and `new_flower.draw_flower()`
+    * Calling `new_flower.draw_stem()` and `new_flower.draw_flower()` with the right parameters
 
-5. You should always aim to make small changes and then test that those changes work, so this is a good time to run your `Flower.py` with `python Flower.py` to make sure that you are still successfully drawing the flowers.
+5. You should always aim to make small changes and then test that those changes work, so this is a good time to run your `flower.py` with `python flower.py` to make sure that you are still successfully drawing the flowers.
 
 ## Exercise 2: Adding state to your class
 
@@ -98,7 +98,7 @@ A few things to think about while you do it:
 * Remember to make small, incremental changes and run your code frequently.
 
 ## Submission
-Submit your completed `Flower.py` to Moodle for an extra engagement credit.
+Submit your completed `flower.py` to Moodle for an extra engagement credit.
 
 ## Extra
 There is so much that you can do to expand your flower simulation! Here are some ideas:

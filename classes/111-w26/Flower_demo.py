@@ -70,6 +70,8 @@ class Flower:
             self.undraw()
         self.age += 1
 
+############################################################################
+
 def check_new_flower(cur_flowers):
     colors = ["red", "purple", "pink", "blue"]
     user_click = win.checkMouse() #checks for mouse click but doesn't wait
@@ -79,7 +81,6 @@ def check_new_flower(cur_flowers):
         new_flower = Flower(win, new_x, new_color)
         cur_flowers.append(new_flower)
 
-    
 if __name__=='__main__':
     # Create the window
     win = GraphWin("Field of Flowers", 600, 600)
@@ -97,4 +98,3 @@ if __name__=='__main__':
         time.sleep(0.5)
         for flower in my_flowers:
             flower.grow()
-        
