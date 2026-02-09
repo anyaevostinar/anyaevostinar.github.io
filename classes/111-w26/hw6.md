@@ -27,9 +27,9 @@ Be sure to remove the starter comments that are no longer relevant, add addition
 The **core requirements** are that your program has:
 * Correct functionality
 * Header with three lines that start with `#` for each file
-* Contain docstrings for each function and method (checked automatically)
-* Other basic style that can be checked automatically
+* Basic style that can be checked automatically (not complete!)
 * `gis.py` displays a basic visualization of Minnesota zipcodes
+* Collaboration statement at the top of the file (even if it just says that you worked alone)
 * `readme.txt` contains a reflection
 
 The **advanced requirements** are that your program has:
