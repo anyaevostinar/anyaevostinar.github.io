@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HTML and CSS
-permalink: /classes/257-s25/lab-html-css
+permalink: /classes/257-w26/lab-html-css
 ---
 
 (This lab is adapted from one created by Prof. Amy Csizmar Dalal, who really likes earthquakes!)
@@ -11,11 +11,8 @@ permalink: /classes/257-s25/lab-html-css
 * Understand the split between content (HTML) and presentation (CSS)
 * Create a web page that contains some of the elements described in Krug
 
-## Collaboration
-You may work on this individually or with your project team. Feel free to skip around and / or modify the tasks to fit your own project.
-
-## Prerequisites
-This lab assumes that you've completed the HTML and CSS reading and/or you have a bit of familiarity with HTML and CSS coding. I suggest you have [W3School's HTML Tutorial](https://www.w3schools.com/html/) open while you complete this lab.
+## Setup
+I suggest you have [W3School's HTML Tutorial](https://www.w3schools.com/html/) open while you complete this lab.
 
 **Accept the HTML and CSS Lab Starter Code assignment linked on Moodle, clone the repository, and work in there for this lab.**
 
@@ -150,7 +147,7 @@ The CSS illustrates some important points about CSS:
 
 *What happens if styles conflict?* Great question! Your browser should render the styling for the most specific tag/environment/class. If everything is of equal scope, then it goes with the last style listed.
 
-* Notice I said **should**, not will. One thing you will learn is that CSS is somewhat of an art form. Sometimes you expect things to render one way, and they render a totally different way. It could be because your style sheets conflict in subtle ways. Or your browser could be imposing its own style. Or Mercury could be in retrograde. Sometimes, you just have to try a bunch of things....or consult your friend Dr. Google. If you do run into a sticky style issue, post your quandary on CampusWire and/or see me or one of the lab assistants.
+* Notice I said **should**, not will. One thing you will learn is that CSS is somewhat of an art form. Sometimes you expect things to render one way, and they render a totally different way. It could be because your style sheets conflict in subtle ways. Or your browser could be imposing its own style. Or Mercury could be in retrograde. Sometimes, you just have to try a bunch of things....or consult your friend Dr. Google or Gemini (figuring out CSS and HTML is an excellent use of Gemini). If you do run into a sticky style issue, post your quandary on CampusWire and/or see me or one of the lab assistants.
 
 The nav bar should look something like this (depending on how you changed the style):
 
@@ -242,7 +239,12 @@ The CSS files are considered 'static' files, and so they should go in a new fold
 {%endraw%}
 ```
 
-**DO THIS:** Make a basic Flask app to connect to your HTML and CSS files. Push everything to your lab repository and then continue working on your ID Front-end.
+**DO THIS:** Make a basic Flask app to connect to your HTML and CSS files. 
+
+## Submission
+Push everything to your lab repository to get an extra engagement credit for today.
+
+Then work on your [ID Front-end](project-4-ind). Feel free to grab aspects of today's lab for it.
 
 ## File links
 If you want them all in one place:
