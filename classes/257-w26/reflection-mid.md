@@ -17,7 +17,9 @@ Fill out the [form here](https://docs.google.com/forms/d/e/1FAIpQLSe4TA2m2ki8xgK
 ## Evaluation
 **Core** for this deliverable requires:
 * You submit complete answers to each question
-* At least one of your teammates reviews your overall contribution to the project as equal to other teammates
+* At least one person on your team reviews your overall contribution to the project as equal to other teammates
 
 **Advanced** for this deliverable requires:
-* At least two of your teammates reviews your overall contribution to the project as equal to other teammates
+* At least two people on your team reviews your overall contribution to the project as equal to other teammates
+
+Note: if there isn't sufficient information from the team reviews, I will rely on other metrics to determine contribution, such as commit history.
