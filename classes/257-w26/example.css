@@ -1,0 +1,5 @@
+nav ul {
+border: 2px solid blue;
+list-style-type: none;
+display: flex;
+}
