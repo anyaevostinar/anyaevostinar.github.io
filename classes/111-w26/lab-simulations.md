@@ -24,7 +24,7 @@ We'll also be using the `random` module today, so add an import for that:
 import random
 ```
 
-## Exercise 0
+## Exercise 0: main and MovingCircle
 
 1. As always, you should make a `main` function and make your `GraphWin`:
 
@@ -47,7 +47,7 @@ import random
             #TODO
     ```
 
-## Exercise 1
+## Exercise 1: Making circles move
 Often in a simulation or game, you'll want your graphics to move. 
 
 1. In `main`, create and draw a `MovingCircle` object. Make a `draw` method within your class that calls the `Circle`'s `draw` method.
@@ -63,7 +63,7 @@ Often in a simulation or game, you'll want your graphics to move.
 
 3. In `main`, write a for-loop that calls the `move` method of your `MovingCircle` 5 times and make sure that it's working.
 
-## Exercise 2
+## Exercise 2: Loop until closed
 Generally, you want simulations and games to continue for a while.
 
 1. The `GraphWin` class has an `isClosed()` method that lets you keep running your program until the user closes the window (by pressing the X in the upper left). Change your for-loop to a `while` loop that uses this method:
@@ -84,7 +84,7 @@ Generally, you want simulations and games to continue for a while.
     time.sleep(0.1) #sleeps 0.1 seconds before next line
     ```
 
-## Exercise 3
+## Exercise 3: Mouse and key input
 
 You'll probably also want to respond to user input in your game or simulation. There are a couple of ways to do that. Let's start by letting the user draw some circles:
 
@@ -113,7 +113,7 @@ You'll probably also want to respond to user input in your game or simulation. T
     Switch to the `checkMouse()` method so that your circles wiggle around until the user clicks, and then a new circle is drawn and added to the list of moving circles.
 
 
-## Exercise 4
+## Exercise 4: Arrow keys
 You are already pretty far along in making something game/simulation like, but a frequent other way to control a game is with the arrow keys. You might have already figured out how to do that, but we'll walk it through here and combine the various things from previously.
 
 1. Let's make a new class that is a `PredatorSquare` which will be controlled by the user to eat the `MovingCircle`s. You'll want your class constructor to take in a couple of points and create a `Rectangle` with them, which you should save as `self.body`. Feel free to make it a specific color as well. (This is a good time to break out each class into its own file `predator_square.py` and `moving_circle.py` and then just import from both at the top of your `main.py`)
@@ -136,7 +136,7 @@ You are already pretty far along in making something game/simulation like, but a
 
     **Make sure that you can now control your predatory square's movement.**
 
-## Exercise 5
+## Exercise 5: Collisions
 Finally, you'll want to check if your square runs into any of the circles and eats them. This requires detecting a collision, which is a bit of a tricky process. We're going to make it easier by assuming everything is a circle (even the rectangle) since collisions with circles are a lot easier to detect. This will mean that the predatory rectangle doesn't quite match up, but that's okay.
 
 1. Create a method in your `MovingCircle` class `collision` that takes another object `other` as a parameter (along with `self`).
@@ -163,7 +163,7 @@ Finally, you'll want to check if your square runs into any of the circles and ea
 ## Submission
 Submit your completed file(s) to Moodle for an extra engagement credit.
 
-## Extra
+## Extra: Text and images
 With that, you know about nearly everything that you need from the graphics library for making a simulation or game! Here are a couple of other things to check out:
 
 1. Use the `Text` object to create some text by [checking the documentation](https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node11.html).
