@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Web Accessibility Prep
-permalink: /classes/257-s25/accessibility-prep
+permalink: /classes/257-w26/accessibility-prep
 ---
 
 ## Overview

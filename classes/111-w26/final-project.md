@@ -134,7 +134,7 @@ You will submit your project and report through Gradescope.
 ## Resources
 In addition to the normal resources you have for getting help, I recommend you consult the lecture recording and labs from the following days:
 * [Graphics Intro Lab](graphics-intro)
-* [Creating Flower Classes](creating-classes)
+* [Creating Flower Classes](creating-classes-lab)
 * [Making Simulations](lab-simulations)
 
 

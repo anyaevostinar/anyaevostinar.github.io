@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSS and HTML
-permalink: /classes/257-s25/css-html-prep
+permalink: /classes/257-w26/css-html-prep
 ---
 
 ## Overview
