@@ -72,7 +72,7 @@ The grader will grade your assignment by doing the following:
   * **One** of the following:
     * Can navigate from homepage to other page through HTML `form` (which could be drop-down box, text box, etc)
     * Data displayed in format other than text/static images, for example a generated plot, map, or word cloud
-  * Accessibility addressed with [matching id tags and labels](https://webaim.org/techniques/forms/controls#input)
+  * Accessibility addressed with [matching id tags and labels](https://www.w3schools.com/accessibility/accessibility_labels.php)
 * Code Design:
   * The Flask code style check is at 10
   * HTML only deals with content structure and not any aspect of presentation.
