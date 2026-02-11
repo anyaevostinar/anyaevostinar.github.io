@@ -20,6 +20,7 @@ To achieve the basic learning objectives, pick at least one of the below resourc
 
 ### Forms
 * [Website Forms Usability: Top 10 Recommendations](https://www.nngroup.com/articles/web-form-design/) from the Nielsen Norman Group.
+* [Autocomplete search box](https://www.geeksforgeeks.org/autocomplete-input-suggestion-using-python-and-flask/) 
 
 ### Plots
 * [Chart.js introduction](https://www.chartjs.org/docs/latest/getting-started/usage.html) - if you want to use Javascript for plotting instead of Python

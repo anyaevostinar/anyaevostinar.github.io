@@ -39,7 +39,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 2/11 | [OOP Preparation](oop1-prep)  |  [Slides](https://docs.google.com/presentation/d/14pj3Snr7vVDh3iyn0aSdmuSN7fJYjrs124NFcu2-GuU/edit?usp=sharing), [Flower Lab](creating-classes-lab)	|  |
 | 2/13 | [Working with Classes Prep](oop2-prep); HW5  		| [Slides](https://docs.google.com/presentation/d/1YxKFS3JtU0k1mCoof-wq8FjZGHp68gysI3kiBP3mmos/edit?usp=sharing), [Making Simulations](lab-simulations)	| [HW6: GIS](hw6) |
 | **Week 7**| **Final Project**|  | |
-| 2/16 | [Final Project and Inheritance Prep](final-inheritance-prep), Partner preference form due 6am  | Final Project Overview, Inheritance  | [Final Project Proposal](final-project#project-proposal) |
+| 2/16 | [Final Project and Inheritance Prep](final-inheritance-prep), Partner preference form due 6am  | [Slides](https://docs.google.com/presentation/d/1e5iLG4sH3Ni7F4a1fjzETA814j51e2JtGlUT6OOaw_I/edit?usp=sharing), Final Project Overview, Inheritance  | [Final Project Proposal](final-project#project-proposal) |
 | 2/18 | [Final Project Proposal](final-project#project-proposal) | Minimum Viable Product and Agile  | |
 | 2/20 |  [Study](exam3), [HW6](hw6)  |  [Exam 3](exam3)	|  [Final Project](final-project) |
 | **Week 8** | **Recursion and Analysis** | | |

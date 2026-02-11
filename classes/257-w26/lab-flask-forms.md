@@ -176,6 +176,6 @@ Fortunately, with a little bit of Jinja, we can automatically generate a dropdow
 ## Extra
 You're now all set to implement a fancy way to navigate from the homepage to the data page for your [individual front-end deliverable](project-4-ind).
 
-If you want, see if you can get a [autocomplete search box](https://www.geeksforgeeks.org/autocomplete-input-suggestion-using-python-and-flask/) working. 
+If you want, see if you can get an [autocomplete search box](https://www.geeksforgeeks.org/autocomplete-input-suggestion-using-python-and-flask/) working. 
 *Hint: text input always goes through POST, so make sure to have your Flask method set up for POST. You'll also need to add the `form` tags and `submit` button and add a `name` argument to the `input` tag.*
 You are welcome to use the `ajax.googleapis.com` scripts in your project, just be sure to cite the tutorial!
