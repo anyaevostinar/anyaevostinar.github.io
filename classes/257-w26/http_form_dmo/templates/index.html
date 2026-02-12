@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+
+<p>Which row would you like to see?</p>
+     <form action="displayrow">
+         <label for="1">Row 1</label>
+         <input type="radio" name="rowchoice" value="1">
+         <label for="2">Row 2</label>
+         <input type="radio" name="rowchoice" value="2">
+         <br>
+
+         <input type="submit" value="Submit">
+     </form>
+
+</body>
+</html>
+
+ <p>Dropdown version: Which row would you like to see?</p>
+ <form action="rowbytitle">
+     <label for="rows">Choose a row</label>
+     <select  id="rows" name="rowchoice">
+            
+         {% for row in rows: %}
+         <option value="{{row}}">{{row}}</option>
+         {% endfor %}
+            
+     </select>
+     <input type="submit" value="Submit">
+ </form>

@@ -66,7 +66,7 @@ When evaluating your project, the grader will pull down your team's repo on `ste
   * There are three independent features that allow the user to get information from the chosen dataset
   * There are integration tests for the user-facing website (in addition to the API tests)
   * The automated test suite passes
-  * Coverage is at 50%
+  * Coverage is at 50% or higher
 * Design:
   * `README.md` explains how your website enables:
     * Scanning
