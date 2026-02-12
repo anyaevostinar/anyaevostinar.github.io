@@ -8,7 +8,7 @@ permalink: /classes/257-s25/flask-form
 Be able to add a form to your Flask app and use POST HTTP requests correctly.
 
 ## Setup
-We'll be continuing to use the [silly dataset](dataset.csv) as an example.
+We'll be continuing to use the [Pokemon dataset](Pokemon.csv) as an example.
 Clone down the Flask Forms Lab repository linked on Moodle.
 If you need the previous two Flask labs for reference, they are here: [Intro to Flask](flask-intro) and [Flask and HTML](flask-html).
 
@@ -22,7 +22,7 @@ If you want specific functionality, here are the sections:
 * [Autocomplete search bar](#extra) - link to tutorial and hints
 
 ## Simple Row Display
-We're first going to use radio buttons to let the user choose which row of the silly dataset to view.
+We're first going to use radio buttons to let the user choose which two rows of the dataset to view.
 
 1. Make a new route and function in your Flask app that just returns the specified row from the dataset, for example:
     ```python
@@ -121,38 +121,29 @@ Fortunately, with a little bit of Jinja, we can automatically generate a dropdow
 1. First we'll need a couple of new functions. We need a function to give all the 'titles' of the rows (i.e. the first column):
 
     ```python
-    def getRowTitles():
-        row_titles = []
+    def get_poke_names():
+        row_names = []
         for row in data:
-            row_titles.append(row[0])
+            row_names.append(row[1])
 
-        return row_titles
+        return row_names
     ```
     (This function obviously isn't very efficient, but I'm not worried about that at the moment.)
 
-    We also need a function to look up the row by a 'title':
-
-    ```python
-    def getRowByTitle(title):
-        for row in data:
-            if row[0] == title:
-                return row
-        return []
-    ```
-    (Also super not efficient.)
+    We also need a function to look up the Pokemon by name, which I've provided (`get_pokemon(poke_name)`).
 
 2. With those functions in place, we need to pass the row titles to our homepage template:
     ```python
     @app.route('/')
     def home():
-        return render_template('index.html', rows=getRowTitles())
+        return render_template('index.html', rows=get_poke_names())
     ```
 
     And adjust our HTML template to use that information by displaying it in a dropdown menu:
 
     ```html
     <p>Dropdown version: Which row would you like to see?</p>
-    <form action="rowbytitle">
+    <form action="rowbyname">
         <label for="rows">Choose a row</label>
         <select  id="rows" name="rowchoice">
             {%raw %}
@@ -168,9 +159,9 @@ Fortunately, with a little bit of Jinja, we can automatically generate a dropdow
 3. Finally, we need to make the Flask route specified:
 
     ```python
-    @app.route('/rowbytitle')
-    def display_row_by_title():
-        return str(getRowByTitle(request.args['rowchoice']))
+    @app.route('/rowbyname')
+    def display_row_by_name():
+        return str(get_pokemon(request.args['rowchoice']))
     ```
 
 ## Extra
