@@ -8,9 +8,9 @@ permalink: /classes/257-w26/flask-html
 Use a basic HTML template with Flask. 
 
 ## Setup
-Make sure that you have [installed Flask in your virtual environment](venv-guide) and activate your virtual environment.
+Make sure to activate your virtual environment.
 
-Clone down the starter code linked from Moodle for a basic Flask app based on the first [Flask lab](flask-intro).
+Clone down the starter code linked from Moodle `Flask HTML Starter Repo`.
 
 ## Templates
 As you know from your reading, Flask allows you to connect with HTML templates.
