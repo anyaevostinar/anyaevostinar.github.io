@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Flask Forms
-permalink: /classes/257-s25/flask-form
+permalink: /classes/257-w26/flask-form
 ---
 
 ## Goal
