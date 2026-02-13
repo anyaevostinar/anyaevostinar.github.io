@@ -42,6 +42,8 @@ Your team should add a front-end GUI component to your Flask app that:
 * Keeps the HTML and CSS separate and uses them for their appropriate purposes
 * Organizes the HTML and CSS so that the files are readable
 
+Note, you'll probably have a basic structure repeated across all your pages, and you can use [template inheritance](https://www.sitepoint.com/flask-templates-deep-dive/#h-template-inheritance-and-layouts) to reduce that repeated HTML.
+
 You should be building off of your existing code and focusing mostly on the front-end design, though you may find that you need to update some of your core functionality to provide you with data in the format that you want now. Remember to then adjust your tests too!
 
 ## Turning it in
