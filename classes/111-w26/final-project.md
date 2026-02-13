@@ -86,7 +86,7 @@ To get you started with project ideas, here are some examples that students have
 * Simplified farming game, inspired by [Stardew Valley](https://en.wikipedia.org/wiki/Stardew_Valley)
 * Simplified sports game
 
-**Note**: You can't do Tic Tac Toe, since we all already did it ;-). Plus, it's too simple for this project.
+**Note**: You can't do Tic Tac Toe, since we all already did it ;-). Plus, it's too simple for this project. You can, however, build off your solutions to labs if they make sense for the game that you want to make.
 
 ## Project Proposal
 To make sure that you are poised for success, you must write a short proposal of what you plan to do. 
