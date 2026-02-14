@@ -49,7 +49,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 7** | **Front-End Component** | | |
 | M 2/16 | [CSS and HTML Prep](css-html-prep), [TD3 due 10pm](project-3-backend) | [Slides](https://docs.google.com/presentation/d/1w21h3LrFfy-hKgiXFVOoTDGAHC9TrptsCCKa9Laaetc/edit?usp=sharing), [HTML and CSS lab](lab-html-css) | [ID4: Front-end](project-4-ind), [TD4: Front-end](project-4-front-end)|
 | W 2/18 | [HTTP Prep](http-prep) | [Slides](https://docs.google.com/presentation/d/1dW6AvRRFNf84mWnIhe4NKUzubqVFXaOma3OxrgCfdmE/edit?usp=sharing), [Flask Forms Lab](flask-form) | |
-| F 2/20 |[ID4 due 10pm](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](), Accessibility Analysis | |
+| F 2/20 |[ID4 due 10pm](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](https://docs.google.com/presentation/d/1M_YpNR_kIxDL8ZqluA1puL2AlchrucHRCtJcBlXC-F8/edit?usp=sharing), Accessibility Analysis | |
 | **Week 8** | **Refactoring** | | |
 | M 2/23 |  [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
 | W 2/25 | [TD4 due 10pm](project-4-front-end), [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments]() | |
