@@ -177,11 +177,8 @@ I am committed to the principle of universal learning. This means that our physi
 I strive to create an inclusive and respectful classroom that values diversity. Our individual differences enrich and enhance our understanding of one another and of the world around us. This class welcomes the perspectives of all ethnicities, genders, religions, ages, sexual orientations, disabilities, socioeconomic backgrounds, regions, and nationalities.
 
 ## Expectations
-I have done my best to design the course so that everyone can be successful, regardless of personal circumstances. 
-Communication will be key; please keep me updated about your situation in addition to reaching out to the other relevant offices on campus. 
-If you experience significant technological problems that limit your ability to participate, please contact the ITS Helpdesk at 507-222-5999 or helpdesk@carleton.edu. 
-For announcements of known technical issues, visit the Helpdesk portal. 
-If your personal situation (due to illness or other circumstances) begins to impact your ability to engage with the course, please contact the Dean of Students Office and also let me know.
+
+The College’s accreditation says that a 6-credit course is 150 hours of work. That’s about **15 hours per week.** Those 15 hours break down into about 3 hours in actual class and **12 hours for homework, reading, studying, etc.** If you find yourself spending less time and struggling, then talk to me. If you find yourself spending much more time, then talk to me.
 
 **I expect you to attend every class session and log in to Moodle and CampusWire every day for updates on activities and assignments.** 
 
