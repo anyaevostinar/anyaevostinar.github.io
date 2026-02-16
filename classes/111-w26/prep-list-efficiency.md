@@ -1,7 +1,7 @@
 ---
 layout: page
 title: List and Dictionary Efficiency Preparation
-permalink: /classes/111-f24/list-efficiency-prep
+permalink: /classes/111-w26/list-efficiency-prep
 ---
 
 ## Overview
@@ -20,5 +20,20 @@ After class, you should be able to:
 * Evaluate when you should use a list versus a dictionary to solve a problem based on the time efficiency
 
 ## Resources
-Read/watch the following and complete the embedded checks:
-* Runestone [2.5-2.7](https://moodle.carleton.edu/mod/lti/view.php?id=967863)
+Read the following:
+* [PythonDS3 2.5. Performance of Python Data Structures](https://runestone.academy/ns/books/published/pythonds3/AlgorithmAnalysis/PerformanceofPythonDataStructures.html?mode=browsing)
+* [PythonDS3 2.6 Lists](https://runestone.academy/ns/books/published/pythonds3/AlgorithmAnalysis/Lists.html?mode=browsing)
+* [PythonDS3 2.7 Dictionaries](https://runestone.academy/ns/books/published/pythonds3/AlgorithmAnalysis/Dictionaries.html?mode=browsing)
+
+## Checks
+Submit answers to the following:
+1. Which of the list operations shown below is not O(1) and why?
+    * `a_list.pop(0)`
+    * `a_list.pop()`
+    * `a_list.append()`
+    * `a_list[10]`
+2. Which of the dictionary operations shown below are O(1)?
+    * "x" in a_dict
+    * del a_dict["x"]
+    * a_dict["x"] == 10
+    * a_dict["x"] = a_dict["x"] + 1
