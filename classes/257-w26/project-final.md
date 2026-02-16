@@ -14,7 +14,7 @@ You are able to get help from outside sources, as specified in the syllabus, but
 
 ## Due Date
 
-Your final design improvements are due Monday March 18th at 8:30pm and there can be no revisions or late work accepted per [official college policy](https://apps.carleton.edu/handbook/academics/?policy_id=21449&a=student).
+Your final design improvements are due Monday March 16th at 8:30pm and there can be no revisions or late work accepted per [official college policy](https://apps.carleton.edu/handbook/academics/?policy_id=21449&a=student).
 
 ## Your Task
 You will make improvements to either your codebase or your front-end (or both for advanced) as specified below.
