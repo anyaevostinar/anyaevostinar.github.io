@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Algorithm Analysis Preparation
-permalink: /classes/111-f24/analysis-prep
+permalink: /classes/111-w26/analysis-prep
 ---
 
 ## Overview
@@ -20,5 +20,35 @@ After class, you should be able to:
 * Determine which of the common order of magnitude functions a simple program falls into
 
 ## Resources
-You should read/watch the following and complete the embedded checks:
-* Runestone [2.2-2.4](https://moodle.carleton.edu/mod/lti/view.php?id=967860)
+You should read the following (new book!):
+* [PythonDS3 2.2 What Is Algorithm Analysis?](https://runestone.academy/ns/books/published/pythonds3/AlgorithmAnalysis/WhatIsAlgorithmAnalysis.html?mode=browsing)
+* [PythonDS3 2.3 Big O Notation](https://runestone.academy/ns/books/published/pythonds3/AlgorithmAnalysis/BigONotation.html?mode=browsing)
+* [PythonDS3 2.4 An Anagram Detection Example](https://runestone.academy/ns/books/published/pythonds3/AlgorithmAnalysis/AnAnagramDetectionExample.html?mode=browsing)
+
+These are from the new book that we are using, *Problem Solving with Algorithms and Data Structures using Python by Brad Miller and David Ranum*.
+
+## Checks
+Submit answers to the following on Moodle:
+1. Given the following code fragment, what is its Big O running time?
+    ```python
+    test = 0
+    for i in range(n):
+        for j in range(n):
+            test = test + i * j
+    ```
+2. Given the following code fragment, what is its Big O running time?
+    ```python
+    test = 0
+    for i in range(n):
+        test = test + 1
+
+    for j in range(n):
+        test = test - 1
+    ``` 
+3. Given the following code fragment, what is its Big O running time?
+    ```python
+    i = n
+    while i > 0:
+        k = 2 + 2
+        i = i // 2
+    ```
