@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project Design Improvements
-permalink: /classes/257-s25/project-improvements
+permalink: /classes/257-w26/project-improvements
 ---
 
 ## Overview
@@ -14,12 +14,12 @@ You are able to get help from outside sources, as specified in the syllabus, but
 
 ## Due Date
 
-Your final design improvements are due Monday June 9th at 8:30pm and there can be no revisions or late work accepted per [official college policy](https://apps.carleton.edu/handbook/academics/?policy_id=21449&a=student).
+Your final design improvements are due Monday March 18th at 8:30pm and there can be no revisions or late work accepted per [official college policy](https://apps.carleton.edu/handbook/academics/?policy_id=21449&a=student).
 
 ## Your Task
-You will make improvements to either your codebase or your front-end (or both for exemplary) as specified below.
+You will make improvements to either your codebase or your front-end (or both for advanced) as specified below.
 
-After you are done, you might be interested in following [this guide](guide-migrate-project) for getting your project onto your own repository for your portfolio.
+After you are done, you might be interested in following [this guide](/classes/257-s25/guide-migrate-project) for getting your project onto your own repository for your portfolio.
 
 ### Submit
 * **Individually** submit your [final reflection](reflection-final)
@@ -57,14 +57,14 @@ Tags tell us which commit (i.e. version of your code) to evaluate. If you don’
 If you forgot to tag your commit, you can retroactively tag them with [these instructions](https://docs.google.com/document/d/1gt8cAmhFV9YxFE5ml2ReiGyVvwoum1MH9L0wzttqdkA/edit?usp=sharing).
 
 ## Evaluation Criteria
-The criteria for “Proficiency” and “Exemplary” are below. 
+The criteria for “Core” and “Advanced” are below. 
 
-The grader will evaluate your project by:
+I will evaluate your project by:
 * Looking at your `README.md` to know what design improvements you made to your codebase and/or front-end
 * Git checkout the tag `front-end` to see what your codebase and/or front-end looked like before your design improvements
 * Git checkout the tag `improved-design` to see what your codebase and/or front-end looks like after your design improvements
 
-### Proficiency
+### Core
 * All the previous components (Command Line, Flask, Database, Front-End, & Tests) still work.
 * Your team’s code fulfilled the requirements below for EITHER the code OR front-end design improvement option
 
@@ -82,5 +82,5 @@ For each of the **TWO** usability issues:
 * `README.md` includes an explanation of what you did to address the usability issue
 * The front-end improvement is evident when comparing the relevant files in the codebase from the `front-end` tag & the `improved-design` tag
 
-### Exemplary
-Your team’s code fulfilled the Proficiency requirements for BOTH the code and front-end design improvement options.
+### Advanced
+Your team’s code fulfilled the Core requirements for BOTH the code and front-end design improvement options.
