@@ -43,7 +43,7 @@ The grader will assess your project with the following workflow:
 * Run your test suite
 * Look at your code
 
-You should be building off of your existing code and focusing mostly on the database component, though you may find that you need to update some of your core functionality to work with your data in the format that you want now. Remember to then adjust your tests too!
+You should be building off of your existing code and focusing mostly on the database component, though you may find that you need to update some of your core functionality to work with your data in the format that you want now. Remember to then adjust your tests too! You can refer to the [Patching Guide](/classes/257-w26/guide-patching) for how to make your tests work on GitHub without your database.
 
 ## Turning it in
 
@@ -88,7 +88,7 @@ The criteria for "Core" and "Advanced" are below.
     * By "extraneous data", we mean data that won’t be used for the final project website.
     * If you have columns that aren’t being used in this deliverable but have plans to be used in the front-end deliverable, let us know in `README.md`
   * Data types are well-chosen for the dataset
-  * The test coverage is at 90% or higher
+  * The test coverage is at 90% or higher, probably by using [patching](/classes/257-w26/guide-patching)
   * All previous code using csv files has been removed and no "dead code"
 * Design:
    * Strong separation of responsibilities between classes, and between methods within classes. 
