@@ -1,7 +1,7 @@
 ---
 layout: page
 title: More Front-end Prep
-permalink: /classes/257-s25/more-front-prep
+permalink: /classes/257-w26/more-front-prep
 ---
 
 ## Overview
@@ -33,7 +33,7 @@ To achieve the basic learning objectives, pick at least one of the below resourc
 * If you want to learn more about Javascript, start with the Intro in the W3 schools [Javascript tutorial](https://www.w3schools.com/js/default.asp) and jump to whatever looks interesting
 
 ### Map
-* [Add a Google Map with markers with HTML:](https://developers.google.com/maps/documentation/javascript/add-google-map-wc-tut) You can get a free trial with $300 of Google Cloud credit with your Carleton email, which should be more than enough to get you through a demo for this class.
+* [Add a Google Map with markers with HTML:](https://developers.google.com/maps/documentation/javascript/add-google-map-wc-tut) Last that I checked, you can get a free trial with $300 of Google Cloud credit with your Carleton email, which should be more than enough to get you through a demo for this class.
 * [Plotly Maps](https://plotly.com/python/tile-scatter-maps/) Another library that students have used in the past to make a map with markers
 
 ### World Cloud

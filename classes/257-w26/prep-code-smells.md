@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code Smells Prep
-permalink: /classes/257-s25/code-smells-prep
+permalink: /classes/257-w26/code-smells-prep
 ---
 
 ## Overview

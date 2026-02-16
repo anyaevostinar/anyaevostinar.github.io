@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Naming and Comments Prep
-permalink: /classes/257-s25/naming-prep
+permalink: /classes/257-w26/naming-prep
 ---
 
 ## Overview
