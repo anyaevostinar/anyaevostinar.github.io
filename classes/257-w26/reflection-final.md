@@ -6,7 +6,7 @@ permalink: /classes/257-w26/reflection-final
 
 ## Overview
 Part of the goal of the course is to regularly reflect on the software development process and your team's functioning. 
-The goal of this final reflection is that you again reflect critically on: the role you are playing in the success of your project team, the ways in which your team is collaborating, and the software development process itself. 
+The goal of this final reflection is that you again reflect critically on: the role you played in the success of your project team, the ways in which your team collaborated, and the software development process itself. 
 
 ## Due Date
 Your reflection is due to the form by 8:30pm on March 16th.

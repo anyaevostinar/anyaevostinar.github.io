@@ -62,6 +62,6 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | M 3/9 | [User Story Prep](user-stories-prep) | [Slides](), [User stories]() | |
 | W 3/11 | [Usability Testing Prep](usability-prep), All revisions due 10pm | [Slides](), [Usability testing](https://docs.google.com/document/d/167KzdJLn9OehrfxzPmUA9xB4zunkNrkrBJB40GsDlBk/edit?usp=drive_link), Final project showcase | |
 | **Exam Week** | | |
-| |Nothing scheduled, final project submissions due 3/16 8:30pm (+1 hour grace period) | | |
-| | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
+| |Nothing scheduled, final project submissions due 3/16 8:30pm (+1 hour grace period) | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | || |
+
 
