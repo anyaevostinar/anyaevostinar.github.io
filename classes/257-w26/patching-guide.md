@@ -53,9 +53,14 @@ class TestDataSource(unittest.TestCase):
 
     @patch('ProductionCode.datasource.records.Database')
     def test_get_pokemon_by_name_returns_csv(self, mock_db_class):
+        # The combo of @patch and the parameter mock_db_class automatically
+        # creates a MagicMock of records.Database and saves it to mock_db_class
+
         # 1. Setup the Mocks
-        # mock_db_class is the mocked 'records.Database' class
-        # mock_db_instance is what is returned when 'records.Database()' is called
+        # mock_db_class is the already mocked 'records.Database' class (really its constructor)
+        # mock_db_class.return_value is a new mock object, because mock object constructors make
+        #    more mock objects
+        # mock_db_instance is the object that will be returned when 'records.Database()' is called
         mock_db_instance = mock_db_class.return_value
         
         # Create a mock for the individual row, MagicMock makes an object with all the normal built-in methods
@@ -102,7 +107,7 @@ class TestDataSource(unittest.TestCase):
 
 ## Key Takeaways
 * **Patch where the object is used:** Notice I patched `ProductionCode.datasource.records.Database`. You want to intercept the import inside your module, not the records library itself.
-* **Use `.return_value` frequently**: Since `DataSource` calls `records.Database()`, the patch gives us the class. To control the instance created inside `__init__`, we use `mock_db_class.return_value`.
+* **Use `.return_value` frequently**: Since `DataSource` calls `records.Database()`, the patch gives us the class. To control the instance created inside `__init__`, we use `mock_db_class.return_value`. The line `mock_db_instance = mock_db_class.return_value` is just giving us a more convenient name for the object returned by calling `records.Database(self.database_url)`
 * **`MagicMock` for Rows**: Because the `records` library returns row objects with their own methods (like `.export()`), we create a `MagicMock()` for the row and define its behavior separately.
 * You can adapt the above to work for your project without needing to change very much.
 
