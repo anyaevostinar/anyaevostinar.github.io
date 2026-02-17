@@ -67,7 +67,7 @@ The criteria for "Core" and "Advanced" are below.
   * Command line interface works with the new database
   * Flask API works with the new database
   * Executes queries for standard cases correctly
-  * The automated test suite passes (no additional tests are required) and has 50% coverage
+  * The automated test suite passes on `stearns` (no additional tests are required) and has 50% coverage
   * SQL data types match the types from the original dataset and/or are appropriate for the modified data from the dataset
 * Design:
   * Good separation of responsibilities. Some minor tweaks to class design could improve the code (i.e., tighter cohesion and/or looser coupling). 
@@ -83,12 +83,12 @@ The criteria for "Core" and "Advanced" are below.
 * All the Core criteria are met
 * The commit to evaluate on the team repo is tagged with `database` (See instructions in [How to Submit](https://docs.google.com/document/d/1WJfFKe-xE7ytKzmMba3vMOORZe6_m-0v854SnAb6mWk/edit?tab=t.0#heading=h.h8jfjcdyduzb))
 * Functionality:
-  * Failing queries have helpful error messages
   * Data is well-curated from the original dataset, with no extraneous data
     * By "extraneous data", we mean data that won’t be used for the final project website.
     * If you have columns that aren’t being used in this deliverable but have plans to be used in the front-end deliverable, let us know in `README.md`
   * Data types are well-chosen for the dataset
-  * The test coverage is at 90% or higher, probably by using [patching](/classes/257-w26/guide-patching)
+  * The test coverage is at 90% or higher
+  * Test suite passes on GitHub by using [patching](/classes/257-w26/guide-patching)
   * All previous code using csv files has been removed and no "dead code"
 * Design:
    * Strong separation of responsibilities between classes, and between methods within classes. 

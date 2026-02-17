@@ -96,3 +96,4 @@ When evaluating your project, the grader will pull down your team's repo on `ste
   * The user stories in `UserStories.md` are meaningful and well-supported by the website
   * Website is complete, polished, and cohesive. It can be a simple and clean design, but it should look professional.
     * Refer to examples in the [Inspiration section of the Project Proposal](/classes/257-w26/project-proposal#inspiration)
+* As an individual, you need to have submitted the sprint feedback form for Sprint 4
