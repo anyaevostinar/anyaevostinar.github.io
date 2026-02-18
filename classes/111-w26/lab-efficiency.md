@@ -40,19 +40,9 @@ a. Determine their big-O runtime by counting the number of critical operations t
 
 b. Uncomment the lines 70-91 and 106-110 (NOT `recursive_fibonacci` yet). Run the the function timing script and plot the resulting data to compare to your prediction.
 
-```python
-# 1
-def find_duplicates(items):
-    duplicates = []
-    for i in range(len(items)):
-        for j in range(i + 1, len(items)):
-            if items[i] == items[j]:
-                duplicates.append(items[i])
-    return duplicates
-```
 
 ```python
-# 2
+# 1
 def get_first_item(items):
     if items:
         return items[0]
@@ -61,13 +51,24 @@ def get_first_item(items):
 ```
 
 ```python
-#3
+# 2
 def find_max(items):
     max_val = items[0]
     for item in items:
         if item > max_val:
             max_val = item
     return max_val
+```
+
+```python
+# 3
+def find_duplicates(items):
+    duplicates = []
+    for i in range(len(items)):
+        for j in range(i + 1, len(items)):
+            if items[i] == items[j]:
+                duplicates.append(items[i])
+    return duplicates
 ```
 
 ```python
