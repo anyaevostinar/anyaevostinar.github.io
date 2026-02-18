@@ -63,6 +63,7 @@ Your first task is to finish the basics of the `ZipCode` class. Specifically, ad
 * Constructor (`__init__`): save all the incoming parameters to appropriate instance variables
 * `get_zip(self)`,`get_population(self)`, `get_latitude(self)`, `get_longitude(self)`: return the appropriate instance variable
 * `get_area(self)`: add the zip code’s **total** geographic area in square meters to the code. You'll need to update the constructor as well as adding this method. (Place the new parameter for the constructor at the end of the existing ones.)
+    * Note that the constructor should take just one parameter for the `area`, NOT `land_area` and `water_area` separately
 
 (Leave `draw_circle` alone for now, you'll come back to it later.)
 
