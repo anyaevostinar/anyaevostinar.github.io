@@ -29,6 +29,7 @@ The **core requirements** are that your program has:
 * Header with three lines that start with `#` for each file
 * Basic style that can be checked automatically (not complete!)
 * `gis.py` displays a basic visualization of Minnesota zipcodes
+    * For core, this can be just circles of all your favorite color and a single size
 * Collaboration statement at the top of the file (even if it just says that you worked alone)
 * `readme.txt` contains a reflection
 
