@@ -32,6 +32,18 @@ class DataSource:
         query = "SELECT * FROM pokemon WHERE name = :name"
         rows = self.database.query(query, name=name)
         return rows
+
+    def get_pokemon_by_stat(self, stat, count):
+        '''
+        Returns the top number of Pokemon by the given stat
+        An example of returning multiple rows with an export
+        :param stat: The stat to use
+        :param count: The number of Pokemon to display
+        :return: A list of Pokemon
+        '''
+        #sort the data by the given stat
+        rows = self.database.query(f"SELECT * FROM pokemon ORDER BY {stat} DESC LIMIT {count}")
+        return rows.export('csv')
 ```
 
 ## Testing `get_pokemon_by_name`
@@ -136,6 +148,31 @@ class TestDataSource(unittest.TestCase):
             query = "SELECT * FROM pokemon WHERE name = :name"
         rows = self.database.query(query, name=name)
 
+    @patch('ProductionCode.datasource.records.Database')
+    def test_get_pokemon_by_stat(self, mock_db_class):
+        # Setup the mock database instance
+        mock_db_instance = mock_db_class.return_value
+        
+        # Mock the query result, which needs to be an object if you are going to
+        # call it's export
+        records_object = MagicMock()
+
+        # if you want to get multiple rows back, include them all with new line separators
+        records_object.export.return_value = "1,Bulbasaur,Fake,62\n2,Ivysaur,Fake,49"
+        # set your new mock object to be what is returned when your database is queried
+        mock_db_instance.query.return_value = records_object
+
+        # Run your function
+        ds = DataSource()
+        result = ds.get_pokemon_by_stat("attack", 2)
+        
+        # Check to make sure the right things happened in your Python
+        expected_csv = "1,Bulbasaur,Fake,62\n2,Ivysaur,Fake,49"
+        self.assertEqual(result, expected_csv)
+        mock_db_instance.query.assert_called_once_with(
+            "SELECT * FROM pokemon ORDER BY attack DESC LIMIT 2"
+        )
+
 ```
 
 ## Key Takeaways
@@ -144,6 +181,7 @@ class TestDataSource(unittest.TestCase):
 * **`MagicMock` for Rows**: Because the `records` library returns row objects with their own methods (like `.export()`), we create a `MagicMock()` for the row and define its behavior separately.
 * **Pretend it's a dictionary**: If you aren't using `export` or any other `Record` object methods, you can just use a Python dictionary for your tests
 * You can adapt the above to work for your project without needing to change very much.
+* Note, my tests have a lot of duplication for clarity since I'm assuming you'll only be looking at one of them, you can definitely cut down in places!
 
 ## Testing Flask routes
 I have the following Flask file, using my `DataSource` from above:
