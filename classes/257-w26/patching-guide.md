@@ -26,6 +26,12 @@ class DataSource:
         if rows:
             return rows[0].export('csv')
         return None
+
+    def get_pokemon_by_name_dictionary(self, name):
+        #an example if you just want to return the Record object dictionary
+        query = "SELECT * FROM pokemon WHERE name = :name"
+        rows = self.database.query(query, name=name)
+        return rows
 ```
 
 ## Testing `get_pokemon_by_name`
@@ -94,6 +100,30 @@ class TestDataSource(unittest.TestCase):
         self.assertEqual(result, "1,Pikachu,Electric")
 
     @patch('ProductionCode.datasource.records.Database')
+    def test_get_pokemon_by_name_dictionary(self, mock_db_class):
+        # Setup the mock database instance
+        mock_db_instance = mock_db_class.return_value
+        
+        # Mock the query result (A Record is basically a dictionary, so we can just make a dictionary)
+        mock_db_instance.query.return_value = {'number': 1, 'name': 'Bulbasaur', 'type_1': 'Fake'}
+        
+        # Initialize a fresh DataSource for this test
+        ds = DataSource()
+        
+        # Act
+        result = ds.get_pokemon_by_name_dictionary("Bulbasaur")
+        
+        # Assert
+        self.assertEqual(result['number'], 1)
+        self.assertEqual(result['name'], 'Bulbasaur')
+        self.assertEqual(result['type_1'], 'Fake')
+        # Verify the query was called with the correct parameter
+        mock_db_instance.query.assert_called_once_with(
+            "SELECT * FROM pokemon WHERE name = :name", 
+            name="Bulbasaur"
+        )
+
+    @patch('ProductionCode.datasource.records.Database')
     def test_get_pokemon_by_name_not_found(self, mock_db_class):
         # Setup query to return an empty list
         mock_db_class.return_value.query.return_value = []
@@ -103,12 +133,16 @@ class TestDataSource(unittest.TestCase):
         
         self.assertIsNone(result)
 
+            query = "SELECT * FROM pokemon WHERE name = :name"
+        rows = self.database.query(query, name=name)
+
 ```
 
 ## Key Takeaways
 * **Patch where the object is used:** Notice I patched `ProductionCode.datasource.records.Database`. You want to intercept the import inside your module, not the records library itself.
 * **Use `.return_value` frequently**: Since `DataSource` calls `records.Database()`, the patch gives us the class. To control the instance created inside `__init__`, we use `mock_db_class.return_value`. The line `mock_db_instance = mock_db_class.return_value` is just giving us a more convenient name for the object returned by calling `records.Database(self.database_url)`
 * **`MagicMock` for Rows**: Because the `records` library returns row objects with their own methods (like `.export()`), we create a `MagicMock()` for the row and define its behavior separately.
+* **Pretend it's a dictionary**: If you aren't using `export` or any other `Record` object methods, you can just use a Python dictionary for your tests
 * You can adapt the above to work for your project without needing to change very much.
 
 ## Testing Flask routes
@@ -193,3 +227,8 @@ class TestFlaskApp(unittest.TestCase):
 * `app.test_client()`: This acts as a "browser in a box." It lets you trigger routes and inspect the response (status codes, headers, and body) without actually starting a web server on a port.
 * **Patching the Instance**: In the previous section, I patched the class (`records.Database`). Here, I patched the method of an already existing instance (`app.ds.get_pokemon_by_name`). This is often easier because you aren't messing with the constructor logic and it is ideal to patch as close to the function that you are testing as possible.
 * **Response Decoding**: Flask `response.data` returns bytes. To compare it to a string, you’ll usually need to call `.decode('utf-8')`.
+
+## For More
+There is a lot more that you can do with Mock and patch, and the best place to learn more is the Python documentation:
+* [patch start and stop](https://docs.python.org/3/library/unittest.mock.html#patch-methods-start-and-stop) - if you want to get rid of repetitive patching of the database
+* [Quick Guide](https://docs.python.org/3/library/unittest.mock.html#quick-guide) - for more how how Mock and MagicMock actually work

@@ -51,8 +51,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 2/18 | [HTTP Prep](http-prep) | [Slides](https://docs.google.com/presentation/d/1dW6AvRRFNf84mWnIhe4NKUzubqVFXaOma3OxrgCfdmE/edit?usp=sharing), [Flask Forms Lab](flask-form) | |
 | F 2/20 |[ID4 due 10pm](project-4-ind); [Web Accessibility Prep](accessibility-prep) | [Slides](https://docs.google.com/presentation/d/1M_YpNR_kIxDL8ZqluA1puL2AlchrucHRCtJcBlXC-F8/edit?usp=sharing), Accessibility Analysis | |
 | **Week 8** | **Refactoring** | | |
-| M 2/23 |  [More Front-End Prep](more-front-prep) | [Slides](), Working on Front-end component | |
-| W 2/25 | [TD4 due 10pm](project-4-front-end), [Naming and Commenting Prep](naming-prep) | [Slides](), [Naming and comments]() |  [TD5: Improvements and Final Reflection](project-improvements) (due 3/16) |
+| M 2/23 |  [More Front-End Prep](more-front-prep) | [Slides](https://docs.google.com/presentation/d/1A1FEiC5Teak-WNrtYHyobWEz5iLjyhoOT3-ecykFimU/edit?usp=sharing), Working on Front-end component | |
+| W 2/25 | [TD4 due 10pm](project-4-front-end), [Naming and Commenting Prep](naming-prep) | [Slides](https://docs.google.com/presentation/d/1aO9RyagmiMwiGiwKnCYQQ5zF0QW4mo9rPRx4z4C7jy0/edit?usp=sharing), Naming and comments |  [TD5: Improvements and Final Reflection](project-improvements) (due 3/16) |
 | F 2/27 | [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells |  |
 | **Week 9** | **More Refactoring** | | |
 | M 3/2 | [Code Review 2 Prep](review-2-prep) | [Slides](), [Code review](https://docs.google.com/document/d/1LTLzYZ1_Dl9Mnddsgu72cmVc3a_sUwW3Ad69ZvGkJXw/edit?usp=sharing) | |
