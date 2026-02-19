@@ -53,7 +53,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 8** | **Refactoring** | | |
 | M 2/23 |  [More Front-End Prep](more-front-prep) | [Slides](https://docs.google.com/presentation/d/1A1FEiC5Teak-WNrtYHyobWEz5iLjyhoOT3-ecykFimU/edit?usp=sharing), Working on Front-end component | |
 | W 2/25 | [TD4 due 10pm](project-4-front-end), [Naming and Commenting Prep](naming-prep) | [Slides](https://docs.google.com/presentation/d/1aO9RyagmiMwiGiwKnCYQQ5zF0QW4mo9rPRx4z4C7jy0/edit?usp=sharing), Naming and comments |  [TD5: Improvements and Final Reflection](project-improvements) (due 3/16) |
-| F 2/27 | [Code Smells Prep](code-smells-prep) | [Slides](), Code Smells |  |
+| F 2/27 | [Code Smells Prep](code-smells-prep) | [Slides](https://docs.google.com/presentation/d/1yJJqOl7cPZKcb84GSTs0MhhrZN9Z5tKKYLbFFCHfXAk/edit?usp=sharing), Code Smells |  |
 | **Week 9** | **More Refactoring** | | |
 | M 3/2 | [Code Review 2 Prep](review-2-prep) | [Slides](), [Code review](https://docs.google.com/document/d/1LTLzYZ1_Dl9Mnddsgu72cmVc3a_sUwW3Ad69ZvGkJXw/edit?usp=sharing) | |
 | W 3/4 | [Design Patterns Prep](patterns-prep) | [Slides](), Design Patterns | |
