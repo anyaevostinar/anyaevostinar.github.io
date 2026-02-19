@@ -40,3 +40,4 @@ Good ways to study for the exams are:
 * Try any of the exercises at the ends of relevant chapters of the Runestone book that are about the learning objectives
 * Work on the current homework, since it usually overlaps with the exam objectives
 * Attend the prefect sessions
+* Try out the [Exam 3 Study Buddy Gem](https://gemini.google.com/gem/1GrkhtOKfL981JbM2Xr9qnZ5D4ITqAq-J?usp=sharing). Remember, these bots can make mistakes, so reach out with questions or if it is doing something strange!
