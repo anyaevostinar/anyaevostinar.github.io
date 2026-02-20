@@ -45,7 +45,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 8** | **Recursion and Analysis** | | |
 | 2/23|  [Algorithm Analysis Prep](analysis-prep)   |	[Slides](https://docs.google.com/presentation/d/1J04dFdvzBpotm_xKG1c0YYslHqaXBUt_eay_6viJQj0/edit?usp=sharing),  [Analyzing Algorithms](efficiency)		 |  |
 | 2/25 | [Recursion Prep](recursion-prep)	 |  [Slides](https://docs.google.com/presentation/d/1CSEf24E76EpHqBtxJ3R8EU9u_FYnJ5J3nr6jNuelXz4/edit?usp=sharing), [Intro to Recursion](recursion-lab)	|  |
-| 2/27 | [Searching Prep](searching-prep) |	 [Slides](), [Sequential and Binary Search](binary-search)	| |
+| 2/27 | [Searching Prep](searching-prep) |	 [Slides](https://docs.google.com/presentation/d/1ujWWXwnaBoFn1AemmJ6DV4TrOMD4QgfZhAgYGVkRj-M/edit?usp=sharing), [Sequential and Binary Search](binary-search)	| |
 | **Week 9** | **Searching and Sorting** |   | |
 | 3/2 | 	[Sorting Prep 1](sorting-basic-prep); Final Project MVP due 10pm	 | [Slow(ish) Sorting Algorithms](slow-sorting) | |	
 | 3/4 | [Sorting Prep 2](mergesort-prep); |  Mergesort  | 	 |
