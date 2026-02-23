@@ -26,3 +26,5 @@ You should read the following and complete the embedded checks:
 Draw out the merging after the following split. Your diagram should look similar to Figure 11 from the reading. Upload a picture of your merging diagram to Moodle.
 
 ![A diagram of a merge sort split](/classes/111-w26/mergesort_prep.png)
+
+Remember that your final list should be sorted from "ant" to "zero".
