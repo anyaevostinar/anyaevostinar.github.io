@@ -17,7 +17,7 @@ New:
 * AE4-AD: Demonstrate the process of merge sort
 * AE5-AD: Identify and explain at a high-level the worst case efficiency of a new algorithm similar to those we’ve discussed in class
 
-New possiblility:
+New possibility:
 * PD4-AD: Identify and explain logic errors (e.g., variable scope, infinite loop, **infinite recursion**)
 
 Retake:
