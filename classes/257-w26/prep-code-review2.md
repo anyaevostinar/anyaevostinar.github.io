@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code Review 2 Prep
-permalink: /classes/257-s25/review-2-prep
+permalink: /classes/257-w26/review-2-prep
 ---
 
 ## Overview
@@ -32,4 +32,4 @@ Write answers to the following and submit them to Moodle:
     * 2 or 3 things you think could be improved. Ideally, you should include suggestions on how to make those improvements, but sometimes, you won't be sure how to fix a particular thing.
     * [optional] If there are things about the code that you don't understand, or about which you have questions, you may include a couple of those items at the end of your writeup.
 
-Keep your comments concise. These writeups should be short (typically less than one page) and as simple as you can make them. Also, consider these notes on [providing constructive feedback](https://cs.carleton.edu/faculty/jondich/courses/cs257_f21/assignments/07_books_code_review.html#helping) as you complete your write-up. You will be sharing your notes with the authors of the code.
+Keep your comments concise. These writeups should be short (typically less than one page) and as simple as you can make them. Also, consider these notes on [providing constructive feedback](https://cs.carleton.edu/faculty/jondich/courses/cs257_f21/assignments/07_books_code_review.html#helping) as you complete your write-up.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Design Patterns Prep
-permalink: /classes/257-s25/patterns-prep
+permalink: /classes/257-w26/patterns-prep
 ---
 
 ## Overview
