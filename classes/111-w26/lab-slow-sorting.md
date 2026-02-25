@@ -14,7 +14,7 @@ Here is the code for insertion sort from the reading:
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=def%20insertion_sort%28a_list%29%3A%0A%20%20%20%20for%20i%20in%20range%281,%20len%28a_list%29%29%3A%0A%20%20%20%20%20%20%20%20cur_val%20%3D%20a_list%5Bi%5D%0A%20%20%20%20%20%20%20%20cur_pos%20%3D%20i%0A%0A%20%20%20%20%20%20%20%20while%20cur_pos%20%3E%200%20and%20a_list%5Bcur_pos%20-%201%5D%20%3E%20cur_val%3A%0A%20%20%20%20%20%20%20%20%20%20%20%20a_list%5Bcur_pos%5D%20%3D%20a_list%5Bcur_pos%20-%201%5D%0A%20%20%20%20%20%20%20%20%20%20%20%20cur_pos%20%3D%20cur_pos%20-%201%0A%20%20%20%20%20%20%20%20a_list%5Bcur_pos%5D%20%3D%20cur_val%0A%0A%0Aa_list%20%3D%20%5B54,%2026,%2093,%2017,%2077,%2031,%2044,%2055,%2020%5D%0Ainsertion_sort%28a_list%29%0Aprint%28a_list%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 
-Answer the following questions about the program itself:
+Discuss the following questions about the program itself:
 * Why doesn't this function require a return value?
 * Why are we using a while loop for `cur_pos` rather than a for loop?
 * Why doesn't `i` start at 0?

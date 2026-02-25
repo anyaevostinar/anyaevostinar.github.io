@@ -9,7 +9,9 @@ I recommend making a folder for today's lab in [COURSES as you usually do](getti
 
 In it, make a file `recursion_lab.py` and place the following functions into it. Remember that you'll need to call each function to test it!
 
-<!--> Note: should really put in example tests to get them to run it probably<-->
+{% comment %}
+<!-- Note: should really put in example tests to get them to run it probably-->
+{% endcomment %}
 
 ## Exercise 1
 Write a recursive function called `get_min(lst)` that returns the minimum element from a given list of integers.
