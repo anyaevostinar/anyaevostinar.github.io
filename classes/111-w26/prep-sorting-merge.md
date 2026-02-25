@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Merge Sort Preparation
-permalink: /classes/111-f24/mergesort-prep
+permalink: /classes/111-w26/mergesort-prep
 ---
 
 ## Overview
