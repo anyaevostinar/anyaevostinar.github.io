@@ -65,7 +65,7 @@ When evaluating your project, the grader will pull down your team's repo on `ste
   * The command-line interface still works
   * The API component (through Flask) still works
   * There is a useful 404 page with instructions on how to correctly use the website features
-  * There are three independent features that allow the user to get information from the chosen dataset
+  * ~There are three independent features that allow the user to get information from the chosen dataset~
   * There are integration tests for the user-facing website (in addition to the API tests)
   * The automated test suite passes on `stearns`
   * Coverage is at 50% or higher
