@@ -67,7 +67,7 @@ When evaluating your project, the grader will pull down your team's repo on `ste
   * There is a useful 404 page with instructions on how to correctly use the website features
   * There are three independent features that allow the user to get information from the chosen dataset
   * There are integration tests for the user-facing website (in addition to the API tests)
-  * The automated test suite passes
+  * The automated test suite passes on `stearns`
   * Coverage is at 50% or higher
 * Design:
   * `README.md` explains how your website enables:
@@ -90,6 +90,7 @@ When evaluating your project, the grader will pull down your team's repo on `ste
 ### Advanced Criteria
 * All the Core criteria are met
 * Commit to evaluate is tagged with `front-end`
+* The test suite passes on GitHub via patching
 * Coverage is at 90%
 * Front-end:
   * Style checks are all at 10

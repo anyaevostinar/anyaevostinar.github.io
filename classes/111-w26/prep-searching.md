@@ -31,4 +31,4 @@ You should read the following:
 Submit answers to the following on Moodle:
 1. Suppose you are doing a sequential search of the list `[15, 18, 2, 19, 18, 0, 8, 14, 19, 14]`. How many comparisons would you need to do in order to find the key 18?
 2. Suppose you are doing a sequential search of the ordered list `[3, 5, 6, 8, 11, 12, 14, 15, 17, 18]`. How many comparisons would you need to do in order to find the key 13?
-3. Suppose you have the following sorted list [3, 5, 6, 8, 11, 12, 14, 15, 17, 18] and are using the recursive binary search algorithm. What is the sequence of numbers that `item` will be compared to? Hint, the first number is `12`.
+3. Suppose you have the following sorted list `[3, 5, 6, 8, 11, 12, 14, 15, 17, 18]` and are using the recursive binary search algorithm. What is the sequence of numbers that will be compared to when searching for 16? Hint, the first number is `12`.

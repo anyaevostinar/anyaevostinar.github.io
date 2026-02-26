@@ -56,7 +56,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 2/27 | [Code Smells Prep](code-smells-prep) | [Slides](https://docs.google.com/presentation/d/1yJJqOl7cPZKcb84GSTs0MhhrZN9Z5tKKYLbFFCHfXAk/edit?usp=sharing), Code Smells |  |
 | **Week 9** | **More Refactoring** | | |
 | M 3/2 | [Code Review 2 Prep](review-2-prep) | [Slides](https://docs.google.com/presentation/d/1uQbeWhnuQVGKsfmwFlGgmdyh5lQg7AYJchl_2WFnQ1w/edit?usp=sharing), Code review | |
-| W 3/4 | [Design Patterns Prep](patterns-prep) | [Slides](), Design Patterns | |
+| W 3/4 | [Design Patterns Prep](patterns-prep) | [Slides](https://docs.google.com/presentation/d/15xkEAaWIH-mgOydbFh4ElGXkdUvo_tVwsQ9qNMlzFmk/edit?usp=sharing), Design Patterns | |
 | F 3/6 | [Specific Patterns Prep](more-patterns-prep) | [Slides](), More design patterns | |
 | **Week 10** | **Wrapping Up** | | |
 | M 3/9 | [User Story Prep](user-stories-prep) | [Slides](), [User stories]() | |
