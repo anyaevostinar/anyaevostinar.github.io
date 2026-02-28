@@ -116,8 +116,11 @@ As we have discussed previously, creating new sublists is expensive both in time
 2. Now define a function `def merge_sort_inplace(lst, first, last, tmp)`, which implements merge sort, but instead of creating new sublists, it adjusts the `first` and `last` index pointers to indicate the sublists.
 
 ### Insertion Sort Optimization
-As you noticed, merge sort isn't actually the fastest with small lists, due to the extra work of splitting and making recursive calls. Because of this, the built-in sorting generally uses a *hybrid* approach where insertion sort is used once the size of the list gets small enough (the built in doesn't use merge sort since there is a slightly faster practical sorting called quick sort, but it does use insertion sort at the smaller list sizes). 
+As you noticed, merge sort isn't actually the fastest with small lists, due to the extra work of splitting and making recursive calls. Because of this, the built-in sorting generally uses a *hybrid* approach where insertion sort is used once the size of the list gets small enough. 
 
 1. Make a copy of your merge sort function and call it `hybrid_sort`. Then switch to using insertion sort when the size of the sublist is less than 10 items.
 
 2. See if you can detect a difference in the speed of your hybrid sort compared to merge sort!
+
+### Bottom Up Merge Sort
+As we've discussed, recursion adds a lot of overhead to a program, so it is more efficient to avoid it if possible. You can do that with merge sort by skipping the splitting step and thinking of your list as already a bunch of single items and then using index pointers to track the locations of your "sublists". Try out implementing it and compare the timing!

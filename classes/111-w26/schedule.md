@@ -48,7 +48,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 2/27 | [Searching Prep](searching-prep) |	 [Slides](https://docs.google.com/presentation/d/1ujWWXwnaBoFn1AemmJ6DV4TrOMD4QgfZhAgYGVkRj-M/edit?usp=sharing), [Sequential and Binary Search](binary-search)	| |
 | **Week 9** | **Searching and Sorting** |   | |
 | 3/2 | 	[Sorting Prep 1](sorting-basic-prep); Final Project MVP due 10pm	 | [Slides](https://www.youtube.com/watch?v=c18WZZa4KIA&list=RDc18WZZa4KIA&start_radio), [Slow(ish) Sorting Algorithms](slow-sorting) | |	
-| 3/4 | [Sorting Prep 2](mergesort-prep); |  Mergesort  | 	 |
+| 3/4 | [Sorting Prep 2](mergesort-prep); | [Slides](https://docs.google.com/presentation/d/1sdlb6CpChMPjY6FW_eWp8BwTUFKAJsdSVSOgKakYHa4/edit?usp=sharing), [Merge Sort Lab](merge-sort-lab)  | 	 |
 | 3/6 | Study  |  [Exam 4](exam4) |	 |
 | **Week 10** | **Wrapping Up** |  | |
 | 3/9	|   |  Final project peer review |  |
