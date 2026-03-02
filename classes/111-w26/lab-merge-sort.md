@@ -6,7 +6,7 @@ permalink: /classes/111-w26/merge-sort-lab
 
 I recommend making a folder for today's lab in COURSES as you usually do.
 
-Make a file in it name `merge_sort.py`.
+Make a file in it named `merge_sort.py`.
 
 ## Goals
 Today's lab aims to have you implement merge sort for yourself to improve your understanding of how it works. In addition, you will compare the number of comparisons and real timing of merge sort and insertion sort.
@@ -62,11 +62,17 @@ Therefore, you will start by implementing a `merge` function in this exercise.
 Now it's time to implement merge sort! Implement the `merge_sort` function based on the high-level that we discussed in class:
 * The parameter is an unsorted list `lst`.
 * The return value is a sorted list.
-* The base case is when the list is length 1 or 0.
+* The base case is when the list is length 1 (or 0).
 * In the recursive case, you should make recursive calls on the **first half** and **second half** of the list, which will both return sorted sublists. (Hint, remember you can use `[:midpoint]` if you have defined `midpoint` to get the first half of a list.)
 * You should then use your `merge` to **merge those sorted sublists and return the sorted list**.
 
-Once you've implemented your `merge_sort`, make sure it is able to sort the following correctly:
+Once you've implemented your `merge_sort`, make sure it is able to sort the following four-item list correctly:
+```python
+print(merge_sort([7, 1, 8, 0]))
+# should print [0, 1, 7, 8]
+```
+
+Then make sure you are able to sort all of the following correctly. If your code has trouble with these, remember that you should be using integer division `//` to get the midpoint to handle odd-length lists.
 
 ```python
 print(merge_sort([5, 4, 3, 2, 1]))
@@ -91,15 +97,17 @@ Now it's time to see how fast your implementation of merge sort is!
     python sort_function_timer.py
     Working on input size: 10
     ------------------------------------
-    Average time for insertion sort with input size 10: 0.001133 milliseconds
-    Average time for merge sort with input size 10: 0.003450 milliseconds
-    Average time for selection sort with input size 10: 0.001443 milliseconds
-    Average time for bubble sort with input size 10: 0.001925 milliseconds
+    Average time for insertion sort with input size 10: 0.001203 milliseconds
+    Average time for selection sort with input size 10: 0.001521 milliseconds
+    Average time for bubble sort with input size 10:    0.002057 milliseconds
+
+    Average time for merge sort with input size 10:     0.003649 milliseconds
+    Average time for built-in with input size 10:       0.000295 milliseconds
     ```
 
-3. This is running 10,0000 trials for a very small list. Based on your data (and mine), **which sort would you want to use for very small lists**? Why do you think that is the case?
+3. This is running 10,000 trials for a very small list. Based on your data (and mine), **which of your sorts would you want to use for very small lists**? Why do you think that is the case? (If you are intrigued at how the built-in is so fast, look at the extra exercises later!)
 
-4. Now increase the size of the input on **line 105** to see how the efficiency of the different sorts changes as the size of the input increases. You may want to **decrease the number of trials** somewhat to not have to wait quite so long. You can also **stop running the slowest sort** (which one is it?) at very large input sizes.
+4. Now increase the size of the input on **line 117** to see how the efficiency of the different sorts changes as the size of the input increases. You may want to **decrease the number of trials** somewhat to not have to wait quite so long. You can also **stop running the slowest sort** (which one is it?) at very large input sizes.
 
 5. Plot your data (on [Desmos calculator](https://www.desmos.com/calculator) or another plotting software of your choosing) to see how it compares to the Big O times that we discussed for these sorting algorithms. Remember in Desmos, **click the + and choose "table"** to enter in your timing data points, then click the **magnifying glass** for it to adjust the axes to show you data clearly.
 
@@ -123,4 +131,4 @@ As you noticed, merge sort isn't actually the fastest with small lists, due to t
 2. See if you can detect a difference in the speed of your hybrid sort compared to merge sort!
 
 ### Bottom Up Merge Sort
-As we've discussed, recursion adds a lot of overhead to a program, so it is more efficient to avoid it if possible. You can do that with merge sort by skipping the splitting step and thinking of your list as already a bunch of single items and then using index pointers to track the locations of your "sublists". Try out implementing it and compare the timing!
+As we've discussed, recursion adds a lot of overhead to a program, so it is more efficient to avoid it if possible. You can do that with merge sort by skipping the splitting step and thinking of your list as already a bunch of single items and then using index pointers to track the locations of your "sublists". Try out implementing it and compare the timing! This is very close to how [Python's built-in](https://en.wikipedia.org/wiki/Powersort) sort actually works.

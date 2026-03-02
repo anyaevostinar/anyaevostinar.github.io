@@ -51,6 +51,7 @@ def run_trials(input_size, num_trials):
     time_merge_sort = 0
     time_selection_sort = 0
     time_bubble_sort = 0
+    time_built_in = 0
     for i in range(num_trials):
 
         random_list = list(range(input_size))
@@ -88,13 +89,24 @@ def run_trials(input_size, num_trials):
         bubble_sort(random_list)
         time_bubble_sort += (time.time() - t)
 
+        # New random list for built-in sort
+        random_list = list(range(input_size))
+        random.shuffle(random_list)
+
+        # Test time of built-in sort
+        t = time.time()
+        sorted(random_list)
+        time_built_in += (time.time() - t)
+
+
     #print average results
     print("------------------------------------")
     print(f"Average time for insertion sort with input size {input_size}: {time_insertion_sort / num_trials * 1000:.6f} milliseconds")
     print(f"Average time for selection sort with input size {input_size}: {time_selection_sort / num_trials * 1000:.6f} milliseconds")
-    print(f"Average time for bubble sort with input size {input_size}: {time_bubble_sort / num_trials * 1000:.6f} milliseconds")
-
-    print(f"Average time for merge sort with input size {input_size}: {time_merge_sort / num_trials * 1000:.6f} milliseconds")
+    print(f"Average time for bubble sort with input size {input_size}:    {time_bubble_sort / num_trials * 1000:.6f} milliseconds")
+    print()
+    print(f"Average time for merge sort with input size {input_size}:     {time_merge_sort / num_trials * 1000:.6f} milliseconds")
+    print(f"Average time for built-in with input size {input_size}:       {time_built_in / num_trials * 1000:.6f} milliseconds")
 
 
 def time_of_functions():
