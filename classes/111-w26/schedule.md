@@ -51,7 +51,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 3/4 | [Sorting Prep 2](mergesort-prep); | [Slides](https://docs.google.com/presentation/d/1sdlb6CpChMPjY6FW_eWp8BwTUFKAJsdSVSOgKakYHa4/edit?usp=sharing), [Merge Sort Lab](merge-sort-lab)  | 	 |
 | 3/6 | Study  |  [Slides](https://docs.google.com/presentation/d/1v2hZD8-zd5jkALwf6bsJlVrbDlIskJbPAHy9DUoxSjI/edit?usp=sharing), [Exam 4](exam4) |	 |
 | **Week 10** | **Wrapping Up** |  | |
-| 3/9	|   |  Final project peer review |  |
+| 3/9	| [Peer Review Prep](final-peer-prep)  |  Final project peer review |  |
 | 3/11 | Study! | [Mini-Exam 5](exam5), Wrap-up and course evals | All homework revisions (including final project) due 10pm |
 | Exams | | | |
 | Self-scheduled Exam 6 | (No new content, all retakes) |  Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time.  | | 
