@@ -59,7 +59,6 @@ The advanced requirements for your project are:
 * Use instance variables and methods effectively
 * Have a clear and thorough `README.txt`
 * Consistently follow the rules of the game described in your `README`
-* You have submitted the partner feedback form (linked through Moodle, assessed individually)
 
 ## Project Requirements
 Your project must be an object-oriented game and use at least two classes of your own design meaningfully.

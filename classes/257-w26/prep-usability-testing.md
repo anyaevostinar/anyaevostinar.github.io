@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Usability Testing Prep
-permalink: /classes/257-s25/usability-prep
+permalink: /classes/257-w26/usability-prep
 ---
 
 ## Overview

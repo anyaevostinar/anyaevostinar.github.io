@@ -1,7 +1,7 @@
 ---
 layout: page
 title: User Stories Prep
-permalink: /classes/257-s25/user-stories-prep
+permalink: /classes/257-w26/user-stories-prep
 ---
 
 ## Overview
@@ -11,20 +11,19 @@ Today we're going to focus on how to evaluate how well your projects are meeting
 Before class, you should be able to:
 * Define *user story* in a computer science context
 * Write out the "equation" commonly used for user stories
-* Define *acceptance criteria* and how it relates to user stories
+* Evaluate how well your team's user stories are currently being supported
 
 ## Advanced Learning Objectives
 After class, you should be able to:
 * Explain what a user story is and how it's used in user-centered design
 * Differentiate between effective and less-effective user stories
-* Be able to evaluate if you have achieved support for your own user stories and acceptance criteria
+* Turn a user story into a task for usability testing
 
 ## Readings
-To achieve the basic learning objectives, review the following in User Stories Applied (linked on Moodle):
+To achieve the basic learning objectives, read the following in User Stories Applied (linked on Moodle):
 * Chapters 1 and 2, "An Overview" and "Writing Stories"
 
 ## Checks
 Submit the following to Moodle:
 * What was one of the user stories your team decided on?
-* What were the acceptance criteria for that story?
-* What is the specific evidence that shows you've achieved support for this user story (or that you haven't)?
+* Now that you've read more about user stories, including that they should be "Independent", "Negotiable", "Valuable to users or customers", "Estimatable", "Small, and "Testable", how does your chosen user story do on those dimensions? Should it be changed to be better?

@@ -49,7 +49,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | **Week 9** | **Searching and Sorting** |   | |
 | 3/2 | 	[Sorting Prep 1](sorting-basic-prep); Final Project MVP due 10pm	 | [Slides](https://www.youtube.com/watch?v=c18WZZa4KIA&list=RDc18WZZa4KIA&start_radio), [Slow(ish) Sorting Algorithms](slow-sorting) | |	
 | 3/4 | [Sorting Prep 2](mergesort-prep); | [Slides](https://docs.google.com/presentation/d/1sdlb6CpChMPjY6FW_eWp8BwTUFKAJsdSVSOgKakYHa4/edit?usp=sharing), [Merge Sort Lab](merge-sort-lab)  | 	 |
-| 3/6 | Study  |  [Exam 4](exam4) |	 |
+| 3/6 | Study  |  [Slides](https://docs.google.com/presentation/d/1v2hZD8-zd5jkALwf6bsJlVrbDlIskJbPAHy9DUoxSjI/edit?usp=sharing), [Exam 4](exam4) |	 |
 | **Week 10** | **Wrapping Up** |  | |
 | 3/9	|   |  Final project peer review |  |
 | 3/11 | Study! | [Mini-Exam 5](exam5), Wrap-up and course evals | All homework revisions (including final project) due 10pm |
