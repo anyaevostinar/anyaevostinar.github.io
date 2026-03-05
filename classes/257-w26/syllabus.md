@@ -233,7 +233,7 @@ Note that a "-" is due to not having all the required engagement credits and a "
 | Total| 6 (Team) + 6 (Individual) = 12 | 6 (Team) + 6 (Individual) = 12 | >54 |
 | A | 12 | 12 | 50 |
 | A- | 12 | 12 | <50 |
-| B+ | 8 | 11 | 45 |
+| B+ | 10 | 11 | 45 |
 | B | 8  |  11 | 45|
 | B- | 8 |  11 |  <45 |
 | C+ |  3  |  10 |   40|
