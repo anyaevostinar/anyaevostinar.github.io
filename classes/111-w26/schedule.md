@@ -54,4 +54,4 @@ Preparation should be completed **before** the class day that they are listed. C
 | 3/9	| [Peer Review Prep](final-peer-prep)  |  [Slides](https://docs.google.com/presentation/d/1MgN26bx_WlYXNSYbzlwlnzixBb0r0_8Nr3nawHithCQ/edit?usp=sharing), Final project peer review |  |
 | 3/11 | Study! | [Slides](https://docs.google.com/presentation/d/1DaOCan6SSvRHlIWt5OATFrmL57kHIZRzO-JJ-TLhxIQ/edit?usp=sharing), [Mini-Exam 5](exam5), Wrap-up and course evals | All homework revisions (including final project) due 10pm |
 | Exams | | | |
-| Self-scheduled Exam 6 | (No new content, all retakes) |  Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time.  | | 
+| [Self-scheduled Exam 6](exam6) | (No new content, all retakes) |  Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time.  | | 

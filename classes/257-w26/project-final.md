@@ -61,12 +61,13 @@ The criteria for “Core” and “Advanced” are below.
 
 I will evaluate your project by:
 * Looking at your `README.md` to know what design improvements you made to your codebase and/or front-end
-* Git checkout the tag `front-end` to see what your codebase and/or front-end looked like before your design improvements
+* Git checkout the tag `front-end` to see what your codebase and/or front-end looked like before your design improvements (if you would recommend a different tag to compare to, let me know)
 * Git checkout the tag `improved-design` to see what your codebase and/or front-end looks like after your design improvements
 
 ### Core
 * All the previous components (Command Line, Flask, Database, Front-End, & Tests) still work.
 * Your team’s code fulfilled the requirements below for EITHER the code OR front-end design improvement option
+    * Alternatively, you can do ONE code AND ONE design improvement for Core if you prefer.
 
 #### Option A: Code Design Improvements
 For each of the **TWO** code smells/naming & commenting issues:
@@ -83,4 +84,4 @@ For each of the **TWO** usability issues:
 * The front-end improvement is evident when comparing the relevant files in the codebase from the `front-end` tag & the `improved-design` tag
 
 ### Advanced
-Your team’s code fulfilled the Core requirements for BOTH the code and front-end design improvement options.
+Your team’s code fulfilled the Core requirements for BOTH the code and front-end design improvement options (for a total of four improvements).
