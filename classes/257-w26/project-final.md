@@ -64,6 +64,11 @@ I will evaluate your project by:
 * Git checkout the tag `front-end` to see what your codebase and/or front-end looked like before your design improvements (if you would recommend a different tag to compare to, let me know)
 * Git checkout the tag `improved-design` to see what your codebase and/or front-end looks like after your design improvements
 
+You can see what I'll see for comparing files by going to a URL like this for your team (change X to your lowercase letter):
+```
+https://github.com/CS257-W26/team-project-X/compare/front-end...improved-design
+```
+
 ### Core
 * All the previous components (Command Line, Flask, Database, Front-End, & Tests) still work.
 * Your team’s code fulfilled the requirements below for EITHER the code OR front-end design improvement option
