@@ -20,8 +20,9 @@ After class, you should be able to:
 * Turn a user story into a task for usability testing
 
 ## Readings
-To achieve the basic learning objectives, read the following in User Stories Applied (linked on Moodle):
-* Chapters 1 and 2, "An Overview" and "Writing Stories"
+To achieve the basic learning objectives, read the following in User Stories Applied (You need to login to your Carleton account to access these links through the library, if you can't, look on Moodle for a link):
+* [Chapter 1 An Overview](https://learning.oreilly.com/library/view/user-stories-applied/0321205685/ch01.html)
+* [Chapter 2 Writing Stories](https://learning.oreilly.com/library/view/user-stories-applied/0321205685/ch02.html)
 
 ## Checks
 Submit the following to Moodle:

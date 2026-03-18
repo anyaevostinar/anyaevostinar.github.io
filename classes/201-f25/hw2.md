@@ -6,7 +6,7 @@ permalink: /classes/201-f25/hw2
 
 **Due Friday, Oct 3rd at 10pm**
 
-* Starter file: [computational_complexity.pdf](HW2_ComputationalComplexity.pdf)  
+* Starter file: None, see prompts below
 * Upload solutions via Gradescope
 
 # Goals
@@ -41,13 +41,78 @@ The **advanced** requirements for your submission are:
 
 # Assignment overview
 
-See the [assignment handout](HW2_ComputationalComplexity.pdf) for instructions.  This is assignment does not require you to write any code.
+This is assignment does not require you to write any code (though you can type up the code to help you understand it).
 
-# Reflection
+For this assignment, you can once again work with up to one partner, but you must write up all
+of your answers yourself. You can, however, have high-level discussions with your classmates.
+This assignment needs to be **written in your own handwriting (not typed)**. You can complete it on paper or on a tablet, but it must be hand-written (life in the age of LLMs).  You will need to submit a PDF to Gradescope, and make sure to select the regions in your PDF that correspond to each solution -- be sure to keep your answers somewhat separated from each other. (Gradescope also has a mobile app, in case you find that more
+handy.)
 
-Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?
+## Problem 1
+For each of the following code fragments:
+* indicate how many times the output statement is displayed (the exact number, not an
+approximation, relative to 𝑛)
+* indicate whether that number is better described as O(n) or O(n^2)
+* provide a brief but accurate justification of your answer
 
-Write a brief discussion (a sentence or two is fine) in your response to the last question in the assignment.
+### a. 
+```kotlin
+for (i in 0..<n) {
+    for (j in 0..<n) {
+        println("$i $j")
+    }
+}
+```
+
+### b.
+```kotlin
+for (i in 0..<n) {
+    for (j in 0..<2) {
+        println("$i $j")
+    }
+}
+```
+
+### c.
+```kotlin
+for (i in 0..<n) {
+    for (j in n-1 downTo 0) {
+        println("$i $j")
+    }
+}
+```
+
+### d.
+```kotlin
+for (i in 0..<n) {
+    for (j in 0..<i) {
+        if (j % i == 0) {
+            println("$i $j")
+        }
+    }
+}
+```
+
+## Problem 2. 
+Below is a code snippet to match students with advisors:
+```kotlin
+fun makeAdvisingMatch(students:List<String>, professors:List<String>){
+    for (student in students){
+        for(professor in professors){
+            println("Possible Match: $student & $professor")
+        }
+    }
+}
+```
+
+a. What is the Big-O run time of this function?
+b. Provide a brief but accurate justification for your answer.
+
+## Reflection 
+* Were there any particular issues or challenges that you dealt with in completing this assignment? 
+* How long did you spend on this assignment?
+* Write a brief discussion (a sentence or two is fine). Also include your collaboration statement
+here; if you worked alone, say so.
 
 Here are some examples:
 
