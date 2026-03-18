@@ -71,9 +71,10 @@ Empirical software and therefore Symbulation were designed to be excruciatingly 
 You will never be touching the main Empirical codebase; instead you will design your own module that plugs into the existing code but does not interfere with others use of it. 
 This can be annoying at times, but it is vital to avoid bloat in this large software project. 
 It also means, however, that each student that works with me can work on their own project of whatever size is appropriate and basically in any order.
-If you want to work on the education side of things, you could expand on one of the existing projects, or try modifying your own favorite game if it supports mods.
+
+<!-- If you want to work on the education side of things, you could expand on one of the existing projects, or try modifying your own favorite game if it supports mods. -->
 Any of these projects would definitely lead to findings that could be submitted to the ALife conference (a peer-reviewed conference) and/or many different journals.
-Each project would also contribute to the over all relevance of Symbulation and our evolution education games because the features could be combined and used by future scientists to study ever more complicated systems (and therefore more and more similar to DNA-based systems).
+Each project would also contribute to the over all relevance of Symbulation because the features could be combined and used by future scientists to study ever more complicated systems (and therefore more and more similar to DNA-based systems).
 
 Here are some potential projects. You probably won’t recognize some of these words, so reading up a bit on the biological concept would be important to know if it is interesting to you.
 
@@ -86,10 +87,10 @@ Here are some potential projects. You probably won’t recognize some of these w
 * Add physics for educational purposes – by default the organisms in Symbulation don’t move. There is a physics engine already coded into Empirical that allows circular organisms to bounce around in their environment and displays this world in real-time in a browser ([Evoke](https://devosoft.github.io/Evoke/evoke) as example). By implementing symbionts into the physics world, we could develop a useful educational and outreach tool as well as eventually allowing organisms to purposefully move (not this project though!).
 
 If any of these or other questions along the same lines interest you, please email or stop by when I’m in the office and we can chat!
-
+<!-- 
 ## In Progress/Completed/Retired Projects
 * Lysis/Lysogeny - Symbulation now supports these two different modes of reproduction common to bacteriophage (viruses that infect bacteria)
 * Ectosymbiosis - An ectosymbiont lives on a host instead of inside and therefore can have different things it has to deal with. Symbulation now supports ectosymbiosis.
 * Multi-infection – currently Symbulation only allows one symbiont to infect a host, which is unusual in the natural world.
 * Multi-birth – viruses birth thousands of offspring in one burst, which is a lot more than the one we started with.
-* Stardew Valley evolution mod – this is an educational project. Many of you probably are aware of the push-back against evolution education in the United States and this project will work toward showing people that evolution isn’t scary or complicated. Stardew Valley is a farming simulation game that allows for heavy modification. I would like to create a mod that uses the existing animal and plant characteristics as a basis for evolution. The goal would be making the game both more fun and getting players to think about the evolutionary consequences of their actions. For example, if they always catch the largest fish, the fish population will evolve to be smaller over time. This project would be in C# as that is what Stardew Valley mods use and would be integrated with existing pixel art.
+* Stardew Valley evolution mod – this is an educational project. Many of you probably are aware of the push-back against evolution education in the United States and this project will work toward showing people that evolution isn’t scary or complicated. Stardew Valley is a farming simulation game that allows for heavy modification. I would like to create a mod that uses the existing animal and plant characteristics as a basis for evolution. The goal would be making the game both more fun and getting players to think about the evolutionary consequences of their actions. For example, if they always catch the largest fish, the fish population will evolve to be smaller over time. This project would be in C# as that is what Stardew Valley mods use and would be integrated with existing pixel art. -->
