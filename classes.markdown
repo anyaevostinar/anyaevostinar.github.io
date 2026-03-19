@@ -6,15 +6,19 @@ permalink: /Classes/
 
 ## Current Classes
 
-CS 111: Intro to CS ([Syllabus](/classes/111-w26/syllabus), [Schedule](/classes/111-w26/schedule))
-
-CS 257: Software Design ([Syllabus](/classes/257-w26/syllabus), [Schedule](/classes/257-w26/schedule))
+CS 201: Data Structures ([Syllabus](/classes/201-s26/syllabus), [Schedule](/classes/201-s26/schedule))
 
 ## Future Classes
 
 Subject to change!
 
 ## Previous Classes
+
+### Winter 2026
+
+CS 111: Intro to CS ([Syllabus](/classes/111-w26/syllabus), [Schedule](/classes/111-w26/schedule))
+
+CS 257: Software Design ([Syllabus](/classes/257-w26/syllabus), [Schedule](/classes/257-w26/schedule))
 
 ### Fall 2025
 

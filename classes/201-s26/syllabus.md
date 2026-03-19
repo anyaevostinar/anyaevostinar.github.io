@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CS201 Data Structures F25 Syllabus
-permalink: /classes/201-f25/syllabus
+title: CS201 Data Structures S26 Syllabus
+permalink: /classes/201-s26/syllabus
 ---
 
 [Schedule](schedule)
@@ -19,7 +19,7 @@ permalink: /classes/201-f25/syllabus
 
 ## Quick Facts
 
-Fall 2025
+Spring 2026
 
 **Instructor**: Anya E. Vostinar
 
@@ -35,9 +35,7 @@ All materials are freely available and will be linked through the schedule.
 
 **Drop in student hours**:
 
-M: 1-2pm in Olin **304**
-W: 2-3pm in Olin 306/308
-Th: 2:30-3:30pm in Olin 306/308
+TBD
 
 Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 8-5 M-F and either send a calendar invite to an event or email me.
 
@@ -83,9 +81,7 @@ We'll have lots of different ways of engaging with the course material:
 * Exams that assess where you are with the learning objectives of the course.
 
 I believe each of these types of activities will give you a different lens on the core class ideas and help you to deeply learn and understand the material. 
-In many of these activities you'll have the option to work collaboratively, and throughout the course you'll have assigned programming partners who you will complete the labs and homework with. 
-You are **required** to work with your assigned partner to complete these assignments using pair programming.
-Please see the [Collaboration](collaboration) guidelines for more details.
+In many of these activities you'll have the option to work collaboratively, but you will still be required to submit your own work as specified on the assignment.
 
 ## Assessment
 One of my goals for you in this course is for you to continue to develop as an independent *programmer* and independent *learner*.
@@ -98,9 +94,9 @@ Towards that end, your performance in this class will be evaluated in the follow
 
 * **Engagement credits** There is a great benefit to you to fully and authentically engage with the course content in and out of class time. To encourage this engagement while providing some flexibility, the course has an "engagement credit" system. You will need a specific number of engagement credits to earn a specific grade (shown in the list below). You can earn these credits in many ways, but the main way is through completing the preparatory work and attending (and engaging with class). You may earn 1 credit for completely preparatory work satisfactorily and 1 credit for attending and engaging effectively in class. There may be additional ways to earn engagement credits during the term as well.
 
-* **Homework deliverables** There will be weekly(ish) homework assignments during the term, some of which you'll complete individually and some with a partner. The homework deliverables allow you to practice some of the key learning objectives in this course -- particularly those focused on writing and organizing larger programs. These contribute to your final grade according to the *specifications grading* scale outlined below. You will have the opportunity to revise these *individually* (regardless of whether they were originally individual or paired assignments), as detailed below.
+* **Homework deliverables** There will be weekly(ish) homework assignments during the term, which you'll submit individually. The homework deliverables allow you to practice some of the key learning objectives in this course -- particularly those focused on writing and organizing larger programs. These contribute to your final grade according to the *specifications grading* scale outlined below. You will have the opportunity to revise these as detailed below.
 
-* **In-class exams** Some of the learning objectives for the course can't be measured through programming assignments. Instead, your mastery of these objectives will be assessed via in-class exams (dates specified on the schedule). There is a [specific list of learning objectives](exams-overview) that you should demonstrate your mastery of on these quizzes, and most objectives will appear on at least two exams, though often more. This means that you have multiple chances to demonstrate your understanding, and where you are with each objective at the end of the term is what will matter for your grade. I realize this is different than how you are probably used to having exams, so we'll discuss this more in class and throughout the term. There are also more details below.
+* **In-class exams** Some of the learning objectives for the course can't be measured through programming assignments. Instead, your mastery of these objectives will be assessed via in-class exams (dates specified on the schedule). There is a [specific list of learning objectives](exams-overview) that you should demonstrate your mastery of on these exams, and all objectives will appear on at least two exams, though often more. This means that you have multiple chances to demonstrate your understanding, and where you are with each objective at the end of the term is what will matter for your grade. I realize this is different than how you are probably used to having exams, so we'll discuss this more in class and throughout the term. There are also more details below.
 
 
 ### Grading Scale
@@ -122,23 +118,23 @@ Learning objectives (exams) and requirements (programming homework) will be in o
 ### How this translates to course grades
 
 Your final course grade will be based on how many advanced and core requirements/objectives you have satisfied (from the exam learning objectives and the homework requirements) as well as how many engagement credits you earned. 
-The table below show the **minimum** requirement for each letter grade for each category. To calculate your grade, I will find the highest letter grade for which you have met **all** requirements. For example, if you satisfied 25 advanced objectives, 34 core objectives and had 55 engagement credits, you would receive a B+ due to the missing core objective. 
+The table below show the **minimum** requirement for each letter grade for each category. To calculate your grade, I will find the highest letter grade for which you have met **all** requirements. For example, if you satisfied 17 advanced objectives, 24 core objectives and had 55 engagement credits, you would receive a B+ due to the missing core objective. 
 Note that a "-" is due to not having all the required engagement credits and a "+" is due to having more advanced requirements satisfied.
 
 | Grade | Advanced Satisfied | Core Satisfied | Engagement Credits |
 |-------|----------|-------------|------------|
-| Total| 17 (Exam) + 8 (HW) = 25 | 27 (Exam) + 8 (HW) = 35 | >54 |
-| A | 24 | 35 | 50 |
-| A- | 24 | 35 | <50 |
-| B+ | 19 | 34 | 45 |
-| B | 14  |  34 | 45|
-| B- | 14 |  34 |  <45 |
-| C+ |  8  |  33 |   40|
-|C | 0   |   33 |   40|
-| C- | 0 |  33 | <40 |
-| D+ | 1 | 25| 35 |
-| D | 0 | 25 | 35 |
-| D- | 0| 25 |  <35 |
+| Total| 9 (Exam) + 8 (HW) = 17 | 17 (Exam) + 8 (HW) = 25 | >54 |
+| A | 16 | 25 | 50 |
+| A- | 16 | 25 | <50 |
+| B+ | 12 | 24 | 45 |
+| B | 8  |  24 | 45|
+| B- | 8 |  24 |  <45 |
+| C+ |  4  |  23 |   40|
+|C | 0   |   23 |   40|
+| C- | 0 |  23 | <40 |
+| D+ | 1 | 15| 35 |
+| D | 0 | 15 | 35 |
+| D- | 0| 15 |  <35 |
 | F | 0 | 0 | 0|
 
 
@@ -146,7 +142,7 @@ Note that a "-" is due to not having all the required engagement credits and a "
 
 An important aspect of specifications grading is revision. **You may revise any homework deliverable up until the last day of classes.** Learning is not a linear process, and it involves making mistakes and learning from them. You may *individually* revise and resubmit a deliverable at least once, within a week after its assessment has been released. I will keep the higher of the {original, revised} levels (though if you end up with a revised submission at a lower level than the original, we should meet to discuss it).
 You may *individually* [further revise](revision-process) that deliverable before the end of the term and request additional feedback via a form (linked [here](revision-process)), however I make no guarantee of how quickly the resubmission will be assessed; it might not happen until the end of the term.
-Even if an assignment was initially a paired assignment, all revisions should be completed individually.
+All revisions should be completed individually, though you may get help from the same sources as originally specified.
 
 ### Exam retakes and revisions
 
@@ -154,17 +150,18 @@ If you get **"Retake"** on an exam question, that means that you didn't demonstr
 
 Sometimes an answer on an exam is close but has a small error that makes it unclear if you understood the learning objective completely. In these cases, I will indicate that you can **"Revise"** your answer. To revise an exam answer:
 * Print out your exam question from Gradescope
-* Figure out what the error is (with help from anyone)
+* Figure out what the error is (with help from anyone, including me, and anything)
 * Come to drop-in hours with the print out and explain to me the error and the fix
 * If I am convinced that you do understand the objective, I'll ask you to email me to update you to S
 * Note that I'm happy to help you understand the error, but there must be 24 hours between my helping and you officially revising
+* **If I am convinced that you actually did not understand the objective when you officially revise, you will need to retake the problem on the next exam**
 
 ### Late work and extensions
 In this course, we need to balance flexibility for individuals with structure for partners, the class as a whole, and a reasonable workload for the grader and me (your instructor). I also want to help you avoid procrastinating to the point that you can't get everything submitted by the end of the term. 
 
 **All programming deliverables** have a 1-hour grace period after their posted due date and time to account for slight delays in submission while allowing assessment of submissions to start soon after the due date. If you miss that cutoff, you will still be able to submit something during the revision period. I highly recommend you aim to submit something in the original submission window, even if it isn't complete, so that you can benefit from feedback and revision.
 
-**In-class exams** cannot be made up because missing one exam with not impact your grade. If you fall behind on learning objectives, there is the possibility of demonstrating your understanding outside of class. If you're worried about where you are on the learning objectives, get in touch and we can make a plan. If you know you will miss an exam, you might be able to take it ahead of time, but I don't guarantee it.
+**In-class exams** cannot be made up because missing one exam with not impact your grade. If you fall behind on learning objectives, there is the possibility of demonstrating your understanding outside of class. If you're worried about where you are on the learning objectives, get in touch and we can make a plan. If you know you will miss an exam, you might be able to take it ahead of time, but I don't guarantee it. (Letting me know ASAP will make it more feasible that you can take it early.)
 
 **Preparation work** cannot be submitted late. If you miss the submission for a given day, you cannot earn the engagement credit for that work.
 
@@ -254,26 +251,41 @@ It's not worth it -- please seek help using the resources above instead.
 
 ### AI-Assistance
 In this new age of AI assistants everywhere, we need to cautiously navigate their relationship with academic honesty together.
-There are many many (many) ways that generative AI is (sort of) helping you and some are more clearly acceptable or unacceptable than others. I can't make an exhaustive list of what is allowed and isn't, because there is just too much and something new is going to pop up within the ten weeks of this term. I will do my best to guide you, but you also are going to need to use good judgement at times (and don't rely on the AI's judgement!).
+There are many many (many) ways that generative AI is (sort of) helping you and some are more clearly acceptable or unacceptable than others. I can't make an exhaustive list of what is allowed and isn't, because there is just too much and something new is going to pop up within the ten weeks of this term. I will do my best to guide you, but you also are going to need to use good judgment at times (and don't rely on the AI's judgment!).
+
+Specifically, the programming assignments in this course are designed to help you learn the course material and develop problem-solving skills that are vital to computer science (and pretty useful in general). These assignments assume that **you will do the intellectual work required to complete them**, which includes processing the assignments as they're presented, actively engaging in the class material, and developing and testing your own ideas in your programming. Using genAI tools in any significant way will diminish the value of these assignments and ultimately hinder your learning. While these tools are being used extensively in software development now, you must first learn the concepts yourself so that you can identify when the tools are going off track and potentially causing giant security and functionality errors.
 
 Clearly unacceptable:
 * Pasting the entire assignment prompt into anything (even if you don't use the code that comes out)
 * Using GitHub Co-pilot extension in VSCode (If you already have it, [you must disable it](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment#enabling-or-disabling-github-copilot) for all course work.)
 * Submitting for credit any code that you did not write yourself (and wasn't from the starter code). This class is about learning to write the code yourself after all!
+* Using gen AI of any kind on in-class exams. If you have AI-enabled prescription glasses, get in touch ASAP so we can agree on how to set reasonable bounds on them.
+* Having gen AI summarize a reading and write a prep check answer for you.
 
 Clearly acceptable:
-* Asking gen AI to give you practice exam questions to study
+* Asking gen AI to give you practice exam questions to study (and I'll provide a custom bot for this purpose)
 * Asking gen AI to explain a class concept that you are struggling with (but triple check it is giving accurate information!)
+* Using the provided custom chatbots to get acceptable help on the homeworks within the bounds that they are intended to be used (i.e. not purposefully breaking them)
+* Making an image to go along with your submission to something for fun (please cite and include the prompt)
 
 Borderline (i.e. you could easily slip into unacceptable):
-* Asking gen AI to help you understand what an assignment is asking
-* Asking gen AI to help you understand a bug or error on an assignment
-* Asking gen AI a question instead of coming to drop-in hours or posting to CampusWire
+* Asking outside gen AI to help you understand what an assignment is asking
+* Asking outside gen AI to help you understand a bug or error on an assignment
+* Asking outside gen AI a question instead of coming to drop-in hours or posting to CampusWire
+* Leaning on the provided chatbot too heavily for your assignments
 
-If you are in a borderline situation, you could try prefacing your request with something like the following:
+If you are in a borderline situation, you could try prefacing your request with something like the following (This is part of what I do with the custom chatbot to make sure it provides only acceptable help):
 "I'm working on a programming assignment and need some guidance. I'm not looking for the direct solution, but rather help understanding the concepts involved and strategies for approaching the problem. Could you please provide hints, explanations of relevant topics, or suggest debugging techniques based on my question, without giving away the exact code?"
 
 If I'm being honest, the most depressing thing about genAI to me on a personal level is that students are using it instead of coming to drop-in hours. I really love talking with you in drop-in hours or 1-on-1 meetings and helping students in that setting is my favorite part of this job. Please remember that you wouldn't be bothering me to come by, you would be making my day better. I doubt that the genAI can say the same.
+
+## Pair Programming
+Pair programming is a very common practice in computer science industry, where two programmers sit at a shared computer and both engage in the process of writing a program.
+One is the 'driver' at the keyboard for a block of time while the other is the 'navigator' that is watching and thinking through the overall program, as well as spotting typos.
+You switch roles regularly (every 10-15 minutes or whenever the navigator has an 'aha' moment) and are both fully engaged in the task for the whole time.
+This method of programming has been shown to be highly effective in producing better code (not necessarily in a shorter period of time though) and leading to a better understanding of the problem for both programmers.
+We'll use pair programming a lot during class time for several reasons: 1) as I said, it is very common in industry, so it's good for you to get comfortable with it; 2) it is used in many upper level courses at Carleton, so again good for you to be comfortable with it; 3) ultimately it improves the learning and understanding of the people involved; and 4) when you are struggling with new concepts, it can feel a lot more doable when you have someone else there who is struggling with you.
+
 
 ## Pedagogy
 This section discusses some of the pedagogical principles that you'll see in this class.
@@ -297,12 +309,3 @@ Again this is a situation where block learning feels the most effective and effi
 However, copious research shows that interleaving is the most effective in the long term. 
 It is again the very process of struggling to recall something you learned a while ago that triggers your brain to then store that information into long term memory.
 Interleaving also leads to higher *transfer* abilities, where you are able to apply what you know to a new problem. (If you want to learn more about this, there are several excellent books, but one I recommend currently is Range: Why Generalists Triumph in a Specialized World by David Epstein.)
-
-### Pair Programming
-Pair programming is a very common practice in computer science industry, where two programmers sit at a shared computer and both engage in the process of writing a program.
-One is the 'driver' at the keyboard for a block of time while the other is the 'navigator' that is watching and thinking through the overall program, as well as spotting typos.
-You switch roles regularly (every 10-15 minutes or whenever the navigator has an 'aha' moment) and are both fully engaged in the task for the whole time.
-This method of programming has been shown to be highly effective in producing better code (not necessarily in a shorter period of time though) and leading to a better understanding of the problem for both programmers.
-We'll use pair programming a lot in this course for several reasons: 1) as I said, it is very common in industry, so it's good for you to get comfortable with it; 2) it is used in many upper level courses at Carleton, so again good for you to be comfortable with it; 3) ultimately it improves the learning and understanding of the people involved; and 4) when you are struggling with new concepts, it can feel a lot more doable when you have someone else there who is struggling with you.
-
-*This syllabus is based heavily on the syllabus from Anna Rafferty.*
