@@ -231,12 +231,11 @@ If something makes you uncomfortable or you're concerned about an interaction, p
 
 Carleton College is committed to providing equitable access to learning opportunities for all students. The Disability Services office (Henry House, 107 Union Street) is the campus office that collaborates with students who have disabilities to provide and/or arrange reasonable accommodations. If you have, or think you may have, a disability (e.g., mental health, attentional, learning, autism spectrum disorders, chronic health, traumatic brain injury and concussions, vision, hearing, mobility, or speech impairments), please contact disability@carleton.edu or call Sam Thayer (’10), Accessibility Specialist (x4464) to arrange a confidential discussion regarding equitable access and reasonable accommodations.
 If you've already arranged accommodations, please let me know if there's anything you want me to know beyond what's in the accommodations letter or if there are particular challenges for your specific circumstances.
-If you do not have official accommodations, I am still happy to discuss with you ways in which I can help you succeed in this class.
+If you do not have official accomodations, I am still happy to discuss with you ways in which I can help you succeed in this class.
 
 The Assistive Technologies program brings together academic and technological resources to complement student classroom and computing needs, particularly in support of students with physical or learning disabilities. 
 Accessibility features include text-to-speech (Kurzweil), speech-to-text (Dragon) software, and audio recording Smartpens. 
 If you would like to know more, contact aztechs@carleton.edu or visit go.carleton.edu/aztech.
-**All material for this course should already be accessible for screen readers and other alternative content access devices, but if something isn't, please let me know and I'll fix it ASAP.**
 
 Carleton College urges you to make yourself –- your own health and well-being –- your priority throughout this ​term and your career here. 
 It is important to recognize stressors you may be facing, which can be personal, emotional, physical, financial, mental, or academic. 
@@ -244,7 +243,7 @@ Sleep, exercise, and connecting with others can be strategies to help you flouri
 If you are having difficulties maintaining your well-being, please contact me and/or pursue other resources, such as Student Health and Counseling or resources on the Office of Health Promotion website. 
 Student Health and Counseling is currently offering telehealth services.
 
-Carleton is committed to fostering an environment free of sexual misconduct. Please be aware all Carleton faculty and staff members, with the exception of Chaplains and SHAC staff, are “responsible employees.” Responsible employees are required to share any information they have regarding incidents of sexual misconduct with the Title IX Coordinator. Carleton’s goal is to ensure campus community members are aware of all the options available and have access to the resources they need. If you have questions, please contact Carleton’s Title IX Coordinator, or visit the Sexual Misconduct Prevention and Response website: https://www.carleton.edu/sexual-misconduct/.
+Carleton is committed to fostering an environment free of sexual misconduct. Please be aware all Carleton faculty and staff members, with the exception of Chaplains and SHAC staff, are “responsible employees.” Responsible employees are required to share any information they have regarding incidents of sexual misconduct with the Title IX Coordinator. Carleton’s goal is to ensure campus community members are aware of all the options available and have access to the resources they need. If you have questions, please contact Laura Riehle-Merrill, Carleton’s Title IX Coordinator, or visit the Sexual Misconduct Prevention and Response website: https://www.carleton.edu/sexual-misconduct/.
 
 ## Academic Honesty and Collaboration Policy
 As noted in Carleton's policy on academic integrity, violations of academic honesty are dealt with at the college level. 
