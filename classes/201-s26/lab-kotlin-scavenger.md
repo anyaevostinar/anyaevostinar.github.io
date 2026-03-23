@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Kotlin Scavenger Hunt
-permalink: /classes/201-f25/kotlin-lab
+permalink: /classes/201-s26/kotlin-lab
 ---
 
 In this lab, you will explore the difference between Python and Kotlin.  You will generate a reference sheet for yourself to use throughout the term as you write your own Kotlin programs.
 
-## Submission
+## Logistics
 
-As with all labs in this class, you can earn an additional engagement credit by completing the lab and submitting the required evidence on Moodle under today's in class section.
+As with all labs in this class, you can earn an additional engagement credit by completing the lab and submitting the required evidence on Moodle under today's in class section. You can submit labs up until the last day of classes, so don't feel rushed to complete them.
 
 ## Kotlin
 
@@ -36,7 +36,7 @@ The files in `Comparing-Python-and-Kotlin` contain programs in both Python and K
 
 2. Your first program in any language will typically be a "Hello, world!" program, in part because it teaches you how to write a main function, print statements, and specify strings.  Find an example of the **boiler-plate code** to successfully print "Hello, world!" and put it in your reference sheet.  (Hint: try `Hello.kt`.)
 
-3. Finally, you'll need to make lots of variables.  Find an example of **making a variable** and add it to your reference sheet.  Can you figure out why some are specified with `val` and others with `var`?
+3. Finally, you'll need to make lots of variables.  Find an example of **making a variable** and add it to your reference sheet.  Can you figure out why some are specified with `val` and others with `var` (we'll talk about it on Wednesday)?
 
 ## Exercise 2
 
@@ -46,13 +46,15 @@ Now, let's explore some interesting things in Kotlin.
 
 2. Find an example of a **conditional** and put it in your reference sheet.
 
+3. Find an example of getting **user input** and put it in your reference sheet. Note that there is some weird `?` and `!!` syntax, we'll talk about that on Friday.
+
 3. Find an example of **printing a variable's value** and put it in your reference sheet.
 
-4. Find an exmaple of **reading from a file** and put it in your reference sheet.
+4. Find an example of **reading from a file** and put it in your reference sheet.
 
 ## Exercise 3
 
-We'll talk about lists more in depth in the coming weeks, but you'll probably want to use one sooner rather than later.  Find examples of:
+We'll talk about lists more in depth on Wednesday, but you'll probably want to use one sooner rather than later.  Find examples of:
 
 1. **making** a list
 
@@ -64,7 +66,7 @@ We'll talk about lists more in depth in the coming weeks, but you'll probably wa
 
 ## Exercise 4
 
-Here are some other interesting things you might want to do.  If any of these things aren't familiar to you, please ask your neighbor, me, or the prefect!  Find examples of:
+Here are some other interesting things you might want to do.  If any of these things aren't familiar to you, please ask your partner, me, or the prefect!  Find examples of:
 
 <!-- 1. Getting a **command-line argument** from the user. -->
 

@@ -15,7 +15,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Date	| Homework/Preparation Due	| In Class |	Homework Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Intro to Kotlin | |
-| 3/30 | [Intro Prep](intro-prep) | [Slides](), [Kotlin Scavenger Hunt](kotlin-lab)| |
+| 3/30 | [Intro Prep](intro-prep) | [Slides](https://docs.google.com/presentation/d/1jUma9PWPSfqncxm5ir7FhxKHIc3dbYRvor4INsd3zNk/edit?usp=sharing), [Kotlin Scavenger Hunt](kotlin-lab)| |
 | 4/1 | [Kotlin Basics Prep](kotlin-basics-prep) | [Slides](), Mutables and Functions, [Predictions Lab](kotlin-predictions-lab) |	 |
 | 4/3 | [Classes and Null Safety](classes-null-prep)	|  [Slides](), [Kotlin Classes Lab](kotlin-classes-lab) |	[HW1: Lunar Lander](hw1) |
 | Week 2 | | Analysis| |
