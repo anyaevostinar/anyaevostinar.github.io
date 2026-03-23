@@ -245,7 +245,7 @@ Carleton is committed to fostering an environment free of sexual misconduct. Ple
 ## Academic Honesty and Collaboration Policy
 As noted in Carleton's policy on academic integrity, violations of academic honesty are dealt with at the college level. 
 If I suspect academic dishonesty, I will refer the case for appropriate action to the Academic Standing Committee (ASC) via the Associate Dean of Students or the Associate Dean of the College. 
-Please familiarize yourself with Carleton's academic integrity policies and make sure that you have read the collaboration and academic honesty policies for this course. 
+Please familiarize yourself with Carleton's academic integrity policies and make sure that you have read the [collaboration](collaboration) and academic honesty policies for this course. 
 A possible penalty for academic dishonesty in a course is an F in the course.
 It's not worth it -- please seek help using the resources above instead.
 
