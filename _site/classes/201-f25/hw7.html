@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Homework 7 - IMDB Graph | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Homework 7 - IMDB Graph" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f25/hw7" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f25/hw7" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Homework 7 - IMDB Graph" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Homework 7 - IMDB Graph","url":"http://localhost:4000/classes/201-f25/hw7"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Homework 7 - IMDB Graph</h1>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Due: Monday, Nov 10th at 10pm</strong></p>
+
+<ul>
+  <li>Starter code: <a href="/classes/201-f25/imdb_graph.zip">imdb_graph.zip</a></li>
+  <li>Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">IMDBGraph.kt</code></li>
+</ul>
+
+<h2 id="goals">Goals</h2>
+
+<p>This assignment is designed to help you with the following:</p>
+<ul>
+  <li>practice with graph implementations</li>
+  <li>practice with shortest path algorithms</li>
+</ul>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+
+<p>For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)  You may have at most one partner.</p>
+
+<p>You may also discuss the assignment at a high level with other students.  You can discuss the assignment with Anya, our prefect, or any course staff.</p>
+
+<p>You should list any student or course staff with whom you discussed the assignment (you don’t have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in comments at the top of your <code class="language-plaintext highlighter-rouge">IMDBGraph.kt</code> file.  You also need to include your name.</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<h2 id="note-on-style">Note on style:</h2>
+
+<p>The following style guidelines are expected moving forward:</p>
+
+<ol>
+  <li>You submit only the requested file(s).</li>
+  <li>Variable names should be clear and easy to understand, should <em>not</em> start with a capital letter, and should only be a single letter when appropriate (e.g., <code class="language-plaintext highlighter-rouge">i</code> or <code class="language-plaintext highlighter-rouge">j</code> as indices, <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> as coordinates).</li>
+  <li>The indentation, spacing, and location of curly braces is consistent.</li>
+  <li>There are no extra print statements in your program.</li>
+  <li>There is no commented-out code that is no longer being used (e.g., debugging print statements).</li>
+  <li>Your program has a comment at the top of each function with at least 5 words describing what the function does.</li>
+  <li>There is good use of comments to explain the “why” of your code and empty lines to break up logical chunks.</li>
+  <li>The code doesn’t have “magic numbers” – these are numbers in the code by themselves, rather than stored in a variable.</li>
+  <li>The code doesn’t compute the right answer by doing extra work (e.g., having a computation in a loop when it could have been done only once, after the loop).</li>
+  <li>Helper functions are used to reduce code duplication.</li>
+</ol>
+
+<h2 id="assessment">Assessment</h2>
+
+<p>The <strong>core</strong> requirements for your submission are:</p>
+
+<ul>
+  <li>complete Parts A and C
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">connectedPerformers</code></li>
+      <li>Reflection</li>
+    </ul>
+  </li>
+  <li>satisfy the code style expectations #0-#4 above</li>
+  <li>include a reflection in comments at the bottom of your <code class="language-plaintext highlighter-rouge">IMDBGraph.kt</code> file</li>
+</ul>
+
+<p>The <strong>advanced</strong> requirements for your submission are:</p>
+
+<ul>
+  <li>satisfy the core requirements</li>
+  <li>complete all of Parts A-C
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">shortestPath</code></li>
+    </ul>
+  </li>
+  <li>satisfy all code style expectations listed above (#0-#9)</li>
+  <li>include your name and collaboration statement at the top of your <code class="language-plaintext highlighter-rouge">IMDBGraph.kt</code> file</li>
+</ul>
+
+<h2 id="assignment-overview">Assignment overview</h2>
+
+<p>There is a classic game called <a href="https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon">Six Degrees of Kevin Bacon</a>, where players attempt to find connections between performers (actors) in movies.  A connection is made if two performers appear in a movie together, and the goal is to find the shortest path between two performers.</p>
+
+<p>Here are some examples:</p>
+
+<ul>
+  <li>Michelle Yeoh was in the movie “Wicked” with Jeff Goldblum.  Jeff Goldblum was in the movie “The Life Aquatic with Steve Zissou” with Bill Murray.  So there is a path from Michelle Yeoh to Bill Murray with a distance of 2.</li>
+  <li>Eva Mendes was in “My Brother the Pig” with Scarlett Johannson, who was in “The Prestige” with Michael Caine, who was in “Gnomeo &amp; Juliet” with Ozzy Osbourne.  So there is a path from Eva Mendes to Ozzy Osbourne with a distance of 3.</li>
+</ul>
+
+<p>Both of the above examples are also shortest paths, in that there is no shorter path connecting the performers shown.  There may be alternative paths of the same length, but there are no shorter ones.</p>
+
+<p>For this assignment, you will use data from <a href="https://www.imdb.com/">IMDb.com</a> to build a graph connecting performers with movies and movies with performers.  You’ll then implement a shortest path algorithm to find the shortest path between two performers.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>Find your <code class="language-plaintext highlighter-rouge">CS201</code> folder for assignments.  Maybe it contains an <code class="language-plaintext highlighter-rouge">assignments</code> folder inside of it.</p>
+
+<p>Download <a href="/classes/201-f25/imdb_graph.zip">this <code class="language-plaintext highlighter-rouge">imdb_graph.zip</code> file</a> to get the starter code.  Put it in the <code class="language-plaintext highlighter-rouge">CS201</code> folder and unzip it.  This should give you a folder named <code class="language-plaintext highlighter-rouge">imdb_graph</code>.  Make sure that you actually unzip / extract the code, don’t just open up the .zip file in another window.</p>
+
+<p>Now open your folder in VS Code.  There are multiple ways to do this, so pick one:</p>
+<ul>
+  <li>Open VS Code, then select <code class="language-plaintext highlighter-rouge">File</code> -&gt; <code class="language-plaintext highlighter-rouge">Open Folder</code> and navigate to the <code class="language-plaintext highlighter-rouge">imdb_graph</code> folder you just made.</li>
+  <li>Open VS Code, then drag and drop the folder (e.g., from Finder in MacOS or File Explorer in Windows) into VS Code to open it.</li>
+</ul>
+
+<p>Either way, if you are asked, click that you trust the authors.  If you have any issues getting started, ask the lab assistants for help – any of them should be able to help you get started, even if they aren’t super familiar with Kotlin.</p>
+
+<h2 id="building-your-code-with-maven">Building your code with Maven</h2>
+
+<p>Like most of our assignments, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder <code class="language-plaintext highlighter-rouge">imdb_graph</code> for these commands to work):</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn test</code> runs the tests that we provided (see below)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn compile exec:java</code> compiles and runs the <code class="language-plaintext highlighter-rouge">main</code> function, which will prompt you for two performers and then show you the shortest path between them (if your code works)</p>
+  </li>
+</ul>
+
+<h2 id="the-data">The data</h2>
+
+<p>You’ll find in the <code class="language-plaintext highlighter-rouge">src/main/resources</code> folder a set of files with a cleaned-up version of IMDb data that I’m providing:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">performer-names.tsv</code> contains performer IDs and their names</li>
+  <li><code class="language-plaintext highlighter-rouge">movie-titles.tsv</code> contains movie IDs and their names</li>
+  <li><code class="language-plaintext highlighter-rouge">performances.tsv</code> contains pairs of movie IDs and performer IDs, indicating that a particular performer appeared in a particular movie</li>
+</ul>
+
+<p>The data in the above files does not represent everything from IMDb.  It was obtained from the <a href="https://datasets.imdbws.com/">IMDB data download website</a>, and then we preprocessed it in the following ways:</p>
+<ul>
+  <li>we kept only actual performers, removing people who served all kinds of other roles in movies (director, producer, etc.)</li>
+  <li>we removed all movies that had IMDb’s “adult” flag set to true</li>
+  <li>we removed all movies with words in their title that could be considered “not safe for work”, based on matching them against an online database of unacceptable words</li>
+  <li>to reduce the size of the dataset, we kept only movies made in 1970 or later</li>
+</ul>
+
+<p>The above explanation is to help get you oriented, but you don’t need to access these files directly; <strong>code to read in this dataset is being provided to you.</strong></p>
+
+<h2 id="the-graph">The graph</h2>
+
+<p>The graph that you will be constructing is known as a <a href="https://en.wikipedia.org/wiki/Bipartite_graph">bipartite graph</a>, which means that there are two types of nodes, and each node only links to nodes of the other type.  To represent the graph, we will use adjacency lists.</p>
+
+<p>Here is the shell of the class you’ll need to complete (which you’ll find in <code class="language-plaintext highlighter-rouge">IMDBGraph.kt</code>):</p>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">IMDBGraph</span> <span class="p">{</span>
+
+    <span class="kd">val</span> <span class="py">performersToMovies</span> <span class="p">=</span> <span class="nc">HashMap</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">,</span> <span class="nc">MutableList</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;&gt;()</span>
+    <span class="kd">val</span> <span class="py">moviesToPerformers</span> <span class="p">=</span> <span class="nc">HashMap</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">,</span> <span class="nc">MutableList</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;&gt;()</span>
+
+    <span class="k">fun</span> <span class="nf">connectedPerformers</span><span class="p">(</span><span class="n">performerId</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">maxDistance</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Set</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;</span> <span class="p">{</span>
+        <span class="c1">// TODO: Part A</span>
+    <span class="p">}</span>
+
+    <span class="kd">data class</span> <span class="nc">Connection</span><span class="p">(</span><span class="kd">val</span> <span class="py">performerId</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="kd">val</span> <span class="py">movieId</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span>
+
+    <span class="k">fun</span> <span class="nf">shortestPath</span><span class="p">(</span><span class="n">startPerformer</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">endPerformer</span><span class="p">:</span> <span class="nc">String</span><span class="p">):</span> <span class="nc">List</span><span class="p">&lt;</span><span class="nc">Connection</span><span class="p">&gt;</span> <span class="p">{</span>
+        <span class="c1">// TODO: Part B</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">performersToMovies</code> map is a set of adjacency lists: each performer ID maps to a list of movie IDs.  Likewise,  <code class="language-plaintext highlighter-rouge">moviesToPerformers</code> maps from each movie ID to a list of performer IDs.</p>
+
+<h2 id="part-a-connections-for-a-given-performer">Part A: Connections for a given performer</h2>
+
+<p>First, you’ll need to implement the <code class="language-plaintext highlighter-rouge">connectedPerformers</code> function.  This function should return a list of IDs for all performers that connect to a given performer within a certain number of steps.  Here are some examples:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">connectedPerformers("nm0026511", 1)</code> returns a list of all of the performers that have appeared with <code class="language-plaintext highlighter-rouge">nm0026511</code> (Ingemar Andersson) in a film.  According to our dataset, that answer is 6.  (The list should not include the original performer.)</li>
+  <li><code class="language-plaintext highlighter-rouge">connectedPerformers("nm0026511", 2)</code> returns a list of all of the performs that have performed with Ingemar Andersson in a film (i.e., all of the answers above), plus additionally all performers that have appeared with any of those.</li>
+</ul>
+
+<p>Once you have this function implemented, you should pass the <code class="language-plaintext highlighter-rouge">testConnectedPerformers</code> test when you run <code class="language-plaintext highlighter-rouge">mvn test</code>.</p>
+
+<h2 id="part-b-shortest-path-between-two-performers">Part B: Shortest path between two performers</h2>
+
+<p>Next, you will implement the <code class="language-plaintext highlighter-rouge">shortestPath</code> function.  This function should return a list of the connections between two performers on the shortest path between those two performers.  This should be returned in a list of <code class="language-plaintext highlighter-rouge">Connection</code> objects, where a <code class="language-plaintext highlighter-rouge">Connection</code> object contains a performer and the movie that connects them.</p>
+
+<p>Here is the explanation you’ll find in your starter code (note that you should remove this long explanation from your finished code):</p>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*
+   For example, consider a possible shortest path from Jack Nicholson to
+   Elizabeth Olsen:
+
+   nm0000197 Jack Nicholson
+     tt0082934 The Postman Always Rings Twice
+   nm0001448 Jessica Lange
+     tt0409379 In Secret
+   nm0647634 Elizabeth Olsen
+
+   If this function were called with nm0000197 and nm0647634, the return value
+   could be this list of Connections:
+   [Connection(nm0000197, tt0082934), Connection(nm0001448, tt0409379)]
+
+   (It is possible the code might find a different set of connections between
+   the two performers, but the length must be the same as the above, as the
+   above is a shortest path.)
+
+   The endPerformer is not included in the connections returned.
+
+   If there is no connection between the two, return an empty list.
+*/</span>
+</code></pre></div></div>
+
+<p>Once you have this function working, all tests should pass when you run <code class="language-plaintext highlighter-rouge">mvn test</code>.</p>
+
+<h2 id="part-c-reflection">Part C: Reflection</h2>
+
+<p>Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?</p>
+
+<p>Write a brief discussion (a sentence or two is fine) at the bottom of your <code class="language-plaintext highlighter-rouge">IMDBGraph.kt</code> file (in comments, so each line should start with <code class="language-plaintext highlighter-rouge">//</code> or be in a <code class="language-plaintext highlighter-rouge">/* */</code> block).</p>
+
+<p>Here are some examples:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// I got really mixed up working with the two maps.</span>
+<span class="c1">// I couldn't figure out what the Connection class was.</span>
+<span class="c1">// I spent 8 hours on this assignment.</span>
+</code></pre></div></div>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// I started late, so I had to rush to make sure I knew how to test my code.</span>
+<span class="c1">// It may be good to start early next time.</span>
+<span class="c1">// I spent 6 hours on this assignment.</span>
+</code></pre></div></div>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// It went fine; I found what I needed in my notes.</span>
+<span class="c1">// I spent 3 hours on this assignment.</span>
+</code></pre></div></div>
+
+<p> </p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

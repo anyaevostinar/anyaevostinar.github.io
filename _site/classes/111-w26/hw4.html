@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW4 - Parsing Data | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW4 - Parsing Data" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w26/hw4" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w26/hw4" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW4 - Parsing Data" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW4 - Parsing Data","url":"http://localhost:4000/classes/111-w26/hw4"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW4 - Parsing Data</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>Due: Wednesday, Feb 4th at 10pm</p>
+
+<p>You may work alone or with a partner, but you must type up the code yourself.  You may also discuss the assignment at a high level with other students.  You should list any student with whom you discussed each part, and the manner of discussion (high-level, partner, etc.) in a comment at the top of each file.  <strong>You should only have one partner for an entire assignment.</strong></p>
+
+<p>You should submit your assignment on Gradescope. You submit the files <code class="language-plaintext highlighter-rouge">shape_parser.py</code>, <code class="language-plaintext highlighter-rouge">weather_parser.py</code>, and <code class="language-plaintext highlighter-rouge">readme.txt</code>.</p>
+
+<hr />
+
+<h2 id="getting-started">Getting started:</h2>
+
+<p>You will work in two different files for this assignment.  They are all included in <a href="/classes/111-w26/HW4Starter.zip">this starter code</a>. Remember to download it and double click to unzip the folder.</p>
+
+<hr />
+
+<h2 id="goals">Goals</h2>
+
+<p>The primary goal for this assignment is to give you practice parsing CSV files.  A secondary goal is to get you started thinking about how we can work with the data we use.</p>
+
+<hr />
+
+<h2 id="parts-of-this-assignment">Parts of this assignment:</h2>
+
+<ul>
+  <li><a href="#part1">Core: Parsing a CSV file into shapes</a></li>
+  <li><a href="#part2">Advanced: Parsing weather data</a></li>
+</ul>
+
+<hr />
+
+<h2 id="comments-and-collaboration">Comments and collaboration</h2>
+
+<p>As with all assignments in this course, for each file in this assignment, you are expected to provide top-level comments (lines that start with <code class="language-plaintext highlighter-rouge">#</code> at the top of the file) with your name and a collaboration statement.  For this assignment, you have multiple programs; each needs a similar prelude.</p>
+
+<p><strong>You need a collaboration statement, even if just to say that you worked alone.</strong></p>
+
+<p>Here is the link for the <a href="https://gemini.google.com/gem/1v832xyNdoJT2PSACbJgi2EbxvDJW4v_f?usp=sharing">HW4 Gemini helper bot</a>. Remember that I’d appreciate you uploading an example interaction if you find this helpful so I can get an idea of if/how it is helpful and make sure it is providing accurate information.</p>
+
+<hr />
+
+<h2 id="assessment">Assessment</h2>
+<p>The <strong>core requirements</strong> are:</p>
+<ul>
+  <li>correct implementation of Part 1: completing functionality of <code class="language-plaintext highlighter-rouge">shape_parser.py</code></li>
+  <li>Header with at least five lines that start with <code class="language-plaintext highlighter-rouge">#</code> for each file</li>
+  <li>Basic style that can be checked automatically (not complete!)</li>
+  <li>Collaboration statement at the top of each file (even if it just says that you worked alone)</li>
+  <li>A <code class="language-plaintext highlighter-rouge">readme.txt</code> that includes your reflection (detailed below)</li>
+</ul>
+
+<p>The <strong>advanced requirements</strong> are:</p>
+<ul>
+  <li>Satisfy the core requirements</li>
+  <li>correct implementation of Part 2: completing functionality of <code class="language-plaintext highlighter-rouge">weather_data.py</code></li>
+  <li>Descriptive headers for all files</li>
+  <li>Descriptive variable names that follow <code class="language-plaintext highlighter-rouge">snake_case</code></li>
+  <li>Good line grouping and spacing (i.e. use blank newlines to group your lines of code)</li>
+  <li>Make sure not to have code that computes the right answer by doing extra work (e.g., leaving a computation in a for loop when it could have occurred after the for loop, only once).</li>
+  <li>Comments should be used for anything complex, and typically for chunks of 3–5 lines of code, but not every line.</li>
+</ul>
+
+<hr />
+
+<h2 id="core-part-1-parsing-a-csv-file-into-shapes-">(Core) Part 1: Parsing a CSV file into shapes <a name="part1"></a></h2>
+
+<p>In this part, you will complete the implementation of a program that parses a .csv file into a window of shapes.  An example is in <code class="language-plaintext highlighter-rouge">shapes.csv</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>window,800,600
+
+circle,600,200,40,blue
+triangle,700,200,700,300,600,100,red
+rectangle,50,60,200,400,yellow
+square,40,40,30,magenta
+
+circle,60,400,25
+triangle,400,200,400,300,300,400
+rectangle,770,500,650,250
+square,500,400,100
+
+</code></pre></div></div>
+
+<p>As you can see, most lines of the file contain either the window information or information for a single shape, and a shape may or may not have a color specified.  Some lines are empty, and your code should simply ignore them (but not crash when they are encountered).</p>
+
+<p><strong>Note: there are useful libraries that can help you parse CSV files, but you <u>should not</u> use them for this assignment.  I want to be sure that you can parse the file on your own first.</strong></p>
+
+<h4 id="part-a-complete-shape-parsing-functions">Part a: complete shape-parsing functions</h4>
+
+<p>For this first subpart, you should complete the implementations of the four shape-parsing functions:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">parse_circle</code></li>
+  <li><code class="language-plaintext highlighter-rouge">parse_square</code></li>
+  <li><code class="language-plaintext highlighter-rouge">parse_rectangle</code></li>
+  <li><code class="language-plaintext highlighter-rouge">parse_triangle</code></li>
+</ul>
+
+<p>Each function should take in a list of information about the shape, including a possible color.  The specific list varies for each shape type.  Your functions should create the relevant shape object from <code class="language-plaintext highlighter-rouge">graphics.py</code>, fill it in (if the provided list contains a color string), and <strong>return it</strong>.  These functions have a return value (a shape object), but no side effect.  <em>They should not draw their shape.</em></p>
+
+<p>Pay careful attention to the expected input types in the docstring for each function.  For example, for a circle, note that it takes in a list of <em>strings</em>, and that list should have either three or four values in it:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">parse_circle</span><span class="p">(</span><span class="n">vals</span><span class="p">):</span>
+    <span class="s">"""
+    Creates a Circle object based on the values given in vals.
+
+    Assumes vals is either a list [x,y,r,color] of strings,
+    or [x,y,r].
+
+    x: x-coordinate of center point (expect an int in the str)
+    y: y-coordinate of center point (expect an int in the str)
+    r: radius (expect a float in the str)
+    color: optional color (str)
+
+    Returns: the Circle object
+    """</span>
+    <span class="c1"># TODO: Part 1a
+</span>    <span class="k">return</span> <span class="n">Circle</span><span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># replace with your code
+</span></code></pre></div></div>
+
+<h4 id="part-b-putting-the-pieces-together">Part b: putting the pieces together</h4>
+
+<p>These functions all need to get used to parse a file into a list of shapes and a <code class="language-plaintext highlighter-rouge">GraphWin</code> object.  An early part of software design is pseudocode.  Pseudocode represents plans for code without having the actual syntax (so no colons, function calls, etc.).  The function <code class="language-plaintext highlighter-rouge">parse_shapes_from_file</code> needs to read in the lines of the CSV file and parse each line (at least, each one that isn’t blank) into a shape.  The pseudocode for this function is given to you in comments in the starter code.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">parse_shapes_from_file</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="s">"""
+    Opens the file specified by filename for reading, and parses
+    the window dimensions and the shapes.
+
+    Returns: the Window object and a list of shapes
+    """</span>
+    <span class="c1"># Specify variables for the window and the shape list
+</span>    <span class="c1"># Open the file for reading
+</span>        <span class="c1"># Go through each line in the file
+</span>            <span class="c1"># Skip over any empty lines
+</span>            <span class="c1"># Split the line into strings on the commas
+</span>            <span class="c1"># Use the first string in the line to determine which object to create
+</span>    <span class="c1"># Return the window and shapes list
+</span>    
+    <span class="c1"># TODO: Part 1b
+</span>    <span class="k">pass</span> <span class="c1"># replace with your code
+</span></code></pre></div></div>
+
+<p>Complete this function.  Note that you should plan to keep the pseudocode comments around; you don’t have to do work to comment this function, and they will hopefully help you as you code!</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">parse_shapes_from_file</code> function returns both a window and a list of shapes.   <em>It should not draw any shapes.</em></p>
+
+<p>Note that this function requires you to return two values, which we haven’t seen before.  Here is a short example.  (It’s the same as unpacking a tuple when you call it!)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="s">"""
+    Returns the sum and difference of x and y.
+    """</span>
+    <span class="n">plus</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+    <span class="n">minus</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span>
+    <span class="k">return</span> <span class="n">plus</span><span class="p">,</span> <span class="n">minus</span> <span class="c1"># secretly it returns the pair as a tuple
+</span>
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">total</span><span class="p">,</span> <span class="n">diff</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span> <span class="c1"># total is plus, diff is minus
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span> <span class="c1"># prints: 17
+</span>    <span class="k">print</span><span class="p">(</span><span class="n">diff</span><span class="p">)</span>  <span class="c1"># prints: 3
+</span>
+<span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h4 id="part-c-drawing-the-shapes">Part c: drawing the shapes</h4>
+
+<p>One of the beautiful things about the shapes in <code class="language-plaintext highlighter-rouge">graphics.py</code> is that they all have a <code class="language-plaintext highlighter-rouge">draw</code> method.  For a variable <code class="language-plaintext highlighter-rouge">shape</code> that represents <em>any</em> type of shape object, you can call <code class="language-plaintext highlighter-rouge">shape.draw(win)</code> to draw that shape in the <code class="language-plaintext highlighter-rouge">GraphWin</code> object <code class="language-plaintext highlighter-rouge">win</code>.  This is called <strong>polymorphism</strong>.</p>
+
+<p>To see this for yourself, you need to add a couple of lines of code to <code class="language-plaintext highlighter-rouge">main</code> to actually draw the shapes to the window.</p>
+
+<p>Once you complete <code class="language-plaintext highlighter-rouge">main</code>, it will save the result to a file <code class="language-plaintext highlighter-rouge">shapes.svg</code>. This file won’t display very well in VSCode since it has no background, but if you double click on it and let it open in a web browser, you’ll see this:</p>
+
+<p><img src="/classes/111-w26/shapes.svg" alt="&lt;image: shapes&gt;" title="shapes" /></p>
+
+<hr />
+
+<h2 id="advanced-part-2-visualizing-weather-data-">(Advanced) Part 2: Visualizing weather data <a name="part2"></a></h2>
+
+<h4 id="part-a-parsing-the-data">Part a: parsing the data</h4>
+
+<p>You have a bunch of weather data from NOAA in <code class="language-plaintext highlighter-rouge">weather_data.csv</code>.</p>
+
+<p><em>Disclaimer</em>: All of the data is as-provided by NOAA, except the station name doesn’t have a comma.</p>
+
+<p>Here are the first few lines of the file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME,DATE,PRCP,SNOW,TMAX,TMIN
+MINNEAPOLIS ST. PAUL INTERNATIONAL AIRPORT,1/1/2023,0,0,35,22
+MINNEAPOLIS ST. PAUL INTERNATIONAL AIRPORT,1/2/2023,0.02,0.1,27,22
+MINNEAPOLIS ST. PAUL INTERNATIONAL AIRPORT,1/3/2023,0.65,6,31,24
+MINNEAPOLIS ST. PAUL INTERNATIONAL AIRPORT,1/4/2023,0.61,8.8,33,30
+MINNEAPOLIS ST. PAUL INTERNATIONAL AIRPORT,1/5/2023,0.01,0.2,30,18
+</code></pre></div></div>
+
+<p>For the first task of this part, you should implement the <code class="language-plaintext highlighter-rouge">parse_data</code> function.  This function should grab the date strings, precipitation and snow amounts (as <code class="language-plaintext highlighter-rouge">float</code>s) and minimum and maximum temperatures (as <code class="language-plaintext highlighter-rouge">int</code>s) for each date from the file, and return five lists.</p>
+
+<p><strong>Be careful with ordering: each line has the <em>maximum</em> temperature befor the <em>minimum</em> temperature.</strong></p>
+
+<h4 id="part-b-processing-the-data">Part b: processing the data</h4>
+
+<p>Given the data you parsed from the CSV file in Part a, you should be able to compute some statistics.  Fill in the following function definitions: <code class="language-plaintext highlighter-rouge">get_lowest_temp</code> and <code class="language-plaintext highlighter-rouge">get_highest_temp</code>.</p>
+
+<p>As a smaller example, here is how these functions should work (with smaller, made-up data):</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">date_list</span> <span class="o">=</span> <span class="p">[</span><span class="s">"1/2/2025"</span><span class="p">,</span> <span class="s">"2/5/2025"</span><span class="p">,</span> <span class="s">"7/7/2025"</span><span class="p">]</span>
+<span class="n">temp_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">92</span><span class="p">]</span>
+
+<span class="n">d1</span><span class="p">,</span> <span class="n">t1</span> <span class="o">=</span> <span class="n">get_lowest_temp</span><span class="p">(</span><span class="n">date_list</span><span class="p">,</span> <span class="n">temp_list</span><span class="p">)</span>
+<span class="n">d2</span><span class="p">,</span> <span class="n">t2</span> <span class="o">=</span> <span class="n">get_highest_temp</span><span class="p">(</span><span class="n">date_list</span><span class="p">,</span> <span class="n">temp_list</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="n">t1</span><span class="p">)</span> <span class="c1"># prints: 2/5/2025 4
+</span><span class="k">print</span><span class="p">(</span><span class="n">d2</span><span class="p">,</span> <span class="n">t2</span><span class="p">)</span> <span class="c1"># prints: 7/7/2025 92
+</span></code></pre></div></div>
+
+<h4 id="part-c-a-better-user-experience">Part c: a better user experience</h4>
+
+<p>Finally, let’s make this temperature analysis based on what the user requests! 
+You should use the command line arguments to determine whether the user wants the “lows” or “highs” and the “min” or “max”. Remember that you can access the command line arguments with the special built-in list <code class="language-plaintext highlighter-rouge">sys.argv</code>.</p>
+
+<p>Here is an example of using <code class="language-plaintext highlighter-rouge">sys.argv</code>. On the Terminal, you could type:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python example.py argument1 another_argument more
+</code></pre></div></div>
+
+<p>And in Python you could print:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>And then you would see printed:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span><span class="s1">'example.py'</span>, <span class="s1">'argument1'</span>, <span class="s1">'another_argument'</span>, <span class="s1">'more'</span><span class="o">]</span>
+</code></pre></div></div>
+
+<p>Use that information to implement this kind of interaction with this program:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python weather_parser.py lows min
+The minimum low temperature in 2023 was -13 Fahrenheit on 2/3/2023.
+
+python weather_parser.py highs min
+The minimum high temperature in 2023 was 2 Fahrenheit on 1/30/2023.
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="reflection">Reflection</h2>
+
+<p>Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?  Write a brief discussion (a sentence or two is fine) in your <code class="language-plaintext highlighter-rouge">readme.txt</code> file.</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

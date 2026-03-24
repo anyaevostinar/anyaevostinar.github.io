@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Kotlin Predictions Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Kotlin Predictions Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f25/kotlin-predictions-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f25/kotlin-predictions-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Kotlin Predictions Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Kotlin Predictions Lab","url":"http://localhost:4000/classes/201-f25/kotlin-predictions-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Kotlin Predictions Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="exercise-1-conditionals-and-loops-in-kotlin">Exercise 1: Conditionals and loops in Kotlin</h2>
+
+<h4 id="1a-conditionals">1a: Conditionals</h4>
+
+<p>Predict the output of the following code:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">val</span> <span class="py">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">=</span> <span class="mi">4</span>
+<span class="kd">val</span> <span class="py">y</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">=</span> <span class="mi">10</span>
+<span class="kd">val</span> <span class="py">z</span><span class="p">:</span> <span class="nc">Int</span> <span class="p">=</span> <span class="mi">8</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="p">!=</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="mi">2</span><span class="p">+</span><span class="n">x</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">y-x</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">when</span> <span class="p">{</span>
+    <span class="n">x</span> <span class="p">&gt;</span> <span class="n">y</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span>
+    <span class="n">x</span> <span class="p">==</span> <span class="n">y</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"b"</span><span class="p">)</span>
+    <span class="n">y</span> <span class="p">&gt;</span> <span class="n">z</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"c"</span><span class="p">)</span>
+    <span class="n">x</span> <span class="p">&lt;</span> <span class="n">z</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"d"</span><span class="p">)</span>
+    <span class="k">else</span> <span class="p">-&gt;</span> <span class="nf">println</span><span class="p">(</span><span class="s">"e"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">z</span> <span class="p">+=</span> <span class="mi">2</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="p">==</span> <span class="n">z</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"They're the same now!"</span><span class="p">)</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p><a href="https://play.kotlinlang.org/">Test your predictions</a></p>
+
+<h4 id="1b-loops">1b: Loops</h4>
+
+<p>Predict the output of the following code:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">x</span> <span class="p">*</span> <span class="n">x</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">2</span><span class="o">..</span><span class="p">&lt;</span><span class="mi">8</span> <span class="n">step</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">10</span> <span class="n">downTo</span> <span class="mi">1</span> <span class="n">step</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nc">String</span> <span class="k">in</span> <span class="nf">listOf</span><span class="p">(</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"canteloupe"</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"String: $s"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="py">y</span> <span class="p">=</span> <span class="p">-</span><span class="mi">10</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">y</span> <span class="p">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+    <span class="n">y</span> <span class="p">-=</span> <span class="mi">4</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="py">z</span> <span class="p">=</span> <span class="p">-</span><span class="mi">10</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+    <span class="n">z</span> <span class="p">-=</span> <span class="mi">4</span>
+<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">z</span> <span class="p">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="https://play.kotlinlang.org/">Test your predictions</a></p>
+
+<h2 id="exercise-2-functions">Exercise 2: Functions</h2>
+
+<p>Predict the output of the following program:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fun</span> <span class="nf">greet</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"What is your name? "</span><span class="p">)</span>
+    <span class="kd">val</span> <span class="py">name</span><span class="p">:</span> <span class="nc">String</span><span class="p">?</span> <span class="p">=</span> <span class="nf">readLine</span><span class="p">()</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"Hi $name!"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">fun</span> <span class="nf">mult</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">x</span> <span class="p">*</span> <span class="n">y</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">fun</span> <span class="nf">mult2</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="p">*</span> <span class="n">y</span>
+<span class="p">}</span>
+
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">greet</span><span class="p">()</span>
+
+    <span class="kd">val</span> <span class="py">res</span> <span class="p">=</span> <span class="nf">mult</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+
+    <span class="kd">val</span> <span class="py">res2</span> <span class="p">=</span> <span class="nf">mult2</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">res2</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><a href="https://play.kotlinlang.org/">Test your predictions</a></p>
+
+<h2 id="exercise-3-maps">Exercise 3: Maps</h2>
+
+<p>Try out updating the <code class="language-plaintext highlighter-rouge">calculateGPAmap</code> function to use a map. Copy this starter code into a file named <code class="language-plaintext highlighter-rouge">GPA.kt</code> and update it:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fun</span> <span class="nf">calculateGPAmap</span><span class="p">(</span><span class="n">grades</span><span class="p">:</span><span class="cm">/* YOUR CODE HERE */): /* YOUR CODE HERE */</span><span class="p">{</span>
+
+    <span class="kd">val</span> <span class="py">gpaMap</span><span class="p">:</span> <span class="cm">/* YOUR CODE HERE */ = mapOf("A" to 4.0, /* YOUR CODE HERE */</span><span class="p">)</span>
+
+    <span class="kd">var</span> <span class="py">totalGradePoints</span><span class="p">:</span><span class="nc">Double</span> <span class="p">=</span> <span class="mf">0.0</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="cm">/* YOUR CODE HERE */</span><span class="p">){</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">gpaMap</span><span class="p">[</span><span class="n">grade</span><span class="p">]</span> <span class="p">!=</span> <span class="k">null</span><span class="p">){</span>
+            <span class="cm">/* YOUR CODE HERE */</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="kd">val</span> <span class="py">gpa</span> <span class="p">=</span> <span class="nc">String</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="s">"%.2f"</span><span class="p">,</span> <span class="n">totalGradePoints</span><span class="p">/</span><span class="n">grades</span><span class="p">.</span><span class="nf">count</span><span class="p">())</span>
+    
+    <span class="k">return</span> <span class="n">gpa</span>
+<span class="p">}</span>
+
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+
+
+    <span class="nf">println</span><span class="p">(</span><span class="s">"Student's GPA: ${calculateGPAmap(listOf("</span><span class="nc">A-</span><span class="s">", "</span><span class="nc">B</span><span class="p">+</span><span class="s">", "</span><span class="nc">C</span><span class="s">", "</span><span class="nc">A</span><span class="s">"))}"</span><span class="p">)</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"Student's GPA: ${calculateGPAmap(listOf("</span><span class="nc">C-</span><span class="s">", "</span><span class="nc">B</span><span class="s">", "</span><span class="nc">D</span><span class="p">+</span><span class="s">", "</span><span class="nc">A-</span><span class="s">"))}"</span><span class="p">)</span>
+	<span class="nf">println</span><span class="p">(</span><span class="s">"Student's GPA: ${calculateGPAmap(listOf("</span><span class="nc">F</span><span class="s">", "</span><span class="nc">A-</span><span class="s">", "</span><span class="nc">C</span><span class="p">+</span><span class="s">", "</span><span class="nc">B-</span><span class="s">"))}"</span><span class="p">)</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Then consult your reference sheet or the <a href="kotlin-lab">scavenger hunt files</a> for how to compile and run it. Upload your completed code to Moodle for an engagement credit.</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This is based on labs from Profs Tanya Amert and Jean Salac.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Patching Guide | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Patching Guide" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-w26/guide-patching" />
+<meta property="og:url" content="http://localhost:4000/classes/257-w26/guide-patching" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Patching Guide" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Patching Guide","url":"http://localhost:4000/classes/257-w26/guide-patching"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Patching Guide</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="overview">Overview</h2>
+<p>This page is a guide on how to use the <code class="language-plaintext highlighter-rouge">@patch</code> functionality to enable your tests to run on GitHub after you have added a database.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Here is my example <code class="language-plaintext highlighter-rouge">DataSource</code>:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">records</span>
+<span class="kn">import</span> <span class="nn">ProductionCode.psql_config</span> <span class="k">as</span> <span class="n">config</span>
+
+<span class="k">class</span> <span class="nc">DataSource</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">database_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"postgresql://</span><span class="si">{</span><span class="n">config</span><span class="p">.</span><span class="n">USER</span><span class="si">}</span><span class="s">:</span><span class="si">{</span><span class="n">config</span><span class="p">.</span><span class="n">PASSWORD</span><span class="si">}</span><span class="s">@</span><span class="si">{</span><span class="n">config</span><span class="p">.</span><span class="n">HOST</span><span class="si">}</span><span class="s">:5432/</span><span class="si">{</span><span class="n">config</span><span class="p">.</span><span class="n">DATABASE</span><span class="si">}</span><span class="s">"</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">database</span> <span class="o">=</span> <span class="n">records</span><span class="p">.</span><span class="n">Database</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">database_url</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_pokemon_by_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="s">"SELECT * FROM pokemon WHERE name = :name"</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">database</span><span class="p">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">rows</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">export</span><span class="p">(</span><span class="s">'csv'</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">None</span>
+
+    <span class="k">def</span> <span class="nf">get_pokemon_by_name_dictionary</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="c1">#an example if you just want to return the Record object dictionary
+</span>        <span class="n">query</span> <span class="o">=</span> <span class="s">"SELECT * FROM pokemon WHERE name = :name"</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">database</span><span class="p">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">rows</span>
+
+    <span class="k">def</span> <span class="nf">get_pokemon_by_stat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stat</span><span class="p">,</span> <span class="n">count</span><span class="p">):</span>
+        <span class="s">'''
+        Returns the top number of Pokemon by the given stat
+        An example of returning multiple rows with an export
+        :param stat: The stat to use
+        :param count: The number of Pokemon to display
+        :return: A list of Pokemon
+        '''</span>
+        <span class="c1">#sort the data by the given stat
+</span>        <span class="n">rows</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">database</span><span class="p">.</span><span class="n">query</span><span class="p">(</span><span class="sa">f</span><span class="s">"SELECT * FROM pokemon ORDER BY </span><span class="si">{</span><span class="n">stat</span><span class="si">}</span><span class="s"> DESC LIMIT </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">rows</span><span class="p">.</span><span class="n">export</span><span class="p">(</span><span class="s">'csv'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="testing-get_pokemon_by_name">Testing <code class="language-plaintext highlighter-rouge">get_pokemon_by_name</code></h2>
+<p>My method doesn’t do a whole lot, but if I wanted to test the <strong>Python</strong> code (not the query), here is how.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">unittest.mock.patch</code> tool allows you to swap out the real <code class="language-plaintext highlighter-rouge">records.Database</code> with a <code class="language-plaintext highlighter-rouge">Mock</code> object. This lets you “fake” the database response and verify that your logic — like calling <code class="language-plaintext highlighter-rouge">.export('csv')</code> — is working correctly without needing to connect to the real server.</p>
+
+<h3 id="the-strategy-mocking-the-chain">The Strategy: Mocking the Chain</h3>
+<p>In my <code class="language-plaintext highlighter-rouge">get_pokemon_by_name</code> method, there is a chain of calls that I need to simulate:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">records.Database()</code> creates the database object.</li>
+  <li><code class="language-plaintext highlighter-rouge">database.query()</code> returns a list-like object of rows.</li>
+  <li><code class="language-plaintext highlighter-rouge">rows[0]</code> is a row object.</li>
+  <li><code class="language-plaintext highlighter-rouge">rows[0].export('csv')</code> returns the final string.</li>
+</ul>
+
+<h3 id="the-test-implementation">The Test Implementation</h3>
+<p>Assuming my code is in a file named <code class="language-plaintext highlighter-rouge">datasource.py</code> in <code class="language-plaintext highlighter-rouge">ProductionCode</code>, here is how I write the test:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">unittest.mock</span> <span class="kn">import</span> <span class="n">patch</span><span class="p">,</span> <span class="n">MagicMock</span>
+<span class="kn">from</span> <span class="nn">ProductionCode.datasource</span> <span class="kn">import</span> <span class="n">DataSource</span>
+
+<span class="k">class</span> <span class="nc">TestDataSource</span><span class="p">(</span><span class="n">unittest</span><span class="p">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="o">@</span><span class="n">patch</span><span class="p">(</span><span class="s">'ProductionCode.datasource.records.Database'</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_get_pokemon_by_name_returns_csv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mock_db_class</span><span class="p">):</span>
+        <span class="c1"># The combo of @patch and the parameter mock_db_class automatically
+</span>        <span class="c1"># creates a MagicMock of records.Database and saves it to mock_db_class
+</span>
+        <span class="c1"># 1. Setup the Mocks
+</span>        <span class="c1"># mock_db_class is the already mocked 'records.Database' class (really its constructor)
+</span>        <span class="c1"># mock_db_class.return_value is a new mock object, because mock object constructors make
+</span>        <span class="c1">#    more mock objects
+</span>        <span class="c1"># mock_db_instance is the object that will be returned when 'records.Database()' is called
+</span>        <span class="n">mock_db_instance</span> <span class="o">=</span> <span class="n">mock_db_class</span><span class="p">.</span><span class="n">return_value</span>
+        
+        <span class="c1"># Create a mock for the individual row, MagicMock makes an object with all the normal built-in methods
+</span>        <span class="c1"># and lets you add additional things to it
+</span>        <span class="n">mock_row</span> <span class="o">=</span> <span class="n">MagicMock</span><span class="p">()</span>
+
+        <span class="c1"># When export is called on the mock_row, regardless of parameter, this string is returned
+</span>        <span class="c1"># this works because all functions/methods are actually objects in Python
+</span>        <span class="n">mock_row</span><span class="p">.</span><span class="n">export</span><span class="p">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="s">"1,Pikachu,Electric"</span>
+        
+        <span class="c1"># Mock the .query() method to return a list containing our mock_row
+</span>        <span class="n">mock_db_instance</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="p">[</span><span class="n">mock_row</span><span class="p">]</span>
+
+        <span class="c1"># 2. Initialize a fresh DataSource for this test
+</span>        <span class="n">ds</span> <span class="o">=</span> <span class="n">DataSource</span><span class="p">()</span>
+
+        <span class="c1"># Run the code we are testing
+</span>        <span class="n">result</span> <span class="o">=</span> <span class="n">ds</span><span class="p">.</span><span class="n">get_pokemon_by_name</span><span class="p">(</span><span class="s">"Pikachu"</span><span class="p">)</span>
+
+        <span class="c1"># 3. Assertions
+</span>        <span class="c1"># Verify the database was queried with the correct parameters
+</span>        <span class="n">mock_db_instance</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="n">assert_called_once_with</span><span class="p">(</span>
+            <span class="s">"SELECT * FROM pokemon WHERE name = :name"</span><span class="p">,</span> 
+            <span class="n">name</span><span class="o">=</span><span class="s">"Pikachu"</span>
+        <span class="p">)</span>
+        
+        <span class="c1"># Verify the row's export method was called
+</span>        <span class="n">mock_row</span><span class="p">.</span><span class="n">export</span><span class="p">.</span><span class="n">assert_called_with</span><span class="p">(</span><span class="s">'csv'</span><span class="p">)</span>
+        
+        <span class="c1"># Verify the final output
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="s">"1,Pikachu,Electric"</span><span class="p">)</span>
+
+    <span class="o">@</span><span class="n">patch</span><span class="p">(</span><span class="s">'ProductionCode.datasource.records.Database'</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_get_pokemon_by_name_dictionary</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mock_db_class</span><span class="p">):</span>
+        <span class="c1"># Setup the mock database instance
+</span>        <span class="n">mock_db_instance</span> <span class="o">=</span> <span class="n">mock_db_class</span><span class="p">.</span><span class="n">return_value</span>
+        
+        <span class="c1"># Mock the query result (A Record is basically a dictionary, so we can just make a dictionary)
+</span>        <span class="n">mock_db_instance</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="p">{</span><span class="s">'number'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'name'</span><span class="p">:</span> <span class="s">'Bulbasaur'</span><span class="p">,</span> <span class="s">'type_1'</span><span class="p">:</span> <span class="s">'Fake'</span><span class="p">}</span>
+        
+        <span class="c1"># Initialize a fresh DataSource for this test
+</span>        <span class="n">ds</span> <span class="o">=</span> <span class="n">DataSource</span><span class="p">()</span>
+        
+        <span class="c1"># Act
+</span>        <span class="n">result</span> <span class="o">=</span> <span class="n">ds</span><span class="p">.</span><span class="n">get_pokemon_by_name_dictionary</span><span class="p">(</span><span class="s">"Bulbasaur"</span><span class="p">)</span>
+        
+        <span class="c1"># Assert
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s">'number'</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s">'name'</span><span class="p">],</span> <span class="s">'Bulbasaur'</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s">'type_1'</span><span class="p">],</span> <span class="s">'Fake'</span><span class="p">)</span>
+        <span class="c1"># Verify the query was called with the correct parameter
+</span>        <span class="n">mock_db_instance</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="n">assert_called_once_with</span><span class="p">(</span>
+            <span class="s">"SELECT * FROM pokemon WHERE name = :name"</span><span class="p">,</span> 
+            <span class="n">name</span><span class="o">=</span><span class="s">"Bulbasaur"</span>
+        <span class="p">)</span>
+
+    <span class="o">@</span><span class="n">patch</span><span class="p">(</span><span class="s">'ProductionCode.datasource.records.Database'</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_get_pokemon_by_name_not_found</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mock_db_class</span><span class="p">):</span>
+        <span class="c1"># Setup query to return an empty list
+</span>        <span class="n">mock_db_class</span><span class="p">.</span><span class="n">return_value</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="p">[]</span>
+        
+        <span class="n">ds</span> <span class="o">=</span> <span class="n">DataSource</span><span class="p">()</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">ds</span><span class="p">.</span><span class="n">get_pokemon_by_name</span><span class="p">(</span><span class="s">"MissingNo"</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="p">.</span><span class="n">assertIsNone</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+            <span class="n">query</span> <span class="o">=</span> <span class="s">"SELECT * FROM pokemon WHERE name = :name"</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">database</span><span class="p">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="o">@</span><span class="n">patch</span><span class="p">(</span><span class="s">'ProductionCode.datasource.records.Database'</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_get_pokemon_by_stat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mock_db_class</span><span class="p">):</span>
+        <span class="c1"># Setup the mock database instance
+</span>        <span class="n">mock_db_instance</span> <span class="o">=</span> <span class="n">mock_db_class</span><span class="p">.</span><span class="n">return_value</span>
+        
+        <span class="c1"># Mock the query result, which needs to be an object if you are going to
+</span>        <span class="c1"># call it's export
+</span>        <span class="n">records_object</span> <span class="o">=</span> <span class="n">MagicMock</span><span class="p">()</span>
+
+        <span class="c1"># if you want to get multiple rows back, include them all with new line separators
+</span>        <span class="n">records_object</span><span class="p">.</span><span class="n">export</span><span class="p">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="s">"1,Bulbasaur,Fake,62</span><span class="se">\n</span><span class="s">2,Ivysaur,Fake,49"</span>
+        <span class="c1"># set your new mock object to be what is returned when your database is queried
+</span>        <span class="n">mock_db_instance</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="n">records_object</span>
+
+        <span class="c1"># Run your function
+</span>        <span class="n">ds</span> <span class="o">=</span> <span class="n">DataSource</span><span class="p">()</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">ds</span><span class="p">.</span><span class="n">get_pokemon_by_stat</span><span class="p">(</span><span class="s">"attack"</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        
+        <span class="c1"># Check to make sure the right things happened in your Python
+</span>        <span class="n">expected_csv</span> <span class="o">=</span> <span class="s">"1,Bulbasaur,Fake,62</span><span class="se">\n</span><span class="s">2,Ivysaur,Fake,49"</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">expected_csv</span><span class="p">)</span>
+        <span class="n">mock_db_instance</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="n">assert_called_once_with</span><span class="p">(</span>
+            <span class="s">"SELECT * FROM pokemon ORDER BY attack DESC LIMIT 2"</span>
+        <span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+  <li><strong>Patch where the object is used:</strong> Notice I patched <code class="language-plaintext highlighter-rouge">ProductionCode.datasource.records.Database</code>. You want to intercept the import inside your module, not the records library itself.</li>
+  <li><strong>Use <code class="language-plaintext highlighter-rouge">.return_value</code> frequently</strong>: Since <code class="language-plaintext highlighter-rouge">DataSource</code> calls <code class="language-plaintext highlighter-rouge">records.Database()</code>, the patch gives us the class. To control the instance created inside <code class="language-plaintext highlighter-rouge">__init__</code>, we use <code class="language-plaintext highlighter-rouge">mock_db_class.return_value</code>. The line <code class="language-plaintext highlighter-rouge">mock_db_instance = mock_db_class.return_value</code> is just giving us a more convenient name for the object returned by calling <code class="language-plaintext highlighter-rouge">records.Database(self.database_url)</code></li>
+  <li><strong><code class="language-plaintext highlighter-rouge">MagicMock</code> for Rows</strong>: Because the <code class="language-plaintext highlighter-rouge">records</code> library returns row objects with their own methods (like <code class="language-plaintext highlighter-rouge">.export()</code>), we create a <code class="language-plaintext highlighter-rouge">MagicMock()</code> for the row and define its behavior separately.</li>
+  <li><strong>Pretend it’s a dictionary</strong>: If you aren’t using <code class="language-plaintext highlighter-rouge">export</code> or any other <code class="language-plaintext highlighter-rouge">Record</code> object methods, you can just use a Python dictionary for your tests</li>
+  <li>You can adapt the above to work for your project without needing to change very much.</li>
+  <li>Note, my tests have a lot of duplication for clarity since I’m assuming you’ll only be looking at one of them, you can definitely cut down in places!</li>
+</ul>
+
+<h2 id="testing-flask-routes">Testing Flask routes</h2>
+<p>I have the following Flask file, using my <code class="language-plaintext highlighter-rouge">DataSource</code> from above:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">render_template</span>
+
+<span class="kn">from</span> <span class="nn">ProductionCode.datasource</span> <span class="kn">import</span> <span class="n">DataSource</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">DataSource</span><span class="p">()</span>
+
+<span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'index.html'</span><span class="p">)</span>
+
+<span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/pokemon/&lt;name&gt;'</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="n">poke_name</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">ds</span><span class="p">.</span><span class="n">get_pokemon_by_name</span><span class="p">(</span><span class="n">poke_name</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="the-test-implementation-1">The Test Implementation</h3>
+<p>In my test file, I will patch the <code class="language-plaintext highlighter-rouge">ds</code> object specifically inside the <code class="language-plaintext highlighter-rouge">app</code> module. First, I need to avoid the <code class="language-plaintext highlighter-rouge">DataSource</code> trying to contact the database:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">unittest</span>
+<span class="kn">from</span> <span class="nn">unittest.mock</span> <span class="kn">import</span> <span class="n">patch</span>
+
+<span class="c1"># Patch out the database right away so constructor isn't called
+</span><span class="n">db_patcher</span> <span class="o">=</span> <span class="n">patch</span><span class="p">(</span><span class="s">'ProductionCode.datasource.records.Database'</span><span class="p">)</span>
+<span class="n">mock_db_class</span> <span class="o">=</span> <span class="n">db_patcher</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
+
+<span class="c1"># Safely import app without worrying about DataSource contacting database
+</span><span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">app</span>
+</code></pre></div></div>
+
+<p>Then I can test with the following:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">TestFlaskApp</span><span class="p">(</span><span class="n">unittest</span><span class="p">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Creates a test client so we can make requests without running a server
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">app</span><span class="p">.</span><span class="n">test_client</span><span class="p">()</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">client</span><span class="p">.</span><span class="n">testing</span> <span class="o">=</span> <span class="bp">True</span>
+
+    <span class="o">@</span><span class="n">patch</span><span class="p">(</span><span class="s">'app.ds.get_pokemon_by_name'</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_display_route_success</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mock_get_pokemon</span><span class="p">):</span>
+        <span class="c1"># 1. Setup the Mock response
+</span>        <span class="c1"># We simulate what the Datasource would return (the CSV string)
+</span>
+        <span class="n">mock_get_pokemon</span><span class="p">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="s">"25,Pikachu,Electric"</span>
+
+        <span class="c1"># 2. Simulate a GET request to the route
+</span>        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">client</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'/pokemon/Pikachu/'</span><span class="p">)</span>
+
+        <span class="c1"># 3. Assertions
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">status_code</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">decode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">),</span> <span class="s">"25,Pikachu,Electric"</span><span class="p">)</span>
+        
+        <span class="c1"># Verify the mock was called with the right argument from the URL
+</span>        <span class="n">mock_get_pokemon</span><span class="p">.</span><span class="n">assert_called_once_with</span><span class="p">(</span><span class="s">"Pikachu"</span><span class="p">)</span>
+
+    <span class="o">@</span><span class="n">patch</span><span class="p">(</span><span class="s">'app.ds.get_pokemon_by_name'</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_display_route_not_found</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mock_get_pokemon</span><span class="p">):</span>
+        <span class="c1"># Setup the mock to return None (simulating a missing database record)
+</span>        <span class="n">mock_get_pokemon</span><span class="p">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="bp">None</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">client</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'/pokemon/MissingNo/'</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">status_code</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">assertIn</span><span class="p">(</span><span class="s">"No pokemon!"</span><span class="p">,</span> <span class="n">response</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">decode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">))</span>
+</code></pre></div></div>
+
+<h3 id="key-concepts-for-flask-patching">Key Concepts for Flask Patching</h3>
+<ul>
+  <li><strong>Preventing DataSource constructor</strong>: In my current setup, I have a global <code class="language-plaintext highlighter-rouge">DataSource</code> and <code class="language-plaintext highlighter-rouge">DataSource</code> creates a connection within its constructor so I need to mock that class before importing <code class="language-plaintext highlighter-rouge">app</code>. I could avoid that with refactoring to not immediately connect to the database in the constructor or with a “factory” design pattern, which we’ll discuss later in the term.</li>
+  <li><code class="language-plaintext highlighter-rouge">app.test_client()</code>: This acts as a “browser in a box.” It lets you trigger routes and inspect the response (status codes, headers, and body) without actually starting a web server on a port.</li>
+  <li><strong>Patching the Instance</strong>: In the previous section, I patched the class (<code class="language-plaintext highlighter-rouge">records.Database</code>). Here, I patched the method of an already existing instance (<code class="language-plaintext highlighter-rouge">app.ds.get_pokemon_by_name</code>). This is often easier because you aren’t messing with the constructor logic and it is ideal to patch as close to the function that you are testing as possible.</li>
+  <li><strong>Response Decoding</strong>: Flask <code class="language-plaintext highlighter-rouge">response.data</code> returns bytes. To compare it to a string, you’ll usually need to call <code class="language-plaintext highlighter-rouge">.decode('utf-8')</code>.</li>
+</ul>
+
+<h2 id="for-more">For More</h2>
+<p>There is a lot more that you can do with Mock and patch, and the best place to learn more is the Python documentation:</p>
+<ul>
+  <li><a href="https://docs.python.org/3/library/unittest.mock.html#patch-methods-start-and-stop">patch start and stop</a> - if you want to get rid of repetitive patching of the database</li>
+  <li><a href="https://docs.python.org/3/library/unittest.mock.html#quick-guide">Quick Guide</a> - for more how how Mock and MagicMock actually work</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

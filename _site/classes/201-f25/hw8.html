@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Homework 8 - Sorting | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Homework 8 - Sorting" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f25/hw8" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f25/hw8" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Homework 8 - Sorting" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Homework 8 - Sorting","url":"http://localhost:4000/classes/201-f25/hw8"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Homework 8 - Sorting</h1>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Due Monday Nov 17th at 10pm</strong></p>
+
+<ul>
+  <li>Starter file: none</li>
+  <li>Upload (hand-written!) solutions via Gradescope</li>
+</ul>
+
+<h2 id="goals">Goals</h2>
+
+<p>This assignment is designed to help you with the following:</p>
+<ul>
+  <li>practice with sorting algorithms</li>
+  <li>practice thinking about performance of sorting algorithms</li>
+</ul>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+
+<p>For this assignment, you may work alone or with a partner, but you must write up all of your answers yourself.  (It is therefore unexpected for two submissions to be completely identical.)  You may have at most one partner.</p>
+
+<p>You may also discuss the assignment at a high level with other students.  You can discuss the assignment with Anya, our prefect, or any course staff.</p>
+
+<p>You should list any student or course staff with whom you discussed the assignment (you don’t have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in the reflection at the end of the assignment.</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<h2 id="assessment">Assessment</h2>
+
+<p>The <strong>core requirements</strong> for your submission are:</p>
+
+<ul>
+  <li>correctly answer questions 1-3</li>
+  <li>include a reflection at the end of your assignment</li>
+</ul>
+
+<p>The <strong>advanced requirements</strong> for your submission are:</p>
+
+<ul>
+  <li>satisfy the core requirements</li>
+  <li>give thorough and correct explanations for questions 4-6</li>
+  <li>include your collaboration statement in your response to the last question of the assignment</li>
+</ul>
+
+<p>Note that there won’t be an opportunity to revise this assignment through the normal process. Instead, you will be able to answer questions on the self-scheduled final if you need to revise.</p>
+
+<h2 id="assignment-overview">Assignment overview</h2>
+
+<p>The questions for this assignment are listed below.  This is assignment does not require you to write any code.</p>
+
+<p>This assignment needs to be written in your own handwriting (not typed). You can complete it on paper or on a tablet, but it must be hand-written (life in the age of LLMs).  You will need to submit a PDF to Gradescope, and make sure to select the regions in your PDF that correspond to each solution – be sure to keep your answers somewhat separated from each other.</p>
+
+<p>You should always assume that the list should sort from least to greatest.</p>
+
+<h2 id="core-questions">Core questions</h2>
+
+<p>Complete the following questions for the core requirements.</p>
+
+<h3 id="1-mergesort-trace">#1: Mergesort trace</h3>
+
+<p>On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Mergesort.  Be sure to show your work.</p>
+
+<h3 id="2-quicksort-trace">#2: Quicksort trace</h3>
+
+<p>On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Quicksort.  Assume you always select the pivot as the first element in the subarray, and be sure to show your work, including indicating the pivot values with a P.</p>
+
+<h3 id="3-heapsort-trace">#3: Heapsort trace</h3>
+
+<p>On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Heapsort, showing your work.<br />
+Don’t forget to build the initial heap using the <code class="language-plaintext highlighter-rouge">buildHeap</code> procedure we discussed in class and be careful with what kind of heap you use!</p>
+
+<p>Note: there is a lot of shifting and erasing and swapping with heapsort. You don’t need to show every step clearly, you can show the heap in tree form and cross off and swap values, but aim to redraw the heap at progressive steps a few times and show the in progress sorted array at those points. So you should probably redraw the heap in updated states four (ish) times.</p>
+
+<h2 id="advanced-questions">Advanced questions</h2>
+
+<p>Additionally, complete the following questions for the advanced requirements.</p>
+
+<h3 id="4-quicksort-pivot">#4: Quicksort pivot</h3>
+
+<p>The choice of pivot for Quicksort can dramatically affect its performance.  Some common choices, relative to a given subarray, are:</p>
+
+<ul>
+  <li>the first element by position</li>
+  <li>the middle element by position</li>
+  <li>a randomly selected element</li>
+  <li>the median element by value</li>
+  <li>the median element of the first three elements</li>
+</ul>
+
+<p>Comment on each of the above choices.  What are the pros and cons of each?  Under what situations are they good or bad ideas? You should include at least 1 sentence for each choice, clearly labeled.</p>
+
+<h3 id="5-mergesort-temp-array">#5: Mergesort temp array</h3>
+
+<p>Look at this <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs201-s25/resources/samples/Mergesort.kt">sample Mergesort code</a> that was based on one of our readings.</p>
+
+<p>Note that it passes in a temporary list as a parameter to the recursion instead of creating a temporary list inside the <code class="language-plaintext highlighter-rouge">_mergesort</code> function.</p>
+
+<p>Explain why using a single temporary array, as in the sample code, can be argued to be an improvement over declaring one locally, either in terms of amount of memory needed, speed, or both.</p>
+
+<h3 id="6-fast-sort">#6: Fast sort</h3>
+
+<p>Suppose that you have an array of <code class="language-plaintext highlighter-rouge">n</code> elements, containing only two distinct keys, <em>true</em> and <em>false</em>.  Give an O(n) algorithm to rearrange the list so that all <em>false</em> elements precede the <em>true</em> elements.  You may only use constant extra space.</p>
+
+<h1 id="reflection">Reflection</h1>
+
+<p>Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?</p>
+
+<p>Write a brief discussion (a sentence or two is fine) at the end of your assignment writeup.</p>
+
+<p>Here are some examples:</p>
+
+<ul>
+  <li>Reflection:
+    <blockquote>
+      <blockquote>
+
+        <p>I had forgot to swap the pivot into place in Quicksort, so I had to redo #2 a few times.</p>
+
+        <p>I had to refer to my notes to remember how to make a heap from an array</p>
+
+        <p>I spent 6 hours on this assignment.</p>
+      </blockquote>
+    </blockquote>
+  </li>
+  <li>Reflection:
+    <blockquote>
+      <blockquote>
+
+        <p>I started late, so I had to rush my explanations.</p>
+
+        <p>I really don’t understand the difference in #5.  I should probably go to office hours.</p>
+
+        <p>I spent 5 hours on this assignment.</p>
+      </blockquote>
+    </blockquote>
+  </li>
+  <li>Reflection:
+    <blockquote>
+      <blockquote>
+
+        <p>This went fine; I forgot how the pivot worked in Quicksort but I found it in my notes.</p>
+
+        <p>I spent 3.5 hours on this assignment.</p>
+      </blockquote>
+    </blockquote>
+  </li>
+</ul>
+
+<p> </p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

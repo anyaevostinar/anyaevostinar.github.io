@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW4 - Queues in C | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW4 - Queues in C" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/hw4" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/hw4" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW4 - Queues in C" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW4 - Queues in C","url":"http://localhost:4000/classes/208-f25/hw4"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW4 - Queues in C</h1>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Due: Friday, October 10th, at 10:00pm</strong></p>
+
+<p>Starter code: <a href="/classes/208-f25/hw4.tar">hw4.tar</a><br />
+Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">queue.c</code> and <code class="language-plaintext highlighter-rouge">queue.h</code></p>
+
+<p>This assignment is an adaptation of <a href="https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/labs/cprogramminglab.pdf">this lab</a> developed for the Carnegie Mellon University’s 15-213 (Introduction to Computer Systems) course, which is the course for which a fun (but not free) textbook was written.  These labs are great, but they come with a lot of infrastructure, which may take you a little while to get used to.  We’ll talk about this in class.</p>
+
+<h2 id="goals">Goals</h2>
+
+<p>In this assignment, you will implement a double-ended queue supporting both last-in-first-out (LIFO) and first-in-first-out (FIFO) queueing operations.  The underlying data structure is a singly linked list, enhanced to make some of the operations more efficient.</p>
+
+<p>When it comes to data structure sophistication, this queue is completely suitable for study during the first half of CS 201.  We’re not aiming at algorithmically complicated structures here.  Rather, this assignment is intended to give you practice in the style of C programming that we’ll be continuing all term: pointer-based, memory-aware, and robust with respect to system errors.  Specifically, this assignment will help you practice:</p>
+<ul>
+  <li>explicit memory management with <code class="language-plaintext highlighter-rouge">malloc</code> and <code class="language-plaintext highlighter-rouge">free</code></li>
+  <li>creating and manipulating pointer-based data structures</li>
+  <li>working with strings</li>
+  <li>enhancing the performance of key operations by storing redundant information in data structures</li>
+  <li>handling system errors appropriately when they occur</li>
+</ul>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+
+<p>For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)</p>
+
+<p>You may also discuss the assignment at a high level with other students.</p>
+
+<p>You should list any student with whom you discussed the assignment, and the manner of discussion (high level, partner, etc.) in comments at the top of your C source file(s).</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<h2 id="assessment">Assessment</h2>
+
+<p>The <strong>core requirements</strong> for your submission are:</p>
+
+<ul>
+  <li>score at least 7 on the tests (verified by Gradescope)</li>
+  <li>be somewhat <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/style-guide">well-styled</a></li>
+</ul>
+
+<p>The <strong>advanced requirements</strong> for your submission are:</p>
+
+<ul>
+  <li>satisfy the core requirements</li>
+  <li>score the full 13 points on the tests (verified by Gradescope)</li>
+  <li>be quite <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/style-guide">well-styled</a>, particularly with well-chosen variable names, good identation, using helper methods/loops to reduce code duplication, and not having any memory leaks</li>
+  <li>include your name and collaboration statement at the top of your C source file(s)</li>
+</ul>
+
+<p>Your program will be evaluated for correctness and efficiency using the “traces” described below.  The program will list a score (between 0.0 and 2.0 points, depending on the trace) for each one that executes correctly and fast enough.  The provided <code class="language-plaintext highlighter-rouge">driver.py</code> runs <code class="language-plaintext highlighter-rouge">qtest</code> on the traces and computes the overall score.  You can invoke the driver directly with the command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./driver.py
+</code></pre></div></div>
+<p>or with the command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make <span class="nb">test</span>
+</code></pre></div></div>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>The starter code in <a href="/classes/208-f25/hw4.tar">hw4.tar</a> contains many files.  Almost all of these files are part of a testing infrastructure that will give you detailed feedback as you write your code.  You should feel free to look at all of these files if you’re interested in how a big university CS department thinks about automated grading.  However, to complete the assignment, <em>you should only change the contents of <code class="language-plaintext highlighter-rouge">queue.h</code> and <code class="language-plaintext highlighter-rouge">queue.c</code></em>.</p>
+
+<p>The queue data structure that we will work with looks like this:</p>
+<pre><code class="language-C">/* Linked list element */
+typedef struct list_ele {
+    char *value;
+    struct list_ele *next;
+} list_ele_t;
+
+/* Queue structure */
+typedef struct {
+    list_ele_t *head;  /* Linked list of elements */
+} queue_t;
+</code></pre>
+
+<p>These are combined to implement a queue of strings, as illustrated in the diagram below.  The top-level representation of a queue is a structure of type <code class="language-plaintext highlighter-rouge">queue_t</code>.  In the starter code, this structure contains only a single field <code class="language-plaintext highlighter-rouge">head</code>, but you will want to add other fields.  The queue contents are represented as a singly linked list, with each element represented by a structure of type <code class="language-plaintext highlighter-rouge">list_ele_t</code>, having fields <code class="language-plaintext highlighter-rouge">value</code> and <code class="language-plaintext highlighter-rouge">next</code>, storing a pointer to a string and a pointer to the next list element, respectively.  The final list element has its <code class="language-plaintext highlighter-rouge">next</code> pointer set to <code class="language-plaintext highlighter-rouge">NULL</code>.  you may add other fields to the structure <code class="language-plaintext highlighter-rouge">list_ele</code>, although you need not do so.</p>
+
+<p><img src="/classes/208-s24/queue-diagram.png" alt="Diagram of a queue" /></p>
+
+<p>Each list element has a <code class="language-plaintext highlighter-rouge">value</code> field, pointing to a C string (i.e., a null-terminated array of <code class="language-plaintext highlighter-rouge">char</code>) and a <code class="language-plaintext highlighter-rouge">next</code> field pointing to the next list element.  For this diagram and this assignment, we encode characters using ASCII, which are shown in the diagram as 2-digit hexadecimal integers.  Observe how the two instances of the string <code class="language-plaintext highlighter-rouge">"cab"</code> are represented by separate arrays—each list element must have a separate copy of its string.</p>
+
+<p>In our C code, a queue is a pointer of type <code class="language-plaintext highlighter-rouge">queue_t *</code>.  We distinguish two special cases: a <em>NULL</em> queue is one for which the pointer has value <code class="language-plaintext highlighter-rouge">NULL</code>.  An <em>empty</em> queue is one pointing to a valid struture, but the <code class="language-plaintext highlighter-rouge">head</code> field has value <code class="language-plaintext highlighter-rouge">NULL</code>.  Your code will need to deal properly with both of these caes, as well as queues containing one or more elements.</p>
+
+<h2 id="assignment-overview">Assignment overview</h2>
+
+<p>Your task is to modify the code in <code class="language-plaintext highlighter-rouge">queue.h</code> and <code class="language-plaintext highlighter-rouge">queue.c</code> to fully implement the following functions.  I recommend working on them in the order they’re listed here, testing using <code class="language-plaintext highlighter-rouge">./driver.py</code> after you complete each one.  (You can look at the headers of the first few trace files for the functionality that they specifically test.)</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">q_new</code>: Create a new, empty queue.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">q_free</code>: Free all storage used by a queue.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">q_insert_head</code>: Attempt to insert a new element at the head of the queue (LIFO discipline).</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">q_insert_tail</code>: Attempt to insert a new element at the tail of the queue (FIFO discipline).</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">q_remove_head</code>: Attempt to remove the element at the head of the queue.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">q_size</code>: Compute the number of elements in the queue.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">q_reverse</code>: Reorder the list so that the queue elements are reversed in order.  This function should not allocate or free any list elements (either directly for via calls to other functions that allocate or free elements).  Instead, it should rearrange the existing elements.</p>
+  </li>
+</ul>
+
+<p>More details can be found in the comments in <code class="language-plaintext highlighter-rouge">queue.h</code> and <code class="language-plaintext highlighter-rouge">queue.c</code>, including how to handle invalid operations (e.g., removing from an empty or NULL queue), and what side effects and return values the functions should have.</p>
+
+<h2 id="getting-the-starter-package">Getting the starter package</h2>
+
+<p>Like the previous assignment, this one has multiple files comprising its starter code, so it is distributed to you as a <code class="language-plaintext highlighter-rouge">.tar</code> file.  To get started on this assignment:</p>
+
+<ol>
+  <li>
+    <p>Login to <code class="language-plaintext highlighter-rouge">mantis.mathcs.carleton.edu</code> using VS Code and open your <code class="language-plaintext highlighter-rouge">cs208</code> folder.  Go back and look at <a href="../../labs/lab0">Lab 0</a> if you have any questions about how to do this.</p>
+  </li>
+  <li>
+    <p>In your VS Code terminal, run:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> wget https://cs.carleton.edu/faculty/tamert/courses/cs208-f24/resources/assignments/a4.tar
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Still in your VS Code terminal, extract the <code class="language-plaintext highlighter-rouge">a4</code> folder:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">tar </span>xvf a4.tar
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<blockquote>
+  <p>This will create a folder named <code class="language-plaintext highlighter-rouge">a4</code> with some stuff in it.</p>
+</blockquote>
+
+<ol>
+  <li>Read the <code class="language-plaintext highlighter-rouge">README</code> file and the function documentation in <code class="language-plaintext highlighter-rouge">queue.h</code> and get started.</li>
+</ol>
+
+<h2 id="your-assignment">Your assignment</h2>
+
+<p>Your assignment is divided into several functions.  You can find more information about them in <code class="language-plaintext highlighter-rouge">queue.h</code>.  What follows are some (hopefully) helpful notes.</p>
+
+<p>For functions that provide strings as arguments, you must create and store a copy of the string by calling <code class="language-plaintext highlighter-rouge">malloc</code> to allocate space (remember to include space for the null character) and then copying from the source to the newly allocated space.  You cannot assume any fixed upper bound on the length of a string—you must allocate space for each string based in its length.</p>
+
+<p>When it comes time to free a list element, you must also free the space used by the string.  The general rule to follow is that every call to <code class="language-plaintext highlighter-rouge">malloc</code> needs to be matched by a call to <code class="language-plaintext highlighter-rouge">free</code> elsewhere in your code.  I expect <code class="language-plaintext highlighter-rouge">q_new</code>, <code class="language-plaintext highlighter-rouge">q_insert_head</code>, and <code class="language-plaintext highlighter-rouge">q_insert_tail</code> to contain calls to <code class="language-plaintext highlighter-rouge">malloc</code>, and <code class="language-plaintext highlighter-rouge">q_free</code> and <code class="language-plaintext highlighter-rouge">q_remove_head</code> to contain calls to <code class="language-plaintext highlighter-rouge">free</code>.</p>
+
+<p>Two of the functions, <code class="language-plaintext highlighter-rouge">q_insert_tail</code> and <code class="language-plaintext highlighter-rouge">q_size</code>, will require some effort on your part to meet the required performance standards.  Naive implementations would require <code class="language-plaintext highlighter-rouge">O(n)</code> steps for a queue with <code class="language-plaintext highlighter-rouge">n</code> elements.  We require that your implementations operate in <code class="language-plaintext highlighter-rouge">O(1)</code> time, i.e., that the operation will require only a fixed number of steps, regardless of the number of items in the queue.  You can do this by including other fields in the <code class="language-plaintext highlighter-rouge">queue_t</code> data structure and managing these values properly as list elements are inserted, removed, and reversed.</p>
+
+<p>Your program will be tested on queues with over 1,000,000 elements.  You will find that you cannot operate on such long lists using recursive functions, as that would require too much stack space.  Instead, you’ll need to use a loop to traverse the elements in a list.</p>
+
+<h2 id="additional-resources">Additional resources</h2>
+
+<p>Did any of the terminology above not make sense?  Here are a few links that may help.</p>
+
+<p>Structs:</p>
+<ul>
+  <li><a href="https://www.cs.rochester.edu/u/ferguson/csc/c/c-for-java-programmers.pdf">C for Java programmers</a> - Chapter 7, Structured Types (it’s only two pages)</li>
+  <li><a href="https://diveintosystems.org/book/C2-C_depth/structs.html">Pointers and Structs</a></li>
+</ul>
+
+<p>Memory management:</p>
+<ul>
+  <li><a href="https://www.cs.rochester.edu/u/ferguson/csc/c/c-for-java-programmers.pdf">C for Java programmers</a> - Chapter 8, Memory Management (longer but very useful)</li>
+  <li><a href="https://diveintosystems.org/book/C2-C_depth/dynamic_memory.html">Dynamic Memory Allocation</a></li>
+  <li><a href="https://diveintosystems.org/book/C2-C_depth/strings.html">C Strings</a></li>
+</ul>
+
+<p>If you find any other really helpful resources, please let me know and I’ll add them!</p>
+
+<h2 id="testing">Testing</h2>
+
+<p>It will be very useful to test your code incrementally as you implement each function.  The <code class="language-plaintext highlighter-rouge">traces</code> directory contains 14 trace files, with names of the form <code class="language-plaintext highlighter-rouge">trace-k-cat.txt</code>, where <em>k</em> is the trace number and <em>cat</em> specifies the category of properties being tested.  Each trace consists of a sequence of commands to interact with the queue.  They test different aspects of the correctness, robustness, and performance of your program.  You can use these, your own trace files, and direct interactions with the provided <code class="language-plaintext highlighter-rouge">qtest</code> program to test and debug your implementation.  Read the comment at the top of each trace file to see a description of what it tests.</p>
+
+<p>You can compile your code using the command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
+</code></pre></div></div>
+
+<p>If there are no errors, the compiler will generate an executable program <code class="language-plaintext highlighter-rouge">qtest</code>, providing a command interface with which you can create, modify, and examine queues.  Documentation on the available commands can be found by starting this program and running the help command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./qtest
+cmd&gt;help
+</code></pre></div></div>
+
+<p>The file <code class="language-plaintext highlighter-rouge">traces/trace-eg.cmd</code> illustrates an example command sequence.  You can see the effect of these commands by operating <code class="language-plaintext highlighter-rouge">qtest</code> in batch mode on a trace file:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./qtest <span class="nt">-f</span> traces/trace-eg.cmd
+</code></pre></div></div>
+
+<p>With the starter code, you will see that many of these operations are not implemented properly.</p>
+
+<h2 id="segmentation-faults">Segmentation faults</h2>
+
+<p>A hallmark of C programming is the ominous <em>segmentation fault</em>.  This error crashes the program immediately, and provides no information as to the cause.</p>
+
+<p>Fortunately, <code class="language-plaintext highlighter-rouge">gdb</code> (the GNU debugger) can help us discover the line of code where the fault occurs and even which pointer dereference is responsible (“segfaults” are usually the result of dereferencing a null or invalid pointer).  Our <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources/">CS 208 resources page</a> has a good tutorial video, a cheat sheet, and some other links to help you get started.</p>
+
+<p>You’ll use <code class="language-plaintext highlighter-rouge">gdb</code> a lot later in the term.  For now, however, here’s something you can do to track down segfaults:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">cd a4</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">make qtest</code></p>
+  </li>
+  <li>Suppose <code class="language-plaintext highlighter-rouge">make test</code> is telling you that you have a segmentation fault for <code class="language-plaintext highlighter-rouge">"trace-10-malloc"</code>.  In that case, you can run the specific test without using <code class="language-plaintext highlighter-rouge">make</code> like so:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ./qtest -v 1 -f traces/trace-10-malloc.cmd
+</code></pre></div>    </div>
+    <blockquote>
+      <p>This is exactly what the <code class="language-plaintext highlighter-rouge">driver.py</code> program executes for trace #10 when you do <code class="language-plaintext highlighter-rouge">make test</code>, but now you’re doing it manually.  You should see another report of a segmentation fault.</p>
+    </blockquote>
+  </li>
+  <li>Launch the for-now-mysterious program <code class="language-plaintext highlighter-rouge">gdb</code>, ready to help you debug the executable program <code class="language-plaintext highlighter-rouge">qtest</code> (which itself includes your <code class="language-plaintext highlighter-rouge">queue.c</code> file):
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  gdb qtest
+</code></pre></div>    </div>
+  </li>
+  <li>After a bunch of copyright text, you will see the prompt (<code class="language-plaintext highlighter-rouge">gdb</code>).  Here, you’re going to run your program inside the debugger, using the command <code class="language-plaintext highlighter-rouge">run</code> and specifying the command-line arguments you want to pass to <code class="language-plaintext highlighter-rouge">qtest</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  (gdb) run -v 1 -f traces/trace-10-malloc.cmd
+</code></pre></div>    </div>
+  </li>
+  <li>Maybe now, you’ll see a result like this:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  (gdb) run -v 1 -f traces/trace-10-malloc.cmd
+  Starting program: /Accounts/tamert/cs208/a4/qtest -v 1 -f traces/trace-10-malloc.cmd
+  # Test of malloc failure on new
+
+  Program received signal SIGSEGV, Segmentation fault.
+  0x00005555555598b7 in q_new () at queue.c:29
+  29	    q-&gt;head = NULL;
+  (gdb)
+</code></pre></div>    </div>
+    <blockquote>
+      <p>There it is, the specific line number (<code class="language-plaintext highlighter-rouge">29</code>, in this case) that is causing trouble.</p>
+    </blockquote>
+  </li>
+  <li>You can use <code class="language-plaintext highlighter-rouge">gdb</code> to inspect the values of variables at this point in the code.  In this specific example, the only local variable is <code class="language-plaintext highlighter-rouge">q</code>.  You can see its value like so:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  (gdb) print q
+</code></pre></div>    </div>
+  </li>
+  <li>Once you’ve found the problematic line of code, how should you fix it?  That’s up to you.  (But reach out for help if you’re stuck!)</li>
+</ul>
+
+<h2 id="submitting-your-work">Submitting your work</h2>
+
+<p>To submit this assignment, you should upload your <code class="language-plaintext highlighter-rouge">queue.c</code> and <code class="language-plaintext highlighter-rouge">queue.h</code> files to Gradescope.</p>
+
+<h2 id="q--a">Q &amp; A</h2>
+
+<p>Here are some frequently asked questions:</p>
+
+<ul>
+  <li>I’m getting <code class="language-plaintext highlighter-rouge">ERROR: Corruption detected in block with address 0x7ff436f060a0 when attempting to free it</code>, what does that mean???
+    <blockquote>
+
+      <p>That means the end of your strings aren’t formed correctly.  You should think carefully about how much space they need and how to make sure the null terminator ends up in the right spot.</p>
+    </blockquote>
+  </li>
+  <li>I’m getting something about a loop in my list but I definitely didn’t make a loop.
+    <blockquote>
+
+      <p>Make sure that you are setting things to <code class="language-plaintext highlighter-rouge">NULL</code> that should be; you never know what is lurking in uninitialized pointer variables :/.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p> </p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

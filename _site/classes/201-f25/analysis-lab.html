@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Analysis Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Analysis Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f25/analysis-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f25/analysis-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Analysis Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Analysis Lab","url":"http://localhost:4000/classes/201-f25/analysis-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Analysis Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To get a better understanding of how to calculate the efficiency of algorithms - developing both your ability to work through calculations mathematically and your intuitive sense of estimating big-O, as well as refreshing on the time complexity of some familiar algorithms.</p>
+
+<h2 id="setup">Setup</h2>
+<p>There is no coding for this lab. Instead you should write your answers on the worksheet.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>For each of the following Kotlin code fragments, indicate how many times the output statement is displayed.</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="p">&lt;</span><span class="mi">20</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="p">%</span> <span class="mi">2</span> <span class="p">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="p">&lt;</span><span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">y</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"$x $y"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>For each of the following Kotlin code fragments, indicate how many times the output statement is displayed relative to n. What function could you use to describe this?</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="p">&lt;</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="p">&lt;</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">y</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="p">&lt;</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="p">!=</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nf">println</span><span class="p">(</span><span class="s">"$x $y"</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..</span><span class="p">&lt;</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">y</span><span class="p">:</span> <span class="nc">Int</span> <span class="k">in</span> <span class="n">x</span><span class="o">..</span><span class="p">&lt;</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">println</span><span class="p">(</span><span class="s">"$x $y"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>For this Kotlin code,</p>
+
+<p>a. how many times is output displayed relative to <code class="language-plaintext highlighter-rouge">n</code> if <code class="language-plaintext highlighter-rouge">n</code> is the size of <code class="language-plaintext highlighter-rouge">students</code>?</p>
+
+<p>b. What is the Big-O runtime of the function as a whole? How does that compare to the amount of printing?</p>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fun</span> <span class="nf">pairStudents</span><span class="p">(</span><span class="n">students</span><span class="p">:</span><span class="nc">List</span><span class="p">&lt;</span><span class="nc">String</span><span class="p">&gt;){</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">student1</span> <span class="k">in</span> <span class="n">students</span><span class="p">){</span>
+    	<span class="k">for</span><span class="p">(</span><span class="n">student2</span> <span class="k">in</span> <span class="n">students</span><span class="p">){</span>
+        	<span class="k">if</span> <span class="p">(</span><span class="n">student1</span> <span class="p">!=</span> <span class="n">student2</span><span class="p">){</span>
+            	<span class="nf">println</span><span class="p">(</span><span class="s">"Pair: $student1 and $student2"</span><span class="p">)</span>
+        	<span class="p">}</span>
+    	<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Considering the following Java code for binary search (don’t worry about the places where the syntax is a little different, you can get the right general idea)</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">binarySearch</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">list</span><span class="o">,</span> <span class="kt">int</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">first</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">last</span> <span class="o">=</span> <span class="n">list</span><span class="o">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+    <span class="k">while</span> <span class="o">(</span><span class="n">first</span> <span class="o">&lt;=</span> <span class="n">last</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">midpoint</span> <span class="o">=</span> <span class="o">(</span><span class="n">first</span> <span class="o">+</span> <span class="n">last</span><span class="o">)</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">list</span><span class="o">[</span><span class="n">midpoint</span><span class="o">]</span> <span class="o">==</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">list</span><span class="o">[</span><span class="n">midpoint</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">last</span> <span class="o">=</span> <span class="n">midpoint</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="n">first</span> <span class="o">=</span> <span class="n">midpoint</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Analyze the time complexity (you’ll have to think about how many times the while loop in Binary Search will actually run) in the same way you did for the previous several problems. How does your analysis change if the list isn’t already sorted?</p>
+
+<h2 id="extra">Extra</h2>
+<p>You should submit what you’ve completed above (by taking a picture and uploading to Moodle) and then think about this one. We’ll come back to these ideas a little later in the term.</p>
+
+<p>The following is a function for sorting two lists of numbers, which you might have seen in CS 111: <a href="https://runestone.academy/ns/books/published/pythonds3/SortSearch/TheMergeSort.html?mode=browsing">mergesort</a>. It uses recursion to do the sorting.</p>
+
+<p>Think about the following:</p>
+
+<ol>
+  <li>How many recursive calls are going to be made on list <code class="language-plaintext highlighter-rouge">A</code>?</li>
+  <li>For a given pair of sublists, how much work is that for-loop doing?</li>
+  <li>Why do we want to use <code class="language-plaintext highlighter-rouge">temp</code> instead of making new lists?</li>
+</ol>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fun</span> <span class="nf">mergesort</span><span class="p">(</span><span class="nc">A</span><span class="p">:</span> <span class="nc">MutableList</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;,</span> <span class="n">temp</span><span class="p">:</span> <span class="nc">MutableList</span><span class="p">&lt;</span><span class="nc">Int</span><span class="p">&gt;,</span> <span class="n">left</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">right</span><span class="p">:</span> <span class="nc">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">left</span> <span class="p">==</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span>        <span class="c1">// List has one record</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+    <span class="kd">val</span> <span class="py">mid</span> <span class="p">=</span> <span class="p">(</span><span class="n">left</span><span class="p">+</span><span class="n">right</span><span class="p">)/</span><span class="mi">2</span>          <span class="c1">// Select midpoint</span>
+    <span class="nf">mergesort</span><span class="p">(</span><span class="nc">A</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">mid</span><span class="p">)</span>     <span class="c1">// Mergesort first half</span>
+    <span class="nf">mergesort</span><span class="p">(</span><span class="nc">A</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">mid</span><span class="p">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span>  <span class="c1">// Mergesort second half</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="n">left</span><span class="o">..</span><span class="n">right</span><span class="p">)</span> <span class="p">{</span>    <span class="c1">// Copy subarray to temp</span>
+        <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">=</span> <span class="nc">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="p">}</span>
+    <span class="c1">// Do the merge operation back to A</span>
+    <span class="kd">var</span> <span class="py">i1</span> <span class="p">=</span> <span class="n">left</span>
+    <span class="kd">var</span> <span class="py">i2</span> <span class="p">=</span> <span class="n">mid</span> <span class="p">+</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">curr</span> <span class="k">in</span> <span class="n">left</span><span class="o">..</span><span class="n">right</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">i1</span> <span class="p">==</span> <span class="n">mid</span><span class="p">+</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>                 <span class="c1">// Left sublist exhausted</span>
+            <span class="nc">A</span><span class="p">[</span><span class="n">curr</span><span class="p">]</span> <span class="p">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">i2</span><span class="p">++]</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">i2</span> <span class="p">&gt;</span> <span class="n">right</span><span class="p">)</span> <span class="p">{</span>             <span class="c1">// Right sublist exhausted</span>
+            <span class="nc">A</span><span class="p">[</span><span class="n">curr</span><span class="p">]</span> <span class="p">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">i1</span><span class="p">++]</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="p">[</span><span class="n">i1</span><span class="p">]</span> <span class="p">&lt;</span> <span class="n">temp</span><span class="p">[</span><span class="n">i2</span><span class="p">])</span> <span class="p">{</span>     <span class="c1">// Get smaller value</span>
+            <span class="nc">A</span><span class="p">[</span><span class="n">curr</span><span class="p">]</span> <span class="p">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">i1</span><span class="p">++]</span>
+        <span class="p">}</span>
+        <span class="k">else</span><span class="p">{</span>
+            <span class="nc">A</span><span class="p">[</span><span class="n">curr</span><span class="p">]</span> <span class="p">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">i2</span><span class="p">++]</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

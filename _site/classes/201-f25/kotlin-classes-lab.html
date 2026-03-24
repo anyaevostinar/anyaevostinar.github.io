@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Kotlin Classes Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Kotlin Classes Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f25/kotlin-classes-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f25/kotlin-classes-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Kotlin Classes Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Kotlin Classes Lab","url":"http://localhost:4000/classes/201-f25/kotlin-classes-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Kotlin Classes Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="set-up">Set up</h2>
+<p>Follow the steps from the <a href="kotlin-lab">Scavenger Hunt</a> to mount the COURSES drive. Make a folder <code class="language-plaintext highlighter-rouge">ClassesLab</code> in your STUWORK/username folder and open it in VSCode for today’s labwork.</p>
+
+<h2 id="exercise-1-pet">Exercise 1: <code class="language-plaintext highlighter-rouge">Pet</code></h2>
+
+<p>Your goal is to write a class named <code class="language-plaintext highlighter-rouge">Pet</code>, which allows us to store information about our pets.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">Pet</code> class should have the following methods:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Pet(name, age, kind)</code> constructor: takes <code class="language-plaintext highlighter-rouge">name</code> (a string), <code class="language-plaintext highlighter-rouge">age</code> (an integer, in years), and <code class="language-plaintext highlighter-rouge">kind</code> (a string, like <code class="language-plaintext highlighter-rouge">"dog"</code> or <code class="language-plaintext highlighter-rouge">"cat"</code>), with all three as instance variables</li>
+  <li><code class="language-plaintext highlighter-rouge">rename(name)</code>: updates the name of a pet; returns nothing</li>
+  <li><code class="language-plaintext highlighter-rouge">updateAge()</code>: updates the age when the pet has a birthday; returns nothing</li>
+</ul>
+
+<p>Create a file <code class="language-plaintext highlighter-rouge">Pet.kt</code> and put your code there.  To get you started, here is a <code class="language-plaintext highlighter-rouge">main</code> function you can use to test part of your implementation:</p>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Make a few Pet objects</span>
+    <span class="kd">val</span> <span class="py">lulu</span><span class="p">:</span> <span class="nc">Pet</span> <span class="p">=</span> <span class="nc">Pet</span><span class="p">(</span><span class="s">"Lulu"</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="s">"cat"</span><span class="p">)</span>
+    <span class="kd">val</span> <span class="py">hobbes</span><span class="p">:</span> <span class="nc">Pet</span> <span class="p">=</span> <span class="nc">Pet</span><span class="p">(</span><span class="s">"Hobbes"</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="s">"cat"</span><span class="p">)</span>
+    <span class="kd">val</span> <span class="py">cheddar</span><span class="p">:</span> <span class="nc">Pet</span> <span class="p">=</span> <span class="nc">Pet</span><span class="p">(</span><span class="s">"Cheddar"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"dog"</span><span class="p">)</span>
+    <span class="kd">val</span> <span class="py">mal</span><span class="p">:</span> <span class="nc">Pet</span> <span class="p">=</span> <span class="nc">Pet</span><span class="p">(</span><span class="s">"Marshmallow"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"dog"</span><span class="p">)</span>
+
+    <span class="c1">// Print some info</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"Hobbes is currently ${hobbes.age} years old, and Lulu is ${lulu.age}."</span><span class="p">)</span>
+    
+    <span class="nf">print</span><span class="p">(</span><span class="s">"The dogs are: "</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">pet</span><span class="p">:</span> <span class="nc">Pet</span> <span class="k">in</span> <span class="nf">listOf</span><span class="p">(</span><span class="n">lulu</span><span class="p">,</span> <span class="n">hobbes</span><span class="p">,</span> <span class="n">cheddar</span><span class="p">,</span> <span class="n">mal</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">pet</span><span class="p">.</span><span class="n">kind</span> <span class="p">==</span> <span class="s">"dog"</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nf">print</span><span class="p">(</span><span class="s">"${pet.name} "</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nf">println</span><span class="p">()</span>
+
+    <span class="c1">// Hobbes has a birthday next Tuesday!</span>
+    <span class="n">hobbes</span><span class="p">.</span><span class="nf">updateAge</span><span class="p">()</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"On Tuesday Hobbes will be older!  (${hobbes.age} years)"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="exercise-2-mymap">Exercise 2: <code class="language-plaintext highlighter-rouge">MyMap</code></h2>
+
+<p>If you finished Exercise 1 early, you can start Exercise 2 for fun.  We won’t go over it in class.</p>
+
+<p>Your goal is to write a class named <code class="language-plaintext highlighter-rouge">MyMap</code>, which allows us to associate <em>keys</em> with <em>values</em>.  For example, we may want to map the string <code class="language-plaintext highlighter-rouge">"blue"</code> to the number <code class="language-plaintext highlighter-rouge">3</code> and the string <code class="language-plaintext highlighter-rouge">"yellow"</code> to the number <code class="language-plaintext highlighter-rouge">4</code>. Note that you should not use any built-in Kotlin map, you are implementing your own instead!</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">MyMap</code> class should have the following methods:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">MyMap()</code> constructor: takes no actual parameters, but initializes necessary data structures; returns <code class="language-plaintext highlighter-rouge">None</code></li>
+  <li><code class="language-plaintext highlighter-rouge">add(key, value)</code>: adds a new mapping from <code class="language-plaintext highlighter-rouge">key</code> (assume it’s a <code class="language-plaintext highlighter-rouge">String</code>) to <code class="language-plaintext highlighter-rouge">value</code> (assume it’s an <code class="language-plaintext highlighter-rouge">Int</code>), or updates the mapping if <code class="language-plaintext highlighter-rouge">key</code> is already present; returns <code class="language-plaintext highlighter-rouge">None</code></li>
+  <li><code class="language-plaintext highlighter-rouge">get(key)</code>: looks up the value mapped to by <code class="language-plaintext highlighter-rouge">key</code>; returns the value for <code class="language-plaintext highlighter-rouge">key</code> or <code class="language-plaintext highlighter-rouge">None</code> if no mapping exists for <code class="language-plaintext highlighter-rouge">key</code></li>
+  <li><code class="language-plaintext highlighter-rouge">getSize()</code>: calculates the number of key-value pairs; returns that number (an <code class="language-plaintext highlighter-rouge">int</code>)</li>
+</ul>
+
+<p>Think carefully about what you need to store to be able to handle any number of key-value pairs.</p>
+
+<p>You should create a new file named <code class="language-plaintext highlighter-rouge">Map.kt</code> and put your class definition there.  It should start like this:</p>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">MyMap</span> <span class="p">{</span>
+    <span class="c1">// TODO: initiailize any necessary data structures</span>
+
+    <span class="c1">// TODO: add methods</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Here’s a simple <code class="language-plaintext highlighter-rouge">main</code> function you can use to try some of the <code class="language-plaintext highlighter-rouge">MyMap</code> functions out:</p>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">map</span><span class="p">:</span> <span class="nc">MyMap</span> <span class="p">=</span> <span class="nc">MyMap</span><span class="p">()</span>
+
+    <span class="n">map</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="s">"blue"</span><span class="p">,</span> <span class="mi">314</span><span class="p">)</span>
+    <span class="n">map</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="s">"yellow"</span><span class="p">,</span> <span class="mi">271</span><span class="p">)</span>
+
+    <span class="nf">println</span><span class="p">(</span><span class="s">"There are ${map.getSize()} pairs in the map."</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>How would you write code to test the rest of the class definition?</p>
+
+<h2 id="submitting">Submitting</h2>
+<p>You aren’t required to submit this lab, but if you do upload both of your completed programs to Moodle, you will get an extra engagement credit.</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This lab is from Prof Tanya Amert. She has the fun pet names, not me :(. I thought about updating the lab to be about plants instead, but that didn’t seem as much fun….</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

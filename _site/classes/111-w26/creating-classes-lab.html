@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Flower Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Flower Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w26/creating-classes-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w26/creating-classes-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Flower Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Flower Lab","url":"http://localhost:4000/classes/111-w26/creating-classes-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Flower Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a lab assignment, so it isn’t required to complete.
+However, the concepts and practice will help you on the homework, exams, and final project so I encourage you to make a serious effort on it during class and consider finishing it outside of class. If you do finish it and submit it to Moodle, you’ll earn an extra engagement credit.</p>
+
+<p>I recommend creating a folder in COURSES for this lab as you usually do.</p>
+
+<h2 id="exercise-1-a-minimal-class">Exercise 1: A minimal class</h2>
+<p>You should again download the file <a href="/classes/111-w22/graphics.py">graphics.py</a> and put it into the folder for today’s lab. Also remember that you can refer to the <a href="https://mcsp.wartburg.edu/zelle/python/graphics/graphics/graphref.html">graphics documentation</a> for more details on the methods of <code class="language-plaintext highlighter-rouge">graphics</code> classes.. 
+Then also download the file <a href="/classes/111-w26/flower_starter.py">flower_starter.py</a> and put it in your folder as well.</p>
+
+<ol>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">flower_starter.py</code> to see the flowers that are made. Your first goal will be to make the same flowers but with improved code organization.</p>
+  </li>
+  <li>Create a file <code class="language-plaintext highlighter-rouge">flower.py</code>. In it, import <code class="language-plaintext highlighter-rouge">graphics</code> and <code class="language-plaintext highlighter-rouge">random</code> and define a class <code class="language-plaintext highlighter-rouge">Flower</code>, like so:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kn">from</span> <span class="nn">graphics</span> <span class="kn">import</span> <span class="o">*</span>
+ <span class="kn">import</span> <span class="nn">random</span>
+
+ <span class="k">class</span> <span class="nc">Flower</span><span class="p">:</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Copy over the <code class="language-plaintext highlighter-rouge">draw_stem</code> and <code class="language-plaintext highlighter-rouge">draw_flower</code> functions and turn them into methods of the <code class="language-plaintext highlighter-rouge">Flower</code> class by adding the <code class="language-plaintext highlighter-rouge">self</code> parameter to both and indenting them.</p>
+  </li>
+  <li>Copy over <code class="language-plaintext highlighter-rouge">main</code> (and the <code class="language-plaintext highlighter-rouge">if __name__ == '__main__'</code> block) and then edit it to work with your new <code class="language-plaintext highlighter-rouge">Flower</code> class by:
+    <ul>
+      <li>Creating a new instance of <code class="language-plaintext highlighter-rouge">Flower</code> called <code class="language-plaintext highlighter-rouge">new_flower</code></li>
+      <li>Calling <code class="language-plaintext highlighter-rouge">new_flower.draw_stem()</code> and <code class="language-plaintext highlighter-rouge">new_flower.draw_flower()</code> with the right parameters</li>
+    </ul>
+  </li>
+  <li>You should always aim to make small changes and then test that those changes work, so this is a good time to run your <code class="language-plaintext highlighter-rouge">flower.py</code> with <code class="language-plaintext highlighter-rouge">python flower.py</code> to make sure that you are still successfully drawing the flowers.</li>
+</ol>
+
+<h2 id="exercise-2-adding-state-to-your-class">Exercise 2: Adding state to your class</h2>
+
+<p>You may have noticed that you aren’t really taking advantage of the <code class="language-plaintext highlighter-rouge">Flower</code> class at the moment, especially since it doesn’t have any state! Let’s fix that by making a constructor and using state to organize our program.</p>
+
+<ol>
+  <li>
+    <p>Create a constructor with <code class="language-plaintext highlighter-rouge">def __init__</code> that takes a window, x coordinate, height, and color as parameters and sets them to instance variables using <code class="language-plaintext highlighter-rouge">self.</code>. Remember that the first parameter needs to be <code class="language-plaintext highlighter-rouge">self</code>.</p>
+  </li>
+  <li>
+    <p>Change your <code class="language-plaintext highlighter-rouge">draw_stem</code> and <code class="language-plaintext highlighter-rouge">draw_flower</code> to rely on the instance variables instead of needing parameters.</p>
+  </li>
+  <li>
+    <p>Update your <code class="language-plaintext highlighter-rouge">main</code> to pass parameters to <code class="language-plaintext highlighter-rouge">Flower()</code> instead of the drawing methods. Remember to test your code at this point to make sure that it works still.</p>
+  </li>
+  <li>
+    <p>We can do some further streamlining by having the drawing methods set instance variables instead of returning. Remove the return values from both <code class="language-plaintext highlighter-rouge">draw_stem</code> and <code class="language-plaintext highlighter-rouge">draw_flower</code> and have them create instance variables <code class="language-plaintext highlighter-rouge">self.stem</code> and <code class="language-plaintext highlighter-rouge">self.center_circle</code> instead.</p>
+  </li>
+  <li>
+    <p>A flower doesn’t really exist unless it’s drawn, so switch to calling <code class="language-plaintext highlighter-rouge">self.draw_stem()</code> and <code class="language-plaintext highlighter-rouge">self.draw_flower()</code> in <code class="language-plaintext highlighter-rouge">Flower</code>’s constructor instead of in <code class="language-plaintext highlighter-rouge">main</code>.</p>
+  </li>
+  <li>
+    <p>You can now cut out several lines of code in <code class="language-plaintext highlighter-rouge">main</code> (yey!) and just append your <code class="language-plaintext highlighter-rouge">new_flower</code> to <code class="language-plaintext highlighter-rouge">my_flowers</code> immediately after creating it! Doesn’t that look much tidier?</p>
+  </li>
+</ol>
+
+<h2 id="exercise-3-leveraging-oop">Exercise 3: Leveraging OOP</h2>
+<p>Now that we have much more contained logic for our flowers, we can add new functionality more easily. Let’s make our flowers grow!</p>
+
+<ol>
+  <li>
+    <p>If our flowers are going to grow, then they need to start off small, so change their initial <code class="language-plaintext highlighter-rouge">self.height</code> to 1 and remove the <code class="language-plaintext highlighter-rouge">draw_flower</code> call in the constructor. You should also remove the <code class="language-plaintext highlighter-rouge">height</code> parameter, since we don’t need it anymore (remember to update <code class="language-plaintext highlighter-rouge">main</code> accordingly).</p>
+  </li>
+  <li>
+    <p>Add a new instance variable <code class="language-plaintext highlighter-rouge">self.age</code> that starts at 0.</p>
+  </li>
+  <li>Define a new method <code class="language-plaintext highlighter-rouge">grow</code>, which does the following:
+    <ul>
+      <li>adds 5 to the height;</li>
+      <li>undraws the current stem with <code class="language-plaintext highlighter-rouge">self.stem.undraw()</code>;</li>
+      <li>draws a new stem by calling <code class="language-plaintext highlighter-rouge">self.draw_stem()</code>;</li>
+      <li>checks if <code class="language-plaintext highlighter-rouge">self.age</code> is equal to 4, if it is, calls <code class="language-plaintext highlighter-rouge">self.draw_flower()</code>;</li>
+      <li>increments <code class="language-plaintext highlighter-rouge">self.age</code> by 1.</li>
+    </ul>
+  </li>
+  <li>Add an <code class="language-plaintext highlighter-rouge">import time</code> at the top of your file and the following to your <code class="language-plaintext highlighter-rouge">main</code> <strong>outside of the existing for loop</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+     <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1">#pauses for 0.5 seconds so we can savor the flowers
+</span>     <span class="k">for</span> <span class="n">flower</span> <span class="ow">in</span> <span class="n">my_flowers</span><span class="p">:</span>
+         <span class="n">flower</span><span class="p">.</span><span class="n">grow</span><span class="p">()</span>
+</code></pre></div>    </div>
+    <p>Remember to run your code at this point to see how it is looking!</p>
+  </li>
+  <li>You probably noticed that the flowers didn’t continue to grow with the stems, oops! Fix that by using the <code class="language-plaintext highlighter-rouge">move</code> method of <code class="language-plaintext highlighter-rouge">Circle</code> like so:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">elif</span> <span class="bp">self</span><span class="p">.</span><span class="n">age</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">:</span>
+     <span class="bp">self</span><span class="p">.</span><span class="n">center_circle</span><span class="p">.</span><span class="n">move</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="c1">#doesn't move along x, just 5 up
+</span></code></pre></div>    </div>
+    <p>Run your code again to see how your flowers are doing.</p>
+  </li>
+  <li>Hmm, that stem is not cooperating! You can call <code class="language-plaintext highlighter-rouge">undraw</code> and then <code class="language-plaintext highlighter-rouge">draw</code> to get the flower <code class="language-plaintext highlighter-rouge">center_circle</code> to stay on top:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="bp">self</span><span class="p">.</span><span class="n">center_circle</span><span class="p">.</span><span class="n">undraw</span><span class="p">()</span>
+ <span class="bp">self</span><span class="p">.</span><span class="n">center_circle</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">window</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Verify that you now have lovely growing flowers!</li>
+</ol>
+
+<h2 id="exercise-4-better-flowers">Exercise 4: Better flowers</h2>
+<p>You can definitely make better flowers than just a circle, though <code class="language-plaintext highlighter-rouge">graphics</code> is a little bit limited. Check out <a href="/classes/111-w26/flower_with_petals.py">flower_with_petals.py</a> for an idea of how to use <code class="language-plaintext highlighter-rouge">move</code> and more <code class="language-plaintext highlighter-rouge">Circle</code>s to make a flower that looks like this:</p>
+
+<p><img src="/classes/111-w26/FlowerWithPetals.png" alt="Flower with purple petals" /></p>
+
+<p>A few things to think about while you do it:</p>
+<ul>
+  <li>I recommend that you make a <code class="language-plaintext highlighter-rouge">draw_petal</code> method as well as a <code class="language-plaintext highlighter-rouge">draw_petals</code> method.</li>
+  <li>You’ll want to save your petals into a list that is an instance variable and add any other instance variables that make sense.</li>
+  <li>I recommend also making a <code class="language-plaintext highlighter-rouge">move_flower</code> method and possibly a <code class="language-plaintext highlighter-rouge">refresh</code> method that handles the <code class="language-plaintext highlighter-rouge">undraw</code> and <code class="language-plaintext highlighter-rouge">draw</code> combo.</li>
+  <li>You should generally aim for your methods to be 10 lines or less, it’s not always easy to write them that way, but it is a lot easier to read them!</li>
+  <li>Remember to make small, incremental changes and run your code frequently.</li>
+</ul>
+
+<h2 id="submission">Submission</h2>
+<p>Submit your completed <code class="language-plaintext highlighter-rouge">flower.py</code> to Moodle for an extra engagement credit.</p>
+
+<h2 id="extra">Extra</h2>
+<p>There is so much that you can do to expand your flower simulation! Here are some ideas:</p>
+<ul>
+  <li>Allow for lots more colors with <a href="https://mcsp.wartburg.edu/zelle/python/graphics/graphics/node14.html"><code class="language-plaintext highlighter-rouge">color_rgb</code></a></li>
+  <li>Have your flowers stop growing and start losing petals at a certain age (and perhaps even dying!)</li>
+  <li>Change your “time” loop in <code class="language-plaintext highlighter-rouge">main</code> to be an indefinite <code class="language-plaintext highlighter-rouge">while</code> loop and allow the user to add more flowers. You can use <code class="language-plaintext highlighter-rouge">checkMouse()</code> to check for a user click without locking up your simulation. <code class="language-plaintext highlighter-rouge">checkMouse()</code> returns <code class="language-plaintext highlighter-rouge">None</code> if the user hasn’t clicked and otherwise returns the <code class="language-plaintext highlighter-rouge">Point</code> like usual. This is probably a good time to make a <code class="language-plaintext highlighter-rouge">check_for_new_flower</code> <strong>function</strong> outside of your <code class="language-plaintext highlighter-rouge">Flower</code> class.</li>
+  <li>Add leaves!</li>
+  <li>Make the number of petals/leaves or length of the stem of the flower somewhat random and perhaps even influence how fast the flower dies</li>
+  <li>Make a new file <code class="language-plaintext highlighter-rouge">Plant.py</code> that defines another class that is a different kind of flower or plant. Perhaps it has different flowers/leaves and ages differently. You can use <code class="language-plaintext highlighter-rouge">input</code> to let the user choose which kind of plant they want after they click.</li>
+  <li>Have the flowers “sway” slightly by shifting back and forth each day with the <code class="language-plaintext highlighter-rouge">move</code> method of each component shape</li>
+  <li>Make a caterpillar class that randomly moves around the screen and eats flowers that it runs into (this will be tricky, you’ll have to calculate if it ran into any of the flowers based your calculations of the space they take up!)</li>
+  <li>Add a chance for random events like storms or allow the user to water the flowers to keep them from dying (again this will be tricky, you’ll have to see where the user clicks and see which flower, if any, it overlaps)</li>
+</ul>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

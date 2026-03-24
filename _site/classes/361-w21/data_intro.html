@@ -43,9 +43,7 @@
   </header>
 
   <div class="post-content">
-    <p><em>(Note: This reading is a work in progress and there may be typos, please let me know if you find any!)</em></p>
-
-<p><a href="https://empirical.readthedocs.io/">Empirical</a> provides a robust set of tools for <a href="https://empirical.readthedocs.io/en/latest/library/data/data.html">collecting data</a> from your simulation at regular intervals. We’ll look at a few specific approaches to doing so in this reading.</p>
+    <p><a href="https://empirical.readthedocs.io/">Empirical</a> provides a robust set of tools for <a href="https://empirical.readthedocs.io/en/latest/library/data/data.html">collecting data</a> from your simulation at regular intervals. We’ll look at a few specific approaches to doing so in this reading.</p>
 
 <h1 id="include">Include</h1>
 <p>Empirical’s data tools are located in <code class="language-plaintext highlighter-rouge">include/emp/data/DataFile.hpp</code> and so you’ll need to include that in your <code class="language-plaintext highlighter-rouge">World</code> file:</p>
@@ -216,7 +214,7 @@ file.AddHistBin(node, 19, "Hist_0.9", "Count for histogram bin 0.9 to 1.0");
 </code></pre></div></div>
 <p>Like I said, not beautiful, but functional. This will then give you the count of values that fall into each range.</p>
 
-<p>There are even more things (such as min, max, median, percentile, etc) supported and feel free to look through the <a href="https://empirical.readthedocs.io/en/latest/api/classemp_1_1DataFile.html">documentation for the DataFile</a> to see them.</p>
+<p>There are even more things (such as min, max, median, percentile, etc) supported and feel free to look through the <a href="https://empirical.readthedocs.io/en/latest/library/data/api/DataFile.html">documentation for the DataFile</a> to see them.</p>
 
   </div>
 

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Webpages with Flask | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Webpages with Flask" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w26/flask-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w26/flask-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Webpages with Flask" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Webpages with Flask","url":"http://localhost:4000/classes/111-w26/flask-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Webpages with Flask</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goal">Goal</h2>
+<p>Explore different functionalities of Flask with a simple dataset.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+  <li><a href="#getting-started">Getting Started</a></li>
+  <li><a href="#outputting-data">Outputting Data</a></li>
+  <li><a href="#handling-user-errors-and-your-own">Handling User Errors</a></li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+<p>Create a folder <code class="language-plaintext highlighter-rouge">FlaskLab</code> in COURSES as you usually do.</p>
+
+<p>Then download <a href="/classes/111-w26/flask_lab_app.py">flask_lab_app.py</a> and <a href="/classes/111-w26/Pokemon.csv">Pokemon.csv</a> and place them in that folder.</p>
+
+<h2 id="getting-started">Getting Started</h2>
+<p>As you know from the reading, Flask is a web framework that lets you build dynamic a dynamic website using Python.
+You’re going to build a very simple app that grabs data from a file and displays it on dynamically-built (and ugly) web pages.</p>
+
+<ol>
+  <li>The starter code starts with the Flask boilerplate and loads in the Pokemon data for you.</li>
+  <li>Note that there is already a <code class="language-plaintext highlighter-rouge">homepage()</code> function that is called when a user first goes to your website using <code class="language-plaintext highlighter-rouge">@app.route('/')</code> (feel free to make the string returned more exciting):
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">homepage</span><span class="p">():</span>
+     <span class="k">return</span> <span class="s">"hello, this is the homepage"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Open up the Terminal in VSCode and run your python script as you normally would:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python flask_lab_app.py
+</code></pre></div>    </div>
+
+    <p>You should see something like:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">*</span> Serving Flask app <span class="s1">'app'</span> <span class="o">(</span>lazy loading<span class="o">)</span>
+ <span class="k">*</span> Environment: production
+     WARNING: This is a development server. Do not use it <span class="k">in </span>a production deployment.
+     Use a production WSGI server instead.
+ <span class="k">*</span> Debug mode: off
+ <span class="k">*</span> Running on http://127.0.0.1:5100/ <span class="o">(</span>Press CTRL+C to quit<span class="o">)</span>
+</code></pre></div>    </div>
+
+    <p>And if you the click on the link <a href="http://127.0.0.1:5100/">http://127.0.0.1:5100/</a>, a web browser should open and you should see your message. Congrats, you made a website with Flask!</p>
+  </li>
+</ol>
+
+<h2 id="outputting-data">Outputting Data</h2>
+<p>The main goal of using Flask is that we are able to display data from your dataset onto your website. Normally we would have this data in a special location called a database, but we’ll just stick with loading from a file.</p>
+
+<ol>
+  <li>
+    <p>I’ve provided you with a dataset about Pokemon already in the repository, called <code class="language-plaintext highlighter-rouge">Pokemon.csv</code>, along with a <code class="language-plaintext highlighter-rouge">load_data</code> function that handles reading that data into a list of lists</p>
+  </li>
+  <li>Now there are a lot of choices for how to display this data. If you wanted to let the user get a particular cell of your dataset, you could make the decorator for the function include the desired row and column as variables:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/&lt;int:row&gt;/&lt;int:column&gt;/'</span><span class="p">)</span>
+</code></pre></div>    </div>
+
+    <p>The <code class="language-plaintext highlighter-rouge">&lt;&gt;</code> indicate that the string inside them should be a variable that is passed to your associated function, and in this case we are also converting <code class="language-plaintext highlighter-rouge">row</code> and <code class="language-plaintext highlighter-rouge">column</code> to <code class="language-plaintext highlighter-rouge">int</code>s immediately.  The function has to take those exact arguments, like so:</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">get_cell</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">column</span><span class="p">):</span>
+</code></pre></div>    </div>
+
+    <p><strong>Use those two snippets to complete the <code class="language-plaintext highlighter-rouge">get_cell</code> function</strong> so that you can go to the page <code class="language-plaintext highlighter-rouge">your_url/0/1</code> and see a page with <code class="language-plaintext highlighter-rouge">Name</code> on it.</p>
+  </li>
+  <li>Now try letting the user get an entire row of the dataset, perhaps by specifying the Pokemon name that they want. Remember that you can use additional <code class="language-plaintext highlighter-rouge">/</code> in your routes to specify different commands, such as <code class="language-plaintext highlighter-rouge">/name/&lt;pokemon_name&gt;</code>.</li>
+</ol>
+
+<h2 id="handling-user-errors-and-your-own">Handling user errors (and your own)</h2>
+
+<p>You may have noticed as you were doing the previous pieces that it would be nice if you could have errors display nicely.
+Fun fact, you can!</p>
+
+<ol>
+  <li>Add a function with the decorator <code class="language-plaintext highlighter-rouge">@app.errorhandler(404)</code> to catch page not found errors. The function will need to take an argument (which is the error):
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+ <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">errorhandler</span><span class="p">(</span><span class="mi">404</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">page_not_found</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+     <span class="k">return</span> <span class="s">"sorry, wrong format, do this instead...."</span>
+</code></pre></div>    </div>
+
+    <p>Make sure that the function lets the user know what format they should use for the URL to get the information they want, perhaps with some examples.</p>
+  </li>
+  <li>You can add a function for internal server errors as well, i.e. when you have a bug in your Python code:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">errorhandler</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">python_bug</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+     <span class="k">return</span> <span class="s">"Eek, a Caterpie!"</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="submission">Submission</h2>
+<p>Submit your Flask app at this point for an extra engagement credit. Then play around and make more functionality for your website!</p>
+
+<h2 id="html">HTML</h2>
+<p>You may already be aware that website use HTML (and CSS) to specify how they should look (and be less ugly). You can do that with Flask via the following:</p>
+
+<ol>
+  <li>Create a <code class="language-plaintext highlighter-rouge">templates</code> folder in your lab folder</li>
+  <li>Create a file in that folder <code class="language-plaintext highlighter-rouge">index.html</code> and put in the following boilerplate:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;html&gt;</span>
+     <span class="nt">&lt;head&gt;</span>
+
+     <span class="nt">&lt;/head&gt;</span>
+     <span class="nt">&lt;body&gt;</span>
+
+     <span class="nt">&lt;/body&gt;</span>
+ <span class="nt">&lt;/html&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Within the <code class="language-plaintext highlighter-rouge">heading</code> put in a set of <code class="language-plaintext highlighter-rouge">title</code> HTML tags and place a placeholder <code class="language-plaintext highlighter-rouge">{{title}}</code> between them (this language is called Jinja and it’s a lot like Python):
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+ <span class="nt">&lt;title&gt;</span>{{title}}<span class="nt">&lt;/title&gt;</span>
+    
+</code></pre></div>    </div>
+  </li>
+  <li>If you have as many tabs open as I do regularly, you can’t actual see the titles easily, so, within the <code class="language-plaintext highlighter-rouge">body</code>, put in a heading with the title as well:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    
+ <span class="nt">&lt;h1&gt;</span>Welcome to the {{title}}!<span class="nt">&lt;/h1&gt;</span>
+    
+</code></pre></div>    </div>
+  </li>
+  <li>Now you need to go edit your existing Flask app to use your new template. Open <code class="language-plaintext highlighter-rouge">flask_lab_app.py</code> and edit your <code class="language-plaintext highlighter-rouge">homepage()</code> function so that instead of just returning a plain string, it returns the result of calling <code class="language-plaintext highlighter-rouge">render_template</code> with your title of choice:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+ <span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+     <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'index.html'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">"Pokemon rule!"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Run your app and check out your new fancy (kind of) homepage!</li>
+</ol>
+
+<h2 id="data-with-templates">Data with Templates</h2>
+<p>Even though you don’t strictly have to use Jinja, it makes displaying lists much easier.
+Let’s display the headings of the Pokemon dataset on the homepage.</p>
+
+<ol>
+  <li>Within <code class="language-plaintext highlighter-rouge">index.html</code> make an unordered list in the <code class="language-plaintext highlighter-rouge">body</code>:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;ul&gt;</span>
+ <span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Within that unordered list, we’ll use Jinja to make a list item for each heading in our list <code class="language-plaintext highlighter-rouge">headings</code>:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> {% for heading in headings: %}
+ <span class="nt">&lt;li&gt;</span>{{ heading }}<span class="nt">&lt;/li&gt;</span>
+ {% endfor %}
+</code></pre></div>    </div>
+  </li>
+  <li>Now we need to actually pass that argument. Within <code class="language-plaintext highlighter-rouge">flask_lab_app.py</code>, add to the arguments that you are passing to <code class="language-plaintext highlighter-rouge">render_template</code> in <code class="language-plaintext highlighter-rouge">index</code>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">def</span> <span class="nf">homepage</span><span class="p">():</span>
+     <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'index.html'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s">"Pokemon rule!"</span><span class="p">,</span> <span class="n">headings</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Restart your app to see your new fancy list!</li>
+  <li>Try adding another list of the first data row of the Pokemon dataset.</li>
+</ol>
+
+<h2 id="fun-extra">Fun extra</h2>
+<p>By combining the route variables and Jinja placeholders, you can let the user display what they want on your page.
+Try making a new template and route so that you can go to <code class="language-plaintext highlighter-rouge">your_url/greeting/your_name</code> and find a web page that greets whatever the user puts for <code class="language-plaintext highlighter-rouge">your_name</code>.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

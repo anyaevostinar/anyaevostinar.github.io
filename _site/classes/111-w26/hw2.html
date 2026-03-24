@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW2 - Drawing Shapes | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW2 - Drawing Shapes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w26/hw2" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w26/hw2" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW2 - Drawing Shapes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW2 - Drawing Shapes","url":"http://localhost:4000/classes/111-w26/hw2"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW2 - Drawing Shapes</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>This assignment is due on Wednesday Jan 21st at 10pm. 
+As with all assignments, you will have the opportunity to <a href="revision-process">revise</a> this assignment based on the feedback that you get.</p>
+
+<p>You will submit four files to Gradescope: <code class="language-plaintext highlighter-rouge">checkers_pieces.py</code>, <code class="language-plaintext highlighter-rouge">picture.py</code>, <code class="language-plaintext highlighter-rouge">picture.png</code>, and <code class="language-plaintext highlighter-rouge">readme.txt</code></p>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+
+<p>For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)  <strong>You may have at most one partner for the entire assignment.</strong></p>
+
+<p>You may also discuss the assignment at a high level with other students.  You can discuss the assignment with Anya, our prefect, or any course staff.</p>
+
+<p>You should list any student or course staff with whom you discussed the assignment (you don’t have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in comments at the top of your source code files.</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<p>Note: Remember, you should not be using search engines or generative AI when completing your assignments (this includes the Copilot extension in VS Code!). You can, however, search within the official Python documentation: https://docs.python.org/3/.</p>
+
+<h2 id="getting-started">Getting started</h2>
+<p>Both parts of this assignment will require you to use the <code class="language-plaintext highlighter-rouge">graphics.py</code> library and <code class="language-plaintext highlighter-rouge">canvasvg.py</code>. You should download a copy from <a href="/classes/111-w26/graphics.py">here</a> and <a href="/classes/111-w26/canvasvg.py">here</a> and save them both in the same folder as your assignment code.</p>
+
+<h2 id="goals">Goals</h2>
+<p>The primary goal for this assignment is to give you practice working with the <code class="language-plaintext highlighter-rouge">graphics.py</code> library. You will additionally get practice writing loops, working with objects, and working on bigger programs.</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>The <strong>core requirements</strong> are:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">checkers_pieces.py</code> correctly generates the image described below</li>
+  <li>Header with at least five lines that start with <code class="language-plaintext highlighter-rouge">#</code> for each file</li>
+  <li>Basic style that can be checked automatically (not complete!)</li>
+  <li>Collaboration statement at the top of each file (even if it just says that you worked alone)</li>
+  <li>A <code class="language-plaintext highlighter-rouge">readme.txt</code> that includes your reflection (detailed below)</li>
+</ul>
+
+<p>The <strong>advanced requirements</strong> are:</p>
+<ul>
+  <li>Satisfy the core requirements</li>
+  <li><code class="language-plaintext highlighter-rouge">picture.py</code> follows the requirements:
+    <ul>
+      <li>At least three different shapes used (different classes)</li>
+      <li>Setting at least three attributes</li>
+      <li>Requiring at least five user clicks</li>
+    </ul>
+  </li>
+  <li>A <code class="language-plaintext highlighter-rouge">picture.png</code> is included as an example interaction</li>
+  <li>Descriptive headers for all files</li>
+  <li>Descriptive variable names that follow <code class="language-plaintext highlighter-rouge">snake_case</code></li>
+  <li>Good line grouping and spacing (i.e. use blank newlines to group your lines of code)</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+<p>I recommend that you complete this assignment in Olin 310.</p>
+
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW2</code></li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW2</code> folder in VSCode</li>
+  <li>Create two files <code class="language-plaintext highlighter-rouge">checkers_pieces.py</code>, and <code class="language-plaintext highlighter-rouge">picture.py</code>.</li>
+</ul>
+
+<p>If you really want to use your personal machine, check <a href="hw1">HW1</a> for instruction links.</p>
+
+<h2 id="parts-of-this-assignment">Parts of this assignment:</h2>
+<ul>
+  <li><a href="#core-checkers">Core: Checkers</a></li>
+  <li><a href="#advanced-picture">Advanced: Picture</a></li>
+  <li><a href="#reflection">Core: Reflection</a></li>
+</ul>
+
+<h2 id="comments-and-collaboration">Comments and collaboration</h2>
+
+<p>As with all assignments in this course, you are expected to provide top-level comments (lines that start with <code class="language-plaintext highlighter-rouge">#</code> at the top of the file) on any <code class="language-plaintext highlighter-rouge">.py</code> source code files with your name and a collaboration statement. For this assignment, you have multiple programs; each needs a similar prelude.</p>
+
+<p>You need a collaboration statement, even if just to say that you worked alone.</p>
+
+<p>Here is an example of how you can start a file:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># File: picture.py
+# Purpose: Draws shapes based on user clicks.
+# Author: Lulu Amert
+#
+# Collaboration statement:
+# - Milo: partner (worked on code together)
+# - Hobbes: discussed how to use a mouse click
+# - Mal (Course Staff): how to make a Circle
+</span></code></pre></div></div>
+
+<p>Here is another example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># File: checkers_pieces.py
+# Purpose: Draws one checkers piece per row in a random column.
+# Author: Hobbes Amert
+#
+# Collaboration statement: I worked alone.
+#
+# Inputs:
+#   * n: size of grid (int)
+</span></code></pre></div></div>
+
+<h2 id="gemini-bot">Gemini Bot</h2>
+<p>We’ll be continuing the experiment of custom chatbots. <a href="https://gemini.google.com/gem/1NaNTZKXOiCqu-bDVGrpLGEjFxTBM3vxV?usp=sharing">Here is the one for homework 2</a>. As a reminder, if you use this, I would appreciate you copying some example interactions with it to a text document and uploading that to Gradescope along with your submission. This is both to give me an idea of whether it is providing correct information and if it is actually being helpful. If you manage to get it to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone’s learning further.</p>
+
+<h2 id="core-checkers">Core: Checkers</h2>
+
+<p>For this part, you will display a grid representing a game board (like in checkers or chess, but you don’t need to color the grid locations red/black). You will be placing pieces such that there is one piece per row in random columns. What follows is details on how to achieve that end goal.</p>
+
+<h3 id="drawing-a-grid">Drawing a grid</h3>
+<p>You will need a grid. This section details how to do that more easily. To make it easier to calculate placement of your grid and pieces, you should use the <code class="language-plaintext highlighter-rouge">setCoords</code> method of the <code class="language-plaintext highlighter-rouge">GraphWin</code> class to change the coordinate system to one you’re likely more familiar with.</p>
+
+<p>You can use coordinates you’re more familiar with by using the <code class="language-plaintext highlighter-rouge">setCoords</code> method of the <code class="language-plaintext highlighter-rouge">GraphWin</code> class. To use this method, you should provide, in order, the minimum x, minimum y, maximum x, and maximum y values of the window. 
+Here is a snippet of code that uses a modified coordinate system to generate a grid. Note that <code class="language-plaintext highlighter-rouge">setCoords</code> is called with buffers of 0.5 on each side.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">graphics</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">canvasvg</span>
+
+<span class="c1"># Make the window
+</span><span class="n">win</span> <span class="o">=</span> <span class="n">GraphWin</span><span class="p">(</span><span class="s">"A Grid!"</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+<span class="n">win</span><span class="p">.</span><span class="n">setCoords</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">)</span>   <span class="c1"># set the min/max coords, with buffer
+</span>
+<span class="c1"># Draw some vertical lines
+</span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">line</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">))</span>
+<span class="n">line</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">line</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">))</span>
+<span class="n">line</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+
+<span class="c1"># TODO: add more lines (wouldn't a loop be great?)
+</span>
+<span class="c1"># Draw some horizontal lines
+</span><span class="n">x1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">line</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">Point</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y</span><span class="p">))</span>
+<span class="n">line</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+
+<span class="c1"># TODO: add more lines
+</span>
+<span class="c1"># Add some helpful labels
+</span><span class="n">blLabel</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2</span><span class="p">),</span> <span class="s">"(0,0)"</span><span class="p">)</span>
+<span class="n">blLabel</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+
+<span class="n">brLabel</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2</span><span class="p">),</span> <span class="s">"(4,0)"</span><span class="p">)</span>
+<span class="n">brLabel</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+
+<span class="n">ulLabel</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">),</span> <span class="s">"(0,3)"</span><span class="p">)</span>
+<span class="n">ulLabel</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+
+<span class="n">urLabel</span> <span class="o">=</span> <span class="n">Text</span><span class="p">(</span><span class="n">Point</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">),</span> <span class="s">"(4,3)"</span><span class="p">)</span>
+<span class="n">urLabel</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">win</span><span class="p">)</span>
+
+<span class="c1"># Save the picture and then close
+</span><span class="n">canvasvg</span><span class="p">.</span><span class="n">saveall</span><span class="p">(</span><span class="s">"Checkers.svg"</span><span class="p">,</span> <span class="n">win</span><span class="p">)</span>
+<span class="n">win</span><span class="p">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="what-you-should-do">What you should do</h3>
+<p>For this part, your program should first ask the user in the Terminal how many grid cells there are (let’s call this <code class="language-plaintext highlighter-rouge">n</code>), and then draw an <code class="language-plaintext highlighter-rouge">n</code>x<code class="language-plaintext highlighter-rouge">n</code> grid. For each row, you should draw a red circle in a random column. A radius of 0.35 times a grid cell size seems to look good. You can get a random integer like so:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>    <span class="c1">#imports the random library
+</span>
+<span class="n">val</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>    <span class="c1"># integer from 0 to 9 inclusive
+</span><span class="k">print</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>                    <span class="c1"># gave me 7 when I tested
+</span></code></pre></div></div>
+
+<p>Save your program in a file called <code class="language-plaintext highlighter-rouge">checkers_pieces.py</code>. Make sure to include the lines related to <code class="language-plaintext highlighter-rouge">canvasvg</code> to allow for saving your image and displaying it on Gradescope.</p>
+
+<p>Here is a possible output:
+<img src="/classes/111-w26/Checkers.svg" alt="Checkerboard" /></p>
+
+<h2 id="advanced-picture">Advanced: Picture</h2>
+<p>In this part, you will guide the user through making a picture. For example, your program could instruct a user to make a house by following these steps:</p>
+
+<ul>
+  <li>Click twice, indicating two corners of a rectangle for the house.</li>
+  <li>Click once, indicating the center point of the top edge of the door, which has width 1/5 that of the entire house.</li>
+  <li>Click once, indicating the center point of a circular window that has diameter half the width of the door.</li>
+  <li>Click once, indicating the peak of the roof.
+An example interaction might be the following sequence:</li>
+</ul>
+
+<p><img src="/classes/111-w26/house.png" alt="a house" /></p>
+
+<p>There should also be a text display at the bottom of the window, explaining the different steps to the user.</p>
+
+<p>You can design any type of picture you want, as long as it follows these guidelines:</p>
+
+<ul>
+  <li>There must be at least three different shapes used (different classes in <code class="language-plaintext highlighter-rouge">graphics.py</code>).</li>
+  <li>You must set at least three attributes between all of the shapes (ex: fill color, outline color, border width).</li>
+  <li>You must require at least five clicks from the user.</li>
+</ul>
+
+<p>Your code should be saved in a file called <code class="language-plaintext highlighter-rouge">picture.py</code>. You should also include a screenshot of an example of your final picture after running your program in <code class="language-plaintext highlighter-rouge">picture.png</code>.</p>
+
+<p>There isn’t an autograder or displayer for this part since there is so much variability in what you could submit, so a human grader will download and run your code to check for functionality.</p>
+
+<h2 id="reflection">Reflection</h2>
+
+<p>Were there any particular issues or challenges you dealt with in completing this assignment? How long did you spend on this assignment? Write a brief discussion (a sentence or two is fine) in your <code class="language-plaintext highlighter-rouge">readme.txt</code> file.</p>
+
+<p>Here are some examples:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##### Reflection #####
+# I couldn't figure out how to change the text for picture; I found the undraw() function in the graphics.py documentation PDF.
+# I had issues drawing circles until I looked back at the sample code.
+# I kept randomly choosing rows instead of columns.
+# I spent 7 hours on this assignment.
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##### Reflection #####
+# I had so much fun making my own picture.
+# Most of my trouble came from checkers.  I couldn't figure out how to draw the circles in the middle,
+# and then I realized I had to add 0.5 to move them off of the lines.
+# I spent 7 hours on this assignment.
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##### Reflection #####
+# It went fine; I found what I needed in my notes and the graphics.py documentation.
+# I spent 5 hours on this assignment.
+</code></pre></div></div>
+
+<h2 id="submission">Submission</h2>
+<p>You should submit your files through the Gradescope link on Moodle for this assignment.
+You are able to upload them all to Gradescope, at which point the autograder will run and let you know if your code works correctly.
+You are able to submit your code as many times as you wish before the deadline to fix any issues.
+If you have questions about what the autograder is telling you is wrong, please ask!</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This homework is from Prof. Tanya Amert.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

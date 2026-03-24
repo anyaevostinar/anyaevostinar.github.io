@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Prefix Trees Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Prefix Trees Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f25/prefix-trees-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f25/prefix-trees-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Prefix Trees Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Prefix Trees Lab","url":"http://localhost:4000/classes/201-f25/prefix-trees-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Prefix Trees Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>To implement an iterative version of a prefix tree.</p>
+
+<h2 id="setup">Setup</h2>
+<p>Mount the COURSES drive and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">PrefixTreeLab</code></li>
+  <li>Download the <a href="/classes/201-f25/PrefixTreeLab.kt">starter code</a> and put it into your lab folder</li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">PrefixTreeLab</code> folder in VSCode</li>
+</ul>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Look at the code in <code class="language-plaintext highlighter-rouge">main</code> and draw out what the prefix tree should look like for the strings that we will insert.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>We’ll start with <code class="language-plaintext highlighter-rouge">insert</code>. You should implement it <strong>iteratively</strong>, so you should not call <code class="language-plaintext highlighter-rouge">insert</code> recursively. Instead, you should use a for loop to iterate over each letter in the key and get the index of the letter in the <code class="language-plaintext highlighter-rouge">childNode</code> array:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="n">letter</span> <span class="k">in</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">val</span> <span class="py">index</span> <span class="p">=</span> <span class="n">letter</span> <span class="p">-</span> <span class="sc">'a'</span> <span class="c1">//this will get you the index, cool huh??</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You will want to have a structure similar to how you worked with a linked list, such as a <code class="language-plaintext highlighter-rouge">currentNode</code> that you update with each loop.</p>
+
+<p>Remember to uncomment the <code class="language-plaintext highlighter-rouge">insert</code> loop in <code class="language-plaintext highlighter-rouge">main</code> and make sure that your code runs. Note that you can’t really see if it worked yet though.</p>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Now implement <code class="language-plaintext highlighter-rouge">search</code> iteratively. You’ll want a very similar structure to <code class="language-plaintext highlighter-rouge">insert</code>.</p>
+
+<p>Test out your code so far and make sure that everything is working as expected!</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Think about, but don’t worry about implementing yet: how would you instead do this implementation recursively? What would you need to change?</p>
+
+<p>Upload your completed lab to Moodle for an extra engagement credit.</p>
+
+<h2 id="extra">Extra</h2>
+<p>Time for <code class="language-plaintext highlighter-rouge">delete</code>! As we discussed, delete has several cases even in just the normal case. I recommend you tackle things in this order:</p>
+<ul>
+  <li>If the current node doesn’t have a child for the next letter, return false</li>
+  <li>Otherwise, figure out how many other children there are (using a loop)</li>
+  <li>If there is more than one child, we’re going to have to do one of the complicated cases once we get to the last character</li>
+  <li>Case 1: just decrement the last character’s word count</li>
+  <li>Case 2: Break the link to the deleted chain (probably should have saved that node to a variable….)</li>
+  <li>Case 3: Break the link to the deleted chain from the root</li>
+</ul>
+
+<p>As you complete each case, consult your drawing and think about which word will test your case. You might need to add more words or make up some pretend words to do your testing.</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

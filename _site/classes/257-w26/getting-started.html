@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Getting Started | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Getting Started" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-w26/getting-started" />
+<meta property="og:url" content="http://localhost:4000/classes/257-w26/getting-started" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Getting Started" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Getting Started","url":"http://localhost:4000/classes/257-w26/getting-started"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Getting Started</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goal">Goal</h2>
+<p>Get your laptop setup for the course and start refreshing on Python.</p>
+
+<h2 id="vscode">VSCode</h2>
+<p>You are likely already familiar with <a href="https://code.visualstudio.com/download">VSCode</a>. <strong>You should download it if you don’t already have it.</strong></p>
+
+<h2 id="laptop-setup">Laptop Setup</h2>
+
+<p>As you know from your prep, <a href="https://en.wikipedia.org/wiki/Unix">Unix</a> is a family of operating systems and both <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> and <a href="https://en.wikipedia.org/wiki/MacOS">macOS</a> are Unix-based. You’ve likely already been using Unix a lot if you have used the lab computers at all since they run macOS. Today’s goal is to get you setup with a Unix system on your own laptop.</p>
+
+<h3 id="macos">macOS</h3>
+<p>Mac comes with the Terminal app (in Applications/Utilities) where you can work with a Unix command line.
+However, VSCode comes with the same Terminal, so it’s usually nicest to just use that (Terminal-&gt;New Terminal).</p>
+
+<h3 id="linux">Linux</h3>
+<p>If you are running Linux, you have a terminal app somewhere, though the name varies. You can also just use VSCode’s Terminal.</p>
+
+<h3 id="windows">Windows</h3>
+<p>If you are running Windows, you will need to install a few more things. Follow <a href="https://code.visualstudio.com/docs/remote/wsl">this guide</a> for getting the “Windows Subsystem for Linux” installed on your machine and connected to VSCode. You will do everything through VSCode using the WSL extension.</p>
+
+<p>A few notes:</p>
+<ul>
+  <li>If your system supports it, go for WSL 2</li>
+  <li>Under “Install your Linux distribution of choice”, I recommend that you choose Ubuntu 22.04 LTS (or something 22 LTS, which stands for “long term support”)</li>
+</ul>
+
+<h3 id="everyone">Everyone</h3>
+<p>I recommend also installing this extension for easier pair programming:</p>
+<ul>
+  <li><a href="https://code.visualstudio.com/learn/collaboration/live-share">Live Share</a></li>
+</ul>
+
+<h2 id="package-managers">Package managers</h2>
+<p><a href="https://en.wikipedia.org/wiki/Package_manager">Package managers</a> make it easier to install and update software on your machine for the kinds of software that you will use in this class. Which package manager you use will depend on your system.</p>
+
+<h3 id="windows-1">Windows</h3>
+<p>You should now have <code class="language-plaintext highlighter-rouge">apt</code> installed through WSL. Double check with <code class="language-plaintext highlighter-rouge">which apt</code> in your Terminal. If you don’t have it, you should definitely have <code class="language-plaintext highlighter-rouge">apt-get</code>, so check for that.</p>
+
+<h3 id="linux-1">Linux</h3>
+<p>You should have <code class="language-plaintext highlighter-rouge">apt</code> or <code class="language-plaintext highlighter-rouge">apt-get</code>; double check with <code class="language-plaintext highlighter-rouge">which</code> (in your Terminal <code class="language-plaintext highlighter-rouge">which apt</code>).</p>
+
+<h3 id="macos-1">macOS</h3>
+<p>Mac doesn’t have a proper built-in manager and so you should download <a href="https://brew.sh/">Homebrew</a> “The Missing Package Manager for MacOS” :). Follow the instructions on that page to install (if you don’t already have it).</p>
+
+<h2 id="vim-python3-git">Vi(m), Python3, Git</h2>
+<p>Now let’s make sure you have everything you need and install anything you are missing.</p>
+
+<p>Open your Terminal VSCode and type:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>which vi
+</code></pre></div></div>
+
+<p>Hopefully the answer will be <code class="language-plaintext highlighter-rouge">/usr/bin/vi</code>. The “which” command is asking where the <code class="language-plaintext highlighter-rouge">vi</code> command is located (yes, “where” would probably make more sense). Do it again with two more commands:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>which python3
+which git
+</code></pre></div></div>
+
+<p>If you don’t have either of those installed, you’ll need to install them using your package manager:</p>
+
+<h3 id="macos-2">macOS</h3>
+<p><code class="language-plaintext highlighter-rouge">brew install git</code> and/or <code class="language-plaintext highlighter-rouge">brew install python3</code></p>
+
+<h3 id="wsl-and-linux">WSL and Linux</h3>
+<p><code class="language-plaintext highlighter-rouge">sudo apt install git</code> and/or <code class="language-plaintext highlighter-rouge">sudo apt install python3</code> (or <code class="language-plaintext highlighter-rouge">apt-get</code> if that’s what you have.)</p>
+
+<h2 id="git">Git</h2>
+<p>You know how when you are working on a programming project with a partner and one of you makes some changes and emails it to the other, and then the other makes some changes and emails it back? What about when you accidentally both make changes and forget to use the updated version and aren’t sure which you need? Or what about when you break your code and can’t remember how to get it working again?</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Version_control">Version control software</a> is the answer to all of these problems and it will change your life (no guarantees, but I do really love it). The most popular kind of version control is <a href="https://git-scm.com/">git</a> and the most popular hosting company for git is <a href="https://github.com//">GitHub</a>. GitHub has a lot of great features, including an educational wrapper and student packs with additional features.</p>
+
+<ol>
+  <li>If you already have a GitHub account and you want to use it for 257, great, just make sure that your Carleton email address is associated with it (Settings-&gt;Emails).
+    <ol>
+      <li>If you don’t have one or want a new one, go to <a href="https://github.com/">https://github.com/</a> and use your Carleton email address to make it. I strongly recommend you pick a name that you’d be comfortable putting on a resume.</li>
+    </ol>
+  </li>
+  <li>Create a <a href="https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token">“classic Personal Access Token”</a> (<strong>not a fine-grained PAT</strong>, they are still in beta). Save your <strong>classic</strong> PAT somewhere safe. This will serve as your password when downloading your repositories for class. Some notes:
+    <ol>
+      <li>Set the expiration date past the end of term</li>
+      <li>In the “Select the scopes”, just check “repo”, nothing else needed</li>
+      <li>Remember to copy and paste it into a note on your local machine!</li>
+    </ol>
+  </li>
+  <li>Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSeT50VfJMYEZLGVm2o3tScHXAz_nv1ZMEiOS74u8uqAppZC6A/viewform?usp=publish-editor">this survey</a> to let me know your GitHub username.</li>
+</ol>
+
+<h2 id="venv">Venv</h2>
+<p>Work through <a href="/classes/257-w26/venv-guide">this guide</a> to get your Python virtual environment setup with the packages we’ll need.</p>
+
+<h2 id="python-refreshing">Python Refreshing</h2>
+<p>Work through exercises 1 and 3 of <a href="https://anyaevostinar.github.io/classes/111-w22/files">this lab</a> (skip Exercise 2). Ignore references to COURSES, that’s just for the intro students to worry about.
+If you need a reference, check out <a href="https://www.w3schools.com/python/default.asp">W3 Schools’ Python tutorial</a>.</p>
+
+<h2 id="data-exploration">Data Exploration</h2>
+<p>If you’ve gotten this far, feel free to <a href="data-prep">start looking for datasets</a> that you might want to use with your team, which is the prep for Friday.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

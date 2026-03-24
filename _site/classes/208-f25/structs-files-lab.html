@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Structs and Files Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Structs and Files Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/structs-files-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/structs-files-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Structs and Files Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Structs and Files Lab","url":"http://localhost:4000/classes/208-f25/structs-files-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Structs and Files Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="overview">Overview</h2>
+<p>In this lab, you’ll get some more practice with C, focusing on “strings” and file I/O.</p>
+
+<p>As usual, I recommend you do this on <code class="language-plaintext highlighter-rouge">mantis</code> through <code class="language-plaintext highlighter-rouge">fern</code>.</p>
+
+<h2 id="part-a-playing-with-structs-and-strings">Part A: Playing with <code class="language-plaintext highlighter-rouge">structs</code> and strings</h2>
+<h3 id="getting-started">Getting started</h3>
+<p>First, make a new file, let’s call it <code class="language-plaintext highlighter-rouge">lab2_struct.c</code>. Define the following <code class="language-plaintext highlighter-rouge">struct</code> (retype this, don’t just copy it!):</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+    <span class="kt">long</span> <span class="n">b</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">c</span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>
+    <span class="kt">char</span> <span class="n">d</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span>
+<span class="p">}</span> <span class="n">data_t</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Now, write a function <code class="language-plaintext highlighter-rouge">print_data</code> that takes in a <code class="language-plaintext highlighter-rouge">data_t</code> and prints out the elements of this <code class="language-plaintext highlighter-rouge">struct</code>. You’ll need to remember a couple of things:</p>
+
+<ul>
+  <li>You have to import <code class="language-plaintext highlighter-rouge">&lt;stdio.h&gt;</code> to get <code class="language-plaintext highlighter-rouge">printf</code> to work.</li>
+  <li>You can print an <code class="language-plaintext highlighter-rouge">int</code> with <code class="language-plaintext highlighter-rouge">%d</code> or <code class="language-plaintext highlighter-rouge">%x</code> without trouble, but a <code class="language-plaintext highlighter-rouge">long</code> is big – use <code class="language-plaintext highlighter-rouge">%ld</code> or <code class="language-plaintext highlighter-rouge">%lx</code> for something so “long”.</li>
+  <li>You can print a string (which is really just a null-terminated sequence of <code class="language-plaintext highlighter-rouge">char</code>) using <code class="language-plaintext highlighter-rouge">%s</code>.</li>
+</ul>
+
+<p>Once this works, create a new variable <code class="language-plaintext highlighter-rouge">data</code> using this <code class="language-plaintext highlighter-rouge">struct</code> definition in <code class="language-plaintext highlighter-rouge">main</code>, fill it with values, and print it. Use whatever you want for <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code>, but store <code class="language-plaintext highlighter-rouge">"systems"</code> in C as follows:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data</span><span class="p">.</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'s'</span><span class="p">;</span>
+<span class="n">data</span><span class="p">.</span><span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'y'</span><span class="p">;</span>
+<span class="p">...</span>
+</code></pre></div></div>
+
+<p>Don’t forget to null-terminate <code class="language-plaintext highlighter-rouge">data.c</code>! Then go ahead and put some bytes in <code class="language-plaintext highlighter-rouge">d</code>. Some UTF-8 encoded bytes would work nicely:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data</span><span class="p">.</span><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mh">0xeb</span><span class="p">;</span>
+<span class="n">data</span><span class="p">.</span><span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mh">0xb4</span><span class="p">;</span>
+<span class="n">data</span><span class="p">.</span><span class="n">d</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mh">0x84</span><span class="p">;</span>
+<span class="n">data</span><span class="p">.</span><span class="n">d</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="sc">'\0'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Finally, call your <code class="language-plaintext highlighter-rouge">print_data</code> function, and make sure to return <code class="language-plaintext highlighter-rouge">1</code> from <code class="language-plaintext highlighter-rouge">main</code> to indicate a successful program completion.</p>
+
+<p>To compile your code, we’ll use a shorter version of the <code class="language-plaintext highlighter-rouge">gcc</code> command than usual (we don’t want it checking for nefarious things we’ll do later): <code class="language-plaintext highlighter-rouge">gcc -o lab2_struct lab2_struct.c</code>.</p>
+
+<p>Run your program (<code class="language-plaintext highlighter-rouge">./lab2_struct</code>). Does it print what you expect?</p>
+
+<h3 id="how-strings-print">How “strings” print</h3>
+<p>When <code class="language-plaintext highlighter-rouge">printf</code> finds a <code class="language-plaintext highlighter-rouge">%s</code> format specifier, it starts printing characters at the location provided, reading bytes one by one until it finds a null terminator (<code class="language-plaintext highlighter-rouge">'\0'</code>).</p>
+
+<ol>
+  <li>
+    <p>Take a moment and write out the memory diagram for this <code class="language-plaintext highlighter-rouge">struct</code>. Where are the bytes of <code class="language-plaintext highlighter-rouge">c</code> and <code class="language-plaintext highlighter-rouge">d</code> relative to each other?</p>
+  </li>
+  <li>
+    <p>Okay, let’s be nefarious. Add this line of code just before the return of <code class="language-plaintext highlighter-rouge">main</code>: <code class="language-plaintext highlighter-rouge">data.c[7] = '#';</code>.</p>
+  </li>
+  <li>
+    <p>Add another call to <code class="language-plaintext highlighter-rouge">print_data</code>. What has changed? Why does this happen?</p>
+  </li>
+</ol>
+
+<h3 id="copying-strings">Copying strings</h3>
+<p>One way to copy string data around is to use the <code class="language-plaintext highlighter-rouge">strcpy</code> function (you’ll need to import <code class="language-plaintext highlighter-rouge">&lt;string.h&gt;</code>). It blindly copies the <code class="language-plaintext highlighter-rouge">src</code> string into the <code class="language-plaintext highlighter-rouge">dst</code>, including the null terminator, regardless of the size of <code class="language-plaintext highlighter-rouge">dst</code>.</p>
+
+<p>There’s a variant called <code class="language-plaintext highlighter-rouge">strncpy</code> in which you have to specify the number of bytes to copy. This copies the provided <code class="language-plaintext highlighter-rouge">src</code> string; if you say to copy more bytes than <code class="language-plaintext highlighter-rouge">src</code> has before it hits a null terminator, it pads with 0s at the end (effectively null terminators).</p>
+
+<ol>
+  <li>
+    <p>Add another line to copy a new string into <code class="language-plaintext highlighter-rouge">c</code>: <code class="language-plaintext highlighter-rouge">strcpy(data.c, "Lulu");</code>.</p>
+  </li>
+  <li>
+    <p>Call <code class="language-plaintext highlighter-rouge">print_data</code>. Does the result make sense?</p>
+  </li>
+  <li>
+    <p>Now add another line: <code class="language-plaintext highlighter-rouge">strncpy(data.c, "weRsneaky", 9);</code>.</p>
+  </li>
+  <li>
+    <p>Call <code class="language-plaintext highlighter-rouge">print_data</code> one more time. Can you still make sense of the result?</p>
+  </li>
+  <li>
+    <p>All the documentation for C functions is available through your terminal. In the terminal, type <code class="language-plaintext highlighter-rouge">man strcpy</code> and read through the “DESCRIPTION” to see what is going on with <code class="language-plaintext highlighter-rouge">strcpy</code> and <code class="language-plaintext highlighter-rouge">strncpy</code>.</p>
+  </li>
+</ol>
+
+<h2 id="part-b-file-io">Part B: File I/O</h2>
+<h3 id="getting-started-1">Getting started</h3>
+<p>Take a look at the <code class="language-plaintext highlighter-rouge">line_counter.c</code> sample (remember you can find it linked from the Samples page on Moodle), and write down answers to the following questions:</p>
+
+<ol>
+  <li>What is EOF?</li>
+  <li>How are lines separated in a file?</li>
+  <li>How would you count the number of vowels instead of the number of lines? (At a high level, you don’t need to write the code if you don’t want to)</li>
+</ol>
+
+<h3 id="parsing-lines">Parsing lines</h3>
+<p>Modify the <code class="language-plaintext highlighter-rouge">line_counter.c</code> sample to additionally print out the first character of each line, both as a character (<code class="language-plaintext highlighter-rouge">%c</code>) and in hex (<code class="language-plaintext highlighter-rouge">%x</code>). Try out your changes on this simple text file (actually copy these lines, as one has a tab and another has a space, then save it in the same folder as <code class="language-plaintext highlighter-rouge">line_counter.c</code>):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Good morning!
+ 
+	
+How are you  
+  doing
+    today??
+</code></pre></div></div>
+
+<p>Submit your <code class="language-plaintext highlighter-rouge">lab2_struct.c</code>, <code class="language-plaintext highlighter-rouge">line_counter.c</code>, and answers to the questions on Moodle for an engagement credit.</p>
+
+<h3 id="more-practice">More practice</h3>
+<p>How would you modify the <code class="language-plaintext highlighter-rouge">line_counter.c</code> program further to print out the length of each line? What about the last character? Make sure to think carefully through your logic to ensure you’re handling the last line in the file, too.</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

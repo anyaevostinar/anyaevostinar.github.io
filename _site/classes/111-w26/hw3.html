@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW3 - Tic Tac Toe | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW3 - Tic Tac Toe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w26/hw3" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w26/hw3" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW3 - Tic Tac Toe" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW3 - Tic Tac Toe","url":"http://localhost:4000/classes/111-w26/hw3"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW3 - Tic Tac Toe</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>Due: Wednesday Jan 28th at 10pm</p>
+
+<p>You may work alone or with a partner, but you must type up the code yourself.  You may also discuss the assignment at a high level with other students.  You should list any student with whom you discussed each part, and the manner of discussion (high-level, partner, etc.) in a comment at the top of each file.  <strong>You should only have one partner for an entire assignment.</strong></p>
+
+<p>You should submit your assignment as a <code class="language-plaintext highlighter-rouge">tictactoe.py</code> file on Gradescope along with a <code class="language-plaintext highlighter-rouge">readme.txt</code>.</p>
+
+<p>As with all assignments in this course, for each file in this assignment, you are expected to provide top-level comments (lines that start with <code class="language-plaintext highlighter-rouge">#</code> at the top of the file) with your name and a collaboration statement.</p>
+
+<p><strong>You need a collaboration statement, even if just to say that you worked alone.</strong></p>
+
+<p><a href="https://gemini.google.com/gem/1t0dNJwdENFfwoegNCS2QXYX_vXP2BXBl?usp=sharing">Here is the Gemini Helper Bot</a> for Homework 3.</p>
+
+<hr />
+
+<h2 id="getting-started">Getting started:</h2>
+
+<p>You will do all of your work in a single file, <code class="language-plaintext highlighter-rouge">tictactoe.py</code>.  You should download <a href="/classes/111-w26/HW3Starter.zip">this starter code</a>, double-click to “unzip” it, and work within the resulting <code class="language-plaintext highlighter-rouge">HW3Starter</code> folder. The folder includes a “skeleton” of <code class="language-plaintext highlighter-rouge">tictactoe.py</code> as well as <code class="language-plaintext highlighter-rouge">graphics.py</code>.</p>
+
+<p><strong>You will only be filling in existing function declarations within <code class="language-plaintext highlighter-rouge">tictactoe.py</code>, though you are welcome to make additional smaller functions if you wish.</strong></p>
+
+<hr />
+
+<h2 id="goals">Goals</h2>
+
+<p>The primary goal for this assignment is to give you practice working with <code class="language-plaintext highlighter-rouge">if</code> statements and functions.  You will additionally get more practice working on bigger programs.</p>
+
+<hr />
+
+<h2 id="parts-of-this-assignment">Parts of this assignment:</h2>
+
+<p>Core:</p>
+<ul>
+  <li><a href="#part1">Part 1: Keeping track of game state</a></li>
+  <li><a href="#part2">Part 2: Placing pieces</a></li>
+</ul>
+
+<p>Advanced:</p>
+<ul>
+  <li><a href="#part3">Part 3: Checking for valid positions</a></li>
+  <li><a href="#part4">Part 4: Ending the game</a></li>
+</ul>
+
+<hr />
+
+<h2 id="assessment">Assessment</h2>
+<p>The <strong>core requirements</strong> are:</p>
+<ul>
+  <li>correct implementation of Part 1 (<code class="language-plaintext highlighter-rouge">get_cell_string</code>, <code class="language-plaintext highlighter-rouge">print_row</code>) and Part 2 (<code class="language-plaintext highlighter-rouge">draw_x</code>, <code class="language-plaintext highlighter-rouge">draw_o</code>)</li>
+  <li>Header with at least five lines that start with <code class="language-plaintext highlighter-rouge">#</code> for each file</li>
+  <li>Basic style that can be checked automatically (not complete!)</li>
+  <li>Collaboration statement at the top of each file (even if it just says that you worked alone)</li>
+  <li>A <code class="language-plaintext highlighter-rouge">readme.txt</code> that includes your reflection (detailed below)</li>
+</ul>
+
+<p>The <strong>advanced requirements</strong> are:</p>
+<ul>
+  <li>Satisfy the core requirements</li>
+  <li>correct implementation of Part 3 (<code class="language-plaintext highlighter-rouge">is_valid_grid_cell</code>, <code class="language-plaintext highlighter-rouge">update_board_state</code>) and Part 4 (<code class="language-plaintext highlighter-rouge">is_draw</code>, <code class="language-plaintext highlighter-rouge">did_player_win_with_row</code>, <code class="language-plaintext highlighter-rouge">did_player_win_with_column</code>, <code class="language-plaintext highlighter-rouge">did_player_win_with_diagonal</code>)</li>
+  <li>Descriptive headers for all files</li>
+  <li>Descriptive variable names that follow <code class="language-plaintext highlighter-rouge">snake_case</code></li>
+  <li>Good line grouping and spacing (i.e. use blank newlines to group your lines of code)</li>
+  <li>Make sure not to have code that computes the right answer by doing extra work (e.g., leaving a computation in a for loop when it could have occurred after the for loop, only once).</li>
+  <li>Comments should be used for anything complex, and typically for chunks of 3–5 lines of code, but not every line.</li>
+</ul>
+
+<hr />
+
+<h2 id="core">Core</h2>
+<h3 id="part-1-keeping-track-of-game-state-">Part 1: Keeping track of game state <a name="part1"></a></h3>
+
+<p>As you look through the code, note that anything with a <code class="language-plaintext highlighter-rouge"># TODO</code> is something you’ll need to complete.  If you have questions about how all of these functions work together, just ask!</p>
+
+<p>For this assignment, we will represent the 9 grid locations as a nested list, called <code class="language-plaintext highlighter-rouge">board_state</code>.  This list contains three lists, one for each row.  Each inner list contains three elements, one for each position within the row.  These elements are either 0 (no marker placed), 1 (player 1 placed an “x”), or 2 (player 2 placed an “o”).</p>
+
+<p>Here is an example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># A board where there is:
+#   - an "o" in the upper left grid cell,
+#   - an "x" and an "o" in the middle row, and
+#   - an "x" in the middle of the bottom row.
+</span><span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+</code></pre></div></div>
+
+<p>For this first part, you will implement the functions needed by the <code class="language-plaintext highlighter-rouge">print_board_state</code> function.<br />
+The <code class="language-plaintext highlighter-rouge">print_board_state</code> function is already written for you (feel free to look through it in the starter code). You should fill in the functions that it needs: <code class="language-plaintext highlighter-rouge">print_row</code> and <code class="language-plaintext highlighter-rouge">get_cell_string</code>.</p>
+
+<p><em>Note: For <code class="language-plaintext highlighter-rouge">print_row</code>, you should iterate through the list and generate the appropriate characters for each piece (or empty spot) with a <code class="language-plaintext highlighter-rouge">|</code> between each piece. There are multiple ways of achieving this that are reasonable. See below for an example of what the output should look like.</em></p>
+
+<p>You can test your functions using <code class="language-plaintext highlighter-rouge">test_print_board_state()</code>.  By default, this is the only code not commented-out in the <code class="language-plaintext highlighter-rouge">if __name__ == "__main__":</code> if statement, so it is all that will run.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="c1"># Part 1
+</span>    <span class="n">test_print_board_state</span><span class="p">()</span>
+
+    <span class="c1"># Part 2
+</span>    <span class="c1">#test_draw_player_marker()
+</span>
+    <span class="c1"># Part 3
+</span>    <span class="c1">#test_placing_valid_markers()
+</span>
+    <span class="c1"># Part 4
+</span>    <span class="c1"># play_game()
+</span></code></pre></div></div>
+
+<p>Here is the example testing results (your code should give the same output):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Testing get_cell_string(): passed
+
+Testing print_board_state() now.
+The board_state list is: [[2, 0, 0], [1, 2, 0], [0, 1, 0]]
+
+o| | 
+-----
+x|o| 
+-----
+ |x| 
+
+The expected board state is:
+
+o| | 
+-----
+x|o| 
+-----
+ |x| 
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="part-2-placing-pieces-">Part 2: Placing pieces <a name="part2"></a></h3>
+
+<p>For this next part, you will provide the functionality needed by the <code class="language-plaintext highlighter-rouge">draw_player_marker</code> function.
+This function draws a player marker in the grid cell <code class="language-plaintext highlighter-rouge">(grid_x, grid_y)</code>.  The <code class="language-plaintext highlighter-rouge">win</code> parameter is an instance of the <code class="language-plaintext highlighter-rouge">GraphWin</code> class, and <code class="language-plaintext highlighter-rouge">player</code> is either 1 or 2.</p>
+
+<p>To provide this functionality, you should fill in the two functions: <code class="language-plaintext highlighter-rouge">draw_x</code> and <code class="language-plaintext highlighter-rouge">draw_o</code>.</p>
+
+<ul>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">draw_o</code>, your code should draw an “o” in that cell. Note that the coordinate system has again been set to work more intuitively, so <code class="language-plaintext highlighter-rouge">grid_x</code> and <code class="language-plaintext highlighter-rouge">grid_y</code> will be already close to where you want to draw your “o”, you just need to decide on how to center your “o” in the square.</p>
+  </li>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">draw_x</code>, your code should draw an “x” in that cell.  Hint: <code class="language-plaintext highlighter-rouge">Line</code> will likely be helpful and again think about how to center your “x” in the square.</p>
+  </li>
+</ul>
+
+<p>You can test your code for this part using the <code class="language-plaintext highlighter-rouge">test_draw_player_marker</code> function.  Just comment-out the call to <code class="language-plaintext highlighter-rouge">test_print_board_state()</code> and comment-in the call to <code class="language-plaintext highlighter-rouge">test_draw_player_marker()</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="c1"># Part 1
+</span>    <span class="c1">#test_print_board_state()
+</span>
+    <span class="c1"># Part 2
+</span>    <span class="n">test_draw_player_marker</span><span class="p">()</span>
+
+    <span class="c1"># Part 3
+</span>    <span class="c1">#test_placing_valid_markers()
+</span>
+    <span class="c1"># Part 4
+</span>    <span class="c1"># play_game()
+</span></code></pre></div></div>
+
+<p>You should be able to place five markers within the grid.  Note that so far, there is no code to make sure that the user can’t place a marker in an occupied space – that comes later.</p>
+
+<p><img src="/classes/111-w26/hw3_part2_test.png" alt="image of tic tac toe board" width="800" /></p>
+
+<hr />
+
+<h2 id="advanced">Advanced</h2>
+
+<h3 id="part-3-checking-for-valid-positions-">Part 3: Checking for valid positions <a name="part3"></a></h3>
+
+<p>Your code from Part 2 just blindly drew player markers on the board, even if there was already a marker in a given position.  Now, you should fill in the <code class="language-plaintext highlighter-rouge">is_valid_grid_cell</code> and <code class="language-plaintext highlighter-rouge">update_board_state</code> functions.</p>
+
+<p><em>Note: <code class="language-plaintext highlighter-rouge">update_board_state</code> requires thinking about mutating lists, which is the material for Wednesday Jan 28th. I’m sorry for not catching that when I rearranged the order of topics, but remember that you can make that update during revisions if you need to.</em></p>
+
+<p>Once you have completed this implementation, you can test your code using the <code class="language-plaintext highlighter-rouge">test_placing_valid_markers</code> function.  This is very similar to the test function for Part 2, except that it waits until the user clicks a valid grid cell (by calling <code class="language-plaintext highlighter-rouge">is_valid_grid_cell</code>), and then updates the board state using <code class="language-plaintext highlighter-rouge">update_board_state</code> before printing out the board state (using <code class="language-plaintext highlighter-rouge">print_board_state</code>).</p>
+
+<hr />
+
+<h3 id="part-4-ending-the-game-">Part 4: Ending the game <a name="part4"></a></h3>
+
+<p>If you take a look at the function <code class="language-plaintext highlighter-rouge">play_game</code>, which does the actual game play, the main difference between it and the test functions for Parts 2–3 is that instead of only placing 5 pieces, it has a <code class="language-plaintext highlighter-rouge">while</code> loop that continues until the game is over.  For this last part, you’ll implement functions that check for the game to have ended.</p>
+
+<h4 id="part-a-its-a-draw">Part a: It’s a draw</h4>
+
+<p>The game ends in a draw when all grid positions are filled but no one has won.  For now, you don’t have code to check for a winner, but you can use <code class="language-plaintext highlighter-rouge">is_draw</code> to at least end the game loop.</p>
+
+<p>Implement the function <code class="language-plaintext highlighter-rouge">is_draw</code>.  This function should assume neither player has won, and thus only check if any grid position is not marked.</p>
+
+<p>You can use the actual <code class="language-plaintext highlighter-rouge">play_game</code> function to test this code.  By default, <code class="language-plaintext highlighter-rouge">did_player_win</code> always returns <code class="language-plaintext highlighter-rouge">False</code>, so for now the game should only end once nine markers have been placed (even if a player should have won).</p>
+
+<h4 id="part-b-checking-for-a-victory">Part b: Checking for a victory</h4>
+
+<p>The game ends when a player has markers in an entire row, column, or full diagonal.  This is checked in the function <code class="language-plaintext highlighter-rouge">did_player_win</code>, which uses three “helper” functions to do the actual checking.</p>
+
+<p>For this last sub-part, you should implement all of the helper functions needed to determine if a win condition has been met: <code class="language-plaintext highlighter-rouge">did_player_win_with_row</code>, <code class="language-plaintext highlighter-rouge">did_player_win_with_column</code>, and <code class="language-plaintext highlighter-rouge">did_player_win_with_diagonal</code>.</p>
+
+<p>Now if you test your code with the <code class="language-plaintext highlighter-rouge">play_game</code> function, it should end when there is a victory, and update the text label at the bottom of the window to say who won.</p>
+
+<hr />
+
+<h2 id="reflection">Reflection</h2>
+
+<p>Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?  Write a brief discussion (a sentence or two is fine) in your <code class="language-plaintext highlighter-rouge">readme.txt</code> file.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

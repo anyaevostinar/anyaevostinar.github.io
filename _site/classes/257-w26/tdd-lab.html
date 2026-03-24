@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Test-Driven Development | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Test-Driven Development" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-w26/tdd-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/257-w26/tdd-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Test-Driven Development" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Test-Driven Development","url":"http://localhost:4000/classes/257-w26/tdd-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Test-Driven Development</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goal">Goal</h2>
+<p>Engage in test-driven development with a simple example. For this lab, you are going to write some basic functions for reversing the words in a phrase, but you are going to write the tests first!</p>
+
+<h2 id="first-though">First Though</h2>
+
+<ol>
+  <li>
+    <p>If you haven’t finished the Git setup from the <a href="lab-git">previous lab</a>, go do that.</p>
+  </li>
+  <li>
+    <p>Remember to activate your <a href="venv-guide">virtual environment</a> for this class:</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.venvs/cs257_venv/bin/activate
+</code></pre></div></div>
+
+<h2 id="step-1-a-first-failing-test">Step 1: A First Failing Test</h2>
+<p>a. Accept the assignment by clicking on the <code class="language-plaintext highlighter-rouge">TDD Lab Classroom Link</code> on Moodle and clone down the repository.</p>
+
+<p>b. In TDD, you always want to start with a failing test. I’ve included the start of your test class for you in <code class="language-plaintext highlighter-rouge">test_production.py</code>. Your first goal is to eventually have a function <code class="language-plaintext highlighter-rouge">reverse_word</code> that takes a word and returns it reversed. However, you are going to write the test first. Recall that your tests should be structured like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">MyFirstTests</span><span class="p">(</span><span class="n">unittest</span><span class="p">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">test_custom_num_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1">#method name must start with test
+</span>            <span class="bp">self</span><span class="p">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="nb">len</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]),</span> <span class="mi">3</span><span class="p">)</span> <span class="c1">#you should probably test something more interesting than len
+</span></code></pre></div></div>
+
+<p><strong>Write at least three tests in <code class="language-plaintext highlighter-rouge">test_production.py</code> in the <code class="language-plaintext highlighter-rouge">TestReverseWord</code> class.</strong> Remember, you know exactly what a reverse word function should do, so you can definitely write the tests even though you haven’t written the production code. (Hint, if I give it “hello”, it should return “olleh”.)</p>
+
+<p>To run your tests:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">unittest</span> <span class="n">discover</span> <span class="n">Tests</span>
+</code></pre></div></div>
+
+<p>c. Verify that your tests fail because your function isn’t doing what it should do. Excellent, you are now at the “red” stage and can be confident that your tests are actually testing the code. You also have perfect clarity on what your production code should do.</p>
+
+<h2 id="step-2-passing-that-test">Step 2: Passing that test</h2>
+<p>Now you can finally write the code to implement <code class="language-plaintext highlighter-rouge">reverse_word</code> in <code class="language-plaintext highlighter-rouge">production.py</code>. There are lots of ways of doing this and this is a place where it’s okay to ask your favorite gen AI for its suggestion; you’ll be able to check if it is correct! Or brush up on your Python by implementing it yourself.</p>
+
+<p>Verify that your tests are now passing!</p>
+
+<h2 id="step-3-repeat">Step 3: Repeat</h2>
+<p>It would normally be good to have some edge case tests as well, though it’s a little tricky to think of edge cases for this function, perhaps the empty string?</p>
+
+<p>In any case, you can move on to a new test class, <code class="language-plaintext highlighter-rouge">TestReverseAllWords</code> that includes tests for <code class="language-plaintext highlighter-rouge">reverse_all_words(phrase)</code>, which should take a phrase and return the reverse of each word in the phrase, but leave them in the correct order, i.e. “this is a test” becomes “siht si a tset”.</p>
+
+<p>Remember to make sure the tests fail, then write the production code, then verify that they pass.</p>
+
+<h2 id="step-4-command-line-testing">Step 4: Command-line testing</h2>
+<p>You’ll also need to test command-line functionality for multiple deliverables.
+Testing command-line functionality is a bit trickier than at the function level, though you basically can just treat <code class="language-plaintext highlighter-rouge">main</code> like a function. (Note that these snippets are outside of a function for brevity, you should put the code in a better location!)</p>
+
+<p>Your goal is to allow the user to enter a phrase at the command line and then print out the phrase in the correct order but with the words reversed.</p>
+
+<p>a. It turns out, you can change the value of <code class="language-plaintext highlighter-rouge">sys.argv</code> directly:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="p">.</span><span class="n">argv</span> <span class="o">=</span> <span class="p">[</span><span class="s">'production.py'</span><span class="p">,</span> <span class="s">'this is a test'</span><span class="p">]</span> <span class="c1">#setting the command-line argument "this is a test"
+</span></code></pre></div></div>
+
+<p>b. Checking what is printed is a little bit more difficult, but not much. You just change where <code class="language-plaintext highlighter-rouge">sys.stdout</code> goes so that you can grab the results:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="n">sys</span><span class="p">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span> <span class="c1">#make a StringIO object and have sys.stdout point to it instead of the usual spot
+</span>
+<span class="n">printed_output</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdout</span><span class="p">.</span><span class="n">getvalue</span><span class="p">()</span> <span class="c1">#I can get what is printed as a normal string!
+</span></code></pre></div></div>
+
+<p>c. You then can compare <code class="language-plaintext highlighter-rouge">printed_output</code> to whatever you think should be printed. (Note you should call <code class="language-plaintext highlighter-rouge">main</code> first, which you can call like any other function.) You should NOT use your <code class="language-plaintext highlighter-rouge">reverse_all_words</code> function to check against what is printed, why do you think that is?</p>
+
+<h2 id="step-5-coverage-checking">Step 5: Coverage checking</h2>
+<p>When you are writing tests, you want to make sure that you have tests for all lines and scenarios of your code. One tool for making sure you at least execute each line of code (the bare minimum check) is “coverage”. Python has a module for automatically checking <a href="https://coverage.readthedocs.io/en/7.7.1/">coverage</a>, which you hopefully already have installed.</p>
+
+<p>a. You run your tests with coverage, so first run this command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> coverage run <span class="nt">--source</span> production <span class="nt">-m</span> unittest discover Tests
+</code></pre></div></div>
+
+<p>Note that it is <code class="language-plaintext highlighter-rouge">production</code> not <code class="language-plaintext highlighter-rouge">production.py</code>, but if it was a folder, it would be <code class="language-plaintext highlighter-rouge">ProductionCode</code>.</p>
+
+<p>This runs the tests while collecting coverage data, so it will just tell you that the tests passed as usual.</p>
+
+<p>b. To see the coverage data:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> coverage report <span class="nt">-m</span>
+</code></pre></div></div>
+
+<p>This will tell you what percentage of lines of the file were called during the tests and which lines weren’t called. You should aim for 100% coverage in this lab.</p>
+
+<h2 id="step-6-push-to-classroom">Step 6: Push to Classroom</h2>
+
+<p>You should now (if you hadn’t already) push your code to the remote repository. I have it set up to automatically run your tests, check style, and check coverage, just like it will for the deliverables. Make sure that you understand the results that you are getting and check out the <a href="/classes/257-s25/test-guide">GitHub Tests</a> and <a href="/classes/257-s25/pr-guide">PR</a> guides.</p>
+
+<h2 id="start-on-id1">Start on ID1</h2>
+<p>You are now all set to start on <a href="project-1-ind">Individual Deliverable 1 - Tests</a></p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

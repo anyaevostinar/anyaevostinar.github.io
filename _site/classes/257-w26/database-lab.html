@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SQL and Database Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="SQL and Database Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-w26/database-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/257-w26/database-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SQL and Database Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"SQL and Database Lab","url":"http://localhost:4000/classes/257-w26/database-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">SQL and Database Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="objectives">Objectives</h2>
+<ul>
+  <li>Become familiar with SQL statements and syntax.</li>
+  <li>Become familiar with the postgresql database and with <code class="language-plaintext highlighter-rouge">psql</code> commands.</li>
+  <li>Learn how to set up and test your own database tables on the web server.</li>
+  <li>Set up your database for your <a href="project-3-ind">individual back-end deliverable</a>.</li>
+</ul>
+
+<h2 id="contents">Contents</h2>
+<ul>
+  <li><a href="#working-with-stearns-server">Working with <code class="language-plaintext highlighter-rouge">stearns</code></a></li>
+  <li><a href="#working-in-your-database">Working in your database</a></li>
+  <li><a href="#larger-dataset">Larger dataset</a></li>
+  <li><a href="#multiple-tables">Multiple tables</a></li>
+  <li><a href="#starting-on-id3">Starting on ID3</a></li>
+</ul>
+
+<h2 id="working-with-stearns-server">Working with <code class="language-plaintext highlighter-rouge">stearns</code> server</h2>
+<p>First, we’ll make sure that you can connect to the remote server.</p>
+
+<p>You will ultimately be working on the <code class="language-plaintext highlighter-rouge">stearns</code> server, but to connect to <code class="language-plaintext highlighter-rouge">stearns</code>, you need to go through a gateway server called <code class="language-plaintext highlighter-rouge">fern</code> via your web browser. (If you are used to using VSCode to connect to servers, sorry, you can’t anymore because VSCode ultimately crashes the server due to a bug.)</p>
+
+<h3 id="step-1-connect-to-fern">Step 1: Connect to <code class="language-plaintext highlighter-rouge">fern</code></h3>
+
+<p>(If you get stuck, there are screenshots in <a href="https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=168271">this guide</a>.)</p>
+
+<p><strong>Go</strong> to <a href="https://fern.mathcs.carleton.edu/jupyter/hub/login">https://fern.mathcs.carleton.edu/jupyter/hub/login</a> and log in with your Carleton credentials</p>
+
+<p><code class="language-plaintext highlighter-rouge">fern</code> shares a filesystem with all the other servers and so you’ll possibly see things from previous classes and anything you do on <code class="language-plaintext highlighter-rouge">fern</code> will also show up on <code class="language-plaintext highlighter-rouge">stearns</code>.</p>
+
+<h3 id="step-2-set-up-your-working-space-on-the-file-system">Step 2: Set up your working space on the file system</h3>
+
+<ul>
+  <li>
+    <p><strong>Open a <code class="language-plaintext highlighter-rouge">Terminal</code></strong> by clicking the icon with a $ sign and a black box.</p>
+  </li>
+  <li>
+    <p><strong>Set up a long-term working directory named cs257:</strong> In that terminal, create a folder named <code class="language-plaintext highlighter-rouge">cs257</code>, where you will do your work for the term:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">mkdir </span>cs257
+</code></pre></div>    </div>
+
+    <p>If you type the command <code class="language-plaintext highlighter-rouge">ls</code> in the terminal after that (and then hit enter/return), you’ll see the new folder listed. You can also look at the file explorer, and the folder should show up there, too.</p>
+  </li>
+</ul>
+
+<h3 id="step-3-log-in-to-stearns">Step 3: Log in to <code class="language-plaintext highlighter-rouge">stearns</code></h3>
+
+<p>In the Terminal, type (change to your Carleton username)</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh YOUR_USER_NAME@stearns.mathcs.carleton.edu
+</code></pre></div></div>
+
+<p>and then your <strong>Carleton</strong> password. This is where you will be running your code going forward.</p>
+
+<h3 id="step-4-getting-set-up">Step 4: Getting set up</h3>
+<p>Accept the Database Lab Git Classroom assignment through Moodle and clone the starter repository onto <code class="language-plaintext highlighter-rouge">stearns</code> as you usually do. You will need to <strong>enter the PAT that you made at the start of class for your password</strong>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="o">[</span>URL of repository]
+</code></pre></div></div>
+
+<p>In this starter repository I’ve included the <code class="language-plaintext highlighter-rouge">Pokemon.csv</code> dataset along with a smaller section of it (<code class="language-plaintext highlighter-rouge">Pokemon_small.csv</code>) for you to work with initially. It is a good idea to always work with a subset of your data at first as you are figuring things out!</p>
+
+<p><strong>Make sure to <code class="language-plaintext highlighter-rouge">cd</code> into your git repository at this point.</strong></p>
+
+<h2 id="working-in-your-database">Working in your database</h2>
+<p>You’re now ready to create the first table in your database. In this class you’ll have both an individual database and a team database. Today, you’ll be creating a practice table about Pokemon in your individual database.</p>
+
+<p><span style="color:blue">The name of your <strong>individual database</strong> is the same as your username. The password you can find in the feedback on the ‘assignment’ Individual Database information on Moodle for today’s class.</span></p>
+
+<h3 id="step-1-creating-a-table">Step 1: Creating a table</h3>
+<p>In this part of the lab, we’ll be interacting directly with the database via <code class="language-plaintext highlighter-rouge">psql</code>. This <a href="https://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf">cheatsheet</a> contains all of the psql commands in case you want to explore more later.</p>
+
+<ol>
+  <li>
+    <p>Open the file <code class="language-plaintext highlighter-rouge">Pokemon_small.csv</code> and note how many columns it has, what types they should be, and what good names for them would be.</p>
+  </li>
+  <li>Type <code class="language-plaintext highlighter-rouge">psql</code> (and Enter) to enter the “interpreter”. You will need to enter your database password if prompted. (Sometimes you aren’t prompted for it, which is fine, and I have yet to figure out when you will or won’t be, so good to be prepared…) You will now be in your individual database, which has the same name as your user name, for example my prompt looks like this:
+    <pre><code class="language-psql">  vostinar=&gt; 
+</code></pre>
+    <p>(Note the <code class="language-plaintext highlighter-rouge">=&gt;</code>, which means its ready for a new prompt. If you ever see <code class="language-plaintext highlighter-rouge">-&gt;</code>, a prompt is still in progress and you might have forgotten a <code class="language-plaintext highlighter-rouge">;</code>.)</p>
+  </li>
+  <li>You will write a series of SQL statements into a file to create the table and then run the file. (You could write these directly in the interpreter, but it would be inconvinient if you wanted to change something.) Open the file <code class="language-plaintext highlighter-rouge">createtable.sql</code> and complete it based on the columns of <code class="language-plaintext highlighter-rouge">Pokemon_small.csv</code>. Here is what it starts with:
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">pokemon</span><span class="p">;</span> <span class="c1">--Remove the table if it already exists--</span>
+  <span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">pokemon</span> <span class="p">(</span> <span class="c1">--Create the table--</span>
+ <span class="c1">--Define the columns--</span>
+ <span class="n">number</span> <span class="nb">INTEGER</span><span class="p">,</span>
+ <span class="c1">--Your code here--</span>
+  <span class="p">);</span>
+</code></pre></div>    </div>
+    <p>You can refer to the <a href="https://sqlbolt.com/lesson/creating_tables">prep reading</a> to refresh on <code class="language-plaintext highlighter-rouge">CREATE TABLE</code>, though we’re using a simpler setup to start.</p>
+  </li>
+  <li>In the <code class="language-plaintext highlighter-rouge">psql</code> interpreter run the command:
+    <pre><code class="language-psql">  \i createtable.sql
+</code></pre>
+    <p>You’re successful if you see:</p>
+    <pre><code class="language-psql">  NOTICE:  table "pokemon" does not exist, skipping
+  DROP TABLE
+  CREATE TABLE
+</code></pre>
+  </li>
+  <li>Type <code class="language-plaintext highlighter-rouge">\dt</code> at the prompt to make sure you see your table in the database:
+    <pre><code class="language-psql">                   List of relations
+  Schema |            Name            | Type  |  Owner   
+  --------+----------------------------+-------+----------
+  public | pokemon                    | table | your_user_name
+</code></pre>
+  </li>
+  <li>At the prompt, run the copy command to load the data from <code class="language-plaintext highlighter-rouge">Pokemon_small.csv</code> into the table <code class="language-plaintext highlighter-rouge">pokemon</code>:
+    <pre><code class="language-psql">  \copy pokemon FROM 'Pokemon_small.csv' CSV HEADER
+</code></pre>
+    <p>This command is also specifying that the file is a CSV with a header line (which shouldn’t be loaded into the data).
+  (Note that unlike SQL queries, \copy does not require a semicolon at the end of the statement.)
+  You should then see:</p>
+    <pre><code class="language-psql">  COPY 14
+</code></pre>
+    <p>which is how many lines were in the data file.</p>
+  </li>
+  <li>Let’s test to see if it worked. Type the necessary SQL query statement at the prompt to just get all the data and make sure that you see data about the first 10 Pokemon, like so:
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">number</span> <span class="o">|</span>           <span class="n">name</span>            <span class="o">|</span> <span class="k">type</span>  
+  <span class="c1">--------+---------------------------+-------</span>
+     <span class="mi">1</span> <span class="o">|</span> <span class="n">Bulbasaur</span>                 <span class="o">|</span> <span class="n">Grass</span>
+     <span class="mi">2</span> <span class="o">|</span> <span class="n">Ivysaur</span>                   <span class="o">|</span> <span class="n">Grass</span>
+     <span class="mi">3</span> <span class="o">|</span> <span class="n">Venusaur</span>                  <span class="o">|</span> <span class="n">Grass</span>
+     <span class="mi">3</span> <span class="o">|</span> <span class="n">VenusaurMega</span> <span class="n">Venusaur</span>     <span class="o">|</span> <span class="n">Grass</span>
+     <span class="mi">4</span> <span class="o">|</span> <span class="n">Charmander</span>                <span class="o">|</span> <span class="n">Fire</span>
+     <span class="mi">5</span> <span class="o">|</span> <span class="n">Charmeleon</span>                <span class="o">|</span> <span class="n">Fire</span>
+     <span class="mi">6</span> <span class="o">|</span> <span class="n">Charizard</span>                 <span class="o">|</span> <span class="n">Fire</span>
+     <span class="mi">6</span> <span class="o">|</span> <span class="n">CharizardMega</span> <span class="n">Charizard</span> <span class="n">X</span> <span class="o">|</span> <span class="n">Fire</span>
+     <span class="mi">6</span> <span class="o">|</span> <span class="n">CharizardMega</span> <span class="n">Charizard</span> <span class="n">Y</span> <span class="o">|</span> <span class="n">Fire</span>
+     <span class="mi">7</span> <span class="o">|</span> <span class="n">Squirtle</span>                  <span class="o">|</span> <span class="n">Water</span>
+     <span class="mi">8</span> <span class="o">|</span> <span class="n">Wartortle</span>                 <span class="o">|</span> <span class="n">Water</span>
+     <span class="mi">9</span> <span class="o">|</span> <span class="n">Blastoise</span>                 <span class="o">|</span> <span class="n">Water</span>
+     <span class="mi">9</span> <span class="o">|</span> <span class="n">BlastoiseMega</span> <span class="n">Blastoise</span>   <span class="o">|</span> <span class="n">Water</span>
+   <span class="mi">10</span> <span class="o">|</span> <span class="n">Caterpie</span>                  <span class="o">|</span> <span class="n">Bug</span>
+  <span class="p">(</span><span class="mi">14</span> <span class="k">rows</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="larger-dataset">Larger Dataset</h2>
+<p>You’ve now gone through the process with a small dataset, great! The next step is to do it with a larger “real” dataset, <code class="language-plaintext highlighter-rouge">Pokemon.csv</code>.</p>
+
+<h3 id="loading-in-full-dataset">Loading in full dataset</h3>
+<p>Go through the same process, but now with something closer to your project datasets:</p>
+
+<ol>
+  <li>
+    <p>Check <code class="language-plaintext highlighter-rouge">Pokemon.csv</code> to see what columns it has and think about what good column names and types would be. You can consult the <a href="https://www.postgresql.org/docs/current/datatype.html">Postgres Types documentation</a> to see what the options are.</p>
+  </li>
+  <li>
+    <p>Update your <code class="language-plaintext highlighter-rouge">createtable.sql</code> to work with the full dataset.</p>
+  </li>
+  <li>Run your <code class="language-plaintext highlighter-rouge">createtable.sql</code> script again to recreate your table.
+  Note that you can run <code class="language-plaintext highlighter-rouge">createtable.sql</code> from within <code class="language-plaintext highlighter-rouge">psql</code> with:
+    <pre><code class="language-psql">  \i createtable.sql
+</code></pre>
+  </li>
+  <li>Run an updated <code class="language-plaintext highlighter-rouge">\copy</code> command to load in the full dataset, which is 800 lines.</li>
+</ol>
+
+<h3 id="practicing-sql-with-full-dataset">Practicing SQL with full dataset</h3>
+<p>Try writing single SQL queries to accomplish the following (remember to lean on your team and reference the <a href="intro-database-prep">prep readings</a> if you aren’t sure where to start):</p>
+<ul>
+  <li>Find all the Legendary Pokemon that are water types. Include both their types in your output:
+    <pre><code class="language-psql">        name         | type_1 | type_2 
+---------------------+--------+--------
+Suicune             | Water  | 
+Kyogre              | Water  | 
+KyogrePrimal Kyogre | Water  | 
+Palkia              | Water  | Dragon
+Volcanion           | Fire   | Water
+(5 rows)
+</code></pre>
+  </li>
+  <li>Find all the Pokemon with HP less than or equal to 10 (there are two).</li>
+  <li>Find the 10 fire Pokemon with the highest special attack (remember to check both types). Make sure to order them highest to lowest.</li>
+  <li>Explore the <a href="https://sqlbolt.com/lesson/select_queries_with_aggregates">aggregate functions</a> to find the average <code class="language-plaintext highlighter-rouge">hp</code> of each Type 1 group. Try to order by the average hp from greatest to least.</li>
+</ul>
+
+<h2 id="multiple-tables">Multiple Tables</h2>
+<p>It’s time to practice working with multiple tables in a single database. For both <code class="language-plaintext highlighter-rouge">Teams.csv</code> and <code class="language-plaintext highlighter-rouge">Trainers.csv</code>, go through the same steps to load the data into tables:</p>
+<ol>
+  <li>Check what columns they have.</li>
+  <li>Update <code class="language-plaintext highlighter-rouge">createtable.sql</code> to create three tables.</li>
+  <li>Rerun your <code class="language-plaintext highlighter-rouge">createtable.sql</code> script.</li>
+  <li>Run three <code class="language-plaintext highlighter-rouge">\copy</code> commands to load in all the data.</li>
+</ol>
+
+<h3 id="practicing-inner-join">Practicing INNER JOIN</h3>
+<p>Let’s do your first inner join by finding the Pokemon that are on each trainers’ team. Here is how to think through constructing this query. Remember the overall structure of an inner join query is:</p>
+
+<pre><code class="language-psql">SELECT &lt;columns you want&gt; FROM &lt;table 1&gt; INNER JOIN &lt;table 2&gt; ON &lt;table 1&gt;.&lt;col1&gt; = &lt;table 2&gt;.&lt;col2&gt;;
+</code></pre>
+
+<p>Here’s how to think it through:</p>
+<ol>
+  <li>What column data do you want showing in your final result? The Pokemon names from the <code class="language-plaintext highlighter-rouge">teams</code> table and the trainer names from the <code class="language-plaintext highlighter-rouge">trainers</code> table, so you use those for your <code class="language-plaintext highlighter-rouge">SELECT</code> clause.</li>
+  <li>You want data from both the <code class="language-plaintext highlighter-rouge">teams</code> and <code class="language-plaintext highlighter-rouge">trainers</code> tables, so you use one in your <code class="language-plaintext highlighter-rouge">FROM</code> clause and one in your <code class="language-plaintext highlighter-rouge">INNER JOIN</code> clause (it doesn’t matter which goes where for inner join).</li>
+  <li>Which column has the connecting data? The <code class="language-plaintext highlighter-rouge">teams</code> table has a trainer id and the <code class="language-plaintext highlighter-rouge">trainers</code> table has an id, so that is your connection for your <code class="language-plaintext highlighter-rouge">ON</code> subclause.</li>
+</ol>
+
+<p>Here are the results that you should get:</p>
+<pre><code class="language-psql">--------------+----------------
+ Pikachu      | Ash Ketchum
+ Charizard    | Ash Ketchum
+ Bulbasaur    | Ash Ketchum
+ Staryu       | Misty
+ Starmie      | Misty
+ Onix         | Brock
+ Geodude      | Brock
+ Garchomp     | Cynthia
+ Lucario      | Cynthia
+ Rattata      | Youngster Joey
+ Pidgeot      | Blue
+ Alakazam     | Blue
+ Rhydon       | Blue
+ Arcanine     | Blue
+ Exeggutor    | Blue
+ Blastoise    | Blue
+(16 rows)
+</code></pre>
+
+<p>There is so much that you can find out now, so feel free to try things out! Here are some ideas to start you off:</p>
+<ul>
+  <li>Find the average and max level of the Pokemon on each trainers’ team(be sure to include the trainer’s name in your output).</li>
+  <li>Find all of “Ash Ketchum”’s Pokemon.</li>
+  <li>Find the average total of each trainers’ team ordered from largest to smallest (you’ll need two inner joins for this one).</li>
+  <li>Find all of the types of Pokemon that each trainer uses (you can get fancy by using the <a href="https://www.postgresql.org/docs/9.4/functions-aggregate.html"><code class="language-plaintext highlighter-rouge">string_agg</code> function</a> to have this display more nicely).</li>
+  <li>Find out if any trainers have legendary or “Mega” Pokemon.</li>
+  <li>Find out which trainers didn’t give one or more of their Pokemon nicknames, sad!</li>
+</ul>
+
+<h2 id="submission">Submission</h2>
+<p>Include your queries from the previous sections in the file <code class="language-plaintext highlighter-rouge">examples.sql</code> and push your changed files to the lab repository to complete this lab.</p>
+
+<h2 id="starting-on-id3">Starting on ID3</h2>
+<p>Once you finish the lab, you should start going through the same steps for ID3:</p>
+<ul>
+  <li>Identify a <em>small</em> subset of your team’s data and copy it into a new <code class="language-plaintext highlighter-rouge">.csv</code> file in your ID3 repository.</li>
+  <li>Create a <code class="language-plaintext highlighter-rouge">createtable.sql</code> file to create a table for your small dataset.</li>
+  <li>Determine the <code class="language-plaintext highlighter-rouge">\copy</code> command needed to load the data into the table and place that in the <code class="language-plaintext highlighter-rouge">README.md</code> of the repository.</li>
+</ul>
+
+<p>We’ll discuss on Wednesday how to do the rest of ID3. For now, practice your SQL more by testing out queries that will grab the necessary data from your database:</p>
+
+<ol>
+  <li>Identify a simple query that your users might want to do on your data, for example one of your core functions from your team project, or the data route that you chose for your flask deliverable.</li>
+  <li>Can it be boiled down to a single SQL statement? If not, break the query down into simpler parts.</li>
+  <li>Construct the SQL statement (or part of it, if you had to break your original query into smaller parts).</li>
+  <li>Run the query and see what results you get back.</li>
+  <li>If you didn’t get the expected results, or you got an error, fix the query and try again.</li>
+  <li>Repeat with other potential queries. Make your queries more complex as you gain confidence.</li>
+</ol>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

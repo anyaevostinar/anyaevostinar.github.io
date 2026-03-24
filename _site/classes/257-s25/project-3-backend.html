@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Project Component 3 - Database Backend | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Project Component 3 - Database Backend" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-s25/project-3-backend" />
+<meta property="og:url" content="http://localhost:4000/classes/257-s25/project-3-backend" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Project Component 3 - Database Backend" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Project Component 3 - Database Backend","url":"http://localhost:4000/classes/257-s25/project-3-backend"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Project Component 3 - Database Backend</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="overview">Overview</h2>
+
+<p>The goal of this component of your project is to add the database back-end component to your Flask app.</p>
+
+<p>The learning objectives for this component of your project are to be able to 1) create a well-structured database, 2) connect that database appropriately to your Flask app controller, and 3) continue to create code that follows the principles of good design.</p>
+
+<h2 id="collaboration">Collaboration</h2>
+
+<p>You should work with your team on this portion of the project.
+You are able to get help from outside sources, as specified in the syllabus, but everything that your team submits should be your own.</p>
+
+<h2 id="due-date">Due Date</h2>
+
+<p>This component of the project is due Wednesday May 7th at 10pm on GitHub.</p>
+
+<h2 id="what-to-submit">What to submit</h2>
+<h3 id="individual">Individual</h3>
+<ul>
+  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc-BRKK_0TJzMYL_DTiJElwL216B8CRkHcchna5jzh3P-6QGg/viewform?usp=dialog">Sprint Feedback Form</a></li>
+</ul>
+
+<h3 id="team">Team</h3>
+<ul>
+  <li>Dataset in database on <code class="language-plaintext highlighter-rouge">stearns</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ProductionCode</code> updated to work with database</li>
+  <li><code class="language-plaintext highlighter-rouge">cl.py</code>, <code class="language-plaintext highlighter-rouge">app.py</code>, <code class="language-plaintext highlighter-rouge">Tests</code> still functional and updated if necessary</li>
+</ul>
+
+<h2 id="your-task">Your Task</h2>
+
+<p>Your team should create a Postgres database back-end for your Flask app using the <a href="https://www.psycopg.org/docs/index.html">psycopg2</a> module. Specifically, you should:</p>
+<ul>
+  <li>Put your data into a well-structured database named based on your team name on <code class="language-plaintext highlighter-rouge">stearns</code> (as specified on Moodle)</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">psycopg2</code> to connect your existing functionality to the database and update your code to make appropriate queries on the database</li>
+  <li>Update your test suite if necessary based on the refactoring that you do on your code</li>
+</ul>
+
+<p>The grader will assess your project with the following workflow:</p>
+<ul>
+  <li>Connect to <code class="language-plaintext highlighter-rouge">stearns</code></li>
+  <li>Pull down your repository from the appropriate tag</li>
+  <li>Create the <code class="language-plaintext highlighter-rouge">psql_config.py</code> file with your team database name and information</li>
+  <li>Run your Flask app <code class="language-plaintext highlighter-rouge">app.py</code></li>
+  <li>Run your test suite</li>
+  <li>Look at your code</li>
+</ul>
+
+<p>You should be building off of your existing code and focusing mostly on the database component, though you may find that you need to update some of your core functionality to work with your data in the format that you want now. Remember to then adjust your tests too!</p>
+
+<h2 id="turning-it-in">Turning it in</h2>
+
+<p>Your team should submit this component of the project on your team repo with the tag <code class="language-plaintext highlighter-rouge">database</code> by typing the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag -a database -m "back-end Flask app"
+git push origin database
+</code></pre></div></div>
+
+<h2 id="evaluation">Evaluation</h2>
+
+<p>The criteria for “Proficiency” and “Exemplary” are below.</p>
+
+<h3 id="proficiency">Proficiency</h3>
+<ul>
+  <li>Files:
+    <ul>
+      <li>Database is in your team’s database on <code class="language-plaintext highlighter-rouge">stearns</code></li>
+      <li>Code is written to work for your team’s database name as specified on Moodle</li>
+      <li>Flask app file named <code class="language-plaintext highlighter-rouge">app.py</code></li>
+    </ul>
+  </li>
+  <li>Functionality:
+    <ul>
+      <li>Command line interface works with the new database</li>
+      <li>Flask app interface works with the new database</li>
+      <li>Executes queries for standard cases correctly</li>
+      <li>The automated test suite passes (no additional tests are required) and has 50% coverage</li>
+      <li>SQL data types match the types from the original dataset and/or are appropriate for the modified data from the dataset</li>
+    </ul>
+  </li>
+  <li>Design:
+    <ul>
+      <li>Good separation of responsibilities. Some minor tweaks to class design could improve the code (i.e., tighter cohesion and/or looser coupling).</li>
+      <li>Model-view-controller paradigm followed.</li>
+      <li>Functions/methods follow the principles of good design (e.g. descriptive names, only necessary arguments)</li>
+      <li>Function/method signatures match the SQL queries (i.e. get_events_by_type() correspond to a SQL query that selects all events of that type)</li>
+      <li>Column names strongly signify the data they contain (e.g. clear names, no obscure acronyms)</li>
+      <li>Docstrings for each method</li>
+      <li>Style checks all at 5 or higher</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="exemplary">Exemplary</h3>
+<ul>
+  <li>All the Proficiency criteria are met</li>
+  <li>The commit to evaluate on the team repo is tagged with <code class="language-plaintext highlighter-rouge">database</code> (See instructions in <a href="https://docs.google.com/document/d/1WJfFKe-xE7ytKzmMba3vMOORZe6_m-0v854SnAb6mWk/edit?tab=t.0#heading=h.h8jfjcdyduzb">How to Submit</a>)</li>
+  <li>Functionality:
+    <ul>
+      <li>Failing queries have helpful error messages</li>
+      <li>Data is well-curated from the original dataset, with no extraneous data
+        <ul>
+          <li>By “extraneous data”, we mean data that won’t be used for the final project website.</li>
+          <li>If you have columns that aren’t being used in this deliverable but have plans to be used in the front-end deliverable, let us know in <code class="language-plaintext highlighter-rouge">README.md</code></li>
+        </ul>
+      </li>
+      <li>Data types are well-chosen for the dataset</li>
+      <li>The test coverage is at 90% or higher</li>
+    </ul>
+  </li>
+  <li>Design:
+    <ul>
+      <li>Strong separation of responsibilities between classes, and between methods within classes.</li>
+      <li>Tight cohesion in each class, and loose coupling between classes.</li>
+      <li>Design of individual methods is strong (parameters, return values, responsibilities).</li>
+      <li>There is a strong connection between the method signatures and the high-level actions of the website audience (which in turn strongly match the queries).</li>
+      <li>Only necessary data is pulled from the database</li>
+      <li>This means that the filtering should be done with SQL query logic, not Python</li>
+      <li>Column names strongly signify the data they contain</li>
+      <li>Docstrings are clear and consistent for each method</li>
+      <li>Style checks are all at 10</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="addendums">Addendums</h2>
+<p>You weren’t penalized for this on the initial submissions, but revisions need to hold to it:</p>
+<ul>
+  <li>You need to remove your old code that references your data files (in general, you should always remove “dead code” that isn’t used anymore)</li>
+</ul>
+
+<h2 id="qa">Q&amp;A</h2>
+
+<ul>
+  <li>How do I get the names of the columns?</li>
+</ul>
+
+<p>You can get the names of the columns with this command:</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">column_name</span> <span class="k">from</span> <span class="n">INFORMATION_SCHEMA</span><span class="p">.</span><span class="n">COLUMNS</span> <span class="k">where</span> <span class="k">table_name</span> <span class="o">=</span> <span class="s1">'YOUR_TABLE_NAME_HERE'</span><span class="p">;</span>
+</code></pre></div></div>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

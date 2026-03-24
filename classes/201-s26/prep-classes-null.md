@@ -5,10 +5,11 @@ permalink: /classes/201-f25/classes-null-prep
 ---
 
 ## Overview
-Now that you’ve learned some basics syntax and semantics in Kotlin, let’s start learning how to write classes in Kotlin, as well as a concept called “null safety”, which may be new to you if you’re coming from Python or Java.
+Now that you’ve learned some basics syntax and semantics in Kotlin, let’s start learning how to write classes in Kotlin, why you would even want to, as well as a concept called “null safety”, which may be new to you if you’re coming from Python or Java.
 
 ## Basic Learning Objectives
 Before class, you should be able to:
+* Explain the difference between an ADT and a data structure
 * Describe how to write classes in Kotlin
 * Describe at a high level the concept of null safety in Kotlin
 
@@ -18,11 +19,12 @@ After class, you should be able to:
 * Explain and apply null safety when programming in Kotlin
 
 ## Readings
-To achieve the pre-class learning objectives, you should read the following sections in the Kotlin tour:
+To achieve the pre-class learning objectives, you should read the following sections of our textbook (remember to make note of typos!):
 
-* [Classes](https://kotlinlang.org/docs/kotlin-tour-classes.html)
-* [Null safety](https://kotlinlang.org/docs/kotlin-tour-null-safety.html)
-* [HW1](hw1) - Read the page, download the starter code and make sure you can compile it (there will be errors in the tests until you complete the assignment)
+* [1.5 Why Study Data Structures and Abstract Data Types?](https://runestone.academy/ns/books/published/kotlinds/introduction_why-study-data-structures-and-abstract-data-types.html?mode=browsing)
+* [1.11 Input and Output](https://runestone.academy/ns/books/published/kotlinds/introduction_input-and-output.html?mode=browsing) - mostly just reference for what `println("$myVar")` is doing
+* [1.15 OOP in Kotlin: Defining Classes](https://runestone.academy/ns/books/published/kotlinds/introduction_object-oriented-programming-in-java-defining-classes.html?mode=browsing)
+* [1.16 Null Safety](https://runestone.academy/ns/books/published/kotlinds/introduction_null-safety.html?mode=browsing)
 
 
 ## Checks

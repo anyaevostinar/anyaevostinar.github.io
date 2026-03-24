@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Mantis Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Mantis Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/mantis-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/mantis-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Mantis Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Mantis Lab","url":"http://localhost:4000/classes/208-f25/mantis-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Mantis Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="overview">Overview</h2>
+
+<p>In this class, we will learn about computer systems in part by using the C programming language and exploring its relationship to the Intel x86-64 machine language and assembly language. To ensure that we all have a consistent computing environment, you should plan to do your work on the CS department’s Linux server <code class="language-plaintext highlighter-rouge">mantis.mathcs.carleton.edu</code>. This short lab will help you get started working on <code class="language-plaintext highlighter-rouge">mantis</code> by connecting from another computer. (Note: For some assignments, you’ll be able to use your own laptop without the extra step of connecting to <code class="language-plaintext highlighter-rouge">mantis</code>, but the only supported computing environment for actually running your code in this course will be <code class="language-plaintext highlighter-rouge">mantis</code>.)</p>
+
+<h2 id="step-1-connect-to-fern">Step 1: Connect to <code class="language-plaintext highlighter-rouge">fern</code></h2>
+
+<p>(If you are used to using VSCode to connect to servers, sorry, you can’t anymore because VSCode ultimately crashes the server due to a bug.)
+(If you get stuck, there are screenshots in <a href="https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=168271">this guide</a>.)</p>
+
+<p><strong>Go</strong> to <a href="https://fern.mathcs.carleton.edu/jupyter/hub/login">https://fern.mathcs.carleton.edu/jupyter/hub/login</a> and log in with your Carleton credentials</p>
+
+<p><code class="language-plaintext highlighter-rouge">fern</code> shares a filesystem with all the other servers and so you’ll possibly see things from previous classes and anything you do on <code class="language-plaintext highlighter-rouge">fern</code> will also show up on <code class="language-plaintext highlighter-rouge">mantis</code>.</p>
+
+<h2 id="step-2-set-up-your-working-space-on-the-file-system">Step 2: Set up your working space on the file system</h2>
+
+<ul>
+  <li>
+    <p><strong>Open a <code class="language-plaintext highlighter-rouge">Terminal</code></strong> by clicking the icon with a $ sign and a black box.</p>
+  </li>
+  <li>
+    <p><strong>Set up a long-term working directory named cs208:</strong> In that terminal, create a folder named <code class="language-plaintext highlighter-rouge">cs208</code>, where you will do your work for the term:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">mkdir </span>cs208
+</code></pre></div>    </div>
+
+    <p>If you type the command <code class="language-plaintext highlighter-rouge">ls</code> in the terminal after that (and then hit enter/return), you’ll see the new folder listed. You can also look at the file explorer, and the folder should show up there, too.</p>
+  </li>
+</ul>
+
+<h2 id="step-3-log-in-to-mantis">Step 3: Log in to <code class="language-plaintext highlighter-rouge">mantis</code></h2>
+
+<p>In the Terminal, type</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh YOUR_USER_NAME@mantis.mathcs.carleton.edu
+</code></pre></div></div>
+
+<p>And then your password. This is where you would be able to run your files for this class after you edit them on <code class="language-plaintext highlighter-rouge">fern</code>.</p>
+
+<h2 id="a-typical-work-session">A typical work session</h2>
+<p>You’re all set up now, and you won’t need to repeat most of the previous steps anymore. This section describes a typical session with VS Code and <code class="language-plaintext highlighter-rouge">mantis</code>.</p>
+
+<ol>
+  <li>
+    <p><strong>Restart, but with the <code class="language-plaintext highlighter-rouge">cs208</code> working directory:</strong> The next time you log in to <code class="language-plaintext highlighter-rouge">fern</code>, the folder will already be there and so you can open it and interact with the files inside as usual.</p>
+  </li>
+  <li>
+    <p><strong>Start a new program:</strong> Go to <code class="language-plaintext highlighter-rouge">File-&gt;New Python File</code>. Type a hello-world program (e.g., <code class="language-plaintext highlighter-rouge">hello.py</code> with a single print statement). Save the file.</p>
+  </li>
+</ol>
+
+<p><strong>NOTE:</strong> You should get into the habit of saving frequently, as it may not autosave for you.</p>
+
+<ol>
+  <li>
+    <p><strong>Test your program:</strong> Connect to <code class="language-plaintext highlighter-rouge">mantis</code> via ssh and in the <code class="language-plaintext highlighter-rouge">mantis</code> terminal, type a suitable command (e.g., <code class="language-plaintext highlighter-rouge">python3 hello.py</code>) to run your program.</p>
+  </li>
+  <li>
+    <p><strong>Pause to reflect:</strong> Ponder the following questions and submit answers to them on Moodle for an engagement credit:</p>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p>Where is your <code class="language-plaintext highlighter-rouge">hello.py</code> file stored?</p>
+  </li>
+  <li>
+    <p>Will your file still be on <code class="language-plaintext highlighter-rouge">mantis</code> after you close the browser window?</p>
+  </li>
+  <li>
+    <p>Is there a copy on your computer after you close the browser window?</p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p><strong>Download a file from <code class="language-plaintext highlighter-rouge">mantis</code>:</strong> Copy a file from <code class="language-plaintext highlighter-rouge">mantis</code> to your local computer (e.g., so you can submit homework via Moodle in your web browser). To do so, in the <code class="language-plaintext highlighter-rouge">fern</code> file explorer, right-click on the file you want to download and select <code class="language-plaintext highlighter-rouge">Download</code> from the right-click menu. There doesn’t seem to be a drag-and-drop option for this.</p>
+  </li>
+  <li>
+    <p><strong>Upload a file to <code class="language-plaintext highlighter-rouge">mantis</code>:</strong> Open the folder containing your file (e.g., <code class="language-plaintext highlighter-rouge">new_hello.c</code>) on your local machine. This will be a Windows Explorer, macOS Finder, or Linux folder display. Drag the icon of your file into the files panel on <code class="language-plaintext highlighter-rouge">fern</code>.</p>
+  </li>
+</ol>
+
+<h2 id="next-steps">Next steps</h2>
+<p>Now that you’re able to connect to <code class="language-plaintext highlighter-rouge">mantis</code>, you’re almost ready to work on the first assignment! Take a look at <a href="hw1">Assignment 1 - Bits &amp; Bytes</a> to get an idea of what you need to do, and then upload a few <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/samples/">samples</a>, compile, and run them on mantis.</p>
+
+<p>After you’ve tried some samples, you can get started with Assignment 1. Follow the instructions on the assignment page for getting the code and testing it out.</p>
+
+<h2 id="if-you-cant-connect-to-fern">If you can’t connect to <code class="language-plaintext highlighter-rouge">fern</code></h2>
+
+<p><code class="language-plaintext highlighter-rouge">mantis</code> might get overwhelmed with connections during the term. If that happens, don’t get stuck. You don’t need <code class="language-plaintext highlighter-rouge">fern</code> to work on <code class="language-plaintext highlighter-rouge">mantis</code>!</p>
+
+<h3 id="getting-a-terminal">Getting a Terminal</h3>
+<p>If you are on Mac, open the <code class="language-plaintext highlighter-rouge">Terminal</code> app separate from VSCode (it’s just called Terminal). If you are on Windows, you can use several things, including Command Prompt or <a href="https://learn.microsoft.com/en-us/windows/terminal/install">Windows Terminal</a>.</p>
+
+<h3 id="ssh">SSH</h3>
+<p>You can connect just the same way, type in:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh YOUR_CARLETON_USER_NAME@mantis.mathcs.carleton.edu
+</code></pre></div></div>
+
+<p>And then your password (don’t worry that it looks like you aren’t typing, just keep typing and hit enter).</p>
+
+<h3 id="running-files">Running files</h3>
+<p>You now run everything just like you would through <code class="language-plaintext highlighter-rouge">fern</code>’s Terminal, yey!</p>
+
+<h3 id="editing-files">Editing files</h3>
+<p>The tricky part is editing files. You can either explore using <a href="https://quickref.me/emacs.html">Emacs</a> or <a href="https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf">Vi</a> or you can download to your local computer, make changes, and then upload back to <code class="language-plaintext highlighter-rouge">mantis</code>.</p>
+
+<ul>
+  <li>To download a file, you use <code class="language-plaintext highlighter-rouge">scp</code>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp your_username@mantis.mathcs.carleton.edu:/Accounts/YOUR_USER_NAME/cs208/YOUR_FILE WHERE_YOU_WANT_IT_TO_GO
+</code></pre></div>    </div>
+  </li>
+  <li>To send a file, just reverse the commands:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp LOCAL_FILE_TO_SEND your_username@mantis.mathcs.carleton.edu:/Accounts/YOUR_USER_NAME/cs208/YOUR_FILE
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

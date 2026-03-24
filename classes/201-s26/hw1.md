@@ -9,6 +9,9 @@ permalink: /classes/201-f25/hw1
 Starter code: [lunar_lander.zip](lunar_lander.zip)  
 Upload solutions via Gradescope as: `LunarLander.kt`
 
+
+TODO: add note of how to do default parameters for constructor
+
 ## Goals
 
 This assignment is designed to help you practice the following:

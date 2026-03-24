@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Homework 1 - Lunar Lander | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Homework 1 - Lunar Lander" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f25/hw1" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f25/hw1" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Homework 1 - Lunar Lander" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Homework 1 - Lunar Lander","url":"http://localhost:4000/classes/201-f25/hw1"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Homework 1 - Lunar Lander</h1>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Due Friday, Sept 26th at 10pm</strong></p>
+
+<p>Starter code: <a href="/classes/201-f25/lunar_lander.zip">lunar_lander.zip</a><br />
+Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">LunarLander.kt</code></p>
+
+<h2 id="goals">Goals</h2>
+
+<p>This assignment is designed to help you practice the following:</p>
+<ul>
+  <li>building comfort writing Kotlin code</li>
+  <li>refreshing object-oriented programming</li>
+  <li>working with larger programs than small classroom examples</li>
+</ul>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+
+<p>For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)  You may have at most one partner.</p>
+
+<p>You may also discuss the assignment at a high level with other students.  You can discuss the assignment with Anya, our prefect, or any course staff.</p>
+
+<p>You should list any student or course staff with whom you discussed the assignment (you don’t have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in comments at the top of your <code class="language-plaintext highlighter-rouge">LunarLander.kt</code> file.  You also need to include your name.</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<h2 id="note-on-style">Note on style:</h2>
+
+<p>The following style guidelines are expected moving forward:</p>
+
+<ol>
+  <li>Variable names should be clear and easy to understand, should <em>not</em> start with a capital letter, and should only be a single letter when appropriate (e.g., <code class="language-plaintext highlighter-rouge">i</code> or <code class="language-plaintext highlighter-rouge">j</code> as indices, <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> as coordinates).</li>
+  <li>The indentation, spacing, and location of curly braces is consistent.</li>
+  <li>There are no extra print statements in your program.</li>
+  <li>There is no commented-out code that is no longer being used (e.g., debugging print statements).</li>
+  <li>Your program has a comment at the top of each function with at least 5 words describing what the function does.</li>
+  <li>There is good use of comments to explain the “why” of your code and empty lines to break up logical chunks.</li>
+  <li>The code doesn’t have “magic numbers” – these are numbers in the code by themselves, rather than stored in a variable.</li>
+  <li>The code doesn’t compute the right answer by doing extra work (e.g., having a computation in a loop when it could have been done only once, after the loop).</li>
+</ol>
+
+<h2 id="assessment">Assessment</h2>
+
+<p>The <strong>core</strong> requirements for your submission are:</p>
+
+<ul>
+  <li>complete Part A</li>
+  <li>pass the basic <code class="language-plaintext highlighter-rouge">LunarLander</code> class autograder tests (see the six tests in the provided code)</li>
+  <li>satisfy the code style expectations #1-#4 above</li>
+  <li>include a reflection in comments at the bottom of your <code class="language-plaintext highlighter-rouge">LunarLander.kt</code> file</li>
+</ul>
+
+<p>The <strong>advanced</strong> requirements for your submission are:</p>
+
+<ul>
+  <li>satisfy the core requirements</li>
+  <li>complete Parts B and C</li>
+  <li>have a playable game (you won’t see any autograder tests for this, as the exact text of your game is up to you – see the example game below for what it should look like)</li>
+  <li>satisfy all code style expectations listed above (#1-#8)</li>
+  <li>include your name and collaboration statement at the top of your <code class="language-plaintext highlighter-rouge">LunarLander.kt</code> file</li>
+</ul>
+
+<h2 id="assignment-overview">Assignment overview</h2>
+
+<p>Computer <em>simulation</em> is used by engineers to test out ideas before actually building expensive machines or putting people in dangerous situations.  Simulation is a critical part of the space program by NASA, for example.</p>
+
+<p>For this program, you will create a simulation of a vehicle landing on the moon.  (It turns out that this assignment is also a rather old computer game that has been around for decades.)</p>
+
+<p>Here is how it works: You are in control of a lunar lander ship, descending to the surface of the moon for a landing.  Gravity steadily accelerates your ship faster and faster toward the surface of the moon.  You, the astronaut piloting the ship, have a single control: a button with the label “burn” on it.  Burning fuel slows your ship down.  Your goal is to get your ship to land on the moon at a slow enough speed so that it doesn’t crash on impact.  What’s the catch?  You have only a limited amount of fuel.  If you slow your ship too much too early, you will run out of fuel and crash into the surface of the moon.</p>
+
+<p>Your mission: Program this simulation in Kotlin.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>If you are working on your own computer, you need to install Kotlin. Follow these instructions to either <a href="https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=160536">set up your personal Mac computer</a> or <a href="https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=160646">set up your personal Windows computer</a>. If you are working on the lab computers, you don’t need to install Kotlin.</p>
+
+<p>Next, create a folder in which to store your work for course assignments.  For example, I created a folder <code class="language-plaintext highlighter-rouge">CS201</code> on my computer for this course, and made a folder <code class="language-plaintext highlighter-rouge">HW1</code> inside of it.  I’ve got other folders there, too, like <code class="language-plaintext highlighter-rouge">InClass</code>.</p>
+
+<p>Where you put the <code class="language-plaintext highlighter-rouge">CS201</code> folder depends on the machine you’re working on:</p>
+<ul>
+  <li>If you’re on your own computer, anywhere is fine.  You could put it on your <code class="language-plaintext highlighter-rouge">Desktop</code>, in <code class="language-plaintext highlighter-rouge">Documents</code>, or somewhere else you can find it easily. (Or you could have a <code class="language-plaintext highlighter-rouge">Classes</code> folder for everything!)</li>
+  <li>If you’re working in the labs in Olin, make sure to first mount the <code class="language-plaintext highlighter-rouge">COURSES</code> folder so that you won’t lose your code when you log out.  Then, open up Finder, navigate to your personal <code class="language-plaintext highlighter-rouge">StuWork</code> folder, and create <code class="language-plaintext highlighter-rouge">CS201</code> there.</li>
+</ul>
+
+<p>Download <a href="/classes/201-f25/lunar_lander.zip">this <code class="language-plaintext highlighter-rouge">lunar_lander.zip</code> file</a> to get the starter code.  Put it in the <code class="language-plaintext highlighter-rouge">CS201</code> folder you just created and unzip it.  This should give you a folder named <code class="language-plaintext highlighter-rouge">lunar_lander</code>.  Make sure that you actually unzip / extract the code, don’t just open up the <code class="language-plaintext highlighter-rouge">.zip</code> file in another window.</p>
+
+<p>Now open your folder in VS Code.  There are multiple ways to do this, so pick one:</p>
+<ul>
+  <li>Open VS Code, then select <code class="language-plaintext highlighter-rouge">File</code> -&gt; <code class="language-plaintext highlighter-rouge">Open Folder</code> and navigate to the <code class="language-plaintext highlighter-rouge">lunar_lander</code> folder you just made.</li>
+  <li>Open VS Code, then drag and drop the folder (e.g., from Finder in MacOS or File Explorer in Windows) into VS Code to open it.</li>
+</ul>
+
+<p>Either way, if you are asked, click that you trust the authors.  If you have any issues getting started, ask the lab assistants for help – any of them should be able to help you get started, even if they aren’t super familiar with Kotlin.</p>
+
+<h2 id="building-your-code-with-maven">Building your code with Maven</h2>
+
+<p>The provided project structure uses Maven, which adds some extra packaging around our regular <code class="language-plaintext highlighter-rouge">kotlinc</code>+<code class="language-plaintext highlighter-rouge">kotlin</code> way to run a program.  For this assignment, you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder <code class="language-plaintext highlighter-rouge">lunar_lander</code> for these commands to work):</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn test</code> runs the tests that we provided (see below)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn compile exec:java</code> compiles and runs your code, as specified in your <code class="language-plaintext highlighter-rouge">main</code> function</p>
+  </li>
+</ul>
+
+<p>If you want to see less output from Maven, you can add <code class="language-plaintext highlighter-rouge">-q</code> (for “quiet”) flag:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn -q test</code> run tests, with less output</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn -q compile exec:java</code> runs your <code class="language-plaintext highlighter-rouge">main</code> function, with less output (but still any print statements you have)</p>
+  </li>
+</ul>
+
+<p>If you run the tests with the starter code, you should have errors, as you haven’t written any code yet.</p>
+
+<h2 id="part-a-lunarlander-class">Part A: <code class="language-plaintext highlighter-rouge">LunarLander</code> class</h2>
+
+<p>You have been given a file named <code class="language-plaintext highlighter-rouge">LunarLander.kt</code> in which to put your code.  It contains an empty class named <code class="language-plaintext highlighter-rouge">LunarLander</code> and a place for a <code class="language-plaintext highlighter-rouge">main</code> function at the bottom.</p>
+
+<p>In your <code class="language-plaintext highlighter-rouge">LunarLander</code> class, you will need to keep the following information in instance variables:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">altitude</code>: how far the ship is from the surface of the moon, in meters (default initial value: 1000 meters)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">velocity</code>: how fast the ship is moving, in meters/second; a positive velocity means the ship is moving toward the moon’s surface, and a negative velocity means it is moving away from the surface (default initial value: 40 meters/second)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">fuel</code>: how many units of fuel are left in the tank (default initial value: 25)</p>
+  </li>
+</ul>
+
+<p>Your <code class="language-plaintext highlighter-rouge">LunarLander</code> class should also have the following methods (although you may define more if you wish):</p>
+
+<ul>
+  <li>
+    <p>Some sort of a constructor so you can instantiate a <code class="language-plaintext highlighter-rouge">LunarLander</code> object, with specified starting altitude, velocity, and fuel.  For example, the following code should work in your <code class="language-plaintext highlighter-rouge">main</code> function:</p>
+
+    <div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// Create some landers with specified initial altitude, velocity, and fuel values</span>
+  <span class="kd">val</span> <span class="py">lander1</span> <span class="p">=</span> <span class="nc">LunarLander</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+  <span class="kd">val</span> <span class="py">lander2</span> <span class="p">=</span> <span class="nc">LunarLander</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+
+  <span class="c1">// Create a lander with initial altitude = 900, velocity = 30, and default fuel (25)</span>
+  <span class="kd">val</span> <span class="py">lander3</span> <span class="p">=</span> <span class="nc">LunarLander</span><span class="p">(</span><span class="mi">900</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+
+  <span class="c1">// Create a lander with initial altitude = 900, default velocity (40), and default fuel (25)</span>
+  <span class="kd">val</span> <span class="py">lander4</span> <span class="p">=</span> <span class="nc">LunarLander</span><span class="p">(</span><span class="mi">900</span><span class="p">)</span>
+
+  <span class="c1">// Create a lander with all default initial values: altitude (900), velocity (40), and fuel (25)</span>
+  <span class="kd">val</span> <span class="py">lander5</span> <span class="p">=</span> <span class="nc">LunarLander</span><span class="p">()</span>
+</code></pre></div>    </div>
+  </li>
+  <li>A function <code class="language-plaintext highlighter-rouge">burn(fuelRequested)</code> that simulates one complete second of activity, where the astronaut has requested to burn <code class="language-plaintext highlighter-rouge">fuelRequested</code> units of fuel.  Specifically, it should do the following:
+    <ol>
+      <li>Make sure you check to see if you actually have this much fuel.  If not, just burn all that you have in the steps below.</li>
+      <li>Subtract the amount of fuel being burned.</li>
+      <li>Decrease your velocity by 4 meters/second for each unit of fuel used.</li>
+      <li>Modify your velocity to add the effect of gravity, which adds an additional 2 meters/second.</li>
+      <li>Determine the new altitude for your lander.  Your new altitude is your old altitude <strong>minus</strong> your velocity after the above adjustments.</li>
+    </ol>
+  </li>
+  <li>A function <code class="language-plaintext highlighter-rouge">status()</code> that returns the condition of the lander:
+    <ol>
+      <li>If the altitude is greater then 0, then it returns the string <code class="language-plaintext highlighter-rouge">"inflight"</code>.</li>
+      <li>If instead (meaning the altitude is 0 or negative) the velocity is greater than or equal to 5, it returns the string <code class="language-plaintext highlighter-rouge">"crashed"</code>.</li>
+      <li>Otherwise, if none of the above conditions are true, it returns the string <code class="language-plaintext highlighter-rouge">"landed"</code>.</li>
+    </ol>
+  </li>
+</ul>
+
+<p>A series of tests have been provided to help you determine if your <code class="language-plaintext highlighter-rouge">LunarLander</code> class is correct.  They are in the file <code class="language-plaintext highlighter-rouge">LanderTest.kt</code>; you should take a look at them to see what’s in there.</p>
+
+<p>Once your code works, running <code class="language-plaintext highlighter-rouge">mvn test</code> should give the following output (I didn’t copy over the beginning, just the last part):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>INFO] <span class="nt">-------------------------------------------------------</span>     
+<span class="o">[</span>INFO]  T E S T S
+<span class="o">[</span>INFO] <span class="nt">-------------------------------------------------------</span>     
+<span class="o">[</span>INFO] Running LanderTest
+<span class="o">[</span>INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 s <span class="nt">--</span> <span class="k">in </span>LanderTest
+<span class="o">[</span>INFO] 
+<span class="o">[</span>INFO] Results:
+<span class="o">[</span>INFO]
+<span class="o">[</span>INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+<span class="o">[</span>INFO]
+<span class="o">[</span>INFO] <span class="nt">------------------------------------------------------------------------</span>
+<span class="o">[</span>INFO] BUILD SUCCESS
+<span class="o">[</span>INFO] <span class="nt">------------------------------------------------------------------------</span>
+<span class="o">[</span>INFO] Total <span class="nb">time</span>:  12.109 s
+<span class="o">[</span>INFO] Finished at: 2025-04-02T21:38:18-05:00
+<span class="o">[</span>INFO] <span class="nt">------------------------------------------------------------------------</span>
+</code></pre></div></div>
+
+<h2 id="part-b-one-player-simulation">Part B: One-player simulation</h2>
+
+<p>After your <code class="language-plaintext highlighter-rouge">LunarLander</code> class works, you should implement a <code class="language-plaintext highlighter-rouge">main</code> function that creates a new <code class="language-plaintext highlighter-rouge">LunarLander</code> object and provides the player with a welcome message.  Then, your code should repeatedly show the player the current information for the lander, followed by a question as to how many units of fuel to burn.</p>
+
+<p>If the lander ends up hitting the surface of the moon with a velocity of 4 meters/second or less, the ship lands successfully!  If the lander hits the surface with a velocity of 5 meters/second or more, the ship crashes.</p>
+
+<p>Here’s a sample one-player game:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Welcome to Lunar Lander!
+
+    Alt <span class="o">=</span> 1000 Vel <span class="o">=</span> 40 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 958 Vel <span class="o">=</span> 42 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 914 Vel <span class="o">=</span> 44 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 868 Vel <span class="o">=</span> 46 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 820 Vel <span class="o">=</span> 48 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 770 Vel <span class="o">=</span> 50 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 718 Vel <span class="o">=</span> 52 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 664 Vel <span class="o">=</span> 54 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 608 Vel <span class="o">=</span> 56 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 550 Vel <span class="o">=</span> 58 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 490 Vel <span class="o">=</span> 60 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 428 Vel <span class="o">=</span> 62 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 364 Vel <span class="o">=</span> 64 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 298 Vel <span class="o">=</span> 66 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 230 Vel <span class="o">=</span> 68 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 160 Vel <span class="o">=</span> 70 Fuel <span class="o">=</span> 25
+    How much fuel to burn this round? 2
+    Alt <span class="o">=</span> 96 Vel <span class="o">=</span> 64 Fuel <span class="o">=</span> 23
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> 30 Vel <span class="o">=</span> 66 Fuel <span class="o">=</span> 23
+    How much fuel to burn this round? 0
+    Alt <span class="o">=</span> <span class="nt">-38</span> Vel <span class="o">=</span> 68 Fuel <span class="o">=</span> 23
+    Oh no, you crashed!
+</code></pre></div></div>
+
+<h2 id="part-c-two-player-simulation">Part C: Two-player simulation</h2>
+
+<p>As a final step, you should modify <code class="language-plaintext highlighter-rouge">main</code> so that it gives an option for it to be a one-player or a two-player game.  If the user chooses one player, it should be just as described in Part B.  If the user chooses two player, the game should have <em>two</em> <code class="language-plaintext highlighter-rouge">LunarLander</code> objects descending to the moon, each controlled by different users.  The two players alternate back and forth, entering the amount of burn for their own landers, until something triggers an end of the game, such as a successful landing or a crash.</p>
+
+<h1 id="required-reflection">Required Reflection</h1>
+
+<ol>
+  <li>Were there any particular issues or challenges you dealt with in completing this assignment?</li>
+  <li>How long did you spend on this assignment?</li>
+</ol>
+
+<p>Write a brief discussion (a sentence or two is fine) at the bottom of your <code class="language-plaintext highlighter-rouge">LunarLander.kt</code> file (in comments, so each line should start with <code class="language-plaintext highlighter-rouge">//</code> or be in a <code class="language-plaintext highlighter-rouge">/* */</code> block) where you answer at least those two questions.</p>
+
+<p>Here are some examples:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// I had trouble getting the LunarLander constructor to work.</span>
+<span class="c1">// I had to look up how to get user input in Kotlin documentation and scavenger hunt examples.</span>
+<span class="c1">// I spent 6 hours on this assignment.</span>
+</code></pre></div></div>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// I started late, so I had to rush to make sure I knew how to test my code.</span>
+<span class="c1">// It may be good to start early next time.</span>
+<span class="c1">// I spent 5 hours on this assignment.</span>
+</code></pre></div></div>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// It went fine; I found what I needed in my notes.</span>
+<span class="c1">// I spent 3 hours on this assignment.</span>
+</code></pre></div></div>
+
+<h2 id="hints-and-suggestions">Hints and suggestions</h2>
+
+<ul>
+  <li>
+    <p>Landing without crashing is tricky.  To test your program, make the initial altitude smaller and the initial fuel amount bigger.  This makes the game quicker to play and easier to win.</p>
+  </li>
+  <li>
+    <p>Any numbers that you see scattered throughout this assignment that are not used for initializing the lander (gravity increases velocity by 2 meters/second, the velocity must be 4 meters/second or less to land successfully, etc.) should be stored as variables in your program, not as magic numbers hard-coded in the code.  (See <a href="#note-on-style">Style point #7</a> at the top.)</p>
+  </li>
+  <li>
+    <p>It is useful to be able to automatically exit the program, rather than having to wait until a successful land or crash.  You can change your program so that if the player enters -1 for fuel to burn, the game automatically ends.  This isn’t necessary at all, but can be handy.</p>
+  </li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

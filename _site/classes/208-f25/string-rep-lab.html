@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>String Representation Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="String Representation Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/string-rep-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/string-rep-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="String Representation Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"String Representation Lab","url":"http://localhost:4000/classes/208-f25/string-rep-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">String Representation Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>This is a short lab exploring how Unicode codepoints can be stored.</p>
+
+<p>There will likely be parts of this lab that you don’t understand right away.  Keep reading, keep experimenting, collect your questions, and ask them!  Gradually, things will start to make more sense.</p>
+
+<h2 id="character-encodings">Character encodings</h2>
+
+<p>Do the following.  Remember to collect questions, play around, and take notes.</p>
+
+<ul>
+  <li>
+    <p>Connect to <code class="language-plaintext highlighter-rouge">mantis</code> through <code class="language-plaintext highlighter-rouge">fern</code></p>
+  </li>
+  <li>
+    <p>Create a new text file named <code class="language-plaintext highlighter-rouge">something.txt</code>.  Type two or three short lines of ASCII text (e.g., just a few English words) and save your file.</p>
+  </li>
+  <li>
+    <p>In the terminal, make sure you are <code class="language-plaintext highlighter-rouge">cd</code>‘d into the directory containing <code class="language-plaintext highlighter-rouge">something.txt</code> and run this command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  hexdump <span class="nt">-C</span> something.txt
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Do the hex values you see in your file correspond to the characters you entered?  Do the characters come in the order you expect?  Do you see any newline characters?  (You may find it helpful to open an <a href="https://simple.wikipedia.org/wiki/ASCII">ASCII chart</a> in a browser tab or view the chart in a terminal by running <code class="language-plaintext highlighter-rouge">man ascii</code>.)</p>
+  </li>
+  <li>
+    <p>Copy the word <code class="language-plaintext highlighter-rouge">"résumé"</code> and the Greek letters <code class="language-plaintext highlighter-rouge">"αβγδ"</code> from this page into <code class="language-plaintext highlighter-rouge">something.txt</code>.  Note that <code class="language-plaintext highlighter-rouge">é</code> and the Greek letters are not ASCII characters.  Save and run <code class="language-plaintext highlighter-rouge">hexdump -C something.txt</code> again.  Which bytes correspond to <code class="language-plaintext highlighter-rouge">é</code>, <code class="language-plaintext highlighter-rouge">α</code>, <code class="language-plaintext highlighter-rouge">β</code>, <code class="language-plaintext highlighter-rouge">γ</code>, and <code class="language-plaintext highlighter-rouge">δ</code>?</p>
+  </li>
+</ul>
+
+<p>Now, let’s explore some <a href="https://xkcd.com/927/">alternate encodings</a>.</p>
+
+<!-- !!!! This is broken and needs to be updated to work for fern -->
+<ul>
+  <li>
+    <p>Change the encoding from  <code class="language-plaintext highlighter-rouge">UTF-8</code> to <code class="language-plaintext highlighter-rouge">UTF-16LE</code> with this command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  iconv <span class="nt">-f</span> UTF-8 <span class="nt">-t</span> UTF-16LE <span class="nt">-o</span> something16le.txt something.txt
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">hexdump -C</code> on your new file.</p>
+  </li>
+  <li>
+    <p><strong>Answer this</strong> to submit: Copy over both your hexdumps and explain what changed with the new encoding.</p>
+  </li>
+  <li>
+    <p>Now switch to UTF-16BE with the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  iconv <span class="nt">-f</span> UTF-8 <span class="nt">-t</span> UTF-16BE <span class="nt">-o</span> something16be.txt something.txt
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">hexdump -C</code> on your new file.</p>
+  </li>
+  <li>
+    <p><strong>Ansewr this</strong> to submit: Copy over your new hexdump and explain what changed.  Which byes correspond to which characters?  How is this different from UTF-8?  What about UTF-16 LE?</p>
+  </li>
+  <li>
+    <p>You are hopefully starting to make some sense of the difference between <em>Unicode codepoints</em> and the <em>character encodings</em> using different encoding formats, like UTF-8, UTF-16 LE, and UTF-16 BE.  If these are still fuzzy, do a little internet exploration (after class) to figure out the differences between them.</p>
+  </li>
+</ul>
+
+<h2 id="string-functions">String functions</h2>
+<p>Look through the sample code <code class="language-plaintext highlighter-rouge">strings.c</code> (remember to find the sample code, go to the link on the right bar of Moodle), run each of the “games”, and read through the comments.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

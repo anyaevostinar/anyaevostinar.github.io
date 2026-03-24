@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Homework 6 - Word Counter | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Homework 6 - Word Counter" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f25/hw6" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f25/hw6" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Homework 6 - Word Counter" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Homework 6 - Word Counter","url":"http://localhost:4000/classes/201-f25/hw6"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Homework 6 - Word Counter</h1>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Due: Friday, Oct 31st, at 10:00pm</strong> (Boo!)</p>
+
+<ul>
+  <li>Starter code: <a href="/classes/201-f25/word_counter.zip">word_counter.zip</a></li>
+  <li>Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">WordCountTree.kt</code></li>
+</ul>
+
+<h2 id="goals">Goals</h2>
+
+<p>This assignment is designed to help you with the following:</p>
+<ul>
+  <li>practice with trees</li>
+  <li>practice with recursion</li>
+  <li>practice extending basic data structures for more complex functionality</li>
+</ul>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+
+<p>For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)  You may have at most one partner.</p>
+
+<p>You may also discuss the assignment at a high level with other students.  You can discuss the assignment with Anya, our prefect, or any course staff.</p>
+
+<p>You should list any student or course staff with whom you discussed the assignment (you don’t have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in comments at the top of your <code class="language-plaintext highlighter-rouge">WordCountTree.kt</code> file.  You also need to include your name.</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<h2 id="note-on-style">Note on style:</h2>
+
+<p>The following style guidelines are expected moving forward:</p>
+
+<ol>
+  <li>You submit only the requested file(s).</li>
+  <li>Variable names should be clear and easy to understand, should <em>not</em> start with a capital letter, and should only be a single letter when appropriate (e.g., <code class="language-plaintext highlighter-rouge">i</code> or <code class="language-plaintext highlighter-rouge">j</code> as indices, <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> as coordinates).</li>
+  <li>The indentation, spacing, and location of curly braces is consistent.</li>
+  <li>There are no extra print statements in your program.</li>
+  <li>There is no commented-out code that is no longer being used (e.g., debugging print statements).</li>
+  <li>Your program has a comment at the top of each function with at least 5 words describing what the function does.</li>
+  <li>There is good use of comments to explain the “why” of your code and empty lines to break up logical chunks.</li>
+  <li>The code doesn’t have “magic numbers” – these are numbers in the code by themselves, rather than stored in a variable.</li>
+  <li>The code doesn’t compute the right answer by doing extra work (e.g., having a computation in a loop when it could have been done only once, after the loop).</li>
+  <li>Helper functions are used to reduce code duplication.</li>
+</ol>
+
+<h2 id="assessment">Assessment</h2>
+
+<p>The <strong>core requirements</strong> for your submission are:</p>
+
+<ul>
+  <li>complete Parts A and D
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">incrementCount</code></li>
+      <li><code class="language-plaintext highlighter-rouge">getCount</code></li>
+    </ul>
+  </li>
+  <li>makes use of the provided map in the <code class="language-plaintext highlighter-rouge">Node</code> class</li>
+  <li>satisfy the code style expectations #0-#4 above</li>
+  <li>include a reflection in comments at the bottom of your <code class="language-plaintext highlighter-rouge">WordCountTree.kt</code> file</li>
+</ul>
+
+<p>The <strong>advanced requirements</strong> for your submission are:</p>
+
+<ul>
+  <li>satisfy the core requirements</li>
+  <li>complete all of Parts A-D
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">contains</code></li>
+      <li><code class="language-plaintext highlighter-rouge">getAutocompletionMap</code></li>
+    </ul>
+  </li>
+  <li>implement all functions <strong>recursively</strong>, not iteratively</li>
+  <li>satisfy all code style expectations listed above</li>
+  <li>include your name and collaboration statement at the top of your <code class="language-plaintext highlighter-rouge">WordCountTree.kt</code> file</li>
+</ul>
+
+<h2 id="assignment-overview">Assignment overview</h2>
+
+<p><img src="/classes/201-f20/BaskervillesWordCloud.png" alt="Words of varying sizes" /></p>
+
+<p>Perhaps you’ve seen word clouds before, like the one above generated from Hound of the Baskervilles by Sir Arthur Conan Doyle.  The neat thing about word clouds is that words are displayed in a size proportional to the number of times they are used in the text on which the word cloud is based.</p>
+
+<p>In this assignment, you’ll implement a particular type of search tree to count words in a given text, which is a critical task required to produce a word cloud.  (You won’t actually get to the step of building the word cloud, but then, winter break is coming ;) .)</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>Find your <code class="language-plaintext highlighter-rouge">cs201</code> folder for assignments.  Maybe it contains an <code class="language-plaintext highlighter-rouge">assignments</code> folder inside of it.</p>
+
+<p>Download <a href="/classes/201-f25/word_counter.zip">this <code class="language-plaintext highlighter-rouge">word_counter.zip</code> file</a> to get the starter code.  Put it in the <code class="language-plaintext highlighter-rouge">cs201</code> folder you just created and unzip it.  This should give you a folder named <code class="language-plaintext highlighter-rouge">word_counter</code>.  Make sure that you actually unzip / extract the code, don’t just open up the .zip file in another window.</p>
+
+<p>Now open your folder in VS Code.  There are multiple ways to do this, so pick one:</p>
+<ul>
+  <li>Open VS Code, then select <code class="language-plaintext highlighter-rouge">File</code> -&gt; <code class="language-plaintext highlighter-rouge">Open Folder</code> and navigate to the <code class="language-plaintext highlighter-rouge">word_counter</code> folder you just made.</li>
+  <li>Open VS Code, then drag and drop the folder (e.g., from Finder in MacOS or File Explorer in Windows) into VS Code to open it.</li>
+</ul>
+
+<p>Either way, if you are asked, click that you trust the authors.  If you have any issues getting started, ask the lab assistants for help – any of them should be able to help you get started, even if they aren’t super familiar with Kotlin.</p>
+
+<h2 id="building-your-code-with-maven">Building your code with Maven</h2>
+
+<p>Like most of our assignments, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder <code class="language-plaintext highlighter-rouge">word_counter</code> for these commands to work):</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn test</code> runs the tests that we provided (see below)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn compile exec:java</code> compiles and runs your code, as specified in your <code class="language-plaintext highlighter-rouge">main</code> function</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn compile</code> compiles your code, but doesn’t run it (this is like <code class="language-plaintext highlighter-rouge">kotlinc</code> by itself)</p>
+  </li>
+</ul>
+
+<p>If you want to see less output from Maven, you can add <code class="language-plaintext highlighter-rouge">-q</code> (for “quiet”) flag:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn -q test</code> run tests, with less output</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn -q compile exec:java</code> runs your <code class="language-plaintext highlighter-rouge">main</code> function, with less output (but still any print statements you have)</p>
+  </li>
+</ul>
+
+<p>If you run the tests with the starter code, you should have errors, as you haven’t written any code yet.</p>
+
+<h2 id="counting-words-using-a-prefix-tree-trie">Counting words using a prefix tree (“trie”)</h2>
+
+<p>You can implement a word-counting tree as a prefix tree (a.k.a. a trie).  Each node except for the root will represent a character as well as a count.  The children of a node will be characters that could come after the current character to represent a word.</p>
+
+<p>To find a word, you’ll work down the tree until you reach the final character in the word, and then look at the count for that node.  For example, imagine that we had a (very short) book that had the following words and counts:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Word</th>
+      <th style="text-align: right">Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">the</td>
+      <td style="text-align: right">50</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">that</td>
+      <td style="text-align: right">20</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cat</td>
+      <td style="text-align: right">120</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">chomp</td>
+      <td style="text-align: right">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">then</td>
+      <td style="text-align: right">7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The word-count tree would then look like this:</p>
+
+<p><img src="/classes/201-f20/TreeImage.png" alt="Word-Count Tree Example" /></p>
+
+<p>To trace down the tree to find “the” you would take the following steps:</p>
+
+<ol>
+  <li>Start at the root (which represents an empty string or null character), and then find the child that represents <code class="language-plaintext highlighter-rouge">'t'</code>.</li>
+  <li>Find the child of <code class="language-plaintext highlighter-rouge">'t'</code> that represents <code class="language-plaintext highlighter-rouge">'h'</code>.</li>
+  <li>Find the child of <code class="language-plaintext highlighter-rouge">'h'</code> that represents <code class="language-plaintext highlighter-rouge">'e'</code>.</li>
+  <li>You’ve now found all of the <code class="language-plaintext highlighter-rouge">"the"</code>, so you look at <code class="language-plaintext highlighter-rouge">count</code> to see how many times <code class="language-plaintext highlighter-rouge">"the"</code> appeared, which is 50.</li>
+  <li>If you were looking for <code class="language-plaintext highlighter-rouge">"then"</code>, you’d start exactly the same way as for <code class="language-plaintext highlighter-rouge">"the"</code>, but continue onto the node that represents <code class="language-plaintext highlighter-rouge">'n'</code>.</li>
+</ol>
+
+<p>There are a couple of things to note about this tree:</p>
+
+<ul>
+  <li>It’s not a binary tree – each node can have any number of children.</li>
+  <li>The ordering of the children doesn’t really matter.</li>
+  <li>Any node that exists in the tree either has a non-zero <code class="language-plaintext highlighter-rouge">count</code> or has a descendant with a non-zero <code class="language-plaintext highlighter-rouge">count</code>.  (In the above example, the root doesn’t have a child that represents <code class="language-plaintext highlighter-rouge">'a'</code> because we didn’t see any words starting with <code class="language-plaintext highlighter-rouge">'a'</code>.)</li>
+</ul>
+
+<h2 id="part-a-basic-word-counting-functionality">Part A: Basic word-counting functionality</h2>
+
+<p>You will implement the above word-counting tree in the <code class="language-plaintext highlighter-rouge">WordCountTree</code> class in <code class="language-plaintext highlighter-rouge">WordCountTree.kt</code>.</p>
+
+<p>To get started, take a look at <code class="language-plaintext highlighter-rouge">WordCountTree.kt</code> and find its private <code class="language-plaintext highlighter-rouge">Node</code> data class, just like we usually use with trees.  You’ll see that each <code class="language-plaintext highlighter-rouge">Node</code> has a <code class="language-plaintext highlighter-rouge">MutableMap</code>, which is what you’ll use to connect each node to its children.</p>
+
+<p>Your first task is to implement two functions:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">incrementCount(word: String)</code> – Adds 1 to the existing <code class="language-plaintext highlighter-rouge">count</code> for <code class="language-plaintext highlighter-rouge">word</code>, or adds <code class="language-plaintext highlighter-rouge">word</code> with a <code class="language-plaintext highlighter-rouge">count</code> of 1 if it was not already present.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">getCount(word: String): Int</code> – Returns the <code class="language-plaintext highlighter-rouge">count</code> of <code class="language-plaintext highlighter-rouge">word</code> in the prefix tree.</p>
+  </li>
+</ul>
+
+<p>Once you have this basic functionality implemented, you should pass the <code class="language-plaintext highlighter-rouge">testIncrementAndGet</code> test when you run <code class="language-plaintext highlighter-rouge">mvn test</code>.</p>
+
+<p>Note: It is important that you do not use any built-in libraries or other functionality that avoids doing it with your own code.  If you are getting around the point of the assignment (i.e., not working with the map in each node, not having a tree represented via connected nodes, etc.) you will not satisfy the core requirements for this assignment.</p>
+
+<h2 id="part-b-use-recursion">Part B: Use recursion!</h2>
+
+<p>You should work to make each of the four functions you’ll implement for this assignment (two for Part A and two for Part C) recursive, not iterative.  It is okay for your functions to call a helper method where the recursion actually takes place (like we saw in <a href="/classes/201-f25/BSTLab.kt"><code class="language-plaintext highlighter-rouge">BSTLab.kt</code></a>), as long as there is recursion when it goes to the next level of the tree.</p>
+
+<p>Take some time to look through your implementations of <code class="language-plaintext highlighter-rouge">incrementCount</code> and <code class="language-plaintext highlighter-rouge">getCount</code> from Part A and make them recursive if they aren’t already.</p>
+
+<h2 id="part-c-remaining-word-counting-functionality">Part C: Remaining word-counting functionality</h2>
+
+<p>Finally, you should implement the remaining functionality.  Here are the last two functions you’ll write:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">contains(word: String): Boolean</code> – Returns <code class="language-plaintext highlighter-rouge">true</code> if <code class="language-plaintext highlighter-rouge">word</code> is stored in this <code class="language-plaintext highlighter-rouge">WordCountTree</code> with a <code class="language-plaintext highlighter-rouge">count</code> greater than 0, and <code class="language-plaintext highlighter-rouge">false</code> otherwise.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">getAutocompletionMap(prefix: String): MutableMap&lt;String, Int&gt;</code> – Returns a map of all words in the <code class="language-plaintext highlighter-rouge">WordCountTree</code> that start with the given <code class="language-plaintext highlighter-rouge">prefix</code>, mapped to their <code class="language-plaintext highlighter-rouge">count</code>s.</p>
+  </li>
+</ul>
+
+<p>Once you have these two functions working, all tests should pass when you run <code class="language-plaintext highlighter-rouge">mvn test</code>.</p>
+
+<p>Note that these two functions should also be recursive, as described in <a href="#part-b-use-recursion">Part B</a>.  For <code class="language-plaintext highlighter-rouge">getAutocompletionMap</code>, you might need to loop over all of the children while changing levels in the tree recursively.</p>
+
+<h2 id="part-d-reflection">Part D: Reflection</h2>
+
+<p>Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?</p>
+
+<p>Write a brief discussion (a sentence or two is fine) at the bottom of your <code class="language-plaintext highlighter-rouge">WordCountTree.kt</code> file (in comments, so each line should start with <code class="language-plaintext highlighter-rouge">//</code> or be in a <code class="language-plaintext highlighter-rouge">/* */</code> block).</p>
+
+<p>Here are some examples:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// I got really mixed up working with the maps within the nodes.</span>
+<span class="c1">// I had trouble figuring out how to make my functions recursive.</span>
+<span class="c1">// I spent 6 hours on this assignment.</span>
+</code></pre></div></div>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// I started late, so I had to rush to make sure I knew how to test my code.</span>
+<span class="c1">// It may be good to start early next time.</span>
+<span class="c1">// I spent 5 hours on this assignment.</span>
+</code></pre></div></div>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// It went fine; I found what I needed in my notes.</span>
+<span class="c1">// I spent 3 hours on this assignment.</span>
+</code></pre></div></div>
+
+<h2 id="hints-and-suggestions">Hints and suggestions</h2>
+
+<ul>
+  <li>If you are having trouble remembering how to use a <code class="language-plaintext highlighter-rouge">MutableMap</code> in Kotlin, go back to the <a href="https://kotlinlang.org/docs/kotlin-tour-collections.html#map">Kotlin Tour</a>.</li>
+</ul>
+
+<p> </p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

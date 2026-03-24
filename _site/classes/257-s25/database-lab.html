@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SQL and Database Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="SQL and Database Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-s25/database-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/257-s25/database-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SQL and Database Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"SQL and Database Lab","url":"http://localhost:4000/classes/257-s25/database-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">SQL and Database Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="objectives">Objectives</h2>
+<ul>
+  <li>Become familiar with SQL statements and syntax.</li>
+  <li>Become familiar with the postgresql database and with <code class="language-plaintext highlighter-rouge">psql</code> commands.</li>
+  <li>Learn how to set up and test your own database tables on the web server.</li>
+  <li>Set up your database for your <a href="project-3-ind">individual back-end deliverable</a></li>
+</ul>
+
+<h2 id="setting-up-your-database">Setting up your database</h2>
+<p>First, we’ll make sure that you can connect to the remote server.</p>
+
+<h3 id="step-1-ssh-login">Step 1: SSH Login</h3>
+<p>VSCode has a handy extension for making it easy to connect to a remote server through VSCode, and you hopefully already have <a href="https://code.visualstudio.com/docs/remote/ssh">Remote-SSH installed</a>.</p>
+
+<p>Therefore, you should open the Command Palette (View-&gt;Command Palette…) and then select <code class="language-plaintext highlighter-rouge">Remote-SSH: Connect to Host...</code></p>
+
+<p>You can also click this button in the lower-left corner:</p>
+
+<p><img src="/classes/257-s25/RemoteButton.png" alt="Button with &gt; &lt; icons" /></p>
+
+<p>If it asks you what system to use, select Linux (it will reject your request if you select Windows!).</p>
+
+<p>You should then enter:</p>
+
+<p><code class="language-plaintext highlighter-rouge">yourCarletonUserName@stearns.mathcs.carleton.edu</code>
+And your <strong>Carleton</strong> password if prompted.</p>
+
+<p>If it asks you about authorizes the fingerprint, confirm.</p>
+
+<h3 id="step-2-getting-setup">Step 2: Getting setup</h3>
+<p>It might take a minute for the login to complete. Once you are on stearns, you can ‘ls’ to get an idea of what is already there (there might be a lot if you’ve worked with other servers on campus since they share a file structure). I recommend you make a folder to keep all your work in for today called ‘webProject’.</p>
+
+<p>Before we go any further, we need to get our code and data into our working directory on stearns. Once you’ve ssh’ed in and you’ve navigated to your working directory, clone your ID3 repository by grabbing the URL from GitHub and typing the following into your connected Terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="o">[</span>URL of repository]
+</code></pre></div></div>
+
+<h3 id="step-3-creating-a-table">Step 3: Creating a table</h3>
+<p>Now we’re going to get ready to import your data into the database! In this part of the lab, we’ll be interacting directly with the database via psql. This <a href="https://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf">cheatsheet</a> contains all of the psql commands.</p>
+
+<p>The name of your database is the same as your username. The password you can find in the feedback on the ‘assignment’ Individual Database information, along with the port numbers that you’ll need later.</p>
+
+<p>First, we need to write a series of SQL statements that will actually create a table.</p>
+
+<ol>
+  <li>Make a script called <code class="language-plaintext highlighter-rouge">createtable.sql</code> for this purpose and put in the following:
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">IF</span> <span class="k">EXISTS</span> <span class="n">test</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">test</span> <span class="p">(</span>
+  <span class="n">col1</span> <span class="nb">text</span><span class="p">,</span>
+  <span class="n">col2</span> <span class="nb">int</span>
+<span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Here’s what this script does</p>
+
+<ul>
+  <li>Make sure the table doesn’t already exist in the database. If it does, remove it from the database. (This is what the first line in the script does.)</li>
+  <li>Create the table in the database and give it a name. (This is what the second line does.)</li>
+  <li>Tell the database which data to import, what its name in the database should be, and the type of data to import. (Refer to the <a href="http://www.w3schools.com/sql/default.asp">SQL tutorial</a> for information on <a href="http://www.w3schools.com/sql/sql_datatypes_general.asp">available data types</a>.)</li>
+</ul>
+
+<ol>
+  <li>
+    <p>Modify this script so that it reflects your own data.</p>
+  </li>
+  <li>Run the command:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psql <span class="nt">-f</span> createtable.sql
+</code></pre></div>    </div>
+    <p>You will need to enter your database password if prompted. (Sometimes you aren’t prompted for it, which is fine, and I have yet to figure out when you will or won’t be, so good to be prepared…)</p>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">psql</code> to enter the “interpreter”.</p>
+  </li>
+  <li>Type <code class="language-plaintext highlighter-rouge">\dt</code> at the prompt. Do you see your table in the database? If not, raise your hand for help.</li>
+</ol>
+
+<h2 id="preparingcleaning-the-data">Preparing/cleaning the data</h2>
+<p>Now we’re going to get your data ready. Some preparation of your data files locally will make it easier for you to load your data into a database on the server. You’ll be dealing with both an individual deliverable with a database and a team deliverable with a database, but today we are going to focus on just the individual deliverable.</p>
+
+<p>For the individual deliverable, you will use some (or all) of your team’s data to get practice creating and working with a database. It’s very important that the data you use for your individual deliverable is <strong>less than 20MB!</strong> (Otherwise the server will run out of room!)</p>
+
+<h3 id="step-1-make-sure-its-csv">Step 1: Make sure it’s CSV</h3>
+<p>Most of your datasets are already in CSV format, but if the portion that you want to use isn’t in CSV, you can most likely open it in Microsoft Excel (or Google Sheets, or other Excel-like program) and then save it to ‘csv’ format to convert it.</p>
+
+<h3 id="step-2-thinking-about-structure">Step 2: Thinking about structure</h3>
+<p>Next, while you have the data open in a spreadsheet or text editor, think about how you want to structure your database table. Which columns do you want to import? What data types would you like to store this data as? Will you have one table or multiple tables?</p>
+
+<p><strong>Modify your data file</strong> so that it only contains the columns that you want to import into your database. (You can do this in Excel/Google Sheets/a text editor, or if you’re really feeling ambitious you can write a program in your favorite language to modify the data file.)</p>
+
+<h3 id="step-3-removing-column-headers">Step 3: Removing column headers</h3>
+<p>You will need to remove the headers for columns from the dataset that you import to your database, so do that now.</p>
+
+<h3 id="step-4-push-to-individual-repo">Step 4: Push to individual repo</h3>
+<p>Once you are happy with the size and structure of your data (make sure it is less than 20MB!), add, commit, and push it to your ID3 repository.</p>
+
+<p>Verify on GitHub that it is there since that’s how we’ll be getting it onto the server.</p>
+
+<h2 id="working-with-your-data">Working with your data</h2>
+<p>Now you’re ready to import your data onto the server.</p>
+
+<ol>
+  <li>
+    <p>Connect back to stearns if you are no longer connected and navigate back to your ID3 repository.</p>
+  </li>
+  <li>
+    <p>Get back into the psql interpreter with <code class="language-plaintext highlighter-rouge">psql</code>.</p>
+  </li>
+  <li>
+    <p>At the prompt, type the following exactly as you see here, all on one line (replacing the values in [ ] with the correct names, and getting rid of the []):</p>
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">\</span><span class="k">copy</span> <span class="p">[</span><span class="n">your</span> <span class="k">table</span> <span class="n">name</span><span class="p">]</span> <span class="k">FROM</span> <span class="s1">'[data file name]'</span> <span class="k">DELIMITER</span> <span class="s1">','</span> <span class="n">CSV</span> 
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>For example, to import some dragon data into the dragon table, I would type in the following:</p>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">\</span><span class="k">copy</span> <span class="n">dragons</span> <span class="k">FROM</span> <span class="s1">'dragonData.csv'</span> <span class="k">DELIMITER</span> <span class="s1">','</span> <span class="n">CSV</span>
+</code></pre></div></div>
+
+<p>(Note that unlike SQL queries, \copy does not require a semicolon at the end of the statement.)</p>
+
+<ol>
+  <li>
+    <p>You will need to specify your copy command in the README for your individual deliverable, so you might as well add it right now</p>
+  </li>
+  <li>
+    <p>Let’s test to see if it worked. Type a simple SQL query statement at the prompt. Did you get the expected data back? If you were using the dragon data, you could do something like:</p>
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">dragons</span> <span class="k">WHERE</span> <span class="n">age</span><span class="o">&gt;</span><span class="mi">6</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">age</span> <span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="testing-your-database">Testing your database</h2>
+<p>Now is a good time to try out some of the queries that you intend to allow users to do on your data. We’ll eventually be using a Python library to script our SQL queries, but for now, it’s useful to learn how to construct SQL queries directly, in the psql interpreter</p>
+
+<ol>
+  <li>Identify a simple query that your users might want to do on your data, for example one of your core functions from your team project, or the data route that you chose for your flask deliverable.</li>
+  <li>Can it be boiled down to a single SQL statement? If not, break the query down into simpler parts.</li>
+  <li>Construct the SQL statement (or part of it, if you had to break your original query into smaller parts).</li>
+  <li>Run the query and see what results you get back.</li>
+  <li>If you didn’t get the expected results, or you got an error, fix the query and try again.</li>
+  <li>Repeat with other potential queries. Make your queries more complex as you gain confidence.</li>
+</ol>
+
+<h2 id="next-steps">Next steps</h2>
+<p>On Friday, you’ll be setting up your team’s database together. In preparation for that, you all should coordinate on cleaning and preparing your data. It would be good to start figuring out what queries can recreate your Python methods that grab data from your dataset. If you want to get ahead on connecting a Flask app to a database, feel free to start looking at <a href="psycopg2">Wednesday’s lab</a>.</p>
+
+<p><strong>Acknowledgements: This lab was based off one made by Prof Amy Csizmar Dalal.</strong></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

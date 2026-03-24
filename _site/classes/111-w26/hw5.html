@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW5 - Scrabble | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW5 - Scrabble" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w26/hw5" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w26/hw5" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW5 - Scrabble" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW5 - Scrabble","url":"http://localhost:4000/classes/111-w26/hw5"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW5 - Scrabble</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="logistics">Logistics</h2>
+
+<p>Due: Friday Feb 13th at 10pm</p>
+
+<p>You may work alone or with a partner, but you must type up the code yourself.  You may also discuss the assignment at a high level with other students.  You should list any student with whom you discussed each part, and the manner of discussion (high-level, partner, etc.) in a comment at the top of each file.  <strong>You should only have one partner for an entire assignment.</strong></p>
+
+<p>You should submit your assignment on Gradescope. You submit the files <code class="language-plaintext highlighter-rouge">scrabble.py</code>, and <code class="language-plaintext highlighter-rouge">readme.txt</code>.</p>
+
+<p>Here is the <a href="https://gemini.google.com/gem/1mEIXFbnVj7ssdQKJDifixMGPvLOuQ5r8?usp=sharing">homework helper bot for HW5</a>.</p>
+
+<hr />
+<h2 id="goals">Goals</h2>
+<p>Get practice with reading from files, loops, functions, and command-line arguments.</p>
+
+<h2 id="assessment">Assessment</h2>
+<p>The <strong>core requirements</strong> are:</p>
+<ul>
+  <li>Correct implementation of <code class="language-plaintext highlighter-rouge">scrabble</code> such that you pass the autograder tests</li>
+  <li>Header with at least five lines that start with <code class="language-plaintext highlighter-rouge">#</code> for each file</li>
+  <li>Basic style that can be checked automatically (not complete!)</li>
+  <li>Collaboration statement at the top of the file (even if it just says that you worked alone)</li>
+  <li>A <code class="language-plaintext highlighter-rouge">readme.txt</code> that includes your reflection (detailed below)</li>
+</ul>
+
+<p>The <strong>advanced requirements</strong> are:</p>
+<ul>
+  <li>Satisfy the core requirements</li>
+  <li><em>Descriptive</em> headers</li>
+  <li><em>Descriptive</em> docstrings for each function</li>
+  <li>Useful comments (and removal of non-useful starter comments)</li>
+  <li>Descriptive variable and function names that follow <code class="language-plaintext highlighter-rouge">snake_case</code></li>
+  <li>Good line grouping and spacing</li>
+  <li>Use iteration, conditionals, and functions to organize your programs and <strong>prevent any unnecessary duplication of code</strong></li>
+  <li>Not do any extra work, like calling a function multiple times when not needed</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+
+<p>Again, I recommend you complete this assignment in Olin 310, though it isn’t required to do so.</p>
+
+<p><a href="getting-started">Mount the COURSES drive</a> and remember to save everything into STUWORK. <strong>If you don’t do this, everything you write will disappear when you log out!!!!</strong></p>
+<ul>
+  <li>Create a new folder in your STUWORK called <code class="language-plaintext highlighter-rouge">HW5</code></li>
+  <li>Open your <code class="language-plaintext highlighter-rouge">HW5</code> folder in VSCode</li>
+  <li>Download the <a href="/classes/111-w26/HW5Starter.zip">starter code</a> move the starter files into your folder</li>
+</ul>
+
+<p>This program uses command-line arguments as input to the program. 
+Remember, those are things typed at the prompt in Terminal. 
+Clicking the run button won’t work for this program (which is why hopefully you haven’t been using it this whole time anyway). 
+If you’ve forgotten how to run in the Terminal, open a terminal window (in VSCode: Terminal -&gt; New Terminal, or ask the lab assistant if you’re having trouble). 
+Then type something like <code class="language-plaintext highlighter-rouge">python3 name_of_program.py argument1 argument1</code>.</p>
+
+<h3 id="overview">Overview</h3>
+<p>Scrabble is a word game in which players form words from a collection of tiles in their hand. 
+There are multiple players — usually up to four in the living-room version of the game, and precisely two in the <em>Word Freak</em> version. (<em>Word Freak</em> is a real book about the high-rolling world of international Scrabble contestants.)</p>
+
+<ul>
+  <li>The first player draws a “hand” of seven tiles from a collection of 100, each of which has a letter printed on it. They then form a legal word and place it in the middle of the 15-by-15 grid that serves as the gameboard. The player then randomly draws tiles from the unused tiles from the original set of 100
+to replenish their hand up to seven tiles.</li>
+  <li>All subsequent turns proceed as follows. The current player forms another legal word by adding one or more tiles from their hand to one or more tiles already on the board (so a new word must build off an already-played tile). The player then randomly draws tiles from the unused tiles from the original
+set of 100 to replenish their hand up to seven tiles (or until the pool of unused tiles is empty).</li>
+  <li>Scoring: each letter has a number of points (more common letters are worth 1 point; rarer letters are worth as many as 10 points). The total point value of a word is the sum of the point values of each letter played in the word, plus a bonus of 50 points if the word played is seven letters long. The player
+who has scored the most total points at the end of the game wins.</li>
+</ul>
+
+<p>In this assignment, you’ll concentrate on the very first move of the game, where there’s nothing yet on the board (and thus so that every letter in the words that you find must come from the seven tiles in the hand).</p>
+
+<h3 id="your-task">Your Task</h3>
+<p>Take a look through <code class="language-plaintext highlighter-rouge">scrabble.py</code>; you’re going to be adding some functionality to it in this assignment, and it will pay to know how what’s already there works.</p>
+
+<h3 id="score_word">score_word</h3>
+<p>Fill in <code class="language-plaintext highlighter-rouge">score_word(word)</code>, which should compute the score of the <code class="language-plaintext highlighter-rouge">word</code> given to it by adding up the scores of all of the letters in it, and adding a bonus if appropriate. (Do not check whether <code class="language-plaintext highlighter-rouge">word</code> is actually in the dictionary in <code class="language-plaintext highlighter-rouge">score_word</code>.)</p>
+
+<p>A great way to check if your <code class="language-plaintext highlighter-rouge">score_word</code> implementation is working is to start the Python shell with <code class="language-plaintext highlighter-rouge">python3</code> and then <code class="language-plaintext highlighter-rouge">import scrabble</code> and call your method on the provided examples, for example <code class="language-plaintext highlighter-rouge">scrabble.score_word("TSKTSK")</code> should return 14.</p>
+
+<h3 id="playable">playable</h3>
+<p>Fill in <code class="language-plaintext highlighter-rouge">playable(word, hand)</code>, which should return <code class="language-plaintext highlighter-rouge">True</code> if <code class="language-plaintext highlighter-rouge">word</code> can be produced solely by using the tiles in <code class="language-plaintext highlighter-rouge">hand</code>. (Do not check whether <code class="language-plaintext highlighter-rouge">word</code> is actually in the dictionary in <code class="language-plaintext highlighter-rouge">playable</code>.)
+<em>(Think through this question before you start typing! There are easy ways and hard ways to attack this problem. It’s worth thinking about how to make sure that you don’t repeat a letter more than the number of times you have that tile.)</em> <strong>Hint</strong>: if you see apparently bizarre behavior when you run your
+function, think about how you are changing lists when you might not mean to. Are you doing something that causes you trouble down the road?</p>
+
+<h3 id="all_playable">all_playable</h3>
+<p>Add a function <code class="language-plaintext highlighter-rouge">all_playable(hand, words)</code> that takes a <em>string</em> <code class="language-plaintext highlighter-rouge">hand</code> and list of strings <code class="language-plaintext highlighter-rouge">words</code> and returns a list of all valid words from <code class="language-plaintext highlighter-rouge">words</code> that can be played using only the tiles from <code class="language-plaintext highlighter-rouge">hand</code>. One suggestion for an approach to this is to implement something like the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make an empty list of playable words
+for every word in the dictionary:
+    if that word is playable given this hand:
+        add that word to the list of playable words
+return the list of playable words
+</code></pre></div></div>
+
+<p>Be sure to add a function header for your new function. Note that if you have a string <code class="language-plaintext highlighter-rouge">"HI"</code> and want a list of each separate letter, you can use <code class="language-plaintext highlighter-rouge">list("HI")</code> to get <code class="language-plaintext highlighter-rouge">['H','I']</code>. It isn’t necessary to use this information to solve this problem, but you might find it useful.</p>
+
+<h3 id="best_playable">best_playable</h3>
+<p>Add a function <code class="language-plaintext highlighter-rouge">best_playable(hand, words)</code> that computes and returns a list of the highest-scoring word(s) that can be played from the tiles in hand. 
+(Again <code class="language-plaintext highlighter-rouge">hand</code> is a string and <code class="language-plaintext highlighter-rouge">words</code> is a list of words.)
+If the best score that can be achieved is X and only one word scores X, then you should return a list with one item.
+If multiple words can achieve X, you should return a list with each of them.</p>
+
+<p>I recommend first figuring out how to return just one best-scoring word and then working on how to maintain a list of only the best-scoring words.</p>
+
+<h3 id="main">main</h3>
+<p>Add to <code class="language-plaintext highlighter-rouge">main</code> such that the user can specify via command-line argument if they want to provide their hand (<code class="language-plaintext highlighter-rouge">provide</code>) or get a random hand (<code class="language-plaintext highlighter-rouge">random</code>) and then allow them to have the following interactions:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>python3 scrabble.py random
+Your hand is: <span class="o">[</span><span class="s1">'E'</span>, <span class="s1">'D'</span>, <span class="s1">'C'</span>, <span class="s1">'N'</span>, <span class="s1">'D'</span>, <span class="s1">'U'</span>, <span class="s1">'U'</span><span class="o">]</span>
+The best possible play<span class="o">(</span>s<span class="o">)</span> will earn you 8 and are: <span class="o">[</span><span class="s1">'DUNCE'</span><span class="o">]</span>
+<span class="nv">$ </span>python3 scrabble.py provide
+What is your hand? PYTHONS
+The best possible play<span class="o">(</span>s<span class="o">)</span> will earn you 65 and are: <span class="o">[</span><span class="s1">'PHYTONS'</span>, <span class="s1">'PYTHONS'</span>, <span class="s1">'TYPHONS'</span><span class="o">]</span>
+</code></pre></div></div>
+<hr />
+
+<h2 id="reflection">Reflection</h2>
+
+<p>Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?  Write a brief discussion (a sentence or two is fine) in your <code class="language-plaintext highlighter-rouge">readme.txt</code> file.</p>
+
+<h2 id="submission">Submission</h2>
+<p>You should submit your file through the Gradescope link on Moodle for this assignment.
+You are able to submit your code as many times as you wish before the deadline to fix any issues (and you should do so).
+If you have questions about what the autograder is telling you is wrong, please ask!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

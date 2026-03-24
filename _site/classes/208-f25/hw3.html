@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW3 - String Things | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW3 - String Things" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/hw3" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/hw3" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW3 - String Things" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW3 - String Things","url":"http://localhost:4000/classes/208-f25/hw3"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW3 - String Things</h1>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Due: Friday, Oct 3rd, at 10:00pm</strong></p>
+
+<ul>
+  <li>Starter code: <a href="/classes/208-f25/a3.tar">a3.tar</a></li>
+  <li>Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">ds.c</code> and <code class="language-plaintext highlighter-rouge">ss.c</code></li>
+</ul>
+
+<h2 id="goals">Goals</h2>
+<p>This assignment is designed to help you practice the following:</p>
+
+<ul>
+  <li>understanding integer number types as possible containers for multiple data values</li>
+  <li>parsing null-terminated strings</li>
+  <li>thinking of contiguous bytes as having a continuous sequence of addresses</li>
+</ul>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+<p>For this assignment, you may work alone or with a partner, but you must type up all of the code yourself. (It is therefore unexpected for two code submissions to be completely identical.)</p>
+
+<p>You may also discuss the assignment at a high level with other students.</p>
+
+<p>You should list any student with whom you discussed the assignment, and the manner of discussion (high level, partner, etc.) in comments at the top of your C source file(s).</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<h2 id="assessment">Assessment</h2>
+<p>The <strong>core</strong> requirements for your submission are:</p>
+
+<ul>
+  <li>pass the happy-path autograder tests (these have names starting with <code class="language-plaintext highlighter-rouge">"_CR"</code>)</li>
+  <li>be somewhat <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/style-guide">well-styled</a></li>
+</ul>
+
+<p>The <strong>advanced</strong> requirements for your submission are:</p>
+
+<ul>
+  <li>satisfy the core requirements</li>
+  <li>pass all autograder tests</li>
+  <li>be quite <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/style-guide">well-styled</a>, particularly with well-chosen variable names, naming all magic numbers, good identation, and using helper methods/loops to reduce code duplication</li>
+  <li>have well-chosen algorithms (i.e., don’t over-complicate this task!)</li>
+  <li>have thorough error-handling</li>
+  <li>include your name and collaboration statement at the top of your C source file(s)</li>
+</ul>
+
+<h2 id="assignment-overview">Assignment overview</h2>
+<p>This assignment is about fundamental operations that are useful in different “systems” areas, which we’ll explore throughout the rest of the term. Your work will be divided across two different programs:</p>
+
+<ul>
+  <li>
+    <p>Data Store (<code class="language-plaintext highlighter-rouge">ds.h</code>/<code class="language-plaintext highlighter-rouge">ds.c</code>): Given a label and a string, stores/retrieves the string in/from the appropriate location in a Data Store. The label is provided as an <code class="language-plaintext highlighter-rouge">int</code> and contains multiple values which, together, indicate to/from where the string should be stored/read.</p>
+  </li>
+  <li>
+    <p>String Splitter (<code class="language-plaintext highlighter-rouge">ss.h</code>/<code class="language-plaintext highlighter-rouge">ss.c</code>): Given one large string and a delimiter, splits the string into a series of substrings. The result is provided as an array of each substring (e.g., as an array of the addresses where each substring starts).</p>
+  </li>
+</ul>
+
+<p>You are given a lot of starting code for this assignment —- a header file for each program, as well as a <code class="language-plaintext highlighter-rouge">main.c</code> file to test your code. You should read through <code class="language-plaintext highlighter-rouge">main.c</code> to see how your code will be used, and make sure to read the function documentation in the header files before starting.</p>
+
+<h2 id="getting-the-starter-package">Getting the starter package</h2>
+<p>Like the previous assignment, this one has multiple files to comprise its starter code, including some testing tools. Like before, you can access the code package as a downloadable <code class="language-plaintext highlighter-rouge">.tar</code> file.</p>
+
+<p>To get started on this assignment:</p>
+
+<ol>
+  <li>
+    <p>Login to <code class="language-plaintext highlighter-rouge">mantis.mathcs.carleton.edu</code> using <a href="https://fern.mathcs.carleton.edu/jupyter/">fern</a> and open your <code class="language-plaintext highlighter-rouge">CS208</code> folder. Go back and look at <a href="mantis-lab">Lab 0</a> if you have any questions about how to do this.</p>
+  </li>
+  <li>
+    <p>In your terminal, run:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> wget https://anyaevostinar.github.io/classes/208-f25/a3.tar
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Still in your terminal, extract the <code class="language-plaintext highlighter-rouge">a3</code> folder:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">tar </span>xvf a3.tar
+</code></pre></div>    </div>
+
+    <p>This will create a folder named <code class="language-plaintext highlighter-rouge">a3</code> with some stuff in it.</p>
+  </li>
+  <li>
+    <p>Read the function documentation in <code class="language-plaintext highlighter-rouge">ds.h</code> and <code class="language-plaintext highlighter-rouge">ss.h</code> and get started.</p>
+  </li>
+</ol>
+
+<h2 id="your-assignment">Your assignment</h2>
+<p>Read through the code to see what each part needs to be able to do. If you don’t understand what a docstring says or what I’m looking for, just ask!</p>
+
+<h3 id="core">Core</h3>
+<p>In order to satisfy the core requirements, you must complete the basic functionality for each program.</p>
+
+<h4 id="part-a-data-store">Part A: Data Store</h4>
+<p>You’ll implement a Data Store that can hold many different strings. Look at the top of <code class="language-plaintext highlighter-rouge">ds.h</code>: there are <code class="language-plaintext highlighter-rouge">#defines</code> to indicate how many entries are in the table and how much data (in bytes) each entry can hold. The provided values are 16 entries with 16 bytes each, giving a total of 256 bytes you can store in the Data Store.</p>
+
+<p>Every string we want to store has an associated <em>label</em>, represented as a 32-bit integer. The label is actually a combination of different information for storing the string. The last <code class="language-plaintext highlighter-rouge">DS_DATA_BITS</code> (4 by default) are used when reading from the Data Store, to indicate where to start reading within the 16 bytes in that entry. The next DS_ENTRY_BITS (working right-to-left) indicate which entry. The remaining bits (by default, the leftmost 24 bits of the label) hold the “ID” for the string; with only 256 bytes we can store, many different labels may map to the same entry, and we want to indicate what we’ve most recently stored.</p>
+
+<p>For example, a label of <code class="language-plaintext highlighter-rouge">0x1234abcd</code> would be broken up into <code class="language-plaintext highlighter-rouge">0x1234ab</code> for the ID, <code class="language-plaintext highlighter-rouge">0xc</code> for the entry number, and <code class="language-plaintext highlighter-rouge">0xd</code> for the data start position. The breakup of the bits is illustrated in the figure below:</p>
+
+<p><img src="/classes/208-f25/a3_ds.png" alt="Data Store Label" /></p>
+
+<p>Your first task is to implement <code class="language-plaintext highlighter-rouge">split_label</code> to divide this integer label into its three parts, storing each in the appropriate provided addresses:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">split_label</span><span class="p">(</span><span class="kt">int</span> <span class="n">label</span><span class="p">,</span> <span class="kt">int</span> <span class="o">*</span><span class="n">id_addr</span><span class="p">,</span> <span class="kt">int</span> <span class="o">*</span><span class="n">entry_num_addr</span><span class="p">,</span> <span class="kt">int</span> <span class="o">*</span><span class="n">data_pos_addr</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>You can test your implementation by running <code class="language-plaintext highlighter-rouge">main.c</code> and specifying not to test storage or lookup (you’ll complete that later):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>make
+gcc <span class="nt">-O0</span> <span class="nt">-g</span> <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-o</span> a3 ds.c ss.c main.c
+<span class="nv">$ </span>./a3 ds 0 0
+Split s1<span class="s1">'s label (0x78901234) into id=0x789012, entry=0x3, data pos=0x4
+</span></code></pre></div></div>
+
+<p>Make sure your code works for any values of <code class="language-plaintext highlighter-rouge">DS_DATA_BITS</code> and <code class="language-plaintext highlighter-rouge">DS_ENTRY_BITS</code>. For example, change the <code class="language-plaintext highlighter-rouge">#defines</code> in <code class="language-plaintext highlighter-rouge">ds.h</code>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#define DS_ENTRY_BITS 3
+#define DS_DATA_BITS 3
+#define DS_NUM_ENTRIES 8
+#define DS_NUM_BYTES_PER_ENTRY 8
+</span></code></pre></div></div>
+
+<p>Then, you can test your code again:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>make
+gcc <span class="nt">-O0</span> <span class="nt">-g</span> <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-o</span> a3 ds.c ss.c main.c
+<span class="nv">$ </span>./a3 ds 0 0
+Split s1<span class="s1">'s label (0x78901234) into id=0x1e24048, entry=0x6, data pos=0x4
+</span></code></pre></div></div>
+
+<h4 id="part-b-string-splitter">Part B: String Splitter</h4>
+<p>For this part, you’ll implement a program in <code class="language-plaintext highlighter-rouge">ss.c</code> that can divide one large string up into several small strings. To satisfy the core requirements, you’ll need to implement the following function:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">split_string</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">s</span><span class="p">,</span> <span class="kt">char</span> <span class="n">delim</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">substrings</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Given the input string <code class="language-plaintext highlighter-rouge">s</code> and a character <code class="language-plaintext highlighter-rouge">delim</code>, you should store the address of the start of each substring in <code class="language-plaintext highlighter-rouge">substrings</code>, and return the total number stored. You do not need to copy the strings.</p>
+
+<p>Note: Make sure to check if any provided pointers are <code class="language-plaintext highlighter-rouge">NULL</code>! Also, you may assume that <code class="language-plaintext highlighter-rouge">substrings</code> is large enough to store an address for each substring.</p>
+
+<p>For example, if <code class="language-plaintext highlighter-rouge">s</code> points to the string <code class="language-plaintext highlighter-rouge">"abc-def-gh-i"</code> that begins at address <code class="language-plaintext highlighter-rouge">0x100</code>, then the call <code class="language-plaintext highlighter-rouge">split_string(s, '-', substr_arr)</code> should return <code class="language-plaintext highlighter-rouge">4</code> and store the following in <code class="language-plaintext highlighter-rouge">substr_arr</code>:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">substr_arr[0]</code> should now contain <code class="language-plaintext highlighter-rouge">0x100</code> (the address of the <code class="language-plaintext highlighter-rouge">'a'</code> in <code class="language-plaintext highlighter-rouge">"abc"</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">substr_arr[1]</code> should now contain <code class="language-plaintext highlighter-rouge">0x104</code> (the address of the <code class="language-plaintext highlighter-rouge">'d'</code> in <code class="language-plaintext highlighter-rouge">"def"</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">substr_arr[2]</code> should now contain <code class="language-plaintext highlighter-rouge">0x108</code> (the address of the <code class="language-plaintext highlighter-rouge">'g'</code> in <code class="language-plaintext highlighter-rouge">"gh"</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">substr_arr[3]</code> should now contain <code class="language-plaintext highlighter-rouge">0x10b</code> (the address of the <code class="language-plaintext highlighter-rouge">'i'</code> in <code class="language-plaintext highlighter-rouge">"i"</code>)</li>
+</ul>
+
+<p>Hint: You are strongly encouraged to use the <code class="language-plaintext highlighter-rouge">strtok</code> function. <a href="https://cplusplus.com/reference/cstring/strtok/?kw=strtok">The documentation page</a> has a really helpful code sample.</p>
+
+<p>You can test your code similarly to Part A, but change the first command-line argument to <code class="language-plaintext highlighter-rouge">ss</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>make
+gcc <span class="nt">-O0</span> <span class="nt">-g</span> <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-o</span> a3 ds.c ss.c main.c
+<span class="nv">$ </span>./a3 ss <span class="s2">"banana"</span> <span class="s2">"a"</span>
+The string to <span class="nb">split </span>is: <span class="s2">"banana"</span>       
+The delimiter is: <span class="s1">'a'</span>
+0: <span class="s1">'b'</span>
+1: <span class="s1">'n'</span>
+2: <span class="s1">'n'</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./a3 ss <span class="s2">"abc-def-gh-i"</span> <span class="s2">"-"</span>
+The string to <span class="nb">split </span>is: <span class="s2">"abc-def-gh-i"</span> 
+The delimiter is: <span class="s1">'-'</span>
+0: <span class="s1">'abc'</span>
+1: <span class="s1">'def'</span>
+2: <span class="s1">'gh'</span>
+3: <span class="s1">'i'</span>
+</code></pre></div></div>
+
+<h3 id="advanced">Advanced</h3>
+<p>For the advanced requirements, you must add sufficient error handling and additional functionality to the two programs.</p>
+
+<p>Note: Check the list at the top of this page to make sure you have everything you need (e.g., collaboration statement, good code style, etc.).</p>
+
+<h4 id="part-a-data-store-1">Part A: Data Store</h4>
+<p>For the advanced requirements, you’ll need to finish the implementation of the Data Store. First, implement <code class="language-plaintext highlighter-rouge">store_string</code> to store the given string in its appropriate entry in the data store:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">store_string</span><span class="p">(</span><span class="n">data_store_t</span> <span class="o">*</span><span class="n">data_store</span><span class="p">,</span> <span class="kt">int</span> <span class="n">label</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">s</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Make sure to <a href="https://cplusplus.com/reference/cstring/memset/">clear out the data bits</a> in the entry and copy over the provided string to the <code class="language-plaintext highlighter-rouge">data</code> portion of the <code class="language-plaintext highlighter-rouge">data_store_entry_t</code> and the <code class="language-plaintext highlighter-rouge">id</code> to its location in the entry.</p>
+
+<p>After you’ve completed this function, you should be able to test the code again by running <code class="language-plaintext highlighter-rouge">main.c</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>make
+gcc <span class="nt">-O0</span> <span class="nt">-g</span> <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-o</span> a3 ds.c ss.c main.c
+<span class="nv">$ </span>./a3 ds 1 0
+Split s1<span class="s1">'s label (0x78901234) into id=0x789012, entry=0x3, data pos=0x4
+
+[entry ID: 0x0, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x1, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x2, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x3, id: 0x00789012]   h  o  b  b  e  s \0 \0 \0 \0 \0 \0 \0 \0 \0 \0
+[entry ID: 0x4, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x5, id: 0x00abcd97]   l  u  l  u \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0
+[entry ID: 0x6, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x7, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x8, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x9, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xa, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xb, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xc, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xd, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xe, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xf, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+</span></code></pre></div></div>
+
+<p>Finally, fill in the implementation of <code class="language-plaintext highlighter-rouge">lookup_string</code>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">lookup_string</span><span class="p">(</span><span class="n">data_store_t</span> <span class="o">*</span><span class="n">data_store</span><span class="p">,</span> <span class="kt">int</span> <span class="n">label</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">dest</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>This function uses the data position in the label to choose the location to start reading the string within the entry. Additionally, if you didn’t already, make sure to add a null terminator to any string longer than the data for that entry (like entry <code class="language-plaintext highlighter-rouge">0xe</code> in the last example below).</p>
+
+<p>You can test the full Data Store functionality using <code class="language-plaintext highlighter-rouge">main.c</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>make
+gcc <span class="nt">-O0</span> <span class="nt">-g</span> <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-o</span> a3 ds.c ss.c main.c
+<span class="nv">$ </span>./a3 ds 1 1
+Split s1<span class="s1">'s label (0x78901234) into id=0x789012, entry=0x3, data pos=0x4
+
+[entry ID: 0x0, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x1, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x2, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x3, id: 0x00789012]   h  o  b  b  e  s \0 \0 \0 \0 \0 \0 \0 \0 \0 \0
+[entry ID: 0x4, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x5, id: 0x00abcd97]   l  u  l  u \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0
+[entry ID: 0x6, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x7, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x8, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x9, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xa, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xb, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xc, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xd, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xe, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xf, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+New label: 0x78901330 for data: '</span>:<span class="o">)</span><span class="s1">'
+
+New label: 0xbad0beef for data: '</span>This string is super long<span class="s1">'
+
+[entry ID: 0x0, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x1, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x2, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x3, id: 0x00789013]   :  ) \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0
+[entry ID: 0x4, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x5, id: 0x00abcd97]   l  u  l  u \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0
+[entry ID: 0x6, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x7, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x8, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0x9, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xa, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xb, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xc, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xd, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+[entry ID: 0xe, id: 0x00bad0be]   T  h  i  s     s  t  r  i  n  g     i  s    \0
+[entry ID: 0xf, id: 0x00000000]   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+Found strings: '</span>es<span class="s1">', '</span>u<span class="s1">', ''
+Success values: 0, 0, -1
+</span></code></pre></div></div>
+
+<h4 id="part-b-string-splitter-1">Part B: String Splitter</h4>
+<p>For the advanced requirements, you need to extend your String Splitter implementation to implement the <code class="language-plaintext highlighter-rouge">build_substrings</code> function. This function is very similar to <code class="language-plaintext highlighter-rouge">split_string</code> except that it must allocate and return the array, rather than storing the substrings (as pointers to the first characters) in a provided array. Also, the number of parsed substrings is stored in a provided address rather than returned:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span> <span class="o">**</span> <span class="nf">build_substrings</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">s</span><span class="p">,</span> <span class="kt">char</span> <span class="n">delim</span><span class="p">,</span> <span class="kt">int</span> <span class="o">*</span><span class="n">num_elts</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>For example, if <code class="language-plaintext highlighter-rouge">s</code> points to the string <code class="language-plaintext highlighter-rouge">"abc-def-gh-i"</code> that begins at address <code class="language-plaintext highlighter-rouge">0x100</code>, then the call <code class="language-plaintext highlighter-rouge">build_substrings(s, '-', num_ptr)</code> should allocate a new <code class="language-plaintext highlighter-rouge">char **</code> with space for five <code class="language-plaintext highlighter-rouge">char *</code> elements, store <code class="language-plaintext highlighter-rouge">4</code> in the location pointed to by <code class="language-plaintext highlighter-rouge">num_ptr</code>, and store the four addresses (see above) followed by <code class="language-plaintext highlighter-rouge">NULL</code> in the returned <code class="language-plaintext highlighter-rouge">char **</code>.</p>
+
+<p><strong>Note:</strong> To test your code, un-comment <code class="language-plaintext highlighter-rouge">#define SS_ADVANCED</code> in <code class="language-plaintext highlighter-rouge">ss.h</code>. Then you can re-run <code class="language-plaintext highlighter-rouge">make</code> and run the same tests as before.</p>
+
+<p>Also note: Typically you need to free any memory you malloc. For this function, you can assume that the caller will do that freeing.</p>
+
+<p>Tip: If you make a helper function to count your substrings, make sure not to use <code class="language-plaintext highlighter-rouge">strtok</code>, since that destroys your string!</p>
+
+<h2 id="submitting-your-work">Submitting your work</h2>
+<p>To submit this assignment, you should upload your <code class="language-plaintext highlighter-rouge">ds.c</code> and <code class="language-plaintext highlighter-rouge">ss.c</code> files to Gradescope; we will use our own <code class="language-plaintext highlighter-rouge">main.c</code>, <code class="language-plaintext highlighter-rouge">.h</code> files, and <code class="language-plaintext highlighter-rouge">Makefile</code> to do our testing and grading.</p>
+
+<h2 id="advice">Advice</h2>
+<ul>
+  <li>
+    <p><strong>Read the function definitions in <code class="language-plaintext highlighter-rouge">ds.h</code>/<code class="language-plaintext highlighter-rouge">ss.h</code>. They are there to help you!</strong></p>
+  </li>
+  <li>
+    <p>Start with <code class="language-plaintext highlighter-rouge">split_label</code> in <code class="language-plaintext highlighter-rouge">ds.c</code>; you can add function calls to the testing code in <code class="language-plaintext highlighter-rouge">main.c</code> to try splitting different labels.</p>
+  </li>
+  <li>
+    <p>Try to complete the core requirements for one of the programs, then upload to Gradescope to test the upload flow (you should be uploading two <code class="language-plaintext highlighter-rouge">.c</code> files) and see if that one works – if you get stuck with one program, switch to the other for a bit!</p>
+  </li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

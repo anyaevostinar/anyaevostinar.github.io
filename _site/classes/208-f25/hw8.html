@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW8 - A Simple Command Shell | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW8 - A Simple Command Shell" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/hw8" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/hw8" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW8 - A Simple Command Shell" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW8 - A Simple Command Shell","url":"http://localhost:4000/classes/208-f25/hw8"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW8 - A Simple Command Shell</h1>
+  </header>
+
+  <div class="post-content">
+    <ul>
+  <li>Due <strong>Friday Nov 14th at 10pm</strong></li>
+  <li>Upload via Gradescope as: <code class="language-plaintext highlighter-rouge">shell208.c</code></li>
+</ul>
+
+<h2 id="goals">GOALS</h2>
+<p>This assignment is designed to help you practice the following:</p>
+<ul>
+  <li>Manipulating Linux processes in C</li>
+  <li>Demystify command shells like bash, zsh, etc.</li>
+  <li>Understand how command-line arguments are arranged in memory</li>
+  <li>Learn how to use pipes for inter-process communication</li>
+  <li>Learn how to handle signals</li>
+</ul>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+<p>For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)</p>
+
+<p>You may also discuss the assignment at a high level with other students.</p>
+
+<p>You should list any student with whom you discussed the assignment, and the manner of discussion (high level, partner, etc.) in comments at the top of your C source file(s).</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<h2 id="assessment">Assessment</h2>
+
+<p>The <strong>core requirements</strong> for your submission are:</p>
+<ul>
+  <li>Pass the core tests on Gradescope</li>
+  <li>Include your name and collaboration statement at the top of <code class="language-plaintext highlighter-rouge">shell208.c</code></li>
+  <li>If the user types “exit”, your shell exits</li>
+  <li>Implement the basic mode: print prompt; get one-word command from user; execute
+  command (or print an error message); repeat forever</li>
+  <li>Support a single command-line argument</li>
+  <li>Support “command &gt; file” (redirecting command’s stdout to a file)</li>
+  <li>Do NOT use <code class="language-plaintext highlighter-rouge">system</code> or any other built-in command that defeats the point of the assignment
+    <ul>
+      <li>The point of the assignment is to use <code class="language-plaintext highlighter-rouge">fork</code>, <code class="language-plaintext highlighter-rouge">dup2</code>, and <code class="language-plaintext highlighter-rouge">exec</code>s to create a shell, if you are using those, you are probably good</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The <strong>advanced requirements</strong> of your submission are:</p>
+<ul>
+  <li>Satisfy the core requirements</li>
+  <li>Pass the advanced tests on Gradescope</li>
+  <li>Support multiple command-line arguments</li>
+  <li>Support “<code class="language-plaintext highlighter-rouge">command &lt; file</code>” (redirecting command’s stdin from a file)</li>
+  <li>Support “<code class="language-plaintext highlighter-rouge">command1 | command2</code>” (piping command1’s stdout to command2’s stdin, <strong>including command-line arguments for each command</strong>)</li>
+  <li>If a <code class="language-plaintext highlighter-rouge">SIGINT</code> signal is sent to the parent (shell) process, respond by printing “<code class="language-plaintext highlighter-rouge">^C</code>” to stderr and printing the prompt again (note that this has to be tested manually so there isn’t an autograder for it)</li>
+</ul>
+
+<h2 id="background">Background</h2>
+<p>When you interact with a Unix (or other similar) command prompt, you are interacting with a program known as a <em>command shell</em>. This might be <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a> in a WSL or Linux terminal, <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a> in the terminal in VS Code, <a href="https://en.wikipedia.org/wiki/Z_shell">zsh</a> in a macOS Terminal, <a href="https://en.wikipedia.org/wiki/PowerShell">PowerShell</a> in Windows, <a href="https://en.wikipedia.org/wiki/Cmd.exe">cmd</a> in a Windows “command prompt” window, etc.</p>
+
+<p>Though command shells are typically sophisticated programs with many features and they often implement their own full-fledged programming languages (e.g., “bash scripting”), their flow of control is, at heart, conceptually very simple:</p>
+
+<ol>
+  <li>print a prompt for the user (e.g. <code class="language-plaintext highlighter-rouge">$</code> or <code class="language-plaintext highlighter-rouge">%</code>)</li>
+  <li>read the user’s command</li>
+  <li>execute the command</li>
+  <li>wait for the command to finish</li>
+  <li>go to step 1</li>
+</ol>
+
+<h2 id="your-assignment">Your Assignment</h2>
+<p>You will write a simple command shell, named <code class="language-plaintext highlighter-rouge">shell208</code>, that performs the most common operations that shells perform.</p>
+
+<h2 id="core">Core</h2>
+<p>The core requirements for your shell are that it can handle:</p>
+<ul>
+  <li>if the user types <code class="language-plaintext highlighter-rouge">exit</code>, your shell exits,</li>
+  <li>single-word commands (e.g., <code class="language-plaintext highlighter-rouge">ls</code>, <code class="language-plaintext highlighter-rouge">pwd</code>),</li>
+  <li>commands with a single command-line argument (e.g., <code class="language-plaintext highlighter-rouge">ls -l</code>, <code class="language-plaintext highlighter-rouge">echo dog</code>), and</li>
+  <li>redirection of standard output (<code class="language-plaintext highlighter-rouge">stdout</code>, via <code class="language-plaintext highlighter-rouge">&gt;</code>) to a file.</li>
+</ul>
+
+<p>For example, each of the following should work as they do in <code class="language-plaintext highlighter-rouge">bash</code> on <code class="language-plaintext highlighter-rouge">mantis</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shell208<span class="nv">$ </span><span class="nb">pwd
+</span>shell208<span class="nv">$ </span><span class="nb">ls
+</span>shell208<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span> mysubdirectory
+shell208<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span> <span class="o">&gt;</span> listing.txt
+shell208<span class="nv">$ </span><span class="nb">exit</span>
+</code></pre></div></div>
+
+<h2 id="advanced">Advanced</h2>
+<p>The advanced requirements are that your shell can additionally handle:</p>
+
+<ul>
+  <li>multiple command-line arguments,</li>
+  <li>redirection of standard input (<code class="language-plaintext highlighter-rouge">stdin</code>, via <code class="language-plaintext highlighter-rouge">&lt;</code>) from a file,</li>
+  <li>capturing <code class="language-plaintext highlighter-rouge">SIGINT</code> signals, and</li>
+  <li>piping commands via <code class="language-plaintext highlighter-rouge">|</code>.</li>
+</ul>
+
+<p>For example, each of the following should work as they do in bash on mantis:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shell208<span class="nv">$ </span><span class="nb">ls
+</span>shell208<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span> mysubdirectory
+shell208<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span> <span class="o">&gt;</span> listing.txt
+shell208<span class="nv">$ </span><span class="nb">wc</span> &lt; myfile.txt
+shell208<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-lah</span> | <span class="nb">wc
+</span>shell208<span class="nv">$ </span>^C                                   /<span class="k">*</span> user pressed ctrl-c <span class="k">*</span>/
+shell208<span class="nv">$ </span>^C                                    /<span class="k">*</span> your shell printed ^C to stderr <span class="k">*</span>/
+shell208<span class="nv">$ </span><span class="nb">exit</span>
+</code></pre></div></div>
+
+<p>It’s also fine if your shell prints the <code class="language-plaintext highlighter-rouge">^C</code> on the same line as the user’s:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shell208<span class="nv">$ </span><span class="nb">ls
+</span>shell208<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span> mysubdirectory
+shell208<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-l</span> <span class="o">&gt;</span> listing.txt
+shell208<span class="nv">$ </span><span class="nb">wc</span> &lt; myfile.txt
+shell208<span class="nv">$ </span><span class="nb">ls</span> <span class="nt">-lah</span> | <span class="nb">wc
+</span>shell208<span class="nv">$ </span>^C^C               /<span class="k">*</span> user pressed ctrl-c and your shell<span class="s1">'s printed ^C to stderr */
+shell208$ exit
+</span></code></pre></div></div>
+
+<h2 id="submitting-your-work">SUBMITTING YOUR WORK</h2>
+<p>Submit your program via Gradescope as a single C source file named <code class="language-plaintext highlighter-rouge">shell208.c</code>. This program should compile without warnings on mantis using:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-g</span> <span class="nt">-Og</span> <span class="nt">-o</span> shell208 shell208.c
+</code></pre></div></div>
+
+<h2 id="help">HELP</h2>
+<p>There is a <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/samples#samples">collection of sample programs</a> that demonstrate all of the essential techniques you will need to complete this assignment. You’ll mostly be repurposing the sample programs and making sure the logic fits together. We’ll also, as usual, go through many of the techniques in class, which will be recorded and posted to Moodle.</p>
+
+<p>Some tips:</p>
+<ul>
+  <li>Note that there isn’t a style requirement on this assignment, so feel free to just have a bunch of gross conditionals checking for each thing.</li>
+  <li>If you are getting weird/inconsistent behavior, make sure that your shell parent is the only thing calling <code class="language-plaintext highlighter-rouge">fork</code>. You shouldn’t have child processes calling <code class="language-plaintext highlighter-rouge">fork</code> and therefore having “grandchildren” processes because this can lead to race conditions or deadlock (due to the children blocking). Each child needs to be able to run in parallel, which can only be achieved by the parent managing them (and waiting for both of them!).</li>
+</ul>
+
+<h2 id="have-fun">HAVE FUN!</h2>
+<p>This program is pretty cool once you get it working. Take it slow, and handle only one part of the rubric at a time. You can do this!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

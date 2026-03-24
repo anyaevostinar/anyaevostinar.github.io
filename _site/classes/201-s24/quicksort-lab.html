@@ -62,7 +62,7 @@
 
 <p>a. How large of arrays are you initially testing with?</p>
 
-<p>b. How many runs of the experiment are initially occurring? Is the first run being counted?</p>
+<p>b. How many runs of the experiment are initially occurring? Note that the first round isn’t being counted because it often takes longer due to setup.</p>
 
 <p>c. Which pivot selection approaches are being tested?</p>
 
@@ -75,7 +75,9 @@
 <p>Plot the resulting values on the <a href="https://www.desmos.com/calculator">Desmos calculator</a> (click the + and choose “table” to enter in your timing data points). Do some intermediate sizes to get a more complete curve if you’d like. (You can try going higher than 100k, but it might take a while to run.)</p>
 
 <h2 id="exercise-3">Exercise 3</h2>
-<p>Now let’s see what happens when the arrays are partially sorted. Adjust the argument to <code class="language-plaintext highlighter-rouge">shuffle</code> to be <code class="language-plaintext highlighter-rouge">quicksortArray.length/2</code> and try running your program again. If you get an error, try shortening the array back down to 1k or 10k. Based on those times, remove the pivot selector that you think might be causing the error and try with larger arrays again. (Mark “Error” in your table for any pivot selectors that can’t handle a given array size.)</p>
+<p>Now let’s see what happens when the arrays are partially sorted. Adjust the argument to <code class="language-plaintext highlighter-rouge">shuffle</code> to be <code class="language-plaintext highlighter-rouge">arraySize/2</code> and try running your program again. If you get an error, try shortening the array back down to 1k or 10k. Based on those times, remove the pivot selector that you think might be causing the error and try with larger arrays again. (Mark “Error” in your table for any pivot selectors that can’t handle a given array size.)</p>
+
+<p><em>To remove a pivot selector, just delete it from the <code class="language-plaintext highlighter-rouge">selectors</code> list and the <code class="language-plaintext highlighter-rouge">names</code> list.</em></p>
 
 <h2 id="exercise-4">Exercise 4</h2>
 <p>What happens if the array is completely sorted? Change the argument to <code class="language-plaintext highlighter-rouge">shuffle</code> to just be 0 and see what happens. How small of arrays do you need to sort to be able to run all the selectors?</p>

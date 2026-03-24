@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Debugging C with GDB Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Debugging C with GDB Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/c-gdb-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/c-gdb-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Debugging C with GDB Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Debugging C with GDB Lab","url":"http://localhost:4000/classes/208-f25/c-gdb-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Debugging C with GDB Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>In this lab, you’ll get some practice suing the GNU Debugger (<code class="language-plaintext highlighter-rouge">gdb</code>), which allows us to debug C, C++, and raw assembly code on Linux from the terminal. You’ll use <code class="language-plaintext highlighter-rouge">gdb</code> to explore some bitwise operations in C.</p>
+
+<h2 id="whats-a-debugger">What’s a debugger?</h2>
+<p>A <em>debugger</em> is a tool designed to help you debug your programs. Debuggers tend to have a lot of sophisticated features, but the core of what you need to know is this: a debugger allows you to run your program one line at a time, enabling you to examine your variables along the way. If you can watch your variables evolve one slow line of code at a time, you can usually track down your errors.</p>
+
+<h2 id="documentation-and-tutorials">Documentation and tutorials</h2>
+<p>You will find some potentially useful <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources#gdb">gdb</a> resources posted on the <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources">Resources</a> page. Take a look at these after class.</p>
+
+<h2 id="getting-started">Getting started</h2>
+<p>To get started, launch <a href="https://fern.mathcs.carleton.edu/jupyter/hub/login">https://fern.mathcs.carleton.edu/jupyter/hub/login</a> and connect to mantis. Go back and look at <a href="mantis-lab">Lab 0</a> again if you don’t remember how.</p>
+
+<p>We’ll work with two programs in this lab. First is a new sample, <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources/samples/gdb_test.c">gdb_test.c</a>. Second, we’ll play around with your code for <a href="hw1">homework 1</a>.</p>
+
+<ul>
+  <li>
+    <p>Grab the code for <code class="language-plaintext highlighter-rouge">gdb_test.c</code> (by right-clicking, selecting “Save Link As” and then uploading on <code class="language-plaintext highlighter-rouge">fern</code>), and compile it using the following command:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  gcc <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-g</span> <span class="nt">-Og</span> <span class="nt">-o</span> gdb_test gdb_test.c
+</code></pre></div>    </div>
+
+    <p>The <code class="language-plaintext highlighter-rouge">-g</code> means “include debugging info in the executable”. The <code class="language-plaintext highlighter-rouge">-Og</code> (that’s a capital O, not a zero) means “optimize this code for the best debugging experience”.</p>
+  </li>
+  <li>
+    <p>Try running the program to compute the factorial of 6:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ./gdb_test 6
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Open up <code class="language-plaintext highlighter-rouge">gdb</code>:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  gdb gdb_test
+  ...lots of notices print out...
+  <span class="o">(</span>gdb<span class="o">)</span> <span class="o">[</span>this is the gdb prompt]
+</code></pre></div>    </div>
+    <p>Note that I’ll use <code class="language-plaintext highlighter-rouge">[</code> and <code class="language-plaintext highlighter-rouge">]</code> to delineate comments to you in terminal interactions with gdb.</p>
+  </li>
+  <li>
+    <p>Run the program to compute 6! again:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> run 6
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Most <code class="language-plaintext highlighter-rouge">gdb</code> commands can be executed using abbreviations:</p>
+  </li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>gdb<span class="o">)</span> r 6
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>You can show 10 lines (the default count) of the source code:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> list
+</code></pre></div>    </div>
+
+    <p>The <code class="language-plaintext highlighter-rouge">list</code> command makes guesses about which 10 lines you want to see. For example, it selects the “current” source file and starting line (whatever that may mean in context).</p>
+  </li>
+  <li>
+    <p>Instead, show lines 10 through 25:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> list 10,25
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You can also explicitly name the source file if your executable comes from multiple sources:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> list gdb_test.c:10,25
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>For all <code class="language-plaintext highlighter-rouge">gdb</code> commands, if you hit return at the next prompt, <code class="language-plaintext highlighter-rouge">gdb</code> tries to repeat the previous command. So, for example, try this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```bash
+(gdb) list 1,20
+...[listing of source code]...
+(gdb) [hit return]
+...[what do you see?]
+```
+</code></pre></div></div>
+
+<h2 id="working-with-breakpoints">Working with breakpoints</h2>
+<p>Let’s set our first breakpoint and explore. A breakpoint is a place where gdb will pause execution of your code and let you look at the values in variables, registers (we’ll learn about these later), and memory at that moment.</p>
+
+<ul>
+  <li>
+    <p>Set a breakpoint at line 31 (revisit your <code class="language-plaintext highlighter-rouge">list</code> results, why is this a good spot?):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> br gdb_test.c:31
+  <span class="o">[</span>or]
+  <span class="o">(</span>gdb<span class="o">)</span> br 31 <span class="o">[</span><span class="k">if </span>the filename were unambiguous]
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run the program, which will pause at your breakpoint:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> r 6    <span class="o">[</span>recall that <span class="nv">r</span><span class="o">=</span>run]
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Look at the code just before and after your breakpoint:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> list
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>We can also look at the current contents of a parameter or local variable:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> print n   <span class="o">[</span>what does this tell you?]
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>We can also look at the current “backtrace” (i.e., the list of function calls that are currently active, which is especially handy for recursion):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> bt    <span class="o">[</span>what is this telling you?]
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Let’s continue the program’s execution:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> <span class="k">continue</span>
+  <span class="o">[</span>or]
+  <span class="o">(</span>gdb<span class="o">)</span> c
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Again, this breaks (i.e., pauses) at line 31. Take a look at the backtrace (also known as a stack trace), to see that there’s a new call to <code class="language-plaintext highlighter-rouge">factorial(5)</code> on the stack:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> bt
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Personally, I find it hard to remember where I’m at in the code. You can view it in a split vertical pane:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> layout src
+</code></pre></div>    </div>
+    <p>Note: sometimes this will get messed up as you are doing other things, Ctrl+l (lower case L) will fix it</p>
+  </li>
+  <li>
+    <p>Let’s also change our breakpoint. First, list them out:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> info breakpoints
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You can clear an existing breakpoint by number:</p>
+  </li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>gdb<span class="o">)</span> del 1
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Now set a new breakpoint at the start of factorial:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> b factorial
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Now, step through your code. Try restarting and stepping through line by line, watching where your program is at:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> r 6
+  The program being debugged has been started already.
+  Start it from the beginning? <span class="o">(</span>y or n<span class="o">)</span>       <span class="o">[</span>hit y, <span class="k">then return</span><span class="o">]</span>
+  ...
+  ...            <span class="o">[</span>hits your breakpoint]
+  ...
+  <span class="o">(</span>gdb<span class="o">)</span> s        <span class="o">[</span>s <span class="o">=</span> step]
+  <span class="o">(</span>gdb<span class="o">)</span>          <span class="o">[</span>hit <span class="k">return </span>to repeat the step]
+  <span class="o">(</span>gdb<span class="o">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Using <code class="language-plaintext highlighter-rouge">s</code> for “step into” will go into function calls. If you go too far, use <code class="language-plaintext highlighter-rouge">up</code> to go back out (like if you go into <code class="language-plaintext highlighter-rouge">sscanf</code>).</p>
+  </li>
+  <li>
+    <p>Inside factorial, let’s print out the value of n:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> p n
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Do this a bunch more – go through a few recursive calls, print the value of n, and once you start going back up, look at the value of result. Don’t forget to print the backtrace (bt) if you get lost with where you are in the recursion!</p>
+  </li>
+  <li>
+    <p>Take a screenshot of your <code class="language-plaintext highlighter-rouge">gdb</code> screen at this point and upload it to Moodle for an engagement credit.</p>
+  </li>
+  <li>
+    <p>At any point, you can leave <code class="language-plaintext highlighter-rouge">gdb</code> by typing <code class="language-plaintext highlighter-rouge">quit</code> at the prompt, and confirming you want to end the currently running (if any) program.</p>
+  </li>
+</ul>
+
+<h2 id="debugging-bitsc">Debugging <code class="language-plaintext highlighter-rouge">bits.c</code></h2>
+<p>Try this out in <code class="language-plaintext highlighter-rouge">bits.c</code>. Can you inspect the values of variables as you step through your functions?</p>
+
+<p>For example, assume you have this (incorrect) code for <code class="language-plaintext highlighter-rouge">isZero</code>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">isZero</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&gt;&gt;</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&amp;</span> <span class="p">(</span><span class="mh">0xFF</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">x</span> <span class="o">||</span> <span class="mh">0x123</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Create a simple file that calls your <code class="language-plaintext highlighter-rouge">bits.c</code> code, which we’ll use in <code class="language-plaintext highlighter-rouge">gdb</code>. Name it <code class="language-plaintext highlighter-rouge">bits_caller.c</code> and put this code in it:</p>
+
+    <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">#include &lt;stdio.h&gt;
+</span>  <span class="cp">#include "bits.h"
+</span>
+  <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+  <span class="p">{</span>
+      <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="n">isZero</span><span class="p">(</span><span class="mh">0x208</span><span class="p">);</span>
+      <span class="n">printf</span><span class="p">(</span><span class="s">"result: 0x%x</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">res</span><span class="p">);</span>
+
+      <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Compile this code at the terminal:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  gcc <span class="nt">-g</span> <span class="nt">-Og</span> <span class="nt">-o</span> bits_caller bits.c bits_caller.c
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Now run it in <code class="language-plaintext highlighter-rouge">gdb</code>:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  gdb bits_caller
+  ...
+  <span class="o">(</span>gdb<span class="o">)</span> layout src
+  <span class="o">(</span>gdb<span class="o">)</span> b isZero
+  <span class="o">(</span>gdb<span class="o">)</span> run
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>From here, you can step through the lines of code, and then print out the values of the variables. When you’re about to return, print the value of <code class="language-plaintext highlighter-rouge">a</code>:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> p a
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>That was kind of useless, because by default <code class="language-plaintext highlighter-rouge">gdb</code> prints in decimal (base 10) – let’s print in hexadecimal instead!</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> p/x a
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>If you’d prefer, you can also print in binary:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">(</span>gdb<span class="o">)</span> p/t a
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="thats-it">That’s it!</h2>
+<p>There is a lot more to learn about using a debugger, but this should give you a good start. Keep practicing, and as always, ask questions you may have!</p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This lab is from Prof. Tanya Amert.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Processes Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Processes Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/processes-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/processes-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Processes Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Processes Lab","url":"http://localhost:4000/classes/208-f25/processes-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Processes Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+
+<p>Your primary goal for this lab is to explore some process-related sample code.  This will hopefully help you understand how processes are created.  It can also be handy at helping you start on the last assignment.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>There are a lot of “Process-related” samples listed on the <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/samples/">Samples page</a>.  For this lab, we’ll explore the first few of them.</p>
+
+<p>First, download/copy the relevant samples to <code class="language-plaintext highlighter-rouge">mantis</code>.  You’ll want the following:</p>
+<ul>
+  <li><a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources/samples/forktest.c"><code class="language-plaintext highlighter-rouge">forktest.c</code></a></li>
+  <li><a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources/samples/exectest.c"><code class="language-plaintext highlighter-rouge">exectest.c</code></a></li>
+  <li><a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources/samples/getanumber.c"><code class="language-plaintext highlighter-rouge">getanumber.c</code></a></li>
+  <li><a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources/samples/Makefile"><code class="language-plaintext highlighter-rouge">Makefile</code></a></li>
+</ul>
+
+<p>Note that for the <code class="language-plaintext highlighter-rouge">Makefile</code>, the command <code class="language-plaintext highlighter-rouge">make all</code> won’t work until you download all the relevant samples.</p>
+
+<h2 id="part-1-creating-new-processes-with-fork">Part 1: creating new processes with <code class="language-plaintext highlighter-rouge">fork</code></h2>
+
+<p>First, let’s take a look at an example that uses <code class="language-plaintext highlighter-rouge">fork</code>.</p>
+
+<ul>
+  <li>
+    <p>Read through <code class="language-plaintext highlighter-rouge">forktest.c</code> and predict what the code will do when run.</p>
+  </li>
+  <li>Now, either use the command <code class="language-plaintext highlighter-rouge">make lab8</code> to compile the executables for this lab, or type the following command in the shell:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  gcc <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-O1</span> <span class="nt">-g</span> <span class="nt">-o</span> forktest forktest.c
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run the program <code class="language-plaintext highlighter-rouge">forktest</code> and observe the output.  Does it do what you expected?</p>
+  </li>
+  <li>
+    <p>How does the child process determine its process ID?</p>
+  </li>
+  <li>How could the parent process determine the child’s process ID?</li>
+</ul>
+
+<h2 id="part-2-executing-a-program-with-exec">Part 2: Executing a program with <code class="language-plaintext highlighter-rouge">exec*</code></h2>
+
+<p>In addition to <code class="language-plaintext highlighter-rouge">fork</code> and <code class="language-plaintext highlighter-rouge">wait</code>, there is a family of functions, which we’ll call <code class="language-plaintext highlighter-rouge">exec*</code> (where the <code class="language-plaintext highlighter-rouge">*</code> here means a wildcard, e.g., that there are lots of options) that spawn a new process to execute a specific command.</p>
+
+<h3 id="part-2a-executing-a-user-defined-program">Part 2a: executing a user-defined program</h3>
+
+<p>Next, take a look at the code for <code class="language-plaintext highlighter-rouge">getanumber.c</code>.</p>
+
+<ul>
+  <li>
+    <p>Read through the code and predict what its output will be.</p>
+  </li>
+  <li>
+    <p>Use the command <code class="language-plaintext highlighter-rouge">make lab8</code> to compile the remaining samples for this lab, if you haven’t already.</p>
+  </li>
+  <li>
+    <p>Run the program <code class="language-plaintext highlighter-rouge">getanumber</code> and observe the output.  Does it do what you expected?</p>
+  </li>
+</ul>
+
+<p>Now, let’s take a look at a sample that uses <code class="language-plaintext highlighter-rouge">execlp</code> to execute <code class="language-plaintext highlighter-rouge">getanumber</code>.  Open up <code class="language-plaintext highlighter-rouge">exectest.c</code>.</p>
+
+<ul>
+  <li>
+    <p>Read through the code.  Which process executes <code class="language-plaintext highlighter-rouge">getanumber</code>?</p>
+  </li>
+  <li>
+    <p>Why do both the parent and the child call <code class="language-plaintext highlighter-rouge">fflush</code>?  Check out the man page by typing <code class="language-plaintext highlighter-rouge">man fflush</code> in the Terminal to get more information (type <code class="language-plaintext highlighter-rouge">q</code> to quit the man page view).</p>
+  </li>
+  <li>
+    <p>Run the program <code class="language-plaintext highlighter-rouge">exectest</code> and observe the output.  Does it do what you expected?</p>
+  </li>
+</ul>
+
+<h3 id="part-2b-executing-a-shell-command">Part 2b: executing a shell command</h3>
+
+<p>Instead of executing a specific user-provided program, we can also execute shell commands from C code using <code class="language-plaintext highlighter-rouge">exec*</code>.</p>
+
+<ul>
+  <li>
+    <p>In <code class="language-plaintext highlighter-rouge">exectest.c</code> comment out line 31 and uncomment line 32, so that we’re no longer executing <code class="language-plaintext highlighter-rouge">getanumber</code>, but instead executing <code class="language-plaintext highlighter-rouge">ls</code>.  Predict what the output should be.</p>
+  </li>
+  <li>
+    <p>Run the program <code class="language-plaintext highlighter-rouge">exectest</code> again and observe its output now.  Does it do what you expected?</p>
+  </li>
+</ul>
+
+<h2 id="part-3-a-simple-shell">Part 3: a simple shell</h2>
+
+<p>There is a shell of a shell (hah!) provided for you in the samples.  Copy to <code class="language-plaintext highlighter-rouge">mantis</code> the following additional files to explore:</p>
+<ul>
+  <li><a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources/samples/shell208.c"><code class="language-plaintext highlighter-rouge">shell208.c</code></a></li>
+  <li><a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources/samples/exectest_with_args.c"><code class="language-plaintext highlighter-rouge">exectest_with_args.c</code></a></li>
+</ul>
+
+<p>Let’s explore these files.</p>
+
+<ul>
+  <li>
+    <p>Look through <code class="language-plaintext highlighter-rouge">shell208.c</code>.  What do you think will happen when you run it?</p>
+  </li>
+  <li>
+    <p>Run <code class="language-plaintext highlighter-rouge">shell208.c</code>.  Does it do what you expected?</p>
+  </li>
+  <li>
+    <p>Make notes for where in <code class="language-plaintext highlighter-rouge">shell208.c</code> you might make changes to allow you to execute commands.  What about redirecting output?</p>
+  </li>
+  <li>
+    <p>Now explore the other file, <code class="language-plaintext highlighter-rouge">exectest_with_args.c</code>.  How does this change what we already know about working with processes and executing commands?</p>
+  </li>
+  <li>
+    <p>You have actually already worked on this assignment, but you didn’t know it.  Go back and look at the String Splitter in <a href="hw3#part-b-string-splitter">Homework 3</a>.  Do you see how you can use this to build up the argument vector <code class="language-plaintext highlighter-rouge">argv</code> that you’d want to use for the shell?</p>
+  </li>
+</ul>
+
+<h2 id="next-steps">Next steps</h2>
+
+<p>There are many more process-related samples already on the <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/samples/">Samples page</a>.  Take a look and play around with them.  Gather your questions, and ask away!</p>
+
+<p> </p>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Lab written by Prof. Tanya Amert.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

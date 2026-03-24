@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Homework 4 - Deck of Cards | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Homework 4 - Deck of Cards" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f25/hw4" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f25/hw4" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Homework 4 - Deck of Cards" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Homework 4 - Deck of Cards","url":"http://localhost:4000/classes/201-f25/hw4"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Homework 4 - Deck of Cards</h1>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Due: Friday Oct 17th at 10:00pm</strong></p>
+
+<p>Starter code: <a href="/classes/201-f25/cards-project.zip">cards-project.zip</a><br />
+Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">Deck.kt</code></p>
+
+<h2 id="goals">Goals</h2>
+
+<p>This assignment is designed to help you with the following:</p>
+<ul>
+  <li>practice using doubly linked lists</li>
+  <li>practice with null safety in Kotlin</li>
+</ul>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+
+<p>For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)  You may have at most one partner.</p>
+
+<p>You may also discuss the assignment at a high level with other students.  You can discuss the assignment with Anya, our prefect, or any course staff.</p>
+
+<p>You should list any student or course staff with whom you discussed the assignment (you don’t have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in comments at the top of your <code class="language-plaintext highlighter-rouge">Deck.kt</code> file.  You also need to include your name.</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<h2 id="note-on-style">Note on style:</h2>
+
+<p>The following style guidelines are expected moving forward:</p>
+
+<ol>
+  <li>You submit only the requested file(s).</li>
+  <li>Variable names should be clear and easy to understand, should <em>not</em> start with a capital letter, and should only be a single letter when appropriate (e.g., <code class="language-plaintext highlighter-rouge">i</code> or <code class="language-plaintext highlighter-rouge">j</code> as indices, <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> as coordinates).</li>
+  <li>The indentation, spacing, and location of curly braces is consistent.</li>
+  <li>There are no extra print statements in your program.</li>
+  <li>There is no commented-out code that is no longer being used (e.g., debugging print statements).</li>
+  <li>Your program has a comment at the top of each function with at least 5 words describing what the function does.</li>
+  <li>There is good use of comments to explain the “why” of your code and empty lines to break up logical chunks.</li>
+  <li>The code doesn’t have “magic numbers” – these are numbers in the code by themselves, rather than stored in a variable.</li>
+  <li>The code doesn’t compute the right answer by doing extra work (e.g., having a computation in a loop when it could have been done only once, after the loop).</li>
+  <li>The code uses helper functions to reduce duplication and improve readability.</li>
+</ol>
+
+<h2 id="assessment">Assessment</h2>
+
+<p>The <strong>core</strong> requirements for your submission are:</p>
+
+<ul>
+  <li>complete Parts A and C
+    <ul>
+      <li>A: * <code class="language-plaintext highlighter-rouge">getString(n: Int): String</code>, <code class="language-plaintext highlighter-rouge">getStringBackwards(n: Int): String</code>, <code class="language-plaintext highlighter-rouge">countDown(): Int</code></li>
+      <li>C: Reflection</li>
+    </ul>
+  </li>
+  <li>satisfy the code style expectations #0-#4 above</li>
+  <li>include a reflection in comments at the bottom of your <code class="language-plaintext highlighter-rouge">Deck.kt</code> file</li>
+</ul>
+
+<p>The <strong>advanced</strong> requirements for your submission are:</p>
+
+<ul>
+  <li>satisfy core requirements</li>
+  <li>complete all of Parts A-C
+    <ul>
+      <li>B: <code class="language-plaintext highlighter-rouge">swapJokerA()</code>, <code class="language-plaintext highlighter-rouge">swapJokerB()</code>, <code class="language-plaintext highlighter-rouge">tripleCut()</code></li>
+    </ul>
+  </li>
+  <li>satisfy all code style expectations listed above</li>
+  <li>include your name and collaboration statement at the top of your <code class="language-plaintext highlighter-rouge">Deck.kt</code> file</li>
+</ul>
+
+<h2 id="assignment-overview">Assignment overview</h2>
+
+<p>There is a fun encryption technique called the <a href="https://en.wikipedia.org/wiki/Solitaire_(cipher)">Solitaire Cipher</a>.  It’s a hard-to-crack encryption approach designed for sending secure messages with very low tech.  The technique is based on using a deck of cards, and performing a variety of operations on that deck.  We’re going to represent that deck of cards as a circular linked list, and implement some of the operations of the encryption technique.</p>
+
+<p>We’ll be using a specialized card deck that has 28 cards in it, each numbered with an integer from 1 to 28.  We’ll refer to the cards numbered 27 and 28 as “jokers”, because if we were doing this with a real deck of playing cards we would use <a href="https://en.wikipedia.org/wiki/Joker_(playing_card)">joker cards</a>.</p>
+
+<p>To be clear, we’re not going to implement the (super cool!) encryption algorithm itself, although that would be a fantastic extension if you’re interested.  We’re going to do a subset of it, which is a series of operations on playing cards.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>Find your <code class="language-plaintext highlighter-rouge">cs201</code> folder for assignments.  Maybe it contains an <code class="language-plaintext highlighter-rouge">assignments</code> folder inside of it.</p>
+
+<p>Download <a href="/classes/201-f25/cards-project.zip">this <code class="language-plaintext highlighter-rouge">cards-project.zip</code> file</a> to get the starter code.  Put it in the <code class="language-plaintext highlighter-rouge">cs201</code> folder you have and unzip it.  This should give you a folder named <code class="language-plaintext highlighter-rouge">cards-project</code>.  Make sure that you actually unzip / extract the code, don’t just open up the .zip file in another window.</p>
+
+<p>Now open your folder in VS Code.  There are multiple ways to do this, so pick one:</p>
+<ul>
+  <li>Open VS Code, then select <code class="language-plaintext highlighter-rouge">File</code> -&gt; <code class="language-plaintext highlighter-rouge">Open Folder</code> and navigate to the <code class="language-plaintext highlighter-rouge">cards-project</code> folder you just made.</li>
+  <li>Open VS Code, then drag and drop the folder (e.g., from Finder in MacOS or File Explorer in Windows) into VS Code to open it.</li>
+</ul>
+
+<p>Either way, if you are asked, click that you trust the authors.  If you have any issues getting started, ask the lab assistants for help – any of them should be able to help you get started, even if they aren’t super familiar with Kotlin.</p>
+
+<h2 id="building-your-code-with-maven">Building your code with Maven</h2>
+
+<p>Like Assignments #1 and #3, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder <code class="language-plaintext highlighter-rouge">cards-project</code> for these commands to work):</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn test</code> runs the tests that we provided (see below)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn compile exec:java</code> compiles and runs your code, as specified in your <code class="language-plaintext highlighter-rouge">main</code> function</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn compile</code> compiles your code, but doesn’t run it (this is like <code class="language-plaintext highlighter-rouge">kotlinc</code> by itself)</p>
+  </li>
+</ul>
+
+<p>If you want to see less output from Maven, you can add <code class="language-plaintext highlighter-rouge">-q</code> (for “quiet”) flag:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn -q test</code> run tests, with less output</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn -q compile exec:java</code> runs your <code class="language-plaintext highlighter-rouge">main</code> function, with less output (but still any print statements you have)</p>
+  </li>
+</ul>
+
+<p>If you run the tests with the starter code, you should have errors, as you haven’t written any code yet.</p>
+
+<h2 id="representing-a-deck-of-cards">Representing a deck of cards</h2>
+
+<p>In this assignment, you are provided with a class <code class="language-plaintext highlighter-rouge">Deck</code> that maintains the list of numbers (1-28) in a <strong>circular doubly linked list</strong>.  A doubly linked list is one where each node has two pointers: one points to the next node, and the other points to the previous one.  A circular linked list is one where the very last item in the list points to the first one.</p>
+
+<p>It turns out the deck-rearranging algorithm described above is more straightforward if your deck can be thought of as one big circle of cards that you can flip through in either direction.  The actual ordering of the numbers is provided as a <code class="language-plaintext highlighter-rouge">String</code>, which contains the numbers in some given order, on a single line, separated by spaces.</p>
+
+<p>The constructor for the deck, <strong>which is provided for you</strong>, looks like this:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Deck</span><span class="p">(</span><span class="n">initialCardOrdering</span><span class="p">:</span> <span class="nc">String</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Your assignment is to enhance the class by adding several member functions, described in more detail below and listed here:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">getString(n: Int): String</code></li>
+  <li><code class="language-plaintext highlighter-rouge">getStringBackwards(n: Int): String</code></li>
+  <li><code class="language-plaintext highlighter-rouge">countDown(): Int</code></li>
+  <li><code class="language-plaintext highlighter-rouge">swapJokerA()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">swapJokerB()</code></li>
+  <li><code class="language-plaintext highlighter-rouge">tripleCut()</code></li>
+</ul>
+
+<h2 id="part-a-querying-the-deck-of-cards">Part A: Querying the deck of cards</h2>
+
+<p>For Part A, you should complete the first three methods listed above.  They are each described in more detail below.</p>
+
+<h3 id="getstringn-int-string"><code class="language-plaintext highlighter-rouge">getString(n: Int): String</code></h3>
+
+<blockquote>
+  <p>This method should return a space-delimited <code class="language-plaintext highlighter-rouge">String</code> consisting of <code class="language-plaintext highlighter-rouge">n</code> numbers from your deck.  Note that <code class="language-plaintext highlighter-rouge">n</code> is an <code class="language-plaintext highlighter-rouge">Int</code> greater than or equal to 1, but it can be larger than 28.  If it is, your deck should start over from the top and keep adding to the string.</p>
+
+  <p>Make sure to get your items efficiently: you shouldn’t be doing something super-duper slow like “find the first item in the list, add it to the string, then start at the beginning and find the second item, add it to the string, then start at the beginning and find the third item, etc.”.</p>
+</blockquote>
+
+<h3 id="getstringbackwardsn-int-string"><code class="language-plaintext highlighter-rouge">getStringBackwards(n: Int): String</code></h3>
+
+<blockquote>
+  <p>This method works ust like <code class="language-plaintext highlighter-rouge">getString</code>, except that it starts at the last number in the deck and works backwards.  Like <code class="language-plaintext highlighter-rouge">getString</code>, <code class="language-plaintext highlighter-rouge">n</code> can be larger than 28, in which case it will wrap around.</p>
+</blockquote>
+
+<h3 id="countdown-int"><code class="language-plaintext highlighter-rouge">countDown(): Int</code></h3>
+
+<blockquote>
+  <p>This method looks at the top card’s value (if the top card is a joker, assume its value is 27, even if it’s actually 28).  It leaves that card on top of the deck.</p>
+
+  <p>Given the value of the top card, it should count down the deck by that many cards, starting with the top one.  Record the value of the <em><strong>next</strong></em> card that is in the deck, but don’t remove it from the deck.</p>
+
+  <p>If the original ordering of our cards is as follows:</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 27 2 5 8 11 14 17 20 23 26
+^ ^
+</code></pre></div>  </div>
+
+  <p>Then we would find a <code class="language-plaintext highlighter-rouge">1</code>, and return <code class="language-plaintext highlighter-rouge">4</code>, because that is the <strong>next</strong> card after the 1st card in the deck.</p>
+
+  <p>If instead this were our ordering:</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5 8 11 14 17 20 23 26 28 9 12 15 18 21 24 2 27 1 4 7 10 13 16 19 22 25 3 6
+^            ^^
+</code></pre></div>  </div>
+
+  <p>Then it would find a <code class="language-plaintext highlighter-rouge">5</code> and return <code class="language-plaintext highlighter-rouge">20</code>.</p>
+</blockquote>
+
+<h1 id="part-b-reordering-a-deck-of-cards">Part B: Reordering a deck of cards</h1>
+
+<p>For Part B, you will complete the last three methods listed above.  They are each described in more detail below.</p>
+
+<h3 id="swapjokera"><code class="language-plaintext highlighter-rouge">swapJokerA()</code></h3>
+
+<blockquote>
+  <p>This method first finds the <code class="language-plaintext highlighter-rouge">27</code>, which we’ll call “Joker A”.  It exchanges it with the card beneath (after) it in the deck, which moves Joker A down the deck by one position.</p>
+
+  <p>For example, suppose that the original ordering of our cards is as given below:</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 27 2 5 8 11 14 17 20 23 26
+</code></pre></div>  </div>
+
+  <p>Then <code class="language-plaintext highlighter-rouge">swapJokerA()</code> would swap the node holding <code class="language-plaintext highlighter-rouge">27</code> with the node following it.  In this case, that means the <code class="language-plaintext highlighter-rouge">27</code> and <code class="language-plaintext highlighter-rouge">2</code> should be swapped:</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 2 27 5 8 11 14 17 20 23 26
+                                               ^^^^
+</code></pre></div>  </div>
+</blockquote>
+
+<h3 id="swapjokerb"><code class="language-plaintext highlighter-rouge">swapJokerB()</code></h3>
+
+<blockquote>
+  <p>This method is similar to <code class="language-plaintext highlighter-rouge">swapJokerB()</code>, with a few key differences.  First, it finds the <code class="language-plaintext highlighter-rouge">28</code>, which we’ll call “Joker B”.  It then moves it two cards down by performing two exchanges.</p>
+
+  <p>For example, if we started with the deck above after doing <code class="language-plaintext highlighter-rouge">swapJokerA()</code>, we would then move <code class="language-plaintext highlighter-rouge">28</code> two places down the list.  It ends up between the <code class="language-plaintext highlighter-rouge">6</code> and <code class="language-plaintext highlighter-rouge">9</code>:</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 4 7 10 13 16 19 22 25 3 6 28 9 12 15 18 21 24 2 27 5 8 11 14 17 20 23 26
+                         ^^^^^^
+</code></pre></div>  </div>
+</blockquote>
+
+<h3 id="triplecut"><code class="language-plaintext highlighter-rouge">tripleCut()</code></h3>
+
+<blockquote>
+  <p>This final method swaps all of the cards above the first joker (whichever is closest to the top of the deck) with the cards below the second joker.</p>
+
+  <p>For example, if we started with the above deck after <code class="language-plaintext highlighter-rouge">swapJokerB()</code>, everything above the first joker (<code class="language-plaintext highlighter-rouge">28</code> in this case) goes to the bottom (“back”) of the deck, and everything below the second joker (<code class="language-plaintext highlighter-rouge">27</code>) goes to the top (“front”):</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5 8 11 14 17 20 23 26 28 9 12 15 18 21 24 2 27 1 4 7 10 13 16 19 22 25 3 6
+^^^^^^^^^^^^^^^^^^^^^                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</code></pre></div>  </div>
+</blockquote>
+
+<h1 id="part-c-reflection">Part C: Reflection</h1>
+
+<p>Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?</p>
+
+<p>Write a brief discussion (a sentence or two is fine) at the bottom of your <code class="language-plaintext highlighter-rouge">Deck.kt</code> file (in comments, so each line should start with <code class="language-plaintext highlighter-rouge">//</code> or be in a <code class="language-plaintext highlighter-rouge">/* */</code> block).</p>
+
+<p>Here are some examples:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// I had trouble finding the start of the deck.</span>
+<span class="c1">// I had to look up how to deal with null safety and !! in Kotlin.</span>
+<span class="c1">// I spent 6 hours on this assignment.</span>
+</code></pre></div></div>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// I started late, so I had to rush to make sure I knew how to test my code.</span>
+<span class="c1">// It may be good to start early next time.</span>
+<span class="c1">// I spent 5 hours on this assignment.</span>
+</code></pre></div></div>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// It went fine; I found what I needed in my notes.</span>
+<span class="c1">// I spent 3 hours on this assignment.</span>
+</code></pre></div></div>
+
+<h1 id="hints-and-suggestions">Hints and suggestions</h1>
+
+<ul>
+  <li>
+    <p>If you get errors related to “null” or “null safety”, you may be missing <code class="language-plaintext highlighter-rouge">!!</code>.  For example, if <code class="language-plaintext highlighter-rouge">node</code> may possibly be <code class="language-plaintext highlighter-rouge">null</code>, you may need <code class="language-plaintext highlighter-rouge">node!!.null</code> if <em>you</em> know it cannot be but the <em>compiler</em> doesn’t seem to.</p>
+  </li>
+  <li>
+    <p>Try to complete <code class="language-plaintext highlighter-rouge">getString</code> and <code class="language-plaintext highlighter-rouge">getStringBackwards</code> early, to see if you’re having any issues walking the linked list in either direction.</p>
+  </li>
+  <li>
+    <p>Take a look at the <code class="language-plaintext highlighter-rouge">Node</code> class to see both pointers and the <code class="language-plaintext highlighter-rouge">value</code> (which we’ve called <code class="language-plaintext highlighter-rouge">item</code> in class).</p>
+  </li>
+  <li>
+    <p>When you’re working on <code class="language-plaintext highlighter-rouge">swapJokerA</code>, think carefully about what should happen if Joker A was originally at the “top” (beginning?) or “bottom” (end?) of the deck of cards.</p>
+  </li>
+</ul>
+
+<p> </p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

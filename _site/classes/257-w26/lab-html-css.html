@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HTML and CSS | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HTML and CSS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-w26/lab-html-css" />
+<meta property="og:url" content="http://localhost:4000/classes/257-w26/lab-html-css" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HTML and CSS" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HTML and CSS","url":"http://localhost:4000/classes/257-w26/lab-html-css"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HTML and CSS</h1>
+  </header>
+
+  <div class="post-content">
+    <p>(This lab is adapted from one created by Prof. Amy Csizmar Dalal, who really likes earthquakes!)</p>
+
+<h2 id="objectives">Objectives</h2>
+<ul>
+  <li>Introduce you to HTML and CSS, if you have not used them before, or refresh your knowledge of HTML and CSS if you have</li>
+  <li>Understand the split between content (HTML) and presentation (CSS)</li>
+  <li>Create a web page that contains some of the elements described in Krug</li>
+</ul>
+
+<h2 id="setup">Setup</h2>
+<p>I suggest you have <a href="https://www.w3schools.com/html/">W3School’s HTML Tutorial</a> open while you complete this lab.</p>
+
+<p><strong>Accept the HTML and CSS Lab Starter Code assignment linked on Moodle, clone the repository, and work in there for this lab.</strong></p>
+
+<h2 id="introduction">Introduction</h2>
+<p>In today’s lab, you are going to create a web page describing the dataset you’re  using for the project. The page should contain the following:</p>
+<ul>
+  <li>A header/banner at the top of the page</li>
+  <li>Top-bar navigation</li>
+  <li>A few paragraphs of descriptive text.
+    <ul>
+      <li>One of these can be a bulleted list.</li>
+      <li>One of these should be enclosed in some sort of box or container.</li>
+    </ul>
+  </li>
+  <li>The web page must consist of a single HTML file and one or more CSS files.</li>
+</ul>
+
+<h2 id="step-1-outline-your-content">Step 1: Outline your content</h2>
+<p>You should work from the general sketch that your team has decided on for your project’s homepage, but you might need to adapt it slightly to fit in all the elements. That’s fine, you aren’t stuck with what you make today; the goal is just to get practice which each of these different elements.</p>
+
+<p>We’ll start with the HTML piece of this first, then style it later.</p>
+
+<p>In the readings on effective web design, Krug focused on things like content hierarchies, whitespace as separators, and so on. Your site should adhere to these same principles.</p>
+
+<p>If we look at this sketch:</p>
+
+<p><img src="/classes/257-s25/html-images/sketch.jpeg" alt="A mockup of a website" /></p>
+
+<p>we can note some things about information hierarchies:</p>
+<ul>
+  <li>There are a few major headings, but no subheadings</li>
+  <li>Each heading has one paragraph and/or one bulleted list of text that follows. These form sections for the page.</li>
+  <li>The image also belongs to one of these “sections”</li>
+  <li>Eventually, the middle section will need to be styled so that it is set off by a border and floats to the right. But we just need to note that now, not worry about how we’re going to accomplish it.</li>
+  <li>We also have two distinct “containers” at the top, one for the banner and one for the top bar navigation. Again, it’s not clear how we’re going to style these, but we do know that they form distinct logical entities.</li>
+</ul>
+
+<p>We’ll need to go back and fill in some of the details later, but let’s at least get the bare minimum done here. Download the <a href="/classes/257-s25/html-images/data_v1.html">data_v1.html</a> HTML file and take a look at it so that you can see how the sketch could be translated into content.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">&lt;!-- --&gt;</code> lines are comments. We don’t need them here, but they are useful to walk you through various things.</p>
+
+<p><strong>DO THIS:</strong> Write the HTML for the page you sketched. Name your file <code class="language-plaintext highlighter-rouge">data.html</code>. View it in your browser to make sure all of the content areas appear as you expect.</p>
+
+<p><em>How do I view my web pages? Is there something special I need to do?</em></p>
+
+<ul>
+  <li>
+    <p>You can actually view local files in your web browser. There should be an “open file” option in the File menu of your browser. Also, if you double click on an HTML file, it should open automatically in your web browser.</p>
+  </li>
+  <li>
+    <p>If you are using WSL, right-click and select ‘reveal in Explorer’, then double click as normal and it should display in your web browser of choice.</p>
+  </li>
+</ul>
+
+<h2 id="step-2-fill-in-the-header-info">Step 2: Fill in the header info</h2>
+<p>While this page will render just fine (although look somewhat sparse) in the browser, we often include additional information in the header. At a minimum, we need to provide links to any external style files (and, later on, Javascript scripts) attached to this page.</p>
+
+<p>We’ll write our style file in a moment, but let’s provide the link to it now.</p>
+
+<p><strong>DO THIS:</strong> Add the following somewhere in the <code class="language-plaintext highlighter-rouge">&lt;head&gt; .. &lt;/head&gt;</code> section of your page: <code class="language-plaintext highlighter-rouge">&lt;link rel="stylesheet" href="datastyle.css"&gt;</code></p>
+
+<p>This tells the browser to go look for a style file named <code class="language-plaintext highlighter-rouge">datastyle.css</code> in the same directory as this HTML file.</p>
+
+<p>If you open your HTML file in your browser now, you won’t see any change. If the browser can’t find the style file, or doesn’t know how to render a particular style, it will just ignore it and render it in whatever way it considers the default. This is an example of failing gracefully.</p>
+
+<h2 id="step-3-creating-the-basic-css">Step 3: Creating the basic CSS</h2>
+<p>Let’s start making our web page look more like the sketch. In this part of the lab, we’ll work on setting up each of the sections (<code class="language-plaintext highlighter-rouge">div</code>s). In the next part, we’ll get fancier with the styling.</p>
+
+<h3 id="top-level-navigation">Top level navigation</h3>
+<p>Let’s start with the banner and the navigation at the top. Let’s keep things simple here: a solid color box for the banner, with the page title, and a white box with a blue outline for the navigation bar.</p>
+
+<p><strong>DO THIS</strong>: Add something like this CSS to make the banner:</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+    <span class="nl">padding-top</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+    <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This says “style the top level heading with a green background and white text, center-aligned. Pad the top and bottom of the text with the width of a text element.”</p>
+
+<p>Here’s what that exact style looks like (feel free to change aspects!):</p>
+
+<p><img src="/classes/257-s25/html-images/screenShotBanner.png" alt="Screenshot of basic website" /></p>
+
+<p>Now let’s add a navigation bar. For this, you can refer to the <a href="https://www.w3schools.com/css/css_navbar.asp">CSS tutorial</a> and <a href="https://codetheweb.blog/2017/12/12/style-a-navigation-bar-css/">this tutorial</a> and structure the bar like a specially-formatted list. This means that you will need to change the HTML, too.</p>
+
+<p><strong>DO THIS:</strong> Add the CSS to make the navigation bar (comments for clarity, feel free to tweak things to make it fit the style you want):</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* The nav bar is an unordered list whose items are not bulleted. 
+     We only want to apply this styling to unordered lists inside of the nav
+     tag.
+*/</span>
+<span class="nt">nav</span> <span class="nt">ul</span> <span class="p">{</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="no">blue</span><span class="p">;</span>
+    <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Navigation bar list items should render starting at the left margin. */</span>
+<span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Navigation bar items should link to elements on the page, or to other pages.
+     This is the "a" tag. So this says "apply this style to links within the nav bar".
+*/</span>
+<span class="nt">nav</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+    <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">14px</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* When you mouse over something in the nav bar, turn it blue. */</span>
+<span class="nt">nav</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>And here’s the HTML:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#why"</span><span class="nt">&gt;</span>Why quakes?<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#fun"</span><span class="nt">&gt;</span>Fun facts<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#data"</span><span class="nt">&gt;</span>Data source<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div></div>
+
+<p>The CSS illustrates some important points about CSS:</p>
+
+<ul>
+  <li>
+    <p>CSS <em>cascades</em>, as the name states. This means that multiple styles may apply to the same element. For instance, all of the navigation bar items are list items AND list items that link somewhere AND list items that link somewhere that can be moused over. All of the styles specified for all of these conditions apply.</p>
+  </li>
+  <li>
+    <p>We can specify how broadly or narrowly to define a style. For instance, anything on the page that has an <code class="language-plaintext highlighter-rouge">h1</code> tag will be styled the same way. But, only list items within the nav environment will float left and be listed inline.</p>
+  </li>
+</ul>
+
+<p><em>What happens if styles conflict?</em> Great question! Your browser should render the styling for the most specific tag/environment/class. If everything is of equal scope, then it goes with the last style listed.</p>
+
+<ul>
+  <li>Notice I said <strong>should</strong>, not will. One thing you will learn is that CSS is somewhat of an art form. Sometimes you expect things to render one way, and they render a totally different way. It could be because your style sheets conflict in subtle ways. Or your browser could be imposing its own style. Or Mercury could be in retrograde. Sometimes, you just have to try a bunch of things….or consult your friend Dr. Google or Gemini (figuring out CSS and HTML is an excellent use of Gemini). If you do run into a sticky style issue, post your quandary on CampusWire and/or see me or one of the lab assistants.</li>
+</ul>
+
+<p>The nav bar should look something like this (depending on how you changed the style):</p>
+
+<p><img src="/classes/257-s25/html-images/screenShotNavBar.png" alt="Screenshot of website with navbar" /></p>
+
+<h3 id="margins-margins-margins">Margins, margins, margins</h3>
+<p>Did you notice that the page runs right up to the edge of the browser? Let’s add some margins. This will cut down on visual clutter and make the text a bit easier to read (which will make the page easier to scan!).</p>
+
+<p><strong>DO THIS:</strong> You probably want the margins to apply to the entire document, so specify this in the body tag style:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="m">5%</span><span class="p">;</span>
+    <span class="nl">margin-right</span><span class="p">:</span> <span class="m">5%</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This specifies that the margins on either side of the page should be 5% of the total page width. You could specify this in pixels, instead.</p>
+
+<p>Here’s what the page looks like now:</p>
+
+<p><img src="/classes/257-s25/html-images/screenShotMargins.png" alt="Screenshot of website with margins" /></p>
+
+<h3 id="float-a-box">Float a box</h3>
+<p>In the sketch, the data source info is highlighted in a box to the right of “why quakes?”. Let’s style that now.</p>
+
+<p><strong>DO THIS:</strong> Add a <strong>highlight</strong> div if you haven’t already and then add CSS similar to:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span><span class="nc">.highlight</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">azure</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="no">blue</span><span class="p">;</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">div.highlight</code> says “style anything that has the tag <code class="language-plaintext highlighter-rouge">div class="highlight"</code> this way”.</p>
+
+<p>With that change, here is what the page looks like now:</p>
+
+<p><img src="/classes/257-s25/html-images/screenShotBox.png" alt="Screenshot of website with a floating box" /></p>
+
+<h2 id="step-4-making-things-fancier">Step 4: Making things fancier</h2>
+<p>Let’s see if we can spruce things up a bit more.</p>
+
+<h3 id="fun-with-fonts">Fun with fonts</h3>
+<p>The default font makes my eyes hurt. Let’s switch to a sans-serif font (which is easier on the eyes) for all of the text. And let’s make the nav bar text slightly bigger and boldface</p>
+
+<p><strong>DO THIS:</strong> Use CSS similar to the below to change the font style of your website:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* This means "apply this style to h1 and h2 tags" */</span>
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span> <span class="p">{</span>
+   <span class="nl">font-family</span><span class="p">:</span> <span class="n">Verdana</span><span class="p">,</span> <span class="n">Geneva</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="n">Verdana</span><span class="p">,</span> <span class="n">Geneva</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+    <span class="c">/* This next line gives us some extra spacing within a paragraph*/</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.4</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">li</span> <span class="p">{</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="n">Verdana</span><span class="p">,</span> <span class="n">Geneva</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+    <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.4</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.1em</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>Note again that the li style cascades, so that the nav bar font is also sans-serif!</p>
+
+<p>There are a few more things in the <a href="/classes/257-s25/html-images/data.html"><code class="language-plaintext highlighter-rouge">data.html</code></a> and <a href="/classes/257-s25/html-images/datastyle.css"><code class="language-plaintext highlighter-rouge">datastyle.css</code></a> files, so feel free to look through them and play around with more aspects of your page.</p>
+
+<h3 id="step-5-attaching-to-flask">Step 5: Attaching to Flask</h3>
+<p>The final question you are probably wondering about is how to use CSS with Flask. The HTML files go in a <strong>templates</strong> folder as you already know, but the CSS goes in a different location (wondering why they have to go in such specifically named folders? Because of a paradigm called <a href="https://en.wikipedia.org/wiki/Convention_over_configuration">convention over configuration</a>).</p>
+
+<p>The CSS files are considered ‘static’ files, and so they should go in a new folder called ‘static’. To point your HTML file to which CSS it should use, you can use the following when in a Flask app:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"{{url_for('static',filename='datastyle.css')}}"</span><span class="nt">&gt;</span>
+
+</code></pre></div></div>
+
+<p><strong>DO THIS:</strong> Make a basic Flask app to connect to your HTML and CSS files.</p>
+
+<h2 id="submission">Submission</h2>
+<p>Push everything to your lab repository to get an extra engagement credit for today.</p>
+
+<p>Then work on your <a href="project-4-ind">ID Front-end</a>. Feel free to grab aspects of today’s lab for it.</p>
+
+<h2 id="file-links">File links</h2>
+<p>If you want them all in one place:</p>
+
+<ul>
+  <li><a href="/classes/257-s25/html-images/data.html">data.html</a></li>
+  <li><a href="/classes/257-s25/html-images/data_v1.html">data_v1.html</a></li>
+  <li><a href="/classes/257-s25/html-images/datastyle.css">datastyle.css</a></li>
+  <li><a href="/classes/257-s25/html-images/Sewardhwy.jpg">Sewardhwy.jpg</a></li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

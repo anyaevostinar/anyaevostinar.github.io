@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Merge Sort Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Merge Sort Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/111-w26/merge-sort-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/111-w26/merge-sort-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Merge Sort Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Merge Sort Lab","url":"http://localhost:4000/classes/111-w26/merge-sort-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Merge Sort Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <p>I recommend making a folder for today’s lab in COURSES as you usually do.</p>
+
+<p>Make a file in it named <code class="language-plaintext highlighter-rouge">merge_sort.py</code>.</p>
+
+<h2 id="goals">Goals</h2>
+<p>Today’s lab aims to have you implement merge sort for yourself to improve your understanding of how it works. In addition, you will compare the number of comparisons and real timing of merge sort and insertion sort.</p>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>As you know, the merging is where the sorting is actually happening with merge sort.
+Therefore, you will start by implementing a <code class="language-plaintext highlighter-rouge">merge</code> function in this exercise.</p>
+
+<ol>
+  <li>
+    <p>Define a function <code class="language-plaintext highlighter-rouge">merge</code> that takes two lists, <code class="language-plaintext highlighter-rouge">left_half</code> and <code class="language-plaintext highlighter-rouge">right_half</code>, as parameters.</p>
+  </li>
+  <li>Implement a <code class="language-plaintext highlighter-rouge">while</code> loop that does the following. You will need to <strong>create some variables before the start of your loop</strong>.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # while there are still items in both the left and right halves
+     # check if the next left item is less than or equal to the next right item
+         # if so, append the next left item to the merged list
+         # otherwise, append the next right item to the merged list
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Your <code class="language-plaintext highlighter-rouge">merge</code> isn’t quite done since you aren’t grabbing the remaining elements of one of the lists, but this is a good time to <strong>make sure that you code currently is able to merge up until one of the lists is empty</strong>.</p>
+
+    <p>a. Add a line that <strong>prints your final merged list</strong> at the end of your <code class="language-plaintext highlighter-rouge">merge</code> function.</p>
+
+    <p>b. Add this test code to your file:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">merge</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span>
+</code></pre></div>    </div>
+
+    <p>c. Run it and make sure that you get the following:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python merge_sort.py
+ <span class="o">[</span>0, 1, 2, 3, 4, 5, 6, 7]
+</code></pre></div>    </div>
+
+    <p>d. Make sure to remove your print line so it doesn’t confuse you later.</p>
+  </li>
+  <li>Now complete your <code class="language-plaintext highlighter-rouge">merge</code> so that it <strong>appends the remaining items from whichever list isn’t empty and returns your merged list</strong>. Once you have, add the following tests and run them:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">print</span><span class="p">(</span><span class="n">merge</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">26</span><span class="p">]))</span>
+ <span class="k">print</span><span class="p">(</span><span class="n">merge</span><span class="p">([</span><span class="s">"ant"</span><span class="p">,</span> <span class="s">"dragon"</span><span class="p">,</span> <span class="s">"zero"</span><span class="p">],</span> <span class="p">[</span><span class="s">"azure"</span><span class="p">,</span> <span class="s">"boy"</span><span class="p">,</span> <span class="s">"cold"</span><span class="p">,</span> <span class="s">"fix"</span><span class="p">]))</span>
+</code></pre></div>    </div>
+
+    <p>You should get back:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python merge_sort.py
+ <span class="o">[</span>0, 1, 7, 8, 20, 26]
+ <span class="o">[</span><span class="s1">'ant'</span>, <span class="s1">'azure'</span>, <span class="s1">'boy'</span>, <span class="s1">'cold'</span>, <span class="s1">'dragon'</span>, <span class="s1">'fix'</span>, <span class="s1">'zero'</span><span class="o">]</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Now it’s time to implement merge sort! Implement the <code class="language-plaintext highlighter-rouge">merge_sort</code> function based on the high-level that we discussed in class:</p>
+<ul>
+  <li>The parameter is an unsorted list <code class="language-plaintext highlighter-rouge">lst</code>.</li>
+  <li>The return value is a sorted list.</li>
+  <li>The base case is when the list is length 1 (or 0).</li>
+  <li>In the recursive case, you should make recursive calls on the <strong>first half</strong> and <strong>second half</strong> of the list, which will both return sorted sublists. (Hint, remember you can use <code class="language-plaintext highlighter-rouge">[:midpoint]</code> if you have defined <code class="language-plaintext highlighter-rouge">midpoint</code> to get the first half of a list.)</li>
+  <li>You should then use your <code class="language-plaintext highlighter-rouge">merge</code> to <strong>merge those sorted sublists and return the sorted list</strong>.</li>
+</ul>
+
+<p>Once you’ve implemented your <code class="language-plaintext highlighter-rouge">merge_sort</code>, make sure it is able to sort the following four-item list correctly:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">merge_sort</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">]))</span>
+<span class="c1"># should print [0, 1, 7, 8]
+</span></code></pre></div></div>
+
+<p>Then make sure you are able to sort all of the following correctly. If your code has trouble with these, remember that you should be using integer division <code class="language-plaintext highlighter-rouge">//</code> to get the midpoint to handle odd-length lists.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">merge_sort</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
+<span class="c1"># should print [1, 2, 3, 4, 5]
+</span><span class="k">print</span><span class="p">(</span><span class="n">merge_sort</span><span class="p">([</span><span class="s">"ant"</span><span class="p">,</span> <span class="s">"dragon"</span><span class="p">,</span> <span class="s">"zero"</span><span class="p">,</span> <span class="s">"cold"</span><span class="p">,</span> <span class="s">"azure"</span><span class="p">,</span> <span class="s">"boy"</span><span class="p">,</span> <span class="s">"fix"</span><span class="p">]))</span>
+<span class="c1"># should print ['ant', 'azure', 'boy', 'cold', 'dragon', 'fix', 'zero']
+</span><span class="k">print</span><span class="p">(</span><span class="n">merge_sort</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
+<span class="c1"># should print [1, 1, 2, 2, 2, 3]
+</span><span class="k">print</span><span class="p">(</span><span class="n">merge_sort</span><span class="p">([</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">]))</span>
+<span class="c1"># should print [-10, -5, -1, 0, 2]
+</span><span class="k">print</span><span class="p">(</span><span class="n">merge_sort</span><span class="p">([(</span><span class="mi">2</span><span class="p">,</span> <span class="s">'a'</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">'b'</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">'c'</span><span class="p">)]))</span> <span class="c1"># Note, your existing comparison will work for tuples already, cool huh?
+# should print [(1, 'b'), (2, 'a'), (2, 'c')] 
+</span></code></pre></div></div>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Now it’s time to see how fast your implementation of merge sort is!</p>
+
+<ol>
+  <li>
+    <p>Download the <a href="/classes/111-w26/sort_function_timer.py">sort_function_timer.py</a> program and <strong>copy in</strong> your <code class="language-plaintext highlighter-rouge">merge</code> and <code class="language-plaintext highlighter-rouge">merge_sort</code> functions. I’ve also provided implementations of insertion, selection, and bubble sort for you to compare with.</p>
+  </li>
+  <li>After you copy in your merge sort functions, <strong>run the program</strong> and you should see something similar to this (though probably faster times since the lab machines are more powerful than my laptop!):
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> python sort_function_timer.py
+ Working on input size: 10
+ <span class="nt">------------------------------------</span>
+ Average <span class="nb">time </span><span class="k">for </span>insertion <span class="nb">sort </span>with input size 10: 0.001203 milliseconds
+ Average <span class="nb">time </span><span class="k">for </span>selection <span class="nb">sort </span>with input size 10: 0.001521 milliseconds
+ Average <span class="nb">time </span><span class="k">for </span>bubble <span class="nb">sort </span>with input size 10:    0.002057 milliseconds
+
+ Average <span class="nb">time </span><span class="k">for </span>merge <span class="nb">sort </span>with input size 10:     0.003649 milliseconds
+ Average <span class="nb">time </span><span class="k">for </span>built-in with input size 10:       0.000295 milliseconds
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>This is running 10,000 trials for a very small list. Based on your data (and mine), <strong>which of your sorts would you want to use for very small lists</strong>? Why do you think that is the case? (If you are intrigued at how the built-in is so fast, look at the extra exercises later!)</p>
+  </li>
+  <li>
+    <p>Now increase the size of the input on <strong>line 117</strong> to see how the efficiency of the different sorts changes as the size of the input increases. You may want to <strong>decrease the number of trials</strong> somewhat to not have to wait quite so long. You can also <strong>stop running the slowest sort</strong> (which one is it?) at very large input sizes.</p>
+  </li>
+  <li>Plot your data (on <a href="https://www.desmos.com/calculator">Desmos calculator</a> or another plotting software of your choosing) to see how it compares to the Big O times that we discussed for these sorting algorithms. Remember in Desmos, <strong>click the + and choose “table”</strong> to enter in your timing data points, then click the <strong>magnifying glass</strong> for it to adjust the axes to show you data clearly.</li>
+</ol>
+
+<h2 id="submission">Submission</h2>
+<p>Submit your completed <code class="language-plaintext highlighter-rouge">merge</code> and <code class="language-plaintext highlighter-rouge">merge_sort</code> to Moodle for an extra engagement credit.</p>
+
+<h2 id="extra">Extra</h2>
+
+<h3 id="merge-sort-in-place">Merge Sort in Place</h3>
+<p>As we have discussed previously, creating new sublists is expensive both in time and memory usage, so it isn’t ideal to be doing that so many time in merge sort. You can fix that by creating a single temporary list and using index pointers similar to how we did binary search.</p>
+
+<ol>
+  <li>
+    <p>Define a function <code class="language-plaintext highlighter-rouge">def merge_inplace(lst, left_start, left_end, right_end, tmp)</code>, which takes the full list, an index pointer to mark the start of the left <em>sublist</em>, an index pointer to mark the end of the <em>left</em> sublist (which is also the start of the <em>right</em> sublist), and index pointer to mark the end of the <em>right</em> sublist, and a temporary list that is the same size as the full list. You can make the original temporary list with <code class="language-plaintext highlighter-rouge">lst.copy()</code>. Your function should do the same process as your original merge, but do the merging into <code class="language-plaintext highlighter-rouge">tmp</code> and then copy that section of <code class="language-plaintext highlighter-rouge">tmp</code> back into <code class="language-plaintext highlighter-rouge">lst</code>. Make sure your new merge works correctly with the same tests as above, though you’ll have to modify them to pass all the new parameters.</p>
+  </li>
+  <li>
+    <p>Now define a function <code class="language-plaintext highlighter-rouge">def merge_sort_inplace(lst, first, last, tmp)</code>, which implements merge sort, but instead of creating new sublists, it adjusts the <code class="language-plaintext highlighter-rouge">first</code> and <code class="language-plaintext highlighter-rouge">last</code> index pointers to indicate the sublists.</p>
+  </li>
+</ol>
+
+<h3 id="insertion-sort-optimization">Insertion Sort Optimization</h3>
+<p>As you noticed, merge sort isn’t actually the fastest with small lists, due to the extra work of splitting and making recursive calls. Because of this, the built-in sorting generally uses a <em>hybrid</em> approach where insertion sort is used once the size of the list gets small enough.</p>
+
+<ol>
+  <li>
+    <p>Make a copy of your merge sort function and call it <code class="language-plaintext highlighter-rouge">hybrid_sort</code>. Then switch to using insertion sort when the size of the sublist is less than 10 items.</p>
+  </li>
+  <li>
+    <p>See if you can detect a difference in the speed of your hybrid sort compared to merge sort!</p>
+  </li>
+</ol>
+
+<h3 id="bottom-up-merge-sort">Bottom Up Merge Sort</h3>
+<p>As we’ve discussed, recursion adds a lot of overhead to a program, so it is more efficient to avoid it if possible. You can do that with merge sort by skipping the splitting step and thinking of your list as already a bunch of single items and then using index pointers to track the locations of your “sublists”. Try out implementing it and compare the timing! This is very close to how <a href="https://en.wikipedia.org/wiki/Powersort">Python’s built-in</a> sort actually works.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

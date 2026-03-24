@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Pointers Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Pointers Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/pointers-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/pointers-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Pointers Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Pointers Lab","url":"http://localhost:4000/classes/208-f25/pointers-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Pointers Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="exercise-1">Exercise 1</h2>
+<p>a. What mistake is the following code demonstrating?</p>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23include%20%3Cstdio.h%3E%0A%0Avoid%20swap_bad%28int%20a,%20int%20b%29%20%7B%0A%20%20int%20temp%20%3D%20a%3B%0A%20%20a%20%3D%20b%3B%0A%20%20b%20%3D%20temp%3B%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20int%20first%20%3D%201%3B%0A%20%20int%20second%20%3D%202%3B%0A%20%20swap_bad%28first,%20second%29%3B%0A%20%20printf%28%22first%20value%3A%20%25d%22,%20first%29%3B%0A%20%20return%200%3B%0A%7D&amp;codeDivHeight=400&amp;codeDivWidth=350&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=nevernest&amp;origin=opt-frontend.js&amp;py=c_gcc9.3.0&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false"> </iframe>
+
+<p>b. Write a correct <code class="language-plaintext highlighter-rouge">swap</code> function for two <code class="language-plaintext highlighter-rouge">int</code>s in a file <code class="language-plaintext highlighter-rouge">swap.c</code>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// compile with gcc -Wall -Werror -g -o swap swap.c</span>
+<span class="cp">#include &lt;stdio.h&gt;
+</span><span class="kt">void</span> <span class="nf">swap</span><span class="p">(</span><span class="n">______</span> <span class="n">a</span><span class="p">,</span> <span class="n">________</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+
+	
+<span class="p">}</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kt">int</span> <span class="n">first</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">second</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+	<span class="n">swap</span><span class="p">(</span><span class="n">_________</span><span class="p">,</span> <span class="n">_________</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"first value is: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">first</span><span class="p">);</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>c. Recompile <code class="language-plaintext highlighter-rouge">swap.c</code> for use with gdb (<code class="language-plaintext highlighter-rouge">gcc -Wall -Werror -g -Og -o swap swap.c</code>) and explore <code class="language-plaintext highlighter-rouge">swap</code> with gdb by trying out the following:</p>
+
+<ul>
+  <li>Put a breakpoint just before going into swap (check the <a href="c-gdb-lab">GDB lab</a> if you don’t remember the commands)</li>
+  <li>Print out the addresses of <code class="language-plaintext highlighter-rouge">first</code> and <code class="language-plaintext highlighter-rouge">second</code> with <code class="language-plaintext highlighter-rouge">p &amp;first</code> etc</li>
+  <li>Step into <code class="language-plaintext highlighter-rouge">swap</code> and check what the values of <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code> are</li>
+  <li>What happens when you print the addresses of <code class="language-plaintext highlighter-rouge">a</code> and <code class="language-plaintext highlighter-rouge">b</code>?</li>
+</ul>
+
+<p>d. You can also “examine” specific locations in memory with <code class="language-plaintext highlighter-rouge">x/ YOUR_LOCATION</code>. For example, my value of <code class="language-plaintext highlighter-rouge">a</code> is <code class="language-plaintext highlighter-rouge">0x7fffffffe980</code> (yours may be different), and so I can see the data at that location with <code class="language-plaintext highlighter-rouge">x/0x7fffffffe980</code>, which should be 1 before any swapping happens.</p>
+
+<h2 id="exercise-2">Exercise 2</h2>
+<p>a. Predict what the following will print:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s">"cat"</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="n">buffer</span><span class="p">;</span>
+  
+  <span class="n">printf</span><span class="p">(</span><span class="s">"What is this? %c</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="o">*</span><span class="n">ptr</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"What about this? %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">buffer</span><span class="p">);</span>
+
+ 
+ <span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>b. Which of the following two lines will throw an error if added to the code above and why?</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="sc">'b'</span><span class="p">;</span>
+  <span class="n">buffer</span> <span class="o">=</span> <span class="sc">'b'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>a. Predict what the following code will output:</p>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23include%20%3Cstdlib.h%3E%0A%23include%20%3Cstdio.h%3E%0A%0A%23define%20BUFFER_SIZE%209%0A%0Aint%20main%28%29%20%7B%0A%0A%20%20char%20creature%5BBUFFER_SIZE%5D%20%3D%20%22capybara%22%3B%0A%20%20char%20beast%5BBUFFER_SIZE%5D%20%3D%20%22null%22%3B%0A%20%20printf%28%22Before%20copying%3A%20%25s%20%28creature%29,%20%25s%20%28beast%29%5Cn%22,%20creature,%20beast%29%3B%0A%20%20char%20*source_pointer%20%3D%20creature%3B%0A%20%20char%20*destination_pointer%20%3D%20beast%3B%0A%20%20while%20%28*source_pointer%20!%3D%20'%5C0'%29%20%7B%0A%20%20%20%20*destination_pointer%20%3D%20*source_pointer%3B%0A%20%20%20%20destination_pointer%2B%2B%3B%0A%20%20%20%20source_pointer%2B%2B%3B%0A%20%20%7D%0A%20%20*destination_pointer%20%3D%20'%5C0'%3B%0A%20%20printf%28%22After%20copying%3A%20%25s%20%28creature%29,%20%25s%20%28beast%29%5Cn%22,%20creature,%20beast%29%3B%0A%20%20printf%28%22%5Cn%22%29%3B%0A%0A%20%20return%200%3B%0A%7D&amp;codeDivHeight=400&amp;codeDivWidth=350&amp;cppShowMemAddrs=true&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=nevernest&amp;origin=opt-frontend.js&amp;py=c_gcc9.3.0&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false"> </iframe>
+
+<p>b. What would happen if you changed <code class="language-plaintext highlighter-rouge">BUFFER_SIZE</code> to 8?</p>
+
+<h2 id="exercise-4">Exercise 4</h2>
+<p>What will be printed after this code runs:</p>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23include%20%3Cstdio.h%3E%0A%0Aint%20main%28%29%20%7B%0A%20%20int%20a%20%3D%205%3B%0A%20%20int%20*a_ptr%20%3D%20%26a%3B%0A%20%20int%20**b_ptr%20%3D%20%26a_ptr%3B%0A%20%20*a_ptr%20%3D%206%3B%0A%20%20**b_ptr%20%3D%207%3B%0A%20%20printf%28%22Value%3A%20%25d%5Cn%22,%20a%29%3B%0A%20%20return%200%3B%0A%7D&amp;codeDivHeight=400&amp;codeDivWidth=350&amp;cppShowMemAddrs=true&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=nevernest&amp;origin=opt-frontend.js&amp;py=c_gcc9.3.0&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false"> </iframe>
+
+<h2 id="exercise-5">Exercise 5</h2>
+<p>Copy the following into a file <code class="language-plaintext highlighter-rouge">calculate.c</code>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+</span><span class="c1">//// compile with gcc -Wall -Werror -g -o calculate calculate.c</span>
+<span class="cm">/* Returns the sums two numbers. */</span>
+<span class="kt">int</span> <span class="nf">compute_sum</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/* Returns the product of two numbers. */</span>
+<span class="kt">int</span> <span class="nf">compute_product</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/* Function to perform calculations on input parameters x and y and set the
+ * sum_result and prod_result parameters to their results.
+ */</span>
+<span class="kt">void</span> <span class="nf">calculate</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">,</span> <span class="kt">int</span> <span class="o">*</span><span class="n">sum_result</span><span class="p">,</span> <span class="kt">int</span> <span class="o">*</span><span class="n">prod_result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//TODO</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">sum</span><span class="p">,</span> <span class="n">product</span><span class="p">;</span>
+    
+    <span class="c1">//Call calculate here!</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"sum of %d and %d is %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">sum</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"product of %d and %d is %d </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">product</span><span class="p">);</span>    
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Complete the calculate function and call it in <code class="language-plaintext highlighter-rouge">main</code>.</p>
+
+<h2 id="submission">Submission</h2>
+<p>You can submit your completed <code class="language-plaintext highlighter-rouge">swap.c</code> and <code class="language-plaintext highlighter-rouge">calculate.c</code> to the assignment on Moodle for an extra engagement credit.</p>
+
+<h2 id="extra">Extra</h2>
+<p>If you finish the lab early, you can work on your homework and revisions.</p>
+
+<p>You can also check out <a href="https://jvns.ca/blog/2021/05/17/how-to-look-at-the-stack-in-gdb/">this blog post</a> that has some more fun things to do with GDB to see how things are stored in memory. We’ll be doing a lot more of this in the coming weeks!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

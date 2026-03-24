@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Assembly in GDB Lab | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Assembly in GDB Lab" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/asm-gdb-lab" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/asm-gdb-lab" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Assembly in GDB Lab" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Assembly in GDB Lab","url":"http://localhost:4000/classes/208-f25/asm-gdb-lab"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Assembly in GDB Lab</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goals">Goals</h2>
+<p>Your primary goal for this lab is to get familiar with using the GNU debugger (<code class="language-plaintext highlighter-rouge">gdb</code>) to explore and debug x86-64 programs, focusing on arithmetic operations and <code class="language-plaintext highlighter-rouge">set</code>/<code class="language-plaintext highlighter-rouge">cmp</code>/<code class="language-plaintext highlighter-rouge">test</code> instructions.</p>
+
+<h2 id="documentation-and-tutorials">Documentation and tutorials</h2>
+<p>You will find some potentially useful <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources#gdb">gdb resources</a> posted on our <a href="https://www.cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources">Resources</a> page.</p>
+
+<h2 id="getting-started">Getting started</h2>
+<p>In this lab, we’ll be working with the sample <code class="language-plaintext highlighter-rouge">struct_math.c</code>, which showcases a little bit of each topic in assembly that we’ve seen so far. Grab the source code and copy it to <code class="language-plaintext highlighter-rouge">mantis</code>. Here’s the easiest way:</p>
+
+<ul>
+  <li>
+    <p>SSH into <code class="language-plaintext highlighter-rouge">mantis</code> via VS Code and open a terminal in your <code class="language-plaintext highlighter-rouge">CS208</code> folder.</p>
+  </li>
+  <li>
+    <p>Make a new directory for this lab:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">mkdir </span>lab5
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Change to your new directory:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nb">cd </span>lab5
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Grab the source code:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  wget https://cs.carleton.edu/faculty/tamert/courses/cs208-s25/resources/samples/struct_math.c
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Compile it to assembly:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  gcc <span class="nt">-Wall</span> <span class="nt">-Werror</span> <span class="nt">-Og</span> <span class="nt">-S</span> <span class="nt">-o</span> struct_math.s struct_math.c
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="step-1-review-movx-movxyz-and-leax-instructions">Step 1: Review <code class="language-plaintext highlighter-rouge">movX</code>, <code class="language-plaintext highlighter-rouge">movXYZ</code>, and <code class="language-plaintext highlighter-rouge">leaX</code> instructions</h2>
+<p>Look at the source code in <code class="language-plaintext highlighter-rouge">struct_math.c</code>. There are five different functions called, starting with <code class="language-plaintext highlighter-rouge">func0</code>. For this function, could you predict what the assembly will look like?</p>
+
+<h3 id="exploring-func0">Exploring <code class="language-plaintext highlighter-rouge">func0</code></h3>
+
+<p>Open the file <code class="language-plaintext highlighter-rouge">struct_math.s</code> and find the function <code class="language-plaintext highlighter-rouge">func0</code>. Let’s comment the lines:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func0:                              <span class="c"># we found func0!</span>
+.LFB23:                             <span class="c"># (ignore)</span>
+    .cfi_startproc                  <span class="c"># (ignore)</span>
+    endbr64                         <span class="c"># (ignore)</span>
+    movl    %esi, %esi              <span class="c"># copy %esi into %esi (why?!??)</span>
+    leaq    16<span class="o">(</span>%rsi,%rdi<span class="o">)</span>, %rax     <span class="c"># puts 16 + R[%rsi] + R[%rdi] in %rax</span>
+    ret                             <span class="c"># returns...something</span>
+    .cfi_endproc
+</code></pre></div></div>
+
+<p>The first question to ask is why does it copy <code class="language-plaintext highlighter-rouge">%esi</code> into itself? A <code class="language-plaintext highlighter-rouge">movl</code>, due to changes going from 32-bit x86 to 64-bit x86-64, clears the top 32 bits of the register. This makes sure we can use the 32-bit int passed in via <code class="language-plaintext highlighter-rouge">%esi</code> as a pointer.</p>
+
+<p>Why is the next instruction an <code class="language-plaintext highlighter-rouge">lea</code>? What would happen if it were a <code class="language-plaintext highlighter-rouge">mov</code> instead?</p>
+
+<p>Now we grab the address given by <code class="language-plaintext highlighter-rouge">%rdi + %rsi + 16</code> and copy it into <code class="language-plaintext highlighter-rouge">%rax</code>. Take a look at the struct definition:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>          <span class="c1">// start + 0 (bytes 0-3)</span>
+    <span class="kt">int</span> <span class="n">b</span><span class="p">;</span>          <span class="c1">// start + 4 (bytes 4-7)</span>
+    <span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>         <span class="c1">// start + 8 (bytes 8-15)</span>
+    <span class="kt">char</span> <span class="n">s</span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>      <span class="c1">// start + 16 (bytes 16-23, each char is 1)</span>
+    <span class="kt">short</span> <span class="n">v</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>     <span class="c1">// start + 24 (bytes 24-31, each short is 2)</span>
+<span class="p">}</span> <span class="n">data_t</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Therefore, <code class="language-plaintext highlighter-rouge">%rdi</code> must be the address of the struct itself, and looking 16 bytes after its start gives us the <code class="language-plaintext highlighter-rouge">s</code> member of the struct. We’re using <code class="language-plaintext highlighter-rouge">%rsi</code> as the index, with a scale of <code class="language-plaintext highlighter-rouge">1</code> because it’s an array of <code class="language-plaintext highlighter-rouge">char</code>.</p>
+
+<p>This matches our line of code:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">return</span> <span class="o">&amp;</span><span class="p">(</span><span class="n">data</span><span class="o">-&gt;</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</code></pre></div></div>
+
+<p>Pause for a moment – what questions do you have?</p>
+
+<h3 id="exploring-func1">Exploring <code class="language-plaintext highlighter-rouge">func1</code></h3>
+<p>Now let’s look at <code class="language-plaintext highlighter-rouge">func1</code>. You’ll notice that it does an array lookup and ends with an xor operation. Can you map that to its assembly? Try commenting each (relevant) line of the assembly (before looking at the example below)…</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func1:
+.LFB24:
+    .cfi_startproc
+    endbr64
+    movl    %esi, %esi                  <span class="c"># clear the top half of %rsi</span>
+    movzwl  24<span class="o">(</span>%rdi,%rsi,2<span class="o">)</span>, %eax       <span class="c"># %eax &lt;- M[24+%rdi+2*%rsi]</span>
+    xorw    4<span class="o">(</span>%rdi<span class="o">)</span>, %ax                <span class="c"># %ax &lt;- %ax ^ M[4+%rdi]</span>
+    ret
+    .cfi_endproc
+</code></pre></div></div>
+
+<p>After making a first pass, let’s match this up with what we know about the function signature:
+<code class="language-plaintext highlighter-rouge">short func1(data_t *data, unsigned int i)</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func1:
+.LFB24:
+    .cfi_startproc
+    endbr64
+    movl    %esi, %esi                  <span class="c"># clear the top half of %rsi</span>
+    movzwl  24<span class="o">(</span>%rdi,%rsi,2<span class="o">)</span>, %eax       <span class="c"># %eax &lt;- data-&gt;v[i]</span>
+    xorw    4<span class="o">(</span>%rdi<span class="o">)</span>, %ax                <span class="c"># %ax &lt;- %ax ^ data-&gt;b</span>
+    ret
+    .cfi_endproc
+</code></pre></div></div>
+
+<p>Make sure to remember that arithmetic operations are of the form <code class="language-plaintext highlighter-rouge">OP src, dst</code>, and the action performed is <code class="language-plaintext highlighter-rouge">dst &lt;- dst OP src</code>. If you read it backwards like this, then <code class="language-plaintext highlighter-rouge">sub</code> and <code class="language-plaintext highlighter-rouge">cmp</code> instructions make much more sense!</p>
+
+<p>Again, pause to determine which questions you have.</p>
+
+<h2 id="step-2-more-mathematical-operations">Step 2: More mathematical operations</h2>
+<p>Now look at <code class="language-plaintext highlighter-rouge">func2</code>. Most of this is relatively straightforward, but we want to focus on the math at the bottom.</p>
+
+<h3 id="arithmetic-operations">Arithmetic operations</h3>
+<p>See if you can separate out the relevant blocks. Put in blank lines to separate each of the four assignments to <code class="language-plaintext highlighter-rouge">data-&gt;v</code> elements from each other in assembly.</p>
+
+<p>What questions do you have about the first three?</p>
+
+<h3 id="logical-operations-and-set-instructions">Logical operations and set instructions</h3>
+<p>Now let’s look at the last assignment statement:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data</span><span class="o">-&gt;</span><span class="n">v</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&amp;&amp;</span> <span class="n">y</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>This one gets a little weird. We need to check if <code class="language-plaintext highlighter-rouge">x</code> is non-zero and if <code class="language-plaintext highlighter-rouge">y</code> is non-zero, and, if they’re both non-zero, put a 1 in <code class="language-plaintext highlighter-rouge">data-&gt;v[3]</code> (or a 0 otherwise).</p>
+
+<p>Let’s break down the corresponding assembly:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Determine if x is "true"</span>
+testq   %rdi, %rdi      <span class="c"># set flags using x &amp; x</span>
+setne   %cl             <span class="c"># %cl &lt;- ~ZF (0 if x&amp;x==0, 1 otherwise)</span>
+
+<span class="c"># Determine if y is "true"</span>
+testq   %rsi, %rsi      <span class="c"># set flags using y &amp; y</span>
+setne   %al             <span class="c"># %al &lt;- ~ZF (0 if y&amp;y==0, 1 otherwise)</span>
+
+<span class="c"># Perform an "and" on the two individual bits</span>
+andl    %ecx, %eax      <span class="c"># %eax &lt;- %eax &amp; %ecx (y!=0 &amp; x!=0)</span>
+
+<span class="c"># We did the "and" using 32-bit values, but we only stored</span>
+<span class="c"># stuff in the bottom 8 bits originally, so there could be</span>
+<span class="c"># garbage bytes still living in the top 24 bits -- extend</span>
+<span class="c"># %al to the full 32 bits</span>
+movzbl  %al, %eax
+
+<span class="c"># Copy the 16 bits we actually care about for our "short" result</span>
+<span class="c"># in data-&gt;v[3]</span>
+movw    %ax, 30<span class="o">(</span>%rdx<span class="o">)</span>
+</code></pre></div></div>
+
+<h3 id="checking-register-values-in-gdb">Checking register values in gdb</h3>
+<p>Now let’s step through the assembly to make sense of all of this.</p>
+
+<ol>
+  <li>Compile the program if you haven’t already:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gcc <span class="nt">-o</span> struct_math struct_math.s
+</code></pre></div>    </div>
+  </li>
+  <li>Start <code class="language-plaintext highlighter-rouge">gdb</code>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gdb struct_math
+</code></pre></div>    </div>
+  </li>
+  <li>Set a breakpoint at the start of <code class="language-plaintext highlighter-rouge">func2</code> (here the <code class="language-plaintext highlighter-rouge">(gdb)</code> is the prompt – don’t type that):
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">(</span>gdb<span class="o">)</span> b func2
+</code></pre></div>    </div>
+  </li>
+  <li>Run the program, causing it to break once it gets into <code class="language-plaintext highlighter-rouge">func2</code>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">(</span>gdb<span class="o">)</span> r
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Now let’s inspect what we’ve got. The function signature is <code class="language-plaintext highlighter-rouge">void func2(int *x, int *y, data_t *data)</code>. Check the C code in <code class="language-plaintext highlighter-rouge">main</code> to see what values are passed in within the addresses <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code>.</p>
+  </li>
+  <li>
+    <p>Let’s print these values (in hex) in <code class="language-plaintext highlighter-rouge">gdb</code> (note that we have to use <code class="language-plaintext highlighter-rouge">$</code>, not <code class="language-plaintext highlighter-rouge">%</code>, with register names in <code class="language-plaintext highlighter-rouge">gdb</code>):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">(</span>gdb<span class="o">)</span> p /x <span class="nv">$rdi</span>
+ <span class="nv">$1</span> <span class="o">=</span> 0x7fffffffe938
+ <span class="o">(</span>gdb<span class="o">)</span> p /x <span class="nv">$rsi</span>
+ <span class="nv">$2</span> <span class="o">=</span> 0x7fffffffe93c
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>These values are the addresses. Pretty soon you’ll start recognizing numbers that start with <code class="language-plaintext highlighter-rouge">0x7ffff...</code> as addresses on the stack. Let’s instead “eXamine” the values at those locations (in decimal and hex, respectively):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">(</span>gdb<span class="o">)</span> x/d <span class="nv">$rdi</span>
+ 0x7fffffffe938: 3
+ <span class="o">(</span>gdb<span class="o">)</span> x/x <span class="nv">$rsi</span>
+ 0x7fffffffe93c: 0x00000ace
+</code></pre></div>    </div>
+    <p>This should match the inputs we’ve passed from <code class="language-plaintext highlighter-rouge">main</code>.</p>
+  </li>
+  <li>
+    <p>Let’s move on to see how the string (the <code class="language-plaintext highlighter-rouge">char</code> array <code class="language-plaintext highlighter-rouge">data-&gt;s</code>) looks in <code class="language-plaintext highlighter-rouge">gdb</code>. Use <code class="language-plaintext highlighter-rouge">ni</code> to move to the next instruction until after it stores the two <code class="language-plaintext highlighter-rouge">'\0'</code> values in <code class="language-plaintext highlighter-rouge">data-&gt;s</code>.</p>
+  </li>
+  <li>
+    <p>We can print out this string if we know where it is. It’s been stored starting at <code class="language-plaintext highlighter-rouge">0x10(%rdx)</code>, so let’s figure that out (recall that <code class="language-plaintext highlighter-rouge">data</code> is passed in as the third parameter, so it’s in <code class="language-plaintext highlighter-rouge">%rdx</code>):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">(</span>gdb<span class="o">)</span> p /x <span class="nv">$rdx</span>
+ <span class="nv">$3</span> <span class="o">=</span> 0x7fffffffe940
+ <span class="o">(</span>gdb<span class="o">)</span> x/s 0x7fffffffe950
+ 0x7fffffffe950: <span class="s2">"hobbes"</span>
+ <span class="o">(</span>gdb<span class="o">)</span> x/s <span class="nv">$rdx</span>+0x10
+ 0x7fffffffe950: <span class="s2">"hobbes"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Finally, let’s take a look at the values we’ve put in <code class="language-plaintext highlighter-rouge">data-&gt;v</code> right before returning. Use <code class="language-plaintext highlighter-rouge">ni</code> until the highlighted line is the <code class="language-plaintext highlighter-rouge">ret</code> (so that’s the next instruction executed).</p>
+  </li>
+  <li>
+    <p>We can examine several bytes of memory at once, in groups. Let’s start by looking at the 4 shorts in <code class="language-plaintext highlighter-rouge">data-&gt;v</code>, in hex:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>gdb<span class="o">)</span> x/4hx <span class="nv">$rdx</span>+0x18
+0x7fffffffe958: 0xffff 0xcafe 0x00c4 0x0001
+</code></pre></div>    </div>
+
+    <p>Note that gdb has its own silly set of prefixes: <code class="language-plaintext highlighter-rouge">b</code> means “byte”, <code class="language-plaintext highlighter-rouge">h</code> means “halfword” (two bytes), <code class="language-plaintext highlighter-rouge">w</code> means “word” (four bytes), and <code class="language-plaintext highlighter-rouge">g</code> means “giant word” (eight bytes). The expression above <code class="language-plaintext highlighter-rouge">x/4hx</code> says “examine four half-word (two byte) chunks, starting at the given address”.</p>
+
+    <p>You can find more info here: <a href="https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_55.html">https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_55.html</a>.</p>
+  </li>
+  <li>We could instead look at this chunk of memory in individual bytes:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>gdb<span class="o">)</span> x/8bx <span class="nv">$rdx</span>+0x18
+0x7fffffffe958: 0xff   0xff    0xfe    0xca    0xc4    0x00    0x01    0x00
+</code></pre></div>    </div>
+
+    <p>Is this using little-endian or big-endian byte ordering? How can you tell?</p>
+  </li>
+  <li>Let’s do one more silly thing and treat <code class="language-plaintext highlighter-rouge">data-&gt;v</code> as a single <code class="language-plaintext highlighter-rouge">long</code>. Before you run this, predict the output!
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>gdb<span class="o">)</span> x/1gx <span class="nv">$rdx</span>+0x18
+&lt;output not shown <span class="nt">--</span> run it yourself!&gt;
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="step-3-explore-the-loops">Step 3: Explore the loops</h2>
+<p>Finally, take some time to explore the loops in <code class="language-plaintext highlighter-rouge">func3</code> and <code class="language-plaintext highlighter-rouge">func4</code>. Try to answer these questions for yourself:</p>
+
+<ol>
+  <li>Which registers are used to store the variable <code class="language-plaintext highlighter-rouge">i</code>?</li>
+  <li>What changes when we use <code class="language-plaintext highlighter-rouge">unsigned int</code> versus <code class="language-plaintext highlighter-rouge">int</code> for <code class="language-plaintext highlighter-rouge">i</code>?</li>
+  <li>How does our comparison line up with the <code class="language-plaintext highlighter-rouge">i &lt; 8</code> and <code class="language-plaintext highlighter-rouge">i &lt; 4</code> comparisons in the C code?</li>
+  <li>Which instruction corresponds to the <code class="language-plaintext highlighter-rouge">i++</code>?</li>
+  <li>Is there anything special about <code class="language-plaintext highlighter-rouge">+</code> versus <code class="language-plaintext highlighter-rouge">*</code>?</li>
+</ol>
+
+<p>As always, try to explore, ask any questions you have, and have fun!</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Test-Driven Development | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Test-Driven Development" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-s25/old-tdd" />
+<meta property="og:url" content="http://localhost:4000/classes/257-s25/old-tdd" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Test-Driven Development" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Test-Driven Development","url":"http://localhost:4000/classes/257-s25/old-tdd"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Test-Driven Development</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goal">Goal</h2>
+<p>Engage in test-driven development as you start on the team and individual deliverables for your command-line component of your project. Get a good start on <a href="project-1-ind">Individual Deliverable 1</a>.</p>
+
+<h2 id="first-though">First Though</h2>
+
+<p>If you haven’t finished the Git setup from the <a href="lab-git">previous lab</a>, go do that.</p>
+
+<h2 id="overview">Overview</h2>
+<p>In this lab, you’ll practice test-driven development to get started on your <a href="project-1-ind">first individual deliverable</a>.</p>
+
+<h2 id="step-1-a-first-failing-test">Step 1: A First Failing Test</h2>
+<ul>
+  <li>Accept the assignment by clicking on the <code class="language-plaintext highlighter-rouge">Individual Deliverable - Tests Assignment</code> on Moodle and clone down the repository.</li>
+</ul>
+
+<p>In TDD, you always want to start with a failing test:</p>
+<ul>
+  <li>In your Individual Deliverable 1 repository, navigate to the <code class="language-plaintext highlighter-rouge">Tests</code> subdirectory</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">test_cl.py</code> and verify that this runs and prints “NO TESTS RAN”</li>
+  <li>Try to import your production code file with the following line:
+  <code class="language-plaintext highlighter-rouge">from ProductionCode.basic_cl import *</code>
+  (As a Python refresher, this line imports all the functions ( <code class="language-plaintext highlighter-rouge">*</code> or the asterisk means all) from <code class="language-plaintext highlighter-rouge">basic_cl</code> in the <code class="language-plaintext highlighter-rouge">ProductionCode</code> folder)</li>
+  <li>Verify that your tests now crash with a <code class="language-plaintext highlighter-rouge">ModuleNotFoundError</code></li>
+</ul>
+
+<h2 id="step-2-passing-that-test">Step 2: Passing that test</h2>
+<p>Awesome, you have a failing test, great job! The reason your code is crashing is because Python is a bit odd about handling code in subdirectories, but we want to keep things nicely organized. Therefore, to run your tests for real, you will need to use some special functionality of <code class="language-plaintext highlighter-rouge">unittest</code>, i.e. its ability to discover tests and handle subdirectories during that process.</p>
+
+<ul>
+  <li>Navigate back to your top level directory</li>
+  <li>To run your tests type the following:
+<code class="language-plaintext highlighter-rouge">python3 -m unittest discover Tests/</code></li>
+  <li>Verify that 0 tests have run OK</li>
+</ul>
+
+<h2 id="step-3-writing-a-real-failing-test">Step 3: Writing a real failing test</h2>
+<p>Okay, fine, that wasn’t very exciting and was probably taking TDD too far, but it’s a good example of how you should go about this.
+To get to your first real failing test case, you’ll need to make a tester class in your test file:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">TestFUNCTION_NAME</span><span class="p">(</span><span class="n">unittest</span><span class="p">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+         <span class="n">load_data</span><span class="p">()</span> <span class="c1"># Loads data before each test 
+</span>
+    <span class="k">def</span> <span class="nf">test_A_DESCRIPTIVE_NAME</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s">""" A DESCRIPTIVE DOCSTRING """</span>
+        <span class="c1"># test one of the functions
+</span></code></pre></div></div>
+
+<p>(You should change the things that are all caps.)</p>
+
+<ul>
+  <li>Write the actual test</li>
+  <li>Verify that it fails by running it locally</li>
+</ul>
+
+<h2 id="step-4-write-tests-for-basic-command-line-app">Step 4: Write tests for Basic Command Line App</h2>
+<p>You are all set to get started on the <a href="project-1-ind">Tests Individual Deliverable</a>.
+Remember: you shouldn’t write any production code for the first individual deliverable. Instead, you should think carefully about the tests that would test the functionality of the function signatures in <code class="language-plaintext highlighter-rouge">ProductionCode/basic_cl.py</code> based on the data in <code class="language-plaintext highlighter-rouge">Data/dataset.csv</code>. The function signatures are also specified in the <a href="project-1-ind">Individual Deliverable 1</a> details.</p>
+
+<p>You should aim to complete as much of the requirements for the first individual deliverable as you can in class!</p>
+
+<h2 id="step-5-command-line-testing">Step 5: Command-line testing</h2>
+<p>You’ll also need to test command-line functionality for multiple deliverables.
+Testing command-line functionality is a bit trickier than at the function level, though you basically can just treat <code class="language-plaintext highlighter-rouge">main</code> like a function. (Note that these snippets are outside of a function for brevity, you should put the code in a better location!)</p>
+
+<ol>
+  <li>It turns out, you can change the value of <code class="language-plaintext highlighter-rouge">sys.argv</code> directly:</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="p">.</span><span class="n">argv</span> <span class="o">=</span> <span class="p">[</span><span class="s">'basic_cl.py'</span><span class="p">,</span> <span class="s">'1'</span><span class="p">,</span> <span class="s">'1'</span><span class="p">]</span> <span class="c1">#setting the command-line arguments to 1 1
+</span></code></pre></div></div>
+
+<ol>
+  <li>Checking what is printed is a little bit more difficult, but not much. You just change where <code class="language-plaintext highlighter-rouge">sys.stdout</code> goes so that you can grab the results:</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="n">sys</span><span class="p">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="n">StringIO</span><span class="p">()</span> <span class="c1">#make a StringIO object and have sys.stdout point to it instead of the usual spot
+</span>
+<span class="n">printed_output</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdout</span><span class="p">.</span><span class="n">getvalue</span><span class="p">()</span> <span class="c1">#I can get what is printed as a normal string!
+</span></code></pre></div></div>
+
+<ol>
+  <li>You then can compare <code class="language-plaintext highlighter-rouge">printed_output</code> to whatever you think should be printed. (Note you should call main first, which you can call like any other function.)</li>
+</ol>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

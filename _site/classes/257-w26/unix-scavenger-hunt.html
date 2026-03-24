@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unix Scavenger Hunt | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Unix Scavenger Hunt" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/257-w26/unix-scavenger-hunt" />
+<meta property="og:url" content="http://localhost:4000/classes/257-w26/unix-scavenger-hunt" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unix Scavenger Hunt" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Unix Scavenger Hunt","url":"http://localhost:4000/classes/257-w26/unix-scavenger-hunt"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Unix Scavenger Hunt</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="goal">Goal</h2>
+<p>The purpose of this scavenger hunt activity is to give you some additional practice working with Unix commands and a bit with the vi/vim editor and to help make you more comfortable working with a Unix command line.</p>
+
+<h2 id="setup">Setup</h2>
+<p>You should complete this lab on your own computer.</p>
+
+<p>You can and should consult with your neighbors if you get stuck at any point in this activity! (And of course raise your hand and ask for help!)</p>
+
+<p>Note that generating the clues takes a few seconds, but shouldn’t take more than a minute or two, so if it is hanging, ask for help or kill it and try again.</p>
+
+<h2 id="first-though">First though</h2>
+<p>If you didn’t finish the Laptop Setup portion of the <a href="getting-started">Getting Started</a> lab, you need to do that first.</p>
+
+<h2 id="unix-scavenger-hunt">Unix Scavenger Hunt</h2>
+<p>This activity uses a Git repository. We’ll discuss what those are and what is going on with them next week, but in the mean time, open a Terminal and do the following.</p>
+
+<ol>
+  <li>Make sure you are at your top level directory within your Unix environment:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~
+</code></pre></div>    </div>
+  </li>
+  <li>Then get the scavenger hunt:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/acdalal/scavenger-hunt.git
+cd scavenger-hunt
+</code></pre></div>    </div>
+  </li>
+  <li>If you are asked to install XCode command line tools, yes, do it</li>
+</ol>
+
+<p>Then take a look at the file <code class="language-plaintext highlighter-rouge">README.md</code> either in the folder you’ve created or <a href="https://github.com/acdalal/scavenger-hunt/blob/master/README.md">here</a> and follow the steps there (you shouldn’t need to install git though).</p>
+
+<ol>
+  <li>If you want to complete the lab for an engagement credit, submit your final clue command and the result to Moodle.</li>
+</ol>
+
+<h2 id="qa">Q&amp;A</h2>
+<p>A few things seem to go wrong for some people, so things to keep in mind:</p>
+<ul>
+  <li>If you don’t have <code class="language-plaintext highlighter-rouge">words</code> and <code class="language-plaintext highlighter-rouge">ispell</code> doesn’t work, try just installing <code class="language-plaintext highlighter-rouge">words</code> or <code class="language-plaintext highlighter-rouge">wamerican</code></li>
+  <li>Remember that you need to include your secret number and the next clue number for each <code class="language-plaintext highlighter-rouge">next_clue</code> call</li>
+  <li>Remember that you should put all your hints in “ “</li>
+  <li>In the past, some Macs have had issues:
+    <ul>
+      <li>Number of folders in usr directory might be off (did you make sure you generated at <code class="language-plaintext highlighter-rouge">~</code>?)</li>
+      <li>You might not have a <code class="language-plaintext highlighter-rouge">hostname</code> file, you can find it at System Preferences -&gt; Sharing</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="extras">Extras</h2>
+<p>If you finish the scavenger hunt before the end of class (congrats!), you should either keep working on refreshing on Python (possibly by solving the lab activities linked from the <a href="getting-started">Getting Started Lab</a>), keep working on your team proposal, or start on the <a href="git-prep">preparation for Wednesday</a>.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

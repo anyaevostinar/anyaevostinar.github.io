@@ -57,3 +57,9 @@ I have a couple of projects getting evolutionary dynamics into Minecraft and so 
 
 ## Grad School
 [PhD-level abilities and character traits](https://blog.genesmindsmachines.com/p/phd-level-abilities-and-character) - A nice analysis of what traits are actually the most important for pursuing a PhD, i.e. it's not about being smart enough.
+
+[NSF GRFP Personal Statement Guide](https://blog.genesmindsmachines.com/p/how-to-write-an-nsf-grfp-personal)
+[https://blog.genesmindsmachines.com/p/how-to-write-an-nsf-grfp-research]
+
+## Life
+[https://kk.org/thetechnium/101-additional-advices/](101 Additional Advices) - all pretty darn good

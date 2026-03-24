@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HW5 - asm to C Puzzles | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="HW5 - asm to C Puzzles" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/208-f25/hw5" />
+<meta property="og:url" content="http://localhost:4000/classes/208-f25/hw5" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="HW5 - asm to C Puzzles" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"HW5 - asm to C Puzzles","url":"http://localhost:4000/classes/208-f25/hw5"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW5 - asm to C Puzzles</h1>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Due: Friday Oct 17th, at 10:00pm</strong></p>
+
+<ul>
+  <li>Starter code: <a href="/classes/208-f25/a5.tar">a5.tar</a></li>
+  <li>Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">puzzle1.asm</code> through <code class="language-plaintext highlighter-rouge">puzzle7.asm</code>, two <code class="language-plaintext highlighter-rouge">puzzleX.c</code> files, and a <code class="language-plaintext highlighter-rouge">readme.txt</code> file (see below)</li>
+</ul>
+
+<h2 id="goals">Goals</h2>
+<p>This assignment is designed to help you practice the following:</p>
+
+<ul>
+  <li>identifying patterns representing common structures from higher-level languages</li>
+  <li>tracing possible execution flows through assembly code</li>
+</ul>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+<p>For this assignment, you may work alone or with a partner, but you must type up all of the answers yourself. (It is therefore unexpected for two submissions to be completely identical.)</p>
+
+<p>You may also discuss the assignment at a high level with other students.</p>
+
+<p>You should list any student with whom you discussed the assignment, and the manner of discussion (high level, partner, etc.) in your <code class="language-plaintext highlighter-rouge">readme.txt</code> file.</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<h2 id="assessment">Assessment</h2>
+<p>The <strong>core requirements</strong> for your submission are:</p>
+
+<ul>
+  <li>identify the structures used in each puzzle program</li>
+  <li>identify control flow after jump/call instructions</li>
+  <li>identify possible control-flow paths through the puzzle</li>
+</ul>
+
+<p>The <strong>advanced requirements</strong> for your submission are:</p>
+
+<ul>
+  <li>satisfy the core requirements</li>
+  <li>identify parameter counts and sizes</li>
+  <li>reverse-engineer the C code to generate the assembly for two of the puzzles</li>
+  <li>include your name and collaboration statement in your <code class="language-plaintext highlighter-rouge">readme.txt</code> file</li>
+</ul>
+
+<h2 id="background">Background</h2>
+<p>What does a compiler do?</p>
+
+<p>That question has a long, complicated answer. In brief, though, our compiler (<code class="language-plaintext highlighter-rouge">gcc</code>) takes C source files as input and produces an executable program as output. The executable program contains, among other things, <em>machine language</em> instructions whose behavior implements the computations articulated in the original C code.</p>
+
+<p>Machine language is just bits, like anything else in the computer, but this means it’s hard to read. So, if we want to understand the correspondence between C code and its equivalent machine language, we’re better off asking <code class="language-plaintext highlighter-rouge">gcc</code> to output assembly language code instead. Assembly isn’t particularly easy to read either, but it’s a lot easier than machine language.</p>
+
+<p>As a general rule, each assembly language instruction corresponds to exactly one machine language instruction, and vice versa. There are some exceptions (e.g., sometimes one assembly language instruction is an alias for a sequence of two or three machine language instructions), but as a rough guide, you can think of assembly and machine code as being in one-to-one correspondence. As a result, by understanding the assembly generated by <code class="language-plaintext highlighter-rouge">gcc</code>, we will be very close to understanding the machine code as well.</p>
+
+<h2 id="assignment-overview">Assignment overview</h2>
+<p>For this assignment, you are going to practice understanding the correspondence between simple C code and its equivalent assembly language by solving a sequence of puzzles.</p>
+
+<p>To test your knowledge, you are encouraged (although mostly not required to) try to “reverse engineer” the corresponding C code Although we could use <code class="language-plaintext highlighter-rouge">gcc</code> on <code class="language-plaintext highlighter-rouge">mantis</code>, we will start by using an extremely handy tool called the <a href="https://godbolt.org/">Compiler Explorer</a>. You’ll put some C code into the input panel, and the output panel will show you the assembly generated by the selected compiler. As you adjust your C code, you’ll be able to watch the changes in the assembly, and then compare your assembly code to the puzzle’s code.</p>
+
+<h2 id="your-assignment">Your assignment</h2>
+<p>This assignment comprises seven puzzles, given in assembly. For each puzzle, you will read some given assembly and answer some questions about the corresponding C program.</p>
+
+<p>For “advanced”, you will also need to reverse engineer two of the puzzle programs.</p>
+
+<h3 id="core">Core</h3>
+<p>For the core requirements, you must answer some questions as comments in the assembly code for each puzzle. To answer these questions, you’ll need to complete the following:</p>
+
+<ol>
+  <li>Fill in the comment at the top of the assembly file, indicating which structure(s) are present in the puzzle:
+    <ul>
+      <li>conditional branching (<code class="language-plaintext highlighter-rouge">if, if/else</code>)</li>
+      <li>switch statement</li>
+      <li>loop (<code class="language-plaintext highlighter-rouge">for, while, do-while</code>)</li>
+      <li>nested loop</li>
+      <li>function call</li>
+      <li>recursive function call</li>
+    </ul>
+  </li>
+  <li>For each <code class="language-plaintext highlighter-rouge"># Next: TODO</code> marked in the inline comments, provide the label(s) of the instruction(s) that could be executed immediately after the instruction on the TODO line.</li>
+  <li>In comments at the top of the assembly file, list three possible orders in which labels could be executed during a single invocation of the function <code class="language-plaintext highlighter-rouge">function1</code>.</li>
+</ol>
+
+<h3 id="advanced">Advanced</h3>
+<p>For the advanced requirements, you will additionally need to understand the inputs in each assembly program and do some reverse engineering.</p>
+
+<ol>
+  <li>Fill in the comment at the top of the assembly file, listing the registered used for function parameters, both in name and size.
+    <ul>
+      <li>For example, if the only parameter is in <code class="language-plaintext highlighter-rouge">%rdi</code> and it is always referenced as <code class="language-plaintext highlighter-rouge">%edi</code>, you’d write something like <code class="language-plaintext highlighter-rouge">%edi (4 bytes)</code>. If two registers are used, with the first being its 8-byte version and the second being its 2-byte version, you’d write <code class="language-plaintext highlighter-rouge">%rdi (8 bytes)</code> and <code class="language-plaintext highlighter-rouge">%si (2 bytes)</code>.</li>
+    </ul>
+  </li>
+  <li>The final piece of this assignment is to reverse engineer two programs. For two puzzles of your choice in the given puzzles (puzzle1–puzzle7), create a C program that produces the assembly output provided. <em>(Hint: You will likely find the <a href="https://godbolt.org/">Compiler Explorer</a> helpful for this part.)</em></li>
+</ol>
+
+<p>Note that some of the labels were added by us (all of <code class="language-plaintext highlighter-rouge">CA</code>, <code class="language-plaintext highlighter-rouge">CB</code>, etc.), so those won’t show up in the assembly you see on Compiler Explorer. The <code class="language-plaintext highlighter-rouge">LX.</code> labels don’t have to exactly match in numbers, but they should be in the right places, and <strong>all assembly instructions should match exactly.</strong></p>
+
+<p><strong>Note:</strong> Don’t forget to check the list at the top of this page to make sure you have everything you need (e.g., collaboration statement).</p>
+
+<h2 id="getting-started">Getting started</h2>
+<p><a href="https://godbolt.org/">Compiler Explorer</a> is a really handy tool for making sense of the assembly corresponding to C code. Here are some quick instructions on getting it set up the way we will use it:</p>
+
+<p>To start, open the Compiler Explorer, click the Settings button near the top of the right half, and deselect “Intel asm syntax”. Your screen should look like this:</p>
+
+<p><img src="/classes/208-f25/a5_compiler_explorer.png" alt="Setting up Compiler Explorer" /></p>
+
+<p>As you work on writing C code to see its assembly, play around with compiler flags – what do you get if you specify the flags <code class="language-plaintext highlighter-rouge">-Og</code> or <code class="language-plaintext highlighter-rouge">-O0</code>? (Note that <code class="language-plaintext highlighter-rouge">-O0</code> is a capital letter O followed by a zero.)</p>
+
+<p>Before:
+<img src="/classes/208-f25/a5_compiler_options_before.png" alt="Before setting compiler flags" /></p>
+
+<p>After:
+<img src="/classes/208-f25/a5_compiler_options_after.png" alt="After setting compiler flags" /></p>
+
+<p>We will solve <code class="language-plaintext highlighter-rouge">puzzle0.asm</code> together in class. Ask any questions you have about this process!</p>
+
+<p>In working through these puzzles, I encourage you to try out tons of simple C programs, for example ones with <code class="language-plaintext highlighter-rouge">if</code> statements, with <code class="language-plaintext highlighter-rouge">for/while</code> loops, and any other constructs you can think of, to see what they look like in assembly. Don’t be afraid to experiment!</p>
+
+<h2 id="handing-it-in">Handing it in</h2>
+<p>To submit this assignment, you should upload your <strong>seven</strong> commented <code class="language-plaintext highlighter-rouge">puzzleX.asm</code> files to Gradescope.</p>
+
+<p>If you are aiming for the advanced requirements, make sure to include two <code class="language-plaintext highlighter-rouge">puzzleX.c</code> files with the appropriate names to match their puzzles (for example, submit <code class="language-plaintext highlighter-rouge">puzzle2.c</code> if you reverse-engineered <code class="language-plaintext highlighter-rouge">puzzle2.asm</code>).</p>
+
+<p>Finally, you should put your name and collaboration statement in your <code class="language-plaintext highlighter-rouge">readme.txt</code> file and submit that, too.</p>
+
+<h2 id="advice">Advice</h2>
+<ul>
+  <li>
+    <p>Don’t try to understand every line of assembly! There are a lot of instructions, and this assignment is really just about the structure. Look at the jumps (<code class="language-plaintext highlighter-rouge">jmp</code>, <code class="language-plaintext highlighter-rouge">jl</code>, <code class="language-plaintext highlighter-rouge">je</code>, and any other that start with <code class="language-plaintext highlighter-rouge">j</code>) function calls (<code class="language-plaintext highlighter-rouge">call</code>), returns (<code class="language-plaintext highlighter-rouge">ret</code>), and labels (<code class="language-plaintext highlighter-rouge">.L2:</code>, <code class="language-plaintext highlighter-rouge">start_here:</code>).</p>
+  </li>
+  <li>
+    <p>It is surprisingly tricky to fully make sense of registers used as inputs. Focus on structure first!</p>
+  </li>
+  <li>
+    <p>Ask questions, and go in order!</p>
+  </li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

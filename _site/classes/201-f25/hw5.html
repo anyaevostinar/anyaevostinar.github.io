@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Homework 5 - Cuckoo Hashing | Anya E. Vostinar</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Homework 5 - Cuckoo Hashing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<meta property="og:description" content="The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform." />
+<link rel="canonical" href="http://localhost:4000/classes/201-f25/hw5" />
+<meta property="og:url" content="http://localhost:4000/classes/201-f25/hw5" />
+<meta property="og:site_name" content="Anya E. Vostinar" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Homework 5 - Cuckoo Hashing" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.","headline":"Homework 5 - Cuckoo Hashing","url":"http://localhost:4000/classes/201-f25/hw5"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Anya E. Vostinar" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Anya E. Vostinar</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Classes/">Classes</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/About/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Homework 5 - Cuckoo Hashing</h1>
+  </header>
+
+  <div class="post-content">
+    <p><strong>Due: Friday, Oct 24th, at 10:00pm</strong></p>
+
+<ul>
+  <li>Starter code: <a href="/classes/201-f25/hw5_starter.zip">cuckoo_hashing.zip</a></li>
+  <li>Upload solutions via Gradescope as: <code class="language-plaintext highlighter-rouge">CuckooHashMap.kt</code></li>
+</ul>
+
+<h2 id="goals">Goals</h2>
+
+<p>This assignment is designed to help you with the following:</p>
+<ul>
+  <li>practice with hashing fundamentals</li>
+  <li>practice extending basic data structures for more complex functionality</li>
+</ul>
+
+<h2 id="collaboration-policy">Collaboration policy</h2>
+
+<p>For this assignment, you may work alone or with a partner, but you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)  You may have at most one partner.</p>
+
+<p>You may also discuss the assignment at a high level with other students.  You can discuss the assignment with Anya, our prefect, or any course staff.</p>
+
+<p>You should list any student or course staff with whom you discussed the assignment (you don’t have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in comments at the top of your <code class="language-plaintext highlighter-rouge">CuckooHashMap.kt</code> file.  You also need to include your name.</p>
+
+<p><em>If you work alone, you should say so instead.</em></p>
+
+<h2 id="note-on-style">Note on style:</h2>
+
+<p>The following style guidelines are expected moving forward:</p>
+
+<ol>
+  <li>You submit only the requested file(s).</li>
+  <li>Variable names should be clear and easy to understand, should <em>not</em> start with a capital letter, and should only be a single letter when appropriate (e.g., <code class="language-plaintext highlighter-rouge">i</code> or <code class="language-plaintext highlighter-rouge">j</code> as indices, <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> as coordinates).</li>
+  <li>The indentation, spacing, and location of curly braces is consistent.</li>
+  <li>There are no extra print statements in your program.</li>
+  <li>There is no commented-out code that is no longer being used (e.g., debugging print statements).</li>
+  <li>Your program has a comment at the top of each function with at least 5 words describing what the function does.</li>
+  <li>There is good use of comments to explain the “why” of your code and empty lines to break up logical chunks.</li>
+  <li>The code doesn’t have “magic numbers” – these are numbers in the code by themselves, rather than stored in a variable.</li>
+  <li>The code doesn’t compute the right answer by doing extra work (e.g., having a computation in a loop when it could have been done only once, after the loop).</li>
+  <li>Helper functions are used to reduce code duplication.</li>
+</ol>
+
+<h2 id="assessment">Assessment</h2>
+
+<p>The <strong>core</strong> requirements for your submission are:</p>
+
+<ul>
+  <li>complete Parts A, B, and E
+    <ul>
+      <li>Basic Hashing</li>
+      <li>Basic Cuckoo Hashing</li>
+      <li>Reflection</li>
+    </ul>
+  </li>
+  <li>not make use of any built-in hashing-related libraries</li>
+  <li>satisfy the code style expectations #0-#4 above</li>
+  <li>include a reflection in comments at the bottom of your <code class="language-plaintext highlighter-rouge">CuckooHashMap.kt</code> file</li>
+</ul>
+
+<p>The <strong>advanced</strong> requirements for your submission are:</p>
+
+<ul>
+  <li>satisfy the core requirements</li>
+  <li>complete all of Parts A-E
+    <ul>
+      <li>Code Refactoring</li>
+      <li>Complete Cuckoo Hashing</li>
+    </ul>
+  </li>
+  <li>satisfy all code style expectations listed above (#0-#9)</li>
+  <li>include your name and collaboration statement at the top of your <code class="language-plaintext highlighter-rouge">CuckooHashMap.kt</code> file</li>
+</ul>
+
+<h2 id="assignment-overview">Assignment overview</h2>
+
+<p>Hashing in an array, also known as “open addressing”, is one of the main approaches to implementing a hashtable.  It’s the one that Python uses for its built-in dictionaries.  As we discussed in class, one primary disadvantage of open addressing is the possibility of collisions.  This issue is typically resolved by some form of probing (e.g., linear or quadratic probing).  That works, but it could result in large clusters that cause slow inserts and lookups.</p>
+
+<p><a href="https://itu.dk/people/maau/teaching/visualisation/cuckoo-hashing/index.html">Cuckoo hashing</a> is an alternative approach to probing when implementing open addressing.  It guarantees that you can find a value with a maximum of two lookups, no matter what, even if there were collisions when inserting.  The tradeoff is that insertions might be dramatically slower than with probing if collisions occur.  If one has an application where lookup time matters more than insertion time – which is commonly the case – then Cuckoo hashing is potentially a reasonable approach.</p>
+
+<p>Cuckoo hashing is named after Cuckoo birds, some of which are known for kicking eggs out of their nests.  The algorithm kicks entries from one table to another.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>Find your <code class="language-plaintext highlighter-rouge">cs201</code> folder for assignments.  Maybe it contains an <code class="language-plaintext highlighter-rouge">assignments</code> folder inside of it.</p>
+
+<p>Download <a href="/classes/201-f25/hw5_starter.zip">this <code class="language-plaintext highlighter-rouge">cuckoo_hashing.zip</code> file</a> to get the starter code.  Put it in the <code class="language-plaintext highlighter-rouge">cs201</code> folder you just created and unzip it.  Rename the folder <code class="language-plaintext highlighter-rouge">cuckoo_hashing</code>.  Make sure that you actually unzip / extract the code, don’t just open up the .zip file in another window.</p>
+
+<p>Now open your folder in VS Code.  There are multiple ways to do this, so pick one:</p>
+<ul>
+  <li>Open VS Code, then select <code class="language-plaintext highlighter-rouge">File</code> -&gt; <code class="language-plaintext highlighter-rouge">Open Folder</code> and navigate to the <code class="language-plaintext highlighter-rouge">cuckoo_hashing</code> folder you just made.</li>
+  <li>Open VS Code, then drag and drop the folder (e.g., from Finder in MacOS or File Explorer in Windows) into VS Code to open it.</li>
+</ul>
+
+<p>Either way, if you are asked, click that you trust the authors.  If you have any issues getting started, ask the lab assistants for help – any of them should be able to help you get started, even if they aren’t super familiar with Kotlin.</p>
+
+<h2 id="building-your-code-with-maven">Building your code with Maven</h2>
+
+<p>Like most of our assignments, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder <code class="language-plaintext highlighter-rouge">cuckoo_hashing</code> for these commands to work):</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn test</code> runs the tests that we provided (see below)</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn compile exec:java</code> compiles and runs your code, as specified in your <code class="language-plaintext highlighter-rouge">main</code> function</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn compile</code> compiles your code, but doesn’t run it (this is like <code class="language-plaintext highlighter-rouge">kotlinc</code> by itself)</p>
+  </li>
+</ul>
+
+<p>If you want to see less output from Maven, you can add <code class="language-plaintext highlighter-rouge">-q</code> (for “quiet”) flag:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn -q test</code> run tests, with less output</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mvn -q compile exec:java</code> runs your <code class="language-plaintext highlighter-rouge">main</code> function, with less output (but still any print statements you have)</p>
+  </li>
+</ul>
+
+<p>If you run the tests with the starter code, you should have errors, as you haven’t written any code yet.</p>
+
+<h2 id="cuckoo-hashing-algorithm">Cuckoo hashing algorithm</h2>
+
+<p>Here are <a href="https://www.youtube.com/watch?v=GPiJUtdiUlo">part 1</a> and <a href="https://www.youtube.com/watch?v=wGjOZhK11ms">part 2</a> of a set of videos on Cuckoo hashing.  You are encouraged to watch them to get an idea of how it works.</p>
+
+<p>These are the most important details:</p>
+
+<ul>
+  <li>
+    <p>There are two arrays (acting as individual hash tables) instead of just one.  We’ll denote them as table 0 and table 1.</p>
+  </li>
+  <li>
+    <p>Each table has its own <strong>separate</strong> hash function that goes with it; we’ll call them <em>h</em><sub><em>0</em></sub> and <em>h</em><sub><em>1</em></sub>.</p>
+  </li>
+  <li>
+    <p>You should implement the Cuckoo hashing algorithm within the <code class="language-plaintext highlighter-rouge">CuckooHashMap&lt;K, V&gt;</code> class as two functions:</p>
+
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">fun set(key: K, value: V)</code> – inserts a key-value pair into the hashmap (if the given key is already present in the hashmap, this just replaces the value with the new one)</li>
+      <li><code class="language-plaintext highlighter-rouge">fun get(key: K): V?</code> – looks up the key in the hashmap, returning its value if found or <code class="language-plaintext highlighter-rouge">null</code> otherwise</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="insertion">Insertion</h3>
+
+<p>Here is an overview of the algorithm for inserting a key-value pair:</p>
+
+<ol>
+  <li>
+    <p>Try to insert a new entry into the first table as you would in normal hashing.  If this succeeds, then we’re done!</p>
+  </li>
+  <li>
+    <p>In the event of a collision, remove the entry that is there (but remember it), then insert the new one.  Now you’re stuck holding an entry that was removed.  Try to insert that entry into the second table.  If this succeeds, then we’re done!</p>
+  </li>
+  <li>
+    <p>In the event of a collision in the second table, remove the entry that is there (but remember it), then insert the entry you were holding on to.  Now again you are stuck holding an entry.  Try to insert that back into the first table.  If this succeeds, then we’re done!</p>
+  </li>
+  <li>
+    <p>In the event of a collision in the first table, remove the entry that is there (but remember it), then insert the entry you were holding on to. Now you are again stuck holding an entry. Try to insert that back into the second table. If this succeeds, then we’re done!</p>
+  </li>
+  <li>
+    <p>Keep repeating this process (including switching tables) until you eventually find room to insert something, or until you give up because a certain number of iterations have passed. (This number is configured in <code class="language-plaintext highlighter-rouge">CuckooSetup.kt</code>.)</p>
+  </li>
+  <li>
+    <p>If you gave up in the repetition in the previous step because too many iterations passed, it likely means a cycle of insertions happened, and that you’ll never actually succeed.  So, pick two completely new hash functions <em>h</em><sub><em>0</em></sub> and <em>h</em><sub><em>1</em></sub> for the two tables, then rehash everything in them so they land in completely new locations, and start the whole insertion process again back at Step 1.  (If you make it back to Step 5, just keep rehashing and repeating…) Note that there is starter code that helps with this.</p>
+  </li>
+</ol>
+
+<p><em>Note: Check out the code in <code class="language-plaintext highlighter-rouge">CuckooSetup.kt</code>.  You are expected to read through it before trying to start, so you at least know what is there.  You should not make any changes to this file, but you’ll want to use what you find.</em></p>
+
+<h3 id="retrieval">Retrieval</h3>
+
+<p>The lookup process is fairly straightforward when using Cuckoo hashing, due to the guarantee that we only have to check each table once, and there isn’t any probing.  Something is in its place or it’s not there.</p>
+
+<p>Here is an overview of the algorithm for looking up the value for a key:</p>
+
+<ol>
+  <li>
+    <p>Look the key up in the first table exactly as you would in normal hashing.  If you find it, you’re done!</p>
+  </li>
+  <li>
+    <p>If you didn’t find it in the first table, try looking it up in the second table using the hash function for that table.  If you find it, you’re done!</p>
+  </li>
+  <li>
+    <p>If you didn’t find the key in either table, then you know it isn’t present, so return <code class="language-plaintext highlighter-rouge">null</code>.</p>
+  </li>
+</ol>
+
+<h3 id="generating-lots-of-hash-functions">Generating lots of hash functions</h3>
+
+<p>As mentioned in Step 6 for <a href="#insertion">insertion</a> above, Cuckoo hashing requires that we can keep creating new hash functions as needed.  For this assignment, we’re going to leverage a pseudo-random number generator.  Specifically, we’ll use the fact that we can give it a seed, and have it generate for us a predictable random number (so it works for insertion and later retrieval).  Here’s the code we’ll use, which you’ll find in <code class="language-plaintext highlighter-rouge">CuckooSetup.kt</code>:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">var</span> <span class="py">seed</span> <span class="p">=</span> <span class="mi">0</span>
+
+    <span class="k">fun</span> <span class="nf">cuckooHashCode</span><span class="p">(</span><span class="n">tableNum</span><span class="p">:</span> <span class="nc">Int</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nc">K</span><span class="p">):</span> <span class="nc">Int</span> <span class="p">{</span>
+        <span class="kd">val</span> <span class="py">multiplier</span> <span class="p">=</span> <span class="nc">Random</span><span class="p">(</span><span class="mi">2</span> <span class="p">*</span> <span class="n">seed</span> <span class="p">+</span> <span class="n">tableNum</span><span class="p">).</span><span class="nf">nextInt</span><span class="p">()</span>
+        <span class="kd">val</span> <span class="py">newHashCode</span> <span class="p">=</span> <span class="n">multiplier</span> <span class="p">*</span> <span class="n">key</span><span class="p">.</span><span class="nf">hashCode</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nf">abs</span><span class="p">(</span><span class="n">newHashCode</span><span class="p">)</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<p>The function <code class="language-plaintext highlighter-rouge">cuckooHashCode</code> takes in a table number (which should be <code class="language-plaintext highlighter-rouge">0</code> or <code class="language-plaintext highlighter-rouge">1</code>) and a key.  It then generates a predictable-yet-random-seeming hash value.  Whenever we want to create a new set of hash functions, we just increment the seed.</p>
+
+<h2 id="part-a-basic-hashing-functionality">Part A: Basic hashing functionality</h2>
+
+<p>To get started, you should implement <code class="language-plaintext highlighter-rouge">set</code> and <code class="language-plaintext highlighter-rouge">get</code>, but only working within a single table.  In other words, you can assume you live in a perfect world in which collisions never occur.  You don’t need to use the second hash table yet.</p>
+
+<p>Here’s a simplified version of the algorithm for each function:</p>
+
+<ul>
+  <li>
+    <p>Inserting a key-value pair:</p>
+
+    <ol>
+      <li>Try to insert a new entry into the first table as you would in normal hashing.  This will succeed, because the world is perfect and nothing ever collides.</li>
+    </ol>
+  </li>
+  <li>
+    <p>Looking up the value for a key:</p>
+
+    <ol>
+      <li>
+        <p>Look the key up in the first table exactly as you would in normal hashing.  If you find it, you’re done!</p>
+      </li>
+      <li>
+        <p>If you didn’t find it in the first table, then you know it isn’t present, because the world is perfect and this is only place it would have been, so return <code class="language-plaintext highlighter-rouge">null</code>.</p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<p>Once you have this basic functionality implemented, you should pass the <code class="language-plaintext highlighter-rouge">oneTableNoRehashingNeeded</code> test when you run <code class="language-plaintext highlighter-rouge">mvn test</code>.</p>
+
+<p>Note: It is important that you do not use any built-in hashing-related libraries.  You have to do this yourself with the arrays of <code class="language-plaintext highlighter-rouge">Entry&lt;K, V&gt;?</code> in <code class="language-plaintext highlighter-rouge">tables</code>.</p>
+
+<h2 id="part-b-basic-cuckoo-hashing">Part B: Basic Cuckoo hashing</h2>
+
+<p>As the next step, you’ll extend your work from the previous part to incorporate the second table.  This means that collisions can occur, but you can assume that you’ll be able to use the second table without any additional complexity.</p>
+
+<p>Here’s the updated subset of the algorithm for each function:</p>
+
+<ul>
+  <li>
+    <p>Inserting a key-value pair:</p>
+
+    <ol>
+      <li>
+        <p>Try to insert a new entry into the first table as you would in normal hashing.  If this succeeds, then we’re done!</p>
+      </li>
+      <li>
+        <p>In the event of a collision, remove the entry that is there (but remember it), then insert the new one.  Now you’re stuck holding an entry that was removed.  Try to insert that entry into the second table.  This will succeed, because the world is perfect and nothing ever collides in the second table.</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>Looking up the value for a key:</p>
+
+    <ol>
+      <li>
+        <p>Look the key up in the first table exactly as you would in normal hashing.  If you find it, you’re done!</p>
+      </li>
+      <li>
+        <p>If you didn’t find it in the first table, try looking it up in the second table using the hash function for that table.  If you find it, you’re done!</p>
+      </li>
+      <li>
+        <p>If you didn’t find the key in either table, then you know it isn’t present, so return <code class="language-plaintext highlighter-rouge">null</code>.</p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<p>Once you have this additional functionality implemented, you should pass both the <code class="language-plaintext highlighter-rouge">oneTableNoRehashingNeeded</code> and <code class="language-plaintext highlighter-rouge">noRehashingNeeded</code> tests in <code class="language-plaintext highlighter-rouge">mvn test</code>.</p>
+
+<p>Note: Insertion is what makes Cuckoo hashing complex, so by now you have completed implementing <code class="language-plaintext highlighter-rouge">get</code>!</p>
+
+<h2 id="part-c-code-refactoring">Part C: Code refactoring</h2>
+
+<p>It is important that you avoid duplicated code.  By now, you likely have similar code, for example, to look up a value in the first table and the second using their respective hash functions.  Look for any such repeated code, and write one or more helper functions to simplify your <code class="language-plaintext highlighter-rouge">get</code> and <code class="language-plaintext highlighter-rouge">set</code> implementations.  <strong>You will need to write some helper functions to earn Advanced on this assignment.</strong></p>
+
+<p>For example, you may add a function that adds or updates the key/value pair in the given table, and returns the entry that was evicted, or <code class="language-plaintext highlighter-rouge">null</code> if no entry was previously stored in that location.  This could be its signature:</p>
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">private</span> <span class="k">fun</span> <span class="nf">addOrUpdate</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="nc">K</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nc">V</span><span class="p">,</span> <span class="n">tableNum</span><span class="p">:</span> <span class="nc">Int</span><span class="p">):</span> <span class="nc">Entry</span><span class="p">&lt;</span><span class="nc">K</span><span class="p">,</span> <span class="nc">V</span><span class="p">&gt;?</span>
+</code></pre></div></div>
+
+<h2 id="part-d-complete-cuckoo-hashing">Part D: Complete Cuckoo hashing</h2>
+
+<p>As a final step, you should complete the entire implementation for insertion using the Cuckoo hashing algorithm (see <a href="#insertion">above</a>).</p>
+
+<h2 id="part-e-reflection">Part E: Reflection</h2>
+
+<p>Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?</p>
+
+<p>Write a brief discussion (a sentence or two is fine) at the bottom of your <code class="language-plaintext highlighter-rouge">CuckooHashMap.kt</code> file (in comments, so each line should start with <code class="language-plaintext highlighter-rouge">//</code> or be in a <code class="language-plaintext highlighter-rouge">/* */</code> block).</p>
+
+<p>Here are some examples:</p>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// I got really mixed up making sense of the two tables.</span>
+<span class="c1">// I had trouble figuring out how to invoke the right hash function for table 0.</span>
+<span class="c1">// I spent 6 hours on this assignment.</span>
+</code></pre></div></div>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// I started late, so I had to rush to make sure I knew how to test my code.</span>
+<span class="c1">// It may be good to start early next time.</span>
+<span class="c1">// I spent 5 hours on this assignment.</span>
+</code></pre></div></div>
+
+<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Reflection:</span>
+<span class="c1">// It went fine; I found what I needed in my notes.</span>
+<span class="c1">// I spent 3 hours on this assignment.</span>
+</code></pre></div></div>
+
+<h2 id="hints-and-suggestions">Hints and suggestions</h2>
+
+<ul>
+  <li>
+    <p>There is a function named <code class="language-plaintext highlighter-rouge">display</code> that will print out both hash tables.  You should use it regularly by adding code to <code class="language-plaintext highlighter-rouge">Main.kt</code> and running <code class="language-plaintext highlighter-rouge">mvn compile exec:java</code> to make sure that <code class="language-plaintext highlighter-rouge">set</code> and <code class="language-plaintext highlighter-rouge">get</code> seem to be behaving correctly on simple cases you come up with.  This will make debugging much, much easier.</p>
+  </li>
+  <li>
+    <p>You can choose how to implement <code class="language-plaintext highlighter-rouge">set</code>, but here’s one approach you can take:</p>
+
+    <ol>
+      <li>
+        <p>Create a private helper function named <code class="language-plaintext highlighter-rouge">insert</code> that does the real work of inserting the key and value into the hash tables.  If <code class="language-plaintext highlighter-rouge">insert</code> succeeds, it returns <code class="language-plaintext highlighter-rouge">null</code>; if it fails because it loops too many times trying, it returns the key/value pair that was most recently kicked out while trying to insert.</p>
+      </li>
+      <li>
+        <p>Then, create a private helper function named <code class="language-plaintext highlighter-rouge">rehash</code> that also takes a key/value pair to insert.  This function can be called when an insert or a previous rehash has failed.  It just increments the seed, then tries to insert the key/value pair that was passed in.  If it succeeds, then it loops over both tables looking for entries.  Each time it finds an entry, it takes it out (setting the location in the table to <code class="language-plaintext highlighter-rouge">null</code>) and then tries to reinsert it.  At any time, if <code class="language-plaintext highlighter-rouge">insert</code> fails and kicks out an entry, the <code class="language-plaintext highlighter-rouge">rehash</code> function also gives up and returns that entry.  If <code class="language-plaintext highlighter-rouge">rehash</code> succeeds, it returns <code class="language-plaintext highlighter-rouge">null</code>.</p>
+      </li>
+      <li>
+        <p>You can create a very short private helper function named <code class="language-plaintext highlighter-rouge">rehashUntilSuccess</code> that takes a key/value pair and calls <code class="language-plaintext highlighter-rouge">rehash</code> in a while loop, doing so over and over until <code class="language-plaintext highlighter-rouge">rehash</code> succeeds.</p>
+      </li>
+      <li>
+        <p>Finally, the <code class="language-plaintext highlighter-rouge">set</code> function can just call <code class="language-plaintext highlighter-rouge">insert</code> with the new key/value pair, and if it fails, it can call <code class="language-plaintext highlighter-rouge">rehashUntilSuccess</code>.</p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<p> </p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anya E. Vostinar</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Anya E. Vostinar</li><li><a class="u-email" href="mailto:vostinar@carleton.edu">vostinar@carleton.edu</a></li><li><a class="u-email" href="https://linktr.ee/vostinar">https://linktr.ee/vostinar</a></li>
+            Note that this website uses Google Analytics to collect and analyze usage.
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/anyaevostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">anyaevostinar</span></a></li><li><a href="https://www.twitter.com/AnyaEVostinar"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">AnyaEVostinar</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>The homepage of Prof. Anya E. Vostinar. I teach computer science and research the evolution of  symbiosis using digital evolution and agent-based modeling. I wrote the Symbulation platform.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

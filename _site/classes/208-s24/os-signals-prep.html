@@ -43,14 +43,22 @@
   </header>
 
   <div class="post-content">
-    <!--
+    <h2 id="overview">Overview</h2>
+<p>We’ll continue thinking about how the operating system manages different programs by exploring some of the ways that processes can communicate with each other, including learning about how the <code class="language-plaintext highlighter-rouge">|</code> actually works.</p>
 
-## Overview
+<h2 id="basic-learning-objectives">Basic Learning Objectives</h2>
+<p>Before class, you should be able to:</p>
+<ul>
+  <li>Explain the high-level idea of signals</li>
+  <li>Explain how piping works</li>
+</ul>
 
-## Basic Learning Objectives
-
-## Advanced Learning Objectives
--->
+<h2 id="advanced-learning-objectives">Advanced Learning Objectives</h2>
+<p>After class, you should be able to:</p>
+<ul>
+  <li>Implement signal handling</li>
+  <li>Set up a pipe in C</li>
+</ul>
 
 <h2 id="resources">Resources</h2>
 <p>Read the following:</p>
@@ -62,7 +70,50 @@
 </ul>
 
 <h2 id="checks">Checks</h2>
-<p>No additional checks.</p>
+<p>Submit to Moodle what happens when the following program is compiled and run and why that happens:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;signal.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+</span>
+<span class="k">const</span> <span class="kt">long</span> <span class="n">limit</span> <span class="o">=</span> <span class="mf">2e10</span><span class="p">;</span> <span class="c1">// 20,000,000,000 (2 with 10 zeros)</span>
+<span class="k">const</span> <span class="kt">long</span> <span class="n">frequency</span> <span class="o">=</span> <span class="mf">5e7</span><span class="p">;</span> <span class="c1">// 500,000,000 (5 with 7 zeros)</span>
+
+<span class="kt">void</span> <span class="nf">interrupt_handler</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">long</span> <span class="n">i</span><span class="p">;</span>
+
+    <span class="n">pid_t</span> <span class="n">process_id</span> <span class="o">=</span> <span class="n">getpid</span><span class="p">();</span>
+
+    <span class="cm">/* The initial handler for the SIGINT signal is
+       assuredly the default, so confusion will not reign */</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">signal</span><span class="p">(</span><span class="n">SIGINT</span><span class="p">,</span> <span class="n">interrupt_handler</span><span class="p">)</span> <span class="o">!=</span> <span class="n">SIG_DFL</span><span class="p">)</span> <span class="c1">// register for CTRL-C</span>
+    <span class="p">{</span>
+        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"I'm confused.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="cm">/* Start counting */</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">limit</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="n">frequency</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"[PID %d] %ld</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">process_id</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+            <span class="n">fflush</span><span class="p">(</span><span class="n">stderr</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Handle registered interrupts</span>
+<span class="kt">void</span> <span class="nf">interrupt_handler</span><span class="p">(</span><span class="kt">int</span> <span class="n">sig</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"Sorry, but I just don't want to quit.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="n">fflush</span><span class="p">(</span><span class="n">stderr</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
   </div>
 
