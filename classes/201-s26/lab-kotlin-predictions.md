@@ -173,7 +173,7 @@ fun main() {
 }
 ```
 
-Upload your completed code for Exercise 3 to Moodle for an extra engagement credit.
+Upload your completed code for Exercise 3 to Moodle for an extra engagement credit. Remember that labs remain open until the last day of the term, so you aren't in a rush to complete them. They are great practice though!
 
 ## Acknowledgements
 This is based on labs from Profs Tanya Amert and Jean Salac.

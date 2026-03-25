@@ -31,13 +31,16 @@ Spring 2026
 
 **Course materials**: 
 
-All materials are freely available and will be linked through the schedule.
+Free online textbook: [Problem Solving with Algorithms and Data Structures using Kotlin](https://runestone.academy/ns/books/published/kotlinds/kotlinds.html?mode=browsing)
 
 **Drop in student hours**:
 
-TBD
+* Mondays 1:15-2:15
+* Wednesdays 10:30-11:30
+* Thursdays 11:30-12:30
+All in Olin 306/308
 
-Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 8-5 M-F and either send a calendar invite to an event or email me.
+Remember that you are always welcome to schedule an appointment with me outside of these times. To schedule an appointment, please see my [calendar](https://calendar.google.com/calendar/embed?src=vostinar%40carleton.edu&ctz=America%2FChicago), find a time that isn't marked 'Busy' within 8-5 M-F and either send a calendar invite for a 30 minute event or email me.
 
 ## Overview and Learning Goals
 Welcome to Data Structures! In this course, you'll be learning about how to work with data, how to design solutions that are efficient for a particular application, and developing more complex programs than in the introductory CS course. 
