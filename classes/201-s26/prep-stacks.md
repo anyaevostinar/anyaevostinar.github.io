@@ -9,7 +9,6 @@ We'll start our exploration of ADTs with one of the simplest: the stack. The abi
 
 ## Basic Learning Objectives
 Before class, you should be able to: 
-* Explain the difference between an ADT and a data structure
 * Explain what a stack is and how items are added and removed
 * Define LIFO
 * Explain the balanced parentheses problem
