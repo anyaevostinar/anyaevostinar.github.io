@@ -1,16 +1,14 @@
 ---
 layout: page
 title: Homework 1 - Lunar Lander
-permalink: /classes/201-f25/hw1
+permalink: /classes/201-s26/hw1
 ---
 
-**Due Friday, Sept 26th at 10pm**
+## Logistics 
+**Due Friday, April 10th at 10pm**
 
-Starter code: [lunar_lander.zip](lunar_lander.zip)  
-Upload solutions via Gradescope as: `LunarLander.kt`
-
-
-TODO: add note of how to do default parameters for constructor
+* Starter code: [LunarLander.zip](LunarLander.zip)  
+* Upload solutions via Gradescope as: `LunarLander.kt`
 
 ## Goals
 
@@ -29,9 +27,25 @@ You should list any student or course staff with whom you discussed the assignme
 
 _If you work alone, you should say so instead._
 
+## AI policy
+
+Generative AI is all around you whenever you are using technology lately. As discussed in the syllabus, there are both acceptable and unacceptable uses of genAI in this class. **Regardless of whether you use any genAI, you need to complete the** `AI Log` at the end of the assignment to satisfy the advanced requirement. I am experimenting with custom-made Gemini chatbots ("Gems") that hopefully will help you on the homework without undermining your learning. [Here is the one for homework 1](https://gemini.google.com/gem/1ZRUK6NH4WG5UHmQO4BLht_sGmBjCR92K?usp=sharing). 
+
+If you choose not to use genAI at all, you may state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
+
+If you do choose to use genAI, you should log in in the `AI Log` comment at the end of the assignment in the following format:
+* Date: Summary of use and assessment of the bot's usefulness
+
+For example, a hypothetical log could be:
+* 3/25/26: I asked the helper bot how to do default values for a constructor and it helped me figure it out
+* 3/26/26: I couldn't figure out the problem with the Gradescope test and the helper bot was completely useless
+* 3/26/26: I googled the problem with the Gradescope test and the AI summary was helpful
+
+This log requirement is both to give me an idea of whether the chatbots are providing correct information and if they are actually being helpful. If you manage to get them to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further. As mentioned in the hypothetical log, you should also include any external genAI resources that you use, even the AI summary shown in search results.
+
 ## Note on style:
 
-The following style guidelines are expected moving forward:
+The following style guidelines are expected:
 
 1. Variable names should be clear and easy to understand, should _not_ start with a capital letter, and should only be a single letter when appropriate (e.g., `i` or `j` as indices, `x` and `y` as coordinates).
 2. The indentation, spacing, and location of curly braces is consistent.
@@ -47,17 +61,19 @@ The following style guidelines are expected moving forward:
 The **core** requirements for your submission are:
 
 * complete Part A
-* pass the basic `LunarLander` class autograder tests (see the six tests in the provided code)
+* pass the "Core" `LunarLander` class autograder tests (the six tests in the provided code)
 * satisfy the code style expectations #1-#4 above
-* include a reflection in comments at the bottom of your `LunarLander.kt` file
+* include your name and collaboration statement at the top of your `LunarLander.kt` file
 
 The **advanced** requirements for your submission are:
 
 * satisfy the core requirements
 * complete Parts B and C
+* pass the "Advanced" autograder test (tests for basic two player support)
 * have a playable game (you won't see any autograder tests for this, as the exact text of your game is up to you -- see the example game below for what it should look like)
 * satisfy all code style expectations listed above (#1-#8)
-* include your name and collaboration statement at the top of your `LunarLander.kt` file
+* include a reflection in comments at the bottom of your `LunarLander.kt` file
+* include an AI log in comments at the bottom of your `LunarLander.kt` file, as specified above
 
 ## Assignment overview
 
@@ -79,19 +95,19 @@ Where you put the `CS201` folder depends on the machine you're working on:
 * If you're on your own computer, anywhere is fine.  You could put it on your `Desktop`, in `Documents`, or somewhere else you can find it easily. (Or you could have a `Classes` folder for everything!)
 * If you're working in the labs in Olin, make sure to first mount the `COURSES` folder so that you won't lose your code when you log out.  Then, open up Finder, navigate to your personal `StuWork` folder, and create `CS201` there.
 
-Download [this `lunar_lander.zip` file](lunar_lander.zip) to get the starter code.  Put it in the `CS201` folder you just created and unzip it.  This should give you a folder named `lunar_lander`.  Make sure that you actually unzip / extract the code, don't just open up the `.zip` file in another window.
+Download [this `LunarLander.zip` file](LunarLander.zip) to get the starter code.  Put it in the `CS201` folder you just created and unzip it.  This should give you a folder named `LunarLander`.  Make sure that you actually unzip / extract the code, don't just open up the `.zip` file in another window.
 
 Now open your folder in VS Code.  There are multiple ways to do this, so pick one:
-* Open VS Code, then select `File` -> `Open Folder` and navigate to the `lunar_lander` folder you just made.
+* Open VS Code, then select `File` -> `Open Folder` and navigate to the `LunarLander` folder you just made.
 * Open VS Code, then drag and drop the folder (e.g., from Finder in MacOS or File Explorer in Windows) into VS Code to open it.
 
 Either way, if you are asked, click that you trust the authors.  If you have any issues getting started, ask the lab assistants for help -- any of them should be able to help you get started, even if they aren't super familiar with Kotlin.
 
 ## Building your code with Maven
 
-The provided project structure uses Maven, which adds some extra packaging around our regular `kotlinc`+`kotlin` way to run a program.  For this assignment, you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder `lunar_lander` for these commands to work):
+The provided project structure uses Maven, which adds some extra packaging around our regular `kotlinc`+`kotlin` way to run a program.  For this assignment, you can use the following commands (in the VS Code terminal) to execute your code (note that you **must be in the top-level folder** `LunarLander` for these commands to work):
 
-* `mvn test` runs the tests that we provided (see below)
+* `mvn test` runs the tests that we provided (see below) with a lot of additional output
 
 * `mvn compile exec:java` compiles and runs your code, as specified in your `main` function
 
@@ -105,7 +121,7 @@ If you run the tests with the starter code, you should have errors, as you haven
 
 ## Part A: `LunarLander` class
 
-You have been given a file named `LunarLander.kt` in which to put your code.  It contains an empty class named `LunarLander` and a place for a `main` function at the bottom.
+You have been given a file in `src/main/kotlin` named `LunarLander.kt` in which to put your code.  It contains an empty class named `LunarLander` and a place for a `main` function at the bottom.
 
 In your `LunarLander` class, you will need to keep the following information in instance variables:
 
@@ -260,3 +276,7 @@ Here are some examples:
 * Any numbers that you see scattered throughout this assignment that are not used for initializing the lander (gravity increases velocity by 2 meters/second, the velocity must be 4 meters/second or less to land successfully, etc.) should be stored as variables in your program, not as magic numbers hard-coded in the code.  (See [Style point #7](#note-on-style) at the top.)
 
 * It is useful to be able to automatically exit the program, rather than having to wait until a successful land or crash.  You can change your program so that if the player enters -1 for fuel to burn, the game automatically ends.  This isn't necessary at all, but can be handy.
+
+* Remember to refer to relevant sections of the textbook as needed, such as [Input and Output](https://runestone.academy/ns/books/published/kotlinds/introduction_input-and-output.html?mode=browsing). 
+
+* Remember that you can have default values for parameters by placing `= X` after the type of the parameter and replacing `X` with the default value.
