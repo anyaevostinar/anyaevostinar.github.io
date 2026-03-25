@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kotlin Classes Lab
-permalink: /classes/201-f25/kotlin-classes-lab
+permalink: /classes/201-s26/kotlin-classes-lab
 ---
 
 ## Set up
@@ -14,6 +14,7 @@ Your goal is to write a class named `Pet`, which allows us to store information 
 The `Pet` class should have the following methods:
 * `Pet(name, age, kind)` constructor: takes `name` (a string), `age` (an integer, in years), and `kind` (a string, like `"dog"` or `"cat"`), with all three as instance variables
 * `rename(name)`: updates the name of a pet; returns nothing
+    * If you are feeling fancy, try out doing this as a custom setter instead
 * `updateAge()`: updates the age when the pet has a birthday; returns nothing
 
 Create a file `Pet.kt` and put your code there.  To get you started, here is a `main` function you can use to test part of your implementation:
@@ -44,12 +45,12 @@ fun main() {
 
 ## Exercise 2: `MyMap`
 
-If you finished Exercise 1 early, you can start Exercise 2 for fun.  We won't go over it in class.
+If you finished Exercise 1 early, you can start Exercise 2 for additional practice.
 
-Your goal is to write a class named `MyMap`, which allows us to associate _keys_ with _values_.  For example, we may want to map the string `"blue"` to the number `3` and the string `"yellow"` to the number `4`. Note that you should not use any built-in Kotlin map, you are implementing your own instead!
+Your goal is to write a class named `MyMap`, which allows us to associate _keys_ with _values_.  For example, we may want to map the string `"blue"` to the number `3` and the string `"yellow"` to the number `4`. **Note that you should not use any built-in Kotlin map**, you are implementing your own instead!
 
 The `MyMap` class should have the following methods:
-* `MyMap()` constructor: takes no actual parameters, but initializes necessary data structures; returns `None`
+* `MyMap()` constructor: takes no actual parameters, but initializes necessary data structures; returns `None` (Hint: necessary data structures should probably be a `MutableSet` of `MutableList`s)
 * `add(key, value)`: adds a new mapping from `key` (assume it's a `String`) to `value` (assume it's an `Int`), or updates the mapping if `key` is already present; returns `None`
 * `get(key)`: looks up the value mapped to by `key`; returns the value for `key` or `None` if no mapping exists for `key`
 * `getSize()`: calculates the number of key-value pairs; returns that number (an `int`)

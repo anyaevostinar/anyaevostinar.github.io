@@ -46,7 +46,7 @@ Now, let's explore some interesting things in Kotlin.
 
 2. Find an example of a **conditional** and put it in your reference sheet.
 
-3. Find an example of getting **user input** and put it in your reference sheet. Note that there is some weird `?` and `!!` syntax, we'll talk about that on Friday.
+3. Find an example of getting **user input** and put it in your reference sheet. 
 
 3. Find an example of **printing a variable's value** and put it in your reference sheet.
 

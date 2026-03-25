@@ -83,7 +83,7 @@ For this program, you will create a simulation of a vehicle landing on the moon.
 
 Here is how it works: You are in control of a lunar lander ship, descending to the surface of the moon for a landing.  Gravity steadily accelerates your ship faster and faster toward the surface of the moon.  You, the astronaut piloting the ship, have a single control: a button with the label "burn" on it.  Burning fuel slows your ship down.  Your goal is to get your ship to land on the moon at a slow enough speed so that it doesn't crash on impact.  What's the catch?  You have only a limited amount of fuel.  If you slow your ship too much too early, you will run out of fuel and crash into the surface of the moon.
 
-Your mission: Program this simulation in Kotlin.
+Your mission: Program this simulation in Kotlin, following the structure specified below.
 
 ## Getting started
 
