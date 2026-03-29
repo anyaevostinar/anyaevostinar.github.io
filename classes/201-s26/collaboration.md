@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS201 Data Structures S26 Collaboration Policies
-permalink: /classes/201-S26/collaboration
+permalink: /classes/201-s26/collaboration
 ---
 
 # Overview
