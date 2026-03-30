@@ -49,3 +49,5 @@ You should submit answers to the following on Moodle. You may upload your answer
     * However,  `printCourses` for `StudentRecord` first prints "I’m currently *taking* these courses:", followed by the list of courses, while `printCourses` for `ProfessorRecord` first prints "I’m currently *teaching* these courses:" followed by the list of courses instead.
 
     <iframe src="https://pl.kotl.in/zQEfeFjWe" width="700" height="700"></iframe>
+
+3.  Did you find any typos or unclear spots? Please list them so we can fix them!

@@ -35,3 +35,5 @@ Submit answers to the following on Moodle:
 
 3. Submit your solution for `isPalindrome` from 4.5 Self Check 2.
 
+4. Did you find any typos or unclear spots? Please list them so we can fix them!
+

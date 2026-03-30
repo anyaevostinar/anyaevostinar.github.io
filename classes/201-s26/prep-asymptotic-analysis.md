@@ -20,7 +20,7 @@ After class, you should be able to:
 
 
 ## Readings
-You should read the following. Note that the textbook uses Python instead of Kotlin (we're working on a Kotlin version!), but the ideas are the same:
+You should read the following:
 * [2.2 What is Algorithm Analysis?](https://runestone.academy/ns/books/published/kotlinds/algorithm-analysis_what-is-algorithm-analysis.html?mode=browsing)
 * [2.3 Big O Notation](https://runestone.academy/ns/books/published/kotlinds/algorithm-analysis_big-o-notation.html?mode=browsing)
 * [2.4 An Anagram Detection Example](https://runestone.academy/ns/books/published/kotlinds/algorithm-analysis_an-anagram-detection-example.html?mode=browsing) - there are a few checks at the end that are good practice
@@ -79,3 +79,4 @@ Submit your answers to the following on Moodle:
     }
     ```
 
+3. Did you find any typos or unclear spots? Please list them so we can fix them!
