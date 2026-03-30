@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Recursion Preparation
-permalink: /classes/201-f25/recursion-prep
+permalink: /classes/201-s26/recursion-prep
 ---
 
 ## Overview
@@ -21,17 +21,17 @@ After class, you should be able to:
 * Write a recursive function to solve a problem
 
 ## Reading
-You should read/watch the following (again, the code will be in Python but the ideas are the same):
-* [4.2 What Is Recursion?](https://runestone.academy/ns/books/published/pswadsup/recursion_what-is-recursion.html?mode=browsing)
-* [4.3 Calculating the Sum of a List of Numbers](https://runestone.academy/ns/books/published/pswadsup/recursion_calculating-the-sum-of-a-list-of-numbers.html?mode=browsing)
-* [4.4 The Three Laws of Recursion](https://runestone.academy/ns/books/published/pswadsup/recursion_the-three-laws-of-recursion.html?mode=browsing)
-* [4.5 Converting an Integer to a String in Any Base](https://runestone.academy/ns/books/published/pswadsup/recursion_converting-an-integer-to-a-string-in-any-base.html?mode=browsing)
+You should read the following:
+* [4.2 What Is Recursion?](https://runestone.academy/ns/books/published/kotlinds/recursion_what-is-recursion.html?mode=browsing)
+* [4.3 Calculating the Sum of a List of Numbers](https://runestone.academy/ns/books/published/kotlinds/recursion_calculating-the-sum-of-a-list-of-numbers.html?mode=browsing)
+* [4.4 The Three Laws of Recursion](https://runestone.academy/ns/books/published/kotlinds/recursion_the-three-laws-of-recursion.html?mode=browsing)
+* [4.5 Converting an Integer to a String in Any Base](https://runestone.academy/ns/books/published/kotlinds/recursion_converting-an-integer-to-a-string-in-any-base.html?mode=browsing)
 
 ## Checks
 Submit answers to the following on Moodle:
 1. What are the three laws of recursion?
 
-2. Implement the `to_str` recursive function from the reading section 4.5 in Kotlin:
+2. Submit your solution for `reverse` from 4.5 Self Check 1.
 
-<iframe src="https://pl.kotl.in/bmG8kWpLd" width="700" height="400"></iframe>
+3. Submit your solution for `isPalindrome` from 4.5 Self Check 2.
 

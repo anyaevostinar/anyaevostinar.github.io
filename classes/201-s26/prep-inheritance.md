@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Inheritance and Interfaces
-permalink: /classes/201-f25/inheritance-prep
+permalink: /classes/201-s26/inheritance-prep
 ---
 
 ## Overview
@@ -22,13 +22,12 @@ After class, you should be able to:
 
 ## Readings
 You should read the following:
-* [Constructors](https://www.programiz.com/kotlin-programming/constructors)
-* [Inheritance](https://www.geeksforgeeks.org/kotlin/kotlin-inheritance/)
-* [Interfaces](https://www.geeksforgeeks.org/kotlin/kotlin-interfaces/)
+* [A.2 Composition and Inheritance](https://runestone.academy/ns/books/published/kotlinds/oop_extending_classes.html?mode=browsing)
+* [A.3 Abstract Classes and Interfaces](https://runestone.academy/ns/books/published/kotlinds/oop_abstract_interfaces.html?mode=browsing)
 
 
 ## Checks
-You should submit answers to the following on the Gradescope assignment linked through Moodle. You may upload your answers in one file or different files and the name of the files doesn't matter.
+You should submit answers to the following on Moodle. You may upload your answers in one file or different files and the name of the files doesn't matter.
 
 1. Given the base class `Person`, complete the derived class `Student` below.
 

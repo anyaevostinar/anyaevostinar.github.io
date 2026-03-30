@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Asymptotic Analysis Preparation
-permalink: /classes/201-f25/analysis-prep
+permalink: /classes/201-s26/analysis-prep
 ---
 
 ## Overview
@@ -21,9 +21,9 @@ After class, you should be able to:
 
 ## Readings
 You should read the following. Note that the textbook uses Python instead of Kotlin (we're working on a Kotlin version!), but the ideas are the same:
-* [2.2 What is Algorithm Analysis?](https://runestone.academy/ns/books/published/pswadsup/algorithm-analysis_what-is-algorithm-analysis.html?mode=browsing)
-* [2.3 Big O Notation](https://runestone.academy/ns/books/published/pswadsup/algorithm-analysis_big-o-notation.html?mode=browsing)
-* [2.4 An Anagram Detection Example](https://runestone.academy/ns/books/published/pswadsup/algorithm-analysis_an-anagram-detection-example.html?mode=browsing) - there are a few checks at the end that are good practice
+* [2.2 What is Algorithm Analysis?](https://runestone.academy/ns/books/published/kotlinds/algorithm-analysis_what-is-algorithm-analysis.html?mode=browsing)
+* [2.3 Big O Notation](https://runestone.academy/ns/books/published/kotlinds/algorithm-analysis_big-o-notation.html?mode=browsing)
+* [2.4 An Anagram Detection Example](https://runestone.academy/ns/books/published/kotlinds/algorithm-analysis_an-anagram-detection-example.html?mode=browsing) - there are a few checks at the end that are good practice
 
 ## Checks
 Submit your answers to the following on Moodle:
