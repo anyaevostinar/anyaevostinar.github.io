@@ -83,7 +83,7 @@ Note all of these scenarios assume the students aren't assigned as homework part
 
 ### Example 1 
 
-Alyssa and Ben sit next to each other with their laptops while working on a problem set. They talk in general terms about different approaches to doing the problem set. They draw diagrams on the whiteboard. When Alyssa discovers a useful function in a C library, she mentions it to Ben. When Ben finds a StackOverflow answer that helps solve an error (but doesn't have code directly relating to the problem set), he sends the URL to Alyssa. **OK**.
+Alyssa and Ben sit next to each other with their laptops while working on a problem set. They talk in general terms about different approaches to doing the problem set. They draw diagrams on the whiteboard. When Alyssa discovers a useful function in a Kotlin library, she mentions it to Ben. When Ben finds a StackOverflow answer that helps solve an error (but doesn't have code directly relating to the problem set), he sends the URL to Alyssa. **OK**.
 
 As they type lines of code, they speak the code aloud to the other person, to make sure both people have the right code. **INAPPROPRIATE**.
 
