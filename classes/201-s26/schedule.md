@@ -19,7 +19,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/1 | [Kotlin Basics Prep](kotlin-basics-prep) | [Slides](https://docs.google.com/presentation/d/14q7UZjM2y7jGg4ojVLvMCmlXpjCDFJHlGoBK6UaQHWQ/edit?usp=sharing), Mutables and Functions, [Predictions Lab](kotlin-predictions-lab) |	 |
 | 4/3 | [Classes and Null Safety](classes-null-prep)	|  [Slides](https://docs.google.com/presentation/d/10suqRLz05dZG3t7zIIW6pgMvXe4YOf16S9gSUClw44Q/edit?usp=sharing), [Kotlin Classes Lab](kotlin-classes-lab) |	[HW1: Lunar Lander](hw1) |
 | Week 2 | | Analysis| |
-| 4/6 | [Inheritance and Interfaces Prep](inheritance-prep)|	  [Slides](), [Interfaces Lab](interfaces-lab) | |
+| 4/6 | [Inheritance and Interfaces Prep](inheritance-prep)|	  [Slides](https://docs.google.com/presentation/d/1Es2TjOuG9kepwPtfNeZOc-mNoAdCmPGWzl_ApvFm5o4/edit?usp=sharing), [Inheritance Lab](inheritance-lab) | |
 | 4/8 |  [Analysis Prep](analysis-prep)  |	[Slides](), [Analysis Lab](analysis-lab) 	| |
 | 4/10 | HW1; [Recursion Prep](recursion-prep) | [Slides](), [Recursion Lab](recursion-lab)	| [HW2: Computational Complexity](hw2)|
 | Week 3 | | Stacks and Linked Lists | |
