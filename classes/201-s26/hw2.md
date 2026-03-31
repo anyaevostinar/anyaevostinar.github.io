@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Homework 2 - Computational Complexity
-permalink: /classes/201-f25/hw2
+permalink: /classes/201-s26/hw2
 ---
 
-**Due Friday, Oct 3rd at 10pm**
+**Due Friday April 17th at 10pm**
 
 * Starter file: None, see prompts below
 * Upload solutions via Gradescope
@@ -25,19 +25,36 @@ You should list any student or course staff with whom you discussed the assignme
 
 _If you work alone, you should say so instead._
 
+## AI policy
+
+Generative AI is all around you whenever you are using technology lately. As discussed in the syllabus, there are both acceptable and unacceptable uses of genAI in this class. **Regardless of whether you use any genAI, you need to complete the** `AI Log` at the end of the assignment to satisfy the advanced requirement. I am experimenting with custom-made Gemini chatbots ("Gems") that hopefully will help you on the homework without undermining your learning. [Here is the one for homework 2](https://gemini.google.com/gem/1ukzM0rlPexEDGqpCGky3hmq-MuOssqgt?usp=sharing). 
+
+If you choose not to use genAI at all, you may state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
+
+If you do choose to use genAI, you should log in in the `AI Log` comment at the end of the assignment in the following format:
+* Date: Summary of use and assessment of the bot's usefulness
+
+For example, a hypothetical log could be:
+* 3/31/26: I asked the helper bot how to start on 1d and it walked me through it
+* 4/1/26: I couldn't figure out how to upload to Gradescope and the helper bot was completely useless
+* 4/2/26: I googled the problem with the Gradescope test and the AI summary was helpful
+
+This log requirement is both to give me an idea of whether the chatbots are providing correct information and if they are actually being helpful. If you manage to get them to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further. As mentioned in the hypothetical log, you should also include any external genAI resources that you use, even the AI summary shown in search results.
+
 # Assessment
 
 The **core** requirements for your submission are:
 
 * give correct numerical and formulaic answers to all the questions
 * give accurate justifications for at least three answers
-* include a reflection in your response to the last question of the assignment
+* include your collaboration statement in your response to the last question of the assignment 
 
 The **advanced** requirements for your submission are:
 
 * satisfy the core requirements
 * give compelling justifications for all answers
-* include your collaboration statement in your response to the last question of the assignment 
+* include a reflection in your response to the last question of the assignment
+* include your AI Log in your response to the last question of the assignment 
 
 # Assignment overview
 
