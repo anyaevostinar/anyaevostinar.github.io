@@ -13,7 +13,9 @@ fun main(){
     println("Solution to findMax: ${findMax(listOf(26, 30, 8))}")
     println("Solution to findMax: ${findMax(listOf(-19, -61))}")
     println("Solution to findMax: ${findMax(listOf(-1))}")
-    println("Solution to findMax: ${findMax(listOf<Int>())}")
+    println("If you get an error after this line, you probably tried to remove from the list. Don't do that, use sublist() instead.")
+    val testList = listOf(26, 30, -8, -19, -61, -1)
+    println("Solution to findMax: ${findMax(testList)}")
 
     //Testing sumList()
     //println("Solution to sumList: ${sumList(listOf(-6, 4, 12))}")

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Analysis Lab
-permalink: /classes/201-f25/analysis-lab
+permalink: /classes/201-s26/analysis-lab
 published: true
 ---
 
@@ -50,7 +50,7 @@ for (x: Int in 0..<n) {
 }
 
 for (x: Int in 0..<n) {
-    for (y: Int in x..<n) {
+    for (y: Int in x..<n) { // hint: remember it's okay to overestimate for an upper bound!
         println("$x $y")
     }
 }
@@ -75,26 +75,61 @@ fun pairStudents(students:List<String>){
 ```
 
 ## Exercise 4
-Considering the following Java code for binary search (don't worry about the places where the syntax is a little different, you can get the right general idea)
-```java
-public boolean binarySearch(int[] list, int item) {
-    int first = 0;
-    int last = list.length - 1;
-    while (first <= last) {
-        int midpoint = (first + last) / 2;
-        if (list[midpoint] == item) {
-            return true;
-        } else if (list[midpoint] < item) {
-            last = midpoint - 1;
+Considering the following Kotlin code for binary search:
+```kotlin
+fun binarySearch(arr: List<Int>, target: Int): Boolean {
+    var left = 0
+    var right = arr.size - 1
+
+    while (left <= right) {
+        val mid = left + (right - left) / 2 // To avoid potential overflow
+        if (arr[mid] == target) {
+            return true
+        } else if (arr[mid] < target) {
+            left = mid + 1
         } else {
-            first = midpoint + 1;
+            right = mid - 1
         }
     }
-    return false;
+    return false
 }
 ```
 
 Analyze the time complexity (you'll have to think about how many times the while loop in Binary Search will actually run) in the same way you did for the previous several problems. How does your analysis change if the list isn't already sorted?
+
+## Exercise 5
+Hopefully these two sorting algorithms are familiar to you, analyze their worst case time efficiency in the same way:
+
+```kotlin
+fun selectionSort(arr: MutableList<Int>) {
+    for (i in 0 until arr.size) {
+        var minIndex = i
+        for (j in i + 1 until arr.size) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j
+            }
+        }
+        // Swap the found minimum element with the first element
+        val temp = arr[i]
+        arr[i] = arr[minIndex]
+        arr[minIndex] = temp
+    }
+}
+```
+
+```kotlin
+fun insertionSort(arr: MutableList<Int>) {
+    for (i in 1 until arr.size) {
+        val key = arr[i]
+        var j = i - 1
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j]
+            j--
+        }
+        arr[j + 1] = key
+    }
+}
+```
 
 ## Extra
 You should submit what you've completed above (by taking a picture and uploading to Moodle) and then think about this one. We'll come back to these ideas a little later in the term.

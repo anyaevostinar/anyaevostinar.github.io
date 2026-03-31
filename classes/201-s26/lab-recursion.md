@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Recursion Lab
-permalink: /classes/201-f25/recursion-lab
+permalink: /classes/201-s26/recursion-lab
 ---
 
 ## Set up
@@ -31,9 +31,9 @@ fun fact(n: Int): Int {
 ```
 
 ## Exercise 2
-Download [recursionLab.kt](recursionLab.kt) and move it to your folder for today's work.
+Download [recursionLab.kt](/classes/201-f25/recursionLab.kt) and move it to your folder for today's work.
 
-a) Implement `findMax` recursively and compile and run your code to see if it works:
+a) Implement `findMax` recursively. You will probably want to look at the [Kotlin documentation for `List`](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/) to see if there is a helpful method for getting a portion of the list. Then compile and run your code to see if it works:
 
 ```bash
 kotlinc recursionLab.kt
