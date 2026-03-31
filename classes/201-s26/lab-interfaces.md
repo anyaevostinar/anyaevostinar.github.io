@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Interfaces Lab
-permalink: /classes/201-f25/interfaces-lab
+permalink: /classes/201-s26/interfaces-lab
 ---
 
 ## Set up
@@ -10,10 +10,6 @@ Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES driv
 Download the [starter code](garden-starter.zip), unzip it, and drag it into your `Interfaces Lab` folder.
 
 I recommend you pull out your reference sheet as well.
-
-## Submission
-
-You will be able to submit the completed lab individually on Moodle for an extra engagement. You should make sure to share whatever code you write in class with both partners via email.
 
 ## Goals
 
@@ -28,12 +24,17 @@ In this lab, you'll be creating a simulation of a garden.  In doing so, you will
 
 First, we'll do some planning and basic setup.
 
-1. The starter files include a `Plant` interface.  Read through this interface to get an idea for what methods any implementing class needs to provide.
+1. The starter files include a `Plant` interface.  Read through this interface to get an idea for what methods any implementing class needs to provide. The files also include a `Carrot.class` file, which I have already written and compiled, and which implements the `Plant` interface.
 
-2. Decide on two kinds of `Plant`s that you want to implement.  Make a file where you'll implement your `Plant`, for example `Eggplant.kt`:
+2. Decide on two **additional** kinds of `Plant`s that you want to implement (not `Carrot`, that's taken!).  Make a file where you'll implement your `Plant`, for example `Eggplant.kt`:
 
     ```kotlin
     class Eggplant : Plant {
+        // defining required instance variables
+        override val species: String = "Eggplant"
+        // TODO define waterLevel and age as well
+
+
         // methods go here
     }
     ```
@@ -41,16 +42,16 @@ First, we'll do some planning and basic setup.
 3. Copy over the entire body of the interface, including all method names and the comments.
 
 4. Add in stub bodies of the methods, having them just returning a default value (like `0` or `""`) for their return type:
->```kotlin
->    override fun getName(): String {
->        return ""
->    }
->```
+    ```kotlin
+        override fun getStatus() {
+            return ""
+        }
+    ```
 
 5. Make sure everything compiles:
->```bash
->kotlinc Plant.kt Eggplant.kt
->```
+    ```bash
+    kotlinc Plant.kt Eggplant.kt
+    ```
 
 ## Part B
 
@@ -62,7 +63,7 @@ Now, start implementing!
 
 3. Compile and run `Garden.kt` to make sure everything works and correct any errors.
 
-4. Finally, repeat Exercise 2 with a second class implementing the `Plant` interface.
+4. Finally, repeat with a second class implementing the `Plant` interface.
 
 ## Part C
 
@@ -70,9 +71,9 @@ Now, replace your code in `main` with code to create a garden!
 
 1. In `main` of `Garden.kt`, create a `List` of `Plant`s.  There is a provided `Carrot` class that you can use, too, even without looking at its code; just know that it implements the `Plant` interface.
 
-2. Create at least one instance of each of your classes and put them in your list.
+2. Create at least one instance of each of your classes (including `Carrot`) and put them in your list.
 
-3. Test your code by printing the name of each plant in the list.  Compile via `kotlinc -cp . Garden.kt`.  (Don't forget to import `Plant` and your classes at the top of `Garden.kt`!)
+3. Test your code by printing the species and water level of each plant in the list.  Compile via `kotlinc -cp . Garden.kt`.  (Don't forget to import `Plant` and your classes at the top of `Garden.kt`!)
 
 4. Add a `for` loop that simulates several days of time elapsing, during which you should probably water your plants (make sure to recompile and run to test every change you make along the way!).
 
@@ -80,7 +81,9 @@ Now, replace your code in `main` with code to create a garden!
 
 6. Reflect: why is it beneficial to have an interface for `Plant` when creating your garden simulation? How would inheritance have changed things? We'll discuss as a class, so be ready to share your thoughts.
 
-7. Submit your completed `.kt` files to the link on Moodle for an engagement credit.
+## Submission
+
+Submit your completed `.kt` files to the link on Moodle for an engagement credit. You should make sure to share whatever code you write in class with both partners via email. Remember that labs are optional to complete and remain open until the last day of classes, but are great practice.
 
 ## Want more to do?
 
@@ -88,7 +91,7 @@ Once you have the basic simulation working, you can add some extensions!  Try on
 
 * Use object-oriented style to complete the full garden simulation (with more than two plants in a list, simulating several days and watering at least sometimes, then displaying all plants).  Write down some notes on paper about how to design `Garden`.  You should have your list of `Plant`s be an instance variable and have methods like `addPlant(plant: Plant)` and `waterAllPlants()`.  Once you've designed it on paper, go ahead and code it up!
 
-* Add a method in `Garden` that takes the name of a plant and waters only plants with that name: `water(plantName: String)`.
+* Add a method in `Garden` that takes the name of a plant and waters only plants of species: `water(plantSpecies: String)`.
 
 * Choose a random amount by which to vary the amount of water (e.g., maybe the sprinkler hits some plants more than others, or maybe the rainfall is lighter/heavier than expected).  Try using a [`Random` library function](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.random/-random/) like `Random.nextInt()` for this.
 
