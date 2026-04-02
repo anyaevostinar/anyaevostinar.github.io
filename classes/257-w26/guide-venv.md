@@ -26,6 +26,8 @@ python3 -m venv ~/.venvs/cs257_venv
 
 Note: You may get an error message to install the `python3-venv` package. If you get this message, follow the instructions in that message on how to install it in your system.
 
+In particular, you may then get an error that `apt` or whatever can't find whatever version of `python3-venv` it suggests you need. This is generally solved by running `sudo apt update`.
+
 ## Activating a virtual environment
 After the following command, you should see in your terminal that the left-hand side of each line will now have a prefix with the same name as your virtual environment:
 
@@ -33,7 +35,7 @@ After the following command, you should see in your terminal that the left-hand 
 source ~/.venvs/cs257_venv/bin/activate
 ```
 
-Remember to deactivate when you are done:
+Remember to deactivate when you are done **not right now though**:
 ```bash
 deactivate
 ```
