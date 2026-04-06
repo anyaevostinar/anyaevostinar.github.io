@@ -62,7 +62,7 @@ Now, start implementing!
 
 3. Compile and run `Garden.kt` to make sure everything works and correct any errors.
 
-4. Finally, repeat with a second class implementing the `Plant` interface.
+4. Finally, repeat with a second class inheriting from the `Plant` abstract class.
 
 ## Part C
 
@@ -81,7 +81,7 @@ Now, replace your code in `main` with code to create a garden!
 
 5. Display the plants in the garden at the end of `main`.
 
-6. Reflect: why is it beneficial to use inheritance for `Plant` when creating your garden simulation? How would it being an interface have changed things? We'll discuss as a class, so be ready to share your thoughts.
+6. Reflect: why is it beneficial to use inheritance for `Plant` when creating your garden simulation? How would it being an interface have changed things?
 
 ## Submission
 
