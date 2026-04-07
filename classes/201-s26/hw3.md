@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Homework 3 - Maze Solver
-permalink: /classes/201-f25/hw3
+permalink: /classes/201-s26/hw3
 ---
 
-**Due: Friday, Oct 10th, at 10:00pm**
+**Due: Friday, April 24th, at 10:00pm**
 
-Starter code: [maze_solver.zip](maze_solver.zip)  
+Starter code: [MazeSolver.zip](MazeSolver.zip)  
 Upload solutions via Gradescope as: `SolvableMaze.kt` and `Main.kt`
 
 ## Goals
@@ -24,6 +24,22 @@ You may also discuss the assignment at a high level with other students.  You ca
 You should list any student or course staff with whom you discussed the assignment (you don't have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in comments at the top of your `Main.kt` file.  You also need to include your name.
 
 _If you work alone, you should say so instead._
+
+## AI policy
+
+Again, **regardless of whether you use any genAI, you need to complete the** `AI Log` at the end of the assignment to satisfy the advanced requirement. [Here is the homework helper bot for homework 3](https://gemini.google.com/gem/14jidrTm2qeHWBbeQBigFeghj7-7FXiYK?usp=sharing). 
+
+If you choose not to use genAI at all, you may state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
+
+If you do choose to use genAI, you should log in in the `AI Log` comment at the end of the assignment in the following format:
+* Date: Summary of use and assessment of the bot's usefulness
+
+For example, a hypothetical log could be:
+* 3/25/26: I asked the helper bot how to do default values for a constructor and it helped me figure it out
+* 3/26/26: I couldn't figure out the problem with the Gradescope test and the helper bot was completely useless
+* 3/26/26: I googled the problem with the Gradescope test and the AI summary was helpful
+
+This log requirement is both to give me an idea of whether the chatbots are providing correct information and if they are actually being helpful. If you manage to get them to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further. As mentioned in the hypothetical log, you should also include any external genAI resources that you use, even the AI summary shown in search results.
 
 ## Note on style:
 
@@ -44,20 +60,22 @@ Note that on this assignment, the Gradescope tests can only run your code and di
 
 The **core** requirements for your submission are:
 
-* complete Parts B, C, and E
+* complete Parts B and C
     * B: implementing `solveMaze`
     * C: printing the solution
-    * E: reflection
 * satisfy the code style expectations #1-#4 above
-* include a reflection in comments at the bottom of your `Main.kt` file
+* include your name and collaboration statement at the top of your `Main.kt` file
+
 
 The **advanced** requirements for your submission are:
 
 * satisfy the core requirements
-* complete all of Parts B-E
+* complete all of Parts B-D
     * D: getting command line arguments
 * satisfy all code style expectations listed above (#1-#9)
-* include your name and collaboration statement at the top of your `Main.kt` file
+* include a reflection in comments at the bottom of your `Main.kt` file
+* include an AI log in the comments at the bottom of your `Main.kt` file
+
 
 ## Assignment overview
 
@@ -69,7 +87,7 @@ Your goal: write code to find a solution path through the maze, if one exists.
 
 Find your `cs201` folder for assignments.  Maybe it contains an `assignments` folder inside of it.
 
-Download [this `maze_solver.zip` file](maze_solver.zip) to get the starter code.  Put it in your `cs201` folder and unzip it.   Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
+Download [this `MazeSolver.zip` file](MazeSolver.zip) to get the starter code.  Put it in your `cs201` folder and unzip it.   Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
 
 Now open your folder in VS Code.  There are multiple ways to do this, so pick one:
 * Open VS Code, then select `File` -> `Open Folder` and navigate to the folder you just made.
@@ -79,7 +97,7 @@ Either way, if you are asked, click that you trust the authors.  If you have any
 
 ## Building your code with Maven
 
-Like Assignment #1, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code **(note that you must be in the top-level folder `maze_solver` for these commands to work)**:
+Like Assignment #1, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code **(note that you must be in the top-level folder `MazeSolver` for these commands to work)**:
 
 * `mvn test` runs the tests that we provided (see below)
 
@@ -266,7 +284,7 @@ To test your command line argument, first compile your code with `mvn compile`, 
 
 
 
-# Part E: Reflection
+## Required Reflection
 
 Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?
 
