@@ -23,8 +23,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/8 |  [Analysis Prep](analysis-prep)  |	[Slides](https://docs.google.com/presentation/d/1DzWjIPE1pdMTHUlhM_87M54SsVjGF4OjBOw3fTxLTJs/edit?usp=sharing), [Analysis Lab](analysis-lab) 	| |
 | 4/10 | HW1; [Recursion Prep](recursion-prep) | [Slides](https://docs.google.com/presentation/d/15fWvpwnTjXUwLGKkNhY9kZX_elGtEh_sZl-HgLHVcik/edit?usp=sharing), [Recursion Lab](recursion-lab)	| [HW2: Computational Complexity](hw2)|
 | Week 3 | | Stacks and Linked Lists | |
-| 4/13 |  Study!   | [Slides](), [**Exam 1** ](exam1) |  |
-| 4/15 | [Stacks Prep](stacks-prep)   |		[Slides](), [Stack Lab](stack-lab)	|  |
+| 4/13 |  Study!   | [Slides](https://docs.google.com/presentation/d/1cYsWaNCxeSbr8s7ft7O0wh2x2WH7034GJpiLO2bKJTw/edit?usp=sharing), [**Exam 1** ](exam1) |  |
+| 4/15 | [Stacks Prep](stacks-prep)   |		[Slides](https://docs.google.com/presentation/d/1GWmbFMHKmQO5Zi67Jz_NPs8HyVz3sTCjAxEr1Q-ZcEY/edit?usp=sharing), [Stack Lab](stack-lab)	|  |
 | 4/17 | HW2;[Lists Prep](linkedlist-prep) |	[Slides](), [Linked List Lab](linked-list-lab)	| [HW3: Solving Mazes](hw3)|
 | Week 4 | | Queues and Hashing| |
 | 4/20 |[Queues Prep](queues-prep) | [Slides](), [Queues Lab](queues-lab) |  |

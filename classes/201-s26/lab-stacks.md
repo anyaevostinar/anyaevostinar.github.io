@@ -33,7 +33,7 @@ fun main() {
 ```
 
 ## Exercise 2
-Deep under the hood, all lists are actually built on the `array` data type.  As you read about, they're tricky to work with, because they have a fixed size. You should refer to the [reading for today](https://runestone.academy/ns/books/published/kotlinds/basic-ds_implementing-an-unordered-list-arrays.html?mode=browsing) for how to create a new array with `arrayOfNulls` and generally work with arrays in this exercise.
+Deep under the hood of Kotlin, `MutableList`s are actually built on the `array` data type.  As you read about, they're tricky to work with, because they have a fixed size. You should refer to the [reading for today](https://runestone.academy/ns/books/published/kotlinds/basic-ds_implementing-an-unordered-list-arrays.html?mode=browsing) for how to create a new array with `arrayOfNulls` and generally work with arrays in this exercise.
 
 1. Write a class `ArrayStack` that implements the `StackADT` interface using an `Array<Int?>` as its underlying data storage. Note that you can define your class to work only with `Int`s like so:
 
