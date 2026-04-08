@@ -46,4 +46,4 @@ exampleList.remove("dragon")
 
 2. Complete the `addLast` method of the `LinkedUnorderedList<T>` below. What is the time complexity of your implementation? Can you get it to be O(1)?
 
-<iframe src="https://pl.kotl.in/Hngo13JB6"></iframe>
+<iframe src="https://pl.kotl.in/Hngo13JB6" width="700" height="700"></iframe>
