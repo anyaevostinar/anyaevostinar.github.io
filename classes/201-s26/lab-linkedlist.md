@@ -7,102 +7,18 @@ permalink: /classes/201-f25/linked-list-lab
 ## Set up
 Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES drive. Make a folder `LinkedListLab` in your STUWORK/username folder and open it in VSCode for today's labwork.
 
-## Implementing a linked list
+Copy the starter code from [LinkedUL.kt](/classes/201-s26/LinkedUL.kt) in your folder. This code is slightly altered from the reading to add a couple more helpful things (`getNode`, a slightly nicer `toString`, making `head` protected).
 
-Consider the following start of a linked-list implementation in Kotlin:
+## Exercise 1: Cycle Detection
+Being able to detect "cycles" in a sequences of items is fundamental to many algorithms for security and modern computing, including [cryptography](https://en.wikipedia.org/wiki/Pollard%27s_rho_algorithm_for_logarithms#:~:text=Pollard%2C%20J.%20M.%20(1978).,Handbook%20of%20Applied%20Cryptography.), [networks](https://www.inf.ufsc.br/~bosco.sobral/ensino/ine5645/Computer-Networks---A-Tanenbaum---5th-edition.pdf), and even detecting money laundering! By representing these items as nodes in a linked list, we can easily perform ["Floyd's Cycle-Finding Algorithm"](https://en.wikipedia.org/wiki/Cycle_detection).
 
-```kotlin
-class SinglyLinkedList<T> {
+Grab the start of the subclass [`CyclicLinkedList`](/classes/201-s26/CyclicLinkedList.kt). It has an updated `toString` that will be able to handle cycles (what would happen with the original `toString`?) once you have implemented `findCycle`. There is also some test code with possible money laundering trails!
 
-    // This "private" "data class" is visible only within the SinglyLinkedList
-    // class, and contains only data with no additional functions (besides a
-    // few that Kotlin provides, like for printing it)
-    private data class Node<T>(
-        var item: T,
-        var next: Node<T>?)
-
-    // We'll maintain just a reference to the head of the linked list
-    // (which may be null, in the case the list is empty)
-    private var head: Node<T>? = null
-
-    fun insertAtBeginning(item: T) {
-        // The current head will be the next node after this new node
-        val newNode = Node(item, head)
-
-        // Put this new node at the head, inserting it
-        head = newNode
-    }
-
-    fun insertAtEnd(item: T) {
-        // The new node will be at the end, so it won't have anywhere
-        // to point (hence, its next is null)
-        val newNode = Node(item, null)
-
-        // If the list is empty, we just make the new node the head
-        if (head == null) {
-            head = newNode
-            return
-        }
-
-        // If not, we need to step through the list until we find
-        // a node with its next set to null (that's the end)
-        var current: Node<T>? = head
-        while (current!!.next != null) { // at first current isn't null
-            current = current.next
-        }
-
-        // We found the end!  Put the new node just after it
-        current.next = newNode
-    }
-}
-```
-
-## Time complexity
-
-1. What is the time complexity of `insertAtBeginning`, assuming there are already `n` elements in the linked list?
-
-2. What about `insertAtEnd`?
-
-## Iterating through a linked list
-
-Implement the following functions based on what you know about iterating through a linked list (and refer to `insertAtEnd` for help):
-
-```kotlin
-    override fun toString(): String { }
-
-    fun length(): Int { }
-
-    fun search(target: T): Boolean { }
-```
-
-Here is some additional code to help you test:
-
-```kotlin
-fun main() {
-    val list = SinglyLinkedList<String>()
-
-    // Try adding some things
-    list.insertAtBeginning("apple")
-    list.insertAtBeginning("banana")
-    list.insertAtBeginning("canteloupe")
-
-    // Now try searching
-    println(list.search("apple"))
-    println(list.search("banana"))
-    println(list.search("canteloupe"))
-    println(list.search("durian"))
-
-    // Let's print some things
-    println(list)
-    println(list.length())
-
-    // What if we put something at the end?
-    list.insertAtEnd("starfruit")
-    println(list)
-}
-```
-
-Submit your completed linked list implementation to Moodle for an engagement credit.
+Here is how you should approach detecting a cycle using the "tortoise and hare" approach:
+* Create two variables `slow` and `fast` that initially point to the head of your list
+* `slow` steps forward one node at a time, as we would usually traverse a linked list
+* `fast` steps forward two nodes at a time
+* If `slow` and `fast` ever point to the same node, there is a cycle!
 
 ## Extra
 
