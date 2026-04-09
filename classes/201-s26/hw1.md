@@ -238,7 +238,7 @@ Welcome to Lunar Lander!
 
 ## Part C: Two-player simulation
 
-As a final step, you should modify `main` so that it gives an option for it to be a one-player or a two-player game.  If the user chooses one player, it should be just as described in Part B.  If the user chooses two player, the game should have _two_ `LunarLander` objects descending to the moon, each controlled by different users.  The two players alternate back and forth, entering the amount of burn for their own landers, until something triggers an end of the game, such as a successful landing or a crash.
+As a final step, you should modify `main` so that it gives an option for it to be a one-player or a two-player game by accepting either `1` or `2` as the first input.  If the user chooses one player by entering `1`, it should be just as described in Part B.  If the user chooses two player by entering `2`, the game should have _two_ `LunarLander` objects descending to the moon, each controlled by different users.  The two players alternate back and forth, entering the amount of burn for their own landers, until something triggers an end of the game, such as a successful landing or a crash.
 
 # Required Reflection
 

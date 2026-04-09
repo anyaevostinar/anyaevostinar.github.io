@@ -36,32 +36,32 @@ fun main() {
 Deep under the hood of Kotlin, `MutableList`s are actually built on the `array` data type.  As you read about, they're tricky to work with, because they have a fixed size. You should refer to the [reading for today](https://runestone.academy/ns/books/published/kotlinds/basic-ds_implementing-an-unordered-list-arrays.html?mode=browsing) for how to create a new array with `arrayOfNulls` and generally work with arrays in this exercise.
 
 1. Write a class `ArrayStack` that implements the `StackADT` interface using an `Array<Int?>` as its underlying data storage. Note that you can define your class to work only with `Int`s like so:
-    ```kotlin
-    class ArrayStack : StackADT<Int> {
+```kotlin
+class ArrayStack : StackADT<Int> {
 
-        //Your code here
-    }
-    ```
-    Also, you may run into some difficulties with needing to return an `Int` when the array contains `Int?`. You can deal with that with either `!!` or `?:` in your return.
+    //Your code here
+}
+```
+Also, you may run into some difficulties with needing to return an `Int` when the array contains `Int?`. You can deal with that with either `!!` or `?:` in your return.
 
 2. Here is a `main` function you should use to test your code:
-    ```kotlin
-    fun main() {
-        val s = ArrayStack()
-        s.push(2025)
-        s.push(4)
-        s.push(16)
+```kotlin
+fun main() {
+    val s = ArrayStack()
+    s.push(2025)
+    s.push(4)
+    s.push(16)
 
-        println("Elements present in stack: ")
-        println(s)
+    println("Elements present in stack: ")
+    println(s)
 
-        println("" + s.pop() + " popped from stack")
-        println("Top element is: " + s.peek())
+    println("" + s.pop() + " popped from stack")
+    println("Top element is: " + s.peek())
 
-        println("Elements present in stack: ")
-        println(s)
-    }
-    ```
+    println("Elements present in stack: ")
+    println(s)
+}
+```
 
 Submit your solutions for these two exercises on Moodle for an extra engagement credit. Remember that labs are open until the end of the term, so don't stress about completing it, but it is good practice.
 
