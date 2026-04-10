@@ -25,7 +25,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 3 | | Stacks and Linked Lists | |
 | 4/13 |  Study!   | [Slides](https://docs.google.com/presentation/d/1cYsWaNCxeSbr8s7ft7O0wh2x2WH7034GJpiLO2bKJTw/edit?usp=sharing), [**Exam 1** ](exam1) |  |
 | 4/15 | [Stacks Prep](stacks-prep)   |		[Slides](https://docs.google.com/presentation/d/1GWmbFMHKmQO5Zi67Jz_NPs8HyVz3sTCjAxEr1Q-ZcEY/edit?usp=sharing), [Stack Lab](stack-lab)	|  |
-| 4/17 | HW2;[Lists Prep](linkedlist-prep) |	[Slides](), [Linked List Lab](linked-list-lab)	| [HW3: Solving Mazes](hw3)|
+| 4/17 | HW2;[Lists Prep](linkedlist-prep) |	[Slides](https://docs.google.com/presentation/d/13hSiE2sOCVwTJJQP8pyKdXh8DXPaXWZBI_DYMxQDBpU/edit?usp=sharing), [Linked List Lab](linked-list-lab)	| [HW3: Solving Mazes](hw3)|
 | Week 4 | | Queues and Hashing| |
 | 4/20 |[Queues Prep](queues-prep) | [Slides](), [Queues Lab](queues-lab) |  |
 | 4/22 |  [Doubly-linked Lists and Deques Prep](doubles-prep) |	[Slides](), [Doubly-Linked List Lab](doubly-ll-lab)	| |
