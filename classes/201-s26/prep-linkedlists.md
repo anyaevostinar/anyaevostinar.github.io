@@ -9,15 +9,16 @@ You've worked with lists a lot by using built-in functionality and previously le
 
 ## Basic Learning Objectives
 Before class, you should be able to: 
-* Explain what a list is
 * Explain what the unordered list ADT is
 * Explain the general idea of a linked list
+* Implement adding to the beginning or end of a linked list
+* Explain how to traverse through a linked list
 
 
 ## Advanced Learning Objectives
 After class, you should be able to:
 * Explain the pros and cons of linked lists and arrays
-* Implement a basic linked list in Kotlin
+* Implement advanced functionality in a linked list
 * Use an array or linked list to solve a given problem
 
 

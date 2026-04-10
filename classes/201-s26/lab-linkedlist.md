@@ -21,7 +21,7 @@ class MinMaxLL() : LinkedUnorderedList<Int>() {
 }
 ```
 
-2. Within your class, override the `addFirst(item: Int)` method to call `super.addFirst(item)` and then update the `min` or `max` if necessary. You'll need to deal with null safety for the `min` and `max` variables, which will be easiest to do by making local `val`s of each.
+2. Within your class, override the `addFirst(item: Int)` method to call `super.addFirst(item)` and then update the `min` or `max` if necessary. You'll need to deal with null safety for the `min` and `max` variables, which will be easiest to do by making local `val`s of each. You could also try out using Kotlin's `compareValues(a, b)`, which returns less than 0 if a < b and greater than 0 if a > b, but also considers null less than any non-null value (so you'll want to combine it with directly checking for `min == null`).
 
 3. Check to make sure that your `addFirst` works correctly with this test code:
 ```kotlin

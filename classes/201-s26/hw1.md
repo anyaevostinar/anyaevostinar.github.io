@@ -10,6 +10,10 @@ permalink: /classes/201-s26/hw1
 * Starter code: [LunarLander.zip](LunarLander.zip)  
 * Upload solutions via Gradescope as: `LunarLander.kt`
 
+**If you plan on working on your own computer, you need to follow these instructions to either [set up your personal Mac computer](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=160536) or [set up your personal Windows computer](https://stolafcarleton.teamdynamix.com/TDClient/3356/Portal/KB/ArticleDet?ID=160646).**
+There are several things that you need to install and a particular way that you need to do it for everything to work.
+
+
 ## Goals
 
 This assignment is designed to help you practice the following:
@@ -194,7 +198,7 @@ If the lander ends up hitting the surface of the moon with a velocity of 4 meter
 Here's a sample one-player game:
 
 ```bash
-Welcome to Lunar Lander!
+Welcome to Lunar Lander! How many players? 1
 
     Alt = 1000 Vel = 40 Fuel = 25
     How much fuel to burn this round? 0
