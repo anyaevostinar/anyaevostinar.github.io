@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Queues Lab
-permalink: /classes/201-f25/queues-lab
+permalink: /classes/201-s26/queues-lab
 ---
 
 ## Set up
 Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES drive. Make a folder `QueuesLab` in your STUWORK/username folder and open it in VSCode for today's labwork.
 
 ## Implementing a linked queue
+You'll first use a linked list to achieve a queue that is O(1) for both enqueue and dequeue.
 
 1. Copy the interface for a Queue into a file `QueueInt.kt`:
 ```kotlin
@@ -21,53 +22,42 @@ interface QueueADT<T> {
 
     // Remove the item at the head of the queue and return it.
     fun dequeue(): T
-
-    // Return the item at the head of the queue, but do not remove it.
-    // If the queue is empty, throws an exception.
-    fun peek(): T
-
-    // Returns the number of items in the queue.
-    fun size(): Int
 }
 ```
 
 
-1. Create a new file `LinkedQ.kt` and implement the `Queue<T>` interface with `LinkedQueue<T>`. Note that you can and should add a variable `rear` that tracks the end of the linked list for dequeuing. You'll want to use the `Node<T>` data class from before:
-
-    ```kotlin
-        private data class Node<T>(
-        var item: T,
-        var next: Node<T>?)
-    ```
+1. Create a new file `LinkedQ.kt` and implement the `Queue<T>` interface with `LinkedQueue<T>`. Note that you can and should add a variable `rear` that tracks the end of the linked list for dequeuing. You'll want to use the `Node<T>` data class [from LinkedUL](classes/201-s26/LinkedUL.kt) (place it before the start of your class):
+```kotlin
+data class Node<T>(var data: T, var next: Node<T>? = null)
+```
 
 2. Test your code with these tests:
+```kotlin
+fun main() {
+    val q = LinkedQueue<Int>()
+    q.enqueue(1)
+    q.enqueue(2)
+    q.dequeue()
+    q.enqueue(3)
+    q.enqueue(4)
+    q.enqueue(5)
 
-    ```kotlin
-    fun main() {
-        val q = LinkedQueue<Int>()
-        q.enqueue(1)
-        q.enqueue(2)
-        q.dequeue()
-        q.enqueue(3)
-        q.enqueue(4)
-        q.enqueue(5)
+    println(q)
 
-        println(q)
+    q.dequeue()
 
-        q.dequeue()
+    println(q)
+    q.dequeue()
+    q.dequeue()
+    q.dequeue()
 
-        println(q)
-        q.dequeue()
-        q.dequeue()
-        q.dequeue()
-
-        q.enqueue(6)
-        println(q)
-    }
-    ```
+    q.enqueue(6)
+    println(q)
+}
+```
 
 ## Implementing a circular queue
-
+You can also achieve constant time complexity for a queue using a mutable list in a clever way: by pretending that it is a circle. 
 
 2. Create a new file `CircularQ.kt` and create a class `CircularQueue<T>` that implements the `Queue<T>` interface (remember to start with just "stubs" of methods that don't do anything but return the right thing so that you can compile and test as you go.) **Don't jump into implementing all the methods yet!**
 
@@ -79,13 +69,12 @@ interface QueueADT<T> {
 4. `enqueue` has quite a few cases that you need to consider, so start with just implementing the situation where the queue is empty and you are adding the first item.
 
 5. Make sure that your code compiles with the following test code:
-
-    ```kotlin
-    fun main() {
-        val q = CircularQueue<Int>()
-        q.enqueue(1)
-    }
-    ```
+```kotlin
+fun main() {
+    val q = CircularQueue<Int>()
+    q.enqueue(1)
+}
+```
 
 6. Implement a preliminary version of `toString` that ignores the fact that `front` could move and then use that to make sure that your queue has "1" in it.
 
@@ -104,37 +93,38 @@ interface QueueADT<T> {
 
 10. There is one more case for `enqueue` that you need to consider. Implement the case where the queue has become empty but `items.size` isn't 0.
 
-11. Make sure that your code correctly works for these tests:
+11. Make sure that your code correctly works for the same tests:
+```kotlin
+fun main() {
+    val q = CircularQueue<Int>()
+    q.enqueue(1)
+    q.enqueue(2)
+    q.dequeue()
+    q.enqueue(3)
+    q.enqueue(4)
+    q.enqueue(5)
 
-    ```kotlin
-    fun main() {
-        val q = CircularQueue<Int>()
-        q.enqueue(1)
-        q.enqueue(2)
-        q.dequeue()
-        q.enqueue(3)
-        q.enqueue(4)
-        q.enqueue(5)
+    println(q)
 
-        println(q)
+    q.dequeue()
 
-        q.dequeue()
+    println(q)
+    q.dequeue()
+    q.dequeue()
+    q.dequeue()
 
-        println(q)
-        q.dequeue()
-        q.dequeue()
-        q.dequeue()
-
-        q.enqueue(6)
-        println(q)
-    }
-    ```
+    q.enqueue(6)
+    println(q)
+}
+```
 
 
 
 
 ## Extra
-Submit your queue implementations to Moodle for an engagement credit and then try out implementing the following for both of your classes:
+Submit your queue implementations to Moodle for an extra engagement credit. Remember that the labs are not required and are open until the last day of classes, so don't feel rushed, they are just good practice.
+
+Then try out implementing the following for both of your classes:
 * `peek()`
 * `clear()`
 * `size()`
