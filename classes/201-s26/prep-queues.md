@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Queues Preparation
-permalink: /classes/201-f25/queues-prep
+permalink: /classes/201-s26/queues-prep
 ---
 
 ## Overview
@@ -10,38 +10,37 @@ While lists are a good general linear structure, you don't always need all of th
 ## Basic Learning Objectives
 Before class, you should be able to: 
 * Explain what a queue is and how items are added and removed
-* Define FIFO
+* Identify the time complexity of a given queue implementation
 
 
 ## Advanced Learning Objectives
 After class, you should be able to:
 * Explain the efficiency concerns related to implementing a queue
-* Explain how a circular queue works
 * Explain how a linked queue works
+* Use a queue to solve a problem
 
 
 ## Readings
 You should read the following:
 
-* [3.10 Queues](https://runestone.academy/ns/books/published/pswadsup/basic-ds_queues.html?mode=browsing)
-* [3.11 The Queue ADT](https://runestone.academy/ns/books/published/pswadsup/basic-ds_the-queue-abstract-data-type.html?mode=browsing)
-* [3.14 Printing Tasks](https://runestone.academy/ns/books/published/pswadsup/basic-ds_queue-simulation-printing-tasks.html?mode=browsing)
+* [3.10 Queues](https://runestone.academy/ns/books/published/kotlinds/basic-ds_queues.html?mode=browsing)
+* [3.11 The Queue ADT](https://runestone.academy/ns/books/published/kotlinds/basic-ds_the-queue-abstract-data-type.html?mode=browsing)
+* [3.12 Implementing a Queue](https://runestone.academy/ns/books/published/kotlinds/basic-ds_implementing-a-queue.html?mode=browsing)
+* [3.14 Printing Tasks](https://runestone.academy/ns/books/published/kotlinds/basic-ds_queue-simulation-printing-tasks.html?mode=browsing)
 
 
 
 ## Checks
-Submit answers to the following on Moodle, given this [Kotlin Queue Implementation](https://github.com/dmusican/cs201f24share/blob/main/code-for-readings/src/main/kotlin/Queue.kt):
+Submit answers to the following on Moodle
 
-![Diagram of a queue](/classes/201-f25/queue.png)
+1. (Self Check 3.12.1) Given the following queue operations:
+```kotlin
+val q = new Queue<>()
+q.enqueue("hello")
+q.enqueue("dog")
+q.enqueue("cat")
+q.dequeue()
+```
+What is the state of the queue from head to tail?
 
-* `dequeue()` is called on the Queue above. 
-    1. What does the Queue look like now? (i.e. Which elements are in which index?)
-    2. Which index is `front` pointing to?
-    3. Which index is rear pointing to?
-* `enqueue("Nick")` is next called on the Queue.
-    1. What does the Queue look like now? (i.e. Which elements are in which index?)
-    2. Which index is front pointing to?
-    3. Which index is rear pointing to?
-
-## Acknowledgements
-The check questions and diagram are from Prof Jean Salac.
+2. Given the implementations of `enqueue` and `dequeue` in section 3.12, explain why the time complexities are O(n) and O(1).

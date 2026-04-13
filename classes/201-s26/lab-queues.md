@@ -7,18 +7,67 @@ permalink: /classes/201-f25/queues-lab
 ## Set up
 Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES drive. Make a folder `QueuesLab` in your STUWORK/username folder and open it in VSCode for today's labwork.
 
-## Implementing a circular queue
+## Implementing a linked queue
 
-1. Copy this interface for a Queue into a file `QueueInt.kt`:
+1. Copy the interface for a Queue into a file `QueueInt.kt`:
+```kotlin
+interface QueueADT<T> {
+    // Returns true if there are no items in the queue;
+    // false otherwise.
+    fun isEmpty(): Boolean
+
+    // Add an item to the tail of the queue
+    fun enqueue(item: T)
+
+    // Remove the item at the head of the queue and return it.
+    fun dequeue(): T
+
+    // Return the item at the head of the queue, but do not remove it.
+    // If the queue is empty, throws an exception.
+    fun peek(): T
+
+    // Returns the number of items in the queue.
+    fun size(): Int
+}
+```
+
+
+1. Create a new file `LinkedQ.kt` and implement the `Queue<T>` interface with `LinkedQueue<T>`. Note that you can and should add a variable `rear` that tracks the end of the linked list for dequeuing. You'll want to use the `Node<T>` data class from before:
 
     ```kotlin
-    interface Queue<T> {
-        fun isEmpty(): Boolean
-        fun enqueue(item: T)
-        fun dequeue(): T?
-        override fun toString(): String
+        private data class Node<T>(
+        var item: T,
+        var next: Node<T>?)
+    ```
+
+2. Test your code with these tests:
+
+    ```kotlin
+    fun main() {
+        val q = LinkedQueue<Int>()
+        q.enqueue(1)
+        q.enqueue(2)
+        q.dequeue()
+        q.enqueue(3)
+        q.enqueue(4)
+        q.enqueue(5)
+
+        println(q)
+
+        q.dequeue()
+
+        println(q)
+        q.dequeue()
+        q.dequeue()
+        q.dequeue()
+
+        q.enqueue(6)
+        println(q)
     }
     ```
+
+## Implementing a circular queue
+
 
 2. Create a new file `CircularQ.kt` and create a class `CircularQueue<T>` that implements the `Queue<T>` interface (remember to start with just "stubs" of methods that don't do anything but return the right thing so that you can compile and test as you go.) **Don't jump into implementing all the methods yet!**
 
@@ -81,41 +130,7 @@ Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES driv
     }
     ```
 
-## Implementing a linked queue
 
-1. Create a new file `LinkedQ.kt` and implement the `Queue<T>` interface with `LinkedQueue<T>`. Note that you can and should add a variable `rear` that tracks the end of the linked list for dequeuing. You'll want to use the `Node<T>` data class from before:
-
-    ```kotlin
-        private data class Node<T>(
-        var item: T,
-        var next: Node<T>?)
-    ```
-
-2. Test your code with the same tests as the circular queue:
-
-    ```kotlin
-    fun main() {
-        val q = LinkedQueue<Int>()
-        q.enqueue(1)
-        q.enqueue(2)
-        q.dequeue()
-        q.enqueue(3)
-        q.enqueue(4)
-        q.enqueue(5)
-
-        println(q)
-
-        q.dequeue()
-
-        println(q)
-        q.dequeue()
-        q.dequeue()
-        q.dequeue()
-
-        q.enqueue(6)
-        println(q)
-    }
-    ```
 
 
 ## Extra

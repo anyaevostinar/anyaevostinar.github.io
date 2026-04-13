@@ -36,6 +36,10 @@ fun main() {
     println("Non-cyclic list ($list)\n has cycle: ${list.findCycle() != null}") // should be false
     println(list)
 
+    val list_even = CyclicLinkedList<Int>(mutableListOf(1, 2, 3, 4))
+    println("Non-cyclic even list ($list_even)\n has cycle: ${list_even.findCycle() != null}") // should be false
+    println(list_even)
+
     // create a cycle for testing
     list.getNode(2)?.next = list.getNode(0)
     println("Cyclic list ($list) \n has cycle: ${list.findCycle() != null}") // should be true
