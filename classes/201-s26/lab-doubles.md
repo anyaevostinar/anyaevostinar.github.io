@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Doubly Linked List Lab
-permalink: /classes/201-f25/doubly-ll-lab
+permalink: /classes/201-s26/doubly-ll-lab
 ---
 
 ## Set up
 Follow the steps from the [Scavenger Hunt](kotlin-lab) to mount the COURSES drive. Make a folder `DLLLab` in your STUWORK/username folder and open it in VSCode for today's labwork.
 
 
-In this lab, you will add functionality to a doubly linked list.
+In this lab, you will add functionality to a doubly linked list to make an efficient double-ended queue.
 
 ## Goals
 
@@ -61,7 +61,7 @@ class DoublyLinkedList<T> {
             oldHead.prev = newNode
         }
 
-        // Now see if this new node is also the tail (ponder: it what
+        // Now see if this new node is also the tail (ponder: in what
         // situation is this true?)
         if (tail == null) {
             tail = newNode
@@ -76,12 +76,6 @@ class DoublyLinkedList<T> {
 ## Part A
 
 To get started, let's make some sense of what we've got and try our hand at a small list-walking function.
-
-#### Time complexity
-
-What is the time complexity of `insertAtBeginning`, assuming there are already `n` elements in the list?
-
-What should be the time complexity of a method `insertAtEnd`, assuming there are already `n` elements in the list, given that we have an instance variable `tail`?  What if we didn't?
 
 #### Warm up
 
@@ -196,7 +190,8 @@ Here is an addition to main that you can use to test this function:
     println("List after swapping node at position=4 with its next and adding to tail: $mylist")
 ```
 
-Submit your completed `DoublyLinkedList.kt` to Moodle for an engagement credit.
+## Submission
+Submit your completed `DoublyLinkedList.kt` to Moodle for an extra engagement credit. Remember that labs are open until the end of the term, so don't stress about completing it, but it is good practice.
 
 ## Deque
 Now that you have a doubly-linked list, try implementing a deque with your doubly-linked list as the underlying data store.

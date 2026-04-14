@@ -28,7 +28,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/17 | HW2;[Lists Prep](linkedlist-prep) |	[Slides](https://docs.google.com/presentation/d/13hSiE2sOCVwTJJQP8pyKdXh8DXPaXWZBI_DYMxQDBpU/edit?usp=sharing), [Linked List Lab](linked-list-lab)	| [HW3: Solving Mazes](hw3)|
 | Week 4 | | Queues and Hashing| |
 | 4/20 |[Queues Prep](queues-prep) | [Slides](https://docs.google.com/presentation/d/1Ruk36-8PuPMjOWHC988nbO4WiKesp8TnkbXMaK2qYv4/edit?usp=sharing), [Queues Lab](queues-lab) |  |
-| 4/22 |  [Doubles Prep](doubles-prep) |	[Slides](), [Doubly-Linked List Lab](doubly-ll-lab)	| |
+| 4/22 |  [Doubles Prep](doubles-prep) |	[Slides](https://docs.google.com/presentation/d/1pookJDIrQ5EdfUPHd-GFn_4yurcVUG25TXYMLqsDLy0/edit?usp=sharing), [Doubly-Linked List Lab](doubly-ll-lab)	| |
 | 4/24 |[HW3](hw3), Study! |[Slides](), [**Exam 2**](exam2) | [HW4: Deck of Card Operations](hw4)|
 | Week 5 |  | Hashing | |
 | 4/27 |	[Sets and Hashing Prep](hashing-prep)  	| [Slides](), [Hashing Lab](hashing-lab)	|  |
