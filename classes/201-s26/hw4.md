@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Homework 4 - Deck of Cards
-permalink: /classes/201-f25/hw4
+permalink: /classes/201-s26/hw4
 ---
 
-**Due: Friday Oct 17th at 10:00pm**
+**Due: Friday May 1st at 10:00pm**
 
-Starter code: [cards-project.zip](cards-project.zip)  
-Upload solutions via Gradescope as: `Deck.kt`
+* Starter code: [DeckOfCards.zip](DeckOfCards.zip)  
+* Upload solutions via Gradescope as: `Deck.kt`
 
 ## Goals
 
@@ -24,6 +24,16 @@ You may also discuss the assignment at a high level with other students.  You ca
 You should list any student or course staff with whom you discussed the assignment (you don't have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in comments at the top of your `Deck.kt` file.  You also need to include your name.
 
 _If you work alone, you should say so instead._
+
+## AI policy
+
+Again, **regardless of whether you use any genAI, you need to complete the** `AI Log` at the end of the assignment to satisfy the advanced requirement. [Here is the homework helper bot for homework 4](https://gemini.google.com/gem/1Wy7KoqfyP3aQ0ZxvoOA3uTkQKS4hYSEl?usp=sharing). 
+
+If you choose not to use genAI at all, you must state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
+
+If you do choose to use genAI, you should log it in the `AI Log` comment at the end of the assignment in the same format as previous assignments.
+
+This log requirement is both to give me an idea of whether the chatbots are providing correct information and if they are actually being helpful. If you manage to get them to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further. Remember that you should also include any external genAI resources that you use, even the AI summary shown in search results.
 
 ## Note on style:
 
@@ -44,19 +54,20 @@ The following style guidelines are expected moving forward:
 
 The **core** requirements for your submission are:
 
-* complete Parts A and C
+* complete Part A
     * A: * `getString(n: Int): String`, `getStringBackwards(n: Int): String`, `countDown(): Int`
-    * C: Reflection
 * satisfy the code style expectations #0-#4 above
-* include a reflection in comments at the bottom of your `Deck.kt` file
+* include your name and collaboration statement at the top of your `Deck.kt` file
 
 The **advanced** requirements for your submission are:
 
 * satisfy core requirements
-* complete all of Parts A-C
+* complete both of Parts A and B
     * B: `swapJokerA()`, `swapJokerB()`, `tripleCut()`
 * satisfy all code style expectations listed above
-* include your name and collaboration statement at the top of your `Deck.kt` file
+* include a reflection in comments at the bottom of your `Deck.kt` file
+* include an AI log in the comments at the bottom of your `Deck.kt` file
+
 
 ## Assignment overview
 
@@ -70,17 +81,17 @@ To be clear, we're not going to implement the (super cool!) encryption algorithm
 
 Find your `cs201` folder for assignments.  Maybe it contains an `assignments` folder inside of it.
 
-Download [this `cards-project.zip` file](/classes/201-f25/cards-project.zip) to get the starter code.  Put it in the `cs201` folder you have and unzip it.  This should give you a folder named `cards-project`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
+Download [this `DeckOfCards.zip` file](/classes/201-f25/DeckOfCards.zip) to get the starter code.  Put it in the `cs201` folder you have and unzip it.  This should give you a folder named `DeckOfCards`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
 
 Now open your folder in VS Code.  There are multiple ways to do this, so pick one:
-* Open VS Code, then select `File` -> `Open Folder` and navigate to the `cards-project` folder you just made.
+* Open VS Code, then select `File` -> `Open Folder` and navigate to the `DeckOfCards` folder you just made.
 * Open VS Code, then drag and drop the folder (e.g., from Finder in MacOS or File Explorer in Windows) into VS Code to open it.
 
 Either way, if you are asked, click that you trust the authors.  If you have any issues getting started, ask the lab assistants for help -- any of them should be able to help you get started, even if they aren't super familiar with Kotlin.
 
 ## Building your code with Maven
 
-Like Assignments #1 and #3, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder `cards-project` for these commands to work):
+Like Assignments #1 and #3, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder `DeckOfCards` for these commands to work):
 
 * `mvn test` runs the tests that we provided (see below)
 
@@ -102,7 +113,7 @@ In this assignment, you are provided with a class `Deck` that maintains the list
 
 It turns out the deck-rearranging algorithm described above is more straightforward if your deck can be thought of as one big circle of cards that you can flip through in either direction.  The actual ordering of the numbers is provided as a `String`, which contains the numbers in some given order, on a single line, separated by spaces.
 
-The constructor for the deck, **which is provided for you**, looks like this:
+The constructor for the deck, **which is provided for you**, has this *signature*:
 
 ```kotlin
 Deck(initialCardOrdering: String)
@@ -122,76 +133,76 @@ For Part A, you should complete the first three methods listed above.  They are 
 
 ### `getString(n: Int): String`
 
->This method should return a space-delimited `String` consisting of `n` numbers from your deck.  Note that `n` is an `Int` greater than or equal to 1, but it can be larger than 28.  If it is, your deck should start over from the top and keep adding to the string.
->
->Make sure to get your items efficiently: you shouldn't be doing something super-duper slow like "find the first item in the list, add it to the string, then start at the beginning and find the second item, add it to the string, then start at the beginning and find the third item, etc.".
+This method should return a space-delimited `String` consisting of `n` numbers from your deck.  Note that `n` is an `Int` greater than or equal to 1, but it can be larger than 28.  If it is, your deck should start over from the top and keep adding to the string.
+
+Make sure to get your items efficiently: you shouldn't be doing something super-duper slow like "find the first item in the list, add it to the string, then start at the beginning and find the second item, add it to the string, then start at the beginning and find the third item, etc.".
 
 ### `getStringBackwards(n: Int): String`
 
->This method works ust like `getString`, except that it starts at the last number in the deck and works backwards.  Like `getString`, `n` can be larger than 28, in which case it will wrap around.
+This method works just like `getString`, except that it starts at the last number in the deck and works backwards.  Like `getString`, `n` can be larger than 28, in which case it will wrap around.
 
 ### `countDown(): Int`
 
->This method looks at the top card's value (if the top card is a joker, assume its value is 27, even if it's actually 28).  It leaves that card on top of the deck.
->
->Given the value of the top card, it should count down the deck by that many cards, starting with the top one.  Record the value of the _**next**_ card that is in the deck, but don't remove it from the deck.
->
->If the original ordering of our cards is as follows:
->```
->1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 27 2 5 8 11 14 17 20 23 26
->^ ^
->```
->
->Then we would find a `1`, and return `4`, because that is the **next** card after the 1st card in the deck.
->
->If instead this were our ordering:
->```
->5 8 11 14 17 20 23 26 28 9 12 15 18 21 24 2 27 1 4 7 10 13 16 19 22 25 3 6
->^            ^^
->```
->
->Then it would find a `5` and return `20`.
+This method looks at the top card's value (if the top card is a joker, assume its value is 27, even if it's actually 28).  It leaves that card on top of the deck.
 
-# Part B: Reordering a deck of cards
+Given the value of the top card, it should count down the deck by that many cards, starting with the top one.  Record the value of the _**next**_ card that is in the deck, but don't remove it from the deck.
+
+If the original ordering of our cards is as follows:
+```
+1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 27 2 5 8 11 14 17 20 23 26
+^ ^
+```
+
+Then we would find a `1`, and return `4`, because that is the **next** card after the 1st card in the deck.
+
+If instead this were our ordering:
+```
+5 8 11 14 17 20 23 26 28 9 12 15 18 21 24 2 27 1 4 7 10 13 16 19 22 25 3 6
+^            ^^
+```
+
+Then it would find a `5` and return `20`.
+
+## Part B: Reordering a deck of cards
 
 For Part B, you will complete the last three methods listed above.  They are each described in more detail below.
 
 ### `swapJokerA()`
 
->This method first finds the `27`, which we'll call "Joker A".  It exchanges it with the card beneath (after) it in the deck, which moves Joker A down the deck by one position.
->
->For example, suppose that the original ordering of our cards is as given below:
->```
->1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 27 2 5 8 11 14 17 20 23 26
->```
->
->Then `swapJokerA()` would swap the node holding `27` with the node following it.  In this case, that means the `27` and `2` should be swapped:
->```
->1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 2 27 5 8 11 14 17 20 23 26
->                                                ^^^^
->```
+This method first finds the `27`, which we'll call "Joker A".  It exchanges it with the card beneath (after) it in the deck, which moves Joker A down the deck by one position.
+
+For example, suppose that the original ordering of our cards is as given below:
+```
+1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 27 2 5 8 11 14 17 20 23 26
+```
+
+Then `swapJokerA()` would swap the node holding `27` with the node following it.  In this case, that means the `27` and `2` should be swapped:
+```
+1 4 7 10 13 16 19 22 25 28 3 6 9 12 15 18 21 24 2 27 5 8 11 14 17 20 23 26
+                                                ^^^^
+```
 
 ### `swapJokerB()`
 
->This method is similar to `swapJokerB()`, with a few key differences.  First, it finds the `28`, which we'll call "Joker B".  It then moves it two cards down by performing two exchanges.
->
->For example, if we started with the deck above after doing `swapJokerA()`, we would then move `28` two places down the list.  It ends up between the `6` and `9`:
->```
->1 4 7 10 13 16 19 22 25 3 6 28 9 12 15 18 21 24 2 27 5 8 11 14 17 20 23 26
->                          ^^^^^^
->```
+This method is similar to `swapJokerB()`, with a few key differences.  First, it finds the `28`, which we'll call "Joker B".  It then moves it two cards down by performing two exchanges.
+
+For example, if we started with the deck above after doing `swapJokerA()`, we would then move `28` two places down the list.  It ends up between the `6` and `9`:
+```
+1 4 7 10 13 16 19 22 25 3 6 28 9 12 15 18 21 24 2 27 5 8 11 14 17 20 23 26
+                          ^^^^^^
+```
 
 ### `tripleCut()`
 
->This final method swaps all of the cards above the first joker (whichever is closest to the top of the deck) with the cards below the second joker.
->
->For example, if we started with the above deck after `swapJokerB()`, everything above the first joker (`28` in this case) goes to the bottom ("back") of the deck, and everything below the second joker (`27`) goes to the top ("front"):
->```
->5 8 11 14 17 20 23 26 28 9 12 15 18 21 24 2 27 1 4 7 10 13 16 19 22 25 3 6
->^^^^^^^^^^^^^^^^^^^^^                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
->```
+This final method swaps all of the cards above the first joker (whichever is closest to the top of the deck) with the cards below the second joker.
 
-# Part C: Reflection
+For example, if we started with the above deck after `swapJokerB()`, everything above the first joker (`28` in this case) goes to the bottom ("back") of the deck, and everything below the second joker (`27`) goes to the top ("front"):
+```
+5 8 11 14 17 20 23 26 28 9 12 15 18 21 24 2 27 1 4 7 10 13 16 19 22 25 3 6
+^^^^^^^^^^^^^^^^^^^^^                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+```
+
+## Required Reflection
 
 Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?
 
@@ -219,9 +230,9 @@ Here are some examples:
 // I spent 3 hours on this assignment.
 ```
 
-# Hints and suggestions
+## Hints and suggestions
 
-* If you get errors related to "null" or "null safety", you may be missing `!!`.  For example, if `node` may possibly be `null`, you may need `node!!.null` if *you* know it cannot be but the *compiler* doesn't seem to.
+* If you get errors related to "null" or "null safety", you may be missing `!!`.  For example, if `node` may possibly be `null`, you may need `node!!.null` if *you* know it cannot be but the *compiler* doesn't seem to. You can also get around this by saving the value to a local variable and then checking that it isn't null.
 
 * Try to complete `getString` and `getStringBackwards` early, to see if you're having any issues walking the linked list in either direction.
 

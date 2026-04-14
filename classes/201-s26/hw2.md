@@ -31,7 +31,7 @@ Generative AI is all around you whenever you are using technology lately. As dis
 
 If you choose not to use genAI at all, you may state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
 
-If you do choose to use genAI, you should log in in the `AI Log` comment at the end of the assignment in the following format:
+If you do choose to use genAI, you should log it in the `AI Log` comment at the end of the assignment in the following format:
 * Date: Summary of use and assessment of the bot's usefulness
 
 For example, a hypothetical log could be:
