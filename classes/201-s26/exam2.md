@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exam 1 Objectives
+title: Exam 2 Objectives
 permalink: /classes/201-s26/exam2
 ---
 
