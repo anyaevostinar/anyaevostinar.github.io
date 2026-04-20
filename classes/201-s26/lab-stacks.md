@@ -38,6 +38,7 @@ Deep under the hood of Kotlin, `MutableList`s are actually built on the `array` 
 1. Write a class `ArrayStack` that implements the `StackADT` interface using an `Array<Int?>` as its underlying data storage. Note that you can define your class to work only with `Int`s like so:
 ```kotlin
 class ArrayStack : StackADT<Int> {
+    val data: Array<Int?> = arrayOfNulls<Int>(10)
 
     //Your code here
 }

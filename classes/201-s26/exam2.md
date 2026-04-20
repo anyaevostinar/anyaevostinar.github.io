@@ -15,13 +15,8 @@ New:
 * LD4-AD: Use the appropriate linear data structure to solve a problem in very clear pseudocode
 
 Old:
-* BB1: Define variables for basic types
-* BB2: Write if-else statements
-* BB3: Write a basic indefinite and definite loop
-* BB4: Write a specified function 
 * BB5: Instantiate and use an object
 * BB7: Define the three laws of recursion
-* BB8-AD: Order mixes of polynomial, logarithmic, and exponential complexity classes
 * BB9-AD: Write a recursive function in very clear pseudocode
 
 

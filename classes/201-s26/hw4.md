@@ -55,7 +55,7 @@ The following style guidelines are expected moving forward:
 The **core** requirements for your submission are:
 
 * complete Part A
-    * A: * `getString(n: Int): String`, `getStringBackwards(n: Int): String`, `countDown(): Int`
+    * A: `getString(n: Int): String`, `getStringBackwards(n: Int): String`, `countDown(): Int`
 * satisfy the code style expectations #0-#4 above
 * include your name and collaboration statement at the top of your `Deck.kt` file
 
