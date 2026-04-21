@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Trees and Traversals Preparation
-permalink: /classes/201-f25/tree-prep
+permalink: /classes/201-s26/tree-prep
 ---
 
 ## Overview
@@ -23,7 +23,7 @@ You should read the following:
 * [7.3 Vocabulary](https://runestone.academy/ns/books/published/kotlinds/trees_vocabulary-and-definitions.html?mode=browsing)
 * [7.4 Implementation](https://runestone.academy/ns/books/published/kotlinds/trees_implementation.html?mode=browsing)
 * [7.5 Nodes and References](https://runestone.academy/ns/books/published/kotlinds/trees_nodes-and-references.html?mode=browsing)
-* [6.8 Tree Traversals](https://runestone.academy/ns/books/published/pswadsup/trees_tree-traversals.html?mode=browsing)
+* [7.7 Tree Traversals](https://runestone.academy/ns/books/published/kotlinds/trees_tree-traversals.html?mode=browsing) - note this section briefly references section 7.6, you can read [7.6](https://runestone.academy/ns/books/published/kotlinds/trees_parse-tree.html?mode=browsing) if you want, but it isn't required
 
 ## Checks
 Submit answers to the following on Moodle.
