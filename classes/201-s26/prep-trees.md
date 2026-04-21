@@ -19,9 +19,10 @@ After class, you should be able to:
 
 ## Resources
 You should read the following:
-* [6.2 Examples of Trees](https://runestone.academy/ns/books/published/pswadsup/trees_examples-of-trees.html?mode=browsing)
-* [6.3 Vocabulary](https://runestone.academy/ns/books/published/pswadsup/trees_vocabulary-and-definitions.html?mode=browsing)
-* [6.6 Nodes and References](https://runestone.academy/ns/books/published/pswadsup/trees_nodes-and-references.html?mode=browsing)
+* [7.2 Examples of Trees](https://runestone.academy/ns/books/published/kotlinds/trees_examples-of-trees.html?mode=browsing)
+* [7.3 Vocabulary](https://runestone.academy/ns/books/published/kotlinds/trees_vocabulary-and-definitions.html?mode=browsing)
+* [7.4 Implementation](https://runestone.academy/ns/books/published/kotlinds/trees_implementation.html?mode=browsing)
+* [7.5 Nodes and References](https://runestone.academy/ns/books/published/kotlinds/trees_nodes-and-references.html?mode=browsing)
 * [6.8 Tree Traversals](https://runestone.academy/ns/books/published/pswadsup/trees_tree-traversals.html?mode=browsing)
 
 ## Checks
