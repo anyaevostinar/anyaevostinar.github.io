@@ -260,7 +260,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-**Note: You should pass just the name of the maze file, such as `maze.txt` to `SolveableMaze`, not the longer path! Once you make this change, executing with `mvn` won't work anymore, but that's okay.**
+**Note: You should pass just the name of the maze file, such as `maze.txt` to `SolveableMaze`, not the longer path that includes `src/main/resources/`! Once you make this change, executing with `mvn` won't work anymore, but that's okay.**
 
 To test your command line argument, first compile your code with `mvn compile`, then you should be able to test this part as follows:
 
