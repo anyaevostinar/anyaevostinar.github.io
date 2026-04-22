@@ -244,7 +244,7 @@ This maze has no solution.
 The user may not actually want to see the solution (maybe they want to run it first to see the maze, then run it again to see the solution).
 
 Your code should support the following:
-* a first *command-line argument* for which maze to solve -- this is the name of a file (default: `maze1.txt`)
+* a first *command-line argument* for which maze to solve -- this is the name of a file (default: `maze.txt`)
 * a second command-line argument for whether to display the solved path -- this is given as `--solve` (default: do not show the solution)
 
 
