@@ -81,7 +81,7 @@ To be clear, we're not going to implement the (super cool!) encryption algorithm
 
 Find your `cs201` folder for assignments.  Maybe it contains an `assignments` folder inside of it.
 
-Download [this `DeckOfCards.zip` file](/classes/201-f25/DeckOfCards.zip) to get the starter code.  Put it in the `cs201` folder you have and unzip it.  This should give you a folder named `DeckOfCards`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
+Download [this `DeckOfCards.zip` file](/classes/201-s26/DeckOfCards.zip) to get the starter code.  Put it in the `cs201` folder you have and unzip it.  This should give you a folder named `DeckOfCards`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
 
 Now open your folder in VS Code.  There are multiple ways to do this, so pick one:
 * Open VS Code, then select `File` -> `Open Folder` and navigate to the `DeckOfCards` folder you just made.
