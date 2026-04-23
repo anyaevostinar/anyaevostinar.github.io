@@ -24,7 +24,7 @@ Your new boss has been noticing some serious slow downs as they have been gettin
 ## Exercise 1: `hashCode`
 You'll want to start in `Package.kt` to make this custom class hashable at all. 
 
-1. Remember that to make a hashcode for a custom class, you'll need to decide what properties of the instances should be part of the hashcode. Take a look through the class to see what all properties it has and determine which ones you'll use for your hashcode function.
+1. Remember that to make a hashcode for a custom class, you'll need to decide what properties of the instances should be part of the hashcode. Take a look through the class to see what all properties it has and determine which ones you'll use for your hashcode function. It's a good idea to use the `.hashCode` of those properties as part of your custom hash code.
 
 2. Once you've decided, add a hashcode function to the class like so:
 ```kotlin
