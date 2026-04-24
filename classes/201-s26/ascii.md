@@ -1,10 +1,13 @@
-
 ---
 layout: page
 title: ASCII Chart
 permalink: /classes/201-s26/ascii
 ---
+
+
 This is an abbreviated chart of ASCII values for the 26 standard American lower case characters. For a complete list see [ascii-code.com](https://www.ascii-code.com/) or type `man ascii` in your Terminal.
+
+
 | Character	| ASCII Decimal Value |
 | ------- | --------------- | 
  |   97 | a  |
