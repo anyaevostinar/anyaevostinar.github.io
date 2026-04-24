@@ -32,8 +32,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 4/24 |[HW3](hw3), Study! |[Slides](https://docs.google.com/presentation/d/1uP9yaBNdF4uMYp9zj21gui_0FmJOV8iOlCS2e0LFUsA/edit?usp=sharing), [**Exam 2**](exam2) | [HW4: Deck of Card Operations](hw4)|
 | Week 5 |  | Hashing | |
 | 4/27 |	[Sets and Hashing Prep](hashing-prep)  	| [Slides](https://docs.google.com/presentation/d/1S8eGPBg1E-c443z7QhIYbJ5mCltOJs3U5AX9DxTXG4A/edit?usp=sharing), [Hashing Lab](hashing-lab)	|  |
-| 4/29 |   [Rehashing Prep](rehashing-prep) |	[Slides]()	|   |
-| 5/1	| [HW4](hw4), [Trees and Traversals Prep](tree-prep)  |	[Slides](), [Tree Traversals Lab](tree-traversal-lab)	| [HW5: Cuckoo Hashing](hw5)|
+| 4/29 |   [Rehashing Prep](rehashing-prep) |	[Slides](https://docs.google.com/presentation/d/1mmTlpIlU78HsjE07XzNAMP4RA6bBoH2ZU4D-9Q1GFY0/edit?usp=sharing)	|   |
+| 5/1	| [HW4](hw4), [Trees and Traversals Prep](tree-prep)  |	[Slides](https://docs.google.com/presentation/d/1TWrtJxbzmPnOItT_zO957va_pk3VAciAO0ajLTW3Hho/edit?usp=sharing), [Tree Traversals Lab](tree-traversal-lab)	| [HW5: Cuckoo Hashing](hw5)|
 | Week 6 | | Trees| |
 | 5/4 |  | Midterm break! | |
 | 5/6 |  [Prefix Trees Prep](prefix-tree-prep)   |[Slides](), [Prefix Tree Lab](prefix-trees-lab)	|  |
