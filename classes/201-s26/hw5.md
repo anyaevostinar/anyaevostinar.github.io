@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Homework 5 - Cuckoo Hashing
-permalink: /classes/201-f25/hw5
+permalink: /classes/201-s26/hw5
 ---
 
-**Due: Friday, Oct 24th, at 10:00pm**
+**Due: Friday, May 8th, at 10:00pm**
 
-* Starter code: [cuckoo_hashing.zip](hw5_starter.zip)  
+* Starter code: [CuckooHashing.zip](CuckooHashing.zip)  
 * Upload solutions via Gradescope as: `CuckooHashMap.kt`
 
 ## Goals
@@ -24,6 +24,16 @@ You may also discuss the assignment at a high level with other students.  You ca
 You should list any student or course staff with whom you discussed the assignment (you don't have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in comments at the top of your `CuckooHashMap.kt` file.  You also need to include your name.
 
 _If you work alone, you should say so instead._
+
+## AI policy
+
+Again, **regardless of whether you use any genAI, you need to complete the** `AI Log` at the end of the assignment to satisfy the advanced requirement. [Here is the homework helper bot for homework 5](https://gemini.google.com/gem/1H676mTSzgmbfQ1LdhlO4moWh8niFiSZ4?usp=sharing). 
+
+If you choose not to use genAI at all, you must state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
+
+If you do choose to use genAI, you should log it in the `AI Log` comment at the end of the assignment in the same format as previous assignments.
+
+This log requirement is both to give me an idea of whether the chatbots are providing correct information and if they are actually being helpful. If you manage to get them to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further. Remember that you should also include any external genAI resources that you use, even the AI summary shown in search results.
 
 ## Note on style:
 
@@ -44,22 +54,24 @@ The following style guidelines are expected moving forward:
 
 The **core** requirements for your submission are:
 
-* complete Parts A, B, and E
+* complete Parts A and B
     * Basic Hashing
     * Basic Cuckoo Hashing
-    * Reflection
 * not make use of any built-in hashing-related libraries
 * satisfy the code style expectations #0-#4 above
-* include a reflection in comments at the bottom of your `CuckooHashMap.kt` file
+* include your name and collaboration statement at the top of your `CuckooHashMap.kt` file
+
 
 The **advanced** requirements for your submission are:
 
 * satisfy the core requirements
-* complete all of Parts A-E
+* complete all of Parts A-D
     * Code Refactoring
     * Complete Cuckoo Hashing
 * satisfy all code style expectations listed above (#0-#9)
-* include your name and collaboration statement at the top of your `CuckooHashMap.kt` file
+* include a reflection in comments at the bottom of your `CuckooHashMap.kt` file
+* include an AI log in the comments at the bottom of your `CuckooHashMap.kt` file
+
 
 ## Assignment overview
 
@@ -73,7 +85,7 @@ Cuckoo hashing is named after Cuckoo birds, some of which are known for kicking 
 
 Find your `cs201` folder for assignments.  Maybe it contains an `assignments` folder inside of it.
 
-Download [this `cuckoo_hashing.zip` file](hw5_starter.zip) to get the starter code.  Put it in the `cs201` folder you just created and unzip it.  Rename the folder `cuckoo_hashing`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
+Download [this `CuckooHashing.zip` file](CuckooHashing.zip) to get the starter code.  Put it in the `cs201` folder you just created and unzip it.  Rename the folder `cuckoo_hashing`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
 
 Now open your folder in VS Code.  There are multiple ways to do this, so pick one:
 * Open VS Code, then select `File` -> `Open Folder` and navigate to the `cuckoo_hashing` folder you just made.
@@ -217,7 +229,7 @@ For example, you may add a function that adds or updates the key/value pair in t
 
 As a final step, you should complete the entire implementation for insertion using the Cuckoo hashing algorithm (see [above](#insertion)).
 
-## Part E: Reflection
+## Required Reflection
 
 Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?
 

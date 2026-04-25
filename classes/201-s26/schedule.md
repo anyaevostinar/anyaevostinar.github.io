@@ -37,7 +37,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 6 | | Trees| |
 | 5/4 |  | Midterm break! | |
 | 5/6 |  [Prefix Trees Prep](prefix-tree-prep)   |[Slides](), [Prefix Tree Lab](prefix-trees-lab)	|  |
-| 5/8 | HW5;  Study! | [Slides](), [**Exam 3**](exam3)| [HW6: Word Counter](hw6)| 
+| 5/8 | [HW5](hw5);  Study! | [Slides](), [**Exam 3**](exam3)| [HW6: Word Counter](hw6)| 
 | Week 7 | | Search Trees and Graphs | |
 | 5/11 | [Binary Search Trees Prep](bst-prep)  |	[Slides](), [BST Lab](bst-lab) |  |
 | 5/13 | [2-3 Trees Prep](2-3-prep)  | [Slides](), [2-3 Tree Lab](two-three-tree-lab) | |
