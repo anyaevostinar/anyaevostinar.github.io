@@ -33,7 +33,7 @@ override fun hashCode(): Int {
 }
 ```
 
-3. It's important at this point to make sure that your new code works as you expect. Before jumping into writing test code, however, come up with as many types of scenarios that you can think of and what should happen, similar to the existing test code for the starter code. Here are some questions to get you starter:
+3. It's important at this point to make sure that your new code works as you expect. Before jumping into writing test code, however, come up with as many types of scenarios that you can think of and what should happen, similar to the existing test code for the starter code. Here are some questions to get you started:
     * When should two `Package` objects have the same hashcode?
     * When should two objects have different hashcodes? (You can't guarantee this in general, but you can come up with specific ones that will be different.)
     * When do you anticipate a collision of unequal objects? Is there anything reasonable that you can do to avoid it?
@@ -67,8 +67,8 @@ kotlinc ShippingTracker.kt Package.kt LinkedUL.kt
 Let's start with `add` (since it will be hard to test anything else if there aren't packages in the tracker!). 
 
 Think through answers to the following (and write them as comments) before diving into the code:
-    * How will you know if there is not already an item at that location in the hash table? What should your code do in that scenario?
-    * If there is already an item at that location, how will you know if this is a collision of two different packages or the same package that needs to be updated?
+* How will you know if there is not already an item at that location in the hash table? What should your code do in that scenario?
+* If there is already an item at that location, how will you know if this is a collision of two different packages or the same package that needs to be updated?
 
 The provided `LinkedUnorderedList` has an additional function `getByValue` that you will likely find useful. I recommend you start with when there isn't a collision and make sure that works before handling collisions.
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Prefix Trees Preparation
-permalink: /classes/201-f25/prefix-tree-prep
+permalink: /classes/201-s26/prefix-tree-prep
 ---
 
 ## Overview
