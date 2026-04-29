@@ -13,9 +13,9 @@ New:
 * CD1: Identify in-order, pre-order and/or post-order tree traversal
 
 Retake:
-* LD1: Demonstrate the effects of a sequence of operations on a linear data structure (linked lists, arrays, stacks, queues) 
+* LD1: Demonstrate the effects of a sequence of operations on a linear data structure (linked lists, arrays, stacks, queues, hash tables) 
 * LD3-AD: Demonstrate how you get the Big-O of a specified linear data structure operation
-* LD4-AD: Use the appropriate linear data structure to solve a problem in very clear pseudocode
+* LD4-AD: Use the appropriate linear data structure to solve a problem in very clear pseudocode (could require linked lists, arrays, stacks, queues, or hash tables) 
 * BB5: Instantiate and use an object
 * BB9-AD: Write a recursive function in very clear pseudocode
 

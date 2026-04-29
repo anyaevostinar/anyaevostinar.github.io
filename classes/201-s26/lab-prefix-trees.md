@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Prefix Trees Lab
-permalink: /classes/201-f25/prefix-trees-lab
+permalink: /classes/201-s26/prefix-trees-lab
 published: true
 ---
 
@@ -31,12 +31,12 @@ You will want to have a structure similar to how you worked with a linked list, 
 Remember to uncomment the `insert` loop in `main` and make sure that your code runs. Note that you can't really see if it worked yet though.
 
 ## Exercise 3
-Now implement `search` iteratively. You'll want a very similar structure to `insert`.
-
-Test out your code so far and make sure that everything is working as expected!
+Think about, but don't worry about implementing yet: how would you instead do this implementation recursively? What would you need to change?
 
 ## Exercise 4
-Think about, but don't worry about implementing yet: how would you instead do this implementation recursively? What would you need to change?
+Now implement `search` *iteratively*. You'll want a very similar structure to `insert`.
+
+Test out your code so far and make sure that everything is working as expected!
 
 Upload your completed lab to Moodle for an extra engagement credit.
 
@@ -51,4 +51,5 @@ Time for `delete`! As we discussed, delete has several cases even in just the no
 
 As you complete each case, consult your drawing and think about which word will test your case. You might need to add more words or make up some pretend words to do your testing.
 
+It'd be nice if there was a way to traverse the tree and print it out, though getting it to display nicely is difficult. Think about how you'd like it to print out and how you could implement that.
 

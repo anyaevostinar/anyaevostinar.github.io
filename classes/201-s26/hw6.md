@@ -1,20 +1,21 @@
 ---
 layout: page
 title: Homework 6 - Word Counter
-permalink: /classes/201-f25/hw6
+permalink: /classes/201-s26/hw6
 ---
 
-**Due: Friday, Oct 31st, at 10:00pm** (Boo!)
+**Due: Friday, May 15th, at 10:00pm** 
 
-* Starter code: [word_counter.zip](word_counter.zip)  
+* Starter code: [WordCounter.zip](WordCounter.zip)  
 * Upload solutions via Gradescope as: `WordCountTree.kt`
 
 ## Goals
 
-This assignment is designed to help you with the following:
-* practice with trees
-* practice with recursion
-* practice extending basic data structures for more complex functionality
+This assignment is designed to help you practice the following:
+* creating trees
+* using recursion
+* working with maps
+* extending basic data structures for more complex functionality
 
 ## Collaboration policy
 
@@ -25,6 +26,16 @@ You may also discuss the assignment at a high level with other students.  You ca
 You should list any student or course staff with whom you discussed the assignment (you don't have to include prefect sessions), and the manner of discussion (high level, partner, etc.) in comments at the top of your `WordCountTree.kt` file.  You also need to include your name.
 
 _If you work alone, you should say so instead._
+
+## AI policy
+
+Again, **regardless of whether you use any genAI, you need to complete the** `AI Log` at the end of the assignment to satisfy the advanced requirement. [Here is the homework helper bot for homework 6](https://gemini.google.com/gem/1FpPQL3uB0keBodlXLlm8nd12PxLow0IQ?usp=sharing). 
+
+If you choose not to use genAI at all, you must state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
+
+If you do choose to use genAI, you should log it in the `AI Log` comment at the end of the assignment in the same format as previous assignments.
+
+This log requirement is both to give me an idea of whether the chatbots are providing correct information and if they are actually being helpful. If you manage to get them to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further. Remember that you should also include any external genAI resources that you use, even the AI summary shown in search results.
 
 ## Note on style:
 
@@ -39,28 +50,30 @@ The following style guidelines are expected moving forward:
 6. There is good use of comments to explain the "why" of your code and empty lines to break up logical chunks.
 7. The code doesn't have "magic numbers" -- these are numbers in the code by themselves, rather than stored in a variable.
 8. The code doesn't compute the right answer by doing extra work (e.g., having a computation in a loop when it could have been done only once, after the loop).
-9. Helper functions are used to reduce code duplication.
+9. Helper functions are used to reduce code duplication and readability.
 
 ## Assessment
 
 The **core requirements** for your submission are:
 
-* complete Parts A and D
+* complete Part A
     * `incrementCount`
     * `getCount`
 * makes use of the provided map in the `Node` class
 * satisfy the code style expectations #0-#4 above
-* include a reflection in comments at the bottom of your `WordCountTree.kt` file
+* include your name and collaboration statement at the top of your `WordCountTree.kt` file
 
 The **advanced requirements** for your submission are:
 
 * satisfy the core requirements
-* complete all of Parts A-D
+* complete all of Parts A-C
     * `contains`
     * `getAutocompletionMap`
 * implement all functions **recursively**, not iteratively
 * satisfy all code style expectations listed above
-* include your name and collaboration statement at the top of your `WordCountTree.kt` file
+* include a reflection in comments at the bottom of your `WordCountTree.kt` file
+* include an AI log in comments at the bottom of your `WordCountTree.kt` file
+
 
 ## Assignment overview
 
@@ -68,23 +81,23 @@ The **advanced requirements** for your submission are:
 
 Perhaps you've seen word clouds before, like the one above generated from Hound of the Baskervilles by Sir Arthur Conan Doyle.  The neat thing about word clouds is that words are displayed in a size proportional to the number of times they are used in the text on which the word cloud is based.
 
-In this assignment, you'll implement a particular type of search tree to count words in a given text, which is a critical task required to produce a word cloud.  (You won't actually get to the step of building the word cloud, but then, winter break is coming ;) .)
+In this assignment, you'll implement a particular type of search tree to count words in a given text, which is a critical task required to produce a word cloud.  (You won't actually get to the step of building the word cloud, but then, summer break is coming ;) .)
 
 ## Getting started
 
 Find your `cs201` folder for assignments.  Maybe it contains an `assignments` folder inside of it.
 
-Download [this `word_counter.zip` file](word_counter.zip) to get the starter code.  Put it in the `cs201` folder you just created and unzip it.  This should give you a folder named `word_counter`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
+Download [this `WordCounter.zip` file](WordCounter.zip) to get the starter code.  Put it in the `cs201` folder you just created and unzip it.  This should give you a folder named `WordCounter`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
 
 Now open your folder in VS Code.  There are multiple ways to do this, so pick one:
-* Open VS Code, then select `File` -> `Open Folder` and navigate to the `word_counter` folder you just made.
+* Open VS Code, then select `File` -> `Open Folder` and navigate to the `WordCounter` folder you just made.
 * Open VS Code, then drag and drop the folder (e.g., from Finder in MacOS or File Explorer in Windows) into VS Code to open it.
 
 Either way, if you are asked, click that you trust the authors.  If you have any issues getting started, ask the lab assistants for help -- any of them should be able to help you get started, even if they aren't super familiar with Kotlin.
 
 ## Building your code with Maven
 
-Like most of our assignments, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder `word_counter` for these commands to work):
+Like most of our assignments, this project structure uses Maven, so you can use the following commands (in the VS Code terminal) to execute your code (note that you must be in the top-level folder `WordCounter` for these commands to work):
 
 * `mvn test` runs the tests that we provided (see below)
 
@@ -150,7 +163,7 @@ Note: It is important that you do not use any built-in libraries or other functi
 
 ## Part B: Use recursion!
 
-You should work to make each of the four functions you'll implement for this assignment (two for Part A and two for Part C) recursive, not iterative.  It is okay for your functions to call a helper method where the recursion actually takes place (like we saw in [`BSTLab.kt`](/classes/201-f25/BSTLab.kt)), as long as there is recursion when it goes to the next level of the tree.
+You should work to make each of the four functions you'll implement for this assignment (two for Part A and two for Part C) recursive, not iterative.  It is okay for your functions to call a helper method where the recursion actually takes place, as long as there is recursion when it goes to the next level of the tree.
 
 Take some time to look through your implementations of `incrementCount` and `getCount` from Part A and make them recursive if they aren't already.
 
@@ -166,7 +179,7 @@ Once you have these two functions working, all tests should pass when you run `m
 
 Note that these two functions should also be recursive, as described in [Part B](#part-b-use-recursion).  For `getAutocompletionMap`, you might need to loop over all of the children while changing levels in the tree recursively.
 
-## Part D: Reflection
+## Required Reflection
 
 Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?
 
