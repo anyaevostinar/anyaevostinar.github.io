@@ -39,7 +39,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/6 |  [Prefix Trees Prep](prefix-tree-prep)   |[Slides](https://docs.google.com/presentation/d/1hUMOm1go22O4UHY09EzYTw2N0tw-3lWM7C-OlvMN8E0/edit?usp=sharing), [Prefix Tree Lab](prefix-trees-lab)	|  |
 | 5/8 | [HW5](hw5);  Study! | [Slides](https://docs.google.com/presentation/d/1uytP8Y66hOLkQKELiH-287OWBDr_5Arz_J2VlreO-D8/edit?usp=sharing), [**Exam 3**](exam3)| [HW6: Word Counter](hw6)| 
 | Week 7 | | Search Trees and Graphs | |
-| 5/11 | [Binary Search Trees Prep](bst-prep)  |	[Slides](), [BST Lab](bst-lab) |  |
+| 5/11 | [Binary Search Trees Prep](bst-prep)  |	[Slides](https://docs.google.com/presentation/d/1V1wxfQU8OYGz5GNVyyyWRhAXuD6Cg43feI034mA2rq4/edit?usp=sharing), [BST Lab](bst-lab) |  |
 | 5/13 | [2-3 Trees Prep](2-3-prep)  | [Slides](), [2-3 Tree Lab](two-three-tree-lab) | |
 | 5/15 |	HW6; [Graphs Prep](graphs-prep)  | [Slides](), [Graph Implementation Lab](graph-imp-lab)|   |
 | Week 8 | | Graphs and Heaps| |

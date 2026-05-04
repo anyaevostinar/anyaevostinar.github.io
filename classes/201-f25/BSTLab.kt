@@ -111,13 +111,7 @@ class BinarySearchTree {
      * return: Int, the minimum value found
      */
     private fun minValue(root: Node): Int {
-        var current = root
-        var minv = current.key
-        while (current.left != null) {
-            minv = current.left!!.key
-            current = current.left!!
-        }
-        return minv
+        return 0 //TODO
     }
 }
 
