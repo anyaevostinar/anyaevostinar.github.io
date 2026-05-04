@@ -37,7 +37,7 @@ fun main() {
     tree.root = Node(9)
     tree.root!!.left = Node(4)
     tree.root!!.right = Node(11)
-    tree.root!!.right!! = Node(12)
+    tree.root!!.right!!.right = Node(12)
     tree.root!!.left!!.left = Node(2)
     tree.root!!.left!!.right = Node(7)
 

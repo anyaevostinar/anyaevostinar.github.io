@@ -23,9 +23,9 @@ After class, you should be able to:
 
 ## Resources
 You should read the following:
-* [6.12 Binary Search Trees](https://runestone.academy/ns/books/published/pswadsup/trees_binary-search-trees.html?mode=browsing)
-* [6.13 Search Tree Operations](https://runestone.academy/ns/books/published/pswadsup/trees_search-tree-operations.html?mode=browsing)
-* [6.14 Search Tree Implementation](https://runestone.academy/ns/books/published/pswadsup/trees_search-tree-implementation.html?mode=browsing)
+* [8.2 Binary Search Trees](https://runestone.academy/ns/books/published/kotlinds/trees_binary-search-trees.html?mode=browsing)
+* [8.3 Search Tree Operations](https://runestone.academy/ns/books/published/kotlinds/Bst_search-tree-operations.html?mode=browsing)
+* [8.4 Search Tree Implementation](https://runestone.academy/ns/books/published/kotlinds/trees_search-tree-implementation.html?mode=browsing)
 * [6.15 Search Tree Analysis](https://runestone.academy/ns/books/published/pswadsup/trees_search-tree-analysis.html?mode=browsing)
 
 ## Checks
@@ -40,6 +40,8 @@ Submit answers to the following on Moodle.  Drawing out the trees will be tediou
 ![A binary search tree](/classes/201-f25/bst_check2.png)
 
 3. What will the same BST look like after trying to delete 49?
+
+4. Any typos? Feel free to submit typos even if the check doesn't ask!
 
 
 
