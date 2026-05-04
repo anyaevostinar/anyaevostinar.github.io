@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Binary Search Tree Preparation
-permalink: /classes/201-f25/bst-prep
+permalink: /classes/201-s26/bst-prep
 ---
 
 ## Overview
