@@ -31,7 +31,7 @@ Submit answers to the following to Moodle.
     Draw the tree after adding each of the following. Your subsequent trees should include the previous additions, so you should draw out three trees, the first with 4 keys, the second with 5 keys, the third with 6 keys.
     * 6
     * 3
-    * 8
+    * 9
 
 2. There is a certain amount of inescapable complexity required to implement a self-balancing search tree. You've read about two (and there are many more variations). Compare and contrast the high-level ideas of how AVL trees and 2-3 trees maintain balance and what functions and properties are more complex in order to achieve that balance. Aim for 2-3 sentences.
 

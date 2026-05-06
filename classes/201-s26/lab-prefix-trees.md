@@ -11,7 +11,7 @@ To implement an iterative version of a prefix tree.
 ## Setup
 Mount the COURSES drive and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK called `PrefixTreeLab`
-* Download the [starter code](/classes/201-f25/PrefixTreeLab.kt) and put it into your lab folder
+* Download the [starter code](/classes/201-s26/PrefixTreeLab.kt) and put it into your lab folder
 * Open your `PrefixTreeLab` folder in VSCode
 
 ## Exercise 1

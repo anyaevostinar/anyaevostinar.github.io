@@ -1,92 +1,117 @@
 ---
 layout: page
 title: 2-3 Tree Lab
-permalink: /classes/201-f25/two-three-tree-lab
+permalink: /classes/201-s26/two-three-tree-lab
 published: true
 ---
 
 ## Goals
-To better understand 2-3 Trees by implementing the insert method.
+To better understand 2-3 Trees by implementing the insert method. There are some extensions and applications in the extra if you are curious for more!
 
 ## Setup
 [Mount the COURSES drive](scavenger-hunt) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK/username called `23TreeLab`
-* Download the [starter code `TwoThreeTreeLab.kt`](/classes/201-f25/TwoThreeTreeLab.kt) and put it into your 23TreeLab folder
+* Download the [starter code `TwoThreeTreeStarter.kt`](/classes/201-s26/TwoThreeTreeLab.kt) and [TwoThreeTreeImplement.kt](/classes/201-s26/TwoThreeTreeImplement.kt) and put them in your folder
 * Open your `23TreeLab` folder in VSCode
 
-## Exercise 1
-You will ultimately implement all of the `insert` methods. Note that there are `add` methods already implemented for you that handle the process of splitting nodes and promoting values for you. You are welcome to look at them, but don't worry about understanding them completely (managing the nodes of a 2-3 Tree is complicated!).
+You'll be filling in methods in `TwoThreeTreeImplement.kt`, but your class inherits from `TwoThreeTreeStarter`, which has some useful methods such as `printTree` as well as the `Node` class that you'll be using in your tree.
 
-a. You'll start by implementing part of `insertHelp`. The first case you should consider is inserting a key into an empty tree. Check if `subroot` is null and if so, set it to be a new `Node` that has the key as the left value (using the provided Node constructor) and return it. (You'll frequently be returning the root, it's part of managing the splitting of nodes.)
+## Exercise 1: Finding a leaf
+You'll ultimately be completing all the necessary helper methods for `insert` to work correctly (which is in the superclass).
+To start, you'll implement `findLeaf`, which finds the leaf where a new key should be inserted.
 
-b. Compile and run your code to verify that the number 15 is inserted as the left value of the root of the tree:
+1. Go down to TEST0 in `main`. This test manually creates a small tree to test `findLeaf`. Draw out this tree on your worksheet and make sure you understand which child each of these calls should return:
+    * `testTree.findLeaf(parent0, 16)`
+    * `testTree.findLeaf(parent0, -1)`
+    * `testTree.findLeaf(parent0, 100)`
 
+2. You'll need to be familiar with aspects of the `Node` class for your implementation. Look in the starter file and find answers to these questions:
+    * How are the keys and children of a `Node` stored?
+    * How can you determine if a `Node` is a leaf?
+    * How can you determine if a `Node` is a 2-node or 3-node?
+
+3. Now you're ready to implement `findLeaf`. Use the answers to these questions to guide you:
+    * When do you know that you have found the node to return?
+    * When do you know you need to move to each of the children of the current node?
+    * What changes if a node is a 3-node instead of a 2-node? How do you know which scenario you are in?
+
+4. Once you have `findLeaf` implemented, uncomment `TEST0` and compile and run your code with:
 ```bash
------------------------
- |15-null| 
-
---------------------------
+kotlinc TwoThreeTreeStarter.kt TwoThreeTreeImplement.kt
+kotlin TwoThreeTreeImplementKt
 ```
 
-c. The second case you should consider is if the root doesn't have any children (which you can check by just checking if `left` is null, make sure you understand why). In this case, you should call the `add()`, passing the root and a new `Node` with the key as the left value. The `add()` method will take care of either adding the key to open space in the root or creating a child. You should read the documentation for the `add()` method to understand how to use it.
+## Exercise 2: Split high-level
+As you know, 2-3 trees grow by splitting and promoting, so the bulk of the work of `insert` actually will occur in `split`. This implementation handles splitting by first adding the third key to the node and then calling `split`. This exercise will walk you through getting the high-level structure of `split` figured out, before you go implement specific helper functions.
 
-d. Go down to the `main` method and uncomment the next insert line and verify that your code compiles and runs correctly:
+1. Answer these questions as comments in your `split` method:
+    * Where should each of the three keys go? Two of them should go into new nodes and one should be promoted, which is which?
+    * If the root is splitting, you'll need to make a new root. How do you know if you are currently splitting the root?
+    * If you aren't currently splitting the root, you need to delete the current node from its parent. What will you need to put in its place?
+    * In the case when you aren't splitting the root, what do you ultimately need to do with that key that should be promoted?
 
-```
------------------------
- |1-15| 
+2. You will ultimately be implemented the following helper functions, make notes in your comments of where each of these should be used (there is documentation to give you more information about each if that is helpful):
+    * `makeNewRightNode`
+    * `makeNewLeftNode`
+    * `createNewRoot`
+    * `replaceChild`
 
---------------------------
-```
+3. At this point, you can either write out your first draft of `split` (even though the helper functions aren't implemented) or move on to implement the helper functions in the later exercises and come back to split. It is tricky to think about how to use a function before it exists, though it is good practice to try!
 
-You can also compare your tree to this [2-3 tree visualization](https://www.cs.usfca.edu/~galles/visualization/BTree.html). (Sorry that our print method isn't quite as fancy!)
+## Exercise 3: Making new nodes
+As you know, you'll need to make new children nodes during a split. Note that `Node` has a useful function `addChild` that handles updating the `parent` as well. 
 
-## Exercise 2
-Next you will need to handle the cases where the root has children and so you need to recursively call insert on the appropriate one.
+1. Implement the functions `makeNewRightNode` and `makeNewLeftNode` by answering the following questions:
+    * What key from `splitNode` should be going into each new node?
+    * Which children, if any, from `splitNode` should be going into each node and how do you know if there even are any?
 
-a. Start with the case of inserting to the left. You should compare the key to left value of the root and if the key is less than the left value of the root, you should call the `insertLeft` method.
+2. Uncomment `TEST1` and `TEST2`, recompile and run your code to see if your functions are working correctly.
 
-b. In the `insertLeft` method, you should first call `insertHelp` on the root's left child and the key. You should save what is returned from this call because it will be the new left child of the root.
 
-c. You should then check if the thing returned is the same object as the root's current left child (using `==`). If it is, that means that the left child didn't need to split to insert the key and you can just return the root and be done.
+## Exercise 4: Replacing a node
+Next, you'll need to replace the split node with the newly created nodes with `replaceChild`. You'll likely find the `indexOf(element)` and `removeAt(index)` list functions useful for this part. Also note that `Node`'s `addChild` takes an optional `index` second parameter if you want to add the child at a specific index location.
 
-d. If the objects are not the same, the left child had to split and the node returned contains the promoted value that will need to be added to the root. Call the `add` method on the root and pass the new left child. You can't just set the child yourself because the values of the split left child may need to be shuffled around, which `add` takes care of for you.
+1. Answer these questions to guide your implementation:
+    * Where should the new left and right nodes go in the parent's children list if the split node was a right node?
+    * What about if the split node was a left node?
+    * Could it be the case that the split node is a center node at this point?
 
-e. Look at the possible values that you could add in the `main` method and choose a line(s) to uncomment that will use your `insertLeft` method and verify that your code compiles and runs correctly.
+2. Uncomment `TEST4`, recompile, and run your code to see if your `replaceChild` is working as expected. There isn't test code for testing the `makeNew` functions combined with `replaceChild`, but there could be. Try it out if you are curious.
 
-```bash
------------------------
- |1-null| 
- |0-null|  |15-null| 
+## Exercise 5: Splitting the root
+As you know, 2-3 trees grow by splitting the root and growing up, so now it's time to implement `createNewRoot`. 
 
---------------------------
-```
+1. Answer the following questions to guide your implementation:
+    * What should be the key of the new root?
+    * What should be the children?
+    * How do you attach the new root to the tree instance?
 
-## Exerise 3
-Next you'll implement the `insertCenter` method.
+2. Uncomment `TEST5` to directly test your `createNewRoot`
 
-a. There are two cases when you should call `insertCenter`: if the root doesn't have a right value or if the key is greater than the left value but less than the right value. Add these checks and call `insertCenter` in your `insertHelp` method.
+3. At this point, you need to revisit your `split` and either complete it or check if it needs updating based on your improved understanding of the helper functions.
 
-b. `insertCenter` will be implemented the same way that `insertLeft` was implemented: Call `insertHelp` and pass the center child of the root, save what is returned, check if the center child had to split, and if so, use `add` to place the promoted center value into the correct spot.
+4. Uncomment the rest of the tests to verify your entire `split` works!
 
-c. Decide on another line(s) to uncomment in `main` to test your `insertCenter` method and verify that your code compiles and runs correctly, for example:
-
-```bash
------------------------
- |5-null| 
- |1-null|  |15-null| 
-
---------------------------
-```
-
-## Exercise 4
-
-a. Finally, if the key doesn't go anywhere else, it goes in the right side of the tree. Implement `insertRight` and call it in `insertHelp`.
-
-b. Uncomment the last lines or add additional lines to test your `insertRight` method and verify that your code compiles and runs correctly.
 
 ## Submission
 Submit your completed 2-3 Tree to Moodle for an extra engagement credit.
 
-## Extensions
-If you have extra time, try figuring out how to delete a key from the 2-3 tree.
+## Extra 0
+In reality, we usually want a search tree because we want values associated with each key. Update your code to have an `Entry` class that holds a key/value pair and replace all your `Int` keys with `Entry`. You'll need to make sure to compare the keys within your `Entry`s or make `Entry` `Comparable`.
+
+## Extra 1
+Balanced search trees are critical when you want to do fast range look ups. Implement a `getRange(min: Int, max: Int): List<Int>` method for your 2-3 tree that leverages the tree's structure to get the range without doing a full traversal.
+
+## Extra 2
+A B+ Tree is an extension of a 2-3 tree that stores all data in leaf nodes, links the leaves together as a linked list, and uses the non-leaf nodes as guideposts to enable O(log n) searching:
+
+![A B+ example](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Bplustree.png/500px-Bplustree.png)
+
+This structure is used in [many many fundamental systems](https://en.wikipedia.org/wiki/B%2B_tree#Applications), including file system organization, databases, and Internet of Things devices. Try expanding your 2-3 tree to be a B+ tree!
+
+## Extra 3
+Try figuring out how to delete a key from the 2-3 tree. Here are some hints:
+* You only want to delete from a leaf node, just like you only insert at a leaf node
+* If the key is in a non-leaf node, you need to swap with the inorder successor, just like with a BST
+* The trickiest part is deleting from a 2-node leaf. In that case, you need to either rotate keys around from a sibling 3-node or merge a sibling and parent key to get a 3-node. The merging, just like splitting, might lead to the parent being underfull, requiring recursive merging. 
+* Just like with splitting, you may recursively merge all the way up the tree and need to shrink the root, thus decreasing the height of the tree by one level.

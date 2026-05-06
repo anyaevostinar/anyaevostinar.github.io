@@ -18,7 +18,7 @@ Mount the COURSES drive and remember to save everything into STUWORK. **If you d
 Look at the code in `main` and draw out what the binary search tree will look like after all the insertion steps.
 
 ## Exercise 2
-1. Start with implementing `insertKey`. Remember to save the values from the recursive calls and set them to the appropriate variables! 
+1. Start with finishing the implementation of `insertKey` (there is some starter code and helpful comments). Remember to save the values from the recursive calls and set them to the appropriate variables! 
 
 2. Try out running your code and make sure that you get a correct in-order traversal.
 
