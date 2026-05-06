@@ -123,6 +123,7 @@ open class TwoThreeTreeStarter {
     /*
     * A method to print the 2-3 Tree in a user-friendly way, though it is
     * fragile ASCII art and so confusing for very large trees that don't fit on the screen.
+    * @citation I used Gemini when writing this method.
     */
     fun printTree() {
         if (root == null) {

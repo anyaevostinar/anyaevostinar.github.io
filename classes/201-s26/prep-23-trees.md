@@ -29,7 +29,7 @@ Submit answers to the following to Moodle.
     ![Diagram of 2-3 tree](/classes/201-f25/2-3treecheck.png)
 
     Draw the tree after adding each of the following. Your subsequent trees should include the previous additions, so you should draw out three trees, the first with 4 keys, the second with 5 keys, the third with 6 keys.
-    * 6
+    * 5
     * 3
     * 9
 
