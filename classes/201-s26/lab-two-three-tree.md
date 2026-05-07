@@ -50,13 +50,13 @@ As you know, 2-3 trees grow by splitting and promoting, so the bulk of the work 
     * If you aren't currently splitting the root, you need to delete the current node from its parent. What will you need to put in its place?
     * In the case when you aren't splitting the root, what do you ultimately need to do with that key that should be promoted?
 
-2. You will ultimately be implemented the following helper functions, make notes in your comments of where each of these should be used (there is documentation to give you more information about each if that is helpful):
+2. You will ultimately be implementing the following helper functions. Make notes in your comments of where each of these should be used (there is documentation to give you more information about each if that is helpful):
     * `makeNewRightNode`
     * `makeNewLeftNode`
     * `createNewRoot`
     * `replaceChild`
 
-3. At this point, you can either write out your first draft of `split` (even though the helper functions aren't implemented) or move on to implement the helper functions in the later exercises and come back to split. It is tricky to think about how to use a function before it exists, though it is good practice to try!
+3. At this point, you can either write out your first draft of `split` (even though the helper functions aren't implemented) or move on to implement the helper functions in the later exercises and come back to split. It is tricky to think about how to use a function before it exists, though it is good practice to try! Note that `Node` has another useful function `addKey` that handles keeping the keys in sorted order.
 
 ## Exercise 3: Making new nodes
 As you know, you'll need to make new children nodes during a split. Note that `Node` has a useful function `addChild` that handles updating the `parent` as well. 

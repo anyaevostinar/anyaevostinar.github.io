@@ -26,6 +26,11 @@ class Node(var keys: MutableList<Int> = mutableListOf(),
         }
         child.parent = this
     }
+
+    fun addKey(key: Int) {
+        keys.add(key)
+        keys.sort()
+    }
 }
 
 open class TwoThreeTreeStarter {
@@ -54,23 +59,21 @@ open class TwoThreeTreeStarter {
         return root // Placeholder
     }
 
-
     /* A helper method that handles adding the key and knowing when to split.
     * @param node The node where the key should be added
     * @param key The key to be added
     */
     fun insertKey(node: Node, key: Int) {
-        // Add the key and sort them
-        node.keys.add(key)
-        node.keys.sort()
+        // Add the key (which also sorts the keys in the node)
+        node.addKey(key)
+        var curNode: Node? = node
 
-        // If node becomes a 4-node (3 keys), we must split
-        if (node.numKeys() == 3) {
-            split(node)
+        // If node becomes a 4-node (3 keys), we must split and keep splitting up the tree until we reach a node that doesn't need to split or we create a new root
+        while (curNode != null && curNode.numKeys() == 3) {
+            split(curNode)
+            curNode = curNode.parent
         }
     }
-
-    
 
     /* A helper method that makes the right child node when splitting a 4-node. It takes in the node to be split and returns a new node with the appropriate key and children.
     * @param splitNode The node that is being split
@@ -184,5 +187,4 @@ open class TwoThreeTreeStarter {
             }
         }
     }
-
 }
