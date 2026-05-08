@@ -41,7 +41,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 7 | | Search Trees and Graphs | |
 | 5/11 | [Binary Search Trees Prep](bst-prep)  |	[Slides](https://docs.google.com/presentation/d/1V1wxfQU8OYGz5GNVyyyWRhAXuD6Cg43feI034mA2rq4/edit?usp=sharing), [BST Lab](bst-lab) |  |
 | 5/13 | [2-3 Trees Prep](2-3-prep)  | [Slides](https://docs.google.com/presentation/d/1i3vNUhk8Z2JLyv49-hIRV1ZX9G5hod1TgrH6BNs3Yvo/edit?usp=sharing), [2-3 Tree Lab](two-three-tree-lab) | |
-| 5/15 |	HW6; [Graphs Prep](graphs-prep)  | [Slides](), [Graph Implementation Lab](graph-imp-lab)|   |
+| 5/15 |	HW6; [Graphs Prep](graphs-prep)  | [Slides](https://docs.google.com/presentation/d/1fu1Ls14uEQoLE5EcpNnaNJ5SmaVo0lxFkerGhOYvNkA/edit?usp=sharing), [Graph Implementation Lab](graph-imp-lab)|   |
 | Week 8 | | Graphs and Heaps| |
 | 5/18 |  [Graph Searches Prep](bfs-dfs-prep) |	[Slides](), [Traversal Lab](traversal-lab) (Anya leaving early)		| [HW7: IMDB Graph](hw7)|
 | 5/20 |   [Heaps and PQs Prep](heaps-prep) 	| [Slides](), [Heap Lab](heaps-lab) | 	  |

@@ -1,17 +1,17 @@
 ---
 layout: page
 title: Graph Implementation Lab
-permalink: /classes/201-f25/graph-imp-lab
+permalink: /classes/201-s26/graph-imp-lab
 published: true
 ---
 
 ## Goals
-To better understand the trade-offs of the adjacency matrix and adjacency list graph implementations by implementing them yourself.
+To better understand the trade-offs of the adjacency matrix, adjacency list-as-a-map, and traditional adjacency list graph implementations by implementing them yourself.
 
 ## Setup
 [Mount the COURSES drive](scavenger-hunt) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK/username called `GraphImpLab`
-* Download the [starter code `GraphsLab.kt`](/classes/201-f25/GraphsLab.kt) and put it into your GraphImpLab folder
+* Download the [starter code `GraphsLab.kt`](/classes/201-s26/GraphsLab.kt) and put it into your GraphImpLab folder
 * Open your `GraphImpLab` folder in VSCode
 
 ## Exercise 1
@@ -45,9 +45,14 @@ adjMatrix = adjMatrix + Array<Boolean>(adjMatrix.size + 1) {false}
 
 The above adds a new row to the array and fills it with `false`. You will also need to expand each of the existing rows and should think carefully about how to do that.
 
+## Exercise 5
+As you know, an adjacency "list" as a map is a powerful middle ground between the two traditional representations. I've copied the code from the reading into [this file](/classes/201-s26/GraphsAdjMap.kt) and removed the directed and weighted support to focus on the differences with the other two implementations. Complete the `addEdge` and `removeEdge` implementations to match the previous two.  You'll likely need to [revisit](https://runestone.academy/ns/books/published/kotlinds/introduction_collections-and-wrappers.html?mode=browsing) how to work with `Map` and `Set`.
+
+
+## Submission
 Submit your completed implementations to Moodle for an extra engagement credit.
 
-## Exercise 5
+## Exercise 6
 What aspects of a problem indicate that you should use an adjacency matrix to implement the graph? What about an adjacency list? Discuss and write down your thoughts on the worksheet.
 
 ## Extra
