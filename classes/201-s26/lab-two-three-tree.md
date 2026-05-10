@@ -11,7 +11,7 @@ To better understand 2-3 Trees by implementing the insert method. There are some
 ## Setup
 [Mount the COURSES drive](scavenger-hunt) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
 * Create a new folder in your STUWORK/username called `23TreeLab`
-* Download the [starter code `TwoThreeTreeStarter.kt`](/classes/201-s26/TwoThreeTreeLab.kt) and [TwoThreeTreeImplement.kt](/classes/201-s26/TwoThreeTreeImplement.kt) and put them in your folder
+* Download the [starter code `TwoThreeTreeStarter.kt`](/classes/201-s26/TwoThreeTreeStarter.kt) and [TwoThreeTreeImplement.kt](/classes/201-s26/TwoThreeTreeImplement.kt) and put them in your folder
 * Open your `23TreeLab` folder in VSCode
 
 You'll be filling in methods in `TwoThreeTreeImplement.kt`, but your class inherits from `TwoThreeTreeStarter`, which has some useful methods such as `printTree` as well as the `Node` class that you'll be using in your tree.
@@ -111,7 +111,7 @@ This structure is used in [many many fundamental systems](https://en.wikipedia.o
 
 ## Extra 3
 Try figuring out how to delete a key from the 2-3 tree. Here are some hints:
-* You only want to delete from a leaf node, just like you only insert at a leaf node
-* If the key is in a non-leaf node, you need to swap with the inorder successor, just like with a BST
-* The trickiest part is deleting from a 2-node leaf. In that case, you need to either rotate keys around from a sibling 3-node or merge a sibling and parent key to get a 3-node. The merging, just like splitting, might lead to the parent being underfull, requiring recursive merging. 
-* Just like with splitting, you may recursively merge all the way up the tree and need to shrink the root, thus decreasing the height of the tree by one level.
+* You only want to delete from a leaf node, just like you only insert at a leaf node.
+* If the key is in a non-leaf node, you need to swap with the inorder successor, just like with a BST.
+* The trickiest part is deleting from a 2-node leaf. In that case, you need to either rotate keys around from a sibling 3-node or merge a sibling and parent key to get a 3-node. The merging, just like splitting, might lead to the parent being underfull, requiring repeated merging. 
+* Just like with splitting, you may repeatedly merge all the way up the tree and need to shrink the root, thus decreasing the height of the tree by one level.
