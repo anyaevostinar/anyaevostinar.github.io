@@ -1,7 +1,7 @@
 ---
 layout: page
 title: BFS and DFS Preparation
-permalink: /classes/201-f25/bfs-dfs-prep
+permalink: /classes/201-s26/bfs-dfs-prep
 ---
 
 ## Overview
@@ -19,11 +19,11 @@ After class, you should be able to:
 
 ## Reading
 You should read the following
-* [7.7 The Word Ladder Problem](https://runestone.academy/ns/books/published/pswadsup/graphs_the-word-ladder-problem.html?mode=browsing)
-* [7.9 Breadth-First Search](https://runestone.academy/ns/books/published/pswadsup/graphs_implementing-breadth-first-search.html?mode=browsing)
-* [7.10 BFS Analysis](https://runestone.academy/ns/books/published/pswadsup/graphs_breadth-first-search-analysis.html?mode=browsing)
-* [7.15 Depth-First Search](https://runestone.academy/ns/books/published/pswadsup/graphs_general-depth-first-search.html?mode=browsing)
-* [7.16 DFS Analysis](https://runestone.academy/ns/books/published/pswadsup/graphs_depth-first-search-analysis.html?mode=browsing)
+* [10.7 The Word Ladder Problem](https://runestone.academy/ns/books/published/kotlinds/graphs_the-word-ladder-problem.html?mode=browsing)
+* [10.9 Breadth-First Search](https://runestone.academy/ns/books/published/kotlinds/graphs_implementing-breadth-first-search.html?mode=browsing)
+* [10.10 BFS Analysis](https://runestone.academy/ns/books/published/kotlinds/graphs_breadth-first-search-analysis.html?mode=browsing)
+* [10.15 General Depth-First Search](https://runestone.academy/ns/books/published/kotlinds/graphs_general-depth-first-search.html?mode=browsing)
+* [10.16 DFS Analysis](https://runestone.academy/ns/books/published/kotlinds/graphs_depth-first-search-analysis.html?mode=browsing)
 
 ## Checks
 Submit your answers to Moodle.

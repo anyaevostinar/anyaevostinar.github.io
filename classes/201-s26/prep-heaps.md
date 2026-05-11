@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Heaps Preparation
-permalink: /classes/201-f25/heaps-prep
+permalink: /classes/201-s26/heaps-prep
 ---
 
 ## Overview
-Another unique kind of tree, called a heap, can be used for implementing solutions to several different problems, including the *priority queue* ADT and a special sorting algorithm, *heapsort*. Today we'll focus on this data structure and some of what it is used for.
+Another unique kind of tree, called a heap, can be used for implementing solutions to several different problems, including the *priority queue* ADT. Today we'll focus on this data structure and some of what it is used for.
 
 ## Basic Learning Objectives
 Before class, you should be able to:
@@ -20,9 +20,9 @@ After class, you should be able to:
 
 ## Reading
 You should read the following:
-* [6.9 Priority Queues with Binary Heaps](https://runestone.academy/ns/books/published/pswadsup/trees_priority-queues-with-binary-heaps.html?mode=browsing)
-* [6.10 Binary Heap Operations](https://runestone.academy/ns/books/published/pswadsup/trees_binary-heap-operations.html?mode=browsing)
-* [6.11 Binary Heap Implementation](https://runestone.academy/ns/books/published/pswadsup/trees_binary-heap-implementation.html?mode=browsing)
+* [9.2 Priority Queues with Binary Heaps](https://runestone.academy/ns/books/published/kotlinds/pqs_priority-queues-with-binary-heaps.html?mode=browsing)
+* [9.3 Priority Queue Operations and Usage](https://runestone.academy/ns/books/published/kotlinds/trees_binary-heap-operations.html?mode=browsing)
+* [9.4 Priority Queue Implementation](https://runestone.academy/ns/books/published/kotlinds/trees_binary-heap-implementation.html?mode=browsing)
 
 ## Checks
 
