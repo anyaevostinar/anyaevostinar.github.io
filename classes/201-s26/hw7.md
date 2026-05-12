@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Homework 7 - IMDB Graph
-permalink: /classes/201-f25/hw7
+permalink: /classes/201-s26/hw7
 ---
 
-**Due: Monday, Nov 10th at 10pm**
+**Due: Wednesday, May 27th at 10pm**
 
-* Starter code: [imdb_graph.zip](/classes/201-f25/imdb_graph.zip)  
+* Starter code: [imdb_graph.zip](/classes/201-s26/imdb_graph.zip)  
 * Upload solutions via Gradescope as: `IMDBGraph.kt`
 
 ## Goals
@@ -25,6 +25,16 @@ You should list any student or course staff with whom you discussed the assignme
 
 _If you work alone, you should say so instead._
 
+## AI policy
+
+Again, **regardless of whether you use any genAI, you need to complete the** `AI Log` at the end of the assignment to satisfy the advanced requirement. [Here is the homework helper bot for homework 7](). 
+
+If you choose not to use genAI at all, you must state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
+
+If you do choose to use genAI, you should log it in the `AI Log` comment at the end of the assignment in the same format as previous assignments.
+
+This log requirement is both to give me an idea of whether the chatbots are providing correct information and if they are actually being helpful. If you manage to get them to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further. Remember that you should also include any external genAI resources that you use, even the AI summary shown in search results.
+
 ## Note on style:
 
 The following style guidelines are expected moving forward:
@@ -37,26 +47,27 @@ The following style guidelines are expected moving forward:
 5. Your program has a comment at the top of each function with at least 5 words describing what the function does.
 6. There is good use of comments to explain the "why" of your code and empty lines to break up logical chunks.
 7. The code doesn't have "magic numbers" -- these are numbers in the code by themselves, rather than stored in a variable.
-8. The code doesn't compute the right answer by doing extra work (e.g., having a computation in a loop when it could have been done only once, after the loop).
-9. Helper functions are used to reduce code duplication.
+8. The code doesn't compute the right answer by doing extra work (e.g., having a computation in a loop when it could have been done only once, after the loop) or extra lines of code.
+9. Helper functions are used to reduce code duplication and improve readability.
 
 ## Assessment
 
 The **core** requirements for your submission are:
 
-* complete Parts A and C
+* complete Part A
     * `connectedPerformers`
-    * Reflection
+* include your name and collaboration statement at the top of your `IMDBGraph.kt` file
 * satisfy the code style expectations #0-#4 above
-* include a reflection in comments at the bottom of your `IMDBGraph.kt` file
+
 
 The **advanced** requirements for your submission are:
 
 * satisfy the core requirements
-* complete all of Parts A-C
+* additionally complete Part B
     * `shortestPath`
 * satisfy all code style expectations listed above (#0-#9)
-* include your name and collaboration statement at the top of your `IMDBGraph.kt` file
+* include a reflection in comments at the bottom of your `IMDBGraph.kt` file
+* include an AI log in comments at the bottom of your `IMDBGraph.kt` file
 
 ## Assignment overview
 
@@ -75,7 +86,7 @@ For this assignment, you will use data from [IMDb.com](https://www.imdb.com/) to
 
 Find your `CS201` folder for assignments.  Maybe it contains an `assignments` folder inside of it.
 
-Download [this `imdb_graph.zip` file](/classes/201-f25/imdb_graph.zip) to get the starter code.  Put it in the `CS201` folder and unzip it.  This should give you a folder named `imdb_graph`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
+Download [this `imdb_graph.zip` file](/classes/201-s26/imdb_graph.zip) to get the starter code.  Put it in the `CS201` folder and unzip it.  This should give you a folder named `imdb_graph`.  Make sure that you actually unzip / extract the code, don't just open up the .zip file in another window.
 
 Now open your folder in VS Code.  There are multiple ways to do this, so pick one:
 * Open VS Code, then select `File` -> `Open Folder` and navigate to the `imdb_graph` folder you just made.
@@ -114,8 +125,8 @@ Here is the shell of the class you'll need to complete (which you'll find in `IM
 ```kotlin
 class IMDBGraph {
 
-    val performersToMovies = HashMap<String, MutableList<String>>()
-    val moviesToPerformers = HashMap<String, MutableList<String>>()
+    val performersToMovies = HashMap<String, MutableSet<String>>()
+    val moviesToPerformers = HashMap<String, MutableSet<String>>()
 
     fun connectedPerformers(performerId: String, maxDistance: Int): Set<String> {
         // TODO: Part A
@@ -129,19 +140,27 @@ class IMDBGraph {
 }
 ```
 
-The `performersToMovies` map is a set of adjacency lists: each performer ID maps to a list of movie IDs.  Likewise,  `moviesToPerformers` maps from each movie ID to a list of performer IDs.
+The `performersToMovies` map is a set of adjacency lists: each performer ID maps to a set of movie IDs.  Likewise,  `moviesToPerformers` maps from each movie ID to a set of performer IDs.
 
 ## Part A: Connections for a given performer
 
 First, you'll need to implement the `connectedPerformers` function.  This function should return a list of IDs for all performers that connect to a given performer within a certain number of steps.  Here are some examples:
 * `connectedPerformers("nm0026511", 1)` returns a list of all of the performers that have appeared with `nm0026511` (Ingemar Andersson) in a film.  According to our dataset, that answer is 6.  (The list should not include the original performer.)
-* `connectedPerformers("nm0026511", 2)` returns a list of all of the performs that have performed with Ingemar Andersson in a film (i.e., all of the answers above), plus additionally all performers that have appeared with any of those.
+* `connectedPerformers("nm0026511", 2)` returns a list of all of the performs that have performed with Ingemar Andersson in a film (i.e., all of the answers above), plus additionally all performers that have appeared with any of those. In our dataset, that number should be 195.
 
 Once you have this function implemented, you should pass the `testConnectedPerformers` test when you run `mvn test`.
 
+Here is some advice:
+* I have provided a couple of very small versions of the IMDB dataset for you to do some initial testing with (the casting is entirely fictional!). I recommend you look at the `small.tsv` files in `resources` and draw out the graph. 
+* You can switch out the larger files for the smaller ones in `Main.kt` to do initial testing. 
+* You might want to add another couple of connections to the small versions. Think carefully about which edges you add to make sure that all the associated vertices exist. When you are expanding the small files, you might have trouble actually typing a real tab since VSCode often substitutes 4 spaces when you hit tab. Copy and paste a tab character from the `performances.tsv` to be sure you have one and then ponder how terrible tab-separated data files are.
+* If you are on Windows, you may have further issues when you edit these files because Windows likes to put extra characters at the end of lines. Try running your code on a lab machine and see if that resolves the issue. It will happen every time you save the file on a Windows machine, so the best strategy is to make your small files on a lab machine and then just be careful not to open them again and continue working on your laptop.
+* There are two translation maps to assist you in debugging that are accessible through the `IMDBGraph` starter code: `movieIdsToTitles` and `performerIdsToNames`. See `Main.kt` for an example of how to use them. You could also use them for debugging within your `connectedPerformers` function.
+
+
 ## Part B: Shortest path between two performers
 
-Next, you will implement the `shortestPath` function.  This function should return a list of the connections between two performers on the shortest path between those two performers.  This should be returned in a list of `Connection` objects, where a `Connection` object contains a performer and the movie that connects them.
+Next, you will implement the `shortestPath` function.  This function should return a list of the connections between two performers on the shortest path between those two performers.  This should be returned in a list of `Connection` objects, where a `Connection` object contains a performer and the movie that connects them. **Be careful on efficiency and code duplication on this one.** You can solve this without needing to nest three loops deep. 
 
 Here is the explanation you'll find in your starter code (note that you should remove this long explanation from your finished code):
 ```kotlin
@@ -171,7 +190,13 @@ Here is the explanation you'll find in your starter code (note that you should r
 
 Once you have this function working, all tests should pass when you run `mvn test`.
 
-## Part C: Reflection
+Here is some advice for this one:
+* You can use `ArrayDeque` for your queue.
+* Remember that you can use `Main.kt` to run smaller tests
+* You may also find it helpful to create some helper functions to make your code easier to think about.
+* It is possible that the start or end performer isn't actually in any movies in our dataset and your code should handle that correctly.
+
+## Required Reflection
 
 Were there any particular issues or challenges you dealt with in completing this assignment?  How long did you spend on this assignment?
 
