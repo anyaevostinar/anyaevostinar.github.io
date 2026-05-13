@@ -27,7 +27,7 @@ _If you work alone, you should say so instead._
 
 ## AI policy
 
-Again, **regardless of whether you use any genAI, you need to complete the** `AI Log` at the end of the assignment to satisfy the advanced requirement. [Here is the homework helper bot for homework 7](). 
+Again, **regardless of whether you use any genAI, you need to complete the** `AI Log` at the end of the assignment to satisfy the advanced requirement. [Here is the homework helper bot for homework 7](https://gemini.google.com/gem/1kyDXAiQ_myq7H3BkP5-uVtFqzWMPp-sJ?usp=sharing). 
 
 If you choose not to use genAI at all, you must state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
 

@@ -5,7 +5,7 @@ class AdjListMap<T>() {
 
     // T represents the type of the id for each vertex.
     // Each vertex maps to a set of neighbors.
-    var neighbors = mutableMapOf<T, MutableSet<T>>()
+    var neighbors : MutableMap<T, MutableSet<T>> = mutableMapOf<T, MutableSet<T>>()
 
     // Returns true if vertex added,
     // false if not (because it was already there)
@@ -20,13 +20,12 @@ class AdjListMap<T>() {
 
     // Adds edge if not previously present
     fun addEdge(begin: T, end: T) {
-        //TODO
+        if (begin in neighbors && end in neighbors) {
+            neighbors[begin]!!.add(end)
+            neighbors[end]!!.add(begin)
+        }
     }
 
-    // Removes edge if present, does nothing if not present
-    fun removeEdge(begin: T, end: T) {
-        //TODO
-    }
 
     // Returns true if vertex is present, false if not
     fun hasVertex(id: T): Boolean {

@@ -43,7 +43,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/13 | [2-3 Trees Prep](2-3-prep)  | [Slides](https://docs.google.com/presentation/d/1i3vNUhk8Z2JLyv49-hIRV1ZX9G5hod1TgrH6BNs3Yvo/edit?usp=sharing), [2-3 Tree Lab](two-three-tree-lab) | |
 | 5/15 |	HW6; [Graphs Prep](graphs-prep)  | [Slides](https://docs.google.com/presentation/d/1fu1Ls14uEQoLE5EcpNnaNJ5SmaVo0lxFkerGhOYvNkA/edit?usp=sharing), [Graph Implementation Lab](graph-imp-lab)|   |
 | Week 8 | | Graphs and Heaps| |
-| 5/18 |  [Graph Searches Prep](bfs-dfs-prep) |	[Slides](), [Traversal Lab](traversal-lab) (Anya leaving early)		| [HW7: IMDB Graph](hw7)|
+| 5/18 |  [Graph Searches Prep](bfs-dfs-prep) |	[Slides](https://docs.google.com/presentation/d/1IioUGXsmDxnPJBKo57EMIJ1IIpSGLJEkBFVmQlz7RsY/edit?usp=sharing), [Traversal Lab](traversal-lab) (Anya leaving early)		| [HW7: IMDB Graph](hw7)|
 | 5/20 |   [Heaps and PQs Prep](heaps-prep) 	| [Slides](), [Heap Lab](heaps-lab) | 	  |
 | 5/22 | Study! | [Slides](), [**Exam 4**](exam4)  |  |
 | Week 9 | | Sorting| |

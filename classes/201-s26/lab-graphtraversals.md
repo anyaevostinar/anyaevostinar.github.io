@@ -1,39 +1,44 @@
 ---
 layout: page
 title: Traversals Lab
-permalink: /classes/201-f25/traversal-lab
+permalink: /classes/201-s26/traversal-lab
 published: true
 ---
 
 ## Goals
-To implement and analyze breadth-first traversal (and possible depth-first as well).
+To analyze breadth-first traversal (and possible depth-first as well) and consider how to apply them to solve problems.
 
 I recommend making a folder for today's lab in COURSES as you usually do.
 
 ## Exercise 1
-First let's think about the time complexity of breadth-first traversal (or breadth-first search in the worst case). Here is some pseudocode:
+First let's think more in-depth about the time complexity of breadth-first traversal (or breadth-first search in the worst case). Here is the code from the reading:
 
 ```
-Algorithm getBreadthFirstTraversal(originVertex) {
-   traversalOrder = a new queue for the resulting traversal order
-   vertexQueue = a new queue to hold vertices as they are visited
-   Mark originVertex as visited
-   add originVertex to traversalOrder
-   add originVertex to vertexQueue
-   while vertexQueue isn't empty
-   {
-      remove frontVertex from vertexQueue
-      for each neighbor of frontVertex
-      {
-         if (neighbor is not visited)
-         {
-            Mark neighbor as visited
-            add neighbor to traversalOrder
-            add neighbor to vertexQueue
-         }
-      }
-   }
-   return traversalOrder
+class BfsSolver<V>(val graph: GraphADT<V>, val start: V) {
+    val previous = mutableMapOf<V, V?>()
+    val distance = mutableMapOf<V, Int>()
+
+    init {
+        bfs(start)
+    }
+
+    private fun bfs(start: V) {
+        previous[start] = null
+        distance[start] = 0
+        val queue = ListQueue<V>()
+        queue.enqueue(start)
+        while (queue.size() > 0) {
+            val current = queue.dequeue()
+            val neighbors = graph.getNeighbors(current)!!
+            for (neighbor in neighbors) {
+                if (neighbor !in previous) {
+                    previous[neighbor] = current
+                    distance[neighbor] = distance[current]!! + 1
+                    queue.enqueue(neighbor)
+                }
+            }
+        }
+    }
 }
 ```
 
@@ -43,59 +48,30 @@ Because the complexity of graphs often depends on both the number of vertices an
 
 a. Analyze the number of simple operations that are required at each step of the above algorithm and note them on your worksheet
 
-b. Some of the lines of pseudocode are hiding a fair amount of detail, such as `for each neighbor of frontVertex`. What assumptions are you making about the implementation details and efficiency of those lines? What could lead to those lines being more/less efficient?
+b. Some of the lines of code are hiding a fair amount of detail, such as `graph.getNeighbors(current)!!`. What assumptions are you making about the efficiency of the graph implementation?
 
-c. Based on your step-by-step analysis, provide a function that describes the worst-case time complexity of the algorithm using *only* `V`. This function should include the constants and coefficients. 
-
-d. What is the Big-O time complexity of BFS in terms of `V`?
-
-e. This is actually an over-estimate for most graphs. If you were going to use `E` as well, how could you make your time complexity potentially more accurate for *sparse* graphs?
+c. What is the Big-O time complexity of BFS in terms of `V` and `E` based on your analysis?
 
 ## Exercise 2
-Now try out implementing breadth-first traversal using the pseudocode above.
+To do the same analysis on depth-first traversal, we need to switch it to being iterative instead of recursive. Download this simplified version of the [`DfsSolver` from the reading](GraphSearchLab.kt), along with this graph implementation [`AdjacencyMap.kt`](AdjacencyMap.kt). I
 
-Here is [starter code](/classes/201-f25/bfs_starter.zip) and the associated [documentation](/classes/201-f20/hw-6javadoc) for a graph implementation. 
-In `Main.kt` I've provided code to create this graph:
+You can switch DFS to being iterative by doing something very similar to HW3 with a stack. Within `dfs` create a stack with a `mutableListOf<V>` and refactor the function to place vertices on the stack instead of recursing. (You will likely notice that it is extremely similarly structured to BFS with that one key difference!)
 
-![Undirected graph with edge between node 0 and 3, node 3 and 1, node 3 and 2, and node 1 and 2](/classes/201-f20/UndirectedGraph.png)
-
-**Implement breadth first traversal** based on the pseudocode above (I recommend copying the pseudocode into VSCode as comments to guide you). 
-You can use the `getNeighbors` graph method like so:
-```kotlin
-for(neighbor in inputGraph.getNeighbors(frontVertex)) {
-    //...
-}
+Remember that you can compile and make sure your code is functional with the following:
+```bash
+kotlinc AdjacencyMap.kt GraphSearchLab.kt
+kotlin GraphSearchLabKt
 ```
 
-## Challenge Problem
-Depth-first traversal is much more difficult to analyze the time complexity, but here is some pseudocode, give it a shot! (Or feel free to just try to implement it instead if you prefer):
+## Exercise 3
+Now that you have an iterative version of depth-first traversal, perform the same line by line analysis (as comments in your code) to demonstrate it's worst case time complexity. Include the Big-O as a comment at the top of the function.
 
-```
-Algorithm getDepthFirstTraversal(originVertex) {
-   traversalOrder = a new queue for the resulting traversal order
-   vertexStack = a new stack to hold vertices as they are visited
-   Mark originVertex as visited
-   add originVertex to traversalOrder
-   add originVertex to vertexStack
-   while vertexStack isn't empty //hint, this is the tricky part, 
-                                 //how many times will this loop?? More than V!
-   {
-      if the topVertex has an unvisited neighbor
-      {
-         add unvisitedNeighbor to traversal order
-         add unvisitedNeighbor to the stack
-         Mark unvisitedNeighbor as visited
-      }
-      else // All neighbors are visited
-         remove topVertex from the stack
-   }
-   return traversalOrder
-}
-```
+## Submission
+Submit your completed `GraphSearchLab.kt` file to Moodle for an extra engagement credit.
 
 ## Extra
 
 If you have more time, try these:
 
 1. The algorithm given in [homework 3 (the maze solver)](hw3) is a specialized version of depth-first search. Analyze it and determine what it's time complexity is; why is it different than general depth-first search?
-2. Implement depth-first search as well.
+2. Which search would be best for detecting if a directed graph has a cycle in it? Implement a cycle detector to try it out.
