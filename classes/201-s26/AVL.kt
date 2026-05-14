@@ -332,24 +332,15 @@ class AVLTreeMap<K : Comparable<K>, V> : Iterable<K> {
         }
     }
 }
+
 fun main() {
-    val tree = AVLTreeMap<String, String>()
+    val tree = AVLTreeMap<String, MutableList<String>>()
 
-    tree.put("Albania", "Tirana")
-    println(tree)
+    tree.put(1, "Prepare 201 W8M")
+    tree.put(5, "Write Exam 4")
+    tree.put(10, "Come up with new dragon-themed assignment")
+    tree.put(2, "Prepare 201 W8W")
+    tree.put(3, "Print worksheets")
 
-    tree.put("Bolivia", "La Paz")
-    println(tree)
 
-    tree.put("Germany", "Berlin")
-    println(tree)
-
-    tree.put("Lesotho", "Maseru")
-    println(tree)
-
-    tree.put("Madagascar", "Antananarivo")
-    println(tree)
-
-    tree.put("South Korea", "Seoul")
-    println(tree)
 }
