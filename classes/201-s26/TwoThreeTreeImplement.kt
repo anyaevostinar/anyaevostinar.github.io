@@ -10,28 +10,25 @@ class TwoThreeTree : TwoThreeTreeStarter() {
     * @param key The key to be inserted
     * @return The leaf node where the key should be inserted
     */
-    override fun findLeaf(root: Node, key: Int): Node {
-        // You should implement this
-        return root 
+    fun findLeaf(root: Node, key: Int): Node {
+        return root // Placeholder
     }
 
 
-    /* A helper method that makes the right child node when splitting a 4-node. It takes in the node to be split and returns a new node with the appropriate key and children.
+    /* A helper method that makes the right child node when splitting an overfull node. It takes in the node to be split and returns a new node with the appropriate key and children.
     * @param splitNode The node that is being split
     * @return A new node that should become the right child of the split node's parent
     */
-    override fun makeNewRightNode(splitNode: Node) : Node {
-        // You should implement this
-        return splitNode
+    fun makeNewRightNode(splitNode: Node) : Node {
+        return splitNode // Placeholder
     }
 
-    /* A helper method that makes the left child node when splitting a 4-node. It takes in the node to be split and returns a new node with the appropriate key and children.
+    /* A helper method that makes the left child node when splitting an overfull node. It takes in the node to be split and returns a new node with the appropriate key and children.
     * @param splitNode The node that is being split
     * @return A new node that should become the left child of the split node's parent
     */
-    override fun makeNewLeftNode(splitNode: Node) : Node {
-        // You should implement this
-        return splitNode 
+    fun makeNewLeftNode(splitNode: Node) : Node {
+        return splitNode // Placeholder
     }
 
     /* A helper method to handle creating a new root if the root had to split
@@ -40,28 +37,28 @@ class TwoThreeTree : TwoThreeTreeStarter() {
     * @param keyToPromote The key that is being promoted up to become the key in the new root
     * @sideeffect Sets the root of the tree to be the new root node
     */
-    override fun createNewRoot(leftChild: Node, rightChild: Node, keyToPromote: Int) {
-        // You should implement this
+    fun createNewRoot(leftChild: Node, rightChild: Node, keyToPromote: Int) {
+        
     }
 
-    /* A helper method to replace a child node with two new nodes when splitting a 4-node. The old child node is removed and the two new nodes are added in its place.
+    /* A helper method to replace a child node with two new nodes when splitting an overfull node. The old child node is removed and the two new nodes are added in its place.
     * @param parent The parent of the node being split
     * @param splitChild The child node that is being split
     * @param newLeft The new left child node that is replacing the split child
     * @param newRight The new right child node that is replacing the split child
     * @sideeffect Modifies the parent's children to remove the split child and add the two new nodes in the correct position
     */
-    override fun replaceChild(parent: Node, splitChild: Node, newLeft: Node, newRight: Node) {
-        // You should implement this
+    fun replaceChild(parent: Node, splitChild: Node, newLeft: Node, newRight: Node) {
+        
     }
 
 
-    /* A method to split a 4-node into two 2-nodes and promote the middle key up. The new nodes are created using the helper methods above and the parent is updated accordingly.
+    /* A method to split an overfull node into two 2-nodes and promote the middle key up. The new nodes are created using the helper methods above and the parent is updated accordingly.
     * @param node The node that is being split
     * @sideeffect Modifies the tree structure to split the node and promote the middle key. This may involve creating a new root if the split node is the root.
     */
-    override fun split(node: Node) {
-        // You should implement this
+    fun split(node: Node) {
+
     }
 
 
