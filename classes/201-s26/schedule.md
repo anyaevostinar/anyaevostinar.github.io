@@ -44,7 +44,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/15 |	HW6; [Graphs Prep](graphs-prep)  | [Slides](https://docs.google.com/presentation/d/1fu1Ls14uEQoLE5EcpNnaNJ5SmaVo0lxFkerGhOYvNkA/edit?usp=sharing), [Graph Implementation Lab](graph-imp-lab)|   |
 | Week 8 | | Graphs and Heaps| |
 | 5/18 |  [Graph Searches Prep](bfs-dfs-prep) |	[Slides](https://docs.google.com/presentation/d/1IioUGXsmDxnPJBKo57EMIJ1IIpSGLJEkBFVmQlz7RsY/edit?usp=sharing), [Traversal Lab](traversal-lab) (Anya leaving early)		| [HW7: IMDB Graph](hw7)|
-| 5/20 |   [Heaps and PQs Prep](heaps-prep) 	| [Slides](), [Heap Lab](heaps-lab) | 	  |
+| 5/20 |   [Heaps and PQs Prep](heaps-prep) 	| [Slides](https://docs.google.com/presentation/d/1U2Ze13OCZ97bY8tEMVh8Gd9klTi7Z8R7WLfxCvcmCT8/edit?usp=sharing), [Heap Lab](heaps-lab) | 	  |
 | 5/22 | Study! | [Slides](), [**Exam 4**](exam4)  |  |
 | Week 9 | | Sorting| |
 | 5/25 |  [Mergesort Prep](mergesort-prep)  | [Slides](), [Mergesort Lab](mergesort-lab)	|  |	
