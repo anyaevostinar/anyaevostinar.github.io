@@ -53,7 +53,7 @@ b. Some of the lines of code are hiding a fair amount of detail, such as `graph.
 c. What is the Big-O time complexity of BFS in terms of `V` and `E` based on your analysis?
 
 ## Exercise 2
-To do the same analysis on depth-first traversal, we need to switch it to being iterative instead of recursive. Download this simplified version of the [`DfsSolver` from the reading](GraphSearchLab.kt), along with this graph implementation [`AdjacencyMap.kt`](AdjacencyMap.kt). I
+To do the same analysis on depth-first traversal, we need to switch it to being iterative instead of recursive. Download this simplified version of the [`DfsSolver` from the reading](GraphSearchLab.kt), along with this graph implementation [`AdjacencyMap.kt`](AdjacencyMap.kt).
 
 You can switch DFS to being iterative by doing something very similar to HW3 with a stack. Within `dfs` create a stack with a `mutableListOf<V>` and refactor the function to place vertices on the stack instead of recursing. (You will likely notice that it is extremely similarly structured to BFS with that one key difference!)
 
@@ -74,4 +74,4 @@ Submit your completed `GraphSearchLab.kt` file to Moodle for an extra engagement
 If you have more time, try these:
 
 1. The algorithm given in [homework 3 (the maze solver)](hw3) is a specialized version of depth-first search. Analyze it and determine what it's time complexity is; why is it different than general depth-first search?
-2. Which search would be best for detecting if a directed graph has a cycle in it? Implement a cycle detector to try it out.
+2. Which search would be best for detecting if a directed graph has a cycle in it? Implement a cycle detector to try it out. 
