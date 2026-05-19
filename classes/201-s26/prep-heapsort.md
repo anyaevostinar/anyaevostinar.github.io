@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Heapsort Preparation
-permalink: /classes/201-f25/heapsort-prep
+permalink: /classes/201-s26/heapsort-prep
 ---
 
 ## Overview

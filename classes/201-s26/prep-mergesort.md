@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Mergesort Preparation
-permalink: /classes/201-f25/mergesort-prep
+permalink: /classes/201-s26/mergesort-prep
 ---
 
 ## Overview
@@ -19,7 +19,7 @@ After class, you should be able to:
 
 ## Reading
 You should read/watch the following and complete the embedded checks:
-* [5.11 The Merge Sort](https://runestone.academy/ns/books/published/pswadsup/sort-search_the-merge-sort.html?mode=browsing)
+* [5.10 The Merge Sort](https://runestone.academy/ns/books/published/kotlinds/sort-search_the-merge-sort.html?mode=browsing)
 
 ## Checks
 Submit an answer to the following on Moodle. 
@@ -28,6 +28,6 @@ Submit an answer to the following on Moodle.
 | 46 | 9 | 22 | 5 | 15 | 1 | 96 | 34
 ```
 
-Draw out the steps in the mergesort algorithm to sort the list above. You should clearly show where the list is splitting into sublists. Drawing out the many sublists in mergesort may be tedious, so feel free to draw out your answers, take a picture or screenshot, and upload that.
+Draw out the steps in the mergesort algorithm to sort the list above. You should clearly show where the list is splitting into sublists. Feel free to draw out your answers, take a picture or screenshot, and upload that. Aim to follow a similar structure to figures 5.10.1 and 5.10.2 in the reading.
 
 
