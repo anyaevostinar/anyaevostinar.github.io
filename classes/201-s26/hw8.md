@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Homework 8 - Sorting
-permalink: /classes/201-f25/hw8
+permalink: /classes/201-s26/hw8
 ---
 
-**Due Monday Nov 17th at 10pm**
+**Due Wednesday, June 3rd at 10pm**
 
 * Starter file: none  
 * Upload (hand-written!) solutions via Gradescope
@@ -25,18 +25,31 @@ You should list any student or course staff with whom you discussed the assignme
 
 _If you work alone, you should say so instead._
 
+## AI policy
+
+Again, **regardless of whether you use any genAI, you need to complete the** `AI Log` at the end of the assignment to satisfy the advanced requirement. [Here is the homework helper bot for homework 8](https://gemini.google.com/gem/1o5GMagooQJI-KnLoWDqG551SY9Ytl8py?usp=sharing). 
+
+If you choose not to use genAI at all, you must state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
+
+If you do choose to use genAI, you should log it in the `AI Log` comment at the end of the assignment in the same format as previous assignments.
+
+This log requirement is both to give me an idea of whether the chatbots are providing correct information and if they are actually being helpful. If you manage to get them to produce solutions or otherwise inappropriate responses, please let me know asap so that I can prevent it from undermining everyone's learning further. Remember that you should also include any external genAI resources that you use, even the AI summary shown in search results.
+
+
 ## Assessment
 
 The **core requirements** for your submission are:
 
 * correctly answer questions 1-3
-* include a reflection at the end of your assignment
+* include your collaboration statement in your response to the last question of the assignment 
+* include your name on your assignment
 
 The **advanced requirements** for your submission are:
 
 * satisfy the core requirements
 * give thorough and correct explanations for questions 4-6
-* include your collaboration statement in your response to the last question of the assignment 
+* include a reflection at the end of your assignment
+* include an AI log at the end of your assignment
 
 Note that there won't be an opportunity to revise this assignment through the normal process. Instead, you will be able to answer questions on the self-scheduled final if you need to revise.
 
@@ -65,7 +78,7 @@ On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Quicksort.  
 On paper, sort the sequence of numbers 3, 1, 4, 1, 5, 9, 2, 6 using Heapsort, showing your work.  
 Don't forget to build the initial heap using the `buildHeap` procedure we discussed in class and be careful with what kind of heap you use!
 
-Note: there is a lot of shifting and erasing and swapping with heapsort. You don't need to show every step clearly, you can show the heap in tree form and cross off and swap values, but aim to redraw the heap at progressive steps a few times and show the in progress sorted array at those points. So you should probably redraw the heap in updated states four (ish) times. 
+Note: there is a lot of shifting and erasing and swapping with heapsort. You don't need to show every step clearly; you can show the heap in tree form and cross off and swap values, but aim to redraw the heap at progressive steps a few times and show the in progress sorted array at those points. So you should probably redraw the heap in updated states four (ish) times. 
 
 
 ## Advanced questions

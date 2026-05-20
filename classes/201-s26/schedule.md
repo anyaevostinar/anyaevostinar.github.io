@@ -47,7 +47,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/20 |   [Heaps and PQs Prep](heaps-prep) 	| [Slides](https://docs.google.com/presentation/d/1U2Ze13OCZ97bY8tEMVh8Gd9klTi7Z8R7WLfxCvcmCT8/edit?usp=sharing), [Heap Lab](heaps-lab) | 	  |
 | 5/22 | Study! | [Slides](https://docs.google.com/presentation/d/17kjqwhro656GdQjGgg4W0u4yOg-INTs4KV_jefAKU9E/edit?usp=sharing), [**Exam 4**](exam4)  |  |
 | Week 9 | | Sorting| |
-| 5/25 |  [Mergesort Prep](mergesort-prep)  | [Slides](), [Mergesort Lab](mergesort-lab)	|  |	
+| 5/25 |  [Mergesort Prep](mergesort-prep)  | [Slides](https://docs.google.com/presentation/d/1qVpFyu0ZMWfywiprtKZm_JRjPDXjmw2eyRKfO1NZi00/edit?usp=sharing), [Mergesort Lab](mergesort-lab)	|  |	
 | 5/27 | HW7; [Quicksort Prep](quicksort-prep)  | [Slides](), [Quicksort Analysis Lab](quicksort-lab) | [HW8: Sorting](hw8)  |
 | 5/29 |  [Heapsort Prep](heapsort-prep)  | [Slides](), [Heapsort Lab](heapsort-lab) 	 | 	 |
 | Week 10 | | Wrapping up | |
