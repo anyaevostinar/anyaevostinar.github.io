@@ -30,7 +30,6 @@ Timing sorting algorithms with size 10 lists
 Average time for Mergesort with size 10 over 30 reps: 0.010848 ms
 Average time for InsertionSort with size 10 over 30 reps: 0.003183 ms
 Average time for Shellsort with size 10 over 30 reps: 0.006031 ms
-Average time for MergesortNewLists with size 10 over 30 reps: 0.028462 ms
 Average time for built-in sort with size 10 over 30 reps: 8.16E-4 ms
 ```
 
