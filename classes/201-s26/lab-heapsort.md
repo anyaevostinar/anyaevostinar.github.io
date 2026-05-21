@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Heapsort Lab
-permalink: /classes/201-f25/heapsort-lab
+permalink: /classes/201-s26/heapsort-lab
 published: true
 ---
 
@@ -10,31 +10,25 @@ To better understand heapsort by implementing it and possibly using it to implem
 
 ## Setup
 Mount the COURSES drive and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
-* Create a new folder in your STUWORK called `HeapsortLab`
-* Download the [starter code](/classes/201-f25/Heapsort.kt) and put it into your lab folder
-* Open your `HeapsortLab` folder in VSCode
+* Download the [starter code](/classes/201-s26/HeapsortLabStarter.zip), unzip it, and put it into your STUWORK folder
+* Open your `HeapsortLabStarter` folder in VSCode
 
 ## Exercise 1
-The first thing we'll need is to build the heap from a provided list. Implement the `buildHeap` method, keeping the following in mind:
-* You want start with nodes near the bottom and move them down
-* You should skip all the leaves, since they can't move down
-* Think about what the index of the last parent is
-* Note that I have provided `heapify` for you
-
-Once you've implemented this one, run your code and make sure that the first thing printed is a correct max heap.
+I've provided you a `MaxHeap` implementation, but it only has a `deleteMax`. For heapsort, you need to be able to move the max to the end of the array without deleting it.
+Implement the `moveMax` function, which has a stub at the end of `MaxHeap`. Try out writing your own test code to make sure that it works!
 
 ## Exercise 2
-Next you'll need to implement `moveMax`. Try out writing your own test code to make sure that it works!
-
-## Exercise 3
 You're ready to implement `heapsort`! Note that it is outside of the `MaxHeap` class, why do you think that is?
 
-The second provided test should now be sorted least to greatest.
+I've repeated the test lists to make sure that you are sorting correctly.
+
+## Submission
+You can submit your completed `MaxHeap` and `heapsort` to Moodle for an additional engagement credit.
 
 
 ## Extra
 Try out implementing replacement selection:
-* You'll need to make a new class for MinHeap
+* You'll need to make a new class for MinHeap (or grab the one from the reading or your previous lab)
 * Have `replacementSelection` take in lists to simulate the input buffer and output buffer
 * Try out generating a few short runs and merging them
 

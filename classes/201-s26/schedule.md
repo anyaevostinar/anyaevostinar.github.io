@@ -49,7 +49,7 @@ Preparation should be completed **before** the class day that they are listed. C
 | Week 9 | | Sorting| |
 | 5/25 |  [Mergesort Prep](mergesort-prep)  | [Slides](https://docs.google.com/presentation/d/1qVpFyu0ZMWfywiprtKZm_JRjPDXjmw2eyRKfO1NZi00/edit?usp=sharing), [Mergesort Lab](mergesort-lab)	|  |	
 | 5/27 | HW7; [Quicksort Prep](quicksort-prep)  | [Slides](https://docs.google.com/presentation/d/10rJBUgmLyMrhtd_aXw0pP95X7AdHwrMl24hRdKSxsU4/edit?usp=sharing), [Quicksort Analysis Lab](quicksort-lab) | [HW8: Sorting](hw8)  |
-| 5/29 |  [Heapsort Prep](heapsort-prep)  | [Slides](), [Heapsort Lab](heapsort-lab) 	 | 	 |
+| 5/29 |  [Heapsort Prep](heapsort-prep)  | [Slides](https://docs.google.com/presentation/d/1P-bVhczw1hmGLXY0mM-7M1tj0h-UHN6ei01dMystA00/edit?usp=sharing), [Heapsort Lab](heapsort-lab) 	 | 	 |
 | Week 10 | | Wrapping up | |
 | 6/1 |  [Radix Sort Prep](radix-sort-prep)| [Slides](), [Radix Sort Lab](radix-sort-lab) | |
 | 6/3 | HW8; All revisions due 10pm, [Submit checklist for SS exam]() | [Slides](), Mini-Exam 5, course evals | |
