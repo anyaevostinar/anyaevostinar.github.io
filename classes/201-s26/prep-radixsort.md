@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Radix Sort Preparation
-permalink: /classes/201-f25/radix-sort-prep
+permalink: /classes/201-s26/radix-sort-prep
 ---
 
 ## Overview
-Bonus day! I've said a few times that O(n log n) is the best we can do for "normal" space complexity sorting. It turns out that we can do better if we are willing to use some extra space in special situations.
+Bonus day! I've said a few times that O(n log n) is the best we can do for "normal" space complexity/comparison-based sorting. It turns out that we can do better if we are willing to use some extra space in special situations.
 
 First some additional background for the reading:
 * Remember that Big-O/Big-Oh is the upper-bound time complexity, i.e. the maximum amount of time it will take to solve a problem
