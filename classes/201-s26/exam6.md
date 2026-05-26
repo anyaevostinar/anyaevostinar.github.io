@@ -32,4 +32,4 @@ Good ways to study for the exams are:
 * Try any of the exercises at the ends of relevant chapters of the Runestone book that are about the learning objectives
 * Work on any homework revisions to make sure you fully understand the material
 * Attend the prefect sessions
-* Practice with the [Exam 6 Study Bot]()
+* Practice with the [Exam 6 Study Bot](https://gemini.google.com/gem/1FgwuXG-J9NMaCUyTJoV-vbVWPWOdh1vv?usp=sharing)
