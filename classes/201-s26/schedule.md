@@ -51,8 +51,8 @@ Preparation should be completed **before** the class day that they are listed. C
 | 5/27 | HW7; [Quicksort Prep](quicksort-prep)  | [Slides](https://docs.google.com/presentation/d/10rJBUgmLyMrhtd_aXw0pP95X7AdHwrMl24hRdKSxsU4/edit?usp=sharing), [Quicksort Analysis Lab](quicksort-lab) | [HW8: Sorting](hw8)  |
 | 5/29 |  [Heapsort Prep](heapsort-prep)  | [Slides](https://docs.google.com/presentation/d/1P-bVhczw1hmGLXY0mM-7M1tj0h-UHN6ei01dMystA00/edit?usp=sharing), [Heapsort Lab](heapsort-lab) 	 | 	 |
 | Week 10 | | Wrapping up | |
-| 6/1 |  [Radix Sort Prep](radix-sort-prep)| [Slides](), [Radix Sort Lab](radix-sort-lab) | |
-| 6/3 | HW8; All revisions due 10pm, [Submit checklist for SS exam](https://docs.google.com/forms/d/e/1FAIpQLSegUiLFd4RJ1yatuN30AdDWB_j6RudWyHcEoJ3y0LM8KM3w_A/viewform?usp=publish-editor) | [Slides](exam5), Mini-Exam 5, course evals | |
+| 6/1 |  [Radix Sort Prep](radix-sort-prep)| [Slides](https://docs.google.com/presentation/d/1loMUPK5qjLT4mG7fePvY1kCCBLIuuR2sCj0oPS-VkIM/edit?usp=sharing), [Radix Sort Lab](radix-sort-lab) | |
+| 6/3 | HW8; All revisions due 10pm, [Submit checklist for SS exam](https://docs.google.com/forms/d/e/1FAIpQLSegUiLFd4RJ1yatuN30AdDWB_j6RudWyHcEoJ3y0LM8KM3w_A/viewform?usp=publish-editor) | [Slides](https://docs.google.com/presentation/d/1V3sPO885mTEeU5YuAkWOr1vxqCkN8nWtENeW2u90-uQ/edit?usp=sharing), [Mini-Exam 5](exam5), course evals | |
 | 6/5 |  | Reading days!| |
 | Exam Period | | | |
 | 6/6-6/8| [Self-scheduled Exam](exam6)  |  | |

@@ -22,6 +22,8 @@ You can demonstrate your understanding of all remaining [learning objectives](ex
 * SO3-AD: Explain the idea behind the Big-O of quicksort
 * SO4-AD: Explain the idea behind the Big-O of heapsort
 
+You will also be able to answer the questions from [homework 8](hw8) on the final exam if you need to revise them.
+
 
 You can't bring anything with you into the self-scheduled exam, so if you would like a checklist, please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSegUiLFd4RJ1yatuN30AdDWB_j6RudWyHcEoJ3y0LM8KM3w_A/viewform?usp=dialog) by Wednesday June 3rd at 10pm and I will print it out and include it with your packet.
 
