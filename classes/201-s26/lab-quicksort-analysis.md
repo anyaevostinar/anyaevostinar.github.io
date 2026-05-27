@@ -10,7 +10,7 @@ To study the performance characteristics of quicksort with several different piv
 
 ## Setup
 [Mount the COURSES drive](scavenger-hunt) and remember to save everything into STUWORK. **If you don't do this, everything you write will disappear when you log out!!!!**
-* Download the [starter code](/classes/201-s26/QuicksortLabStarter.zip), move it into your STUWORK/username folder, and unzip it
+* Download the [starter code](/classes/201-f25/QuicksortLabStarter.zip), move it into your STUWORK/username folder, and unzip it
 * Open that folder through VSCode
 
 Note: this lab is all in Java since there is a lot and some of it relies on Java libraries for timing. You won't be writing any Java, don't worry!
