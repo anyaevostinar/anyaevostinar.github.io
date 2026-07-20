@@ -8,7 +8,7 @@ permalink: /research/tips
 
 Research machine addresses:
 * `margulis2024.crug.carleton.edu`
-* `edmonstone.crug.carleton.edu`
+* `edmonstone2024.crug.carleton.edu`
 * `lederberg.crug.carleton.edu`
 * `carver.crug.carleton.edu`
 
