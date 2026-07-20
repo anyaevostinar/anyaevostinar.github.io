@@ -10,7 +10,7 @@ However, the concepts and practice will help you on the homework, exams, and fin
 I recommend creating a folder in COURSES for this lab as you usually do.
 
 ## Exercise 1: A minimal class
-You should again download the file [graphics.py](/classes/111-w22/graphics.py) and put it into the folder for today's lab. Also remember that you can refer to the [graphics documentation](https://mcsp.wartburg.edu/zelle/python/graphics/graphics/graphref.html) for more details on the methods of `graphics` classes.. 
+You should again download the file [graphics.py](/classes/111-w22/graphics.py) and put it into the folder for today's lab. Also remember that you can refer to the [graphics documentation](https://mcsp.wartburg.edu/zelle/python/graphics/graphics/graphref.html) for more details on the methods of `graphics` classes. 
 Then also download the file [flower_starter.py](/classes/111-w26/flower_starter.py) and put it in your folder as well.
 
 1. Run `flower_starter.py` to see the flowers that are made. Your first goal will be to make the same flowers but with improved code organization.
