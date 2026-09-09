@@ -16,9 +16,9 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Date	| Assignment/Reading Due	| Class Topic |	Assignment Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Introduction | |
-| M 9/14 | [What is Life Prep] | What is (artificial) life?  |  |
-| W 9/16 | | History of AL | |
-| F 9/18 | | Cellular Automata | |
+| M 9/14 | [What is Life Prep](intro-prep) | What is (artificial) life?  |  |
+| W 9/16 | [Dynamics of Life Prep](history-prep) | History of AL | |
+| F 9/18 | [Cellular Automata Prep](ca-intro-prep) | CA Lab and Discussion | |
 | Week 2 | | Before life, there is chemistry | |
 | M 9/21 | | Artificial Chemistry   |  |
 | W 9/23 | | Protocells |Artificial Chemistry assignment out |
