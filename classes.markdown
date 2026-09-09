@@ -6,13 +6,17 @@ permalink: /Classes/
 
 ## Current Classes
 
-CS 201: Data Structures ([Syllabus](/classes/201-s26/syllabus), [Schedule](/classes/201-s26/schedule))
+CS 361: Artificial Life and Digital Evolution ([Syllabus](/classes/361-f26/syllabus), [Schedule](/classes/361-f26/schedule))
 
 ## Future Classes
 
 Subject to change!
 
 ## Previous Classes
+
+### Spring 2026
+
+CS 201: Data Structures ([Syllabus](/classes/201-s26/syllabus), [Schedule](/classes/201-s26/schedule))
 
 ### Winter 2026
 
