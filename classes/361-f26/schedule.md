@@ -16,12 +16,12 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Date	| Assignment/Reading Due	| Class Topic |	Assignment Out |
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Introduction | |
-| M 9/14 | [What is Life Prep](intro-prep) | What is (artificial) life?  |  |
+| M 9/14 | [What is Life Prep](intro-prep) | What is (artificial) life?, [Slides](https://docs.google.com/presentation/d/1rvguEiptiLtaR_aSrmujvFZdhhste1vpAp8BBJqm4go/edit?usp=sharing)  |  |
 | W 9/16 | [Dynamics of Life Prep](history-prep) | History of AL | |
 | F 9/18 | [Cellular Automata Prep](ca-intro-prep) | CA Lab and Discussion | |
 | Week 2 | | Before life, there is chemistry | |
 | M 9/21 | | Artificial Chemistry   |  |
-| W 9/23 | | Protocells |Artificial Chemistry assignment out |
+| W 9/23 | | Protocells and Math Meetup |Artificial Chemistry assignment out |
 | F 9/25 | | Droplets | |
 | Week 3 | | Morphogenesis | |
 | M 9/28 |  | L-systems | |
@@ -37,7 +37,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 10/16 | | ALife Art | |
 | Week 6 | | Ecosystems | |
 | M 10/19 | | Midterm Break |  |
-| W 10/21 | Encyclopedia first draft due | Lotka-Volterra and Hashtag Ecology | Artificial Ecology assignment out|
+| W 10/21 | Encyclopedia due | Lotka-Volterra and Hashtag Ecology | Artificial Ecology assignment out|
 | Th 10/22 | | Early voting in Great Hall 9-2 | |
 | F 10/23 | | Synthetic Ecology | |
 | Week 7 | | Eco-Evo | |
@@ -49,13 +49,13 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | T 11/3 | | Vote if you are eligible! | |
 | W 11/4 | | DISHTINY | |
 | F 11/6 | Digital Evolution assignment due | Final Project Overview |  |
-| Week 9 | | Evolving Intelligence | |
-| M 11/9 | | Novelty search/NEAT  |  |
-| W 11/11 | | Cognitive Robotics | |
-| F 11/13 | | Evolutionary robotics | | 
+| Week 9 | | Collaborative Science | |
+| M 11/9 | | Final project planning |  |
+| W 11/11 | | Working on final project | |
+| F 11/13 | | Code review | | 
 | Week 10 | | Wrapping up | |
-| M 11/16 | | Final presentations |  |
-| W 11/18 | | Final presentations and course feedback | |
+| M 11/16 | | Technical communication |  |
+| W 11/18 | | Wrap-up and course feedback | |
 | Exam Period | | | |
-| |Nothing scheduled, projects due end of exams | | |
+| |Nothing scheduled, projects and presentations due end of exams | | |
 | | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
