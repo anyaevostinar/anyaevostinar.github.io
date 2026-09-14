@@ -17,7 +17,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | ------- | --------------- | ------------- | -------------- |
 | Week 1 | | Introduction | |
 | M 9/14 | [What is Life Prep](intro-prep) | What is (artificial) life?, [Slides](https://docs.google.com/presentation/d/1rvguEiptiLtaR_aSrmujvFZdhhste1vpAp8BBJqm4go/edit?usp=sharing)  |  |
-| W 9/16 | [Dynamics of Life Prep](history-prep) | History of AL | |
+| W 9/16 | [Dynamics of Life Prep](history-prep) | History of AL, [Slides](https://docs.google.com/presentation/d/1aHuPKo4SJE-gwTdcIVqpBcUIjcfMnCCTbT7K9_X0vtM/edit?usp=sharing) | |
 | F 9/18 | [Cellular Automata Prep](ca-intro-prep) | CA Lab and Discussion | |
 | Week 2 | | Before life, there is chemistry | |
 | M 9/21 | | Artificial Chemistry   |  |
@@ -33,7 +33,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 10/9 |  | Implementing movement, Topic checkins |  |
 | Week 5 | | Groups and Swarms | |
 | M 10/12 | Encyclopedia topic due | Boids and Swarms  |  |
-| W 10/14 | | Modeling multicells | |
+| W 10/14 | | Modeling multicells and DISHTINY | |
 | F 10/16 | | ALife Art | |
 | Week 6 | | Ecosystems | |
 | M 10/19 | | Midterm Break |  |
@@ -43,11 +43,11 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Week 7 | | Eco-Evo | |
 | M 10/26 | | Implementing Digital Evolution  |  |
 | W 10/28 | Artificial ecology due | Tierra | Digital evolution assignment out |
-| F 10/30 | | Avida |  |
+| F 10/30 | | Avida and OEE |  |
 | Week 8 | | Open-ended Evolution | |
-| M 11/2 |  | MODES Toolbox and Evolutionary statistics  |  |
+| M 11/2 |  | Combining ODEs and ABMs |  |
 | T 11/3 | | Vote if you are eligible! | |
-| W 11/4 | | DISHTINY | |
+| W 11/4 | | Collaboration day | |
 | F 11/6 | Digital Evolution assignment due | Final Project Overview |  |
 | Week 9 | | Collaborative Science | |
 | M 11/9 | | Final project planning |  |
