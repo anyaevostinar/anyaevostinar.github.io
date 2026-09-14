@@ -13,8 +13,8 @@ As a reminder, you are not allowed to use genAI to summarize or produce your rea
 ## Basic Learning Objectives
 Before class, you should be able to:
 
-* Explain what a basic cellular automaton is
 * Explain what Conway's Game of Life is
+* Alter provided C++
 * Identify the application that Langton used CA for within artificial life
 
 ## Advanced Learning Objectives
@@ -27,6 +27,7 @@ After class, you should be able to:
 Read the following:
 
 * 3.1 (Cellular Automata) of [Biological Bits](/classes/361-s25/BiologicalBits_PDF_edn1.pdf) 
+* [Using Data in C++](https://runestone.academy/ns/books/published/cpp4python/AtomicData/AtomicData.html?mode=browsing) - has C++ and Python code and talks through the highlights of moving to C++ from Python
 * [Play Game of Life](https://playgameoflife.com/) interactive website
 * [Studying Artificial Life with Cellular Automata by Christopher G. Langton](https://deepblue.lib.umich.edu/items/76966fa1-6b4e-498c-bbfc-2b884c2a5245) - This is dense, you don't need to understand everything, focus on pulling out the high-level ideas of how Langton proposed using CAs and bring your questions to class to discuss! ([Back up PDF just in case](LangtonCA.pdf)) **I highly recommend you print this out and highlight it or highlight and make notes in a PDF reader and please bring your notes to class.**
 
