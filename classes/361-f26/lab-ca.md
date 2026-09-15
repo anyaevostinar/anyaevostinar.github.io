@@ -76,7 +76,7 @@ If you already have a GitHub account and you want to use it for 361, great, just
 
 If you don't have one or want a new one, go to [https://github.com/](https://github.com/) and use your Carleton email address to make it. I strongly recommend you pick a name that you'd be comfortable putting on a resume.
 
-If you haven't already, fill out [this survey](https://docs.google.com/forms/d/e/1FAIpQLSfCNIcnAqezCCYl7UFwgB9zazb1PGbK5hOm3FgytEOVq_uBAA/viewform?usp=dialog) to let me know your GitHub username.
+If you haven't already, fill out [this survey](https://docs.google.com/forms/d/e/1FAIpQLSfCNIcnAqezCCYl7UFwgB9zazb1PGbK5hOm3FgytEOVq_uBAA/viewform?usp=dialog) to let me know your GitHub username and tell me in class that you have added it so I can get you set up.
 
 ### Starter Code
 All the starter code for this class will be distributed through the [361-F26](https://github.com/361-F26) GitHub Organization. If you filled out the GitHub survey before class, you may already see your individual repository on there. If so, you should click the green "Code" button:
