@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cellular Automata
-permalink: /classes/361-s25/ca-lab
+permalink: /classes/361-f26/ca-lab
 ---
 
 ## Goals

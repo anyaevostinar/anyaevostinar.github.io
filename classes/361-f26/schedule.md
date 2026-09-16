@@ -18,7 +18,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Week 1 | | Introduction | |
 | M 9/14 | [What is Life Prep](intro-prep) | What is (artificial) life?, [Slides](https://docs.google.com/presentation/d/1rvguEiptiLtaR_aSrmujvFZdhhste1vpAp8BBJqm4go/edit?usp=sharing)  |  |
 | W 9/16 | [Dynamics of Life Prep](history-prep) | History of AL, [Slides](https://docs.google.com/presentation/d/1aHuPKo4SJE-gwTdcIVqpBcUIjcfMnCCTbT7K9_X0vtM/edit?usp=sharing) | |
-| F 9/18 | [Cellular Automata Prep](ca-intro-prep) | CA Lab and Discussion | |
+| F 9/18 | [Cellular Automata Prep](ca-intro-prep) | [CA Lab](ca-lab), [Slides](https://docs.google.com/presentation/d/1hOSRl4gI9tLggyo9fzyjvmSEfVipxzxImlshBBZzNJc/edit?usp=sharing)  | |
 | Week 2 | | Before life, there is chemistry | |
 | M 9/21 | [Artificial Chemistry Prep](achem-prep) | (Artificial) Chemistry 101   |  |
 | W 9/23 | [Protocells Prep](protocells-prep) | Protocells and Math Meetup |Artificial Chemistry assignment out |
