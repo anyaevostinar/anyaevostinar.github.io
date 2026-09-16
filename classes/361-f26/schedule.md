@@ -21,8 +21,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 9/18 | [Cellular Automata Prep](ca-intro-prep) | CA Lab and Discussion | |
 | Week 2 | | Before life, there is chemistry | |
 | M 9/21 | [Artificial Chemistry Prep](achem-prep) | (Artificial) Chemistry 101   |  |
-| W 9/23 | | Protocells and Math Meetup |Artificial Chemistry assignment out |
-| F 9/25 | | Droplets | |
+| W 9/23 | [Protocells Prep](protocells-prep) | Protocells and Math Meetup |Artificial Chemistry assignment out |
+| F 9/25 | [Droplets Prep](droplets-prep) | Droplets | |
 | Week 3 | | Morphogenesis | |
 | M 9/28 |  | L-systems | |
 | W 9/30 | AChem due | Geb | L-System out  |
