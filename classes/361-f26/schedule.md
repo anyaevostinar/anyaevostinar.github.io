@@ -20,7 +20,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 9/16 | [Dynamics of Life Prep](history-prep) | History of AL, [Slides](https://docs.google.com/presentation/d/1aHuPKo4SJE-gwTdcIVqpBcUIjcfMnCCTbT7K9_X0vtM/edit?usp=sharing) | |
 | F 9/18 | [Cellular Automata Prep](ca-intro-prep) | CA Lab and Discussion | |
 | Week 2 | | Before life, there is chemistry | |
-| M 9/21 | | Artificial Chemistry   |  |
+| M 9/21 | [Artificial Chemistry Prep](achem-prep) | (Artificial) Chemistry 101   |  |
 | W 9/23 | | Protocells and Math Meetup |Artificial Chemistry assignment out |
 | F 9/25 | | Droplets | |
 | Week 3 | | Morphogenesis | |
