@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cellular Automata
+title: Cellular Automata Lab
 permalink: /classes/361-f26/ca-lab
 ---
 
