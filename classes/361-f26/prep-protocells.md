@@ -24,8 +24,8 @@ After class, you should be able to:
 ## Reading
 Read the following:
 
-* [Artificial Chemistry Encyclopedia article](https://alife.org/encyclopedia/artificial-chemistry/artificial-chemistries/) (And the video, but just the first presentation)
-* [Synthesizing Life by Szostak, Bartel, and Luisi, 2001](https://www.nature.com/articles/35053176)
+* [Artificial Chemistry Encyclopedia article](https://alife.org/encyclopedia/artificial-chemistry/artificial-chemistries/) 
+* [Synthesizing Life by Szostak, Bartel, and Luisi, 2001](https://www.nature.com/articles/35053176) - This article has a lot of biology terminology in it that you aren't expected to perfectly understand. This is a chance to practice pulling out the high level ideas from the jargon.
 
 ## Checks
 Submit answers to the following on Moodle:

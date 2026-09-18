@@ -26,7 +26,7 @@ After class, you should be able to:
 
 Read the following:
 
-* [Droplets Encyclopedia entry](https://alife.org/encyclopedia/synthetic-biology/droplets/)
+* [Droplets Encyclopedia entry](https://alife.org/encyclopedia/synthetic-biology/droplets/) (And the video, but just the first presentation)
 * [Droplets as Liquid Robotos](https://direct.mit.edu/artl/article/23/4/528/2874/Droplets-As-Liquid-Robots)
 
 ## Checks
