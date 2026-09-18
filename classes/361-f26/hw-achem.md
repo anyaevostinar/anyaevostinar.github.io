@@ -46,7 +46,7 @@ I have provided physics rules that have the particles move and respond to each o
 You are welcome to change any aspects of `Physics` that you'd like, but you shouldn't need to.
 You should do the following in `AChemAnimate.cpp`:
 
-### `ResolveCollisionsAndReactions`
+### Implement `ResolveCollisionsAndReactions`
 Within `ResolveCollisionsAndReactions`, you should implement the following functionality:
 * A way for substrate particles to turn into bonding particles via a catalyst
 * A way for bonding particles to bond together
@@ -61,7 +61,7 @@ To complete that functionality, you will want to look through and potentially ch
 * `CanBond`
 * `AddBond()`
 
-### `DegradeAndRecycle`
+### Implement `DegradeAndRecycle`
 Decay is inevitable! Within `DegradeAndRecycle`, implement at least one particle decaying down to a different one or disappearing all together. You can implement more than one degrading functionality, but you need to have at least one particle type undergo periodic decay.
 
 ### Exploration
