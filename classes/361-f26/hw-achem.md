@@ -5,10 +5,29 @@ permalink: /classes/361-f26/hw-achem
 ---
 
 ## Logistics
-This is an individual assignment, so you should complete it on your own, though you are able to get help from many sources as detailed in the syllabus.
-
 This assignment is due on Sept 30th, 2026 at 10pm.
 As with all assignments, you will have the opportunity to revise this assignment based on the feedback that you get.
+
+## Collaboration policy
+
+For this assignment, you may discuss the assignment at a high level with other students, however you must type up all of the code yourself.  (It is therefore unexpected for two code submissions to be completely identical.)  You can discuss the assignment with Anya, our course staff, or any lab assistants.  
+
+You should list any student or course staff with whom you discussed the assignment and the manner of discussion in your `README.md` file.
+
+## AI policy
+As discussed in the syllabus, there are both acceptable and unacceptable uses of genAI in this class. **Regardless of whether you use any genAI, you need to complete the** `AI Log` in the `README.md` to satisfy the advanced requirement.
+
+If you choose not to use genAI at all, you may state that for your AI Log (and I fully support this choice). I'd be interested in your reasons, though it's not required to write them in the log for every assignment.
+
+If you do choose to use genAI, you should log it in the `AI Log` section of the `README` in the following format:
+* Date: Summary of use and assessment of usefulness
+
+For example, a hypothetical log could be:
+* 8/25/26: I asked Gemini how to do default values for a constructor and it helped me figure it out
+* 8/26/26: I couldn't figure out the problem with the `ApplyLinearSpringForces` method and Gemini was completely useless
+* 8/26/26: I googled the problem with the `ApplyLinearSpringForces` and the AI summary was helpful
+
+This log requirement is both to give me an idea of how useful genAI is in this context and to make sure that your learning isn't being hampered. As mentioned in the hypothetical log, you should include any genAI resources that you use, even the AI summary shown in search results or GitHub Copilot (which shows up as autocomplete in VSCode now).
 
 ## Goal
 The goal of this assignment is to demonstrate your understanding of artificial chemistries and protocells.
