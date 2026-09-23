@@ -24,7 +24,7 @@ To get more familiar with Empirical and make a two-atom chemistry.
 With that all in place, the starter code is functional. Check it out with:
 
 ```
-./compile_run.sh
+./compile-run.sh
 ```
 
 You should be able to see some teals atoms jittering around.

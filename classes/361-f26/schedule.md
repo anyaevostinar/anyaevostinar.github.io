@@ -22,7 +22,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 2** | | **Before life, there is chemistry** | |
 | M 9/21 | [Artificial Chemistry Prep](achem-prep) | [AChem Lab](achem-lab), [Slides](https://docs.google.com/presentation/d/1f4i1rxLUS43xBEC5SKJG2ou12j0asaek-v1ci_a4Q14/edit?usp=sharing)   |  |
 | W 9/23 | [Protocells Prep](protocells-prep) | Protocells and Math Meetup, [Slides](https://docs.google.com/presentation/d/1oWIX3qHv2Qin7Kcfsk8rkci02MUVZHLEepnjyd9YO1s/edit?usp=sharing) | [Artificial Chemistry assignment](hw-achem) out |
-| F 9/25 | [Droplets Prep](droplets-prep) | Droplets | |
+| F 9/25 | [Droplets Prep](droplets-prep) | Droplets, [Slides](https://docs.google.com/presentation/d/1BNrC266j_0GXmeUTXjkFM9Nz8JVUiKPK85CnM13Lerw/edit?usp=sharing) | |
 | **Week 3** | | **Morphogenesis** | |
 | M 9/28 |  | L-systems | |
 | W 9/30 | AChem due | Geb | L-System out  |
