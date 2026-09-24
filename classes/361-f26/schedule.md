@@ -26,7 +26,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 3** | | **Morphogenesis** | |
 | M 9/28 | [L-System Prep](lsystems-prep) | L-systems | |
 | W 9/30 | AChem due, [Geb Prep](geb-prep) | Geb | L-System out  |
-| F 10/2 | | Reaction-Diffusion | |
+| F 10/2 |[Reaction-Diffusion Prep](reaction-diff-prep) | Reaction-Diffusion | |
 | **Week 4** | | **Movement** | |
 | M 10/5 |  | Robots |  |
 | W 10/7 | L-System due | Xenobots | Encyclopedia assignment out|
