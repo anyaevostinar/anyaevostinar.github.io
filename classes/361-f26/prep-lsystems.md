@@ -28,11 +28,15 @@ Read the following:
 
 ## Checks
 Submit answers to the following on Moodle:
-* Consider the following L-system grammar and write out the full string for iterations 0, 1, 2, and 3:
+* Consider the following L-system grammar and write out the full string for iterations 0, 1, and 2:
     * Axiom 'A'
     * Rules:
         * `A -> F[+A][-A]`
         * `F -> FF`
 * There is a brown seaweed species called Bladderwrack that grows by an active tip splitting equally into two identical growing tips, forming a symmetrical Y structure. The older stem segments don't stretch further after forming, i.e. growth only occurs at those active tip sections. Here is a picture: 
-    * ![Bladderwreck picture](https://en.wikipedia.org/wiki/Fucus_vesiculosus#/media/File:Fucus_vesiculosus_closeup.jpg)
-    * Write the starting axiom and rules that would capture this growth pattern in an L system. Remember that you need rules for each character, so you will need two rules for this system.
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Fucus_vesiculosus_closeup.jpg" alt="Bladderwrack picture" height=100> 
+
+    By User <a href="https://en.wikipedia.org/wiki/User:Stemonitis" class="extiw" title="en:User:Stemonitis">Stemonitis</a> on <a class="external text" data-mw-original-href="http://en.wikipedia.org" href="https://en.wikipedia.org">en.wikipedia</a> - Taken by <a href="https://en.wikipedia.org/wiki/User:Stemonitis" class="extiw" title="en:User:Stemonitis">Stemonitis</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5" title="Creative Commons Attribution-Share Alike 2.5">CC BY-SA 2.5</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=1366410">Link</a>
+    
+    **Write the starting axiom and rules** that would capture this growth pattern in an L system. Hint, you'll want two rules, though one is fairly simple.

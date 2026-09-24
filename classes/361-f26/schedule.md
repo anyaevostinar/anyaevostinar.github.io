@@ -24,8 +24,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 9/23 | [Protocells Prep](protocells-prep) | Protocells and Math Meetup, [Slides](https://docs.google.com/presentation/d/1oWIX3qHv2Qin7Kcfsk8rkci02MUVZHLEepnjyd9YO1s/edit?usp=sharing) | [Artificial Chemistry assignment](hw-achem) out |
 | F 9/25 | [Droplets Prep](droplets-prep) | Droplets, [Slides](https://docs.google.com/presentation/d/1BNrC266j_0GXmeUTXjkFM9Nz8JVUiKPK85CnM13Lerw/edit?usp=sharing) | |
 | **Week 3** | | **Morphogenesis** | |
-| M 9/28 |  | L-systems | |
-| W 9/30 | AChem due | Geb | L-System out  |
+| M 9/28 | [L-System Prep](lsystems-prep) | L-systems | |
+| W 9/30 | AChem due, [Geb Prep](geb-prep) | Geb | L-System out  |
 | F 10/2 | | Reaction-Diffusion | |
 | **Week 4** | | **Movement** | |
 | M 10/5 |  | Robots |  |
