@@ -80,7 +80,7 @@ A key aspect of chemistry is that reactions occur and turn particles from one sp
 ## Submission
 You aren't required to submit labs in this class, but you can for an extra engagement credit. Complete the implemention of the three particle system and then push it to GitHub:
 ```bash
-git add AChemAnimate.cpp
+git add AChemAnimate.cpp Particle.cpp
 git commit -m "finished three particles"
 git push
 ```
