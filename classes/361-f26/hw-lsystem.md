@@ -4,9 +4,6 @@ title: L-Systems Assignment
 permalink: /classes/361-f26/hw-lsys
 ---
 
-
-**In progress still**
-
 ## Logistics
 This assignment is due on Oct 7th, 2026 at 10pm.
 As with all assignments, you will have the opportunity to revise this assignment based on the feedback that you get.
