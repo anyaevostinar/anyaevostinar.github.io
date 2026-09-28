@@ -8,7 +8,7 @@ permalink: /classes/361-f26/hw-lsys
 **In progress still**
 
 ## Logistics
-This assignment is due on Sept 30th, 2026 at 10pm.
+This assignment is due on Oct 7th, 2026 at 10pm.
 As with all assignments, you will have the opportunity to revise this assignment based on the feedback that you get.
 
 ## Collaboration policy
@@ -33,13 +33,13 @@ For example, a hypothetical log could be:
 This log requirement is both to give me an idea of how useful genAI is in this context and to make sure that your learning isn't being hampered. As mentioned in the hypothetical log, you should include any genAI resources that you use, even the AI summary shown in search results or GitHub Copilot (which shows up as autocomplete in VSCode now).
 
 ## Goal
-The goal of this assignment is to demonstrate your understanding of artificial chemistries and protocells.
-You'll be making a artificial chemistry/protocell simulation with the Empirical framework.
+The goal of this assignment is to demonstrate your understanding of l-systems and how they can simulate plant growth.
+You'll be making an l-system plant simulation with the Empirical framework.
 
 ## Setup
-We'll be using the Empirical library for this assignment. I've provided a fair amount of starter code so that you can focus on implementing the functionality of the chemistry without needing to pull in a lot of physics. (You are welcome to tweak the physics if you are interested though!) 
+We'll be using the Empirical library for this assignment. I've provided a fair amount of starter code so that you can focus on implementing the functionality of the growth. (You are welcome to tweak the visualizations if you are interested though!) 
 
-1. Go to our [361-F26] Organization and find the `AChem-HW` repository for your account. Use `git clone --recurse-submodules [URL]` as usual.
+1. Go to our [361-F26] Organization and find the `LSystem-HW` repository for your account. Use `git clone --recurse-submodules [URL]` as usual.
 
 3. Then, go to the `emsdk` folder and install and activate `emsdk`:
 ```
@@ -87,7 +87,7 @@ As you read, L-system symbols don't have to be just lines, they can also represe
 
 ### Exploration
 
-As before, there are a lot of further extensions possible! You should again take screenshots of typical "behavior".
+As before, there are a lot of further extensions possible! You should again take screenshots of typical "behavior". Choose one of the following to explore and then write the report specified under the "Advanced" requirements below.
 
 
 Options:

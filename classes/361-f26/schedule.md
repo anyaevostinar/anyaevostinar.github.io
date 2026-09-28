@@ -25,11 +25,11 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 9/25 | [Droplets Prep](droplets-prep) | Droplets, [Slides](https://docs.google.com/presentation/d/1BNrC266j_0GXmeUTXjkFM9Nz8JVUiKPK85CnM13Lerw/edit?usp=sharing) | |
 | **Week 3** | | **Morphogenesis** | |
 | M 9/28 | [L-System Prep](lsystems-prep) | [L-systems](lsys-lab), [Slides](https://docs.google.com/presentation/d/1YSmZEg0gGhkBD1z-UmhYC5N9dPIlufsi3QJF0Heh7jc/edit?usp=sharing) | |
-| W 9/30 | AChem due, [Geb Prep](geb-prep) | Geb and Config Panels | L-System out  |
+| W 9/30 | [AChem due](hw-achem), [Geb Prep](geb-prep) | Geb and Config Panels | [L-System out](hw-lsys)  |
 | F 10/2 |[Reaction-Diffusion Prep](reaction-diff-prep) | Reaction-Diffusion | |
 | **Week 4** | | **Evolution** | |
 | M 10/5 |  | Evolutionary Algorithms |  |
-| W 10/7 | L-System due | Empirical World | Encyclopedia assignment out|
+| W 10/7 | [L-System due](hw-lsys) | Empirical World | Encyclopedia assignment out|
 | F 10/9 |  | Digital Evolution, Topic checkins |  |
 | **Week 5** | | **Groups and Swarms** | |
 | M 10/12 | Encyclopedia topic due | Boids and Swarms  |  |
