@@ -27,23 +27,23 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | M 9/28 | [L-System Prep](lsystems-prep) | [L-systems](lsys-lab), [Slides](https://docs.google.com/presentation/d/1YSmZEg0gGhkBD1z-UmhYC5N9dPIlufsi3QJF0Heh7jc/edit?usp=sharing) | |
 | W 9/30 | AChem due, [Geb Prep](geb-prep) | Geb and Config Panels | L-System out  |
 | F 10/2 |[Reaction-Diffusion Prep](reaction-diff-prep) | Reaction-Diffusion | |
-| **Week 4** | | **Movement** | |
-| M 10/5 |  | Robots |  |
-| W 10/7 | L-System due | Xenobots | Encyclopedia assignment out|
-| F 10/9 |  | Implementing movement, Topic checkins |  |
+| **Week 4** | | **Evolution** | |
+| M 10/5 |  | Evolutionary Algorithms |  |
+| W 10/7 | L-System due | Empirical World | Encyclopedia assignment out|
+| F 10/9 |  | Digital Evolution, Topic checkins |  |
 | **Week 5** | | **Groups and Swarms** | |
 | M 10/12 | Encyclopedia topic due | Boids and Swarms  |  |
 | W 10/14 | | Modeling multicells and DISHTINY | |
 | F 10/16 | | ALife Art | |
 | **Week 6** | | **Ecosystems** | |
 | M 10/19 | | Midterm Break |  |
-| W 10/21 | Encyclopedia due | Lotka-Volterra and Hashtag Ecology | Artificial Ecology assignment out|
+| W 10/21 | Encyclopedia due | Lotka-Volterra and Data Collection | Artificial Ecology assignment out|
 | Th 10/22 | | Early voting in Great Hall 9-2 | |
 | F 10/23 | | Synthetic Ecology | |
 | **Week 7** | | **Eco-Evo** | |
-| M 10/26 | | Implementing Digital Evolution  |  |
+| M 10/26 | | Peer Review  |  |
 | W 10/28 | Artificial ecology due | Tierra | Digital evolution assignment out |
-| F 10/30 | | Avida and OEE |  |
+| F 10/30 | | Open-Ended Evolution |  |
 | **Week 8** | | **Multi-System Projects** | |
 | M 11/2 |  | Combining ODEs and ABMs |  |
 | T 11/3 | | Vote if you are eligible! | |
