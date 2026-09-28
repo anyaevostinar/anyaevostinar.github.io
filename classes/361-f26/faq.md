@@ -6,6 +6,12 @@ permalink: /classes/361-f26/faq
 
 Here is a running list of questions that have come up and I suspect will come up again, feel free to comment with additional ones!
 
+*How can I find out more about things in Empirical?*
+* Check the [Empirical Documentation](https://empirical.readthedocs.io/en/latest/index.html)
+
+*How can I see the `std::cout`?*
+It will be in your browser's console. When the page is running, right click and select `Inspect` (on Chrome) and then `Console`.
+
 *Should I worry about the warning when I build?*   
 * Nope, that's expected
 
@@ -20,9 +26,6 @@ Here is a running list of questions that have come up and I suspect will come up
 
 *I'm getting Permission denied when trying to compile and run my code or emsdk on Mac*
 * You just need to change the permissions on the file with chmod +x filename
-
-*I'm getting an error about -march=native when I try to run the compile-run.sh script.*
-* Certain computers don't support this option, which I realized only after sending starter code out to you all. Open compile-run.sh and replace -march=native with -msse4.2
 
 *When I run my web version, it crashes after a bit with an error about memory allocation.*
 * You are using more memory than the browser thinks you should be. Make sure you aren't making excessive copies of things (and make sure that you are clearing your canvas each frame), but you can also increase the amount of memory the browser lets you use by opening compile-run.sh and adding -s TOTAL_MEMORY=268435456 just before AEAnimate.cpp. If you're still running out of memory, you should try to find where that might be happening since you should be able to work within that amount.
