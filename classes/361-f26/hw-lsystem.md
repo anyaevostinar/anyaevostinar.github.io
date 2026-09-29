@@ -36,7 +36,7 @@ You'll be making an l-system plant simulation with the Empirical framework.
 ## Setup
 We'll be using the Empirical library for this assignment. I've provided a fair amount of starter code so that you can focus on implementing the functionality of the growth. (You are welcome to tweak the visualizations if you are interested though!) 
 
-1. Go to our [361-F26] Organization and find the `LSystem-HW` repository for your account. Use `git clone --recurse-submodules [URL]` as usual.
+1. Go to our [361-F26](https://github.com/361-F26) Organization and find the `LSystem-HW` repository for your account. Use `git clone --recurse-submodules [URL]` as usual.
 
 3. Then, go to the `emsdk` folder and install and activate `emsdk`:
 ```
