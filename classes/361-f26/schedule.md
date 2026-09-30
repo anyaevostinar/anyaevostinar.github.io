@@ -28,9 +28,9 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 9/30 | [AChem due](hw-achem), [Geb Prep](geb-prep) | Geb and Config Panels, [Slides](https://docs.google.com/presentation/d/1hGYG9j8JFKxwhtAxI6VxAs3efnOEcnlaV8cr7oZ5wYM/edit?usp=sharing) | [L-System out](hw-lsys)  |
 | F 10/2 |[Reaction-Diffusion Prep](reaction-diff-prep) | [Reaction-Diffusion Lab](react-diffuse-lab), [Slides](https://docs.google.com/presentation/d/1YjUh5wtEXU4IWU5jgF1Gb7KjHMpyDr_8Z8u7rL7MvGc/edit?usp=sharing) | |
 | **Week 4** | | **Evolution** | |
-| M 10/5 |  | Evolutionary Algorithms |  |
-| W 10/7 | [L-System due](hw-lsys) | Empirical World | Encyclopedia assignment out|
-| F 10/9 |  | Digital Evolution, Topic checkins |  |
+| M 10/5 | [Evo Comp Prep](evocomp-prep) | Evolutionary Algorithms |  |
+| W 10/7 | [L-System due](hw-lsys), [Empirical World Prep](emp-world-prep) | Empirical World | Encyclopedia assignment out|
+| F 10/9 | [Digital Evolution Prep](dig-evo-prep) | Digital Evolution, Topic checkins |  |
 | **Week 5** | | **Groups and Swarms** | |
 | M 10/12 | Encyclopedia topic due | Boids and Swarms  |  |
 | W 10/14 | | Modeling multicells and DISHTINY | |
