@@ -26,7 +26,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 3** | | **Morphogenesis** | |
 | M 9/28 | [L-System Prep](lsystems-prep) | [L-systems](lsys-lab), [Slides](https://docs.google.com/presentation/d/1YSmZEg0gGhkBD1z-UmhYC5N9dPIlufsi3QJF0Heh7jc/edit?usp=sharing) | |
 | W 9/30 | [AChem due](hw-achem), [Geb Prep](geb-prep) | Geb and Config Panels, [Slides](https://docs.google.com/presentation/d/1hGYG9j8JFKxwhtAxI6VxAs3efnOEcnlaV8cr7oZ5wYM/edit?usp=sharing) | [L-System out](hw-lsys)  |
-| F 10/2 |[Reaction-Diffusion Prep](reaction-diff-prep) | Reaction-Diffusion | |
+| F 10/2 |[Reaction-Diffusion Prep](reaction-diff-prep) | [Reaction-Diffusion Lab](react-diffuse-lab) | |
 | **Week 4** | | **Evolution** | |
 | M 10/5 |  | Evolutionary Algorithms |  |
 | W 10/7 | [L-System due](hw-lsys) | Empirical World | Encyclopedia assignment out|
