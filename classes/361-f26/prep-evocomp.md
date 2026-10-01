@@ -23,6 +23,7 @@ After class, you should be able to:
 ## Reading
 You should read the following to achieve the basic learning objectives:
 * 7.2 (Evolution) of [Biological Bits](https://users.monash.edu/~aland/BiologicalBits.html) 
+* [4.1 Defining C++ Functions](https://runestone.academy/ns/books/published/cpp4python/Functions/DefiningFunctions.html?mode=browsing) and 4.2 Parameter Passing in C++ to Python Runestone book
 
 ## Checks
 Answer the following questions on Moodle:

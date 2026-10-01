@@ -1,0 +1,137 @@
+---
+layout: page
+title: First Evolutionary Algorithm
+permalink: /classes/361-f26/evo-alg-lab
+---
+
+## Goals
+To learn about evolutionary algorithms by making your own while practing more with C++ essentials.
+
+## Setup
+1. Open the `EvoAlgLab` repository in our 361-F26 organization, which will make a GitHub repository with starter code.
+
+2. Open Terminal and clone your repository:
+```bash
+git clone --recurse-submodules [URL]
+```
+
+3. Open VSCode and then open your repository folder. 
+
+4. Open a Terminal in VSCode and type `chmod +x main.sh` then `./main.sh`. You shouldn't see anything (your program compiled and ran, but doesn't do anything interesting). If you got errors about files not found, type the following: `git submodule update --init --recursive` which should download the files you were missing. Then try running `main.sh` again. If you are still getting errors, wave for help.
+
+5. This lab will ask you to do more of your own C++ programming, so I recommend having the [Runestone book](https://runestone.academy/ns/books/published/cpp4python/index.html?mode=browsing) open to reference. You can also look back at your previous labs/assignments to see examples of how to do things.
+
+## Exercise 1
+Recall that the necessary pieces for evolution by natural selection to occur are:
+* Variation
+* Inheritance
+* Competition
+* Time
+
+Today you'll make a super simple instance of evolution of creatures that simply have a number and the higher the number, the better they are able to survive. This is obviously not a very interesting problem, but you will be able to imagine how you could change this to a more interesting behavior in the future.
+
+a. You have an `Organism` class already. However, as you learned, evolution doesn't occur at the level of the individual, and so we'll need a way to hold a population of organisms. While C++ has a built-in vector that is similar to the lists and ArrayLists you've seen before, we'll use an enhanced version from the Empirical library.
+
+In `main`, create an `emp::vector<Organism>` called population.
+
+b. Then fill your population with 100 `Organism`s with all the same starting behavior value. You add an item to a vector like this:
+```cpp
+population.push_back(*new Organism(0.5));
+```
+
+(Note that you could have a vector of `Organism*` instead if you wanted and we will in the future, just trying to keep things simple for now.)
+
+c. Print out the behavior of an organism in your population to see that everything is working. Make sure your code compiles and runs. You may see some warnings which you can ignore for now. 
+
+## Exercise 2
+Evolution requires inheritance to occur, so we'll need a way for organisms to reproduce and pass on their behavior value.
+
+a. Create a `reproduce` function in your `Organism` class that returns a pointer to an `Organism` and takes no arguments currently.
+
+b. In that function, create a new organism with the same behavior value as the parent and return it.
+
+c. Verify that your reproduction function works by calling it on an Organism in your population in `main` and printing the parent and offspring's addresses and behaviors. Compile and run your code at this point.
+
+## Exercise 3
+We also need competition and time for our organisms.
+
+a. In `main` create a for-loop that loops 100 times, which we'll call 'updates'. In more complicated programs, organisms would do some behavior every update, but currently they don't actually do anything.
+
+b. To create competition, we need to compare the organisms' behavior values and find the best. You can loop through Empirical vectors easily like so:
+```cpp
+for(Organism j : population) {
+  ...
+}
+```
+
+Loop through every organism in the population and find the organism with the maximum behavior. You'll want to start by declaring a variable to hold the organism with the current maximum that you can then compare to in the loop.
+
+c. Once you find the organism with the maximum behavior value, call its reproduce method and save that new organism.
+
+d. We don't want to just add the offspring to the end of the vector since then the population would just grow and there wouldn't actually be competition. For evolution to occur, organisms must die. You could go through again and find the minimum behavior value organism, but the first organism in the population will be fine for the moment:
+```cpp
+population[0] = *new_org; //or whatever you named your new organism
+```
+
+e. Print out the size of your population using the `.size()` method after running your updates to see that it stays the same. Compile and run your code at this point.
+
+## Exercise 3
+If we left things there, we couldn't get evolution because all your organisms are the same and reproducing clones. To introduce variation, we need to be able to mutate the organisms. (We'll be focusing on a single organism reproducing 'asexually' for the most part in this class to keep things simple.)
+
+a. To mutate organisms, you'll need access to randomness. C++ has built-in randomness of course, but Empirical provides useful tools for this as well. In `main`, create a random number generator like so:
+```cpp
+emp::Random random(1); //create an object of type emp::Random called random
+//and pass 1 as an argument to its constructor
+//this is c++ shorthand for emp::Random random = *new emp::Random(1);
+```
+
+b. Now create a function in your `Organism` class called `mutate` that doesn't return anything but receives an `emp::Random` as input. (Why do you think we are passing it instead of just making another one?)
+
+c. There are a whole lot of ways of mutating organisms and whole dissertations have been devoted to what the 'best' way is. A generally good way to mutate a value that is of type double is to pull a random number from a [normal distribution/bell curve](https://en.wikipedia.org/wiki/Normal_distribution) that is centered at 0. This means that you are just as likely to mutate up as down and mutations will generally be small but have the chance at being large, which is fairly biologically accurate.
+
+This is such a common task that Empirical provides a function for it:
+```cpp
+random.GetRandNormal(0.0, 0.02); //pull a random number from a normal
+//distribution with a mean of 0 and a standard deviation of 0.002.
+```
+Add the random number you get to the organism's `behavior` value.
+
+d. We probably want to use our new-found power in several places. The most critical is in `reproduce`. Add an argument to `reproduce` that is of type `emp::Random` and pass the `random` that you made in `main` to `reproduce` when you call it. 
+
+e. Within reproduce, mutate the offspring after you create it and before returning it. Remember that in C++, you use the `->` syntax to call the functions of pointers:
+```cpp
+offspring->mutate(random);
+```
+
+e. Outside of your for-loop in `main`, again trace through your population to find the organism with the maximum behavior value and print it out. Compile and run your code to see what max you reach. It probably won't be very high since we don't have a whole lot of variation being introduced and are only running for 100 updates. Increase the number of updates to 10,000 and see what you get.
+
+Congrats, you have made your first functional evolutionary algorithm!
+
+## Exercise 4
+It is really not ideal to always be only overwriting the first organism in the population, so let's fix that really quick.
+
+Empirical has a function for getting a random unsigned (ie always positive) integer:
+```cpp
+int overwrite = random.GetUInt(0,100);
+population[overwrite] = *new_org;
+```
+
+Make sure to add, commit, and push your code so it's saved in your repository, you'll want to refer to it in the future!
+
+## Submission
+You aren't required to submit labs in this class, but you can for an extra engagement credit. Complete through exercise 4 and then push it to GitHub:
+```bash
+git add main.cpp
+git commit -m "finished evolutionary algorithm"
+git push
+```
+
+## Extensions
+If you have extra time, there are lots of improvements that could be made to this small project, including:
+* You can use your mutate function to mutate the organisms you start your population with to speed up evolution
+* Try switching the 'fitness' determination to something more interesting like the solution to a math problem
+* Try switching the whole problem to something more interesting like a string of 1's and 0's and the organisms have to get some specific pattern that you choose.
+
+
+
+
