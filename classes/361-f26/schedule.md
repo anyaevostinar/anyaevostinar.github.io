@@ -30,7 +30,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 4** | | **Evolution** | |
 | M 10/5 | [Evo Comp Prep](evocomp-prep) | [Evolutionary Algorithms](evo-alg-lab), [Slides](https://docs.google.com/presentation/d/17wkfdJJpv1i6htwMZ91xyAccvK2r6IQ3TDbUSmkouig/edit?usp=sharing) |  |
 | W 10/7 | [L-System due](hw-lsys), [Empirical World Prep](emp-world-prep) | Empirical World | Encyclopedia assignment out|
-| F 10/9 | [Digital Evolution Prep](dig-evo-prep) | Digital Evolution, Topic checkins |  |
+| F 10/9 | [Peer Review Prep](topic-peer-prep) | Peer Review, Topic checkins |  |
 | **Week 5** | | **Groups and Swarms** | |
 | M 10/12 | Encyclopedia topic due | Boids and Swarms  |  |
 | W 10/14 | | Modeling multicells and DISHTINY | |
@@ -41,8 +41,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Th 10/22 | | Early voting in Great Hall 9-2 | |
 | F 10/23 | | Synthetic Ecology | |
 | **Week 7** | | **Eco-Evo** | |
-| M 10/26 | | Peer Review  |  |
-| W 10/28 | Artificial ecology due | Tierra | Digital evolution assignment out |
+| M 10/26 | [Digital Evolution Prep](dig-evo-prep) | Peer Review  |  |
+| W 10/28 | Artificial ecology due, Tierra Prep | Tierra | Digital evolution assignment out |
 | F 10/30 | | Open-Ended Evolution |  |
 | **Week 8** | | **Multi-System Projects** | |
 | M 11/2 |  | Combining ODEs and ABMs |  |
