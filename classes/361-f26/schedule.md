@@ -29,7 +29,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 10/2 |[Reaction-Diffusion Prep](reaction-diff-prep) | [Reaction-Diffusion Lab](react-diffuse-lab), [Slides](https://docs.google.com/presentation/d/1YjUh5wtEXU4IWU5jgF1Gb7KjHMpyDr_8Z8u7rL7MvGc/edit?usp=sharing) | |
 | **Week 4** | | **Evolution** | |
 | M 10/5 | [Evo Comp Prep](evocomp-prep) | [Evolutionary Algorithms](evo-alg-lab), [Slides](https://docs.google.com/presentation/d/17wkfdJJpv1i6htwMZ91xyAccvK2r6IQ3TDbUSmkouig/edit?usp=sharing) |  |
-| W 10/7 | [L-System due](hw-lsys), [Empirical World Prep](emp-world-prep) | Empirical World | Encyclopedia assignment out|
+| W 10/7 | [L-System due](hw-lsys), [Empirical World Prep](emp-world-prep) | [Empirical World](empirical_intro_lab), [Slides](https://docs.google.com/presentation/d/1JPqF8nGGWp6_1A1dc5iaNmB9i6P7tx3vPUUd6jCZhyw/edit?usp=sharing) | Encyclopedia assignment out|
 | F 10/9 | [Peer Review Prep](topic-peer-prep) | Peer Review, Topic checkins |  |
 | **Week 5** | | **Groups and Swarms** | |
 | M 10/12 | Encyclopedia topic due | Boids and Swarms  |  |
