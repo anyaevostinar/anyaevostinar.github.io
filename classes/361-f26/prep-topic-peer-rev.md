@@ -28,3 +28,5 @@ There isn't any new reading, but you should make sure that you have your two ass
 ## Checks
 Submit answers to the following on Moodle:
 * What are some of the topics that you are interested in for the encyclopedia assignment?
+* What is one aspect of your LSystem or AChem assignment that you are proud of and want to show to a peer?
+* What is one aspect of your LSystem or AChem assignment that is troublesome and you'd like help with?
