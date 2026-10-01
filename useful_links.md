@@ -63,3 +63,6 @@ I have a couple of projects getting evolutionary dynamics into Minecraft and so 
 
 ## Life
 [https://kk.org/thetechnium/101-additional-advices/](101 Additional Advices) - all pretty darn good
+
+## Games with Complexity and/or Evolution/real biology
+[Baba Is You](https://en.wikipedia.org/wiki/Baba_Is_You)
