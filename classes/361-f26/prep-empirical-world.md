@@ -30,3 +30,5 @@ Answer the following questions on Moodle:
 * Did you find any typos or sections that were difficult to understand?
 * If you were going to create a new Empirical project using World, where would you start writing code?
 * Give an example of quantitative data (numbers, counts, etc) that you could have collected from your previous assignments and labs.
+
+To get to coding in the lab faster, complete the setup and first exercise of the [lab](empirical_intro_lab) before class.
