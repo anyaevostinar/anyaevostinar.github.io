@@ -8,7 +8,7 @@ permalink: /classes/361-f26/evo-alg-lab
 To learn about evolutionary algorithms by making your own while practing more with C++ essentials.
 
 ## Setup
-1. Open the `EvoAlgLab` repository in our 361-F26 organization, which will make a GitHub repository with starter code.
+1. Open the `EvoAlgLab` repository in our [361-F26](https://github.com/orgs/361-F26/repositories) organization, which will make a GitHub repository with starter code.
 
 2. Open Terminal and clone your repository:
 ```bash
