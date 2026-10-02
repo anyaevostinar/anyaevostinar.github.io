@@ -115,3 +115,12 @@ The Advanced requirements for this project are:
     * What exploration experiment you chose, clearly detailing your question if you chose your own.
     * At least 3 screenshots of different parameter settings, rule variants, or environmental conditions, along with clearly stating what parameters differed in each screenshot.
     * At least 2 paragraphs discussing what the screenshots show and what your results imply about procedural growth, genotype-to-phenotype mapping, and the dynamics of biological development.
+
+
+## Submission
+Execute the following commands to tag your homework:
+
+```
+git tag -a initial_submission -m "initial submission"
+git push origin initial_submission
+```
