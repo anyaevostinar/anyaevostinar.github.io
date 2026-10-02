@@ -33,12 +33,12 @@ You should be able to see the typical L-system with a gradient traveling around 
 The functionality of the reaction-diffusion system is provided, since it's mostly just a lot of annoying PDE calculations. However, you should introduce a few more morphogen sources so that the L-system actually interacts with them. 
 
 1. In `ReactionDiffusion.hpp`, find the `Reset` method. 
-2. In that method, there is a list of lists `seed_coords` that currently has only `{0,0}` being added, hence the reaction system starting in the upper left corner and traveling around. Add another pair or two of coordinates and observe how that changes the reaction-diffusion background and the L-system's response. (If you're interested, feel free to also experiment with the `Gray-Scott` parameters in the `ReactionDiffusion` constructor.)
+2. In that method, there is a list of lists `seed_coords` that currently has only `{0,0}` being added, hence the reaction system starting in the upper left corner and traveling around. Add another pair or two of coordinates (so that you have `{{0,0},{50,20}}` for example) and observe how that changes the reaction-diffusion background and the L-system's response. (If you're interested, feel free to also experiment with the `Gray-Scott` parameters in the `ReactionDiffusion` constructor.)
 
 ## Differential Development
 Standard L-systems are context-free `(A -> B)`. You are going to change the L-system to be sensitive to spatial morphogen levels so that the environment dictates gene expression. 
 
-**Your task:** Modify `Expand` in `RDLSysAnimate.cpp` by using `rd_grid.GetVAtCanvas(x, y)` to have the symbol expansion depend on the local environment state. For example, if the concentration of V is high, perhaps `F` turns into `FAF` and if its low, `F` doesn't change. `GetVAtCanvas(x,y)` retuns a concentration of `V` that is between 0 and 1 and takes the current x and y coordinates of the turtle.
+**Your task:** Modify `ExpandAndDraw` in `RDLSysAnimate.cpp` by using `rd_grid.GetVAtCanvas(cur_x, cur_y)` to have the symbol expansion depend on the local environment state. For example, if the concentration of V is high, perhaps `F` turns into `FAF` and if its low, `F` doesn't change. `GetVAtCanvas(cur_x,cur_y)` retuns a concentration of `V` that is between 0 and 1 and takes the current x and y coordinates of the turtle.
 
 Remember to recompile and run to see how your plant responds to the differential growth rules!
 

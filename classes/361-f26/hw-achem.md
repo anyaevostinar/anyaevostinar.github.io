@@ -110,6 +110,13 @@ The **Advanced** requirements for this project are:
 You will submit your assignment by pushing your code to the GitHub repository that you start from.
 If you are unsure how to use Git to push your code, please ask!
 
+Execute the following commands to tag your homework:
+
+```
+git tag -a initial_submission -m "initial submission"
+git push origin initial_submission
+```
+
 ## Getting Help
 Remember that you can and should ask for help on everything from annoying C++ bugs to Git to "is this a reasonable artificial chemistry to implement?"
 The CampusWire is probably the best place to ask, as long as you don't have to share too much of your code to do so, because you'll get faster responses on average.
