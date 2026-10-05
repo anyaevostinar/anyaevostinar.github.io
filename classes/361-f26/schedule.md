@@ -34,7 +34,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 5** | | **Groups and Swarms** | |
 | M 10/12 | [Encyclopedia topic](encyclopedia-hw#topic) due, [Swarms Prep](swarms-prep) | Boids and Swarms  |  |
 | W 10/14 | [DISHTINY prep](multicells-prep) | Modeling multicells and DISHTINY | |
-| F 10/16 | | ALife Art | |
+| F 10/16 | [Art Prep](art-prep) | ALife Art | |
 | **Week 6** | | **Ecosystems** | |
 | M 10/19 | | Midterm Break |  |
 | W 10/21 | Encyclopedia first draft due | Lotka-Volterra and Data Collection | Artificial Ecology assignment out|
