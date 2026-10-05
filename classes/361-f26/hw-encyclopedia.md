@@ -109,7 +109,7 @@ The following are potential references/places to look for references:
 * [Toward Open-Ended Fraternal Transitions in Individuality (DISHTINY)](https://direct.mit.edu/artl/article/25/2/117/2929/Toward-Open-Ended-Fraternal-Transitions-in)
 * [Evolution, Ecology, and Optimization of Digital Organisms (Tierra)](https://homeostasis.scs.carleton.ca/~soma/adapsec/readings/tierra-92-08-042.pdf)
 * [A Survey of Recent Practice of Artificial Life in Visual Art](https://direct.mit.edu/artl/article/30/1/106/119728/A-Survey-of-Recent-Practice-of-Artificial-Life-in)
-* [Evolving Novel Behaviors via Natural Selection](/classes/361-f26 Evolving_Novel_Behaviors_via_Natural_Sel.pdf) by Channon and Damper (Geb)
+* [Evolving Novel Behaviors via Natural Selection](/classes/361-f26/Evolving_Novel_Behaviors_via_Natural_Sel.pdf) by Channon and Damper (Geb)
 * Artificial Life Journal [older issues through Carleton Library](https://browzine.com/libraries/319/journals/32148/issues/479445374), [newer issues](https://direct.mit.edu/artl), if you can't access any of the newer articles and would like them, let me know
 * [ALIFE Conference Proceedings](https://direct.mit.edu/isal/volumes/browse-by-conference) 
 * [The Surprising Creativity of Digital Evolution](https://direct.mit.edu/artl/article/26/2/274/93255/The-Surprising-Creativity-of-Digital-Evolution-A) is a fun collection and overview of different digital evolution systems
