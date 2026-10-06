@@ -52,6 +52,7 @@ git push
 
 ## Extensions
 If you have extra time, there are a lot of expansions to the system that you could try:
+* Add in a config panel and data collection to the native mode to quantitatively see how well the ant it doing. What data do you need to output?
 * Have the ants use up energy points and need to rest or eat
 * Have the ants respond to each other by more than just not colliding, perhaps following?
 * Introduce another type of ant (via another class) that follows a different algorithm to see how much it messes things up
