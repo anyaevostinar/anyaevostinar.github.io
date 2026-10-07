@@ -32,7 +32,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 10/7 | [L-System due](hw-lsys), [Empirical World Prep](emp-world-prep) | [Empirical World](empirical_intro_lab), [Slides](https://docs.google.com/presentation/d/1JPqF8nGGWp6_1A1dc5iaNmB9i6P7tx3vPUUd6jCZhyw/edit?usp=sharing) | [Encyclopedia](encyclopedia-hw) assignment out|
 | F 10/9 | [Peer Review Prep](topic-peer-prep) | Peer Review, Topic checkin, [Slides](https://docs.google.com/presentation/d/1FBJaky-d-nzcaUBS5KPNhOIPHcFwYC98JGmBhKq8tIE/edit?usp=sharing) |  |
 | **Week 5** | | **Groups and Swarms** | |
-| M 10/12 | [Encyclopedia topic](encyclopedia-hw#topic) due, [Swarms Prep](swarms-prep) | [Swarms Lab](moving_lab)  |  |
+| M 10/12 | [Encyclopedia topic](encyclopedia-hw#topic) due, [Swarms Prep](swarms-prep) | [Swarms Lab](moving_lab), [Slides](https://docs.google.com/presentation/d/1LO_joWfcvmR11tUjt8j4i7ahLREcdvv35fSuWHVt8Ic/edit?usp=sharing)  |  |
 | W 10/14 | [DISHTINY prep](multicells-prep) | Modeling multicells and DISHTINY | |
 | F 10/16 | [Art Prep](art-prep) | ALife Art | |
 | **Week 6** | | **Ecosystems** | |

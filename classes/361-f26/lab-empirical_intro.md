@@ -21,10 +21,14 @@ To use Empirical to create a simple growing population simulation.
     ```
 
 ### Running the native starter
-With that all in place, the starter code is functional. Check it out with:
+With that all in place, the starter code is functional. Check it out with whichever command is correct for your setup:
 
 ```
-./compile-run.sh
+./compile-run-mac.sh
+```
+
+```
+./compile-run-wsl.sh
 ```
 
 **Note: this is the command line mode now, so it will just output a couple of warnings and not do anything else, but there shouldn't be errors.**
