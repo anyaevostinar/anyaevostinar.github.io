@@ -33,8 +33,8 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 10/9 | [Peer Review Prep](topic-peer-prep) | Peer Review, Topic checkin, [Slides](https://docs.google.com/presentation/d/1FBJaky-d-nzcaUBS5KPNhOIPHcFwYC98JGmBhKq8tIE/edit?usp=sharing) |  |
 | **Week 5** | | **Groups and Swarms** | |
 | M 10/12 | [Encyclopedia topic](encyclopedia-hw#topic) due, [Swarms Prep](swarms-prep) | [Swarms Lab](moving_lab), [Slides](https://docs.google.com/presentation/d/1LO_joWfcvmR11tUjt8j4i7ahLREcdvv35fSuWHVt8Ic/edit?usp=sharing)  |  |
-| W 10/14 | [DISHTINY prep](multicells-prep) | Modeling multicells and [DISHTINY](dishtiny_lab) | |
-| F 10/16 | [Art Prep](art-prep) | ALife Art | |
+| W 10/14 | [DISHTINY prep](multicells-prep) | Modeling multicells and [DISHTINY](dishtiny_lab), [Slides](https://docs.google.com/presentation/d/1169kJCm9a-0q-gqebSZqGYxZ1iAe4jgWQxcpIpWQr1Y/edit?usp=sharing) | |
+| F 10/16 | [Art Prep](art-prep) | ALife Art, [Slides](https://docs.google.com/presentation/d/15m-_bw2HoXPOFXj0Ac4k0LDkva6rdJXYd2ZdkG1FpZQ/edit?usp=sharing) | |
 | **Week 6** | | **Ecosystems** | |
 | M 10/19 | | Midterm Break |  |
 | W 10/21 | Encyclopedia first draft due | Lotka-Volterra and Data Collection | Artificial Ecology assignment out|

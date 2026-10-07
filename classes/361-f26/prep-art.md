@@ -24,7 +24,8 @@ After class, you should be able to:
 Read the following:
 
 * [Artificial Life in Art and Music](https://alife.org/encyclopedia/introduction/artificial-life-in-art-and-music/)
-* [A Survey of Recent Practice of Artificial Life in Visual Art](https://direct.mit.edu/artl/article/30/1/106/119728/A-Survey-of-Recent-Practice-of-Artificial-Life-in)
+* Section 7.4 (Aesthetic Ecosystems) in Biological Bits
+* [A Survey of Recent Practice of Artificial Life in Visual Art](https://direct.mit.edu/artl/article/30/1/106/119728/A-Survey-of-Recent-Practice-of-Artificial-Life-in) - probably just skim this for some more examples if you are curious, it's mostly just a list of other things to look at and includes some nice figures that are difficult to find otherwise.
 
 ## Checks
 Submit answers to the following on Moodle:
