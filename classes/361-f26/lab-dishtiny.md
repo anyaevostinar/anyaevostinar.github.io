@@ -17,7 +17,7 @@ If you'd like to get even more replicates going, feel free to log into a lab mac
 **Click Start so that it starts running while you read the rest of the instructions since it's takes a little while for interesting things to happen.**
 
 ## Views
-DISHTINY allows for *a lot* of information to be visible, and we're going to focus on just a few things for now. The worksheet has all the information in the keys, so we're going to collapse them so that you can actually see all the data views, as well as switching out a couple of data views for our purposes.
+DISHTINY allows for *a lot* of information to be visible, and we're going to focus on just a few things for now. The worksheet has all the information in the keys, so we're going to collapse them so that you can see all the data views, as well as switching out a couple of data views for our purposes.
 
 1. On the left side bar, click the heading `Kin Group ID` **once** to collapse the key without removing the view. If you click again, it will close the view and you should reopen it by clicking a third time.
 
