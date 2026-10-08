@@ -41,8 +41,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Th 10/22 | | Early voting in Great Hall 9-2 | |
 | F 10/23 | | Peer review | |
 | **Week 7** | | **Eco-Evo** | |
-| M 10/26 | [Digital Evolution Prep](dig-evo-prep), 
-Encyclopedia second draft due  | Synthetic Ecology |  |
+| M 10/26 | [Digital Evolution Prep](dig-evo-prep), </br> Encyclopedia second draft due  | Synthetic Ecology |  |
 | W 10/28 | Artificial ecology due, Tierra Prep | Tierra | Digital evolution assignment out |
 | F 10/30 | | Open-Ended Evolution |  |
 | **Week 8** | | **Multi-System Projects** | |
