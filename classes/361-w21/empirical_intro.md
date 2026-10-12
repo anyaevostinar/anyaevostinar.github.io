@@ -12,7 +12,7 @@ A list of examples of things built with Empirical is [here](https://empirical.re
 Empirical is a work in progress (as all open-source software pretty much continually is) that has not actually been officially released yet and the documentation is still in development. 
 
 # World
-One of the useful tools that Empirical provides is the [`World`](https://empirical.readthedocs.io/en/latest/api/classemp_1_1World.html#class-documentation) class. 
+One of the useful tools that Empirical provides is the [`World`](https://empirical.readthedocs.io/en/latest/library/evolve/api/World.html#world-hpp) class. 
 This class is a container that holds a class that you will specify for how you want your organisms to behave. You will usually want to add additional functionality to the `World` class, so you will use inheritance to grab all the functionality of the `World` class and also add your own:
 
 ```
@@ -23,7 +23,7 @@ class MyWorld : public emp::World<Organism> {
 
 This code snippet is assuming you have an `Organism` class defined as well, which I'll discuss later in this document.
 
-The `World` class has a lot of provided functions, which you can search through in the [documentation](https://empirical.readthedocs.io/en/latest/api/classemp_1_1World.html#class-documentation). The `World` class has the ability to hold multiple populations of organisms, which are contained in the instance variable `pop`. For now, we'll only worry about having one population, which is the default behavior. `pop` is a special `vector` provided by the Empirical tools that does all the same things a standard `vector` does while also providing extra debugging tools. You can see the methods it provides in its documenation [vector documenation](https://empirical.readthedocs.io/en/latest/api/classemp_1_1vector.html#class-documentation). The important thing for now is that you can access things in `pop` list so:
+The `World` class has a lot of provided functions, which you can search through in the [documentation](https://empirical.readthedocs.io/en/latest/library/evolve/api/World.html#world-hpp). The `World` class has the ability to hold multiple populations of organisms, which are contained in the instance variable `pop`. For now, we'll only worry about having one population, which is the default behavior. `pop` is a special `vector` provided by the Empirical tools that does all the same things a standard `vector` does while also providing extra debugging tools. You can see the methods it provides in its documenation [vector documenation](https://empirical.readthedocs.io/en/latest/library/datastructs/api/Vector.html#vector-hpp). The important thing for now is that you can access things in `pop` list so:
 ```
 pop[i]->OrgMethod()
 ```

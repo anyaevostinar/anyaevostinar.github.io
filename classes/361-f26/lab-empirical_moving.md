@@ -20,6 +20,8 @@ To enable organisms to move around in an Empirical world to accomplish a swarmin
     cd ..
     ```
 
+You'll probably want to open the Empirical [World](https://empirical.readthedocs.io/en/latest/library/evolve/api/World.html#world-hpp) documentation as well.
+
 ## Running web GUI
 Start the web GUI starter code running with `./compile-run-web.sh` and you should see a grid of yellow circles with a little black square hiding somewhere.
 

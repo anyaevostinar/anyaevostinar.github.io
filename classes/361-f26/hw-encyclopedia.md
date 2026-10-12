@@ -96,6 +96,8 @@ If you want to do something related to one of these, feel free to talk to me abo
 * Xenobots - Introduction
 * Social Cognitive Robots
 * Alife in social sciences - Introduction
+* Openworm - Introduction
+* MetaChem - Introduction
 
 
 ## Resources

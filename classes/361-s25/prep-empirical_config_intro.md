@@ -7,7 +7,7 @@ permalink: /classes/361-s25/config_intro
 ## Overview
 Needing to recompile every time you change a variable value in a simulation is not ideal and can make it difficult to track what values you had when you got specific data.
 Instead, you can have a file of these values that your code references so that you can change values at run time.
-The use of a configuration file is very common and slightly annoying to setup, so Empirical provides a set of tools through the [`ArgManager`](https://empirical.readthedocs.io/en/latest/api/classemp_1_1ArgManager.html) class that handles both a configuration file for settings as well as support for overriding those values at the command line and URL when using a GUI.
+The use of a configuration file is very common and slightly annoying to setup, so Empirical provides a set of tools through the [`ArgManager`](https://empirical.readthedocs.io/en/latest/library/config/config.html#config) class that handles both a configuration file for settings as well as support for overriding those values at the command line and URL when using a GUI.
 
 ## Basic Learning Objectives
 Before class, you should be able to:
