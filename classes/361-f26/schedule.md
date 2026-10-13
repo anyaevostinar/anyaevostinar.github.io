@@ -37,7 +37,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 10/16 | [Art Prep](art-prep) | ALife Art, [Slides](https://docs.google.com/presentation/d/15m-_bw2HoXPOFXj0Ac4k0LDkva6rdJXYd2ZdkG1FpZQ/edit?usp=sharing) | |
 | **Week 6** | | **Ecosystems** | |
 | M 10/19 | | Midterm Break |  |
-| W 10/21 | [Artificial Ecologies Prep](eco-models-prep), <br> Encyclopedia first draft due | Lotka-Volterra and [Data Collection](empirical_data_lab) | Artificial Ecology assignment out|
+| W 10/21 | [Artificial Ecologies Prep](artificial-ecologies-prep), <br> Encyclopedia first draft due | Lotka-Volterra and [Data Collection](empirical_data_lab) | [Artificial Ecology](hw-ae) assignment out|
 | Th 10/22 | | Early voting in Great Hall 9-2 | |
 | F 10/23 | [Encyclopedia Review Prep](enc-review-prep) | Peer review | |
 | **Week 7** | | **Eco-Evo** | |
