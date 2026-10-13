@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Ecosystem Models Preparation
-permalink: /classes/361-f26/eco-models-prep
+title: Artificial Ecologies Preparation
+permalink: /classes/361-f26/artificial-ecologies-prep
 ---
 
 ## Overview
@@ -21,7 +21,7 @@ After class, you should be able to:
 
 ## Resources
 You should read/watch the following:
-* 7.1 of [Biological Bits](https://users.monash.edu/~aland/BiologicalBits.html) 
+* 7.1 (Ecosystem Models) of [Biological Bits](https://users.monash.edu/~aland/BiologicalBits.html) 
 * Encyclopedia of Artificial Life page on [Artificial Ecologies](https://alife.org/encyclopedia/artificial-ecology/artificial-ecologies/)
 
 ## Checks
