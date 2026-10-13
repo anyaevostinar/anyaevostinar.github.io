@@ -10,31 +10,19 @@ To explore the dynamics observed in DISHTINY and think about the evolution of mu
 ## Setup
 
 You won't be downloading anything today! Instead, you'll be running the externally-hosted DISHTINY in your browser.
-So that you have a couple of samples, you should be in a group of three and each of you should navigate to [DISHTINY](https://mmore500.com/dishtiny/master/?N_CELLS=900&RNG_PRESEED=9). 
-**You should then each change the value for `RNG_PRESEED` to something unique** so that you each are using a different random seed and can therefore look at what differs across your different replicates. 
+So that you have a couple of samples, you should be in a group of three and each of you should navigate to [https://mmore500.com/dishtiny/master/?N_CELLS=900&RNG_PRESEED=9&&click=clear-views+kin-group-id-selector+resource-stockpile-selector+spawn-arrest-selector](https://mmore500.com/dishtiny/master/?N_CELLS=900&RNG_PRESEED=9&&click=clear-views+kin-group-id-selector+resource-stockpile-selector+spawn-arrest-selector). 
+**You should then each change the value for `RNG_PRESEED` in the URL to something unique** so that you each are using a different random seed and can therefore look at what differs across your different replicates. 
 If you'd like to get even more replicates going, feel free to log into a lab machine or two and have them start running other seeds!
 
 **Click Start so that it starts running while you read the rest of the instructions since it's takes a little while for interesting things to happen.**
 
-## Views
-DISHTINY allows for *a lot* of information to be visible, and we're going to focus on just a few things for now. The worksheet has all the information in the keys, so we're going to collapse them so that you can see all the data views, as well as switching out a couple of data views for our purposes.
 
-1. On the left side bar, click the heading `Kin Group ID` **once** to collapse the key without removing the view. If you click again, it will close the view and you should reopen it by clicking a third time.
-
-2. Continue scrolling on the left side bar until you get to the `Phylogenetic Root` key. Double click on that heading to close that view since it's not what we're interested in right now.
-
-3. Keep scrolling to `Resource Stockpile` and close that key without closing the view.
-
-4. Keep scrolling until the `Reproduction and Apoptosis` section and double click on `Spawn Arrest` to have that view open but the key closed.
-
-5. Keep scrolling until `Module Expression by Root` and close that view by double clicking.
-
-You should now have only three views open, that correspond to the three keys on the worksheet. Read over the worksheet keys to understand what each view is showing you. You can also zoom out your window to be able to see all the views at once more easily, since the font is pretty big by default.
+You should have only three views open (Spawn Request, Kin Group ID, and Resource Stockpile), that correspond to the three keys on the worksheet. Read over the worksheet keys to understand what each view is showing you. You can also zoom out your window to be able to see all the views at once more easily, since the font is pretty big by default.
 
 ## Spawn Arrest Analysis
 One of the metrics for a fraternal transition that we discussed is reproductive division of labor where some cells stop reproducing and just help other cells reproduce. 
 
-1. Take screenshots of just your groups three (or more) `Spawn Arrest` views and `Kin Group ID` views (ideally in the same screenshot) and put them into your group's tab of the shared Google doc with labels for the different seeds and how many updates they were at. 
+1. Take screenshots of just your groups three (or more) `Spawn Arrest` views and `Kin Group ID` views (ideally in the same screenshot) and put them into your group's tab of the shared Google doc with labels for the different seeds and how many updates they were at.  (You can also unselect "Every" and click "Save" to download PNGs from the website directly.)
 
 2. Discuss: if you were only considering the spawn arrest data combined with the kin group data, what does it indicate about what is happening in each of these replicates? 
 
@@ -58,6 +46,12 @@ There are obviously a lot more views, so check some more out and discuss in your
 * Most Recent Cause of Death
 * Incoming Inter Message Counter
 * Received Resource
-* Spawn Request
+* Eligible Spawn Request
+
+You can also change many additional configuration settings. Check out the Configuration information section at the bottom of the page and add one or more of the following to your URL to see the effect (add additional configs immediately after the `?` in the URL):
+* `STATE_INPUT_JUMP_SERVICE_FREQUENCY=0&INTER_MESSAGE_LAUNCHING_SERVICE_FREQUENCY=0&` - this will turn off anyway for cells to recognize group versus non-group, does it break any multicellular dynamics?
+* `BASE_HARVEST_RATE=0.2&COLLECTIVE_HARVEST_RATE=[+0+0+]&` - this will turn off the resource advantage of multicell groups, what do you think will happen?
+* `RESOURCE_DECAY_SERVICE_FREQUENCY=0&` - this will turn off the penalty against groups getting too large
+
 
 Take some screenshots of a couple of additional views with the other original views and add those and a description to your Google Doc. Be ready to share out about the data your group collected and what your group concluded from it.
