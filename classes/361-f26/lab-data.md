@@ -1,30 +1,18 @@
 ---
 layout: page
 title: Empirical DataFiles Lab
-permalink: /classes/361-s25/empirical_data_lab
+permalink: /classes/361-f26/empirical_data_lab
 ---
 
 ## Goals
 To use Empirical's DataFiles and DataNodes to record data from an artificial life simulation.
 
 ## Setup
-1. Open the Empirical Data Lab starter link on Moodle to get the Git repository template. 
 
-2. Open Terminal and clone your repository:
-    ```bash
-    git clone <your repository link>
-    ```
-
-3. Open VSCode and then open your repository folder. 
-
-4. Open a Terminal in VSCode and pull down the submodules for the starter code:
-    ```bash
-    git submodule update --init --recursive
-    ```
-
-    (We won't be using Emscripten in this lab so you don't need to set it up.)
-
-You'll probably want to have [the reading](/classes/361-w21/data_intro) open as reference.
+* Remember to start WSL if you are on Windows
+* Pull down the new `Data-Lab` starter code repository from the [361-F26](https://github.com/361-F26) GitHub Organization with `git clone --recurse-submodules [URL]` or `git submodule update --init --recursive` if you cloned without the recurse submodules command.
+* (No need to setup Emscripten today)
+* Open [the data reading](https://anyaevostinar.github.io/classes/361-w21/data_intro) in a new tab as reference.
 
 ## Exercise 1
 I've provided starter code for a simple artificial life system (that might look familiar by now). Look through the files to see how I wrote the code, though it still doesn't actually do anything interesting.
@@ -45,23 +33,11 @@ d. Create a method `SetupOrgFile()` that grabs the total count from your data mo
 e. Call your set up file in `native.cpp`, then compile and run your code to verify that it works.
 
 ## Exercise 3
-Generally we will want to know about the traits of organisms in the population as well.
-Let's imagine that you are doing a simulation of evolving cooperation among organisms.
+Generally we will want to know about the traits of organisms in the population as well. Let’s imagine that you are doing a simulation of evolving cooperation among organisms.
 
+The organisms already have a (non-functional) trait `cooperation_probability` along with accessors, which mutates upon reproduction. You may be interested in the distribution of values for the cooperation probability that the organisms currently have, even though it is just drifting around currently. 
 
-a. Add a trait to the Organism class that is a double called `cooperation_probability`. Assume that this value goes from 0 to 1 and is the probability that the organism cooperates (though we won't immediately implement the actual cooperation). Take an initial value for the trait in as a parameter to the constructor and set it.
-
-b. Make an accessor and mutator method for the trait, since you'll need them later.
-
-c. Set up mutation on the trait during reproduction. Refer back to the [Evolutionary Algorithm Lab](evo_alg_lab) for how to do this.
-
-d. Verify that your trait is mutating with print statements in `native.cpp` before moving on to making a data file for it.
-
-
-## Exercise 4
-You may also be interested in the distribution of values for the cooperation probability that the organisms currently have, even though it is just drifting around currently. 
-
-a. Create a `DataMonitor` pointer for the cooperation values that will hold both a double and a histogram.
+a. Create a `DataMonitor` pointer for the cooperation values that will hold both a double and a histogram. (In your world class)
 
 b. Add this data node to your destructor.
 
@@ -70,6 +46,14 @@ c. Create a method for getting the data node, remember that it has to return a t
 d. Add the code to your file setup method to create the bins of your histogram and add them and the mean of the data to the file.
 
 e. Compile and run your code to see how the distribution changes over time.
+
+## Submission
+You aren't required to submit labs in this class, but you can for an extra engagement credit. Complete the implemention of the two data files and then push it to GitHub:
+```bash
+git add World.h native.cpp
+git commit -m "finished datafiles"
+git push
+```
 
 ## Extensions
 Try some of the following:
