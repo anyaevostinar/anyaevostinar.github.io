@@ -25,6 +25,8 @@ You should read/watch the following:
 * Encyclopedia of Artificial Life page on [Artificial Ecologies](https://alife.org/encyclopedia/artificial-ecology/artificial-ecologies/)
 
 ## Checks
+Go to the [Data Lab](empirical_data_lab) and pull down the starter code and make sure everything compiles (Exercise 1) so that you're ready to get started in class.
+
 Submit answers to the following on Moodle:
 * What is one example artificial ecology project in artificial life and what kind of ecological interaction does it contain?
 * How do agent-based models differ from equation-based models? What are the pros and cons of each?
