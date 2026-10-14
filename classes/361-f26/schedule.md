@@ -39,7 +39,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | M 10/19 | | Midterm Break |  |
 | W 10/21 | [Artificial Ecologies Prep](artificial-ecologies-prep), <br> Encyclopedia first draft due | [Data Lab](empirical_data_lab), [Slides](https://docs.google.com/presentation/d/1esPTcqabTqOOc7xUWW2yf25AKZkHwJa7dsz7FtfB7qA/edit?usp=sharing) | [Artificial Ecology](hw-ae) assignment out|
 | Th 10/22 | | Early voting in Great Hall 9-2 | |
-| F 10/23 | [Encyclopedia Review Prep](enc-review-prep) | Peer review | |
+| F 10/23 | [Encyclopedia Review Prep](enc-review-prep) | Peer review, [Slides](https://docs.google.com/presentation/d/1wtN-mBU1lB_IRAiJ-RbR5ogSHpg3C3jO4rAH_uMBd58/edit?usp=sharing) | |
 | **Week 7** | | **Eco-Evo** | |
 | M 10/26 | [Digital Evolution Prep](dig-evo-prep), <br> Encyclopedia second draft due  | Synthetic Ecology |  |
 | W 10/28 | Artificial ecology due, Tierra Prep | Tierra | Digital evolution assignment out |
