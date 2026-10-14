@@ -103,6 +103,8 @@ If you want to do something related to one of these, feel free to talk to me abo
 * ALife Art - Genetic Algorithms
 * Hybrid Automata Systems (including HAL) - Introduction
 * PhysiCell - Introduction
+* Geb - Introduction
+* Self-Organization - Introduction
 
 
 ## Resources
