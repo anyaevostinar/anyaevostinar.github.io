@@ -20,7 +20,7 @@ After class, you should be able to:
 ## Resources
 You should read/watch the following:
 * [Digital Evolution](https://alife.org/encyclopedia/digital-evolution/introduction-to-digital-evolution/)
-    * You only need to watch the first video, the second is just a longer version if you are interested
+    * You should watch both videos, there is some overlap between them, but they both introduce unique information that will be important for you to know
 * 7.3 ("Evolving Ecosystems") of [Biological Bits](https://users.monash.edu/~aland/BiologicalBits.html) 
 
 ## Checks

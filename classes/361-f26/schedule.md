@@ -41,9 +41,9 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | Th 10/22 | | Early voting in Great Hall 9-2 | |
 | F 10/23 | [Encyclopedia Review Prep](enc-review-prep) | Peer review, [Slides](https://docs.google.com/presentation/d/1wtN-mBU1lB_IRAiJ-RbR5ogSHpg3C3jO4rAH_uMBd58/edit?usp=sharing) | |
 | **Week 7** | | **Eco-Evo** | |
-| M 10/26 | [Digital Evolution Prep](dig-evo-prep), <br> Encyclopedia second draft due  | Synthetic Ecology |  |
-| W 10/28 | Artificial ecology due, Tierra Prep | Tierra | Digital evolution assignment out |
-| F 10/30 | | Open-Ended Evolution |  |
+| M 10/26 | [Digital Evolution Prep](dig-evo-prep), <br> Encyclopedia second draft due  | Avida lab |  |
+| W 10/28 | Artificial ecology due, Signal-GP/Symbulation Prep | Signal-GP/Symbulation Lab | Digital evolution assignment out |
+| F 10/30 | MODES Prep | Open-Ended Evolution |  |
 | **Week 8** | | **Multi-System Projects** | |
 | M 11/2 |  | Combining ODEs and ABMs |  |
 | T 11/3 | | Vote if you are eligible! | |
