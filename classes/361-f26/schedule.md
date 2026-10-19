@@ -43,7 +43,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 7** | | **Eco-Evo** | |
 | M 10/26 | [Digital Evolution Prep](dig-evo-prep), <br> Encyclopedia second draft due  | Avida lab |  |
 | W 10/28 | Artificial ecology due, [Symbulation Prep](symbulation-prep) | Symbulation Lab | Digital evolution assignment out |
-| F 10/30 | MODES Prep | Open-Ended Evolution |  |
+| F 10/30 | [Open-Ended Evolution Prep](oee-prep) | MODES Discussion |  |
 | **Week 8** | | **Multi-System Projects** | |
 | M 11/2 |  | Combining ODEs and ABMs |  |
 | T 11/3 | | Vote if you are eligible! | |
