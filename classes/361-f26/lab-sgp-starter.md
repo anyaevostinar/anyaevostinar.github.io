@@ -8,7 +8,7 @@ permalink: /classes/361-f26/sgplite_lab
 To use the SGP-Lite library to create a basic digital evolution system.
 
 ## Setup
-1. Open the SGP-Lite Lab assignment on Moodle to get the Git repository template. 
+1. Open the SGP-Lite Lab repository on the 361-F26 organization as usual. 
 
 2. Open Terminal and clone your repository:
     ```
