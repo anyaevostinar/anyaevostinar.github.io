@@ -25,4 +25,5 @@ You should read the following (note, these papers both use the same underlying s
 Submit answers to the following on Moodle:
 * How does the genome structure and idea of logic tasks compare between Symbulation and Avida?
 * From these two papers, what are all the ways that symbionts can impact their hosts (positive and negative)? (There is actually a third, but there isn't a paper on it yet!)
+* **Make sure to clone down the [Symbulation starter code](hw-de) before class**
 
