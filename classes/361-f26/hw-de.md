@@ -61,6 +61,8 @@ cd ..
 ## Supplemental info
 As you are working on this project, you may find the supplemental material section F of [this paper](https://mmore500.com/pubs/moreno2021case) a helpful reference for what operations are available and what they do, as well as the [SGP-Lite lab](sgplite_lab).
 
+You may also find this [Symbulation Architecture Guide](https://github.com/anyaevostinar/SymbulationEmp/blob/arch-guide/ARCHITECTURE.md) helpful.
+
 ## Assignment Specification
 For this assignment, you will expand on the Symbulation starter code that is provided by implementing additional tasks and conducting experiments.
 
