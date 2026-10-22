@@ -42,7 +42,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 10/23 | [Encyclopedia Review Prep](enc-review-prep) | Peer review, [Slides](https://docs.google.com/presentation/d/1wtN-mBU1lB_IRAiJ-RbR5ogSHpg3C3jO4rAH_uMBd58/edit?usp=sharing) | |
 | **Week 7** | | **Eco-Evo** | |
 | M 10/26 | [Digital Evolution Prep](dig-evo-prep), <br> Encyclopedia second draft due  | [SGP-Lite Lab](sgplite_lab), [Slides](https://docs.google.com/presentation/d/18IxuqJHGCqSE7rXD_NtFKHLxbqXOs-EmF1V0wBkotJk/edit?usp=sharing)|  |
-| W 10/28 | Artificial ecology due, [Symbulation Prep](symbulation-prep) | [Symbulation Lab](symbulation_lab) | [Digital evolution](hw-de) assignment out |
+| W 10/28 | Artificial ecology due, [Symbulation Prep](symbulation-prep) | [Symbulation Lab](symbulation_lab), [Slides](https://docs.google.com/presentation/d/1I-IwQV6ZKJQj_zzx00WGNl4wvhdJpl_rsqFttBfzMoM/edit?usp=sharing) | [Digital evolution](hw-de) assignment out |
 | F 10/30 | [Open-Ended Evolution Prep](oee-prep) | MODES Discussion |  |
 | **Week 8** | | **Multi-System Projects** | |
 | M 11/2 |  | Combining ODEs and ABMs |  |

@@ -39,5 +39,8 @@ Follow [this guide](https://github.com/anyaevostinar/SymbulationEmp/blob/doc-eve
 
 Remember to compile and run to make sure that your event is working as expected.
 
+## Exericse 4
+Work through the [Collecting and Analyzing](https://symbulation.readthedocs.io/en/latest/QuickStartGuides/2-CollectingData.html) sections of the Quickstart guides for some data in your files. You'll need to update the scripts in the `stats_scripts` folder to work for some data that you have. I recommend analyzing the file `CurrentUpdateInfo_data.csv` and the 1th column `host_mean_generations` just to get used to plotting data.
+
 ## Keep going
 You're pretty well set to explore different functionality and make progress on the homework. In class is a great time to ask about specific functionality that you are interested in!
