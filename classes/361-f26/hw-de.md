@@ -30,7 +30,7 @@ For example, a hypothetical log could be:
 This log requirement is both to give me an idea of how useful genAI is in this context and to make sure that your learning isn't being hampered. As mentioned in the hypothetical log, you should include any genAI resources that you use, even the AI summary shown in search results or GitHub Copilot (which shows up as autocomplete in VSCode now).
 
 ## Goal
-The goal of this assignment is to demonstrate your understanding of digital evolution.
+The goal of this assignment is to demonstrate your understanding of digital evolution and work within a full artificial life research software project.
 You'll be expanding a digital evolution project that runs in the web browser and command-line using the Symbulation platform, which is built with the Empirical and SGP-Lite frameworks.
 
 ## Setup
