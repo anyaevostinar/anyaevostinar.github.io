@@ -47,7 +47,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 8** | | **Multi-System Projects** | |
 | M 11/2 | [ODE and ABM Prep](ode-abm-prep) | Combining ODEs and ABMs |  |
 | T 11/3 | | Vote if you are eligible! | |
-| W 11/4 | | Collaboration day | |
+| W 11/4 | [ODE Collaboration Prep](ode-collab-prep)| Collaboration day | |
 | F 11/6 | [Digital Evolution](hw-de) assignment due | Code Review and Final Project Overview  |  |
 | **Week 9** | | **Collaborative Science** | |
 | M 11/9 | | Final project planning |  |
