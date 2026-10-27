@@ -45,7 +45,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 10/28 | Artificial ecology due, [Symbulation Prep](symbulation-prep) | [Symbulation Lab](symbulation_lab), [Slides](https://docs.google.com/presentation/d/1I-IwQV6ZKJQj_zzx00WGNl4wvhdJpl_rsqFttBfzMoM/edit?usp=sharing) | [Digital evolution](hw-de) assignment out |
 | F 10/30 | [Open-Ended Evolution Prep](oee-prep) | MODES Discussion, [OEE Lab](oee_lab), [Slides](https://docs.google.com/presentation/d/1P1r5lG3n2dDTBRT81T28cdsCYKwhUAqeQhGY8q32wcY/edit?usp=sharing) |  |
 | **Week 8** | | **Multi-System Projects** | |
-| M 11/2 |  | Combining ODEs and ABMs |  |
+| M 11/2 | [ODE and ABM Prep](ode-abm-prep) | Combining ODEs and ABMs |  |
 | T 11/3 | | Vote if you are eligible! | |
 | W 11/4 | | Collaboration day | |
 | F 11/6 | [Digital Evolution](hw-de) assignment due | Code Review and Final Project Overview  |  |
