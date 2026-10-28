@@ -23,7 +23,7 @@ After class, you should be able to:
 * Submit your proposal for your encyclopedia topic
 
 ## Reading
-There isn't any new reading, but you should make sure that you have your two assignments functional and easily opened and have reviewed the [Encyclopedia assignment]().
+There isn't any new reading, but you should make sure that you have your two assignments functional and easily opened and have reviewed the [Encyclopedia assignment](encyclopedia-hw).
 
 ## Checks
 Submit answers to the following on Moodle:
