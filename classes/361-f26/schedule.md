@@ -48,14 +48,14 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | M 11/2 | [ODE and ABM Prep](ode-abm-prep) | Combining ODEs and ABMs, [Slides](https://docs.google.com/presentation/d/1qoHHT5KBibsRZRZR3SL69d33PnWQa69p9bYcgt4A53E/edit?usp=sharing) |  |
 | T 11/3 | | Vote if you are eligible! | |
 | W 11/4 | [ODE Collaboration Prep](ode-collab-prep)| Collaboration day, [Slides](https://docs.google.com/presentation/d/1KK3booredJRlLEnsz3MIeRTmGzOMHEYDcTfbyvaot6s/edit?usp=sharing) | |
-| F 11/6 | [Digital Evolution](hw-de) assignment due, [ODE Reflection Prep](ode-reflection-prep) | Reflection, Growth Rates, Final Project Overview, [Slides](https://docs.google.com/presentation/d/1ZyFi4UelmK5scU41_lcFSZP3Q-exuBHrw_s393QMTZs/edit?usp=sharing)  |  |
+| F 11/6 | [Digital Evolution](hw-de) assignment due, [ODE Reflection Prep](ode-reflection-prep) | Reflection, Growth Rates, Final Project Overview, [Slides](https://docs.google.com/presentation/d/1ZyFi4UelmK5scU41_lcFSZP3Q-exuBHrw_s393QMTZs/edit?usp=sharing)  | [Final Project](hw-final) out  |
 | **Week 9** | | **Collaborative Science** | |
 | M 11/9 | | Final project planning |  |
 | W 11/11 | | Working on final project | |
 | F 11/13 | | Code review | | 
 | **Week 10** | | **Wrapping up** | |
-| M 11/16 | | Technical communication |  |
+| M 11/16 | [Initial draft of final due](hw-final) | Technical communication |  |
 | W 11/18 | | Wrap-up and course feedback | |
 | Exam Period | | | |
-| |Nothing scheduled, projects and presentations due end of exams | | |
+| |Nothing scheduled, [projects and presentations](hw-final) due end of exams  (Nov 23rd, 9:30pm)| | |
 | | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
