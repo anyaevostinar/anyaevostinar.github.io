@@ -20,4 +20,4 @@ After class, you should be able to:
 Submit answers to the following on Moodle:
 * What aspects of collaborating with the ODE students did you find most difficult?
 * What strategies did you use to translate from your artificial ecology to the information needed to construct an ODE?
-**Make sure to clone down the repository for the final project so you can make faster progress in class**
+**Make sure to install [numpy](https://numpy.org/install/) before class. You can probably achieve that with `pip install numpy` depending on your setup**
