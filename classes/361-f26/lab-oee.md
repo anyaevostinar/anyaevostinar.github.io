@@ -37,7 +37,7 @@ Now you're ready to set up your `OEETracker` to hook up to the systematics manag
 emp::Ptr<emp::OEETracker<emp::Systematics<Organism, double>, double>> oee;
 ```
 
-3. In the `OrgWorld` constructor, we still need to initialize our `oee` object. We're going to need two lambdas to pass to its constructor, and it'll be easiest to save them to intermediate variables so we can understand them better. The first one will take in a pointer to a "taxon" that holds the type of our genomes. Taxons are the unit that phylogenies use and therefore what the systematics manager will hold and pass to our `OEETracker`. Since we're not doing anything fancy, we just need a simple lambda that pulls out the genotype that the given taxon was created to hold:
+3. In the `OrgWorld` constructor, we still need to initialize our `oee` object. We're going to need two lambdas to pass to its constructor, and it'll be easiest to save them to intermediate variables so we can understand them better. The first one will take in a pointer to a "taxon" that holds the type of our genomes. Taxa are the unit that phylogenies use and therefore what the systematics manager will hold and pass to our `OEETracker`. Since we're not doing anything fancy, we just need a simple lambda that pulls out the genotype that the given taxon was created to hold:
 ```cpp
 auto get_genotype_lambda =  [](emp::Ptr<emp::Taxon<double>> taxon){return taxon->GetInfo();};
 ```
