@@ -61,6 +61,7 @@ For this assignment, you will:
 * implement the biological system modeled
 * compare your system's results to the ODE predictions
 * create and record a group presentation explaining your implementations and comparing your results
+    * Your presentation should be roughly 5 min intro to paper, 5 min ODE methods and highlights, 5 min ABM methods and highlights, 5 min synthesis and conclusion
 
 ## Intermediate Feedback
 You should submit a nearly-complete version of your code and README by Monday, Nov 16th at 10pm. I will then give you feedback on those components so that you are prepared to create the presentation and do any final updates.
