@@ -57,8 +57,8 @@ cd ..
 
 ## Assignment Specification
 For this assignment, you will:
-* work with your ODE partner(s) to understand the key dynamics in the published ODE model and their extension.
-* implement the biological system modeled, possibly including the extension
+* work with your ODE partner(s) to understand the key interactions in their ODE model.
+* implement the biological system modeled
 * compare your system's results to the ODE predictions
 * create and record a group presentation explaining your implementations and comparing your results
 
@@ -70,16 +70,16 @@ You should submit a nearly-complete version of your code and README by Monday, N
 ### Core Requirements
 The Core requirements for this project are:
 * Run and output data to a file when `compile-run-mac.sh` is run (i.e. the non-GUI version)
-* Reasonably captures the key dynamics of the ODE
+* Reasonably captures the key interactions of the ODE
 * Report in the README the exact paper that your group is replicating (include a link)
-* Report in the README what the key dynamics of the ODE were and how you implemented them in the `Core` section
+* Report in the README what the key interactions of the ODE were and how you implemented them in the `Core` section
 * Submit a group presentation where you explain your implementation and results
     
 ### Advanced Requirements
 The Advanced requirements for this project are:
 * Complete all core requirements.
 * Run and display a GUI of your system when `compile-run-web.sh` is run
-* Closely capture the key dynamics of the ODE
+* Closely capture the key interactions of the ODE
 * Report in the README `Advanced` section where your results match and diverge from the ODE predictions
 * Your portion of the group presentation is clear and insightful
 
