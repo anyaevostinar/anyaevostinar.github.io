@@ -7,6 +7,7 @@ permalink: /classes/361-f26/topic-peer-prep
 ## Overview
 The next class will be a bit different and therefore today's prep is a bit different. You'll be peer reviewing the artificial chemistry and/or L-system projects as well as brainstorming encyclopedia topics.
 
+
 ## AI Policy
 As a reminder, you are not allowed to use genAI to summarize or produce your reading check responses. These checks are for you to engage with the material and start thinking about things before class. It's okay if you don't understand everything ahead of time!
 
