@@ -50,9 +50,9 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 11/4 | [ODE Collaboration Prep](ode-collab-prep)| Collaboration day, [Slides](https://docs.google.com/presentation/d/1KK3booredJRlLEnsz3MIeRTmGzOMHEYDcTfbyvaot6s/edit?usp=sharing) | |
 | F 11/6 | [Digital Evolution](hw-de) assignment due, [ODE Reflection Prep](ode-reflection-prep) | Reflection, Growth Rates, Final Project Overview, [Slides](https://docs.google.com/presentation/d/1ZyFi4UelmK5scU41_lcFSZP3Q-exuBHrw_s393QMTZs/edit?usp=sharing)  | [Final Project](hw-final) out  |
 | **Week 9** | | **Collaborative Science** | |
-| M 11/9 | | Final project planning |  |
-| W 11/11 | | Working on final project | |
-| F 11/13 | | Code review | | 
+| M 11/9 |[Final Planning Prep](final-planning-prep)| Final project planning |  |
+| W 11/11 | [Final Work Prep](final-work-prep) | Working on final project | |
+| F 11/13 | [Code Review Prep](final-review-prep) | Code review | | 
 | **Week 10** | | **Wrapping up** | |
 | M 11/16 | [Initial draft of final due](hw-final) | Technical communication |  |
 | W 11/18 | | Wrap-up and course feedback | |
