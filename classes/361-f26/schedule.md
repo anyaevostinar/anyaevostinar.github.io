@@ -52,7 +52,7 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | **Week 9** | | **Collaborative Science** | |
 | M 11/9 |[Final Planning Prep](final-planning-prep)| Final project planning, [Slide](https://docs.google.com/presentation/d/1zqBGovJoebJArXMCh0QBYPTik5Hob6VGIENFIMMTfaM/edit?usp=sharing) |  |
 | W 11/11 | [Final Work Prep](final-work-prep) | Working on final project, [Slide](https://docs.google.com/presentation/d/1AmdkyDwMuaqDppDUM3TMpkTBt5gF2OR0uKWfFhAzLiA/edit?usp=sharing) | |
-| F 11/13 | [Code Review Prep](final-review-prep) | Code review | | 
+| F 11/13 | [Code Review Prep](final-review-prep) | Code review, [Slides](https://docs.google.com/presentation/d/1igbddOYz3Y_7Nj-LUzlUfrN-wIkHrfR6vp62_e1OkPs/edit?usp=sharing) | | 
 | **Week 10** | | **Wrapping up** | |
 | M 11/16 | [Initial draft of final due](hw-final) | Technical communication |  |
 | W 11/18 | | Wrap-up and course feedback | |
