@@ -18,6 +18,6 @@ After class, you should be able to:
 
 ## Checks
 Submit answers to the following on Moodle:
-* Pull down the Final-Project starter code and make sure you can run it before class. Are you running into any issues?
+* Pull down the [Final-Project starter code](https://github.com/orgs/361-F26/repositories) and make sure you can run it before class (remember to use `git clone --recurse-submodules`). Are you running into any issues?
 * Check the posted group paper assignments on Moodle and read the introduction of the paper. What is you understanding of the biological system involved? 
 * What questions do you have for the ODE students about the paper?
