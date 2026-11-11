@@ -58,4 +58,4 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | W 11/18 | [Wrap-up Prep](wrap-up-prep)| Wrap-up and course feedback | |
 | Exam Period | | | |
 | |Nothing scheduled, [projects and presentations](hw-final) due end of exams  (Nov 23rd, 9:30pm)| | |
-| | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | |
+| | | Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | | 
