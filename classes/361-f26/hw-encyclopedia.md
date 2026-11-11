@@ -144,3 +144,6 @@ You can see examples of articles written and ultimately published from the previ
 * [Synthetic Biology](https://alife.org/encyclopedia/introduction/synthetic-biology/)
 * [Stringmol](https://alife.org/encyclopedia/artificial-chemistry/stringmol/)
 * [Open-ended evolution](https://alife.org/encyclopedia/introduction/open-ended-evolution/)
+
+## Addendum
+You need to cite your references in your text via in-text citations. While standards for how frequently to recite the same source vary, you should err on the side of overciting (i.e. potentially every sentence) because others could add sentences between yours, leading to confusion on where facts originated.
