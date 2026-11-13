@@ -55,5 +55,5 @@ The slide links are all restricted to Carleton folks, so make sure you're logged
 | F 11/13 | [Code Review Prep](final-review-prep) | Code review, [Slides](https://docs.google.com/presentation/d/1igbddOYz3Y_7Nj-LUzlUfrN-wIkHrfR6vp62_e1OkPs/edit?usp=sharing) | | 
 | **Week 10** | | **Wrapping up** | |
 | M 11/16 | [Technical Communication Prep](tech-comm-prep), [Initial draft of final due](hw-final) | Technical communication |  |
-| W 11/18 | [Wrap-up Prep](wrap-up-prep)| Wrap-up and course feedback | All revisions and labs due 10pm |
+| W 11/18 | [Wrap-up Prep](wrap-up-prep)| Wrap-up and course feedback, [Slides](https://docs.google.com/presentation/d/1-990QpEA8cfZT5XgGHXhqToZ7WdBO0dB4yFH7ng0D0k/edit?usp=sharing) | All revisions and labs due 10pm |
 | Exam Period |Nothing scheduled, [projects and presentations](hw-final) due end of exams  (Nov 23rd, 9:30pm)| Any request for an extension must go through the Dean of Students office as I am not otherwise permitted to consider work submitted after this time. | | 
