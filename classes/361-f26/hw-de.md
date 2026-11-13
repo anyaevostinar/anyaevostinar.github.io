@@ -122,4 +122,17 @@ You are also welcome to come to drop-in hours and schedule a one-on-one meeting 
 
 ## Acknowledgements
 Symbulation has many additional contributors, here is the full citation:
-Vostinar, A., Johnson-Horrigan, K., Lalejini, A., Dolson, E., Hillman-Emelianoff, E., Shea, J., Kelley, D., Khalili, A. T., Welch, P., Cameron, A., Orion Hafner, L., Dorchen, S., Gormely, C., renztim, Ofria, C., Qin, Y., & mkmmnn. (2026). anyaevostinar/SymbulationEmp: ComplexFeatures (Version v1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.20732915
+Vostinar, A., Johnson, K., Lalejini, A., Dolson, E., Hillman-Emelianoff, E., Shea, J., Kelley, D., Khalili, A. T., Welch, P., Cameron, A., Orion Hafner, L., Dorchen, S., Gormely, C., renztim, Ofria, C., Qin, Y., & mkmmnn. (2026). anyaevostinar/SymbulationEmp: ComplexFeatures (Version v1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.20732915
+
+
+## Tips
+If your browser version never loads and seems to freeze, you are likely using too much memory due to requiring unique outputs. You can fix that by removing the requirement to have unique outputs between tasks by adding `set TASK_IO_UNIQUE_OUTPUT 0` to your `SymSettings.cfg`.
+
+If that still isn't working, you can allow for more memory growth. You can check this by doing the following:
+* Open the `Makefile`
+* Find the line that starts with `OFLAGS_web_all :=`
+* On that line, find the argument `-s TOTAL_MEMORY=268435456 `
+* Before that, add the following `-s ALLOW_MEMORY_GROWTH`
+* Run and recompile
+
+That issue is likely happpening because your tasks are conflicting with the existing logic tasks. You can further fix that by removing the existing logic tasks so there is less calculation necessary.

@@ -92,3 +92,5 @@ As always, you should **add/commit/push** your files to GitHub and then tag your
 git tag -a initial_submission -m "initial submission"
 git push origin initial_submission
 ```
+
+**For your group presentation**: hopefully you can just upload it to the git repository, but if the file is too big, GitHub might reject it. In that case, upload it to the assignment on Moodle instead.
