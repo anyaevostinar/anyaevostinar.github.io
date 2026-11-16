@@ -66,6 +66,34 @@ For this assignment, you will:
 ## Intermediate Feedback
 You should submit a nearly-complete version of your code and README by Monday, Nov 16th at 10pm. I will then give you feedback on those components so that you are prepared to create the presentation and do any final updates.
 
+## Presentation Rubric
+Your presentation will be evaluated on a similar rubric to the ODE students, but focused on the ABM components:
+
+|  | Beginning | Developing | Core Competency | Advanced Competency |
+| ------ | ------ | ------ | ------ | ---- |
+| Duration Overall | < 10 or > 22 min | 10-15 or 21-22 min | 15-21 min | n/a |
+| Components checklist (below) | few present | some present | all present | all present and well done |
+| Comparison between ODE and ABM results | absent | perfunctory | reasonable | insightful |
+| Visuals used when possible, minimal text, builds if needed | not very effective | somewhat effective | mostly effective | consistently effective |
+| Verbal and visual delivery coordinated | not much | somewhat | mostly coordinated | consistently coordinated |
+| ABM description | interactions and species mentioned | interactions OR species described clearly | both described clearly | interactions and species described clearly with custom graphics |
+
+### Components checklist
+* Everywhere
+    * Cite sources for images with a url, citation, or image credit slide
+* Intro
+    * Start with a title slide with a title, your names, and the date
+    * Motivate the problem that the research article seeks to address. Why is it interesting? What are the main points that you will make?
+    * Background: give any necessary biological background for non-experts of that field. (Assume an audience of CS/ODE peers)
+* ABM highlights
+    * Describe the ABM implemented to address the research problem. Explain what makes each "species" unique (or mutant or state, depending on your system) and how the "species" (etc) interact with each other (i.e. infect, consume, transform into, etc)
+    * Give highlights from your data analysis and interpret the results in real-world terms
+* Conclusion
+    * Compre your results to the ODE. What were aspects of your implementation that got your data closer to the ODE predictions? Where is there still difference between the models and what might explain that difference? Remember that your data isn't expected to match up perfectly, but you should make an effort to get it closer and report on that effort. Don't expect the numbers to match; instead focus on the extremes and the qualitative trends.
+    * What new questions do your results raise for future study?
+    * Bibliography: cite references in your presentaton and include full info at the end
+    * Acknowledge any sources of help from beyond your group
+
 ## Assessment
 
 ### Core Requirements
@@ -74,7 +102,7 @@ The Core requirements for this project are:
 * Reasonably captures the key interactions of the ODE
 * Report in the README the exact paper that your group is replicating (include a link)
 * Report in the README what the key interactions of the ODE were and how you implemented them in the `Core` section
-* Submit a group presentation where you explain your implementation and results
+* Submit a group presentation that meets all the core competencies listed in the table above.
     
 ### Advanced Requirements
 The Advanced requirements for this project are:
@@ -82,7 +110,7 @@ The Advanced requirements for this project are:
 * Run and display a GUI of your system when `compile-run-web.sh` is run
 * Closely capture the key interactions of the ODE
 * Report in the README `Advanced` section where your results match and diverge from the ODE predictions
-* Your portion of the group presentation is clear and insightful
+* Submit a group presentation that meets at least 4 of the advanced competencies in the table above.
 
 
 ## Submission
